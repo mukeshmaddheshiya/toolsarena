@@ -1,0 +1,12 @@
+{
+  "name": "ToolsArena - Free Online Tools",
+  "short_name": "ToolsArena",
+  "description": "100+ free online tools for images, PDFs, text, calculators and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "icons": [
+    {"src": "/favicon.ico", "sizes": "any", "type": "image/x-icon"}
+  ]
+}

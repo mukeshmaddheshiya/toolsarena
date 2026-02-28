@@ -1,65 +1,119 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { Zap, Shield, Sparkles, Clock } from 'lucide-react';
+import { tools, categories, getPopularTools } from '@/lib/tools-registry';
+import { ToolCard } from '@/components/tools/ToolCard';
+import { SearchBar } from '@/components/common/SearchBar';
+import type { ToolCategory } from '@/types/tools';
+import type { Metadata } from 'next';
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'ToolsArena - 100+ Free Online Tools | Image, PDF, Text & Calculator Tools',
+  description: 'Free online tools for images, PDFs, text, calculators and developers. No signup, no downloads. Compress images, merge PDFs, count words, calculate EMI and more.',
+  alternates: { canonical: 'https://toolsarena.in' },
+  openGraph: {
+    title: 'ToolsArena - 100+ Free Online Tools',
+    description: 'Free online tools for images, PDFs, text, calculators and developers. No signup required.',
+    url: 'https://toolsarena.in',
+    siteName: 'ToolsArena',
+    type: 'website',
+  },
+};
+
+const STATS = [
+  { icon: Zap, label: '30+ Tools', desc: 'And growing' },
+  { icon: Shield, label: '100% Private', desc: 'Files stay on device' },
+  { icon: Sparkles, label: 'No Signup', desc: 'Use instantly' },
+  { icon: Clock, label: 'Always Free', desc: 'No hidden fees' },
+];
+
+const CATEGORY_ORDER: ToolCategory[] = ['text-tools', 'calculators', 'developer-tools', 'image-tools', 'pdf-tools', 'converters'];
+
+export default function HomePage() {
+  const popularTools = getPopularTools(8);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 dark:from-slate-900 dark:via-primary-950 dark:to-slate-900 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(249,115,22,0.15),transparent_60%)]" />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium mb-6">
+            <Sparkles className="w-3.5 h-3.5 text-accent-400" />
+            <span>30+ Free Tools &mdash; No Signup Required</span>
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-4">
+            Free Online Tools
+            <br />
+            <span className="text-accent-400">for Everyone</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg text-primary-200 dark:text-slate-300 max-w-2xl mx-auto mb-8">
+            Compress images, merge PDFs, calculate EMI, format JSON, generate QR codes and 25+ more tools. All free, all instant, no account needed.
           </p>
+          <div className="max-w-xl mx-auto">
+            <SearchBar placeholder="Search 30+ tools — try 'word counter' or 'QR code'..." />
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Stats */}
+      <section className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-slate-200 dark:divide-slate-800">
+            {STATS.map(({ icon: Icon, label, desc }) => (
+              <div key={label} className="flex items-center gap-3 px-6 py-4">
+                <div className="w-9 h-9 rounded-lg bg-primary-50 dark:bg-primary-900/30 flex items-center justify-center shrink-0">
+                  <Icon className="w-4 h-4 text-primary-700 dark:text-primary-400" />
+                </div>
+                <div>
+                  <div className="font-heading font-bold text-slate-900 dark:text-slate-100 text-sm">{label}</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">{desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+        {/* Popular Tools */}
+        <section>
+          <div className="flex items-center justify-between mb-5">
+            <div>
+              <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100">&#11088; Popular Tools</h2>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">Most used tools by our visitors</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3">
+            {popularTools.map(tool => <ToolCard key={tool.slug} tool={tool} />)}
+          </div>
+        </section>
+
+        {/* Category sections */}
+        {CATEGORY_ORDER.map(catKey => {
+          const cat = categories[catKey];
+          const catTools = tools.filter(t => t.category === catKey);
+          if (catTools.length === 0) return null;
+          return (
+            <section key={catKey}>
+              <div className="flex items-center justify-between mb-5">
+                <div>
+                  <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100">{cat.name}</h2>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">{cat.description}</p>
+                </div>
+                <Link
+                  href={`/category/${catKey}`}
+                  className="text-sm font-medium text-primary-700 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 transition-colors whitespace-nowrap"
+                >
+                  View All &rarr;
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                {catTools.map(tool => <ToolCard key={tool.slug} tool={tool} />)}
+              </div>
+            </section>
+          );
+        })}
+      </div>
+    </>
   );
 }
