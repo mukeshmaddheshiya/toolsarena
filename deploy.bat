@@ -23,9 +23,13 @@ git push
 
 echo.
 echo  Deploying to Vercel...
-vercel --prod
+vercel --prod --yes
 
 echo.
-echo  Done! Site is live at https://tool-app-xi.vercel.app
+echo  Pointing toolsarena.vercel.app to latest deployment...
+vercel alias toolsarena.vercel.app
+
+echo.
+echo  Done! Site is live at https://toolsarena.vercel.app
 echo.
 pause
