@@ -1481,6 +1481,103 @@ Set crop values for top, right, bottom, and left margins (in PDF points). Use qu
     estimatedTime: '2-5 seconds',
   },
   {
+    slug: 'pdf-sign',
+    name: 'Sign PDF',
+    shortDescription: 'Add your electronic signature to any PDF — draw, type, or upload.',
+    longDescription: `Sign PDF documents electronically directly in your browser — no software to install, no server upload required. Choose from three signature methods:
+
+**Draw**: Use your mouse or touchscreen to handwrite your signature on a digital canvas.
+**Type**: Enter your name and pick a cursive font style for a clean typed signature.
+**Upload**: Use an existing signature image (PNG with transparent background works best).
+
+Place the signature on the last page, first page, all pages, or any specific page. Adjust size and position using sliders. Download the signed PDF instantly.`,
+    category: 'pdf-tools',
+    targetKeyword: 'sign PDF online free',
+    secondaryKeywords: ['electronic signature pdf', 'digital signature pdf', 'pdf e-sign', 'sign pdf without printing', 'draw signature pdf'],
+    metaTitle: 'Sign PDF Online Free - Draw, Type or Upload Signature | ToolsArena',
+    metaDescription: 'Sign PDF files online for free. Draw your signature, type it in cursive, or upload an image. Add e-signature to any PDF page. No upload to server — 100% private.',
+    faqs: [
+      { question: 'Is this a legally binding electronic signature?', answer: 'This tool adds a visual signature image to the PDF. For legally binding e-signatures, you may need a service with audit trails like DocuSign or Adobe Sign.' },
+      { question: 'Can I draw my signature on a phone or tablet?', answer: 'Yes! The drawing canvas supports touch input on mobile and tablet devices.' },
+      { question: 'What is the best image format for uploading a signature?', answer: 'PNG with a transparent background gives the cleanest result. JPEG works too but will have a white background.' },
+      { question: 'Can I sign only the last page?', answer: 'Yes. By default the signature is added to the last page. You can also choose first page, all pages, or a specific page number.' },
+      { question: 'Is my PDF sent to a server?', answer: 'No. All signing happens in your browser using pdf-lib. Your file never leaves your device.' },
+    ],
+    howToSteps: [
+      'Upload your PDF file.',
+      'Choose "Draw", "Type", or "Upload" to create your signature.',
+      'Set where to place the signature (last page, all pages, etc.).',
+      'Adjust the size and position using the sliders.',
+      'Click "Download Signed PDF" to save the result.',
+    ],
+    relatedToolSlugs: ['pdf-watermark', 'pdf-page-numbers', 'pdf-add-image', 'pdf-merge'],
+    icon: 'PenLine',
+    isNew: true,
+    estimatedTime: '1-2 minutes',
+  },
+  {
+    slug: 'pdf-add-image',
+    name: 'Insert Image into PDF',
+    shortDescription: 'Add logos, stamps, and images to PDF pages at any position.',
+    longDescription: `Insert one or multiple images (PNG, JPG, WebP, GIF) into any PDF document — completely in your browser with no server upload required.
+
+Upload your PDF and then add images one by one. For each image, configure which pages to apply it to (all, first, last, or a custom page), position (left/top offset in PDF points), width, and opacity. Great for adding company logos, stamps, or illustrations.`,
+    category: 'pdf-tools',
+    targetKeyword: 'insert image into PDF online',
+    secondaryKeywords: ['add image to pdf', 'add logo to pdf', 'insert logo pdf', 'pdf stamp image free', 'embed image pdf'],
+    metaTitle: 'Insert Image into PDF Free Online - Add Logo & Stamps | ToolsArena',
+    metaDescription: 'Insert images, logos and stamps into PDF pages free online. Control position, size, opacity. Apply to all pages or specific pages. No upload to server.',
+    faqs: [
+      { question: 'Can I add a logo to every page?', answer: 'Yes. Set "Apply to" to "All pages" to stamp the image on every single page of the PDF.' },
+      { question: 'Can I add multiple different images?', answer: 'Yes! Click "Add Image" multiple times to insert several images, each with independent settings.' },
+      { question: 'What image formats are supported?', answer: 'PNG, JPG, WebP, and GIF are accepted. PNG is recommended for logos with transparent backgrounds.' },
+      { question: 'How do I position the image accurately?', answer: 'Use the Left and Top offset sliders. PDF coordinates are in points (72pt = 1 inch). Typical A4 page is 595 × 842 points.' },
+      { question: 'Is my PDF uploaded to a server?', answer: 'No. All processing runs in your browser. Your PDF and images never leave your device.' },
+    ],
+    howToSteps: [
+      'Upload your PDF file.',
+      'Click "Add Image" and select a PNG or JPG image.',
+      'Set which pages to apply the image to.',
+      'Adjust width, position (left/top), and opacity.',
+      'Click "Download PDF with Images" to save.',
+    ],
+    relatedToolSlugs: ['pdf-watermark', 'pdf-sign', 'pdf-page-numbers', 'jpg-to-pdf'],
+    icon: 'ImagePlus',
+    isNew: true,
+    estimatedTime: '2-5 seconds',
+  },
+  {
+    slug: 'csv-to-pdf',
+    name: 'CSV to PDF',
+    shortDescription: 'Convert CSV and Excel spreadsheet data into a formatted PDF table.',
+    longDescription: `Transform any CSV file or tabular data into a clean, professional PDF table — instantly in your browser with no server upload required.
+
+Paste your CSV data or upload a .csv file. Customize delimiter (comma, semicolon, tab, pipe), table style (striped, bordered, minimal), header color, font size, and document title. Auto-paginates for large datasets. Live preview shows the table before you export.`,
+    category: 'pdf-tools',
+    targetKeyword: 'CSV to PDF converter online',
+    secondaryKeywords: ['csv to pdf', 'excel to pdf table', 'convert csv to pdf free', 'spreadsheet to pdf', 'csv pdf export'],
+    metaTitle: 'CSV to PDF Converter Free Online - Table PDF from CSV | ToolsArena',
+    metaDescription: 'Convert CSV or Excel data to a formatted PDF table online free. Customize style, header color, font size. Live preview included. No upload — 100% private.',
+    faqs: [
+      { question: 'Can I convert Excel files directly?', answer: 'Excel (.xlsx) is not supported directly, but you can export your Excel sheet as CSV first and then convert here.' },
+      { question: 'Does it handle large CSV files?', answer: 'Yes. The tool auto-paginates across multiple A4 landscape pages for datasets with many rows.' },
+      { question: 'What delimiters are supported?', answer: 'Comma (,), semicolon (;), tab, and pipe (|). Select the correct one in the dropdown to parse your file correctly.' },
+      { question: 'Can I add a title to the PDF?', answer: 'Yes. Enter a document title in the settings and it will appear prominently at the top of the first page.' },
+      { question: 'Is my data uploaded to a server?', answer: 'No. All conversion runs in your browser using pdf-lib. Your CSV data never leaves your device.' },
+    ],
+    howToSteps: [
+      'Paste CSV data into the text area or upload a .csv file.',
+      'Select the correct delimiter.',
+      'Customize title, table style, header color, and font size.',
+      'Preview the table in the live preview panel.',
+      'Click "Convert CSV to PDF" to download.',
+    ],
+    relatedToolSlugs: ['csv-to-json', 'pdf-page-numbers', 'pdf-merge', 'pdf-watermark'],
+    icon: 'Table',
+    isNew: true,
+    estimatedTime: '2-5 seconds',
+  },
+  {
     slug: 'password-generator',
     name: 'Password Generator',
     shortDescription: 'Generate strong, secure random passwords with one click.',
