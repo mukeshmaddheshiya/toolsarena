@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Calculators - Free Online EMI, SIP, GST, BMI & Age Calculator | ToolsArena',
   description: 'Free online calculators for EMI, SIP, GST, BMI, age, percentage, discount and more. Accurate Indian financial calculators with detailed breakdown.',
-  alternates: { canonical: 'https://toolsarena.in/category/calculators' },
+  alternates: { canonical: `${SITE_URL}/category/calculators` },
 };
 
 export default function CalculatorsPage() {

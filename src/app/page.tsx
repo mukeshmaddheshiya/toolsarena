@@ -5,22 +5,23 @@ import { ToolCard } from '@/components/tools/ToolCard';
 import { SearchBar } from '@/components/common/SearchBar';
 import type { ToolCategory } from '@/types/tools';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'ToolsArena - 100+ Free Online Tools | Image, PDF, Text & Calculator Tools',
+  title: 'ToolsArena - 80+ Free Online Tools | Image, PDF, Text & Calculator Tools',
   description: 'Free online tools for images, PDFs, text, calculators and developers. No signup, no downloads. Compress images, merge PDFs, count words, calculate EMI and more.',
-  alternates: { canonical: 'https://toolsarena.in' },
+  alternates: { canonical: SITE_URL },
   openGraph: {
-    title: 'ToolsArena - 100+ Free Online Tools',
+    title: 'ToolsArena - 80+ Free Online Tools',
     description: 'Free online tools for images, PDFs, text, calculators and developers. No signup required.',
-    url: 'https://toolsarena.in',
-    siteName: 'ToolsArena',
+    url: SITE_URL,
+    siteName: SITE_NAME,
     type: 'website',
   },
 };
 
 const STATS = [
-  { icon: Zap, label: '30+ Tools', desc: 'And growing' },
+  { icon: Zap, label: '80+ Tools', desc: 'And growing' },
   { icon: Shield, label: '100% Private', desc: 'Files stay on device' },
   { icon: Sparkles, label: 'No Signup', desc: 'Use instantly' },
   { icon: Clock, label: 'Always Free', desc: 'No hidden fees' },
@@ -39,7 +40,7 @@ export default function HomePage() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium mb-6">
             <Sparkles className="w-3.5 h-3.5 text-accent-400" />
-            <span>30+ Free Tools &mdash; No Signup Required</span>
+            <span>80+ Free Tools &mdash; No Signup Required</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-4">
             Free Online Tools
@@ -47,10 +48,10 @@ export default function HomePage() {
             <span className="text-accent-400">for Everyone</span>
           </h1>
           <p className="text-lg text-primary-200 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-            Compress images, merge PDFs, calculate EMI, format JSON, generate QR codes and 25+ more tools. All free, all instant, no account needed.
+            Compress images, merge PDFs, calculate EMI, format JSON, generate QR codes and 75+ more tools. All free, all instant, no account needed.
           </p>
           <div className="max-w-xl mx-auto">
-            <SearchBar placeholder="Search 30+ tools — try 'word counter' or 'QR code'..." />
+            <SearchBar placeholder="Search 80+ tools — try 'word counter' or 'QR code'..." />
           </div>
         </div>
       </section>

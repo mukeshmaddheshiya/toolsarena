@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Image Tools - Free Online Image Compressor, Resizer & Converter | ToolsArena',
   description: 'Free online image tools: compress, resize, convert PNG to JPG, WebP to PNG, and more. No signup, no watermark. Fast browser-based image processing.',
-  alternates: { canonical: 'https://toolsarena.in/category/image-tools' },
+  alternates: { canonical: `${SITE_URL}/category/image-tools` },
 };
 
 export default function ImageToolsPage() {

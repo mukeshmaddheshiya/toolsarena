@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Text Tools - Free Online Word Counter, Case Converter & More | ToolsArena',
   description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum, create URL slugs, remove duplicates and more. Instant, no signup.',
-  alternates: { canonical: 'https://toolsarena.in/category/text-tools' },
+  alternates: { canonical: `${SITE_URL}/category/text-tools` },
 };
 
 export default function TextToolsPage() {

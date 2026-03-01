@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Developer Tools - Free JSON Formatter, Base64, QR Code & More | ToolsArena',
   description: 'Free online developer tools: JSON formatter, Base64 encoder/decoder, URL encoder, QR code generator, color picker, regex tester and more.',
-  alternates: { canonical: 'https://toolsarena.in/category/developer-tools' },
+  alternates: { canonical: `${SITE_URL}/category/developer-tools` },
 };
 
 export default function DeveloperToolsPage() {

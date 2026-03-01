@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'PDF Tools - Free Online PDF Merger, Splitter & Compressor | ToolsArena',
   description: 'Free online PDF tools: merge, split, compress PDF files in your browser. No upload to server, completely private. Fast and easy PDF processing.',
-  alternates: { canonical: 'https://toolsarena.in/category/pdf-tools' },
+  alternates: { canonical: `${SITE_URL}/category/pdf-tools` },
 };
 
 export default function PDFToolsPage() {

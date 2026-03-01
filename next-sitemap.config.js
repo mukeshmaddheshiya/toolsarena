@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://toolsarena.in',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://toolsarena.vercel.app',
   generateRobotsTxt: false, // robots.ts handles this
   sitemapSize: 5000,
   changefreq: 'weekly',

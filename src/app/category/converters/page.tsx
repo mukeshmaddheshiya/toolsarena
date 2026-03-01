@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Converters - Free Unit, Temperature, Timestamp & Number Converter | ToolsArena',
   description: 'Free online converters: unit converter, temperature, Unix timestamp, number to words. Supports metric, imperial, Indian number system.',
-  alternates: { canonical: 'https://toolsarena.in/category/converters' },
+  alternates: { canonical: `${SITE_URL}/category/converters` },
 };
 
 export default function ConvertersPage() {

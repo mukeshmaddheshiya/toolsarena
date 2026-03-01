@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
+import { SITE_URL } from '@/lib/constants';
 
 interface BreadcrumbItem {
   name: string;
@@ -20,7 +21,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.name,
-      item: item.href ? `https://toolsarena.in${item.href}` : undefined,
+      item: item.href ? `${SITE_URL}${item.href}` : undefined,
     })),
   };
 

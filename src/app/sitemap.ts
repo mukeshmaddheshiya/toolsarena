@@ -2,8 +2,9 @@ import { MetadataRoute } from 'next';
 import { tools } from '@/lib/tools-registry';
 import type { ToolCategory } from '@/types/tools';
 
-const BASE_URL = 'https://toolsarena.in';
-const CATEGORIES: ToolCategory[] = ['image-tools', 'pdf-tools', 'text-tools', 'calculators', 'developer-tools', 'converters'];
+import { SITE_URL as BASE_URL } from '@/lib/constants';
+
+const CATEGORIES: ToolCategory[] = ['image-tools', 'pdf-tools', 'text-tools', 'calculators', 'developer-tools', 'converters', 'utility-tools', 'seo-tools'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const toolUrls = tools.map(tool => ({

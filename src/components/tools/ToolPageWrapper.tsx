@@ -27,6 +27,8 @@ export function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) {
     'calculators': 'Calculators',
     'developer-tools': 'Developer Tools',
     'converters': 'Converters',
+    'utility-tools': 'Utility Tools',
+    'seo-tools': 'SEO Tools',
   };
 
   const schema = {
