@@ -11,7 +11,7 @@
       "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
     },
     {
-      "name": "Ravindra Jadeja", "team": "Chennai Super Kings", "teamId": "csk", "role": "All-rounder", "nationality": "Indian",
+      "name": "Ravindra Jadeja", "team": "Rajasthan Royals", "teamId": "rr", "role": "All-rounder", "nationality": "Indian",
       "batting": { "matches": 248, "innings": 172, "runs": 2692, "average": 27.49, "strikeRate": 133.04, "fifties": 1, "hundreds": 0, "highScore": "62", "fours": 193, "sixes": 111 },
       "bowling": { "matches": 248, "wickets": 147, "economy": 7.64, "average": 29.38, "strikeRate": 23.04, "bestFigures": "5/16" }
     },
@@ -21,7 +21,7 @@
       "bowling": { "matches": 94, "wickets": 18, "economy": 9.86, "average": 43.72, "strikeRate": 26.61, "bestFigures": "2/16" }
     },
     {
-      "name": "Matheesha Pathirana", "team": "Chennai Super Kings", "teamId": "csk", "role": "Bowler", "nationality": "Overseas",
+      "name": "Matheesha Pathirana", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "Bowler", "nationality": "Overseas",
       "batting": { "matches": 32, "innings": 5, "runs": 12, "average": 3.0, "strikeRate": 92.3, "fifties": 0, "hundreds": 0, "highScore": "6", "fours": 1, "sixes": 0 },
       "bowling": { "matches": 32, "wickets": 42, "economy": 8.88, "average": 21.52, "strikeRate": 14.55, "bestFigures": "4/29" }
     },
@@ -86,7 +86,7 @@
       "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
     },
     {
-      "name": "Liam Livingstone", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "All-rounder", "nationality": "Overseas",
+      "name": "Liam Livingstone", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "All-rounder", "nationality": "Overseas",
       "batting": { "matches": 44, "innings": 43, "runs": 969, "average": 24.22, "strikeRate": 158.33, "fifties": 7, "hundreds": 1, "highScore": "117", "fours": 73, "sixes": 73 },
       "bowling": { "matches": 44, "wickets": 17, "economy": 8.89, "average": 33.12, "strikeRate": 22.35, "bestFigures": "2/16" }
     },
@@ -121,7 +121,7 @@
       "bowling": { "matches": 120, "wickets": 74, "economy": 9.29, "average": 25.09, "strikeRate": 16.23, "bestFigures": "5/15" }
     },
     {
-      "name": "Anrich Nortje", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "Bowler", "nationality": "Overseas",
+      "name": "Anrich Nortje", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Bowler", "nationality": "Overseas",
       "batting": { "matches": 71, "innings": 10, "runs": 52, "average": 7.43, "strikeRate": 130.0, "fifties": 0, "hundreds": 0, "highScore": "16", "fours": 5, "sixes": 4 },
       "bowling": { "matches": 71, "wickets": 72, "economy": 8.83, "average": 24.94, "strikeRate": 16.94, "bestFigures": "4/13" }
     },
@@ -146,7 +146,7 @@
       "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
     },
     {
-      "name": "Faf du Plessis", "team": "Delhi Capitals", "teamId": "dc", "role": "Batter", "nationality": "Overseas",
+      "name": "Faf du Plessis", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "Batter", "nationality": "Overseas",
       "batting": { "matches": 130, "innings": 129, "runs": 3775, "average": 32.54, "strikeRate": 135.60, "fifties": 28, "hundreds": 1, "highScore": "96", "fours": 347, "sixes": 121 },
       "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
     },
@@ -186,7 +186,7 @@
       "bowling": { "matches": 118, "wickets": 21, "economy": 7.43, "average": 29.10, "strikeRate": 23.52, "bestFigures": "3/13" }
     },
     {
-      "name": "Sanju Samson", "team": "Rajasthan Royals", "teamId": "rr", "role": "Wicket-keeper", "nationality": "Indian",
+      "name": "Sanju Samson", "team": "Chennai Super Kings", "teamId": "csk", "role": "Wicket-keeper", "nationality": "Indian",
       "batting": { "matches": 181, "innings": 175, "runs": 4924, "average": 32.37, "strikeRate": 136.11, "fifties": 36, "hundreds": 1, "highScore": "119", "fours": 434, "sixes": 199 },
       "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
     },
@@ -211,7 +211,7 @@
       "bowling": { "matches": 35, "wickets": 46, "economy": 7.13, "average": 17.50, "strikeRate": 14.74, "bestFigures": "4/21" }
     },
     {
-      "name": "Wanindu Hasaranga", "team": "Rajasthan Royals", "teamId": "rr", "role": "All-rounder", "nationality": "Overseas",
+      "name": "Wanindu Hasaranga", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "All-rounder", "nationality": "Overseas",
       "batting": { "matches": 52, "innings": 38, "runs": 404, "average": 14.43, "strikeRate": 125.78, "fifties": 1, "hundreds": 0, "highScore": "51", "fours": 30, "sixes": 22 },
       "bowling": { "matches": 52, "wickets": 60, "economy": 8.32, "average": 21.40, "strikeRate": 15.43, "bestFigures": "4/20" }
     },
@@ -241,7 +241,7 @@
       "bowling": { "matches": 17, "wickets": 12, "economy": 10.24, "average": 29.08, "strikeRate": 17.00, "bestFigures": "2/16" }
     },
     {
-      "name": "Mohammed Shami", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "Bowler", "nationality": "Indian",
+      "name": "Mohammed Shami", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Bowler", "nationality": "Indian",
       "batting": { "matches": 109, "innings": 20, "runs": 82, "average": 6.83, "strikeRate": 102.5, "fifties": 0, "hundreds": 0, "highScore": "17", "fours": 7, "sixes": 5 },
       "bowling": { "matches": 109, "wickets": 93, "economy": 8.35, "average": 28.23, "strikeRate": 20.28, "bestFigures": "4/14" }
     },
@@ -286,7 +286,7 @@
       "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
     },
     {
-      "name": "Ravi Bishnoi", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Bowler", "nationality": "Indian",
+      "name": "Ravi Bishnoi", "team": "Rajasthan Royals", "teamId": "rr", "role": "Bowler", "nationality": "Indian",
       "batting": { "matches": 68, "innings": 14, "runs": 58, "average": 6.44, "strikeRate": 109.43, "fifties": 0, "hundreds": 0, "highScore": "14", "fours": 4, "sixes": 3 },
       "bowling": { "matches": 68, "wickets": 74, "economy": 7.20, "average": 20.76, "strikeRate": 17.31, "bestFigures": "4/30" }
     },
@@ -296,7 +296,7 @@
       "bowling": { "matches": 10, "wickets": 16, "economy": 6.45, "average": 12.44, "strikeRate": 11.56, "bestFigures": "3/14" }
     },
     {
-      "name": "David Miller", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Batter", "nationality": "Overseas",
+      "name": "David Miller", "team": "Delhi Capitals", "teamId": "dc", "role": "Batter", "nationality": "Overseas",
       "batting": { "matches": 161, "innings": 134, "runs": 3508, "average": 37.30, "strikeRate": 145.70, "fifties": 20, "hundreds": 0, "highScore": "101*", "fours": 215, "sixes": 249 },
       "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
     }
