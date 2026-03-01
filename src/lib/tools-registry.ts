@@ -2214,13 +2214,27 @@ export function getNewTools(limit = 6): Tool[] {
 export function searchTools(query: string): Tool[] {
   const q = query.toLowerCase().trim();
   if (!q) return tools;
-  return tools.filter(t =>
+  // Word-boundary match: "ipl" matches "ipl squad" but not "multiple"
+  const wordMatch = (text: string) =>
+    new RegExp(`(^|\\s|-)${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i').test(text);
+
+  // Tier 1: name or slug starts with / contains query as a word, or targetKeyword word-matches
+  const tier1 = tools.filter(t =>
     t.name.toLowerCase().includes(q) ||
-    t.shortDescription.toLowerCase().includes(q) ||
-    t.targetKeyword.toLowerCase().includes(q) ||
-    t.secondaryKeywords.some(kw => kw.toLowerCase().includes(q)) ||
-    t.category.toLowerCase().includes(q)
+    t.slug.includes(q) ||
+    wordMatch(t.targetKeyword)
   );
+  const seen = new Set(tier1.map(t => t.slug));
+
+  // Tier 2: secondary keywords or category word-match
+  const tier2 = tools.filter(t =>
+    !seen.has(t.slug) && (
+      t.secondaryKeywords.some(kw => wordMatch(kw)) ||
+      wordMatch(t.category)
+    )
+  );
+
+  return [...tier1, ...tier2];
 }
 
 export function getRelatedTools(slug: string, limit = 6): Tool[] {
