@@ -29,6 +29,7 @@ export function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) {
     'converters': 'Converters',
     'utility-tools': 'Utility Tools',
     'seo-tools': 'SEO Tools',
+    'cricket-tools': 'Cricket Tools',
   };
 
   const schema = {

@@ -51,6 +51,12 @@ export const categories: Record<ToolCategory, CategoryInfo> = {
     icon: 'Search',
     color: 'from-violet-500 to-purple-500',
   },
+  'cricket-tools': {
+    name: 'Cricket Tools',
+    description: 'IPL 2026 squad explorer, match schedule, player comparison and points table. Free fan tools.',
+    icon: 'Trophy',
+    color: 'from-orange-500 to-yellow-500',
+  },
 };
 
 export const tools: Tool[] = [
@@ -2036,6 +2042,154 @@ A score above 18 is generally considered acceptable, 25+ is good, and 32+ is exc
     ],
     relatedToolSlugs: ['rashi-checker', 'age-calculator', 'timezone-checker', 'number-to-words'],
     icon: 'Heart',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+
+  // ─── CRICKET TOOLS ────────────────────────────────────────────────────────
+  {
+    slug: 'ipl-team-squad-explorer',
+    name: 'IPL Team Squad Explorer',
+    shortDescription: 'Explore all 10 IPL 2026 team squads. Filter by role, nationality and view auction prices.',
+    longDescription: `The IPL Team Squad Explorer is a comprehensive fan tool to browse complete squad details for all 10 Indian Premier League 2026 teams. Whether you're a die-hard CSK fan or tracking Mumbai Indians' overseas players, this tool gives you all the information in one place.
+
+Explore player details including their role (Batter, Bowler, All-rounder, Wicket-keeper), nationality (Indian/Overseas), auction price, and whether they were retained or bought at the mega auction. Filter across all 10 IPL franchises to compare squad strengths.
+
+Each team card shows key information like the captain's name, home ground, total purse used, and squad composition at a glance. The search feature lets you find any IPL player instantly across all franchises without scrolling through endless lists.
+
+This is a 100% free, unofficial fan-made tool. All squad data is based on publicly available information. For official squad details, visit the BCCI website. Data is updated based on official announcements.`,
+    category: 'cricket-tools',
+    targetKeyword: 'IPL 2026 squad',
+    secondaryKeywords: ['IPL team squad', 'IPL 2026 players list', 'CSK squad 2026', 'MI squad 2026', 'IPL squad explorer', 'IPL auction 2026', 'IPL retained players'],
+    metaTitle: 'IPL 2026 Team Squad Explorer - All 10 Teams & Players | ToolsArena',
+    metaDescription: 'Explore complete IPL 2026 squad for all 10 teams. Filter by role & nationality. View auction prices, retained players, captain details. Free unofficial fan tool.',
+    faqs: [
+      { question: 'How many players are in each IPL 2026 team?', answer: 'Each IPL 2026 team can have a maximum of 25 players in their squad, with up to 8 overseas players allowed. However, only 4 overseas players can play in any single match.' },
+      { question: 'What is the IPL 2026 auction purse for each team?', answer: 'Each IPL franchise receives a base purse of ₹120 crore for the auction. Teams can earn additional funds by releasing players. Retained players\' costs are deducted from this purse.' },
+      { question: 'How many players can be retained before IPL 2026?', answer: 'IPL teams were allowed to retain up to 6 players before the mega auction, including a combination of capped and uncapped Indian players and overseas players.' },
+      { question: 'Who are the uncapped players in IPL 2026?', answer: 'Uncapped players are those who have not played international cricket for India. They are often bought at lower prices and are a key part of the talent pipeline in IPL squads.' },
+      { question: 'Can I track overseas players for each IPL team?', answer: 'Yes! Use the "Overseas" filter in the Squad Explorer to see all foreign players in any IPL team. Each team can have a maximum of 8 overseas players in their full squad.' },
+      { question: 'Is this an official BCCI or IPL tool?', answer: 'No. This is an unofficial fan-made tool built for cricket enthusiasts. It is not affiliated with BCCI, IPL, or any franchise. All data is sourced from publicly available information.' },
+    ],
+    howToSteps: [
+      'Click on any team card to expand and view the full squad.',
+      'Use the Role filter to show only Batters, Bowlers, All-rounders, or Wicket-keepers.',
+      'Use the Nationality filter to toggle between Indian and Overseas players.',
+      'Use the search box to find any specific player across all 10 IPL teams instantly.',
+      'View team summary cards for captain, purse used, and squad composition.',
+    ],
+    relatedToolSlugs: ['ipl-match-schedule', 'ipl-player-comparison', 'ipl-points-table', 'age-calculator', 'percentage-calculator'],
+    icon: 'Trophy',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'ipl-match-schedule',
+    name: 'IPL 2026 Match Schedule',
+    shortDescription: 'Full IPL 2026 fixture list with live countdown to next match. Filter by team or venue.',
+    longDescription: `The IPL 2026 Match Schedule tool gives you the complete fixture list for the entire Indian Premier League season in one easy-to-browse interface. No more searching through multiple websites — get every match date, time, venue, and team pairing in a clean, mobile-friendly view.
+
+Track your favourite team's upcoming matches with the team filter. Choose from all 10 IPL franchises and instantly see only their home and away fixtures. The venue filter lets you plan ahead if you're attending matches at specific stadiums like Wankhede, Chinnaswamy, or Eden Gardens.
+
+A live countdown timer shows exactly how long until the next IPL match begins, keeping fans engaged throughout the season. Matches are grouped by month for easy navigation across the full season spanning March to June.
+
+This is an unofficial fan-made schedule tool. Match timings are in IST (Indian Standard Time). For official schedule updates, check the BCCI website. Rescheduled matches will be updated as announcements are made.`,
+    category: 'cricket-tools',
+    targetKeyword: 'IPL 2026 match schedule',
+    secondaryKeywords: ['IPL 2026 fixtures', 'IPL schedule 2026', 'IPL match time table', 'IPL 2026 dates', 'IPL next match', 'IPL 2026 venue', 'IPL schedule today'],
+    metaTitle: 'IPL 2026 Match Schedule - Full Fixture List & Countdown | ToolsArena',
+    metaDescription: 'View complete IPL 2026 match schedule with live countdown to next match. Filter by team or venue. All match dates, times & venues in IST. Free fan tool.',
+    faqs: [
+      { question: 'When does IPL 2026 start?', answer: 'IPL 2026 is scheduled to begin in late March 2026. The exact opening match date and venue will be confirmed by BCCI. Check back for the latest official announcement.' },
+      { question: 'How many matches are played in IPL 2026?', answer: 'IPL 2026 features 74 matches in total — 70 league stage matches (each team plays 14 games) plus 4 playoff matches including Qualifier 1, Eliminator, Qualifier 2, and the Final.' },
+      { question: 'What time are IPL matches played?', answer: 'IPL 2026 matches are typically played at two time slots: afternoon matches at 3:30 PM IST and evening matches at 7:30 PM IST. Double-header days feature both time slots.' },
+      { question: 'How many home games does each IPL team play?', answer: 'Each of the 10 IPL teams plays 7 home matches and 7 away matches in the league stage, totalling 14 matches per team before the playoffs.' },
+      { question: 'Can I add IPL matches to Google Calendar?', answer: 'Yes! Click the "Add to Calendar" button next to any match in the schedule. This creates a Google Calendar event with the match details, time, and venue automatically filled in.' },
+      { question: 'Is this an official IPL schedule?', answer: 'No. This is an unofficial fan-made schedule tool. While we strive for accuracy, always verify match times on the official BCCI or IPL website for the most up-to-date information.' },
+    ],
+    howToSteps: [
+      'The page loads with a live countdown timer to the very next IPL 2026 match.',
+      'Scroll down to see the full match schedule grouped by month.',
+      'Use the "Filter by Team" dropdown to see only your favourite team\'s matches.',
+      'Use the "Filter by Venue" dropdown to see matches at a specific stadium.',
+      'Click "Add to Calendar" on any match to save it to your Google Calendar.',
+    ],
+    relatedToolSlugs: ['ipl-team-squad-explorer', 'ipl-player-comparison', 'ipl-points-table', 'countdown-timer', 'age-calculator'],
+    icon: 'Calendar',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'ipl-player-comparison',
+    name: 'IPL Player Comparison Tool',
+    shortDescription: 'Compare any 2 IPL players side by side with career stats, averages and strike rates.',
+    longDescription: `The IPL Player Comparison Tool lets cricket fans compare the career IPL statistics of any two players side by side. Select two players from the dropdown menus and instantly see a detailed head-to-head breakdown across batting and bowling metrics.
+
+For batting comparisons, view total runs, matches played, batting average, strike rate, highest score, number of half-centuries (50s) and centuries (100s), and boundary counts. For bowling, compare wickets taken, economy rate, bowling average, and best bowling figures — all in one clean visual layout.
+
+Each stat category highlights the better performer in green, making it easy to spot strengths and weaknesses at a glance. The tool covers top IPL players including legends and current stars across all franchises, with career IPL statistics (not just one season).
+
+This is an unofficial fan-made comparison tool for entertainment and educational purposes. Statistics are based on historical IPL data and may not reflect mid-season updates. For live stats, visit the official IPL website.`,
+    category: 'cricket-tools',
+    targetKeyword: 'IPL player comparison',
+    secondaryKeywords: ['compare IPL players', 'IPL player stats', 'IPL batting stats', 'IPL bowling stats', 'Virat Kohli vs Rohit Sharma IPL', 'IPL player head to head', 'IPL career stats'],
+    metaTitle: 'IPL Player Comparison Tool - Compare Career Stats Side by Side | ToolsArena',
+    metaDescription: 'Compare any 2 IPL players side by side. View career batting & bowling stats, averages, strike rates and more. Free unofficial IPL fan tool by ToolsArena.',
+    faqs: [
+      { question: 'Which players can I compare in this tool?', answer: 'The tool includes the top 60+ IPL players with complete career statistics. This covers current stars like Virat Kohli, Rohit Sharma, MS Dhoni, Jasprit Bumrah, and many more.' },
+      { question: 'What stats are shown in the IPL player comparison?', answer: 'Batting stats include: Matches, Innings, Runs, Average, Strike Rate, Highest Score, 50s, 100s, 4s, and 6s. Bowling stats include: Wickets, Economy, Bowling Average, and Best Figures.' },
+      { question: 'Does this show current season stats or career IPL stats?', answer: 'The comparison tool shows career IPL statistics — the complete record across all IPL seasons a player has participated in, not just one season.' },
+      { question: 'How does the winner highlight work?', answer: 'For each stat category, the player with the better value is highlighted in green. For batting, higher is better (runs, average, strike rate). For bowling economy, lower is better.' },
+      { question: 'Can I compare a batter vs a bowler?', answer: 'Yes! You can compare any two players regardless of their primary role. If a player has both batting and bowling stats, both sections will be shown. Stats not applicable to a player will show as N/A.' },
+      { question: 'Are these official IPL statistics?', answer: 'No. This is an unofficial fan-made tool for entertainment. Stats are based on historical data and may have minor variations from official records. Visit the official IPL website for authoritative statistics.' },
+    ],
+    howToSteps: [
+      'Select "Player 1" from the first dropdown — search by typing the player\'s name.',
+      'Select "Player 2" from the second dropdown.',
+      'The comparison table appears instantly with all batting and bowling stats.',
+      'Green highlights show the better performer in each stat category.',
+      'Scroll down to see all stat categories including boundaries and bowling figures.',
+    ],
+    relatedToolSlugs: ['ipl-team-squad-explorer', 'ipl-match-schedule', 'ipl-points-table', 'percentage-calculator', 'age-calculator'],
+    icon: 'Users',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'ipl-points-table',
+    name: 'IPL 2026 Points Table',
+    shortDescription: 'Live IPL 2026 standings with NRR, qualification zones and sortable columns.',
+    longDescription: `The IPL 2026 Points Table tool gives you a clear, up-to-date view of the Indian Premier League standings throughout the season. Track which teams are in the playoff qualification zone (Top 4) and which teams are leading on Net Run Rate (NRR).
+
+The table displays all essential columns: team name, matches played, wins, losses, no-results, net run rate, and total points. The top 4 teams — who qualify for the playoffs — are highlighted in green, while the top 2 teams who earn a double chance are highlighted in blue.
+
+Sort the table by any column to get different perspectives on the competition. Teams can be ranked by points, NRR, or number of wins. The NRR (Net Run Rate) column is especially useful for understanding close playoff races where multiple teams are level on points.
+
+At the start of the season, all teams begin at 0 points. The table updates automatically when match results are reflected in the data. This is an unofficial fan-made tool — for real-time live scores, visit the official IPL website or Cricbuzz.`,
+    category: 'cricket-tools',
+    targetKeyword: 'IPL 2026 points table',
+    secondaryKeywords: ['IPL standings 2026', 'IPL points table today', 'IPL NRR calculator', 'IPL qualification table', 'IPL league table', 'IPL team rankings', 'IPL playoff qualification'],
+    metaTitle: 'IPL 2026 Points Table - Live Standings & NRR | ToolsArena',
+    metaDescription: 'View IPL 2026 points table with live standings, NRR, wins/losses. See which teams qualify for playoffs. Sortable by points, NRR and wins. Free fan tool.',
+    faqs: [
+      { question: 'How does the IPL points system work?', answer: 'In IPL, each win earns a team 2 points. A loss gives 0 points. A no-result or abandoned match gives both teams 1 point each. Teams are ranked by total points, with NRR as the tiebreaker.' },
+      { question: 'What is Net Run Rate (NRR) in IPL?', answer: 'NRR = (Total runs scored ÷ Total overs faced) − (Total runs conceded ÷ Total overs bowled). A positive NRR means a team scores faster than they concede. It is used as a tiebreaker when teams have equal points.' },
+      { question: 'How many teams qualify for the IPL 2026 playoffs?', answer: 'The top 4 teams from the league stage qualify for the playoffs. Teams finishing 1st and 2nd get a double chance (they play in Qualifier 1 and if they lose, get another chance in Qualifier 2). Teams finishing 3rd and 4th play the Eliminator.' },
+      { question: 'When does the IPL 2026 league stage end?', answer: 'The IPL 2026 league stage typically runs from late March to late May, with playoffs and the final held in June. The exact dates are confirmed by BCCI closer to the season.' },
+      { question: 'What happens if two teams are level on points?', answer: 'If two or more teams have equal points at the end of the league stage, Net Run Rate (NRR) is used as the tiebreaker. If NRR is also equal, head-to-head results between those teams are considered.' },
+      { question: 'Is this the official IPL points table?', answer: 'No. This is an unofficial fan-made tool. For the live official points table updated in real-time, visit the official IPL website or Cricbuzz. This tool is for reference and educational purposes.' },
+    ],
+    howToSteps: [
+      'View the current IPL 2026 standings at a glance on the points table.',
+      'Teams highlighted in blue (top 2) have a double chance in the playoffs.',
+      'Teams highlighted in green (3rd and 4th) also qualify for the playoffs.',
+      'Click any column header to sort the table by that statistic.',
+      'Check the NRR column to understand tiebreakers between teams with equal points.',
+    ],
+    relatedToolSlugs: ['ipl-team-squad-explorer', 'ipl-match-schedule', 'ipl-player-comparison', 'percentage-calculator', 'age-calculator'],
+    icon: 'BarChart2',
     isNew: true,
     estimatedTime: 'Instant',
   },

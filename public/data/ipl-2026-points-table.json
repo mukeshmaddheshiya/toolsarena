@@ -1,0 +1,18 @@
+{
+  "season": "IPL 2026",
+  "seasonStart": "2026-03-28",
+  "lastUpdated": "2026-03-01",
+  "status": "pre-season",
+  "standings": [
+    { "pos": 1, "teamId": "csk", "team": "Chennai Super Kings", "shortName": "CSK", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 2, "teamId": "mi",  "team": "Mumbai Indians", "shortName": "MI", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 3, "teamId": "rcb", "team": "Royal Challengers Bengaluru", "shortName": "RCB", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 4, "teamId": "kkr", "team": "Kolkata Knight Riders", "shortName": "KKR", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 5, "teamId": "dc",  "team": "Delhi Capitals", "shortName": "DC", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 6, "teamId": "pbks","team": "Punjab Kings", "shortName": "PBKS", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 7, "teamId": "rr",  "team": "Rajasthan Royals", "shortName": "RR", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 8, "teamId": "srh", "team": "Sunrisers Hyderabad", "shortName": "SRH", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 9, "teamId": "gt",  "team": "Gujarat Titans", "shortName": "GT", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] },
+    { "pos": 10,"teamId": "lsg", "team": "Lucknow Super Giants", "shortName": "LSG", "played": 0, "won": 0, "lost": 0, "nrr": 0.000, "points": 0, "form": [] }
+  ]
+}

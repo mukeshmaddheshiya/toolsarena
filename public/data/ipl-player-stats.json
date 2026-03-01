@@ -1,0 +1,304 @@
+{
+  "players": [
+    {
+      "name": "MS Dhoni", "team": "Chennai Super Kings", "teamId": "csk", "role": "Wicket-keeper", "nationality": "Indian",
+      "batting": { "matches": 264, "innings": 229, "runs": 5082, "average": 38.79, "strikeRate": 136.15, "fifties": 24, "hundreds": 0, "highScore": "84*", "fours": 349, "sixes": 233 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Ruturaj Gaikwad", "team": "Chennai Super Kings", "teamId": "csk", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 92, "innings": 91, "runs": 3074, "average": 39.41, "strikeRate": 143.67, "fifties": 27, "hundreds": 2, "highScore": "101", "fours": 303, "sixes": 91 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Ravindra Jadeja", "team": "Chennai Super Kings", "teamId": "csk", "role": "All-rounder", "nationality": "Indian",
+      "batting": { "matches": 248, "innings": 172, "runs": 2692, "average": 27.49, "strikeRate": 133.04, "fifties": 1, "hundreds": 0, "highScore": "62", "fours": 193, "sixes": 111 },
+      "bowling": { "matches": 248, "wickets": 147, "economy": 7.64, "average": 29.38, "strikeRate": 23.04, "bestFigures": "5/16" }
+    },
+    {
+      "name": "Shivam Dube", "team": "Chennai Super Kings", "teamId": "csk", "role": "All-rounder", "nationality": "Indian",
+      "batting": { "matches": 94, "innings": 79, "runs": 1848, "average": 30.79, "strikeRate": 153.22, "fifties": 11, "hundreds": 0, "highScore": "95", "fours": 137, "sixes": 117 },
+      "bowling": { "matches": 94, "wickets": 18, "economy": 9.86, "average": 43.72, "strikeRate": 26.61, "bestFigures": "2/16" }
+    },
+    {
+      "name": "Matheesha Pathirana", "team": "Chennai Super Kings", "teamId": "csk", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 32, "innings": 5, "runs": 12, "average": 3.0, "strikeRate": 92.3, "fifties": 0, "hundreds": 0, "highScore": "6", "fours": 1, "sixes": 0 },
+      "bowling": { "matches": 32, "wickets": 42, "economy": 8.88, "average": 21.52, "strikeRate": 14.55, "bestFigures": "4/29" }
+    },
+    {
+      "name": "Devon Conway", "team": "Chennai Super Kings", "teamId": "csk", "role": "Batter", "nationality": "Overseas",
+      "batting": { "matches": 52, "innings": 52, "runs": 1461, "average": 30.44, "strikeRate": 130.81, "fifties": 12, "hundreds": 0, "highScore": "83", "fours": 146, "sixes": 44 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Sam Curran", "team": "Chennai Super Kings", "teamId": "csk", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 75, "innings": 59, "runs": 748, "average": 17.39, "strikeRate": 140.60, "fifties": 2, "hundreds": 0, "highScore": "55*", "fours": 67, "sixes": 49 },
+      "bowling": { "matches": 75, "wickets": 68, "economy": 8.83, "average": 24.93, "strikeRate": 16.93, "bestFigures": "5/10" }
+    },
+    {
+      "name": "Rohit Sharma", "team": "Mumbai Indians", "teamId": "mi", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 257, "innings": 252, "runs": 6628, "average": 29.81, "strikeRate": 130.26, "fifties": 43, "hundreds": 2, "highScore": "109", "fours": 623, "sixes": 268 },
+      "bowling": { "matches": 257, "wickets": 17, "economy": 8.50, "average": 47.41, "strikeRate": 33.47, "bestFigures": "2/11" }
+    },
+    {
+      "name": "Jasprit Bumrah", "team": "Mumbai Indians", "teamId": "mi", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 145, "innings": 22, "runs": 56, "average": 5.6, "strikeRate": 78.87, "fifties": 0, "hundreds": 0, "highScore": "10", "fours": 5, "sixes": 2 },
+      "bowling": { "matches": 145, "wickets": 145, "economy": 6.93, "average": 22.32, "strikeRate": 19.34, "bestFigures": "5/10" }
+    },
+    {
+      "name": "Suryakumar Yadav", "team": "Mumbai Indians", "teamId": "mi", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 200, "innings": 196, "runs": 3756, "average": 32.13, "strikeRate": 149.01, "fifties": 27, "hundreds": 0, "highScore": "103", "fours": 318, "sixes": 218 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Tilak Varma", "team": "Mumbai Indians", "teamId": "mi", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 43, "innings": 43, "runs": 1272, "average": 40.06, "strikeRate": 154.19, "fifties": 10, "hundreds": 0, "highScore": "84*", "fours": 96, "sixes": 81 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Hardik Pandya", "team": "Mumbai Indians", "teamId": "mi", "role": "All-rounder", "nationality": "Indian",
+      "batting": { "matches": 155, "innings": 130, "runs": 2237, "average": 29.44, "strikeRate": 142.47, "fifties": 12, "hundreds": 0, "highScore": "91", "fours": 170, "sixes": 141 },
+      "bowling": { "matches": 155, "wickets": 79, "economy": 9.04, "average": 29.06, "strikeRate": 19.31, "bestFigures": "4/20" }
+    },
+    {
+      "name": "Trent Boult", "team": "Mumbai Indians", "teamId": "mi", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 92, "innings": 14, "runs": 48, "average": 4.8, "strikeRate": 94.12, "fifties": 0, "hundreds": 0, "highScore": "12", "fours": 4, "sixes": 3 },
+      "bowling": { "matches": 92, "wickets": 100, "economy": 8.38, "average": 24.63, "strikeRate": 17.63, "bestFigures": "4/18" }
+    },
+    {
+      "name": "Ishan Kishan", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "Wicket-keeper", "nationality": "Indian",
+      "batting": { "matches": 111, "innings": 109, "runs": 2998, "average": 29.39, "strikeRate": 136.76, "fifties": 18, "hundreds": 1, "highScore": "99", "fours": 292, "sixes": 143 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Virat Kohli", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 252, "innings": 247, "runs": 8004, "average": 37.22, "strikeRate": 130.64, "fifties": 55, "hundreds": 8, "highScore": "113", "fours": 707, "sixes": 273 },
+      "bowling": { "matches": 252, "wickets": 4, "economy": 8.67, "average": 82.25, "strikeRate": 56.75, "bestFigures": "1/13" }
+    },
+    {
+      "name": "Rajat Patidar", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 47, "innings": 46, "runs": 1282, "average": 29.81, "strikeRate": 145.96, "fifties": 8, "hundreds": 1, "highScore": "112*", "fours": 122, "sixes": 58 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Phil Salt", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "Wicket-keeper", "nationality": "Overseas",
+      "batting": { "matches": 31, "innings": 31, "runs": 869, "average": 28.04, "strikeRate": 152.98, "fifties": 7, "hundreds": 0, "highScore": "87", "fours": 101, "sixes": 43 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Liam Livingstone", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 44, "innings": 43, "runs": 969, "average": 24.22, "strikeRate": 158.33, "fifties": 7, "hundreds": 1, "highScore": "117", "fours": 73, "sixes": 73 },
+      "bowling": { "matches": 44, "wickets": 17, "economy": 8.89, "average": 33.12, "strikeRate": 22.35, "bestFigures": "2/16" }
+    },
+    {
+      "name": "Josh Hazlewood", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 26, "innings": 3, "runs": 4, "average": 2.0, "strikeRate": 80.0, "fifties": 0, "hundreds": 0, "highScore": "3", "fours": 0, "sixes": 0 },
+      "bowling": { "matches": 26, "wickets": 36, "economy": 6.90, "average": 15.81, "strikeRate": 13.75, "bestFigures": "4/14" }
+    },
+    {
+      "name": "Bhuvneshwar Kumar", "team": "Royal Challengers Bengaluru", "teamId": "rcb", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 176, "innings": 56, "runs": 230, "average": 8.46, "strikeRate": 102.67, "fifties": 0, "hundreds": 0, "highScore": "25", "fours": 18, "sixes": 10 },
+      "bowling": { "matches": 176, "wickets": 162, "economy": 7.39, "average": 26.31, "strikeRate": 21.34, "bestFigures": "5/19" }
+    },
+    {
+      "name": "Sunil Narine", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 175, "innings": 120, "runs": 2203, "average": 25.32, "strikeRate": 168.45, "fifties": 7, "hundreds": 0, "highScore": "85*", "fours": 219, "sixes": 147 },
+      "bowling": { "matches": 175, "wickets": 176, "economy": 6.62, "average": 23.69, "strikeRate": 21.43, "bestFigures": "5/19" }
+    },
+    {
+      "name": "Rinku Singh", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 56, "innings": 48, "runs": 1169, "average": 46.76, "strikeRate": 151.43, "fifties": 7, "hundreds": 0, "highScore": "67", "fours": 87, "sixes": 80 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Varun Chakaravarthy", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 98, "innings": 14, "runs": 62, "average": 7.75, "strikeRate": 91.18, "fifties": 0, "hundreds": 0, "highScore": "14", "fours": 4, "sixes": 3 },
+      "bowling": { "matches": 98, "wickets": 104, "economy": 7.66, "average": 23.94, "strikeRate": 18.73, "bestFigures": "5/20" }
+    },
+    {
+      "name": "Andre Russell", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 120, "innings": 97, "runs": 2214, "average": 28.69, "strikeRate": 180.26, "fifties": 11, "hundreds": 0, "highScore": "88*", "fours": 171, "sixes": 192 },
+      "bowling": { "matches": 120, "wickets": 74, "economy": 9.29, "average": 25.09, "strikeRate": 16.23, "bestFigures": "5/15" }
+    },
+    {
+      "name": "Anrich Nortje", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 71, "innings": 10, "runs": 52, "average": 7.43, "strikeRate": 130.0, "fifties": 0, "hundreds": 0, "highScore": "16", "fours": 5, "sixes": 4 },
+      "bowling": { "matches": 71, "wickets": 72, "economy": 8.83, "average": 24.94, "strikeRate": 16.94, "bestFigures": "4/13" }
+    },
+    {
+      "name": "Harshit Rana", "team": "Kolkata Knight Riders", "teamId": "kkr", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 27, "innings": 6, "runs": 38, "average": 9.5, "strikeRate": 120.63, "fifties": 0, "hundreds": 0, "highScore": "14", "fours": 4, "sixes": 2 },
+      "bowling": { "matches": 27, "wickets": 32, "economy": 9.12, "average": 24.53, "strikeRate": 16.13, "bestFigures": "3/22" }
+    },
+    {
+      "name": "Axar Patel", "team": "Delhi Capitals", "teamId": "dc", "role": "All-rounder", "nationality": "Indian",
+      "batting": { "matches": 162, "innings": 103, "runs": 1338, "average": 22.67, "strikeRate": 138.20, "fifties": 4, "hundreds": 0, "highScore": "64", "fours": 108, "sixes": 69 },
+      "bowling": { "matches": 162, "wickets": 95, "economy": 7.11, "average": 29.76, "strikeRate": 25.11, "bestFigures": "4/17" }
+    },
+    {
+      "name": "Kuldeep Yadav", "team": "Delhi Capitals", "teamId": "dc", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 112, "innings": 25, "runs": 112, "average": 8.00, "strikeRate": 110.89, "fifties": 0, "hundreds": 0, "highScore": "18", "fours": 9, "sixes": 5 },
+      "bowling": { "matches": 112, "wickets": 108, "economy": 7.68, "average": 23.36, "strikeRate": 18.24, "bestFigures": "4/14" }
+    },
+    {
+      "name": "KL Rahul", "team": "Delhi Capitals", "teamId": "dc", "role": "Wicket-keeper", "nationality": "Indian",
+      "batting": { "matches": 134, "innings": 134, "runs": 4683, "average": 47.30, "strikeRate": 136.07, "fifties": 43, "hundreds": 5, "highScore": "132*", "fours": 389, "sixes": 144 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Faf du Plessis", "team": "Delhi Capitals", "teamId": "dc", "role": "Batter", "nationality": "Overseas",
+      "batting": { "matches": 130, "innings": 129, "runs": 3775, "average": 32.54, "strikeRate": 135.60, "fifties": 28, "hundreds": 1, "highScore": "96", "fours": 347, "sixes": 121 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Jake Fraser-McGurk", "team": "Delhi Capitals", "teamId": "dc", "role": "Batter", "nationality": "Overseas",
+      "batting": { "matches": 14, "innings": 14, "runs": 391, "average": 32.58, "strikeRate": 196.98, "fifties": 3, "hundreds": 0, "highScore": "84", "fours": 41, "sixes": 36 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Mitchell Marsh", "team": "Delhi Capitals", "teamId": "dc", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 82, "innings": 73, "runs": 1784, "average": 27.44, "strikeRate": 148.91, "fifties": 12, "hundreds": 0, "highScore": "89", "fours": 163, "sixes": 110 },
+      "bowling": { "matches": 82, "wickets": 21, "economy": 9.30, "average": 34.86, "strikeRate": 22.52, "bestFigures": "2/16" }
+    },
+    {
+      "name": "Shreyas Iyer", "team": "Punjab Kings", "teamId": "pbks", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 131, "innings": 127, "runs": 3602, "average": 32.45, "strikeRate": 130.15, "fifties": 22, "hundreds": 0, "highScore": "96", "fours": 348, "sixes": 112 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Yuzvendra Chahal", "team": "Punjab Kings", "teamId": "pbks", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 168, "innings": 26, "runs": 75, "average": 5.77, "strikeRate": 97.4, "fifties": 0, "hundreds": 0, "highScore": "12", "fours": 5, "sixes": 3 },
+      "bowling": { "matches": 168, "wickets": 187, "economy": 7.65, "average": 22.93, "strikeRate": 17.97, "bestFigures": "5/40" }
+    },
+    {
+      "name": "Arshdeep Singh", "team": "Punjab Kings", "teamId": "pbks", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 99, "innings": 22, "runs": 87, "average": 6.23, "strikeRate": 108.75, "fifties": 0, "hundreds": 0, "highScore": "17", "fours": 7, "sixes": 4 },
+      "bowling": { "matches": 99, "wickets": 107, "economy": 8.73, "average": 26.29, "strikeRate": 18.08, "bestFigures": "5/32" }
+    },
+    {
+      "name": "Marcus Stoinis", "team": "Punjab Kings", "teamId": "pbks", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 115, "innings": 100, "runs": 2197, "average": 27.46, "strikeRate": 138.60, "fifties": 12, "hundreds": 0, "highScore": "65*", "fours": 181, "sixes": 115 },
+      "bowling": { "matches": 115, "wickets": 34, "economy": 9.66, "average": 34.74, "strikeRate": 21.59, "bestFigures": "4/15" }
+    },
+    {
+      "name": "Glenn Maxwell", "team": "Punjab Kings", "teamId": "pbks", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 118, "innings": 113, "runs": 2771, "average": 28.55, "strikeRate": 153.41, "fifties": 19, "hundreds": 0, "highScore": "95", "fours": 238, "sixes": 160 },
+      "bowling": { "matches": 118, "wickets": 21, "economy": 7.43, "average": 29.10, "strikeRate": 23.52, "bestFigures": "3/13" }
+    },
+    {
+      "name": "Sanju Samson", "team": "Rajasthan Royals", "teamId": "rr", "role": "Wicket-keeper", "nationality": "Indian",
+      "batting": { "matches": 181, "innings": 175, "runs": 4924, "average": 32.37, "strikeRate": 136.11, "fifties": 36, "hundreds": 1, "highScore": "119", "fours": 434, "sixes": 199 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Yashasvi Jaiswal", "team": "Rajasthan Royals", "teamId": "rr", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 62, "innings": 62, "runs": 2273, "average": 40.59, "strikeRate": 163.20, "fifties": 18, "hundreds": 2, "highScore": "124", "fours": 208, "sixes": 131 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Riyan Parag", "team": "Rajasthan Royals", "teamId": "rr", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 82, "innings": 74, "runs": 1893, "average": 29.58, "strikeRate": 138.64, "fifties": 13, "hundreds": 0, "highScore": "84", "fours": 161, "sixes": 107 },
+      "bowling": { "matches": 82, "wickets": 6, "economy": 8.12, "average": 45.67, "strikeRate": 33.67, "bestFigures": "2/28" }
+    },
+    {
+      "name": "Shimron Hetmyer", "team": "Rajasthan Royals", "teamId": "rr", "role": "Batter", "nationality": "Overseas",
+      "batting": { "matches": 66, "innings": 58, "runs": 1397, "average": 29.10, "strikeRate": 153.96, "fifties": 8, "hundreds": 0, "highScore": "79", "fours": 92, "sixes": 100 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Jofra Archer", "team": "Rajasthan Royals", "teamId": "rr", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 35, "innings": 5, "runs": 22, "average": 5.5, "strikeRate": 110.0, "fifties": 0, "hundreds": 0, "highScore": "12", "fours": 2, "sixes": 1 },
+      "bowling": { "matches": 35, "wickets": 46, "economy": 7.13, "average": 17.50, "strikeRate": 14.74, "bestFigures": "4/21" }
+    },
+    {
+      "name": "Wanindu Hasaranga", "team": "Rajasthan Royals", "teamId": "rr", "role": "All-rounder", "nationality": "Overseas",
+      "batting": { "matches": 52, "innings": 38, "runs": 404, "average": 14.43, "strikeRate": 125.78, "fifties": 1, "hundreds": 0, "highScore": "51", "fours": 30, "sixes": 22 },
+      "bowling": { "matches": 52, "wickets": 60, "economy": 8.32, "average": 21.40, "strikeRate": 15.43, "bestFigures": "4/20" }
+    },
+    {
+      "name": "Pat Cummins", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 93, "innings": 63, "runs": 562, "average": 14.36, "strikeRate": 134.28, "fifties": 0, "hundreds": 0, "highScore": "35", "fours": 44, "sixes": 38 },
+      "bowling": { "matches": 93, "wickets": 117, "economy": 8.65, "average": 25.03, "strikeRate": 17.38, "bestFigures": "4/30" }
+    },
+    {
+      "name": "Heinrich Klaasen", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "Wicket-keeper", "nationality": "Overseas",
+      "batting": { "matches": 77, "innings": 74, "runs": 2155, "average": 36.95, "strikeRate": 162.48, "fifties": 17, "hundreds": 0, "highScore": "104", "fours": 152, "sixes": 155 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Travis Head", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "Batter", "nationality": "Overseas",
+      "batting": { "matches": 33, "innings": 33, "runs": 1269, "average": 41.90, "strikeRate": 196.59, "fifties": 11, "hundreds": 1, "highScore": "102", "fours": 118, "sixes": 89 },
+      "bowling": { "matches": 33, "wickets": 4, "economy": 7.89, "average": 42.00, "strikeRate": 31.90, "bestFigures": "1/6" }
+    },
+    {
+      "name": "Abhishek Sharma", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "All-rounder", "nationality": "Indian",
+      "batting": { "matches": 65, "innings": 64, "runs": 1828, "average": 30.96, "strikeRate": 173.10, "fifties": 13, "hundreds": 1, "highScore": "135", "fours": 182, "sixes": 128 },
+      "bowling": { "matches": 65, "wickets": 15, "economy": 8.42, "average": 38.13, "strikeRate": 27.20, "bestFigures": "2/14" }
+    },
+    {
+      "name": "Nitish Kumar Reddy", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "All-rounder", "nationality": "Indian",
+      "batting": { "matches": 17, "innings": 17, "runs": 303, "average": 23.31, "strikeRate": 130.60, "fifties": 1, "hundreds": 0, "highScore": "76", "fours": 25, "sixes": 19 },
+      "bowling": { "matches": 17, "wickets": 12, "economy": 10.24, "average": 29.08, "strikeRate": 17.00, "bestFigures": "2/16" }
+    },
+    {
+      "name": "Mohammed Shami", "team": "Sunrisers Hyderabad", "teamId": "srh", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 109, "innings": 20, "runs": 82, "average": 6.83, "strikeRate": 102.5, "fifties": 0, "hundreds": 0, "highScore": "17", "fours": 7, "sixes": 5 },
+      "bowling": { "matches": 109, "wickets": 93, "economy": 8.35, "average": 28.23, "strikeRate": 20.28, "bestFigures": "4/14" }
+    },
+    {
+      "name": "Shubman Gill", "team": "Gujarat Titans", "teamId": "gt", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 98, "innings": 98, "runs": 3490, "average": 38.36, "strikeRate": 140.32, "fifties": 26, "hundreds": 3, "highScore": "129", "fours": 323, "sixes": 143 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Rashid Khan", "team": "Gujarat Titans", "teamId": "gt", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 98, "innings": 54, "runs": 388, "average": 14.37, "strikeRate": 121.62, "fifties": 0, "hundreds": 0, "highScore": "31", "fours": 27, "sixes": 20 },
+      "bowling": { "matches": 98, "wickets": 116, "economy": 6.74, "average": 18.72, "strikeRate": 16.66, "bestFigures": "4/24" }
+    },
+    {
+      "name": "Sai Sudharsan", "team": "Gujarat Titans", "teamId": "gt", "role": "Batter", "nationality": "Indian",
+      "batting": { "matches": 52, "innings": 51, "runs": 1724, "average": 37.91, "strikeRate": 143.77, "fifties": 14, "hundreds": 2, "highScore": "103", "fours": 174, "sixes": 82 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Jos Buttler", "team": "Gujarat Titans", "teamId": "gt", "role": "Wicket-keeper", "nationality": "Overseas",
+      "batting": { "matches": 102, "innings": 101, "runs": 3932, "average": 42.74, "strikeRate": 149.96, "fifties": 26, "hundreds": 4, "highScore": "124", "fours": 336, "sixes": 242 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Mohammed Siraj", "team": "Gujarat Titans", "teamId": "gt", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 103, "innings": 12, "runs": 44, "average": 5.5, "strikeRate": 104.76, "fifties": 0, "hundreds": 0, "highScore": "12", "fours": 4, "sixes": 2 },
+      "bowling": { "matches": 103, "wickets": 88, "economy": 8.52, "average": 31.66, "strikeRate": 22.29, "bestFigures": "4/21" }
+    },
+    {
+      "name": "Kagiso Rabada", "team": "Gujarat Titans", "teamId": "gt", "role": "Bowler", "nationality": "Overseas",
+      "batting": { "matches": 67, "innings": 14, "runs": 78, "average": 7.8, "strikeRate": 115.0, "fifties": 0, "hundreds": 0, "highScore": "19", "fours": 7, "sixes": 5 },
+      "bowling": { "matches": 67, "wickets": 91, "economy": 8.13, "average": 18.64, "strikeRate": 13.76, "bestFigures": "4/17" }
+    },
+    {
+      "name": "Rishabh Pant", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Wicket-keeper", "nationality": "Indian",
+      "batting": { "matches": 111, "innings": 106, "runs": 3284, "average": 35.69, "strikeRate": 148.72, "fifties": 18, "hundreds": 0, "highScore": "128*", "fours": 264, "sixes": 175 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Nicholas Pooran", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Wicket-keeper", "nationality": "Overseas",
+      "batting": { "matches": 88, "innings": 85, "runs": 2175, "average": 31.52, "strikeRate": 172.92, "fifties": 16, "hundreds": 0, "highScore": "83", "fours": 153, "sixes": 188 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    },
+    {
+      "name": "Ravi Bishnoi", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 68, "innings": 14, "runs": 58, "average": 6.44, "strikeRate": 109.43, "fifties": 0, "hundreds": 0, "highScore": "14", "fours": 4, "sixes": 3 },
+      "bowling": { "matches": 68, "wickets": 74, "economy": 7.20, "average": 20.76, "strikeRate": 17.31, "bestFigures": "4/30" }
+    },
+    {
+      "name": "Mayank Yadav", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Bowler", "nationality": "Indian",
+      "batting": { "matches": 10, "innings": 2, "runs": 3, "average": 1.5, "strikeRate": 75.0, "fifties": 0, "hundreds": 0, "highScore": "3", "fours": 0, "sixes": 0 },
+      "bowling": { "matches": 10, "wickets": 16, "economy": 6.45, "average": 12.44, "strikeRate": 11.56, "bestFigures": "3/14" }
+    },
+    {
+      "name": "David Miller", "team": "Lucknow Super Giants", "teamId": "lsg", "role": "Batter", "nationality": "Overseas",
+      "batting": { "matches": 161, "innings": 134, "runs": 3508, "average": 37.30, "strikeRate": 145.70, "fifties": 20, "hundreds": 0, "highScore": "101*", "fours": 215, "sixes": 249 },
+      "bowling": { "matches": 0, "wickets": 0, "economy": 0, "average": 0, "strikeRate": 0, "bestFigures": "-" }
+    }
+  ]
+}

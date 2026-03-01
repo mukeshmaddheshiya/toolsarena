@@ -4,7 +4,7 @@ import type { ToolCategory } from '@/types/tools';
 
 import { SITE_URL as BASE_URL } from '@/lib/constants';
 
-const CATEGORIES: ToolCategory[] = ['image-tools', 'pdf-tools', 'text-tools', 'calculators', 'developer-tools', 'converters', 'utility-tools', 'seo-tools'];
+const CATEGORIES: ToolCategory[] = ['image-tools', 'pdf-tools', 'text-tools', 'calculators', 'developer-tools', 'converters', 'utility-tools', 'seo-tools', 'cricket-tools'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const toolUrls = tools.map(tool => ({

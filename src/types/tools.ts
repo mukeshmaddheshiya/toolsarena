@@ -6,7 +6,8 @@ export type ToolCategory =
   | 'developer-tools'
   | 'converters'
   | 'utility-tools'
-  | 'seo-tools';
+  | 'seo-tools'
+  | 'cricket-tools';
 
 export interface ToolFAQ {
   question: string;
