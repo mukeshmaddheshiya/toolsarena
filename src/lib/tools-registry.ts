@@ -1259,6 +1259,132 @@ Perfect for scheduling international meetings, coordinating with remote teams, t
     estimatedTime: 'Instant',
   },
 
+  // ─── NEW TOOLS ────────────────────────────────────────────────────────────
+  {
+    slug: 'jpg-to-pdf',
+    name: 'JPG to PDF',
+    shortDescription: 'Convert JPG, PNG and WebP images to a single PDF file online.',
+    longDescription: `Convert one or multiple images (JPG, PNG, WebP, GIF, BMP) into a single PDF file instantly in your browser. No uploads, no server — everything happens locally for complete privacy.
+
+Upload images, drag them to reorder the pages, choose your page size (A4, Letter, or fit to image), orientation, and margin. Then click convert to download a clean PDF.`,
+    category: 'pdf-tools',
+    targetKeyword: 'JPG to PDF converter',
+    secondaryKeywords: ['jpg to pdf online', 'image to pdf', 'png to pdf', 'convert image to pdf free', 'photos to pdf'],
+    metaTitle: 'JPG to PDF Converter - Free Online Image to PDF | ToolsArena',
+    metaDescription: 'Convert JPG, PNG, WebP images to PDF online for free. Upload multiple images, reorder pages, choose A4 or Letter size. No upload required — 100% private.',
+    faqs: [
+      { question: 'Can I convert multiple images to one PDF?', answer: 'Yes! Upload as many images as you need. Each image becomes one page in the PDF. You can reorder pages before converting.' },
+      { question: 'What image formats are supported?', answer: 'JPG/JPEG, PNG, WebP, GIF, and BMP are all supported.' },
+      { question: 'Is my image data uploaded to a server?', answer: 'No. All conversion happens entirely in your browser. Your images never leave your device.' },
+      { question: 'Can I choose the PDF page size?', answer: 'Yes. Choose A4, Letter, or "Fit to Image" which sizes each page to match the image dimensions exactly.' },
+      { question: 'Is there a limit on number of images?', answer: 'No hard limit, but for performance, convert in batches of 20–30 high-resolution images.' },
+    ],
+    howToSteps: [
+      'Click "Browse" or drag images onto the upload area.',
+      'Use arrow buttons to reorder pages if needed.',
+      'Select page size, orientation, and margin.',
+      'Click "Convert to PDF & Download".',
+      'Open the PDF to verify all pages look correct.',
+    ],
+    relatedToolSlugs: ['pdf-merge', 'pdf-compress', 'pdf-split', 'image-compressor'],
+    icon: 'FilePlus',
+    isNew: true,
+    estimatedTime: '2-5 seconds',
+  },
+  {
+    slug: 'password-generator',
+    name: 'Password Generator',
+    shortDescription: 'Generate strong, secure random passwords with one click.',
+    longDescription: `Create strong, cryptographically secure random passwords instantly. Choose length (6–64 characters), select character types (uppercase, lowercase, numbers, symbols), and generate with one click.
+
+Uses the Web Crypto API (crypto.getRandomValues) for true cryptographic randomness. Passwords are never stored or sent anywhere. Includes strength indicator and quick presets.`,
+    category: 'developer-tools',
+    targetKeyword: 'password generator',
+    secondaryKeywords: ['random password generator', 'strong password generator', 'secure password maker', 'password creator online'],
+    metaTitle: 'Password Generator - Free Strong Password Creator | ToolsArena',
+    metaDescription: 'Generate strong, secure random passwords online. Choose length, character types & get instant strength rating. Uses crypto API — 100% secure, no storage.',
+    faqs: [
+      { question: 'Is this password generator truly random?', answer: 'Yes. We use the Web Crypto API (crypto.getRandomValues) — the same standard used by security software.' },
+      { question: 'Are my generated passwords stored?', answer: 'No. Passwords are generated in your browser and never sent to any server.' },
+      { question: 'What makes a strong password?', answer: 'At least 12 characters, mixing uppercase, lowercase, numbers, and symbols. Unique for each account.' },
+      { question: 'What are the presets?', answer: 'PIN (4-digit), Simple (8-char), Strong (16-char with symbols), Maximum Security (32-char all types).' },
+      { question: 'Should I use a password manager?', answer: 'Yes! Use this tool to generate unique passwords and store them in a password manager like Bitwarden or 1Password.' },
+    ],
+    howToSteps: [
+      'Adjust the length slider (8–16 is typical for most accounts).',
+      'Select character types: uppercase, lowercase, numbers, symbols.',
+      'Click "Regenerate" to create a new password.',
+      'Check the strength indicator — aim for "Strong" or higher.',
+      'Click "Copy Password" to copy to clipboard.',
+    ],
+    relatedToolSlugs: ['hash-generator', 'base64-encode-decode', 'qr-code-generator'],
+    icon: 'Lock',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'csv-to-json',
+    name: 'CSV to JSON',
+    shortDescription: 'Convert CSV to JSON and JSON to CSV — fast bidirectional converter.',
+    longDescription: `Convert CSV data to JSON format and vice versa instantly. Paste data, upload a file, or type in the editor — output is generated in real time.
+
+Supports multiple delimiters (comma, semicolon, tab, pipe), auto-detects numeric values, and handles quoted fields correctly. Download as .json or .csv file.`,
+    category: 'developer-tools',
+    targetKeyword: 'CSV to JSON converter',
+    secondaryKeywords: ['csv to json online', 'json to csv converter', 'convert csv to json free', 'data converter online'],
+    metaTitle: 'CSV to JSON Converter - Free Online Bidirectional Tool | ToolsArena',
+    metaDescription: 'Convert CSV to JSON and JSON to CSV online instantly. Auto number detection, multiple delimiters, file upload & download. Free, no signup required.',
+    faqs: [
+      { question: 'Does it handle quoted CSV fields?', answer: 'Yes. Fields containing commas or quotes enclosed in double quotes are parsed correctly per CSV spec.' },
+      { question: 'What delimiters are supported?', answer: 'Comma (,), semicolon (;), tab, and pipe (|).' },
+      { question: 'Does it convert string numbers to JSON numbers?', answer: 'Yes. Numeric string values like "42" are automatically converted to JSON numbers.' },
+      { question: 'Can I convert JSON back to CSV?', answer: 'Yes! Click the swap button (⇄) to switch to JSON-to-CSV mode.' },
+      { question: 'Is there a file size limit?', answer: 'No strict limit, but very large files (>10MB) may be slow. Split into smaller chunks if needed.' },
+    ],
+    howToSteps: [
+      'Paste CSV data or click "Upload file" to load a .csv file.',
+      'Select the correct delimiter for your CSV.',
+      'JSON output appears instantly in the right panel.',
+      'Click "Copy" or "Download" to save the result.',
+      'Use the swap button to convert JSON back to CSV.',
+    ],
+    relatedToolSlugs: ['json-formatter', 'base64-encode-decode', 'url-encode-decode', 'html-to-markdown'],
+    icon: 'Table',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'markdown-to-html',
+    name: 'Markdown to HTML',
+    shortDescription: 'Convert Markdown to HTML with live preview — split-screen editor.',
+    longDescription: `Convert Markdown text to clean HTML with a live split-screen preview. Supports full Markdown: headings, bold, italic, code blocks, tables, lists, blockquotes, links, and images.
+
+Download as a complete HTML file with CSS included. Perfect for bloggers, developers, and technical writers.`,
+    category: 'developer-tools',
+    targetKeyword: 'Markdown to HTML converter',
+    secondaryKeywords: ['markdown to html online', 'md to html', 'markdown preview online', 'convert markdown free', 'markdown renderer'],
+    metaTitle: 'Markdown to HTML Converter - Live Preview Online | ToolsArena',
+    metaDescription: 'Convert Markdown to HTML with live preview. Supports tables, code blocks, lists, links & more. Download as HTML file. Free online Markdown to HTML tool.',
+    faqs: [
+      { question: 'What Markdown features are supported?', answer: 'Headings H1–H6, bold, italic, strikethrough, inline code, fenced code blocks, links, images, lists, blockquotes, tables, and horizontal rules.' },
+      { question: 'Can I download the HTML?', answer: 'Yes. Click "Download .html" to get a complete standalone HTML file with embedded CSS styling.' },
+      { question: 'Does it support GFM tables?', answer: 'Yes, GitHub Flavored Markdown tables with header row are fully supported.' },
+      { question: 'Is conversion done on a server?', answer: 'No. Everything runs in your browser. Your content is never sent to any server.' },
+      { question: 'Can I convert README.md files?', answer: 'Yes! Paste your README.md content and see it rendered exactly as it would appear on GitHub.' },
+    ],
+    howToSteps: [
+      'Type or paste your Markdown into the editor.',
+      'See the live HTML preview update instantly.',
+      'Switch to "HTML" view to see raw HTML output.',
+      'Click "Copy HTML" to copy the code.',
+      'Click "Download .html" for a complete styled HTML file.',
+    ],
+    relatedToolSlugs: ['html-to-markdown', 'json-formatter', 'url-encode-decode', 'csv-to-json'],
+    icon: 'FileCode2',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+
   // ─── ASTROLOGY TOOLS ──────────────────────────────────────────────────────
   {
     slug: 'rashi-checker',
