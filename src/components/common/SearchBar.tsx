@@ -6,7 +6,7 @@ import { searchTools } from '@/lib/tools-registry';
 import type { Tool } from '@/types/tools';
 import * as LucideIcons from 'lucide-react';
 
-export function SearchBar({ placeholder = 'Search 30+ tools...' }: { placeholder?: string }) {
+export function SearchBar({ placeholder = 'Search 80+ tools...' }: { placeholder?: string }) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Tool[]>([]);
   const [open, setOpen] = useState(false);
