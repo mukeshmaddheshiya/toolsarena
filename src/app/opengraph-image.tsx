@@ -56,7 +56,7 @@ export default async function Image() {
         </div>
 
         <div style={{ marginTop: '40px', fontSize: '20px', color: '#64748b' }}>
-          toolsarena.vercel.app
+          toolsarena.in
         </div>
       </div>
     ),

@@ -1,12 +1,21 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Text Tools - Free Online Word Counter, Case Converter & More | ToolsArena',
   description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum, create URL slugs, remove duplicates and more. Instant, no signup.',
+  keywords: 'word counter, character counter, case converter, lorem ipsum generator, URL slug generator, text tools',
   alternates: { canonical: `${SITE_URL}/category/text-tools` },
+  openGraph: {
+    title: 'Text Tools - Free Online Word Counter, Case Converter & More',
+    description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum, create URL slugs and more. Instant, no signup.',
+    url: `${SITE_URL}/category/text-tools`,
+    siteName: SITE_NAME,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
+    type: 'website',
+  },
 };
 
 export default function TextToolsPage() {

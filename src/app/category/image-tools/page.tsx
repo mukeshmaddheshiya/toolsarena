@@ -1,12 +1,21 @@
 import type { Metadata } from 'next';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { getToolsByCategory, categories } from '@/lib/tools-registry';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Image Tools - Free Online Image Compressor, Resizer & Converter | ToolsArena',
   description: 'Free online image tools: compress, resize, convert PNG to JPG, WebP to PNG, and more. No signup, no watermark. Fast browser-based image processing.',
+  keywords: 'image compressor, image resizer, PNG to JPG, WebP converter, image converter, free image tools',
   alternates: { canonical: `${SITE_URL}/category/image-tools` },
+  openGraph: {
+    title: 'Image Tools - Free Online Image Compressor, Resizer & Converter',
+    description: 'Free online image tools: compress, resize, convert PNG to JPG, WebP to PNG, and more. No signup, no watermark.',
+    url: `${SITE_URL}/category/image-tools`,
+    siteName: SITE_NAME,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
+    type: 'website',
+  },
 };
 
 export default function ImageToolsPage() {
