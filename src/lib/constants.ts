@@ -1,5 +1,5 @@
 export const SITE_NAME = 'ToolsArena';
-export const SITE_URL = 'https://tool-app-xi.vercel.app';
+export const SITE_URL = 'https://toolsarena.vercel.app';
 export const SITE_DESCRIPTION = '100+ free online tools for images, PDFs, text, calculators and more. No signup required. Fast, free and privacy-first.';
 export const SITE_TWITTER = '@ToolsArena';
 export const DEFAULT_OG_IMAGE = '/og-images/default-og.png';
