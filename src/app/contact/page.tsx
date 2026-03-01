@@ -1,15 +1,31 @@
 'use client';
 import { useState } from 'react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, Loader2 } from 'lucide-react';
+
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xpwzgpbw';
 
 export default function ContactPage() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // In production: send to FormSpree, Netlify Forms, or your email service
-    setSent(true);
+    setStatus('sending');
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setStatus('sent');
+        setForm({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   }
 
   return (
@@ -17,13 +33,14 @@ export default function ContactPage() {
       <h1 className="text-3xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-2">Contact Us</h1>
       <p className="text-slate-500 dark:text-slate-400 mb-8">Have a suggestion, bug report, or partnership inquiry? We&apos;d love to hear from you.</p>
 
-      {sent ? (
+      {status === 'sent' ? (
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl p-6 text-center">
           <div className="w-12 h-12 bg-green-100 dark:bg-green-800 rounded-full flex items-center justify-center mx-auto mb-3">
             <Send className="w-6 h-6 text-green-600 dark:text-green-400" />
           </div>
           <h2 className="font-heading font-bold text-green-800 dark:text-green-300 mb-1">Message Sent!</h2>
-          <p className="text-sm text-green-600 dark:text-green-400">Thank you for reaching out. We&apos;ll get back to you within 24-48 hours.</p>
+          <p className="text-sm text-green-600 dark:text-green-400">Thank you for reaching out. We&apos;ll get back to you within 24–48 hours.</p>
+          <button onClick={() => setStatus('idle')} className="mt-4 text-xs text-primary-600 dark:text-primary-400 underline">Send another message</button>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
@@ -77,11 +94,20 @@ export default function ContactPage() {
               placeholder="Describe your request or suggestion in detail..."
             />
           </div>
+          {status === 'error' && (
+            <p className="text-sm text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg px-4 py-2.5">
+              Something went wrong. Please try again or email us directly.
+            </p>
+          )}
           <button
             type="submit"
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-primary-800 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors"
+            disabled={status === 'sending'}
+            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-primary-800 hover:bg-primary-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-colors"
           >
-            <Send className="w-4 h-4" /> Send Message
+            {status === 'sending'
+              ? <><Loader2 className="w-4 h-4 animate-spin" /> Sending…</>
+              : <><Send className="w-4 h-4" /> Send Message</>
+            }
           </button>
         </form>
       )}
