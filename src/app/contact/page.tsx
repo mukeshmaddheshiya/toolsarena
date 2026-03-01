@@ -31,6 +31,8 @@ export default function ContactPage() {
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Name</label>
               <input
+                id="contact-name"
+                name="name"
                 required
                 value={form.name}
                 onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
@@ -41,6 +43,8 @@ export default function ContactPage() {
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email</label>
               <input
+                id="contact-email"
+                name="email"
                 required
                 type="email"
                 value={form.email}
@@ -53,6 +57,8 @@ export default function ContactPage() {
           <div>
             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Subject</label>
             <input
+              id="contact-subject"
+              name="subject"
               required
               value={form.subject}
               onChange={e => setForm(f => ({ ...f, subject: e.target.value }))}
