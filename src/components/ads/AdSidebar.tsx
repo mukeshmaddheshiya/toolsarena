@@ -1,11 +1,10 @@
+// AdSense sidebar — replace with real ins tag after approval
 export function AdSidebar() {
   return (
     <div
-      className="ad-slot w-full h-[250px] rounded-xl"
+      className="ad-slot w-full"
       data-ad-slot="sidebar"
-      aria-label="Advertisement"
-    >
-      <span className="text-xs text-slate-400">Advertisement</span>
-    </div>
+      aria-hidden="true"
+    />
   );
 }
