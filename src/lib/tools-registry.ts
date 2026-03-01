@@ -274,6 +274,42 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     estimatedTime: 'Instant',
   },
   {
+    slug: 'average-calculator',
+    name: 'Average Calculator',
+    shortDescription: 'Calculate mean, median, mode, standard deviation and more from a list of numbers.',
+    longDescription: `A full-featured statistics calculator that goes far beyond just finding the average. Enter any list of numbers — separated by commas, spaces, or new lines — and instantly get:
+
+**Central Tendency**: Arithmetic mean, geometric mean, harmonic mean, and mode.
+**Spread**: Minimum, maximum, range, variance, and standard deviation (σ).
+**Quartiles**: Q1 (25th percentile), Q2 (median), Q3 (75th percentile), and IQR.
+**Distribution bar**: Visual bar chart showing relative distribution of each value.
+
+All results update in real-time as you type. Each value has a copy button for easy use. Works with integers, decimals, and large datasets.`,
+    category: 'calculators',
+    targetKeyword: 'average calculator',
+    secondaryKeywords: ['mean median mode calculator', 'statistics calculator', 'standard deviation calculator', 'arithmetic mean calculator', 'number average online'],
+    metaTitle: 'Average Calculator - Mean, Median, Mode, Std Dev | ToolsArena',
+    metaDescription: 'Free average calculator online. Find mean, median, mode, range, variance, standard deviation, and quartiles instantly. Enter numbers and get full stats.',
+    faqs: [
+      { question: 'What is the difference between mean, median, and mode?', answer: 'Mean is the arithmetic average (sum ÷ count). Median is the middle value when sorted. Mode is the most frequently occurring value. For symmetric distributions they are equal; for skewed data they differ.' },
+      { question: 'What is standard deviation?', answer: 'Standard deviation (σ) measures how spread out numbers are from the mean. A low σ means values are clustered close to the mean; a high σ means they are spread widely.' },
+      { question: 'What is geometric mean used for?', answer: 'Geometric mean is used for growth rates, investment returns, and ratios. It is only valid for positive numbers and less affected by extreme values than arithmetic mean.' },
+      { question: 'What are quartiles?', answer: 'Quartiles divide sorted data into four equal parts. Q1 = 25th percentile, Q2 = median (50th), Q3 = 75th percentile. IQR = Q3 − Q1 and measures the spread of the middle 50% of data.' },
+      { question: 'Can I enter decimal numbers?', answer: 'Yes. Enter numbers like 1.5, 3.14, 0.001 — they are all supported. Non-numeric values are automatically skipped with a warning.' },
+    ],
+    howToSteps: [
+      'Type or paste your numbers into the input box.',
+      'Separate values with commas, spaces, semicolons, or new lines.',
+      'All statistics update instantly as you type.',
+      'Click the copy icon next to any result to copy it.',
+      'Use the distribution bar to visually compare values.',
+    ],
+    relatedToolSlugs: ['percentage-calculator', 'discount-calculator', 'sip-calculator', 'bmi-calculator'],
+    icon: 'BarChart2',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'percentage-calculator',
     name: 'Percentage Calculator',
     shortDescription: 'Calculate percentages, percent changes, and what percent one number is of another.',
