@@ -4,7 +4,9 @@ export type ToolCategory =
   | 'text-tools'
   | 'calculators'
   | 'developer-tools'
-  | 'converters';
+  | 'converters'
+  | 'utility-tools'
+  | 'seo-tools';
 
 export interface ToolFAQ {
   question: string;
