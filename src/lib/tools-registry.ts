@@ -1188,6 +1188,76 @@ The Indian numbering system (used in India, Pakistan, Bangladesh, Nepal) uses la
     icon: 'Hash',
     estimatedTime: 'Instant',
   },
+
+  // ─── DEVELOPER TOOLS (extra) ──────────────────────────────────────────────
+  {
+    slug: 'internet-speed-test',
+    name: 'Internet Speed Test',
+    shortDescription: 'Test your internet download speed and ping directly in your browser.',
+    longDescription: `Our free Internet Speed Test measures your real-time download speed and ping (latency) directly in the browser — no plugins, no apps, no sign-up required. It works by downloading a test payload from Cloudflare's global edge network and precisely timing the transfer using the browser's high-resolution Performance API.
+
+Unlike other speed test tools that require Flash or native apps, this tool runs 100% in your browser. The test uses multiple progressive download rounds to produce a stable, averaged result that closely matches what you'd see from industry tools like Speedtest.net or fast.com.
+
+The ping test measures your network latency — how quickly your device can communicate with a remote server. Lower ping means faster response times, which is crucial for gaming, video calls, and real-time applications.`,
+    category: 'developer-tools',
+    targetKeyword: 'internet speed test',
+    secondaryKeywords: ['online speed test', 'check internet speed', 'download speed test', 'ping test', 'broadband speed test', 'wifi speed test', 'network speed checker'],
+    metaTitle: 'Internet Speed Test - Free Online Download Speed & Ping Checker',
+    metaDescription: 'Test your internet download speed and ping instantly in your browser. No app needed. Free online speed test — accurate & fast results in 15 seconds.',
+    faqs: [
+      { question: 'How does this speed test work?', answer: 'It downloads a test file from a CDN and measures the time taken using the browser\'s Performance API. Results are averaged over multiple rounds for accuracy.' },
+      { question: 'Why is my result different from other speed tests?', answer: 'Results vary based on server location, time of day, browser overhead, and network conditions. For best results, close other tabs, connect via Ethernet, and run the test a few times.' },
+      { question: 'What is ping / latency?', answer: 'Ping measures the round-trip time (ms) for a signal to travel from your device to a server and back. Lower is better: <20ms excellent, 20–50ms good, 50–100ms average, >100ms may affect real-time apps.' },
+      { question: 'What download speed do I need?', answer: 'Browsing: 1–5 Mbps. HD streaming: 5–25 Mbps. 4K streaming: 25+ Mbps. Video calls: 3–10 Mbps. Online gaming: 3–6 Mbps. Working from home: 10–50 Mbps recommended.' },
+      { question: 'Does this test use my data?', answer: 'Yes, a small amount of data is downloaded (up to ~25 MB) during the test. Use this tool on Wi-Fi if you are on a limited mobile data plan.' },
+    ],
+    howToSteps: [
+      'Click the "Start Test" button to begin.',
+      'The tool first measures your ping (latency) with quick requests.',
+      'Then it downloads progressively larger payloads to measure download speed.',
+      'Wait 10–15 seconds for the results to display.',
+      'Click "Test Again" to run another measurement for comparison.',
+    ],
+    relatedToolSlugs: ['timezone-checker', 'json-formatter', 'url-encode-decode', 'base64-encode-decode'],
+    icon: 'Wifi',
+    isNew: true,
+    estimatedTime: '15 seconds',
+  },
+
+  // ─── CONVERTERS (extra) ───────────────────────────────────────────────────
+  {
+    slug: 'timezone-checker',
+    name: 'Time Zone Checker',
+    shortDescription: 'See current time across multiple world cities. Perfect for remote teams.',
+    longDescription: `The Time Zone Checker — your Office Buddy for remote teams — lets you instantly see the current local time in cities around the world, all updating live every second. No more mentally calculating time differences or Googling "what time is it in Tokyo right now."
+
+Add any city from our curated list of 50+ major business hubs across all time zones. The tool clearly shows each city's current time, date, day of the week, and UTC offset. A visual indicator highlights whether it's currently working hours, early/late hours, or nighttime — so you'll always know the best time to reach a colleague.
+
+Perfect for scheduling international meetings, coordinating with remote teams, tracking market hours, or planning travel. All calculations happen locally in your browser using the Intl.DateTimeFormat API — no server calls, always accurate.`,
+    category: 'converters',
+    targetKeyword: 'time zone checker',
+    secondaryKeywords: ['world clock', 'time zone converter', 'international time zones', 'remote team time zones', 'office time zones', 'what time is it in', 'meeting time planner'],
+    metaTitle: 'Time Zone Checker - World Clock for Remote Teams | ToolsArena',
+    metaDescription: 'See live current time across 50+ world cities. Office buddy for remote teams — add cities, track time zones, find the best meeting time. Free & instant.',
+    faqs: [
+      { question: 'How many cities can I add?', answer: 'You can add as many cities as you like from our list of 50+ major cities covering all time zones. Remove any city with the × button.' },
+      { question: 'Does it account for daylight saving time (DST)?', answer: 'Yes. The tool uses the browser\'s Intl.DateTimeFormat API with IANA timezone names which automatically handles DST transitions for every region.' },
+      { question: 'How accurate is the time shown?', answer: 'The time is derived from your device\'s system clock. It updates every second and is accurate to within a second of the true local time.' },
+      { question: 'What do the colored indicators mean?', answer: 'Green = working hours (9am–6pm). Yellow = early/evening (6am–9am or 6pm–9pm). Dark = nighttime (9pm–6am). This helps you see who is available.' },
+      { question: 'Can I find the best meeting time?', answer: 'Yes! Add all your team members\' cities and look for a time when most cities show green (working hours) simultaneously.' },
+    ],
+    howToSteps: [
+      'Your local time zone is shown automatically at the top.',
+      'Click "Add City" and search for any city by name.',
+      'Select a city from the dropdown to add it to your world clock.',
+      'All clocks update live every second automatically.',
+      'Click the × button on any card to remove a city.',
+    ],
+    relatedToolSlugs: ['timestamp-converter', 'internet-speed-test', 'age-calculator', 'unit-converter'],
+    icon: 'Globe',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
