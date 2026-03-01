@@ -1258,6 +1258,74 @@ Perfect for scheduling international meetings, coordinating with remote teams, t
     isNew: true,
     estimatedTime: 'Instant',
   },
+
+  // ─── ASTROLOGY TOOLS ──────────────────────────────────────────────────────
+  {
+    slug: 'rashi-checker',
+    name: 'Rashi Checker',
+    shortDescription: 'Find your Rashi (zodiac sign) by name — English & Hindi supported.',
+    longDescription: `Discover your Vedic Rashi (Moon sign / zodiac sign) instantly by entering your name. Our Rashi Checker uses the traditional Hindu naming system based on Nakshatra (birth star) syllables, where the first syllable of your name reveals your Rashi.
+
+In Vedic astrology, each of the 27 Nakshatras is divided into 4 Padas (quarters), each associated with a unique syllable (Akshara). Parents traditionally choose a baby's name beginning with the syllable matching the child's birth Nakshatra, making your name a window into your astrological sign.
+
+This tool supports both English (Roman) and Hindi (Devanagari) name input. Once you enter your name, we identify the first syllable, match it to the corresponding Nakshatra, and display your Rashi along with its ruling planet, element, lucky numbers, key personality traits, and Nakshatra name — all in both English and Hindi.`,
+    category: 'converters',
+    targetKeyword: 'Rashi checker by name',
+    secondaryKeywords: ['rashi by name', 'find rashi from name', 'naam se rashi', 'rashi kaise jane', 'janm rashi', 'zodiac by name hindi', 'rashi calculator'],
+    metaTitle: 'Rashi Checker by Name - Find Your Rashi Free | ToolsArena',
+    metaDescription: 'Find your Rashi (Vedic zodiac sign) by name instantly. Supports English & Hindi names. Get Rashi, ruling planet, element, lucky number & traits.',
+    faqs: [
+      { question: 'What is a Rashi?', answer: 'Rashi is a Sanskrit term meaning "zodiac sign" in Vedic astrology. There are 12 Rashis corresponding to the 12 signs of the zodiac (Mesh/Aries through Meen/Pisces). Your Janma Rashi (birth Rashi) is determined by the position of the Moon at the time of your birth.' },
+      { question: 'How does the Rashi Checker work?', answer: 'In Hindu tradition, babies are named using the syllable (Akshara) associated with their birth Nakshatra (lunar mansion). This tool identifies the first syllable of your name and matches it to the corresponding Nakshatra and Rashi using the traditional 108-syllable system.' },
+      { question: 'Is Rashi the same as Sun sign?', answer: 'No. In Western astrology, your zodiac sign is based on the Sun\'s position (Sun sign). In Vedic astrology, Rashi typically refers to the Moon sign (Janma Rashi). This tool finds the Naam Rashi — the Rashi associated with your name\'s starting syllable.' },
+      { question: 'Why does my name not match my actual Rashi?', answer: 'Not all names follow the traditional Nakshatra-based naming convention. If you were named based on family preference, English conventions, or modern practice, your name\'s syllable may not match your birth Rashi. The actual Rashi from a birth chart (Kundali) is more accurate.' },
+      { question: 'Can I enter my name in Hindi?', answer: 'Yes! This tool fully supports Devanagari (Hindi) script. Type your name in Hindi and the tool will detect the language automatically and identify your Rashi from the first syllable.' },
+    ],
+    howToSteps: [
+      'Type your name in the input box (English or Hindi both work).',
+      'The tool identifies the first syllable of your name automatically.',
+      'Your Rashi, ruling planet, element, and Nakshatra are displayed instantly.',
+      'View personality traits and lucky details for your Rashi.',
+      'Switch between English and Hindi display using the language toggle.',
+    ],
+    relatedToolSlugs: ['gun-milan', 'age-calculator', 'timezone-checker', 'number-to-words'],
+    icon: 'Star',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'gun-milan',
+    name: 'Gun Milan',
+    shortDescription: 'Check marriage compatibility with Ashtakoota Gun Milan — 36 points score.',
+    longDescription: `Our Gun Milan calculator checks marriage compatibility between a boy and a girl using the traditional Vedic Ashtakoota matching system. Simply enter both names and get an instant compatibility report with scores for all 8 Kootas (compatibility factors) out of 36 total points.
+
+The Ashtakoota system evaluates 8 aspects of compatibility: Varna (temperament), Vashya (dominance), Tara (destiny), Yoni (nature), Graha Maitri (planetary friendship), Gana (character), Bhakoot (love & health), and Nadi (genetic compatibility). Each Koota has a maximum score and contributes to the total of 36 Gunas.
+
+A score above 18 is generally considered acceptable, 25+ is good, and 32+ is excellent. The tool also highlights key doshas (flaws) like Nadi Dosha, Bhakoot Dosha, and Gana Dosha and explains their significance. Results are shown in both English and Hindi for easy understanding.`,
+    category: 'converters',
+    targetKeyword: 'Gun Milan calculator',
+    secondaryKeywords: ['kundali matching', 'kundli milan', 'ashtakoota matching', 'marriage compatibility calculator', 'guna milan online', '36 gun milan', 'shaadi compatibility'],
+    metaTitle: 'Gun Milan Calculator - Kundali Matching Free Online | ToolsArena',
+    metaDescription: 'Check marriage compatibility with Gun Milan (Ashtakoota). Enter boy & girl names to get 36-point compatibility score, Nadi Dosha check & detailed analysis.',
+    faqs: [
+      { question: 'What is Gun Milan (Ashtakoota)?', answer: 'Gun Milan is the Vedic astrology system of checking marriage compatibility. "Ashtakoota" means 8 groups (Ashta = 8, Koota = group). Each Koota tests a different aspect of compatibility — from personality to health to genetics. The maximum score is 36 Gunas.' },
+      { question: 'What is a good Gun Milan score?', answer: 'Less than 18 points is considered inauspicious (not recommended). 18–24 is average (acceptable with remedies). 25–32 is good (recommended). 33–36 is excellent (very auspicious).' },
+      { question: 'What is Nadi Dosha and is it serious?', answer: 'Nadi Dosha occurs when both partners have the same Nadi (one of three types: Vata, Pitta, Kapha). It is considered the most serious dosha in Gun Milan, affecting health and offspring. Remedies include specific rituals and donations as advised by a qualified astrologer.' },
+      { question: 'What is Bhakoot Dosha?', answer: 'Bhakoot Dosha occurs when the Rashis of the boy and girl are in a 2/12, 5/9, or 6/8 relationship. It can indicate challenges in finances, progeny, or longevity. Bhakoot Dosha may be cancelled if the Rashi lords are friendly or the same planet.' },
+      { question: 'Is this tool based on names or birth charts?', answer: 'This tool uses name-based Nakshatra identification (the traditional Naam Nakshatra system) to determine the birth star from the first syllable of the name. For the most accurate Gun Milan, consult a Jyotishi (Vedic astrologer) using the actual birth charts (Kundalis) of both individuals.' },
+    ],
+    howToSteps: [
+      'Enter the boy\'s name in the first field (English or Hindi).',
+      'Enter the girl\'s name in the second field.',
+      'Click "Check Compatibility" to calculate the Gun Milan score.',
+      'View the detailed breakdown of all 8 Kootas with individual scores.',
+      'Check for any doshas (Nadi, Bhakoot, Gana) and their implications.',
+    ],
+    relatedToolSlugs: ['rashi-checker', 'age-calculator', 'timezone-checker', 'number-to-words'],
+    icon: 'Heart',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
