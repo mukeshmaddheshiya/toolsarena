@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Mail, Send, Loader2 } from 'lucide-react';
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xpwzgpbw';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mdalvwao';
 
 export default function ContactPage() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
