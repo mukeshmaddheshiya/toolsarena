@@ -1261,6 +1261,40 @@ Perfect for scheduling international meetings, coordinating with remote teams, t
 
   // ─── NEW TOOLS ────────────────────────────────────────────────────────────
   {
+    slug: 'html-css-js-editor',
+    name: 'HTML CSS JS Editor',
+    shortDescription: 'Live HTML, CSS & JavaScript editor with instant preview — like CodePen.',
+    longDescription: `A powerful, browser-based HTML/CSS/JavaScript live code editor with real-time preview. Write HTML, CSS, and JavaScript in the editor panels and see your output update instantly — no installation, no sign-up required.
+
+Features a professional dark-themed code editor with tab support (Tab key inserts spaces), auto-run with 600ms debounce, manual run mode, full-screen preview, and a built-in console panel that captures console.log, console.error, and console.warn output from your code.
+
+Choose from 4 layout modes: side-by-side (editor left, preview right), top/bottom split, editor-only, or preview-only. Load from 6 starter templates (Hello World, Counter, Todo App, Profile Card, Digital Clock, or Blank) to get started instantly. Download your project as a standalone HTML file.`,
+    category: 'developer-tools',
+    targetKeyword: 'online HTML CSS JS editor',
+    secondaryKeywords: ['html css js compiler', 'online code editor', 'live html editor', 'codepen alternative', 'html preview online', 'javascript playground', 'web code editor free'],
+    metaTitle: 'HTML CSS JS Editor - Live Code Playground Online | ToolsArena',
+    metaDescription: 'Free online HTML, CSS & JavaScript live editor with instant preview. Like CodePen — with dark theme, console, 6 templates, 4 layouts & file download. No signup.',
+    faqs: [
+      { question: 'How does the live preview work?', answer: 'Your HTML, CSS, and JavaScript are combined and injected into a sandboxed iframe. The preview updates automatically 600ms after you stop typing (auto-run mode). You can also disable auto-run and click "Run" manually.' },
+      { question: 'Can I use external libraries like Bootstrap or jQuery?', answer: 'Yes! Add a <link> tag for CSS libraries in your HTML panel and a <script src="..."> tag for JavaScript libraries like jQuery, Bootstrap, or Tailwind CSS CDN before your code.' },
+      { question: 'How do I see console.log output?', answer: 'Click the "Console" bar at the bottom of the preview panel to expand it. All console.log, console.warn, console.error, and unhandled errors from your code will appear there.' },
+      { question: 'Can I download my project?', answer: 'Yes. Click the download button (↓) in the toolbar to download a complete, standalone HTML file with your CSS and JavaScript embedded, ready to open in any browser.' },
+      { question: 'Is my code saved automatically?', answer: 'Code is not auto-saved between sessions in the current version. Download your project or copy the code before leaving the page.' },
+    ],
+    howToSteps: [
+      'Choose a starter template from the "Templates" dropdown or start with Blank.',
+      'Write your HTML in the HTML tab, CSS in the CSS tab, and JavaScript in the JS tab.',
+      'Watch the preview update live on the right (or below in vertical layout).',
+      'Click the Console bar to see console.log output and error messages.',
+      'Click the download button to save your project as a standalone HTML file.',
+    ],
+    relatedToolSlugs: ['html-to-markdown', 'markdown-to-html', 'json-formatter', 'base64-encode-decode', 'regex-tester'],
+    icon: 'Code2',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'jpg-to-pdf',
     name: 'JPG to PDF',
     shortDescription: 'Convert JPG, PNG and WebP images to a single PDF file online.',
