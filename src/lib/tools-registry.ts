@@ -2400,6 +2400,170 @@ Perfect for homework, exam preparation, engineering calculations, physics proble
     isPopular: true,
     estimatedTime: 'Instant',
   },
+
+  // ─── NEW BATCH: HIGH-DEMAND CLIENT-SIDE TOOLS ──────────────────────────────
+  {
+    slug: 'image-background-remover',
+    name: 'Image Background Remover',
+    shortDescription: 'Remove image backgrounds instantly using AI — 100% free, runs in your browser.',
+    longDescription: `Remove backgrounds from any image instantly with our free AI-powered Background Remover. Whether you need product photos with transparent backgrounds, profile pictures, or design assets — this tool handles it all automatically using machine learning that runs entirely in your browser.
+
+Powered by the @imgly/background-removal library, the AI model downloads once (~40MB) and then runs locally using WebAssembly — your images never leave your device. The tool works with JPEG, PNG, and WebP images up to 10MB. Results are downloaded as high-quality PNG files with transparent backgrounds.
+
+Perfect for e-commerce product photos, social media content, graphic design, presentations, and any project that needs clean cutouts without paying for expensive software.`,
+    category: 'image-tools',
+    targetKeyword: 'remove background from image',
+    secondaryKeywords: ['background remover', 'remove bg', 'transparent background', 'image background eraser', 'free background remover', 'remove image background online', 'bg remover'],
+    metaTitle: 'Image Background Remover - Remove BG Free Online | ToolsArena',
+    metaDescription: 'Remove backgrounds from images instantly using AI. 100% free, no signup, privacy-first — your images never leave your browser. Download transparent PNGs.',
+    faqs: [
+      { question: 'How does the background removal work?', answer: 'The tool uses a machine learning model (U2-Net) that runs entirely in your browser via WebAssembly. It identifies the foreground subject and removes the background automatically.' },
+      { question: 'Is my image uploaded to a server?', answer: 'No. The AI model runs locally in your browser. Your images never leave your device — everything is processed client-side for complete privacy.' },
+      { question: 'Why is the first use slow?', answer: 'The first time you use the tool, it downloads the AI model (~40MB). This model is cached by your browser, so subsequent uses are much faster (10-30 seconds depending on image size).' },
+      { question: 'What image formats are supported?', answer: 'The tool supports JPEG, PNG, and WebP images up to 10MB. Results are always saved as PNG with a transparent background.' },
+      { question: 'Can I use this for product photos?', answer: 'Absolutely! The AI excels at isolating products, people, and objects from their backgrounds. The transparent PNG output is perfect for e-commerce listings.' },
+    ],
+    howToSteps: [
+      'Drag and drop your image or click to upload (JPEG, PNG, WebP up to 10MB).',
+      'Wait for the AI to process your image (10-30 seconds).',
+      'Preview the original and background-removed versions side by side.',
+      'Click "Download PNG" to save the transparent image.',
+      'Click "New Image" to process another image.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'png-to-jpg', 'jpg-to-png', 'image-to-base64'],
+    icon: 'Eraser',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: '10-30 seconds',
+  },
+  {
+    slug: 'svg-to-png',
+    name: 'SVG to PNG Converter',
+    shortDescription: 'Convert SVG files to high-quality PNG images with custom scale and background.',
+    longDescription: `Convert your SVG (Scalable Vector Graphics) files to PNG images instantly with our free online converter. Choose custom scale factors (1x to 4x) for crisp, high-resolution output perfect for retina displays.
+
+Upload an SVG file or paste SVG code directly. The tool renders your SVG on an HTML canvas and exports it as a PNG image. Choose transparent or custom-colored backgrounds, and select the output scale for the resolution you need.
+
+All processing happens in your browser using the Canvas API — your files are never uploaded to any server. Perfect for designers who need rasterized versions of vector graphics for social media, presentations, or platforms that don't support SVG.`,
+    category: 'converters',
+    targetKeyword: 'svg to png converter',
+    secondaryKeywords: ['convert svg to png', 'svg to png online', 'svg converter', 'vector to png', 'svg to image', 'svg to raster'],
+    metaTitle: 'SVG to PNG Converter - Convert Vector to PNG Online | ToolsArena',
+    metaDescription: 'Convert SVG files to high-quality PNG images online for free. Custom scale (1x-4x), transparent backgrounds supported. No upload — runs in your browser.',
+    faqs: [
+      { question: 'What scale should I use?', answer: '1x gives you the original SVG dimensions. 2x is recommended for retina/HiDPI displays. 3x-4x are for very high resolution needs like print.' },
+      { question: 'Can I paste SVG code instead of uploading a file?', answer: 'Yes! You can either upload an .svg file or paste the SVG markup directly into the text area.' },
+      { question: 'Does it support transparent backgrounds?', answer: 'Yes. Transparent background is enabled by default. You can also choose a custom background color if needed.' },
+      { question: 'Is the output quality good?', answer: 'The PNG output is pixel-perfect at the chosen scale. A 100x100 SVG at 2x scale produces a crisp 200x200 PNG.' },
+    ],
+    howToSteps: [
+      'Upload an SVG file or paste SVG code into the text area.',
+      'Choose the output scale (1x, 2x, 3x, or 4x).',
+      'Toggle transparent background on/off and set a background color if needed.',
+      'Click "Convert to PNG" to generate the image.',
+      'Download the PNG file.',
+    ],
+    relatedToolSlugs: ['png-to-jpg', 'jpg-to-png', 'image-resizer', 'image-compressor', 'webp-to-png'],
+    icon: 'FileImage',
+    isNew: true,
+    estimatedTime: '1-2 seconds',
+  },
+  {
+    slug: 'hex-rgb-converter',
+    name: 'HEX to RGB Converter',
+    shortDescription: 'Convert colors between HEX, RGB, and HSL formats instantly.',
+    longDescription: `Convert colors between HEX, RGB, and HSL formats instantly with our free color converter. Type a HEX code like #3b82f6, adjust RGB sliders, or use the native color picker — all formats update in real-time.
+
+The tool displays your selected color as a large preview swatch, plus provides ready-to-copy CSS code snippets. Whether you're a web developer matching brand colors, a designer working across tools, or just curious about color values — this is the fastest way to convert.
+
+Includes visual RGB sliders for intuitive color exploration and one-click copy buttons for every format. Everything runs client-side with zero latency.`,
+    category: 'developer-tools',
+    targetKeyword: 'hex to rgb converter',
+    secondaryKeywords: ['rgb to hex', 'hex to rgb', 'color converter', 'hex color code', 'rgb to hex converter', 'hsl converter', 'css color converter'],
+    metaTitle: 'HEX to RGB Converter - Color Code Converter Online | ToolsArena',
+    metaDescription: 'Convert colors between HEX, RGB & HSL instantly. Visual color picker, RGB sliders, one-click copy. Free online color converter for developers & designers.',
+    faqs: [
+      { question: 'What is HEX color format?', answer: 'HEX is a 6-character code (e.g., #3b82f6) representing Red, Green, and Blue channels in hexadecimal (00-FF). It\'s the most common format in CSS and web design.' },
+      { question: 'What is the difference between RGB and HSL?', answer: 'RGB defines colors by Red, Green, Blue intensity (0-255). HSL defines colors by Hue (0-360°), Saturation (0-100%), and Lightness (0-100%) — HSL is more intuitive for humans.' },
+      { question: 'Can I input a 3-character HEX code?', answer: 'Yes. Shorthand codes like #f00 are automatically expanded to #ff0000.' },
+      { question: 'Can I use the native color picker?', answer: 'Yes! Click the color swatch next to the HEX input to open your browser\'s built-in color picker.' },
+    ],
+    howToSteps: [
+      'Enter a HEX color code (e.g., #3b82f6) or use the color picker.',
+      'Or adjust the R, G, B number inputs or sliders.',
+      'See the color preview and all formats update in real time.',
+      'Copy any format (HEX, RGB, HSL, CSS) with one click.',
+    ],
+    relatedToolSlugs: ['color-picker', 'css-gradient-generator', 'css-minifier', 'box-shadow-generator'],
+    icon: 'Palette',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'css-minifier',
+    name: 'CSS Minifier',
+    shortDescription: 'Minify CSS code to reduce file size — remove comments, whitespace, and optimize.',
+    longDescription: `Minify your CSS code instantly to reduce file size and improve website loading speed. Our CSS Minifier removes comments, collapses whitespace, strips unnecessary semicolons, and applies basic optimizations like converting 0px to 0.
+
+Paste your CSS code on the left, click "Minify CSS," and get the optimized output on the right. The tool shows you the exact bytes saved and compression percentage. Copy the minified CSS with one click and paste it into your production files.
+
+All processing is done client-side in your browser — your code is never sent to any server. Perfect for quick minification without setting up build tools.`,
+    category: 'developer-tools',
+    targetKeyword: 'css minifier',
+    secondaryKeywords: ['minify css', 'css compressor', 'css optimizer', 'compress css online', 'css minify online', 'reduce css file size'],
+    metaTitle: 'CSS Minifier - Minify & Compress CSS Online Free | ToolsArena',
+    metaDescription: 'Minify CSS code online for free. Removes comments, whitespace & optimizes syntax. See bytes saved instantly. No signup, privacy-first — code stays in your browser.',
+    faqs: [
+      { question: 'What does CSS minification do?', answer: 'It removes comments, extra whitespace, line breaks, and unnecessary characters from your CSS. This reduces file size by 20-60% typically, making your website load faster.' },
+      { question: 'Will minification break my CSS?', answer: 'No. Minification only removes formatting — it does not change the meaning of your CSS rules. The output is functionally identical to the input.' },
+      { question: 'How much file size can I save?', answer: 'Typically 20-60% depending on how your CSS is formatted. Well-commented CSS with lots of whitespace will see larger savings.' },
+      { question: 'Is my code sent to a server?', answer: 'No. All processing happens in your browser. Your CSS code never leaves your device.' },
+    ],
+    howToSteps: [
+      'Paste your CSS code in the input area on the left.',
+      'Click "Minify CSS" to process.',
+      'See the minified output on the right with file size stats.',
+      'Copy the minified CSS with the copy button.',
+      'Paste into your production CSS files.',
+    ],
+    relatedToolSlugs: ['json-formatter', 'html-to-markdown', 'css-gradient-generator', 'box-shadow-generator', 'hex-rgb-converter'],
+    icon: 'Minimize2',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'online-notepad',
+    name: 'Online Notepad',
+    shortDescription: 'A simple, distraction-free online notepad with auto-save and word count.',
+    longDescription: `A clean, distraction-free online notepad that auto-saves your notes to your browser. Start typing and your text is automatically saved — come back anytime and pick up where you left off.
+
+Features include adjustable font size, real-time word/character/line count, download as .txt file, and a clean writing interface. No login, no account, no cloud sync — your notes are stored locally in your browser's localStorage.
+
+Perfect for quick notes during meetings, brainstorming sessions, drafting messages, jotting down ideas, or anytime you need a quick, no-fuss text editor. Everything stays private on your device.`,
+    category: 'utility-tools',
+    targetKeyword: 'online notepad',
+    secondaryKeywords: ['notepad online', 'online text editor', 'quick notepad', 'online notes', 'free notepad', 'web notepad', 'simple text editor'],
+    metaTitle: 'Online Notepad - Free Text Editor with Auto-Save | ToolsArena',
+    metaDescription: 'Free online notepad with auto-save, word count & download. No signup — your notes stay private in your browser. Simple, fast, distraction-free writing.',
+    faqs: [
+      { question: 'Are my notes saved?', answer: 'Yes, automatically! Your text is saved to your browser\'s localStorage every time you pause typing. Come back to the same browser and your notes will be there.' },
+      { question: 'Can I access my notes from another device?', answer: 'No. Notes are stored locally in your browser. There is no cloud sync or account system — this keeps your data completely private.' },
+      { question: 'Is there a character limit?', answer: 'localStorage typically allows 5-10MB of data, which is roughly 5-10 million characters — more than enough for notes.' },
+      { question: 'Can I download my notes?', answer: 'Yes! Click "Download .txt" to save your notes as a plain text file to your computer.' },
+      { question: 'Will clearing my browser data delete my notes?', answer: 'Yes. If you clear your browser\'s localStorage or site data, your notes will be lost. Download important notes as .txt files to keep them safe.' },
+    ],
+    howToSteps: [
+      'Start typing in the editor — your notes auto-save every half second.',
+      'Adjust font size using the dropdown in the toolbar.',
+      'See real-time word, character, and line counts below the editor.',
+      'Click "Download .txt" to save your notes as a file.',
+      'Click "Clear" to erase all notes and start fresh.',
+    ],
+    relatedToolSlugs: ['word-counter', 'character-counter', 'case-converter', 'text-to-slug', 'lorem-ipsum-generator'],
+    icon: 'StickyNote',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
