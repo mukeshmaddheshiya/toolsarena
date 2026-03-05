@@ -1,5 +1,6 @@
 import { JsonLd } from '@/components/seo/JsonLd';
 import { SITE_URL } from '@/lib/constants';
+import { getTranslations } from 'next-intl/server';
 
 interface HowToUseProps {
   steps: string[];
@@ -7,16 +8,18 @@ interface HowToUseProps {
   toolSlug: string;
 }
 
-export function HowToUse({ steps, toolName, toolSlug }: HowToUseProps) {
+export async function HowToUse({ steps, toolName, toolSlug }: HowToUseProps) {
+  const t = await getTranslations('toolPage');
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: `How to use ${toolName}`,
+    name: t('howToUse', { toolName }),
     url: `${SITE_URL}/tools/${toolSlug}`,
     step: steps.map((step, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
-      name: `Step ${i + 1}`,
+      name: t('step', { number: i + 1 }),
       text: step,
     })),
   };
@@ -25,7 +28,7 @@ export function HowToUse({ steps, toolName, toolSlug }: HowToUseProps) {
     <section className="mt-10">
       <JsonLd data={schema} />
       <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-4">
-        How to Use {toolName}
+        {t('howToUse', { toolName })}
       </h2>
       <ol className="space-y-3">
         {steps.map((step, i) => (

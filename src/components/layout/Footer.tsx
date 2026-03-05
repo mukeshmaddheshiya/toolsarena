@@ -1,11 +1,15 @@
-import Link from 'next/link';
 import { Zap } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { tools, categories } from '@/lib/tools-registry';
+import { CATEGORY_NAME_KEYS } from '@/lib/constants';
 import type { ToolCategory } from '@/types/tools';
 
 const FOOTER_CATEGORIES: ToolCategory[] = ['image-tools', 'pdf-tools', 'text-tools', 'calculators', 'developer-tools', 'converters'];
 
 export function Footer() {
+  const t = useTranslations();
+
   return (
     <footer className="bg-slate-900 text-slate-300 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -19,14 +23,14 @@ export function Footer() {
               ToolsArena
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              Free online tools for everyone. No signup, no downloads, privacy-first.
+              {t('footer.tagline')}
             </p>
             <div className="border-t border-slate-800 pt-3 mt-3">
-              <p className="text-xs text-slate-400 font-medium mb-1">Built by</p>
+              <p className="text-xs text-slate-400 font-medium mb-1">{t('footer.builtBy')}</p>
               <a href="https://mukeshfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-white hover:text-primary-400 transition-colors">
                 Mukesh Maddheshiya
               </a>
-              <p className="text-xs text-slate-500 mb-2">Founder &amp; Developer</p>
+              <p className="text-xs text-slate-500 mb-2">{t('footer.founderRole')}</p>
               <div className="flex items-center gap-3">
                 <a href="https://www.linkedin.com/in/mukesh-maddheshiya-76a83b193" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors" aria-label="LinkedIn">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -42,17 +46,18 @@ export function Footer() {
                 </a>
               </div>
             </div>
-            <p className="text-xs text-slate-500 mt-3">Made with ❤️ in India</p>
+            <p className="text-xs text-slate-500 mt-3">{t('footer.madeInIndia')}</p>
           </div>
 
           {/* Category links */}
           {FOOTER_CATEGORIES.map(catKey => {
             const cat = categories[catKey];
-            const catTools = tools.filter(t => t.category === catKey).slice(0, 6);
+            const catTools = tools.filter(tool => tool.category === catKey).slice(0, 6);
+            const nameKey = CATEGORY_NAME_KEYS[catKey];
             return (
               <div key={catKey}>
                 <Link href={`/category/${catKey}`} className="font-semibold text-white text-sm mb-3 block hover:text-primary-400 transition-colors">
-                  {cat.name}
+                  {nameKey ? t(nameKey) : cat.name}
                 </Link>
                 <ul className="space-y-2">
                   {catTools.map(tool => (
@@ -70,13 +75,13 @@ export function Footer() {
 
         <div className="border-t border-slate-800 mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} ToolsArena. All rights reserved.
+            &copy; {new Date().getFullYear()} ToolsArena. {t('footer.allRightsReserved')}
           </p>
           <nav className="flex items-center gap-6 text-xs text-slate-400">
-            <Link href="/about" className="hover:text-slate-200 transition-colors">About</Link>
-            <Link href="/privacy-policy" className="hover:text-slate-200 transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-slate-200 transition-colors">Terms of Service</Link>
-            <Link href="/contact" className="hover:text-slate-200 transition-colors">Contact</Link>
+            <Link href="/about" className="hover:text-slate-200 transition-colors">{t('common.about')}</Link>
+            <Link href="/privacy-policy" className="hover:text-slate-200 transition-colors">{t('common.privacyPolicy')}</Link>
+            <Link href="/terms" className="hover:text-slate-200 transition-colors">{t('common.termsOfService')}</Link>
+            <Link href="/contact" className="hover:text-slate-200 transition-colors">{t('common.contact')}</Link>
           </nav>
         </div>
       </div>

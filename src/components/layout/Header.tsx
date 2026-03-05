@@ -1,14 +1,17 @@
 'use client';
-import Link from 'next/link';
 import { useState } from 'react';
 import { Zap, Menu } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { SearchBar } from '@/components/common/SearchBar';
 import { ThemeToggle } from '@/components/common/ThemeToggle';
+import { LanguageSwitcher } from '@/components/common/LanguageSwitcher';
 import { MobileNav } from './MobileNav';
 import { NAV_CATEGORIES } from '@/lib/constants';
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const t = useTranslations();
 
   return (
     <>
@@ -31,7 +34,7 @@ export function Header() {
                   href={cat.href}
                   className="px-3 py-1.5 text-sm text-slate-600 dark:text-slate-400 hover:text-primary-700 dark:hover:text-primary-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors font-medium"
                 >
-                  {cat.name}
+                  {t(cat.nameKey)}
                 </Link>
               ))}
             </nav>
@@ -42,7 +45,8 @@ export function Header() {
             </div>
 
             {/* Right side */}
-            <div className="flex items-center gap-2 ml-auto sm:ml-2">
+            <div className="flex items-center gap-1 ml-auto sm:ml-2">
+              <LanguageSwitcher />
               <ThemeToggle />
               <button
                 onClick={() => setMobileOpen(true)}
@@ -56,7 +60,7 @@ export function Header() {
 
           {/* Mobile search */}
           <div className="sm:hidden pb-3">
-            <SearchBar placeholder="Search tools..." />
+            <SearchBar placeholder={t('common.searchMobile')} />
           </div>
         </div>
       </header>

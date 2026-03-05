@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import * as LucideIcons from 'lucide-react';
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 import type { Tool } from '@/types/tools';
 import { cn } from '@/lib/utils';
 
@@ -20,6 +21,7 @@ const categoryColors: Record<string, string> = {
 export function ToolCard({ tool, className }: ToolCardProps) {
   const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[tool.icon] || LucideIcons.Wrench;
   const iconColor = categoryColors[tool.category] || 'bg-primary-50 text-primary-600';
+  const t = useTranslations('common');
 
   return (
     <Link
@@ -33,12 +35,12 @@ export function ToolCard({ tool, className }: ToolCardProps) {
       <div className="absolute top-3 right-3 flex gap-1">
         {tool.isPopular && (
           <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-accent-100 text-accent-700 dark:bg-accent-900/30 dark:text-accent-400">
-            Popular
+            {t('popular')}
           </span>
         )}
         {tool.isNew && (
           <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
-            New
+            {t('new')}
           </span>
         )}
       </div>
@@ -58,7 +60,7 @@ export function ToolCard({ tool, className }: ToolCardProps) {
 
       {tool.estimatedTime && (
         <div className="mt-2 text-[10px] text-slate-400 dark:text-slate-500">
-          ⚡ {tool.estimatedTime}
+          {tool.estimatedTime}
         </div>
       )}
     </Link>

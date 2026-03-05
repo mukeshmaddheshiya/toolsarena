@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { JsonLd } from '@/components/seo/JsonLd';
 
@@ -16,6 +17,7 @@ interface ToolFAQProps {
 
 export function ToolFAQ({ faqs, toolName }: ToolFAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const t = useTranslations('toolPage');
 
   const schema = {
     '@context': 'https://schema.org',
@@ -31,7 +33,7 @@ export function ToolFAQ({ faqs, toolName }: ToolFAQProps) {
     <section className="mt-10">
       <JsonLd data={schema} />
       <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-4">
-        Frequently Asked Questions about {toolName}
+        {t('faq', { toolName })}
       </h2>
       <div className="space-y-2">
         {faqs.map((faq, i) => (

@@ -1,34 +1,48 @@
 import type { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternateLanguages } from '@/lib/seo';
+import { SITE_URL } from '@/lib/constants';
 
-export const metadata: Metadata = {
-  title: 'About ToolsArena - Free Online Tools Platform',
-  description: 'Learn about ToolsArena, a free online tools platform built for students, developers, and professionals. No signup, no ads in tools, 100% private.',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('about');
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    alternates: {
+      canonical: `${SITE_URL}/about`,
+      languages: getAlternateLanguages('/about'),
+    },
+  };
+}
 
-export default function AboutPage() {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('about');
+
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-6">About ToolsArena</h1>
+      <h1 className="text-3xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-6">{t('title')}</h1>
       <div className="prose prose-slate dark:prose-invert max-w-none space-y-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-        <p>ToolsArena is a free, all-in-one micro-tools platform built for students, developers, freelancers, and anyone who needs quick, reliable online utilities. We believe powerful tools should be accessible to everyone &mdash; no signup, no premium paywalls, no annoying ads in the middle of your work.</p>
-        <p>Every tool on ToolsArena runs entirely in your browser. Your files, text, and data never leave your device and are never sent to our servers. This makes ToolsArena the most private online tools platform available.</p>
-        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">Our Mission</h2>
-        <p>To make every digital task simpler. Whether you need to compress an image for your blog, calculate your home loan EMI, format messy JSON, or generate a QR code for your business card &mdash; ToolsArena has you covered with fast, reliable, privacy-first tools.</p>
-        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">Why ToolsArena?</h2>
+        <p>{t('intro')}</p>
+        <p>{t('browserProcessing')}</p>
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">{t('missionTitle')}</h2>
+        <p>{t('missionText')}</p>
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">{t('whyTitle')}</h2>
         <ul className="list-disc list-inside space-y-2">
-          <li><strong>100% Free:</strong> All tools are completely free with no hidden costs.</li>
-          <li><strong>Privacy First:</strong> All processing happens in your browser &mdash; nothing is uploaded.</li>
-          <li><strong>No Signup:</strong> Use any tool instantly without creating an account.</li>
-          <li><strong>Fast &amp; Reliable:</strong> Built with Next.js for lightning-fast performance.</li>
-          <li><strong>Made in India:</strong> Built with love in India for the global audience.</li>
+          <li><strong>{t('whyFree')}</strong> {t('whyFreeDesc')}</li>
+          <li><strong>{t('whyPrivacy')}</strong> {t('whyPrivacyDesc')}</li>
+          <li><strong>{t('whyNoSignup')}</strong> {t('whyNoSignupDesc')}</li>
+          <li><strong>{t('whyFast')}</strong> {t('whyFastDesc')}</li>
+          <li><strong>{t('whyIndia')}</strong> {t('whyIndiaDesc')}</li>
         </ul>
-        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">Contact</h2>
-        <p>Have a suggestion for a new tool or found a bug? We&apos;d love to hear from you. <a href="/contact" className="text-primary-700 dark:text-primary-400 hover:underline">Contact us here</a>.</p>
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">{t('contactTitle')}</h2>
+        <p>{t('contactText')} <a href="/contact" className="text-primary-700 dark:text-primary-400 hover:underline">{t('contactLink')}</a>.</p>
       </div>
 
       {/* Meet the Founder */}
       <div className="mt-14 border-t border-slate-200 dark:border-slate-700 pt-10">
-        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-6">Meet the Founder</h2>
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-6">{t('founderTitle')}</h2>
         <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800/50 rounded-2xl p-6 sm:p-8">
           <div className="flex flex-col sm:flex-row items-start gap-5">
             {/* Avatar */}
@@ -37,10 +51,10 @@ export default function AboutPage() {
             </div>
             {/* Info */}
             <div className="flex-1">
-              <h3 className="text-lg font-heading font-bold text-slate-900 dark:text-slate-100">Mukesh Maddheshiya</h3>
-              <p className="text-sm font-medium text-primary-600 dark:text-primary-400 mb-3">Founder &amp; Developer</p>
+              <h3 className="text-lg font-heading font-bold text-slate-900 dark:text-slate-100">{t('founderName')}</h3>
+              <p className="text-sm font-medium text-primary-600 dark:text-primary-400 mb-3">{t('founderRole')}</p>
               <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                A passionate Software Engineer from Lucknow, India who built ToolsArena to make powerful digital tools accessible to everyone &mdash; for free. With a love for clean code and user-first design, Mukesh created this platform so students, developers, and professionals can get things done without signups, paywalls, or privacy concerns.
+                {t('founderBio')}
               </p>
               {/* Social Links */}
               <div className="flex items-center gap-3">

@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import * as LucideIcons from 'lucide-react';
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 import type { Tool } from '@/types/tools';
 
 interface RelatedToolsProps {
@@ -7,11 +8,12 @@ interface RelatedToolsProps {
   title?: string;
 }
 
-export function RelatedTools({ tools, title = 'Related Tools' }: RelatedToolsProps) {
+export function RelatedTools({ tools, title }: RelatedToolsProps) {
+  const t = useTranslations('toolPage');
   if (tools.length === 0) return null;
   return (
     <section className="mt-10">
-      <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-4">{title}</h2>
+      <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-4">{title || t('relatedTools')}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
         {tools.map(tool => {
           const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[tool.icon] || LucideIcons.Wrench;

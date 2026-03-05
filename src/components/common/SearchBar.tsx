@@ -1,18 +1,20 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 import { searchTools } from '@/lib/tools-registry';
 import type { Tool } from '@/types/tools';
 import * as LucideIcons from 'lucide-react';
 
-export function SearchBar({ placeholder = 'Search 80+ tools...' }: { placeholder?: string }) {
+export function SearchBar({ placeholder }: { placeholder?: string }) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Tool[]>([]);
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
+  const t = useTranslations('common');
 
   useEffect(() => {
     if (query.length > 1) {
@@ -52,7 +54,7 @@ export function SearchBar({ placeholder = 'Search 80+ tools...' }: { placeholder
           onKeyDown={handleKeyDown}
           onFocus={() => query.length > 1 && setOpen(true)}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
-          placeholder={placeholder}
+          placeholder={placeholder || t('searchPlaceholder')}
           className="w-full pl-10 pr-9 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 dark:text-slate-100 placeholder-slate-400"
           aria-label="Search tools"
           aria-autocomplete="list"
@@ -88,7 +90,7 @@ export function SearchBar({ placeholder = 'Search 80+ tools...' }: { placeholder
       )}
       {open && query.length > 1 && results.length === 0 && (
         <div className="absolute top-full mt-1 w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg z-50 px-4 py-3 text-sm text-slate-500">
-          No tools found for &quot;{query}&quot;
+          {t('noResults', { query })}
         </div>
       )}
     </div>

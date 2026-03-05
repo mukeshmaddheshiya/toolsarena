@@ -6,31 +6,24 @@ import { RelatedTools } from './RelatedTools';
 import { ToolFAQ } from './ToolFAQ';
 import { HowToUse } from './HowToUse';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, CATEGORY_NAME_KEYS } from '@/lib/constants';
 import { notFound } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
 
 interface ToolPageWrapperProps {
   slug: string;
   children: React.ReactNode;
 }
 
-export function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) {
+export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) {
   const tool = getToolBySlug(slug);
   if (!tool) notFound();
 
   const relatedTools = getRelatedTools(slug);
+  const t = await getTranslations();
 
-  const categoryNames: Record<string, string> = {
-    'image-tools': 'Image Tools',
-    'pdf-tools': 'PDF Tools',
-    'text-tools': 'Text Tools',
-    'calculators': 'Calculators',
-    'developer-tools': 'Developer Tools',
-    'converters': 'Converters',
-    'utility-tools': 'Utility Tools',
-    'seo-tools': 'SEO Tools',
-    'cricket-tools': 'Cricket Tools',
-  };
+  const categoryNameKey = CATEGORY_NAME_KEYS[tool.category];
+  const categoryName = categoryNameKey ? t(categoryNameKey) : tool.category;
 
   const schema = {
     '@context': 'https://schema.org',
@@ -52,7 +45,7 @@ export function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) {
         {/* Breadcrumbs */}
         <Breadcrumbs
           items={[
-            { name: categoryNames[tool.category] || tool.category, href: `/category/${tool.category}` },
+            { name: categoryName, href: `/category/${tool.category}` },
             { name: tool.name },
           ]}
         />
@@ -83,7 +76,7 @@ export function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) {
               <AdSidebar />
               {relatedTools.length > 0 && (
                 <div>
-                  <h3 className="text-sm font-heading font-semibold text-slate-900 dark:text-slate-100 mb-3">Related Tools</h3>
+                  <h3 className="text-sm font-heading font-semibold text-slate-900 dark:text-slate-100 mb-3">{t('toolPage.relatedTools')}</h3>
                   <div className="space-y-2">
                     {relatedTools.slice(0, 5).map(t => (
                       <a
@@ -107,7 +100,7 @@ export function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) {
         {/* SEO content */}
         <section className="mt-10 prose prose-slate dark:prose-invert max-w-none">
           <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-4 not-prose">
-            About {tool.name}
+            {t('toolPage.aboutTool', { toolName: tool.name })}
           </h2>
           <div className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed space-y-3 not-prose">
             {tool.longDescription.split('\n\n').map((para, i) => (
