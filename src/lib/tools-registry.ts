@@ -190,6 +190,7 @@ Whether you're a web designer building a mockup, a developer testing a layout, o
     ],
     relatedToolSlugs: ['word-counter', 'character-counter', 'case-converter', 'text-to-slug'],
     icon: 'FileText',
+    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -311,7 +312,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Paste the original text in the left panel.', 'Paste the modified text in the right panel.', 'View differences highlighted in the diff result below.', 'Switch between Split and Unified views.', 'Click "Copy Diff" to export the diff.'],
     relatedToolSlugs: ['word-counter', 'case-converter', 'remove-duplicate-lines', 'regex-tester'],
     icon: 'GitCompare',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -334,7 +334,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Type your text in the input box.', 'Browse the 14+ style options below.', 'Click any style card to copy it.', 'Paste into Instagram, Twitter, WhatsApp, etc.'],
     relatedToolSlugs: ['case-converter', 'word-counter', 'text-to-slug', 'character-counter'],
     icon: 'Sparkles',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -357,7 +356,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Select UUID version (v4, v1-like, short, or nil).', 'Set how many to generate (1-20).', 'Toggle uppercase if needed.', 'Click Generate.', 'Click individual copy buttons or "Copy all".'],
     relatedToolSlugs: ['password-generator', 'hash-generator', 'base64-encode-decode', 'json-formatter'],
     icon: 'Fingerprint',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -380,7 +378,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Paste your JWT token into the input.', 'View the decoded Header (purple) section.', 'View the decoded Payload (blue) with all claims.', 'Check the validity status bar for expiry info.', 'Copy sections individually using the copy buttons.'],
     relatedToolSlugs: ['base64-encode-decode', 'hash-generator', 'json-formatter', 'url-encode-decode'],
     icon: 'KeyRound',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -403,7 +400,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Enter the total bill amount.', 'Click a tip percentage preset or enter a custom %.', 'Set how many people are splitting the bill.', 'View tip amount, total, and per-person amounts.'],
     relatedToolSlugs: ['discount-calculator', 'percentage-calculator', 'emi-calculator', 'gst-calculator'],
     icon: 'Receipt',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -426,7 +422,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Select gradient type: linear, radial, or conic.', 'Adjust the angle (for linear/conic).', 'Click color swatches to change colors.', 'Drag sliders to adjust stop positions.', 'Click "Copy" to get the CSS.'],
     relatedToolSlugs: ['color-picker', 'box-shadow-generator', 'html-css-js-editor', 'image-compressor'],
     icon: 'Palette',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -449,7 +444,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Adjust shadow sliders (X, Y, Blur, Spread, Opacity).', 'Change shadow color with the color picker.', 'Add more layers with the "Add" button.', 'Try presets for quick starting points.', 'Copy the CSS output.'],
     relatedToolSlugs: ['css-gradient-generator', 'color-picker', 'html-css-js-editor', 'image-compressor'],
     icon: 'Square',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -472,7 +466,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Click a quick preset (1 min, 5 min, 25 min, etc.)', 'Or enter custom hours/minutes/seconds and click "Set Timer".', 'Press the Play button to start.', 'Use Pause, Reset, or +1 min buttons as needed.'],
     relatedToolSlugs: ['internet-speed-test', 'timezone-checker', 'timestamp-converter', 'age-calculator'],
     icon: 'Timer',
-    isNew: true,
+    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -495,7 +489,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Choose a tab: Number, Dice, Coin, or List.', 'Configure the settings (range, dice type, count, etc.)', 'Click Generate/Roll/Flip/Pick.', 'View the results.'],
     relatedToolSlugs: ['password-generator', 'uuid-generator', 'hash-generator', 'average-calculator'],
     icon: 'Shuffle',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -518,7 +511,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Type or paste your password.', 'Toggle the eye icon to show/hide characters.', 'View the strength bar and level (Very Weak to Very Strong).', 'Check which criteria are met in the requirements list.', 'Read the tips panel for advice on improving your password.'],
     relatedToolSlugs: ['password-generator', 'hash-generator', 'base64-encode-decode', 'jwt-decoder'],
     icon: 'ShieldCheck',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -541,7 +533,6 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     howToSteps: ['Fill in Basic SEO fields: title, description, keywords.', 'Switch to "Open Graph" tab and add image URL and page URL.', 'Switch to "Twitter Card" and set card type and image.', 'Copy individual tab code or "Copy all" for complete tags.', 'Paste into the <head> section of your HTML.'],
     relatedToolSlugs: ['qr-code-generator', 'html-css-js-editor', 'text-to-slug', 'json-formatter'],
     icon: 'Tag',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -577,7 +568,6 @@ All results update in real-time as you type. Each value has a copy button for ea
     ],
     relatedToolSlugs: ['percentage-calculator', 'discount-calculator', 'sip-calculator', 'bmi-calculator'],
     icon: 'BarChart2',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -841,6 +831,7 @@ The tool also handles file encoding — upload any file (image, PDF, document) a
     ],
     relatedToolSlugs: ['url-encode-decode', 'hash-generator', 'json-formatter', 'image-to-base64'],
     icon: 'Binary',
+    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -971,6 +962,7 @@ Important security note: MD5 and SHA-1 are considered cryptographically broken f
     ],
     relatedToolSlugs: ['base64-encode-decode', 'url-encode-decode', 'json-formatter', 'regex-tester'],
     icon: 'ShieldCheck',
+    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -1003,6 +995,7 @@ Common use cases: validating email addresses, phone numbers, dates, and URLs; ex
     ],
     relatedToolSlugs: ['json-formatter', 'hash-generator', 'base64-encode-decode', 'url-encode-decode'],
     icon: 'Search',
+    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -1135,6 +1128,7 @@ Batch processing is supported — upload up to 20 PNG files at once and convert 
     ],
     relatedToolSlugs: ['jpg-to-png', 'image-compressor', 'image-resizer', 'webp-to-png', 'image-to-base64'],
     icon: 'FileImage',
+    isPopular: true,
     estimatedTime: '1-3 seconds',
   },
   {
@@ -1167,6 +1161,7 @@ Note: since JPG compression is lossy, the original high-frequency detail lost du
     ],
     relatedToolSlugs: ['png-to-jpg', 'image-compressor', 'image-resizer', 'webp-to-png', 'image-to-base64'],
     icon: 'FileImage',
+    isPopular: true,
     estimatedTime: '1-3 seconds',
   },
   {
@@ -1298,6 +1293,7 @@ The tool uses pdf-lib to perform splitting client-side. Your PDF files never lea
     ],
     relatedToolSlugs: ['pdf-merge', 'pdf-compress', 'pdf-to-image'],
     icon: 'Scissors',
+    isPopular: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1330,6 +1326,7 @@ All compression happens client-side using pdf-lib — your sensitive documents n
     ],
     relatedToolSlugs: ['pdf-merge', 'pdf-split', 'pdf-to-image', 'image-compressor'],
     icon: 'FileArchive',
+    isPopular: true,
     estimatedTime: '3-10 seconds',
   },
   {
@@ -1362,6 +1359,7 @@ The tool uses PDF.js for rendering, giving you high-fidelity image output that a
     ],
     relatedToolSlugs: ['pdf-merge', 'pdf-split', 'pdf-compress', 'image-compressor'],
     icon: 'FileImage',
+    isPopular: true,
     estimatedTime: '3-15 seconds',
   },
 
@@ -1527,7 +1525,7 @@ The ping test measures your network latency — how quickly your device can comm
     ],
     relatedToolSlugs: ['timezone-checker', 'json-formatter', 'url-encode-decode', 'base64-encode-decode'],
     icon: 'Wifi',
-    isNew: true,
+    isPopular: true,
     estimatedTime: '15 seconds',
   },
 
@@ -1562,7 +1560,6 @@ Perfect for scheduling international meetings, coordinating with remote teams, t
     ],
     relatedToolSlugs: ['timestamp-converter', 'internet-speed-test', 'age-calculator', 'unit-converter'],
     icon: 'Globe',
-    isNew: true,
     estimatedTime: 'Instant',
   },
 
@@ -1597,8 +1594,6 @@ Choose from 4 layout modes: side-by-side (editor left, preview right), top/botto
     ],
     relatedToolSlugs: ['html-to-markdown', 'markdown-to-html', 'json-formatter', 'base64-encode-decode', 'regex-tester'],
     icon: 'Code2',
-    isNew: true,
-    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -1629,7 +1624,6 @@ Upload images, drag them to reorder the pages, choose your page size (A4, Letter
     ],
     relatedToolSlugs: ['pdf-merge', 'pdf-compress', 'pdf-split', 'image-compressor'],
     icon: 'FilePlus',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1660,7 +1654,6 @@ Choose to rotate all pages at once (90° clockwise, 90° counter-clockwise, or 1
     ],
     relatedToolSlugs: ['pdf-merge', 'pdf-split', 'pdf-compress', 'pdf-organize'],
     icon: 'RotateCw',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1691,7 +1684,6 @@ Choose watermark type (text or image), customize the text, font size, color, opa
     ],
     relatedToolSlugs: ['pdf-merge', 'pdf-rotate', 'pdf-page-numbers', 'pdf-compress'],
     icon: 'Stamp',
-    isNew: true,
     estimatedTime: '3-10 seconds',
   },
   {
@@ -1722,7 +1714,6 @@ Optionally set the starting number and skip the first page (useful for cover pag
     ],
     relatedToolSlugs: ['pdf-watermark', 'pdf-rotate', 'pdf-merge', 'pdf-organize'],
     icon: 'Hash',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1753,7 +1744,6 @@ Upload your PDF, see all pages listed in order, then use the arrow buttons to re
     ],
     relatedToolSlugs: ['pdf-merge', 'pdf-split', 'pdf-rotate', 'pdf-compress'],
     icon: 'LayoutList',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1784,7 +1774,6 @@ Set crop values for top, right, bottom, and left margins (in PDF points). Use qu
     ],
     relatedToolSlugs: ['pdf-rotate', 'pdf-merge', 'pdf-compress', 'pdf-organize'],
     icon: 'Crop',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1819,7 +1808,6 @@ Place the signature on the last page, first page, all pages, or any specific pag
     ],
     relatedToolSlugs: ['pdf-watermark', 'pdf-page-numbers', 'pdf-add-image', 'pdf-merge'],
     icon: 'PenLine',
-    isNew: true,
     estimatedTime: '1-2 minutes',
   },
   {
@@ -1850,7 +1838,6 @@ Upload your PDF and then add images one by one. For each image, configure which 
     ],
     relatedToolSlugs: ['pdf-watermark', 'pdf-sign', 'pdf-page-numbers', 'jpg-to-pdf'],
     icon: 'ImagePlus',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1881,7 +1868,6 @@ Paste your CSV data or upload a .csv file. Customize delimiter (comma, semicolon
     ],
     relatedToolSlugs: ['csv-to-json', 'pdf-page-numbers', 'pdf-merge', 'pdf-watermark'],
     icon: 'Table',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -1912,7 +1898,7 @@ Uses the Web Crypto API (crypto.getRandomValues) for true cryptographic randomne
     ],
     relatedToolSlugs: ['hash-generator', 'base64-encode-decode', 'qr-code-generator'],
     icon: 'Lock',
-    isNew: true,
+    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -1943,7 +1929,6 @@ Supports multiple delimiters (comma, semicolon, tab, pipe), auto-detects numeric
     ],
     relatedToolSlugs: ['json-formatter', 'base64-encode-decode', 'url-encode-decode', 'html-to-markdown'],
     icon: 'Table',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -1974,7 +1959,6 @@ Download as a complete HTML file with CSS included. Perfect for bloggers, develo
     ],
     relatedToolSlugs: ['html-to-markdown', 'json-formatter', 'url-encode-decode', 'csv-to-json'],
     icon: 'FileCode2',
-    isNew: true,
     estimatedTime: 'Instant',
   },
 
@@ -2009,7 +1993,6 @@ This tool supports both English (Roman) and Hindi (Devanagari) name input. Once 
     ],
     relatedToolSlugs: ['gun-milan', 'age-calculator', 'timezone-checker', 'number-to-words'],
     icon: 'Star',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2042,7 +2025,6 @@ A score above 18 is generally considered acceptable, 25+ is good, and 32+ is exc
     ],
     relatedToolSlugs: ['rashi-checker', 'age-calculator', 'timezone-checker', 'number-to-words'],
     icon: 'Heart',
-    isNew: true,
     estimatedTime: 'Instant',
   },
 
@@ -2080,8 +2062,6 @@ This is a 100% free, unofficial fan-made tool. All squad data is based on public
     ],
     relatedToolSlugs: ['ipl-match-schedule', 'ipl-player-comparison', 'ipl-points-table', 'age-calculator', 'percentage-calculator'],
     icon: 'Trophy',
-    isNew: true,
-    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2117,8 +2097,6 @@ This is an unofficial fan-made schedule tool. Match timings are in IST (Indian S
     ],
     relatedToolSlugs: ['ipl-team-squad-explorer', 'ipl-player-comparison', 'ipl-points-table', 'countdown-timer', 'age-calculator'],
     icon: 'Calendar',
-    isNew: true,
-    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2154,7 +2132,6 @@ This is an unofficial fan-made comparison tool for entertainment and educational
     ],
     relatedToolSlugs: ['ipl-team-squad-explorer', 'ipl-match-schedule', 'ipl-points-table', 'percentage-calculator', 'age-calculator'],
     icon: 'Users',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2190,7 +2167,6 @@ At the start of the season, all teams begin at 0 points. The table updates autom
     ],
     relatedToolSlugs: ['ipl-team-squad-explorer', 'ipl-match-schedule', 'ipl-player-comparison', 'percentage-calculator', 'age-calculator'],
     icon: 'BarChart2',
-    isNew: true,
     estimatedTime: 'Instant',
   },
 
@@ -2229,7 +2205,6 @@ Save your business details as a template so you never have to re-enter them. Eac
     ],
     relatedToolSlugs: ['csv-to-pdf', 'pdf-merge', 'number-to-words', 'qr-code-generator', 'gst-calculator'],
     icon: 'Receipt',
-    isNew: true,
     isPopular: true,
     estimatedTime: 'Instant',
   },
@@ -2269,8 +2244,6 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     ],
     relatedToolSlugs: ['emi-calculator', 'sip-calculator', 'percentage-calculator', 'gst-calculator', 'discount-calculator'],
     icon: 'TrendingUp',
-    isNew: true,
-    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2307,8 +2280,6 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     ],
     relatedToolSlugs: ['compound-interest-calculator', 'emi-calculator', 'sip-calculator', 'gst-calculator', 'percentage-calculator'],
     icon: 'Landmark',
-    isNew: true,
-    isPopular: true,
     estimatedTime: 'Instant',
   },
 
@@ -2353,7 +2324,6 @@ The generated PDF is clean, well-formatted, and ATS-compatible — meaning it pa
     ],
     relatedToolSlugs: ['invoice-generator', 'word-counter', 'text-to-slug', 'csv-to-pdf', 'pdf-merge'],
     icon: 'FileUser',
-    isNew: true,
     isPopular: true,
     estimatedTime: '5-10 minutes',
   },
@@ -2396,7 +2366,6 @@ Perfect for homework, exam preparation, engineering calculations, physics proble
     ],
     relatedToolSlugs: ['percentage-calculator', 'compound-interest-calculator', 'emi-calculator', 'unit-converter', 'number-to-words'],
     icon: 'Calculator',
-    isNew: true,
     isPopular: true,
     estimatedTime: 'Instant',
   },
@@ -2437,7 +2406,6 @@ We built this for students, small business owners, freelancers, and creators who
     ],
     relatedToolSlugs: ['image-compressor', 'image-resizer', 'png-to-jpg', 'jpg-to-png', 'image-to-base64', 'webp-to-png'],
     icon: 'Eraser',
-    isNew: true,
     isPopular: true,
     estimatedTime: '10-30 seconds',
   },
@@ -2470,7 +2438,6 @@ All processing happens in your browser using the Canvas API — your files are n
     ],
     relatedToolSlugs: ['png-to-jpg', 'jpg-to-png', 'image-resizer', 'image-compressor', 'webp-to-png'],
     icon: 'FileImage',
-    isNew: true,
     estimatedTime: '1-2 seconds',
   },
   {
@@ -2501,7 +2468,6 @@ Includes visual RGB sliders for intuitive color exploration and one-click copy b
     ],
     relatedToolSlugs: ['color-picker', 'css-gradient-generator', 'css-minifier', 'box-shadow-generator'],
     icon: 'Palette',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2533,7 +2499,6 @@ All processing is done client-side in your browser — your code is never sent t
     ],
     relatedToolSlugs: ['json-formatter', 'html-to-markdown', 'css-gradient-generator', 'box-shadow-generator', 'hex-rgb-converter'],
     icon: 'Minimize2',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2566,7 +2531,6 @@ Perfect for quick notes during meetings, brainstorming sessions, drafting messag
     ],
     relatedToolSlugs: ['word-counter', 'character-counter', 'case-converter', 'text-to-slug', 'lorem-ipsum-generator'],
     icon: 'StickyNote',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2592,7 +2556,6 @@ Perfect for quick minification of small scripts without configuring Webpack, Rol
     howToSteps: ['Paste your JavaScript code in the input area.', 'Click "Minify JavaScript" to process.', 'See the minified output with file size stats.', 'Copy the minified code with one click.'],
     relatedToolSlugs: ['css-minifier', 'json-formatter', 'html-beautifier', 'html-to-markdown', 'regex-tester'],
     icon: 'Minimize2',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2618,7 +2581,6 @@ Everything runs in your browser using the Canvas API — your images are never u
     howToSteps: ['Upload an image by dragging or clicking the upload area.', 'Select an aspect ratio preset or use free crop.', 'Drag the crop area to position it. Resize using the corner handle.', 'Click "Crop" to generate the cropped image.', 'Download the cropped PNG or click "Crop Again" to adjust.'],
     relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-watermark', 'image-background-remover', 'png-to-jpg'],
     icon: 'Crop',
-    isNew: true,
     isPopular: true,
     estimatedTime: '2-5 seconds',
   },
@@ -2645,7 +2607,6 @@ Built with high-resolution timing using Date.now() for accuracy. Perfect for wor
     howToSteps: ['Click the green play button to start the stopwatch.', 'Click the blue flag button to record a lap while running.', 'Click the yellow pause button to pause the timer.', 'Click the reset button to clear the timer and all laps.'],
     relatedToolSlugs: ['countdown-timer', 'pomodoro-timer', 'timezone-checker', 'age-calculator'],
     icon: 'Timer',
-    isNew: true,
     isPopular: true,
     estimatedTime: 'Instant',
   },
@@ -2672,8 +2633,6 @@ The timer runs entirely in your browser — no account, no data collection. Cust
     howToSteps: ['Click the play button to start your focus session (default: 25 min).', 'Work until the timer completes — an audio alert will notify you.', 'Take a short break (5 min) when prompted.', 'After 4 focus sessions, enjoy a long break (15 min).', 'Click the gear icon to customize durations.'],
     relatedToolSlugs: ['stopwatch', 'countdown-timer', 'online-notepad', 'word-counter'],
     icon: 'Brain',
-    isNew: true,
-    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2699,7 +2658,7 @@ Perfect for proofreading by listening to your writing, language learning, access
     howToSteps: ['Type or paste your text in the text area.', 'Select a voice from the dropdown (grouped by language).', 'Adjust speed and pitch using the sliders.', 'Click the play button to hear your text spoken aloud.', 'Use pause/stop buttons to control playback.'],
     relatedToolSlugs: ['speech-to-text', 'word-counter', 'character-counter', 'case-converter', 'online-notepad'],
     icon: 'Volume2',
-    isNew: true,
+    isPopular: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2724,7 +2683,6 @@ All processing is client-side — your code never leaves your browser. Perfect f
     howToSteps: ['Paste your HTML code in the input area.', 'Choose your indent size (2 or 4 spaces).', 'Click "Beautify HTML" to format.', 'Copy the formatted output with one click.'],
     relatedToolSlugs: ['css-minifier', 'js-minifier', 'html-to-markdown', 'html-css-js-editor', 'json-formatter'],
     icon: 'FileCode2',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2749,7 +2707,6 @@ All processing happens in your browser using the Canvas API — your images are 
     howToSteps: ['Upload your image by dropping or clicking.', 'Type your watermark text (e.g., your name or brand).', 'Choose position (center, corner, or tile), font size, opacity, color, and rotation.', 'Preview updates live on the canvas.', 'Click "Download" to save the watermarked image as PNG.'],
     relatedToolSlugs: ['image-cropper', 'image-compressor', 'image-resizer', 'image-background-remover', 'image-to-pdf'],
     icon: 'Droplets',
-    isNew: true,
     estimatedTime: '2-5 seconds',
   },
   {
@@ -2773,7 +2730,6 @@ Perfect for developers, sysadmins, students, and anyone who needs to quickly con
     howToSteps: ['Enter a numeric value in the input field.', 'Select the unit you are converting from.', 'See all conversions displayed instantly.', 'Click the copy button next to any result.'],
     relatedToolSlugs: ['unit-converter', 'number-to-words', 'percentage-calculator', 'temperature-converter'],
     icon: 'HardDrive',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2798,7 +2754,6 @@ All formatting happens in your browser — your queries never leave your device.
     howToSteps: ['Paste your SQL query in the input area.', 'Choose your preferred indent size.', 'Click "Format SQL" to beautify.', 'Copy the formatted SQL with one click.'],
     relatedToolSlugs: ['json-formatter', 'html-beautifier', 'css-minifier', 'js-minifier', 'csv-to-json'],
     icon: 'Database',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2823,7 +2778,6 @@ All conversion happens in your browser using the DOMParser API — your data nev
     howToSteps: ['Paste your XML in the input area.', 'Choose your JSON indent size.', 'Click "Convert to JSON" to process.', 'Copy the JSON output with one click.'],
     relatedToolSlugs: ['json-formatter', 'csv-to-json', 'html-to-markdown', 'base64-encode-decode'],
     icon: 'FileJson',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2848,7 +2802,6 @@ Includes a syntax reference guide and supports all standard cron features: wildc
     howToSteps: ['Select values for minute, hour, day, month, and weekday from the dropdowns.', 'Or click a preset like "Every 5 minutes" to populate the fields.', 'See the cron expression and English description update in real time.', 'Copy the cron expression with one click.', 'To decode: paste an existing cron expression and click "Decode."'],
     relatedToolSlugs: ['json-formatter', 'regex-tester', 'timestamp-converter', 'uuid-generator'],
     icon: 'Clock',
-    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2874,7 +2827,6 @@ Uses the Web Speech Recognition API built into Chrome and Edge — no downloads,
     howToSteps: ['Select your language from the dropdown.', 'Click the microphone button to start listening.', 'Speak clearly — your words appear in real time.', 'Click the mic again to stop recording.', 'Copy the text or download as .txt file.'],
     relatedToolSlugs: ['text-to-speech', 'word-counter', 'character-counter', 'online-notepad', 'case-converter'],
     icon: 'Mic',
-    isNew: true,
     estimatedTime: 'Real-time',
   },
   {
@@ -2901,7 +2853,7 @@ Uses the browser's native MediaRecorder API and getDisplayMedia API — your scr
     howToSteps: ['Optionally check "Include microphone audio" for narration.', 'Click "Start Recording" — your browser will ask what to share.', 'Choose to share your entire screen, a window, or a browser tab.', 'A timer shows your recording duration. Click "Stop Recording" when done.', 'Preview your recording and click "Download WebM" to save.'],
     relatedToolSlugs: ['online-whiteboard', 'countdown-timer', 'stopwatch', 'image-compressor'],
     icon: 'MonitorPlay',
-    isNew: true,
+    isPopular: true,
     estimatedTime: 'Unlimited',
   },
   {
@@ -2927,7 +2879,6 @@ Note: Unlike most ToolsArena tools, this one does make an external API call to i
     howToSteps: ['Open the tool — your public IP is displayed automatically.', 'See your location, ISP, timezone, and coordinates.', 'Click the copy button to copy your IP address.', 'To look up another IP, enter it in the search field and click "Lookup."'],
     relatedToolSlugs: ['internet-speed-test', 'timezone-checker', 'qr-code-generator', 'json-formatter'],
     icon: 'Globe',
-    isNew: true,
     estimatedTime: '1-2 seconds',
   },
   {
@@ -2953,7 +2904,7 @@ All processing happens in your browser using the pdf-lib library — your images
     howToSteps: ['Upload images by dropping or clicking (JPEG, PNG supported).', 'Reorder images using the Up/Down buttons if needed.', 'Choose page size (A4, Letter, or Fit to Image) and adjust margins.', 'Click "Generate PDF" to create and download the PDF.'],
     relatedToolSlugs: ['jpg-to-pdf', 'pdf-merge', 'image-compressor', 'image-resizer', 'pdf-compress'],
     icon: 'FileImage',
-    isNew: true,
+    isPopular: true,
     estimatedTime: '2-10 seconds',
   },
   {
@@ -2979,7 +2930,6 @@ No account, no saving to cloud — it is a quick-use whiteboard for when you nee
     howToSteps: ['Select the pen tool (selected by default).', 'Choose a color and adjust brush thickness.', 'Draw on the canvas with your mouse or touch.', 'Use the eraser to remove parts, or undo to revert strokes.', 'Click "Save PNG" to download your drawing.'],
     relatedToolSlugs: ['screen-recorder', 'online-notepad', 'image-compressor', 'color-picker'],
     icon: 'PenTool',
-    isNew: true,
     estimatedTime: 'Instant',
   },
 ];
