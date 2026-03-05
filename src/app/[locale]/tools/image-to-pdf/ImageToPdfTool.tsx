@@ -104,7 +104,7 @@ export function ImageToPdfTool() {
 
       {/* Settings */}
       {images.length > 0 && (
-        <div className="flex flex-wrap items-end gap-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl px-4 py-3">
+        <div className="flex flex-wrap items-end gap-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl px-4 py-3">
           <div>
             <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1">Page Size</label>
             <select value={pageSize} onChange={(e) => setPageSize(e.target.value as typeof pageSize)}
@@ -114,17 +114,17 @@ export function ImageToPdfTool() {
               <option value="fit">Fit to Image</option>
             </select>
           </div>
-          <div>
+          <div className="flex-1 min-w-0">
             <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1">Margin: {margin}px</label>
-            <input type="range" min={0} max={60} value={margin} onChange={(e) => setMargin(Number(e.target.value))} className="w-28 accent-primary-600" />
+            <input type="range" min={0} max={60} value={margin} onChange={(e) => setMargin(Number(e.target.value))} className="w-full max-w-[7rem] accent-primary-600" />
           </div>
-          <div className="ml-auto flex gap-2">
+          <div className="flex gap-2 w-full sm:w-auto sm:ml-auto">
             <button onClick={generatePdf} disabled={generating}
-              className="px-5 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 text-sm font-medium transition-colors">
+              className="flex-1 sm:flex-none px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 text-sm font-medium transition-colors">
               {generating ? 'Generating...' : <><Download className="w-4 h-4 inline mr-1" /> Generate PDF</>}
             </button>
             <button onClick={() => setImages([])} className="px-3 py-2 text-sm text-slate-500 hover:text-red-500">
-              <Trash2 className="w-4 h-4 inline mr-1" /> Clear All
+              <Trash2 className="w-4 h-4 inline mr-1" /> <span className="hidden sm:inline">Clear All</span><span className="sm:hidden">Clear</span>
             </button>
           </div>
         </div>

@@ -112,22 +112,47 @@ export function OnlineWhiteboardTool() {
   return (
     <div className="space-y-3">
       {/* Toolbar */}
-      <div className="flex flex-wrap items-center gap-2 bg-slate-50 dark:bg-slate-800/50 rounded-xl px-3 py-2">
-        {/* Tools */}
-        <div className="flex gap-1 border-r border-slate-200 dark:border-slate-700 pr-2 mr-1">
-          <button onClick={() => setTool('pen')}
-            className={`p-2 rounded-lg transition-colors ${tool === 'pen' ? 'bg-primary-600 text-white' : 'text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700'}`} title="Pen">
-            <Pen className="w-4 h-4" />
-          </button>
-          <button onClick={() => setTool('eraser')}
-            className={`p-2 rounded-lg transition-colors ${tool === 'eraser' ? 'bg-primary-600 text-white' : 'text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700'}`} title="Eraser">
-            <Eraser className="w-4 h-4" />
-          </button>
+      <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl px-3 py-2 space-y-2">
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Tools */}
+          <div className="flex gap-1">
+            <button onClick={() => setTool('pen')}
+              className={`p-2 rounded-lg transition-colors ${tool === 'pen' ? 'bg-primary-600 text-white' : 'text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700'}`} title="Pen">
+              <Pen className="w-4 h-4" />
+            </button>
+            <button onClick={() => setTool('eraser')}
+              className={`p-2 rounded-lg transition-colors ${tool === 'eraser' ? 'bg-primary-600 text-white' : 'text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700'}`} title="Eraser">
+              <Eraser className="w-4 h-4" />
+            </button>
+          </div>
+
+          {/* Line width */}
+          <div className="flex items-center gap-1.5">
+            <Minus className="w-3 h-3 text-slate-400" />
+            <input type="range" min={1} max={20} value={lineWidth} onChange={(e) => setLineWidth(Number(e.target.value))}
+              className="w-16 sm:w-20 accent-primary-600" />
+            <Circle className="w-4 h-4 text-slate-400" />
+          </div>
+
+          {/* Actions */}
+          <div className="flex gap-1 ml-auto">
+            <button onClick={undo} disabled={history.length === 0}
+              className="p-2 text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 disabled:opacity-30" title="Undo">
+              <Undo2 className="w-4 h-4" />
+            </button>
+            <button onClick={clearCanvas} className="p-2 text-slate-500 hover:text-red-500" title="Clear">
+              <Trash2 className="w-4 h-4" />
+            </button>
+            <button onClick={handleDownload}
+              className="inline-flex items-center gap-1 px-3 py-1.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 text-xs font-medium transition-colors">
+              <Download className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Save</span> PNG
+            </button>
+          </div>
         </div>
 
-        {/* Colors */}
+        {/* Colors — separate row so they wrap cleanly on mobile */}
         {tool === 'pen' && (
-          <div className="flex gap-1 border-r border-slate-200 dark:border-slate-700 pr-2 mr-1">
+          <div className="flex flex-wrap items-center gap-1.5">
             {COLORS.map(c => (
               <button key={c} onClick={() => setColor(c)}
                 className={`w-6 h-6 rounded-full border-2 transition-transform ${color === c ? 'border-primary-500 scale-110' : 'border-transparent hover:scale-110'}`}
@@ -137,29 +162,6 @@ export function OnlineWhiteboardTool() {
               className="w-6 h-6 rounded-full cursor-pointer border-0" title="Custom color" />
           </div>
         )}
-
-        {/* Line width */}
-        <div className="flex items-center gap-2 border-r border-slate-200 dark:border-slate-700 pr-2 mr-1">
-          <Minus className="w-3 h-3 text-slate-400" />
-          <input type="range" min={1} max={20} value={lineWidth} onChange={(e) => setLineWidth(Number(e.target.value))}
-            className="w-20 accent-primary-600" />
-          <Circle className="w-4 h-4 text-slate-400" />
-        </div>
-
-        {/* Actions */}
-        <div className="flex gap-1 ml-auto">
-          <button onClick={undo} disabled={history.length === 0}
-            className="p-2 text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 disabled:opacity-30" title="Undo">
-            <Undo2 className="w-4 h-4" />
-          </button>
-          <button onClick={clearCanvas} className="p-2 text-slate-500 hover:text-red-500" title="Clear">
-            <Trash2 className="w-4 h-4" />
-          </button>
-          <button onClick={handleDownload}
-            className="inline-flex items-center gap-1 px-3 py-1.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 text-xs font-medium transition-colors">
-            <Download className="w-3.5 h-3.5" /> Save PNG
-          </button>
-        </div>
       </div>
 
       {/* Canvas */}

@@ -133,22 +133,22 @@ export function ImageWatermarkTool() {
                   className="w-full accent-primary-600" />
               </div>
             </div>
-            <div className="flex flex-wrap items-end gap-4">
+            <div className="flex flex-wrap items-end gap-3">
               <div>
                 <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1">Color</label>
                 <input type="color" value={color} onChange={(e) => setColor(e.target.value)} className="w-10 h-9 rounded border border-slate-300 cursor-pointer" />
               </div>
-              <div>
+              <div className="flex-1 min-w-0">
                 <label className="block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1">Rotation: {rotation}°</label>
                 <input type="range" min={-180} max={180} value={rotation} onChange={(e) => setRotation(Number(e.target.value))}
-                  className="w-32 accent-primary-600" />
+                  className="w-full max-w-[8rem] accent-primary-600" />
               </div>
-              <div className="ml-auto flex gap-2">
-                <button onClick={handleDownload} className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 text-sm font-medium transition-colors">
+              <div className="flex gap-2 w-full sm:w-auto sm:ml-auto">
+                <button onClick={handleDownload} className="flex-1 sm:flex-none px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 text-sm font-medium transition-colors">
                   <Download className="w-4 h-4 inline mr-1" /> Download
                 </button>
                 <button onClick={reset} className="px-3 py-2 text-sm text-slate-500 hover:text-slate-700 dark:hover:text-slate-300">
-                  <RotateCcw className="w-4 h-4 inline mr-1" /> New Image
+                  <RotateCcw className="w-4 h-4 inline mr-1" /> <span className="hidden sm:inline">New Image</span><span className="sm:hidden">New</span>
                 </button>
               </div>
             </div>

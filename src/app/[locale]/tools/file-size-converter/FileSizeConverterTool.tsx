@@ -24,8 +24,8 @@ export function FileSizeConverterTool() {
   return (
     <div className="space-y-6">
       {/* Input */}
-      <div className="flex flex-wrap gap-3 items-end">
-        <div className="flex-1 min-w-[150px]">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-3 items-end">
+        <div>
           <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Value</label>
           <input
             type="number"
@@ -34,10 +34,10 @@ export function FileSizeConverterTool() {
             className="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-4 py-3 text-lg font-mono text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
           />
         </div>
-        <div className="w-40">
+        <div>
           <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Unit</label>
           <select value={fromUnit} onChange={(e) => setFromUnit(e.target.value)}
-            className="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-3 py-3 text-sm">
+            className="w-full sm:w-40 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-3 py-3 text-sm">
             {UNITS.map(u => <option key={u.short} value={u.short}>{u.name} ({u.short})</option>)}
           </select>
         </div>
