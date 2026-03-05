@@ -2233,6 +2233,173 @@ Save your business details as a template so you never have to re-enter them. Eac
     isPopular: true,
     estimatedTime: 'Instant',
   },
+
+  // ─── FINANCE CALCULATORS ────────────────────────────────────────────────
+  {
+    slug: 'compound-interest-calculator',
+    name: 'Compound Interest Calculator',
+    shortDescription: 'Calculate compound interest with yearly breakdown. Supports monthly, quarterly & yearly compounding.',
+    longDescription: `The ToolsArena Compound Interest Calculator is a free, no-signup tool that helps you calculate how your money grows with compound interest over time. Whether you're planning a fixed deposit (FD), recurring deposit (RD), PPF investment, or simply understanding how compounding works — this calculator gives you instant, accurate results.
+
+Enter your principal amount, annual interest rate, time period, and choose your compounding frequency (monthly, quarterly, half-yearly, or yearly). The calculator instantly shows your total maturity value, total interest earned, and a detailed year-by-year breakdown of how your investment grows.
+
+The tool also compares compound interest vs simple interest side by side, so you can see exactly how much extra you earn through the power of compounding. A visual breakdown bar shows the proportion of principal to interest in your final amount.
+
+Everything runs 100% in your browser — no data is sent to any server, no signup required. The compound interest formula used is A = P × (1 + r/n)^(n×t), displayed transparently on the page so you can verify the math yourself. Perfect for students, investors, and anyone planning their financial future.`,
+    category: 'calculators',
+    targetKeyword: 'compound interest calculator',
+    secondaryKeywords: ['CI calculator', 'compound interest formula', 'compound interest calculator with steps', 'monthly compound interest calculator', 'quarterly compound interest calculator', 'compound interest calculator India', 'FD interest calculator', 'compound interest calculator online free', 'power of compounding calculator', 'interest on interest calculator'],
+    metaTitle: 'Compound Interest Calculator - Calculate CI Online Free | ToolsArena',
+    metaDescription: 'Free compound interest calculator with year-by-year breakdown. Supports monthly, quarterly & yearly compounding. Compare CI vs SI instantly — no signup required.',
+    faqs: [
+      { question: 'What is compound interest?', answer: 'Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest (calculated only on the principal), compound interest makes your money grow faster because you earn "interest on interest". This is often called the power of compounding.' },
+      { question: 'What is the compound interest formula?', answer: 'The compound interest formula is A = P × (1 + r/n)^(n×t), where A is the final amount, P is the principal, r is the annual interest rate (as a decimal), n is the number of times interest is compounded per year, and t is the time in years. The compound interest earned is CI = A - P.' },
+      { question: 'What compounding frequencies are supported?', answer: 'This calculator supports four compounding frequencies: Monthly (12 times/year), Quarterly (4 times/year), Half-Yearly (2 times/year), and Yearly (1 time/year). Monthly compounding gives you the highest returns, while yearly compounding gives the lowest — for the same rate and time period.' },
+      { question: 'How does compound interest differ from simple interest?', answer: 'Simple interest is calculated only on the original principal: SI = P × r × t. Compound interest is calculated on principal plus accumulated interest. Over time, compound interest grows exponentially while simple interest grows linearly. Our calculator shows both side-by-side so you can compare.' },
+      { question: 'Is this compound interest calculator accurate?', answer: 'Yes, this calculator uses the standard mathematical compound interest formula and provides accurate results. It runs entirely in your browser using JavaScript — no rounding shortcuts or approximations. The year-by-year breakdown lets you verify each step of the calculation.' },
+      { question: 'Can I use this for FD/RD/PPF calculations?', answer: 'Yes! Fixed Deposits typically use quarterly compounding, PPF uses yearly compounding, and some savings accounts use monthly or daily compounding. Simply select the appropriate compounding frequency, enter your deposit amount and interest rate, and the calculator will show your maturity value.' },
+    ],
+    howToSteps: [
+      'Enter your principal (initial investment) amount using the slider or type it directly.',
+      'Set the annual interest rate (e.g., 7% for FD, 7.1% for PPF).',
+      'Choose the time period in years.',
+      'Select the compounding frequency — monthly, quarterly, half-yearly, or yearly.',
+      'View your total maturity amount, interest earned, and CI vs SI comparison instantly.',
+      'Click "Show Year-by-Year Breakdown" to see how your investment grows each year.',
+    ],
+    relatedToolSlugs: ['emi-calculator', 'sip-calculator', 'percentage-calculator', 'gst-calculator', 'discount-calculator'],
+    icon: 'TrendingUp',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'fd-rd-calculator',
+    name: 'FD & RD Calculator',
+    shortDescription: 'Calculate Fixed Deposit & Recurring Deposit maturity amount with year-by-year breakdown.',
+    longDescription: `The ToolsArena FD & RD Calculator is a free, no-signup tool that helps you calculate the maturity value of your Fixed Deposit (FD) and Recurring Deposit (RD) investments. Whether you're comparing FD rates across banks or planning a monthly RD savings goal, this calculator gives you instant, accurate results.
+
+Switch between FD and RD modes with a single click. For Fixed Deposits, enter your lump sum deposit amount, interest rate, and tenure. For Recurring Deposits, enter your monthly deposit amount, interest rate, and tenure. Choose your compounding frequency (monthly, quarterly, half-yearly, or yearly) — most Indian banks use quarterly compounding for FDs and RDs.
+
+The calculator shows your total maturity value, interest earned, effective return percentage, and a visual breakdown of deposit vs interest. A quick comparison table shows maturity values at different tenures (FD) or monthly amounts (RD) side by side. The year-by-year breakdown table lets you see exactly how your money grows each year.
+
+Everything runs 100% in your browser — no data is sent to any server, no signup needed. Perfect for comparing bank FD rates, planning RD savings, or understanding how your deposits grow over time.`,
+    category: 'calculators',
+    targetKeyword: 'FD calculator',
+    secondaryKeywords: ['RD calculator', 'fixed deposit calculator', 'recurring deposit calculator', 'FD maturity calculator', 'RD maturity calculator', 'FD interest calculator', 'bank FD calculator India', 'RD calculator with monthly deposit', 'fixed deposit return calculator', 'FD RD comparison calculator'],
+    metaTitle: 'FD & RD Calculator - Fixed Deposit & Recurring Deposit Calculator Online | ToolsArena',
+    metaDescription: 'Free FD & RD calculator with year-by-year breakdown. Calculate fixed deposit & recurring deposit maturity, interest earned. Supports quarterly compounding — no signup.',
+    faqs: [
+      { question: 'What is a Fixed Deposit (FD)?', answer: 'A Fixed Deposit is a financial instrument where you deposit a lump sum amount with a bank for a fixed period at a predetermined interest rate. The interest is compounded (usually quarterly in India) and paid at maturity along with the principal. FDs are considered one of the safest investment options.' },
+      { question: 'What is a Recurring Deposit (RD)?', answer: 'A Recurring Deposit is a savings scheme where you deposit a fixed amount every month for a set tenure. Interest is compounded (usually quarterly) and the total maturity amount includes all your monthly deposits plus the accumulated interest. RDs are ideal for building savings discipline.' },
+      { question: 'How is FD interest calculated?', answer: 'FD interest is calculated using the compound interest formula: A = P x (1 + r/n)^(n*t), where P is the principal, r is the annual rate, n is the compounding frequency per year, and t is the tenure in years. Most banks in India compound FD interest quarterly (n=4).' },
+      { question: 'What compounding frequency do banks use?', answer: 'Most Indian banks use quarterly compounding (4 times per year) for both FD and RD. Some banks may use monthly compounding for specific products. This calculator lets you choose between monthly, quarterly, half-yearly, and yearly compounding to match your bank\'s method.' },
+      { question: 'Is TDS applicable on FD/RD interest?', answer: 'Yes, Tax Deducted at Source (TDS) is applicable on FD/RD interest if it exceeds Rs 40,000 per year (Rs 50,000 for senior citizens). Banks deduct 10% TDS if PAN is provided, or 20% without PAN. You can submit Form 15G/15H to avoid TDS if your total income is below the taxable limit.' },
+      { question: 'Which gives better returns — FD or RD?', answer: 'For the same interest rate and tenure, an FD typically earns more total interest than an RD because the entire principal earns interest from day one. In an RD, deposits are staggered monthly, so earlier deposits earn more interest than later ones. However, RDs are better for those who want to save a fixed amount monthly.' },
+    ],
+    howToSteps: [
+      'Select the mode — Fixed Deposit (FD) or Recurring Deposit (RD).',
+      'For FD: enter deposit amount, interest rate, and tenure. For RD: enter monthly deposit, rate, and tenure.',
+      'Choose compounding frequency (quarterly is standard for most banks).',
+      'View maturity value, interest earned, and effective return percentage instantly.',
+      'Check the comparison table to see returns at different tenures or monthly amounts.',
+      'Click "Show Year-by-Year Breakdown" to see detailed growth each year.',
+    ],
+    relatedToolSlugs: ['compound-interest-calculator', 'emi-calculator', 'sip-calculator', 'gst-calculator', 'percentage-calculator'],
+    icon: 'Landmark',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+
+  // ─── CAREER TOOLS ───────────────────────────────────────────────────────
+  {
+    slug: 'resume-builder',
+    name: 'Resume Builder',
+    shortDescription: 'Build a professional resume in minutes. Choose from templates, add sections, and download as PDF — free.',
+    longDescription: `The ToolsArena Resume Builder is a free, no-signup online tool that helps you create a professional, ATS-friendly resume in minutes. Whether you're a fresh graduate, experienced professional, or career changer, this tool gives you everything you need to build a standout resume and download it as a polished PDF.
+
+Choose from 3 professionally designed templates — Modern (with accent sidebar), Classic (traditional ATS-optimized), and Minimal (clean and elegant). Pick your brand color from 8 accent options to personalize your resume. The live preview updates in real-time as you type, so you always see exactly how your resume will look.
+
+Add and customize multiple sections: Personal Information, Professional Summary, Work Experience (with bullet points for achievements), Education, Skills (grouped by category), Projects (with tech stack and links), Certifications, and Languages. Toggle sections on or off to tailor your resume for different job applications. Each experience entry supports multiple bullet points to highlight your key achievements and responsibilities.
+
+Your data is auto-saved to your browser's local storage — come back anytime and continue where you left off. Everything runs 100% in your browser: your personal details, career history, and resume data never leave your device. No account needed, no watermarks, no limits on downloads.
+
+The generated PDF is clean, well-formatted, and ATS-compatible — meaning it passes through Applicant Tracking Systems used by recruiters at companies like Google, Amazon, TCS, Infosys, and more. Perfect for job applications, campus placements, internship applications, and freelance proposals.`,
+    category: 'utility-tools',
+    targetKeyword: 'free resume builder',
+    secondaryKeywords: ['resume builder online free', 'resume maker', 'CV builder free', 'resume generator', 'ATS resume builder', 'professional resume maker', 'resume builder no signup', 'free resume download PDF', 'online CV maker', 'resume builder for freshers', 'resume builder India', 'job resume creator'],
+    metaTitle: 'Free Resume Builder - Create Professional Resume & Download PDF | ToolsArena',
+    metaDescription: 'Build a professional ATS-friendly resume in minutes. 3 templates, live preview, auto-save, PDF download. No signup, no watermark, 100% free resume builder online.',
+    faqs: [
+      { question: 'Is this resume builder really free?', answer: 'Yes, 100% free with no hidden costs, no watermarks, and no download limits. You can create unlimited resumes, switch between templates, and download as many PDFs as you want. No signup or credit card required.' },
+      { question: 'Is my resume data safe and private?', answer: 'Absolutely. Everything runs entirely in your browser using JavaScript. Your personal information, work history, and resume data never leave your device — nothing is sent to any server. Your data is auto-saved locally in your browser for convenience, and you can clear it anytime with the Reset button.' },
+      { question: 'Are the resumes ATS-friendly?', answer: 'Yes. The generated PDF uses standard fonts (Helvetica), clean formatting, and proper text hierarchy — making it easily parseable by Applicant Tracking Systems (ATS) used by companies like Google, Amazon, Microsoft, TCS, Infosys, and more. Avoid using images or graphics in your resume content for best ATS compatibility.' },
+      { question: 'What sections can I add to my resume?', answer: 'You can add: Personal Information (name, email, phone, location, LinkedIn, website), Professional Summary, Work Experience (with multiple bullet points per job), Education (with GPA), Skills (grouped by category), Projects (with tech stack and links), Certifications, and Languages. You can toggle any section on or off.' },
+      { question: 'Can I save my resume and edit it later?', answer: 'Yes! Your resume data is automatically saved to your browser\'s local storage every time you make a change. When you return to the tool, all your data will be restored. Note: clearing your browser data will remove the saved resume.' },
+      { question: 'What templates are available?', answer: 'Three professional templates are available: Modern (clean design with accent color bar — great for tech and creative roles), Classic (traditional format optimized for ATS — ideal for corporate applications), and Minimal (simple and elegant — perfect for academic and research positions). You can also choose from 8 accent colors.' },
+      { question: 'Can freshers use this resume builder?', answer: 'Absolutely! This resume builder is perfect for freshers and students. You can highlight your education, projects, skills, certifications, and internships. Toggle off the Work Experience section if you don\'t have professional experience yet, and focus on Projects and Skills instead.' },
+      { question: 'How do I download my resume as PDF?', answer: 'Simply click the "Download PDF" button at the top of the page. Your resume will be generated as a clean, professional PDF file and downloaded to your device instantly. The file will be named with your full name (e.g., John_Doe_Resume.pdf).' },
+    ],
+    howToSteps: [
+      'Choose a template (Modern, Classic, or Minimal) and pick your accent color.',
+      'Fill in your personal details — name, email, phone, location, LinkedIn, and a professional summary.',
+      'Add your work experience with company name, job title, dates, and bullet points for achievements.',
+      'Add your education details including institution, degree, field of study, and GPA.',
+      'Add skills grouped by category (e.g., Programming Languages, Frameworks, Tools).',
+      'Optionally add Projects, Certifications, and Languages sections.',
+      'Review the live preview on the right to see your resume in real-time.',
+      'Click "Download PDF" to save your professional resume.',
+    ],
+    relatedToolSlugs: ['invoice-generator', 'word-counter', 'text-to-slug', 'csv-to-pdf', 'pdf-merge'],
+    icon: 'FileUser',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: '5-10 minutes',
+  },
+  {
+    slug: 'scientific-calculator',
+    name: 'Scientific Calculator',
+    shortDescription: 'Free online scientific calculator with trigonometry, logarithms, powers, factorial, and more.',
+    longDescription: `The ToolsArena Scientific Calculator is a free, full-featured online calculator designed for students, engineers, scientists, and anyone who needs advanced mathematical calculations. It looks and works like a real physical scientific calculator — right in your browser.
+
+Perform basic arithmetic (addition, subtraction, multiplication, division) along with advanced scientific functions: trigonometric functions (sin, cos, tan and their inverses), hyperbolic functions, logarithms (log base 10 and natural log), square root, cube root, powers and exponents, factorial, absolute value, reciprocal, and modulo operations. Switch between degree (DEG) and radian (RAD) mode for angle calculations.
+
+The calculator features a clean, modern UI with a realistic button layout. The display shows your current expression and result separately, supports keyboard input for fast calculations, and maintains a scrollable history of your last 20 calculations so you can revisit or reuse previous results.
+
+Built entirely with JavaScript — no server-side processing, no signup required, works offline. Supports mathematical constants π (pi) and e (Euler's number), implicit multiplication (e.g., 2π = 6.28), and proper operator precedence. The expression parser handles nested parentheses and complex multi-function expressions accurately.
+
+Perfect for homework, exam preparation, engineering calculations, physics problems, financial math, and everyday number crunching. Works on desktop, tablet, and mobile devices with responsive button sizing.`,
+    category: 'calculators',
+    targetKeyword: 'scientific calculator online',
+    secondaryKeywords: ['scientific calculator', 'online calculator', 'free scientific calculator', 'scientific calculator with steps', 'trigonometry calculator', 'logarithm calculator online', 'sin cos tan calculator', 'advanced calculator online', 'math calculator free', 'calculator with history', 'scientific calculator for students', 'engineering calculator online'],
+    metaTitle: 'Scientific Calculator Online - Free Advanced Math Calculator | ToolsArena',
+    metaDescription: 'Free online scientific calculator with sin, cos, tan, log, ln, powers, roots, factorial, DEG/RAD mode, and calculation history. No signup — works on any device.',
+    faqs: [
+      { question: 'What functions does this scientific calculator support?', answer: 'This calculator supports: basic arithmetic (+, -, ×, ÷, %), trigonometric functions (sin, cos, tan, asin, acos, atan), logarithms (log base 10, natural log ln), powers (x², xʸ, 10ˣ), roots (√), factorial (x!), absolute value (|x|), reciprocal (1/x), and constants (π, e). It also supports nested parentheses and proper operator precedence.' },
+      { question: 'How do I switch between degrees and radians?', answer: 'Click the DEG/RAD button in the top-left of the calculator to toggle between degree mode and radian mode. In DEG mode, sin(90) = 1. In RAD mode, sin(π/2) = 1. The current mode is shown in the display area.' },
+      { question: 'Can I use my keyboard to type calculations?', answer: 'Yes! You can type numbers (0-9), operators (+, -, *, /), parentheses, decimal point, and press Enter to calculate or Escape to clear. The calculator captures keyboard input automatically when focused on the page.' },
+      { question: 'Does the calculator save my calculation history?', answer: 'Yes, the calculator keeps your last 20 calculations in a scrollable history. Click "History" in the display area to view past calculations. Click any previous result to load it back into the calculator. History is kept for the current session.' },
+      { question: 'Is this calculator accurate for exams and homework?', answer: 'Yes, this calculator uses JavaScript\'s built-in Math library which provides IEEE 754 double-precision floating-point accuracy — the same precision used by most desktop scientific calculators. Results are displayed with up to 12 significant digits.' },
+      { question: 'Does it support order of operations (BODMAS/PEMDAS)?', answer: 'Yes, the calculator follows standard mathematical order of operations: Parentheses first, then Exponents/Powers, then Multiplication/Division (left to right), then Addition/Subtraction (left to right). This ensures correct results for complex expressions.' },
+      { question: 'Can I calculate factorials?', answer: 'Yes, press the x! button to enter the factorial function. For example, fact(5) = 120, fact(10) = 3628800. The calculator supports factorials up to 170! (beyond that, the result is Infinity due to floating-point limits).' },
+      { question: 'Does it work on mobile phones?', answer: 'Yes, the calculator is fully responsive. On mobile devices, the buttons are sized for easy touch input, and the display adapts to smaller screens. It works on all modern browsers including Chrome, Safari, Firefox, and Edge.' },
+    ],
+    howToSteps: [
+      'Open the Scientific Calculator — it\'s ready to use immediately.',
+      'Type numbers using the on-screen buttons or your keyboard.',
+      'Use function buttons (sin, cos, log, √, etc.) for scientific calculations.',
+      'Toggle DEG/RAD mode for trigonometric calculations.',
+      'Press = or Enter to calculate the result.',
+      'View calculation history by clicking "History" in the display.',
+      'Press AC or Escape to clear and start a new calculation.',
+    ],
+    relatedToolSlugs: ['percentage-calculator', 'compound-interest-calculator', 'emi-calculator', 'unit-converter', 'number-to-words'],
+    icon: 'Calculator',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
