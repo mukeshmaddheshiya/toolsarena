@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternateLanguages } from '@/lib/seo';
 import { SITE_URL } from '@/lib/constants';
@@ -46,9 +47,13 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800/50 rounded-2xl p-6 sm:p-8">
           <div className="flex flex-col sm:flex-row items-start gap-5">
             {/* Avatar */}
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white text-2xl font-bold shrink-0 shadow-lg">
-              MM
-            </div>
+            <Image
+              src="/mukesh-image.png"
+              alt="Mukesh Maddheshiya - Founder of ToolsArena"
+              width={80}
+              height={80}
+              className="w-20 h-20 rounded-full object-cover shrink-0 shadow-lg"
+            />
             {/* Info */}
             <div className="flex-1">
               <h3 className="text-lg font-heading font-bold text-slate-900 dark:text-slate-100">{t('founderName')}</h3>
