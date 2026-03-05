@@ -35,6 +35,8 @@ export function LanguageSwitcher() {
         onClick={() => setOpen(!open)}
         className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-sm text-slate-600 dark:text-slate-400"
         aria-label={t('language')}
+        aria-expanded={open}
+        aria-haspopup="listbox"
         title={t('language')}
       >
         <Globe className="w-4 h-4" />
@@ -42,10 +44,12 @@ export function LanguageSwitcher() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg z-50 overflow-hidden min-w-[140px]">
+        <div role="listbox" aria-label={t('language')} className="absolute right-0 top-full mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg z-50 overflow-hidden min-w-[140px]">
           {locales.map((l) => (
             <button
               key={l}
+              role="option"
+              aria-selected={l === locale}
               onClick={() => switchLocale(l)}
               className={`w-full flex items-center gap-2.5 px-4 py-2.5 text-left text-sm transition-colors ${
                 l === locale

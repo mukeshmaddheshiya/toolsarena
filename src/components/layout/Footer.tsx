@@ -62,7 +62,7 @@ export function Footer() {
                 <ul className="space-y-2">
                   {catTools.map(tool => (
                     <li key={tool.slug}>
-                      <Link href={`/tools/${tool.slug}`} className="text-xs text-slate-400 hover:text-slate-200 transition-colors">
+                      <Link href={`/tools/${tool.slug}`} className="text-xs text-slate-300 hover:text-slate-100 transition-colors">
                         {tool.name}
                       </Link>
                     </li>
@@ -74,10 +74,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-slate-400">
             &copy; {new Date().getFullYear()} ToolsArena. {t('footer.allRightsReserved')}
           </p>
-          <nav className="flex items-center gap-6 text-xs text-slate-400">
+          <nav aria-label="Footer" className="flex items-center gap-6 text-xs text-slate-300">
             <Link href="/about" className="hover:text-slate-200 transition-colors">{t('common.about')}</Link>
             <Link href="/privacy-policy" className="hover:text-slate-200 transition-colors">{t('common.privacyPolicy')}</Link>
             <Link href="/terms" className="hover:text-slate-200 transition-colors">{t('common.termsOfService')}</Link>

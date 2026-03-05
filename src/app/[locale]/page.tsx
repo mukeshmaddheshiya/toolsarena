@@ -87,7 +87,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 </div>
                 <div>
                   <div className="font-heading font-bold text-slate-900 dark:text-slate-100 text-sm">{t(labelKey, { count: TOOL_COUNT })}</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">{t(descKey)}</div>
+                  <div className="text-xs text-slate-600 dark:text-slate-400">{t(descKey)}</div>
                 </div>
               </div>
             ))}
@@ -101,7 +101,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="flex items-center justify-between mb-5">
             <div>
               <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100">&#11088; {t('home.popularTools')}</h2>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">{t('home.popularToolsDesc')}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400 mt-0.5">{t('home.popularToolsDesc')}</p>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3">
@@ -120,11 +120,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <div className="flex items-center justify-between mb-5">
                 <div>
                   <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100">{nameKey ? t(nameKey) : cat.name}</h2>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">{cat.description}</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400 mt-0.5">{cat.description}</p>
                 </div>
                 <Link
                   href={`/category/${catKey}`}
                   className="text-sm font-medium text-primary-700 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 transition-colors whitespace-nowrap"
+                  aria-label={`${t('common.viewAll')} ${nameKey ? t(nameKey) : cat.name}`}
                 >
                   {t('common.viewAll')} &rarr;
                 </Link>

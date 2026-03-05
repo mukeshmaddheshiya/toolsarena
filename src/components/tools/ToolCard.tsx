@@ -54,12 +54,12 @@ export function ToolCard({ tool, className }: ToolCardProps) {
       <h3 className="font-heading font-semibold text-slate-900 dark:text-slate-100 text-sm group-hover:text-primary-700 dark:group-hover:text-primary-400 transition-colors mb-1">
         {tool.name}
       </h3>
-      <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 flex-1">
+      <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-2 flex-1">
         {tool.shortDescription}
       </p>
 
       {tool.estimatedTime && (
-        <div className="mt-2 text-[10px] text-slate-400 dark:text-slate-500">
+        <div className="mt-2 text-[10px] text-slate-500 dark:text-slate-400">
           {tool.estimatedTime}
         </div>
       )}
