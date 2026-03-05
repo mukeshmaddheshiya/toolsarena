@@ -35,8 +35,8 @@ export default async function Image() {
           <span style={{ fontSize: '56px', fontWeight: 'bold', color: 'white' }}>ToolsArena</span>
         </div>
 
-        <div style={{ fontSize: '30px', color: '#93c5fd', marginBottom: '16px', textAlign: 'center' }}>
-          {TOOL_COUNT}+ Free Online Tools — No Signup Required
+        <div style={{ fontSize: '30px', color: '#93c5fd', marginBottom: '16px', textAlign: 'center', display: 'flex' }}>
+          {`${TOOL_COUNT}+ Free Online Tools — No Signup Required`}
         </div>
 
         <div style={{
