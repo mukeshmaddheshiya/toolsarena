@@ -2193,6 +2193,46 @@ At the start of the season, all teams begin at 0 points. The table updates autom
     isNew: true,
     estimatedTime: 'Instant',
   },
+
+  // ─── BUSINESS TOOLS ─────────────────────────────────────────────────────
+  {
+    slug: 'invoice-generator',
+    name: 'Invoice Generator',
+    shortDescription: 'Create professional invoices in seconds. Download as PDF — free, no signup.',
+    longDescription: `The ToolsArena Invoice Generator is a free, no-signup tool that lets you create professional invoices in seconds and download them as PDF. Whether you're a freelancer billing a client, a small business owner, or a startup founder, this tool helps you generate clean, branded invoices without any accounting software.
+
+Everything runs 100% in your browser. Your business data, client details, and invoice amounts never leave your device — making this one of the most private invoice generators available online. No account needed, no data stored on servers, unlimited invoices.
+
+Choose from 3 professionally designed templates (Modern, Classic, Minimal), add your company logo, pick your brand color, and fill in your line items. The tool automatically calculates subtotal, tax (GST/VAT/Sales Tax), discounts, and grand total. Supports 30+ global currencies including USD, EUR, GBP, INR, NPR, AED, and more.
+
+Save your business details as a template so you never have to re-enter them. Each invoice features auto-incrementing invoice numbers, customizable prefixes, date and due date fields, payment terms, and notes. The live preview updates in real-time as you type, and the final PDF is beautifully formatted with your brand colors and logo — ready to send to your clients.`,
+    category: 'pdf-tools',
+    targetKeyword: 'free invoice generator',
+    secondaryKeywords: ['invoice generator online', 'invoice maker', 'create invoice online free', 'invoice generator pdf', 'free invoice maker no signup', 'GST invoice generator', 'online bill maker', 'invoice template generator', 'professional invoice creator', 'freelance invoice tool'],
+    metaTitle: 'Free Invoice Generator - Create & Download PDF Invoices Online | ToolsArena',
+    metaDescription: 'Create professional invoices in seconds with our free invoice generator. Add logo, taxes, discounts, 30+ currencies. Download as PDF — no signup, 100% private.',
+    faqs: [
+      { question: 'Is this invoice generator really free?', answer: 'Yes, 100% free with no hidden costs. You can create unlimited invoices, download them as PDF, and use all features including logo upload, multiple templates, and 30+ currencies — no signup or payment required.' },
+      { question: 'Is my data safe? Where is it stored?', answer: 'Your data is completely safe. Everything runs in your browser using JavaScript. Your business details, client information, and invoice data never leave your device. Nothing is sent to any server. You can also save your template locally for convenience.' },
+      { question: 'Can I add my company logo to the invoice?', answer: 'Yes! Click the logo upload area in the Business Details section to upload your company logo (PNG or JPG, max 2MB). The logo will appear on your invoice PDF and in the live preview.' },
+      { question: 'What currencies are supported?', answer: 'The tool supports 30+ currencies including USD ($), EUR, GBP, INR, NPR, CAD, AUD, JPY, AED, SGD, BRL, ZAR, MYR, THB, KRW, NGN, PKR, BDT, IDR, PHP, and more. Select your currency from the dropdown at the top.' },
+      { question: 'Can I add tax (GST/VAT) and discounts?', answer: 'Yes. You can set a custom tax label (Tax, GST, VAT, Sales Tax), enter the tax percentage, and add either a percentage-based or flat discount. All calculations are done automatically.' },
+      { question: 'How do I save my business details for next time?', answer: 'Click the "Save Template" button at the top. Your business name, address, email, phone, logo, tax ID, and other details will be saved in your browser\'s local storage and auto-filled next time you use the tool.' },
+    ],
+    howToSteps: [
+      'Enter your business details — name, address, email, phone, and optionally upload your logo.',
+      'Fill in your client\'s name, company, email, and address.',
+      'Set the invoice number, date, and due date.',
+      'Add line items with description, quantity, and rate. Click "Add Item" for more rows.',
+      'Set tax rate and discount if applicable. Choose your currency.',
+      'Review the live preview on the right. Click "Download PDF" to save your invoice.',
+    ],
+    relatedToolSlugs: ['csv-to-pdf', 'pdf-merge', 'number-to-words', 'qr-code-generator', 'gst-calculator'],
+    icon: 'Receipt',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
