@@ -24,7 +24,8 @@ function getLocalizedUrl(path: string, locale: Locale) {
 }
 
 function getOgLocale(locale: Locale) {
-  return locale === 'hi' ? 'hi_IN' : 'en_US';
+  const map: Record<Locale, string> = { en: 'en_US', hi: 'hi_IN', ne: 'ne_NP' };
+  return map[locale] ?? 'en_US';
 }
 
 export async function generateToolMetadata(tool: Tool): Promise<Metadata> {
@@ -85,7 +86,7 @@ export function generatePageMetadata(opts: {
       siteName: SITE_NAME,
       images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
       type: 'website',
-      locale: opts.locale === 'hi' ? 'hi_IN' : 'en_US',
+      locale: getOgLocale(opts.locale ?? 'en'),
     },
     twitter: {
       card: 'summary_large_image',
@@ -111,7 +112,7 @@ export function getDefaultMetadata(): Metadata {
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      alternateLocale: ['hi_IN'],
+      alternateLocale: ['hi_IN', 'ne_NP'],
       url: SITE_URL,
       siteName: SITE_NAME,
       images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
