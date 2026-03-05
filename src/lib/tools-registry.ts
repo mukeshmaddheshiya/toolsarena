@@ -106,7 +106,7 @@ Everything runs locally in your browser, so your private text — whether it's p
     category: 'text-tools',
     targetKeyword: 'character counter',
     secondaryKeywords: ['char counter', 'count characters online', 'letter counter', 'character count tool', 'text length counter'],
-    metaTitle: 'Character Counter - Count Characters & Words Online Free | ToolsArena',
+    metaTitle: 'Character Counter - Count Characters & Words Online Free',
     metaDescription: 'Count characters with & without spaces instantly. Free online character counter for Twitter, SMS, meta descriptions & more. Real-time, no signup.',
     faqs: [
       { question: 'What is the difference between characters with and without spaces?', answer: 'Characters with spaces counts every keystroke including spaces, tabs, and newlines. Characters without spaces counts only visible non-whitespace characters, useful for strict letter-only limits.' },
@@ -300,7 +300,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'text-tools',
     targetKeyword: 'text diff checker online',
     secondaryKeywords: ['compare two texts', 'text comparison tool', 'find differences in text', 'diff tool online free'],
-    metaTitle: 'Text Diff Checker - Compare Two Texts Online Free | ToolsArena',
+    metaTitle: 'Text Diff Checker - Compare Two Texts Online Free',
     metaDescription: 'Compare two texts and highlight differences instantly. See added and removed lines with color coding. Split and unified views. Free online diff tool.',
     faqs: [
       { question: 'What algorithm does this use?', answer: 'It uses a Longest Common Subsequence (LCS) algorithm at the line level — the same approach used by git diff.' },
@@ -322,7 +322,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'text-tools',
     targetKeyword: 'fancy text generator',
     secondaryKeywords: ['unicode font generator', 'cool text generator', 'instagram fonts', 'fancy letters online', 'stylish text maker'],
-    metaTitle: 'Fancy Text Generator - Cool Unicode Fonts for Instagram & Twitter | ToolsArena',
+    metaTitle: 'Fancy Text Generator - Cool Unicode Fonts for Instagram & Twitter',
     metaDescription: 'Generate 14+ fancy text styles using Unicode fonts. Bold, italic, script, circled, upside-down and more. Copy with one click for Instagram, Twitter, WhatsApp.',
     faqs: [
       { question: 'Why do fancy fonts work on social media?', answer: 'These are actual Unicode characters that look like different fonts. Since they are standard characters, they work everywhere text is supported.' },
@@ -344,7 +344,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'developer-tools',
     targetKeyword: 'UUID generator online',
     secondaryKeywords: ['uuid v4 generator', 'generate unique id online', 'guid generator', 'random uuid', 'bulk uuid generator'],
-    metaTitle: 'UUID Generator Free Online - UUID v4, v1, GUID | ToolsArena',
+    metaTitle: 'UUID Generator Free Online - UUID v4, v1, GUID',
     metaDescription: 'Generate UUID v4, v1-style, nil UUIDs and short IDs online free. Bulk generate 1-20 at once. Cryptographically random using Web Crypto API. No signup.',
     faqs: [
       { question: 'What is a UUID?', answer: 'UUID (Universally Unique Identifier) is a 128-bit identifier formatted as 8-4-4-4-12 hexadecimal groups. Used to uniquely identify database records, API resources, session tokens, etc.' },
@@ -366,7 +366,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'developer-tools',
     targetKeyword: 'JWT decoder online',
     secondaryKeywords: ['decode jwt token', 'jwt parser online', 'json web token decoder', 'jwt inspector', 'jwt claims viewer'],
-    metaTitle: 'JWT Decoder Online Free - Decode JSON Web Tokens | ToolsArena',
+    metaTitle: 'JWT Decoder Online Free - Decode JSON Web Tokens',
     metaDescription: 'Decode and inspect JWT tokens instantly. View header, payload claims, expiry status and algorithm. Free online JWT parser — no server, 100% private.',
     faqs: [
       { question: 'Can this verify the JWT signature?', answer: 'No. Signature verification requires the secret or public key, which should never be shared in a browser tool. This tool only decodes the base64-encoded parts.' },
@@ -388,7 +388,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'calculators',
     targetKeyword: 'tip calculator',
     secondaryKeywords: ['bill split calculator', 'restaurant tip calculator', 'tip and split calculator free', 'how much to tip calculator'],
-    metaTitle: 'Tip Calculator - Calculate Tip & Split Bill | ToolsArena',
+    metaTitle: 'Tip Calculator - Calculate Tip & Split Bill',
     metaDescription: 'Free tip calculator: enter bill amount, tip percentage and number of people. Instantly see tip amount, total and per-person split. Includes tipping guide.',
     faqs: [
       { question: 'What is the standard tip percentage in India?', answer: 'Tipping is optional in India. At restaurants, 10% is appreciated, and 15-20% for excellent service. At hotels and spas, ₹50-200 per service is common.' },
@@ -410,7 +410,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'developer-tools',
     targetKeyword: 'CSS gradient generator',
     secondaryKeywords: ['css gradient maker', 'linear gradient generator', 'gradient color picker', 'css background gradient tool'],
-    metaTitle: 'CSS Gradient Generator - Free Online Gradient Maker | ToolsArena',
+    metaTitle: 'CSS Gradient Generator - Free Online Gradient Maker',
     metaDescription: 'Create CSS gradients visually. Linear, radial, conic gradients with color stops, angle control and live preview. Copy CSS instantly. Free, no signup.',
     faqs: [
       { question: 'What CSS gradient types are supported?', answer: 'Linear (directional), radial (circular from center), and conic (rotating around a center point).' },
@@ -432,7 +432,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'developer-tools',
     targetKeyword: 'CSS box shadow generator',
     secondaryKeywords: ['box shadow css tool', 'css shadow generator online', 'box-shadow maker', 'drop shadow generator css'],
-    metaTitle: 'CSS Box Shadow Generator - Free Online Shadow Maker | ToolsArena',
+    metaTitle: 'CSS Box Shadow Generator - Free Online Shadow Maker',
     metaDescription: 'Create CSS box shadows visually with live preview. Control offset, blur, spread, opacity per layer. Multiple shadow layers, presets. Copy CSS instantly.',
     faqs: [
       { question: 'What does each shadow property do?', answer: 'X Offset: horizontal position. Y Offset: vertical position. Blur: softness of the edge. Spread: size of shadow. Opacity: transparency. Inset: shadow inside the element.' },
@@ -454,7 +454,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'utility-tools',
     targetKeyword: 'countdown timer online',
     secondaryKeywords: ['online countdown timer', 'free timer online', 'kitchen timer online', 'study timer', 'pomodoro timer'],
-    metaTitle: 'Countdown Timer Online Free - Set Timer with Presets | ToolsArena',
+    metaTitle: 'Countdown Timer Online Free - Set Timer with Presets',
     metaDescription: 'Free online countdown timer with circular progress ring. Quick presets (1-60 min) or custom time. Pause, resume, reset. Works in any browser, no app needed.',
     faqs: [
       { question: 'Can I use this as a Pomodoro timer?', answer: 'Yes! Set 25 minutes for work, then 5 minutes for a break. Repeat 4 times and take a longer 15-30 minute break.' },
@@ -477,7 +477,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'utility-tools',
     targetKeyword: 'random number generator',
     secondaryKeywords: ['dice roller online', 'coin flip online', 'random picker', 'random name picker', 'online dice roll'],
-    metaTitle: 'Random Generator - Numbers, Dice, Coin Flip, List Picker | ToolsArena',
+    metaTitle: 'Random Generator - Numbers, Dice, Coin Flip, List Picker',
     metaDescription: 'Free random generator: random numbers with range, dice roller (D4-D100), coin flipper, and random list item picker. All in one tool — instant results.',
     faqs: [
       { question: 'Can I roll multiple dice at once?', answer: 'Yes. Set the count slider to roll 1-10 dice simultaneously. The sum of all dice is shown.' },
@@ -499,7 +499,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'developer-tools',
     targetKeyword: 'password strength checker',
     secondaryKeywords: ['password strength tester', 'how strong is my password', 'check password security', 'password analyzer online'],
-    metaTitle: 'Password Strength Checker Free Online | ToolsArena',
+    metaTitle: 'Password Strength Checker Free Online',
     metaDescription: 'Check your password strength instantly. Get color-coded strength rating, entropy score, character breakdown and security checklist. 100% private, no server.',
     faqs: [
       { question: 'Is my password sent to a server?', answer: 'No. All analysis happens entirely in your browser. Your password never leaves your device.' },
@@ -521,7 +521,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     category: 'seo-tools',
     targetKeyword: 'meta tag generator',
     secondaryKeywords: ['seo meta tags generator', 'open graph meta tag generator', 'twitter card generator', 'html meta tags maker', 'og tags generator'],
-    metaTitle: 'Meta Tag Generator - SEO, Open Graph & Twitter Card Tags | ToolsArena',
+    metaTitle: 'Meta Tag Generator - SEO, Open Graph & Twitter Card Tags',
     metaDescription: 'Generate complete SEO meta tags, Open Graph, and Twitter Card tags instantly. Live preview, copy with one click. Free online meta tag maker for any website.',
     faqs: [
       { question: 'What are meta tags?', answer: 'Meta tags are HTML elements in the <head> section that provide information about a webpage to search engines and social media platforms.' },
@@ -550,7 +550,7 @@ All results update in real-time as you type. Each value has a copy button for ea
     category: 'calculators',
     targetKeyword: 'average calculator',
     secondaryKeywords: ['mean median mode calculator', 'statistics calculator', 'standard deviation calculator', 'arithmetic mean calculator', 'number average online'],
-    metaTitle: 'Average Calculator - Mean, Median, Mode, Std Dev | ToolsArena',
+    metaTitle: 'Average Calculator - Mean, Median, Mode, Std Dev',
     metaDescription: 'Free average calculator online. Find mean, median, mode, range, variance, standard deviation, and quartiles instantly. Enter numbers and get full stats.',
     faqs: [
       { question: 'What is the difference between mean, median, and mode?', answer: 'Mean is the arithmetic average (sum ÷ count). Median is the middle value when sorted. Mode is the most frequently occurring value. For symmetric distributions they are equal; for skewed data they differ.' },
@@ -582,7 +582,7 @@ All calculations happen instantly in your browser. No ads blocking your results,
     category: 'calculators',
     targetKeyword: 'percentage calculator',
     secondaryKeywords: ['percent calculator', 'calculate percentage online', 'percentage change calculator', 'percent increase calculator', 'what percent of calculator'],
-    metaTitle: 'Percentage Calculator - Calculate % Online Free | ToolsArena',
+    metaTitle: 'Percentage Calculator - Calculate % Online Free',
     metaDescription: 'Calculate percentages, percent change, discount & more. Free online percentage calculator with step-by-step solutions. All percentage types covered.',
     faqs: [
       { question: 'How do I calculate X% of Y?', answer: 'Multiply X by Y and divide by 100. For example, 15% of 200 = (15 × 200) / 100 = 30. Our calculator does this instantly.' },
@@ -615,7 +615,7 @@ This calculator works for all loan types: home loans, car loans, personal loans,
     category: 'calculators',
     targetKeyword: 'EMI calculator',
     secondaryKeywords: ['loan EMI calculator', 'home loan EMI calculator', 'car loan calculator', 'personal loan EMI', 'monthly installment calculator India'],
-    metaTitle: 'EMI Calculator - Calculate Loan EMI Online Free | ToolsArena',
+    metaTitle: 'EMI Calculator - Calculate Loan EMI Online Free',
     metaDescription: 'Calculate monthly EMI for home, car or personal loans. See total interest, amortization schedule & pie chart. Free online EMI calculator — instant results.',
     faqs: [
       { question: 'What is EMI?', answer: 'EMI (Equated Monthly Installment) is a fixed monthly payment paid by a borrower to a lender on a specified date. Each EMI includes a portion of the principal amount and the interest. Over time, the interest portion decreases while the principal portion increases.' },
@@ -748,7 +748,7 @@ Features include visual salary distribution chart, annual/monthly toggle, quick 
     category: 'calculators',
     targetKeyword: 'CTC to in-hand salary calculator',
     secondaryKeywords: ['salary calculator India', 'CTC calculator', 'take home salary calculator', 'in-hand salary calculator', 'old vs new tax regime calculator', 'salary breakup calculator', 'income tax calculator FY 2025-26', 'CTC to net salary', 'salary after tax India'],
-    metaTitle: 'Salary Calculator India - CTC to In-Hand | Old vs New Regime FY 2025-26',
+    metaTitle: 'Salary Calculator India - CTC to In-Hand | FY 2025-26',
     metaDescription: 'Calculate in-hand salary from CTC for FY 2025-26. Compare Old vs New Tax Regime, see full salary breakup with PF, HRA, tax. Free instant salary calculator India.',
     faqs: [
       { question: 'What is CTC and how is it different from in-hand salary?', answer: 'CTC (Cost to Company) is the total amount a company spends on an employee per year, including Basic, HRA, PF (employer share), gratuity, bonus, and all allowances. In-hand (take-home) salary is what you actually receive after deducting employee PF, professional tax, and income tax from your gross salary.' },
@@ -916,7 +916,7 @@ Customize your QR code with different sizes, error correction levels, and colors
     category: 'developer-tools',
     targetKeyword: 'QR code generator',
     secondaryKeywords: ['qr code maker', 'free qr code generator', 'qr code creator online', 'generate qr code for url', 'wifi qr code generator'],
-    metaTitle: 'QR Code Generator - Create QR Codes Free Online | ToolsArena',
+    metaTitle: 'QR Code Generator - Create QR Codes Free Online',
     metaDescription: 'Generate QR codes for URLs, text, WiFi & more. Download as PNG or SVG. Free online QR code generator — instant, no signup, customizable size & color.',
     faqs: [
       { question: 'Are the generated QR codes free to use commercially?', answer: 'Yes. QR codes themselves are in the public domain. QR codes generated with our tool can be used freely for personal and commercial purposes without any attribution or license fee.' },
@@ -982,7 +982,7 @@ Important security note: MD5 and SHA-1 are considered cryptographically broken f
     category: 'developer-tools',
     targetKeyword: 'hash generator',
     secondaryKeywords: ['md5 generator', 'sha256 generator', 'sha-1 online', 'cryptographic hash tool', 'file hash calculator', 'checksum generator'],
-    metaTitle: 'Hash Generator - MD5, SHA-256, SHA-512 Online Free | ToolsArena',
+    metaTitle: 'Hash Generator - MD5, SHA-256, SHA-512 Online Free',
     metaDescription: 'Generate MD5, SHA-1, SHA-256, SHA-512 hashes from text or files. Free online hash generator — verify file integrity & checksums. 100% private.',
     faqs: [
       { question: 'What is a cryptographic hash?', answer: 'A hash function takes arbitrary-length input and produces a fixed-length output (digest). It\'s a one-way function — you cannot reverse a hash to get the original input. The same input always gives the same hash; different inputs give different hashes (ideally).' },
@@ -1015,7 +1015,7 @@ Common use cases: validating email addresses, phone numbers, dates, and URLs; ex
     category: 'developer-tools',
     targetKeyword: 'regex tester',
     secondaryKeywords: ['regular expression tester', 'regex validator online', 'regex debugger', 'test regex online', 'regex checker', 'javascript regex tester'],
-    metaTitle: 'Regex Tester - Test Regular Expressions Online Free | ToolsArena',
+    metaTitle: 'Regex Tester - Test Regular Expressions Online Free',
     metaDescription: 'Test & debug regular expressions with real-time highlighting. See matches, groups & captures. Free online regex tester — JavaScript regex, all flags supported.',
     faqs: [
       { question: 'What is a regular expression?', answer: 'A regular expression (regex) is a sequence of characters that defines a search pattern. Regex can match specific strings, validate formats (email, phone), extract data, and perform find-and-replace operations in text.' },
@@ -1048,7 +1048,7 @@ Content creators, developers building documentation systems, and writers migrati
     category: 'developer-tools',
     targetKeyword: 'HTML to Markdown converter',
     secondaryKeywords: ['html to md converter', 'convert html to markdown online', 'html markdown tool', 'webpage to markdown', 'html to github markdown'],
-    metaTitle: 'HTML to Markdown Converter - Free Online Tool | ToolsArena',
+    metaTitle: 'HTML to Markdown Converter - Free Online Tool',
     metaDescription: 'Convert HTML to Markdown instantly. Handles headings, lists, tables, code blocks & more. Free online HTML to Markdown converter — clean output, no signup.',
     faqs: [
       { question: 'What is Markdown?', answer: 'Markdown is a lightweight markup language with plain text formatting syntax. It\'s designed to be readable as plain text while being convertible to HTML. GitHub, Reddit, Stack Overflow, and many CMSs use Markdown for content.' },
@@ -1082,7 +1082,7 @@ Our compressor works entirely in your browser using the browser-image-compressio
     category: 'image-tools',
     targetKeyword: 'image compressor',
     secondaryKeywords: ['compress image online', 'reduce image size', 'jpg compressor', 'png compressor', 'image optimizer free', 'compress photo online'],
-    metaTitle: 'Image Compressor - Compress Images Online Free | ToolsArena',
+    metaTitle: 'Image Compressor - Compress Images Online Free',
     metaDescription: 'Compress JPEG, PNG & WebP images online without losing quality. Reduce file size up to 90%. Free, no watermark, privacy-first — images stay on your device.',
     faqs: [
       { question: 'Does compressing an image reduce its quality?', answer: 'Lossy compression (used for JPEG) does reduce quality slightly, but at 70-85% quality settings the difference is invisible to the human eye while reducing file sizes by 60-80%. PNG uses lossless compression — no quality loss.' },
@@ -1115,7 +1115,7 @@ All resizing is done client-side in your browser using the HTML Canvas API — y
     category: 'image-tools',
     targetKeyword: 'image resizer',
     secondaryKeywords: ['resize image online', 'image resize tool', 'crop image online', 'change image size', 'reduce image dimensions', 'photo resizer online'],
-    metaTitle: 'Image Resizer - Resize Images Online Free | ToolsArena',
+    metaTitle: 'Image Resizer - Resize Images Online Free',
     metaDescription: 'Resize images to exact dimensions online. Maintain aspect ratio or set custom size. Free image resizer — no watermark, no upload, privacy-first.',
     faqs: [
       { question: 'Will resizing an image reduce its quality?', answer: 'Downscaling (making smaller) generally produces good results. Upscaling (making larger) can cause pixelation or blurriness because pixels are being "invented". For upscaling, use AI upscaling tools for best results.' },
@@ -1246,7 +1246,7 @@ Best practice: inline Base64 images for small icons and UI elements (under 10KB)
     category: 'image-tools',
     targetKeyword: 'image to base64',
     secondaryKeywords: ['image to base64 converter', 'base64 image encoder', 'convert image to base64 online', 'img to base64', 'base64 image online'],
-    metaTitle: 'Image to Base64 Converter - Free Online Tool | ToolsArena',
+    metaTitle: 'Image to Base64 Converter - Free Online Tool',
     metaDescription: 'Convert images to Base64 encoded strings. Get HTML & CSS data URIs instantly. Free online image to Base64 converter — JPEG, PNG, WebP, SVG supported.',
     faqs: [
       { question: 'When should I use Base64 image embedding?', answer: 'Use it for: small icons/UI elements (<10KB), reducing critical HTTP requests, email HTML (where remote images may be blocked), offline apps, and storing images in JSON. Avoid for large images — increases size by ~33% and prevents caching.' },
@@ -1280,7 +1280,7 @@ The output PDF maintains the original quality, fonts, and formatting of all inpu
     category: 'pdf-tools',
     targetKeyword: 'PDF merge',
     secondaryKeywords: ['merge PDF files online', 'combine PDF', 'join PDF online free', 'PDF combiner', 'merge multiple PDFs'],
-    metaTitle: 'PDF Merge - Combine PDF Files Online Free | ToolsArena',
+    metaTitle: 'PDF Merge - Combine PDF Files Online Free',
     metaDescription: 'Merge multiple PDF files into one online. Drag to reorder pages. Free, secure, no watermark — files never leave your device. No signup needed.',
     faqs: [
       { question: 'Is PDF merging safe with this tool?', answer: 'Yes, completely safe. All PDF processing happens in your browser using JavaScript. Your PDF files are never uploaded to our servers, ensuring your documents remain private.' },
@@ -1313,7 +1313,7 @@ The tool uses pdf-lib to perform splitting client-side. Your PDF files never lea
     category: 'pdf-tools',
     targetKeyword: 'PDF split',
     secondaryKeywords: ['split PDF online', 'extract pages from PDF', 'divide PDF', 'PDF page extractor', 'separate PDF pages free'],
-    metaTitle: 'PDF Split - Split PDF Pages Online Free | ToolsArena',
+    metaTitle: 'PDF Split - Split PDF Pages Online Free',
     metaDescription: 'Split PDF into individual pages or custom ranges online. Extract specific pages from any PDF. Free, secure, no watermark — files stay on your device.',
     faqs: [
       { question: 'Can I extract only specific pages from a PDF?', answer: 'Yes. Enter page ranges like "1-5, 8, 11-15" to extract exactly those pages into a new PDF. You can create multiple output PDFs with different page ranges.' },
@@ -1580,7 +1580,7 @@ Perfect for scheduling international meetings, coordinating with remote teams, t
     category: 'converters',
     targetKeyword: 'time zone checker',
     secondaryKeywords: ['world clock', 'time zone converter', 'international time zones', 'remote team time zones', 'office time zones', 'what time is it in', 'meeting time planner'],
-    metaTitle: 'Time Zone Checker - World Clock for Remote Teams | ToolsArena',
+    metaTitle: 'Time Zone Checker - World Clock for Remote Teams',
     metaDescription: 'See live current time across 50+ world cities. Office buddy for remote teams — add cities, track time zones, find the best meeting time. Free & instant.',
     faqs: [
       { question: 'How many cities can I add?', answer: 'You can add as many cities as you like from our list of 50+ major cities covering all time zones. Remove any city with the × button.' },
@@ -1614,7 +1614,7 @@ Choose from 4 layout modes: side-by-side (editor left, preview right), top/botto
     category: 'developer-tools',
     targetKeyword: 'online HTML CSS JS editor',
     secondaryKeywords: ['html css js compiler', 'online code editor', 'live html editor', 'codepen alternative', 'html preview online', 'javascript playground', 'web code editor free'],
-    metaTitle: 'HTML CSS JS Editor - Live Code Playground Online | ToolsArena',
+    metaTitle: 'HTML CSS JS Editor - Live Code Playground Online',
     metaDescription: 'Free online HTML, CSS & JavaScript live editor with instant preview. Like CodePen — with dark theme, console, 6 templates, 4 layouts & file download. No signup.',
     faqs: [
       { question: 'How does the live preview work?', answer: 'Your HTML, CSS, and JavaScript are combined and injected into a sandboxed iframe. The preview updates automatically 600ms after you stop typing (auto-run mode). You can also disable auto-run and click "Run" manually.' },
@@ -1644,7 +1644,7 @@ Upload images, drag them to reorder the pages, choose your page size (A4, Letter
     category: 'pdf-tools',
     targetKeyword: 'JPG to PDF converter',
     secondaryKeywords: ['jpg to pdf online', 'image to pdf', 'png to pdf', 'convert image to pdf free', 'photos to pdf'],
-    metaTitle: 'JPG to PDF Converter - Free Online Image to PDF | ToolsArena',
+    metaTitle: 'JPG to PDF Converter - Free Online Image to PDF',
     metaDescription: 'Convert JPG, PNG, WebP images to PDF online for free. Upload multiple images, reorder pages, choose A4 or Letter size. No upload required — 100% private.',
     faqs: [
       { question: 'Can I convert multiple images to one PDF?', answer: 'Yes! Upload as many images as you need. Each image becomes one page in the PDF. You can reorder pages before converting.' },
@@ -1674,7 +1674,7 @@ Choose to rotate all pages at once (90° clockwise, 90° counter-clockwise, or 1
     category: 'pdf-tools',
     targetKeyword: 'rotate PDF online',
     secondaryKeywords: ['rotate pdf pages', 'turn pdf sideways', 'flip pdf', 'pdf rotation tool free'],
-    metaTitle: 'Rotate PDF Online Free - Rotate Pages 90° or 180° | ToolsArena',
+    metaTitle: 'Rotate PDF Online Free - Rotate Pages 90° or 180°',
     metaDescription: 'Rotate PDF pages online for free — rotate all pages or individual pages 90°, 180° or 270°. No upload needed. Fast, private, works in your browser.',
     faqs: [
       { question: 'Can I rotate only specific pages?', answer: 'Yes. Use the per-page controls to set different rotations for individual pages while leaving others unchanged.' },
@@ -1704,7 +1704,7 @@ Choose watermark type (text or image), customize the text, font size, color, opa
     category: 'pdf-tools',
     targetKeyword: 'add watermark to PDF online',
     secondaryKeywords: ['pdf watermark tool', 'stamp pdf watermark', 'confidential watermark pdf', 'watermark pdf free'],
-    metaTitle: 'Add Watermark to PDF Free Online - Text & Image Stamps | ToolsArena',
+    metaTitle: 'Add Watermark to PDF Free Online - Text & Image Stamps',
     metaDescription: 'Add text or image watermarks to every PDF page for free. Customize opacity, rotation, position and color. No upload required — 100% private & instant.',
     faqs: [
       { question: 'Can I add an image as a watermark?', answer: 'Yes! Switch to "Image Watermark" mode and upload a PNG or JPG logo. It will be centered on every page.' },
@@ -1734,7 +1734,7 @@ Optionally set the starting number and skip the first page (useful for cover pag
     category: 'pdf-tools',
     targetKeyword: 'add page numbers to PDF online',
     secondaryKeywords: ['pdf page numbering', 'number pdf pages', 'insert page numbers pdf free', 'pdf footer numbering'],
-    metaTitle: 'Add Page Numbers to PDF Free Online - Custom Numbering | ToolsArena',
+    metaTitle: 'Add Page Numbers to PDF Free Online - Custom Numbering',
     metaDescription: 'Add page numbers to any PDF free online. Choose position, format, font size and color. Skip cover pages, set custom starting number. No upload required.',
     faqs: [
       { question: 'Can I start numbering from a custom number?', answer: 'Yes. Set "Start from" to any number, e.g. start from 5 to account for a table of contents.' },
@@ -1764,7 +1764,7 @@ Upload your PDF, see all pages listed in order, then use the arrow buttons to re
     category: 'pdf-tools',
     targetKeyword: 'organize PDF pages online',
     secondaryKeywords: ['reorder pdf pages', 'delete pdf pages', 'rearrange pdf free', 'pdf page organizer'],
-    metaTitle: 'Organize PDF Pages Free Online - Reorder, Delete, Duplicate | ToolsArena',
+    metaTitle: 'Organize PDF Pages Free Online - Reorder, Delete, Duplicate',
     metaDescription: 'Reorder, delete and duplicate PDF pages free online. Upload your PDF, drag pages to rearrange, remove unwanted pages and download. No upload to server.',
     faqs: [
       { question: 'Can I delete multiple pages?', answer: 'Yes. Click the trash icon next to any page to remove it. Repeat for each unwanted page.' },
@@ -1794,7 +1794,7 @@ Set crop values for top, right, bottom, and left margins (in PDF points). Use qu
     category: 'pdf-tools',
     targetKeyword: 'crop PDF online',
     secondaryKeywords: ['trim pdf margins', 'remove pdf white space', 'crop pdf pages free', 'cut pdf border'],
-    metaTitle: 'Crop PDF Online Free - Trim & Remove PDF Margins | ToolsArena',
+    metaTitle: 'Crop PDF Online Free - Trim & Remove PDF Margins',
     metaDescription: 'Crop and trim PDF page margins online for free. Set top, right, bottom, left crop values. Visual preview included. No upload — 100% private & instant.',
     faqs: [
       { question: 'What unit are the crop values in?', answer: 'PDF points. 72 points = 1 inch = 25.4mm. A typical A4 page is 595 × 842 points.' },
@@ -1828,7 +1828,7 @@ Place the signature on the last page, first page, all pages, or any specific pag
     category: 'pdf-tools',
     targetKeyword: 'sign PDF online free',
     secondaryKeywords: ['electronic signature pdf', 'digital signature pdf', 'pdf e-sign', 'sign pdf without printing', 'draw signature pdf'],
-    metaTitle: 'Sign PDF Online Free - Draw, Type or Upload Signature | ToolsArena',
+    metaTitle: 'Sign PDF Online Free - Draw, Type or Upload Signature',
     metaDescription: 'Sign PDF files online for free. Draw your signature, type it in cursive, or upload an image. Add e-signature to any PDF page. 100% private.',
     faqs: [
       { question: 'Is this a legally binding electronic signature?', answer: 'This tool adds a visual signature image to the PDF. For legally binding e-signatures, you may need a service with audit trails like DocuSign or Adobe Sign.' },
@@ -1858,7 +1858,7 @@ Upload your PDF and then add images one by one. For each image, configure which 
     category: 'pdf-tools',
     targetKeyword: 'insert image into PDF online',
     secondaryKeywords: ['add image to pdf', 'add logo to pdf', 'insert logo pdf', 'pdf stamp image free', 'embed image pdf'],
-    metaTitle: 'Insert Image into PDF Free Online - Add Logo & Stamps | ToolsArena',
+    metaTitle: 'Insert Image into PDF Free Online - Add Logo & Stamps',
     metaDescription: 'Insert images, logos and stamps into PDF pages free online. Control position, size, opacity. Apply to all pages or specific pages. No upload to server.',
     faqs: [
       { question: 'Can I add a logo to every page?', answer: 'Yes. Set "Apply to" to "All pages" to stamp the image on every single page of the PDF.' },
@@ -1888,7 +1888,7 @@ Paste your CSV data or upload a .csv file. Customize delimiter (comma, semicolon
     category: 'pdf-tools',
     targetKeyword: 'CSV to PDF converter online',
     secondaryKeywords: ['csv to pdf', 'excel to pdf table', 'convert csv to pdf free', 'spreadsheet to pdf', 'csv pdf export'],
-    metaTitle: 'CSV to PDF Converter Free Online - Table PDF from CSV | ToolsArena',
+    metaTitle: 'CSV to PDF Converter Free Online - Table PDF from CSV',
     metaDescription: 'Convert CSV or Excel data to a formatted PDF table online free. Customize style, header color, font size. Live preview included. No upload — 100% private.',
     faqs: [
       { question: 'Can I convert Excel files directly?', answer: 'Excel (.xlsx) is not supported directly, but you can export your Excel sheet as CSV first and then convert here.' },
@@ -1918,7 +1918,7 @@ Uses the Web Crypto API (crypto.getRandomValues) for true cryptographic randomne
     category: 'developer-tools',
     targetKeyword: 'password generator',
     secondaryKeywords: ['random password generator', 'strong password generator', 'secure password maker', 'password creator online'],
-    metaTitle: 'Password Generator - Free Strong Password Creator | ToolsArena',
+    metaTitle: 'Password Generator - Free Strong Password Creator',
     metaDescription: 'Generate strong, secure random passwords online. Choose length, character types & get instant strength rating. Uses crypto API — 100% secure, no storage.',
     faqs: [
       { question: 'Is this password generator truly random?', answer: 'Yes. We use the Web Crypto API (crypto.getRandomValues) — the same standard used by security software.' },
@@ -1949,7 +1949,7 @@ Supports multiple delimiters (comma, semicolon, tab, pipe), auto-detects numeric
     category: 'developer-tools',
     targetKeyword: 'CSV to JSON converter',
     secondaryKeywords: ['csv to json online', 'json to csv converter', 'convert csv to json free', 'data converter online'],
-    metaTitle: 'CSV to JSON Converter - Free Online Bidirectional Tool | ToolsArena',
+    metaTitle: 'CSV to JSON Converter - Free Online Bidirectional Tool',
     metaDescription: 'Convert CSV to JSON and JSON to CSV online instantly. Auto number detection, multiple delimiters, file upload & download. Free, no signup required.',
     faqs: [
       { question: 'Does it handle quoted CSV fields?', answer: 'Yes. Fields containing commas or quotes enclosed in double quotes are parsed correctly per CSV spec.' },
@@ -1979,7 +1979,7 @@ Download as a complete HTML file with CSS included. Perfect for bloggers, develo
     category: 'developer-tools',
     targetKeyword: 'Markdown to HTML converter',
     secondaryKeywords: ['markdown to html online', 'md to html', 'markdown preview online', 'convert markdown free', 'markdown renderer'],
-    metaTitle: 'Markdown to HTML Converter - Live Preview Online | ToolsArena',
+    metaTitle: 'Markdown to HTML Converter - Live Preview Online',
     metaDescription: 'Convert Markdown to HTML with live preview. Supports tables, code blocks, lists, links & more. Download as HTML file. Free online Markdown to HTML tool.',
     faqs: [
       { question: 'What Markdown features are supported?', answer: 'Headings H1–H6, bold, italic, strikethrough, inline code, fenced code blocks, links, images, lists, blockquotes, tables, and horizontal rules.' },
@@ -2013,7 +2013,7 @@ This tool supports both English (Roman) and Hindi (Devanagari) name input. Once 
     category: 'converters',
     targetKeyword: 'Rashi checker by name',
     secondaryKeywords: ['rashi by name', 'find rashi from name', 'naam se rashi', 'rashi kaise jane', 'janm rashi', 'zodiac by name hindi', 'rashi calculator'],
-    metaTitle: 'Rashi Checker by Name - Find Your Vedic Zodiac Sign Free | ToolsArena',
+    metaTitle: 'Rashi Checker by Name - Find Your Vedic Zodiac Sign Free',
     metaDescription: 'Find your Rashi (Vedic zodiac sign) by name instantly. Supports English & Hindi names. Get Rashi, ruling planet, element, lucky number & personality traits.',
     faqs: [
       { question: 'What is a Rashi?', answer: 'Rashi is a Sanskrit term meaning "zodiac sign" in Vedic astrology. There are 12 Rashis corresponding to the 12 signs of the zodiac (Mesh/Aries through Meen/Pisces). Your Janma Rashi (birth Rashi) is determined by the position of the Moon at the time of your birth.' },
@@ -2045,7 +2045,7 @@ A score above 18 is generally considered acceptable, 25+ is good, and 32+ is exc
     category: 'converters',
     targetKeyword: 'Gun Milan calculator',
     secondaryKeywords: ['kundali matching', 'kundli milan', 'ashtakoota matching', 'marriage compatibility calculator', 'guna milan online', '36 gun milan', 'shaadi compatibility'],
-    metaTitle: 'Gun Milan Calculator - Kundali Matching Free Online | ToolsArena',
+    metaTitle: 'Gun Milan Calculator - Kundali Matching Free Online',
     metaDescription: 'Check marriage compatibility with Gun Milan (Ashtakoota). Enter boy & girl names to get 36-point compatibility score, Nadi Dosha check & detailed analysis.',
     faqs: [
       { question: 'What is Gun Milan (Ashtakoota)?', answer: 'Gun Milan is the Vedic astrology system of checking marriage compatibility. "Ashtakoota" means 8 groups (Ashta = 8, Koota = group). Each Koota tests a different aspect of compatibility — from personality to health to genetics. The maximum score is 36 Gunas.' },
@@ -2081,7 +2081,7 @@ This is a 100% free, unofficial fan-made tool. All squad data is based on public
     category: 'cricket-tools',
     targetKeyword: 'IPL 2026 squad',
     secondaryKeywords: ['IPL team squad', 'IPL 2026 players list', 'CSK squad 2026', 'MI squad 2026', 'IPL squad explorer', 'IPL auction 2026', 'IPL retained players'],
-    metaTitle: 'IPL 2026 Team Squad Explorer - All 10 Teams & Players | ToolsArena',
+    metaTitle: 'IPL 2026 Team Squad Explorer - All 10 Teams & Players',
     metaDescription: 'Explore complete IPL 2026 squad for all 10 teams. Filter by role & nationality. View auction prices, retained players & captain details. Free fan tool.',
     faqs: [
       { question: 'How many players are in each IPL 2026 team?', answer: 'Each IPL 2026 team can have a maximum of 25 players in their squad, with up to 8 overseas players allowed. However, only 4 overseas players can play in any single match.' },
@@ -2116,7 +2116,7 @@ This is an unofficial fan-made schedule tool. Match timings are in IST (Indian S
     category: 'cricket-tools',
     targetKeyword: 'IPL 2026 match schedule',
     secondaryKeywords: ['IPL 2026 fixtures', 'IPL schedule 2026', 'IPL match time table', 'IPL 2026 dates', 'IPL next match', 'IPL 2026 venue', 'IPL schedule today'],
-    metaTitle: 'IPL 2026 Match Schedule - Full Fixture List & Countdown | ToolsArena',
+    metaTitle: 'IPL 2026 Match Schedule - Full Fixture List & Countdown',
     metaDescription: 'View complete IPL 2026 match schedule with live countdown to next match. Filter by team or venue. All match dates, times & venues in IST. Free fan tool.',
     faqs: [
       { question: 'When does IPL 2026 start?', answer: 'IPL 2026 is scheduled to begin in late March 2026. The exact opening match date and venue will be confirmed by BCCI. Check back for the latest official announcement.' },
@@ -2151,7 +2151,7 @@ This is an unofficial fan-made comparison tool for entertainment and educational
     category: 'cricket-tools',
     targetKeyword: 'IPL player comparison',
     secondaryKeywords: ['compare IPL players', 'IPL player stats', 'IPL batting stats', 'IPL bowling stats', 'Virat Kohli vs Rohit Sharma IPL', 'IPL player head to head', 'IPL career stats'],
-    metaTitle: 'IPL Player Comparison Tool - Compare Career Stats Side by Side | ToolsArena',
+    metaTitle: 'IPL Player Comparison Tool - Compare Career Stats Side by Side',
     metaDescription: 'Compare any 2 IPL players side by side. View career batting & bowling stats, averages, strike rates and more. Free unofficial IPL fan tool by ToolsArena.',
     faqs: [
       { question: 'Which players can I compare in this tool?', answer: 'The tool includes the top 60+ IPL players with complete career statistics. This covers current stars like Virat Kohli, Rohit Sharma, MS Dhoni, Jasprit Bumrah, and many more.' },
@@ -2186,7 +2186,7 @@ At the start of the season, all teams begin at 0 points. The table updates autom
     category: 'cricket-tools',
     targetKeyword: 'IPL 2026 points table',
     secondaryKeywords: ['IPL standings 2026', 'IPL points table today', 'IPL NRR calculator', 'IPL qualification table', 'IPL league table', 'IPL team rankings', 'IPL playoff qualification'],
-    metaTitle: 'IPL 2026 Points Table - Live Standings, NRR & Playoffs | ToolsArena',
+    metaTitle: 'IPL 2026 Points Table - Live Standings, NRR & Playoffs',
     metaDescription: 'View IPL 2026 points table with live standings, NRR, wins/losses. See which teams qualify for playoffs. Sortable by points, NRR and wins. Free fan tool.',
     faqs: [
       { question: 'How does the IPL points system work?', answer: 'In IPL, each win earns a team 2 points. A loss gives 0 points. A no-result or abandoned match gives both teams 1 point each. Teams are ranked by total points, with NRR as the tiebreaker.' },
@@ -2223,7 +2223,7 @@ Save your business details as a template so you never have to re-enter them. Eac
     category: 'pdf-tools',
     targetKeyword: 'free invoice generator',
     secondaryKeywords: ['invoice generator online', 'invoice maker', 'create invoice online free', 'invoice generator pdf', 'free invoice maker no signup', 'GST invoice generator', 'online bill maker', 'invoice template generator', 'professional invoice creator', 'freelance invoice tool'],
-    metaTitle: 'Free Invoice Generator - Create & Download PDF Invoices Online | ToolsArena',
+    metaTitle: 'Free Invoice Generator - Create & Download PDF Invoices Online',
     metaDescription: 'Create professional invoices in seconds with our free invoice generator. Add logo, taxes, discounts, 30+ currencies. Download as PDF — no signup, 100% private.',
     faqs: [
       { question: 'Is this invoice generator really free?', answer: 'Yes, 100% free with no hidden costs. You can create unlimited invoices, download them as PDF, and use all features including logo upload, multiple templates, and 30+ currencies — no signup or payment required.' },
@@ -2262,7 +2262,7 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     category: 'calculators',
     targetKeyword: 'compound interest calculator',
     secondaryKeywords: ['CI calculator', 'compound interest formula', 'compound interest calculator with steps', 'monthly compound interest calculator', 'quarterly compound interest calculator', 'compound interest calculator India', 'FD interest calculator', 'compound interest calculator online free', 'power of compounding calculator', 'interest on interest calculator'],
-    metaTitle: 'Compound Interest Calculator - Calculate CI Online Free | ToolsArena',
+    metaTitle: 'Compound Interest Calculator - Calculate CI Online Free',
     metaDescription: 'Free compound interest calculator with year-by-year breakdown. Supports monthly, quarterly & yearly compounding. Compare CI vs SI — no signup required.',
     faqs: [
       { question: 'What is compound interest?', answer: 'Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest (calculated only on the principal), compound interest makes your money grow faster because you earn "interest on interest". This is often called the power of compounding.' },
@@ -2298,7 +2298,7 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     category: 'calculators',
     targetKeyword: 'FD calculator',
     secondaryKeywords: ['RD calculator', 'fixed deposit calculator', 'recurring deposit calculator', 'FD maturity calculator', 'RD maturity calculator', 'FD interest calculator', 'bank FD calculator India', 'RD calculator with monthly deposit', 'fixed deposit return calculator', 'FD RD comparison calculator'],
-    metaTitle: 'FD & RD Calculator - Fixed & Recurring Deposit Online | ToolsArena',
+    metaTitle: 'FD & RD Calculator - Fixed & Recurring Deposit Online',
     metaDescription: 'Free FD & RD calculator with year-by-year breakdown. Calculate fixed deposit & recurring deposit maturity and interest earned. No signup needed.',
     faqs: [
       { question: 'What is a Fixed Deposit (FD)?', answer: 'A Fixed Deposit is a financial instrument where you deposit a lump sum amount with a bank for a fixed period at a predetermined interest rate. The interest is compounded (usually quarterly in India) and paid at maturity along with the principal. FDs are considered one of the safest investment options.' },
@@ -2338,7 +2338,7 @@ The generated PDF is clean, well-formatted, and ATS-compatible — meaning it pa
     category: 'utility-tools',
     targetKeyword: 'free resume builder',
     secondaryKeywords: ['resume builder online free', 'resume maker', 'CV builder free', 'resume generator', 'ATS resume builder', 'professional resume maker', 'resume builder no signup', 'free resume download PDF', 'online CV maker', 'resume builder for freshers', 'resume builder India', 'job resume creator'],
-    metaTitle: 'Free Resume Builder - Create Professional Resume & Download PDF | ToolsArena',
+    metaTitle: 'Free Resume Builder - Create Professional Resume & Download PDF',
     metaDescription: 'Build a professional ATS-friendly resume in minutes. 3 templates, live preview, auto-save, PDF download. No signup, no watermark — 100% free online.',
     faqs: [
       { question: 'Is this resume builder really free?', answer: 'Yes, 100% free with no hidden costs, no watermarks, and no download limits. You can create unlimited resumes, switch between templates, and download as many PDFs as you want. No signup or credit card required.' },
@@ -2381,7 +2381,7 @@ Perfect for homework, exam preparation, engineering calculations, physics proble
     category: 'calculators',
     targetKeyword: 'scientific calculator online',
     secondaryKeywords: ['scientific calculator', 'online calculator', 'free scientific calculator', 'scientific calculator with steps', 'trigonometry calculator', 'logarithm calculator online', 'sin cos tan calculator', 'advanced calculator online', 'math calculator free', 'calculator with history', 'scientific calculator for students', 'engineering calculator online'],
-    metaTitle: 'Scientific Calculator Online - Free Advanced Math Calculator | ToolsArena',
+    metaTitle: 'Scientific Calculator Online - Free Advanced Math Calculator',
     metaDescription: 'Free online scientific calculator with sin, cos, tan, log, ln, powers, roots, factorial, DEG/RAD mode, and calculation history. No signup — works on any device.',
     faqs: [
       { question: 'What functions does this scientific calculator support?', answer: 'This calculator supports: basic arithmetic (+, -, ×, ÷, %), trigonometric functions (sin, cos, tan, asin, acos, atan), logarithms (log base 10, natural log ln), powers (x², xʸ, 10ˣ), roots (√), factorial (x!), absolute value (|x|), reciprocal (1/x), and constants (π, e). It also supports nested parentheses and proper operator precedence.' },
@@ -2423,7 +2423,7 @@ We built this for students, small business owners, freelancers, and creators who
     category: 'image-tools',
     targetKeyword: 'remove background from image',
     secondaryKeywords: ['background remover', 'remove bg', 'transparent background maker', 'image background eraser', 'free background remover online', 'remove image background online', 'bg remover free', 'remove bg from photo', 'transparent background generator', 'background eraser online free', 'remove white background', 'product photo background remover'],
-    metaTitle: 'Remove Background from Image Free Online — AI Background Remover | ToolsArena',
+    metaTitle: 'Remove Background from Image Free Online — AI Background Remover',
     metaDescription: 'Remove image backgrounds for free using AI that runs in your browser. No signup, no watermark, unlimited use. Your photos never leave your device. Try it now!',
     faqs: [
       { question: 'How does the background removal work?', answer: 'The tool uses an AI model (U2-Net) that runs entirely in your browser using WebAssembly technology. It analyzes your image, identifies the main subject, and removes everything else. No server processing — it all happens on your device.' },
@@ -2459,7 +2459,7 @@ All processing happens in your browser using the Canvas API — your files are n
     category: 'converters',
     targetKeyword: 'svg to png converter',
     secondaryKeywords: ['convert svg to png', 'svg to png online', 'svg converter', 'vector to png', 'svg to image', 'svg to raster'],
-    metaTitle: 'SVG to PNG Converter - Convert Vector to PNG Online | ToolsArena',
+    metaTitle: 'SVG to PNG Converter - Convert Vector to PNG Online',
     metaDescription: 'Convert SVG files to high-quality PNG images online for free. Custom scale (1x-4x), transparent backgrounds supported. No upload — runs in your browser.',
     faqs: [
       { question: 'What scale should I use?', answer: '1x gives you the original SVG dimensions. 2x is recommended for retina/HiDPI displays. 3x-4x are for very high resolution needs like print.' },
@@ -2490,7 +2490,7 @@ Includes visual RGB sliders for intuitive color exploration and one-click copy b
     category: 'developer-tools',
     targetKeyword: 'hex to rgb converter',
     secondaryKeywords: ['rgb to hex', 'hex to rgb', 'color converter', 'hex color code', 'rgb to hex converter', 'hsl converter', 'css color converter'],
-    metaTitle: 'HEX to RGB Converter - Color Code Converter Online | ToolsArena',
+    metaTitle: 'HEX to RGB Converter - Color Code Converter Online',
     metaDescription: 'Convert colors between HEX, RGB & HSL instantly. Visual color picker, RGB sliders, one-click copy. Free online color converter for developers & designers.',
     faqs: [
       { question: 'What is HEX color format?', answer: 'HEX is a 6-character code (e.g., #3b82f6) representing Red, Green, and Blue channels in hexadecimal (00-FF). It\'s the most common format in CSS and web design.' },
@@ -2520,7 +2520,7 @@ All processing is done client-side in your browser — your code is never sent t
     category: 'developer-tools',
     targetKeyword: 'css minifier',
     secondaryKeywords: ['minify css', 'css compressor', 'css optimizer', 'compress css online', 'css minify online', 'reduce css file size'],
-    metaTitle: 'CSS Minifier - Minify & Compress CSS Online Free | ToolsArena',
+    metaTitle: 'CSS Minifier - Minify & Compress CSS Online Free',
     metaDescription: 'Minify CSS code online for free. Removes comments, whitespace & optimizes syntax. See bytes saved instantly. No signup, privacy-first — code stays in your browser.',
     faqs: [
       { question: 'What does CSS minification do?', answer: 'It removes comments, extra whitespace, line breaks, and unnecessary characters from your CSS. This reduces file size by 20-60% typically, making your website load faster.' },
@@ -2551,7 +2551,7 @@ Perfect for quick notes during meetings, brainstorming sessions, drafting messag
     category: 'utility-tools',
     targetKeyword: 'online notepad',
     secondaryKeywords: ['notepad online', 'online text editor', 'quick notepad', 'online notes', 'free notepad', 'web notepad', 'simple text editor'],
-    metaTitle: 'Online Notepad - Free Text Editor with Auto-Save | ToolsArena',
+    metaTitle: 'Online Notepad - Free Text Editor with Auto-Save',
     metaDescription: 'Free online notepad with auto-save, word count & download. No signup — your notes stay private in your browser. Simple, fast, distraction-free writing.',
     faqs: [
       { question: 'Are my notes saved?', answer: 'Yes, automatically! Your text is saved to your browser\'s localStorage every time you pause typing. Come back to the same browser and your notes will be there.' },
@@ -2583,7 +2583,7 @@ Perfect for quick minification of small scripts without configuring Webpack, Rol
     category: 'developer-tools',
     targetKeyword: 'javascript minifier',
     secondaryKeywords: ['minify javascript', 'js compressor', 'js minifier online', 'compress javascript', 'minify js online free', 'javascript compressor online'],
-    metaTitle: 'JavaScript Minifier - Minify JS Code Online Free | ToolsArena',
+    metaTitle: 'JavaScript Minifier - Minify JS Code Online Free',
     metaDescription: 'Minify JavaScript code online for free. Removes comments & whitespace, shows bytes saved. No signup, code stays in your browser. Instant JS compression.',
     faqs: [
       { question: 'What does JavaScript minification do?', answer: 'It removes comments, extra whitespace, and unnecessary characters from your JS code. This typically reduces file size by 20-50%, making your website load faster.' },
@@ -2608,7 +2608,7 @@ Everything runs in your browser using the Canvas API — your images are never u
     category: 'image-tools',
     targetKeyword: 'crop image online',
     secondaryKeywords: ['image cropper', 'crop photo online', 'free image cropper', 'online photo cropper', 'crop picture', 'resize and crop image', 'crop image for instagram'],
-    metaTitle: 'Crop Image Online Free — Photo Cropper with Aspect Ratios | ToolsArena',
+    metaTitle: 'Crop Image Online Free — Photo Cropper with Aspect Ratios',
     metaDescription: 'Crop images online for free with preset aspect ratios (1:1, 16:9, 9:16, 4:3). Rule-of-thirds grid, pixel-perfect output. No upload — images stay on your device.',
     faqs: [
       { question: 'What aspect ratios are available?', answer: 'Free crop (no constraint), 1:1 (square — perfect for Instagram), 16:9 (YouTube/desktop), 9:16 (Stories/Reels), 4:3 (photos), and 3:2 (prints).' },
@@ -2634,7 +2634,7 @@ Built with high-resolution timing using Date.now() for accuracy. Perfect for wor
     category: 'utility-tools',
     targetKeyword: 'online stopwatch',
     secondaryKeywords: ['stopwatch', 'stopwatch online', 'free stopwatch', 'lap timer online', 'timer stopwatch', 'digital stopwatch', 'sports timer'],
-    metaTitle: 'Online Stopwatch — Free Lap Timer with Centiseconds | ToolsArena',
+    metaTitle: 'Online Stopwatch — Free Lap Timer with Centiseconds',
     metaDescription: 'Free online stopwatch with lap timer, centisecond accuracy, and best/worst lap highlighting. Clean design, works instantly. No download or signup needed.',
     faqs: [
       { question: 'How accurate is the stopwatch?', answer: 'The stopwatch uses Date.now() which provides millisecond-level accuracy. The display shows centiseconds (1/100th of a second) for practical precision.' },
@@ -2660,7 +2660,7 @@ The timer runs entirely in your browser — no account, no data collection. Cust
     category: 'utility-tools',
     targetKeyword: 'pomodoro timer',
     secondaryKeywords: ['pomodoro timer online', 'pomodoro technique', 'focus timer', 'study timer', 'productivity timer', 'work timer', '25 minute timer'],
-    metaTitle: 'Pomodoro Timer — Free Focus Timer for Productivity | ToolsArena',
+    metaTitle: 'Pomodoro Timer — Free Focus Timer for Productivity',
     metaDescription: 'Free Pomodoro timer with customizable work/break intervals, audio alerts & session tracking. Boost focus and productivity. No signup, works in your browser.',
     faqs: [
       { question: 'What is the Pomodoro Technique?', answer: 'It is a time management method: work for 25 minutes (one "pomodoro"), take a 5-minute break, repeat. After 4 pomodoros, take a longer 15-minute break. It helps maintain focus and prevent burnout.' },
@@ -2685,7 +2685,7 @@ Perfect for proofreading by listening to your writing, language learning, access
     category: 'text-tools',
     targetKeyword: 'text to speech online',
     secondaryKeywords: ['text to speech', 'tts online', 'read text aloud', 'text reader online', 'text to voice', 'free text to speech', 'convert text to audio'],
-    metaTitle: 'Text to Speech Online Free — Read Text Aloud in 50+ Voices | ToolsArena',
+    metaTitle: 'Text to Speech Online Free — Read Text Aloud in 50+ Voices',
     metaDescription: 'Convert text to speech online for free. 50+ voices, multiple languages, adjustable speed & pitch. No signup, runs in your browser. Listen to any text instantly.',
     faqs: [
       { question: 'What voices are available?', answer: 'The available voices depend on your browser and operating system. Chrome typically offers 20+ voices, while Edge offers 100+ premium voices. The tool automatically lists all voices available on your device.' },
@@ -2711,7 +2711,7 @@ All processing is client-side — your code never leaves your browser. Perfect f
     category: 'developer-tools',
     targetKeyword: 'html beautifier',
     secondaryKeywords: ['html formatter', 'format html online', 'html prettifier', 'beautify html', 'html indenter', 'html code formatter', 'pretty print html'],
-    metaTitle: 'HTML Beautifier — Format & Prettify HTML Online Free | ToolsArena',
+    metaTitle: 'HTML Beautifier — Format & Prettify HTML Online Free',
     metaDescription: 'Beautify and format messy HTML code online for free. Proper indentation, clean output. No signup, code stays in your browser. Instant HTML formatter.',
     faqs: [
       { question: 'Does it handle self-closing tags?', answer: 'Yes. Void elements like <br>, <img>, <input>, <meta>, etc. are handled correctly — they don\'t increase the indent level.' },
@@ -2735,7 +2735,7 @@ All processing happens in your browser using the Canvas API — your images are 
     category: 'image-tools',
     targetKeyword: 'add watermark to image',
     secondaryKeywords: ['image watermark', 'watermark photo online', 'add watermark free', 'watermark tool', 'text watermark', 'photo watermark online', 'watermark image online free'],
-    metaTitle: 'Add Watermark to Image Free — Text Watermark Tool Online | ToolsArena',
+    metaTitle: 'Add Watermark to Image Free — Text Watermark Tool Online',
     metaDescription: 'Add text watermarks to images for free. Custom font, color, opacity, tiling & position. No signup, images stay on your device. Protect your photos instantly.',
     faqs: [
       { question: 'Can I tile the watermark across the entire image?', answer: 'Yes! Select "Tile (Repeat)" from the position dropdown to cover the entire image with your watermark text — great for preventing unauthorized use.' },
@@ -2759,7 +2759,7 @@ Perfect for developers, sysadmins, students, and anyone who needs to quickly con
     category: 'converters',
     targetKeyword: 'file size converter',
     secondaryKeywords: ['bytes to mb', 'kb to mb', 'mb to gb', 'file size calculator', 'bytes converter', 'data size converter', 'storage unit converter', 'gb to mb'],
-    metaTitle: 'File Size Converter — Bytes to KB, MB, GB, TB Online | ToolsArena',
+    metaTitle: 'File Size Converter — Bytes to KB, MB, GB, TB Online',
     metaDescription: 'Convert file sizes between Bytes, KB, MB, GB & TB instantly. Quick reference table, one-click copy. Free online file size calculator.',
     faqs: [
       { question: 'Is 1 KB equal to 1000 or 1024 bytes?', answer: 'In computing, 1 KB = 1024 bytes (binary). In the SI system, 1 kB = 1000 bytes (decimal). This tool uses binary (1024-based) calculations, which is what your OS reports.' },
@@ -2782,7 +2782,7 @@ All formatting happens in your browser — your queries never leave your device.
     category: 'developer-tools',
     targetKeyword: 'sql formatter',
     secondaryKeywords: ['sql beautifier', 'format sql online', 'sql formatter online', 'sql pretty print', 'sql query formatter', 'beautify sql', 'sql indenter'],
-    metaTitle: 'SQL Formatter — Format & Beautify SQL Queries Online Free | ToolsArena',
+    metaTitle: 'SQL Formatter — Format & Beautify SQL Queries Online Free',
     metaDescription: 'Format SQL queries online for free. Auto-uppercase keywords, proper indentation, clean output. No signup, queries stay in your browser. Instant SQL beautifier.',
     faqs: [
       { question: 'What SQL dialects are supported?', answer: 'The formatter supports standard SQL syntax including SELECT, JOIN, INSERT, UPDATE, DELETE, CREATE, and subqueries. It works with MySQL, PostgreSQL, SQLite, SQL Server, and Oracle syntax.' },
@@ -2806,7 +2806,7 @@ All conversion happens in your browser using the DOMParser API — your data nev
     category: 'developer-tools',
     targetKeyword: 'xml to json converter',
     secondaryKeywords: ['xml to json', 'convert xml to json', 'xml to json online', 'xml converter', 'xml to json tool', 'xml json converter free'],
-    metaTitle: 'XML to JSON Converter — Convert XML to JSON Online Free | ToolsArena',
+    metaTitle: 'XML to JSON Converter — Convert XML to JSON Online Free',
     metaDescription: 'Convert XML to JSON online for free. Handles attributes, nested elements & arrays. No signup, data stays in your browser. Instant XML to JSON conversion.',
     faqs: [
       { question: 'How are XML attributes handled?', answer: 'Attributes are converted to JSON keys with an @ prefix. For example, <user id="1"> becomes {"@id": "1"}.' },
@@ -2830,7 +2830,7 @@ Includes a syntax reference guide and supports all standard cron features: wildc
     category: 'developer-tools',
     targetKeyword: 'cron expression generator',
     secondaryKeywords: ['cron generator', 'crontab generator', 'cron builder', 'cron schedule generator', 'cron expression builder', 'crontab guru', 'cron job generator'],
-    metaTitle: 'Cron Expression Generator — Visual Cron Builder Online | ToolsArena',
+    metaTitle: 'Cron Expression Generator — Visual Cron Builder Online',
     metaDescription: 'Generate cron expressions visually with presets, dropdowns & plain English descriptions. Decode existing cron jobs. Free cron builder — no signup needed.',
     faqs: [
       { question: 'What is a cron expression?', answer: 'A cron expression is a string of 5 fields (minute, hour, day-of-month, month, day-of-week) that defines a recurring schedule. It is used in Unix/Linux cron jobs, CI/CD pipelines, cloud schedulers, and more.' },
@@ -2854,7 +2854,7 @@ Uses the Web Speech Recognition API built into Chrome and Edge — no downloads,
     category: 'text-tools',
     targetKeyword: 'speech to text online',
     secondaryKeywords: ['speech to text', 'voice to text', 'voice typing', 'dictation online', 'speech recognition online', 'free voice to text', 'transcribe speech'],
-    metaTitle: 'Speech to Text Online Free — Voice Typing in 12+ Languages | ToolsArena',
+    metaTitle: 'Speech to Text Online Free — Voice Typing in 12+ Languages',
     metaDescription: 'Convert speech to text in real time. Free voice typing in 12+ languages with download option. Works in Chrome & Edge. No signup, instant transcription.',
     faqs: [
       { question: 'Which browsers support this?', answer: 'Speech recognition works best in Google Chrome and Microsoft Edge. Safari has partial support. Firefox does not currently support the Web Speech Recognition API.' },
@@ -2879,7 +2879,7 @@ Uses the browser's native MediaRecorder API and getDisplayMedia API — your scr
     category: 'utility-tools',
     targetKeyword: 'screen recorder online',
     secondaryKeywords: ['screen recorder', 'free screen recorder', 'online screen recorder', 'record screen online', 'screen capture online', 'browser screen recorder', 'screen recording no download'],
-    metaTitle: 'Screen Recorder Online Free — No Download, No Watermark | ToolsArena',
+    metaTitle: 'Screen Recorder Online Free — No Download, No Watermark',
     metaDescription: 'Record your screen for free directly in your browser. No download, no watermark, no time limit. Include mic audio. Download as WebM. Privacy-first screen capture.',
     faqs: [
       { question: 'Do I need to install anything?', answer: 'No! The screen recorder uses your browser\'s built-in APIs. Just click "Start Recording" and choose what to share. Works in Chrome, Edge, and Firefox.' },
@@ -2906,7 +2906,7 @@ Note: Unlike most ToolsArena tools, this one does make an external API call to i
     category: 'utility-tools',
     targetKeyword: 'what is my ip',
     secondaryKeywords: ['my ip address', 'ip address lookup', 'ip lookup', 'find my ip', 'check my ip', 'ip location', 'ip geolocation', 'what is my ip address'],
-    metaTitle: 'What Is My IP Address? — IP Lookup with Location | ToolsArena',
+    metaTitle: 'What Is My IP Address? — IP Lookup with Location',
     metaDescription: 'Find your public IP address instantly with city, country, ISP, timezone & coordinates. Look up any IP address. Free IP geolocation tool.',
     faqs: [
       { question: 'What is a public IP address?', answer: 'Your public IP is the address that websites and services see when you connect to the internet. It is assigned by your ISP and identifies your connection to the outside world.' },
@@ -2931,7 +2931,7 @@ All processing happens in your browser using the pdf-lib library — your images
     category: 'pdf-tools',
     targetKeyword: 'image to pdf converter',
     secondaryKeywords: ['image to pdf', 'jpg to pdf', 'png to pdf', 'convert image to pdf', 'photo to pdf', 'images to pdf online', 'picture to pdf free'],
-    metaTitle: 'Image to PDF Converter — Convert Photos to PDF Online Free | ToolsArena',
+    metaTitle: 'Image to PDF Converter — Convert Photos to PDF Online Free',
     metaDescription: 'Convert images to PDF online for free. Multiple images, custom page size & margins. Arrange pages before generating. No upload — images stay on your device.',
     faqs: [
       { question: 'How many images can I add?', answer: 'There is no hard limit. You can add as many images as your browser can handle. For very large batches (50+), processing may be slower.' },
@@ -2957,7 +2957,7 @@ No account, no saving to cloud — it is a quick-use whiteboard for when you nee
     category: 'utility-tools',
     targetKeyword: 'online whiteboard',
     secondaryKeywords: ['whiteboard online', 'free whiteboard', 'drawing board online', 'online drawing tool', 'digital whiteboard', 'sketch online', 'web whiteboard free'],
-    metaTitle: 'Online Whiteboard — Free Drawing Board & Sketch Tool | ToolsArena',
+    metaTitle: 'Online Whiteboard — Free Drawing Board & Sketch Tool',
     metaDescription: 'Free online whiteboard for drawing, sketching & brainstorming. 9+ colors, eraser, undo, adjustable brush. Download as PNG. Works on desktop & touch devices.',
     faqs: [
       { question: 'Does it work on tablets and phones?', answer: 'Yes! The whiteboard supports touch input, so you can draw with your finger or a stylus on tablets and touchscreen devices.' },
@@ -2986,7 +2986,7 @@ This tool works 100% in your browser. No sign-up, no downloads, no data collecti
     category: 'utility-tools',
     targetKeyword: 'typing speed test',
     secondaryKeywords: ['typing test', 'wpm test', 'typing speed test online', 'online typing test', 'free typing test', 'typing practice', 'words per minute test', 'keyboard speed test', 'typing test english', 'typing master online', 'fast typing test', 'typing speed checker'],
-    metaTitle: 'Typing Speed Test - Free Online WPM Typing Test | ToolsArena',
+    metaTitle: 'Typing Speed Test - Free Online WPM Typing Test',
     metaDescription: 'Test your typing speed and accuracy with our free online typing test. Measure WPM, track errors, and compare your speed. No signup needed — works in your browser.',
     faqs: [
       { question: 'How is WPM (Words Per Minute) calculated?', answer: 'WPM is calculated by dividing the number of correctly typed characters by 5 (the standard word length) and then dividing by the elapsed time in minutes. Only correct characters count toward your WPM score.' },
@@ -3021,7 +3021,7 @@ Need to print? Use the "Print Sheet" button to generate a 4x6 inch sheet with mu
     category: 'image-tools',
     targetKeyword: 'passport size photo maker',
     secondaryKeywords: ['passport photo online', 'passport size photo', 'passport photo maker free', 'passport photo editor', 'visa photo maker', 'passport photo generator', '2x2 photo maker', 'passport photo india', 'passport photo crop', 'photo print sheet', 'passport photo background'],
-    metaTitle: 'Passport Photo Maker - Free Online Passport Size Photo Tool | ToolsArena',
+    metaTitle: 'Passport Photo Maker - Free Online Passport Size Photo Tool',
     metaDescription: 'Create passport size photos for India, US, UK & more. Crop, set background, and download or print — all free, online, and private. No signup needed.',
     faqs: [
       { question: 'What passport photo sizes are supported?', answer: 'We support India (2x2 in), US (2x2 in), UK (35x45 mm), EU/Schengen (35x45 mm), China (33x48 mm), Japan (35x45 mm), and custom dimensions.' },
@@ -3056,7 +3056,7 @@ This is purely for entertainment purposes. Whether you score 99% or 30%, remembe
     category: 'utility-tools',
     targetKeyword: 'love calculator',
     secondaryKeywords: ['love meter', 'love percentage calculator', 'love tester', 'love compatibility test', 'love calculator by name', 'love match calculator', 'true love calculator', 'crush calculator', 'name love calculator', 'love calculator online'],
-    metaTitle: 'Love Calculator - Free Love Compatibility Test by Name | ToolsArena',
+    metaTitle: 'Love Calculator - Free Love Compatibility Test by Name',
     metaDescription: 'Calculate your love compatibility! Enter two names and get your love percentage with a fun animated result. Free online love calculator — no signup needed.',
     faqs: [
       { question: 'How does the love calculator work?', answer: 'It uses a hash algorithm based on the combined letters of both names to generate a deterministic compatibility percentage. The same names will always give the same result.' },
@@ -3088,7 +3088,7 @@ Perfect for content creators, bloggers, and designers who need high-quality YouT
     category: 'utility-tools',
     targetKeyword: 'youtube thumbnail downloader',
     secondaryKeywords: ['youtube thumbnail download', 'yt thumbnail downloader', 'youtube video thumbnail', 'download youtube thumbnail hd', 'youtube thumbnail grabber', 'youtube thumbnail saver', 'youtube thumbnail image download', 'yt thumbnail download hd'],
-    metaTitle: 'YouTube Thumbnail Downloader - Download HD Thumbnails Free | ToolsArena',
+    metaTitle: 'YouTube Thumbnail Downloader - Download HD Thumbnails Free',
     metaDescription: 'Download YouTube video thumbnails in HD, SD, and all sizes. Paste the URL, get all thumbnails instantly. Free online tool — no signup needed.',
     faqs: [
       { question: 'How do I download a YouTube thumbnail?', answer: 'Paste the YouTube video URL in the input field and click "Get Thumbnails". You\'ll see all available thumbnail sizes. Click the download icon next to any size to save it.' },
@@ -3121,7 +3121,7 @@ Download your signature as a standard PNG with a white background, or as a trans
     category: 'utility-tools',
     targetKeyword: 'online signature maker',
     secondaryKeywords: ['signature maker', 'digital signature maker', 'free signature maker', 'electronic signature creator', 'signature generator', 'create signature online', 'draw signature online', 'signature maker free', 'e-signature maker', 'handwritten signature generator'],
-    metaTitle: 'Online Signature Maker - Free Digital Signature Creator | ToolsArena',
+    metaTitle: 'Online Signature Maker - Free Digital Signature Creator',
     metaDescription: 'Create a digital signature by drawing or typing your name. Download as PNG or transparent PNG. Free online signature maker — no signup needed.',
     faqs: [
       { question: 'How do I create a signature?', answer: 'Choose "Draw" mode to draw with your mouse/touch, or "Type" mode to generate a signature from your name. Customize the color and style, then download as PNG.' },
@@ -3155,7 +3155,7 @@ All fields are optional except your name, so you can include as much or as littl
     category: 'utility-tools',
     targetKeyword: 'marriage biodata maker',
     secondaryKeywords: ['biodata for marriage', 'marriage biodata format', 'biodata maker online', 'marriage biodata template', 'biodata format for marriage', 'shadi biodata', 'marriage biodata pdf', 'biodata for marriage free download', 'marriage biodata maker online free', 'vivah biodata', 'wedding biodata maker', 'biodata for marriage format in hindi'],
-    metaTitle: 'Marriage Biodata Maker - Free Online Biodata for Marriage | 10 Templates',
+    metaTitle: 'Marriage Biodata Maker - Free Online | 10 Templates, PDF',
     metaDescription: 'Create beautiful marriage biodata online free. 10 templates, photo upload, PDF & image download. Indian-friendly format — no signup, 100% private.',
     faqs: [
       { question: 'How do I create a marriage biodata?', answer: 'Choose a template, fill in your details step by step (personal, education, family, contact), upload your photo, preview the biodata, and download it as PNG or PDF.' },
@@ -3192,8 +3192,8 @@ View your bill in monthly, quarterly, and annual projections. Includes an applia
     category: 'calculators',
     targetKeyword: 'electricity bill calculator India',
     secondaryKeywords: ['electricity bill calculator', 'bijli bill calculator', 'electricity unit rate calculator', 'MSEDCL bill calculator', 'state wise electricity tariff', 'electricity bill per unit rate', 'monthly electricity cost calculator'],
-    metaTitle: 'Electricity Bill Calculator India - 15 States | Slab-wise Breakdown',
-    metaDescription: 'Calculate your electricity bill with state-wise tariff slabs for 15 Indian states. See slab breakdown, energy charges, duty & annual projections. Free & instant.',
+    metaTitle: 'Electricity Bill Calculator India - 15 States | Slab Rates',
+    metaDescription: 'Calculate electricity bill with state-wise tariff slabs for 15 Indian states. See slab breakdown, energy charges, duty & projections. Free & instant.',
     faqs: [
       { question: 'How is the electricity bill calculated in India?', answer: 'Electricity bills are calculated using a slab-based tariff system. Each slab has a per-unit rate that increases with consumption. The bill includes energy charges (units x rate per slab), fixed charges, meter rent, fuel surcharge, and electricity duty (a percentage of the subtotal).' },
       { question: 'What is the average electricity rate per unit in India?', answer: 'The average rate varies by state from Rs 3 to Rs 12 per unit. Tamil Nadu offers free electricity for the first 100 units. Maharashtra has higher rates (Rs 4.71 to Rs 12.54/unit). Delhi rates range from Rs 3 to Rs 8/unit.' },
@@ -3259,7 +3259,7 @@ Both calculations include surcharge (for income above 50L) and 4% health & educa
     category: 'calculators',
     targetKeyword: 'old vs new tax regime calculator',
     secondaryKeywords: ['tax regime comparison calculator', 'income tax calculator 2025-26', 'which tax regime is better', 'new tax regime calculator', 'old regime vs new regime', 'tax calculator India FY 2025-26', 'income tax slab calculator'],
-    metaTitle: 'Old vs New Tax Regime Calculator FY 2025-26 | Which Saves More?',
+    metaTitle: 'Old vs New Tax Regime Calculator FY 2025-26 | Compare',
     metaDescription: 'Compare Old vs New Tax Regime for FY 2025-26. See slab-wise breakdown, deductions, and which regime saves you more. Budget 2025 updated. Free calculator.',
     faqs: [
       { question: 'Which tax regime should I choose for FY 2025-26?', answer: 'Choose the New Regime if your total deductions (80C, 80D, HRA, home loan) are less than about Rs 3-4 lakhs. The Old Regime is better if you claim significant deductions like full 80C (1.5L), 80D, HRA exemption, and home loan interest. Use our calculator for exact comparison.' },
