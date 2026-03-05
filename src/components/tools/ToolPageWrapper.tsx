@@ -6,7 +6,7 @@ import { RelatedTools } from './RelatedTools';
 import { ToolFAQ } from './ToolFAQ';
 import { HowToUse } from './HowToUse';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { SITE_URL, CATEGORY_NAME_KEYS } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, CATEGORY_NAME_KEYS } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 
@@ -36,6 +36,10 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     featureList: tool.secondaryKeywords.join(', '),
     keywords: [tool.targetKeyword, ...tool.secondaryKeywords].join(', '),
+    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    inLanguage: 'en',
+    browserRequirements: 'Requires JavaScript. Works in all modern browsers.',
   };
 
   return (

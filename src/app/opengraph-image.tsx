@@ -1,6 +1,7 @@
 import { ImageResponse } from 'next/og';
+import { TOOL_COUNT } from '@/lib/tools-registry';
 
-export const alt = 'ToolsArena - 80+ Free Online Tools';
+export const alt = `ToolsArena - ${TOOL_COUNT}+ Free Online Tools`;
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -35,7 +36,7 @@ export default async function Image() {
         </div>
 
         <div style={{ fontSize: '30px', color: '#93c5fd', marginBottom: '16px', textAlign: 'center' }}>
-          80+ Free Online Tools — No Signup Required
+          {TOOL_COUNT}+ Free Online Tools — No Signup Required
         </div>
 
         <div style={{

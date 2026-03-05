@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Converters - Free Unit, Temperature, Timestamp & Number Converter',
+    description: 'Free online converters: unit, temperature, Unix timestamp, number to words. Metric, imperial & Indian formats.',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default async function ConvertersPage({ params }: { params: Promise<{ locale: string }> }) {

@@ -16,6 +16,9 @@ export async function HowToUse({ steps, toolName, toolSlug }: HowToUseProps) {
     '@type': 'HowTo',
     name: t('howToUse', { toolName }),
     url: `${SITE_URL}/tools/${toolSlug}`,
+    totalTime: 'PT2M',
+    estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: '0' },
+    tool: { '@type': 'HowToTool', name: toolName },
     step: steps.map((step, i) => ({
       '@type': 'HowToStep',
       position: i + 1,

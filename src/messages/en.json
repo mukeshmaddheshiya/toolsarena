@@ -1,9 +1,9 @@
 {
   "common": {
     "siteName": "ToolsArena",
-    "siteDescription": "80+ free online tools for images, PDFs, text, calculators and more. No signup required. Fast, free and privacy-first.",
-    "searchPlaceholder": "Search 80+ tools...",
-    "searchPlaceholderLong": "Search 80+ tools — try 'word counter' or 'QR code'...",
+    "siteDescription": "{count}+ free online tools for images, PDFs, text, calculators and more. No signup required. Fast, free and privacy-first.",
+    "searchPlaceholder": "Search {count}+ tools...",
+    "searchPlaceholderLong": "Search {count}+ tools — try 'word counter' or 'QR code'...",
     "searchMobile": "Search tools...",
     "noResults": "No tools found for \"{query}\"",
     "viewAll": "View All",
@@ -30,13 +30,13 @@
     "seoTools": "SEO Tools"
   },
   "hero": {
-    "badge": "80+ Free Tools — No Signup Required",
+    "badge": "{count}+ Free Tools — No Signup Required",
     "title": "Free Online Tools",
     "titleAccent": "for Everyone",
-    "subtitle": "Compress images, merge PDFs, calculate EMI, format JSON, generate QR codes and 75+ more tools. All free, all instant, no account needed."
+    "subtitle": "Compress images, merge PDFs, calculate EMI, format JSON, generate QR codes and {count}+ more tools. All free, all instant, no account needed."
   },
   "stats": {
-    "tools": "80+ Tools",
+    "tools": "{count}+ Tools",
     "toolsDesc": "And growing",
     "private": "100% Private",
     "privateDesc": "Files stay on device",

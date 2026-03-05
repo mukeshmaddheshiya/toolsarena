@@ -35,6 +35,20 @@ const organizationSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/favicon.ico`,
   description: SITE_DESCRIPTION,
+  sameAs: [
+    'https://twitter.com/ToolsArena',
+    'https://github.com/AmanSuryavanshi-1',
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    url: `${SITE_URL}/contact`,
+    availableLanguage: ['English', 'Hindi', 'Nepali'],
+  },
+  founder: {
+    '@type': 'Person',
+    name: 'Aman Suryavanshi',
+  },
 };
 
 const websiteSchema = {

@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Developer Tools - Free JSON Formatter, Base64, QR Code & More',
+    description: 'Free online developer tools: JSON formatter, Base64 encoder, QR code generator, color picker and more.',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default async function DeveloperToolsPage({ params }: { params: Promise<{ locale: string }> }) {

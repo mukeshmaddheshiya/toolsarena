@@ -6,6 +6,7 @@ import { getPopularTools } from '@/lib/tools-registry';
 export default function NotFound() {
   const popularTools = getPopularTools(6);
   const t = useTranslations('notFound');
+  const tc = useTranslations('common');
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-20 text-center">
@@ -14,7 +15,7 @@ export default function NotFound() {
       <p className="text-slate-500 dark:text-slate-400 mb-8">{t('description')}</p>
       <div className="flex justify-center gap-4 mb-12">
         <Link href="/" className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-800 text-white rounded-xl font-medium hover:bg-primary-700 transition-colors">
-          <Home className="w-4 h-4" /> {t('title') === 'Page Not Found' ? 'Go Home' : 'होम जाएं'}
+          <Home className="w-4 h-4" /> {tc('goHome')}
         </Link>
       </div>
       <div>

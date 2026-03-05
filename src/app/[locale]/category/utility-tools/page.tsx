@@ -6,36 +6,36 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternateLanguages } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Text Tools - Free Online Word Counter, Case Converter & More | ToolsArena',
-  description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum, create URL slugs, remove duplicates and more. Instant, no signup.',
-  keywords: 'word counter, character counter, case converter, lorem ipsum generator, URL slug generator, text tools',
+  title: 'Utility Tools - Free Password Generator, Speed Test & Timer | ToolsArena',
+  description: 'Free online utility tools: password generator, internet speed test, countdown timer, password strength checker and more. Fast, private, no signup required.',
+  keywords: 'password generator, internet speed test, countdown timer, password strength checker, online utilities, free tools',
   alternates: {
-    canonical: `${SITE_URL}/category/text-tools`,
-    languages: getAlternateLanguages('/category/text-tools'),
+    canonical: `${SITE_URL}/category/utility-tools`,
+    languages: getAlternateLanguages('/category/utility-tools'),
   },
   openGraph: {
-    title: 'Text Tools - Free Online Word Counter, Case Converter & More',
-    description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum, create URL slugs and more. Instant, no signup.',
-    url: `${SITE_URL}/category/text-tools`,
+    title: 'Utility Tools - Free Password Generator, Speed Test & Timer',
+    description: 'Free online utility tools: password generator, internet speed test, countdown timer and more. Fast, private, no signup required.',
+    url: `${SITE_URL}/category/utility-tools`,
     siteName: SITE_NAME,
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Text Tools - Free Online Word Counter, Case Converter & More',
-    description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum and more.',
+    title: 'Utility Tools - Free Password Generator, Speed Test & Timer',
+    description: 'Free online utility tools: password generator, internet speed test, countdown timer and more.',
   },
   robots: { index: true, follow: true },
 };
 
-export default async function TextToolsPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function UtilityToolsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
-  const cat = categories['text-tools'];
-  const catTools = getToolsByCategory('text-tools');
-  const nameKey = CATEGORY_NAME_KEYS['text-tools'];
+  const cat = categories['utility-tools'];
+  const catTools = getToolsByCategory('utility-tools');
+  const nameKey = CATEGORY_NAME_KEYS['utility-tools'];
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div className="mb-8">

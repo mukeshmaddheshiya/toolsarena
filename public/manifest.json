@@ -1,7 +1,7 @@
 {
   "name": "ToolsArena - Free Online Tools",
   "short_name": "ToolsArena",
-  "description": "100+ free online tools for images, PDFs, text, calculators and more.",
+  "description": "Free online tools for images, PDFs, text, calculators and more. No signup required.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

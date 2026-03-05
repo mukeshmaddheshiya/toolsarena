@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'IPL 2026 Cricket Tools - Squad Explorer, Schedule & More',
+    description: 'Free IPL 2026 cricket tools: explore team squads, check match schedule, compare players, and track standings.',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default async function CricketToolsPage({ params }: { params: Promise<{ locale: string }> }) {

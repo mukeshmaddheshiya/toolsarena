@@ -106,7 +106,7 @@ Everything runs locally in your browser, so your private text — whether it's p
     category: 'text-tools',
     targetKeyword: 'character counter',
     secondaryKeywords: ['char counter', 'count characters online', 'letter counter', 'character count tool', 'text length counter'],
-    metaTitle: 'Character Counter - Count Characters Online Free',
+    metaTitle: 'Character Counter - Count Characters & Words Online Free | ToolsArena',
     metaDescription: 'Count characters with & without spaces instantly. Free online character counter for Twitter, SMS, meta descriptions & more. Real-time, no signup.',
     faqs: [
       { question: 'What is the difference between characters with and without spaces?', answer: 'Characters with spaces counts every keystroke including spaces, tabs, and newlines. Characters without spaces counts only visible non-whitespace characters, useful for strict letter-only limits.' },
@@ -346,7 +346,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     targetKeyword: 'UUID generator online',
     secondaryKeywords: ['uuid v4 generator', 'generate unique id online', 'guid generator', 'random uuid', 'bulk uuid generator'],
     metaTitle: 'UUID Generator Free Online - UUID v4, v1, GUID | ToolsArena',
-    metaDescription: 'Generate UUID v4, v1-style, nil UUIDs and short IDs online free. Bulk generate 1-20 at once. Copy individual or all. Cryptographically random using Web Crypto API.',
+    metaDescription: 'Generate UUID v4, v1-style, nil UUIDs and short IDs online free. Bulk generate 1-20 at once. Cryptographically random using Web Crypto API. No signup.',
     faqs: [
       { question: 'What is a UUID?', answer: 'UUID (Universally Unique Identifier) is a 128-bit identifier formatted as 8-4-4-4-12 hexadecimal groups. Used to uniquely identify database records, API resources, session tokens, etc.' },
       { question: 'What is the difference between UUID v4 and v1?', answer: 'UUID v4 is fully random (except 6 version/variant bits). UUID v1 embeds the current timestamp, making it sortable by creation time but potentially revealing the machine MAC address.' },
@@ -369,7 +369,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     targetKeyword: 'JWT decoder online',
     secondaryKeywords: ['decode jwt token', 'jwt parser online', 'json web token decoder', 'jwt inspector', 'jwt claims viewer'],
     metaTitle: 'JWT Decoder Online Free - Decode JSON Web Tokens | ToolsArena',
-    metaDescription: 'Decode and inspect JWT tokens instantly. View header, payload claims, expiry status, algorithm and issued-at date. Free online JWT parser — no server, 100% private.',
+    metaDescription: 'Decode and inspect JWT tokens instantly. View header, payload claims, expiry status and algorithm. Free online JWT parser — no server, 100% private.',
     faqs: [
       { question: 'Can this verify the JWT signature?', answer: 'No. Signature verification requires the secret or public key, which should never be shared in a browser tool. This tool only decodes the base64-encoded parts.' },
       { question: 'Is my JWT sent to a server?', answer: 'No. All decoding happens locally in your browser using JavaScript. Your token never leaves your device.' },
@@ -415,7 +415,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     targetKeyword: 'CSS gradient generator',
     secondaryKeywords: ['css gradient maker', 'linear gradient generator', 'gradient color picker', 'css background gradient tool'],
     metaTitle: 'CSS Gradient Generator - Free Online Gradient Maker | ToolsArena',
-    metaDescription: 'Create CSS gradients visually. Linear, radial, conic gradients with color stops, angle control and live preview. Copy CSS instantly. Free online gradient generator.',
+    metaDescription: 'Create CSS gradients visually. Linear, radial, conic gradients with color stops, angle control and live preview. Copy CSS instantly. Free, no signup.',
     faqs: [
       { question: 'What CSS gradient types are supported?', answer: 'Linear (directional), radial (circular from center), and conic (rotating around a center point).' },
       { question: 'Can I add more than 2 colors?', answer: 'Yes! Click "Add stop" to add unlimited color stops. Each can have its own color and position percentage.' },
@@ -507,7 +507,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     targetKeyword: 'password strength checker',
     secondaryKeywords: ['password strength tester', 'how strong is my password', 'check password security', 'password analyzer online'],
     metaTitle: 'Password Strength Checker Free Online | ToolsArena',
-    metaDescription: 'Check your password strength instantly. Get color-coded strength rating, entropy score, character breakdown, and 7-point security checklist. 100% private — no server.',
+    metaDescription: 'Check your password strength instantly. Get color-coded strength rating, entropy score, character breakdown and security checklist. 100% private, no server.',
     faqs: [
       { question: 'Is my password sent to a server?', answer: 'No. All analysis happens entirely in your browser. Your password never leaves your device.' },
       { question: 'What is entropy?', answer: 'Password entropy (in bits) measures how unpredictable a password is. Higher entropy = harder to crack. Aim for 60+ bits for good security.' },
@@ -1673,7 +1673,7 @@ Choose watermark type (text or image), customize the text, font size, color, opa
     category: 'pdf-tools',
     targetKeyword: 'add watermark to PDF online',
     secondaryKeywords: ['pdf watermark tool', 'stamp pdf watermark', 'confidential watermark pdf', 'watermark pdf free'],
-    metaTitle: 'Add Watermark to PDF Free Online | ToolsArena',
+    metaTitle: 'Add Watermark to PDF Free Online - Text & Image Stamps | ToolsArena',
     metaDescription: 'Add text or image watermarks to every PDF page for free. Customize opacity, rotation, position and color. No upload required — 100% private & instant.',
     faqs: [
       { question: 'Can I add an image as a watermark?', answer: 'Yes! Switch to "Image Watermark" mode and upload a PNG or JPG logo. It will be centered on every page.' },
@@ -1704,7 +1704,7 @@ Optionally set the starting number and skip the first page (useful for cover pag
     category: 'pdf-tools',
     targetKeyword: 'add page numbers to PDF online',
     secondaryKeywords: ['pdf page numbering', 'number pdf pages', 'insert page numbers pdf free', 'pdf footer numbering'],
-    metaTitle: 'Add Page Numbers to PDF Free Online | ToolsArena',
+    metaTitle: 'Add Page Numbers to PDF Free Online - Custom Numbering | ToolsArena',
     metaDescription: 'Add page numbers to any PDF free online. Choose position, format, font size and color. Skip cover pages, set custom starting number. No upload required.',
     faqs: [
       { question: 'Can I start numbering from a custom number?', answer: 'Yes. Set "Start from" to any number, e.g. start from 5 to account for a table of contents.' },
@@ -1766,7 +1766,7 @@ Set crop values for top, right, bottom, and left margins (in PDF points). Use qu
     category: 'pdf-tools',
     targetKeyword: 'crop PDF online',
     secondaryKeywords: ['trim pdf margins', 'remove pdf white space', 'crop pdf pages free', 'cut pdf border'],
-    metaTitle: 'Crop PDF Online Free - Trim PDF Margins | ToolsArena',
+    metaTitle: 'Crop PDF Online Free - Trim & Remove PDF Margins | ToolsArena',
     metaDescription: 'Crop and trim PDF page margins online for free. Set top, right, bottom, left crop values. Visual preview included. No upload — 100% private & instant.',
     faqs: [
       { question: 'What unit are the crop values in?', answer: 'PDF points. 72 points = 1 inch = 25.4mm. A typical A4 page is 595 × 842 points.' },
@@ -1802,7 +1802,7 @@ Place the signature on the last page, first page, all pages, or any specific pag
     targetKeyword: 'sign PDF online free',
     secondaryKeywords: ['electronic signature pdf', 'digital signature pdf', 'pdf e-sign', 'sign pdf without printing', 'draw signature pdf'],
     metaTitle: 'Sign PDF Online Free - Draw, Type or Upload Signature | ToolsArena',
-    metaDescription: 'Sign PDF files online for free. Draw your signature, type it in cursive, or upload an image. Add e-signature to any PDF page. No upload to server — 100% private.',
+    metaDescription: 'Sign PDF files online for free. Draw your signature, type it in cursive, or upload an image. Add e-signature to any PDF page. 100% private.',
     faqs: [
       { question: 'Is this a legally binding electronic signature?', answer: 'This tool adds a visual signature image to the PDF. For legally binding e-signatures, you may need a service with audit trails like DocuSign or Adobe Sign.' },
       { question: 'Can I draw my signature on a phone or tablet?', answer: 'Yes! The drawing canvas supports touch input on mobile and tablet devices.' },
@@ -1991,8 +1991,8 @@ This tool supports both English (Roman) and Hindi (Devanagari) name input. Once 
     category: 'converters',
     targetKeyword: 'Rashi checker by name',
     secondaryKeywords: ['rashi by name', 'find rashi from name', 'naam se rashi', 'rashi kaise jane', 'janm rashi', 'zodiac by name hindi', 'rashi calculator'],
-    metaTitle: 'Rashi Checker by Name - Find Your Rashi Free | ToolsArena',
-    metaDescription: 'Find your Rashi (Vedic zodiac sign) by name instantly. Supports English & Hindi names. Get Rashi, ruling planet, element, lucky number & traits.',
+    metaTitle: 'Rashi Checker by Name - Find Your Vedic Zodiac Sign Free | ToolsArena',
+    metaDescription: 'Find your Rashi (Vedic zodiac sign) by name instantly. Supports English & Hindi names. Get Rashi, ruling planet, element, lucky number & personality traits.',
     faqs: [
       { question: 'What is a Rashi?', answer: 'Rashi is a Sanskrit term meaning "zodiac sign" in Vedic astrology. There are 12 Rashis corresponding to the 12 signs of the zodiac (Mesh/Aries through Meen/Pisces). Your Janma Rashi (birth Rashi) is determined by the position of the Moon at the time of your birth.' },
       { question: 'How does the Rashi Checker work?', answer: 'In Hindu tradition, babies are named using the syllable (Akshara) associated with their birth Nakshatra (lunar mansion). This tool identifies the first syllable of your name and matches it to the corresponding Nakshatra and Rashi using the traditional 108-syllable system.' },
@@ -2062,7 +2062,7 @@ This is a 100% free, unofficial fan-made tool. All squad data is based on public
     targetKeyword: 'IPL 2026 squad',
     secondaryKeywords: ['IPL team squad', 'IPL 2026 players list', 'CSK squad 2026', 'MI squad 2026', 'IPL squad explorer', 'IPL auction 2026', 'IPL retained players'],
     metaTitle: 'IPL 2026 Team Squad Explorer - All 10 Teams & Players | ToolsArena',
-    metaDescription: 'Explore complete IPL 2026 squad for all 10 teams. Filter by role & nationality. View auction prices, retained players, captain details. Free unofficial fan tool.',
+    metaDescription: 'Explore complete IPL 2026 squad for all 10 teams. Filter by role & nationality. View auction prices, retained players & captain details. Free fan tool.',
     faqs: [
       { question: 'How many players are in each IPL 2026 team?', answer: 'Each IPL 2026 team can have a maximum of 25 players in their squad, with up to 8 overseas players allowed. However, only 4 overseas players can play in any single match.' },
       { question: 'What is the IPL 2026 auction purse for each team?', answer: 'Each IPL franchise receives a base purse of ₹120 crore for the auction. Teams can earn additional funds by releasing players. Retained players\' costs are deducted from this purse.' },
@@ -2171,7 +2171,7 @@ At the start of the season, all teams begin at 0 points. The table updates autom
     category: 'cricket-tools',
     targetKeyword: 'IPL 2026 points table',
     secondaryKeywords: ['IPL standings 2026', 'IPL points table today', 'IPL NRR calculator', 'IPL qualification table', 'IPL league table', 'IPL team rankings', 'IPL playoff qualification'],
-    metaTitle: 'IPL 2026 Points Table - Live Standings & NRR | ToolsArena',
+    metaTitle: 'IPL 2026 Points Table - Live Standings, NRR & Playoffs | ToolsArena',
     metaDescription: 'View IPL 2026 points table with live standings, NRR, wins/losses. See which teams qualify for playoffs. Sortable by points, NRR and wins. Free fan tool.',
     faqs: [
       { question: 'How does the IPL points system work?', answer: 'In IPL, each win earns a team 2 points. A loss gives 0 points. A no-result or abandoned match gives both teams 1 point each. Teams are ranked by total points, with NRR as the tiebreaker.' },
@@ -2250,7 +2250,7 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     targetKeyword: 'compound interest calculator',
     secondaryKeywords: ['CI calculator', 'compound interest formula', 'compound interest calculator with steps', 'monthly compound interest calculator', 'quarterly compound interest calculator', 'compound interest calculator India', 'FD interest calculator', 'compound interest calculator online free', 'power of compounding calculator', 'interest on interest calculator'],
     metaTitle: 'Compound Interest Calculator - Calculate CI Online Free | ToolsArena',
-    metaDescription: 'Free compound interest calculator with year-by-year breakdown. Supports monthly, quarterly & yearly compounding. Compare CI vs SI instantly — no signup required.',
+    metaDescription: 'Free compound interest calculator with year-by-year breakdown. Supports monthly, quarterly & yearly compounding. Compare CI vs SI — no signup required.',
     faqs: [
       { question: 'What is compound interest?', answer: 'Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest (calculated only on the principal), compound interest makes your money grow faster because you earn "interest on interest". This is often called the power of compounding.' },
       { question: 'What is the compound interest formula?', answer: 'The compound interest formula is A = P × (1 + r/n)^(n×t), where A is the final amount, P is the principal, r is the annual interest rate (as a decimal), n is the number of times interest is compounded per year, and t is the time in years. The compound interest earned is CI = A - P.' },
@@ -2287,8 +2287,8 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     category: 'calculators',
     targetKeyword: 'FD calculator',
     secondaryKeywords: ['RD calculator', 'fixed deposit calculator', 'recurring deposit calculator', 'FD maturity calculator', 'RD maturity calculator', 'FD interest calculator', 'bank FD calculator India', 'RD calculator with monthly deposit', 'fixed deposit return calculator', 'FD RD comparison calculator'],
-    metaTitle: 'FD & RD Calculator - Fixed Deposit & Recurring Deposit Calculator Online | ToolsArena',
-    metaDescription: 'Free FD & RD calculator with year-by-year breakdown. Calculate fixed deposit & recurring deposit maturity, interest earned. Supports quarterly compounding — no signup.',
+    metaTitle: 'FD & RD Calculator - Fixed & Recurring Deposit Online | ToolsArena',
+    metaDescription: 'Free FD & RD calculator with year-by-year breakdown. Calculate fixed deposit & recurring deposit maturity and interest earned. No signup needed.',
     faqs: [
       { question: 'What is a Fixed Deposit (FD)?', answer: 'A Fixed Deposit is a financial instrument where you deposit a lump sum amount with a bank for a fixed period at a predetermined interest rate. The interest is compounded (usually quarterly in India) and paid at maturity along with the principal. FDs are considered one of the safest investment options.' },
       { question: 'What is a Recurring Deposit (RD)?', answer: 'A Recurring Deposit is a savings scheme where you deposit a fixed amount every month for a set tenure. Interest is compounded (usually quarterly) and the total maturity amount includes all your monthly deposits plus the accumulated interest. RDs are ideal for building savings discipline.' },
@@ -2330,7 +2330,7 @@ The generated PDF is clean, well-formatted, and ATS-compatible — meaning it pa
     targetKeyword: 'free resume builder',
     secondaryKeywords: ['resume builder online free', 'resume maker', 'CV builder free', 'resume generator', 'ATS resume builder', 'professional resume maker', 'resume builder no signup', 'free resume download PDF', 'online CV maker', 'resume builder for freshers', 'resume builder India', 'job resume creator'],
     metaTitle: 'Free Resume Builder - Create Professional Resume & Download PDF | ToolsArena',
-    metaDescription: 'Build a professional ATS-friendly resume in minutes. 3 templates, live preview, auto-save, PDF download. No signup, no watermark, 100% free resume builder online.',
+    metaDescription: 'Build a professional ATS-friendly resume in minutes. 3 templates, live preview, auto-save, PDF download. No signup, no watermark — 100% free online.',
     faqs: [
       { question: 'Is this resume builder really free?', answer: 'Yes, 100% free with no hidden costs, no watermarks, and no download limits. You can create unlimited resumes, switch between templates, and download as many PDFs as you want. No signup or credit card required.' },
       { question: 'Is my resume data safe and private?', answer: 'Absolutely. Everything runs entirely in your browser using JavaScript. Your personal information, work history, and resume data never leave your device — nothing is sent to any server. Your data is auto-saved locally in your browser for convenience, and you can clear it anytime with the Reset button.' },
@@ -2401,6 +2401,8 @@ Perfect for homework, exam preparation, engineering calculations, physics proble
     estimatedTime: 'Instant',
   },
 ];
+
+export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
   return tools.find(t => t.slug === slug);

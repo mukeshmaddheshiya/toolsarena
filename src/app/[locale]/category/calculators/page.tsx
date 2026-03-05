@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Calculators - Free Online EMI, SIP, GST, BMI & Age Calculator',
+    description: 'Free online calculators for EMI, SIP, GST, BMI, age, percentage, discount and more.',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default async function CalculatorsPage({ params }: { params: Promise<{ locale: string }> }) {

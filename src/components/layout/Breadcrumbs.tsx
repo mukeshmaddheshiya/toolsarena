@@ -21,7 +21,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.name,
-      item: item.href ? `${SITE_URL}${item.href}` : undefined,
+      item: item.href ? `${SITE_URL}${item.href}` : `${SITE_URL}/tools/${encodeURIComponent(item.name.toLowerCase().replace(/\s+/g, '-'))}`,
     })),
   };
 

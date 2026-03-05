@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternateLanguages } from '@/lib/seo';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('terms');
@@ -12,6 +12,20 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: `${SITE_URL}/terms`,
       languages: getAlternateLanguages('/terms'),
     },
+    openGraph: {
+      title: t('metaTitle'),
+      description: t('metaDescription'),
+      url: `${SITE_URL}/terms`,
+      siteName: SITE_NAME,
+      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: 'Terms of Service - ToolsArena' }],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('metaTitle'),
+      description: t('metaDescription'),
+    },
+    robots: { index: true, follow: true },
   };
 }
 

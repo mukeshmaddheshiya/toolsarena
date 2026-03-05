@@ -6,36 +6,36 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternateLanguages } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Text Tools - Free Online Word Counter, Case Converter & More | ToolsArena',
-  description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum, create URL slugs, remove duplicates and more. Instant, no signup.',
-  keywords: 'word counter, character counter, case converter, lorem ipsum generator, URL slug generator, text tools',
+  title: 'SEO Tools - Free Meta Tag Checker, Sitemap Generator & More | ToolsArena',
+  description: 'Free online SEO tools to optimize your website for search engines. Check meta tags, generate sitemaps, analyze keywords and improve your Google ranking.',
+  keywords: 'SEO tools, meta tag checker, sitemap generator, keyword analyzer, free SEO tools, website optimization',
   alternates: {
-    canonical: `${SITE_URL}/category/text-tools`,
-    languages: getAlternateLanguages('/category/text-tools'),
+    canonical: `${SITE_URL}/category/seo-tools`,
+    languages: getAlternateLanguages('/category/seo-tools'),
   },
   openGraph: {
-    title: 'Text Tools - Free Online Word Counter, Case Converter & More',
-    description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum, create URL slugs and more. Instant, no signup.',
-    url: `${SITE_URL}/category/text-tools`,
+    title: 'SEO Tools - Free Meta Tag Checker, Sitemap Generator & More',
+    description: 'Free online SEO tools to optimize your website for search engines. Check meta tags, generate sitemaps and improve ranking.',
+    url: `${SITE_URL}/category/seo-tools`,
     siteName: SITE_NAME,
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Text Tools - Free Online Word Counter, Case Converter & More',
-    description: 'Free online text tools: count words & characters, convert case, generate lorem ipsum and more.',
+    title: 'SEO Tools - Free Meta Tag Checker, Sitemap Generator & More',
+    description: 'Free online SEO tools to optimize your website for search engines.',
   },
   robots: { index: true, follow: true },
 };
 
-export default async function TextToolsPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function SeoToolsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
-  const cat = categories['text-tools'];
-  const catTools = getToolsByCategory('text-tools');
-  const nameKey = CATEGORY_NAME_KEYS['text-tools'];
+  const cat = categories['seo-tools'];
+  const catTools = getToolsByCategory('seo-tools');
+  const nameKey = CATEGORY_NAME_KEYS['seo-tools'];
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div className="mb-8">

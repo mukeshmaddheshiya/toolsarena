@@ -1,9 +1,9 @@
 {
   "common": {
     "siteName": "ToolsArena",
-    "siteDescription": "इमेज, PDF, टेक्स्ट, कैलकुलेटर और अन्य के लिए 80+ मुफ्त ऑनलाइन टूल। कोई साइनअप नहीं। तेज़, मुफ्त और प्राइवेसी-फर्स्ट।",
-    "searchPlaceholder": "80+ टूल खोजें...",
-    "searchPlaceholderLong": "80+ टूल खोजें — 'word counter' या 'QR code' लिखें...",
+    "siteDescription": "इमेज, PDF, टेक्स्ट, कैलकुलेटर और अन्य के लिए {count}+ मुफ्त ऑनलाइन टूल। कोई साइनअप नहीं। तेज़, मुफ्त और प्राइवेसी-फर्स्ट।",
+    "searchPlaceholder": "{count}+ टूल खोजें...",
+    "searchPlaceholderLong": "{count}+ टूल खोजें — 'word counter' या 'QR code' लिखें...",
     "searchMobile": "टूल खोजें...",
     "noResults": "\"{query}\" के लिए कोई टूल नहीं मिला",
     "viewAll": "सभी देखें",
@@ -30,13 +30,13 @@
     "seoTools": "SEO टूल"
   },
   "hero": {
-    "badge": "80+ मुफ्त टूल — कोई साइनअप नहीं",
+    "badge": "{count}+ मुफ्त टूल — कोई साइनअप नहीं",
     "title": "मुफ्त ऑनलाइन टूल",
     "titleAccent": "सभी के लिए",
-    "subtitle": "इमेज कंप्रेस करें, PDF मर्ज करें, EMI कैलकुलेट करें, JSON फॉर्मेट करें, QR कोड बनाएं और 75+ टूल। सब मुफ्त, सब तुरंत, कोई अकाउंट नहीं।"
+    "subtitle": "इमेज कंप्रेस करें, PDF मर्ज करें, EMI कैलकुलेट करें, JSON फॉर्मेट करें, QR कोड बनाएं और {count}+ टूल। सब मुफ्त, सब तुरंत, कोई अकाउंट नहीं।"
   },
   "stats": {
-    "tools": "80+ टूल",
+    "tools": "{count}+ टूल",
     "toolsDesc": "और बढ़ रहे हैं",
     "private": "100% प्राइवेट",
     "privateDesc": "फाइलें डिवाइस पर रहती हैं",

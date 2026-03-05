@@ -54,7 +54,7 @@ export async function generateToolMetadata(tool: Tool): Promise<Metadata> {
       card: 'summary_large_image',
       title: tool.metaTitle,
       description: tool.metaDescription,
-      images: [DEFAULT_OG_IMAGE],
+      images: [{ url: DEFAULT_OG_IMAGE, alt: tool.name }],
     },
     robots: { index: true, follow: true },
   };
@@ -84,7 +84,7 @@ export function generatePageMetadata(opts: {
       description: opts.description,
       url,
       siteName: SITE_NAME,
-      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
+      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: opts.title }],
       type: 'website',
       locale: getOgLocale(opts.locale ?? 'en'),
     },
@@ -92,7 +92,7 @@ export function generatePageMetadata(opts: {
       card: 'summary_large_image',
       title: opts.title,
       description: opts.description,
-      images: [DEFAULT_OG_IMAGE],
+      images: [{ url: DEFAULT_OG_IMAGE, alt: opts.title }],
     },
   };
 }
@@ -115,9 +115,9 @@ export function getDefaultMetadata(): Metadata {
       alternateLocale: ['hi_IN', 'ne_NP'],
       url: SITE_URL,
       siteName: SITE_NAME,
-      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
+      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: `${SITE_NAME} - Free Online Tools` }],
     },
-    twitter: { card: 'summary_large_image', site: '@ToolsArena' },
+    twitter: { card: 'summary_large_image', site: '@ToolsArena', images: [{ url: DEFAULT_OG_IMAGE, alt: `${SITE_NAME} - Free Online Tools` }] },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
     icons: { icon: '/favicon.ico', apple: '/apple-touch-icon.png' },
     manifest: '/manifest.json',

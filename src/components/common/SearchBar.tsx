@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 import { useRouter } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
-import { searchTools } from '@/lib/tools-registry';
+import { searchTools, TOOL_COUNT } from '@/lib/tools-registry';
 import type { Tool } from '@/types/tools';
 import * as LucideIcons from 'lucide-react';
 
@@ -54,7 +54,7 @@ export function SearchBar({ placeholder }: { placeholder?: string }) {
           onKeyDown={handleKeyDown}
           onFocus={() => query.length > 1 && setOpen(true)}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
-          placeholder={placeholder || t('searchPlaceholder')}
+          placeholder={placeholder || t('searchPlaceholder', { count: TOOL_COUNT })}
           className="w-full pl-10 pr-9 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 dark:text-slate-100 placeholder-slate-400"
           aria-label="Search tools"
           aria-autocomplete="list"

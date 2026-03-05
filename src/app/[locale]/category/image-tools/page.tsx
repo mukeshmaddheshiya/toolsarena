@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Image Tools - Free Online Image Compressor, Resizer & Converter',
+    description: 'Free online image tools: compress, resize, convert PNG to JPG, WebP to PNG, and more.',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default async function ImageToolsPage({ params }: { params: Promise<{ locale: string }> }) {

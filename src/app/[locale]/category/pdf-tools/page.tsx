@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PDF Tools - Free Online PDF Merger, Splitter & Compressor',
+    description: 'Free online PDF tools: merge, split, compress PDF files in your browser. No upload, completely private.',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default async function PDFToolsPage({ params }: { params: Promise<{ locale: string }> }) {

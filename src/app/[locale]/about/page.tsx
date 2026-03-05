@@ -2,17 +2,32 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternateLanguages } from '@/lib/seo';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('about');
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    keywords: 'about ToolsArena, free online tools, privacy-first tools, no signup tools, browser-based tools',
     alternates: {
       canonical: `${SITE_URL}/about`,
       languages: getAlternateLanguages('/about'),
     },
+    openGraph: {
+      title: t('metaTitle'),
+      description: t('metaDescription'),
+      url: `${SITE_URL}/about`,
+      siteName: SITE_NAME,
+      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: 'About ToolsArena' }],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('metaTitle'),
+      description: t('metaDescription'),
+    },
+    robots: { index: true, follow: true },
   };
 }
 
