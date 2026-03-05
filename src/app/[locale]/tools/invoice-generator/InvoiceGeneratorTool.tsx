@@ -152,6 +152,38 @@ function fmtMoney(amount: number, currency: string) {
 }
 
 /* ------------------------------------------------------------------ */
+/*  SHARED UI COMPONENTS (outside main component to avoid re-creation) */
+/* ------------------------------------------------------------------ */
+
+function InputField({ label, value, onChange, placeholder, type = 'text', className = '' }: {
+  label: string; value: string | number; onChange: (v: string) => void; placeholder?: string; type?: string; className?: string;
+}) {
+  return (
+    <div className={className}>
+      <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">{label}</label>
+      <input
+        type={type}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={placeholder}
+        className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+      />
+    </div>
+  );
+}
+
+function SectionTitle({ icon: Icon, title }: { icon: React.ElementType; title: string }) {
+  return (
+    <div className="flex items-center gap-2 mb-4">
+      <div className="p-1.5 rounded-lg bg-primary-50 dark:bg-primary-900/30">
+        <Icon className="w-4 h-4 text-primary-600 dark:text-primary-400" />
+      </div>
+      <h3 className="text-sm font-heading font-bold text-slate-900 dark:text-slate-100">{title}</h3>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /*  COMPONENT                                                          */
 /* ------------------------------------------------------------------ */
 
@@ -458,34 +490,6 @@ export function InvoiceGeneratorTool() {
       setGenerating(false);
     }
   };
-
-  /* ---------------------------------------------------------------- */
-  /*  SECTION COMPONENTS                                               */
-  /* ---------------------------------------------------------------- */
-
-  const InputField = ({ label, value, onChange, placeholder, type = 'text', className = '' }: {
-    label: string; value: string | number; onChange: (v: string) => void; placeholder?: string; type?: string; className?: string;
-  }) => (
-    <div className={className}>
-      <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">{label}</label>
-      <input
-        type={type}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder}
-        className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
-      />
-    </div>
-  );
-
-  const SectionTitle = ({ icon: Icon, title }: { icon: React.ElementType; title: string }) => (
-    <div className="flex items-center gap-2 mb-4">
-      <div className="p-1.5 rounded-lg bg-primary-50 dark:bg-primary-900/30">
-        <Icon className="w-4 h-4 text-primary-600 dark:text-primary-400" />
-      </div>
-      <h3 className="text-sm font-heading font-bold text-slate-900 dark:text-slate-100">{title}</h3>
-    </div>
-  );
 
   /* ---------------------------------------------------------------- */
   /*  RENDER                                                           */

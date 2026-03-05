@@ -513,114 +513,7 @@ export function HtmlCssJsEditorTool() {
 
   const errorCount = consoleMsgs.filter(m => m.type === 'error').length;
 
-  // ── Editor pane ──────────────────────────────────────────────────────────
-  const EditorPane = () => (
-    <div className="flex flex-col h-full min-h-0 bg-[#1e1e2e]">
-      <div className="flex items-center border-b border-[#313244] shrink-0">
-        {(['html','css','js'] as const).map(p => (
-          <button
-            key={p}
-            onClick={() => { setActivePanel(p); setAcSuggestions([]); }}
-            className={`flex items-center gap-1.5 px-4 py-2.5 text-xs font-semibold border-r border-[#313244] transition-colors ${
-              activePanel === p
-                ? 'bg-[#181825] text-white border-t-2 border-t-[#cba6f7]'
-                : 'text-[#6c7086] hover:text-white hover:bg-[#313244]'
-            }`}
-          >
-            <span className={`w-2 h-2 rounded-full ${PANEL_META[p].dot}`} />
-            {PANEL_META[p].label}
-          </button>
-        ))}
-        <div className="flex-1" />
-        <span className="text-[10px] text-[#45475a] px-3 hidden sm:block">Ctrl+Space for hints</span>
-      </div>
-
-      <div className="flex-1 relative min-h-0">
-        {(['html','css','js'] as const).map(p => {
-          const value = p === 'html' ? html : p === 'css' ? css : js;
-          const setter = p === 'html' ? setHtml : p === 'css' ? setCss : setJs;
-          return (
-            <textarea
-              key={p}
-              ref={textareaRefs[p]}
-              value={value}
-              onChange={e => handleTextareaChange(e, p, setter)}
-              onKeyDown={e => handleKeyDown(e, p, setter)}
-              onKeyUp={e => handleKeyUp(e, p)}
-              onBlur={() => setTimeout(dismissAc, 150)}
-              onFocus={() => setActivePanel(p)}
-              spellCheck={false}
-              autoCapitalize="off"
-              autoCorrect="off"
-              className={`absolute inset-0 w-full h-full resize-none bg-[#1e1e2e] text-[#cdd6f4] font-mono text-sm leading-relaxed p-4 focus:outline-none ${activePanel === p ? 'block' : 'hidden'}`}
-            />
-          );
-        })}
-
-        {/* Autocomplete dropdown */}
-        {acSuggestions.length > 0 && (
-          <AcDropdown
-            suggestions={acSuggestions}
-            index={acIndex}
-            pos={acPos}
-            type={acType}
-            onSelect={acceptSuggestion}
-            onHover={setAcIndex}
-          />
-        )}
-      </div>
-    </div>
-  );
-
-  // ── Preview pane ─────────────────────────────────────────────────────────
-  const PreviewPane = () => (
-    <div className="flex flex-col h-full min-h-0">
-      <div className="flex items-center px-3 py-2 bg-[#181825] border-b border-[#313244] shrink-0 gap-2">
-        <div className="flex gap-1.5">
-          <div className="w-3 h-3 rounded-full bg-[#f38ba8]" />
-          <div className="w-3 h-3 rounded-full bg-[#f9e2af]" />
-          <div className="w-3 h-3 rounded-full bg-[#a6e3a1]" />
-        </div>
-        <span className="text-xs text-[#6c7086] flex-1 text-center">Preview</span>
-        <button onClick={() => setFullPreview(true)} className="text-[#6c7086] hover:text-white transition-colors">
-          <Maximize2 className="w-3.5 h-3.5" />
-        </button>
-      </div>
-      <div className="flex-1 bg-white min-h-0">
-        <iframe srcDoc={src} sandbox="allow-scripts allow-modals allow-forms" className="w-full h-full border-0" title="preview" />
-      </div>
-    </div>
-  );
-
-  // ── Console ──────────────────────────────────────────────────────────────
-  const ConsolePanel = () => (
-    <div className="flex flex-col bg-[#181825] border-t border-[#313244] shrink-0" style={{ height: showConsole ? 150 : 'auto' }}>
-      <button
-        onClick={() => setShowConsole(s => !s)}
-        className="flex items-center gap-2 px-4 py-2 text-xs text-[#6c7086] hover:text-white border-b border-[#313244] transition-colors w-full text-left"
-      >
-        <Terminal className="w-3.5 h-3.5" />
-        Console
-        {errorCount > 0 && <span className="ml-1 px-1.5 py-0.5 rounded bg-red-500/20 text-red-400 text-[10px] font-bold">{errorCount} error{errorCount>1?'s':''}</span>}
-        {consoleMsgs.length > 0 && <span className="ml-1 px-1.5 rounded bg-[#313244] text-[#6c7086] text-[10px]">{consoleMsgs.length}</span>}
-        <ChevronDown className={`w-3.5 h-3.5 ml-auto transition-transform ${showConsole ? 'rotate-180' : ''}`} />
-        {consoleMsgs.length > 0 && <span onMouseDown={e=>{e.stopPropagation();setConsoleMsgs([])}} className="text-[#6c7086] hover:text-white px-1">✕</span>}
-      </button>
-      {showConsole && (
-        <div className="flex-1 overflow-y-auto p-2 font-mono text-xs space-y-0.5">
-          {consoleMsgs.length === 0
-            ? <p className="text-[#45475a] italic px-1">No output yet…</p>
-            : consoleMsgs.map((m, i) => (
-              <div key={i} className={`flex gap-2 px-1 py-0.5 rounded ${m.type==='error'?'text-red-400 bg-red-950/30':m.type==='warn'?'text-yellow-400 bg-yellow-950/20':m.type==='info'?'text-blue-400':'text-[#cdd6f4]'}`}>
-                <span className="text-[#45475a] shrink-0">{m.time}</span>
-                <span className="break-all">{m.args.join(' ')}</span>
-              </div>
-            ))
-          }
-        </div>
-      )}
-    </div>
-  );
+  // Editor, Preview, Console are inlined below to avoid re-creation on render
 
   if (fullPreview) return (
     <div className="fixed inset-0 z-50 bg-black flex flex-col">
@@ -693,13 +586,107 @@ export function HtmlCssJsEditorTool() {
       <div className={`flex-1 min-h-0 flex ${layout === 'split-v' ? 'flex-col' : 'flex-row'}`}>
         {layout !== 'preview' && (
           <div className={`min-h-0 min-w-0 ${layout==='split-h'?'w-1/2 border-r border-[#313244]':layout==='split-v'?'h-1/2 border-b border-[#313244]':'flex-1'}`}>
-            <EditorPane />
+            {/* ── Editor Pane (inlined) ── */}
+            <div className="flex flex-col h-full min-h-0 bg-[#1e1e2e]">
+              <div className="flex items-center border-b border-[#313244] shrink-0">
+                {(['html','css','js'] as const).map(p => (
+                  <button
+                    key={p}
+                    onClick={() => { setActivePanel(p); setAcSuggestions([]); }}
+                    className={`flex items-center gap-1.5 px-4 py-2.5 text-xs font-semibold border-r border-[#313244] transition-colors ${
+                      activePanel === p
+                        ? 'bg-[#181825] text-white border-t-2 border-t-[#cba6f7]'
+                        : 'text-[#6c7086] hover:text-white hover:bg-[#313244]'
+                    }`}
+                  >
+                    <span className={`w-2 h-2 rounded-full ${PANEL_META[p].dot}`} />
+                    {PANEL_META[p].label}
+                  </button>
+                ))}
+                <div className="flex-1" />
+                <span className="text-[10px] text-[#45475a] px-3 hidden sm:block">Ctrl+Space for hints</span>
+              </div>
+              <div className="flex-1 relative min-h-0">
+                {(['html','css','js'] as const).map(p => {
+                  const value = p === 'html' ? html : p === 'css' ? css : js;
+                  const setter = p === 'html' ? setHtml : p === 'css' ? setCss : setJs;
+                  return (
+                    <textarea
+                      key={p}
+                      ref={textareaRefs[p]}
+                      value={value}
+                      onChange={e => handleTextareaChange(e, p, setter)}
+                      onKeyDown={e => handleKeyDown(e, p, setter)}
+                      onKeyUp={e => handleKeyUp(e, p)}
+                      onBlur={() => setTimeout(dismissAc, 150)}
+                      onFocus={() => setActivePanel(p)}
+                      spellCheck={false}
+                      autoCapitalize="off"
+                      autoCorrect="off"
+                      className={`absolute inset-0 w-full h-full resize-none bg-[#1e1e2e] text-[#cdd6f4] font-mono text-sm leading-relaxed p-4 focus:outline-none ${activePanel === p ? 'block' : 'hidden'}`}
+                    />
+                  );
+                })}
+                {acSuggestions.length > 0 && (
+                  <AcDropdown
+                    suggestions={acSuggestions}
+                    index={acIndex}
+                    pos={acPos}
+                    type={acType}
+                    onSelect={acceptSuggestion}
+                    onHover={setAcIndex}
+                  />
+                )}
+              </div>
+            </div>
           </div>
         )}
         {layout !== 'editor' && (
           <div className={`min-h-0 min-w-0 flex flex-col ${layout==='split-h'?'w-1/2':layout==='split-v'?'h-1/2':'flex-1'}`}>
-            <div className="flex-1 min-h-0"><PreviewPane /></div>
-            <ConsolePanel />
+            {/* ── Preview Pane (inlined) ── */}
+            <div className="flex-1 min-h-0 flex flex-col">
+              <div className="flex items-center px-3 py-2 bg-[#181825] border-b border-[#313244] shrink-0 gap-2">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-[#f38ba8]" />
+                  <div className="w-3 h-3 rounded-full bg-[#f9e2af]" />
+                  <div className="w-3 h-3 rounded-full bg-[#a6e3a1]" />
+                </div>
+                <span className="text-xs text-[#6c7086] flex-1 text-center">Preview</span>
+                <button onClick={() => setFullPreview(true)} className="text-[#6c7086] hover:text-white transition-colors">
+                  <Maximize2 className="w-3.5 h-3.5" />
+                </button>
+              </div>
+              <div className="flex-1 bg-white min-h-0">
+                <iframe srcDoc={src} sandbox="allow-scripts allow-modals allow-forms" className="w-full h-full border-0" title="preview" />
+              </div>
+            </div>
+            {/* ── Console Panel (inlined) ── */}
+            <div className="flex flex-col bg-[#181825] border-t border-[#313244] shrink-0" style={{ height: showConsole ? 150 : 'auto' }}>
+              <button
+                onClick={() => setShowConsole(s => !s)}
+                className="flex items-center gap-2 px-4 py-2 text-xs text-[#6c7086] hover:text-white border-b border-[#313244] transition-colors w-full text-left"
+              >
+                <Terminal className="w-3.5 h-3.5" />
+                Console
+                {errorCount > 0 && <span className="ml-1 px-1.5 py-0.5 rounded bg-red-500/20 text-red-400 text-[10px] font-bold">{errorCount} error{errorCount>1?'s':''}</span>}
+                {consoleMsgs.length > 0 && <span className="ml-1 px-1.5 rounded bg-[#313244] text-[#6c7086] text-[10px]">{consoleMsgs.length}</span>}
+                <ChevronDown className={`w-3.5 h-3.5 ml-auto transition-transform ${showConsole ? 'rotate-180' : ''}`} />
+                {consoleMsgs.length > 0 && <span onMouseDown={e=>{e.stopPropagation();setConsoleMsgs([])}} className="text-[#6c7086] hover:text-white px-1">✕</span>}
+              </button>
+              {showConsole && (
+                <div className="flex-1 overflow-y-auto p-2 font-mono text-xs space-y-0.5">
+                  {consoleMsgs.length === 0
+                    ? <p className="text-[#45475a] italic px-1">No output yet…</p>
+                    : consoleMsgs.map((m, i) => (
+                      <div key={i} className={`flex gap-2 px-1 py-0.5 rounded ${m.type==='error'?'text-red-400 bg-red-950/30':m.type==='warn'?'text-yellow-400 bg-yellow-950/20':m.type==='info'?'text-blue-400':'text-[#cdd6f4]'}`}>
+                        <span className="text-[#45475a] shrink-0">{m.time}</span>
+                        <span className="break-all">{m.args.join(' ')}</span>
+                      </div>
+                    ))
+                  }
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>
