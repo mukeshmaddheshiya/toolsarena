@@ -116,7 +116,7 @@ export default function ContactPage() {
 
       <div className="mt-8 flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
         <Mail className="w-4 h-4" />
-        <span>{t('emailDirect')} <a href="mailto:hello@toolsarena.in" className="text-primary-700 dark:text-primary-400 hover:underline">hello@toolsarena.in</a></span>
+        <span>{t('emailDirect')} <a href="mailto:mukeshdr005@gmail.com" className="text-primary-700 dark:text-primary-400 hover:underline">mukeshdr005@gmail.com</a></span>
       </div>
     </div>
   );
