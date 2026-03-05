@@ -54,7 +54,7 @@ export function SearchBar({ placeholder }: { placeholder?: string }) {
           onFocus={() => query.length > 1 && setOpen(true)}
           onBlur={() => setTimeout(() => setOpen(false), 150)}
           placeholder={placeholder || t('searchPlaceholder', { count: TOOL_COUNT })}
-          className="w-full pl-10 pr-9 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 dark:text-slate-100 placeholder-slate-400"
+          className="w-full pl-10 pr-9 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 dark:text-slate-100 placeholder-slate-500"
           aria-label="Search tools"
           aria-autocomplete="list"
           aria-expanded={open}

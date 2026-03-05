@@ -22,8 +22,8 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 lg:hidden">
-      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+    <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Navigation menu">
+      <div className="absolute inset-0 bg-black/50" onClick={onClose} aria-hidden="true" />
       <div className="absolute left-0 top-0 bottom-0 w-72 bg-white dark:bg-slate-900 shadow-xl flex flex-col animate-slide-in">
         <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-800">
           <Link href="/" onClick={onClose} className="flex items-center gap-2 font-heading font-bold text-xl text-primary-800 dark:text-primary-400">
@@ -32,12 +32,12 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
             </span>
             ToolsArena
           </Link>
-          <button onClick={onClose} className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+          <button onClick={onClose} className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Close menu">
             <X className="w-5 h-5 text-slate-600 dark:text-slate-400" />
           </button>
         </div>
         <nav className="flex-1 overflow-y-auto p-4">
-          <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">{t('common.categories')}</p>
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">{t('common.categories')}</p>
           <div className="space-y-1">
             {NAV_CATEGORIES.map(cat => (
               <Link

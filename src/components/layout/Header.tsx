@@ -16,7 +16,7 @@ const SearchBar = dynamic(
     loading: () => (
       <div className="w-full h-[42px] rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 flex items-center px-3 gap-2">
         <Search className="w-4 h-4 text-slate-300" />
-        <span className="text-sm text-slate-400">Search tools...</span>
+        <span className="text-sm text-slate-500">Search tools...</span>
       </div>
     ),
   }
@@ -40,7 +40,7 @@ export function Header() {
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden lg:flex items-center gap-1 ml-2">
+            <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-1 ml-2">
               {NAV_CATEGORIES.map(cat => (
                 <Link
                   key={cat.slug}
