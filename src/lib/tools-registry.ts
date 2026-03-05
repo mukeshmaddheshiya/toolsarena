@@ -2569,6 +2569,419 @@ Perfect for quick notes during meetings, brainstorming sessions, drafting messag
     isNew: true,
     estimatedTime: 'Instant',
   },
+  {
+    slug: 'js-minifier',
+    name: 'JavaScript Minifier',
+    shortDescription: 'Minify JavaScript code to reduce file size — remove comments, whitespace, and optimize.',
+    longDescription: `Minify your JavaScript code instantly to shrink file sizes and boost website performance. Our JS Minifier strips out comments, collapses whitespace, removes unnecessary semicolons, and produces compact output ready for production.
+
+Paste your JavaScript on the left, click "Minify JavaScript," and get optimized output on the right. The tool shows exact bytes saved and compression percentage. All processing happens in your browser — your code never leaves your device.
+
+Perfect for quick minification of small scripts without configuring Webpack, Rollup, or other build tools. For production apps with multiple files, we recommend a proper bundler — but for single-file minification, this tool is fast, free, and private.`,
+    category: 'developer-tools',
+    targetKeyword: 'javascript minifier',
+    secondaryKeywords: ['minify javascript', 'js compressor', 'js minifier online', 'compress javascript', 'minify js online free', 'javascript compressor online'],
+    metaTitle: 'JavaScript Minifier - Minify JS Code Online Free | ToolsArena',
+    metaDescription: 'Minify JavaScript code online for free. Removes comments & whitespace, shows bytes saved. No signup, code stays in your browser. Instant JS compression.',
+    faqs: [
+      { question: 'What does JavaScript minification do?', answer: 'It removes comments, extra whitespace, and unnecessary characters from your JS code. This typically reduces file size by 20-50%, making your website load faster.' },
+      { question: 'Will minification break my code?', answer: 'Our minifier performs safe transformations — removing whitespace and comments. It does not rename variables or perform advanced optimizations. For most code, the output is functionally identical.' },
+      { question: 'Is my code sent to a server?', answer: 'No. All minification happens in your browser using JavaScript. Your code never leaves your device.' },
+      { question: 'Should I use this for production?', answer: 'For quick, one-off minification of small scripts, absolutely. For production apps with many files, use a bundler like Webpack or Vite that can also do tree-shaking and code splitting.' },
+    ],
+    howToSteps: ['Paste your JavaScript code in the input area.', 'Click "Minify JavaScript" to process.', 'See the minified output with file size stats.', 'Copy the minified code with one click.'],
+    relatedToolSlugs: ['css-minifier', 'json-formatter', 'html-beautifier', 'html-to-markdown', 'regex-tester'],
+    icon: 'Minimize2',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'image-cropper',
+    name: 'Image Cropper',
+    shortDescription: 'Crop images online with preset aspect ratios — free, instant, no upload required.',
+    longDescription: `Crop your images to the perfect size with our free online Image Cropper. Choose from preset aspect ratios (1:1 for Instagram, 16:9 for YouTube, 9:16 for Stories, 4:3, 3:2) or crop freely with custom dimensions.
+
+Upload your image, select your desired crop area by dragging, and download the cropped result as a high-quality PNG. The tool shows a rule-of-thirds grid overlay to help you compose the perfect crop. A live pixel dimension indicator shows the exact output size.
+
+Everything runs in your browser using the Canvas API — your images are never uploaded to any server. Perfect for social media posts, profile pictures, product photos, and any project that needs precisely cropped images.`,
+    category: 'image-tools',
+    targetKeyword: 'crop image online',
+    secondaryKeywords: ['image cropper', 'crop photo online', 'free image cropper', 'online photo cropper', 'crop picture', 'resize and crop image', 'crop image for instagram'],
+    metaTitle: 'Crop Image Online Free — Photo Cropper with Aspect Ratios | ToolsArena',
+    metaDescription: 'Crop images online for free with preset aspect ratios (1:1, 16:9, 9:16, 4:3). Rule-of-thirds grid, pixel-perfect output. No upload — images stay on your device.',
+    faqs: [
+      { question: 'What aspect ratios are available?', answer: 'Free crop (no constraint), 1:1 (square — perfect for Instagram), 16:9 (YouTube/desktop), 9:16 (Stories/Reels), 4:3 (photos), and 3:2 (prints).' },
+      { question: 'What is the output format?', answer: 'Cropped images are saved as PNG files at the original resolution of the cropped area — no quality loss.' },
+      { question: 'Can I see the exact dimensions?', answer: 'Yes! A pixel dimension indicator at the top of the crop area shows the exact width and height of your crop in the original image resolution.' },
+      { question: 'Are my images uploaded?', answer: 'No. Everything runs locally in your browser using the Canvas API. Your images never leave your device.' },
+    ],
+    howToSteps: ['Upload an image by dragging or clicking the upload area.', 'Select an aspect ratio preset or use free crop.', 'Drag the crop area to position it. Resize using the corner handle.', 'Click "Crop" to generate the cropped image.', 'Download the cropped PNG or click "Crop Again" to adjust.'],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-watermark', 'image-background-remover', 'png-to-jpg'],
+    icon: 'Crop',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: '2-5 seconds',
+  },
+  {
+    slug: 'stopwatch',
+    name: 'Online Stopwatch',
+    shortDescription: 'Free online stopwatch with lap timer — accurate to centiseconds.',
+    longDescription: `A clean, accurate online stopwatch with lap timing functionality. Start, pause, and reset with one click. Record unlimited laps and see split times with best/worst lap highlighting.
+
+The stopwatch displays hours, minutes, seconds, and centiseconds (1/100th of a second) with a large, easy-to-read display. Lap times are shown in a scrollable list with the fastest lap highlighted in green and the slowest in red — just like a professional sports timer.
+
+Built with high-resolution timing using Date.now() for accuracy. Perfect for workouts, cooking, study sessions, sports timing, or any task where you need precise time measurement. No installation needed — works instantly in your browser.`,
+    category: 'utility-tools',
+    targetKeyword: 'online stopwatch',
+    secondaryKeywords: ['stopwatch', 'stopwatch online', 'free stopwatch', 'lap timer online', 'timer stopwatch', 'digital stopwatch', 'sports timer'],
+    metaTitle: 'Online Stopwatch — Free Lap Timer with Centiseconds | ToolsArena',
+    metaDescription: 'Free online stopwatch with lap timer, centisecond accuracy, and best/worst lap highlighting. Clean design, works instantly. No download or signup needed.',
+    faqs: [
+      { question: 'How accurate is the stopwatch?', answer: 'The stopwatch uses Date.now() which provides millisecond-level accuracy. The display shows centiseconds (1/100th of a second) for practical precision.' },
+      { question: 'How do I record laps?', answer: 'Click the blue flag button while the stopwatch is running. Each lap records the split time (time since last lap) and total elapsed time.' },
+      { question: 'What do the green and red highlights mean?', answer: 'When you have 2+ laps, the fastest lap is highlighted in green and the slowest in red — helping you identify your best and worst splits.' },
+      { question: 'Does it keep running if I switch tabs?', answer: 'Yes! The timer uses absolute timestamps, so it stays accurate even if you switch browser tabs or minimize the window.' },
+    ],
+    howToSteps: ['Click the green play button to start the stopwatch.', 'Click the blue flag button to record a lap while running.', 'Click the yellow pause button to pause the timer.', 'Click the reset button to clear the timer and all laps.'],
+    relatedToolSlugs: ['countdown-timer', 'pomodoro-timer', 'timezone-checker', 'age-calculator'],
+    icon: 'Timer',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'pomodoro-timer',
+    name: 'Pomodoro Timer',
+    shortDescription: 'Stay focused with the Pomodoro Technique — customizable work/break intervals with audio alerts.',
+    longDescription: `Boost your productivity with our free Pomodoro Timer. The Pomodoro Technique breaks your work into focused 25-minute sessions separated by short 5-minute breaks, with a longer 15-minute break after every 4 sessions.
+
+Features a beautiful circular progress indicator, audio notifications when timers complete, automatic session switching (work → break → work), and customizable durations. Track your completed sessions to see your daily productivity.
+
+The timer runs entirely in your browser — no account, no data collection. Customize focus time (1-120 min), short break (1-30 min), and long break (1-60 min) to match your personal workflow. Used by millions of students, developers, writers, and professionals worldwide.`,
+    category: 'utility-tools',
+    targetKeyword: 'pomodoro timer',
+    secondaryKeywords: ['pomodoro timer online', 'pomodoro technique', 'focus timer', 'study timer', 'productivity timer', 'work timer', '25 minute timer'],
+    metaTitle: 'Pomodoro Timer — Free Focus Timer for Productivity | ToolsArena',
+    metaDescription: 'Free Pomodoro timer with customizable work/break intervals, audio alerts & session tracking. Boost focus and productivity. No signup, works in your browser.',
+    faqs: [
+      { question: 'What is the Pomodoro Technique?', answer: 'It is a time management method: work for 25 minutes (one "pomodoro"), take a 5-minute break, repeat. After 4 pomodoros, take a longer 15-minute break. It helps maintain focus and prevent burnout.' },
+      { question: 'Can I customize the timer durations?', answer: 'Yes! Click the gear icon to set custom durations for focus time (1-120 min), short break (1-30 min), and long break (1-60 min).' },
+      { question: 'Does it play a sound when the timer ends?', answer: 'Yes, a gentle beep plays when each interval completes. Your browser may ask for audio permission on first use.' },
+      { question: 'Does it auto-switch between work and break?', answer: 'Yes! When a focus session ends, it automatically switches to a break. After the break, it switches back to focus. After every 4 focus sessions, you get a long break.' },
+    ],
+    howToSteps: ['Click the play button to start your focus session (default: 25 min).', 'Work until the timer completes — an audio alert will notify you.', 'Take a short break (5 min) when prompted.', 'After 4 focus sessions, enjoy a long break (15 min).', 'Click the gear icon to customize durations.'],
+    relatedToolSlugs: ['stopwatch', 'countdown-timer', 'online-notepad', 'word-counter'],
+    icon: 'Brain',
+    isNew: true,
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'text-to-speech',
+    name: 'Text to Speech',
+    shortDescription: 'Convert text to speech online — listen to any text read aloud in 50+ voices and languages.',
+    longDescription: `Convert any text to natural-sounding speech right in your browser. Our Text to Speech tool uses the Web Speech API built into modern browsers to read your text aloud in dozens of voices and languages — completely free, no downloads, no signup.
+
+Choose from 50+ voices across multiple languages (English, Hindi, Spanish, French, German, Japanese, and more). Adjust speech speed (0.25x to 2x) and pitch to find the perfect voice for your needs. Pause, resume, or stop at any time.
+
+Perfect for proofreading by listening to your writing, language learning, accessibility, creating audio from articles, or simply having text read to you while you multitask. Everything runs locally in your browser — your text is never sent to any server.`,
+    category: 'text-tools',
+    targetKeyword: 'text to speech online',
+    secondaryKeywords: ['text to speech', 'tts online', 'read text aloud', 'text reader online', 'text to voice', 'free text to speech', 'convert text to audio'],
+    metaTitle: 'Text to Speech Online Free — Read Text Aloud in 50+ Voices | ToolsArena',
+    metaDescription: 'Convert text to speech online for free. 50+ voices, multiple languages, adjustable speed & pitch. No signup, runs in your browser. Listen to any text instantly.',
+    faqs: [
+      { question: 'What voices are available?', answer: 'The available voices depend on your browser and operating system. Chrome typically offers 20+ voices, while Edge offers 100+ premium voices. The tool automatically lists all voices available on your device.' },
+      { question: 'Which languages are supported?', answer: 'Most modern browsers support English, Hindi, Spanish, French, German, Japanese, Chinese, Korean, Arabic, Portuguese, and many more. The exact list depends on your browser.' },
+      { question: 'Can I download the audio?', answer: 'The Web Speech API does not support audio file export. For downloadable audio files, you would need a server-side TTS service. This tool is designed for instant playback.' },
+      { question: 'Is my text sent to a server?', answer: 'No. The Web Speech API processes text locally on your device using your browser\'s built-in speech engine. Your text never leaves your browser.' },
+    ],
+    howToSteps: ['Type or paste your text in the text area.', 'Select a voice from the dropdown (grouped by language).', 'Adjust speed and pitch using the sliders.', 'Click the play button to hear your text spoken aloud.', 'Use pause/stop buttons to control playback.'],
+    relatedToolSlugs: ['speech-to-text', 'word-counter', 'character-counter', 'case-converter', 'online-notepad'],
+    icon: 'Volume2',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'html-beautifier',
+    name: 'HTML Beautifier',
+    shortDescription: 'Format and beautify messy HTML code with proper indentation — free online tool.',
+    longDescription: `Clean up messy, minified, or poorly formatted HTML code with our free HTML Beautifier. Paste your HTML, choose your indent size, and get perfectly formatted, readable HTML in one click.
+
+The formatter properly indents nested elements, handles void tags (br, img, input, etc.) correctly, preserves comments, and produces clean, consistent output. Choose between 2-space or 4-space indentation.
+
+All processing is client-side — your code never leaves your browser. Perfect for debugging, code review, learning HTML structure, or cleaning up auto-generated HTML from CMS platforms and WYSIWYG editors.`,
+    category: 'developer-tools',
+    targetKeyword: 'html beautifier',
+    secondaryKeywords: ['html formatter', 'format html online', 'html prettifier', 'beautify html', 'html indenter', 'html code formatter', 'pretty print html'],
+    metaTitle: 'HTML Beautifier — Format & Prettify HTML Online Free | ToolsArena',
+    metaDescription: 'Beautify and format messy HTML code online for free. Proper indentation, clean output. No signup, code stays in your browser. Instant HTML formatter.',
+    faqs: [
+      { question: 'Does it handle self-closing tags?', answer: 'Yes. Void elements like <br>, <img>, <input>, <meta>, etc. are handled correctly — they don\'t increase the indent level.' },
+      { question: 'Will it change my HTML\'s behavior?', answer: 'No. The beautifier only adds/removes whitespace for formatting. The HTML structure and behavior remain identical.' },
+      { question: 'Can I beautify HTML with inline CSS/JS?', answer: 'The tool formats the HTML structure. Inline CSS and JS within tags are preserved as-is. For CSS/JS formatting, use our dedicated CSS Minifier or JS Minifier tools.' },
+    ],
+    howToSteps: ['Paste your HTML code in the input area.', 'Choose your indent size (2 or 4 spaces).', 'Click "Beautify HTML" to format.', 'Copy the formatted output with one click.'],
+    relatedToolSlugs: ['css-minifier', 'js-minifier', 'html-to-markdown', 'html-css-js-editor', 'json-formatter'],
+    icon: 'FileCode2',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'image-watermark',
+    name: 'Image Watermark',
+    shortDescription: 'Add text watermarks to images — custom font, color, position, opacity, and tiling.',
+    longDescription: `Protect your images with custom text watermarks. Our free Image Watermark tool lets you add text overlays with full control over font size, color, opacity, position, and rotation. Choose single placement (center, bottom-right, bottom-left) or tile the watermark across the entire image.
+
+Upload any image, type your watermark text, adjust the settings in real-time, and download the watermarked image as a PNG. The live canvas preview updates instantly as you change settings — so you can see exactly how your watermark will look before downloading.
+
+All processing happens in your browser using the Canvas API — your images are never uploaded to any server. Perfect for photographers, designers, content creators, and businesses who need to protect their visual content.`,
+    category: 'image-tools',
+    targetKeyword: 'add watermark to image',
+    secondaryKeywords: ['image watermark', 'watermark photo online', 'add watermark free', 'watermark tool', 'text watermark', 'photo watermark online', 'watermark image online free'],
+    metaTitle: 'Add Watermark to Image Free — Text Watermark Tool Online | ToolsArena',
+    metaDescription: 'Add text watermarks to images for free. Custom font, color, opacity, tiling & position. No signup, images stay on your device. Protect your photos instantly.',
+    faqs: [
+      { question: 'Can I tile the watermark across the entire image?', answer: 'Yes! Select "Tile (Repeat)" from the position dropdown to cover the entire image with your watermark text — great for preventing unauthorized use.' },
+      { question: 'What about image watermarks (logo overlay)?', answer: 'Currently the tool supports text watermarks only. For logo overlays, we recommend using our Image Cropper in combination with a design tool.' },
+      { question: 'Can I adjust the transparency?', answer: 'Yes. The opacity slider lets you set the watermark transparency from 5% (barely visible) to 100% (fully opaque). 30% is a good default for most use cases.' },
+    ],
+    howToSteps: ['Upload your image by dropping or clicking.', 'Type your watermark text (e.g., your name or brand).', 'Choose position (center, corner, or tile), font size, opacity, color, and rotation.', 'Preview updates live on the canvas.', 'Click "Download" to save the watermarked image as PNG.'],
+    relatedToolSlugs: ['image-cropper', 'image-compressor', 'image-resizer', 'image-background-remover', 'image-to-pdf'],
+    icon: 'Droplets',
+    isNew: true,
+    estimatedTime: '2-5 seconds',
+  },
+  {
+    slug: 'file-size-converter',
+    name: 'File Size Converter',
+    shortDescription: 'Convert between bytes, KB, MB, GB, TB — instant file size unit conversion.',
+    longDescription: `Instantly convert file sizes between Bits, Bytes, Kilobytes (KB), Megabytes (MB), Gigabytes (GB), Terabytes (TB), and binary units (KiB, MiB, GiB). Enter a value in any unit and see all other conversions at once.
+
+Includes a quick reference table for common conversions. One-click copy for any result. The tool uses binary (1024-based) calculations — the standard used by operating systems and file managers.
+
+Perfect for developers, sysadmins, students, and anyone who needs to quickly convert between storage units. Completely client-side — no server calls needed for simple math.`,
+    category: 'converters',
+    targetKeyword: 'file size converter',
+    secondaryKeywords: ['bytes to mb', 'kb to mb', 'mb to gb', 'file size calculator', 'bytes converter', 'data size converter', 'storage unit converter', 'gb to mb'],
+    metaTitle: 'File Size Converter — Bytes to KB, MB, GB, TB Online | ToolsArena',
+    metaDescription: 'Convert file sizes between Bytes, KB, MB, GB & TB instantly. Quick reference table, one-click copy. Free online file size calculator.',
+    faqs: [
+      { question: 'Is 1 KB equal to 1000 or 1024 bytes?', answer: 'In computing, 1 KB = 1024 bytes (binary). In the SI system, 1 kB = 1000 bytes (decimal). This tool uses binary (1024-based) calculations, which is what your OS reports.' },
+      { question: 'What is the difference between KB and KiB?', answer: 'KB (kilobyte) traditionally means 1024 bytes in computing. KiB (kibibyte) is the IEC standard term for exactly 1024 bytes. In this tool, both use 1024 bytes.' },
+    ],
+    howToSteps: ['Enter a numeric value in the input field.', 'Select the unit you are converting from.', 'See all conversions displayed instantly.', 'Click the copy button next to any result.'],
+    relatedToolSlugs: ['unit-converter', 'number-to-words', 'percentage-calculator', 'temperature-converter'],
+    icon: 'HardDrive',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'sql-formatter',
+    name: 'SQL Formatter',
+    shortDescription: 'Format and beautify SQL queries with proper indentation and keyword highlighting.',
+    longDescription: `Format messy SQL queries into clean, readable code with our free SQL Formatter. The tool automatically uppercases SQL keywords, adds proper line breaks and indentation, and structures your queries for easy reading.
+
+Supports SELECT, INSERT, UPDATE, DELETE, CREATE, JOIN, subqueries, and all standard SQL syntax. Choose between 2 or 4 space indentation. Paste a complex one-liner query and get beautifully formatted SQL in one click.
+
+All formatting happens in your browser — your queries never leave your device. Essential for developers, DBAs, data analysts, and students working with databases. Makes code reviews, debugging, and learning SQL much easier.`,
+    category: 'developer-tools',
+    targetKeyword: 'sql formatter',
+    secondaryKeywords: ['sql beautifier', 'format sql online', 'sql formatter online', 'sql pretty print', 'sql query formatter', 'beautify sql', 'sql indenter'],
+    metaTitle: 'SQL Formatter — Format & Beautify SQL Queries Online Free | ToolsArena',
+    metaDescription: 'Format SQL queries online for free. Auto-uppercase keywords, proper indentation, clean output. No signup, queries stay in your browser. Instant SQL beautifier.',
+    faqs: [
+      { question: 'What SQL dialects are supported?', answer: 'The formatter supports standard SQL syntax including SELECT, JOIN, INSERT, UPDATE, DELETE, CREATE, and subqueries. It works with MySQL, PostgreSQL, SQLite, SQL Server, and Oracle syntax.' },
+      { question: 'Does it modify my query logic?', answer: 'No. The formatter only changes whitespace and keyword casing — your query logic remains exactly the same.' },
+      { question: 'Is my SQL query sent to a server?', answer: 'No. All formatting is done client-side in your browser. Your queries never leave your device.' },
+    ],
+    howToSteps: ['Paste your SQL query in the input area.', 'Choose your preferred indent size.', 'Click "Format SQL" to beautify.', 'Copy the formatted SQL with one click.'],
+    relatedToolSlugs: ['json-formatter', 'html-beautifier', 'css-minifier', 'js-minifier', 'csv-to-json'],
+    icon: 'Database',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'xml-to-json',
+    name: 'XML to JSON Converter',
+    shortDescription: 'Convert XML data to JSON format instantly — handles attributes, nested elements, and arrays.',
+    longDescription: `Convert XML to JSON instantly with our free online converter. The tool parses your XML, handles attributes (prefixed with @), nested elements, repeated elements (converted to arrays), and text content — producing clean, well-formatted JSON output.
+
+Paste your XML, click convert, and get properly indented JSON. Choose between 2 or 4 space indentation. Error messages help you identify any XML parsing issues.
+
+All conversion happens in your browser using the DOMParser API — your data never leaves your device. Perfect for API development, data migration, configuration file conversion, and any workflow that requires moving data between XML and JSON formats.`,
+    category: 'developer-tools',
+    targetKeyword: 'xml to json converter',
+    secondaryKeywords: ['xml to json', 'convert xml to json', 'xml to json online', 'xml converter', 'xml to json tool', 'xml json converter free'],
+    metaTitle: 'XML to JSON Converter — Convert XML to JSON Online Free | ToolsArena',
+    metaDescription: 'Convert XML to JSON online for free. Handles attributes, nested elements & arrays. No signup, data stays in your browser. Instant XML to JSON conversion.',
+    faqs: [
+      { question: 'How are XML attributes handled?', answer: 'Attributes are converted to JSON keys with an @ prefix. For example, <user id="1"> becomes {"@id": "1"}.' },
+      { question: 'What about repeated elements?', answer: 'Repeated child elements with the same tag name are automatically converted to JSON arrays.' },
+      { question: 'Does it handle CDATA sections?', answer: 'CDATA content is treated as text content and included in the JSON output.' },
+    ],
+    howToSteps: ['Paste your XML in the input area.', 'Choose your JSON indent size.', 'Click "Convert to JSON" to process.', 'Copy the JSON output with one click.'],
+    relatedToolSlugs: ['json-formatter', 'csv-to-json', 'html-to-markdown', 'base64-encode-decode'],
+    icon: 'FileJson',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'cron-generator',
+    name: 'Cron Expression Generator',
+    shortDescription: 'Build and decode cron expressions visually — with presets, builder UI, and plain English descriptions.',
+    longDescription: `Create cron expressions effortlessly with our visual Cron Generator. Select minutes, hours, days, months, and weekdays from dropdown menus — or choose from 10 common presets like "Every 5 minutes," "Every Monday at 9am," or "Every weekday."
+
+The tool generates the cron expression in real-time and shows a plain English description of the schedule. You can also paste an existing cron expression to decode what it means.
+
+Includes a syntax reference guide and supports all standard cron features: wildcards (*), lists (1,3,5), ranges (1-5), and step values (*/5). Perfect for setting up cron jobs, CI/CD schedules, cloud functions, and any system that uses cron syntax.`,
+    category: 'developer-tools',
+    targetKeyword: 'cron expression generator',
+    secondaryKeywords: ['cron generator', 'crontab generator', 'cron builder', 'cron schedule generator', 'cron expression builder', 'crontab guru', 'cron job generator'],
+    metaTitle: 'Cron Expression Generator — Visual Cron Builder Online | ToolsArena',
+    metaDescription: 'Generate cron expressions visually with presets, dropdowns & plain English descriptions. Decode existing cron jobs. Free cron builder — no signup needed.',
+    faqs: [
+      { question: 'What is a cron expression?', answer: 'A cron expression is a string of 5 fields (minute, hour, day-of-month, month, day-of-week) that defines a recurring schedule. It is used in Unix/Linux cron jobs, CI/CD pipelines, cloud schedulers, and more.' },
+      { question: 'What does */5 mean?', answer: 'The / is a step value. */5 in the minute field means "every 5 minutes." Similarly, */2 in the hour field means "every 2 hours."' },
+      { question: 'Can I decode an existing cron expression?', answer: 'Yes! Paste any valid cron expression in the decode field and click "Decode" to see the schedule in plain English and populate the visual builder.' },
+    ],
+    howToSteps: ['Select values for minute, hour, day, month, and weekday from the dropdowns.', 'Or click a preset like "Every 5 minutes" to populate the fields.', 'See the cron expression and English description update in real time.', 'Copy the cron expression with one click.', 'To decode: paste an existing cron expression and click "Decode."'],
+    relatedToolSlugs: ['json-formatter', 'regex-tester', 'timestamp-converter', 'uuid-generator'],
+    icon: 'Clock',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'speech-to-text',
+    name: 'Speech to Text',
+    shortDescription: 'Convert speech to text in real time — free voice typing in 12+ languages.',
+    longDescription: `Dictate text using your voice with our free Speech to Text tool. Click the microphone, start speaking, and watch your words appear in real-time. Supports continuous dictation with interim results shown in gray as the AI processes your speech.
+
+Choose from 12+ languages including English, Hindi, Nepali, Spanish, French, German, Japanese, Chinese, and more. Download your transcription as a .txt file or copy it to clipboard.
+
+Uses the Web Speech Recognition API built into Chrome and Edge — no downloads, no account, no data sent to ToolsArena servers. Note: the speech recognition engine itself is provided by your browser (Google for Chrome, Microsoft for Edge).`,
+    category: 'text-tools',
+    targetKeyword: 'speech to text online',
+    secondaryKeywords: ['speech to text', 'voice to text', 'voice typing', 'dictation online', 'speech recognition online', 'free voice to text', 'transcribe speech'],
+    metaTitle: 'Speech to Text Online Free — Voice Typing in 12+ Languages | ToolsArena',
+    metaDescription: 'Convert speech to text in real time. Free voice typing in 12+ languages with download option. Works in Chrome & Edge. No signup, instant transcription.',
+    faqs: [
+      { question: 'Which browsers support this?', answer: 'Speech recognition works best in Google Chrome and Microsoft Edge. Safari has partial support. Firefox does not currently support the Web Speech Recognition API.' },
+      { question: 'Is my voice data private?', answer: 'Your audio is processed by your browser\'s speech engine (Google for Chrome, Microsoft for Edge). ToolsArena does not receive, store, or process your voice data. The transcribed text stays in your browser.' },
+      { question: 'Can I dictate in Hindi or other languages?', answer: 'Yes! Select your language from the dropdown before starting. The tool supports 12+ languages including Hindi, Nepali, Spanish, French, German, Japanese, Chinese, Arabic, Portuguese, and Korean.' },
+      { question: 'Can I download the transcription?', answer: 'Yes! Click the download button to save your transcribed text as a .txt file.' },
+    ],
+    howToSteps: ['Select your language from the dropdown.', 'Click the microphone button to start listening.', 'Speak clearly — your words appear in real time.', 'Click the mic again to stop recording.', 'Copy the text or download as .txt file.'],
+    relatedToolSlugs: ['text-to-speech', 'word-counter', 'character-counter', 'online-notepad', 'case-converter'],
+    icon: 'Mic',
+    isNew: true,
+    estimatedTime: 'Real-time',
+  },
+  {
+    slug: 'screen-recorder',
+    name: 'Screen Recorder',
+    shortDescription: 'Record your screen directly in the browser — free, no download, no watermark.',
+    longDescription: `Record your screen, a browser tab, or an application window directly in your browser — completely free with no watermarks, no time limits, and no downloads required. Optionally include microphone audio for narration.
+
+Click "Start Recording," choose what to share (entire screen, app window, or browser tab), and the recording begins immediately. A live timer shows your recording duration. When done, preview your recording and download it as a WebM video file.
+
+Uses the browser's native MediaRecorder API and getDisplayMedia API — your screen recording never touches any server. Everything is processed locally. Perfect for tutorials, bug reports, presentations, demos, and quick screen captures.`,
+    category: 'utility-tools',
+    targetKeyword: 'screen recorder online',
+    secondaryKeywords: ['screen recorder', 'free screen recorder', 'online screen recorder', 'record screen online', 'screen capture online', 'browser screen recorder', 'screen recording no download'],
+    metaTitle: 'Screen Recorder Online Free — No Download, No Watermark | ToolsArena',
+    metaDescription: 'Record your screen for free directly in your browser. No download, no watermark, no time limit. Include mic audio. Download as WebM. Privacy-first screen capture.',
+    faqs: [
+      { question: 'Do I need to install anything?', answer: 'No! The screen recorder uses your browser\'s built-in APIs. Just click "Start Recording" and choose what to share. Works in Chrome, Edge, and Firefox.' },
+      { question: 'Is there a recording time limit?', answer: 'No. You can record for as long as you want. The only limit is your available disk space/memory.' },
+      { question: 'What format is the recording?', answer: 'Recordings are saved as WebM (VP9 codec) — a widely supported video format. You can play it in any modern browser or convert it to MP4 using a free converter.' },
+      { question: 'Can I record my microphone audio?', answer: 'Yes! Check the "Include microphone audio" option before starting. The tool will ask for mic permission and mix your narration with any tab audio.' },
+      { question: 'Is my recording uploaded anywhere?', answer: 'No. Your screen recording is processed entirely in your browser and saved directly to your computer. Nothing is uploaded to any server.' },
+    ],
+    howToSteps: ['Optionally check "Include microphone audio" for narration.', 'Click "Start Recording" — your browser will ask what to share.', 'Choose to share your entire screen, a window, or a browser tab.', 'A timer shows your recording duration. Click "Stop Recording" when done.', 'Preview your recording and click "Download WebM" to save.'],
+    relatedToolSlugs: ['online-whiteboard', 'countdown-timer', 'stopwatch', 'image-compressor'],
+    icon: 'MonitorPlay',
+    isNew: true,
+    estimatedTime: 'Unlimited',
+  },
+  {
+    slug: 'ip-address-lookup',
+    name: 'IP Address Lookup',
+    shortDescription: 'Find your public IP address and location — city, country, ISP, timezone, and coordinates.',
+    longDescription: `Instantly see your public IP address along with detailed location information including city, region, country, timezone, postal code, ISP/organization, and geographic coordinates.
+
+Your IP is displayed prominently with a one-click copy button. You can also look up any other IP address to see its location details. The tool uses the free ipinfo.io API to fetch accurate geolocation data.
+
+Note: Unlike most ToolsArena tools, this one does make an external API call to ipinfo.io to look up IP information. We display a privacy notice about this. No data is stored by ToolsArena — the API call goes directly from your browser to ipinfo.io.`,
+    category: 'utility-tools',
+    targetKeyword: 'what is my ip',
+    secondaryKeywords: ['my ip address', 'ip address lookup', 'ip lookup', 'find my ip', 'check my ip', 'ip location', 'ip geolocation', 'what is my ip address'],
+    metaTitle: 'What Is My IP Address? — IP Lookup with Location | ToolsArena',
+    metaDescription: 'Find your public IP address instantly with city, country, ISP, timezone & coordinates. Look up any IP address. Free IP geolocation tool.',
+    faqs: [
+      { question: 'What is a public IP address?', answer: 'Your public IP is the address that websites and services see when you connect to the internet. It is assigned by your ISP and identifies your connection to the outside world.' },
+      { question: 'Is this tool accurate?', answer: 'IP geolocation is typically accurate to the city level. The exact location shown is approximate — it identifies the general area of your ISP, not your physical address.' },
+      { question: 'Can I look up other IP addresses?', answer: 'Yes! Enter any IP address in the lookup field to see its location details.' },
+      { question: 'Does ToolsArena store my IP?', answer: 'No. The lookup request goes directly from your browser to ipinfo.io. ToolsArena does not log, store, or process your IP address.' },
+    ],
+    howToSteps: ['Open the tool — your public IP is displayed automatically.', 'See your location, ISP, timezone, and coordinates.', 'Click the copy button to copy your IP address.', 'To look up another IP, enter it in the search field and click "Lookup."'],
+    relatedToolSlugs: ['internet-speed-test', 'timezone-checker', 'qr-code-generator', 'json-formatter'],
+    icon: 'Globe',
+    isNew: true,
+    estimatedTime: '1-2 seconds',
+  },
+  {
+    slug: 'image-to-pdf',
+    name: 'Image to PDF Converter',
+    shortDescription: 'Convert multiple images to a single PDF — arrange pages, set margins, choose page size.',
+    longDescription: `Convert your images (JPEG, PNG) into a single PDF document with our free Image to PDF converter. Upload multiple images, arrange them in your preferred order, set page size (A4, US Letter, or fit-to-image), adjust margins, and generate a professional-looking PDF.
+
+Each image becomes one page in the PDF. Images are centered on the page and scaled to fit while maintaining their aspect ratio. Reorder images before generating to control the page sequence.
+
+All processing happens in your browser using the pdf-lib library — your images are never uploaded to any server. Perfect for scanning documents, combining photos into an album, creating portfolios, or sending multiple images as a single file.`,
+    category: 'pdf-tools',
+    targetKeyword: 'image to pdf converter',
+    secondaryKeywords: ['image to pdf', 'jpg to pdf', 'png to pdf', 'convert image to pdf', 'photo to pdf', 'images to pdf online', 'picture to pdf free'],
+    metaTitle: 'Image to PDF Converter — Convert Photos to PDF Online Free | ToolsArena',
+    metaDescription: 'Convert images to PDF online for free. Multiple images, custom page size & margins. Arrange pages before generating. No upload — images stay on your device.',
+    faqs: [
+      { question: 'How many images can I add?', answer: 'There is no hard limit. You can add as many images as your browser can handle. For very large batches (50+), processing may be slower.' },
+      { question: 'What page sizes are available?', answer: 'A4 (210 x 297mm), US Letter (8.5 x 11 inches), and Fit to Image (page size matches the image dimensions).' },
+      { question: 'Can I reorder the pages?', answer: 'Yes! Use the Up/Down buttons next to each image to rearrange the page order before generating the PDF.' },
+      { question: 'Are my images uploaded?', answer: 'No. The PDF is generated entirely in your browser using the pdf-lib JavaScript library. Your images never leave your device.' },
+    ],
+    howToSteps: ['Upload images by dropping or clicking (JPEG, PNG supported).', 'Reorder images using the Up/Down buttons if needed.', 'Choose page size (A4, Letter, or Fit to Image) and adjust margins.', 'Click "Generate PDF" to create and download the PDF.'],
+    relatedToolSlugs: ['jpg-to-pdf', 'pdf-merge', 'image-compressor', 'image-resizer', 'pdf-compress'],
+    icon: 'FileImage',
+    isNew: true,
+    estimatedTime: '2-10 seconds',
+  },
+  {
+    slug: 'online-whiteboard',
+    name: 'Online Whiteboard',
+    shortDescription: 'A free drawing whiteboard — sketch, doodle, and brainstorm right in your browser.',
+    longDescription: `A simple, distraction-free online whiteboard for sketching ideas, drawing diagrams, brainstorming, or just doodling. Choose from 9 preset colors plus a custom color picker, adjust brush size, use the eraser, and undo mistakes.
+
+Features pen and eraser tools, 9+ colors, adjustable line width, undo history (up to 30 steps), and download as PNG. The canvas supports both mouse and touch input — works on tablets and touchscreen devices.
+
+No account, no saving to cloud — it is a quick-use whiteboard for when you need to sketch something fast. Download your drawing as a PNG image when done. Everything runs locally in your browser with zero latency.`,
+    category: 'utility-tools',
+    targetKeyword: 'online whiteboard',
+    secondaryKeywords: ['whiteboard online', 'free whiteboard', 'drawing board online', 'online drawing tool', 'digital whiteboard', 'sketch online', 'web whiteboard free'],
+    metaTitle: 'Online Whiteboard — Free Drawing Board & Sketch Tool | ToolsArena',
+    metaDescription: 'Free online whiteboard for drawing, sketching & brainstorming. 9+ colors, eraser, undo, adjustable brush. Download as PNG. Works on desktop & touch devices.',
+    faqs: [
+      { question: 'Does it work on tablets and phones?', answer: 'Yes! The whiteboard supports touch input, so you can draw with your finger or a stylus on tablets and touchscreen devices.' },
+      { question: 'Can I undo my strokes?', answer: 'Yes. Click the undo button (or use Ctrl+Z) to undo up to 30 strokes.' },
+      { question: 'Can I save my drawing?', answer: 'Yes! Click "Save PNG" to download your whiteboard as a PNG image. There is no cloud save — drawings are only saved when you download them.' },
+      { question: 'Is there a collaboration feature?', answer: 'Not currently. This is a single-user whiteboard for quick personal sketching. For collaborative whiteboards, tools like Excalidraw or Miro are better suited.' },
+    ],
+    howToSteps: ['Select the pen tool (selected by default).', 'Choose a color and adjust brush thickness.', 'Draw on the canvas with your mouse or touch.', 'Use the eraser to remove parts, or undo to revert strokes.', 'Click "Save PNG" to download your drawing.'],
+    relatedToolSlugs: ['screen-recorder', 'online-notepad', 'image-compressor', 'color-picker'],
+    icon: 'PenTool',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
