@@ -50,7 +50,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
-  const popularTools = getPopularTools(8);
+  const popularTools = getPopularTools(6);
 
   return (
     <>
@@ -104,7 +104,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">{t('home.popularToolsDesc')}</p>
             </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3">
             {popularTools.map(tool => <ToolCard key={tool.slug} tool={tool} />)}
           </div>
         </section>

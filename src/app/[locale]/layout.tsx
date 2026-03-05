@@ -12,9 +12,9 @@ import { routing } from '@/i18n/routing';
 import { Locale } from '@/i18n/config';
 import '../globals.css';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-plus-jakarta', display: 'swap', weight: ['500', '600', '700'] });
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains', display: 'swap', weight: ['400', '500'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'optional', preload: false });
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-plus-jakarta', display: 'swap', weight: ['600', '700'] });
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains', display: 'optional', weight: ['400'], preload: false });
 
 export const metadata: Metadata = getDefaultMetadata();
 
