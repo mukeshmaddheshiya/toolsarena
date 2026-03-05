@@ -3180,6 +3180,276 @@ All fields are optional except your name, so you can include as much or as littl
     isPopular: true,
     estimatedTime: '5 minutes',
   },
+  {
+    slug: 'electricity-bill-calculator',
+    name: 'Electricity Bill Calculator',
+    shortDescription: 'Calculate your monthly electricity bill based on units consumed and state tariff slabs.',
+    longDescription: `India's most comprehensive Electricity Bill Calculator covering 15 states with accurate domestic tariff slabs for FY 2025-26. Select your state, enter units consumed, and instantly see a detailed bill breakdown including energy charges, fixed charges, meter rent, fuel surcharge, and electricity duty.
+
+The calculator shows slab-wise breakdown with visual bars so you can understand exactly how your bill is computed at each tariff tier. Supported states include Maharashtra (MSEDCL), Delhi (BSES/Tata Power), Karnataka (BESCOM), Tamil Nadu (TNEB), Uttar Pradesh (UPPCL), Rajasthan, Gujarat, Madhya Pradesh, West Bengal, Andhra Pradesh, Telangana, Kerala, Punjab, Bihar, and Haryana.
+
+View your bill in monthly, quarterly, and annual projections. Includes an appliance power consumption guide showing daily kWh usage for LED bulbs, fans, AC, refrigerator, and more. Also features energy-saving tips to help you reduce your electricity bill. Custom rate option available if your state is not listed.`,
+    category: 'calculators',
+    targetKeyword: 'electricity bill calculator India',
+    secondaryKeywords: ['electricity bill calculator', 'bijli bill calculator', 'electricity unit rate calculator', 'MSEDCL bill calculator', 'state wise electricity tariff', 'electricity bill per unit rate', 'monthly electricity cost calculator'],
+    metaTitle: 'Electricity Bill Calculator India - 15 States | Slab-wise Breakdown',
+    metaDescription: 'Calculate your electricity bill with state-wise tariff slabs for 15 Indian states. See slab breakdown, energy charges, duty & annual projections. Free & instant.',
+    faqs: [
+      { question: 'How is the electricity bill calculated in India?', answer: 'Electricity bills are calculated using a slab-based tariff system. Each slab has a per-unit rate that increases with consumption. The bill includes energy charges (units x rate per slab), fixed charges, meter rent, fuel surcharge, and electricity duty (a percentage of the subtotal).' },
+      { question: 'What is the average electricity rate per unit in India?', answer: 'The average rate varies by state from Rs 3 to Rs 12 per unit. Tamil Nadu offers free electricity for the first 100 units. Maharashtra has higher rates (Rs 4.71 to Rs 12.54/unit). Delhi rates range from Rs 3 to Rs 8/unit.' },
+      { question: 'How many units does a 1.5 ton AC consume per day?', answer: 'A 1.5 ton 5-star inverter AC typically consumes 1-1.5 units per hour, averaging about 8-12 units for 8 hours of daily use. This translates to 240-360 units per month, adding Rs 1,200-3,600 to your bill depending on your state tariff.' },
+      { question: 'What is electricity duty and fuel surcharge?', answer: 'Electricity duty is a tax levied by state governments on electricity consumption, typically 5-16% of the bill. Fuel surcharge is an additional charge per unit to cover fluctuating fuel costs for power generation, typically Rs 0.10-0.31 per unit.' },
+    ],
+    howToSteps: [
+      'Select your state from the dropdown (15 Indian states supported).',
+      'Enter the number of units consumed this month (check your meter or last bill).',
+      'View the complete bill breakdown with energy charges, fixed charges, and taxes.',
+      'Check the slab-wise visual breakdown to understand your tariff tiers.',
+      'See monthly, quarterly, and annual projections for budget planning.',
+    ],
+    relatedToolSlugs: ['emi-calculator', 'gst-calculator', 'salary-calculator', 'percentage-calculator'],
+    icon: 'Zap',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'text-repeater',
+    name: 'Text Repeater',
+    shortDescription: 'Repeat any text up to 10,000 times with custom separators. Copy instantly.',
+    longDescription: `Text Repeater lets you duplicate any text, word, or phrase up to 10,000 times in a single click. Choose from multiple separator options — new line, space, comma, dash, tab, or a custom separator of your choice.
+
+Features include optional line numbering (1. 2. 3...), live character and word count, and instant copy to clipboard. Quick count presets from 5x to 5000x make common tasks fast.
+
+Perfect for generating test data, filling forms, creating WhatsApp/Instagram text art, SEO testing, load testing, and any task where you need repeated text. The tool runs 100% in your browser — your text is never sent to any server.`,
+    category: 'text-tools',
+    targetKeyword: 'text repeater',
+    secondaryKeywords: ['repeat text online', 'text repeater tool', 'copy paste repeater', 'word repeater', 'text multiplier', 'repeat text 1000 times', 'WhatsApp text repeater'],
+    metaTitle: 'Text Repeater - Repeat Any Text Up to 10,000 Times Online Free',
+    metaDescription: 'Repeat any text up to 10,000 times with custom separators. Line numbers, word count, instant copy. Free online text repeater — no signup required.',
+    faqs: [
+      { question: 'How do I repeat text 1000 times?', answer: 'Enter your text in the input box, set the repeat count to 1000, choose a separator (new line, space, comma, etc.), and the repeated text appears instantly. Click "Copy" to copy it to your clipboard.' },
+      { question: 'Can I add numbers before each repeated line?', answer: 'Yes! Check the "Add line numbers" option and each repeated line will be prefixed with 1. 2. 3. and so on.' },
+      { question: 'Is there a limit to how many times I can repeat?', answer: 'The tool supports up to 10,000 repetitions. This is capped to keep your browser responsive. For most use cases, 10,000 is more than sufficient.' },
+      { question: 'Does this tool work on mobile?', answer: 'Yes, the text repeater works on all devices — desktop, tablet, and mobile. It runs entirely in your browser with no app download needed.' },
+    ],
+    howToSteps: [
+      'Enter the text you want to repeat in the input box.',
+      'Set the repeat count (or use a quick preset like 10x, 100x, 1000x).',
+      'Choose a separator — new line, space, comma, dash, tab, or custom.',
+      'Optionally enable line numbers for numbered output.',
+      'Click "Copy" to copy the repeated text to your clipboard.',
+    ],
+    relatedToolSlugs: ['word-counter', 'lorem-ipsum-generator', 'case-converter', 'text-to-binary'],
+    icon: 'Repeat',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'tax-regime-calculator',
+    name: 'Old vs New Tax Regime Calculator',
+    shortDescription: 'Compare Old vs New Tax Regime for FY 2025-26 and find which saves you more tax.',
+    longDescription: `India's most detailed Old vs New Tax Regime comparison calculator, updated for FY 2025-26 (AY 2026-27) as per Budget 2025. Enter your gross income and deductions to instantly see which regime saves you more money.
+
+The calculator computes your taxable income and tax payable under both regimes with full slab-wise visual breakdown. For the Old Regime, enter your deductions: Section 80C (PPF, ELSS, LIC), Section 80D (health insurance), Section 80CCD(1B) (NPS), Section 80E (education loan interest), home loan interest (Section 24b), and HRA exemption.
+
+New Regime features for FY 2025-26: basic exemption at Rs 4 lakh, standard deduction of Rs 75,000, and rebate under Section 87A making income up to Rs 12 lakh effectively tax-free. Old Regime features: basic exemption at Rs 2.5 lakh, standard deduction of Rs 50,000, all Chapter VIA deductions allowed, and HRA exemption.
+
+Both calculations include surcharge (for income above 50L) and 4% health & education cess. Side-by-side comparison cards show the exact savings with a clear recommendation on which regime to choose.`,
+    category: 'calculators',
+    targetKeyword: 'old vs new tax regime calculator',
+    secondaryKeywords: ['tax regime comparison calculator', 'income tax calculator 2025-26', 'which tax regime is better', 'new tax regime calculator', 'old regime vs new regime', 'tax calculator India FY 2025-26', 'income tax slab calculator'],
+    metaTitle: 'Old vs New Tax Regime Calculator FY 2025-26 | Which Saves More?',
+    metaDescription: 'Compare Old vs New Tax Regime for FY 2025-26. See slab-wise breakdown, deductions, and which regime saves you more. Budget 2025 updated. Free calculator.',
+    faqs: [
+      { question: 'Which tax regime should I choose for FY 2025-26?', answer: 'Choose the New Regime if your total deductions (80C, 80D, HRA, home loan) are less than about Rs 3-4 lakhs. The Old Regime is better if you claim significant deductions like full 80C (1.5L), 80D, HRA exemption, and home loan interest. Use our calculator for exact comparison.' },
+      { question: 'Is income up to 12 lakh tax-free under new regime?', answer: 'Yes, for FY 2025-26, income up to Rs 12 lakh is effectively tax-free under the New Regime due to the enhanced rebate under Section 87A (up to Rs 60,000). After the Rs 75,000 standard deduction, this applies to gross income up to approximately Rs 12.75 lakh.' },
+      { question: 'Can I switch between old and new regime every year?', answer: 'Salaried individuals can switch between regimes every financial year. However, business owners who opt for the Old Regime can switch to New only once (and cannot switch back). The New Regime is the default from FY 2023-24.' },
+      { question: 'What deductions are not available under the new regime?', answer: 'The New Regime does not allow deductions under Sections 80C, 80D, 80CCD(1B), HRA exemption, LTA, home loan interest (Section 24b), and most Chapter VIA deductions. Only the standard deduction of Rs 75,000 and employer NPS contribution (Section 80CCD(2)) are available.' },
+    ],
+    howToSteps: [
+      'Enter your annual gross income (total salary before deductions).',
+      'Enter your basic salary and HRA received for HRA exemption calculation.',
+      'Fill in Old Regime deductions: 80C, 80D, NPS, home loan interest, monthly rent.',
+      'View side-by-side comparison of tax payable under both regimes.',
+      'Check which regime is recommended and how much you save annually and monthly.',
+    ],
+    relatedToolSlugs: ['salary-calculator', 'emi-calculator', 'gst-calculator', 'percentage-calculator'],
+    icon: 'Scale',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'color-palette-from-image',
+    name: 'Color Palette from Image',
+    shortDescription: 'Extract dominant colors from any image. Get HEX, RGB, HSL codes with one click.',
+    longDescription: `Upload any image and instantly extract its dominant color palette using advanced k-means clustering algorithm. The tool identifies 4 to 12 colors from your image, showing each color with HEX, RGB, and HSL values, plus the percentage of the image each color represents.
+
+Click any color to copy its HEX code. The palette strip at the top shows all colors proportionally. Export the entire palette as CSS custom properties (variables) for use in your web projects.
+
+The color extraction runs entirely in your browser using HTML5 Canvas — no image is uploaded to any server. Works with PNG, JPG, and WEBP images. Perfect for designers, web developers, illustrators, and anyone who needs to match colors from a reference image, create brand color schemes, or find complementary colors for their projects.`,
+    category: 'image-tools',
+    targetKeyword: 'color palette from image',
+    secondaryKeywords: ['extract colors from image', 'image color picker', 'color palette generator', 'get colors from photo', 'image to color palette', 'dominant colors from image', 'color scheme from photo'],
+    metaTitle: 'Color Palette from Image - Extract Dominant Colors Online Free',
+    metaDescription: 'Extract dominant colors from any image. Get HEX, RGB, HSL codes. Copy colors & export as CSS. Free online color palette generator — runs in your browser.',
+    faqs: [
+      { question: 'How does color extraction work?', answer: 'The tool uses a k-means clustering algorithm to group similar pixels in the image. It samples ~10,000 pixels, quantizes them to reduce noise, and then clusters them into the number of colors you select (4-12). The centroid of each cluster becomes a color in your palette.' },
+      { question: 'Is my image uploaded to a server?', answer: 'No. The entire process runs in your browser using HTML5 Canvas. Your image never leaves your device. This ensures complete privacy and fast processing.' },
+      { question: 'What image formats are supported?', answer: 'PNG, JPG/JPEG, and WEBP images are supported. The tool can handle high-resolution images — they are automatically scaled down for processing while maintaining color accuracy.' },
+      { question: 'Can I use the extracted colors in my CSS?', answer: 'Yes! Click "Copy CSS" to get all colors as CSS custom properties (--color-1, --color-2, etc.) ready to paste into your stylesheet. You can also click individual colors to copy their HEX codes.' },
+    ],
+    howToSteps: [
+      'Upload an image by clicking or dragging a file (PNG, JPG, WEBP).',
+      'The tool automatically extracts the dominant colors.',
+      'Adjust the number of colors (4, 6, 8, 10, or 12) using the buttons.',
+      'Click any color to copy its HEX code to your clipboard.',
+      'Export all colors as CSS variables using the "Copy CSS" button.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'webp-to-png', 'hex-to-rgb'],
+    icon: 'Palette',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'meme-generator',
+    name: 'Meme Generator',
+    shortDescription: 'Create memes with custom text, fonts, and colors. Upload image or use blank canvas.',
+    longDescription: `Create hilarious memes in seconds with our free online Meme Generator. Upload any image or use a blank colored canvas, then add multiple text layers with full customization — font size, fill color, stroke color, bold styling, and precise positioning by drag-and-drop.
+
+Each text layer can be independently styled and positioned anywhere on the image. The Impact font with white fill and black stroke gives you that classic meme look, but you can customize colors for any style. Add as many text layers as you need.
+
+Features include drag-to-reposition text, adjustable canvas size, background color picker for blank canvas mode, and high-quality PNG download. Perfect for creating memes for social media, WhatsApp groups, Instagram stories, and Twitter posts. Everything runs in your browser — no watermark, no signup, no limits.`,
+    category: 'image-tools',
+    targetKeyword: 'meme generator',
+    secondaryKeywords: ['meme maker online', 'free meme generator', 'create meme', 'meme creator', 'custom meme maker', 'meme generator no watermark', 'WhatsApp meme maker'],
+    metaTitle: 'Meme Generator - Create Custom Memes Online Free | No Watermark',
+    metaDescription: 'Create memes with custom text, colors & fonts. Upload any image, add multiple text layers, drag to position. Free meme generator — no watermark, no signup.',
+    faqs: [
+      { question: 'Can I upload my own image for a meme?', answer: 'Yes! Click "Upload Image" to use any photo from your device. The tool supports PNG, JPG, and WEBP formats. You can also create memes on a solid color background without uploading an image.' },
+      { question: 'How do I move text on the meme?', answer: 'Click and drag the text directly on the canvas to reposition it. You can also click a text layer in the sidebar to select it, then drag it to the desired position.' },
+      { question: 'Is there a watermark on downloaded memes?', answer: 'No. Memes downloaded from our tool have no watermark, no branding, and no limitations. The downloaded PNG is exactly what you see on screen.' },
+      { question: 'Can I add more than two text lines?', answer: 'Yes! Click "Add Text" to add as many text layers as you want. Each layer has independent font size, color, stroke, and positioning.' },
+    ],
+    howToSteps: [
+      'Upload an image or set a canvas background color and size.',
+      'Edit the default top and bottom text, or add new text layers.',
+      'Customize font size, fill color, and stroke color for each text.',
+      'Drag text on the canvas to position it exactly where you want.',
+      'Click "Download Meme" to save your creation as a PNG image.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'photo-collage-maker', 'color-palette-from-image'],
+    icon: 'Smile',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: '1 minute',
+  },
+  {
+    slug: 'image-to-text',
+    name: 'Image to Text (OCR)',
+    shortDescription: 'Extract text from images using OCR. Supports 18+ languages including Hindi, Tamil, Bengali.',
+    longDescription: `Extract text from any image using powerful Optical Character Recognition (OCR) powered by Tesseract.js. Upload a photo, screenshot, scanned document, or handwritten note — the tool will recognize and extract all readable text from it.
+
+Supports 18+ languages including English, Hindi, Marathi, Tamil, Telugu, Kannada, Bengali, Gujarati, Malayalam, Punjabi, Urdu, Arabic, French, German, Spanish, Japanese, Korean, and Chinese. Select the correct language for better accuracy.
+
+The OCR engine runs 100% in your browser — your images are never uploaded to any server, ensuring complete privacy. Features include real-time progress tracking, word and character count, copy to clipboard, and download as .txt file.
+
+Tips for best results: use clear, high-resolution images with good contrast between text and background. Ensure text is not rotated or heavily skewed. Cropping the image to include only the text area significantly improves accuracy.`,
+    category: 'image-tools',
+    targetKeyword: 'image to text',
+    secondaryKeywords: ['OCR online', 'image to text converter', 'extract text from image', 'photo to text', 'OCR Hindi', 'scan image to text', 'picture to text converter', 'handwriting to text'],
+    metaTitle: 'Image to Text (OCR) - Extract Text from Images | 18+ Languages',
+    metaDescription: 'Extract text from images using free OCR. Supports Hindi, Tamil, Bengali & 15+ languages. Upload photo, get text instantly. 100% private — runs in browser.',
+    faqs: [
+      { question: 'How accurate is the OCR?', answer: 'Accuracy depends on image quality. Clear, high-resolution images with printed text achieve 95-99% accuracy. Handwritten text, low resolution, or blurry images may have lower accuracy. Selecting the correct language significantly improves results.' },
+      { question: 'Is my image uploaded to a server?', answer: 'No. The OCR engine (Tesseract.js) runs entirely in your browser. Your images never leave your device. The language model files are downloaded once from CDN and cached locally.' },
+      { question: 'Can I extract Hindi or regional language text?', answer: 'Yes! Select the appropriate language from the dropdown. Supported Indian languages: Hindi, Marathi, Tamil, Telugu, Kannada, Bengali, Gujarati, Malayalam, Punjabi, and Urdu. The tool downloads the language-specific model for accurate recognition.' },
+      { question: 'Does it work with handwritten text?', answer: 'The tool can recognize clear handwriting with moderate accuracy. Printed text works best. For handwritten notes, ensure the writing is dark, well-spaced, and the image has good contrast.' },
+    ],
+    howToSteps: [
+      'Select the language of the text in your image.',
+      'Upload an image by clicking or dragging (PNG, JPG, WEBP, BMP, TIFF).',
+      'Wait for the OCR engine to process — progress bar shows status.',
+      'Review the extracted text in the output panel.',
+      'Copy the text to clipboard or download as a .txt file.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'pdf-to-image', 'word-counter'],
+    icon: 'FileText',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: '10-30 seconds',
+  },
+  {
+    slug: 'photo-collage-maker',
+    name: 'Photo Collage Maker',
+    shortDescription: 'Create stunning photo collages with 10 layouts, custom borders, and social media sizes.',
+    longDescription: `Create beautiful photo collages in seconds with our free online Photo Collage Maker. Choose from 10 professionally designed layouts — 2-photo splits, 3-photo focus layouts, 4/6/9 grids, and asymmetric designs. Upload your photos and they automatically fill the layout cells.
+
+Customize every aspect: border width (0-14px), corner radius, and background color. Choose from preset output sizes for Instagram Post (1080x1080), Instagram Story (1080x1920), Facebook Cover (820x312), HD landscape (1920x1080), and more.
+
+Photos are automatically center-cropped to fill each cell, ensuring the best composition regardless of original photo dimensions. Add, remove, and reorder photos easily. The collage preview updates in real-time as you make changes.
+
+Download your collage as a high-quality PNG image. Perfect for social media posts, family photo albums, event galleries, before/after comparisons, and creative projects. Everything runs in your browser — no watermark, no signup, no limits.`,
+    category: 'image-tools',
+    targetKeyword: 'photo collage maker',
+    secondaryKeywords: ['collage maker online', 'photo grid maker', 'Instagram collage maker', 'free collage maker', 'photo collage generator', 'picture collage online', 'grid photo maker'],
+    metaTitle: 'Photo Collage Maker - 10 Layouts, Custom Borders | Free Online',
+    metaDescription: 'Create photo collages with 10 layouts, custom borders & social media sizes. Instagram, Facebook, HD presets. Free online collage maker — no watermark.',
+    faqs: [
+      { question: 'How many photos can I add to a collage?', answer: 'You can add any number of photos. The layout determines how many cells are displayed (2-9). If you add more photos than cells, extra photos cycle through the cells. If fewer, photos are repeated to fill all cells.' },
+      { question: 'What output sizes are available?', answer: 'Preset sizes include: Instagram Post (1080x1080), Instagram Story (1080x1920), Facebook Cover (820x312), HD landscape (1920x1080), Square (1000x1000), and A4 Landscape (1123x794). The downloaded PNG matches the selected size exactly.' },
+      { question: 'Are my photos uploaded to a server?', answer: 'No. All processing happens in your browser using HTML5 Canvas. Your photos never leave your device. This ensures complete privacy and fast processing.' },
+      { question: 'Can I customize the border between photos?', answer: 'Yes! Adjust border width from 0 to 14 pixels, set corner radius for rounded edges, and choose from 8 background colors (visible between photo cells).' },
+    ],
+    howToSteps: [
+      'Click "Add Photos" to upload multiple images from your device.',
+      'Select a layout from the 10 available options (2 to 9 cells).',
+      'Choose an output size preset (Instagram, Facebook, HD, etc.).',
+      'Customize border width, corner radius, and background color.',
+      'Click "Download Collage" to save your creation as a PNG image.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'meme-generator', 'passport-photo-maker'],
+    icon: 'LayoutGrid',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: '1 minute',
+  },
+  {
+    slug: 'paraphrasing-tool',
+    name: 'Paraphrasing Tool',
+    shortDescription: 'Rewrite text in 6 styles — Standard, Formal, Casual, Shorter, Longer, Creative.',
+    longDescription: `Paraphrase and rewrite your text in 6 different styles with our free online Paraphrasing Tool. Choose from Standard (clear rewording), Formal (professional tone), Casual (friendly & simple), Shorter (concise version), Longer (expanded version), or Creative (unique phrasing).
+
+The tool uses an intelligent synonym replacement engine with context-aware transformations. Formal mode converts contractions and informal language to professional wording. Casual mode simplifies complex vocabulary. Shorter mode removes filler words. Longer mode adds connecting phrases for elaboration. Creative mode restructures sentences for fresh perspectives.
+
+Features include live word count comparison between original and paraphrased text, percentage change indicator, copy to clipboard, and instant mode switching. Process runs 100% in your browser — your text is never sent to any server, ensuring complete privacy.
+
+Perfect for students rewriting essays, professionals improving emails, content writers creating unique versions, and anyone who needs to express the same idea in different words.`,
+    category: 'text-tools',
+    targetKeyword: 'paraphrasing tool',
+    secondaryKeywords: ['paraphrase online', 'text rewriter', 'sentence rewriter', 'rephrase tool', 'paraphrasing tool free', 'reword text online', 'text paraphraser'],
+    metaTitle: 'Paraphrasing Tool - Rewrite Text in 6 Styles | Free Online',
+    metaDescription: 'Paraphrase text in 6 styles: Standard, Formal, Casual, Shorter, Longer, Creative. Free online paraphrasing tool — instant results, no signup required.',
+    faqs: [
+      { question: 'How does the paraphrasing tool work?', answer: 'The tool uses an intelligent synonym replacement engine with mode-specific transformations. It identifies words that have synonyms and replaces them based on context and the selected mode. Formal/Casual modes also apply tone-specific word swaps.' },
+      { question: 'Is this tool free to use?', answer: 'Yes, completely free with no limits on usage. No signup or account required. The tool runs entirely in your browser, so your text is never sent to any server.' },
+      { question: 'Which mode should I use?', answer: 'Standard for general rewording, Formal for business/academic writing, Casual for social media/messages, Shorter to reduce word count, Longer to expand ideas, and Creative for unique phrasing. Try different modes to find the best fit.' },
+      { question: 'Is the paraphrased text plagiarism-free?', answer: 'The tool rewrites text by replacing words with synonyms and restructuring sentences. While it creates different versions of the original text, you should always review the output and make further adjustments for important submissions.' },
+    ],
+    howToSteps: [
+      'Enter or paste your text in the input box.',
+      'Select a paraphrasing mode: Standard, Formal, Casual, Shorter, Longer, or Creative.',
+      'The paraphrased text appears instantly in the output panel.',
+      'Compare word counts between original and paraphrased versions.',
+      'Click "Copy Result" to copy the paraphrased text to your clipboard.',
+    ],
+    relatedToolSlugs: ['word-counter', 'case-converter', 'text-repeater', 'lorem-ipsum-generator'],
+    icon: 'Wand2',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
