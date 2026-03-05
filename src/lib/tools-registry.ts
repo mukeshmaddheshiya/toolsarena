@@ -3450,6 +3450,337 @@ Perfect for students rewriting essays, professionals improving emails, content w
     isNew: true,
     estimatedTime: 'Instant',
   },
+  // ─── NEW BATCH: Finance, Utility & Lifestyle Tools ──────────────────────────
+  {
+    slug: 'rent-receipt-generator',
+    name: 'Rent Receipt Generator',
+    shortDescription: 'Generate HRA rent receipts for tax saving with PDF download.',
+    longDescription: `Generate professional rent receipts instantly for HRA tax exemption claims. Our Rent Receipt Generator creates multiple monthly receipts with all required details — tenant name, landlord name, address, rent amount, payment mode, and revenue stamp.
+
+Enter your rental details once and generate receipts for any period (monthly, quarterly, or full financial year). Each receipt includes a unique receipt number, date, amount in words, and space for landlord signature and revenue stamp.
+
+Download all receipts as a single PDF file — ready to submit to your employer for HRA exemption under Section 10(13A). The tool also shows a PAN warning when annual rent exceeds ₹1,00,000 as required by Income Tax rules. 100% free, no signup, works offline in your browser.`,
+    category: 'utility-tools',
+    targetKeyword: 'rent receipt generator',
+    secondaryKeywords: ['rent receipt generator online', 'HRA rent receipt', 'house rent receipt PDF', 'rent receipt for income tax', 'rent receipt format India', 'free rent receipt generator'],
+    metaTitle: 'Rent Receipt Generator - Free HRA Receipt PDF Download',
+    metaDescription: 'Generate rent receipts for HRA tax exemption instantly. Free PDF download with revenue stamp, landlord PAN. Rent receipt generator India — no signup needed.',
+    faqs: [
+      { question: 'Why do I need rent receipts?', answer: 'Rent receipts are required to claim HRA (House Rent Allowance) exemption under Section 10(13A) of the Income Tax Act. Your employer needs these receipts to adjust TDS on your salary.' },
+      { question: 'Is landlord PAN mandatory on rent receipts?', answer: 'Yes, if your annual rent exceeds ₹1,00,000 (₹1 lakh), you must provide your landlord\'s PAN card number to claim HRA exemption.' },
+      { question: 'Do I need a revenue stamp on rent receipts?', answer: 'A ₹1 revenue stamp is required on rent receipts for cash payments above ₹5,000 as per the Indian Stamp Act. For digital payments (UPI/bank transfer), it is not mandatory but recommended.' },
+      { question: 'Can I claim HRA without rent receipts?', answer: 'For rent up to ₹3,000/month, rent receipts are not mandatory. However, for higher amounts, your employer will require rent receipts and a rent agreement for processing HRA exemption.' },
+      { question: 'Does this tool store my data?', answer: 'No. All data is processed in your browser. Nothing is sent to any server. Your personal information remains completely private.' },
+    ],
+    howToSteps: [
+      'Enter tenant name (your name) and rented property address.',
+      'Enter landlord name and PAN (if annual rent exceeds ₹1 lakh).',
+      'Set monthly rent amount, date range, and payment mode.',
+      'Click "Generate Receipts" to create all monthly receipts.',
+      'Download all receipts as a single PDF file for submission.',
+    ],
+    relatedToolSlugs: ['hra-calculator', 'salary-calculator', 'tax-regime-calculator', 'invoice-generator'],
+    icon: 'Receipt',
+    isNew: true,
+    estimatedTime: 'Under 1 min',
+  },
+  {
+    slug: 'whatsapp-link-generator',
+    name: 'WhatsApp Link Generator',
+    shortDescription: 'Create click-to-chat WhatsApp links with pre-filled messages instantly.',
+    longDescription: `Generate WhatsApp click-to-chat links (wa.me) that let anyone message you without saving your number. Perfect for businesses, freelancers, and social media profiles.
+
+Enter a phone number with country code, add an optional pre-filled message, and get your wa.me link instantly. The tool also generates the API link format for website integration, a QR code for print materials, and ready-to-use HTML button code.
+
+Supports 20+ country codes including India (+91), USA (+1), UK (+44), UAE (+971), and more. Choose from quick message templates for common scenarios like order inquiries, appointments, support, and price quotes. Share your WhatsApp link on Instagram bio, Facebook, Google My Business, or embed it on your website.`,
+    category: 'utility-tools',
+    targetKeyword: 'WhatsApp link generator',
+    secondaryKeywords: ['wa.me link generator', 'WhatsApp chat link', 'click to chat WhatsApp', 'WhatsApp direct message link', 'WhatsApp link for website', 'WhatsApp QR code generator'],
+    metaTitle: 'WhatsApp Link Generator - Create wa.me Chat Links Free',
+    metaDescription: 'Create WhatsApp click-to-chat links instantly. Generate wa.me links with pre-filled messages, QR codes & HTML buttons. Free WhatsApp link generator — no signup.',
+    faqs: [
+      { question: 'What is a wa.me link?', answer: 'wa.me is WhatsApp\'s official short link service. A link like wa.me/919876543210 opens a WhatsApp chat with that number directly, without the sender needing to save the number first.' },
+      { question: 'Can I add a pre-filled message?', answer: 'Yes! Add ?text=YourMessage to the link. Our tool does this automatically — just type your message and it will be URL-encoded and appended to the link.' },
+      { question: 'Does the recipient need to have my number saved?', answer: 'No. That\'s the main benefit of wa.me links — anyone can message you by clicking the link without saving your contact first.' },
+      { question: 'Can I use this for business?', answer: 'Absolutely! WhatsApp links are perfect for e-commerce, customer support, appointment booking, and lead generation. Add the link to your website, social media bios, or Google My Business profile.' },
+      { question: 'How do I add a WhatsApp button to my website?', answer: 'Our tool generates ready-to-use HTML code for a WhatsApp chat button. Simply copy the HTML code and paste it into your website\'s source code.' },
+    ],
+    howToSteps: [
+      'Select your country code (India +91 is default).',
+      'Enter the phone number without leading zero.',
+      'Optionally add a pre-filled message or use a quick template.',
+      'Copy the generated wa.me link or API link.',
+      'Use the QR code for print materials or copy the HTML button code for websites.',
+    ],
+    relatedToolSlugs: ['qr-code-generator', 'fancy-text-generator', 'meta-tag-generator'],
+    icon: 'MessageCircle',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'gratuity-calculator',
+    name: 'Gratuity Calculator India',
+    shortDescription: 'Calculate gratuity amount under the Payment of Gratuity Act, 1972.',
+    longDescription: `Calculate your gratuity entitlement as per India's Payment of Gratuity Act, 1972. Enter your last drawn basic salary, dearness allowance, and years of service to get an instant calculation of your gratuity amount.
+
+The calculator supports both employee categories — those covered under the Act (organizations with 10+ employees, divisor = 26) and those not covered (divisor = 30). It automatically rounds up service years when the last year exceeds 6 months, as per the Act's rules.
+
+See the complete breakdown including tax implications — gratuity up to ₹20 lakh is tax-free for employees covered under the Act. The visual tax bar shows your exempt vs taxable portions. Quick presets help you estimate gratuity for common salary-tenure combinations instantly.`,
+    category: 'calculators',
+    targetKeyword: 'gratuity calculator',
+    secondaryKeywords: ['gratuity calculator India', 'gratuity calculation formula', 'gratuity amount calculator', 'payment of gratuity act calculator', 'gratuity tax exemption calculator'],
+    metaTitle: 'Gratuity Calculator India - Calculate Gratuity Online Free',
+    metaDescription: 'Calculate gratuity under Payment of Gratuity Act, 1972. Free gratuity calculator India with tax exemption breakdown. Instant results for covered & non-covered employees.',
+    faqs: [
+      { question: 'What is the gratuity formula?', answer: 'For employees covered under the Act: Gratuity = (15 × Last Drawn Salary × Years of Service) / 26. For non-covered employees: Gratuity = (15 × Last Drawn Salary × Years) / 30. Last Drawn Salary = Basic + DA.' },
+      { question: 'Who is eligible for gratuity?', answer: 'Any employee who has completed 5 or more years of continuous service with the same employer is eligible. Exception: in case of death or disability, gratuity is payable even without completing 5 years.' },
+      { question: 'What is the maximum gratuity amount?', answer: 'The maximum gratuity payable is ₹20,00,000 (₹20 lakh) as per the latest amendment. Any amount above this is taxable.' },
+      { question: 'Is gratuity taxable?', answer: 'Gratuity up to ₹20 lakh is tax-exempt for employees covered under the Payment of Gratuity Act. For government employees, the entire amount is tax-free. Amounts exceeding the limit are taxed at your income tax slab rate.' },
+      { question: 'How are service years rounded?', answer: 'If an employee has worked for more than 6 months in the last year of service, it is rounded up to the next full year. For example, 7 years 8 months = 8 years for gratuity calculation.' },
+    ],
+    howToSteps: [
+      'Enter your last drawn Basic Salary (monthly) in rupees.',
+      'Enter Dearness Allowance if applicable (common in government jobs).',
+      'Enter total years and months of service.',
+      'Select whether your organization is covered under the Gratuity Act.',
+      'View your gratuity amount with tax-free and taxable breakdown.',
+    ],
+    relatedToolSlugs: ['salary-calculator', 'hra-calculator', 'ppf-calculator', 'tax-regime-calculator'],
+    icon: 'Award',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'hra-calculator',
+    name: 'HRA Exemption Calculator',
+    shortDescription: 'Calculate HRA tax exemption under Section 10(13A) for salaried employees.',
+    longDescription: `Calculate your House Rent Allowance (HRA) tax exemption under Section 10(13A) of the Income Tax Act. The calculator shows you exactly how much of your HRA is tax-exempt and how much is taxable — helping you plan your tax savings effectively.
+
+HRA exemption is the minimum of three conditions: (1) Actual HRA received, (2) Rent paid minus 10% of basic salary + DA, and (3) 50% of basic + DA for metro cities or 40% for non-metro cities. Our calculator computes all three conditions and highlights which one determines your exemption.
+
+See your annual tax savings at different slab rates (20% and 30%), switch between monthly and annual views, and use quick presets for common salary brackets. Metro cities include Delhi, Mumbai, Kolkata, and Chennai — all others are non-metro at 40% rate.`,
+    category: 'calculators',
+    targetKeyword: 'HRA calculator',
+    secondaryKeywords: ['HRA exemption calculator', 'HRA calculator India', 'house rent allowance calculator', 'HRA tax exemption calculator', 'HRA calculator online', 'Section 10(13A) calculator'],
+    metaTitle: 'HRA Calculator - Calculate HRA Exemption Online Free',
+    metaDescription: 'Calculate HRA tax exemption under Section 10(13A). Free HRA calculator for metro & non-metro cities. See all 3 conditions, annual tax savings. Instant results.',
+    faqs: [
+      { question: 'How is HRA exemption calculated?', answer: 'HRA exemption is the minimum of: (1) Actual HRA received from employer, (2) Rent paid minus 10% of Basic + DA, (3) 50% of Basic + DA for metro cities or 40% for non-metro cities. The lowest value is your tax-exempt HRA.' },
+      { question: 'Which cities are considered metro for HRA?', answer: 'Only Delhi, Mumbai, Kolkata, and Chennai are classified as metro cities for HRA exemption (50% rate). All other cities including Bangalore, Hyderabad, Pune, and Ahmedabad are non-metro (40% rate).' },
+      { question: 'Can I claim HRA under the new tax regime?', answer: 'No. HRA exemption under Section 10(13A) is NOT available under the new tax regime (Section 115BAC). You must choose the old tax regime to claim HRA exemption.' },
+      { question: 'What documents are needed for HRA claim?', answer: 'Rent receipts (monthly), rent agreement, and landlord PAN (mandatory if annual rent exceeds ₹1 lakh). Submit these to your employer for TDS adjustment.' },
+      { question: 'Can I claim HRA if I own a house?', answer: 'Yes, you can claim HRA even if you own a house, as long as you are paying rent for a different property where you actually live. You can also claim home loan interest deduction simultaneously under Section 24(b).' },
+    ],
+    howToSteps: [
+      'Enter your monthly Basic Salary and Dearness Allowance.',
+      'Enter the HRA amount received from your employer per month.',
+      'Enter the monthly rent you pay.',
+      'Select Metro or Non-Metro city type.',
+      'View all three HRA conditions and your exempt/taxable HRA with annual tax savings.',
+    ],
+    relatedToolSlugs: ['rent-receipt-generator', 'salary-calculator', 'tax-regime-calculator', 'gratuity-calculator'],
+    icon: 'Home',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'pregnancy-calculator',
+    name: 'Pregnancy Due Date Calculator',
+    shortDescription: 'Calculate your baby\'s expected due date with week-by-week milestones.',
+    longDescription: `Calculate your estimated due date (EDD) using four different methods — Last Menstrual Period (LMP), conception date, IVF transfer date, or ultrasound measurements. Our Pregnancy Calculator uses Naegele's rule and medical standards to provide accurate due date estimates.
+
+See your current pregnancy week, trimester progress bar, and key milestone dates including first trimester end, anatomy scan week, full term date, and expected delivery. The week-by-week timeline shows 12 major pregnancy milestones with checkmarks for completed weeks.
+
+Supports IVF pregnancies with Day 3 and Day 5 embryo options, and ultrasound-based calculation when you know gestational age from a scan. All calculations happen in your browser — your health data is never sent to any server.`,
+    category: 'calculators',
+    targetKeyword: 'pregnancy calculator',
+    secondaryKeywords: ['due date calculator', 'pregnancy due date calculator', 'pregnancy week calculator', 'expected delivery date calculator', 'EDD calculator', 'pregnancy calculator India'],
+    metaTitle: 'Pregnancy Due Date Calculator - Free EDD Calculator',
+    metaDescription: 'Calculate your baby\'s due date by LMP, conception, IVF, or ultrasound. Free pregnancy calculator with week-by-week milestones & trimester tracker. Private & instant.',
+    faqs: [
+      { question: 'How is the due date calculated from LMP?', answer: 'Using Naegele\'s Rule: Due Date = LMP + 280 days (40 weeks). This assumes a regular 28-day cycle with ovulation on day 14. It is the most commonly used method by doctors worldwide.' },
+      { question: 'How accurate is the due date?', answer: 'Only about 5% of babies are born on their exact due date. Most births occur between 38-42 weeks. Early ultrasound (before 12 weeks) provides the most accurate dating, within ±5 days.' },
+      { question: 'What are the three trimesters?', answer: 'First Trimester: Weeks 1-12 (organ formation). Second Trimester: Weeks 13-27 (baby movement, anatomy scan). Third Trimester: Weeks 28-40 (baby gains weight, preparing for birth).' },
+      { question: 'When is full term?', answer: 'A pregnancy is considered full term at 37 weeks. Early term is 37-38 weeks, full term is 39-40 weeks, and late term is 41-42 weeks. Post-term is beyond 42 weeks.' },
+      { question: 'Is my data private?', answer: 'Yes, 100%. All calculations happen locally in your browser. No health data is sent to any server or stored anywhere.' },
+    ],
+    howToSteps: [
+      'Select your calculation method: LMP, Conception, IVF, or Ultrasound.',
+      'Enter the relevant date (last period, conception, transfer, or scan date).',
+      'For IVF, select Day 3 or Day 5 embryo. For ultrasound, enter gestational age.',
+      'View your estimated due date, current week, and trimester progress.',
+      'Check the milestone timeline to see upcoming pregnancy events.',
+    ],
+    relatedToolSlugs: ['age-calculator', 'bmi-calculator', 'countdown-timer'],
+    icon: 'Baby',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'gold-price-calculator',
+    name: 'Gold Jewellery Price Calculator',
+    shortDescription: 'Calculate gold jewellery price with making charges, GST, and purity.',
+    longDescription: `Calculate the total price of gold jewellery in India including gold value, making charges, GST, stone charges, and discounts. Supports all purity levels — 24K (99.9%), 22K (91.6%), 18K (75%), and 14K (58.5%).
+
+Enter the current 24K gold rate per gram, select purity, enter weight in grams/tola/ounce/kg, and set making charges (percentage, per-gram, or flat). The calculator instantly shows a complete price breakdown with the effective cost per gram including all charges.
+
+Compare rates across all four purity levels side by side. Use quick weight presets (1g to 100g) and rate presets for fast estimates. Essential tool for buying gold jewellery, evaluating prices at jewellers, or planning wedding jewellery budgets in India.`,
+    category: 'calculators',
+    targetKeyword: 'gold price calculator',
+    secondaryKeywords: ['gold jewellery price calculator', 'gold rate calculator India', 'gold making charges calculator', 'gold price with GST calculator', '22k gold price calculator', 'gold price per gram calculator'],
+    metaTitle: 'Gold Jewellery Price Calculator India - With Making & GST',
+    metaDescription: 'Calculate gold jewellery price with making charges & 3% GST. Free gold price calculator for 24K, 22K, 18K gold. Enter weight, purity, get total cost instantly.',
+    faqs: [
+      { question: 'How is gold jewellery price calculated?', answer: 'Total Price = (Gold Rate × Purity Factor × Weight) + Making Charges + Stone Charges + GST. For example, 10g of 22K gold at ₹7,500/g = ₹7,500 × 0.9166 × 10 = ₹68,745 (gold value) + making charges + 3% GST.' },
+      { question: 'What is the GST on gold in India?', answer: '3% GST is applicable on the total value of gold jewellery (gold value + making charges). GST on making charges separately was earlier 5%, but now it is uniformly 3% on the total invoice value.' },
+      { question: 'What are typical making charges?', answer: 'Machine-made jewellery: 8-12% of gold value. Handmade/designer pieces: 15-25%. Antique/temple jewellery: 20-35%. Always ask for making charges upfront before purchasing.' },
+      { question: 'Why is 22K gold more popular than 24K for jewellery?', answer: '24K gold is pure (99.9%) but too soft for daily-wear jewellery. 22K (91.6%) mixes gold with copper/silver for durability while maintaining the rich gold color. Most Indian jewellery is 22K.' },
+      { question: 'What is BIS hallmarking?', answer: 'BIS (Bureau of Indian Standards) hallmarking certifies gold purity. Since June 2021, hallmarking is mandatory for gold jewellery sold in India. Look for the HUID (Hallmark Unique Identification) number for authenticity.' },
+    ],
+    howToSteps: [
+      'Enter the current 24K gold rate per gram (check today\'s rate online).',
+      'Select gold purity — 22K is most common for Indian jewellery.',
+      'Enter the jewellery weight in grams, tola, ounce, or kg.',
+      'Set making charges as percentage, per-gram, or flat amount.',
+      'View the complete price breakdown with GST, and effective cost per gram.',
+    ],
+    relatedToolSlugs: ['gst-calculator', 'emi-calculator', 'percentage-calculator', 'discount-calculator'],
+    icon: 'Gem',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'ifsc-code-finder',
+    name: 'IFSC Code Finder',
+    shortDescription: 'Find bank branch details by IFSC code — supports NEFT, RTGS, IMPS, UPI.',
+    longDescription: `Look up any Indian bank branch details using its IFSC code. Enter the 11-character IFSC code and instantly get the bank name, branch name, full address, city, district, state, MICR code, and supported payment methods (NEFT, RTGS, IMPS, UPI).
+
+Powered by Razorpay's IFSC API with data for 150,000+ bank branches across India. The tool validates the IFSC format (AAAA0NNNNNN) and provides quick-access buttons for popular banks — SBI, HDFC, ICICI, Axis, PNB, BOB, Kotak, and more.
+
+Essential for verifying bank details before making fund transfers, filling out forms, or setting up direct deposits. Copy any detail with one click. Works with all banks registered with RBI.`,
+    category: 'utility-tools',
+    targetKeyword: 'IFSC code finder',
+    secondaryKeywords: ['IFSC code search', 'bank IFSC code', 'IFSC code lookup', 'find IFSC code by bank name', 'IFSC MICR code finder', 'bank branch details by IFSC'],
+    metaTitle: 'IFSC Code Finder - Search Bank Branch Details Online',
+    metaDescription: 'Find bank branch details by IFSC code. Get bank name, address, MICR, NEFT/RTGS/UPI support. Free IFSC code finder for all Indian banks — instant lookup.',
+    faqs: [
+      { question: 'What is an IFSC code?', answer: 'IFSC (Indian Financial System Code) is an 11-character alphanumeric code assigned by RBI to every bank branch in India. Format: First 4 characters = bank code, 5th = always 0, last 6 = branch code. Example: SBIN0001234.' },
+      { question: 'Where can I find my IFSC code?', answer: 'Your IFSC code is printed on your cheque book (usually at the bottom), bank passbook, account statement, or internet banking portal. You can also look it up on the RBI website or using our tool.' },
+      { question: 'What is IFSC used for?', answer: 'IFSC is required for electronic fund transfers via NEFT, RTGS, and IMPS. It identifies the specific bank branch for routing payments correctly. UPI internally uses IFSC for bank identification.' },
+      { question: 'What is a MICR code?', answer: 'MICR (Magnetic Ink Character Recognition) is a 9-digit code printed on cheques using magnetic ink. It identifies the bank, branch, and city. While IFSC is used for electronic transfers, MICR is used for cheque-based clearing.' },
+      { question: 'How many IFSC codes exist in India?', answer: 'There are over 150,000 unique IFSC codes in India, covering all RBI-registered banks including public sector, private sector, cooperative, and regional rural banks.' },
+    ],
+    howToSteps: [
+      'Enter the 11-character IFSC code in the search box.',
+      'Or click a popular bank prefix (SBI, HDFC, ICICI, etc.) to start.',
+      'Click "Search" or press Enter to look up the branch.',
+      'View bank name, branch, address, MICR code, and supported payment methods.',
+      'Click copy buttons to copy IFSC or MICR codes to clipboard.',
+    ],
+    relatedToolSlugs: ['qr-code-generator', 'random-generator', 'invoice-generator'],
+    icon: 'Building',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'numerology-calculator',
+    name: 'Numerology Calculator',
+    shortDescription: 'Discover your Life Path, Destiny, Soul & Personality numbers instantly.',
+    longDescription: `Calculate your core numerology numbers using the Pythagorean system — the most widely used numerology method worldwide. Enter your full name and date of birth to discover five key numbers that reveal your life purpose, inner desires, and personality.
+
+The calculator shows: Life Path Number (from DOB — your life journey), Destiny Number (from full name — your purpose), Soul Urge Number (from vowels — your inner desires), Personality Number (from consonants — how others see you), and Birthday Number (special talent).
+
+See the letter-by-letter breakdown with color-coded vowels and consonants, detailed interpretations for each number including traits, strengths, challenges, and ideal careers. Supports Master Numbers (11, 22, 33) with special interpretations. For entertainment and self-reflection.`,
+    category: 'calculators',
+    targetKeyword: 'numerology calculator',
+    secondaryKeywords: ['numerology calculator by name', 'life path number calculator', 'destiny number calculator', 'numerology name calculator', 'name numerology calculator', 'Pythagorean numerology calculator'],
+    metaTitle: 'Numerology Calculator - Life Path & Destiny Number Free',
+    metaDescription: 'Calculate your Life Path, Destiny, Soul & Personality numbers. Free numerology calculator by name and date of birth. Pythagorean system with detailed meanings.',
+    faqs: [
+      { question: 'What is a Life Path Number?', answer: 'The Life Path Number is the most important number in numerology. It is calculated from your complete date of birth by adding all digits until you get a single digit (or Master Number). It reveals your life purpose, lessons, and overall journey.' },
+      { question: 'How is the Destiny Number calculated?', answer: 'The Destiny Number (also called Expression Number) is calculated by assigning each letter of your full birth name a number (A=1, B=2... I=9, J=1...) using the Pythagorean chart, then reducing the sum to a single digit.' },
+      { question: 'What are Master Numbers?', answer: 'Master Numbers are 11, 22, and 33. They carry heightened spiritual significance and are not reduced to single digits. 11 = Illuminator/Intuition, 22 = Master Builder, 33 = Master Teacher.' },
+      { question: 'Should I use my birth name or current name?', answer: 'For the most accurate Destiny Number, use your full name exactly as it appears on your birth certificate. Married names, nicknames, or legally changed names carry different energies.' },
+      { question: 'Is numerology scientifically proven?', answer: 'Numerology is a belief system and is not supported by scientific evidence. It is best used for entertainment, self-reflection, and personal insight — not as a basis for major life decisions.' },
+    ],
+    howToSteps: [
+      'Enter your full name as it appears on your birth certificate.',
+      'Enter your date of birth.',
+      'View the letter-by-letter breakdown showing each letter\'s numerical value.',
+      'Read detailed interpretations for each of your five core numbers.',
+      'Explore traits, strengths, challenges, and ideal careers for each number.',
+    ],
+    relatedToolSlugs: ['love-calculator', 'age-calculator', 'random-generator'],
+    icon: 'Sparkles',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'ppf-calculator',
+    name: 'PPF Calculator India',
+    shortDescription: 'Calculate PPF maturity amount with year-by-year growth and tax savings.',
+    longDescription: `Calculate the maturity amount of your Public Provident Fund (PPF) investment with our comprehensive PPF Calculator. Enter your annual deposit (₹500 to ₹1,50,000), interest rate, and tenure to see total invested amount, interest earned, and final maturity value.
+
+The calculator features a visual donut chart showing the investment vs interest split, year-by-year breakdown table, and growth progress bar. Current PPF interest rate is 7.1% p.a. (Q4 FY 2025-26), compounded annually.
+
+PPF is one of India's safest and most tax-efficient investment options with EEE (Exempt-Exempt-Exempt) status — your deposit qualifies for Section 80C deduction, interest earned is tax-free, and the maturity amount is also completely tax-free. Minimum tenure is 15 years, extendable in 5-year blocks.`,
+    category: 'calculators',
+    targetKeyword: 'PPF calculator',
+    secondaryKeywords: ['PPF calculator India', 'PPF interest calculator', 'PPF maturity calculator', 'public provident fund calculator', 'PPF returns calculator', 'PPF calculator with yearly breakdown'],
+    metaTitle: 'PPF Calculator India - Calculate PPF Returns Online Free',
+    metaDescription: 'Calculate PPF maturity amount with year-by-year breakdown. Free PPF calculator India at 7.1% rate. See total interest earned, tax savings. Instant results.',
+    faqs: [
+      { question: 'What is the current PPF interest rate?', answer: 'The current PPF interest rate is 7.1% per annum (Q4 FY 2025-26). The rate is set by the Government of India quarterly and has been 7.1% since April 2020.' },
+      { question: 'What are the PPF deposit limits?', answer: 'Minimum: ₹500 per year. Maximum: ₹1,50,000 per year. You can deposit in lump sum or up to 12 monthly installments. Deposits beyond ₹1.5L will not earn interest.' },
+      { question: 'What is the PPF lock-in period?', answer: 'PPF has a mandatory lock-in period of 15 years from the date of account opening. After maturity, you can extend in blocks of 5 years with or without contributions.' },
+      { question: 'Is PPF tax-free?', answer: 'Yes, PPF enjoys EEE (Exempt-Exempt-Exempt) status. Deposits up to ₹1.5L qualify for Section 80C deduction, interest earned is completely tax-free, and the maturity amount is also tax-free.' },
+      { question: 'Can I withdraw from PPF before maturity?', answer: 'Partial withdrawal is allowed from the 7th financial year onwards. You can withdraw up to 50% of the balance at the end of the 4th preceding year or the immediate preceding year, whichever is lower.' },
+    ],
+    howToSteps: [
+      'Enter your annual deposit amount (₹500 to ₹1,50,000).',
+      'Set the interest rate (current: 7.1% p.a.) or adjust for scenarios.',
+      'Set tenure — minimum 15 years, can extend in 5-year blocks.',
+      'View maturity amount, total interest earned, and visual charts.',
+      'Toggle year-by-year breakdown to see growth over time.',
+    ],
+    relatedToolSlugs: ['sip-calculator', 'mutual-fund-calculator', 'compound-interest-calculator', 'fd-rd-calculator'],
+    icon: 'PiggyBank',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'mutual-fund-calculator',
+    name: 'Mutual Fund Returns Calculator',
+    shortDescription: 'Calculate SIP and lumpsum mutual fund returns with growth visualization.',
+    longDescription: `Calculate expected returns on mutual fund investments with our comprehensive calculator. Supports three modes — SIP (monthly investment), Lumpsum (one-time investment), and SIP + Lumpsum (combined strategy).
+
+Enter your investment amount, expected annual return rate, and investment period to see total invested amount, estimated returns, final corpus value, and wealth multiplier. The calculator features interactive sliders, visual growth bar chart, year-by-year breakdown table, and comparison metrics.
+
+Browse fund category guidelines — Large Cap (10-12%), Mid Cap (12-15%), Small Cap (15-18%), Index Fund (10-13%), ELSS (12-15%), and Debt Fund (6-8%) — to set realistic return expectations. Understanding the power of compounding helps you make informed investment decisions for your financial goals.`,
+    category: 'calculators',
+    targetKeyword: 'mutual fund calculator',
+    secondaryKeywords: ['mutual fund returns calculator', 'mutual fund SIP calculator', 'lumpsum calculator', 'mutual fund calculator India', 'investment return calculator', 'SIP lumpsum calculator'],
+    metaTitle: 'Mutual Fund Calculator - SIP & Lumpsum Returns Free',
+    metaDescription: 'Calculate mutual fund returns for SIP & lumpsum investments. Free calculator with growth chart, wealth multiplier, year-by-year breakdown. Instant results.',
+    faqs: [
+      { question: 'What is the difference between SIP and Lumpsum?', answer: 'SIP (Systematic Investment Plan) is investing a fixed amount monthly, which averages out market volatility. Lumpsum is a one-time investment, which works better in a rising market. Combining both optimizes returns and risk.' },
+      { question: 'What return rate should I use?', answer: 'For equity funds: 12-15% for long-term (10+ years). Large Cap: 10-12%. Mid Cap: 12-15%. Small Cap: 15-18%. Debt funds: 6-8%. Index funds: 10-13%. Use conservative estimates for planning.' },
+      { question: 'How does SIP compounding work?', answer: 'Each SIP installment earns compound interest from its investment date. Early installments compound for longer, creating exponential growth. A ₹10,000/month SIP at 12% for 20 years creates ₹1 crore — where only ₹24L is your investment and ₹76L is returns.' },
+      { question: 'What is the tax on mutual fund returns?', answer: 'Equity funds: STCG (20%) if sold within 1 year, LTCG (12.5%) above ₹1.25L/year if held over 1 year. Debt funds (from April 2023): Taxed at your income tax slab rate regardless of holding period.' },
+      { question: 'Can I lose money in mutual funds?', answer: 'Yes, mutual funds carry market risk. Equity funds can show negative returns in the short term. However, historically, quality equity funds have delivered positive returns over 7+ year periods. SIP helps reduce timing risk through rupee cost averaging.' },
+    ],
+    howToSteps: [
+      'Select investment mode: SIP (monthly), Lumpsum (one-time), or both.',
+      'Enter your investment amount using the input box or slider.',
+      'Set expected annual return rate — use fund category guidelines for reference.',
+      'Set investment period in years using the slider (1-40 years).',
+      'View returns, wealth multiplier, growth chart, and toggle year-by-year breakdown.',
+    ],
+    relatedToolSlugs: ['sip-calculator', 'ppf-calculator', 'emi-calculator', 'compound-interest-calculator'],
+    icon: 'TrendingUp',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
