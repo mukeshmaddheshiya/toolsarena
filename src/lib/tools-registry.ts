@@ -2932,6 +2932,179 @@ No account, no saving to cloud — it is a quick-use whiteboard for when you nee
     icon: 'PenTool',
     estimatedTime: 'Instant',
   },
+
+  // ─── TYPING & PRODUCTIVITY TOOLS ──────────────────────────────────────────
+  {
+    slug: 'typing-speed-test',
+    name: 'Typing Speed Test',
+    shortDescription: 'Test your typing speed and accuracy with a free online WPM typing test.',
+    longDescription: `Take the ultimate Typing Speed Test and find out how fast you can type! This free online tool measures your Words Per Minute (WPM) and accuracy in real time as you type a given passage. Choose from 1, 2, 3, or 5-minute test durations to match your practice routine.
+
+As you type, the tool highlights correct characters in green and errors in red, giving you instant visual feedback. A live WPM counter, accuracy percentage, and error count are displayed throughout the test so you can track your performance in real time.
+
+After the test, you get a detailed results page showing your final WPM, accuracy, total characters typed, correct characters, and errors. A visual comparison chart shows how your speed compares to beginner, average, fast, and excellent typists worldwide. Whether you're a student, professional, or competitive typist — practice daily to improve your speed and accuracy.
+
+This tool works 100% in your browser. No sign-up, no downloads, no data collection. Your typing data never leaves your device.`,
+    category: 'utility-tools',
+    targetKeyword: 'typing speed test',
+    secondaryKeywords: ['typing test', 'wpm test', 'typing speed test online', 'online typing test', 'free typing test', 'typing practice', 'words per minute test', 'keyboard speed test', 'typing test english', 'typing master online', 'fast typing test', 'typing speed checker'],
+    metaTitle: 'Typing Speed Test - Free Online WPM Typing Test | ToolsArena',
+    metaDescription: 'Test your typing speed and accuracy with our free online typing test. Measure WPM, track errors, and compare your speed. No signup needed — works in your browser.',
+    faqs: [
+      { question: 'How is WPM (Words Per Minute) calculated?', answer: 'WPM is calculated by dividing the number of correctly typed characters by 5 (the standard word length) and then dividing by the elapsed time in minutes. Only correct characters count toward your WPM score.' },
+      { question: 'What is a good typing speed?', answer: 'The average typing speed is 40 WPM. Professional typists usually type 60-80 WPM. Speed above 80 WPM is considered excellent. Competitive typists can reach 120+ WPM.' },
+      { question: 'How can I improve my typing speed?', answer: 'Practice regularly with typing tests, maintain proper finger placement on the home row (ASDF JKL;), look at the screen instead of the keyboard, and focus on accuracy first — speed will follow naturally.' },
+      { question: 'Does this typing test work on mobile?', answer: 'Yes, the typing test works on mobile devices and tablets. However, for the most accurate results, use a physical keyboard on a desktop or laptop computer.' },
+      { question: 'Is my typing data saved or shared?', answer: 'No. This tool runs entirely in your browser. Your typed text and results are never sent to any server or stored anywhere.' },
+      { question: 'Which test duration should I choose?', answer: 'For a quick check, use the 1-minute test. For a more accurate measurement, the 2 or 3-minute test is recommended. Use the 5-minute test for endurance practice.' },
+    ],
+    howToSteps: [
+      'Select your preferred test duration (1, 2, 3, or 5 minutes).',
+      'Click "Start Typing Test" to begin.',
+      'Type the displayed passage in the text box as fast and accurately as you can.',
+      'Watch your live WPM, accuracy, and errors update in real time.',
+      'When the timer runs out, review your detailed results and speed comparison.',
+      'Click "Try Again" to retake the test and improve your score.',
+    ],
+    relatedToolSlugs: ['word-counter', 'online-notepad', 'text-to-speech', 'pomodoro-timer', 'countdown-timer', 'random-generator'],
+    icon: 'Keyboard',
+    isPopular: true,
+    estimatedTime: '1-5 minutes',
+  },
+  {
+    slug: 'passport-photo-maker',
+    name: 'Passport Photo Maker',
+    shortDescription: 'Create passport size photos for India, US, UK, and more. Free online tool.',
+    longDescription: `Create perfect passport size photos online for free with our Passport Photo Maker. Upload any photo, crop it to the exact dimensions required by your country, choose a background color, and download the result instantly — no sign-up or software needed.
+
+Supports standard passport photo sizes for India (2x2 inches), US (2x2 inches), UK (35x45 mm), EU/Schengen (35x45 mm), China (33x48 mm), Japan (35x45 mm), and custom dimensions. The interactive crop tool with guide lines helps you position your face perfectly within the frame.
+
+Need to print? Use the "Print Sheet" button to generate a 4x6 inch sheet with multiple passport photos arranged for easy printing at home or at a photo shop. All processing happens in your browser — your photo never leaves your device.`,
+    category: 'image-tools',
+    targetKeyword: 'passport size photo maker',
+    secondaryKeywords: ['passport photo online', 'passport size photo', 'passport photo maker free', 'passport photo editor', 'visa photo maker', 'passport photo generator', '2x2 photo maker', 'passport photo india', 'passport photo crop', 'photo print sheet', 'passport photo background'],
+    metaTitle: 'Passport Photo Maker - Free Online Passport Size Photo Tool | ToolsArena',
+    metaDescription: 'Create passport size photos for India, US, UK & more. Crop, set background, and download or print — all free, online, and private. No signup needed.',
+    faqs: [
+      { question: 'What passport photo sizes are supported?', answer: 'We support India (2x2 in), US (2x2 in), UK (35x45 mm), EU/Schengen (35x45 mm), China (33x48 mm), Japan (35x45 mm), and custom dimensions.' },
+      { question: 'How do I use this for Indian passport photos?', answer: 'Select the "India" size (2x2 inches / 51x51 mm), upload a clear front-facing photo, position the crop over your face, and click Generate. Use the white background option for Indian passport applications.' },
+      { question: 'Can I print multiple passport photos on one sheet?', answer: 'Yes! After generating your photo, click the "Print Sheet" button to create a 4x6 inch sheet with multiple photos arranged for easy printing.' },
+      { question: 'Is my photo stored or uploaded to any server?', answer: 'No. All processing happens entirely in your browser using HTML5 Canvas. Your photo never leaves your device — 100% private.' },
+      { question: 'What background color should I use?', answer: 'For Indian passports, a plain white background is recommended. US passports also require white. UK passports accept plain light gray or cream. Select the appropriate background color before generating.' },
+      { question: 'What image quality is supported?', answer: 'For best results, upload a high-resolution photo (at least 600x600 pixels). The output is generated at the exact pixel dimensions required for each passport size.' },
+    ],
+    howToSteps: [
+      'Upload a clear, front-facing photo (JPEG or PNG).',
+      'Select the passport photo size for your country.',
+      'Choose the background color (white recommended for most countries).',
+      'Position the crop area over your face using the interactive guide.',
+      'Click "Generate Photo" to create your passport photo.',
+      'Download the single photo or generate a print sheet with multiple copies.',
+    ],
+    relatedToolSlugs: ['image-cropper', 'image-compressor', 'image-resizer', 'image-watermark', 'png-to-jpg', 'jpg-to-png'],
+    icon: 'User',
+    isPopular: true,
+    estimatedTime: '1 minute',
+  },
+  {
+    slug: 'love-calculator',
+    name: 'Love Calculator',
+    shortDescription: 'Calculate love compatibility between two names. Fun & free love meter.',
+    longDescription: `Our Love Calculator is a fun, entertaining tool that calculates the love compatibility percentage between two names. Simply enter your name and your partner's name, and the algorithm generates a unique compatibility score with a personalized love message.
+
+The tool uses a deterministic hash algorithm — meaning the same two names will always produce the same result, making it perfect for sharing with friends or your special someone. The beautiful animated heart displays your love percentage with smooth animations and color-coded results.
+
+This is purely for entertainment purposes. Whether you score 99% or 30%, remember that real love is built on trust, respect, and communication — not algorithms! Share your results on social media and have fun with friends.`,
+    category: 'utility-tools',
+    targetKeyword: 'love calculator',
+    secondaryKeywords: ['love meter', 'love percentage calculator', 'love tester', 'love compatibility test', 'love calculator by name', 'love match calculator', 'true love calculator', 'crush calculator', 'name love calculator', 'love calculator online'],
+    metaTitle: 'Love Calculator - Free Love Compatibility Test by Name | ToolsArena',
+    metaDescription: 'Calculate your love compatibility! Enter two names and get your love percentage with a fun animated result. Free online love calculator — no signup needed.',
+    faqs: [
+      { question: 'How does the love calculator work?', answer: 'It uses a hash algorithm based on the combined letters of both names to generate a deterministic compatibility percentage. The same names will always give the same result.' },
+      { question: 'Is the love calculator accurate?', answer: 'This is an entertainment tool only. The results are algorithmically generated and not based on any scientific compatibility analysis. Have fun with it, but don\'t take the results seriously!' },
+      { question: 'Will the same names always give the same result?', answer: 'Yes! The algorithm is deterministic, so entering the same two names will always produce the same love percentage.' },
+      { question: 'Can I share my results?', answer: 'Absolutely! Take a screenshot of your results and share them with friends or on social media.' },
+    ],
+    howToSteps: [
+      'Enter your name in the first field.',
+      'Enter your partner\'s or crush\'s name in the second field.',
+      'Click "Calculate Love" to see your compatibility.',
+      'View your animated love percentage and personalized message.',
+      'Click "Try Another Pair" to test different names.',
+    ],
+    relatedToolSlugs: ['random-generator', 'age-calculator', 'countdown-timer', 'emoji-picker'],
+    icon: 'Heart',
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'youtube-thumbnail-downloader',
+    name: 'YouTube Thumbnail Downloader',
+    shortDescription: 'Download YouTube video thumbnails in all sizes. Free and instant.',
+    longDescription: `Download YouTube video thumbnails in all available resolutions with our free YouTube Thumbnail Downloader. Simply paste the video URL or ID, and instantly get thumbnails in maximum resolution (1280x720), standard (640x480), high quality (480x360), medium (320x180), and default (120x90) sizes.
+
+Each thumbnail can be downloaded with a single click or you can copy the direct image URL. The tool supports all YouTube URL formats including standard watch URLs, short youtu.be links, embed URLs, and YouTube Shorts.
+
+Perfect for content creators, bloggers, and designers who need high-quality YouTube thumbnails for reference, analysis, or inspiration. All processing happens in your browser — no server-side storage or tracking.`,
+    category: 'utility-tools',
+    targetKeyword: 'youtube thumbnail downloader',
+    secondaryKeywords: ['youtube thumbnail download', 'yt thumbnail downloader', 'youtube video thumbnail', 'download youtube thumbnail hd', 'youtube thumbnail grabber', 'youtube thumbnail saver', 'youtube thumbnail image download', 'yt thumbnail download hd'],
+    metaTitle: 'YouTube Thumbnail Downloader - Download HD Thumbnails Free | ToolsArena',
+    metaDescription: 'Download YouTube video thumbnails in HD, SD, and all sizes. Paste the URL, get all thumbnails instantly. Free online tool — no signup needed.',
+    faqs: [
+      { question: 'How do I download a YouTube thumbnail?', answer: 'Paste the YouTube video URL in the input field and click "Get Thumbnails". You\'ll see all available thumbnail sizes. Click the download icon next to any size to save it.' },
+      { question: 'What thumbnail sizes are available?', answer: 'YouTube provides thumbnails in 5 sizes: Max Resolution (1280x720), Standard (640x480), High Quality (480x360), Medium (320x180), and Default (120x90).' },
+      { question: 'Does it work with YouTube Shorts?', answer: 'Yes! The tool supports all YouTube URL formats including Shorts, standard watch URLs, short youtu.be links, and embed URLs.' },
+      { question: 'Can I use downloaded thumbnails commercially?', answer: 'YouTube thumbnails are owned by the video creator. Using them may be subject to copyright. Always credit the original creator and check usage rights before commercial use.' },
+      { question: 'Why is the max resolution thumbnail not available for some videos?', answer: 'Not all YouTube videos have max resolution (1280x720) thumbnails. In that case, the tool automatically falls back to the highest available quality.' },
+    ],
+    howToSteps: [
+      'Copy the YouTube video URL from your browser or the YouTube app.',
+      'Paste the URL in the input field above.',
+      'Click "Get Thumbnails" to fetch all available sizes.',
+      'Preview the thumbnails and click the download icon to save.',
+      'You can also copy the direct thumbnail URL for embedding.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'png-to-jpg', 'screen-recorder', 'qr-code-generator'],
+    icon: 'Youtube',
+    isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'online-signature-maker',
+    name: 'Online Signature Maker',
+    shortDescription: 'Create a digital signature by drawing or typing. Download as PNG.',
+    longDescription: `Create a professional digital signature online for free with our Signature Maker. Choose between two modes: draw your signature with your mouse, trackpad, or touchscreen, or type your name and select from multiple signature fonts.
+
+Customize your signature with different ink colors (black, blue, red, green, brown, purple), adjust pen thickness for drawn signatures, or change font style and size for typed signatures. The tool includes undo functionality and a clear canvas option for drawn signatures.
+
+Download your signature as a standard PNG with a white background, or as a transparent PNG — perfect for placing on documents, contracts, PDFs, emails, or digital forms. All processing happens locally in your browser. Your signature data is never uploaded or stored.`,
+    category: 'utility-tools',
+    targetKeyword: 'online signature maker',
+    secondaryKeywords: ['signature maker', 'digital signature maker', 'free signature maker', 'electronic signature creator', 'signature generator', 'create signature online', 'draw signature online', 'signature maker free', 'e-signature maker', 'handwritten signature generator'],
+    metaTitle: 'Online Signature Maker - Free Digital Signature Creator | ToolsArena',
+    metaDescription: 'Create a digital signature by drawing or typing your name. Download as PNG or transparent PNG. Free online signature maker — no signup needed.',
+    faqs: [
+      { question: 'How do I create a signature?', answer: 'Choose "Draw" mode to draw with your mouse/touch, or "Type" mode to generate a signature from your name. Customize the color and style, then download as PNG.' },
+      { question: 'Can I download a transparent signature?', answer: 'Yes! Click "Transparent PNG" to download your signature with no background — perfect for placing on documents and PDFs.' },
+      { question: 'Is this legally valid as a signature?', answer: 'Digital signatures created here can be used for informal documents. For legally binding electronic signatures, you may need a certified e-signature service that complies with local laws (e.g., IT Act 2000 in India, ESIGN Act in the US).' },
+      { question: 'Does this work on mobile and tablets?', answer: 'Yes! The draw mode works with touch input on smartphones and tablets. For best results, draw with your finger or a stylus on a touchscreen device.' },
+      { question: 'Is my signature stored or shared?', answer: 'No. Everything runs in your browser. Your signature is never uploaded to any server — 100% private.' },
+    ],
+    howToSteps: [
+      'Choose "Draw" to hand-draw or "Type" to generate from text.',
+      'For draw mode: use your mouse or finger to sign on the canvas.',
+      'For type mode: enter your name, choose a font and size.',
+      'Select your preferred ink color.',
+      'Click "Download PNG" for a white-background signature.',
+      'Click "Transparent PNG" for a signature without background.',
+    ],
+    relatedToolSlugs: ['online-whiteboard', 'image-watermark', 'online-notepad', 'screen-recorder'],
+    icon: 'PenLine',
+    isPopular: true,
+    estimatedTime: '1 minute',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
