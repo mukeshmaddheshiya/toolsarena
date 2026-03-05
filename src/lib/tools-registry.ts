@@ -735,6 +735,44 @@ This is an essential planning tool for first-time investors, financial planners,
     estimatedTime: 'Instant',
   },
   {
+    slug: 'salary-calculator',
+    name: 'Salary Calculator (CTC to In-Hand)',
+    shortDescription: 'Calculate your in-hand salary from CTC with Old vs New Tax Regime comparison for FY 2025-26.',
+    longDescription: `India's most accurate CTC to In-Hand Salary Calculator for FY 2025-26 (AY 2026-27). Enter your annual CTC and instantly see your monthly take-home salary with a complete breakdown of all salary components — Basic, HRA, Special Allowance, PF, Gratuity, Professional Tax, and Income Tax.
+
+Compare your tax liability under both Old and New Tax Regimes side by side. The calculator automatically recommends which regime saves you more money based on your deductions. Supports all standard Indian salary structures including employer PF (with 15K cap option), gratuity, LTA, and variable pay.
+
+For the Old Tax Regime, enter your deductions under Section 80C (PPF, ELSS, LIC), 80D (health insurance), 80CCD(1B) (NPS), home loan interest (Section 24b), and HRA exemption. The tool calculates your exact taxable income and tax payable under both regimes, including surcharge and 4% health & education cess.
+
+Features include visual salary distribution chart, annual/monthly toggle, quick CTC presets from 3L to 50L, and detailed tax slab reference for both regimes. Updated with the latest Budget 2025 changes — new regime basic exemption at 4L, rebate up to 12L, and 75K standard deduction. Perfect for job offer evaluation, salary negotiation, and annual tax planning.`,
+    category: 'calculators',
+    targetKeyword: 'CTC to in-hand salary calculator',
+    secondaryKeywords: ['salary calculator India', 'CTC calculator', 'take home salary calculator', 'in-hand salary calculator', 'old vs new tax regime calculator', 'salary breakup calculator', 'income tax calculator FY 2025-26', 'CTC to net salary', 'salary after tax India'],
+    metaTitle: 'Salary Calculator India - CTC to In-Hand | Old vs New Regime FY 2025-26',
+    metaDescription: 'Calculate in-hand salary from CTC for FY 2025-26. Compare Old vs New Tax Regime, see full salary breakup with PF, HRA, tax. Free instant salary calculator India.',
+    faqs: [
+      { question: 'What is CTC and how is it different from in-hand salary?', answer: 'CTC (Cost to Company) is the total amount a company spends on an employee per year, including Basic, HRA, PF (employer share), gratuity, bonus, and all allowances. In-hand (take-home) salary is what you actually receive after deducting employee PF, professional tax, and income tax from your gross salary.' },
+      { question: 'How is in-hand salary calculated from CTC?', answer: 'Gross Salary = CTC - Employer PF - Gratuity. Then In-Hand = Gross Salary - Employee PF - Professional Tax - Income Tax. For example, on a 10 LPA CTC with 40% basic, your monthly in-hand is approximately 69,000-72,000 depending on your tax regime and deductions.' },
+      { question: 'Which is better — Old or New Tax Regime for FY 2025-26?', answer: 'The New Regime is better if your total deductions (80C, 80D, HRA, home loan) are less than about 3-4 lakhs. The Old Regime is better if you have significant deductions like home loan interest, HRA exemption, and full 80C investments. Our calculator compares both automatically.' },
+      { question: 'What is the PF cap of 15,000?', answer: 'Most companies cap PF contribution at a basic salary of 15,000/month. This means both employer and employee PF is calculated on 15,000 (i.e., 1,800/month each) regardless of actual basic salary. Some companies contribute PF on the full basic salary — toggle the cap option accordingly.' },
+      { question: 'What are the new tax slabs for FY 2025-26?', answer: 'Under the New Regime: 0-4L (Nil), 4-8L (5%), 8-12L (10%), 12-16L (15%), 16-20L (20%), 20-24L (25%), above 24L (30%). Standard deduction is 75,000. Income up to 12L is effectively tax-free due to the rebate under Section 87A.' },
+      { question: 'Is Professional Tax the same in all states?', answer: 'No. Professional Tax varies by state. Most states charge 2,400/year (200/month). Karnataka charges 2,400 for salary above 15,000/month. Some states like Rajasthan and Delhi do not levy professional tax. Adjust the value in the calculator as per your state.' },
+    ],
+    howToSteps: [
+      'Enter your Annual CTC (Cost to Company) in rupees, or use a quick preset.',
+      'Adjust Basic Salary percentage (default 40%) and HRA percentage if different from your offer letter.',
+      'Toggle PF cap and Gratuity options based on your company policy.',
+      'For Old Regime comparison, expand "Old Regime Deductions" and enter 80C, 80D, rent, home loan values.',
+      'View your complete salary breakup, tax comparison, and which regime saves you more money.',
+      'Switch between Annual and Monthly views. Use the visual chart to understand salary distribution.',
+    ],
+    relatedToolSlugs: ['emi-calculator', 'gst-calculator', 'sip-calculator', 'percentage-calculator'],
+    icon: 'IndianRupee',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'discount-calculator',
     name: 'Discount Calculator',
     shortDescription: 'Calculate sale price, discount amount and savings percentage instantly.',
@@ -3104,6 +3142,43 @@ Download your signature as a standard PNG with a white background, or as a trans
     icon: 'PenLine',
     isPopular: true,
     estimatedTime: '1 minute',
+  },
+  {
+    slug: 'marriage-biodata-maker',
+    name: 'Marriage Biodata Maker',
+    shortDescription: 'Create beautiful marriage biodata online for free. 10 templates, PDF & image download.',
+    longDescription: `Create a professional marriage biodata online for free with our Marriage Biodata Maker. Choose from 10 beautifully designed templates — Classic Gold, Royal Blue, Floral Pink, Modern Minimal, Auspicious Red, Ganesh Blessing, Peacock Green, Elegant Purple, Simple White, and Saffron — each crafted for Indian matrimonial traditions.
+
+Fill in your personal details, education, career, family information, and partner expectations through an easy step-by-step form. Upload your photo, preview the biodata in real time, and download it as a high-quality PNG image or PDF — ready to share with family, matrimonial agents, or on marriage portals.
+
+All fields are optional except your name, so you can include as much or as little detail as you want. Your data never leaves your browser — everything is processed locally with 100% privacy. No signup, no watermarks, no hidden charges.`,
+    category: 'utility-tools',
+    targetKeyword: 'marriage biodata maker',
+    secondaryKeywords: ['biodata for marriage', 'marriage biodata format', 'biodata maker online', 'marriage biodata template', 'biodata format for marriage', 'shadi biodata', 'marriage biodata pdf', 'biodata for marriage free download', 'marriage biodata maker online free', 'vivah biodata', 'wedding biodata maker', 'biodata for marriage format in hindi'],
+    metaTitle: 'Marriage Biodata Maker - Free Online Biodata for Marriage | 10 Templates',
+    metaDescription: 'Create beautiful marriage biodata online free. 10 templates, photo upload, PDF & image download. Indian-friendly format — no signup, 100% private.',
+    faqs: [
+      { question: 'How do I create a marriage biodata?', answer: 'Choose a template, fill in your details step by step (personal, education, family, contact), upload your photo, preview the biodata, and download it as PNG or PDF.' },
+      { question: 'Is this marriage biodata maker free?', answer: 'Yes, completely free with no hidden charges, no watermarks, and no signup required. All 10 templates are available for free.' },
+      { question: 'Which template should I choose?', answer: 'For traditional Hindu biodatas, Classic Gold, Auspicious Red, or Ganesh Blessing work great. For a modern look, try Modern Minimal or Simple White. For Sikh/Muslim biodatas, Royal Blue or Elegant Purple are popular choices.' },
+      { question: 'Can I download the biodata as PDF?', answer: 'Yes! You can download your biodata as both a high-quality PNG image and a PDF document, ready for printing or sharing digitally.' },
+      { question: 'Is my personal data safe?', answer: 'Absolutely. All processing happens in your browser. Your personal details and photo are never uploaded to any server — 100% private.' },
+      { question: 'Can I include my photo in the biodata?', answer: 'Yes. Upload a clear, front-facing photo and it will be included in the biodata. The photo is processed locally and never stored on our servers.' },
+      { question: 'What details should I include?', answer: 'Typically include: name, date of birth, height, education, occupation, family details (parents, siblings), religion, caste, gotra, manglik status, and contact information. All fields except name are optional.' },
+    ],
+    howToSteps: [
+      'Choose from 10 beautiful biodata templates.',
+      'Fill in your personal details — name, DOB, height, religion, caste, etc.',
+      'Add education, career, and income details.',
+      'Enter family information — parents, siblings, family type.',
+      'Add contact details and partner expectations.',
+      'Upload your photo (optional) and preview the biodata.',
+      'Download as PNG image or PDF — ready to share!',
+    ],
+    relatedToolSlugs: ['passport-photo-maker', 'image-to-pdf', 'online-signature-maker', 'resume-builder', 'image-compressor', 'pdf-compress'],
+    icon: 'Heart',
+    isPopular: true,
+    estimatedTime: '5 minutes',
   },
 ];
 
