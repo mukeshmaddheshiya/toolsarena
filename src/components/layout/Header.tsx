@@ -1,13 +1,26 @@
 'use client';
 import { useState } from 'react';
-import { Zap, Menu } from 'lucide-react';
+import dynamic from 'next/dynamic';
+import { Zap, Menu, Search } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { SearchBar } from '@/components/common/SearchBar';
 import { ThemeToggle } from '@/components/common/ThemeToggle';
 import { LanguageSwitcher } from '@/components/common/LanguageSwitcher';
 import { MobileNav } from './MobileNav';
 import { NAV_CATEGORIES } from '@/lib/constants';
+
+const SearchBar = dynamic(
+  () => import('@/components/common/SearchBar').then(m => ({ default: m.SearchBar })),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-[42px] rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 flex items-center px-3 gap-2">
+        <Search className="w-4 h-4 text-slate-300" />
+        <span className="text-sm text-slate-400">Search tools...</span>
+      </div>
+    ),
+  }
+);
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);

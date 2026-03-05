@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { tools, categories, getPopularTools, TOOL_COUNT } from '@/lib/tools-registry';
 import { ToolCard } from '@/components/tools/ToolCard';
-import { SearchBar } from '@/components/common/SearchBar';
+import { LazySearchBar } from '@/components/common/LazySearchBar';
 import { CATEGORY_NAME_KEYS } from '@/lib/constants';
 import type { ToolCategory } from '@/types/tools';
 import type { Metadata } from 'next';
@@ -71,7 +71,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {t('hero.subtitle', { count: TOOL_COUNT })}
           </p>
           <div className="max-w-xl mx-auto">
-            <SearchBar placeholder={t('common.searchPlaceholderLong', { count: TOOL_COUNT })} />
+            <LazySearchBar placeholder={t('common.searchPlaceholderLong', { count: TOOL_COUNT })} />
           </div>
         </div>
       </section>
