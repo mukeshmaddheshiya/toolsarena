@@ -1,11 +1,10 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
-import { Search, X } from 'lucide-react';
+import { Search, X, Wrench } from 'lucide-react';
 import { useRouter } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 import { searchTools, TOOL_COUNT } from '@/lib/tools-registry';
 import type { Tool } from '@/types/tools';
-import * as LucideIcons from 'lucide-react';
 
 export function SearchBar({ placeholder }: { placeholder?: string }) {
   const [query, setQuery] = useState('');
@@ -69,7 +68,7 @@ export function SearchBar({ placeholder }: { placeholder?: string }) {
       {open && results.length > 0 && (
         <div className="absolute top-full mt-1 w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg z-50 overflow-hidden">
           {results.map((tool, i) => {
-            const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[tool.icon] || LucideIcons.Wrench;
+            const Icon = Wrench;
             return (
               <button
                 key={tool.slug}

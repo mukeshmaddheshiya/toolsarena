@@ -130,7 +130,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 </Link>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-                {catTools.map(tool => <ToolCard key={tool.slug} tool={tool} />)}
+                {catTools.slice(0, 5).map(tool => <ToolCard key={tool.slug} tool={tool} />)}
               </div>
             </section>
           );
