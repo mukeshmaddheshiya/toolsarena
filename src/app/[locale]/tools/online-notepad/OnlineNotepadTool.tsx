@@ -86,8 +86,8 @@ export function OnlineNotepadTool() {
   return (
     <div className="space-y-3">
       {/* Toolbar */}
-      <div className="flex flex-wrap items-center justify-between gap-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl px-4 py-2">
-        <div className="flex items-center gap-3">
+      <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl px-4 py-2">
+        <div className="flex flex-wrap items-center gap-2">
           <div className="flex items-center gap-2">
             <label className="text-xs text-slate-500">Size</label>
             <select
@@ -99,23 +99,23 @@ export function OnlineNotepadTool() {
             </select>
           </div>
           {saved && <span className="text-xs text-green-600 dark:text-green-400 font-medium">Auto-saved</span>}
-        </div>
-        <div className="flex items-center gap-2">
-          {/* Share button */}
-          <div className="relative">
-            <button
-              onClick={() => setShowShare(!showShare)}
-              disabled={!text.trim()}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-300 dark:hover:bg-slate-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            >
-              <Share2 className="w-3.5 h-3.5" /> Share
-            </button>
+          <div className="flex items-center gap-2 ml-auto">
+            {/* Share button */}
+            <div className="relative">
+              <button
+                onClick={() => setShowShare(!showShare)}
+                disabled={!text.trim()}
+                className="p-1.5 text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                title="Share"
+              >
+                <Share2 className="w-4 h-4" />
+              </button>
 
-            {/* Share dropdown */}
-            {showShare && text.trim() && (
-              <>
-                <div className="fixed inset-0 z-10" onClick={() => setShowShare(false)} />
-                <div className="absolute right-0 top-full mt-2 z-20 w-56 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg p-2 space-y-1">
+              {/* Share dropdown */}
+              {showShare && text.trim() && (
+                <>
+                  <div className="fixed inset-0 z-10" onClick={() => setShowShare(false)} />
+                  <div className="fixed left-4 right-4 sm:absolute sm:left-auto sm:right-0 sm:w-56 top-auto mt-2 z-20 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-lg p-2 space-y-1">
                   {/* Copy text */}
                   <button onClick={() => { handleCopyText(); setShowShare(false); }} className="w-full flex items-center gap-3 px-3 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg transition-colors">
                     {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4 text-slate-400" />}
@@ -163,24 +163,26 @@ export function OnlineNotepadTool() {
                       Note: Social shares are trimmed to {MAX_SHARE_LENGTH} chars. Use &quot;Copy all text&quot; or &quot;Email&quot; for full content.
                     </p>
                   )}
-                </div>
-              </>
-            )}
-          </div>
+                  </div>
+                </>
+              )}
+            </div>
 
-          <button
-            onClick={handleDownload}
-            disabled={!text}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-          >
-            <Download className="w-3.5 h-3.5" /> Download .txt
-          </button>
-          <button
-            onClick={clear}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors"
-          >
-            <Trash2 className="w-3.5 h-3.5" /> Clear
-          </button>
+            <button
+              onClick={handleDownload}
+              disabled={!text}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Download</span> .txt
+            </button>
+            <button
+              onClick={clear}
+              className="p-1.5 text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors"
+              title="Clear"
+            >
+              <Trash2 className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
 
