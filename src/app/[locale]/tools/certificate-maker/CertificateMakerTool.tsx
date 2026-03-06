@@ -120,8 +120,8 @@ function ScaledPreview(props: CertPreviewProps) {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full overflow-hidden rounded-lg shadow-lg" style={{ aspectRatio: '800/566' }}>
-      <div ref={innerRef} style={{ width: 800, height: 566, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
+    <div ref={containerRef} className="w-full rounded-lg shadow-lg" style={{ position: 'relative', aspectRatio: '800/566', overflow: 'hidden' }}>
+      <div ref={innerRef} style={{ position: 'absolute', top: 0, left: 0, width: 800, height: 566, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
         <CertificatePreview {...props} />
       </div>
     </div>

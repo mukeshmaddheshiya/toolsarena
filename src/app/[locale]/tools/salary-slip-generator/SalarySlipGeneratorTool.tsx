@@ -262,8 +262,8 @@ function ScaledSlipPreview(props: SlipProps & { slipRef: React.RefObject<HTMLDiv
   const { slipRef, ...slipProps } = props;
 
   return (
-    <div ref={containerRef} className="w-full overflow-hidden" style={{ height: contentH * scale }}>
-      <div ref={innerRef} style={{ width: 700, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
+    <div ref={containerRef} className="w-full" style={{ position: 'relative', height: contentH * scale, overflow: 'hidden' }}>
+      <div ref={innerRef} style={{ position: 'absolute', top: 0, left: 0, width: 700, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
         <SalarySlipPreview ref={slipRef} {...slipProps} />
       </div>
     </div>

@@ -1,5 +1,5 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Upload, Download, RotateCcw, ChevronRight, ChevronLeft, Eye, FileText, Image as ImageIcon, X } from 'lucide-react';
 import { TEMPLATES, type BiodataTemplate } from './templates';
 
@@ -57,6 +57,41 @@ const INITIAL_DATA: BiodataData = {
 };
 
 const STEPS = ['Template', 'Personal', 'Education', 'Family', 'Contact', 'Preview'];
+
+function ScaledBiodataPreview({ previewRef, data, template }: {
+  previewRef: React.RefObject<HTMLDivElement | null>;
+  data: BiodataData;
+  template: BiodataTemplate;
+}) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+  const [contentH, setContentH] = useState(600);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const inner = innerRef.current;
+    if (!container || !inner) return;
+    const ro = new ResizeObserver(() => {
+      const s = Math.min(container.clientWidth / 700, 1);
+      setScale(s);
+      setContentH(inner.scrollHeight);
+    });
+    ro.observe(container);
+    ro.observe(inner);
+    return () => ro.disconnect();
+  }, []);
+
+  return (
+    <div ref={containerRef} className="w-full border border-slate-200 dark:border-slate-700 rounded-xl bg-gray-100 dark:bg-slate-900 p-2 sm:p-4" style={{ overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: contentH * scale, overflow: 'hidden' }}>
+        <div ref={innerRef} style={{ position: 'absolute', top: 0, left: 0, width: 700, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
+          <BiodataPreview ref={previewRef} data={data} template={template} />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function MarriageBiodataMakerTool() {
   const [step, setStep] = useState(0);
@@ -288,9 +323,7 @@ export function MarriageBiodataMakerTool() {
                 </button>
               </div>
             </div>
-            <div className="overflow-auto border border-slate-200 dark:border-slate-700 rounded-xl bg-gray-100 dark:bg-slate-900 p-4">
-              <BiodataPreview ref={previewRef} data={data} template={template} />
-            </div>
+            <ScaledBiodataPreview previewRef={previewRef} data={data} template={template} />
           </div>
         );
     }

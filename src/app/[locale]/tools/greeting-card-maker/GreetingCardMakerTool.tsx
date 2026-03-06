@@ -105,12 +105,14 @@ function ScaledCard({ cardRef, template, state, containerRef }: {
   return (
     <div ref={containerRef} className="w-full">
       <div style={{
-        width: 600 * scale,
+        position: 'relative',
+        width: '100%',
+        maxWidth: 600 * scale,
         height: cardHeight * scale,
         overflow: 'hidden',
         borderRadius: 8,
       }}>
-        <div style={{ transform: `scale(${scale})`, transformOrigin: 'top left', width: 600 }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, transform: `scale(${scale})`, transformOrigin: 'top left', width: 600 }}>
           <CardPreview ref={cardRef} template={template} state={state} />
         </div>
       </div>
