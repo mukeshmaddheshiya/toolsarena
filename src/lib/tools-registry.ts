@@ -425,6 +425,35 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     estimatedTime: 'Instant',
   },
   {
+    slug: 'css-gradient-text-generator',
+    name: 'CSS Gradient Text Generator',
+    shortDescription: 'Create stunning gradient text effects with live preview. Copy CSS instantly.',
+    longDescription: `Create eye-catching gradient text with our free CSS Gradient Text Generator. Choose from beautiful presets or create custom gradients using any colors — see the effect live on your custom text. Copy the exact CSS code with one click.
+
+The tool generates standard CSS using background-clip and -webkit-background-clip for maximum browser compatibility. Supports linear gradients in any direction, and works on headings, paragraphs, buttons, and any text element.
+
+Features include 12 beautiful gradient presets (Sunset, Ocean, Neon, Forest, Berry, Fire, Galaxy, Candy, Midnight, Emerald, Peach, Electric), custom color pickers for start and end colors, angle control, font size adjustment, and live preview with your own text. The generated CSS is clean and copy-paste ready.
+
+Perfect for web designers creating hero headings, landing page titles, social media graphics, and any project that needs visually striking text effects.`,
+    category: 'developer-tools',
+    targetKeyword: 'CSS gradient text generator',
+    secondaryKeywords: ['gradient text css', 'text gradient generator', 'css text color gradient', 'gradient text effect css', 'rainbow text css', 'gradient heading generator', 'colorful text css generator'],
+    metaTitle: 'CSS Gradient Text Generator - Create Gradient Text Free Online',
+    metaDescription: 'Create beautiful gradient text effects with CSS. 12 presets, custom colors, live preview. Copy CSS code instantly. Free online tool — no signup needed.',
+    faqs: [
+      { question: 'How does CSS gradient text work?', answer: 'It uses a combination of background: linear-gradient(), -webkit-background-clip: text, and color: transparent to apply a gradient as the text color instead of the background. This technique works in all modern browsers.' },
+      { question: 'Does gradient text work in all browsers?', answer: 'Yes, gradient text works in all modern browsers including Chrome, Firefox, Safari, and Edge. The generated code includes both standard and -webkit- prefixed properties for maximum compatibility.' },
+      { question: 'Can I use this on any text element?', answer: 'Yes! The CSS works on headings (h1-h6), paragraphs, spans, links, buttons, and any text element. Just apply the generated CSS properties to your element.' },
+      { question: 'Is gradient text accessible?', answer: 'Gradient text can be less readable than solid colors, especially with low contrast gradients. Use it for decorative headings and titles, not for body text. Ensure sufficient contrast with the background.' },
+    ],
+    howToSteps: ['Type your text or use the default preview text.', 'Select a gradient preset or pick custom start and end colors.', 'Adjust the gradient angle and font size.', 'See the live preview update instantly.', 'Click "Copy CSS" to copy the code to your clipboard.'],
+    relatedToolSlugs: ['css-gradient-generator', 'color-picker', 'box-shadow-generator', 'fancy-text-generator'],
+    icon: 'Type',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'box-shadow-generator',
     name: 'Box Shadow Generator',
     shortDescription: 'Generate CSS box-shadow code visually with live preview and presets.',
@@ -1422,6 +1451,39 @@ The tool uses PDF.js for rendering, giving you high-fidelity image output that a
     isPopular: true,
     estimatedTime: '3-15 seconds',
   },
+  {
+    slug: 'pdf-to-word',
+    name: 'PDF to Word Converter',
+    shortDescription: 'Convert PDF files to editable Word documents (.docx) online — free and secure.',
+    longDescription: `Convert any PDF document to an editable Microsoft Word (.docx) file with our free PDF to Word converter. Extract text, paragraphs, and headings from your PDF and download a fully editable Word document — all processed entirely in your browser.
+
+This tool uses PDF.js to accurately extract text content from each page of your PDF, then generates a properly formatted .docx file using the docx library. The output preserves paragraph structure, line breaks, and page separation, making it easy to edit the content in Microsoft Word, Google Docs, or any other word processor.
+
+Perfect for editing scanned contracts, modifying old PDF reports, extracting text from academic papers, or converting PDF resumes into editable formats. Since everything runs client-side, your documents never leave your device — ideal for confidential or sensitive files.`,
+    category: 'pdf-tools',
+    targetKeyword: 'PDF to Word converter',
+    secondaryKeywords: ['pdf to docx', 'convert pdf to word online free', 'pdf to word converter free', 'pdf to editable word', 'extract text from pdf to word'],
+    metaTitle: 'PDF to Word Converter - Convert PDF to DOCX Free Online',
+    metaDescription: 'Convert PDF to editable Word document (.docx) online for free. Extracts text and paragraphs accurately. Secure — your file never leaves your browser. No signup.',
+    faqs: [
+      { question: 'Is this PDF to Word converter free?', answer: 'Yes, completely free with no limits on file size or number of conversions. There are no watermarks added to the output file.' },
+      { question: 'Are my PDF files uploaded to a server?', answer: 'No. All processing happens locally in your browser using JavaScript. Your PDF files never leave your device, making it safe for confidential documents.' },
+      { question: 'Does it preserve formatting from the PDF?', answer: 'The tool extracts text content and preserves paragraph structure and page breaks. Complex formatting like tables, columns, and images are not carried over — the focus is on accurate text extraction into an editable format.' },
+      { question: 'Can I convert scanned PDFs?', answer: 'This tool works best with text-based PDFs (where text is selectable). For scanned PDFs (image-based), the text extraction may be limited. Use our Image to Text (OCR) tool first for scanned documents.' },
+      { question: 'What word processors can open the output file?', answer: 'The output .docx file can be opened in Microsoft Word, Google Docs, LibreOffice Writer, Apple Pages, and any other application that supports the .docx format.' },
+    ],
+    howToSteps: [
+      'Upload your PDF file — drag and drop or click to browse (max 50MB).',
+      'Click "Convert to Word" to start the conversion.',
+      'Preview the extracted text from each page.',
+      'Click "Download Word Document" to save the .docx file.',
+      'Open the downloaded file in Word, Google Docs, or any word processor to edit.',
+    ],
+    relatedToolSlugs: ['pdf-to-image', 'pdf-merge', 'pdf-split', 'image-to-text'],
+    icon: 'FileText',
+    isPopular: true,
+    estimatedTime: '5-15 seconds',
+  },
 
   // ─── CONVERTERS ───────────────────────────────────────────────────────────
   {
@@ -1519,6 +1581,107 @@ The current Unix timestamp is shown at the top and auto-updates every second —
     ],
     relatedToolSlugs: ['age-calculator', 'unit-converter', 'json-formatter', 'number-to-words'],
     icon: 'Clock',
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'nepali-date-converter',
+    name: 'Nepali Date Converter',
+    shortDescription: 'Convert dates between Bikram Sambat (BS) and Gregorian (AD) calendar instantly.',
+    longDescription: `Convert dates between Nepali Bikram Sambat (BS/विक्रम संवत) and English Gregorian (AD) calendars with our free Nepali Date Converter. Enter any date in BS and get the exact AD equivalent, or convert AD to BS — accurate from 2000 BS to 2099 BS (1943 AD to 2043 AD).
+
+The converter displays results with Nepali month names (बैशाख, जेठ, असार...), day of the week in both Nepali and English, and Nepali numerals (१, २, ३...). It also shows today's date in both BS and AD formats — perfect for quickly checking the Nepali date.
+
+Built with accurate BS calendar data that accounts for the variable number of days in each Nepali month (which differ from year to year, unlike the Gregorian calendar). This tool is essential for filling government forms, scheduling events across calendars, checking dates for festivals (Dashain, Tihar), and everyday date conversions.
+
+Works 100% in your browser — no data is sent to any server. Fast, accurate, and free with no signup required.`,
+    category: 'converters',
+    targetKeyword: 'Nepali date converter',
+    secondaryKeywords: ['BS to AD converter', 'AD to BS converter', 'Nepali calendar converter', 'bikram sambat to english date', 'nepali date today', 'miti converter', 'nepali miti pariwartan', 'english to nepali date'],
+    metaTitle: 'Nepali Date Converter - BS to AD & AD to BS | Free Online',
+    metaDescription: 'Convert Nepali Bikram Sambat (BS) dates to English (AD) and vice versa. Shows Nepali month names, day of week & today\'s date. Free, fast & accurate.',
+    faqs: [
+      { question: 'What is Bikram Sambat (BS)?', answer: 'Bikram Sambat (BS) is the official calendar of Nepal, approximately 56 years and 8.5 months ahead of the Gregorian (AD) calendar. For example, 2080 BS corresponds roughly to 2023-2024 AD. The Nepali new year starts in mid-April (Baisakh 1).' },
+      { question: 'How accurate is this converter?', answer: 'The converter uses verified BS calendar data with the exact number of days in each month for every year from 2000 BS to 2099 BS. It accounts for the irregular month lengths in the Nepali calendar, ensuring precise conversions.' },
+      { question: 'What date range does it support?', answer: 'The converter supports dates from 2000 BS (1943 AD) to 2099 BS (2043 AD), covering over 100 years of conversions. This covers all practical date conversion needs.' },
+      { question: 'What are the Nepali month names?', answer: 'The 12 Nepali months are: Baisakh (बैशाख), Jestha (जेठ), Ashadh (असार), Shrawan (श्रावण), Bhadra (भाद्र), Ashwin (असोज), Kartik (कार्तिक), Mangsir (मंसिर), Poush (पुष), Magh (माघ), Falgun (फागुन), and Chaitra (चैत्र).' },
+      { question: 'Why do Nepali months have different numbers of days each year?', answer: 'Unlike the Gregorian calendar where months have fixed days (except February), Nepali months vary from 29 to 32 days and change every year. This is based on solar calculations, making an accurate data table essential for conversions.' },
+    ],
+    howToSteps: [
+      'Select the conversion direction — BS to AD or AD to BS.',
+      'Enter the year, month, and day in the input fields.',
+      'The converted date appears instantly with full details.',
+      'View the result in Nepali script with month names and day of week.',
+      'Check "Today\'s Date" section for the current date in both calendars.',
+    ],
+    relatedToolSlugs: ['timestamp-converter', 'age-calculator', 'countdown-timer', 'timezone-checker'],
+    icon: 'CalendarDays',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'preeti-to-unicode',
+    name: 'Preeti to Unicode Converter',
+    shortDescription: 'Convert Preeti font Nepali text to standard Unicode (युनिकोड) instantly. Free online tool.',
+    longDescription: `Convert Preeti font Nepali text to Unicode (standard Devanagari) instantly with our free Preeti to Unicode converter. Preeti is the most popular legacy Nepali font used in government offices, banks, newspapers, and older documents across Nepal. However, Preeti text doesn't display correctly on the web or modern devices without the font installed — Unicode solves this.
+
+Simply paste your Preeti-encoded text in the input box and get perfectly formatted Unicode Nepali (देवनागरी) output in real time. The converter handles all Preeti characters, conjuncts (संयुक्त अक्षर), special symbols, numbers, and punctuation with high accuracy.
+
+Also includes Unicode to Preeti reverse conversion for users who need to work with legacy documents. Both conversions happen instantly in your browser — your text is never sent to any server. No signup, no limits, completely free.
+
+Essential for Nepali government employees, journalists, content creators, students, and anyone who works with Nepali text across old and modern systems.`,
+    category: 'converters',
+    targetKeyword: 'Preeti to Unicode converter',
+    secondaryKeywords: ['preeti to unicode', 'unicode to preeti', 'nepali font converter', 'preeti unicode converter online', 'preeti to unicode nepali', 'convert preeti to unicode online free', 'nepali unicode converter', 'preeti font to unicode'],
+    metaTitle: 'Preeti to Unicode Converter - Nepali Font Converter Free Online',
+    metaDescription: 'Convert Preeti font text to Unicode Nepali (देवनागरी) instantly. Also supports Unicode to Preeti. Free online converter — no signup needed.',
+    faqs: [
+      { question: 'What is Preeti font?', answer: 'Preeti is the most widely used traditional Nepali font in Nepal. It maps Nepali characters to English keyboard keys. However, Preeti text only displays correctly when the Preeti font is installed — on the web and modern devices, Unicode is the standard.' },
+      { question: 'What is Unicode?', answer: 'Unicode is the universal text encoding standard that allows Nepali text (देवनागरी) to display correctly on any device, browser, or operating system without needing special fonts installed. It is the standard for web content, emails, and modern documents.' },
+      { question: 'Why convert Preeti to Unicode?', answer: 'Preeti text cannot be read on devices without the Preeti font installed. Converting to Unicode ensures your Nepali text is universally readable — on websites, social media, emails, Google Docs, and any modern application.' },
+      { question: 'Does it handle conjuncts (जोडाक्षर)?', answer: 'Yes. The converter handles all standard Preeti conjunct characters (संयुक्त अक्षर) and maps them to their correct Unicode equivalents, including complex conjuncts used in formal Nepali writing.' },
+      { question: 'Can I convert Unicode back to Preeti?', answer: 'Yes! The tool supports both directions — Preeti to Unicode and Unicode to Preeti. Use the mode toggle to switch between conversion directions.' },
+    ],
+    howToSteps: [
+      'Select the conversion direction — Preeti to Unicode or Unicode to Preeti.',
+      'Paste or type your text in the input box.',
+      'The converted text appears instantly in the output panel.',
+      'Click "Copy" to copy the converted text to your clipboard.',
+      'Use the converted text on websites, emails, or documents.',
+    ],
+    relatedToolSlugs: ['nepali-date-converter', 'unicode-to-preeti', 'case-converter', 'text-to-speech'],
+    icon: 'Languages',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'nepali-typing',
+    name: 'Nepali Typing Tool',
+    shortDescription: 'Type in Nepali (नेपाली) using your English keyboard. Romanized to Devanagari conversion.',
+    longDescription: `Type in Nepali using your regular English keyboard with our free Nepali Typing Tool. Simply type Romanized Nepali (like "namaste" → "नमस्ते") and the tool converts it to Devanagari script in real-time. No Nepali keyboard layout or special software needed.
+
+The tool uses phonetic transliteration — type how the word sounds in English and get the Nepali Unicode output instantly. Supports all Nepali consonants, vowels, conjuncts (संयुक्त अक्षर), and special characters. Common mappings: ka→क, kha→ख, ga→ग, gha→घ, cha→च, chha→छ, ja→ज, etc.
+
+Features include a virtual Nepali keyboard for clicking characters, real-time conversion as you type, word suggestions, copy to clipboard, and a complete character mapping reference. Output is in standard Unicode that works everywhere — websites, emails, social media, documents.
+
+Perfect for Nepali speakers who are comfortable with English keyboards, students writing Nepali assignments, content creators, and anyone who needs to type Nepali text quickly and accurately.`,
+    category: 'converters',
+    targetKeyword: 'Nepali typing',
+    secondaryKeywords: ['type in nepali', 'nepali typing online', 'romanized nepali to unicode', 'nepali keyboard online', 'english to nepali typing', 'nepali unicode typing', 'type nepali online free', 'nepali font typing'],
+    metaTitle: 'Nepali Typing Tool - Type in Nepali Online Free | नेपाली टाइपिङ',
+    metaDescription: 'Type in Nepali using English keyboard. Romanized to Devanagari conversion in real-time. Free online Nepali typing tool — no software needed.',
+    faqs: [
+      { question: 'How do I type in Nepali?', answer: 'Just type the Romanized version of the Nepali word using your English keyboard. For example: "nepal" → "नेपाल", "namaste" → "नमस्ते", "dhanyabad" → "धन्यवाद". The tool converts it to Devanagari Unicode automatically.' },
+      { question: 'What is the mapping for Nepali characters?', answer: 'Common mappings: ka→क, kha→ख, ga→ग, gha→घ, nga→ङ, cha→च, chha→छ, ja→ज, jha→झ, ta→त, tha→थ, da→द, dha→ध, na→न, pa→प, pha→फ, ba→ब, bha→भ, ma→म, ya→य, ra→र, la→ल, wa→व, sha→श, sa→स, ha→ह.' },
+      { question: 'Can I use the output on Facebook and WhatsApp?', answer: 'Yes! The output is in standard Unicode, which works on all platforms — Facebook, WhatsApp, Twitter, Instagram, Gmail, Google Docs, Word, and any modern application.' },
+      { question: 'Do I need to install any software?', answer: 'No. This tool works entirely in your browser. No downloads, no installations, no fonts needed. Just open the page and start typing.' },
+    ],
+    howToSteps: ['Start typing Romanized Nepali in the input box (e.g., "namaste").', 'The Nepali Unicode text appears in real-time in the output.', 'Use the virtual keyboard for characters you are unsure about.', 'Click "Copy" to copy the Nepali text to your clipboard.', 'Paste the text in any application — email, social media, documents.'],
+    relatedToolSlugs: ['preeti-to-unicode', 'nepali-date-converter', 'text-to-speech', 'word-counter'],
+    icon: 'Keyboard',
+    isPopular: true,
+    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -2271,6 +2434,35 @@ Save your business details as a template so you never have to re-enter them. Eac
 
   // ─── FINANCE CALCULATORS ────────────────────────────────────────────────
   {
+    slug: 'loan-comparison-calculator',
+    name: 'Loan Comparison Calculator',
+    shortDescription: 'Compare multiple loan offers side-by-side. See EMI, total interest & total cost differences.',
+    longDescription: `Compare up to 4 loan offers side-by-side with our free Loan Comparison Calculator. Enter the loan amount, interest rate, and tenure for each option — instantly see the monthly EMI, total interest paid, total amount payable, and savings compared to the most expensive option.
+
+The calculator uses the standard EMI formula: EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is monthly interest rate, and n is number of months. Results are shown in a clean comparison table with visual bar charts highlighting the best and worst deals.
+
+Perfect for comparing home loans, personal loans, car loans, education loans, or any EMI-based financing. Supports Indian Rupee (₹) formatting with lakh/crore notation. All calculations happen instantly in your browser — no data stored, no signup needed.
+
+Essential for anyone shopping for loans and wanting to make an informed decision about which offer saves the most money.`,
+    category: 'calculators',
+    targetKeyword: 'loan comparison calculator',
+    secondaryKeywords: ['compare loans', 'EMI comparison calculator', 'loan interest comparison', 'home loan comparison', 'best loan calculator', 'loan EMI compare', 'compare home loan rates', 'loan offer comparison tool'],
+    metaTitle: 'Loan Comparison Calculator - Compare EMI & Interest Free Online',
+    metaDescription: 'Compare up to 4 loan offers side-by-side. See EMI, total interest & savings instantly. Free loan comparison calculator — no signup needed.',
+    faqs: [
+      { question: 'How does loan comparison work?', answer: 'Enter the loan amount, interest rate, and tenure for each loan option. The calculator computes EMI, total interest, and total payable for each, then highlights which offer saves you the most money.' },
+      { question: 'What is EMI?', answer: 'EMI (Equated Monthly Installment) is the fixed monthly payment you make to repay a loan. It includes both principal repayment and interest. The EMI stays the same throughout the loan tenure.' },
+      { question: 'Is a lower EMI always better?', answer: 'Not always. A lower EMI might mean a longer tenure, which increases total interest paid. Compare the total cost (principal + total interest) to find the truly cheaper loan.' },
+      { question: 'Can I compare different loan amounts?', answer: 'Yes! Each loan slot is independent — you can compare different amounts, rates, and tenures. This is useful when comparing, say, a larger loan at lower interest vs a smaller loan at higher interest.' },
+    ],
+    howToSteps: ['Enter the loan amount for the first loan option.', 'Set the annual interest rate and loan tenure (in years).', 'Add more loan options (up to 4) for comparison.', 'View EMI, total interest, and total cost side-by-side.', 'The best deal is highlighted in green — showing how much you save.'],
+    relatedToolSlugs: ['emi-calculator', 'compound-interest-calculator', 'sip-calculator', 'fd-rd-calculator'],
+    icon: 'Scale',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'compound-interest-calculator',
     name: 'Compound Interest Calculator',
     shortDescription: 'Calculate compound interest with yearly breakdown. Supports monthly, quarterly & yearly compounding.',
@@ -2865,6 +3057,42 @@ Includes a syntax reference guide and supports all standard cron features: wildc
     estimatedTime: 'Instant',
   },
   {
+    slug: 'fake-data-generator',
+    name: 'Fake Data Generator',
+    shortDescription: 'Generate realistic fake names, emails, addresses, phone numbers & more for testing.',
+    longDescription: `Generate realistic fake data for testing, development, and prototyping with our free Fake Data Generator. Create random names, email addresses, phone numbers, physical addresses, company names, credit card numbers, dates, UUIDs, usernames, passwords, and more — all in one tool.
+
+Choose from 10+ data types and generate up to 100 rows at once. Export as JSON, CSV, or copy individual values. The data looks realistic but is entirely fictional — perfect for populating test databases, creating demo content, filling mockups, testing form validation, and building prototypes without using real personal information.
+
+Supports multiple locales including US, UK, India, and international formats. All generation happens in your browser — no API calls, no data stored, no signup required. GDPR-friendly since no real personal data is involved.
+
+Essential for developers, QA testers, UI/UX designers, data analysts, and anyone who needs realistic-looking sample data without privacy concerns.`,
+    category: 'developer-tools',
+    targetKeyword: 'fake data generator',
+    secondaryKeywords: ['random data generator', 'test data generator', 'mock data generator', 'fake name generator', 'random email generator', 'fake address generator', 'dummy data generator', 'sample data generator'],
+    metaTitle: 'Fake Data Generator - Random Names, Emails & Addresses Free',
+    metaDescription: 'Generate fake names, emails, phone numbers, addresses & more for testing. Export as JSON or CSV. Free, private — no signup needed.',
+    faqs: [
+      { question: 'Is the generated data real?', answer: 'No. All data is randomly generated and fictional. Names, emails, addresses, and phone numbers are created using algorithms and do not correspond to real people or locations.' },
+      { question: 'Can I use this data in my database?', answer: 'Yes! The generated data is perfect for seeding test databases, populating development environments, and creating sample datasets. Export as JSON or CSV for easy import.' },
+      { question: 'How many records can I generate at once?', answer: 'You can generate up to 100 records at a time. Need more? Simply generate multiple batches and combine them.' },
+      { question: 'Are the credit card numbers real?', answer: 'No. Generated credit card numbers follow valid format patterns (Luhn algorithm) but are not connected to any real accounts. They are suitable for testing payment form UI only.' },
+      { question: 'Is this tool GDPR compliant?', answer: 'Yes. Since all data is randomly generated and fictional, there are no privacy concerns. No real personal data is processed or stored.' },
+    ],
+    howToSteps: [
+      'Select the data fields you want to generate (name, email, phone, etc.).',
+      'Choose the number of records (1-100).',
+      'Click "Generate" to create the fake data.',
+      'Preview the data in the table view.',
+      'Export as JSON or CSV, or copy individual values.',
+    ],
+    relatedToolSlugs: ['uuid-generator', 'password-generator', 'json-formatter', 'csv-to-json'],
+    icon: 'Database',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'speech-to-text',
     name: 'Speech to Text',
     shortDescription: 'Convert speech to text in real time — free voice typing in 12+ languages.',
@@ -3129,6 +3357,78 @@ Perfect for content creators, bloggers, and designers who need high-quality YouT
     relatedToolSlugs: ['image-compressor', 'image-resizer', 'png-to-jpg', 'screen-recorder', 'qr-code-generator'],
     icon: 'Youtube',
     isPopular: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'youtube-money-calculator',
+    name: 'YouTube Money Calculator',
+    shortDescription: 'Estimate YouTube earnings from views, subscribers, and CPM. Free & instant.',
+    longDescription: `Estimate how much money a YouTube channel or video earns with our free YouTube Money Calculator. Enter daily views, total video views, or subscribers to get instant earnings estimates based on real CPM (Cost Per Mille) data for different countries and niches.
+
+The calculator uses industry-standard CPM ranges — from $0.25 for developing markets to $15+ for high-value niches like finance, insurance, and technology in the US. Customize the CPM slider to match your niche, select your primary audience country, and see estimated daily, monthly, and yearly revenue.
+
+Features include a visual earnings breakdown chart, CPM comparison by country and niche, a subscriber milestone tracker showing projected earnings at 1K, 10K, 100K, and 1M subscribers, and tips to increase your YouTube revenue. All calculations are instant and run in your browser.
+
+Perfect for aspiring YouTubers planning their content strategy, existing creators benchmarking earnings, and anyone curious about how much YouTubers make. No signup required, no data stored.`,
+    category: 'utility-tools',
+    targetKeyword: 'YouTube money calculator',
+    secondaryKeywords: ['youtube earnings calculator', 'how much do youtubers make', 'youtube revenue calculator', 'youtube income calculator', 'youtube CPM calculator', 'youtube money estimator', 'youtube pay calculator', 'how much youtube pays'],
+    metaTitle: 'YouTube Money Calculator - Estimate Channel Earnings Free',
+    metaDescription: 'Calculate YouTube earnings from views and subscribers. Estimate daily, monthly & yearly revenue with CPM data by country. Free calculator — no signup needed.',
+    faqs: [
+      { question: 'How accurate is this YouTube earnings calculator?', answer: 'The calculator provides estimates based on industry-average CPM ranges. Actual earnings vary based on niche, audience location, ad engagement, video length, and seasonality. Use it as a benchmark, not an exact figure.' },
+      { question: 'What is CPM and how does it affect earnings?', answer: 'CPM (Cost Per Mille) is the amount advertisers pay per 1,000 ad impressions. Higher CPM niches like finance ($12-15), tech ($8-12), and health ($6-10) pay more than entertainment ($2-4) or gaming ($3-5). US/UK audiences have higher CPMs than India or Southeast Asia.' },
+      { question: 'How much does YouTube pay per 1,000 views?', answer: 'YouTube typically pays $1-5 per 1,000 views on average, but this varies widely. After YouTube takes its 45% cut, creators earn 55% of ad revenue. High-CPM niches in the US can earn $8-15 per 1,000 views.' },
+      { question: 'Do all views generate revenue?', answer: 'No. Only monetized views (with ads) generate revenue. Typically 40-60% of total views are monetized. Viewers using ad blockers, viewers in low-ad regions, and some video types reduce monetized view percentage.' },
+      { question: 'How many subscribers do I need to start earning?', answer: 'You need at least 1,000 subscribers and 4,000 watch hours in the past 12 months to join the YouTube Partner Program. Alternatively, 1,000 subscribers with 10 million Shorts views in 90 days also qualifies.' },
+    ],
+    howToSteps: [
+      'Enter your daily video views or total channel views.',
+      'Adjust the CPM slider to match your niche and audience region.',
+      'Select your primary audience country for region-specific estimates.',
+      'View your estimated daily, monthly, and yearly earnings instantly.',
+      'Explore the earnings breakdown by subscriber milestones for growth planning.',
+    ],
+    relatedToolSlugs: ['youtube-thumbnail-downloader', 'invoice-generator', 'salary-calculator', 'compound-interest-calculator'],
+    icon: 'DollarSign',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'instagram-engagement-calculator',
+    name: 'Instagram Engagement Calculator',
+    shortDescription: 'Calculate your Instagram engagement rate from followers, likes, and comments. Free tool.',
+    longDescription: `Calculate your Instagram engagement rate with our free Instagram Engagement Calculator. Enter your total followers, average likes, and average comments per post to get your engagement rate percentage — the key metric brands use to evaluate influencer partnerships.
+
+The tool calculates engagement rate using the standard formula: (Average Likes + Average Comments) / Total Followers × 100. It provides a rating (Excellent, Good, Average, Low) based on industry benchmarks, comparison with average rates by follower count, estimated post reach, and tips to improve your engagement.
+
+Features include engagement rate by follower tier benchmarks (nano to mega influencers), estimated earnings per post based on your engagement rate, and a visual engagement score meter. Perfect for influencers checking their stats, brands evaluating creators, and social media managers tracking account health.
+
+All calculations happen instantly in your browser — no Instagram login required, no data stored.`,
+    category: 'utility-tools',
+    targetKeyword: 'Instagram engagement calculator',
+    secondaryKeywords: ['instagram engagement rate calculator', 'ig engagement calculator', 'instagram engagement rate', 'check instagram engagement', 'instagram engagement checker', 'instagram rate calculator', 'calculate engagement rate instagram'],
+    metaTitle: 'Instagram Engagement Calculator - Check Engagement Rate Free',
+    metaDescription: 'Calculate your Instagram engagement rate from followers, likes & comments. See your rating vs benchmarks. Free tool — no login required.',
+    faqs: [
+      { question: 'What is a good Instagram engagement rate?', answer: 'For most accounts: 1-3% is average, 3-6% is good, 6%+ is excellent. Smaller accounts (under 10K followers) typically have higher engagement rates (3-8%) than large accounts (100K+) which average 1-3%.' },
+      { question: 'How is engagement rate calculated?', answer: 'Engagement Rate = (Average Likes + Average Comments) / Total Followers × 100. Some formulas also include saves and shares, but likes + comments is the most standard and widely used formula.' },
+      { question: 'Do I need to connect my Instagram account?', answer: 'No. Simply enter your follower count, average likes, and average comments manually. No Instagram login or API connection is needed.' },
+      { question: 'Why is my engagement rate low?', answer: 'Common reasons: posting at wrong times, using irrelevant hashtags, low-quality content, inconsistent posting schedule, buying fake followers, or Instagram algorithm changes. Focus on creating valuable content for your specific audience.' },
+      { question: 'How much can I earn based on my engagement rate?', answer: 'Earnings vary widely, but as a rough guide: Nano (1K-10K followers) earn $10-100/post, Micro (10K-100K) earn $100-1,000/post, Mid-tier (100K-500K) earn $1,000-5,000/post, and Macro (500K+) earn $5,000-25,000+ per post. Higher engagement rates command premium rates.' },
+    ],
+    howToSteps: [
+      'Enter your total Instagram follower count.',
+      'Enter your average likes per post (check your last 10-12 posts).',
+      'Enter your average comments per post.',
+      'View your engagement rate, rating, and comparison with benchmarks instantly.',
+      'Check the estimated earnings and tips to improve your engagement.',
+    ],
+    relatedToolSlugs: ['youtube-money-calculator', 'youtube-thumbnail-downloader', 'qr-code-generator', 'whatsapp-link-generator'],
+    icon: 'Heart',
+    isPopular: true,
+    isNew: true,
     estimatedTime: 'Instant',
   },
   {
@@ -3502,6 +3802,42 @@ Perfect for students rewriting essays, professionals improving emails, content w
     ],
     relatedToolSlugs: ['word-counter', 'case-converter', 'text-repeater', 'lorem-ipsum-generator'],
     icon: 'Wand2',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'ai-text-humanizer',
+    name: 'AI Text Humanizer',
+    shortDescription: 'Make AI-generated text sound natural and human-written. Bypass AI detectors instantly.',
+    longDescription: `Transform robotic AI-generated text into natural, human-sounding content with our free AI Text Humanizer. Whether you wrote with ChatGPT, Gemini, Claude, or any other AI, this tool restructures your text to sound authentic and bypass AI detection tools like GPTZero, Turnitin, and Originality.ai.
+
+The humanizer applies 7 powerful transformations: adds natural contractions, replaces overused AI phrases ("delve into", "it's important to note"), varies sentence length, injects conversational transitions, removes robotic patterns, adds personal touches, and reduces passive voice. Choose from 4 intensity levels — Light, Medium, Heavy, and Aggressive — to control how much the text changes.
+
+A built-in AI Detection Score gives you a real-time estimate of how "AI-like" or "human-like" your text sounds, with a visual meter. The tool processes text 100% in your browser — nothing is sent to any server, so your content stays completely private. No signup, no limits, no watermarks.
+
+Perfect for students, bloggers, content writers, marketers, and professionals who use AI as a writing assistant but want the final output to read naturally and pass AI detection checks.`,
+    category: 'text-tools',
+    targetKeyword: 'AI text humanizer',
+    secondaryKeywords: ['humanize AI text', 'AI to human text converter', 'bypass AI detection', 'make AI text human', 'AI humanizer free', 'ChatGPT humanizer', 'undetectable AI text', 'AI text converter'],
+    metaTitle: 'AI Text Humanizer - Make AI Text Sound Human | Free Online',
+    metaDescription: 'Humanize AI-generated text instantly. Make ChatGPT, Gemini & Claude content sound natural and bypass AI detectors. Free, private — no signup needed.',
+    faqs: [
+      { question: 'How does the AI Text Humanizer work?', answer: 'The tool applies multiple transformation layers: replacing overused AI phrases, adding natural contractions, varying sentence structure, injecting conversational elements, reducing passive voice, and removing robotic patterns. These changes make the text read more naturally while preserving the original meaning.' },
+      { question: 'Will humanized text pass AI detection tools?', answer: 'The tool significantly reduces AI detection scores by removing common patterns that detectors look for. However, no tool can guarantee 100% bypass rates. We recommend using the Medium or Heavy mode and reviewing the output for best results.' },
+      { question: 'Does it change the meaning of my text?', answer: 'The tool preserves the core meaning while changing how it is expressed. Light mode makes minimal changes, while Aggressive mode restructures more heavily. Always review the output to ensure accuracy for important content.' },
+      { question: 'Is this free and private?', answer: 'Yes, 100% free with no usage limits, no signup, and no watermarks. All processing happens in your browser — your text is never sent to any server, ensuring complete privacy.' },
+      { question: 'Which AI-generated text does it work with?', answer: 'It works with text from any AI tool — ChatGPT, GPT-4, Gemini, Claude, Jasper, Copy.ai, and others. The humanizer targets common patterns shared across all AI language models.' },
+    ],
+    howToSteps: [
+      'Paste your AI-generated text in the input box.',
+      'Select the humanization intensity — Light, Medium, Heavy, or Aggressive.',
+      'The humanized text appears instantly in the output panel.',
+      'Check the AI Detection Score meter to see how human your text sounds.',
+      'Click "Copy Humanized Text" to copy the result to your clipboard.',
+    ],
+    relatedToolSlugs: ['paraphrasing-tool', 'word-counter', 'case-converter', 'text-to-speech'],
+    icon: 'UserCheck',
     isPopular: true,
     isNew: true,
     estimatedTime: 'Instant',
