@@ -16,12 +16,14 @@ export function BlurFaceInPhotoTool() {
   const [currentRect, setCurrentRect] = useState<Region | null>(null);
   const [naturalSize, setNaturalSize] = useState({ w: 0, h: 0 });
   const [displaySize, setDisplaySize] = useState({ w: 0, h: 0 });
+  const [blurApplied, setBlurApplied] = useState(false);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const overlayRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
+  const resultDataUrl = useRef<string | null>(null);
 
   const handleFile = (file: File) => {
     if (!file.type.startsWith('image/')) return;
@@ -190,15 +192,25 @@ export function BlurFaceInPhotoTool() {
     ctx.drawImage(fullCanvas, 0, 0, displaySize.w, displaySize.h);
 
     // Store result for download
-    imgRef.current = null;
+    const dataUrl = fullCanvas.toDataURL('image/png');
+    resultDataUrl.current = dataUrl;
     const resultImg = new Image();
     resultImg.onload = () => { imgRef.current = resultImg; };
-    resultImg.src = fullCanvas.toDataURL('image/png');
+    resultImg.src = dataUrl;
 
     setRegions([]);
+    setBlurApplied(true);
   };
 
   const handleDownload = (format: 'png' | 'jpeg') => {
+    // Use stored data URL if image ref isn't ready yet
+    if (resultDataUrl.current && format === 'png') {
+      const a = document.createElement('a');
+      a.href = resultDataUrl.current;
+      a.download = `${fileName}-blurred.png`;
+      a.click();
+      return;
+    }
     const img = imgRef.current;
     if (!img) return;
     const c = document.createElement('canvas');
@@ -219,7 +231,9 @@ export function BlurFaceInPhotoTool() {
     setFileName('');
     setNaturalSize({ w: 0, h: 0 });
     setDisplaySize({ w: 0, h: 0 });
+    setBlurApplied(false);
     imgRef.current = null;
+    resultDataUrl.current = null;
   };
 
   return (
@@ -312,16 +326,19 @@ export function BlurFaceInPhotoTool() {
           )}
 
           {/* Download Buttons */}
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
             <button onClick={() => handleDownload('png')}
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-600 text-white rounded-xl hover:bg-purple-700 text-sm font-medium transition-colors shadow-sm">
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 text-sm font-medium transition-colors shadow-sm">
               <Download className="w-4 h-4" /> Download PNG
             </button>
             <button onClick={() => handleDownload('jpeg')}
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
+              className="flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 text-sm font-medium transition-colors border border-slate-200 dark:border-slate-700">
               <Download className="w-4 h-4" /> Download JPEG
             </button>
           </div>
+          {!blurApplied && regions.length === 0 && (
+            <p className="text-xs text-slate-500 dark:text-slate-400 text-center">Draw regions on the image and click &quot;Apply Blur&quot; first, then download.</p>
+          )}
         </>
       )}
     </div>

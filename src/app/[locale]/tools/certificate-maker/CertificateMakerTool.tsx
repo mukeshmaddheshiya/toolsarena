@@ -179,7 +179,7 @@ export function CertificateMakerTool() {
   const handleReset = () => { setData(INITIAL); setCertType(CERT_TYPES[0]); setTemplateId('classic'); };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-5 sm:space-y-8">
       {/* Hero */}
       <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-600 via-amber-500 to-yellow-400 p-6 sm:p-10 text-white">
         <div className="absolute -top-20 -right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
@@ -192,9 +192,9 @@ export function CertificateMakerTool() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
         {/* ---- Form Panel ---- */}
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
           {/* Type & Template */}
           <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-5 space-y-4">
             <h2 className="font-semibold text-lg flex items-center gap-2"><Sparkles className="w-5 h-5 text-purple-500" /> Type & Style</h2>
@@ -207,7 +207,7 @@ export function CertificateMakerTool() {
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">Template Style</label>
-              <div className="grid grid-cols-5 gap-2">
+              <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
                 {TEMPLATES.map(t => (
                   <button key={t.id} onClick={() => setTemplateId(t.id)}
                     className={`rounded-lg border-2 p-2 text-xs font-medium transition-all ${templateId === t.id ? 'border-purple-500 ring-2 ring-purple-200 dark:ring-purple-800' : 'border-gray-200 dark:border-gray-600 hover:border-gray-400'}`}>
@@ -250,8 +250,8 @@ export function CertificateMakerTool() {
             )}
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex gap-3">
+          {/* Action Buttons — hidden on mobile (shown near preview instead) */}
+          <div className="hidden lg:flex gap-3">
             <button onClick={handleDownload} disabled={downloading}
               className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 transition-colors disabled:opacity-50">
               <Download className="w-5 h-5" /> {downloading ? 'Generating...' : 'Download PNG'}
@@ -264,10 +264,21 @@ export function CertificateMakerTool() {
         </div>
 
         {/* ---- Preview Panel ---- */}
-        <div className="space-y-3">
+        <div className="space-y-3 order-1 lg:order-2">
           <h2 className="font-semibold text-lg flex items-center gap-2"><Award className="w-5 h-5 text-amber-500" /> Live Preview</h2>
-          <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-900 p-4">
+          <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-900 p-2 sm:p-4">
             <ScaledPreview data={data} template={template} certType={certType} />
+          </div>
+          {/* Mobile download buttons */}
+          <div className="flex gap-2 lg:hidden">
+            <button onClick={handleDownload} disabled={downloading}
+              className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 transition-colors disabled:opacity-50">
+              <Download className="w-5 h-5" /> {downloading ? 'Generating...' : 'Download PNG'}
+            </button>
+            <button onClick={handleReset}
+              className="flex items-center gap-2 rounded-xl border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 font-medium py-3 px-4 transition-colors">
+              <RotateCcw className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </div>

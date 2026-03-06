@@ -272,9 +272,9 @@ export function GreetingCardMakerTool() {
         <div className="lg:col-span-2 space-y-2.5 sm:space-y-4 order-2 lg:order-1">
 
           {/* Template Grid — collapsible on mobile */}
-          <div>
+          <div className="-mx-4 sm:mx-0">
             <button onClick={() => setShowTemplates(!showTemplates)}
-              className="lg:hidden w-full flex items-center justify-between px-3 py-2.5 bg-slate-100 dark:bg-slate-800 rounded-lg text-xs font-medium text-slate-700 dark:text-slate-300">
+              className="lg:hidden w-full flex items-center justify-between px-4 sm:px-3 py-3 sm:py-2.5 bg-slate-100 dark:bg-slate-800 sm:rounded-lg text-xs font-medium text-slate-700 dark:text-slate-300">
               <span className="flex items-center gap-1.5"><Grid3X3 className="w-3.5 h-3.5" /> Choose Template</span>
               <span className="flex items-center gap-1 text-[10px] text-purple-600">
                 {showTemplates ? 'Hide' : `${filteredTemplates.length} designs`}
@@ -285,7 +285,7 @@ export function GreetingCardMakerTool() {
               <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Choose Template</label>
               <span className="text-[10px] text-slate-400">{filteredTemplates.length} designs</span>
             </div>
-            <div className={`${showTemplates ? 'grid mt-2' : 'hidden lg:grid'} grid-cols-4 sm:grid-cols-5 lg:grid-cols-3 gap-1.5 sm:gap-2 max-h-52 sm:max-h-56 overflow-y-auto`}>
+            <div className={`${showTemplates ? 'grid mt-2' : 'hidden lg:grid'} grid-cols-4 sm:grid-cols-5 lg:grid-cols-3 gap-1.5 sm:gap-2 max-h-52 sm:max-h-56 overflow-y-auto px-4 sm:px-0`}>
               {filteredTemplates.map(t => (
                 <button key={t.id} onClick={() => { selectTemplate(t); setShowTemplates(false); }}
                   className={`rounded-lg overflow-hidden transition-all ${selectedTemplate.id === t.id ? 'ring-2 ring-purple-500 scale-[1.03] shadow-lg' : 'ring-1 ring-slate-200 dark:ring-slate-700 hover:ring-purple-300'}`}>
@@ -302,11 +302,13 @@ export function GreetingCardMakerTool() {
           </div>
 
           {/* Mobile toggle for editor fields */}
-          <button onClick={() => setShowEditor(!showEditor)}
-            className="lg:hidden w-full flex items-center justify-between px-3 py-2.5 bg-purple-50 dark:bg-purple-900/30 border border-purple-200 dark:border-purple-800 rounded-lg text-xs font-medium text-purple-700 dark:text-purple-300">
-            <span className="flex items-center gap-1.5"><PenLine className="w-3.5 h-3.5" /> Customize Text & Style</span>
-            {showEditor ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
-          </button>
+          <div className="-mx-4 sm:mx-0">
+            <button onClick={() => setShowEditor(!showEditor)}
+              className="lg:hidden w-full flex items-center justify-between px-4 sm:px-3 py-3 sm:py-2.5 bg-purple-50 dark:bg-purple-900/30 border-y sm:border border-purple-200 dark:border-purple-800 sm:rounded-lg text-xs font-medium text-purple-700 dark:text-purple-300">
+              <span className="flex items-center gap-1.5"><PenLine className="w-3.5 h-3.5" /> Customize Text & Style</span>
+              {showEditor ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+            </button>
+          </div>
 
           {/* Editor Fields */}
           <div className={`space-y-3 ${showEditor ? '' : 'hidden lg:block'}`}>
@@ -384,8 +386,8 @@ export function GreetingCardMakerTool() {
 
         {/* Right Panel — Preview + Actions (on mobile: shows FIRST via order) */}
         <div className="lg:col-span-3 space-y-2.5 sm:space-y-4 order-1 lg:order-2">
-          {/* Preview — no extra wrapper/padding on mobile */}
-          <div className="sm:bg-slate-100 sm:dark:bg-slate-800/50 sm:rounded-xl sm:p-4">
+          {/* Preview — bleed edge-to-edge on mobile */}
+          <div className="-mx-4 sm:mx-0 sm:bg-slate-100 sm:dark:bg-slate-800/50 sm:rounded-xl sm:p-4">
             <div className="hidden sm:flex items-center justify-between mb-3">
               <h3 className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Live Preview</h3>
               <span className="text-[10px] text-slate-400">{selectedTemplate.name}</span>
@@ -394,7 +396,7 @@ export function GreetingCardMakerTool() {
           </div>
 
           {/* Action Buttons */}
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 -mx-4 px-4 sm:mx-0 sm:px-0">
             <button onClick={handleDownload} disabled={downloading}
               className="flex items-center justify-center gap-1.5 px-3 py-2.5 sm:py-3 rounded-xl bg-purple-600 text-white text-xs sm:text-sm font-medium hover:bg-purple-700 transition-colors disabled:opacity-50">
               {downloading ? (

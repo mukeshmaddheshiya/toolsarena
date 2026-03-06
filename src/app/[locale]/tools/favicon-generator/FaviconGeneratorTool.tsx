@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { Image, Type, Download, Copy, Upload, Check } from 'lucide-react';
+import { Image, Type, Download, Copy, Upload, Check, Archive } from 'lucide-react';
 
 type Mode = 'image' | 'text';
 
@@ -123,6 +123,30 @@ export function FaviconGeneratorTool() {
     await navigator.clipboard.writeText(htmlTags);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const [zipping, setZipping] = useState(false);
+
+  const downloadZip = async () => {
+    if (!hasPreviews) return;
+    setZipping(true);
+    try {
+      const JSZip = (await import('jszip')).default;
+      const zip = new JSZip();
+      for (const size of SIZES) {
+        const dataUrl = previews[size];
+        if (!dataUrl) continue;
+        const base64 = dataUrl.split(',')[1];
+        zip.file(`favicon-${size}x${size}.png`, base64, { base64: true });
+      }
+      const blob = await zip.generateAsync({ type: 'blob' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'favicons.zip';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    } catch (e) { console.error('ZIP failed:', e); }
+    finally { setZipping(false); }
   };
 
   const hasPreviews = Object.keys(previews).length > 0;
@@ -312,13 +336,13 @@ export function FaviconGeneratorTool() {
           <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">
             Generated Favicons
           </h2>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-3 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {SIZES.map((size) => (
               <div
                 key={size}
-                className="flex flex-col items-center gap-2 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800"
+                className="flex flex-col items-center gap-2 rounded-xl border border-gray-200 bg-white p-3 sm:p-4 dark:border-gray-700 dark:bg-gray-800"
               >
-                <div className="flex h-20 w-20 items-center justify-center">
+                <div className="flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center">
                   {previews[size] && (
                     <img
                       src={previews[size]}
@@ -328,12 +352,12 @@ export function FaviconGeneratorTool() {
                     />
                   )}
                 </div>
-                <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
+                <span className="text-[10px] sm:text-xs font-medium text-gray-500 dark:text-gray-400">
                   {size}x{size}
                 </span>
                 <button
                   onClick={() => downloadPng(size)}
-                  className="flex items-center gap-1 rounded-lg bg-purple-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-purple-700"
+                  className="flex items-center gap-1 rounded-lg bg-purple-600 px-2.5 py-1.5 text-[10px] sm:text-xs font-medium text-white transition hover:bg-purple-700"
                 >
                   <Download className="h-3 w-3" />
                   PNG
@@ -341,6 +365,16 @@ export function FaviconGeneratorTool() {
               </div>
             ))}
           </div>
+
+          {/* Download All as ZIP */}
+          <button
+            onClick={downloadZip}
+            disabled={zipping}
+            className="w-full flex items-center justify-center gap-2 rounded-xl bg-purple-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-700 disabled:opacity-50"
+          >
+            <Archive className="h-4 w-4" />
+            {zipping ? 'Creating ZIP...' : 'Download All Sizes as ZIP'}
+          </button>
         </div>
       )}
 

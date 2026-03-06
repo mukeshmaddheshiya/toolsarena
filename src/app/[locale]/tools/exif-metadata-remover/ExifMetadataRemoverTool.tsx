@@ -3,7 +3,7 @@ import { useState, useCallback, useRef } from 'react';
 import { FileDropzone } from '@/components/tools/FileDropzone';
 import { DownloadButton } from '@/components/common/DownloadButton';
 import { formatFileSize, downloadBlob } from '@/lib/utils';
-import { ShieldCheck, Trash2, RotateCcw, Loader2, ImageDown, Info } from 'lucide-react';
+import { ShieldCheck, Trash2, RotateCcw, Loader2, ImageDown, Info, Download } from 'lucide-react';
 
 interface ProcessedImage {
   originalFile: File;
@@ -229,10 +229,11 @@ export function ExifMetadataRemoverTool() {
             {images.map((r, i) => {
               const cleanName = r.originalFile.name.replace(/\.[^.]+$/, '') + `-clean.${ext}`;
               return (
-                <div key={i} className="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
-                  <div className="flex items-center gap-4">
+                <div key={i} className="p-3 sm:p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+                  {/* Mobile: stacked layout */}
+                  <div className="flex items-start gap-3">
                     <img src={r.cleanedUrl} alt={r.originalFile.name}
-                      className="w-16 h-16 object-cover rounded-lg shrink-0 border border-slate-200 dark:border-slate-700" />
+                      className="w-14 h-14 sm:w-16 sm:h-16 object-cover rounded-lg shrink-0 border border-slate-200 dark:border-slate-700" />
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-slate-900 dark:text-slate-100 text-sm truncate">
                         {r.originalFile.name}
@@ -240,35 +241,41 @@ export function ExifMetadataRemoverTool() {
                       <p className="text-xs text-slate-500 mt-0.5">
                         {r.width} x {r.height}px &middot; {r.originalFile.type.split('/')[1].toUpperCase()}
                       </p>
-                      <div className="flex flex-wrap items-center gap-2 mt-1.5">
+                      <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
                         <span className="text-xs text-slate-500">
-                          Original: <strong>{formatFileSize(r.originalFile.size)}</strong>
+                          {formatFileSize(r.originalFile.size)}
                         </span>
                         <span className="text-slate-400 text-xs">&rarr;</span>
-                        <span className="text-xs text-green-600 dark:text-green-400">
-                          Cleaned: <strong>{formatFileSize(r.cleanedBlob.size)}</strong>
+                        <span className="text-xs text-green-600 dark:text-green-400 font-medium">
+                          {formatFileSize(r.cleanedBlob.size)}
                         </span>
                         {r.sizeDiff > 0 && (
                           <span className="text-xs font-bold px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
                             -{formatFileSize(r.sizeDiff)}
                           </span>
                         )}
-                        <span className={`inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full ${
+                      </div>
+                      <div className="flex flex-wrap gap-1.5 mt-2">
+                        <span className={`inline-flex items-center gap-1 text-[10px] sm:text-xs font-semibold px-1.5 sm:px-2 py-0.5 rounded-full ${
                           r.hasExif
                             ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'
                             : 'bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-400'
                         }`}>
                           <Trash2 className="w-3 h-3" />
-                          {r.hasExif ? 'EXIF removed' : 'No EXIF found'}
+                          {r.hasExif ? 'EXIF removed' : 'No EXIF'}
                         </span>
-                        <span className="inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
-                          <ShieldCheck className="w-3 h-3" />Metadata stripped
+                        <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-semibold px-1.5 sm:px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
+                          <ShieldCheck className="w-3 h-3" />Clean
                         </span>
                       </div>
                     </div>
-                    <div className="shrink-0">
-                      <DownloadButton onClick={() => downloadBlob(r.cleanedBlob, cleanName)} label="Download" />
-                    </div>
+                  </div>
+                  {/* Download button — full width on mobile */}
+                  <div className="mt-3">
+                    <button onClick={() => downloadBlob(r.cleanedBlob, cleanName)}
+                      className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 bg-primary-800 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors">
+                      <Download className="w-4 h-4" /> Download
+                    </button>
                   </div>
                 </div>
               );

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef, forwardRef } from 'react';
+import { useState, useCallback, useRef, useEffect, forwardRef } from 'react';
 import {
   FileText, Download, Building2, User, RotateCcw, Upload, IndianRupee,
   Briefcase, CreditCard, Calendar,
@@ -224,7 +224,7 @@ SalarySlipPreview.displayName = 'SalarySlipPreview';
 function Field({ label, icon, children }: { label: string; icon?: React.ReactNode; children: React.ReactNode }) {
   return (
     <label className="block">
-      <span className="text-sm font-medium text-gray-700 flex items-center gap-1.5 mb-1">
+      <span className="text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center gap-1.5 mb-1">
         {icon}{label}
       </span>
       {children}
@@ -232,8 +232,35 @@ function Field({ label, icon, children }: { label: string; icon?: React.ReactNod
   );
 }
 
-const inputCls = 'w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition';
+const inputCls = 'w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 dark:text-gray-100 px-3 py-2 text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition';
 const selectCls = inputCls;
+
+/* ------------------------------------------------------------------ */
+/*  SCALED PREVIEW WRAPPER                                             */
+/* ------------------------------------------------------------------ */
+
+function ScaledSlipPreview(props: SlipProps & { slipRef: React.RefObject<HTMLDivElement | null> }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const ro = new ResizeObserver(() => setScale(Math.min(container.clientWidth / 700, 1)));
+    ro.observe(container);
+    return () => ro.disconnect();
+  }, []);
+
+  const { slipRef, ...slipProps } = props;
+
+  return (
+    <div ref={containerRef} className="w-full overflow-hidden">
+      <div style={{ width: 700, transform: `scale(${scale})`, transformOrigin: 'top left', height: 'auto' }}>
+        <SalarySlipPreview ref={slipRef} {...slipProps} />
+      </div>
+    </div>
+  );
+}
 
 /* ------------------------------------------------------------------ */
 /*  MAIN COMPONENT                                                     */
@@ -314,26 +341,26 @@ export function SalarySlipGeneratorTool() {
   const uDed = (k: keyof Deductions, v: number | string) => setDeductions(p => ({ ...p, [k]: v }));
 
   return (
-    <div className="min-h-screen">
+    <div className="space-y-5">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-600 to-emerald-700 text-white py-12 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/20 mb-4">
-            <FileText className="w-8 h-8" />
+      <div className="rounded-xl bg-gradient-to-br from-green-600 to-emerald-700 text-white p-5 sm:p-8">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
+            <FileText className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">Salary Slip Generator</h1>
-          <p className="text-green-100 max-w-xl mx-auto">
-            Generate professional salary slips / payslips instantly. Fill in the details and download as PNG or PDF.
-          </p>
+          <div>
+            <h2 className="text-lg sm:text-xl font-bold">Salary Slip Generator</h2>
+            <p className="text-green-100 text-xs sm:text-sm mt-0.5">Fill in details and download as PNG or PDF</p>
+          </div>
         </div>
-      </section>
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-8 grid lg:grid-cols-[420px_1fr] gap-8">
+      <div className="grid lg:grid-cols-[1fr_1fr] gap-5 lg:gap-8">
         {/* ---- LEFT: FORM ---- */}
         <div className="space-y-6">
           {/* Company */}
-          <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-3">
-            <h2 className="font-semibold text-gray-800 flex items-center gap-2"><Building2 className="w-4 h-4 text-green-600" /> Company Details</h2>
+          <div className="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-5 space-y-3">
+            <h2 className="font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2"><Building2 className="w-4 h-4 text-green-600" /> Company Details</h2>
             <Field label="Company Name"><input className={inputCls} value={company.name} onChange={e => uc('name', e.target.value)} placeholder="Acme Pvt Ltd" /></Field>
             <Field label="Address"><input className={inputCls} value={company.address} onChange={e => uc('address', e.target.value)} placeholder="123 Business Park, City" /></Field>
             <Field label="Logo (optional)" icon={<Upload className="w-3.5 h-3.5" />}>
@@ -342,9 +369,9 @@ export function SalarySlipGeneratorTool() {
           </div>
 
           {/* Employee */}
-          <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-3">
-            <h2 className="font-semibold text-gray-800 flex items-center gap-2"><User className="w-4 h-4 text-green-600" /> Employee Details</h2>
-            <div className="grid grid-cols-2 gap-3">
+          <div className="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-5 space-y-3">
+            <h2 className="font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2"><User className="w-4 h-4 text-green-600" /> Employee Details</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
               <Field label="Full Name"><input className={inputCls} value={employee.name} onChange={e => ue('name', e.target.value)} placeholder="John Doe" /></Field>
               <Field label="Employee ID"><input className={inputCls} value={employee.employeeId} onChange={e => ue('employeeId', e.target.value)} placeholder="EMP-001" /></Field>
               <Field label="Designation"><input className={inputCls} value={employee.designation} onChange={e => ue('designation', e.target.value)} placeholder="Software Engineer" /></Field>
@@ -355,9 +382,9 @@ export function SalarySlipGeneratorTool() {
           </div>
 
           {/* Pay Period */}
-          <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-3">
-            <h2 className="font-semibold text-gray-800 flex items-center gap-2"><Calendar className="w-4 h-4 text-green-600" /> Pay Period</h2>
-            <div className="grid grid-cols-2 gap-3">
+          <div className="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-5 space-y-3">
+            <h2 className="font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2"><Calendar className="w-4 h-4 text-green-600" /> Pay Period</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
               <Field label="Month">
                 <select className={selectCls} value={month} onChange={e => setMonth(e.target.value)}>
                   {MONTHS.map(m => <option key={m} value={m}>{m}</option>)}
@@ -372,8 +399,8 @@ export function SalarySlipGeneratorTool() {
           </div>
 
           {/* Earnings */}
-          <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-3">
-            <h2 className="font-semibold text-gray-800 flex items-center gap-2"><IndianRupee className="w-4 h-4 text-green-600" /> Earnings</h2>
+          <div className="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-5 space-y-3">
+            <h2 className="font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2"><IndianRupee className="w-4 h-4 text-green-600" /> Earnings</h2>
             <Field label="Basic Salary">
               <input type="number" min={0} className={inputCls} value={earnings.basic || ''} onChange={e => uEarn('basic', +e.target.value)} placeholder="0" />
             </Field>
@@ -390,20 +417,20 @@ export function SalarySlipGeneratorTool() {
                 }
               </div>
             </Field>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
               <Field label="Conveyance"><input type="number" min={0} className={inputCls} value={earnings.conveyance || ''} onChange={e => uEarn('conveyance', +e.target.value)} /></Field>
               <Field label="Medical"><input type="number" min={0} className={inputCls} value={earnings.medical || ''} onChange={e => uEarn('medical', +e.target.value)} /></Field>
               <Field label="Special Allowance"><input type="number" min={0} className={inputCls} value={earnings.special || ''} onChange={e => uEarn('special', +e.target.value)} /></Field>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
               <Field label="Other (Label)"><input className={inputCls} value={earnings.otherLabel} onChange={e => uEarn('otherLabel', e.target.value)} placeholder="e.g. Bonus" /></Field>
               <Field label="Other (Amount)"><input type="number" min={0} className={inputCls} value={earnings.otherAmount || ''} onChange={e => uEarn('otherAmount', +e.target.value)} /></Field>
             </div>
           </div>
 
           {/* Deductions */}
-          <div className="bg-white rounded-xl border border-gray-200 p-5 space-y-3">
-            <h2 className="font-semibold text-gray-800 flex items-center gap-2"><CreditCard className="w-4 h-4 text-green-600" /> Deductions</h2>
+          <div className="bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-5 space-y-3">
+            <h2 className="font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2"><CreditCard className="w-4 h-4 text-green-600" /> Deductions</h2>
             <Field label="Provident Fund (PF)">
               <div className="flex gap-2 items-center">
                 <select className={selectCls + ' max-w-[130px]'} value={deductions.pfMode} onChange={e => uDed('pfMode', e.target.value)}>
@@ -416,26 +443,26 @@ export function SalarySlipGeneratorTool() {
                 }
               </div>
             </Field>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
               <Field label="Professional Tax"><input type="number" min={0} className={inputCls} value={deductions.professionalTax || ''} onChange={e => uDed('professionalTax', +e.target.value)} /></Field>
               <Field label="Income Tax (TDS)"><input type="number" min={0} className={inputCls} value={deductions.tds || ''} onChange={e => uDed('tds', +e.target.value)} /></Field>
               <Field label="ESI"><input type="number" min={0} className={inputCls} value={deductions.esi || ''} onChange={e => uDed('esi', +e.target.value)} placeholder="0 if N/A" /></Field>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
               <Field label="Other (Label)"><input className={inputCls} value={deductions.otherLabel} onChange={e => uDed('otherLabel', e.target.value)} placeholder="e.g. Loan EMI" /></Field>
               <Field label="Other (Amount)"><input type="number" min={0} className={inputCls} value={deductions.otherAmount || ''} onChange={e => uDed('otherAmount', +e.target.value)} /></Field>
             </div>
           </div>
 
           {/* Actions */}
-          <div className="flex flex-wrap gap-3">
-            <button onClick={downloadPNG} disabled={downloading} className="flex-1 min-w-[140px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-xl transition disabled:opacity-50">
-              <Download className="w-4 h-4" />{downloading ? 'Generating...' : 'Download PNG'}
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-3">
+            <button onClick={downloadPNG} disabled={downloading} className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-4 rounded-xl transition disabled:opacity-50 text-sm">
+              <Download className="w-4 h-4" />{downloading ? 'Saving...' : 'PNG'}
             </button>
-            <button onClick={downloadPDF} disabled={downloading} className="flex-1 min-w-[140px] flex items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-2.5 px-4 rounded-xl transition disabled:opacity-50">
-              <FileText className="w-4 h-4" />{downloading ? 'Generating...' : 'Download PDF'}
+            <button onClick={downloadPDF} disabled={downloading} className="flex items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-2.5 px-4 rounded-xl transition disabled:opacity-50 text-sm">
+              <FileText className="w-4 h-4" />{downloading ? 'Saving...' : 'PDF'}
             </button>
-            <button onClick={reset} className="flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-2.5 px-4 rounded-xl transition">
+            <button onClick={reset} className="col-span-2 sm:col-span-1 flex items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 font-medium py-2.5 px-4 rounded-xl transition text-sm">
               <RotateCcw className="w-4 h-4" /> Reset
             </button>
           </div>
@@ -443,12 +470,12 @@ export function SalarySlipGeneratorTool() {
 
         {/* ---- RIGHT: LIVE PREVIEW ---- */}
         <div className="space-y-3">
-          <h2 className="font-semibold text-gray-800 flex items-center gap-2">
+          <h2 className="font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <Briefcase className="w-4 h-4 text-green-600" /> Live Preview
           </h2>
-          <div className="overflow-auto rounded-xl border border-gray-200 bg-gray-50 p-4">
-            <SalarySlipPreview
-              ref={slipRef}
+          <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 p-2 sm:p-4 overflow-hidden">
+            <ScaledSlipPreview
+              slipRef={slipRef}
               company={company}
               employee={employee}
               earnings={earnings}
