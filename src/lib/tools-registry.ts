@@ -447,6 +447,28 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     estimatedTime: 'Instant',
   },
   {
+    slug: 'css-flexbox-generator',
+    name: 'CSS Flexbox Generator',
+    shortDescription: 'Build CSS flexbox layouts visually with a live interactive playground.',
+    longDescription: 'Interactive CSS Flexbox playground with real-time preview. Control flex-direction, justify-content, align-items, flex-wrap, and gap on the container. Customize per-item properties like flex-grow, flex-shrink, flex-basis, align-self, and order. Includes layout presets (Navbar, Card Grid, Holy Grail, Centered, Sidebar). Copy production-ready CSS instantly.',
+    category: 'developer-tools',
+    targetKeyword: 'CSS flexbox generator',
+    secondaryKeywords: ['flexbox playground', 'css flex generator online', 'flexbox layout builder', 'flexbox cheat sheet visual', 'css flex tool'],
+    metaTitle: 'CSS Flexbox Generator - Free Visual Flexbox Playground',
+    metaDescription: 'Build CSS flexbox layouts visually with live preview. Control direction, justify, align, wrap, gap, and per-item properties. Layout presets included. Copy CSS instantly.',
+    faqs: [
+      { question: 'What is CSS Flexbox?', answer: 'Flexbox is a CSS layout model that lets you distribute space and align items in a container, even when their sizes are unknown or dynamic.' },
+      { question: 'What does justify-content do?', answer: 'justify-content aligns flex items along the main axis (horizontal for row, vertical for column). Options include flex-start, center, space-between, space-around, and space-evenly.' },
+      { question: 'What is the difference between align-items and align-self?', answer: 'align-items is set on the container and applies to all items. align-self overrides this alignment for a single item.' },
+      { question: 'What does flex-grow do?', answer: 'flex-grow determines how much an item should grow relative to siblings when extra space is available. A value of 0 means no growth; 1 means it takes its share of available space.' },
+      { question: 'Can I use these presets in my project?', answer: 'Yes! Click any preset to load a common layout pattern, then copy the generated CSS and paste it into your project.' },
+    ],
+    howToSteps: ['Select container properties: direction, justify-content, align-items, wrap, and gap.', 'Add or remove flex items (1-12).', 'Click an item to expand per-item controls (grow, shrink, basis, align-self, order).', 'Try a preset for common layouts like Navbar or Card Grid.', 'Copy the generated CSS with one click.'],
+    relatedToolSlugs: ['box-shadow-generator', 'css-gradient-generator', 'html-css-js-editor', 'css-minifier'],
+    icon: 'LayoutGrid',
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'countdown-timer',
     name: 'Countdown Timer',
     shortDescription: 'A simple, beautiful countdown timer with circular progress and presets.',
@@ -3416,6 +3438,40 @@ Download your collage as a high-quality PNG image. Perfect for social media post
     estimatedTime: '1 minute',
   },
   {
+    slug: 'compress-image-to-kb',
+    name: 'Compress Image to KB',
+    shortDescription: 'Compress any image to an exact target file size in KB — 50 KB, 100 KB, 200 KB, or any custom size.',
+    longDescription: `Compress any image to an exact target file size in KB with our free online tool. Need to compress an image to exactly 50 KB, 100 KB, or 200 KB for a form upload, email attachment, or website requirement? This tool uses a smart binary search algorithm to find the perfect JPEG quality setting that produces a file as close as possible to your target size.
+
+Upload your JPG, PNG, or WebP image, enter your desired file size in KB, and the tool automatically iterates through quality levels (up to 20 iterations) to find the closest match. You get full details: the resulting file size, JPEG quality used, compression percentage, and iteration count.
+
+All processing happens entirely in your browser using the HTML5 Canvas API — your images are never uploaded to any server. No watermarks, no signup, no limits. Perfect for government form uploads, job applications, passport photo submissions, and any scenario where exact file size matters.`,
+    category: 'image-tools',
+    targetKeyword: 'compress image to kb',
+    secondaryKeywords: ['compress image to 50kb', 'compress image to 100kb', 'compress image to 200kb', 'reduce image to exact size', 'image size reducer kb', 'compress photo to kb online', 'resize image to kb'],
+    metaTitle: 'Compress Image to Exact KB Size — 50KB, 100KB, 200KB | Free Online',
+    metaDescription: 'Compress any image to an exact file size in KB. Target 50KB, 100KB, 200KB or custom. Free online tool — no watermark, no upload, privacy-first.',
+    faqs: [
+      { question: 'How accurate is the target file size?', answer: 'The tool uses binary search with up to 20 iterations to find the JPEG quality that produces a file size within 1% of your target. In most cases, the result is within a few KB of the target.' },
+      { question: 'What image formats are supported?', answer: 'You can upload JPG, PNG, and WebP images. The compressed output is always in JPEG format since JPEG allows quality-based compression for precise file size control.' },
+      { question: 'Why is the output always JPEG?', answer: 'JPEG compression allows fine-grained quality control (1-100%), making it possible to target a specific file size. PNG uses lossless compression and does not support quality-based size targeting.' },
+      { question: 'What if my target size is too small?', answer: 'If the target is very small (e.g., 5 KB for a large image), the tool will compress to the lowest possible quality. The result may be visually degraded but will be as close to the target as possible.' },
+      { question: 'Are my images uploaded to a server?', answer: 'No. All compression happens in your browser using the Canvas API. Your images never leave your device, ensuring complete privacy.' },
+    ],
+    howToSteps: [
+      'Upload an image by dragging and dropping or clicking the upload area.',
+      'Enter your desired target file size in KB (e.g., 50, 100, 200).',
+      'Click "Compress" to start the binary search compression.',
+      'View the result: compressed size, quality used, reduction percentage, and iterations.',
+      'Download the compressed image with one click.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'png-to-jpg', 'jpg-to-png', 'passport-photo-maker'],
+    icon: 'ImageDown',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: '3-10 seconds',
+  },
+  {
     slug: 'paraphrasing-tool',
     name: 'Paraphrasing Tool',
     shortDescription: 'Rewrite text in 6 styles — Standard, Formal, Casual, Shorter, Longer, Creative.',
@@ -3483,6 +3539,44 @@ Download all receipts as a single PDF file — ready to submit to your employer 
     icon: 'Receipt',
     isNew: true,
     estimatedTime: 'Under 1 min',
+  },
+  {
+    slug: 'salary-slip-generator',
+    name: 'Salary Slip Generator',
+    shortDescription: 'Generate professional salary slips / payslips with earnings, deductions & net pay. Download as PNG or PDF.',
+    longDescription: `Create professional salary slips (payslips) instantly with the ToolsArena Salary Slip Generator. Fill in company details, employee information, earnings, and deductions — and download a clean, well-formatted salary slip as PNG or PDF.
+
+The tool auto-calculates HRA (40% or 50% of basic salary) and Provident Fund (12% of basic) with options to override with custom amounts. Add all standard Indian salary components including Basic Salary, HRA, Conveyance Allowance, Medical Allowance, Special Allowance, Professional Tax, TDS, and ESI.
+
+Everything runs 100% in your browser — no data is sent to any server. Your employee details, salary figures, and company information stay completely private. Perfect for HR departments, small businesses, startups, and freelancers who need to generate monthly payslips quickly.
+
+Features include live preview, company logo upload, custom earning/deduction line items, and instant PNG or PDF download. The generated salary slip includes company header, employee details grid, earnings and deductions table, net pay summary, and authorized signatory line.`,
+    category: 'utility-tools',
+    targetKeyword: 'salary slip generator',
+    secondaryKeywords: ['salary slip generator online', 'payslip generator free', 'salary slip format PDF', 'salary slip maker', 'pay slip download', 'salary slip template India'],
+    metaTitle: 'Salary Slip Generator - Free Payslip Maker | Download PNG & PDF',
+    metaDescription: 'Generate professional salary slips online for free. Add earnings, deductions, company logo & download as PNG or PDF. No signup required — 100% private.',
+    faqs: [
+      { question: 'Is this salary slip generator free?', answer: 'Yes, completely free with no signup required. Generate unlimited salary slips and download them as PNG or PDF.' },
+      { question: 'Is my salary data safe?', answer: 'Absolutely. Everything runs in your browser. No data is sent to any server — your salary details, employee information, and company data remain 100% private.' },
+      { question: 'What is HRA and how is it calculated?', answer: 'HRA (House Rent Allowance) is a salary component for rental expenses. It is typically 50% of basic salary for metro cities or 40% for non-metro cities. You can also enter a custom amount.' },
+      { question: 'What is PF deduction?', answer: 'PF (Provident Fund) is a retirement savings deduction. The standard employee contribution is 12% of basic salary. You can override this with a custom amount.' },
+      { question: 'Can I add a company logo?', answer: 'Yes, you can upload your company logo (PNG, JPG, SVG) and it will appear on the salary slip header.' },
+      { question: 'Can I add custom earnings or deductions?', answer: 'Yes, each section has an "Other" field where you can add a custom label and amount for any additional earning or deduction.' },
+    ],
+    howToSteps: [
+      'Enter your company name, address, and optionally upload a logo.',
+      'Fill in employee details — name, ID, designation, department, PAN, and bank account.',
+      'Select the pay period (month and year).',
+      'Enter earnings — basic salary, HRA (auto or custom), allowances, and any other earnings.',
+      'Enter deductions — PF (auto or custom), professional tax, TDS, ESI, and any other deductions.',
+      'Review the live preview on the right side.',
+      'Click "Download PNG" or "Download PDF" to save your salary slip.',
+    ],
+    relatedToolSlugs: ['invoice-generator', 'rent-receipt-generator', 'hra-calculator', 'salary-calculator', 'tax-regime-calculator'],
+    icon: 'FileText',
+    isNew: true,
+    estimatedTime: 'Under 2 min',
   },
   {
     slug: 'whatsapp-link-generator',
@@ -3817,6 +3911,411 @@ Browse fund category guidelines — Large Cap (10-12%), Mid Cap (12-15%), Small 
     icon: 'PartyPopper',
     isNew: true,
     estimatedTime: '2 minutes',
+  },
+  {
+    slug: 'cgpa-to-percentage',
+    name: 'CGPA to Percentage Converter',
+    shortDescription: 'Convert CGPA to percentage for 10-point (Indian), 4-point (US), 5-point, and 7-point (Australian) grading scales.',
+    longDescription: `Convert your CGPA to percentage instantly with support for all major grading systems worldwide. Whether you follow the Indian 10-point scale, the US 4.0 GPA system, the 5-point scale, or the Australian 7-point scale — get accurate percentage equivalents in one click.
+
+**Key features:**
+- **Multiple grading scales**: 10-point (CBSE, VTU, Anna University), 4-point (US GPA), 5-point, and 7-point (Australian).
+- **Live conversion**: Adjust CGPA with a slider or number input and see percentage update in real-time.
+- **Grade letter display**: See your grade (A+, A, B+, etc.) with color coding.
+- **Cross-conversion table**: View equivalent GPA on all other scales simultaneously.
+- **Grade chart**: Full grade range table for the selected scale.
+- **SGPA to CGPA calculator**: Enter semester-wise SGPAs to compute cumulative CGPA and equivalent percentage.
+
+Uses the standard Indian formula (CGPA x 9.5) and standard mapping tables for other systems. 100% browser-based — no data stored.`,
+    category: 'calculators',
+    targetKeyword: 'cgpa to percentage',
+    secondaryKeywords: ['cgpa to percentage calculator', 'gpa to percentage', 'cgpa converter', 'sgpa to cgpa calculator', '10 point cgpa to percentage', 'cbse cgpa to percentage', 'us gpa to percentage', 'australian gpa to percentage'],
+    metaTitle: 'CGPA to Percentage Converter - All Grading Scales',
+    metaDescription: 'Free CGPA to percentage converter for 10-point (Indian), 4-point (US), 5-point, and 7-point (Australian) scales. Includes SGPA to CGPA calculator and grade charts.',
+    faqs: [
+      { question: 'How is CGPA converted to percentage in India?', answer: 'Most Indian universities (including CBSE) use the formula: Percentage = CGPA x 9.5. For example, a CGPA of 8.5 equals 80.75%. Some institutions may use slightly different multipliers.' },
+      { question: 'How do I convert US GPA to percentage?', answer: 'The US 4.0 GPA system does not have a direct formula. It uses a standard mapping table where 4.0 = ~97%, 3.0 = ~87%, 2.0 = ~77%, etc. This tool uses interpolation for values in between.' },
+      { question: 'What is the difference between SGPA and CGPA?', answer: 'SGPA (Semester Grade Point Average) is for a single semester. CGPA (Cumulative Grade Point Average) is the average of all semester SGPAs, representing your overall academic performance.' },
+      { question: 'Can I use this for CBSE, VTU, or Anna University?', answer: 'Yes! The 10-point scale with the x9.5 formula is used by CBSE, VTU, Anna University, Mumbai University, and most Indian institutions.' },
+    ],
+    howToSteps: [
+      'Select your grading scale (10-point, 4-point, 5-point, or 7-point).',
+      'Enter your CGPA using the slider or number input.',
+      'View your percentage, grade letter, and progress bar instantly.',
+      'Check the cross-conversion table for equivalents on other scales.',
+      'Use the SGPA to CGPA section to calculate cumulative CGPA from semester grades.',
+    ],
+    relatedToolSlugs: ['percentage-calculator', 'average-calculator', 'scientific-calculator', 'number-to-words'],
+    icon: 'GraduationCap',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'favicon-generator',
+    name: 'Favicon Generator',
+    shortDescription: 'Generate favicons from an image or text/emoji. Download PNGs in all standard sizes.',
+    longDescription: `Create perfect favicons for your website from any image or custom text/emoji. Upload a JPG, PNG, SVG, or WebP image, or design one from scratch using text characters and emojis with full control over colors, font, and border radius.
+
+The tool generates favicons in all standard sizes: 16x16, 32x32, 48x48, 180x180 (Apple Touch Icon), 192x192, and 512x512 (PWA). Download individual PNG files and copy the ready-to-use HTML meta tags for your website's <head> section.
+
+Everything runs in your browser using the Canvas API — no uploads to any server. Your images stay private and processing is instant.`,
+    category: 'image-tools',
+    targetKeyword: 'favicon generator',
+    secondaryKeywords: ['favicon maker', 'favicon from image', 'favicon from text', 'favicon creator online', 'generate favicon png'],
+    metaTitle: 'Favicon Generator - Create Favicons from Image or Text/Emoji',
+    metaDescription: 'Generate favicons from any image or text/emoji. Download PNGs in all sizes (16x16 to 512x512). Copy HTML meta tags. Free online favicon maker.',
+    faqs: [
+      { question: 'What sizes do I need for a favicon?', answer: '16x16 and 32x32 are essential for browser tabs. 180x180 is needed for Apple Touch Icon. 192x192 and 512x512 are required for Progressive Web Apps (PWA) and Android home screen icons.' },
+      { question: 'Can I use an emoji as a favicon?', answer: 'Yes! Switch to the "From Text/Emoji" tab and paste any emoji. Customize the background color, border radius, and size to create a unique favicon.' },
+      { question: 'Is my image uploaded to a server?', answer: 'No. All processing happens locally in your browser using the Canvas API. Your image never leaves your device.' },
+      { question: 'What image formats are supported?', answer: 'You can upload JPG, PNG, SVG, or WebP images. The output is always PNG for maximum compatibility.' },
+    ],
+    howToSteps: [
+      'Choose "From Image" to upload a picture, or "From Text/Emoji" to design from scratch.',
+      'For images: drag & drop or click to upload a JPG, PNG, SVG, or WebP file.',
+      'For text: enter 1-2 characters, pick colors, font, and border radius.',
+      'Preview your favicon at all standard sizes.',
+      'Click the download button on any size to save the PNG.',
+      'Copy the HTML meta tags and paste them into your website\'s <head>.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'svg-to-png', 'qr-code-generator', 'meta-tag-generator'],
+    icon: 'Image',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'attendance-calculator',
+    name: 'Attendance Calculator',
+    shortDescription: 'Check your attendance percentage and plan how many classes to attend or skip.',
+    longDescription: `A must-have tool for college students to track and plan attendance. Two powerful modes:
+
+**Check Attendance**: Enter total classes and classes attended to instantly see your current attendance percentage with a color-coded circular progress chart. Status indicators show whether you are in the Safe (>=75%), Warning (65-75%), or Danger (<65%) zone.
+
+**Plan Attendance**: Set a target percentage (75%, 80%, 85%, or 90%) and find out exactly how many more classes you need to attend to reach your goal — or how many you can safely skip while staying above the threshold.
+
+Visual SVG donut chart, real-time calculations, and quick-reference stats cards make it easy to stay on top of your attendance.`,
+    category: 'calculators',
+    targetKeyword: 'attendance calculator',
+    secondaryKeywords: ['college attendance calculator', 'attendance percentage calculator', 'how many classes can I skip', 'attendance tracker', '75 percent attendance calculator'],
+    metaTitle: 'Attendance Calculator - Check & Plan Your College Attendance',
+    metaDescription: 'Free attendance calculator for students. Check your attendance %, find how many classes you can skip or need to attend to reach 75% target. Visual donut chart.',
+    faqs: [
+      { question: 'What is the minimum attendance required in Indian colleges?', answer: 'Most Indian universities following UGC guidelines require a minimum of 75% attendance to be eligible for exams. Some institutions set higher thresholds of 80% or 85%.' },
+      { question: 'How is attendance percentage calculated?', answer: 'Attendance % = (Classes Attended / Total Classes) x 100. For example, attending 90 out of 120 classes gives 75%.' },
+      { question: 'How many classes can I skip and still have 75%?', answer: 'Use the Plan Attendance mode with a 75% target. It will tell you exactly how many classes you can safely miss while maintaining the required percentage.' },
+      { question: 'What happens if my attendance falls below 75%?', answer: 'Consequences vary by institution but may include detention, loss of exam eligibility, grade penalties, or mandatory extra assignments.' },
+    ],
+    howToSteps: [
+      'Enter total classes held so far.',
+      'Enter the number of classes you have attended.',
+      'View your current attendance % and status.',
+      'Switch to Plan Attendance to set a target % and see classes needed or safe to skip.',
+    ],
+    relatedToolSlugs: ['percentage-calculator', 'average-calculator', 'bmi-calculator', 'scientific-calculator'],
+    icon: 'ClipboardCheck',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'binary-hex-octal-converter',
+    name: 'Binary, Hex & Octal Converter',
+    shortDescription: 'Convert numbers between binary, decimal, octal, and hexadecimal instantly.',
+    longDescription: `Convert numbers between binary (base 2), decimal (base 10), octal (base 8), and hexadecimal (base 16) in real time. Type in any field and all other representations update instantly — no button clicks needed.
+
+Supports arbitrarily large numbers using BigInt. See bit-level details including nibble and byte groupings, total bits needed, and whether the number fits in 8-bit, 16-bit, 32-bit, or 64-bit. Quick example chips let you explore common values like 255, 1024, and 65535.
+
+Also includes a Text to Binary section: type any text and see each character's ASCII code, binary, and hex representation in a neat table. Perfect for programmers, students, and anyone working with number systems.`,
+    category: 'converters',
+    targetKeyword: 'binary to hex converter',
+    secondaryKeywords: ['binary to decimal', 'hex to binary', 'octal converter', 'number base converter', 'decimal to binary', 'hex to decimal', 'binary translator', 'base converter'],
+    metaTitle: 'Binary, Hex & Octal Converter - Number Base Converter Online',
+    metaDescription: 'Convert between binary, decimal, octal, and hexadecimal instantly. Supports large numbers, bit analysis, and text-to-binary conversion. Free online tool.',
+    faqs: [
+      { question: 'How large a number can I convert?', answer: 'The tool uses JavaScript BigInt, so it supports numbers of virtually unlimited size — far beyond the 64-bit limit of regular numbers.' },
+      { question: 'What characters are valid for each base?', answer: 'Binary: 0-1. Octal: 0-7. Decimal: 0-9. Hexadecimal: 0-9 and A-F (case insensitive).' },
+      { question: 'Does it handle negative numbers?', answer: 'Currently the tool supports non-negative integers. For negative numbers, convert the absolute value and apply the sign or two\'s complement manually.' },
+      { question: 'What is the Text to Binary section?', answer: 'It converts each character of your text into its ASCII decimal value, 8-bit binary, and 2-digit hex representation — useful for understanding character encoding.' },
+    ],
+    howToSteps: [
+      'Type a number in any field (decimal, binary, octal, or hex).',
+      'All other fields update instantly in real time.',
+      'Use quick example chips to explore common values.',
+      'Check the info cards for bit count, nibble/byte grouping, and size fit.',
+      'Use the Text to Binary section to see character codes for any text.',
+    ],
+    relatedToolSlugs: ['number-to-words', 'base64-encode-decode', 'hex-rgb-converter', 'unit-converter', 'file-size-converter'],
+    icon: 'Binary',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'blur-face-in-photo',
+    name: 'Blur Face in Photo',
+    shortDescription: 'Blur faces or sensitive areas in photos online. Draw rectangles to select regions, adjust blur intensity, and download instantly.',
+    longDescription: `Protect privacy by blurring faces, license plates, or any sensitive areas in your photos. Simply upload an image, draw rectangles over the areas you want to blur, adjust the blur intensity, and download the result.
+
+Select multiple regions to blur at once. Each region is shown as a highlighted overlay so you can see exactly what will be blurred. Use the blur intensity slider to control the strength from subtle (5px) to heavy (50px). Undo individual regions or clear them all.
+
+Everything runs 100% in your browser using the Canvas API — no images are uploaded to any server. Your photos remain completely private and processing is instant.`,
+    category: 'image-tools',
+    targetKeyword: 'blur face in photo online',
+    secondaryKeywords: ['blur face online', 'blur photo face', 'blur image area', 'pixelate face', 'censor photo', 'blur sensitive area in image'],
+    metaTitle: 'Blur Face in Photo Online - Free Privacy Tool',
+    metaDescription: 'Blur faces or sensitive areas in photos online for free. Draw blur regions, adjust intensity, and download instantly. No upload, 100% private.',
+    faqs: [
+      { question: 'Is my photo uploaded to a server?', answer: 'No. All processing happens locally in your browser using the Canvas API. Your photo never leaves your device.' },
+      { question: 'Can I blur multiple faces in one photo?', answer: 'Yes! Draw as many blur rectangles as you need. Each region is numbered and can be individually removed.' },
+      { question: 'What blur intensity should I use?', answer: 'For faces, 15-25px works well. For text or license plates, 30-50px ensures the content is unreadable. Use the slider to preview different levels.' },
+      { question: 'Can I undo a blur region?', answer: 'Yes. Use the "Undo" button to remove the last region, click the X on any individual region, or use "Clear All" to start over. Once you click "Apply Blur", the blur is baked into the image.' },
+      { question: 'What formats are supported?', answer: 'You can upload JPEG, PNG, and WebP images. Download the result as either PNG (lossless) or JPEG (smaller file size).' },
+    ],
+    howToSteps: [
+      'Upload your image by dragging & dropping or clicking the upload area.',
+      'Click and drag on the image to draw rectangles over areas you want to blur.',
+      'Adjust the blur intensity using the slider (5-50px).',
+      'Add multiple blur regions as needed. Remove individual regions with the X button.',
+      'Click "Apply Blur" to process all selected regions.',
+      'Download the result as PNG or JPEG.',
+    ],
+    relatedToolSlugs: ['image-cropper', 'image-compressor', 'image-resizer', 'image-watermark', 'passport-photo-maker', 'image-background-remover'],
+    icon: 'EyeOff',
+    isNew: true,
+    estimatedTime: '10-30 seconds',
+  },
+
+  // ─── CERTIFICATE MAKER ─────────────────────────────────────────────────
+  {
+    slug: 'certificate-maker',
+    name: 'Certificate Maker',
+    shortDescription: 'Create professional certificates online for free. 5 templates, PNG download — no signup.',
+    longDescription: `The ToolsArena Certificate Maker is a free, no-signup tool that lets you create beautiful, professional certificates in seconds. Whether you need a Certificate of Achievement, Appreciation, Completion, Participation, Excellence, or Training — this tool has you covered.
+
+Choose from 5 professionally designed templates: Classic (gold), Modern (blue), Elegant (green), Corporate (navy), and Creative (purple). Each template features ornamental borders, decorative accents, and elegant typography that looks like a real printed certificate.
+
+Fill in the recipient name, certificate title, description, organization name, date, signatory details, and an optional certificate ID (auto-generated or custom). The live preview updates in real-time as you type, showing exactly how your certificate will look.
+
+Everything runs 100% in your browser — your data never leaves your device. Download as a high-resolution PNG (2x scale) ready for printing or digital sharing. Perfect for schools, companies, training programs, workshops, and events.`,
+    category: 'converters',
+    targetKeyword: 'certificate maker online free',
+    secondaryKeywords: ['certificate generator', 'certificate of achievement maker', 'free certificate maker', 'online certificate creator', 'certificate template generator', 'certificate of completion maker', 'certificate of appreciation maker', 'certificate of participation maker', 'professional certificate maker'],
+    metaTitle: 'Free Certificate Maker - Create & Download Professional Certificates Online',
+    metaDescription: 'Create professional certificates online for free. 5 beautiful templates, 6 certificate types. Customize text, download as PNG — no signup, 100% private.',
+    faqs: [
+      { question: 'Is this certificate maker really free?', answer: 'Yes, 100% free with no hidden costs. Create unlimited certificates, download as high-resolution PNG, and use all 5 templates — no signup or payment required.' },
+      { question: 'What types of certificates can I create?', answer: 'You can create certificates for Achievement, Appreciation, Completion, Participation, Excellence, and Training. Each type can be fully customized with your own title and description.' },
+      { question: 'Is my data safe?', answer: 'Absolutely. Everything runs in your browser using JavaScript. Your certificate data never leaves your device — nothing is sent to any server.' },
+      { question: 'Can I print the certificate?', answer: 'Yes! The certificate is downloaded as a high-resolution PNG (2x scale) at landscape A4 ratio. You can print it directly or insert it into a document for printing.' },
+      { question: 'Can I add a custom certificate number?', answer: 'Yes. By default, a unique certificate ID is auto-generated. You can also uncheck the auto-generate option and enter your own custom certificate number.' },
+    ],
+    howToSteps: [
+      'Select a certificate type (Achievement, Appreciation, Completion, etc.).',
+      'Choose a template style from the 5 available designs.',
+      'Fill in the recipient name, certificate title, and description.',
+      'Add your organization name, date, and signatory details.',
+      'Preview your certificate in real-time on the right panel.',
+      'Click "Download PNG" to save your professional certificate.',
+    ],
+    relatedToolSlugs: ['greeting-card-maker', 'invoice-generator', 'resume-builder', 'marriage-biodata-maker', 'image-watermark'],
+    icon: 'Award',
+    isNew: true,
+    estimatedTime: 'Under 2 min',
+  },
+  {
+    slug: 'exif-metadata-remover',
+    name: 'EXIF Metadata Remover',
+    shortDescription: 'Remove hidden EXIF metadata from images — strip GPS location, camera info, timestamps, and more.',
+    longDescription: `Protect your privacy by removing hidden EXIF metadata from your photos before sharing them online. EXIF data embedded in JPEG images can reveal your GPS location, camera make and model, date and time, software used, and other personal information.
+
+This tool re-encodes your images using the Canvas API, which inherently strips all embedded metadata including EXIF, IPTC, XMP, GPS coordinates, camera info, and timestamps. Choose JPEG (with adjustable quality) or PNG output format. Process multiple images at once in batch mode.
+
+Everything runs 100% in your browser — your images are never uploaded to any server and never leave your device.`,
+    category: 'image-tools',
+    targetKeyword: 'exif metadata remover',
+    secondaryKeywords: ['remove exif data', 'strip metadata from image', 'remove gps from photo', 'image metadata remover online', 'exif remover', 'photo metadata cleaner', 'remove image metadata'],
+    metaTitle: 'EXIF Metadata Remover - Strip GPS, Camera Info & Hidden Data from Images',
+    metaDescription: 'Remove hidden EXIF metadata from images instantly. Strip GPS location, camera info, timestamps, and more. 100% browser-based, private, and free.',
+    faqs: [
+      { question: 'What is EXIF metadata?', answer: 'EXIF (Exchangeable Image File Format) is hidden data embedded in images by cameras and phones. It can include GPS coordinates, camera make/model, date/time, lens info, and software used.' },
+      { question: 'Why should I remove EXIF data?', answer: 'EXIF data can reveal your exact location, device information, and when a photo was taken. Removing it protects your privacy when sharing images online.' },
+      { question: 'Does this tool upload my images?', answer: 'No. All processing happens locally in your browser using the Canvas API. Your images never leave your device.' },
+      { question: 'Which image formats are supported?', answer: 'You can upload JPEG, PNG, and WebP images. Output can be saved as JPEG (with adjustable quality) or PNG.' },
+      { question: 'Does re-encoding affect image quality?', answer: 'For JPEG output, you can set quality from 70% to 100%. At 92%+ the quality loss is virtually imperceptible. PNG output is lossless.' },
+    ],
+    howToSteps: [
+      'Select your preferred output format (JPEG or PNG) and quality level.',
+      'Upload one or more images by dragging and dropping or clicking the upload area.',
+      'The tool automatically strips all metadata by re-encoding via Canvas.',
+      'Review the before/after file sizes and metadata removal status.',
+      'Download individual cleaned images or all at once.',
+    ],
+    relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-cropper', 'png-to-jpg', 'jpg-to-png', 'passport-photo-maker'],
+    icon: 'ShieldCheck',
+    isNew: true,
+    estimatedTime: '1-3 seconds',
+  },
+  {
+    slug: 'robots-txt-generator',
+    name: 'Robots.txt Generator',
+    shortDescription: 'Generate a valid robots.txt file to control search engine crawling of your website.',
+    longDescription: `Create a production-ready robots.txt file with an intuitive visual editor. Add multiple user-agent groups with Allow/Disallow rules, set crawl-delay, and specify sitemap URLs.
+
+Choose from quick presets — Allow All, Block All, Block AI Bots (GPTBot, ChatGPT-User, CCBot, Google-Extended), Standard, or WordPress Default — or build custom rules from scratch. The live preview updates in real time as you configure rules.
+
+Copy the output to your clipboard or download it as a robots.txt file. Built-in validation warns you about conflicting rules, and the syntax guide explains every directive.`,
+    category: 'seo-tools',
+    targetKeyword: 'robots txt generator',
+    secondaryKeywords: ['robots.txt generator', 'robots txt file generator', 'create robots txt', 'robots txt maker', 'block ai bots robots txt', 'wordpress robots txt'],
+    metaTitle: 'Robots.txt Generator - Create & Download robots.txt File',
+    metaDescription: 'Free robots.txt generator with presets for blocking AI bots, WordPress, and more. Visual editor, live preview, copy & download. Create a valid robots.txt in seconds.',
+    faqs: [
+      { question: 'What is robots.txt?', answer: 'robots.txt is a text file placed at the root of your website (e.g. example.com/robots.txt) that tells search engine crawlers which pages or sections they are allowed or not allowed to crawl.' },
+      { question: 'Does robots.txt block pages from appearing in Google?', answer: 'No. robots.txt prevents crawling, not indexing. If other pages link to a disallowed URL, Google may still index it. Use a "noindex" meta tag to prevent indexing.' },
+      { question: 'How do I block AI bots like ChatGPT and GPTBot?', answer: 'Add separate User-agent rules for GPTBot, ChatGPT-User, CCBot, and Google-Extended with Disallow: /. Use the "Block AI Bots" preset in this tool for a one-click setup.' },
+      { question: 'Does Google respect Crawl-delay?', answer: 'No. Google ignores the Crawl-delay directive. Use Google Search Console to adjust crawl rate for Googlebot. Bing and Yandex do honor Crawl-delay.' },
+      { question: 'Where do I put the robots.txt file?', answer: 'Place it at the root of your domain: https://example.com/robots.txt. It must be accessible at that exact URL for crawlers to find it.' },
+    ],
+    howToSteps: [
+      'Choose a quick preset or start from scratch by adding user-agent groups.',
+      'Select a user-agent (*, Googlebot, Bingbot, or custom) for each group.',
+      'Add Allow and Disallow paths using the + buttons.',
+      'Optionally set a Crawl-delay and add Sitemap URLs.',
+      'Review the live preview, then copy to clipboard or download the file.',
+    ],
+    relatedToolSlugs: ['meta-tag-generator', 'text-to-slug', 'html-css-js-editor', 'json-formatter'],
+    icon: 'Bot',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'aspect-ratio-calculator',
+    name: 'Aspect Ratio Calculator',
+    shortDescription: 'Calculate, simplify, and resize aspect ratios for images, videos, and screens.',
+    longDescription: `Calculate and convert aspect ratios instantly with our free Aspect Ratio Calculator. Two powerful modes help you work with any ratio:
+
+**Calculate Ratio**: Enter width and height to get the simplified aspect ratio (e.g., 1920x1080 = 16:9), decimal value, and percentage. A visual preview shows the proportional rectangle, and the tool highlights matching standard ratios like 16:9, 4:3, 1:1, and more.
+
+**Resize by Ratio**: Select a preset ratio (16:9, 4:3, 1:1, 21:9, 3:2, 9:16, etc.) or use a custom ratio, enter one dimension, and the other calculates automatically. Lock/unlock width or height to control which dimension you set.
+
+Includes a quick-reference table of common aspect ratios with names, use cases, and example resolutions. Click any ratio to instantly use it in the calculator. Perfect for video editors, photographers, designers, and developers working with responsive layouts.`,
+    category: 'calculators',
+    targetKeyword: 'aspect ratio calculator',
+    secondaryKeywords: ['aspect ratio converter', 'screen ratio calculator', 'video aspect ratio', 'image aspect ratio', '16:9 calculator', 'resize aspect ratio'],
+    metaTitle: 'Aspect Ratio Calculator - Calculate & Resize Ratios Online Free',
+    metaDescription: 'Free aspect ratio calculator. Calculate simplified ratios, resize by preset (16:9, 4:3, 1:1, 21:9), visual preview, and common ratios reference table.',
+    faqs: [
+      { question: 'What is an aspect ratio?', answer: 'An aspect ratio is the proportional relationship between width and height. For example, 16:9 means for every 16 units of width there are 9 units of height. It is used in screens, videos, images, and print media.' },
+      { question: 'What is the most common aspect ratio for videos?', answer: '16:9 is the standard for HD video, YouTube, and modern TVs. Other common ratios include 9:16 for vertical videos (TikTok, Stories), 1:1 for Instagram squares, and 21:9 for ultrawide cinema.' },
+      { question: 'How do I calculate aspect ratio from dimensions?', answer: 'Divide both width and height by their Greatest Common Divisor (GCD). For example, 1920/120 = 16 and 1080/120 = 9, giving 16:9.' },
+      { question: 'What aspect ratio is 1920x1080?', answer: '1920x1080 is 16:9, the standard Full HD (1080p) resolution used by most monitors, TVs, and video platforms.' },
+    ],
+    howToSteps: [
+      'Enter width and height to calculate the simplified aspect ratio.',
+      'View the ratio, decimal value, percentage, and visual preview.',
+      'Switch to Resize mode to calculate dimensions from a preset ratio.',
+      'Click any ratio in the reference table to use it instantly.',
+    ],
+    relatedToolSlugs: ['image-resizer', 'image-cropper', 'percentage-calculator', 'unit-converter'],
+    icon: 'Maximize',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
+    slug: 'barcode-generator',
+  name: 'Barcode Generator',
+  shortDescription: 'Generate Code 128, Code 39, and EAN-13 barcodes instantly in your browser.',
+  longDescription: `Generate professional barcodes online with our free Barcode Generator. Supports three popular formats: Code 128 (full ASCII alphanumeric), Code 39 (letters and numbers), and EAN-13 (13-digit product codes).
+
+Customize bar width, height, colors, and toggle text display below the barcode. Download as PNG or copy to clipboard. Batch mode lets you generate multiple barcodes at once by entering one value per line.
+
+Everything runs locally in your browser using the Canvas API — no data is uploaded to any server. Your barcode data stays completely private.`,
+  category: 'developer-tools',
+  targetKeyword: 'barcode generator',
+  secondaryKeywords: ['barcode maker', 'code 128 generator', 'ean-13 barcode', 'code 39 barcode', 'free barcode generator online', 'barcode creator'],
+  metaTitle: 'Barcode Generator - Create Code 128, Code 39 & EAN-13 Barcodes Free',
+  metaDescription: 'Generate barcodes online for free. Supports Code 128, Code 39, and EAN-13 formats. Customize colors and size. Download PNG or copy to clipboard. No signup required.',
+  faqs: [
+    { question: 'What barcode formats are supported?', answer: 'Code 128 (full ASCII, most versatile), Code 39 (A-Z, 0-9, simple), and EAN-13 (13-digit product barcodes with check digit).' },
+    { question: 'Is my data uploaded to a server?', answer: 'No. All barcode generation happens locally in your browser using the Canvas API. Your data never leaves your device.' },
+    { question: 'Can I generate multiple barcodes at once?', answer: 'Yes! Enable batch mode to enter multiple values (one per line) and generate all barcodes simultaneously.' },
+    { question: 'What is the difference between Code 128 and Code 39?', answer: 'Code 128 supports all ASCII characters (32-127) and produces more compact barcodes. Code 39 only supports uppercase letters, digits, and a few symbols but is simpler and widely used in non-retail industries.' },
+  ],
+  howToSteps: [
+    'Select a barcode type: Code 128, Code 39, or EAN-13.',
+    'Enter the text or number to encode.',
+    'Adjust bar width, height, colors, and text display using the options panel.',
+    'Preview the barcode in real-time on the right.',
+    'Click "Download PNG" to save or "Copy to Clipboard" to paste elsewhere.',
+    'Enable batch mode to generate multiple barcodes from a list.',
+  ],
+  relatedToolSlugs: ['qr-code-generator', 'uuid-generator', 'hash-generator', 'random-generator'],
+  icon: 'BarChart3',
+  isNew: true,
+  estimatedTime: 'Instant',
+  },
+  {
+    slug: 'privacy-policy-generator',
+  name: 'Privacy Policy Generator',
+  shortDescription: 'Generate a free, comprehensive privacy policy for your website or app in seconds.',
+  longDescription: `Create a professional, legally-sounding privacy policy tailored to your website or application. Fill in your company details, select which types of data you collect, and toggle compliance sections for GDPR, CCPA, and COPPA.
+
+The generated policy covers all essential sections including information collection, data usage, sharing practices, security measures, and user rights. Customize it for your specific needs — whether you collect personal info, cookies, payment data, location data, or use third-party analytics services like Google Analytics and Facebook Pixel.
+
+Download as .txt or .html, or copy to clipboard instantly. The tool generates a comprehensive policy with a disclaimer that it is not legal advice — always consult a qualified attorney for your specific situation.`,
+  category: 'seo-tools',
+  targetKeyword: 'privacy policy generator',
+  secondaryKeywords: ['free privacy policy generator', 'website privacy policy generator', 'privacy policy template', 'GDPR privacy policy generator', 'CCPA privacy policy generator', 'online privacy policy maker'],
+  metaTitle: 'Privacy Policy Generator - Free Online Policy Maker',
+  metaDescription: 'Generate a free, professional privacy policy for your website or app. Covers GDPR, CCPA, COPPA, cookies, analytics & more. Download as TXT or HTML instantly.',
+  faqs: [
+    { question: 'Is this privacy policy legally binding?', answer: 'This tool generates a template for informational purposes. While it covers standard legal language, we strongly recommend having a qualified attorney review your privacy policy to ensure it meets all applicable laws for your jurisdiction and business.' },
+    { question: 'Do I need a privacy policy for my website?', answer: 'Yes. Most jurisdictions require websites that collect any personal data (including via cookies or analytics) to have a privacy policy. Laws like GDPR (EU), CCPA (California), and IT Act (India) mandate transparency about data practices.' },
+    { question: 'What is GDPR and do I need it?', answer: 'GDPR (General Data Protection Regulation) is an EU law that protects personal data of EU residents. If your website has visitors from the EU or you process data of EU citizens, you should include GDPR compliance sections.' },
+    { question: 'What is CCPA?', answer: 'CCPA (California Consumer Privacy Act) gives California residents rights over their personal data, including the right to know, delete, and opt-out. Include this section if you have California-based users.' },
+    { question: 'Can I download the generated policy?', answer: 'Yes! You can download the privacy policy as a plain text (.txt) file or as a formatted HTML (.html) file. You can also copy the text to clipboard with one click.' },
+  ],
+  howToSteps: [
+    'Enter your company or website name, URL, and contact email.',
+    'Select your country and set the effective date.',
+    'Toggle the types of data your website collects (personal info, cookies, analytics, etc.).',
+    'Enable compliance sections as needed (GDPR, CCPA, COPPA, data retention).',
+    'Preview the generated policy, then copy or download as .txt or .html.',
+  ],
+  relatedToolSlugs: ['meta-tag-generator', 'qr-code-generator', 'password-generator', 'invoice-generator'],
+  icon: 'Shield',
+  isNew: true,
+  estimatedTime: '1-2 minutes',
+  },
+  {
+    slug: 'terms-and-conditions-generator',
+    name: 'Terms & Conditions Generator',
+    shortDescription: 'Generate comprehensive terms and conditions for your website, app or SaaS. Free template with all essential clauses.',
+    longDescription: `Generate professional Terms & Conditions (Terms of Service) for your website, mobile app, e-commerce store, or SaaS product. Fill in your business details, select applicable clauses, and get a comprehensive legal document in minutes.
+
+Choose which sections to include: user accounts, payments & refunds, intellectual property, user-generated content, prohibited activities, limitation of liability, termination, governing law, dispute resolution, and more.
+
+The generated document uses standard legal language and covers all essential clauses. Download as HTML or plain text, or copy to clipboard. While comprehensive, we recommend consulting a legal professional for your specific jurisdiction. Completely free with no signup.`,
+    category: 'utility-tools',
+    targetKeyword: 'terms and conditions generator',
+    secondaryKeywords: ['terms and conditions generator free', 'terms of service generator', 'terms and conditions template', 'terms of use generator', 'tos generator', 'free terms and conditions maker', 'website terms generator', 'terms and conditions for website'],
+    metaTitle: 'Terms & Conditions Generator - Free T&C Template Online',
+    metaDescription: 'Generate free terms & conditions for your website or app. Customizable clauses for payments, privacy, IP, liability & more. Download as HTML or text.',
+    faqs: [
+      { question: 'Are these terms and conditions legally binding?', answer: 'Our generator creates a comprehensive template based on standard legal practices. For the terms to be enforceable, users must agree to them (e.g., checkbox at signup). We recommend legal review for your specific jurisdiction.' },
+      { question: 'What clauses should terms and conditions include?', answer: 'Essential clauses include: acceptance of terms, user responsibilities, intellectual property, limitation of liability, termination, governing law, and dispute resolution. Our generator covers all these and more.' },
+      { question: 'Is this generator free?', answer: 'Yes, completely free with no signup, no restrictions, and unlimited use.' },
+      { question: 'What is the difference between Terms & Conditions and Privacy Policy?', answer: 'Terms & Conditions govern how users interact with your service (rules, responsibilities, liability). Privacy Policy explains how you collect, use, and protect personal data. Both are needed for most websites.' },
+    ],
+    howToSteps: [
+      'Enter your company/website name, URL, and contact email.',
+      'Select your website type (Blog, E-commerce, SaaS, App, etc.).',
+      'Toggle which clauses to include in your terms.',
+      'Preview the generated terms in real-time.',
+      'Copy to clipboard or download as HTML/text file.',
+    ],
+    relatedToolSlugs: ['privacy-policy-generator', 'robots-txt-generator', 'meta-tag-generator'],
+    icon: 'Scale',
+    isNew: true,
+    estimatedTime: '3 minutes',
   },
 ];
 
