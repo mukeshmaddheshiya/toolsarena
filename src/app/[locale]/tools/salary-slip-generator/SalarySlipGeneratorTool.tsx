@@ -241,21 +241,29 @@ const selectCls = inputCls;
 
 function ScaledSlipPreview(props: SlipProps & { slipRef: React.RefObject<HTMLDivElement | null> }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
+  const [contentH, setContentH] = useState(600);
 
   useEffect(() => {
     const container = containerRef.current;
-    if (!container) return;
-    const ro = new ResizeObserver(() => setScale(Math.min(container.clientWidth / 700, 1)));
+    const inner = innerRef.current;
+    if (!container || !inner) return;
+    const ro = new ResizeObserver(() => {
+      const s = Math.min(container.clientWidth / 700, 1);
+      setScale(s);
+      setContentH(inner.scrollHeight);
+    });
     ro.observe(container);
+    ro.observe(inner);
     return () => ro.disconnect();
   }, []);
 
   const { slipRef, ...slipProps } = props;
 
   return (
-    <div ref={containerRef} className="w-full overflow-hidden">
-      <div style={{ width: 700, transform: `scale(${scale})`, transformOrigin: 'top left', height: 'auto' }}>
+    <div ref={containerRef} className="w-full overflow-hidden" style={{ height: contentH * scale }}>
+      <div ref={innerRef} style={{ width: 700, transform: `scale(${scale})`, transformOrigin: 'top left' }}>
         <SalarySlipPreview ref={slipRef} {...slipProps} />
       </div>
     </div>
