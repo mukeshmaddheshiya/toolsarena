@@ -3781,6 +3781,43 @@ Browse fund category guidelines — Large Cap (10-12%), Mid Cap (12-15%), Small 
     isNew: true,
     estimatedTime: 'Instant',
   },
+  {
+    slug: 'greeting-card-maker',
+    name: 'Greeting Card Maker',
+    shortDescription: 'Create beautiful greeting cards online. 50+ templates for Birthday, Wedding, Diwali, Anniversary & more. Download PNG or share via link.',
+    longDescription: `Create stunning greeting cards online for free with 50+ professionally designed templates. Choose from categories like Birthday, Wedding, Anniversary, Diwali, Holi, New Year, Valentine's Day, Mother's Day, Eid, Christmas, and many more.\n\nCustomize every detail — add the recipient's name, write a personal message, pick from 8 font styles, and choose accent colors. The live preview updates in real-time so you see exactly what your card looks like before downloading.\n\nShare your card instantly via a unique link (no sign-up required) or download as a high-quality PNG image. Everything runs in your browser — your data is never stored on any server. Perfect for sending wishes to loved ones via WhatsApp, email, or social media.`,
+    category: 'utility-tools',
+    targetKeyword: 'greeting card maker online free',
+    secondaryKeywords: [
+      'wish card maker', 'birthday card maker', 'greeting card generator',
+      'free greeting card online', 'diwali greeting card maker', 'wedding card maker',
+      'anniversary card maker', 'online card maker free', 'shareable greeting card',
+      'download greeting card png', 'wish card generator', 'invitation card maker',
+      'holi greeting card', 'new year card maker', 'eid mubarak card maker',
+      'christmas card maker', 'valentines day card', 'mothers day card maker',
+    ],
+    metaTitle: 'Greeting Card Maker - 50+ Free Templates | Download PNG & Share Link',
+    metaDescription: 'Create beautiful greeting cards online free. 50+ templates for Birthday, Wedding, Diwali, Holi, New Year & more. Customize text, fonts, colors. Download PNG or share via link instantly.',
+    faqs: [
+      { question: 'How do I create a greeting card?', answer: 'Choose a category (Birthday, Wedding, Diwali, etc.), pick a template, customize the recipient name, message, font, and colors, then download as PNG or share via a link.' },
+      { question: 'Can I share my greeting card without downloading?', answer: 'Yes! Click "Share via Link" to generate a unique URL. Anyone who opens the link will see your customized greeting card. Works great on WhatsApp, email, and social media.' },
+      { question: 'Is this greeting card maker really free?', answer: 'Yes, completely free with no sign-up, no watermarks, and unlimited cards. Create as many cards as you want!' },
+      { question: 'Do you store my card data on a server?', answer: 'No. Everything runs 100% in your browser. For shared links, the card data is encoded directly in the URL — nothing is stored on any server.' },
+      { question: 'What occasions and categories are supported?', answer: "Birthday, Wedding, Anniversary, Diwali, Holi, New Year, Valentine's Day, Mother's Day, Father's Day, Thank You, Congratulations, Invitation, Eid, Christmas, Raksha Bandhan, and Friendship Day — over 50 templates in total." },
+    ],
+    howToSteps: [
+      'Choose a category (Birthday, Wedding, Diwali, etc.) from the tabs at the top.',
+      'Pick a template design from the grid on the left panel.',
+      "Enter the recipient's name, greeting title, personal message, and your name.",
+      'Optionally customize the font style and accent color to match your preference.',
+      'Preview your card in real-time on the right panel.',
+      'Click "Download PNG" to save as image or "Share via Link" to send via WhatsApp, email, etc.',
+    ],
+    relatedToolSlugs: ['marriage-biodata-maker', 'fancy-text-generator', 'qr-code-generator', 'whatsapp-link-generator'],
+    icon: 'PartyPopper',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
