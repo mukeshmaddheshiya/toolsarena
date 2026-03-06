@@ -103,9 +103,6 @@ code, pre, .font-mono {
   }
 }
 
-/* Note: overflow-x:hidden on html/body was removed — it prevented user zoom.
-   Fixed-width previews are now contained via position:absolute in scaled wrappers. */
-
 /* Tool textarea */
 .tool-textarea {
   @apply w-full rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-4 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors;

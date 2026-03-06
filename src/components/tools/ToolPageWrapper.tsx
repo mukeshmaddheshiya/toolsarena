@@ -45,7 +45,7 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
   return (
     <>
       <JsonLd data={schema} />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 overflow-x-hidden">
         {/* Breadcrumbs */}
         <Breadcrumbs
           items={[
@@ -69,7 +69,7 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
         <div className="flex gap-6 lg:gap-8">
           {/* Tool interface */}
           <div className="flex-1 min-w-0">
-            <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-4 sm:p-6">
+            <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-4 sm:p-6 overflow-hidden">
               {children}
             </div>
           </div>
