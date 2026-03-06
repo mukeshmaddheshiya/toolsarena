@@ -36,8 +36,8 @@ function getPatternCSS(pattern: CardTemplate['decorPattern'], color: string): CS
   }
 }
 
-export const CardPreview = forwardRef<HTMLDivElement, { template: CardTemplate; state: CardState; scale?: number }>(
-  function CardPreview({ template, state, scale = 1 }, ref) {
+export const CardPreview = forwardRef<HTMLDivElement, { template: CardTemplate; state: CardState }>(
+  function CardPreview({ template, state }, ref) {
     const accent = state.colorOverride || template.accentColor;
     const font = state.fontFamily || template.fontFamily;
     const titleFont = state.fontFamily || template.titleFontFamily;
@@ -55,8 +55,6 @@ export const CardPreview = forwardRef<HTMLDivElement, { template: CardTemplate; 
       alignItems: 'center',
       justifyContent: 'center',
       overflow: 'hidden',
-      transform: `scale(${scale})`,
-      transformOrigin: 'top left',
     };
 
     const cardStyle: CSSProperties = {
