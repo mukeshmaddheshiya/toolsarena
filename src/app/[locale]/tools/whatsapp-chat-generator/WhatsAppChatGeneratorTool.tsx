@@ -37,8 +37,10 @@ interface ContactInfo {
 }
 
 interface WallpaperConfig {
-  type: 'default' | 'color' | 'image';
+  type: 'default' | 'doodle' | 'color' | 'image';
   color: string;
+  doodleBg?: string;
+  doodleIcon?: string;
   imageUrl: string | null;
 }
 
@@ -102,10 +104,22 @@ const DEFAULT_MESSAGES: ChatMessage[] = [
   { id: '6', text: 'Perfect! See you at 8?', time: '10:35 AM', isSent: true, tickStatus: 'delivered', type: 'text' },
 ];
 
-const WALLPAPER_PRESETS = [
-  '#ECE5DD', '#0B141A', '#B1D8B7', '#C9DAF8', '#F4CCCC',
-  '#D5A6BD', '#FFE0B2', '#B39DDB', '#80CBC4', '#FFCCBC',
-  '#E1BEE7', '#C5E1A5', '#FFF9C4', '#B2EBF2',
+// WhatsApp's actual default wallpaper doodle color combos: [background, icon color]
+const DOODLE_WALLPAPERS: { bg: string; icon: string; label: string }[] = [
+  { bg: '#ECE5DD', icon: '#c8beae', label: 'Light Default' },
+  { bg: '#0B141A', icon: '#1a2e28', label: 'Dark Default' },
+  { bg: '#EFEAE2', icon: '#d4cfc6', label: 'Light Warm' },
+  { bg: '#0B2015', icon: '#16352a', label: 'Dark Green' },
+  { bg: '#E2D9CC', icon: '#c4b8a5', label: 'Beige' },
+  { bg: '#102B28', icon: '#1d4a3f', label: 'Dark Teal' },
+  { bg: '#1B3D35', icon: '#2a5c4e', label: 'Forest' },
+  { bg: '#172E35', icon: '#264a56', label: 'Dark Blue' },
+];
+
+const SOLID_WALLPAPERS = [
+  '#B1D8B7', '#C9DAF8', '#F4CCCC', '#D5A6BD', '#FFE0B2',
+  '#B39DDB', '#80CBC4', '#FFCCBC', '#E1BEE7', '#C5E1A5',
+  '#FFF9C4', '#B2EBF2', '#008069', '#025144',
 ];
 
 /* ------------------------------------------------------------------ */
@@ -142,25 +156,314 @@ function TickIcon({ status, theme }: { status: TickStatus; theme: ThemeMode }) {
 /*  WHATSAPP WALLPAPER PATTERN (SVG doodle)                            */
 /* ------------------------------------------------------------------ */
 
-function WallpaperDoodle({ theme }: { theme: ThemeMode }) {
-  const opacity = theme === 'dark' ? 0.04 : 0.08;
+function WallpaperDoodle({ theme, doodleBg, doodleIcon }: { theme: ThemeMode; doodleBg?: string; doodleIcon?: string }) {
+  const c = doodleIcon || (theme === 'dark' ? '#233b34' : '#c8beae');
+  const bg = doodleBg || (theme === 'dark' ? '#0B141A' : '#ECE5DD');
+  const s = 1; // stroke width base
+  // Dense scattered pattern matching real WhatsApp — 60+ icons in a 320x400 tile
   return (
-    <div style={{ position: 'absolute', inset: 0, opacity, pointerEvents: 'none', overflow: 'hidden' }}>
-      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden', backgroundColor: bg }}>
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" fill="none" stroke={c} strokeWidth={s * 1.15} strokeLinecap="round" strokeLinejoin="round">
         <defs>
-          <pattern id="wa-pattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
-            <circle cx="10" cy="10" r="3" fill="currentColor" />
-            <rect x="30" y="5" width="8" height="8" rx="1" fill="currentColor" />
-            <path d="M60 10 L65 5 L70 10 L65 15Z" fill="currentColor" />
-            <circle cx="15" cy="40" r="4" fill="none" stroke="currentColor" strokeWidth="1.5" />
-            <rect x="40" y="35" width="10" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M65 35 C65 35 70 30 75 35 C75 40 65 45 65 45 C65 45 55 40 55 35 C55 30 65 35 65 35Z" fill="currentColor" />
-            <path d="M10 65 L20 65 L15 75Z" fill="currentColor" />
-            <circle cx="45" cy="70" r="5" fill="none" stroke="currentColor" strokeWidth="1.5" />
-            <rect x="65" y="60" width="6" height="12" rx="3" fill="currentColor" />
+          <pattern id="wa-doodle" x="0" y="0" width="320" height="400" patternUnits="userSpaceOnUse">
+            {/* === Scattered WhatsApp doodle icons (mimics real wallpaper) === */}
+
+            {/* "42" text */}
+            <text x="12" y="18" fill={c} stroke="none" fontSize="14" fontWeight="bold" fontFamily="sans-serif">42</text>
+
+            {/* Rocket */}
+            <g transform="translate(50,5) rotate(30)">
+              <ellipse cx="6" cy="10" rx="4" ry="8" /><path d="M2 15 L0 20 L6 17" /><path d="M10 15 L12 20 L6 17" />
+              <line x1="3" y1="18" x2="2" y2="22" /><line x1="9" y1="18" x2="10" y2="22" />
+            </g>
+
+            {/* Planet / Saturn */}
+            <g transform="translate(95,8)">
+              <circle cx="8" cy="8" r="6" /><ellipse cx="8" cy="8" rx="12" ry="3" transform="rotate(-20 8 8)" />
+            </g>
+
+            {/* Smiley face */}
+            <g transform="translate(140,3)">
+              <circle cx="9" cy="9" r="9" /><circle cx="6" cy="7" r="1.2" fill={c} stroke="none" /><circle cx="12" cy="7" r="1.2" fill={c} stroke="none" />
+              <path d="M5 12 Q9 16 13 12" />
+            </g>
+
+            {/* Stars cluster */}
+            <g transform="translate(178,10)"><path d="M5 0 L6.5 4 L11 4 L7.5 6.5 L8.5 11 L5 8.5 L1.5 11 L2.5 6.5 L-1 4 L3.5 4Z" /></g>
+            <circle cx="195" cy="6" r="1.5" fill={c} stroke="none" />
+            <circle cx="192" cy="14" r="1" fill={c} stroke="none" />
+
+            {/* "24" text */}
+            <text x="210" y="17" fill={c} stroke="none" fontSize="13" fontWeight="bold" fontFamily="sans-serif">24</text>
+
+            {/* Calendar */}
+            <g transform="translate(240,3)">
+              <rect x="0" y="3" width="14" height="12" rx="2" /><line x1="0" y1="7" x2="14" y2="7" /><line x1="4" y1="0" x2="4" y2="5" /><line x1="10" y1="0" x2="10" y2="5" />
+            </g>
+
+            {/* Bicycle */}
+            <g transform="translate(275,5)">
+              <circle cx="5" cy="12" r="5" /><circle cx="20" cy="12" r="5" /><path d="M5 12 L10 4 L15 12 L20 12" /><path d="M10 4 L17 4" /><line x1="14" y1="4" x2="15" y2="12" />
+            </g>
+
+            {/* === Row 2 === */}
+            {/* Camera */}
+            <g transform="translate(5,35)">
+              <rect x="0" y="4" width="16" height="11" rx="2" /><circle cx="8" cy="10" r="3.5" /><path d="M5 4 L6.5 1 L11.5 1 L13 4" />
+            </g>
+
+            {/* Winking smiley */}
+            <g transform="translate(38,32)">
+              <circle cx="9" cy="9" r="9" /><circle cx="6" cy="7" r="1.2" fill={c} stroke="none" /><path d="M11 6 L13 8" /><path d="M5 12 Q9 16 13 12" />
+            </g>
+
+            {/* Musical notes */}
+            <g transform="translate(68,30)">
+              <line x1="3" y1="2" x2="3" y2="15" /><circle cx="1" cy="15" r="2.5" /><line x1="11" y1="0" x2="11" y2="13" /><circle cx="9" cy="13" r="2.5" /><line x1="3" y1="2" x2="11" y2="0" />
+            </g>
+
+            {/* Heart */}
+            <g transform="translate(97,34)">
+              <path d="M7 3 C7 0 11-1 11 3 C11 7 7 11 7 11 C7 11 3 7 3 3 C3-1 7 0 7 3Z" />
+            </g>
+
+            {/* Phone handset */}
+            <g transform="translate(122,33)">
+              <path d="M2 4 C2 2 4 0 6 0 L7 0 L7 5 L5 5 C5 8 9 12 12 12 L12 10 L17 10 L17 11 C17 13 15 15 13 15 C7 15 2 10 2 4Z" />
+            </g>
+
+            {/* BFF text */}
+            <text x="152" y="45" fill={c} stroke="none" fontSize="11" fontWeight="bold" fontFamily="sans-serif">BFF</text>
+
+            {/* Sunglasses emoji */}
+            <g transform="translate(185,32)">
+              <circle cx="9" cy="9" r="9" /><rect x="2" y="6" width="6" height="4" rx="1" fill={c} stroke="none" /><rect x="10" y="6" width="6" height="4" rx="1" fill={c} stroke="none" /><line x1="8" y1="8" x2="10" y2="8" /><path d="M6 13 Q9 15 12 13" />
+            </g>
+
+            {/* Cloud */}
+            <g transform="translate(218,35)">
+              <path d="M5 14 C1 14 0 11 2 9 C1 6 4 4 7 5 C8 2 13 2 14 5 C17 4 19 7 17 9 C19 11 18 14 15 14Z" />
+            </g>
+
+            {/* Burger */}
+            <g transform="translate(248,33)">
+              <path d="M1 10 Q8 10 15 10" /><path d="M0 10 C0 5 3 2 7.5 2 C12 2 15 5 15 10" /><line x1="0" y1="12" x2="15" y2="12" /><path d="M0 12 Q0 16 7.5 16 Q15 16 15 12" /><path d="M2 7 Q7.5 9 13 7" strokeWidth="0.8" />
+            </g>
+
+            {/* Gift box */}
+            <g transform="translate(282,33)">
+              <rect x="1" y="5" width="14" height="10" rx="1" /><rect x="0" y="3" width="16" height="4" rx="1" /><line x1="8" y1="3" x2="8" y2="15" /><path d="M8 3 C6-1 2 0 4 3" /><path d="M8 3 C10-1 14 0 12 3" />
+            </g>
+
+            {/* === Row 3 === */}
+            {/* Lock */}
+            <g transform="translate(12,68)">
+              <rect x="0" y="7" width="12" height="9" rx="2" /><path d="M3 7 L3 4 C3 1 9 1 9 4 L9 7" /><circle cx="6" cy="12" r="1.5" fill={c} stroke="none" />
+            </g>
+
+            {/* Elephant */}
+            <g transform="translate(42,65)">
+              <ellipse cx="10" cy="10" rx="8" ry="7" /><path d="M2 10 C0 10 -1 15 2 17 L4 15" /><circle cx="6" cy="8" r="1" fill={c} stroke="none" /><circle cx="15" cy="12" r="2" /><line x1="7" y1="17" x2="7" y2="21" /><line x1="13" y1="17" x2="13" y2="21" />
+            </g>
+
+            {/* Headphones */}
+            <g transform="translate(80,67)">
+              <path d="M3 12 L3 9 C3 3 15 3 15 9 L15 12" /><rect x="1" y="12" width="4" height="5" rx="1.5" /><rect x="13" y="12" width="4" height="5" rx="1.5" />
+            </g>
+
+            {/* Android robot */}
+            <g transform="translate(112,64)">
+              <rect x="2" y="8" width="12" height="10" rx="2" /><path d="M2 8 C2 4 14 4 14 8" /><circle cx="6" cy="6" r="1" fill={c} stroke="none" /><circle cx="10" cy="6" r="1" fill={c} stroke="none" />
+              <line x1="4" y1="1" x2="6" y2="4" /><line x1="12" y1="1" x2="10" y2="4" /><line x1="0" y1="10" x2="0" y2="15" strokeWidth="1.5" /><line x1="16" y1="10" x2="16" y2="15" strokeWidth="1.5" />
+              <line x1="5" y1="18" x2="5" y2="22" /><line x1="11" y1="18" x2="11" y2="22" />
+            </g>
+
+            {/* Cat face */}
+            <g transform="translate(148,66)">
+              <circle cx="8" cy="10" r="8" /><path d="M1 5 L3 0 L6 5" /><path d="M15 5 L13 0 L10 5" />
+              <circle cx="5" cy="9" r="1.2" fill={c} stroke="none" /><circle cx="11" cy="9" r="1.2" fill={c} stroke="none" /><path d="M6 12 L8 13 L10 12" />
+              <line x1="1" y1="11" x2="-2" y2="10" /><line x1="1" y1="12" x2="-2" y2="13" /><line x1="15" y1="11" x2="18" y2="10" /><line x1="15" y1="12" x2="18" y2="13" />
+            </g>
+
+            {/* Victory/peace hand */}
+            <g transform="translate(183,68)">
+              <rect x="3" y="8" width="10" height="10" rx="3" /><line x1="5" y1="8" x2="4" y2="1" /><line x1="9" y1="8" x2="10" y2="1" />
+            </g>
+
+            {/* Gamepad */}
+            <g transform="translate(210,68)">
+              <rect x="0" y="2" width="22" height="13" rx="5" /><line x1="6" y1="6" x2="6" y2="10" /><line x1="4" y1="8" x2="8" y2="8" /><circle cx="15" cy="7" r="1.2" fill={c} stroke="none" /><circle cx="17" cy="9" r="1.2" fill={c} stroke="none" />
+            </g>
+
+            {/* Compass */}
+            <g transform="translate(248,68)">
+              <circle cx="8" cy="8" r="8" /><path d="M8 2 L10 8 L8 14 L6 8Z" /><circle cx="8" cy="8" r="1.5" fill={c} stroke="none" />
+            </g>
+
+            {/* Flower */}
+            <g transform="translate(282,68)">
+              <circle cx="8" cy="8" r="3" /><circle cx="8" cy="2" r="3" /><circle cx="13" cy="5" r="3" /><circle cx="13" cy="11" r="3" /><circle cx="8" cy="14" r="3" /><circle cx="3" cy="11" r="3" /><circle cx="3" cy="5" r="3" /><circle cx="8" cy="8" r="2" fill={c} stroke="none" />
+            </g>
+
+            {/* === Row 4 === */}
+            {/* Envelope */}
+            <g transform="translate(8,105)">
+              <rect x="0" y="0" width="16" height="11" rx="1.5" /><path d="M0 1 L8 7 L16 1" />
+            </g>
+
+            {/* Eye */}
+            <g transform="translate(42,107)">
+              <path d="M0 6 C4 0 14 0 18 6 C14 12 4 12 0 6Z" /><circle cx="9" cy="6" r="3" /><circle cx="9" cy="6" r="1.5" fill={c} stroke="none" />
+            </g>
+
+            {/* Bicycle bell / ring */}
+            <g transform="translate(76,103)">
+              <path d="M8 0 L8 2" /><path d="M2 12 C2 6 14 6 14 12" /><rect x="1" y="12" width="14" height="3" rx="1.5" /><line x1="8" y1="15" x2="8" y2="17" /><line x1="6" y1="17" x2="10" y2="17" />
+            </g>
+
+            {/* "Hi" speech bubble */}
+            <g transform="translate(108,102)">
+              <rect x="0" y="0" width="18" height="12" rx="4" /><path d="M4 12 L2 17 L8 12" />
+              <text x="4" y="10" fill={c} stroke="none" fontSize="8" fontWeight="bold" fontFamily="sans-serif">Hi</text>
+            </g>
+
+            {/* Photos / pictures */}
+            <g transform="translate(142,104)">
+              <rect x="2" y="0" width="14" height="11" rx="1" /><rect x="0" y="2" width="14" height="11" rx="1" /><path d="M1 11 L5 7 L8 10 L11 6 L13 9" strokeWidth="0.8" />
+            </g>
+
+            {/* Trophy */}
+            <g transform="translate(178,103)">
+              <path d="M3 0 L13 0 L12 8 C12 12 4 12 4 8Z" /><path d="M3 2 C0 2 0 6 3 6" /><path d="M13 2 C16 2 16 6 13 6" /><line x1="8" y1="12" x2="8" y2="15" /><line x1="5" y1="15" x2="11" y2="15" />
+            </g>
+
+            {/* Clock showing 09:28 */}
+            <g transform="translate(210,102)">
+              <circle cx="9" cy="9" r="9" /><line x1="9" y1="4" x2="9" y2="9" /><line x1="9" y1="9" x2="13" y2="11" />
+              <text x="2" y="22" fill={c} stroke="none" fontSize="7" fontFamily="sans-serif">09:28</text>
+            </g>
+
+            {/* Shopping bag */}
+            <g transform="translate(248,103)">
+              <rect x="1" y="5" width="14" height="12" rx="1" /><path d="M5 5 L5 3 C5 0 11 0 11 3 L11 5" />
+            </g>
+
+            {/* Crown */}
+            <g transform="translate(280,107)">
+              <path d="M0 12 L0 4 L5 8 L9 2 L13 8 L18 4 L18 12Z" />
+            </g>
+
+            {/* === Row 5 === */}
+            {/* Magnifying glass */}
+            <g transform="translate(15,140)">
+              <circle cx="7" cy="7" r="7" /><line x1="12" y1="12" x2="17" y2="17" strokeWidth="2" />
+            </g>
+
+            {/* Coffee cup */}
+            <g transform="translate(48,140)">
+              <rect x="0" y="3" width="11" height="12" rx="1" /><path d="M11 5 C15 5 15 12 11 12" /><line x1="-1" y1="15" x2="12" y2="15" /><path d="M3 0 C4-2 5 0 6-2" strokeWidth="0.8" />
+            </g>
+
+            {/* Key */}
+            <g transform="translate(82,142)">
+              <circle cx="5" cy="5" r="5" /><line x1="10" y1="5" x2="20" y2="5" /><line x1="17" y1="5" x2="17" y2="8" /><line x1="20" y1="5" x2="20" y2="8" />
+            </g>
+
+            {/* Film strip */}
+            <g transform="translate(118,138)">
+              <rect x="0" y="0" width="18" height="14" rx="1" /><rect x="2" y="2" width="14" height="10" rx="0" strokeWidth="0.6" />
+              <line x1="1" y1="4" x2="3" y2="4" strokeWidth="0.6" /><line x1="1" y1="7" x2="3" y2="7" strokeWidth="0.6" /><line x1="1" y1="10" x2="3" y2="10" strokeWidth="0.6" />
+              <line x1="15" y1="4" x2="17" y2="4" strokeWidth="0.6" /><line x1="15" y1="7" x2="17" y2="7" strokeWidth="0.6" /><line x1="15" y1="10" x2="17" y2="10" strokeWidth="0.6" />
+            </g>
+
+            {/* Lightning bolt */}
+            <g transform="translate(152,140)">
+              <path d="M8 0 L3 8 L7 8 L4 16 L12 6 L8 6Z" />
+            </g>
+
+            {/* Pizza slice */}
+            <g transform="translate(180,140)">
+              <path d="M8 0 L0 16 L16 16Z" /><circle cx="6" cy="10" r="1.2" fill={c} stroke="none" /><circle cx="10" cy="12" r="1.2" fill={c} stroke="none" /><circle cx="8" cy="7" r="1" fill={c} stroke="none" />
+            </g>
+
+            {/* Palette */}
+            <g transform="translate(210,140)">
+              <circle cx="9" cy="9" r="9" /><circle cx="5" cy="6" r="1.5" fill={c} stroke="none" /><circle cx="9" cy="4" r="1.5" fill={c} stroke="none" /><circle cx="13" cy="6" r="1.5" fill={c} stroke="none" /><circle cx="5" cy="12" r="1.5" fill={c} stroke="none" />
+            </g>
+
+            {/* Paper airplane */}
+            <g transform="translate(245,142)">
+              <path d="M0 8 L18 0 L12 16Z" /><line x1="18" y1="0" x2="7" y2="10" strokeWidth="0.8" />
+            </g>
+
+            {/* Umbrella */}
+            <g transform="translate(278,140)">
+              <path d="M1 10 C1 3 15 3 15 10" /><line x1="8" y1="3" x2="8" y2="18" /><path d="M8 18 C6 18 5 16 6 15" />
+            </g>
+
+            {/* === Row 6 === */}
+            {/* Music speaker */}
+            <g transform="translate(8,175)">
+              <rect x="0" y="0" width="12" height="16" rx="2" /><circle cx="6" cy="10" r="4" /><circle cx="6" cy="10" r="1.5" fill={c} stroke="none" /><circle cx="6" cy="4" r="1.5" />
+            </g>
+
+            {/* Donut */}
+            <g transform="translate(38,178)">
+              <circle cx="8" cy="8" r="8" /><circle cx="8" cy="8" r="3" /><path d="M3 5 Q5 2 8 1 Q12 2 14 6" strokeWidth="2" strokeDasharray="2 2" />
+            </g>
+
+            {/* Scissors */}
+            <g transform="translate(68,178)">
+              <circle cx="4" cy="14" r="3" /><circle cx="14" cy="14" r="3" /><line x1="5" y1="11" x2="13" y2="3" /><line x1="13" y1="11" x2="5" y2="3" />
+            </g>
+
+            {/* Globe */}
+            <g transform="translate(100,175)">
+              <circle cx="8" cy="8" r="8" /><ellipse cx="8" cy="8" rx="3.5" ry="8" /><line x1="0" y1="8" x2="16" y2="8" /><path d="M1 4 Q8 3 15 4" strokeWidth="0.7" /><path d="M1 12 Q8 13 15 12" strokeWidth="0.7" />
+            </g>
+
+            {/* Laptop */}
+            <g transform="translate(132,178)">
+              <rect x="2" y="0" width="16" height="11" rx="1.5" /><line x1="0" y1="13" x2="20" y2="13" /><path d="M0 13 L2 11" strokeWidth="0.8" /><path d="M20 13 L18 11" strokeWidth="0.8" />
+            </g>
+
+            {/* Stethoscope */}
+            <g transform="translate(168,175)">
+              <path d="M4 0 L4 8 C4 14 12 14 12 8 L12 0" /><circle cx="12" cy="12" r="3" /><circle cx="12" cy="12" r="1" fill={c} stroke="none" />
+            </g>
+
+            {/* Robot face */}
+            <g transform="translate(200,175)">
+              <rect x="2" y="4" width="14" height="12" rx="3" /><line x1="9" y1="0" x2="9" y2="4" /><circle cx="9" cy="0" r="1.5" /><rect x="5" y="8" width="3" height="2" rx="0.5" fill={c} stroke="none" /><rect x="10" y="8" width="3" height="2" rx="0.5" fill={c} stroke="none" /><line x1="6" y1="13" x2="12" y2="13" />
+            </g>
+
+            {/* Light bulb */}
+            <g transform="translate(235,175)">
+              <path d="M5 12 C2 9 2 3 8 1 C14 3 14 9 11 12" /><line x1="5" y1="12" x2="11" y2="12" /><line x1="5.5" y1="14" x2="10.5" y2="14" /><line x1="6" y1="16" x2="10" y2="16" />
+            </g>
+
+            {/* Clapperboard */}
+            <g transform="translate(268,177)">
+              <rect x="0" y="5" width="18" height="12" rx="1" /><path d="M0 5 L18 5 L16 0 L-2 0Z" /><line x1="4" y1="0" x2="6" y2="5" strokeWidth="0.8" /><line x1="9" y1="0" x2="11" y2="5" strokeWidth="0.8" /><line x1="14" y1="0" x2="16" y2="5" strokeWidth="0.8" />
+            </g>
+
+            {/* Scattered small dots / stars for density */}
+            <circle cx="30" cy="28" r="1.2" fill={c} stroke="none" /><circle cx="165" cy="28" r="1" fill={c} stroke="none" />
+            <circle cx="230" cy="15" r="1.3" fill={c} stroke="none" /><circle cx="305" cy="28" r="1" fill={c} stroke="none" />
+            <circle cx="70" cy="58" r="1" fill={c} stroke="none" /><circle cx="200" cy="60" r="1.2" fill={c} stroke="none" />
+            <circle cx="270" cy="95" r="1" fill={c} stroke="none" /><circle cx="35" cy="125" r="1.2" fill={c} stroke="none" />
+            <circle cx="165" cy="130" r="1" fill={c} stroke="none" /><circle cx="300" cy="135" r="1.2" fill={c} stroke="none" />
+            <circle cx="60" cy="165" r="1" fill={c} stroke="none" /><circle cx="155" cy="168" r="1" fill={c} stroke="none" />
+            <circle cx="265" cy="165" r="1.2" fill={c} stroke="none" /><circle cx="310" cy="180" r="1" fill={c} stroke="none" />
+
+            {/* Small 4-point stars */}
+            <path d="M88 25 L89 28 L92 29 L89 30 L88 33 L87 30 L84 29 L87 28Z" fill={c} stroke="none" />
+            <path d="M260 52 L261 55 L264 56 L261 57 L260 60 L259 57 L256 56 L259 55Z" fill={c} stroke="none" />
+            <path d="M30 98 L31 101 L34 102 L31 103 L30 106 L29 103 L26 102 L29 101Z" fill={c} stroke="none" />
+            <path d="M175 155 L176 158 L179 159 L176 160 L175 163 L174 160 L171 159 L174 158Z" fill={c} stroke="none" />
           </pattern>
         </defs>
-        <rect width="100%" height="100%" fill="url(#wa-pattern)" />
+        <rect width="100%" height="100%" fill="url(#wa-doodle)" />
       </svg>
     </div>
   );
@@ -709,8 +1012,9 @@ export function WhatsAppChatGeneratorTool() {
   // Wallpaper background
   const chatBg = (() => {
     if (wallpaper.type === 'image' && wallpaper.imageUrl) return undefined;
+    if (wallpaper.type === 'doodle') return undefined; // doodle handles its own bg
     if (wallpaper.type === 'color') return wallpaper.color;
-    return t.chatBg;
+    return undefined; // default also handles its own bg via doodle
   })();
 
   return (
@@ -881,13 +1185,27 @@ export function WhatsAppChatGeneratorTool() {
 
             {/* Wallpaper */}
             <div>
-              <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-2">Wallpaper</label>
+              <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">WhatsApp Doodle Wallpapers</label>
+              <div className="flex flex-wrap gap-2 items-center mb-2">
+                {DOODLE_WALLPAPERS.map(dw => (
+                  <button key={dw.label}
+                    onClick={() => setWallpaper({ type: 'doodle', color: '', doodleBg: dw.bg, doodleIcon: dw.icon, imageUrl: null })}
+                    className={`w-8 h-8 rounded-lg border-2 transition-all relative overflow-hidden ${wallpaper.type === 'doodle' && wallpaper.doodleBg === dw.bg ? 'border-emerald-500 ring-2 ring-emerald-200' : 'border-slate-300 dark:border-slate-600'}`}
+                    style={{ backgroundColor: dw.bg }}
+                    title={dw.label}>
+                    {/* Mini doodle preview */}
+                    <svg width="100%" height="100%" viewBox="0 0 32 32" style={{ position: 'absolute', inset: 0 }}>
+                      <circle cx="8" cy="8" r="3" fill="none" stroke={dw.icon} strokeWidth="1" />
+                      <rect x="18" y="5" width="6" height="6" rx="1" fill="none" stroke={dw.icon} strokeWidth="1" />
+                      <path d="M6 20 C6 18 8 17 10 19 C12 17 14 18 14 20 C14 23 10 25 10 25 C10 25 6 23 6 20Z" fill="none" stroke={dw.icon} strokeWidth="0.8" />
+                      <rect x="19" y="18" width="5" height="8" rx="1" fill="none" stroke={dw.icon} strokeWidth="0.8" />
+                    </svg>
+                  </button>
+                ))}
+              </div>
+              <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">Solid Colors</label>
               <div className="flex flex-wrap gap-2 items-center">
-                <button onClick={() => setWallpaper({ type: 'default', color: '', imageUrl: null })}
-                  className={`w-8 h-8 rounded-lg border-2 transition-all ${wallpaper.type === 'default' ? 'border-emerald-500 ring-2 ring-emerald-200' : 'border-slate-300 dark:border-slate-600'}`}
-                  style={{ background: theme === 'dark' ? '#0B141A' : '#ECE5DD' }}
-                  title="Default" />
-                {WALLPAPER_PRESETS.map(color => (
+                {SOLID_WALLPAPERS.map(color => (
                   <button key={color}
                     onClick={() => setWallpaper({ type: 'color', color, imageUrl: null })}
                     className={`w-8 h-8 rounded-lg border-2 transition-all ${wallpaper.type === 'color' && wallpaper.color === color ? 'border-emerald-500 ring-2 ring-emerald-200' : 'border-slate-300 dark:border-slate-600'}`}
@@ -1121,7 +1439,9 @@ export function WhatsAppChatGeneratorTool() {
                   backgroundSize: 'cover', backgroundPosition: 'center',
                 }}>
                   {/* Wallpaper doodle pattern (only on default) */}
-                  {wallpaper.type === 'default' && <WallpaperDoodle theme={theme} />}
+                  {(wallpaper.type === 'default' || wallpaper.type === 'doodle') && (
+                    <WallpaperDoodle theme={theme} doodleBg={wallpaper.doodleBg} doodleIcon={wallpaper.doodleIcon} />
+                  )}
 
                   <div style={{
                     position: 'relative', zIndex: 1,
