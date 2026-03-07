@@ -155,39 +155,35 @@ function StatusBar({ time, battery, theme }: { time: string; battery: number; th
   return (
     <div style={{
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      padding: '4px 12px', fontSize: 12, fontWeight: 600,
+      padding: '6px 16px', fontSize: 12, fontWeight: 600,
       color: t.headerText, backgroundColor: t.headerBg,
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
     }}>
-      <span>{time}</span>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+      <span style={{ fontSize: 13, fontWeight: 700 }}>{time}</span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
         {/* Signal bars */}
-        <svg width="16" height="12" viewBox="0 0 16 12">
-          <rect x="0" y="8" width="3" height="4" rx="0.5" fill={t.headerText} />
-          <rect x="4" y="5" width="3" height="7" rx="0.5" fill={t.headerText} />
-          <rect x="8" y="2" width="3" height="10" rx="0.5" fill={t.headerText} />
-          <rect x="12" y="0" width="3" height="12" rx="0.5" fill={t.headerText} opacity={0.4} />
+        <svg width="15" height="12" viewBox="0 0 15 12">
+          <rect x="0" y="8" width="2.5" height="4" rx="0.5" fill={t.headerText} />
+          <rect x="4" y="5" width="2.5" height="7" rx="0.5" fill={t.headerText} />
+          <rect x="8" y="2" width="2.5" height="10" rx="0.5" fill={t.headerText} />
+          <rect x="12" y="0" width="2.5" height="12" rx="0.5" fill={t.headerText} opacity={0.4} />
         </svg>
-        {/* WiFi */}
-        <svg width="14" height="12" viewBox="0 0 14 12" fill={t.headerText}>
-          <path d="M7 10.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
-          <path d="M3.5 8.5a5 5 0 017 0" fill="none" stroke={t.headerText} strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M1 5.5a9 9 0 0112 0" fill="none" stroke={t.headerText} strokeWidth="1.5" strokeLinecap="round" />
-        </svg>
-        {/* Battery */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+        {/* 4G text */}
+        <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: 0.3 }}>4G</span>
+        {/* Battery with percentage */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
           <div style={{
-            width: 22, height: 10, border: `1.5px solid ${t.headerText}`,
-            borderRadius: 2, position: 'relative', overflow: 'hidden',
+            width: 22, height: 11, border: `1.5px solid ${t.headerText}`,
+            borderRadius: 3, position: 'relative', overflow: 'hidden',
           }}>
             <div style={{
               position: 'absolute', left: 1, top: 1, bottom: 1,
               width: `${Math.min(battery, 100) * 0.88}%`,
               backgroundColor: battery <= 20 ? '#FF3B30' : t.headerText,
-              borderRadius: 1,
+              borderRadius: 1.5,
             }} />
           </div>
-          <div style={{ width: 2, height: 5, backgroundColor: t.headerText, borderRadius: '0 1px 1px 0' }} />
+          <div style={{ width: 1.5, height: 5, backgroundColor: t.headerText, borderRadius: '0 1px 1px 0', marginLeft: -2 }} />
         </div>
       </div>
     </div>
@@ -202,34 +198,34 @@ function ChatHeader({ contact, theme }: { contact: ContactInfo; theme: ThemeMode
   const t = theme === 'dark' ? DARK_THEME : LIGHT_THEME;
   return (
     <div style={{
-      display: 'flex', alignItems: 'center', gap: 8,
-      padding: '8px 8px 8px 4px',
+      display: 'flex', alignItems: 'center', gap: 0,
+      padding: '10px 10px 10px 6px',
       backgroundColor: t.headerBg, color: t.headerText,
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
     }}>
-      <ArrowLeft size={22} style={{ color: t.headerText, opacity: 0.9 }} />
+      <ArrowLeft size={22} style={{ color: t.headerText, opacity: 0.9, flexShrink: 0 }} />
       {/* Avatar */}
       <div style={{
-        width: 38, height: 38, borderRadius: '50%', overflow: 'hidden',
+        width: 36, height: 36, borderRadius: '50%', overflow: 'hidden',
         backgroundColor: '#4DB6AC', display: 'flex', alignItems: 'center',
-        justifyContent: 'center', flexShrink: 0,
+        justifyContent: 'center', flexShrink: 0, marginLeft: 2, marginRight: 10,
       }}>
         {contact.avatar ? (
           <img src={contact.avatar} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         ) : (
-          <span style={{ color: '#FFF', fontSize: 15, fontWeight: 600 }}>{contact.initials}</span>
+          <span style={{ color: '#FFF', fontSize: 14, fontWeight: 600 }}>{contact.initials}</span>
         )}
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: 16, fontWeight: 500, lineHeight: 1.2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div style={{ fontSize: 16, fontWeight: 500, lineHeight: 1.25, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {contact.name}
         </div>
-        <div style={{ fontSize: 12, opacity: 0.85, lineHeight: 1.2 }}>{contact.status}</div>
+        <div style={{ fontSize: 12.5, opacity: 0.8, lineHeight: 1.2, marginTop: 1 }}>{contact.status}</div>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-        <Video size={20} style={{ color: t.headerText, opacity: 0.9 }} />
-        <Phone size={18} style={{ color: t.headerText, opacity: 0.9 }} />
-        <MoreVertical size={20} style={{ color: t.headerText, opacity: 0.9 }} />
+      <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginRight: 4 }}>
+        <Video size={21} style={{ color: t.headerText, opacity: 0.9 }} />
+        <Phone size={19} style={{ color: t.headerText, opacity: 0.9 }} />
+        <MoreVertical size={21} style={{ color: t.headerText, opacity: 0.9 }} />
       </div>
     </div>
   );
@@ -268,27 +264,39 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
     return (
       <div style={{
         alignSelf: isSent ? 'flex-end' : 'flex-start',
-        maxWidth: '65%', borderRadius: 8, overflow: 'hidden',
-        backgroundColor: isSent ? t.sentBubble : t.receivedBubble,
-        fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
+        maxWidth: '65%', position: 'relative',
       }}>
-        <div style={{
-          width: '100%', height: 160, backgroundColor: theme === 'dark' ? '#374151' : '#E5E7EB',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        <svg width="8" height="13" viewBox="0 0 8 13" style={{
+          position: 'absolute', top: 0,
+          ...(isSent ? { right: -8 } : { left: -8, transform: 'scaleX(-1)' }),
         }}>
-          <ImageIcon size={40} style={{ color: theme === 'dark' ? '#6B7280' : '#9CA3AF' }} />
-        </div>
-        {msg.imageCaption && (
-          <div style={{ padding: '4px 8px', fontSize: 13.5, color: isSent ? t.sentText : t.receivedText }}>
-            {msg.imageCaption}
+          <path d="M0 0 L0 0 C4 4.5 5.5 9 8 13 L0 13 Z" fill={isSent ? t.sentBubble : t.receivedBubble} />
+        </svg>
+        <div style={{
+          borderRadius: 7.5, overflow: 'hidden',
+          borderTopRightRadius: isSent ? 0 : 7.5,
+          borderTopLeftRadius: isSent ? 7.5 : 0,
+          backgroundColor: isSent ? t.sentBubble : t.receivedBubble,
+          fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
+        }}>
+          <div style={{
+            width: '100%', height: 160, backgroundColor: theme === 'dark' ? '#374151' : '#E5E7EB',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+          }}>
+            <ImageIcon size={40} style={{ color: theme === 'dark' ? '#6B7280' : '#9CA3AF' }} />
           </div>
-        )}
-        <div style={{
-          display: 'flex', alignItems: 'center', justifyContent: 'flex-end',
-          gap: 2, padding: '0 8px 4px', fontSize: 11, color: t.timeText,
-        }}>
-          <span>{msg.time}</span>
-          {isSent && <TickIcon status={msg.tickStatus} theme={theme} />}
+          {msg.imageCaption && (
+            <div style={{ padding: '4px 8px', fontSize: 13.5, color: isSent ? t.sentText : t.receivedText }}>
+              {msg.imageCaption}
+            </div>
+          )}
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'flex-end',
+            gap: 2, padding: '0 8px 4px', fontSize: 11, color: t.timeText,
+          }}>
+            <span>{msg.time}</span>
+            {isSent && <TickIcon status={msg.tickStatus} theme={theme} />}
+          </div>
         </div>
       </div>
     );
@@ -298,39 +306,58 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
     return (
       <div style={{
         alignSelf: isSent ? 'flex-end' : 'flex-start',
-        maxWidth: '70%', padding: '6px 8px', borderRadius: 8,
-        backgroundColor: isSent ? t.sentBubble : t.receivedBubble,
-        fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
+        maxWidth: '75%', position: 'relative',
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <div style={{
-            width: 36, height: 36, borderRadius: '50%', backgroundColor: WHATSAPP_TEAL,
-            display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-          }}>
-            <Mic size={18} style={{ color: '#FFF' }} />
-          </div>
-          {/* Waveform */}
-          <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 1.5, height: 28 }}>
-            {Array.from({ length: 28 }, (_, i) => {
-              const h = Math.max(4, Math.sin(i * 0.7 + 1) * 14 + Math.cos(i * 1.3) * 8 + 12);
-              return (
-                <div key={i} style={{
-                  width: 2.5, height: h, borderRadius: 2,
-                  backgroundColor: isSent ? (theme === 'dark' ? '#8696A0' : '#5E8E75') : (theme === 'dark' ? '#8696A0' : '#A0AEB9'),
-                }} />
-              );
-            })}
-          </div>
-        </div>
-        <div style={{
-          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          marginTop: 2, fontSize: 11, color: t.timeText,
+        {/* Bubble tail */}
+        <svg width="8" height="13" viewBox="0 0 8 13" style={{
+          position: 'absolute', top: 0,
+          ...(isSent ? { right: -8 } : { left: -8, transform: 'scaleX(-1)' }),
         }}>
-          <span>{msg.text || '0:32'}</span>
-          <span style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            {msg.time}
-            {isSent && <TickIcon status={msg.tickStatus} theme={theme} />}
-          </span>
+          <path d="M0 0 L0 0 C4 4.5 5.5 9 8 13 L0 13 Z" fill={isSent ? t.sentBubble : t.receivedBubble} />
+        </svg>
+        <div style={{
+          padding: '6px 8px', borderRadius: 8,
+          borderTopRightRadius: isSent ? 0 : 8,
+          borderTopLeftRadius: isSent ? 8 : 0,
+          backgroundColor: isSent ? t.sentBubble : t.receivedBubble,
+          fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            {/* Play button */}
+            <div style={{
+              width: 34, height: 34, borderRadius: '50%',
+              backgroundColor: theme === 'dark' ? '#00A884' : WHATSAPP_TEAL,
+              display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+            }}>
+              <svg width="14" height="16" viewBox="0 0 14 16" fill="#FFF">
+                <path d="M2 1.5v13l10.5-6.5L2 1.5z" />
+              </svg>
+            </div>
+            {/* Waveform */}
+            <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 1.2, height: 28 }}>
+              {Array.from({ length: 30 }, (_, i) => {
+                const h = Math.max(3, Math.sin(i * 0.6 + 1) * 10 + Math.cos(i * 1.2) * 6 + 10);
+                return (
+                  <div key={i} style={{
+                    width: 2.5, height: h, borderRadius: 2,
+                    backgroundColor: isSent
+                      ? (theme === 'dark' ? 'rgba(134,150,160,0.7)' : 'rgba(94,142,117,0.7)')
+                      : (theme === 'dark' ? 'rgba(134,150,160,0.7)' : 'rgba(160,174,185,0.8)'),
+                  }} />
+                );
+              })}
+            </div>
+          </div>
+          <div style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+            marginTop: 2, fontSize: 11, color: t.timeText,
+          }}>
+            <span>{msg.text || '0:32'}</span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+              {msg.time}
+              {isSent && <TickIcon status={msg.tickStatus} theme={theme} />}
+            </span>
+          </div>
         </div>
       </div>
     );
@@ -340,30 +367,22 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
   const bubbleBg = isSent ? t.sentBubble : t.receivedBubble;
   const textColor = isSent ? t.sentText : t.receivedText;
 
-  // Tail
-  const tailColor = bubbleBg;
-
   return (
     <div style={{
       alignSelf: isSent ? 'flex-end' : 'flex-start',
       maxWidth: '75%', position: 'relative',
     }}>
-      {/* Bubble tail */}
-      <div style={{
+      {/* Curved bubble tail (SVG) */}
+      <svg width="8" height="13" viewBox="0 0 8 13" style={{
         position: 'absolute', top: 0,
-        ...(isSent
-          ? { right: -6 }
-          : { left: -6 }
-        ),
-        width: 0, height: 0,
-        borderTop: `6px solid ${tailColor}`,
-        borderLeft: isSent ? '6px solid transparent' : 'none',
-        borderRight: isSent ? 'none' : '6px solid transparent',
-      }} />
+        ...(isSent ? { right: -8 } : { left: -8, transform: 'scaleX(-1)' }),
+      }}>
+        <path d="M0 0 L0 0 C4 4.5 5.5 9 8 13 L0 13 Z" fill={bubbleBg} />
+      </svg>
       <div style={{
-        padding: '6px 8px 4px', borderRadius: 8,
-        borderTopRightRadius: isSent ? 0 : 8,
-        borderTopLeftRadius: isSent ? 8 : 0,
+        padding: '5px 7px 4px 7px', borderRadius: 7.5,
+        borderTopRightRadius: isSent ? 0 : 7.5,
+        borderTopLeftRadius: isSent ? 7.5 : 0,
         backgroundColor: bubbleBg,
         fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
       }}>
@@ -409,25 +428,31 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
 
 function InputBar({ theme }: { theme: ThemeMode }) {
   const t = theme === 'dark' ? DARK_THEME : LIGHT_THEME;
+  const iconColor = theme === 'dark' ? '#8696A0' : '#8696A0';
   return (
     <div style={{
       display: 'flex', alignItems: 'center', gap: 6,
-      padding: '6px 6px', backgroundColor: t.inputBarBg,
+      padding: '5px 6px', backgroundColor: t.inputBarBg,
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
     }}>
       <div style={{
-        flex: 1, display: 'flex', alignItems: 'center', gap: 8,
-        backgroundColor: t.inputBg, borderRadius: 24, padding: '8px 12px',
+        flex: 1, display: 'flex', alignItems: 'center', gap: 6,
+        backgroundColor: t.inputBg, borderRadius: 22, padding: '7px 10px',
       }}>
-        <Smile size={22} style={{ color: '#8696A0', flexShrink: 0 }} />
-        <span style={{ flex: 1, fontSize: 15, color: '#8696A0' }}>Type a message</span>
-        <Paperclip size={20} style={{ color: '#8696A0', flexShrink: 0, transform: 'rotate(45deg)' }} />
-        <Camera size={20} style={{ color: '#8696A0', flexShrink: 0 }} />
+        <Smile size={24} style={{ color: iconColor, flexShrink: 0 }} />
+        <span style={{ flex: 1, fontSize: 15, color: iconColor }}>Type a message</span>
+        <Paperclip size={22} style={{ color: iconColor, flexShrink: 0, transform: 'rotate(-45deg)' }} />
+        {/* Rupee/sticker icon */}
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
+          <circle cx="12" cy="12" r="10" stroke={iconColor} strokeWidth="1.5" />
+          <text x="12" y="16" textAnchor="middle" fill={iconColor} fontSize="12" fontWeight="600" fontFamily="sans-serif">₹</text>
+        </svg>
+        <Camera size={22} style={{ color: iconColor, flexShrink: 0 }} />
       </div>
       <div style={{
-        width: 44, height: 44, borderRadius: '50%',
-        backgroundColor: WHATSAPP_TEAL, display: 'flex',
-        alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+        width: 42, height: 42, borderRadius: '50%',
+        backgroundColor: theme === 'dark' ? '#00A884' : WHATSAPP_TEAL,
+        display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
       }}>
         <Mic size={22} style={{ color: '#FFF' }} />
       </div>
@@ -440,20 +465,22 @@ function InputBar({ theme }: { theme: ThemeMode }) {
 /* ------------------------------------------------------------------ */
 
 function EncryptionNotice({ theme }: { theme: ThemeMode }) {
-  const t = theme === 'dark' ? DARK_THEME : LIGHT_THEME;
+  const isDark = theme === 'dark';
   return (
     <div style={{
-      textAlign: 'center', padding: '6px 12px', fontSize: 11.5,
-      color: t.timeText,
+      textAlign: 'center', padding: '4px 8px', fontSize: 11,
+      color: isDark ? '#8696A0' : '#54656F',
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
+      lineHeight: 1.35,
     }}>
       <div style={{
-        display: 'inline-flex', alignItems: 'center', gap: 4,
-        backgroundColor: theme === 'dark' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)',
-        borderRadius: 6, padding: '4px 10px',
+        display: 'inline-flex', alignItems: 'flex-start', gap: 4,
+        backgroundColor: isDark ? 'rgba(255,218,90,0.06)' : 'rgba(255,218,90,0.15)',
+        borderRadius: 6, padding: '5px 10px', maxWidth: '95%',
+        textAlign: 'center',
       }}>
-        <Lock size={11} />
-        Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.
+        <Lock size={10} style={{ flexShrink: 0, marginTop: 2, color: isDark ? '#E2B53B' : '#C49A09' }} />
+        <span>Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.</span>
       </div>
     </div>
   );
@@ -464,17 +491,20 @@ function EncryptionNotice({ theme }: { theme: ThemeMode }) {
 /* ------------------------------------------------------------------ */
 
 function DateChip({ text, theme }: { text: string; theme: ThemeMode }) {
+  const isDark = theme === 'dark';
   return (
     <div style={{
-      textAlign: 'center', padding: '4px 0',
+      textAlign: 'center', padding: '6px 0',
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
     }}>
       <span style={{
-        display: 'inline-block', fontSize: 12, fontWeight: 500,
-        color: theme === 'dark' ? '#8696A0' : '#54656F',
-        backgroundColor: theme === 'dark' ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.9)',
-        borderRadius: 8, padding: '4px 12px',
-        boxShadow: '0 1px 1px rgba(0,0,0,0.08)',
+        display: 'inline-block', fontSize: 12, fontWeight: 600,
+        color: isDark ? '#8B9DA5' : '#54656F',
+        backgroundColor: isDark ? 'rgba(26,39,48,0.85)' : 'rgba(255,255,255,0.92)',
+        borderRadius: 7, padding: '5px 12px',
+        boxShadow: '0 1px 0.5px rgba(0,0,0,0.13)',
+        letterSpacing: 0.2,
+        textTransform: 'uppercase',
       }}>
         {text}
       </span>
@@ -1106,8 +1136,8 @@ export function WhatsAppChatGeneratorTool() {
                 }}>
                   <div style={{
                     position: 'relative', zIndex: 1,
-                    display: 'flex', flexDirection: 'column', gap: 4,
-                    padding: '8px 12px 8px',
+                    display: 'flex', flexDirection: 'column', gap: 3,
+                    padding: '6px 14px 8px',
                   }}>
                     {/* Encryption notice */}
                     {showEncryption && <EncryptionNotice theme={theme} />}
