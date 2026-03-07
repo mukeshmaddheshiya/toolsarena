@@ -258,6 +258,44 @@ The tool handles large inputs — paste in thousands of lines and get clean, ded
     estimatedTime: 'Instant',
   },
 
+  {
+    slug: 'hook-caption-scorer',
+    name: 'Hook & Caption Scorer',
+    shortDescription: 'Score your hooks, captions & headlines on 5 dimensions. Get actionable tips to boost engagement.',
+    longDescription: `Rate any hook, caption, or headline with our free Hook & Caption Scorer. The tool analyzes your text across 5 proven engagement dimensions — Power Words, Emotional Trigger, Clarity, Curiosity Gap, and Specificity — and gives you an overall score from 0 to 100.
+
+Choose your platform context (YouTube Title, Instagram Caption, Twitter/X Post, Blog Headline, Email Subject, TikTok Hook, or LinkedIn Post) and the scorer adjusts its ideal length targets, emoji handling, and tone expectations automatically.
+
+The built-in power words database contains 200+ categorized engagement words across urgency, emotion, value, curiosity, authority, and action categories. The tool checks for numbers, questions, curiosity gaps, ALL CAPS usage, passive voice, generic phrases, and platform-specific length optimization.
+
+After scoring, you get 3-5 actionable suggestions to improve — like adding a power word, creating a curiosity gap, or including a specific number. Your last 5 scored hooks are saved in browser history so you can compare iterations. Copy a full score report to share with your team.
+
+100% client-side — no AI, no API calls, no data sent to any server. Instant, private, and free.`,
+    category: 'text-tools',
+    targetKeyword: 'hook scorer',
+    secondaryKeywords: ['caption scorer', 'headline analyzer', 'hook rating tool', 'caption analyzer', 'headline score', 'engagement scorer', 'hook grader', 'caption grader', 'title scorer', 'youtube title scorer'],
+    metaTitle: 'Hook & Caption Scorer - Rate Your Headlines & Captions | Free',
+    metaDescription: 'Score your hooks, captions & headlines on 5 dimensions. Get actionable suggestions to boost engagement. Free online tool — no signup, instant results.',
+    faqs: [
+      { question: 'How does the scoring work?', answer: 'The scorer analyzes your text across 5 dimensions: Power Words (emotional/action words), Emotional Trigger (impact and feeling), Clarity (readability and optimal length), Curiosity Gap (questions and open loops), and Specificity (numbers, data, named entities). Each dimension scores 0-20, totaling 0-100.' },
+      { question: 'What is a good hook score?', answer: 'A score above 70 is considered strong and likely to drive engagement. 40-70 is decent but has room for improvement. Below 40 means your hook needs significant work. Most viral hooks score 75+.' },
+      { question: 'Does the platform selection matter?', answer: 'Yes! Each platform has different ideal lengths, emoji preferences, and tone expectations. A YouTube title should be 40-65 characters, while an email subject line works best at 30-50 characters. The scorer adjusts accordingly.' },
+      { question: 'Is this tool using AI?', answer: 'No. The scorer uses a rule-based algorithm with a curated database of 200+ power words, pattern matching for curiosity gaps, and platform-specific length checks. All processing happens instantly in your browser — no API calls or AI involved.' },
+      { question: 'Is my text private?', answer: 'Yes. Everything runs 100% in your browser. Your text is never sent to any server. History is stored in your browser\'s localStorage only.' },
+    ],
+    howToSteps: [
+      'Select your platform context (YouTube, Instagram, Twitter, etc.).',
+      'Type or paste your hook, caption, or headline in the text area.',
+      'View your real-time score across 5 engagement dimensions.',
+      'Read the actionable suggestions to improve your score.',
+      'Click "Copy Report" to share your score breakdown.',
+    ],
+    relatedToolSlugs: ['word-counter', 'ai-text-humanizer', 'case-converter', 'character-counter'],
+    icon: 'Target',
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+
   // ─── CALCULATORS ──────────────────────────────────────────────────────────
   {
     slug: 'age-calculator',
@@ -2286,6 +2324,38 @@ Download as a complete HTML file with CSS included. Perfect for bloggers, develo
     icon: 'FileCode2',
     estimatedTime: 'Instant',
   },
+  {
+    slug: 'json-to-typescript',
+    name: 'JSON to TypeScript',
+    shortDescription: 'Convert JSON to TypeScript interfaces and types instantly online.',
+    longDescription: `Paste any JSON and instantly get clean, well-structured TypeScript interfaces. Our JSON to TypeScript converter analyzes your JSON data recursively — handling nested objects, arrays, mixed-type arrays (union types), null values, and empty structures — and generates production-ready TypeScript types.
+
+Customize the output with options like interface vs type alias, optional properties, readonly modifiers, exported types, and inline vs separate nested interfaces. The converter automatically creates named sub-interfaces for nested objects (e.g., Address, Order) and determines array element types intelligently, producing union types when array items differ.
+
+Perfect for developers working with REST APIs, GraphQL responses, or any JSON data source who need TypeScript type definitions quickly without writing them by hand.`,
+    category: 'developer-tools',
+    targetKeyword: 'JSON to TypeScript converter',
+    secondaryKeywords: ['json to ts', 'json to typescript online', 'json to interface', 'json to type', 'generate typescript from json', 'json to ts converter'],
+    metaTitle: 'JSON to TypeScript Converter - Generate Interfaces Online Free',
+    metaDescription: 'Convert JSON to TypeScript interfaces and types instantly. Handles nested objects, arrays, union types & null values. Free online JSON to TS converter.',
+    faqs: [
+      { question: 'How does this convert JSON to TypeScript?', answer: 'The tool parses your JSON, recursively analyzes each value\'s type, creates named interfaces for nested objects, determines array element types (including union types for mixed arrays), and generates clean TypeScript output with proper indentation.' },
+      { question: 'What is the difference between interface and type in TypeScript?', answer: 'Interfaces are extendable and mergeable — ideal for object shapes. Type aliases are more flexible and can represent unions, intersections, and primitives. For most JSON-to-TS conversions, interfaces are preferred, but the tool lets you choose either.' },
+      { question: 'Does it handle nested objects and arrays?', answer: 'Yes. Nested objects automatically get their own named interface (e.g., an "address" field generates an Address interface). Arrays are typed by their element type, and mixed-type arrays produce union types.' },
+      { question: 'What happens with null values?', answer: 'By default, null values are typed as null. You can toggle the "Use unknown for null" option to type them as unknown instead, which is stricter and forces type checking before use.' },
+      { question: 'Is my JSON data safe?', answer: 'Yes. Everything runs 100% in your browser. Your JSON is never sent to any server — the conversion happens entirely client-side using JavaScript.' },
+    ],
+    howToSteps: [
+      'Paste your JSON into the left input panel (or click "Try Example").',
+      'TypeScript interfaces appear instantly in the right panel.',
+      'Open Settings to customize: root name, interface vs type, optional/readonly, export, etc.',
+      'Click "Copy" to copy the generated TypeScript to your clipboard.',
+      'Use "Prettify" to format messy JSON before converting.',
+    ],
+    relatedToolSlugs: ['json-formatter', 'csv-to-json', 'base64-encode-decode', 'regex-tester', 'markdown-to-html'],
+    icon: 'Braces',
+    estimatedTime: 'Instant',
+  },
 
   // ─── ASTROLOGY TOOLS ──────────────────────────────────────────────────────
   {
@@ -3944,6 +4014,43 @@ Perfect for students, bloggers, content writers, marketers, and professionals wh
     isNew: true,
     estimatedTime: 'Instant',
   },
+  {
+    slug: 'ats-resume-checker',
+    name: 'ATS Resume Score Checker',
+    shortDescription: 'Check your resume against a job description and get an ATS compatibility score with actionable tips.',
+    longDescription: `Check how well your resume matches a job description with our free ATS Resume Score Checker. Get an instant ATS compatibility score out of 100, with a detailed breakdown across 5 key dimensions: keyword match, section detection, action verbs, quantifiable metrics, and formatting.
+
+The tool extracts keywords from the job description (including multi-word phrases) and checks which ones appear in your resume. It scans for essential resume sections like Contact Info, Summary, Experience, Education, Skills, and Certifications. It also evaluates whether you use strong action verbs and quantifiable achievements — two factors that make resumes stand out to both ATS software and human recruiters.
+
+You get color-coded keyword chips showing which JD keywords are present or missing, a section-by-section checklist, and 5-8 personalized suggestions to improve your score. Everything runs 100% in your browser — your resume is never uploaded, stored, or sent to any server. Complete privacy guaranteed.
+
+Perfect for job seekers, career changers, and anyone applying to competitive roles who wants to ensure their resume passes automated screening systems before reaching a recruiter.`,
+    category: 'text-tools',
+    targetKeyword: 'ATS resume checker',
+    secondaryKeywords: ['ATS score checker', 'resume ATS score', 'ATS resume scanner', 'resume keyword checker', 'ATS friendly resume checker', 'resume score checker free', 'ATS compatibility checker'],
+    metaTitle: 'ATS Resume Score Checker - Free Resume ATS Compatibility Test',
+    metaDescription: 'Check your resume ATS score free. Compare resume vs job description, find missing keywords, get section checklist & actionable tips. 100% private — runs in your browser.',
+    faqs: [
+      { question: 'What is an ATS and why does it matter?', answer: 'An Applicant Tracking System (ATS) is software used by employers to filter resumes before a human reviews them. Over 75% of large companies use ATS. If your resume is not optimized for ATS, it may be rejected automatically — even if you are qualified for the role.' },
+      { question: 'How does the ATS score work?', answer: 'The score is a weighted average of 5 dimensions: keyword match (35%), section detection (20%), action verbs (15%), quantification (15%), and formatting (15%). A score of 71+ is considered good, 41-70 needs improvement, and below 40 is poor.' },
+      { question: 'Is my resume data safe?', answer: 'Yes, 100%. All analysis runs entirely in your browser using JavaScript. Your resume text is never sent to any server, never stored, and never shared. You can verify this in your browser developer tools — no network requests are made during analysis.' },
+      { question: 'Should I paste my resume as plain text?', answer: 'Yes. Copy the text content of your resume and paste it into the input box. The tool analyzes text content, not PDF formatting. Most ATS systems also parse resumes as plain text, so this gives you the most accurate assessment.' },
+      { question: 'How can I improve a low score?', answer: 'Focus on the suggestions panel. The most impactful improvements are: adding missing keywords from the job description, ensuring all standard sections are present (especially Skills), using strong action verbs, and including quantifiable metrics (numbers, percentages, dollar amounts) in your experience bullets.' },
+    ],
+    howToSteps: [
+      'Paste your resume text in the left panel.',
+      'Paste the target job description in the right panel.',
+      'Click "Analyze Resume" to get your ATS score.',
+      'Review the score breakdown, keyword analysis, and section checklist.',
+      'Follow the personalized suggestions to improve your score.',
+      'Click "Copy Report" to save or share your results.',
+    ],
+    relatedToolSlugs: ['word-counter', 'ai-text-humanizer', 'case-converter', 'paraphrasing-tool'],
+    icon: 'FileSearch',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
   // ─── NEW BATCH: Finance, Utility & Lifestyle Tools ──────────────────────────
   {
     slug: 'rent-receipt-generator',
@@ -4828,6 +4935,77 @@ Features history of your last 5 letters (stored locally), keyboard shortcuts for
     estimatedTime: '2 minutes',
   },
   {
+    slug: 'experience-letter-generator',
+    name: 'Experience Letter Generator',
+    shortDescription: 'Generate professional experience certificates and relieving letters. Download as PNG — free, instant, no signup.',
+    longDescription: `Create professional experience certificates and relieving letters instantly with the ToolsArena Experience Letter Generator. Fill in company details, employee information, employment period, and performance rating — and download a clean, formal letter as PNG.
+
+Choose between two letter types: Experience Certificate (attesting employment history and performance) or Relieving Letter (confirming separation and clearance of dues). The letter wording automatically adjusts based on performance rating (Excellent, Good, or Satisfactory) and reason for leaving (Resignation, End of Contract, or Mutual Separation).
+
+Features auto-calculated employment duration, auto-generated reference numbers, professional Indian corporate letter formatting, company seal placeholder, and HR signature block. Perfect for HR departments, small businesses, startups, and individuals who need properly formatted employment documents.
+
+100% private — all data stays in your browser. Nothing is uploaded to any server.`,
+    category: 'utility-tools',
+    targetKeyword: 'experience letter generator',
+    secondaryKeywords: ['experience certificate generator', 'relieving letter generator', 'employment certificate maker', 'work experience letter format', 'experience letter format India', 'relieving letter format', 'service certificate generator', 'experience certificate online', 'HR letter generator free', 'job experience letter maker'],
+    metaTitle: 'Experience Letter Generator - Free Experience Certificate & Relieving Letter Maker',
+    metaDescription: 'Generate professional experience certificates & relieving letters instantly. Auto-adjusts wording for performance ratings. Download as PNG. Free, private, no signup.',
+    faqs: [
+      { question: 'What is the difference between an experience certificate and a relieving letter?', answer: 'An experience certificate attests to an employee\'s tenure, role, and performance at a company. A relieving letter confirms that the employee has been formally relieved of duties and all dues have been settled. Both are commonly required when joining a new organisation in India.' },
+      { question: 'Is this experience letter legally valid?', answer: 'This tool generates a professional format for reference. For the letter to be legally valid, it must be printed on company letterhead, signed by an authorised signatory, and stamped with the company seal. The generated letter serves as a template/draft.' },
+      { question: 'Is my data private and secure?', answer: 'Yes, 100%. All processing happens entirely in your browser. No data is sent to any server, stored, or shared. Your information stays completely private.' },
+      { question: 'Can I edit the reference number?', answer: 'Yes, the reference number is auto-generated in the format HR/EXP/YEAR/NUMBER but you can edit it to match your company\'s reference numbering system.' },
+    ],
+    howToSteps: [
+      'Select the letter type — Experience Certificate or Relieving Letter.',
+      'Enter company details — name, address, HR name, and designation.',
+      'Enter employee details — name, ID, designation, and department.',
+      'Set joining date and last working date (duration auto-calculates).',
+      'Choose performance rating and reason for leaving.',
+      'Preview the letter live and download as PNG.',
+    ],
+    relatedToolSlugs: ['salary-slip-generator', 'rent-receipt-generator', 'formal-letter-writer', 'invoice-generator', 'resume-builder'],
+    icon: 'Award',
+    isNew: true,
+    estimatedTime: 'Under 2 min',
+  },
+  {
+    slug: 'resignation-letter-generator',
+    name: 'Resignation Letter Generator',
+    shortDescription: 'Generate professional resignation letters instantly. 4 templates — Standard, Grateful, Immediate & Short. India-focused, free download.',
+    longDescription: `Create a professional resignation letter in minutes with our free Resignation Letter Generator. Choose from 4 letter types — Standard, Grateful, Immediate, and Short & Simple — each tailored for different resignation scenarios common in Indian workplaces.
+
+Fill in your details (name, designation, department, employee ID), manager and company information, and select your notice period (15, 30, 60, or 90 days) to auto-calculate your last working date. Optionally mention your reason for leaving and adjust the tone between Formal, Warm, or Brief.
+
+Each template generates realistic, ready-to-use resignation letters that mention notice period, handover, full & final settlement, and other details that Indian HR departments expect. The Grateful template adds heartfelt appreciation, the Immediate template includes apology for short notice, and the Short template keeps it to 3-4 lines.
+
+Preview your letter on a clean paper layout, copy the text to clipboard, or download as PNG. "Try Example" button pre-fills all fields so you can see the format instantly. 100% client-side — your personal details never leave your browser.`,
+    category: 'utility-tools',
+    targetKeyword: 'resignation letter generator',
+    secondaryKeywords: ['resignation letter format India', 'resignation letter template', 'professional resignation letter', 'resignation letter maker', 'resignation letter online', 'how to write resignation letter', 'notice period resignation letter', 'immediate resignation letter', 'short resignation letter format', 'resignation letter with notice period'],
+    metaTitle: 'Resignation Letter Generator - Free Professional Templates India',
+    metaDescription: 'Generate professional resignation letters instantly. 4 templates — Standard, Grateful, Immediate & Short. Auto notice period calculator, free PNG download. No signup.',
+    faqs: [
+      { question: 'What types of resignation letters can I generate?', answer: 'Four types: Standard (professional with notice period), Grateful (emphasizes appreciation and learning), Immediate (urgent resignation with apology for short notice), and Short & Simple (3-4 line minimal resignation). Each adapts based on your chosen tone and reason.' },
+      { question: 'How does the notice period calculator work?', answer: 'Select your notice period (15, 30, 60, or 90 days) and the tool automatically calculates your last working date from today. You can also manually pick a custom last working date.' },
+      { question: 'Is my personal data safe?', answer: 'Yes. Everything runs in your browser. Your name, company details, and letter content are never sent to any server. Your data stays 100% private.' },
+      { question: 'Can I use these letters for actual resignation?', answer: 'Absolutely. The letters follow standard Indian corporate resignation format and mention all necessary elements like notice period, handover, full & final settlement, and exit formalities that HR departments expect.' },
+      { question: 'What tone options are available?', answer: 'Three tones: Formal (corporate and professional), Warm (friendly and appreciative), and Brief (concise and to-the-point). The tone adjusts the language throughout the letter.' },
+    ],
+    howToSteps: [
+      'Select a letter type — Standard, Grateful, Immediate, or Short & Simple.',
+      'Fill in your details — name, designation, department, and employee ID.',
+      'Enter manager name, designation, and company name.',
+      'Choose notice period to auto-calculate last working date.',
+      'Optionally select reason for leaving and preferred tone.',
+      'Preview your letter, then copy text or download as PNG.',
+    ],
+    relatedToolSlugs: ['letter-application-writer', 'experience-letter-generator', 'salary-slip-generator', 'resume-builder'],
+    icon: 'FileText',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+  {
     slug: 'period-ovulation-calculator',
     name: 'Period & Ovulation Calculator',
     shortDescription: 'Track your menstrual cycle, predict periods, ovulation dates, and fertile windows. Privacy-first — all calculations happen in your browser.',
@@ -5314,9 +5492,358 @@ Perfect for presentations, mockups, UI/UX design, social media content, and educ
     isNew: true,
     estimatedTime: '3 minutes',
   },
+  {
+    slug: 'email-signature-generator',
+    name: 'Email Signature Generator',
+    shortDescription: 'Create professional HTML email signatures with 6 templates, social icons, CTA button, and photo. Works in Gmail, Outlook & Apple Mail.',
+    longDescription: `Design stunning professional email signatures that work perfectly in Gmail, Outlook, Apple Mail, and all major email clients. Choose from 6 beautiful templates — Classic, Modern, Compact, Corporate, Creative, and Minimal.
+
+Add your photo, company logo, social media links (LinkedIn, Twitter/X, GitHub, Instagram, Facebook, YouTube), and a custom CTA button like "Book a Meeting" or "Visit Our Website." Customize colors to match your brand.
+
+The generated signatures use HTML tables with inline styles — the gold standard for email client compatibility. No CSS classes, no flexbox, no grid — just battle-tested table-based layouts that render perfectly everywhere.
+
+Copy the raw HTML to paste into your email client settings, or copy the rendered signature directly. Step-by-step instructions included for Gmail, Outlook, and Apple Mail. 100% private — all processing happens in your browser.`,
+    category: 'utility-tools',
+    targetKeyword: 'email signature generator',
+    secondaryKeywords: ['email signature maker', 'HTML email signature', 'professional email signature', 'Gmail signature generator', 'Outlook signature creator', 'free email signature template', 'email signature with logo', 'email signature with social icons', 'business email signature maker'],
+    metaTitle: 'Email Signature Generator - Free Professional HTML Signatures for Gmail & Outlook',
+    metaDescription: 'Create professional HTML email signatures with 6 templates, photo, logo, social icons & CTA button. Works in Gmail, Outlook & Apple Mail. Free, no signup.',
+    faqs: [
+      { question: 'Will my signature work in Gmail?', answer: 'Yes! The signatures use HTML tables with inline styles, which is the most compatible format for Gmail. Follow the included step-by-step instructions to add it to your Gmail settings.' },
+      { question: 'Can I add my company logo and photo?', answer: 'Yes! Add both a profile photo and company logo via URL. The images are displayed with proper dimensions for email clients.' },
+      { question: 'Which social media platforms are supported?', answer: 'LinkedIn, Twitter/X, GitHub, Instagram, Facebook, and YouTube. Each appears as a recognizable icon linking to your profile.' },
+      { question: 'Does the signature work in Outlook?', answer: 'Yes! Table-based HTML signatures work in all versions of Outlook, including desktop, web, and mobile. Instructions are included for adding the signature.' },
+      { question: 'Is my data stored anywhere?', answer: 'No. All processing happens entirely in your browser. Your personal information never leaves your device.' },
+    ],
+    howToSteps: [
+      'Fill in your personal details — name, title, company, and contact info.',
+      'Add your photo URL and company logo URL (optional).',
+      'Enter social media profile URLs for the icons you want to display.',
+      'Choose a template style and customize colors.',
+      'Preview the live signature and copy HTML or rendered signature.',
+      'Follow the instructions to add it to Gmail, Outlook, or Apple Mail.',
+    ],
+    relatedToolSlugs: ['business-card-maker', 'social-media-post-mockup', 'qr-code-generator', 'invoice-generator'],
+    icon: 'AtSign',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
+
+  // ─── NOC GENERATOR ─────────────────────────────────────────────────────
+  {
+    slug: 'noc-generator',
+    name: 'NOC Generator',
+    shortDescription: 'Generate professional No Objection Certificate (NOC) letters for employment, property, vehicle, travel & bank purposes.',
+    longDescription: `Create professional No Objection Certificates (NOC) instantly with our free online NOC Generator. Choose from 5 ready-made templates — Employment, Property, Vehicle Transfer, Travel, and Bank/Loan — and fill in the details to generate a formal, well-worded NOC letter.
+
+Each template is professionally worded following Indian legal and business standards. The tool provides a live letter preview styled as a formal document with letterhead, reference number, date, and official formatting.
+
+Download your NOC as a high-resolution PNG image ready for printing, or copy the text to paste into your own letterhead. Auto-generated reference numbers, editable dates, and "Try Example" buttons make it easy to get started.
+
+Perfect for HR departments, housing societies, banks, RTOs, and individuals who need to issue or draft NOC letters quickly. 100% private — everything runs in your browser with no data uploaded to any server.`,
+    category: 'text-tools',
+    targetKeyword: 'noc generator',
+    secondaryKeywords: ['no objection certificate generator', 'noc letter format', 'noc format india', 'noc certificate maker', 'employment noc format', 'vehicle noc format', 'property noc format', 'bank noc format', 'travel noc format', 'noc letter maker online'],
+    metaTitle: 'NOC Generator - Free No Objection Certificate Maker Online',
+    metaDescription: 'Generate professional NOC letters for employment, property, vehicle, travel & bank. 5 templates, live preview, download as PNG. Free, no signup, 100% private.',
+    faqs: [
+      { question: 'What is a No Objection Certificate (NOC)?', answer: 'A No Objection Certificate (NOC) is a legal document issued by an organization, institution, or individual declaring that they have no objection to the details mentioned in the certificate. It is commonly used in India for employment, property transactions, vehicle transfers, travel, and loan closures.' },
+      { question: 'Is this NOC legally valid?', answer: 'This tool generates a professionally formatted draft NOC. For legal validity, the letter must be printed on official letterhead, signed by an authorized person, and stamped by the issuing organization. The generated document serves as a ready-to-use template.' },
+      { question: 'What NOC types are supported?', answer: 'We support 5 types: Employment NOC (for higher studies, passport, visa), Property NOC (for sale, mortgage, construction), Vehicle NOC (for RTO transfer), Travel NOC (employer/parent consent), and Bank/Loan NOC (for loan closure, property release).' },
+      { question: 'Can I download the NOC as a PDF?', answer: 'Currently you can download the NOC as a high-resolution PNG image (2x scale) which is suitable for printing. You can also copy the text and paste it into any word processor to create a PDF.' },
+      { question: 'Is my data private?', answer: 'Absolutely. All processing happens in your browser. Your information is never sent to any server. No signup or account is required.' },
+    ],
+    howToSteps: [
+      'Select the NOC type — Employment, Property, Vehicle, Travel, or Bank/Loan.',
+      'Fill in the organization name, address, date, and other required details.',
+      'Use the "Try Example" button to see a sample filled-out NOC.',
+      'Review the live preview on the right side of the screen.',
+      'Download the NOC as a PNG image or copy the text to clipboard.',
+    ],
+    relatedToolSlugs: ['certificate-maker', 'business-card-maker', 'resignation-letter-generator', 'invoice-generator'],
+    icon: 'FileText',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+
+  // ─── FONT PAIRING ──────────────────────────────────────────────────────
+  {
+    slug: 'font-pairing',
+    name: 'Font Pairing Tool',
+    shortDescription: 'Browse 27 curated Google Font pairings with live preview, type scale, and one-click CSS export.',
+    longDescription: `Find the perfect font combination for your next project with our curated Font Pairing Tool. Browse 27+ handpicked Google Font pairings organized by style (Modern, Classic, Elegant, Playful, Technical, Minimal, Bold, Warm) and use case (Blog, Portfolio, SaaS, E-commerce, Agency, Documentation, Magazine, Landing Page, Corporate).
+
+Each pairing features a live preview with editable heading and body text, a full type scale (H1 through small), a long-form reading preview, and dark/light background toggle. Export any pairing instantly — copy the CSS font-family declarations, Google Fonts HTML import link, or Tailwind CSS config snippet with one click.
+
+Fonts are loaded dynamically from Google Fonts so you see the real typefaces in your browser. Filter by style or use case, or hit "Random" to discover unexpected combinations. 100% free, no signup, works entirely in your browser.`,
+    category: 'developer-tools',
+    targetKeyword: 'font pairing tool',
+    secondaryKeywords: ['google font pairing', 'font combination generator', 'font pair finder', 'best font pairings', 'heading body font pairing', 'typography pairing tool', 'font pairing generator'],
+    metaTitle: 'Font Pairing Tool - 27+ Curated Google Font Combinations with Live Preview',
+    metaDescription: 'Browse 27+ curated font pairings with live preview. Filter by style & use case. Copy CSS, Google Fonts link, or Tailwind config instantly. Free, no signup.',
+    faqs: [
+      { question: 'How many font pairings are available?', answer: 'The tool includes 27 curated font pairings using popular Google Fonts, organized across 8 style categories and 9 use cases.' },
+      { question: 'Are these fonts free to use?', answer: 'Yes! All fonts are from Google Fonts, which are free and open-source. You can use them in any personal or commercial project.' },
+      { question: 'Can I preview with my own text?', answer: 'Absolutely. Click any pairing card to enter the detail view where both the heading and body text are fully editable.' },
+      { question: 'How do I add the fonts to my project?', answer: 'Use the export buttons to copy the Google Fonts HTML link tag, CSS font-family declarations, or Tailwind CSS config — then paste into your project.' },
+      { question: 'Does the tool work offline?', answer: 'The tool itself runs in your browser, but fonts are loaded from Google Fonts servers, so an internet connection is needed for the live preview.' },
+    ],
+    howToSteps: [
+      'Browse the grid of 27+ font pairings or use filters to narrow by style and use case.',
+      'Click a pairing card to see the full preview with editable text and type scale.',
+      'Toggle dark/light preview to see how the fonts look on different backgrounds.',
+      'Copy the CSS, Google Fonts link, or Tailwind config with one click.',
+    ],
+    relatedToolSlugs: ['css-gradient-text-generator', 'color-picker', 'css-gradient-generator', 'box-shadow-generator'],
+    icon: 'Type',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+  {
+    slug: 'offer-letter-generator',
+    name: 'Offer Letter Generator',
+    shortDescription: 'Generate professional offer letters for Indian businesses with CTC breakdown, terms & conditions, and PNG download.',
+    longDescription: `Create professional, ready-to-use offer letters for Indian businesses in seconds. Fill in company details, candidate information, compensation (Annual CTC), and employment terms \u2014 the tool auto-generates a formal offer letter with a detailed CTC breakdown including Basic, HRA, Special Allowance, PF, and Gratuity.
+
+Choose from 3 template styles: Formal, Modern, or Minimal. The CTC breakdown is mathematically accurate \u2014 PF employer contribution is capped at INR 1,800/month as per EPFO rules, and gratuity is calculated at 4.81% of basic salary.
+
+Download the letter as a high-resolution PNG or copy the text. Everything runs 100% in your browser \u2014 no data is uploaded. Perfect for HR teams, startups, and small businesses in India.`,
+    category: 'utility-tools',
+    targetKeyword: 'offer letter generator',
+    secondaryKeywords: ['offer letter format India', 'offer letter maker', 'job offer letter generator', 'CTC breakdown generator', 'employment offer letter template', 'offer letter with salary breakup', 'HR offer letter tool'],
+    metaTitle: 'Offer Letter Generator - Free Indian Offer Letter Maker with CTC Breakdown',
+    metaDescription: 'Generate professional offer letters for Indian businesses. Auto CTC breakdown (Basic, HRA, PF, Gratuity), 3 templates, PNG download. Free, private, no signup.',
+    faqs: [
+      { question: 'How is the CTC breakdown calculated?', answer: 'Basic = CTC x Basic%. HRA = Basic x HRA%. PF employer contribution = 12% of Basic (capped at INR 1,800/month per EPFO rules). Gratuity = 4.81% of Basic. Special Allowance = CTC minus all other components.' },
+      { question: 'Is my data safe?', answer: 'Yes. Everything runs in your browser. No data is sent to any server. Your company and candidate information stays completely private.' },
+      { question: 'Can I customize the salary percentages?', answer: 'Yes. You can set the Basic Salary percentage (of CTC) and HRA percentage (of Basic). The remaining components are auto-calculated.' },
+      { question: 'What templates are available?', answer: 'Three styles: Formal (classic corporate with serif fonts), Modern (clean contemporary look), and Minimal (simple and elegant).' },
+      { question: 'Can I download the offer letter?', answer: 'Yes. Download as a high-resolution PNG image, or copy the text to paste into your own document or email.' },
+    ],
+    howToSteps: [
+      'Enter company details - name, address, and optional logo URL.',
+      'Fill in candidate name, email, phone, and position details.',
+      'Set the Annual CTC and adjust Basic/HRA percentages. The breakdown is auto-calculated.',
+      'Choose joining date, offer expiry, employment type, and probation period.',
+      'Select a template style (Formal, Modern, or Minimal) and download as PNG or copy the text.',
+    ],
+    relatedToolSlugs: ['business-card-maker', 'certificate-maker', 'invoice-generator', 'email-signature-generator'],
+    icon: 'FileText',
+    isNew: true,
+    estimatedTime: '5 minutes',
+  },
+
+  // ─── BIO LINK GENERATOR ─────────────────────────────────────────────────
+  {
+    slug: 'bio-link-generator',
+    name: 'Bio Link Page Generator',
+    shortDescription: 'Create a beautiful link-in-bio page with a live phone preview — export as HTML or PNG.',
+    longDescription: `Build a stunning link-in-bio page in minutes with our free Bio Link Page Generator. Add your name, bio, avatar, and unlimited links with custom icons — then style everything with 8 gorgeous themes, 5 button styles, custom accent colors, and font options.
+
+The live phone mockup preview updates in real time as you edit, so you can see exactly how your page will look on mobile. Choose from Minimal Light, Minimal Dark, Gradient Sunset, Gradient Ocean, Neon, Pastel, Professional, or Glassmorphism themes. Add social icons for Instagram, Twitter/X, YouTube, TikTok, LinkedIn, GitHub, and Email.
+
+When you are happy with your page, export it as a complete self-contained HTML file you can host anywhere — no external dependencies, fully responsive, with social sharing meta tags built in. You can also download a PNG screenshot of the phone preview or copy the raw HTML to your clipboard.
+
+Everything runs 100% in your browser. No sign-up, no server uploads, no data collection. Your content never leaves your device.`,
+    category: 'utility-tools',
+    targetKeyword: 'bio link generator',
+    secondaryKeywords: ['link in bio', 'bio link page', 'linktree alternative', 'free link in bio', 'bio link maker', 'link page generator', 'social media link page', 'one page link site'],
+    metaTitle: 'Bio Link Page Generator - Free Link-in-Bio Maker with Live Preview',
+    metaDescription: 'Create a beautiful link-in-bio page with 8 themes, custom colors & live phone preview. Export as HTML or PNG. Free, no signup, 100% client-side.',
+    faqs: [
+      { question: 'Is this really free with no account needed?', answer: 'Yes. The tool runs entirely in your browser. There is no sign-up, no login, and no data sent to any server. You can use it unlimited times for free.' },
+      { question: 'How do I host the exported HTML file?', answer: 'Upload the downloaded HTML file to any static hosting service — GitHub Pages, Netlify, Vercel, Cloudflare Pages, or even your own web server. It is a single self-contained file with no dependencies.' },
+      { question: 'Can I customize the colors and fonts?', answer: 'Absolutely. Pick from 8 built-in themes, 5 button styles, a custom accent color picker, and 5 font families. You can mix and match to create a unique look.' },
+      { question: 'Does the exported page work on mobile?', answer: 'Yes. The generated HTML is fully responsive and looks great on phones, tablets, and desktops. It includes a viewport meta tag and mobile-optimized CSS.' },
+      { question: 'Can I add social media icons?', answer: 'Yes. There are dedicated fields for Instagram, Twitter/X, YouTube, TikTok, LinkedIn, GitHub, and Email. Filled-in socials appear as an icon row at the bottom of your page.' },
+    ],
+    howToSteps: [
+      'Enter your name, bio text, and optional avatar URL in the Profile tab.',
+      'Add links with titles, URLs, and icons in the Links tab — drag to reorder.',
+      'Add your social media URLs in the Social tab.',
+      'Pick a theme, button style, accent color, and font in the Style tab.',
+      'Preview your page live in the phone mockup, then download as HTML or PNG.',
+    ],
+    relatedToolSlugs: ['qr-code-generator', 'meta-tag-generator', 'social-media-post-mockup', 'business-card-maker'],
+    icon: 'Link2',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
+  {
+    slug: 'social-media-bio-generator',
+    name: 'Social Media Bio Generator',
+    shortDescription: 'Generate creative bios for Instagram, Twitter/X, LinkedIn, TikTok & YouTube. 120+ templates, personalization, emoji picker, and one-click copy.',
+    longDescription: `Create the perfect social media bio with our free Bio Generator. Choose from 120+ professionally written templates across 5 platforms — Instagram, Twitter/X, LinkedIn, TikTok, and YouTube — and 8 style categories including Creator, Business, Professional, Funny/Witty, Motivational, and Aesthetic.
+
+Each template features smart placeholders like [name], [niche], [company], and [role] that you fill in to personalize your bio instantly. Live character count shows you exactly how many characters you have left for each platform (Instagram: 150, Twitter: 160, LinkedIn: 220, TikTok: 80, YouTube: 1000).
+
+Includes an emoji picker with 50 popular bio emojis, invisible line break formatter for Instagram, favorites system to save your best bios, and one-click copy. Write custom bios or use templates — everything runs 100% in your browser.`,
+    category: 'text-tools',
+    targetKeyword: 'social media bio generator',
+    secondaryKeywords: ['instagram bio generator', 'twitter bio generator', 'linkedin bio generator', 'tiktok bio ideas', 'youtube about generator', 'bio ideas for instagram', 'professional bio generator', 'funny bio generator', 'aesthetic bio ideas', 'social media bio ideas'],
+    metaTitle: 'Social Media Bio Generator - 120+ Templates for Instagram, Twitter, LinkedIn, TikTok & YouTube',
+    metaDescription: 'Generate creative social media bios with 120+ templates for Instagram, Twitter/X, LinkedIn, TikTok & YouTube. Personalize, copy & paste. Free, no signup.',
+    faqs: [
+      { question: 'Which social media platforms are supported?', answer: 'Instagram (150 chars), Twitter/X (160 chars), LinkedIn (220 chars), TikTok (80 chars), and YouTube (1000 chars). Each platform has its own curated templates and character limit tracker.' },
+      { question: 'Can I personalize the bio templates?', answer: 'Yes! Templates contain smart placeholders like [name], [niche], [company], [role], etc. Input fields appear automatically so you can fill in your details and see the bio update in real time.' },
+      { question: 'How many bio templates are included?', answer: 'Over 120 unique bio templates across 5 platforms and 8 style categories: Creator, Business, Personal, Funny/Witty, Professional, Motivational, Minimalist, and Aesthetic.' },
+      { question: 'Can I save my favorite bios?', answer: 'Yes! Click the heart icon to save any bio to your favorites. They are stored in your browser\'s localStorage and persist between sessions.' },
+      { question: 'Does this tool store my data?', answer: 'No. Everything runs 100% in your browser. Your bio text and personal details are never sent to any server.' },
+    ],
+    howToSteps: [
+      'Select your social media platform (Instagram, Twitter/X, LinkedIn, TikTok, or YouTube).',
+      'Choose a bio style category (Creator, Business, Professional, Funny, etc.).',
+      'Browse templates and click Shuffle to see more options.',
+      'Fill in the placeholder fields to personalize your bio.',
+      'Copy your bio with one click and paste it into your profile.',
+    ],
+    relatedToolSlugs: ['social-media-post-mockup', 'instagram-carousel-maker', 'email-signature-generator', 'character-counter'],
+    icon: 'UserPen',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+  {
+    slug: 'github-readme-generator',
+    name: 'GitHub Profile README Generator',
+    shortDescription: 'Create a stunning GitHub profile README with badges, stats, tech stack and social links.',
+    longDescription: `Build a professional GitHub profile README in minutes with our visual editor. Toggle sections for your header with typing animation, about me, social connect badges, tech stack with 100+ technology badges, GitHub stats cards, blog post placeholders, and support links.
+
+The generator produces clean, well-formatted Markdown using shields.io badges, github-readme-stats cards, and readme-typing-svg animations. Preview your README in real-time as you build it, then copy the raw Markdown or download the .md file directly.
+
+Everything runs in your browser \u2014 no signup, no server, 100% private. Works great on desktop and mobile with full dark mode support.`,
+    category: 'developer-tools',
+    targetKeyword: 'github readme generator',
+    secondaryKeywords: ['github profile readme generator', 'github readme maker', 'github profile readme builder', 'github readme creator', 'awesome github profile readme'],
+    metaTitle: 'GitHub Profile README Generator - Free Online Builder',
+    metaDescription: 'Create a stunning GitHub profile README with tech stack badges, stats cards, social links & typing animations. Free visual builder with live preview. No signup.',
+    faqs: [
+      { question: 'What is a GitHub profile README?', answer: 'A GitHub profile README is a special repository (named the same as your username) whose README.md is displayed on your GitHub profile page. It lets you showcase your skills, projects, and personality.' },
+      { question: 'How do I use the generated README?', answer: 'Create a repository with the same name as your GitHub username. Copy the generated markdown and paste it into the README.md file of that repository. It will automatically appear on your profile.' },
+      { question: 'Do the GitHub stats cards require any setup?', answer: 'No setup needed. The stats cards use github-readme-stats which fetches your public data automatically. Just make sure your GitHub username is correct in the Connect section.' },
+      { question: 'Can I customize the badge colors?', answer: 'The tool uses the official brand colors from shields.io for each technology. You can manually edit the hex color codes in the generated markdown if you want custom colors.' },
+      { question: 'Is my data saved anywhere?', answer: 'No. All processing happens locally in your browser. Nothing is sent to any server and no data is stored. Your content stays completely private.' },
+    ],
+    howToSteps: [
+      'Toggle and fill in sections: Header, About Me, Connect, Tech Stack, Stats.',
+      'Pick your technologies from the categorized badge grid.',
+      'Preview your README in real-time in the right panel.',
+      'Switch between visual preview and raw markdown view.',
+      'Copy the markdown or download the .md file.',
+    ],
+    relatedToolSlugs: ['json-formatter', 'hash-generator', 'uuid-generator', 'tailwind-playground'],
+    icon: 'Github',
+    isNew: true,
+    estimatedTime: '5 minutes',
+  },
 ];
 
+// ─── PLAGIARISM CHECKER ─────────────────────────────────────────────────
+tools.push({
+  slug: 'plagiarism-checker',
+  name: 'Plagiarism Checker',
+  shortDescription: 'Compare two texts for similarity using Jaccard, cosine & n-gram analysis. 100% private.',
+  longDescription: `Check your text for potential plagiarism by comparing two passages side by side with our free Plagiarism Self-Checker. The tool uses three powerful similarity algorithms — Jaccard index, cosine similarity with TF-IDF vectors, and n-gram overlap analysis — all running 100% in your browser.
+
+Paste your source text and the text you want to check, then hit Compare. You'll get an overall similarity score with a clear verdict: Low (likely original), Moderate (review needed), or High (significant overlap). Every sentence is individually scored and color-coded — green for unique, yellow for somewhat similar, and red for near-identical matches.
+
+Three analysis tabs let you dig deeper: Sentence Matching shows each sentence pair with its Jaccard similarity score. N-gram Analysis reveals shared 3-word and 5-word phrases between the texts. Word Frequency displays a visual comparison of the top 20 content words used in each passage.
+
+Your texts never leave your device — everything is computed client-side with zero server calls. Perfect for students checking essays, writers verifying originality, teachers reviewing submissions, and researchers comparing drafts. No signup, no limits, no data collection.`,
+  category: 'text-tools',
+  targetKeyword: 'plagiarism checker',
+  secondaryKeywords: ['plagiarism detector', 'text similarity checker', 'check plagiarism online', 'compare two texts', 'similarity checker', 'text comparison tool', 'plagiarism checker free'],
+  metaTitle: 'Plagiarism Checker - Free Online Text Similarity Comparison Tool',
+  metaDescription: 'Compare two texts for plagiarism using Jaccard, cosine similarity & n-gram analysis. Free online plagiarism checker — 100% private, runs in your browser.',
+  faqs: [
+    { question: 'How does the plagiarism checker work?', answer: 'The tool compares two texts using three algorithms: Jaccard similarity (word set overlap), cosine similarity (TF-IDF vector comparison), and n-gram overlap (shared 3-word and 5-word phrases). The overall score is a weighted average of all three methods.' },
+    { question: 'Is my text safe and private?', answer: 'Yes, completely. Both texts are processed entirely in your browser using JavaScript. Nothing is sent to any server — your content stays 100% private on your device.' },
+    { question: 'Can this replace professional plagiarism checkers?', answer: 'This tool compares two specific texts you provide. Professional tools like Turnitin compare against massive databases of published work. Use this for quick self-checks between two known documents, and professional tools for comprehensive plagiarism screening.' },
+    { question: 'What do the similarity colors mean?', answer: 'Green (0-30%) means low similarity and likely original content. Yellow (31-60%) indicates moderate similarity that should be reviewed. Red (61-100%) signals high similarity with significant text overlap between the two passages.' },
+  ],
+  howToSteps: [
+    'Paste your original/source text in the left text area.',
+    'Paste the text you want to check in the right text area.',
+    'Click the "Compare" button to run the analysis.',
+    'Review the overall similarity score and color-coded verdict.',
+    'Explore Sentence Matching, N-gram Analysis, and Word Frequency tabs for detailed insights.',
+    'Click "Copy Report" to save the full analysis to your clipboard.',
+  ],
+  relatedToolSlugs: ['word-counter', 'ai-text-humanizer', 'paraphrasing-tool', 'case-converter'],
+  icon: 'FileSearch',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── TDS CALCULATOR ───────────────────────────────────────────────────
+tools.push({
+  slug: 'tds-calculator',
+  name: 'TDS Calculator India',
+  shortDescription: 'Calculate TDS on salary, rent, professional fees, interest & property sale for FY 2025-26. Old vs New regime comparison.',
+  longDescription: 'India\'s most comprehensive TDS (Tax Deducted at Source) Calculator covering all major TDS sections. Calculate TDS on Salary (Section 192) with full Old vs New Tax Regime comparison, TDS on Rent (Section 194-IB), Professional/Technical Fees (Section 194J), Interest Income (Section 194A), and Property Sale (Section 194-IA). For salary TDS, enter your annual CTC along with deductions under Section 80C, 80D, HRA exemption, NPS (80CCD), and home loan interest (Section 24b). The calculator shows a side-by-side comparison of Old and New Tax Regime with taxable income, tax, cess, monthly/annual TDS, and recommends which regime saves you more. Updated with Budget 2025 changes for FY 2025-26: New Regime slabs (0-4L Nil, 4-8L 5%, 8-12L 10%, 12-16L 15%, 16-20L 20%, 20-24L 25%, above 24L 30%), Rs.75,000 standard deduction, and Section 87A rebate up to Rs.60,000 for income up to 12 Lakh. All calculations are instant, run entirely in your browser, and support FY 2024-25, 2025-26, and 2026-27.',
+  category: 'calculators',
+  targetKeyword: 'TDS calculator India',
+  secondaryKeywords: ['TDS calculator', 'TDS on salary calculator', 'TDS on rent calculator', 'TDS calculator FY 2025-26', 'Section 194 TDS calculator', 'TDS on property sale', 'TDS on professional fees', 'old vs new regime TDS', 'income tax TDS calculator India'],
+  metaTitle: 'TDS Calculator India - Salary, Rent, Professional Fees | FY 2025-26',
+  metaDescription: 'Calculate TDS on salary, rent, professional fees, interest & property sale. Old vs New regime comparison for FY 2025-26. Free online TDS calculator India.',
+  faqs: [
+    { question: 'What is TDS and who deducts it?', answer: 'TDS (Tax Deducted at Source) is a method of collecting income tax where the payer deducts tax before making a payment. Employers deduct TDS on salary (Sec 192), tenants on rent above Rs.50,000/month (Sec 194-IB), businesses on professional fees (Sec 194J), banks on interest (Sec 194A), and property buyers on sale above Rs.50 Lakh (Sec 194-IA).' },
+    { question: 'What are the new tax slabs for FY 2025-26 under New Regime?', answer: '0-4 Lakh: Nil, 4-8 Lakh: 5%, 8-12 Lakh: 10%, 12-16 Lakh: 15%, 16-20 Lakh: 20%, 20-24 Lakh: 25%, Above 24 Lakh: 30%. Standard deduction is Rs.75,000 and Section 87A rebate of up to Rs.60,000 applies for taxable income up to Rs.12 Lakh.' },
+    { question: 'What is the TDS rate on rent?', answer: 'Under Section 194-IB, if monthly rent exceeds Rs.50,000, the tenant must deduct TDS at 2% on the rent amount. This applies to individual and HUF tenants who are not liable for tax audit.' },
+    { question: 'How is TDS on property sale calculated?', answer: 'Under Section 194-IA, the buyer deducts TDS at 1% on the total sale consideration if the property value exceeds Rs.50 Lakh. The TDS is on the full amount, not just the excess over 50 Lakh.' },
+    { question: 'Which tax regime is better for salary TDS?', answer: 'It depends on your deductions. If your total deductions (80C, 80D, HRA, home loan, NPS) exceed Rs.3-4 Lakh, the Old Regime may be better. Otherwise, the New Regime with lower slab rates is usually more beneficial. Our calculator compares both and recommends the better option.' },
+  ],
+  howToSteps: [
+    'Select the TDS type: Salary, Rent, Professional Fees, Interest, or Property Sale.',
+    'Choose the Financial Year (FY 2024-25, 2025-26, or 2026-27).',
+    'Enter the relevant amount and deduction details.',
+    'For salary, view Old vs New Regime comparison with monthly and annual TDS breakdown.',
+    'Copy the results or click "Try Example" to see a sample calculation.',
+  ],
+  relatedToolSlugs: ['salary-calculator', 'gst-calculator', 'emi-calculator', 'percentage-calculator'],
+  icon: 'Receipt',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
 export const TOOL_COUNT = tools.length;
+
+// ─── RECIPE SCALER ─────────────────────────────────────────────────────
+tools.push({
+  slug: 'recipe-scaler',
+  name: 'Recipe Scaler & Converter',
+  shortDescription: 'Scale any recipe up or down with smart fractions. Convert between metric and imperial units instantly.',
+  longDescription: `Scale any recipe to the number of servings you need with our free Recipe Scaler & Converter. Enter your ingredients with quantities and units, set original and desired servings, and instantly see the scaled amounts displayed as smart fractions \u2014 you'll see "1\u00BD cups" instead of "1.5 cups" and "\u2153 cup" instead of "0.333 cups".
+
+Use quick-scale buttons to halve, double, triple, or quadruple your recipe with one click. The tool handles whole-number items intelligently \u2014 eggs, pieces, and slices are always rounded to the nearest whole number.
+
+Switch between original, metric, and imperial unit systems on the fly. Cups convert to ml, ounces to grams, pounds to kg, and vice versa. A built-in temperature converter handles Fahrenheit to Celsius conversions for oven temperatures.
+
+Copy the scaled recipe as formatted text for easy sharing. Try our pre-loaded Chocolate Chip Cookies example to see the tool in action. 100% free, works entirely in your browser \u2014 no signup, no data stored.`,
+  category: 'converters',
+  targetKeyword: 'recipe scaler',
+  secondaryKeywords: ['recipe converter', 'scale recipe up', 'recipe multiplier', 'recipe serving calculator', 'double recipe calculator', 'half recipe calculator', 'recipe unit converter', 'cooking measurement converter', 'recipe scaling tool'],
+  metaTitle: 'Recipe Scaler & Converter - Scale Recipes with Smart Fractions Free',
+  metaDescription: 'Scale any recipe up or down with smart fractions. Convert cups to ml, oz to grams & more. Quick-scale buttons, copy recipe. Free online tool \u2014 no signup.',
+  faqs: [
+    { question: 'How does the smart fraction display work?', answer: 'Instead of showing decimals like 0.333 or 1.5, the tool converts quantities to proper fractions: \u2153, \u00BD, \u00BE, etc. For whole items like eggs or pieces, it rounds to the nearest whole number.' },
+    { question: 'What unit conversions are supported?', answer: 'The tool converts between cups and ml (1 cup = 236.59 ml), tablespoons and ml (1 tbsp = 14.79 ml), teaspoons and ml (1 tsp = 4.93 ml), ounces and grams (1 oz = 28.35 g), and pounds and kilograms (1 lb = 0.454 kg). A separate temperature converter handles Fahrenheit and Celsius.' },
+    { question: 'Can I scale a recipe to any number of servings?', answer: 'Yes! Enter any number in the desired servings field, or use quick-scale buttons to halve, double, triple, or quadruple the recipe. The tool calculates the exact scaling factor automatically.' },
+    { question: 'Is my recipe data saved anywhere?', answer: 'No. All calculations happen entirely in your browser. Nothing is stored on any server. Your recipe data stays completely private.' },
+    { question: 'How do I copy the scaled recipe?', answer: 'Click the "Copy" button next to the scaled recipe output. The recipe is formatted as plain text with ingredient quantities, units, and names \u2014 ready to paste into notes, messages, or documents.' },
+  ],
+  howToSteps: [
+    'Enter a recipe name (optional) and set the original number of servings.',
+    'Add ingredients with quantity, unit, and name. Use "Add Ingredient" for more rows.',
+    'Set your desired servings using the number input or quick-scale buttons (Half, Double, Triple, x4).',
+    'View the scaled recipe with smart fractions in the output panel.',
+    'Toggle between Original, Metric, or Imperial units if needed.',
+    'Copy the scaled recipe to clipboard or use the temperature converter for oven temps.',
+  ],
+  relatedToolSlugs: ['unit-converter', 'number-to-words', 'calorie-calculator', 'percentage-calculator'],
+  icon: 'ChefHat',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
 
 export function getToolBySlug(slug: string): Tool | undefined {
   return tools.find(t => t.slug === slug);

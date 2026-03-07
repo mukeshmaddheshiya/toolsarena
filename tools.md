@@ -17,171 +17,186 @@
 14. Essay Counter & Readability
 15. Letter & Application Writer
 16. Citation Generator
+17. Plagiarism Checker
 
 ## Calculators
-17. Age Calculator
-18. Tip Calculator
-19. Average Calculator
-20. Percentage Calculator
-21. EMI Calculator
-22. GST Calculator
-23. BMI Calculator
-24. SIP Calculator
-25. Salary Calculator (CTC to In-Hand)
-26. Discount Calculator
-27. Loan Comparison Calculator
-28. Compound Interest Calculator
-29. FD & RD Calculator
-30. Scientific Calculator
-31. Electricity Bill Calculator
-32. Old vs New Tax Regime Calculator
-33. Gratuity Calculator India
-34. HRA Exemption Calculator
-35. Pregnancy Due Date Calculator
-36. Gold Jewellery Price Calculator
-37. Numerology Calculator
-38. PPF Calculator India
-39. Mutual Fund Returns Calculator
-40. CGPA to Percentage Converter
-41. Attendance Calculator
-42. Aspect Ratio Calculator
-43. Love Calculator
-44. NEPSE Share Calculator
-45. Stamp Duty Calculator
-46. Rent vs Buy Calculator
-47. TDEE & Macro Calculator
-48. Period & Ovulation Calculator
+18. Age Calculator
+19. Tip Calculator
+20. Average Calculator
+21. Percentage Calculator
+22. EMI Calculator
+23. GST Calculator
+24. BMI Calculator
+25. SIP Calculator
+26. Salary Calculator (CTC to In-Hand)
+27. Discount Calculator
+28. Loan Comparison Calculator
+29. Compound Interest Calculator
+30. FD & RD Calculator
+31. Scientific Calculator
+32. Electricity Bill Calculator
+33. Old vs New Tax Regime Calculator
+34. Gratuity Calculator India
+35. HRA Exemption Calculator
+36. Pregnancy Due Date Calculator
+37. Gold Jewellery Price Calculator
+38. Numerology Calculator
+39. PPF Calculator India
+40. Mutual Fund Returns Calculator
+41. CGPA to Percentage Converter
+42. Attendance Calculator
+43. Aspect Ratio Calculator
+44. Love Calculator
+45. NEPSE Share Calculator
+46. Stamp Duty Calculator
+47. Rent vs Buy Calculator
+48. TDEE & Macro Calculator
+49. Period & Ovulation Calculator
+50. TDS Calculator India
 
 ## Developer Tools
-49. UUID Generator
-50. JWT Decoder
-51. CSS Gradient Generator
-52. CSS Gradient Text Generator
-53. Box Shadow Generator
-54. CSS Flexbox Generator
-55. CSS Animation Generator
-56. Password Strength Checker
-57. JSON Formatter
-58. Base64 Encode & Decode
-59. URL Encode & Decode
-60. Color Picker
-61. Hash Generator
-62. Regex Tester
-63. HTML to Markdown
-64. HTML CSS JS Editor
-65. Password Generator
-66. CSV to JSON
-67. Markdown to HTML
-68. CSS Minifier
-69. JavaScript Minifier
-70. HTML Beautifier
-71. SQL Formatter
-72. XML to JSON Converter
-73. Cron Expression Generator
-74. HEX to RGB Converter
-75. Favicon Generator
-76. Robots.txt Generator
-77. Barcode Generator
-78. Tailwind Playground
-79. Roast My Website
-80. Font Identifier
+51. UUID Generator
+52. JWT Decoder
+53. CSS Gradient Generator
+54. CSS Gradient Text Generator
+55. Box Shadow Generator
+56. CSS Flexbox Generator
+57. CSS Animation Generator
+58. Password Strength Checker
+59. JSON Formatter
+60. Base64 Encode & Decode
+61. URL Encode & Decode
+62. Color Picker
+63. Hash Generator
+64. Regex Tester
+65. HTML to Markdown
+66. HTML CSS JS Editor
+67. Password Generator
+68. CSV to JSON
+69. Markdown to HTML
+70. CSS Minifier
+71. JavaScript Minifier
+72. HTML Beautifier
+73. SQL Formatter
+74. XML to JSON Converter
+75. Cron Expression Generator
+76. HEX to RGB Converter
+77. Favicon Generator
+78. Robots.txt Generator
+79. Barcode Generator
+80. Tailwind Playground
+81. Roast My Website
+82. Font Identifier
+83. JSON to TypeScript Converter
+84. GitHub Profile README Generator
+85. Font Pairing Tool
 
 ## Image Tools
-81. Image Compressor
-82. Image Resizer
-83. PNG to JPG Converter
-84. JPG to PNG Converter
-85. WebP to PNG Converter
-86. Image to Base64
-87. Image Background Remover
-88. SVG to PNG Converter
-89. Image Cropper
-90. Image Watermark
-91. Color Palette from Image
-92. Meme Generator
-93. Image to Text (OCR)
-94. Photo Collage Maker
-95. Compress Image to KB
-96. Passport Photo Maker
-97. Blur Face in Photo
-98. EXIF Metadata Remover
-99. Online Whiteboard
+86. Image Compressor
+87. Image Resizer
+88. PNG to JPG Converter
+89. JPG to PNG Converter
+90. WebP to PNG Converter
+91. Image to Base64
+92. Image Background Remover
+93. SVG to PNG Converter
+94. Image Cropper
+95. Image Watermark
+96. Color Palette from Image
+97. Meme Generator
+98. Image to Text (OCR)
+99. Photo Collage Maker
+100. Compress Image to KB
+101. Passport Photo Maker
+102. Blur Face in Photo
+103. EXIF Metadata Remover
+104. Online Whiteboard
 
 ## PDF Tools
-100. PDF Merge
-101. PDF Split
-102. PDF Compressor
-103. PDF to Image
-104. PDF to Word Converter
-105. JPG to PDF
-106. Rotate PDF
-107. Watermark PDF
-108. Add Page Numbers to PDF
-109. Organize PDF
-110. Crop PDF
-111. Sign PDF
-112. Insert Image into PDF
-113. CSV to PDF
-114. Image to PDF Converter
-115. Redact PDF
+105. PDF Merge
+106. PDF Split
+107. PDF Compressor
+108. PDF to Image
+109. PDF to Word Converter
+110. JPG to PDF
+111. Rotate PDF
+112. Watermark PDF
+113. Add Page Numbers to PDF
+114. Organize PDF
+115. Crop PDF
+116. Sign PDF
+117. Insert Image into PDF
+118. CSV to PDF
+119. Image to PDF Converter
+120. Redact PDF
 
 ## Converters
-116. Unit Converter
-117. Temperature Converter
-118. Unix Timestamp Converter
-119. Nepali Date Converter
-120. Preeti to Unicode Converter
-121. Number to Words
-122. File Size Converter
-123. Binary, Hex & Octal Converter
-124. IFSC Code Finder
+121. Unit Converter
+122. Temperature Converter
+123. Unix Timestamp Converter
+124. Nepali Date Converter
+125. Preeti to Unicode Converter
+126. Number to Words
+127. File Size Converter
+128. Binary, Hex & Octal Converter
+129. IFSC Code Finder
 
 ## Utility Tools
-125. Countdown Timer
-126. Random Generator
-127. QR Code Generator
-128. Internet Speed Test
-129. Time Zone Checker
-130. Online Notepad
-131. Online Stopwatch
-132. Pomodoro Timer
-133. Fake Data Generator
-134. Screen Recorder
-135. IP Address Lookup
-136. Typing Speed Test
-137. WhatsApp Link Generator
-138. Online Signature Maker
-139. Nepali Typing Tool
-140. WhatsApp Chat Generator
+130. Countdown Timer
+131. Random Generator
+132. QR Code Generator
+133. Internet Speed Test
+134. Time Zone Checker
+135. Online Notepad
+136. Online Stopwatch
+137. Pomodoro Timer
+138. Fake Data Generator
+139. Screen Recorder
+140. IP Address Lookup
+141. Typing Speed Test
+142. WhatsApp Link Generator
+143. Online Signature Maker
+144. Nepali Typing Tool
+145. WhatsApp Chat Generator
+146. Recipe Scaler & Converter
 
 ## SEO & Social Media Tools
-141. Meta Tag Generator
-142. YouTube Thumbnail Downloader
-143. YouTube Money Calculator
-144. Instagram Engagement Calculator
-145. Privacy Policy Generator
-146. Terms & Conditions Generator
-147. YouTube Thumbnail Tester
-148. Instagram Carousel Maker
-149. Social Media Post Mockup
+147. Meta Tag Generator
+148. YouTube Thumbnail Downloader
+149. YouTube Money Calculator
+150. Instagram Engagement Calculator
+151. Privacy Policy Generator
+152. Terms & Conditions Generator
+153. YouTube Thumbnail Tester
+154. Instagram Carousel Maker
+155. Social Media Post Mockup
+156. Social Media Bio Generator
+157. Hook & Caption Scorer
+158. Bio Link Page Generator
+159. ATS Resume Score Checker
 
 ## Generators & Makers
-150. Invoice Generator
-151. Resume Builder
-152. Marriage Biodata Maker
-153. Rent Receipt Generator
-154. Salary Slip Generator
-155. Greeting Card Maker
-156. Certificate Maker
-157. Rent Agreement Generator
-158. Business Card Maker
+160. Invoice Generator
+161. Resume Builder
+162. Marriage Biodata Maker
+163. Rent Receipt Generator
+164. Salary Slip Generator
+165. Greeting Card Maker
+166. Certificate Maker
+167. Rent Agreement Generator
+168. Business Card Maker
+169. Email Signature Generator
+170. NOC Generator India
+171. Offer Letter Generator
+172. Experience Letter Generator
+173. Resignation Letter Generator
 
 ## Cricket & Astrology Tools
-159. Rashi Checker
-160. Gun Milan
-161. IPL Team Squad Explorer
-162. IPL 2026 Match Schedule
-163. IPL Player Comparison Tool
-164. IPL 2026 Points Table
+174. Rashi Checker
+175. Gun Milan
+176. IPL Team Squad Explorer
+177. IPL 2026 Match Schedule
+178. IPL Player Comparison Tool
+179. IPL 2026 Points Table
 
-**Total: 164 Tools**
+**Total: 179 Tools**
