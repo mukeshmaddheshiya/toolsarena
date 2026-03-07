@@ -4768,6 +4768,41 @@ Features history of your last 5 letters (stored locally), keyboard shortcuts for
     isNew: true,
     estimatedTime: '2 minutes',
   },
+  {
+    slug: 'period-ovulation-calculator',
+    name: 'Period & Ovulation Calculator',
+    shortDescription: 'Track your menstrual cycle, predict periods, ovulation dates, and fertile windows. Privacy-first — all calculations happen in your browser.',
+    longDescription: `Track and predict your menstrual cycle with our free Period & Ovulation Calculator. Enter your last period date, average cycle length, and period duration to get accurate predictions for upcoming periods, ovulation dates, and fertile windows.
+
+Features a beautiful color-coded 2-month calendar showing period days, ovulation, fertile window, and luteal phase at a glance. Countdown cards show days until your next period, ovulation, and fertile window.
+
+View up to 8 upcoming cycles in a detailed table with predicted start dates, end dates, ovulation dates, and fertile windows. Export your cycle data as CSV for personal records or to share with your healthcare provider.
+
+100% privacy-first: All calculations happen entirely in your browser. No data is ever sent to any server. Your cycle history is stored only in your browser's localStorage on your device.`,
+    category: 'calculators',
+    targetKeyword: 'period calculator',
+    secondaryKeywords: ['ovulation calculator', 'fertility calculator', 'menstrual cycle tracker', 'period tracker online', 'ovulation date calculator', 'fertile window calculator', 'next period predictor', 'menstrual calendar', 'cycle length calculator', 'period calculator online free'],
+    metaTitle: 'Period & Ovulation Calculator - Free Cycle Tracker & Fertility Predictor',
+    metaDescription: 'Track periods, predict ovulation & fertile windows with our free calculator. Color-coded calendar, 8-cycle predictions, CSV export. 100% private — no data leaves your browser.',
+    faqs: [
+      { question: 'How does the period calculator predict my next period?', answer: 'It uses your last period start date and average cycle length to calculate future period dates. Ovulation is estimated at cycle length minus 14 days, and the fertile window spans 5 days before to 1 day after ovulation.' },
+      { question: 'How accurate is the ovulation prediction?', answer: 'The calculator uses the standard medical estimation (ovulation occurs approximately 14 days before your next period). However, actual ovulation can vary. For family planning, consult your healthcare provider and consider using additional methods like ovulation test kits.' },
+      { question: 'Is my menstrual data private?', answer: 'Absolutely. All calculations happen entirely in your browser. No data is ever sent to any server. Your saved history is stored only in your browser\'s localStorage on your device.' },
+      { question: 'Can I export my cycle data?', answer: 'Yes! Click the "Export CSV" button to download your predicted cycles as a CSV file. You can open this in Excel, Google Sheets, or share it with your healthcare provider.' },
+      { question: 'What do the calendar colors mean?', answer: 'Red/pink indicates period days, purple marks ovulation day, blue shows your fertile window, and green represents the luteal phase (between ovulation and your next period).' },
+    ],
+    howToSteps: [
+      'Enter the start date of your last menstrual period.',
+      'Set your average cycle length (default 28 days) and period duration (default 5 days).',
+      'Click "Calculate Cycle" to see predictions.',
+      'View the color-coded calendar, countdown cards, and upcoming cycles table.',
+      'Export your data as CSV or save to history for future reference.',
+    ],
+    relatedToolSlugs: ['bmi-calculator', 'age-calculator', 'calorie-calculator', 'loan-comparison-calculator'],
+    icon: 'Heart',
+    isNew: true,
+    estimatedTime: '1 minute',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
