@@ -408,20 +408,28 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
             </svg>
           </span>
         )}
-        <span style={{
-          fontSize: 14.5, lineHeight: 1.32, color: textColor,
-          wordBreak: 'break-word', whiteSpace: 'pre-wrap',
-        }}>
-          {msg.text}
-        </span>
-        <span style={{
-          float: 'right', display: 'inline-flex', alignItems: 'center',
-          gap: 1, marginLeft: 6, marginTop: 4,
-          fontSize: 11, color: t.timeText, whiteSpace: 'nowrap',
-        }}>
-          {msg.time}
-          {isSent && <TickIcon status={msg.tickStatus} theme={theme} />}
-        </span>
+        <div style={{ position: 'relative' }}>
+          <span style={{
+            fontSize: 14.5, lineHeight: 1.32, color: textColor,
+            wordBreak: 'break-word', whiteSpace: 'pre-wrap',
+          }}>
+            {msg.text}
+            {/* Invisible spacer to reserve space for time+ticks */}
+            <span style={{
+              display: 'inline-block', width: isSent ? 75 : 50, height: 1,
+              verticalAlign: 'baseline',
+            }} />
+          </span>
+          <span style={{
+            position: 'absolute', bottom: -2, right: 0,
+            display: 'inline-flex', alignItems: 'center',
+            gap: 1,
+            fontSize: 11, color: t.timeText, whiteSpace: 'nowrap',
+          }}>
+            {msg.time}
+            {isSent && <TickIcon status={msg.tickStatus} theme={theme} />}
+          </span>
+        </div>
       </div>
     </div>
   );
