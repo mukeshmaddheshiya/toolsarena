@@ -243,12 +243,23 @@ function ChatHeader({ contact, theme }: { contact: ContactInfo; theme: ThemeMode
 /* ------------------------------------------------------------------ */
 
 function BubbleTail({ isSent, color }: { isSent: boolean; color: string }) {
+  /* Exact WhatsApp Web SVG paths, flipped vertically to sit at bottom corner */
+  if (isSent) {
+    return (
+      <svg width="8" height="13" viewBox="0 0 8 13" style={{
+        position: 'absolute', bottom: 0, right: -8, zIndex: 1,
+        transform: 'scaleY(-1)',
+      }}>
+        <path d="M5.188 0H0v11.193l6.467-8.625C7.526 1.156 6.58 0 5.188 0z" fill={color} />
+      </svg>
+    );
+  }
   return (
     <svg width="8" height="13" viewBox="0 0 8 13" style={{
-      position: 'absolute', top: 0, zIndex: 1,
-      ...(isSent ? { right: -7 } : { left: -7, transform: 'scaleX(-1)' }),
+      position: 'absolute', bottom: 0, left: -8, zIndex: 1,
+      transform: 'scaleY(-1)',
     }}>
-      <path d="M1 0 Q3 5 8 13 L0 13 L0 0 Z" fill={color} />
+      <path d="M1.533 3.568 8 12.193V0H2.812C1.042 0 .474 1.156 1.533 3.568z" fill={color} />
     </svg>
   );
 }
@@ -386,8 +397,8 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
       <BubbleTail isSent={isSent} color={bubbleBg} />
       <div style={{
         padding: '6px 7px 8px 9px', borderRadius: 7.5,
-        borderTopRightRadius: isSent ? 0 : 7.5,
-        borderTopLeftRadius: isSent ? 7.5 : 0,
+        borderBottomRightRadius: isSent ? 0 : 7.5,
+        borderBottomLeftRadius: isSent ? 7.5 : 0,
         backgroundColor: bubbleBg,
         fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
       }}>
