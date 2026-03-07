@@ -4733,6 +4733,41 @@ Everything runs 100% in your browser — no data is uploaded to any server. Your
     isNew: true,
     estimatedTime: '3-5 minutes',
   },
+  {
+    slug: 'letter-application-writer',
+    name: 'Letter & Application Writer',
+    shortDescription: 'Generate professionally formatted letters and applications for employment, banking, school, and official purposes. India-focused templates.',
+    longDescription: `Write professional letters and applications in minutes with our free Letter & Application Writer. Choose from 18+ India-focused templates covering employment, banking, school/college, official, and personal letters.
+
+Templates include: Leave Application, Resignation Letter, Experience Certificate Request, Salary Increment Request, Transfer Request, Bank Account Opening/Closing, Cheque Book Request, Address Change, School Leave Application, Bonafide Certificate, Transfer Certificate, Complaint Letter, NOC Request, Notice to Vacate, Character Certificate, Permission Letter, and more.
+
+Simply select a template, fill in the blanks with your details, and download a professionally formatted letter as PDF or text. Real-time preview shows your letter as you type. "Try Example" button pre-fills all fields to show you the format.
+
+Features history of your last 5 letters (stored locally), keyboard shortcuts for power users, and works completely offline. No data ever leaves your browser — your personal details stay 100% private.`,
+    category: 'utility-tools',
+    targetKeyword: 'letter writing format',
+    secondaryKeywords: ['leave application format', 'resignation letter format India', 'formal letter generator', 'application letter maker', 'bank letter format', 'letter writing online', 'school leave application', 'complaint letter format', 'official letter format India', 'letter format in English'],
+    metaTitle: 'Letter & Application Writer - Free Formal Letter Generator India',
+    metaDescription: 'Generate leave applications, resignation letters, bank letters, school applications & more. 18+ India-focused templates. Free PDF download, no signup.',
+    faqs: [
+      { question: 'What types of letters can I generate?', answer: 'Employment (leave, resignation, experience certificate, salary increment, transfer), Banking (account opening/closing, cheque book, address change), School/College (leave, bonafide, TC), Official (complaint, NOC), and Personal (notice to vacate, character certificate, permission) letters.' },
+      { question: 'Are these letters legally valid?', answer: 'These are professionally formatted templates following standard Indian letter-writing conventions. For legal documents, please consult a legal professional. For routine office/school/bank correspondence, these formats are widely accepted.' },
+      { question: 'Can I customize the letter content?', answer: 'Yes! Every template has fill-in-the-blank fields. The generated letter updates in real-time as you type. You can also copy and edit the text before downloading.' },
+      { question: 'Does this tool store my personal information?', answer: 'No. All processing happens in your browser. Your history is stored in your browser\'s localStorage (only on your device). Nothing is ever sent to a server.' },
+      { question: 'Can I download the letter as PDF?', answer: 'Yes! Download as a professional PDF with proper formatting, or as plain text. You can also copy the text to clipboard.' },
+    ],
+    howToSteps: [
+      'Browse or search from 18+ letter templates across 5 categories.',
+      'Select the letter type you need (e.g., Leave Application, Bank Letter).',
+      'Fill in the required fields — name, date, reason, etc.',
+      'Preview your letter in real-time as you type.',
+      'Download as PDF or TXT, or copy to clipboard.',
+    ],
+    relatedToolSlugs: ['rent-agreement-generator', 'invoice-generator', 'resume-builder', 'rent-receipt-generator'],
+    icon: 'PenLine',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
