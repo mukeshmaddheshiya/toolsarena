@@ -2013,6 +2013,46 @@ Upload your PDF, see all pages listed in order, then use the arrow buttons to re
     estimatedTime: '2-5 seconds',
   },
   {
+    slug: 'redact-pdf',
+    name: 'Redact PDF',
+    shortDescription: 'Black out sensitive content in your PDF — draw redaction boxes and download a clean file.',
+    longDescription: `Redact sensitive information from PDF documents entirely in your browser — no server upload, no data exposure. Upload any PDF, navigate through pages, and draw redaction rectangles over text, images, or any content you want hidden.
+
+**Key features:**
+- Draw black, white, or gray redaction boxes on any page
+- Select, move, and resize redaction boxes after drawing
+- Undo/redo support for all operations
+- Page thumbnails sidebar for quick navigation
+- Text search with auto-redact — find matching text and redact it across all pages
+- Zoom controls for precise redaction placement
+- Download the redacted PDF with permanent filled rectangles
+
+All processing happens locally using pdf-lib and PDF.js. Your document never leaves your device.`,
+    category: 'pdf-tools',
+    targetKeyword: 'redact PDF online free',
+    secondaryKeywords: ['black out pdf text', 'censor pdf', 'remove sensitive info pdf', 'pdf redaction tool', 'hide text in pdf'],
+    metaTitle: 'Redact PDF Online Free - Black Out Sensitive Content Securely',
+    metaDescription: 'Redact and black out sensitive content in PDF files online for free. Draw redaction boxes, search & auto-redact text. 100% client-side — your PDF never leaves your browser.',
+    faqs: [
+      { question: 'Are the redactions permanent?', answer: 'Yes. The downloaded PDF has solid filled rectangles drawn over the redacted areas using pdf-lib. The underlying text is visually covered. For maximum security, the rectangles are burned into the PDF page content.' },
+      { question: 'Is my PDF uploaded to any server?', answer: 'No. All processing happens entirely in your browser using JavaScript. Your file never leaves your device.' },
+      { question: 'Can I redact specific text automatically?', answer: 'Yes. Use the search feature to enter text (e.g., a name or phone number), and the tool will find and redact all matching text across all pages.' },
+      { question: 'Can I undo a redaction?', answer: 'Yes. Before downloading, you can undo/redo any redaction using Ctrl+Z / Ctrl+Shift+Z or the toolbar buttons. You can also select and delete individual boxes.' },
+      { question: 'What redaction colors are available?', answer: 'Black (default), white, and gray. Choose the color from the toolbar before drawing.' },
+    ],
+    howToSteps: [
+      'Upload your PDF file by dragging it or clicking to browse.',
+      'Navigate to the page with sensitive content using thumbnails or arrows.',
+      'Switch to Draw mode and click-drag to create redaction rectangles.',
+      'Use Select mode to move, resize, or delete existing redactions.',
+      'Optionally use text search to auto-redact matching text across all pages.',
+      'Click "Redact All" to apply redactions and download the clean PDF.',
+    ],
+    relatedToolSlugs: ['pdf-sign', 'pdf-watermark', 'pdf-crop', 'pdf-compress'],
+    icon: 'ShieldOff',
+    estimatedTime: '5-30 seconds',
+  },
+  {
     slug: 'pdf-crop',
     name: 'Crop PDF',
     shortDescription: 'Crop and trim margins from all pages of a PDF file.',
@@ -4802,6 +4842,422 @@ View up to 8 upcoming cycles in a detailed table with predicted start dates, end
     icon: 'Heart',
     isNew: true,
     estimatedTime: '1 minute',
+  },
+  {
+    slug: 'social-media-post-mockup',
+    name: 'Social Media Post Mockup Generator',
+    shortDescription: 'Create realistic social media post mockups for Twitter/X, Instagram, Facebook, and LinkedIn. Download as PNG.',
+    longDescription: `Create pixel-perfect social media post mockups for Twitter/X, Instagram, Facebook, and LinkedIn. Customize profile name, handle, avatar, post text, engagement numbers, and timestamp. Toggle dark/light mode for each platform.
+
+Download your mockup as a high-resolution PNG. Perfect for presentations, marketing materials, social proof, and content previews. Every platform mockup matches the real UI exactly.
+
+Try Example pre-fills a demo post. History saves your last 5 mockups. 100% private — all processing happens in your browser.`,
+    category: 'image-tools',
+    targetKeyword: 'social media post mockup generator',
+    secondaryKeywords: ['twitter post generator', 'fake tweet generator', 'instagram post mockup', 'linkedin post mockup', 'facebook post generator', 'social media mockup tool', 'tweet screenshot generator', 'social media post template', 'X post mockup'],
+    metaTitle: 'Social Media Post Mockup Generator - Twitter, Instagram, Facebook, LinkedIn',
+    metaDescription: 'Create realistic social media post mockups for Twitter/X, Instagram, Facebook & LinkedIn. Custom profile, engagement stats, dark mode. Free PNG download.',
+    faqs: [
+      { question: 'Which social media platforms are supported?', answer: 'Twitter/X, Instagram, Facebook, and LinkedIn. Each mockup matches the real platform UI pixel-perfectly.' },
+      { question: 'Can I customize engagement numbers?', answer: 'Yes! You can set custom likes, retweets/reposts, comments, shares, and views for each platform.' },
+      { question: 'Is the mockup downloadable?', answer: 'Yes, download as a high-resolution PNG image perfect for presentations and marketing.' },
+      { question: 'Does this store my data?', answer: 'No. All processing happens in your browser. History is stored locally on your device only.' },
+    ],
+    howToSteps: [
+      'Select a social media platform (Twitter/X, Instagram, Facebook, or LinkedIn).',
+      'Enter profile name, handle, and optionally upload an avatar.',
+      'Write your post text and set engagement numbers.',
+      'Toggle dark/light mode and preview in real-time.',
+      'Download your mockup as PNG.',
+    ],
+    relatedToolSlugs: ['instagram-carousel-maker', 'youtube-thumbnail-tester', 'og-image-generator', 'screenshot-beautifier'],
+    icon: 'Share2',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+  {
+    slug: 'business-card-maker',
+    name: 'Business Card / Visiting Card Maker',
+    shortDescription: 'Design professional business cards with 8 templates, QR code, front/back flip preview, and PNG download.',
+    longDescription: `Design stunning professional business cards in minutes. Choose from 8 beautiful templates — Minimal, Corporate, Creative, Gradient, Dark Luxury, Tech, Nature, and Bold. Customize colors, fonts, and add your logo.
+
+Features front and back card design with a realistic flip animation. The back includes auto-generated QR code for your contact details. Download both sides as PNG.
+
+Perfect for freelancers, professionals, and businesses. All processing happens in your browser — your data stays private.`,
+    category: 'image-tools',
+    targetKeyword: 'business card maker online',
+    secondaryKeywords: ['visiting card maker', 'business card generator free', 'visiting card design online', 'business card template', 'professional card maker', 'free business card creator', 'business card with QR code', 'visiting card maker India'],
+    metaTitle: 'Business Card Maker Online Free - 8 Professional Templates with QR Code',
+    metaDescription: 'Design professional business cards with 8 templates, custom colors, logo upload, QR code. Front & back preview with flip animation. Free PNG download.',
+    faqs: [
+      { question: 'How many templates are available?', answer: '8 professionally designed templates: Minimal, Corporate, Creative, Gradient, Dark Luxury, Tech, Nature, and Bold.' },
+      { question: 'Can I add a QR code?', answer: 'Yes! A vCard QR code is automatically generated on the back of the card with your contact details.' },
+      { question: 'What format is the download?', answer: 'Cards are downloaded as high-quality PNG images, with separate files for front and back.' },
+      { question: 'Can I upload my company logo?', answer: 'Yes, you can upload a logo that will be displayed on your business card.' },
+    ],
+    howToSteps: [
+      'Choose a card template from the visual grid.',
+      'Enter your details — name, title, company, phone, email, website.',
+      'Customize colors, font, and optionally upload a logo.',
+      'Preview front and back with the flip animation.',
+      'Download as PNG.',
+    ],
+    relatedToolSlugs: ['social-media-post-mockup', 'invoice-generator', 'resume-builder', 'qr-code-generator'],
+    icon: 'CreditCard',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
+  {
+    slug: 'tdee-macro-calculator',
+    name: 'TDEE & Macro Calculator (Indian Foods)',
+    shortDescription: 'Calculate your TDEE and macros with Mifflin-St Jeor formula. Includes 45+ Indian food database and meal planner.',
+    longDescription: `Calculate your Total Daily Energy Expenditure (TDEE) and recommended macronutrient breakdown using the Mifflin-St Jeor equation. Features a comprehensive Indian food database with 45+ items across 8 categories.
+
+Three-step wizard: Enter personal details, select activity level, choose your goal (lose/maintain/gain weight). Get your BMR, TDEE, and macro breakdown with beautiful animated donut chart.
+
+Build a daily meal plan from the Indian food database — Dal, Paneer, Biryani, Roti, Dosa, and more. Track running totals vs your TDEE target. Export meal plan as CSV.`,
+    category: 'calculators',
+    targetKeyword: 'TDEE calculator',
+    secondaryKeywords: ['macro calculator', 'calorie calculator India', 'TDEE calculator with Indian food', 'macronutrient calculator', 'BMR calculator', 'Indian food calories', 'meal planner India', 'calorie counter Indian food', 'protein calculator India'],
+    metaTitle: 'TDEE & Macro Calculator - Indian Foods Database & Meal Planner',
+    metaDescription: 'Calculate TDEE & macros with Mifflin-St Jeor formula. 45+ Indian foods database, meal planner, animated donut chart. Free, private, no signup.',
+    faqs: [
+      { question: 'What is TDEE?', answer: 'Total Daily Energy Expenditure — the total calories your body burns in a day, including exercise. It is calculated by multiplying your BMR by an activity factor.' },
+      { question: 'Which formula is used?', answer: 'The Mifflin-St Jeor equation, which is considered the most accurate BMR formula. Male: 10W + 6.25H - 5A + 5. Female: 10W + 6.25H - 5A - 161.' },
+      { question: 'What Indian foods are included?', answer: '45+ items across 8 categories: Dal & Pulses, Rice & Roti, Vegetables, Non-Veg, Snacks, Dairy, Fruits, and Sweets. Each with calories, protein, carbs, and fat per serving.' },
+      { question: 'Can I export my meal plan?', answer: 'Yes! Export your meal plan as CSV with all nutritional details and daily totals.' },
+    ],
+    howToSteps: [
+      'Enter your age, gender, height, and weight.',
+      'Select your activity level (Sedentary to Extremely Active).',
+      'Choose your goal — lose, maintain, or gain weight.',
+      'View your TDEE, BMR, and macro breakdown.',
+      'Build a meal plan from the Indian food database.',
+    ],
+    relatedToolSlugs: ['bmi-calculator', 'calorie-calculator', 'period-ovulation-calculator', 'age-calculator'],
+    icon: 'Apple',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+  {
+    slug: 'stamp-duty-calculator',
+    name: 'Stamp Duty Calculator (All Indian States)',
+    shortDescription: 'Calculate stamp duty, registration fees, and total charges for property purchase across all 28 Indian states and 8 UTs.',
+    longDescription: `Calculate stamp duty and registration charges for property purchases across all 28 Indian states and 8 Union Territories. Accurate rates with concessions for women buyers, senior citizens, and joint registrations.
+
+Includes GST calculation for under-construction properties, municipal charges, and total cost breakdown with animated stacked bar chart. Compare stamp duty across top states for the same property value.
+
+Features tips on saving stamp duty, complete rates reference table, FAQ section, and glossary of property registration terms.`,
+    category: 'calculators',
+    targetKeyword: 'stamp duty calculator',
+    secondaryKeywords: ['stamp duty calculator India', 'registration charges calculator', 'stamp duty rates all states', 'property registration cost', 'stamp duty for women', 'stamp duty Maharashtra', 'stamp duty Delhi', 'property stamp duty calculator', 'house registration charges India'],
+    metaTitle: 'Stamp Duty Calculator India - All States & UTs with Registration Charges',
+    metaDescription: 'Calculate stamp duty & registration fees for all 28 Indian states. Women buyer concessions, GST, state comparison. Free instant calculator.',
+    faqs: [
+      { question: 'Which states are covered?', answer: 'All 28 Indian states and 8 Union Territories with accurate stamp duty and registration rates.' },
+      { question: 'Do women get concessions?', answer: 'Yes! Many states offer reduced stamp duty for women buyers and joint registrations. The calculator automatically applies these concessions.' },
+      { question: 'Is GST included?', answer: 'Yes, for under-construction properties. Affordable housing has 1% GST, non-affordable has 5% GST. Ready-to-move properties have no GST.' },
+      { question: 'How accurate are the rates?', answer: 'Rates are based on current published state government data. Always verify with your local sub-registrar office for the latest rates.' },
+    ],
+    howToSteps: [
+      'Select your state and property type.',
+      'Enter the property value and choose buyer category.',
+      'View instant stamp duty, registration, and total cost breakdown.',
+      'Compare rates across states.',
+      'Export the calculation report.',
+    ],
+    relatedToolSlugs: ['rent-vs-buy-calculator', 'emi-calculator', 'rent-agreement-generator', 'hra-calculator'],
+    icon: 'Landmark',
+    isNew: true,
+    estimatedTime: '1 minute',
+  },
+  {
+    slug: 'youtube-thumbnail-tester',
+    name: 'YouTube Thumbnail A/B Tester',
+    shortDescription: 'Compare YouTube thumbnails in realistic contexts — homepage, search, sidebar, mobile. A/B vote mode with analysis.',
+    longDescription: `Upload 2-4 YouTube thumbnails and preview them in realistic YouTube contexts — homepage feed, search results, sidebar suggestions, and mobile feed. Compare thumbnails side by side to pick the best one.
+
+Features A/B vote mode with animated counters and percentage bars. Get thumbnail analysis tips covering contrast, brightness, aspect ratio, and resolution. Dark/light mode toggle for YouTube mockups.
+
+Customize video title, channel name, view count, and upload date. Download comparison as PNG. Perfect for YouTubers optimizing their click-through rate.`,
+    category: 'image-tools',
+    targetKeyword: 'youtube thumbnail tester',
+    secondaryKeywords: ['youtube thumbnail preview', 'thumbnail A/B test', 'youtube thumbnail comparison', 'thumbnail tester online', 'youtube thumbnail checker', 'youtube thumbnail preview tool', 'thumbnail AB testing', 'CTR optimization youtube'],
+    metaTitle: 'YouTube Thumbnail A/B Tester - Preview & Compare Thumbnails Free',
+    metaDescription: 'Compare YouTube thumbnails in realistic contexts. A/B vote mode, analysis tips, dark/light mode. Upload 2-4 thumbnails and find the best one. Free.',
+    faqs: [
+      { question: 'How many thumbnails can I compare?', answer: 'Upload 2 to 4 thumbnails at once for comparison across all YouTube contexts.' },
+      { question: 'What preview contexts are available?', answer: 'Homepage feed (grid), search results (list), sidebar suggestions (small thumbnails), and mobile feed (full-width cards).' },
+      { question: 'How does the A/B vote mode work?', answer: 'Two thumbnails are shown side by side. Click to vote for the better one. Vote counts and percentages update in real-time with animations.' },
+      { question: 'Does this upload my thumbnails to a server?', answer: 'No. Everything is processed locally in your browser. Your images never leave your device.' },
+    ],
+    howToSteps: [
+      'Upload 2-4 thumbnail images via drag & drop or file picker.',
+      'Preview in different YouTube contexts — homepage, search, sidebar, mobile.',
+      'Set video title, channel name, and view count.',
+      'Use A/B vote mode to compare thumbnails.',
+      'Download comparison as PNG.',
+    ],
+    relatedToolSlugs: ['social-media-post-mockup', 'instagram-carousel-maker', 'image-resizer', 'og-image-generator'],
+    icon: 'Youtube',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+  {
+    slug: 'instagram-carousel-maker',
+    name: 'Instagram Carousel Maker',
+    shortDescription: 'Create beautiful Instagram carousel posts with up to 10 slides. Custom backgrounds, text, templates, and PNG download.',
+    longDescription: `Create stunning Instagram carousel posts with up to 10 slides. Choose from solid colors, gradient backgrounds, or upload images. Add headlines, body text, and customize fonts, colors, and alignment.
+
+5 slide templates included: Title Slide, Quote Slide, Tip/Fact, Numbered List, and CTA Slide. Preview with Instagram-style swipe navigation and dots indicator.
+
+Download individual slides or all at once as high-quality 1080x1080 PNG images. Perfect for creators, marketers, and educators building engaging carousel content.`,
+    category: 'image-tools',
+    targetKeyword: 'instagram carousel maker',
+    secondaryKeywords: ['instagram carousel creator', 'carousel post maker', 'instagram slide maker', 'instagram carousel template', 'social media carousel', 'carousel post generator', 'instagram carousel design', 'free carousel maker online'],
+    metaTitle: 'Instagram Carousel Maker - Create Multi-Slide Posts Free',
+    metaDescription: 'Create Instagram carousels with up to 10 slides. Custom backgrounds, gradients, text, 5 templates. Download as 1080x1080 PNG. Free, no signup.',
+    faqs: [
+      { question: 'How many slides can I create?', answer: 'Up to 10 slides per carousel, matching Instagram\'s maximum.' },
+      { question: 'What templates are available?', answer: '5 templates: Title Slide, Quote Slide, Tip/Fact Slide, Numbered List, and CTA (Call to Action) Slide.' },
+      { question: 'What size are the slides?', answer: 'All slides are 1080x1080 pixels (1:1 ratio), the standard Instagram post size.' },
+      { question: 'Can I use custom backgrounds?', answer: 'Yes! Choose from solid colors, 17+ gradient presets, or upload your own background image.' },
+    ],
+    howToSteps: [
+      'Add slides and choose a template or start blank.',
+      'Set background (color, gradient, or image) for each slide.',
+      'Add headline and body text with custom fonts and colors.',
+      'Preview with Instagram-style swipe navigation.',
+      'Download slides as PNG.',
+    ],
+    relatedToolSlugs: ['social-media-post-mockup', 'youtube-thumbnail-tester', 'image-resizer', 'og-image-generator'],
+    icon: 'LayoutGrid',
+    isNew: true,
+    estimatedTime: '5 minutes',
+  },
+  {
+    slug: 'citation-generator',
+    name: 'Citation Generator',
+    shortDescription: 'Generate academic citations in APA, MLA, Chicago, Harvard, IEEE, and Vancouver. Support 8 source types with bibliography builder.',
+    longDescription: `Generate properly formatted academic citations in APA 7th, MLA 9th, Chicago, Harvard, IEEE, and Vancouver styles. Support 8 source types: Book, Journal Article, Website, Conference Paper, Thesis, Newspaper, Video, and Report.
+
+Multiple authors support with proper "et al." rules per style. Real-time citation preview showing both in-text citation and reference list entry. Build a complete bibliography — add, reorder, sort alphabetically, and export.
+
+Perfect for students, researchers, and academics. Copy individual citations or export entire bibliography as TXT.`,
+    category: 'text-tools',
+    targetKeyword: 'citation generator',
+    secondaryKeywords: ['APA citation generator', 'MLA citation generator', 'Harvard referencing generator', 'bibliography generator', 'reference generator free', 'Chicago citation maker', 'IEEE citation format', 'academic citation tool', 'cite sources online', 'Vancouver citation generator'],
+    metaTitle: 'Citation Generator - APA, MLA, Chicago, Harvard, IEEE, Vancouver Free',
+    metaDescription: 'Generate citations in APA 7th, MLA 9th, Chicago, Harvard, IEEE & Vancouver. 8 source types, bibliography builder. Free, accurate, no signup.',
+    faqs: [
+      { question: 'Which citation styles are supported?', answer: 'APA 7th Edition, MLA 9th Edition, Chicago (Notes-Bibliography), Harvard, IEEE, and Vancouver.' },
+      { question: 'What source types can I cite?', answer: 'Book, Journal Article, Website, Conference Paper, Thesis/Dissertation, Newspaper Article, Video/Film, and Report.' },
+      { question: 'Can I build a bibliography?', answer: 'Yes! Add multiple citations to a bibliography list, sort alphabetically, reorder, and export the entire list as a text file.' },
+      { question: 'Are the citations accurate?', answer: 'Citations follow the official formatting rules for each style, including proper "et al." rules, italics, and punctuation. Always verify with your institution\'s guidelines.' },
+    ],
+    howToSteps: [
+      'Select a citation style (APA, MLA, Chicago, etc.).',
+      'Choose the source type (Book, Journal, Website, etc.).',
+      'Fill in the source details — author(s), title, year, etc.',
+      'Copy the generated in-text citation and reference entry.',
+      'Add to bibliography and export when done.',
+    ],
+    relatedToolSlugs: ['essay-counter-readability', 'ai-text-humanizer', 'word-counter', 'case-converter'],
+    icon: 'BookOpen',
+    isNew: true,
+    estimatedTime: '2 minutes',
+  },
+  {
+    slug: 'rent-vs-buy-calculator',
+    name: 'Rent vs Buy Calculator (India)',
+    shortDescription: 'Compare renting vs buying a home in India. Factors in stamp duty, tax benefits (80C, 24b), HRA, and investment returns.',
+    longDescription: `Decide whether to rent or buy a home in India with our comprehensive comparison calculator. Accounts for Indian-specific factors: stamp duty, registration charges, GST, home loan interest deduction (Section 24b), principal deduction (Section 80C), and HRA tax exemption.
+
+Compare total costs over 5-30 years with animated line charts showing cumulative costs and net worth. Year-by-year breakdown table with clear winner badges. Investment returns calculated for surplus savings.
+
+Features realistic Mumbai/Delhi example, CSV export, and clear verdict showing when buying becomes more economical.`,
+    category: 'calculators',
+    targetKeyword: 'rent vs buy calculator India',
+    secondaryKeywords: ['rent or buy calculator', 'should I rent or buy India', 'rent vs buy comparison', 'home buying calculator India', 'rent vs EMI calculator', 'property investment calculator', 'rent vs buy break even', 'housing affordability calculator India'],
+    metaTitle: 'Rent vs Buy Calculator India - Compare with Tax Benefits & Investment Returns',
+    metaDescription: 'Should you rent or buy in India? Compare costs with stamp duty, Section 80C/24b tax benefits, HRA, investment returns. Year-by-year analysis. Free.',
+    faqs: [
+      { question: 'What Indian-specific factors are included?', answer: 'Stamp duty, registration charges, GST on under-construction, Section 24(b) interest deduction (up to 2L), Section 80C principal deduction (up to 1.5L), and HRA tax exemption.' },
+      { question: 'How is the investment return calculated?', answer: 'If renting, the money saved on down payment and stamp duty is assumed to be invested. Monthly surplus (EMI minus rent) is also invested. You choose the return rate (FD, Index Fund, or Equity MF).' },
+      { question: 'What is the break-even year?', answer: 'The year when the total cost of buying becomes less than the total cost of renting, including investment returns on saved money.' },
+      { question: 'Can I export the comparison?', answer: 'Yes! Export the year-by-year breakdown as CSV for your records.' },
+    ],
+    howToSteps: [
+      'Enter property price, down payment, and loan details.',
+      'Set monthly rent and expected rent increase.',
+      'Choose investment return rate for surplus savings.',
+      'Set analysis period (5-30 years).',
+      'View verdict, charts, and year-by-year breakdown.',
+    ],
+    relatedToolSlugs: ['stamp-duty-calculator', 'emi-calculator', 'hra-calculator', 'rent-agreement-generator'],
+    icon: 'Home',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
+  {
+    slug: 'css-animation-generator',
+    name: 'CSS Animation Generator',
+    shortDescription: 'Visual CSS animation builder with 17 presets, keyframe editor, cubic-bezier curve editor, and live preview.',
+    longDescription: `Build CSS animations visually with our comprehensive CSS Animation Generator. Choose from 17 presets (Bounce, Fade, Slide, Spin, Pulse, Shake, Flip, and more) or build custom animations from scratch.
+
+Features a visual keyframe editor with timeline, per-keyframe property controls (transform, opacity, filters), and a cubic-bezier curve editor with draggable control points. Live preview uses actual CSS animations — what you see is exactly what your CSS will produce.
+
+Copy the generated CSS code with syntax highlighting. Adjust speed, play/pause/restart, and preview on different element shapes.`,
+    category: 'developer-tools',
+    targetKeyword: 'CSS animation generator',
+    secondaryKeywords: ['CSS keyframe generator', 'CSS animation builder', 'CSS animation maker online', 'keyframe animation tool', 'CSS transition generator', 'cubic bezier editor', 'CSS animation code generator', 'animate CSS online', 'CSS animation playground'],
+    metaTitle: 'CSS Animation Generator - Visual Keyframe Builder & Cubic Bezier Editor',
+    metaDescription: 'Build CSS animations visually. 17 presets, keyframe editor, cubic-bezier curve editor, live preview. Copy generated CSS code. Free online tool.',
+    faqs: [
+      { question: 'What animation presets are available?', answer: '17 presets: Bounce, Fade In/Out, Slide In (4 directions), Spin, Pulse, Shake, Flip, Swing, Rubber Band, Jello, Heart Beat, Zoom In/Out.' },
+      { question: 'Can I create custom animations?', answer: 'Yes! Add keyframes at any percentage, customize transform, opacity, background, border-radius, shadow, and filter properties for each keyframe.' },
+      { question: 'Does the preview use real CSS?', answer: 'Yes! The live preview uses actual CSS @keyframes injected via a style tag, not a JavaScript animation library. What you see is exactly what the CSS will produce.' },
+      { question: 'What is the cubic-bezier editor?', answer: 'A visual curve editor where you drag two control points to define a custom timing function. The curve updates in real-time.' },
+    ],
+    howToSteps: [
+      'Choose an animation preset or start custom.',
+      'Adjust duration, timing, delay, and other properties.',
+      'Edit keyframes on the visual timeline.',
+      'Preview the animation with play/pause/restart controls.',
+      'Copy the generated CSS code.',
+    ],
+    relatedToolSlugs: ['tailwind-playground', 'css-gradient-text-generator', 'color-palette-generator', 'box-shadow-generator'],
+    icon: 'Sparkles',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
+  {
+    slug: 'essay-counter-readability',
+    name: 'Essay Counter + Readability Analyzer',
+    shortDescription: 'Count words, characters, sentences. Get Flesch, Gunning Fog, SMOG readability scores. Word frequency and writing tips.',
+    longDescription: `Comprehensive text analysis tool. Count words, characters (with/without spaces), sentences, paragraphs, reading time, and speaking time. Calculate 6 readability scores: Flesch Reading Ease, Flesch-Kincaid Grade Level, Gunning Fog, Coleman-Liau, SMOG, and ARI.
+
+Features beautiful semi-circular gauge visualizations for readability scores, word frequency analysis with bar charts (excluding stop words), sentence length distribution histogram, and actionable writing suggestions.
+
+Perfect for students, writers, content creators, and SEO professionals. All analysis happens in real-time as you type.`,
+    category: 'text-tools',
+    targetKeyword: 'essay word counter',
+    secondaryKeywords: ['readability checker', 'word counter online', 'readability score calculator', 'Flesch reading ease calculator', 'text analyzer', 'essay readability checker', 'Gunning Fog calculator', 'writing analyzer', 'character counter', 'sentence counter'],
+    metaTitle: 'Essay Counter + Readability Analyzer - Flesch, Gunning Fog, SMOG & More',
+    metaDescription: 'Count words, characters, sentences. Get 6 readability scores (Flesch, Gunning Fog, SMOG, ARI). Word frequency, writing tips. Free real-time analysis.',
+    faqs: [
+      { question: 'What readability scores are calculated?', answer: 'Flesch Reading Ease (0-100), Flesch-Kincaid Grade Level, Gunning Fog Index, Coleman-Liau Index, SMOG Index, and Automated Readability Index (ARI).' },
+      { question: 'How is reading time calculated?', answer: 'Based on an average reading speed of 200 words per minute. Speaking time uses 130 words per minute.' },
+      { question: 'What writing suggestions does it provide?', answer: 'Flags long sentences (>30 words), passive voice hints, overused words, vocabulary richness feedback, and paragraph structure suggestions.' },
+      { question: 'Does it work in real-time?', answer: 'Yes! All statistics, readability scores, and suggestions update instantly as you type.' },
+    ],
+    howToSteps: [
+      'Paste or type your text in the editor.',
+      'View real-time word count, character count, and other stats.',
+      'Check readability scores with visual gauges.',
+      'Review word frequency and sentence distribution.',
+      'Read writing improvement suggestions.',
+    ],
+    relatedToolSlugs: ['word-counter', 'citation-generator', 'ai-text-humanizer', 'case-converter'],
+    icon: 'FileText',
+    isNew: true,
+    estimatedTime: '1 minute',
+  },
+  {
+    slug: 'font-identifier',
+    name: 'Font Identifier from Image',
+    shortDescription: 'Upload an image with text and visually match it against 50+ system fonts. Compare side by side, adjust size/weight/spacing.',
+    longDescription: `Identify fonts from images by visual comparison. Upload an image containing text, type the same text, and browse through 50+ system fonts to find the closest match.
+
+Fonts grouped by category: Sans-Serif, Serif, Monospace, Display, and Handwriting. Adjust font size, weight (100-900), style (normal/italic), letter spacing, and line height for precise matching.
+
+Star your best matches, compare up to 3 fonts side-by-side against the image, and copy the CSS font-family declaration. Grid and list view toggle for the font gallery.`,
+    category: 'image-tools',
+    targetKeyword: 'font identifier from image',
+    secondaryKeywords: ['what font is this', 'identify font from image', 'font finder', 'font matcher', 'font recognition', 'what font is used', 'font detector', 'find font from screenshot', 'font identification tool'],
+    metaTitle: 'Font Identifier from Image - Match & Compare 50+ Fonts Free',
+    metaDescription: 'Upload an image and identify the font by visual comparison. 50+ fonts, side-by-side matching, adjust size/weight/spacing. Copy CSS. Free, no signup.',
+    faqs: [
+      { question: 'How does the font identification work?', answer: 'Upload an image with text, type the same text, and visually compare it against 50+ system fonts. Adjust font properties until you find the closest match.' },
+      { question: 'What fonts are available for comparison?', answer: '50+ cross-platform system fonts across 5 categories: Sans-Serif, Serif, Monospace, Display, and Handwriting.' },
+      { question: 'Can I compare multiple fonts at once?', answer: 'Yes! Star your best matches and use the side-by-side comparison mode to compare up to 3 fonts against the original image.' },
+      { question: 'Does this use AI or machine learning?', answer: 'No, this is a visual matching tool. You compare fonts manually which gives you full control over the matching process. All processing is client-side.' },
+    ],
+    howToSteps: [
+      'Upload an image containing the text/font you want to identify.',
+      'Type the same text in the sample text field.',
+      'Browse fonts by category or search by name.',
+      'Adjust size, weight, and spacing to match.',
+      'Star best matches and copy CSS.',
+    ],
+    relatedToolSlugs: ['social-media-post-mockup', 'business-card-maker', 'css-gradient-text-generator', 'image-to-text'],
+    icon: 'Type',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
+  {
+    slug: 'roast-my-website',
+    name: 'Roast My Website',
+    shortDescription: 'Get a humorous but helpful website audit. URL analysis, 20-point checklist, and a witty roast report with actionable feedback.',
+    longDescription: `Get your website roasted with humor and helpful feedback! Enter your URL, upload a screenshot, and answer a quick 20-question audit checklist covering SEO, performance, design, content, security, and UX.
+
+Receive a comprehensive roast report with an overall score (0-100), letter grade with fun titles ("Digital Dumpster Fire" to "Absolute Legend"), and category-by-category scores with witty roast commentary and serious recommendations.
+
+URL analysis checks HTTPS, domain quality, TLD, and more automatically. Share your roast result as PNG. Perfect for developers wanting a fun reality check.`,
+    category: 'developer-tools',
+    targetKeyword: 'roast my website',
+    secondaryKeywords: ['website roast', 'website audit tool', 'website checker', 'website analyzer', 'site audit free', 'website review tool', 'website grader', 'web audit checklist', 'website score checker'],
+    metaTitle: 'Roast My Website - Fun Website Audit with Scores & Actionable Tips',
+    metaDescription: 'Get your website roasted! URL analysis, 20-point audit, witty roast report with scores in SEO, performance, design, UX. Share as PNG. Free & fun.',
+    faqs: [
+      { question: 'How does the roasting work?', answer: 'Enter your URL, upload a screenshot, and answer 20 yes/no questions about your site. The tool analyzes your URL and checklist answers to generate a humorous but helpful roast report.' },
+      { question: 'Is this a real website audit?', answer: 'It combines automated URL analysis with a self-reported checklist. While it is not a replacement for tools like Lighthouse, it covers key areas (SEO, performance, design, content, security, UX) and provides actionable tips.' },
+      { question: 'Can I share my roast result?', answer: 'Yes! Download your roast report as a PNG image to share on social media.' },
+      { question: 'Does this access my website?', answer: 'No. Due to browser security (CORS), the tool cannot fetch your website directly. URL analysis is done on the URL text itself, and site features are self-reported via the checklist.' },
+    ],
+    howToSteps: [
+      'Enter your website URL.',
+      'Optionally upload a homepage screenshot.',
+      'Answer the 20-question quick audit checklist.',
+      'Click "Roast My Website" to generate the report.',
+      'Review scores, roast commentary, and recommendations.',
+    ],
+    relatedToolSlugs: ['meta-tag-generator', 'og-image-generator', 'privacy-policy-generator', 'css-animation-generator'],
+    icon: 'Flame',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
+  {
+    slug: 'tailwind-playground',
+    name: 'Tailwind CSS Playground',
+    shortDescription: 'Live Tailwind CSS playground with class editor, visual builder, color palette, autocomplete, and CSS output.',
+    longDescription: `A live Tailwind CSS playground where you type classes and see instant visual preview. Two modes: Class Editor for typing classes directly, and Visual Builder for clicking through categorized Tailwind utilities.
+
+Class Editor features autocomplete suggestions, class validation (green = valid, red = unknown), box model visualizer, and responsive preview (mobile/tablet/desktop). Visual Builder has 9 categories with clickable class buttons and full Tailwind color palette grids.
+
+See the equivalent raw CSS for any Tailwind classes. 8 pre-built snippets included. Perfect for learning Tailwind or rapid prototyping.`,
+    category: 'developer-tools',
+    targetKeyword: 'tailwind playground',
+    secondaryKeywords: ['tailwind CSS playground', 'tailwind CSS tester', 'tailwind class to CSS', 'tailwind live preview', 'tailwind builder online', 'tailwind CSS converter', 'tailwind visual builder', 'tailwind CSS generator', 'tailwind editor online'],
+    metaTitle: 'Tailwind CSS Playground - Live Preview, Visual Builder & CSS Output',
+    metaDescription: 'Live Tailwind CSS playground with class editor, visual builder, color palette, autocomplete, responsive preview. See CSS output. Free online tool.',
+    faqs: [
+      { question: 'What are the two modes?', answer: 'Class Editor mode lets you type Tailwind classes directly with autocomplete and validation. Visual Builder mode lets you click through categorized utilities to build classes visually.' },
+      { question: 'Can I see the raw CSS?', answer: 'Yes! The CSS output panel shows the equivalent raw CSS for every Tailwind class you apply, with syntax highlighting.' },
+      { question: 'Does it support all Tailwind classes?', answer: 'It covers the most commonly used Tailwind utilities: spacing, colors, typography, display, flex, grid, border, shadow, transform, animation, and more.' },
+      { question: 'Is this an official Tailwind tool?', answer: 'No, this is an independent playground. It maps Tailwind classes to CSS client-side without running the actual Tailwind compiler.' },
+    ],
+    howToSteps: [
+      'Choose Class Editor or Visual Builder mode.',
+      'Type or select Tailwind classes.',
+      'See live preview of the styled element.',
+      'Check the CSS output panel for raw CSS.',
+      'Copy classes or CSS for your project.',
+    ],
+    relatedToolSlugs: ['css-animation-generator', 'css-gradient-text-generator', 'color-palette-generator', 'box-shadow-generator'],
+    icon: 'Wind',
+    isNew: true,
+    estimatedTime: '5 minutes',
   },
 ];
 
