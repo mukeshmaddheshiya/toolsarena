@@ -5259,6 +5259,42 @@ See the equivalent raw CSS for any Tailwind classes. 8 pre-built snippets includ
     isNew: true,
     estimatedTime: '5 minutes',
   },
+  {
+    slug: 'whatsapp-chat-generator',
+    name: 'WhatsApp Chat Generator',
+    shortDescription: 'Create realistic WhatsApp chat screenshots with pixel-perfect UI. Edit messages, contacts, ticks, wallpaper. Download as PNG.',
+    longDescription: `Create pixel-perfect WhatsApp chat screenshots that look exactly like the real app. Fully editable — customize contact name, profile photo, online status, and every single message.
+
+Support for text messages, voice messages, image placeholders, and deleted messages. Each message has editable timestamp, read receipt ticks (sent, delivered, read/blue tick), reply quotes, and starred status. Drag to reorder messages.
+
+Choose between WhatsApp light and dark themes. Customize wallpaper with 14 color presets or upload your own image. Edit status bar time and battery level for maximum realism. Download as high-resolution PNG (3x scale).
+
+Perfect for presentations, mockups, UI/UX design, social media content, and educational materials. 100% private — everything runs in your browser.`,
+    category: 'image-tools',
+    targetKeyword: 'whatsapp chat generator',
+    secondaryKeywords: ['fake whatsapp chat generator', 'whatsapp screenshot generator', 'whatsapp chat maker online', 'whatsapp message generator', 'fake chat generator', 'whatsapp conversation generator', 'whatsapp mockup generator', 'whatsapp chat screenshot maker', 'fake whatsapp conversation', 'whatsapp chat creator'],
+    metaTitle: 'WhatsApp Chat Generator - Create Realistic Chat Screenshots Free',
+    metaDescription: 'Create pixel-perfect WhatsApp chat screenshots. Edit messages, ticks, profile, wallpaper, dark/light mode. Download as PNG. Free, no signup, 100% private.',
+    faqs: [
+      { question: 'Does this create real WhatsApp messages?', answer: 'No. This tool generates realistic-looking mockup screenshots for presentations, design, and educational purposes only. No actual WhatsApp messages are sent or received.' },
+      { question: 'Can I customize the read receipts (ticks)?', answer: 'Yes! Each sent message can show single tick (sent), double tick (delivered), or blue double tick (read). Received messages show no ticks, just like real WhatsApp.' },
+      { question: 'Does it support dark mode?', answer: 'Yes! Toggle between WhatsApp light theme and dark theme. The colors match the real WhatsApp app exactly.' },
+      { question: 'Can I add different message types?', answer: 'Yes — text messages, voice messages (with waveform), image placeholders (with optional caption), and deleted messages are all supported.' },
+      { question: 'What resolution is the downloaded image?', answer: 'The PNG is rendered at 3x scale for crisp, high-resolution output suitable for presentations and print.' },
+      { question: 'Is my data private?', answer: 'Absolutely. All processing happens in your browser. Nothing is uploaded to any server. Your chat content stays on your device.' },
+    ],
+    howToSteps: [
+      'Set the contact name, status (online/typing/last seen), and optionally upload a profile photo.',
+      'Add messages — choose text, voice, image, or deleted type for each.',
+      'Set each message as sent or received, customize time and tick status.',
+      'Choose light or dark theme and pick a wallpaper color or upload a custom one.',
+      'Download the chat screenshot as a high-resolution PNG.',
+    ],
+    relatedToolSlugs: ['social-media-post-mockup', 'instagram-carousel-maker', 'youtube-thumbnail-tester', 'business-card-maker'],
+    icon: 'MessageCircle',
+    isNew: true,
+    estimatedTime: '3 minutes',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
