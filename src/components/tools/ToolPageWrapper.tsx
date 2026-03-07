@@ -8,7 +8,7 @@ import { HowToUse } from './HowToUse';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { SITE_URL, SITE_NAME, CATEGORY_NAME_KEYS } from '@/lib/constants';
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
 
 interface ToolPageWrapperProps {
   slug: string;
@@ -21,6 +21,7 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
 
   const relatedTools = getRelatedTools(slug);
   const t = await getTranslations();
+  const locale = await getLocale();
 
   const categoryNameKey = CATEGORY_NAME_KEYS[tool.category];
   const categoryName = categoryNameKey ? t(categoryNameKey) : tool.category;
@@ -38,7 +39,7 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
     keywords: [tool.targetKeyword, ...tool.secondaryKeywords].join(', '),
     author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    inLanguage: 'en',
+    inLanguage: locale,
     browserRequirements: 'Requires JavaScript. Works in all modern browsers.',
   };
 

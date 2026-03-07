@@ -1685,6 +1685,49 @@ Perfect for Nepali speakers who are comfortable with English keyboards, students
     estimatedTime: 'Instant',
   },
   {
+    slug: 'nepse-calculator',
+    name: 'NEPSE Share Calculator',
+    shortDescription: 'Calculate NEPSE share profit/loss, WACC & target price with broker commission, SEBON fee, DP charge & CGT.',
+    longDescription: `Nepal's most complete NEPSE Share Calculator with three powerful tools: Profit/Loss Calculator, WACC (Weighted Average Cost) Calculator, and Target Price Calculator. All with official SEBON-regulated broker commission tiers, SEBON fee, DP charge, and Capital Gains Tax.
+
+Profit/Loss Calculator: Enter buy price, sell price, and quantity (kitta) to instantly see net profit/loss after all charges. Includes visual fee breakdown chart, circuit breaker limits, break-even price, effective buy/sell price per share, and detailed buy-side + sell-side fee breakdown.
+
+WACC Calculator: Bought the same stock at different prices? Add multiple buy transactions and calculate your weighted average cost per share including all fees. See per-transaction weight distribution and total investment breakdown.
+
+Target Price Calculator: Enter your desired profit amount and the tool calculates the exact sell price needed accounting for all broker commissions, SEBON fee, DP charge, and Capital Gains Tax. Know exactly what price target to set.
+
+Commission tiers: 0.36% (up to Rs 50K), 0.33% (50K-5L), 0.31% (5L-20L), 0.27% (20L-1Cr), 0.24% (above 1Cr). CGT: 5% individual (>365 days), 7.5% individual (<=365 days), 10% institutional. Updated for fiscal year 2081/2082.`,
+    category: 'calculators',
+    targetKeyword: 'NEPSE calculator',
+    secondaryKeywords: ['nepse share calculator', 'nepse profit calculator', 'share calculator nepal', 'stock calculator nepal', 'nepse profit loss calculator', 'nepse share profit calculator', 'broker commission nepal', 'nepse tax calculator', 'share market calculator nepal', 'nepse break even calculator', 'sebon commission rate', 'capital gains tax nepal shares', 'nepse wacc calculator', 'share average cost calculator nepal', 'nepse target price calculator', 'नेप्से क्यालकुलेटर', 'नेप्से शेयर क्यालकुलेटर', 'शेयर नाफा नोक्सानी', 'नेप्से ब्रोकर कमिसन'],
+    metaTitle: 'NEPSE Share Calculator - Profit/Loss, WACC & Target Price | Free',
+    metaDescription: 'Calculate NEPSE share profit/loss, WACC & target price with broker commission, SEBON fee, DP charge & capital gains tax. Updated 2081 rates. Free Nepal stock calculator.',
+    faqs: [
+      { question: 'How is broker commission calculated in NEPSE?', answer: 'SEBON has set tiered commission rates: 0.36% for amounts up to Rs 50,000, 0.33% for Rs 50,001-5,00,000, 0.31% for Rs 5,00,001-20,00,000, 0.27% for Rs 20,00,001-1,00,00,000, and 0.24% for amounts above Rs 1 crore. The minimum commission is Rs 10 per transaction.' },
+      { question: 'What is SEBON fee?', answer: 'SEBON (Securities Board of Nepal) charges a regulatory fee of 0.015% on every buy and sell transaction in NEPSE. This fee is separate from the broker commission.' },
+      { question: 'What is DP charge?', answer: 'DP (Depository Participant) charge is a flat fee of Rs 25 charged per transaction for maintaining and transferring shares electronically through CDS (Central Depository System).' },
+      { question: 'How much capital gains tax do I pay on NEPSE profits?', answer: 'Individual investors pay 5% CGT on profits from shares held more than 365 days, and 7.5% on shares held 365 days or less. Institutional investors pay 10% regardless of holding period. CGT is only applied when you make a profit.' },
+      { question: 'What is the break-even price?', answer: 'The break-even price is the minimum selling price at which you neither make a profit nor a loss, after accounting for all charges (broker commission, SEBON fee, DP charge) and capital gains tax on both buy and sell sides.' },
+      { question: 'Does this calculator work for all types of NEPSE securities?', answer: 'Yes, this calculator works for all listed securities on NEPSE including ordinary shares, preference shares, mutual funds, and debentures. The fee structure is the same across all security types.' },
+      { question: 'What is WACC in share market?', answer: 'WACC (Weighted Average Cost of Capital) in the context of share trading means the average price you paid per share when you bought the same stock at different times and prices. It helps you know your true cost basis for calculating profit/loss.' },
+      { question: 'How does the Target Price Calculator work?', answer: 'Enter your buy price, quantity, and desired profit amount. The calculator reverse-engineers the exact sell price you need, factoring in all broker commissions, SEBON fee, DP charge, and Capital Gains Tax. This helps you set realistic price targets.' },
+      { question: 'What is the circuit breaker in NEPSE?', answer: 'NEPSE has a circuit breaker (price band) of ±10% per day for regular trading. This means a stock cannot increase or decrease more than 10% from its previous closing price in a single trading day.' },
+    ],
+    howToSteps: [
+      'Choose a mode: Profit/Loss, WACC, or Target Price calculator.',
+      'For Profit/Loss: Enter buy price, sell price, and quantity (kitta).',
+      'Select investor type and holding period for CGT calculation.',
+      'View net profit/loss, fee breakdown chart, circuit limits, and break-even price.',
+      'For WACC: Add multiple buy transactions to get your average cost per share.',
+      'For Target Price: Enter desired profit to find the exact sell price needed.',
+    ],
+    relatedToolSlugs: ['loan-comparison-calculator', 'nepali-date-converter', 'emi-calculator', 'percentage-calculator'],
+    icon: 'TrendingUp',
+    isPopular: true,
+    isNew: true,
+    estimatedTime: 'Instant',
+  },
+  {
     slug: 'number-to-words',
     name: 'Number to Words',
     shortDescription: 'Convert numbers to words in Indian and international formats.',
