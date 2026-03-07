@@ -4696,6 +4696,43 @@ The generated document uses standard legal language and covers all essential cla
     isNew: true,
     estimatedTime: '3 minutes',
   },
+  {
+    slug: 'rent-agreement-generator',
+    name: 'Rent Agreement Generator',
+    shortDescription: 'Generate legally formatted rent agreements for India. All states, customizable clauses, free PDF download.',
+    longDescription: `Create professional rent agreements (lease deeds) for any Indian state in minutes. Our Rent Agreement Generator produces legally formatted documents with all essential clauses — landlord/tenant details, property information, rent & deposit terms, lock-in period, notice period, and more.
+
+Customize every aspect: choose property type (apartment, house, room, shop, office), furnishing status, maintenance terms, annual increment, payment mode, and additional clauses like pets, parking, sub-letting, and smoking policy. Add unlimited custom clauses to suit your specific needs.
+
+State-specific stamp duty information is displayed for all major Indian states. Download your agreement as a professional PDF or plain text — ready to print on stamp paper. Aadhaar numbers are automatically masked (XXXX-XXXX-1234) for privacy protection.
+
+Everything runs 100% in your browser — no data is uploaded to any server. Your personal details, Aadhaar, PAN, and financial information stay completely private on your device. No signup, no registration, no limits.`,
+    category: 'utility-tools',
+    targetKeyword: 'rent agreement generator',
+    secondaryKeywords: ['rent agreement format India', 'rental agreement online free', 'rent agreement PDF download', 'rent agreement maker', 'lease agreement generator India', 'rent agreement format PDF', '11 month rent agreement', 'house rent agreement online', 'room rent agreement format'],
+    metaTitle: 'Rent Agreement Generator India - Free Rental Agreement PDF Online',
+    metaDescription: 'Generate rent agreements for all Indian states. Customizable clauses, stamp duty info, PDF download. Free rent agreement maker — no signup, 100% private.',
+    faqs: [
+      { question: 'Is this rent agreement legally valid?', answer: 'This tool generates a properly formatted rent agreement with all standard legal clauses. For legal enforceability, print the agreement on appropriate stamp paper (varies by state), get it signed by both parties and two witnesses, and optionally get it notarized or registered.' },
+      { question: 'Why is 11 months the standard duration in India?', answer: 'Rent agreements of 11 months or less do not require mandatory registration under the Registration Act, 1908. This saves time and money on registration fees. Agreements of 12 months or more must be registered with the Sub-Registrar office.' },
+      { question: 'What stamp paper value do I need?', answer: 'Stamp duty varies by state. For example: Maharashtra charges 0.25% of total rent, Delhi requires Rs 100 stamp paper for up to 5 years, Karnataka charges 1% of annual rent. Our tool shows state-specific stamp duty info.' },
+      { question: 'Do I need to register a rent agreement?', answer: 'For agreements up to 11 months, registration is optional in most states but recommended. For 12+ months, registration is mandatory. Registration typically costs 1% of annual rent plus a fixed registration fee.' },
+      { question: 'Does this tool store my personal data?', answer: 'Absolutely not. Everything runs in your browser. Your Aadhaar, PAN, address, and financial details are never sent to any server. When you close the page, all data is gone.' },
+      { question: 'Can I use this for commercial property?', answer: 'Yes! The tool supports apartments, houses, rooms, shops, and office spaces. Clauses are automatically adjusted based on property type.' },
+    ],
+    howToSteps: [
+      'Enter landlord details — name, address, phone, Aadhaar, PAN.',
+      'Enter tenant details — name, address, phone, Aadhaar, occupation.',
+      'Add property details — address, city, state, type, furnishing, area.',
+      'Set rent terms — monthly rent, deposit, duration, increment, lock-in, notice period.',
+      'Toggle clauses — pets, parking, sub-letting, smoking, repairs, custom clauses.',
+      'Preview the complete agreement and download as PDF or text.',
+    ],
+    relatedToolSlugs: ['rent-receipt-generator', 'hra-calculator', 'invoice-generator', 'privacy-policy-generator'],
+    icon: 'FileText',
+    isNew: true,
+    estimatedTime: '3-5 minutes',
+  },
 ];
 
 export const TOOL_COUNT = tools.length;
