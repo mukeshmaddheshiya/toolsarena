@@ -4,8 +4,8 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import {
   MessageCircle, Download, RotateCcw, Plus, Trash2, Lock, History,
-  X, ChevronDown, Phone, Video, MoreVertical, Send, Smile, Paperclip,
-  Camera, Mic, Check, CheckCheck, Image as ImageIcon, Clock, Shield,
+  X, ChevronDown, Phone, Video, MoreVertical, Send, Smile,
+  Camera, Mic, Image as ImageIcon, Clock, Shield,
   Copy, ArrowLeft, Search, GripVertical, Sun, Moon, Upload, Palette,
 } from 'lucide-react';
 
@@ -134,14 +134,18 @@ function getInitials(name: string): string {
 function TickIcon({ status, theme }: { status: TickStatus; theme: ThemeMode }) {
   const t = theme === 'dark' ? DARK_THEME : LIGHT_THEME;
   if (status === 'none') return null;
+  // Custom WhatsApp-accurate tick SVGs (thin strokes, exact shape)
   if (status === 'sent') return (
-    <Check size={14} style={{ color: t.timeText, marginLeft: 2, flexShrink: 0 }} />
+    <svg width="16" height="11" viewBox="0 0 16 11" style={{ marginLeft: 3, flexShrink: 0 }}>
+      <path d="M11 .786 4.015 7.77l-2.28-2.28" fill="none" stroke={t.timeText} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
   const color = status === 'read' ? WHATSAPP_BLUE_TICK : t.timeText;
   return (
-    <span style={{ marginLeft: 2, flexShrink: 0, display: 'inline-flex' }}>
-      <CheckCheck size={14} style={{ color }} />
-    </span>
+    <svg width="16" height="11" viewBox="0 0 16 11" style={{ marginLeft: 3, flexShrink: 0 }}>
+      <path d="M11 .786 4.015 7.77l-2.28-2.28" fill="none" stroke={color} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15 .786 8.015 7.77l-1.5-1.5" fill="none" stroke={color} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
@@ -155,35 +159,35 @@ function StatusBar({ time, battery, theme }: { time: string; battery: number; th
   return (
     <div style={{
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      padding: '6px 16px', fontSize: 12, fontWeight: 600,
+      padding: '5px 14px', fontSize: 12, fontWeight: 600,
       color: t.headerText, backgroundColor: t.headerBg,
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
     }}>
-      <span style={{ fontSize: 13, fontWeight: 700 }}>{time}</span>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+      <span style={{ fontSize: 14, fontWeight: 700 }}>{time}</span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
         {/* Signal bars */}
-        <svg width="15" height="12" viewBox="0 0 15 12">
-          <rect x="0" y="8" width="2.5" height="4" rx="0.5" fill={t.headerText} />
-          <rect x="4" y="5" width="2.5" height="7" rx="0.5" fill={t.headerText} />
-          <rect x="8" y="2" width="2.5" height="10" rx="0.5" fill={t.headerText} />
-          <rect x="12" y="0" width="2.5" height="12" rx="0.5" fill={t.headerText} opacity={0.4} />
+        <svg width="17" height="12" viewBox="0 0 17 12">
+          <rect x="0" y="8" width="3" height="4" rx="0.5" fill={t.headerText} />
+          <rect x="4.5" y="5" width="3" height="7" rx="0.5" fill={t.headerText} />
+          <rect x="9" y="2" width="3" height="10" rx="0.5" fill={t.headerText} />
+          <rect x="13.5" y="0" width="3" height="12" rx="0.5" fill={t.headerText} opacity={0.35} />
         </svg>
         {/* 4G text */}
-        <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: 0.3 }}>4G</span>
-        {/* Battery with percentage */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+        <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: 0.2 }}>4G</span>
+        {/* Battery */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <div style={{
-            width: 22, height: 11, border: `1.5px solid ${t.headerText}`,
+            width: 24, height: 11, border: `1.5px solid ${t.headerText}`,
             borderRadius: 3, position: 'relative', overflow: 'hidden',
           }}>
             <div style={{
-              position: 'absolute', left: 1, top: 1, bottom: 1,
-              width: `${Math.min(battery, 100) * 0.88}%`,
+              position: 'absolute', left: 1.5, top: 1.5, bottom: 1.5,
+              width: `${Math.min(battery, 100) * 0.85}%`,
               backgroundColor: battery <= 20 ? '#FF3B30' : t.headerText,
-              borderRadius: 1.5,
+              borderRadius: 1,
             }} />
           </div>
-          <div style={{ width: 1.5, height: 5, backgroundColor: t.headerText, borderRadius: '0 1px 1px 0', marginLeft: -2 }} />
+          <div style={{ width: 2, height: 5, backgroundColor: t.headerText, borderRadius: '0 1px 1px 0' }} />
         </div>
       </div>
     </div>
@@ -198,36 +202,54 @@ function ChatHeader({ contact, theme }: { contact: ContactInfo; theme: ThemeMode
   const t = theme === 'dark' ? DARK_THEME : LIGHT_THEME;
   return (
     <div style={{
-      display: 'flex', alignItems: 'center', gap: 0,
-      padding: '10px 10px 10px 6px',
+      display: 'flex', alignItems: 'center',
+      padding: '8px 12px 8px 4px',
       backgroundColor: t.headerBg, color: t.headerText,
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
     }}>
-      <ArrowLeft size={22} style={{ color: t.headerText, opacity: 0.9, flexShrink: 0 }} />
+      {/* Back arrow + unread badge (like real WA) */}
+      <div style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+        <ArrowLeft size={24} style={{ color: t.headerText }} />
+      </div>
       {/* Avatar */}
       <div style={{
-        width: 36, height: 36, borderRadius: '50%', overflow: 'hidden',
+        width: 40, height: 40, borderRadius: '50%', overflow: 'hidden',
         backgroundColor: '#4DB6AC', display: 'flex', alignItems: 'center',
-        justifyContent: 'center', flexShrink: 0, marginLeft: 2, marginRight: 10,
+        justifyContent: 'center', flexShrink: 0, marginLeft: 2, marginRight: 12,
       }}>
         {contact.avatar ? (
           <img src={contact.avatar} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         ) : (
-          <span style={{ color: '#FFF', fontSize: 14, fontWeight: 600 }}>{contact.initials}</span>
+          <span style={{ color: '#FFF', fontSize: 15, fontWeight: 600 }}>{contact.initials}</span>
         )}
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: 16, fontWeight: 500, lineHeight: 1.25, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div style={{ fontSize: 17, fontWeight: 500, lineHeight: 1.25, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {contact.name}
         </div>
-        <div style={{ fontSize: 12.5, opacity: 0.8, lineHeight: 1.2, marginTop: 1 }}>{contact.status}</div>
+        <div style={{ fontSize: 13, opacity: 0.8, lineHeight: 1.15, marginTop: 1 }}>{contact.status}</div>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginRight: 4 }}>
-        <Video size={21} style={{ color: t.headerText, opacity: 0.9 }} />
-        <Phone size={19} style={{ color: t.headerText, opacity: 0.9 }} />
-        <MoreVertical size={21} style={{ color: t.headerText, opacity: 0.9 }} />
+      <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginRight: 2 }}>
+        <Video size={22} style={{ color: t.headerText, opacity: 0.9 }} />
+        <Phone size={20} style={{ color: t.headerText, opacity: 0.9 }} />
+        <MoreVertical size={22} style={{ color: t.headerText, opacity: 0.9 }} />
       </div>
     </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/*  BUBBLE TAIL                                                        */
+/* ------------------------------------------------------------------ */
+
+function BubbleTail({ isSent, color }: { isSent: boolean; color: string }) {
+  return (
+    <svg width="8" height="13" viewBox="0 0 8 13" style={{
+      position: 'absolute', top: 0, zIndex: 1,
+      ...(isSent ? { right: -7 } : { left: -7, transform: 'scaleX(-1)' }),
+    }}>
+      <path d="M1 0 Q3 5 8 13 L0 13 L0 0 Z" fill={color} />
+    </svg>
   );
 }
 
@@ -266,12 +288,7 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
         alignSelf: isSent ? 'flex-end' : 'flex-start',
         maxWidth: '65%', position: 'relative',
       }}>
-        <svg width="8" height="13" viewBox="0 0 8 13" style={{
-          position: 'absolute', top: 0,
-          ...(isSent ? { right: -8 } : { left: -8, transform: 'scaleX(-1)' }),
-        }}>
-          <path d="M0 0 L0 0 C4 4.5 5.5 9 8 13 L0 13 Z" fill={isSent ? t.sentBubble : t.receivedBubble} />
-        </svg>
+        <BubbleTail isSent={isSent} color={isSent ? t.sentBubble : t.receivedBubble} />
         <div style={{
           borderRadius: 7.5, overflow: 'hidden',
           borderTopRightRadius: isSent ? 0 : 7.5,
@@ -308,13 +325,7 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
         alignSelf: isSent ? 'flex-end' : 'flex-start',
         maxWidth: '75%', position: 'relative',
       }}>
-        {/* Bubble tail */}
-        <svg width="8" height="13" viewBox="0 0 8 13" style={{
-          position: 'absolute', top: 0,
-          ...(isSent ? { right: -8 } : { left: -8, transform: 'scaleX(-1)' }),
-        }}>
-          <path d="M0 0 L0 0 C4 4.5 5.5 9 8 13 L0 13 Z" fill={isSent ? t.sentBubble : t.receivedBubble} />
-        </svg>
+        <BubbleTail isSent={isSent} color={isSent ? t.sentBubble : t.receivedBubble} />
         <div style={{
           padding: '6px 8px', borderRadius: 8,
           borderTopRightRadius: isSent ? 0 : 8,
@@ -372,15 +383,9 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
       alignSelf: isSent ? 'flex-end' : 'flex-start',
       maxWidth: '75%', position: 'relative',
     }}>
-      {/* Curved bubble tail (SVG) */}
-      <svg width="8" height="13" viewBox="0 0 8 13" style={{
-        position: 'absolute', top: 0,
-        ...(isSent ? { right: -8 } : { left: -8, transform: 'scaleX(-1)' }),
-      }}>
-        <path d="M0 0 L0 0 C4 4.5 5.5 9 8 13 L0 13 Z" fill={bubbleBg} />
-      </svg>
+      <BubbleTail isSent={isSent} color={bubbleBg} />
       <div style={{
-        padding: '5px 7px 4px 7px', borderRadius: 7.5,
+        padding: '6px 7px 8px 9px', borderRadius: 7.5,
         borderTopRightRadius: isSent ? 0 : 7.5,
         borderTopLeftRadius: isSent ? 7.5 : 0,
         backgroundColor: bubbleBg,
@@ -391,7 +396,7 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
             borderLeft: `3px solid ${WHATSAPP_TEAL}`,
             backgroundColor: theme === 'dark' ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.05)',
             borderRadius: 4, padding: '4px 8px', marginBottom: 4,
-            fontSize: 12, color: t.timeText, maxHeight: 50, overflow: 'hidden',
+            fontSize: 12.5, color: t.timeText, maxHeight: 50, overflow: 'hidden',
           }}>
             {msg.replyTo}
           </div>
@@ -404,14 +409,14 @@ function ChatBubble({ msg, theme }: { msg: ChatMessage; theme: ThemeMode }) {
           </span>
         )}
         <span style={{
-          fontSize: 14.2, lineHeight: 1.35, color: textColor,
+          fontSize: 14.5, lineHeight: 1.32, color: textColor,
           wordBreak: 'break-word', whiteSpace: 'pre-wrap',
         }}>
           {msg.text}
         </span>
         <span style={{
           float: 'right', display: 'inline-flex', alignItems: 'center',
-          gap: 2, marginLeft: 8, marginTop: 2,
+          gap: 1, marginLeft: 6, marginTop: 4,
           fontSize: 11, color: t.timeText, whiteSpace: 'nowrap',
         }}>
           {msg.time}
@@ -431,30 +436,31 @@ function InputBar({ theme }: { theme: ThemeMode }) {
   const iconColor = theme === 'dark' ? '#8696A0' : '#8696A0';
   return (
     <div style={{
-      display: 'flex', alignItems: 'center', gap: 6,
-      padding: '5px 6px', backgroundColor: t.inputBarBg,
+      display: 'flex', alignItems: 'center', gap: 4,
+      padding: '4px 5px 6px', backgroundColor: t.inputBarBg,
       fontFamily: '-apple-system, "Segoe UI", Roboto, sans-serif',
     }}>
+      {/* Plus button (like real WA) */}
+      <Plus size={28} style={{ color: iconColor, flexShrink: 0, padding: 2 }} />
       <div style={{
-        flex: 1, display: 'flex', alignItems: 'center', gap: 6,
-        backgroundColor: t.inputBg, borderRadius: 22, padding: '7px 10px',
+        flex: 1, display: 'flex', alignItems: 'center', gap: 4,
+        backgroundColor: t.inputBg, borderRadius: 21, padding: '8px 10px',
       }}>
         <Smile size={24} style={{ color: iconColor, flexShrink: 0 }} />
         <span style={{ flex: 1, fontSize: 15, color: iconColor }}>Type a message</span>
-        <Paperclip size={22} style={{ color: iconColor, flexShrink: 0, transform: 'rotate(-45deg)' }} />
-        {/* Rupee/sticker icon */}
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
-          <circle cx="12" cy="12" r="10" stroke={iconColor} strokeWidth="1.5" />
-          <text x="12" y="16" textAnchor="middle" fill={iconColor} fontSize="12" fontWeight="600" fontFamily="sans-serif">₹</text>
+        {/* Rupee/payment icon */}
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
+          <circle cx="12" cy="12" r="10" stroke={iconColor} strokeWidth="1.3" />
+          <text x="12" y="16.5" textAnchor="middle" fill={iconColor} fontSize="12" fontWeight="600" fontFamily="sans-serif">₹</text>
         </svg>
-        <Camera size={22} style={{ color: iconColor, flexShrink: 0 }} />
+        <Camera size={24} style={{ color: iconColor, flexShrink: 0 }} />
       </div>
       <div style={{
         width: 42, height: 42, borderRadius: '50%',
         backgroundColor: theme === 'dark' ? '#00A884' : WHATSAPP_TEAL,
         display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
       }}>
-        <Mic size={22} style={{ color: '#FFF' }} />
+        <Mic size={24} style={{ color: '#FFF' }} />
       </div>
     </div>
   );
@@ -1136,8 +1142,8 @@ export function WhatsAppChatGeneratorTool() {
                 }}>
                   <div style={{
                     position: 'relative', zIndex: 1,
-                    display: 'flex', flexDirection: 'column', gap: 3,
-                    padding: '6px 14px 8px',
+                    display: 'flex', flexDirection: 'column', gap: 2,
+                    padding: '4px 16px 8px',
                   }}>
                     {/* Encryption notice */}
                     {showEncryption && <EncryptionNotice theme={theme} />}
