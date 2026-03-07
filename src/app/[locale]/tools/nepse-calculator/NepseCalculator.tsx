@@ -424,7 +424,7 @@ export function NepseCalculator() {
                       <p className="text-[10px] opacity-70 font-semibold uppercase tracking-widest">
                         {result.isProfit ? 'Net Profit (खुद नाफा)' : 'Net Loss (खुद नोक्सानी)'}
                       </p>
-                      <p className="text-3xl sm:text-4xl font-black mt-1 tracking-tight">
+                      <p className="text-2xl sm:text-4xl font-black mt-1 tracking-tight break-all">
                         {formatNPR(Math.abs(result.netProfit))}
                       </p>
                     </div>
@@ -447,14 +447,14 @@ export function NepseCalculator() {
               {/* Key Stats */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
-                  { label: 'Total Investment (कुल लगानी)', value: formatNPR(result.totalBuyCost), color: 'blue', sub: `${parseInt(quantity)} कित्ता` },
-                  { label: 'Receivable (प्राप्त रकम)', value: formatNPR(result.totalSellReceive), color: 'orange', sub: 'शुल्क कटाएर' },
-                  { label: 'Capital Gains Tax (पूँजीगत लाभ कर)', value: formatNPR(result.capitalGainTax), color: 'purple', sub: `${(result.cgtRate * 100)}% CGT` },
-                  { label: 'Break-even (नाफा-नोक्सानी बराबर)', value: `Rs ${result.breakEvenPrice.toFixed(2)}`, color: 'cyan', sub: 'न्यूनतम बिक्री मूल्य' },
+                  { label: 'Investment', ne: 'कुल लगानी', value: formatNPR(result.totalBuyCost), color: 'blue', sub: `${parseInt(quantity)} कित्ता` },
+                  { label: 'Receivable', ne: 'प्राप्त रकम', value: formatNPR(result.totalSellReceive), color: 'orange', sub: 'शुल्क कटाएर' },
+                  { label: 'CGT', ne: 'पूँजीगत लाभ कर', value: formatNPR(result.capitalGainTax), color: 'purple', sub: `${(result.cgtRate * 100)}% CGT` },
+                  { label: 'Break-even', ne: 'बराबर मूल्य', value: `Rs ${result.breakEvenPrice.toFixed(2)}`, color: 'cyan', sub: 'न्यूनतम बिक्री मूल्य' },
                 ].map(card => (
                   <div key={card.label} className={`bg-${card.color}-50 dark:bg-${card.color}-900/10 border border-${card.color}-100 dark:border-${card.color}-900/30 rounded-xl p-3 text-center`}>
-                    <div className={`text-[10px] text-${card.color}-500/70 uppercase tracking-wider font-medium`}>{card.label}</div>
-                    <div className={`text-sm sm:text-base font-black text-${card.color}-700 dark:text-${card.color}-400 mt-1`}>{card.value}</div>
+                    <div className={`text-[9px] sm:text-[10px] text-${card.color}-500/70 uppercase tracking-wider font-medium leading-tight`}>{card.label}<br /><span className="normal-case">{card.ne}</span></div>
+                    <div className={`text-xs sm:text-base font-black text-${card.color}-700 dark:text-${card.color}-400 mt-1 break-all`}>{card.value}</div>
                     <div className={`text-[9px] text-${card.color}-400 mt-0.5`}>{card.sub}</div>
                   </div>
                 ))}
@@ -652,16 +652,16 @@ export function NepseCalculator() {
             <>
               {/* WACC Result Hero */}
               <div className="bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-500 rounded-2xl p-5 text-white">
-                <div className="flex items-start justify-between">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <p className="text-[10px] opacity-70 font-semibold uppercase tracking-widest">Weighted Average Cost</p>
-                    <p className="text-3xl sm:text-4xl font-black mt-1">Rs {waccResult.avgPrice.toFixed(2)}</p>
-                    <p className="text-xs opacity-80 mt-1">per share (before fees)</p>
+                    <p className="text-[10px] opacity-70 font-semibold uppercase tracking-widest">Weighted Average Cost (औसत लागत)</p>
+                    <p className="text-2xl sm:text-3xl font-black mt-1 break-all">Rs {waccResult.avgPrice.toFixed(2)}</p>
+                    <p className="text-[11px] opacity-80 mt-1">per share (before fees)</p>
                   </div>
-                  <div className="text-right">
-                    <p className="text-[10px] opacity-70 font-semibold uppercase tracking-widest">Effective Cost</p>
-                    <p className="text-2xl font-black mt-1">Rs {waccResult.effectivePrice.toFixed(2)}</p>
-                    <p className="text-xs opacity-80 mt-1">per share (with fees)</p>
+                  <div className="sm:text-right">
+                    <p className="text-[10px] opacity-70 font-semibold uppercase tracking-widest">Effective Cost (प्रभावकारी लागत)</p>
+                    <p className="text-2xl sm:text-3xl font-black mt-1 break-all">Rs {waccResult.effectivePrice.toFixed(2)}</p>
+                    <p className="text-[11px] opacity-80 mt-1">per share (with all fees)</p>
                   </div>
                 </div>
               </div>
@@ -675,7 +675,7 @@ export function NepseCalculator() {
                 ].map(card => (
                   <div key={card.label} className={`bg-${card.color}-50 dark:bg-${card.color}-900/10 border border-${card.color}-100 dark:border-${card.color}-900/30 rounded-xl p-3 text-center`}>
                     <div className={`text-[10px] text-${card.color}-500/70 uppercase tracking-wider font-medium`}>{card.label}</div>
-                    <div className={`text-sm font-black text-${card.color}-700 dark:text-${card.color}-400 mt-1`}>{card.value}</div>
+                    <div className={`text-xs sm:text-sm font-black text-${card.color}-700 dark:text-${card.color}-400 mt-1 break-all`}>{card.value}</div>
                   </div>
                 ))}
               </div>
@@ -685,25 +685,25 @@ export function NepseCalculator() {
                 <div className="bg-slate-50 dark:bg-slate-900/50 px-4 py-2.5 border-b border-slate-200 dark:border-slate-700">
                   <h4 className="text-xs font-bold text-slate-700 dark:text-slate-300">TRANSACTION BREAKDOWN</h4>
                 </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-xs">
+                <div className="overflow-x-auto -mx-px">
+                  <table className="w-full text-[11px]">
                     <thead>
                       <tr className="border-b border-slate-200 dark:border-slate-700">
-                        <th className="text-left px-4 py-2 font-bold text-slate-500">#</th>
-                        <th className="text-right px-4 py-2 font-bold text-slate-500">Price</th>
-                        <th className="text-right px-4 py-2 font-bold text-slate-500">Kitta</th>
-                        <th className="text-right px-4 py-2 font-bold text-slate-500">Amount</th>
-                        <th className="text-right px-4 py-2 font-bold text-slate-500">Weight</th>
+                        <th className="text-left px-2.5 sm:px-4 py-2 font-bold text-slate-500">#</th>
+                        <th className="text-right px-2.5 sm:px-4 py-2 font-bold text-slate-500">Price</th>
+                        <th className="text-right px-2.5 sm:px-4 py-2 font-bold text-slate-500">Kitta</th>
+                        <th className="text-right px-2.5 sm:px-4 py-2 font-bold text-slate-500">Amount</th>
+                        <th className="text-right px-2.5 sm:px-4 py-2 font-bold text-slate-500">Wt%</th>
                       </tr>
                     </thead>
                     <tbody>
                       {waccResult.entries.map((e, i) => (
                         <tr key={i} className="border-b border-slate-100 dark:border-slate-700/50">
-                          <td className="px-4 py-2 text-slate-500">Buy #{i + 1}</td>
-                          <td className="px-4 py-2 text-right font-semibold text-slate-700 dark:text-slate-300">Rs {e.price.toFixed(2)}</td>
-                          <td className="px-4 py-2 text-right text-slate-600 dark:text-slate-400">{e.qty}</td>
-                          <td className="px-4 py-2 text-right font-semibold text-slate-700 dark:text-slate-300">{formatNPR(e.price * e.qty)}</td>
-                          <td className="px-4 py-2 text-right text-blue-600 font-bold">{((e.qty / waccResult.totalQty) * 100).toFixed(1)}%</td>
+                          <td className="px-2.5 sm:px-4 py-2 text-slate-500 whitespace-nowrap">#{i + 1}</td>
+                          <td className="px-2.5 sm:px-4 py-2 text-right font-semibold text-slate-700 dark:text-slate-300 whitespace-nowrap">Rs {e.price.toFixed(0)}</td>
+                          <td className="px-2.5 sm:px-4 py-2 text-right text-slate-600 dark:text-slate-400">{e.qty}</td>
+                          <td className="px-2.5 sm:px-4 py-2 text-right font-semibold text-slate-700 dark:text-slate-300 whitespace-nowrap">{formatNPR(e.price * e.qty)}</td>
+                          <td className="px-2.5 sm:px-4 py-2 text-right text-blue-600 font-bold">{((e.qty / waccResult.totalQty) * 100).toFixed(1)}%</td>
                         </tr>
                       ))}
                     </tbody>
@@ -786,16 +786,16 @@ export function NepseCalculator() {
           {targetResult && (
             <>
               <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 rounded-2xl p-5 text-white">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <p className="text-[10px] opacity-70 font-semibold uppercase tracking-widest">Target Sell Price</p>
-                    <p className="text-3xl sm:text-4xl font-black mt-1">Rs {targetResult.targetSellPrice.toFixed(2)}</p>
-                    <p className="text-xs opacity-80 mt-1">
-                      per share to earn {formatNPR(parseFloat(targetProfit))} profit
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[10px] opacity-70 font-semibold uppercase tracking-widest">Target Sell Price (लक्ष्य बिक्री मूल्य)</p>
+                    <p className="text-2xl sm:text-4xl font-black mt-1 break-all">Rs {targetResult.targetSellPrice.toFixed(2)}</p>
+                    <p className="text-[11px] opacity-80 mt-1">
+                      per share to earn {formatNPR(parseFloat(targetProfit))} नाफा
                     </p>
                   </div>
-                  <div className="px-3 py-1.5 rounded-full bg-white/20 text-xs font-bold">
-                    +{targetResult.percentIncrease.toFixed(1)}% needed
+                  <div className="px-2.5 py-1.5 rounded-full bg-white/20 text-[11px] font-bold shrink-0">
+                    +{targetResult.percentIncrease.toFixed(1)}%
                   </div>
                 </div>
               </div>
