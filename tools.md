@@ -53,150 +53,174 @@
 48. TDEE & Macro Calculator
 49. Period & Ovulation Calculator
 50. TDS Calculator India
+51. EPF Calculator India
+52. EMI Prepayment Calculator
+53. Income Tax Calculator India
+54. Property Registration Calculator India
+55. Wedding Budget Calculator India
 
 ## Developer Tools
-51. UUID Generator
-52. JWT Decoder
-53. CSS Gradient Generator
-54. CSS Gradient Text Generator
-55. Box Shadow Generator
-56. CSS Flexbox Generator
-57. CSS Animation Generator
-58. Password Strength Checker
-59. JSON Formatter
-60. Base64 Encode & Decode
-61. URL Encode & Decode
-62. Color Picker
-63. Hash Generator
-64. Regex Tester
-65. HTML to Markdown
-66. HTML CSS JS Editor
-67. Password Generator
-68. CSV to JSON
-69. Markdown to HTML
-70. CSS Minifier
-71. JavaScript Minifier
-72. HTML Beautifier
-73. SQL Formatter
-74. XML to JSON Converter
-75. Cron Expression Generator
-76. HEX to RGB Converter
-77. Favicon Generator
-78. Robots.txt Generator
-79. Barcode Generator
-80. Tailwind Playground
-81. Roast My Website
-82. Font Identifier
-83. JSON to TypeScript Converter
-84. GitHub Profile README Generator
-85. Font Pairing Tool
+56. UUID Generator
+57. JWT Decoder
+58. CSS Gradient Generator
+59. CSS Gradient Text Generator
+60. Box Shadow Generator
+61. CSS Flexbox Generator
+62. CSS Animation Generator
+63. Password Strength Checker
+64. JSON Formatter
+65. Base64 Encode & Decode
+66. URL Encode & Decode
+67. Color Picker
+68. Hash Generator
+69. Regex Tester
+70. HTML to Markdown
+71. HTML CSS JS Editor
+72. Password Generator
+73. CSV to JSON
+74. Markdown to HTML
+75. CSS Minifier
+76. JavaScript Minifier
+77. HTML Beautifier
+78. SQL Formatter
+79. XML to JSON Converter
+80. Cron Expression Generator
+81. HEX to RGB Converter
+82. Favicon Generator
+83. Robots.txt Generator
+84. Barcode Generator
+85. Tailwind Playground
+86. Roast My Website
+87. Font Identifier
+88. JSON to TypeScript Converter
+89. GitHub Profile README Generator
+90. Font Pairing Tool
+91. CSS Grid Generator
+92. JSON Tree Viewer
+93. OG Preview Tester
 
 ## Image Tools
-86. Image Compressor
-87. Image Resizer
-88. PNG to JPG Converter
-89. JPG to PNG Converter
-90. WebP to PNG Converter
-91. Image to Base64
-92. Image Background Remover
-93. SVG to PNG Converter
-94. Image Cropper
-95. Image Watermark
-96. Color Palette from Image
-97. Meme Generator
-98. Image to Text (OCR)
-99. Photo Collage Maker
-100. Compress Image to KB
-101. Passport Photo Maker
-102. Blur Face in Photo
-103. EXIF Metadata Remover
-104. Online Whiteboard
+94. Image Compressor
+95. Image Resizer
+96. PNG to JPG Converter
+97. JPG to PNG Converter
+98. WebP to PNG Converter
+99. Image to Base64
+100. Image Background Remover
+101. SVG to PNG Converter
+102. Image Cropper
+103. Image Watermark
+104. Color Palette from Image
+105. Meme Generator
+106. Image to Text (OCR)
+107. Photo Collage Maker
+108. Compress Image to KB
+109. Passport Photo Maker
+110. Blur Face in Photo
+111. EXIF Metadata Remover
+112. Online Whiteboard
+113. Text Behind Image Generator
+114. Pixel Art Maker
+115. Social Media Image Resizer
 
 ## PDF Tools
-105. PDF Merge
-106. PDF Split
-107. PDF Compressor
-108. PDF to Image
-109. PDF to Word Converter
-110. JPG to PDF
-111. Rotate PDF
-112. Watermark PDF
-113. Add Page Numbers to PDF
-114. Organize PDF
-115. Crop PDF
-116. Sign PDF
-117. Insert Image into PDF
-118. CSV to PDF
-119. Image to PDF Converter
-120. Redact PDF
+116. PDF Merge
+117. PDF Split
+118. PDF Compressor
+119. PDF to Image
+120. PDF to Word Converter
+121. JPG to PDF
+122. Rotate PDF
+123. Watermark PDF
+124. Add Page Numbers to PDF
+125. Organize PDF
+126. Crop PDF
+127. Sign PDF
+128. Insert Image into PDF
+129. CSV to PDF
+130. Image to PDF Converter
+131. Redact PDF
 
 ## Converters
-121. Unit Converter
-122. Temperature Converter
-123. Unix Timestamp Converter
-124. Nepali Date Converter
-125. Preeti to Unicode Converter
-126. Number to Words
-127. File Size Converter
-128. Binary, Hex & Octal Converter
-129. IFSC Code Finder
+132. Unit Converter
+133. Temperature Converter
+134. Unix Timestamp Converter
+135. Nepali Date Converter
+136. Preeti to Unicode Converter
+137. Number to Words
+138. File Size Converter
+139. Binary, Hex & Octal Converter
+140. IFSC Code Finder
 
 ## Utility Tools
-130. Countdown Timer
-131. Random Generator
-132. QR Code Generator
-133. Internet Speed Test
-134. Time Zone Checker
-135. Online Notepad
-136. Online Stopwatch
-137. Pomodoro Timer
-138. Fake Data Generator
-139. Screen Recorder
-140. IP Address Lookup
-141. Typing Speed Test
-142. WhatsApp Link Generator
-143. Online Signature Maker
-144. Nepali Typing Tool
-145. WhatsApp Chat Generator
-146. Recipe Scaler & Converter
+141. Countdown Timer
+142. Random Generator
+143. QR Code Generator
+144. Internet Speed Test
+145. Time Zone Checker
+146. Online Notepad
+147. Online Stopwatch
+148. Pomodoro Timer
+149. Fake Data Generator
+150. Screen Recorder
+151. IP Address Lookup
+152. Typing Speed Test
+153. WhatsApp Link Generator
+154. Online Signature Maker
+155. Nepali Typing Tool
+156. WhatsApp Chat Generator
+157. Recipe Scaler & Converter
+
+## Health & Fitness Tools
+158. Blood Pressure Tracker & Log
+159. Indian Food Calorie Counter
 
 ## SEO & Social Media Tools
-147. Meta Tag Generator
-148. YouTube Thumbnail Downloader
-149. YouTube Money Calculator
-150. Instagram Engagement Calculator
-151. Privacy Policy Generator
-152. Terms & Conditions Generator
-153. YouTube Thumbnail Tester
-154. Instagram Carousel Maker
-155. Social Media Post Mockup
-156. Social Media Bio Generator
-157. Hook & Caption Scorer
-158. Bio Link Page Generator
-159. ATS Resume Score Checker
+160. Meta Tag Generator
+161. YouTube Thumbnail Downloader
+162. YouTube Money Calculator
+163. Instagram Engagement Calculator
+164. Privacy Policy Generator
+165. Terms & Conditions Generator
+166. YouTube Thumbnail Tester
+167. Instagram Carousel Maker
+168. Social Media Post Mockup
+169. Social Media Bio Generator
+170. Hook & Caption Scorer
+171. Bio Link Page Generator
+172. ATS Resume Score Checker
+173. YouTube Title & Description Generator
+174. Hashtag Generator
 
 ## Generators & Makers
-160. Invoice Generator
-161. Resume Builder
-162. Marriage Biodata Maker
-163. Rent Receipt Generator
-164. Salary Slip Generator
-165. Greeting Card Maker
-166. Certificate Maker
-167. Rent Agreement Generator
-168. Business Card Maker
-169. Email Signature Generator
-170. NOC Generator India
-171. Offer Letter Generator
-172. Experience Letter Generator
-173. Resignation Letter Generator
+175. Invoice Generator
+176. Resume Builder
+177. Marriage Biodata Maker
+178. Rent Receipt Generator
+179. Salary Slip Generator
+180. Greeting Card Maker
+181. Certificate Maker
+182. Rent Agreement Generator
+183. Business Card Maker
+184. Email Signature Generator
+185. NOC Generator India
+186. Offer Letter Generator
+187. Experience Letter Generator
+188. Resignation Letter Generator
+189. Legal Notice Generator India
+190. Affidavit Generator India
+
+## Education Tools
+191. GPA Calculator
+192. Essay Outline Builder
 
 ## Cricket & Astrology Tools
-174. Rashi Checker
-175. Gun Milan
-176. IPL Team Squad Explorer
-177. IPL 2026 Match Schedule
-178. IPL Player Comparison Tool
-179. IPL 2026 Points Table
+193. Rashi Checker
+194. Gun Milan
+195. IPL Team Squad Explorer
+196. IPL 2026 Match Schedule
+197. IPL Player Comparison Tool
+198. IPL 2026 Points Table
+199. Dream11 Fantasy Points Calculator
 
-**Total: 179 Tools**
+**Total: 199 Tools**

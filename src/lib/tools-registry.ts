@@ -5805,6 +5805,45 @@ tools.push({
   estimatedTime: 'Instant',
 });
 
+// ─── DREAM11 FANTASY POINTS CALCULATOR ─────────────────────────────────
+tools.push({
+  slug: 'dream11-points-calculator',
+  name: 'Dream11 Fantasy Points Calculator',
+  shortDescription: 'Calculate Dream11 fantasy cricket points for any player based on match performance stats.',
+  longDescription: `Calculate exact Dream11 fantasy cricket points for any player using our free Dream11 Points Calculator. Enter batting, bowling, and fielding stats and instantly see a detailed points breakdown with all bonuses and penalties applied. Supports T20, ODI, and Test match formats with format-specific scoring rules including strike rate bonuses, economy rate modifiers, milestone bonuses (half-century, century, wicket hauls), and duck penalties.
+
+Choose the player role (Batsman, Bowler, All-Rounder, Wicket-Keeper), toggle Captain (2x) or Vice-Captain (1.5x) multipliers, and see your total fantasy points update in real time. Compare two players side by side to make smarter team selections for IPL, World Cup, or any cricket match on Dream11.
+
+The calculator includes a complete scoring rules reference section for each format so you can verify every point. Try our pre-loaded Virat Kohli T20 innings example to see the tool in action. 100% free, works entirely in your browser — no signup, no app download required.`,
+  category: 'cricket-tools',
+  targetKeyword: 'Dream11 points calculator',
+  secondaryKeywords: ['fantasy cricket points calculator', 'Dream11 scoring system', 'fantasy points calculator IPL', 'Dream11 T20 points', 'Dream11 ODI scoring', 'Dream11 captain points calculator', 'IPL fantasy points calculator'],
+  metaTitle: 'Dream11 Points Calculator - Fantasy Cricket Points Free',
+  metaDescription: 'Calculate Dream11 fantasy cricket points for T20, ODI & Test. Batting, bowling, fielding breakdown with captain/VC multiplier. Free online calculator.',
+  faqs: [
+    { question: 'How are Dream11 fantasy points calculated?', answer: 'Dream11 awards points for runs scored (+1 each), boundaries (+1 for 4s, +2 for 6s), wickets (+25 in T20/ODI, +16 in Test), catches (+8), stumpings (+12), and run-outs (+12 direct, +6 indirect). Bonus points are given for half-centuries, centuries, and wicket hauls. Penalties apply for ducks and poor strike/economy rates.' },
+    { question: 'What is the difference between Captain and Vice-Captain points?', answer: 'The Captain receives 2x the total fantasy points, and the Vice-Captain receives 1.5x the total points. Choosing the right Captain is crucial as it can significantly impact your overall team score.' },
+    { question: 'How does strike rate bonus work in Dream11?', answer: 'In T20 (min 10 balls): SR >170 gives +6, 150-170 gives +4, 130-150 gives +2. Penalties: SR 60-70 gives -2, 50-60 gives -4, <50 gives -6. In ODI (min 20 balls): SR >140 gives +6, 120-140 gives +4, 100-120 gives +2. Penalties are for SR below 60.' },
+    { question: 'How does economy rate bonus work?', answer: 'In T20 (min 2 overs): Economy <5 gives +6, 5-5.99 gives +4, 6-7 gives +2. Penalties: 10-11 gives -2, 11-12 gives -4, >12 gives -6. In ODI (min 5 overs): Economy <2.5 gives +6, thresholds are lower for the longer format.' },
+    { question: 'Are Dream11 scoring rules different for Test matches?', answer: 'Yes. Test matches have different point values: wickets are worth +16 (vs +25 in limited overs), ducks carry a -4 penalty (highest), and there are no strike rate or economy rate bonuses/penalties. Half-century (+4) and century (+8) bonuses are the same as ODI.' },
+    { question: 'Can I compare two players side by side?', answer: 'Yes! Click the "Compare" button to enable two-player comparison mode. Enter stats for both players and see which one earns more fantasy points. This helps you decide between two players for your Dream11 team.' },
+  ],
+  howToSteps: [
+    'Select the match format: T20, ODI, or Test.',
+    'Choose the player role: Batsman, Bowler, All-Rounder, or Wicket-Keeper.',
+    'Enter batting stats: runs, balls faced, fours, and sixes.',
+    'Enter bowling stats: wickets, overs bowled, maidens, and runs conceded.',
+    'Enter fielding stats: catches, stumpings, and run-outs.',
+    'Toggle Captain (2x) or Vice-Captain (1.5x) if applicable.',
+    'View the detailed points breakdown and total fantasy points.',
+    'Click "Compare" to compare two players side by side.',
+  ],
+  relatedToolSlugs: ['ipl-team-squad-explorer', 'ipl-player-comparison', 'ipl-match-schedule', 'ipl-points-table'],
+  icon: 'Trophy',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
 export const TOOL_COUNT = tools.length;
 
 // ─── RECIPE SCALER ─────────────────────────────────────────────────────
@@ -5843,6 +5882,684 @@ Copy the scaled recipe as formatted text for easy sharing. Try our pre-loaded Ch
   icon: 'ChefHat',
   isNew: true,
   estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'epf-calculator',
+  name: 'EPF Calculator India',
+  shortDescription: 'Calculate your Employee Provident Fund maturity amount at retirement with year-by-year breakdown.',
+  longDescription: `Plan your retirement with our free EPF Calculator for India. Enter your monthly basic salary and DA, choose your contribution rate, and see exactly how much your Provident Fund will grow by retirement. The calculator uses the latest EPF interest rate of 8.25% (FY 2025-26) and factors in annual salary increments to give you an accurate projection.
+
+The tool shows a detailed year-by-year breakdown including opening balance, employee contribution (12% default), employer EPF contribution (3.67%), interest earned, and closing balance for each year. A visual growth chart helps you see how your corpus grows over time through the power of compounding.
+
+Understand the employer contribution split — 3.67% goes to your EPF account while 8.33% goes to EPS (Pension Scheme). Add your existing EPF balance for a complete picture. All calculations happen privately in your browser with no data stored on any server.`,
+  category: 'calculators',
+  targetKeyword: 'EPF calculator',
+  secondaryKeywords: ['PF calculator India', 'provident fund calculator', 'EPF maturity calculator', 'PF interest calculator 2026', 'employee provident fund calculator', 'EPF retirement calculator', 'EPF balance calculator'],
+  metaTitle: 'EPF Calculator India - PF Maturity & Interest Free',
+  metaDescription: 'Calculate your EPF maturity amount at retirement with year-by-year breakdown. Latest 8.25% interest rate, salary increments, employer split. Free PF calculator.',
+  faqs: [
+    { question: 'What is the current EPF interest rate for FY 2025-26?', answer: 'The EPF interest rate for FY 2025-26 is 8.25% per annum, as declared by the EPFO. This calculator uses this rate by default but allows you to adjust it.' },
+    { question: 'How is the employer contribution split in EPF?', answer: 'The employer contributes 12% of Basic + DA, but it is split: 3.67% goes to the EPF account (included in your balance) and 8.33% goes to the Employee Pension Scheme (EPS). Only the 3.67% EPF portion grows in your PF account.' },
+    { question: 'How is EPF interest calculated?', answer: 'EPF interest is calculated monthly on the running balance (opening balance + contributions received that month). The annual rate is divided by 12 for monthly compounding. Interest is credited to the account at the end of the financial year.' },
+    { question: 'Can I withdraw my EPF before retirement?', answer: 'Partial withdrawals are allowed for specific purposes like home purchase, medical emergencies, or education after completing certain years of service. Full withdrawal is allowed after 2 months of unemployment or at age 58. Early withdrawal may have tax implications.' },
+    { question: 'Is EPF maturity amount taxable?', answer: 'EPF withdrawals after 5 years of continuous service are completely tax-free. If withdrawn before 5 years, the employer contribution, interest on both contributions, and your contribution (if claimed under 80C) become taxable.' },
+    { question: 'What happens if my salary increases every year?', answer: 'This calculator includes an annual salary increment option. As your salary increases, your monthly contributions (both employee and employer) also increase proportionally, leading to a significantly higher maturity amount over time.' },
+  ],
+  howToSteps: [
+    'Enter your monthly basic salary plus Dearness Allowance (DA).',
+    'Set your employee contribution rate (default 12%) and EPF interest rate (default 8.25%).',
+    'Enter your current age and expected retirement age.',
+    'Optionally set an annual salary increment percentage and existing EPF balance.',
+    'View your projected EPF maturity amount prominently displayed.',
+    'Explore the year-by-year growth chart and detailed table for complete breakdown.',
+    'Click Copy Results to save or share your EPF projection.',
+  ],
+  relatedToolSlugs: ['sip-calculator', 'fd-rd-calculator', 'compound-interest-calculator', 'emi-calculator', 'salary-calculator'],
+  icon: 'Landmark',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'emi-prepayment-calculator',
+  name: 'EMI Prepayment Calculator',
+  shortDescription: 'Calculate how much you save by making prepayments on home, car, or personal loans.',
+  longDescription: `Find out exactly how much money and time you save by making prepayments on your loan with our EMI Prepayment Calculator. Enter your loan details — principal amount, interest rate, and tenure — then add lump-sum prepayments or recurring extra monthly payments to see the impact.
+
+The calculator shows a side-by-side comparison of your original loan vs. the loan with prepayments, highlighting total interest saved and months reduced. Choose whether each prepayment should reduce your tenure (pay off faster) or reduce your EMI (lower monthly payments).
+
+Features include an interactive amortization schedule that highlights prepayment months, a visual bar chart comparing original vs. prepayment scenarios, INR formatting with Indian numbering system (lakhs/crores), and a copy-to-clipboard summary. Supports multiple lump-sum prepayments at different months plus a recurring extra monthly payment.
+
+Perfect for home loan borrowers, car loan holders, and anyone with an EMI-based loan who wants to understand the benefit of making part payments or prepayments. All calculations happen entirely in your browser — no data is sent to any server.`,
+  category: 'calculators',
+  targetKeyword: 'EMI prepayment calculator',
+  secondaryKeywords: ['home loan prepayment calculator', 'loan prepayment benefit calculator', 'part payment calculator', 'prepayment interest savings', 'loan prepayment savings calculator', 'EMI prepayment benefit', 'home loan part payment calculator', 'car loan prepayment calculator', 'personal loan prepayment calculator', 'loan tenure reduction calculator'],
+  metaTitle: 'EMI Prepayment Calculator - See How Much You Save | Free Online',
+  metaDescription: 'Calculate how much interest and time you save by making loan prepayments. Compare original vs prepaid loan with amortization schedule. Free EMI prepayment calculator.',
+  faqs: [
+    { question: 'What is a loan prepayment?', answer: 'A loan prepayment (or part payment) is an extra payment you make towards your loan principal, over and above your regular EMI. This reduces your outstanding balance, which in turn reduces the total interest you pay over the loan tenure.' },
+    { question: 'Should I reduce tenure or reduce EMI when making a prepayment?', answer: 'Reducing tenure saves you more interest in the long run because the loan gets paid off faster. Reducing EMI lowers your monthly outgo, which is helpful if you need more cash flow. If your goal is maximum savings, choose "Reduce Tenure".' },
+    { question: 'Is there a penalty for prepaying a loan?', answer: 'For floating-rate home loans in India, RBI has mandated that banks cannot charge prepayment penalties. For fixed-rate loans and personal loans, banks may charge 2-4% of the prepaid amount. Check with your lender.' },
+    { question: 'How much can I save by making prepayments?', answer: 'The savings depend on your loan amount, interest rate, tenure, and prepayment amount. For example, on a Rs 50 lakh home loan at 8.5% for 20 years, a Rs 2 lakh prepayment in year 3 plus Rs 5,000 extra monthly can save over Rs 10 lakh in interest and reduce tenure by several years.' },
+    { question: 'Can I make multiple prepayments?', answer: 'Yes! You can add multiple lump-sum prepayments at different months, plus set a recurring extra monthly payment. The calculator accounts for all of them.' },
+    { question: 'Does the amortization schedule show prepayment months?', answer: 'Yes, months where a prepayment is made are highlighted in amber/yellow in the amortization schedule, with a "PP" marker next to the month number.' },
+  ],
+  howToSteps: [
+    'Enter your loan principal amount, interest rate, and tenure (years or months).',
+    'Add a recurring extra monthly payment and/or lump-sum prepayments with month number and amount.',
+    'Choose whether each prepayment should reduce tenure or reduce EMI.',
+    'View the comparison: original loan vs. loan with prepayments — interest saved and months saved.',
+    'Expand the amortization schedule to see the month-by-month breakdown.',
+    'Copy the summary to share or save for reference.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'loan-comparison-calculator', 'compound-interest-calculator', 'sip-calculator'],
+  icon: 'TrendingDown',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'json-tree-viewer',
+  name: 'JSON Tree Viewer',
+  shortDescription: 'Paste JSON and explore it as an interactive collapsible tree with path copying.',
+  longDescription: `Visualize any JSON data as a beautiful, interactive tree structure with our JSON Tree Viewer. Paste or type JSON in the left panel and instantly see a fully navigable tree in the right panel — with collapsible nodes, color-coded values, array indices, and item count badges.
+
+Click any node to copy its JSON path (e.g., "data.users[0].name") to your clipboard — perfect for debugging APIs, writing code, or documenting data structures. Use the search bar to find keys or values deep in the tree — matching nodes are highlighted and their parent nodes auto-expand so you can find anything instantly.
+
+Features include Expand All / Collapse All / Expand to depth 1, 2, or 3, Format and Minify toggles, real-time JSON validation with detailed error messages, a stats bar showing total keys, max nesting depth, and data size, and a one-click example to get started. Value types are color-coded: strings in green, numbers in blue, booleans in purple, and null in gray.
+
+Ideal for developers working with REST APIs, GraphQL responses, configuration files, database exports, or any structured JSON data. Everything runs 100% client-side — your data never leaves your browser.`,
+  category: 'developer-tools',
+  targetKeyword: 'JSON tree viewer',
+  secondaryKeywords: ['JSON viewer online', 'JSON explorer', 'JSON path finder', 'JSON tree visualizer', 'interactive JSON viewer', 'JSON path copier', 'collapsible JSON viewer', 'JSON navigator', 'JSON data explorer'],
+  metaTitle: 'JSON Tree Viewer - Interactive JSON Explorer & Path Finder | Free Online',
+  metaDescription: 'Visualize JSON as an interactive collapsible tree. Click nodes to copy JSON paths, search keys & values, expand/collapse all. Free online JSON tree viewer.',
+  faqs: [
+    { question: 'What is a JSON tree viewer?', answer: 'A JSON tree viewer converts raw JSON text into a visual, hierarchical tree structure with collapsible nodes. It makes it easy to navigate deeply nested JSON data, understand its structure, and find specific values — much easier than reading raw text.' },
+    { question: 'How do I copy a JSON path?', answer: 'Hover over any node in the tree and click the copy icon that appears on the right side. The full JSON path (e.g., "data.users[0].name") is copied to your clipboard. A toast notification confirms the copy.' },
+    { question: 'Does this tool send my JSON data to a server?', answer: 'No. All parsing and rendering happens entirely in your browser using JavaScript. Your JSON data never leaves your device, making it safe for sensitive or proprietary data.' },
+    { question: 'What is the maximum JSON size supported?', answer: 'There is no hard limit. The tool handles JSON files of several megabytes comfortably. Very large files (10MB+) may cause slight lag in the browser due to DOM rendering, but parsing will still work.' },
+    { question: 'Can I search for specific keys or values?', answer: 'Yes. Use the search bar above the tree view to search for keys or values. Matching nodes are highlighted in yellow and their parent nodes auto-expand so you can locate results instantly.' },
+    { question: 'What do the depth buttons (L1, L2, L3) do?', answer: 'They expand the tree to a specific nesting depth. L1 shows only the first level, L2 shows two levels deep, and L3 shows three levels. This is useful for getting a quick overview of large JSON structures without expanding everything.' },
+  ],
+  howToSteps: [
+    'Paste your JSON into the left input panel (or click "Try Example JSON" to load sample data).',
+    'The right panel instantly shows your JSON as an interactive tree with collapsible nodes.',
+    'Click the arrow icons to expand or collapse sections. Use Expand All, Collapse, or depth buttons (L1/L2/L3) for bulk control.',
+    'Hover over any node and click the copy icon to copy the JSON path to your clipboard.',
+    'Use the search bar to find specific keys or values — matches are highlighted and parents auto-expand.',
+    'Use Format or Minify buttons to reformat your JSON input. Copy formatted JSON with the Copy button.',
+  ],
+  relatedToolSlugs: ['json-formatter', 'csv-to-json', 'xml-to-json', 'jwt-decoder'],
+  icon: 'FileJson',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── CSS GRID GENERATOR ─────────────────────────────────────────────────
+tools.push({
+  slug: 'css-grid-generator',
+  name: 'CSS Grid Generator',
+  shortDescription: 'Build CSS Grid layouts visually with live code output. Set columns, rows, gaps, alignment and item spans.',
+  longDescription: `Create complex CSS Grid layouts effortlessly with our free visual CSS Grid Generator. Define grid-template-columns and grid-template-rows using any valid CSS value — fr units, pixels, percentages, auto, repeat(), or minmax(). Adjust column-gap and row-gap in px or rem, and fine-tune alignment with justify-items, align-items, justify-content, and align-content controls.
+
+The interactive preview updates in real time as you tweak settings. Click any grid cell to edit its grid-column and grid-row spans, letting you create spanning layouts like headers, sidebars, and full-width footers. Choose from 7 preset layouts — Holy Grail, Dashboard, Gallery, Blog, 2-Column, 3-Column, and 4-Column — to jumpstart your design.
+
+Clean, production-ready CSS and HTML code is generated live with syntax highlighting. Copy either snippet with one click and paste directly into your project. Everything runs 100% in your browser with zero server calls — your layouts stay completely private. No signup, no downloads, works on desktop and mobile.`,
+  category: 'developer-tools',
+  targetKeyword: 'CSS grid generator',
+  secondaryKeywords: ['CSS grid layout builder', 'CSS grid template generator', 'visual CSS grid tool', 'CSS grid code generator', 'grid layout maker online', 'CSS grid template columns generator'],
+  metaTitle: 'CSS Grid Generator - Visual Grid Layout Builder Free',
+  metaDescription: 'Build CSS Grid layouts visually with live code. Set columns, rows, gaps, alignment & item spans. 7 presets, copy CSS/HTML. Free online tool — no signup.',
+  faqs: [
+    { question: 'What CSS Grid properties can I configure?', answer: 'You can set grid-template-columns, grid-template-rows, column-gap, row-gap (in px or rem), justify-items, align-items, justify-content, and align-content. For individual items, you can set grid-column start/span and grid-row start/span.' },
+    { question: 'What are fr units in CSS Grid?', answer: 'The fr (fraction) unit represents a fraction of the available space in the grid container. For example, "1fr 2fr" creates two columns where the second is twice as wide as the first. It is the most flexible unit for responsive grid layouts.' },
+    { question: 'Can I create spanning grid items like a full-width header?', answer: 'Yes. Click any grid item in the preview or expand it in the Grid Items panel. Set Column Span to the number of columns you want it to span. For a full-width header in a 3-column grid, set Col Start to 1 and Col Span to 3.' },
+    { question: 'What preset layouts are available?', answer: 'The tool includes 7 presets: Holy Grail (header, 3-column body, footer), Dashboard (top bar, chart, stats, table), Gallery (hero image with thumbnails), Blog (article + sidebar), and simple 2-Column, 3-Column, and 4-Column layouts.' },
+    { question: 'Is my layout data saved anywhere?', answer: 'No. All processing happens entirely in your browser. Nothing is sent to any server and no data is stored. Your layout stays completely private.' },
+    { question: 'Can I use repeat() and minmax() in the template fields?', answer: 'Yes. The template fields accept any valid CSS grid-template value including repeat(3, 1fr), minmax(200px, 1fr), auto-fill, auto-fit, and combinations of different units.' },
+  ],
+  howToSteps: [
+    'Set your grid-template-columns and grid-template-rows using fr, px, %, auto, or repeat().',
+    'Adjust column-gap and row-gap values and choose px or rem units.',
+    'Set alignment properties: justify-items, align-items, justify-content, align-content.',
+    'Click a grid item in the preview to edit its column/row start and span values.',
+    'Use the Add Item button to add more grid children, or choose a preset layout.',
+    'Copy the generated CSS and HTML code using the copy buttons.',
+  ],
+  relatedToolSlugs: ['css-flexbox-generator', 'css-gradient-generator', 'box-shadow-generator', 'css-animation-generator', 'html-css-js-editor'],
+  icon: 'Grid3X3',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── PROPERTY REGISTRATION CALCULATOR ──────────────────────────────────
+tools.push({
+  slug: 'property-registration-calculator',
+  name: 'Property Registration Cost Calculator',
+  shortDescription: 'Calculate total property registration cost — stamp duty, registration fee, GST & TDS — for all Indian states.',
+  longDescription: `Calculate the complete cost of registering a property in India with our free Property Registration Cost Calculator. Get an instant breakdown of stamp duty, registration fee, GST (for under-construction properties), and TDS (for properties above ₹50 lakh) — all tailored to your specific state, property type, and owner profile.
+
+The calculator covers 25+ Indian states and union territories with accurate stamp duty and registration fee rates. It factors in concessions for female owners (available in Delhi, UP, Rajasthan, Punjab, Haryana, Odisha, Uttarakhand, and more), joint ownership discounts, first-time home buyer rebates, and property type variations (residential, commercial, agricultural, plot).
+
+Features include a state-wise comparison chart that ranks all states by total registration cost for the same property value — perfect for investors evaluating which state offers the lowest registration charges. Results are displayed in Indian numbering format (lakhs and crores) with a visual cost distribution bar.
+
+All calculations happen entirely in your browser. No data is sent to any server. Copy the detailed cost summary to share with your family, broker, or financial advisor.`,
+  category: 'calculators',
+  targetKeyword: 'property registration calculator India',
+  secondaryKeywords: ['stamp duty calculator state wise', 'registry cost calculator', 'property registration charges India', 'stamp duty calculator India', 'registration fee calculator', 'property stamp duty by state', 'stamp duty for female owners India', 'property buying cost calculator', 'total property cost India', 'stamp duty and registration charges'],
+  metaTitle: 'Property Registration Cost Calculator India - Stamp Duty & Fees by State',
+  metaDescription: 'Calculate stamp duty, registration fee, GST & TDS for property registration in any Indian state. Compare costs across states. Free online calculator.',
+  faqs: [
+    { question: 'What is stamp duty on property?', answer: 'Stamp duty is a tax levied by state governments on property transactions. It is a percentage of the property value (or circle rate, whichever is higher) and must be paid at the time of property registration. Rates vary from 3% to 8% depending on the state.' },
+    { question: 'Do women get concession on stamp duty?', answer: 'Yes, several Indian states offer reduced stamp duty rates for female property buyers. For example, Delhi charges 4% for women vs. 6% for men, UP charges 5% vs. 7%, Rajasthan charges 4% vs. 5%, and Punjab charges 5% vs. 7%. Joint registration with a woman also gets concessions in many states.' },
+    { question: 'What is the registration fee for property?', answer: 'Registration fee is a separate charge (in addition to stamp duty) for getting the sale deed registered at the sub-registrar office. It typically ranges from 0.5% to 4% of the property value depending on the state. Some states like Haryana do not charge a separate registration fee.' },
+    { question: 'Is GST applicable on property purchase?', answer: 'GST at 5% is applicable only on under-construction properties (without input tax credit). Ready-to-move-in properties and resale properties are exempt from GST. Only stamp duty and registration fee apply to completed properties.' },
+    { question: 'What is TDS on property purchase?', answer: 'If the property value exceeds ₹50 lakh, the buyer must deduct 1% TDS (Tax Deducted at Source) under Section 194-IA of the Income Tax Act and deposit it with the government using Form 26QB.' },
+    { question: 'Which state has the lowest stamp duty?', answer: 'Among major states, Goa (3.5%), Jharkhand (4%), and Gujarat (4.9%) have some of the lowest stamp duty rates. However, total registration cost also depends on the registration fee, which varies separately.' },
+    { question: 'What is the first-time buyer concession?', answer: 'Many states offer a 1% concession on stamp duty for first-time residential property buyers. This is typically available for properties below a certain value threshold. Our calculator applies a 1% reduction for first-time buyers on residential properties.' },
+  ],
+  howToSteps: [
+    'Select your state from the dropdown (25+ Indian states available).',
+    'Enter the property value in rupees.',
+    'Choose the property type — Residential, Commercial, Agricultural, or Plot.',
+    'Select the owner type — Male, Female, or Joint.',
+    'Toggle first-time buyer concession or under-construction GST if applicable.',
+    'View the detailed breakdown: stamp duty, registration fee, GST, TDS, total cost, and effective rate.',
+    'Expand the state comparison to see how costs differ across all states for the same property value.',
+    'Copy the summary to share with your broker or advisor.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'emi-prepayment-calculator', 'loan-comparison-calculator', 'gst-calculator', 'sip-calculator', 'compound-interest-calculator'],
+  icon: 'Building2',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── PIXEL ART MAKER ──────────────────────────────────────────────────────
+tools.push({
+  slug: 'pixel-art-maker',
+  name: 'Pixel Art Maker',
+  shortDescription: 'Create pixel art on a grid canvas and export as PNG. Free online pixel art creator.',
+  longDescription: `Design stunning pixel art directly in your browser with our free Pixel Art Maker. Choose from 8x8, 16x16, 32x32, or 64x64 grid sizes, pick colors from a 16-color preset palette or use the full color picker, and start drawing with intuitive tools like Pencil, Eraser, Flood Fill, Eyedropper, and Line.
+
+Enable Mirror Mode for horizontal symmetry to create perfectly balanced characters, icons, and sprites. Undo and redo up to 50 steps so you never lose progress. Toggle the grid overlay on or off, and use keyboard shortcuts (B for Pencil, E for Eraser, G for Fill) for a smooth creative workflow.
+
+When your artwork is ready, export it as a crisp PNG at 1x, 2x, 4x, 8x, or 16x scale — perfect for game sprites, social media avatars, or retro-style graphics. Everything runs entirely in your browser with zero uploads and complete privacy. Try the built-in heart example to get started instantly.`,
+  category: 'image-tools',
+  targetKeyword: 'pixel art maker online',
+  secondaryKeywords: ['pixel art creator free', 'pixel art generator', 'pixel art editor online', 'pixel drawing tool', 'sprite maker online', 'pixel art grid', 'make pixel art free', '8 bit art maker', 'retro pixel art creator'],
+  metaTitle: 'Pixel Art Maker - Free Online Pixel Art Creator & Editor',
+  metaDescription: 'Create pixel art on a grid canvas with pencil, fill, line & mirror tools. Export as PNG at up to 16x scale. Free online pixel art maker, no signup needed.',
+  faqs: [
+    { question: 'What grid sizes are available?', answer: 'You can choose from 8x8, 16x16, 32x32, and 64x64 grids. When switching sizes, your existing artwork is preserved (cropped or padded as needed).' },
+    { question: 'How do I export my pixel art?', answer: 'Click the "Export PNG" button after selecting your preferred scale (1x, 2x, 4x, 8x, or 16x). The image is downloaded as a transparent PNG with crisp pixel edges — no blurring.' },
+    { question: 'What is Mirror Mode?', answer: 'Mirror Mode enables horizontal symmetry. Everything you draw on the left side is automatically mirrored on the right, perfect for creating characters, faces, and symmetrical icons.' },
+    { question: 'Does this tool save my artwork?', answer: 'The tool runs entirely in your browser. Your pixel art is not uploaded or saved on any server. Use the Export PNG button to save your work as an image file.' },
+    { question: 'Can I undo mistakes?', answer: 'Yes! The tool supports up to 50 undo/redo steps. Press Ctrl+Z to undo and Ctrl+Shift+Z to redo, or use the toolbar buttons.' },
+    { question: 'What tools are available for drawing?', answer: 'Five drawing tools: Pencil (freehand), Eraser (remove pixels), Fill (flood fill connected area), Eyedropper (pick color from canvas), and Line (draw straight lines between two points).' },
+  ],
+  howToSteps: [
+    'Select a canvas size (8x8, 16x16, 32x32, or 64x64) from the sidebar.',
+    'Pick a color from the palette or use the color picker for a custom hex color.',
+    'Choose a tool — Pencil, Eraser, Fill, Eyedropper, or Line — and start drawing on the grid.',
+    'Enable Mirror Mode for symmetrical designs, or toggle the grid overlay as needed.',
+    'Use Undo/Redo to correct mistakes (up to 50 steps).',
+    'Export your finished pixel art as a PNG at your preferred scale (1x to 16x).',
+  ],
+  relatedToolSlugs: ['color-picker', 'image-resizer', 'svg-to-png', 'hex-rgb-converter', 'online-whiteboard', 'css-gradient-generator'],
+  icon: 'Grid3X3',
+  isNew: true,
+  estimatedTime: '5-15 min',
+});
+
+// ─── INCOME TAX CALCULATOR ─────────────────────────────────────────────
+tools.push({
+  slug: 'income-tax-calculator',
+  name: 'Income Tax Calculator India',
+  shortDescription: 'Calculate income tax for FY 2024-27 with all deductions, Old vs New regime comparison, slab-wise breakdown, and monthly take-home.',
+  longDescription: `India's most comprehensive Income Tax Calculator, updated for FY 2024-25, 2025-26, and 2026-27. Enter your complete income — salary, house property, capital gains, and other sources — along with all applicable deductions to get a precise, side-by-side comparison of your tax liability under both Old and New Tax Regimes.
+
+Old Regime deductions supported: Standard Deduction (Rs 50,000), Section 80C (up to Rs 1.5 lakh — PPF, ELSS, LIC, etc.), Section 80D (health insurance — Rs 25K/50K for self, Rs 50K for parents), Section 80CCD(1B) NPS (Rs 50,000), Section 80TTA savings interest (Rs 10,000), Section 24(b) home loan interest (Rs 2 lakh), Section 80E education loan interest (no limit), Section 80G donations, and full HRA exemption calculation with metro/non-metro toggle.
+
+New Regime features for FY 2025-26+: Standard Deduction of Rs 75,000, revised slabs (0-4L nil, 4-8L 5%, 8-12L 10%, 12-16L 15%, 16-20L 20%, 20-24L 25%, above 24L 30%), Section 87A rebate making income up to Rs 12 lakh effectively tax-free, and employer NPS deduction under Section 80CCD(2).
+
+Both regimes include surcharge calculation (10% to 37% based on income), 4% Health & Education Cess, and Section 87A rebate. The calculator shows SVG donut charts for tax component breakdown, horizontal comparison bars, monthly take-home estimates, a clear recommendation badge, and a one-click copy summary. All calculations happen entirely in your browser — no data is sent to any server.`,
+  category: 'calculators',
+  targetKeyword: 'income tax calculator India',
+  secondaryKeywords: ['income tax calculator 2025-26', 'tax calculator India', 'income tax old vs new regime', 'income tax slab calculator', 'tax calculator FY 2025-26', 'income tax calculator online', 'old regime tax calculator', 'new regime tax calculator', 'income tax deductions calculator', 'salary tax calculator India'],
+  metaTitle: 'Income Tax Calculator India FY 2025-26 | All Deductions & Regime Comparison',
+  metaDescription: 'Calculate income tax for FY 2024-27 with all deductions — 80C, 80D, HRA, NPS. Side-by-side Old vs New regime comparison with slab breakdown. Free & private.',
+  faqs: [
+    { question: 'How is income tax calculated in India?', answer: 'Income tax is calculated by first computing your gross total income (salary + house property + capital gains + other sources), then subtracting eligible deductions to arrive at taxable income. Tax is computed on taxable income using the applicable slab rates, then rebate u/s 87A, surcharge, and 4% cess are applied to get the final tax payable.' },
+    { question: 'What deductions are available under the Old Tax Regime?', answer: 'The Old Regime allows Section 80C (Rs 1.5L for PPF, ELSS, LIC), Section 80D (health insurance), Section 80CCD(1B) for NPS (Rs 50K), Section 80TTA (savings interest Rs 10K), Section 24(b) home loan interest (Rs 2L), Section 80E education loan, Section 80G donations, HRA exemption, and standard deduction of Rs 50,000.' },
+    { question: 'What deductions are allowed under the New Tax Regime?', answer: 'The New Regime (FY 2025-26+) only allows a standard deduction of Rs 75,000 and employer NPS contribution under Section 80CCD(2). No other Chapter VIA deductions (80C, 80D, etc.) or HRA exemption are available.' },
+    { question: 'Is income up to Rs 12 lakh tax-free under the New Regime?', answer: 'Yes, for FY 2025-26 onwards, taxable income up to Rs 12 lakh is effectively tax-free due to the enhanced Section 87A rebate of up to Rs 60,000. With the Rs 75,000 standard deduction, salaried individuals with gross income up to approximately Rs 12.75 lakh pay zero tax.' },
+    { question: 'How is surcharge calculated on income tax?', answer: 'Surcharge is levied on the tax amount (not income) at: 10% for income Rs 50L-1Cr, 15% for Rs 1Cr-2Cr, 25% for Rs 2Cr-5Cr, and 37% above Rs 5Cr (Old Regime). Under the New Regime, surcharge is capped at 25%. The 4% Health & Education Cess is applied on tax + surcharge.' },
+    { question: 'Which tax regime should I choose?', answer: 'Choose the Old Regime if your total deductions (80C + 80D + HRA + home loan + NPS) exceed Rs 3-4 lakh. The New Regime is better if you have fewer deductions. Use this calculator to compare exact tax under both regimes for your specific income and deductions.' },
+  ],
+  howToSteps: [
+    'Select the Financial Year (2024-25, 2025-26, or 2026-27) and your age group.',
+    'Enter your income: gross salary, house property income, capital gains, and other sources.',
+    'Fill in Old Regime deductions: 80C, 80D, NPS, home loan interest, HRA details, and more.',
+    'Add employer NPS contribution for New Regime if applicable.',
+    'View the side-by-side comparison with tax breakdown, donut charts, and recommendation.',
+    'Copy the summary or check monthly take-home estimate.',
+  ],
+  relatedToolSlugs: ['tax-regime-calculator', 'salary-calculator', 'tds-calculator', 'hra-calculator', 'epf-calculator', 'sip-calculator'],
+  icon: 'Calculator',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── HASHTAG GENERATOR ──────────────────────────────────────────────────
+tools.push({
+  slug: 'hashtag-generator',
+  name: 'Hashtag Generator',
+  shortDescription: 'Generate relevant hashtags for Instagram, TikTok, Twitter & LinkedIn grouped by popularity tier.',
+  longDescription: `Find the perfect hashtags for your social media posts with our free Hashtag Generator. Enter a topic or keyword and instantly get curated hashtags organized into three popularity tiers — high-reach (500K+ posts), medium (50K-500K), and niche/low competition (under 50K posts).
+
+Choose from 16 niche presets including Travel, Food, Fitness, Fashion, Tech, Photography, and more — each with 50+ handpicked hashtags. Select your platform to get the right number of hashtags for each platform's best practices. Click individual hashtags to select or deselect, copy all or copy a curated set of 30 for Instagram. 100% free, no signup, no API.`,
+  category: 'seo-tools',
+  targetKeyword: 'hashtag generator',
+  secondaryKeywords: ['Instagram hashtag generator', 'TikTok hashtag generator', 'best hashtags for Instagram', 'hashtag finder', 'trending hashtags generator', 'social media hashtags'],
+  metaTitle: 'Hashtag Generator - Instagram, TikTok & Twitter Free',
+  metaDescription: 'Generate relevant hashtags grouped by popularity for Instagram, TikTok, Twitter & LinkedIn. 16 niches, 800+ hashtags. Free hashtag generator — no signup.',
+  faqs: [
+    { question: 'How many hashtags should I use on Instagram?', answer: 'Instagram allows up to 30 hashtags per post. Use 20-30 with a mix of high-reach, medium, and niche tags for maximum visibility.' },
+    { question: 'What are the three popularity tiers?', answer: 'High (500K+ posts) for broad exposure, Medium (50K-500K) for balanced reach, and Niche (under 50K) for targeted discoverability.' },
+    { question: 'Does the tool track my searches?', answer: 'No. All hashtags are stored locally. Nothing is sent to any server.' },
+    { question: 'What are banned hashtags?', answer: 'Instagram bans certain hashtags associated with spam. Using them can reduce reach. Our tool flags known banned hashtags.' },
+    { question: 'How often are hashtags updated?', answer: 'Our database includes evergreen and trending hashtags that remain relevant. We periodically update to add new trending tags.' },
+  ],
+  howToSteps: [
+    'Enter a topic or keyword in the search box.',
+    'Select your platform: Instagram, TikTok, Twitter/X, or LinkedIn.',
+    'Optionally choose a niche preset for curated sets.',
+    'Browse hashtags grouped by High, Medium, and Niche tiers.',
+    'Click individual hashtags to select/deselect, or use Copy All.',
+    'Use Copy Set of 30 for an Instagram-optimized mix.',
+  ],
+  relatedToolSlugs: ['instagram-engagement-calculator', 'social-media-bio-generator', 'hook-caption-scorer', 'youtube-title-generator'],
+  icon: 'Hash',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── INDIAN FOOD CALORIE COUNTER ────────────────────────────────────────
+tools.push({
+  slug: 'indian-food-calorie-counter',
+  name: 'Indian Food Calorie Counter',
+  shortDescription: 'Search calories in 200+ Indian dishes. Track daily meals with protein, carbs & fat breakdown.',
+  longDescription: `Track your daily calorie intake with our Indian Food Calorie Counter — a database of 200+ Indian dishes with calories, protein, carbs, fat, and fiber per serving in standard Indian portions like "1 medium roti" or "1 katori dal".
+
+Browse by category — Breakfast, Dal & Curries, Rice Dishes, Roti & Bread, Snacks, Sweets, Drinks, and Salads. Add items to your daily meal tracker organized by meal. Set your calorie goal and track progress with a visual ring. All data stays in your browser — no app download, no account required.`,
+  category: 'calculators',
+  targetKeyword: 'Indian food calorie counter',
+  secondaryKeywords: ['calories in Indian food', 'Indian food calorie chart', 'Indian diet calorie calculator', 'calories in dal rice', 'calories in roti', 'calorie counter India'],
+  metaTitle: 'Indian Food Calorie Counter - 200+ Dishes Free',
+  metaDescription: 'Search calories in 200+ Indian dishes with protein, carbs & fat. Daily meal tracker with calorie budget. Free Indian food calorie counter — no signup needed.',
+  faqs: [
+    { question: 'How accurate are the calorie values?', answer: 'Our database uses nutritional data from IFCT and NIN references. Values are per standard serving and may vary by preparation method.' },
+    { question: 'What serving sizes are used?', answer: 'Standard Indian portions: 1 medium roti (~40g), 1 katori dal (~150ml), 1 plate rice (~150g cooked), etc.' },
+    { question: 'Does it include non-vegetarian items?', answer: 'Yes — chicken curry, fish curry, egg bhurji, mutton biryani, and more alongside all vegetarian options.' },
+    { question: 'Is my food data saved?', answer: 'The tracker resets on refresh. All data stays in your browser — nothing is sent to any server.' },
+    { question: 'Can I adjust portion sizes?', answer: 'Yes, use the 0.5x to 2x quantity multiplier to adjust serving sizes for each food item.' },
+  ],
+  howToSteps: [
+    'Search for an Indian food item or browse by category.',
+    'Click a food item to see its full nutritional breakdown.',
+    'Adjust quantity and add it to a meal (Breakfast/Lunch/Dinner/Snacks).',
+    'Track your daily intake with the visual calorie budget ring.',
+    'Copy your daily summary to save or share.',
+  ],
+  relatedToolSlugs: ['bmi-calculator', 'tdee-macro-calculator', 'recipe-scaler', 'percentage-calculator'],
+  icon: 'UtensilsCrossed',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── WEDDING BUDGET CALCULATOR ──────────────────────────────────────────
+tools.push({
+  slug: 'wedding-budget-calculator',
+  name: 'Wedding Budget Calculator India',
+  shortDescription: 'Plan your Indian wedding budget with pre-filled categories — venue, catering, lehenga, mehndi, baraat & more.',
+  longDescription: `Plan your dream Indian wedding within budget. Enter your total budget and guest count, and the tool allocates money across 13 Indian wedding categories: Venue & Mandap, Catering, Decoration, Photography, Bride's Outfit & Jewellery, Groom's Outfit, Mehndi & Sangeet, Baraat & Band, Invitations, Makeup, Transport, Pandit & Rituals, and Miscellaneous.
+
+Each category has a default percentage based on typical Indian wedding spending. Edit amounts, track actual spending vs. budget with visual progress bars. See per-guest cost and remaining budget in real time. All in INR with lakhs/crores formatting.`,
+  category: 'calculators',
+  targetKeyword: 'wedding budget calculator India',
+  secondaryKeywords: ['marriage budget planner', 'shaadi budget calculator', 'Indian wedding cost estimator', 'wedding cost calculator', 'wedding budget planner'],
+  metaTitle: 'Wedding Budget Calculator India - Plan Shaadi Free',
+  metaDescription: 'Plan your Indian wedding budget with 13 categories — venue, catering, lehenga, mehndi, baraat & more. Track spending vs budget. Free calculator.',
+  faqs: [
+    { question: 'What categories are included?', answer: '13 Indian-specific categories: Venue & Mandap (25%), Catering (20%), Decoration (10%), Photography (8%), Bride\'s Outfit (10%), Groom\'s Outfit (5%), Mehndi & Sangeet (5%), Baraat (3%), Invitations (2%), Makeup (3%), Transport (3%), Pandit (2%), Miscellaneous (4%).' },
+    { question: 'How much does an Indian wedding cost?', answer: 'Varies from ₹5-10L for simple to ₹50L+ for grand celebrations. Average is ₹10-25L depending on city and preferences.' },
+    { question: 'Can I customize the percentages?', answer: 'Yes! Default percentages are suggestions. Edit any category amount to match your priorities.' },
+    { question: 'How is per-guest cost calculated?', answer: 'Total budget divided by guest count. Helps understand the cost of each additional guest.' },
+    { question: 'Is my data saved?', answer: 'Data stays in your browser session. Copy the summary before closing. Nothing is sent to any server.' },
+  ],
+  howToSteps: [
+    'Enter your total wedding budget in INR.',
+    'Set the expected guest count.',
+    'Review auto-allocated budget for each category.',
+    'Edit amounts to match your priorities.',
+    'Enter actual spending as you book vendors.',
+    'Monitor progress bars for over/under budget status.',
+    'Copy budget summary to share with family.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'discount-calculator', 'percentage-calculator', 'invoice-generator'],
+  icon: 'Heart',
+  isNew: true,
+  estimatedTime: '5 min',
+});
+
+// ─── SOCIAL MEDIA IMAGE RESIZER ─────────────────────────────────────────
+tools.push({
+  slug: 'social-media-image-resizer',
+  name: 'Social Media Image Resizer',
+  shortDescription: 'Upload one image and resize for Instagram, Facebook, Twitter, LinkedIn, YouTube & more at once.',
+  longDescription: `Resize images for every social media platform in one go. Upload a single image and select multiple presets — Instagram Post, Story, Facebook Cover, Twitter Header, YouTube Thumbnail, LinkedIn Banner, and 10+ more sizes. Preview each with smart center-cropping.
+
+Choose JPG or PNG output, adjust quality, and download individual images or all at once. All processing happens in your browser using Canvas API — images never leave your device. Perfect for social media managers and creators.`,
+  category: 'image-tools',
+  targetKeyword: 'social media image resizer',
+  secondaryKeywords: ['resize image for Instagram', 'social media image sizes 2026', 'multi-platform image resizer', 'Instagram post size', 'YouTube thumbnail size'],
+  metaTitle: 'Social Media Image Resizer - All Platforms Free',
+  metaDescription: 'Resize one image for Instagram, Facebook, Twitter, LinkedIn, YouTube & more. Preview all sizes, download all. Free social media image resizer — 100% private.',
+  faqs: [
+    { question: 'What platforms are supported?', answer: 'Instagram (Post, Story, Reel), Facebook (Post, Cover, Story), Twitter/X, LinkedIn, YouTube, Pinterest, WhatsApp, TikTok — 15+ presets.' },
+    { question: 'Are my images uploaded?', answer: 'No. All processing happens in your browser using Canvas API. Images never leave your device.' },
+    { question: 'What formats are supported?', answer: 'Upload JPG, PNG, or WebP. Choose JPG or PNG output with 60-100% quality.' },
+    { question: 'Can I download all sizes at once?', answer: 'Yes! Download All gets all selected sizes, each named with platform and dimensions.' },
+    { question: 'How does cropping work?', answer: 'Smart center-cropping scales and crops from center to fit each dimension.' },
+  ],
+  howToSteps: [
+    'Upload an image by dragging or clicking.',
+    'Select platform sizes using checkboxes.',
+    'Preview how your image looks at each size.',
+    'Choose output format and quality.',
+    'Download individual sizes or click Download All.',
+  ],
+  relatedToolSlugs: ['image-resizer', 'image-compressor', 'image-cropper', 'aspect-ratio-calculator'],
+  icon: 'Smartphone',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── LEGAL NOTICE GENERATOR INDIA ───────────────────────────────────────
+tools.push({
+  slug: 'legal-notice-generator',
+  name: 'Legal Notice Generator India',
+  shortDescription: 'Generate formatted legal notices for cheque bounce, recovery, rent eviction & more.',
+  longDescription: `Generate properly formatted Indian legal notices for common scenarios. Choose from six types — Cheque Bounce (Sec 138), Recovery of Money, Rent Eviction, Breach of Contract, Defamation, and Property Dispute — with correct legal language and section references.
+
+Fill in details, see a live preview in formal legal format with numbered paragraphs, demand clause, and consequences. Download as PNG or copy text. Optionally include advocate details. Note: This generates templates — consult a lawyer for legal advice.`,
+  category: 'utility-tools',
+  targetKeyword: 'legal notice format India',
+  secondaryKeywords: ['legal notice generator free', 'cheque bounce notice format', 'legal notice template India', 'legal notice for recovery', 'Section 138 notice'],
+  metaTitle: 'Legal Notice Generator India - Free Templates Online',
+  metaDescription: 'Generate legal notices for cheque bounce, recovery, rent eviction & more. Proper Indian legal format. Free legal notice generator — no signup.',
+  faqs: [
+    { question: 'Is this legally valid?', answer: 'This generates properly formatted templates. For legal validity, have it reviewed by an advocate, printed on letterhead, and sent via registered post.' },
+    { question: 'What types are supported?', answer: 'Cheque Bounce (Sec 138), Recovery of Money, Rent Eviction, Breach of Contract, Defamation, and Property Dispute.' },
+    { question: 'Do I need a lawyer?', answer: 'Recommended but not required. A lawyer-sent notice carries more weight. Our tool has an optional advocate details field.' },
+    { question: 'What is the response deadline?', answer: 'Standard is 15-30 days. For cheque bounce (Sec 138), the recipient must pay within 15 days of receiving the notice.' },
+    { question: 'Is my data saved?', answer: 'No. Everything stays in your browser. Your personal and legal information remains private.' },
+  ],
+  howToSteps: [
+    'Select the type of legal notice.',
+    'Enter sender and recipient details.',
+    'Fill in notice-specific fields.',
+    'Optionally add advocate details.',
+    'Preview the formatted notice.',
+    'Download as PNG or copy the text.',
+  ],
+  relatedToolSlugs: ['noc-generator', 'affidavit-generator', 'rent-agreement-generator', 'privacy-policy-generator'],
+  icon: 'Scale',
+  isNew: true,
+  estimatedTime: '5 min',
+});
+
+// ─── AFFIDAVIT GENERATOR INDIA ──────────────────────────────────────────
+tools.push({
+  slug: 'affidavit-generator',
+  name: 'Affidavit Generator India',
+  shortDescription: 'Generate formatted Indian affidavits — name change, address change, DOB correction & more.',
+  longDescription: `Create properly formatted Indian affidavits for common purposes. Choose from seven types — General Purpose, Name Change, Address Change, DOB Correction, Income Declaration, Gap Certificate, and Identity Declaration — with correct legal format.
+
+Fill in personal details and type-specific fields. The tool generates affidavits with declaration paragraphs, verification clause, deponent signature, and notary section. Download as PNG to print and get notarized. All processing is 100% private.`,
+  category: 'utility-tools',
+  targetKeyword: 'affidavit format India',
+  secondaryKeywords: ['name change affidavit format', 'affidavit generator online', 'general affidavit format', 'affidavit for passport', 'gap certificate affidavit'],
+  metaTitle: 'Affidavit Generator India - Name Change & More Free',
+  metaDescription: 'Generate Indian affidavits for name change, address change, DOB correction & more. Proper legal format. Free affidavit generator — no signup.',
+  faqs: [
+    { question: 'What types are supported?', answer: 'General Purpose, Name Change, Address Change, DOB Correction, Income Declaration, Gap Certificate, and Identity Declaration.' },
+    { question: 'Is it legally valid?', answer: 'Print on stamp paper (₹10-100 by state), sign before a Notary Public or Oath Commissioner to make it legally valid.' },
+    { question: 'Do I need a lawyer?', answer: 'No, but it must be signed before a Notary Public who verifies your identity.' },
+    { question: 'What stamp paper value is needed?', answer: 'Generally ₹10-50 non-judicial stamp paper. Check your state\'s requirements.' },
+    { question: 'Is my data stored?', answer: 'No. Everything is processed in your browser. Personal details are never sent to any server.' },
+  ],
+  howToSteps: [
+    'Select the affidavit type.',
+    'Enter personal details: name, parent\'s name, age, address.',
+    'Fill in type-specific fields.',
+    'Set date and place of execution.',
+    'Preview the formatted affidavit.',
+    'Download as PNG to print on stamp paper.',
+  ],
+  relatedToolSlugs: ['legal-notice-generator', 'noc-generator', 'rent-agreement-generator', 'experience-letter-generator'],
+  icon: 'FileCheck',
+  isNew: true,
+  estimatedTime: '5 min',
+});
+
+// ─── TEXT BEHIND IMAGE GENERATOR ────────────────────────────────────────
+tools.push({
+  slug: 'text-behind-image',
+  name: 'Text Behind Image Generator',
+  shortDescription: 'Create the viral text-behind-subject effect — text appears to go behind a person or object.',
+  longDescription: `Create the trending "text behind image" effect. Upload a photo, add text, then paint over the subject that should appear in front — the masked area renders above the text, creating the illusion of text behind the subject.
+
+Customize with 10 fonts, adjustable size/weight/spacing/color/opacity. Use brush tool to mask the foreground with adjustable size and eraser. Three-layer Canvas rendering: background → text → masked foreground. Download as PNG. No AI, no signup — works in your browser.`,
+  category: 'image-tools',
+  targetKeyword: 'text behind image generator',
+  secondaryKeywords: ['text behind image online free', 'text behind photo effect', 'text behind subject tool', 'text behind person effect'],
+  metaTitle: 'Text Behind Image Generator - Free Online Tool',
+  metaDescription: 'Create the viral text-behind-subject effect online free. Paint mask, add text, download PNG. No AI, no signup. Text behind image generator.',
+  faqs: [
+    { question: 'How does it work?', answer: 'Three layers: original image as background, text in the middle, masked foreground on top. Paint over the subject to extract it above the text.' },
+    { question: 'Do I need to be precise?', answer: 'Stay within subject edges. Use smaller brush for details and eraser for mistakes.' },
+    { question: 'What fonts are available?', answer: '10 fonts: Arial, Impact, Georgia, Playfair Display, Bebas Neue, Oswald, Montserrat, Lobster, Roboto Condensed, Anton.' },
+    { question: 'Are images uploaded?', answer: 'No. All processing happens in your browser using Canvas API. Images never leave your device.' },
+    { question: 'What quality is the download?', answer: 'PNG matches original image resolution with full quality.' },
+  ],
+  howToSteps: [
+    'Upload a photo with a clear subject.',
+    'Type text and customize font, size, color, position.',
+    'Paint over the subject that should appear in front.',
+    'Use eraser to fix masking mistakes.',
+    'Preview the effect in real-time.',
+    'Download as high-quality PNG.',
+  ],
+  relatedToolSlugs: ['image-background-remover', 'meme-generator', 'image-watermark', 'image-cropper'],
+  icon: 'Layers',
+  isNew: true,
+  estimatedTime: '3 min',
+});
+
+// ─── YOUTUBE TITLE & DESCRIPTION GENERATOR ──────────────────────────────
+tools.push({
+  slug: 'youtube-title-generator',
+  name: 'YouTube Title & Description Generator',
+  shortDescription: 'Generate SEO-optimized YouTube titles and descriptions using proven template formulas.',
+  longDescription: `Create click-worthy YouTube titles and professional descriptions. Choose from 14 niches — Tech, Gaming, Vlog, Tutorial, Review, Cooking, Fitness, Finance, Travel, and more — and get 10+ title suggestions based on proven viral formulas.
+
+Switch to Description mode to generate structured descriptions with hook paragraph, timestamps, key points, links, social links, and hashtags. Character count tracks the 5000-char limit. 100% template-based — no AI, no API, no signup.`,
+  category: 'seo-tools',
+  targetKeyword: 'YouTube title generator',
+  secondaryKeywords: ['YouTube description generator', 'YouTube SEO title tool', 'video title ideas generator', 'YouTube title ideas', 'YouTube description template'],
+  metaTitle: 'YouTube Title & Description Generator - Free SEO Tool',
+  metaDescription: 'Generate SEO-optimized YouTube titles and descriptions using proven formulas. 14 niches, 100+ templates. Free generator — no AI, no signup.',
+  faqs: [
+    { question: 'How are titles generated?', answer: 'The tool uses proven formula templates from top-performing YouTube videos. You enter your topic and it fills in patterns. No AI — pure template-based.' },
+    { question: 'What is the ideal title length?', answer: '50-70 characters for optimal click-through rate. Each title shows its character count with color indicators.' },
+    { question: 'What niches are supported?', answer: '14 niches: Tech, Gaming, Vlog, Tutorial, Review, Cooking, Fitness, Finance, Travel, Education, Entertainment, News, Music, Motivation.' },
+    { question: 'What does the description include?', answer: 'Hook paragraph, timestamps section, key points, links & resources, social media links, hashtags, and disclaimer.' },
+    { question: 'Does this use AI?', answer: 'No. Handcrafted template formulas. Works instantly, no API keys, no data sent anywhere.' },
+  ],
+  howToSteps: [
+    'Select Title Generator or Description Generator tab.',
+    'Enter your video topic or keyword.',
+    'Choose your content niche.',
+    'Browse 10+ generated titles with SEO scores.',
+    'Click any title to copy it.',
+    'Use Description mode for structured video descriptions.',
+    'Copy the complete description for YouTube Studio.',
+  ],
+  relatedToolSlugs: ['youtube-thumbnail-tester', 'youtube-money-calculator', 'youtube-thumbnail-downloader', 'hook-caption-scorer'],
+  icon: 'Youtube',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── OPEN GRAPH PREVIEW TESTER ──────────────────────────────────────────
+tools.push({
+  slug: 'og-preview-tester',
+  name: 'Open Graph Preview Tester',
+  shortDescription: 'Preview how your OG meta tags appear on Google, Facebook, Twitter, LinkedIn, Discord & WhatsApp.',
+  longDescription: `See how your website appears when shared on social media. Enter OG meta tags or paste your HTML head to auto-extract them. Preview pixel-accurate mockups for Google Search, Facebook, Twitter/X, LinkedIn, Discord, WhatsApp, and Slack.
+
+Validates required tags, warns about suboptimal lengths, checks image dimensions. Generate the complete HTML meta tag block with one click. Works entirely client-side — no URL fetching, instant results.`,
+  category: 'seo-tools',
+  targetKeyword: 'open graph preview',
+  secondaryKeywords: ['OG tag tester', 'social media card preview', 'meta tag preview tool', 'Twitter card preview', 'Facebook share preview', 'og meta tag tester'],
+  metaTitle: 'Open Graph Preview Tester - Social Card Preview Free',
+  metaDescription: 'Preview OG meta tags on Google, Facebook, Twitter, LinkedIn, Discord & WhatsApp. Validate tags, generate HTML. Free OG preview tester — client-side.',
+  faqs: [
+    { question: 'What are OG meta tags?', answer: 'Open Graph tags in your HTML <head> control how content appears on social media. Key tags: og:title, og:description, og:image, og:url.' },
+    { question: 'Why not fetch URLs directly?', answer: 'This tool is 100% client-side. You paste meta content directly for instant previews without CORS issues or caching delays.' },
+    { question: 'What image size is recommended?', answer: '1200x630 pixels works across all platforms. Facebook needs 600x315 minimum, Twitter recommends 800x418.' },
+    { question: 'What is the ideal title length?', answer: '40-60 characters. Facebook truncates at ~60, Twitter at ~70, Google at ~50-60.' },
+    { question: 'Can I generate the HTML tags?', answer: 'Yes! Click Copy OG Meta Tags to get the complete HTML meta tag block.' },
+  ],
+  howToSteps: [
+    'Enter og:title, og:description, og:image URL, and other fields.',
+    'Or paste your HTML <head> section to auto-extract.',
+    'Preview on Google, Facebook, Twitter, LinkedIn, Discord, WhatsApp, Slack.',
+    'Review validation warnings.',
+    'Click Copy OG Meta Tags to generate HTML.',
+    'Paste into your website\'s <head> section.',
+  ],
+  relatedToolSlugs: ['meta-tag-generator', 'robots-txt-generator', 'favicon-generator', 'roast-my-website'],
+  icon: 'Eye',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── BLOOD PRESSURE TRACKER ─────────────────────────────────────────────
+tools.push({
+  slug: 'blood-pressure-tracker',
+  name: 'Blood Pressure Tracker & Log',
+  shortDescription: 'Log BP readings, visualize trends with charts, and generate printable reports for your doctor.',
+  longDescription: `Track blood pressure over time. Enter systolic, diastolic, and pulse with date/time. Auto-classifies readings: Normal (<120/80), Elevated, High Stage 1, Stage 2, or Crisis — with color-coded badges.
+
+SVG line chart shows trends with color-coded background zones. View 7/30/all-time averages. Export as CSV, import backups, print reports for your doctor. Data stored in localStorage — health data never leaves your device.`,
+  category: 'calculators',
+  targetKeyword: 'blood pressure tracker online',
+  secondaryKeywords: ['BP log chart', 'blood pressure chart', 'hypertension tracker', 'blood pressure monitor log', 'BP tracker web'],
+  metaTitle: 'Blood Pressure Tracker - Log, Chart & Report Free',
+  metaDescription: 'Log BP readings, visualize trends with charts, track averages. Export CSV, print reports. Free BP tracker — data stays in your browser.',
+  faqs: [
+    { question: 'What is normal blood pressure?', answer: 'Below 120/80 mmHg. Elevated: 120-129/<80. High Stage 1: 130-139/80-89. Stage 2: 140+/90+. Crisis: >180/>120.' },
+    { question: 'Where is data stored?', answer: 'In your browser\'s localStorage. Nothing sent to any server. Use CSV export for backups.' },
+    { question: 'Can I import readings?', answer: 'Yes! Export as CSV and import back using the Import CSV button.' },
+    { question: 'How often should I measure?', answer: 'For hypertension monitoring, twice daily (morning and evening) at the same times. Take 2-3 readings each time.' },
+    { question: 'Can I share with my doctor?', answer: 'Yes! Print report feature generates a formatted summary with readings, averages, and chart.' },
+  ],
+  howToSteps: [
+    'Enter systolic, diastolic, and pulse rate.',
+    'Select date, time, arm, and position.',
+    'Click Add Reading to log it.',
+    'View the trend chart with color-coded zones.',
+    'Check averages in the statistics panel.',
+    'Export as CSV or print a report for your doctor.',
+  ],
+  relatedToolSlugs: ['bmi-calculator', 'tdee-macro-calculator', 'age-calculator', 'pregnancy-due-date-calculator'],
+  icon: 'HeartPulse',
+  isNew: true,
+  estimatedTime: '2 min',
+});
+
+// ─── ESSAY OUTLINE BUILDER ──────────────────────────────────────────────
+tools.push({
+  slug: 'essay-outline-builder',
+  name: 'Essay Outline Builder',
+  shortDescription: 'Generate structured essay outlines for argumentative, persuasive, expository & more essay types.',
+  longDescription: `Build structured essay outlines with our free Essay Outline Builder. Select your type — Argumentative, Persuasive, Expository, Narrative, Compare & Contrast, Cause & Effect, Descriptive, or Analytical — enter topic and thesis to generate a complete framework.
+
+Includes Introduction (hook, background, thesis), 3-5 Body Paragraphs (topic sentences, evidence slots, analysis, transitions), and Conclusion. All sections are editable. Reorder paragraphs, export as text or Markdown. Perfect for students, writers, and educators.`,
+  category: 'text-tools',
+  targetKeyword: 'essay outline generator',
+  secondaryKeywords: ['essay outline builder', 'essay structure template', 'essay planner', 'how to outline an essay', 'argumentative essay outline'],
+  metaTitle: 'Essay Outline Builder - Generate Essay Outlines Free',
+  metaDescription: 'Generate structured essay outlines for argumentative, persuasive, expository & more. Editable sections, export as text. Free essay outline builder.',
+  faqs: [
+    { question: 'What essay types are supported?', answer: '8 types: Argumentative, Persuasive, Expository, Narrative, Compare & Contrast, Cause & Effect, Descriptive, Analytical.' },
+    { question: 'Does it write the essay?', answer: 'No. It generates an outline framework with guiding prompts. You fill in the content yourself.' },
+    { question: 'Can I customize the outline?', answer: 'Yes! All sections are editable. Add/remove body paragraphs (3-5), reorder, modify structure.' },
+    { question: 'What export formats?', answer: 'Plain text, Markdown, or copy to clipboard.' },
+    { question: 'Is this suitable for academic essays?', answer: 'Yes! Follows standard academic conventions with evidence and analysis sections.' },
+  ],
+  howToSteps: [
+    'Select your essay type from 8 options.',
+    'Enter your topic and thesis statement.',
+    'Choose number of body paragraphs (3-5).',
+    'Click Generate Outline.',
+    'Fill in each section with your content.',
+    'Reorder and add/remove sections as needed.',
+    'Export as text, Markdown, or copy to clipboard.',
+  ],
+  relatedToolSlugs: ['word-counter', 'essay-counter-readability', 'citation-generator', 'paraphrasing-tool'],
+  icon: 'FileText',
+  isNew: true,
+  estimatedTime: '5 min',
+});
+
+// ─── GPA CALCULATOR ─────────────────────────────────────────────────────
+tools.push({
+  slug: 'gpa-calculator',
+  name: 'GPA Calculator',
+  shortDescription: 'Calculate GPA/CGPA across Indian 10-point, US 4.0, and percentage scales with semester tracking.',
+  longDescription: `Calculate GPA, SGPA, and CGPA across multiple grading systems. Choose Indian 10-point CGPA, US 4.0 GPA, or percentage-based. Add semesters with subjects, credits, and grades for cumulative results.
+
+Shows semester-wise SGPA with visual bars, cumulative CGPA, equivalent percentage, and academic classification. Target GPA feature tells you what you need next semester. Supports up to 8 semesters with unlimited subjects. All calculations in your browser.`,
+  category: 'calculators',
+  targetKeyword: 'GPA calculator',
+  secondaryKeywords: ['CGPA calculator', 'SGPA to CGPA calculator', 'GPA calculator India', 'college GPA calculator', 'grade calculator'],
+  metaTitle: 'GPA Calculator - CGPA, SGPA & Grades Free',
+  metaDescription: 'Calculate GPA/CGPA across Indian 10-point, US 4.0 & percentage scales. Semester tracking, conversion, target GPA. Free GPA calculator.',
+  faqs: [
+    { question: 'What grading systems are supported?', answer: 'Indian 10-point CGPA (O=10 through F=0), US 4.0 GPA (A+=4.0 through F=0), and percentage-based grading.' },
+    { question: 'How is CGPA converted to percentage?', answer: 'Indian 10-point: Percentage = CGPA x 9.5. Example: 8.5 CGPA ≈ 80.75%. Some universities use different formulas.' },
+    { question: 'What is SGPA vs CGPA?', answer: 'SGPA is weighted average for one semester. CGPA is cumulative across all semesters, weighted by credits.' },
+    { question: 'Can I convert Indian CGPA to US GPA?', answer: 'Roughly: Indian CGPA / 2.5 ≈ US GPA. Example: 8.0 ≈ 3.2 GPA. Exact conversions vary by institution.' },
+    { question: 'How does Target GPA work?', answer: 'Enter your desired CGPA and it calculates the SGPA needed next semester based on current CGPA and credits completed.' },
+  ],
+  howToSteps: [
+    'Select grading system: Indian 10-point, US 4.0, or Percentage.',
+    'Add a semester with subject name, credits, and grade.',
+    'View SGPA per semester and cumulative CGPA.',
+    'Add more semesters to track progress.',
+    'Check equivalent percentage and classification.',
+    'Use Target GPA calculator for future planning.',
+    'Copy results to save or share.',
+  ],
+  relatedToolSlugs: ['cgpa-to-percentage', 'percentage-calculator', 'attendance-calculator', 'average-calculator'],
+  icon: 'GraduationCap',
+  isNew: true,
+  estimatedTime: '3 min',
 });
 
 export function getToolBySlug(slug: string): Tool | undefined {
