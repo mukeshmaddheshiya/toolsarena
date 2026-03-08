@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation';
 import { tools, categories, getPopularTools, TOOL_COUNT } from '@/lib/tools-registry';
 import { ToolCard } from '@/components/tools/ToolCard';
 import { LazySearchBar } from '@/components/common/LazySearchBar';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { CATEGORY_NAME_KEYS } from '@/lib/constants';
 import type { ToolCategory } from '@/types/tools';
 import type { Metadata } from 'next';
@@ -52,14 +53,30 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const t = await getTranslations();
   const popularTools = getPopularTools(6);
 
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `${TOOL_COUNT}+ Free Online Tools`,
+    description: 'Free online tools for images, PDFs, text, calculators and developers.',
+    numberOfItems: tools.length,
+    itemListElement: tools.slice(0, 30).map((tool, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: tool.name,
+      url: `${SITE_URL}/tools/${tool.slug}`,
+      description: tool.shortDescription,
+    })),
+  };
+
   return (
     <>
+      <JsonLd data={itemListSchema} />
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 dark:from-slate-900 dark:via-primary-950 dark:to-slate-900 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(249,115,22,0.15),transparent_60%)]" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium mb-6">
-            <Sparkles className="w-3.5 h-3.5 text-accent-400" />
+            <Sparkles className="w-3.5 h-3.5 text-accent-400" aria-hidden={true} />
             <span>{t('hero.badge', { count: TOOL_COUNT })}</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-4">
@@ -83,7 +100,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {STAT_KEYS.map(({ icon: Icon, labelKey, descKey }) => (
               <div key={labelKey} className="flex items-center gap-3 px-6 py-4">
                 <div className="w-9 h-9 rounded-lg bg-primary-50 dark:bg-primary-900/30 flex items-center justify-center shrink-0">
-                  <Icon className="w-4 h-4 text-primary-700 dark:text-primary-400" />
+                  <Icon className="w-4 h-4 text-primary-700 dark:text-primary-400" aria-hidden={true} />
                 </div>
                 <div>
                   <div className="font-heading font-bold text-slate-900 dark:text-slate-100 text-sm">{t(labelKey, { count: TOOL_COUNT })}</div>

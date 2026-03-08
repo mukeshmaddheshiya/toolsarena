@@ -20,13 +20,14 @@ function getAlternates(path: string) {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
+  const lastUpdated = new Date('2026-03-08');
 
   // Static pages
   const staticPages = ['', '/about', '/privacy-policy', '/terms', '/contact'];
   for (const page of staticPages) {
     entries.push({
       url: `${BASE_URL}${page || '/'}`,
-      lastModified: new Date(),
+      lastModified: lastUpdated,
       changeFrequency: page === '' ? 'daily' : 'monthly',
       priority: page === '' ? 1.0 : 0.4,
       alternates: getAlternates(page || '/'),
@@ -38,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const path = `/category/${cat}`;
     entries.push({
       url: `${BASE_URL}${path}`,
-      lastModified: new Date(),
+      lastModified: lastUpdated,
       changeFrequency: 'weekly',
       priority: 0.7,
       alternates: getAlternates(path),
@@ -50,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const path = `/tools/${tool.slug}`;
     entries.push({
       url: `${BASE_URL}${path}`,
-      lastModified: new Date(),
+      lastModified: lastUpdated,
       changeFrequency: 'monthly',
       priority: 0.8,
       alternates: getAlternates(path),

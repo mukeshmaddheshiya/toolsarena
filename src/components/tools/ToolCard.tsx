@@ -19,7 +19,7 @@ const categoryColors: Record<string, string> = {
 };
 
 export function ToolCard({ tool, className }: ToolCardProps) {
-  const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[tool.icon] || LucideIcons.Wrench;
+  const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string; 'aria-hidden'?: boolean }>>)[tool.icon] || LucideIcons.Wrench;
   const iconColor = categoryColors[tool.category] || 'bg-primary-50 text-primary-600';
   const t = useTranslations('common');
 
@@ -47,7 +47,7 @@ export function ToolCard({ tool, className }: ToolCardProps) {
 
       {/* Icon */}
       <div className={cn('w-10 h-10 rounded-xl flex items-center justify-center mb-3', iconColor)}>
-        <Icon className="w-5 h-5" />
+        <Icon className="w-5 h-5" aria-hidden={true} />
       </div>
 
       {/* Content */}

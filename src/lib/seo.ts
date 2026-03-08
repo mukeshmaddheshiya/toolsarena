@@ -46,7 +46,7 @@ export async function generateToolMetadata(tool: Tool): Promise<Metadata> {
       description: tool.metaDescription,
       url,
       siteName: SITE_NAME,
-      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: tool.name }],
+      images: [{ url: `${SITE_URL}/tools/${tool.slug}/opengraph-image`, width: 1200, height: 630, alt: tool.name }],
       type: 'website',
       locale: getOgLocale(locale),
     },
@@ -54,7 +54,7 @@ export async function generateToolMetadata(tool: Tool): Promise<Metadata> {
       card: 'summary_large_image',
       title: tool.metaTitle,
       description: tool.metaDescription,
-      images: [{ url: DEFAULT_OG_IMAGE, alt: tool.name }],
+      images: [{ url: `${SITE_URL}/tools/${tool.slug}/opengraph-image`, alt: tool.name }],
     },
     robots: { index: true, follow: true },
   };
