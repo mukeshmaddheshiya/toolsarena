@@ -6560,6 +6560,50 @@ Shows semester-wise SGPA with visual bars, cumulative CGPA, equivalent percentag
   estimatedTime: '3 min',
 });
 
+// ─── PDF EDITOR ─────────────────────────────────────────────────────────
+tools.push({
+  slug: 'pdf-editor',
+  name: 'PDF Editor',
+  shortDescription: 'Edit PDF files online free — add text, images, shapes, highlights, signatures, stamps & more. 100% private.',
+  longDescription: `The most powerful free online PDF editor that runs entirely in your browser. Edit any PDF document without uploading it to any server — your files never leave your device, guaranteeing complete privacy.
+
+Add text with custom fonts, sizes, colors, and alignment. Draw freehand with a pen tool. Insert shapes — rectangles, circles, lines, and arrows. Highlight important text, whiteout sensitive content, and add images from your device.
+
+Need to sign a document? Use the built-in signature pad to draw your signature and place it anywhere. Add professional stamps — APPROVED, DRAFT, CONFIDENTIAL, COPY, VOID, and more. Every annotation supports full color, opacity, and positioning control.
+
+Navigate multi-page PDFs with thumbnail preview, zoom in/out, and use keyboard shortcuts for maximum productivity. Undo/redo every action. When done, download the edited PDF with all annotations baked into the file.
+
+Unlike iLovePDF, SmallPDF, and Adobe, which upload your files to their servers, this tool processes everything locally. No watermarks, no file size limits, no daily caps, no signup required. It's free, fast, and private — forever.`,
+  category: 'pdf-tools',
+  targetKeyword: 'PDF editor online',
+  secondaryKeywords: ['edit PDF online', 'PDF editor free', 'online PDF editor', 'edit PDF online free', 'PDF editor no signup', 'add text to PDF', 'sign PDF online', 'annotate PDF free', 'highlight PDF online', 'free PDF editor no watermark', 'PDF editor without upload', 'edit PDF in browser', 'PDF markup tool'],
+  metaTitle: 'PDF Editor Online Free - Edit, Sign & Annotate PDF | No Upload',
+  metaDescription: 'Edit PDF online for free — add text, images, shapes, highlights, signatures & stamps. 100% private, no upload, no watermark. Works in your browser.',
+  faqs: [
+    { question: 'Is my PDF uploaded to any server?', answer: 'No, never. This is a 100% client-side PDF editor. Your PDF is loaded and processed entirely in your browser using JavaScript. It never leaves your device — making this one of the most private PDF editors available online.' },
+    { question: 'Can I add text to a PDF?', answer: 'Yes! Click the Text tool (T), then click anywhere on the PDF page to place a text box. Type your text, choose font, size, color, bold/italic, and alignment. Double-click any text annotation to edit it.' },
+    { question: 'How do I sign a PDF?', answer: 'Click the Signature tool to open the signature pad. Draw your signature with your mouse or finger (on touch devices), then click "Add Signature" to place it on the PDF. Move and resize it to the perfect position.' },
+    { question: 'Can I highlight or whiteout text?', answer: 'Yes. Use the Highlight tool (H) to draw a semi-transparent yellow highlight over text. Use the Whiteout tool to cover sensitive content with a white rectangle — perfect for redacting information before sharing.' },
+    { question: 'What annotations can I add?', answer: 'Text, freehand drawing, rectangles, circles, lines, arrows, highlights, whiteouts, images, signatures, and stamps (APPROVED, DRAFT, CONFIDENTIAL, etc.). All support custom color, opacity, and positioning.' },
+    { question: 'Are there file size limits?', answer: 'No artificial limits. The only limitation is your browser memory. PDFs up to 50-100MB typically work well on modern devices. Very large PDFs with many high-resolution images may be slower to load.' },
+    { question: 'Does the editor add watermarks?', answer: 'No. The downloaded PDF is clean with no watermarks, no branding, no "Created with..." stamps. The output is exactly your PDF with your annotations.' },
+    { question: 'What keyboard shortcuts are available?', answer: 'V: Select, T: Text, P: Pen, R: Rectangle, H: Highlight. Ctrl+Z: Undo, Ctrl+Y: Redo, Ctrl+D: Duplicate, Ctrl+S: Save, Delete: Remove selected, Escape: Deselect.' },
+  ],
+  howToSteps: [
+    'Upload your PDF by dragging and dropping or clicking the upload area.',
+    'Choose a tool from the toolbar — Text, Draw, Shapes, Highlight, Whiteout, Image, Signature, or Stamp.',
+    'Click or drag on the PDF page to add your annotation.',
+    'Use the properties bar to adjust color, font size, line width, opacity, and other options.',
+    'Navigate pages using the arrows or click page thumbnails at the bottom.',
+    'Click "Download PDF" to save the edited file with all annotations baked in.',
+  ],
+  relatedToolSlugs: ['pdf-merge', 'pdf-compress', 'pdf-split', 'pdf-to-image', 'image-to-pdf'],
+  icon: 'FileEdit',
+  isPopular: true,
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
