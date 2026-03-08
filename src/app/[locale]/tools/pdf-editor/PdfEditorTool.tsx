@@ -417,7 +417,9 @@ export function PdfEditorTool() {
         text: '', fontSize, fontFamily, bold, italic, align: textAlign,
         width: 200, height: 30,
       });
+      setSelected(id);
       setEditingText(id);
+      setTool('select');
       setTimeout(() => textEditRef.current?.focus(), 50);
       return;
     }
@@ -905,7 +907,7 @@ export function PdfEditorTool() {
       position: 'absolute',
       left: a.x,
       top: a.y,
-      pointerEvents: isInteractive ? 'auto' : 'none',
+      pointerEvents: (isInteractive || editingText === a.id) ? 'auto' : 'none',
       cursor: isInteractive ? 'move' : 'default',
     };
 
