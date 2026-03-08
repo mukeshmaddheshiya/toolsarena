@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { NavigationProgress } from '@/components/common/NavigationProgress';
 import { getDefaultMetadata } from '@/lib/seo';
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 import { routing } from '@/i18n/routing';
@@ -101,6 +102,7 @@ export default async function LocaleLayout({
       </head>
       <body className={`${inter.variable} ${plusJakarta.variable} ${jetbrainsMono.variable} min-h-screen flex flex-col`}>
         <NextIntlClientProvider messages={messages}>
+          <NavigationProgress />
           <Header />
           <main className="flex-1">
             {children}
