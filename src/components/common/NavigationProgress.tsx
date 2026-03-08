@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 
 export function NavigationProgress() {
@@ -8,53 +8,62 @@ export function NavigationProgress() {
   const [progress, setProgress] = useState(0);
   const [visible, setVisible] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval>>(undefined);
+  const hideRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const prevPath = useRef(pathname);
 
+  const cleanup = useCallback(() => {
+    clearInterval(timerRef.current);
+    clearTimeout(hideRef.current);
+  }, []);
+
+  // Page arrived — complete and hide bar
   useEffect(() => {
     if (pathname === prevPath.current) return;
     prevPath.current = pathname;
 
-    // Page arrived — complete the bar
+    cleanup();
     setProgress(100);
-    const hide = setTimeout(() => {
+
+    hideRef.current = setTimeout(() => {
       setVisible(false);
       setProgress(0);
-    }, 300);
+    }, 200);
 
-    return () => clearTimeout(hide);
-  }, [pathname]);
+    return cleanup;
+  }, [pathname, cleanup]);
 
-  // Listen for click on internal links to start the bar
+  // Listen for clicks on internal links
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const anchor = (e.target as HTMLElement).closest('a');
       if (!anchor) return;
       const href = anchor.getAttribute('href');
-      if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
+      if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
       if (anchor.target === '_blank') return;
+      // Skip if clicking the same page
+      if (href === pathname || href === `${pathname}/`) return;
 
-      // Start progress
+      cleanup();
       setVisible(true);
-      setProgress(20);
+      setProgress(30);
 
-      clearInterval(timerRef.current);
-      let current = 20;
+      let current = 30;
       timerRef.current = setInterval(() => {
-        current += Math.random() * 10;
-        if (current > 90) {
+        current += Math.random() * 8;
+        if (current >= 85) {
+          current = 85;
           clearInterval(timerRef.current);
-          current = 90;
         }
         setProgress(current);
-      }, 200);
+      }, 300);
     };
 
     document.addEventListener('click', handleClick);
     return () => {
       document.removeEventListener('click', handleClick);
-      clearInterval(timerRef.current);
+      cleanup();
     };
-  }, []);
+  }, [pathname, cleanup]);
 
   if (!visible && progress === 0) return null;
 
@@ -65,10 +74,10 @@ export function NavigationProgress() {
       aria-valuenow={Math.round(progress)}
     >
       <div
-        className="h-full bg-gradient-to-r from-accent-500 via-primary-500 to-accent-400 transition-all ease-out shadow-sm shadow-accent-500/30"
+        className="h-full bg-gradient-to-r from-accent-500 via-primary-500 to-accent-400 shadow-sm shadow-accent-500/30"
         style={{
           width: `${progress}%`,
-          transitionDuration: progress === 100 ? '200ms' : '400ms',
+          transition: progress === 100 ? 'width 150ms ease-out' : 'width 300ms ease-out',
           opacity: visible || progress > 0 ? 1 : 0,
         }}
       />
