@@ -21,6 +21,9 @@ import {
   Wheat,
   Droplets,
   Leaf,
+  PlusCircle,
+  Target,
+  Weight,
 } from 'lucide-react';
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
@@ -50,7 +53,8 @@ type FoodCategory =
   | 'Snacks'
   | 'Sweets'
   | 'Drinks'
-  | 'Salads & Sides';
+  | 'Salads & Sides'
+  | 'Custom';
 
 type MealType = 'Breakfast' | 'Lunch' | 'Dinner' | 'Snacks';
 
@@ -303,6 +307,9 @@ const CATEGORIES: FoodCategory[] = [
   'Salads & Sides',
 ];
 
+/* ─── Custom Food ID Counter ───────────────────────────────────────────── */
+let _customId = 10000;
+
 /* ─── Component ─────────────────────────────────────────────────────────── */
 export function IndianFoodCalorieCounterTool() {
   const [search, setSearch] = useState('');
@@ -314,18 +321,33 @@ export function IndianFoodCalorieCounterTool() {
     Snacks: [],
   });
   const [calorieBudget, setCalorieBudget] = useState(2000);
+  const [bodyWeight, setBodyWeight] = useState(70);
   const [copied, setCopied] = useState(false);
   const [expandedMeal, setExpandedMeal] = useState<MealType | null>('Breakfast');
   const [addingTo, setAddingTo] = useState<MealType>('Breakfast');
+  const [customFoods, setCustomFoods] = useState<FoodItem[]>([]);
+  const [showCustomForm, setShowCustomForm] = useState(false);
+  const [customForm, setCustomForm] = useState({
+    name: '',
+    serving: '',
+    calories: '',
+    protein: '',
+    carbs: '',
+    fat: '',
+    fiber: '',
+  });
+  const [customAdded, setCustomAdded] = useState(false);
   let _entryId = 0;
 
+  const allFoods = useMemo(() => [...FOOD_DATABASE, ...customFoods], [customFoods]);
+
   const filteredFoods = useMemo(() => {
-    return FOOD_DATABASE.filter((item) => {
+    return allFoods.filter((item) => {
       const matchesSearch = item.name.toLowerCase().includes(search.toLowerCase());
       const matchesCategory = activeCategory === 'All' || item.category === activeCategory;
       return matchesSearch && matchesCategory;
     });
-  }, [search, activeCategory]);
+  }, [search, activeCategory, allFoods]);
 
   const dailyTotals = useMemo(() => {
     const totals = { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0 };
@@ -354,6 +376,46 @@ export function IndianFoodCalorieCounterTool() {
   const caloriePercent = Math.min((dailyTotals.calories / calorieBudget) * 100, 100);
   const circumference = 2 * Math.PI * 54;
   const strokeDashoffset = circumference - (caloriePercent / 100) * circumference;
+
+  /* Protein target: 0.8g per kg bodyweight */
+  const proteinTarget = Math.round(bodyWeight * 0.8);
+  const proteinConsumed = Math.round(dailyTotals.protein);
+  const proteinPercent = Math.min((proteinConsumed / proteinTarget) * 100, 100);
+  const proteinRemaining = Math.max(0, proteinTarget - proteinConsumed);
+  const proteinMet = proteinConsumed >= proteinTarget;
+
+  /* Calorie deficit / surplus */
+  const calorieBalance = Math.round(calorieBudget - dailyTotals.calories);
+  const isDeficit = calorieBalance >= 0;
+
+  function addCustomFood() {
+    const name = customForm.name.trim();
+    const serving = customForm.serving.trim();
+    const calories = Number(customForm.calories);
+    const protein = Number(customForm.protein);
+    const carbs = Number(customForm.carbs);
+    const fat = Number(customForm.fat);
+    const fiber = Number(customForm.fiber);
+
+    if (!name || !serving || isNaN(calories) || calories <= 0) return;
+
+    const newFood: FoodItem = {
+      id: ++_customId,
+      name,
+      category: 'Custom',
+      serving,
+      calories,
+      protein: isNaN(protein) ? 0 : protein,
+      carbs: isNaN(carbs) ? 0 : carbs,
+      fat: isNaN(fat) ? 0 : fat,
+      fiber: isNaN(fiber) ? 0 : fiber,
+    };
+
+    setCustomFoods((prev) => [...prev, newFood]);
+    setCustomForm({ name: '', serving: '', calories: '', protein: '', carbs: '', fat: '', fiber: '' });
+    setCustomAdded(true);
+    setTimeout(() => setCustomAdded(false), 2000);
+  }
 
   function addToMeal(food: FoodItem) {
     setMeals((prev) => {
@@ -405,6 +467,8 @@ export function IndianFoodCalorieCounterTool() {
       }
     });
     lines.push(`Total: ${Math.round(dailyTotals.calories)} kcal | Protein: ${Math.round(dailyTotals.protein)}g | Carbs: ${Math.round(dailyTotals.carbs)}g | Fat: ${Math.round(dailyTotals.fat)}g | Fiber: ${Math.round(dailyTotals.fiber)}g`);
+    lines.push(`Protein Target: ${proteinTarget}g (${bodyWeight}kg x 0.8g/kg) | ${proteinMet ? 'Met!' : `Need ${proteinRemaining}g more`}`);
+    lines.push(`Calorie ${isDeficit ? 'Deficit' : 'Surplus'}: ${Math.abs(calorieBalance)} kcal`);
     navigator.clipboard.writeText(lines.join('\n'));
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -448,17 +512,32 @@ export function IndianFoodCalorieCounterTool() {
 
           {/* Budget & Macros */}
           <div className="flex-1 w-full space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-              <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap">
-                Daily Budget:
-              </label>
-              <input
-                type="number"
-                value={calorieBudget}
-                onChange={(e) => setCalorieBudget(Math.max(500, Math.min(5000, Number(e.target.value))))}
-                className="w-28 px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
-              />
-              <span className="text-sm text-zinc-500">kcal</span>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <div className="flex items-center gap-2">
+                <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap">
+                  Daily Budget:
+                </label>
+                <input
+                  type="number"
+                  value={calorieBudget}
+                  onChange={(e) => setCalorieBudget(Math.max(500, Math.min(5000, Number(e.target.value))))}
+                  className="w-28 px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                />
+                <span className="text-sm text-zinc-500">kcal</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Weight className="w-4 h-4 text-zinc-400" />
+                <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap">
+                  Weight:
+                </label>
+                <input
+                  type="number"
+                  value={bodyWeight}
+                  onChange={(e) => setBodyWeight(Math.max(20, Math.min(250, Number(e.target.value))))}
+                  className="w-20 px-3 py-1.5 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                />
+                <span className="text-sm text-zinc-500">kg</span>
+              </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <MacroCard icon={<Flame className="w-4 h-4" />} label="Calories" value={Math.round(dailyTotals.calories)} unit="kcal" color="text-amber-600 dark:text-amber-400" bg="bg-amber-50 dark:bg-amber-950/30" />
@@ -472,6 +551,68 @@ export function IndianFoodCalorieCounterTool() {
                 Fiber: {Math.round(dailyTotals.fiber)}g
               </div>
             )}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Daily Protein & Calorie Deficit Summary ── */}
+      <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 sm:p-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Calorie Deficit / Surplus */}
+          <div className={`rounded-xl p-4 ${isDeficit ? 'bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900' : 'bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900'}`}>
+            <div className="flex items-center gap-2 mb-2">
+              <Flame className={`w-4 h-4 ${isDeficit ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`} />
+              <span className={`text-sm font-medium ${isDeficit ? 'text-green-700 dark:text-green-300' : 'text-red-700 dark:text-red-300'}`}>
+                Calorie {isDeficit ? 'Deficit' : 'Surplus'}
+              </span>
+            </div>
+            <div className={`text-2xl font-bold ${isDeficit ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'}`}>
+              {Math.abs(calorieBalance)} <span className="text-sm font-normal">kcal</span>
+            </div>
+            <p className={`text-xs mt-1 ${isDeficit ? 'text-green-600 dark:text-green-500' : 'text-red-600 dark:text-red-500'}`}>
+              {isDeficit
+                ? calorieBalance === calorieBudget
+                  ? 'Start adding meals to track your intake'
+                  : `You can still eat ${calorieBalance} kcal today`
+                : `You've exceeded your budget by ${Math.abs(calorieBalance)} kcal`
+              }
+            </p>
+          </div>
+
+          {/* Protein Target */}
+          <div className="rounded-xl p-4 bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-900">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-2">
+                <Target className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                <span className="text-sm font-medium text-purple-700 dark:text-purple-300">
+                  Protein Target
+                </span>
+              </div>
+              <span className="text-xs text-purple-500 dark:text-purple-400">
+                {bodyWeight}kg x 0.8g/kg
+              </span>
+            </div>
+            <div className="flex items-end gap-2 mb-2">
+              <span className="text-2xl font-bold text-purple-700 dark:text-purple-400">
+                {proteinConsumed}
+              </span>
+              <span className="text-sm text-purple-500 dark:text-purple-400 mb-0.5">
+                / {proteinTarget}g
+              </span>
+            </div>
+            {/* Protein Progress Bar */}
+            <div className="h-2.5 rounded-full bg-purple-200 dark:bg-purple-900/50 overflow-hidden mb-2">
+              <div
+                className={`h-full rounded-full transition-all duration-300 ${proteinMet ? 'bg-green-500' : 'bg-purple-500'}`}
+                style={{ width: `${proteinPercent}%` }}
+              />
+            </div>
+            <p className={`text-xs ${proteinMet ? 'text-green-600 dark:text-green-400' : 'text-purple-600 dark:text-purple-400'}`}>
+              {proteinMet
+                ? "You've met your protein goal!"
+                : `You need ${proteinRemaining}g more protein`
+              }
+            </p>
           </div>
         </div>
       </div>
@@ -506,6 +647,111 @@ export function IndianFoodCalorieCounterTool() {
               </div>
             </div>
 
+            {/* Custom Food Form (Collapsible) */}
+            <div className="mb-4">
+              <button
+                onClick={() => setShowCustomForm(!showCustomForm)}
+                className="flex items-center gap-2 text-sm font-medium text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors"
+              >
+                <PlusCircle className="w-4 h-4" />
+                Add Custom Food
+                {showCustomForm ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
+              </button>
+
+              {showCustomForm && (
+                <div className="mt-3 p-4 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/50 space-y-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <input
+                      type="text"
+                      placeholder="Food name *"
+                      value={customForm.name}
+                      onChange={(e) => setCustomForm((p) => ({ ...p, name: e.target.value }))}
+                      className="px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none placeholder:text-zinc-400"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Serving size * (e.g. 1 bowl)"
+                      value={customForm.serving}
+                      onChange={(e) => setCustomForm((p) => ({ ...p, serving: e.target.value }))}
+                      className="px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none placeholder:text-zinc-400"
+                    />
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                    <div>
+                      <label className="text-xs text-zinc-500 dark:text-zinc-400 mb-1 block">Calories *</label>
+                      <input
+                        type="number"
+                        placeholder="0"
+                        value={customForm.calories}
+                        onChange={(e) => setCustomForm((p) => ({ ...p, calories: e.target.value }))}
+                        className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs text-zinc-500 dark:text-zinc-400 mb-1 block">Protein (g)</label>
+                      <input
+                        type="number"
+                        placeholder="0"
+                        value={customForm.protein}
+                        onChange={(e) => setCustomForm((p) => ({ ...p, protein: e.target.value }))}
+                        className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs text-zinc-500 dark:text-zinc-400 mb-1 block">Carbs (g)</label>
+                      <input
+                        type="number"
+                        placeholder="0"
+                        value={customForm.carbs}
+                        onChange={(e) => setCustomForm((p) => ({ ...p, carbs: e.target.value }))}
+                        className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs text-zinc-500 dark:text-zinc-400 mb-1 block">Fat (g)</label>
+                      <input
+                        type="number"
+                        placeholder="0"
+                        value={customForm.fat}
+                        onChange={(e) => setCustomForm((p) => ({ ...p, fat: e.target.value }))}
+                        className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs text-zinc-500 dark:text-zinc-400 mb-1 block">Fiber (g)</label>
+                      <input
+                        type="number"
+                        placeholder="0"
+                        value={customForm.fiber}
+                        onChange={(e) => setCustomForm((p) => ({ ...p, fiber: e.target.value }))}
+                        className="w-full px-3 py-2 rounded-lg border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white text-sm focus:ring-2 focus:ring-amber-500 focus:border-transparent outline-none"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={addCustomFood}
+                      disabled={!customForm.name.trim() || !customForm.serving.trim() || !customForm.calories || Number(customForm.calories) <= 0}
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 disabled:bg-zinc-300 dark:disabled:bg-zinc-700 text-white disabled:text-zinc-500 text-sm font-medium transition-colors"
+                    >
+                      <PlusCircle className="w-4 h-4" />
+                      Add Custom Food
+                    </button>
+                    {customAdded && (
+                      <span className="flex items-center gap-1 text-sm text-green-600 dark:text-green-400">
+                        <Check className="w-4 h-4" /> Added!
+                      </span>
+                    )}
+                  </div>
+                  {customFoods.length > 0 && (
+                    <p className="text-xs text-zinc-400 dark:text-zinc-500">
+                      {customFoods.length} custom food{customFoods.length > 1 ? 's' : ''} added this session
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+
             {/* Category Tabs */}
             <div className="flex flex-wrap gap-2 mb-4">
               <button
@@ -516,7 +762,7 @@ export function IndianFoodCalorieCounterTool() {
                     : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                 }`}
               >
-                All ({FOOD_DATABASE.length})
+                All ({allFoods.length})
               </button>
               {CATEGORIES.map((cat) => (
                 <button
@@ -528,9 +774,21 @@ export function IndianFoodCalorieCounterTool() {
                       : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
                   }`}
                 >
-                  {cat} ({FOOD_DATABASE.filter((f) => f.category === cat).length})
+                  {cat} ({allFoods.filter((f) => f.category === cat).length})
                 </button>
               ))}
+              {customFoods.length > 0 && (
+                <button
+                  onClick={() => setActiveCategory('Custom')}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+                    activeCategory === 'Custom'
+                      ? 'bg-amber-500 text-white'
+                      : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                  }`}
+                >
+                  Custom ({customFoods.length})
+                </button>
+              )}
             </div>
 
             {/* Food List */}

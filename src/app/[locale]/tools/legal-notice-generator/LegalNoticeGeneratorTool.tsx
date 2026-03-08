@@ -139,6 +139,7 @@ function getExampleData() {
 
 export function LegalNoticeGeneratorTool() {
   const previewRef = useRef<HTMLDivElement>(null);
+  const previewPanelRef = useRef<HTMLDivElement>(null);
 
   // State
   const [noticeType, setNoticeType] = useState<NoticeType>('cheque-bounce');
@@ -280,18 +281,33 @@ export function LegalNoticeGeneratorTool() {
     await navigator.clipboard.writeText(getFullNoticeText());
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sender, recipient, noticeType, noticeDate, deadline, chequeBounce, recovery, rentEviction, breach, defamation, propertyDispute]);
 
   const handleDownload = useCallback(async () => {
     if (!previewRef.current || downloading) return;
     setDownloading(true);
     try {
+      // On mobile the preview panel may be hidden (hidden lg:block),
+      // html2canvas can't capture hidden elements — temporarily reveal it
+      const panel = previewPanelRef.current;
+      const wasHidden = panel?.classList.contains('hidden');
+      if (panel && wasHidden) {
+        panel.classList.remove('hidden');
+      }
+
       const html2canvas = (await import('html2canvas-pro')).default;
       const canvas = await html2canvas(previewRef.current, {
         scale: 2,
         backgroundColor: '#ffffff',
         useCORS: true,
       });
+
+      // Restore hidden class if it was removed
+      if (panel && wasHidden) {
+        panel.classList.add('hidden');
+      }
+
       const link = document.createElement('a');
       link.download = `legal-notice-${noticeType}-${noticeDate}.png`;
       link.href = canvas.toDataURL('image/png');
@@ -611,7 +627,7 @@ export function LegalNoticeGeneratorTool() {
         </div>
 
         {/* ── Preview Panel ── */}
-        <div className={`${mobileTab === 'form' ? 'hidden lg:block' : ''}`}>
+        <div ref={previewPanelRef} className={`${mobileTab === 'form' ? 'hidden lg:block' : ''}`}>
           <div className="sticky top-4">
             <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white overflow-hidden">
               <div className="flex items-center gap-2 px-4 py-3 bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">

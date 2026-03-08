@@ -417,10 +417,15 @@ export function Dream11PointsCalculatorTool() {
             <Trophy className="w-7 h-7 text-white" />
           </div>
         </div>
-        <h2 className="text-2xl md:text-3xl font-black text-white mb-2">Dream11 Fantasy Points Calculator</h2>
+        <h2 className="text-2xl md:text-3xl font-black text-white mb-2">Fantasy Cricket Points Calculator</h2>
         <p className="text-orange-100 text-sm md:text-base max-w-2xl mx-auto">
-          Calculate exact Dream11 fantasy cricket points for any player. Supports T20, ODI, and Test formats with all bonus and penalty rules.
+          Calculate fantasy cricket points for any player based on standard fantasy league scoring. Supports T20, ODI, and Test formats with all bonus and penalty rules.
         </p>
+      </div>
+
+      {/* Disclaimer */}
+      <div className="rounded-xl border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30 p-3 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> This is an independent educational calculator. It is not affiliated with, endorsed by, or connected to any fantasy sports platform. Scoring rules are based on publicly available information and may vary by platform.
       </div>
 
       {/* Controls Row */}
@@ -532,7 +537,7 @@ export function Dream11PointsCalculatorTool() {
         >
           <span className="font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <Users className="w-5 h-5 text-orange-500" />
-            Dream11 Scoring Rules ({format})
+            Fantasy Cricket Scoring Rules ({format})
           </span>
           {showRules ? <ChevronUp className="w-5 h-5 text-gray-400" /> : <ChevronDown className="w-5 h-5 text-gray-400" />}
         </button>

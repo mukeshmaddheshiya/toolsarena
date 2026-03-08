@@ -44,6 +44,9 @@ const PRESETS: PlatformPreset[] = [
   { id: 'tt-cover', platform: 'TikTok', label: 'Cover', width: 1080, height: 1920 },
 ];
 
+/* Default presets auto-selected on first load */
+const DEFAULT_SELECTED = new Set(['ig-post', 'fb-post', 'tw-post', 'yt-thumb']);
+
 /* Group presets by platform for the UI */
 const platformGroups = PRESETS.reduce<Record<string, PlatformPreset[]>>((acc, p) => {
   (acc[p.platform] ??= []).push(p);
@@ -66,6 +69,19 @@ function fmtSize(kb: number): string {
   return kb >= 1024 ? `${(kb / 1024).toFixed(1)} MB` : `${Math.round(kb)} KB`;
 }
 
+/* ────────────────────── Helper: robust download ─────────────── */
+
+function triggerDownload(url: string, fileName: string) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = fileName;
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  // Small delay before removing to ensure mobile browsers pick up the click
+  setTimeout(() => document.body.removeChild(a), 100);
+}
+
 /* ════════════════════════════════════════════════════════════════
    COMPONENT
    ════════════════════════════════════════════════════════════════ */
@@ -75,7 +91,7 @@ export function SocialMediaImageResizerTool() {
   const [sourceImg, setSourceImg] = useState<HTMLImageElement | null>(null);
   const [sourceFile, setSourceFile] = useState<File | null>(null);
   const [sourcePreview, setSourcePreview] = useState<string | null>(null);
-  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [selected, setSelected] = useState<Set<string>>(new Set(DEFAULT_SELECTED));
   const [format, setFormat] = useState<'jpeg' | 'png'>('jpeg');
   const [quality, setQuality] = useState(85);
   const [generated, setGenerated] = useState<GeneratedImage[]>([]);
@@ -87,10 +103,14 @@ export function SocialMediaImageResizerTool() {
 
   const inputRef = useRef<HTMLInputElement>(null);
   const previewRef = useRef<HTMLDivElement>(null);
+  const generatedRef = useRef<GeneratedImage[]>([]);
+
+  // Keep the ref in sync with state so the generate callback can clean up old URLs
+  generatedRef.current = generated;
 
   /* ── load image ── */
   const loadImage = useCallback((file: File) => {
-    if (!file.type.match(/^image\/(jpeg|png|webp)$/)) return;
+    if (!file.type.startsWith('image/')) return;
     setSourceFile(file);
     setGenerated([]);
 
@@ -170,8 +190,8 @@ export function SocialMediaImageResizerTool() {
     if (!sourceImg || selected.size === 0) return;
     setGenerating(true);
 
-    // Revoke old URLs
-    generated.forEach((g) => URL.revokeObjectURL(g.url));
+    // Revoke old URLs using the ref to avoid stale closure
+    generatedRef.current.forEach((g) => URL.revokeObjectURL(g.url));
 
     const results: GeneratedImage[] = [];
     const canvas = document.createElement('canvas');
@@ -225,17 +245,19 @@ export function SocialMediaImageResizerTool() {
 
     setGenerated(results);
     setGenerating(false);
-  }, [sourceImg, selected, format, quality, focalPoint, generated]);
+  }, [sourceImg, selected, format, quality, focalPoint]);
 
   /* ── download helpers ── */
   const downloadOne = (g: GeneratedImage) => {
-    const a = document.createElement('a');
-    a.href = g.url;
-    a.download = g.fileName;
-    a.click();
+    triggerDownload(g.url, g.fileName);
   };
 
-  const downloadAll = () => generated.forEach(downloadOne);
+  const downloadAll = () => {
+    generated.forEach((g, i) => {
+      // Stagger downloads slightly so browsers don't block them
+      setTimeout(() => triggerDownload(g.url, g.fileName), i * 150);
+    });
+  };
 
   /* ── reset ── */
   const reset = () => {
@@ -245,7 +267,7 @@ export function SocialMediaImageResizerTool() {
     setSourceFile(null);
     setSourcePreview(null);
     setGenerated([]);
-    setSelected(new Set());
+    setSelected(new Set(DEFAULT_SELECTED));
     setFocalPoint({ x: 0.5, y: 0.5 });
     if (inputRef.current) inputRef.current.value = '';
   };
@@ -290,7 +312,7 @@ export function SocialMediaImageResizerTool() {
           <input
             ref={inputRef}
             type="file"
-            accept="image/jpeg,image/png,image/webp"
+            accept="image/*"
             className="hidden"
             onChange={onFileChange}
           />

@@ -226,7 +226,7 @@ export function EmiPrepaymentCalculatorTool() {
               min={10000}
               max={500000000}
               step={10000}
-              onChange={e => setPrincipal(Math.max(10000, Number(e.target.value)))}
+              onChange={e => setPrincipal(Number(e.target.value) || 0)}
               className={inputClass}
             />
             <p className="text-xs text-slate-400 mt-1">{fmtShort(principal)}</p>
@@ -241,7 +241,7 @@ export function EmiPrepaymentCalculatorTool() {
               min={0.1}
               max={30}
               step={0.1}
-              onChange={e => setRate(Math.max(0.1, Number(e.target.value)))}
+              onChange={e => setRate(Number(e.target.value) || 0)}
               className={inputClass}
             />
           </div>
@@ -256,7 +256,7 @@ export function EmiPrepaymentCalculatorTool() {
                 min={1}
                 max={tenureUnit === 'years' ? 40 : 480}
                 step={1}
-                onChange={e => setTenureValue(Math.max(1, Number(e.target.value)))}
+                onChange={e => setTenureValue(Number(e.target.value) || 0)}
                 className={inputClass + ' flex-1'}
               />
               <select
@@ -295,7 +295,7 @@ export function EmiPrepaymentCalculatorTool() {
             min={0}
             max={principal}
             step={500}
-            onChange={e => setExtraMonthly(Math.max(0, Number(e.target.value)))}
+            onChange={e => setExtraMonthly(Number(e.target.value) || 0)}
             className={inputClass + ' max-w-xs'}
             placeholder="e.g. 5000"
           />

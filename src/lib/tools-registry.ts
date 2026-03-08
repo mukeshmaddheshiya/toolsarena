@@ -5808,25 +5808,25 @@ tools.push({
 // ─── DREAM11 FANTASY POINTS CALCULATOR ─────────────────────────────────
 tools.push({
   slug: 'dream11-points-calculator',
-  name: 'Dream11 Fantasy Points Calculator',
-  shortDescription: 'Calculate Dream11 fantasy cricket points for any player based on match performance stats.',
-  longDescription: `Calculate exact Dream11 fantasy cricket points for any player using our free Dream11 Points Calculator. Enter batting, bowling, and fielding stats and instantly see a detailed points breakdown with all bonuses and penalties applied. Supports T20, ODI, and Test match formats with format-specific scoring rules including strike rate bonuses, economy rate modifiers, milestone bonuses (half-century, century, wicket hauls), and duck penalties.
+  name: 'Fantasy Cricket Points Calculator',
+  shortDescription: 'Calculate fantasy cricket points for any player based on match performance stats for T20, ODI & Test.',
+  longDescription: `Calculate fantasy cricket points for any player using our free Fantasy Points Calculator. Enter batting, bowling, and fielding stats and instantly see a detailed points breakdown with all bonuses and penalties applied. Supports T20, ODI, and Test match formats with format-specific scoring rules including strike rate bonuses, economy rate modifiers, milestone bonuses (half-century, century, wicket hauls), and duck penalties.
 
-Choose the player role (Batsman, Bowler, All-Rounder, Wicket-Keeper), toggle Captain (2x) or Vice-Captain (1.5x) multipliers, and see your total fantasy points update in real time. Compare two players side by side to make smarter team selections for IPL, World Cup, or any cricket match on Dream11.
+Choose the player role (Batsman, Bowler, All-Rounder, Wicket-Keeper), toggle Captain (2x) or Vice-Captain (1.5x) multipliers, and see your total fantasy points update in real time. Compare two players side by side to make smarter team selections for IPL, World Cup, or any cricket fantasy league.
 
-The calculator includes a complete scoring rules reference section for each format so you can verify every point. Try our pre-loaded Virat Kohli T20 innings example to see the tool in action. 100% free, works entirely in your browser — no signup, no app download required.`,
+The calculator includes a complete scoring rules reference section for each format so you can verify every point. Try our pre-loaded T20 innings example to see the tool in action. 100% free, works entirely in your browser — no signup, no app download required. Not affiliated with any fantasy sports platform.`,
   category: 'cricket-tools',
-  targetKeyword: 'Dream11 points calculator',
-  secondaryKeywords: ['fantasy cricket points calculator', 'Dream11 scoring system', 'fantasy points calculator IPL', 'Dream11 T20 points', 'Dream11 ODI scoring', 'Dream11 captain points calculator', 'IPL fantasy points calculator'],
-  metaTitle: 'Dream11 Points Calculator - Fantasy Cricket Points Free',
-  metaDescription: 'Calculate Dream11 fantasy cricket points for T20, ODI & Test. Batting, bowling, fielding breakdown with captain/VC multiplier. Free online calculator.',
+  targetKeyword: 'fantasy cricket points calculator',
+  secondaryKeywords: ['cricket fantasy points calculator', 'fantasy scoring system cricket', 'fantasy points calculator IPL', 'T20 fantasy points', 'ODI fantasy scoring', 'captain points calculator fantasy cricket', 'IPL fantasy points calculator'],
+  metaTitle: 'Fantasy Cricket Points Calculator - Free Online Tool',
+  metaDescription: 'Calculate fantasy cricket points for T20, ODI & Test. Batting, bowling, fielding breakdown with captain/VC multiplier. Free online calculator.',
   faqs: [
-    { question: 'How are Dream11 fantasy points calculated?', answer: 'Dream11 awards points for runs scored (+1 each), boundaries (+1 for 4s, +2 for 6s), wickets (+25 in T20/ODI, +16 in Test), catches (+8), stumpings (+12), and run-outs (+12 direct, +6 indirect). Bonus points are given for half-centuries, centuries, and wicket hauls. Penalties apply for ducks and poor strike/economy rates.' },
+    { question: 'How are fantasy cricket points calculated?', answer: 'Fantasy cricket leagues award points for runs scored (+1 each), boundaries (+1 for 4s, +2 for 6s), wickets (+25 in T20/ODI, +16 in Test), catches (+8), stumpings (+12), and run-outs (+12 direct, +6 indirect). Bonus points are given for half-centuries, centuries, and wicket hauls. Penalties apply for ducks and poor strike/economy rates.' },
     { question: 'What is the difference between Captain and Vice-Captain points?', answer: 'The Captain receives 2x the total fantasy points, and the Vice-Captain receives 1.5x the total points. Choosing the right Captain is crucial as it can significantly impact your overall team score.' },
-    { question: 'How does strike rate bonus work in Dream11?', answer: 'In T20 (min 10 balls): SR >170 gives +6, 150-170 gives +4, 130-150 gives +2. Penalties: SR 60-70 gives -2, 50-60 gives -4, <50 gives -6. In ODI (min 20 balls): SR >140 gives +6, 120-140 gives +4, 100-120 gives +2. Penalties are for SR below 60.' },
+    { question: 'How does strike rate bonus work in fantasy cricket?', answer: 'In T20 (min 10 balls): SR >170 gives +6, 150-170 gives +4, 130-150 gives +2. Penalties: SR 60-70 gives -2, 50-60 gives -4, <50 gives -6. In ODI (min 20 balls): SR >140 gives +6, 120-140 gives +4, 100-120 gives +2. Penalties are for SR below 60.' },
     { question: 'How does economy rate bonus work?', answer: 'In T20 (min 2 overs): Economy <5 gives +6, 5-5.99 gives +4, 6-7 gives +2. Penalties: 10-11 gives -2, 11-12 gives -4, >12 gives -6. In ODI (min 5 overs): Economy <2.5 gives +6, thresholds are lower for the longer format.' },
-    { question: 'Are Dream11 scoring rules different for Test matches?', answer: 'Yes. Test matches have different point values: wickets are worth +16 (vs +25 in limited overs), ducks carry a -4 penalty (highest), and there are no strike rate or economy rate bonuses/penalties. Half-century (+4) and century (+8) bonuses are the same as ODI.' },
-    { question: 'Can I compare two players side by side?', answer: 'Yes! Click the "Compare" button to enable two-player comparison mode. Enter stats for both players and see which one earns more fantasy points. This helps you decide between two players for your Dream11 team.' },
+    { question: 'Are fantasy scoring rules different for Test matches?', answer: 'Yes. Test matches have different point values: wickets are worth +16 (vs +25 in limited overs), ducks carry a -4 penalty (highest), and there are no strike rate or economy rate bonuses/penalties. Half-century (+4) and century (+8) bonuses are the same as ODI.' },
+    { question: 'Can I compare two players side by side?', answer: 'Yes! Click the "Compare" button to enable two-player comparison mode. Enter stats for both players and see which one earns more fantasy points. This helps you decide between two players for your fantasy team.' },
   ],
   howToSteps: [
     'Select the match format: T20, ODI, or Test.',
@@ -5843,8 +5843,6 @@ The calculator includes a complete scoring rules reference section for each form
   isNew: true,
   estimatedTime: 'Instant',
 });
-
-export const TOOL_COUNT = tools.length;
 
 // ─── RECIPE SCALER ─────────────────────────────────────────────────────
 tools.push({
@@ -6561,6 +6559,8 @@ Shows semester-wise SGPA with visual bars, cumulative CGPA, equivalent percentag
   isNew: true,
   estimatedTime: '3 min',
 });
+
+export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
   return tools.find(t => t.slug === slug);

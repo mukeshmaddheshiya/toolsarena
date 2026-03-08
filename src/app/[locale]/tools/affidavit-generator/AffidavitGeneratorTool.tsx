@@ -254,6 +254,7 @@ export function AffidavitGeneratorTool() {
   const [typeFields, setTypeFields] = useState<TypeFields>(INITIAL_TYPE);
   const [copied, setCopied] = useState(false);
   const [downloading, setDownloading] = useState(false);
+  const [mobileTab, setMobileTab] = useState<'form' | 'preview'>('form');
   const previewRef = useRef<HTMLDivElement>(null);
 
   const updateCommon = useCallback((key: keyof CommonFields, val: string) => {
@@ -383,9 +384,21 @@ export function AffidavitGeneratorTool() {
         </button>
       </div>
 
+      {/* Mobile tab switcher */}
+      <div className="mb-6 flex lg:hidden rounded-lg bg-gray-100 dark:bg-gray-800 p-1">
+        <button onClick={() => setMobileTab('form')}
+          className={`flex-1 py-2 text-sm font-medium rounded-md transition-colors ${mobileTab === 'form' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm' : 'text-gray-500 dark:text-gray-400'}`}>
+          Form
+        </button>
+        <button onClick={() => setMobileTab('preview')}
+          className={`flex-1 py-2 text-sm font-medium rounded-md transition-colors ${mobileTab === 'preview' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm' : 'text-gray-500 dark:text-gray-400'}`}>
+          Preview
+        </button>
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* ─── LEFT: FORM ─── */}
-        <div className="space-y-6">
+        <div className={`space-y-6 ${mobileTab === 'preview' ? 'hidden lg:block' : ''}`}>
           {/* Common Fields */}
           <div className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-5">
             <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2">
@@ -498,12 +511,12 @@ export function AffidavitGeneratorTool() {
         </div>
 
         {/* ─── RIGHT: PREVIEW ─── */}
-        <div className="space-y-4">
+        <div className={`space-y-4 ${mobileTab === 'form' ? 'hidden lg:block' : ''}`}>
           <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 flex items-center gap-2">
             <FileText className="w-4 h-4 text-amber-600" /> Live Preview
           </h3>
 
-          <div className="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-white">
+          <div className="rounded-xl border border-gray-200 dark:border-gray-700 overflow-x-auto bg-white">
             <div
               ref={previewRef}
               style={{
@@ -511,6 +524,7 @@ export function AffidavitGeneratorTool() {
                 color: '#1a1a1a',
                 fontFamily: "'Georgia', 'Times New Roman', serif",
                 padding: '48px 40px',
+                minWidth: '600px',
                 minHeight: '700px',
                 lineHeight: 1.8,
                 fontSize: '14px',
