@@ -7,6 +7,7 @@ import {
   Eraser, Undo2, Redo2, Trash2, MousePointer2, FileSignature,
   Stamp, ArrowUpRight, ShieldCheck, RotateCcw, Palette, Bold, Italic,
   AlignLeft, AlignCenter, AlignRight, Eye, EyeOff, Copy, X, Loader2,
+  Edit3,
 } from 'lucide-react';
 import { PDFDocument, rgb, StandardFonts } from 'pdf-lib';
 
@@ -15,7 +16,7 @@ import { PDFDocument, rgb, StandardFonts } from 'pdf-lib';
    ══════════════════════════════════════════════════════════════ */
 
 type ToolType =
-  | 'select' | 'text' | 'draw' | 'rect' | 'circle'
+  | 'select' | 'text' | 'edittext' | 'draw' | 'rect' | 'circle'
   | 'line' | 'arrow' | 'highlight' | 'whiteout' | 'image'
   | 'signature' | 'stamp' | 'eraser';
 
@@ -77,6 +78,21 @@ interface ImageAnnotation extends BaseAnnotation {
 }
 
 type Annotation = TextAnnotation | DrawAnnotation | ShapeAnnotation | HighlightAnnotation | WhiteoutAnnotation | ImageAnnotation;
+
+interface PdfTextItem {
+  id: string;
+  page: number;
+  text: string;
+  x: number;       // in canvas (2x) coords
+  y: number;
+  width: number;
+  height: number;
+  fontSize: number; // in canvas coords
+  fontFamily: string;
+  color: string;
+  originalText: string; // preserve original for save-time whiteout
+  edited: boolean;
+}
 
 interface PageData {
   dataUrl: string;
@@ -159,6 +175,10 @@ export function PdfEditorTool() {
   const [editingText, setEditingText] = useState<string | null>(null);
   const dragUndoPushed = useRef(false);
 
+  /* ── Extracted PDF text (for Edit Text tool) ── */
+  const [pdfTextItems, setPdfTextItems] = useState<PdfTextItem[]>([]);
+  const [editingPdfText, setEditingPdfText] = useState<string | null>(null);
+
   /* ── Signature pad ── */
   const [showSigPad, setShowSigPad] = useState(false);
   const [showStamps, setShowStamps] = useState(false);
@@ -199,6 +219,8 @@ export function PdfEditorTool() {
     setRedoStack([]);
     setSelected(null);
     setEditingText(null);
+    setPdfTextItems([]);
+    setEditingPdfText(null);
     setCurrentPage(0);
     setZoom(1);
 
@@ -211,6 +233,7 @@ export function PdfEditorTool() {
       const doc = await pdfjsLib.getDocument({ data: buf.slice(0) }).promise;
       const totalPages = doc.numPages;
       const pageList: PageData[] = [];
+      const extractedText: PdfTextItem[] = [];
 
       for (let i = 1; i <= totalPages; i++) {
         const p = await doc.getPage(i);
@@ -229,9 +252,47 @@ export function PdfEditorTool() {
           pdfWidth: originalVp.width,
           pdfHeight: originalVp.height,
         });
+
+        // Extract text content for Edit Text feature
+        try {
+          const textContent = await p.getTextContent();
+          const pageIdx = i - 1;
+          for (const item of textContent.items) {
+            if (!('str' in item) || !item.str.trim()) continue;
+            const tx = item.transform;
+            // tx = [scaleX, skewY, skewX, scaleY, translateX, translateY] in PDF coords (1x)
+            const pdfFontSize = Math.abs(tx[3]) || Math.abs(tx[0]) || 12;
+            // Convert PDF coords (origin bottom-left) to canvas coords (origin top-left, 2x scale)
+            const canvasX = tx[4] * scale;
+            const canvasY = (originalVp.height - tx[5]) * scale;
+            const canvasFontSize = pdfFontSize * scale;
+            const canvasWidth = (item.width || 0) * scale;
+            const canvasHeight = canvasFontSize * 1.2;
+
+            if (canvasWidth < 2) continue; // skip tiny/empty items
+
+            extractedText.push({
+              id: `pt-${pageIdx}-${extractedText.length}`,
+              page: pageIdx,
+              text: item.str,
+              x: canvasX,
+              y: canvasY - canvasFontSize, // top of the text
+              width: canvasWidth + 4,
+              height: canvasHeight,
+              fontSize: canvasFontSize,
+              fontFamily: item.fontName?.includes('Bold') ? 'Helvetica-Bold' :
+                         item.fontName?.includes('Times') ? 'Times-Roman' :
+                         item.fontName?.includes('Courier') ? 'Courier' : 'Helvetica',
+              color: '#000000',
+              originalText: item.str,
+              edited: false,
+            });
+          }
+        } catch { /* text extraction not available for this page */ }
       }
 
       setPages(pageList);
+      setPdfTextItems(extractedText);
     } catch (e) {
       setError(`Failed to load PDF: ${(e as Error).message}`);
     } finally {
@@ -343,6 +404,13 @@ export function PdfEditorTool() {
   }, [selected]);
 
   const pageAnnotations = annotations.filter(a => a.page === currentPage);
+  const pageTextItems = pdfTextItems.filter(t => t.page === currentPage);
+
+  const updatePdfTextItem = useCallback((id: string, newText: string) => {
+    setPdfTextItems(prev => prev.map(t =>
+      t.id === id ? { ...t, text: newText, edited: newText !== t.originalText } : t
+    ));
+  }, []);
 
   /* ══════════════════════════════════════════════════════════
      MOUSE / TOUCH EVENTS
@@ -363,7 +431,22 @@ export function PdfEditorTool() {
 
   const handlePointerDown = useCallback((e: React.MouseEvent | React.TouchEvent) => {
     if (editingText) return;
+    if (editingPdfText) return;
     const pos = getPosFromEvent(e);
+
+    if (tool === 'edittext') {
+      // Hit test extracted PDF text items
+      const hit = [...pageTextItems].reverse().find(t =>
+        pos.x >= t.x - 2 && pos.x <= t.x + t.width + 2 &&
+        pos.y >= t.y - 2 && pos.y <= t.y + t.height + 2
+      );
+      if (hit) {
+        setEditingPdfText(hit.id);
+      } else {
+        setEditingPdfText(null);
+      }
+      return;
+    }
 
     if (tool === 'select') {
       // Check resize handles first
@@ -435,7 +518,7 @@ export function PdfEditorTool() {
       setShapeEnd(pos);
       return;
     }
-  }, [tool, pageAnnotations, selected, getPosFromEvent, addAnnotation, pushUndo, currentPage, color, opacity, fontSize, fontFamily, bold, italic, textAlign, editingText, zoom]);
+  }, [tool, pageAnnotations, pageTextItems, selected, getPosFromEvent, addAnnotation, pushUndo, currentPage, color, opacity, fontSize, fontFamily, bold, italic, textAlign, editingText, editingPdfText, zoom]);
 
   const handlePointerMove = useCallback((e: React.MouseEvent | React.TouchEvent) => {
     const pos = getPosFromEvent(e);
@@ -807,6 +890,39 @@ export function PdfEditorTool() {
             } catch { /* skip */ }
           }
         }
+
+        // Handle edited PDF text items: whiteout original, draw new text
+        const editedItems = pdfTextItems.filter(t => t.page === pi && t.edited);
+        for (const t of editedItems) {
+          const scX = pg.pdfWidth / pg.width;
+          const scY = pg.pdfHeight / pg.height;
+          const pdfX = t.x * scX;
+          const pdfY = pg.pdfHeight - (t.y + t.height) * scY;
+          const pdfW = t.width * scX;
+          const pdfH = t.height * scY;
+          const pdfFontSize = t.fontSize * scX;
+
+          // Whiteout original text area
+          page.drawRectangle({
+            x: pdfX - 1,
+            y: pdfY - 1,
+            width: pdfW + 2,
+            height: pdfH + 2,
+            color: rgb(1, 1, 1),
+            opacity: 1,
+          });
+
+          // Draw new text
+          const fontKey = t.fontFamily.includes('Bold') ? t.fontFamily : t.fontFamily;
+          const font = fonts[fontKey] || fonts['Helvetica'];
+          page.drawText(t.text, {
+            x: pdfX,
+            y: pdfY + pdfH * 0.15, // baseline offset
+            size: pdfFontSize,
+            font,
+            color: hexToRgb(t.color),
+          });
+        }
       }
 
       const savedBytes = await doc.save();
@@ -824,7 +940,7 @@ export function PdfEditorTool() {
     } finally {
       setSaving(false);
     }
-  }, [pdfBytes, pages, annotations, pdfName]);
+  }, [pdfBytes, pages, annotations, pdfName, pdfTextItems]);
 
   /* ══════════════════════════════════════════════════════════
      KEYBOARD SHORTCUTS
@@ -832,8 +948,8 @@ export function PdfEditorTool() {
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (editingText) {
-        if (e.key === 'Escape') setEditingText(null);
+      if (editingText || editingPdfText) {
+        if (e.key === 'Escape') { setEditingText(null); setEditingPdfText(null); }
         return;
       }
       if (e.key === 'Delete' || (e.key === 'Backspace' && !editingText)) { if (selected) { e.preventDefault(); deleteSelected(); } }
@@ -853,7 +969,7 @@ export function PdfEditorTool() {
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [editingText, selected, deleteSelected, undo, redo, duplicateSelected, savePdf]);
+  }, [editingText, editingPdfText, selected, deleteSelected, undo, redo, duplicateSelected, savePdf]);
 
   /* ══════════════════════════════════════════════════════════
      ZOOM
@@ -1208,6 +1324,7 @@ export function PdfEditorTool() {
         if (t === 'stamp') { setShowStamps(!showStamps); return; }
         setTool(t);
         setEditingText(null);
+        setEditingPdfText(null);
       }}
       title={`${label}${shortcut ? ` (${shortcut})` : ''}`}
       className={`p-2 rounded-lg transition-all ${
@@ -1230,6 +1347,7 @@ export function PdfEditorTool() {
           {toolBtn('select', <MousePointer2 className="w-4 h-4" />, 'Select & Move', 'V')}
           {divider}
           {toolBtn('text', <Type className="w-4 h-4" />, 'Add Text', 'T')}
+          {toolBtn('edittext', <Edit3 className="w-4 h-4" />, 'Edit PDF Text')}
           {toolBtn('draw', <Pen className="w-4 h-4" />, 'Pen Draw', 'P')}
           {divider}
           {toolBtn('rect', <Square className="w-4 h-4" />, 'Rectangle', 'R')}
@@ -1374,6 +1492,22 @@ export function PdfEditorTool() {
       </div>
 
       {/* ── CANVAS AREA ── */}
+      {/* ── EDIT TEXT INFO BAR ── */}
+      {tool === 'edittext' && (
+        <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 rounded-xl px-4 py-2 flex items-center gap-3 text-sm">
+          <Edit3 className="w-4 h-4 text-blue-500 flex-shrink-0" />
+          <span className="text-blue-700 dark:text-blue-300">
+            Click any text to edit it in place.
+            {pageTextItems.length > 0 && <span className="ml-1 text-blue-500">({pageTextItems.length} text items found)</span>}
+            {pdfTextItems.filter(t => t.edited).length > 0 && (
+              <span className="ml-2 font-medium text-green-600 dark:text-green-400">
+                {pdfTextItems.filter(t => t.edited).length} edited
+              </span>
+            )}
+          </span>
+        </div>
+      )}
+
       <div className="bg-slate-100 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 overflow-auto" style={{ maxHeight: '70vh' }}>
         {currentPageData && (
           <div className="flex justify-center p-4" style={{ minWidth: currentPageData.width * zoom + 32 }}>
@@ -1385,7 +1519,7 @@ export function PdfEditorTool() {
                 height: currentPageData.height * zoom,
                 cursor:
                   tool === 'select' ? (dragging || resizing ? 'grabbing' : 'default')
-                  : tool === 'text' ? 'text'
+                  : tool === 'text' || tool === 'edittext' ? 'text'
                   : 'crosshair',
               }}
               onMouseDown={handlePointerDown}
@@ -1406,6 +1540,68 @@ export function PdfEditorTool() {
                 transform: `scale(${zoom})`, transformOrigin: 'top left',
                 width: currentPageData.width, height: currentPageData.height,
               }}>
+                {/* Edit Text overlays — shown when edittext tool active */}
+                {tool === 'edittext' && pageTextItems.map(t => {
+                  const isEditing = editingPdfText === t.id;
+                  return (
+                    <div
+                      key={t.id}
+                      style={{
+                        position: 'absolute',
+                        left: t.x,
+                        top: t.y,
+                        width: isEditing ? Math.max(t.width, 120) : t.width,
+                        height: t.height,
+                        zIndex: isEditing ? 200 : 50,
+                        pointerEvents: 'auto',
+                      }}
+                    >
+                      {isEditing ? (
+                        <input
+                          type="text"
+                          autoFocus
+                          defaultValue={t.text}
+                          className="w-full h-full border-none outline-none bg-blue-50/80 dark:bg-blue-900/40 px-0.5"
+                          style={{
+                            fontSize: t.fontSize,
+                            fontFamily: t.fontFamily.includes('Courier') ? 'monospace' : t.fontFamily.includes('Times') ? 'serif' : 'sans-serif',
+                            fontWeight: t.fontFamily.includes('Bold') ? 700 : 400,
+                            color: t.color,
+                            lineHeight: 1,
+                            margin: 0,
+                            padding: '0 1px',
+                            boxShadow: '0 0 0 2px #3B82F6',
+                            borderRadius: 1,
+                          }}
+                          onBlur={e => {
+                            updatePdfTextItem(t.id, e.target.value);
+                            setEditingPdfText(null);
+                          }}
+                          onKeyDown={e => {
+                            if (e.key === 'Enter' || e.key === 'Escape') {
+                              updatePdfTextItem(t.id, (e.target as HTMLInputElement).value);
+                              setEditingPdfText(null);
+                            }
+                            e.stopPropagation();
+                          }}
+                          onMouseDown={e => e.stopPropagation()}
+                          onTouchStart={e => e.stopPropagation()}
+                        />
+                      ) : (
+                        <div
+                          onClick={e => { e.stopPropagation(); setEditingPdfText(t.id); }}
+                          className="w-full h-full cursor-text hover:bg-blue-100/50 dark:hover:bg-blue-800/30 transition-colors rounded-sm"
+                          style={{
+                            border: t.edited ? '1px solid #3B82F6' : '1px dashed transparent',
+                            background: t.edited ? 'rgba(59,130,246,0.08)' : undefined,
+                          }}
+                          title="Click to edit this text"
+                        />
+                      )}
+                    </div>
+                  );
+                })}
+
                 {pageAnnotations.map(renderAnnotation)}
                 {renderLivePreview()}
               </div>
@@ -1438,6 +1634,7 @@ export function PdfEditorTool() {
             <button onClick={() => {
               setPdfBytes(null); setPages([]); setAnnotations([]); setUndoStack([]);
               setRedoStack([]); setSelected(null); setCurrentPage(0); setEditingText(null);
+              setPdfTextItems([]); setEditingPdfText(null);
             }}
               className="flex items-center gap-1.5 px-3 py-2 text-sm rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
               <RotateCcw className="w-4 h-4" /> New
