@@ -33,8 +33,8 @@ export function Header() {
           <div className="flex items-center h-16 gap-4">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 shrink-0 font-heading font-bold text-xl text-primary-800 dark:text-primary-400">
-              <span className="w-8 h-8 bg-primary-800 rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" fill="currentColor" />
+              <span className="w-8 h-8 bg-gradient-to-br from-blue-800 to-blue-500 rounded-lg flex items-center justify-center">
+                <Zap className="w-5 h-5 text-amber-400" fill="currentColor" />
               </span>
               <span className="hidden sm:block">ToolsArena</span>
             </Link>

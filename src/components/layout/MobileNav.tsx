@@ -27,8 +27,8 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
       <div className="absolute left-0 top-0 bottom-0 w-72 bg-white dark:bg-slate-900 shadow-xl flex flex-col animate-slide-in">
         <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-800">
           <Link href="/" onClick={onClose} className="flex items-center gap-2 font-heading font-bold text-xl text-primary-800 dark:text-primary-400">
-            <span className="w-8 h-8 bg-primary-800 rounded-lg flex items-center justify-center">
-              <Zap className="w-5 h-5 text-white" fill="currentColor" />
+            <span className="w-8 h-8 bg-gradient-to-br from-blue-800 to-blue-500 rounded-lg flex items-center justify-center">
+              <Zap className="w-5 h-5 text-amber-400" fill="currentColor" />
             </span>
             ToolsArena
           </Link>
