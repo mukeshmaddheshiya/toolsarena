@@ -119,7 +119,7 @@ export function getDefaultMetadata(): Metadata {
     },
     twitter: { card: 'summary_large_image', site: '@ToolsArena', images: [{ url: DEFAULT_OG_IMAGE, alt: `${SITE_NAME} - Free Online Tools` }] },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-    icons: { icon: '/favicon.ico', apple: '/apple-touch-icon.png' },
+    icons: { icon: '/icon', apple: '/apple-icon' },
     manifest: '/manifest.json',
   };
 }

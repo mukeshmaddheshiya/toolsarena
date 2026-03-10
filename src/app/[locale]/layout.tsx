@@ -34,7 +34,7 @@ const organizationSchema = {
   '@type': 'Organization',
   name: SITE_NAME,
   url: SITE_URL,
-  logo: `${SITE_URL}/favicon.ico`,
+  logo: `${SITE_URL}/icon`,
   description: SITE_DESCRIPTION,
   sameAs: [
     'https://twitter.com/ToolsArena',
