@@ -1,8 +1,10 @@
-import { Zap, Shield, Sparkles, Clock } from 'lucide-react';
+import { Zap, Shield, Sparkles, Clock, BookOpen, ArrowRight } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { tools, categories, getPopularTools, TOOL_COUNT } from '@/lib/tools-registry';
+import { getAllGuides } from '@/lib/guides-registry';
 import { ToolCard } from '@/components/tools/ToolCard';
+import { GuideCard } from '@/components/guides/GuideCard';
 import { LazySearchBar } from '@/components/common/LazySearchBar';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { CATEGORY_NAME_KEYS } from '@/lib/constants';
@@ -52,6 +54,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   setRequestLocale(locale);
   const t = await getTranslations();
   const popularTools = getPopularTools(6);
+  const featuredGuides = getAllGuides().slice(0, 3);
 
   const itemListSchema = {
     '@context': 'https://schema.org',
@@ -123,6 +126,28 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3">
             {popularTools.map(tool => <ToolCard key={tool.slug} tool={tool} />)}
+          </div>
+        </section>
+
+        {/* Featured Guides */}
+        <section>
+          <div className="flex items-center justify-between mb-5">
+            <div>
+              <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                <BookOpen className="w-5 h-5 text-primary-600 dark:text-primary-400" aria-hidden />
+                Guides & Tutorials
+              </h2>
+              <p className="text-sm text-slate-600 dark:text-slate-400 mt-0.5">In-depth guides with pro tips, use cases, and reference tables</p>
+            </div>
+            <Link
+              href="/guides"
+              className="flex items-center gap-1 text-sm font-medium text-primary-700 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 transition-colors whitespace-nowrap"
+            >
+              All Guides <ArrowRight className="w-4 h-4" aria-hidden />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {featuredGuides.map(guide => <GuideCard key={guide.slug} guide={guide} />)}
           </div>
         </section>
 

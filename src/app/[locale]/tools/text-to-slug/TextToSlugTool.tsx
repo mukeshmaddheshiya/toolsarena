@@ -31,7 +31,7 @@ export function TextToSlugTool() {
           type="text"
           value={input}
           onChange={e => setInput(e.target.value)}
-          placeholder="e.g. How to Build a SEO-Optimized Website in 2025"
+          placeholder="e.g. How to Build a SEO-Optimized Website in 2026"
           className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 dark:text-slate-100"
         />
       </div>

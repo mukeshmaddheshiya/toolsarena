@@ -118,7 +118,7 @@
     "title": "Terms of Service",
     "metaTitle": "Terms of Service - ToolsArena",
     "metaDescription": "Terms of service for ToolsArena. Read our usage terms and conditions.",
-    "lastUpdated": "Last updated: January 2025",
+    "lastUpdated": "Last updated: March 2026",
     "acceptance": "1. Acceptance of Terms",
     "acceptanceText": "By using ToolsArena, you agree to these Terms of Service. If you do not agree, please do not use our platform.",
     "useOfServices": "2. Use of Services",
@@ -132,11 +132,23 @@
     "changes": "6. Changes to Terms",
     "changesText": "We may update these terms at any time. Continued use of ToolsArena after changes constitutes acceptance of the new terms."
   },
+  "guides": {
+    "title": "Guides & Tutorials",
+    "subtitle": "In-depth guides with pro tips, use cases, and reference tables",
+    "viewAll": "All Guides",
+    "readGuide": "Read Guide",
+    "readingTime": "{time} read",
+    "updatedOn": "Updated {date}",
+    "relatedGuides": "Related Guides",
+    "faq": "Frequently Asked Questions",
+    "howToUse": "How to Use the Tool",
+    "comingSoon": "More guides coming soon"
+  },
   "privacy": {
     "title": "Privacy Policy",
     "metaTitle": "Privacy Policy - ToolsArena",
     "metaDescription": "ToolsArena privacy policy. Learn how we handle your data — all processing is done locally in your browser.",
-    "lastUpdated": "Last updated: January 2025",
+    "lastUpdated": "Last updated: March 2026",
     "dataTitle": "1. Data We Collect",
     "dataText": "ToolsArena is designed with privacy as the first principle. We do not collect, store, or transmit any files, text, or personal data you use with our tools. All tool processing happens entirely in your browser using JavaScript.",
     "analyticsTitle": "2. Analytics",

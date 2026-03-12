@@ -6604,6 +6604,227 @@ Unlike iLovePDF, SmallPDF, and Adobe, which upload your files to their servers, 
   estimatedTime: 'Instant',
 });
 
+// ─── NEPAL INCOME TAX CALCULATOR ─────────────────────────────────────────
+tools.push({
+  slug: 'nepal-income-tax-calculator',
+  name: 'Nepal Income Tax Calculator',
+  shortDescription: 'Calculate Nepal income tax for FY 2081/82 with full slab breakdown — for individuals, couples, and businesses.',
+  longDescription: `<p>Nepal's income tax system uses progressive slabs that differ for single and married taxpayers. This calculator applies the official FY 2081/82 (2024/25) slabs and shows exactly how much tax falls in each bracket, your effective tax rate, and total tax liability.</p>
+<h2>FY 2081/82 Tax Slabs</h2>
+<p>For single individuals: 1% up to Rs 5,00,000; 10% on Rs 5,00,001–7,00,000; 20% on Rs 7,00,001–20,00,000; 30% on Rs 20,00,001–40,00,000; 36% above Rs 40,00,000. Married individuals get Rs 1,00,000 additional exemption. A 1% social security surtax applies on income above Rs 20,00,000.</p>
+<h2>Deductions Available</h2>
+<p>Employee PF/CIT/SSF contributions, approved life insurance premiums (up to Rs 40,000), and other approved expenses reduce your taxable income before tax is calculated.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal income tax calculator',
+  secondaryKeywords: ['nepal income tax 2081 82', 'nepal tax calculator 2024 25', 'nepal tax slab calculator', 'nepal individual income tax', 'nepal tds calculator', 'nepali income tax', 'nepal tax slab 2081 82 calculator'],
+  metaTitle: 'Nepal Income Tax Calculator 2081/82 — Free Tax Slab Tool',
+  metaDescription: 'Calculate Nepal income tax for FY 2081/82 with slab-by-slab breakdown. Updated rates for single & married taxpayers. Free online Nepal tax calculator.',
+  faqs: [
+    { question: 'What are Nepal\'s income tax slabs for FY 2081/82?', answer: 'Single: 1% up to Rs 5L, 10% on 5-7L, 20% on 7-20L, 30% on 20-40L, 36% above 40L. Married: 1% up to Rs 6L, 10% on 6-8L, 20% on 8-20L, 30% on 20-40L, 36% above 40L.' },
+    { question: 'What is the social security surtax in Nepal?', answer: 'An additional 1% social security surtax is levied on the portion of taxable income that exceeds Rs 20,00,000 (Rs 20 lakh). This is on top of the regular income tax.' },
+    { question: 'How do I reduce my taxable income in Nepal?', answer: 'Approved deductions include: PF/CIT/SSF contributions, life insurance premiums (up to Rs 40,000), medical insurance premiums, and contributions to approved organisations. These reduce your taxable income before the slabs are applied.' },
+    { question: 'Does Nepal have advance tax (TDS)?', answer: 'Yes. Employers deduct TDS (Tax Deducted at Source) from salaries each month based on estimated annual tax. Individuals earning from other sources may need to pay advance tax quarterly.' },
+    { question: 'Is the tax year the same as the calendar year in Nepal?', answer: 'No. Nepal\'s fiscal year runs from Shrawan 1 to Ashad End (approximately mid-July to mid-July). FY 2081/82 = approximately July 2024 – July 2025.' },
+  ],
+  howToSteps: [
+    'Enter your annual taxable income (or monthly salary × 12 if salaried).',
+    'Select marital status to apply the correct tax-free threshold.',
+    'The calculator shows tax for each slab, total annual tax, and effective tax rate.',
+    'Use the deductions section to subtract PF/CIT/SSF and insurance premiums.',
+    'View monthly TDS amount (annual tax ÷ 12) at the bottom.',
+  ],
+  relatedToolSlugs: ['nepal-salary-calculator', 'nepal-salary-tax-calculator', 'epf-calculator', 'income-tax-calculator'],
+  icon: 'Receipt',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── NEPAL SALARY CALCULATOR (detailed version) ───────────────────────────
+tools.push({
+  slug: 'nepal-salary-calculator',
+  name: 'Nepal Salary Calculator',
+  shortDescription: 'Calculate Nepal net salary with PF, CIT, SSF deductions and FY 2081/82 tax slabs including grade & dearness allowance.',
+  longDescription: `<p>Calculate your exact take-home salary in Nepal for FY 2081/82 (2024/25). Enter your basic salary, grade allowance, dearness allowance, and other allowances, then choose your deduction scheme — PF, CIT, or SSF — and instantly see your net pay and full tax slab breakdown.</p>
+<h2>Nepal Tax Slabs FY 2081/82</h2>
+<p>Single: 1% up to Rs 5L, 10% on 5-7L, 20% on 7-20L, 30% on 20-40L, 36% above 40L. Married: 1% up to Rs 6L, 10% on 6-8L, 20% on 8-20L, 30% on 20-40L, 36% above 40L. Additional 1% social security surtax applies above Rs 20L.</p>
+<h2>Deduction Options</h2>
+<p>PF: Employee contributes 10% of basic; CIT: Employee contributes 10% of basic (optional but common); SSF: Employee contributes 11% of gross (alternative to PF+CIT). All employee contributions are deductible from taxable income.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal salary calculator',
+  secondaryKeywords: ['nepal salary calculator 2081 82', 'nepal take home salary calculator', 'nepal PF CIT calculator', 'nepal SSF salary calculator', 'nepali salary tax calculator', 'nepal gross to net salary', 'salary calculator nepal 2024'],
+  metaTitle: 'Nepal Salary Calculator 2081/82 — Net Pay & Tax Breakdown',
+  metaDescription: 'Calculate Nepal net salary with PF, CIT, SSF and income tax for FY 2081/82. Enter basic + allowances for full monthly/annual breakdown. Free Nepal payroll tool.',
+  faqs: [
+    { question: 'What is the Nepal income tax rate for 2081/82?', answer: 'For single individuals: 1% up to Rs 5L, 10% on 5-7L, 20% on 7-20L, 30% on 20-40L, 36% above 40L. Married taxpayers get Rs 1L extra exemption. Additional 1% surtax on income above Rs 20L.' },
+    { question: 'What are grade allowance and dearness allowance?', answer: 'Grade Allowance (श्रेणी भत्ता) is an increment added to basic salary based on position/grade. Dearness Allowance (महँगी भत्ता) is a cost-of-living adjustment. Both are part of gross salary.' },
+    { question: 'What is the difference between PF and CIT?', answer: 'PF (Provident Fund) and CIT (Citizens Investment Trust) are both retirement savings schemes. Both require 10% employee contribution + 10% employer contribution of basic salary. PF is managed by government; CIT is a separate fund.' },
+    { question: 'Can I choose between PF and CIT?', answer: 'Most government employees are under PF. Private sector employees may be in PF or CIT. SSF (Social Security Fund) is a newer scheme for private sector. You can only be in one scheme at a time.' },
+    { question: 'Is SSF better than PF+CIT?', answer: 'SSF provides more comprehensive benefits including health insurance and accident coverage. Employees contribute 11% of gross (vs 10% of basic for PF/CIT), but the employer contributes 20% of gross under SSF.' },
+  ],
+  howToSteps: [
+    'Enter your basic salary, grade allowance, dearness allowance, and other allowances.',
+    'Select deduction type: PF, CIT, or SSF.',
+    'Choose marital status for the correct tax-free threshold.',
+    'View monthly and annual net salary with full breakdown.',
+    'See the tax slab table showing how much tax falls in each bracket.',
+  ],
+  relatedToolSlugs: ['nepal-salary-tax-calculator', 'epf-calculator', 'income-tax-calculator', 'emi-calculator', 'nepal-land-converter'],
+  icon: 'Wallet',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── NEPAL LAND CONVERTER ─────────────────────────────────────────────────
+tools.push({
+  slug: 'nepal-land-converter',
+  name: 'Nepal Land Measurement Converter',
+  shortDescription: 'Convert between Nepal land units — Ropani, Aana, Paisa, Dam, Bigha, Kattha, Dhur and square feet/meters.',
+  longDescription: `<p>Nepal uses two completely unique land measurement systems that no global converter supports. This tool is built specifically for Nepali land units — whether you're buying property in Kathmandu, registering land in the Terai, or checking land area for legal documents.</p>
+<h2>Hilly Region (Pahad) Units</h2>
+<p>The Ropani system is used in hilly districts including Kathmandu Valley, Pokhara, and hill districts. 1 Ropani = 16 Aana = 64 Paisa = 256 Dam = 5,476 sq ft = 508.72 sq meters.</p>
+<h2>Terai Region Units</h2>
+<p>The Bigha system is used in the Terai (plains) districts. 1 Bigha = 20 Kattha = 400 Dhur = 72,900 sq ft = 6,772.63 sq meters.</p>
+<h2>How to Use</h2>
+<p>Simply type a value in any field — Ropani, Aana, Paisa, Dam, Bigha, Kattha, Dhur, Square Feet, Square Meters, Acres, or Hectares — and all other fields update instantly. The tool also includes a quick reference table for common conversions.</p>
+<h2>Why This Tool?</h2>
+<p>When registering land in Nepal, government documents use these local units. Property listings use mixed units. This tool lets you instantly cross-check any quoted area in any unit, saving time and avoiding costly mistakes.</p>`,
+  category: 'converters',
+  targetKeyword: 'nepal land measurement converter',
+  secondaryKeywords: ['ropani to sqft', 'aana to sqft nepal', 'bigha to sqft nepal', 'ropani aana paisa dam calculator', 'kattha to sqft', 'dhur to sqft', 'nepal land unit converter', 'ropani in square feet', 'bigha in square feet nepal', 'nepal land area calculator'],
+  metaTitle: 'Nepal Land Converter - Ropani Aana Bigha to Sq Ft/Meter',
+  metaDescription: 'Convert Nepal land units instantly: Ropani, Aana, Paisa, Dam (Pahad) ↔ Bigha, Kattha, Dhur (Terai) ↔ Sq Ft, Sq Meter, Acres. Free Nepal land calculator.',
+  faqs: [
+    { question: 'How many square feet in 1 Ropani?', answer: '1 Ropani = 5,476 square feet = 508.72 square meters. It is further divided into 16 Aana.' },
+    { question: 'How many square feet in 1 Aana?', answer: '1 Aana = 342.25 square feet = 31.80 square meters. There are 4 Paisa in 1 Aana.' },
+    { question: 'What is the difference between Ropani and Bigha?', answer: 'Ropani (and Aana/Paisa/Dam) is used in hilly/mountain districts of Nepal (Kathmandu, Pokhara). Bigha (and Kattha/Dhur) is used in Terai (plains) districts. 1 Bigha = 13.31 Ropani approximately.' },
+    { question: 'How many Kattha in 1 Bigha?', answer: '1 Bigha = 20 Kattha = 400 Dhur = 72,900 sq ft = 6,772.63 sq meters.' },
+    { question: 'How many square meters in 1 Ropani?', answer: '1 Ropani = 508.72 square meters = 0.05087 hectares.' },
+    { question: 'How many Dhur in 1 Kattha?', answer: '1 Kattha = 20 Dhur = 3,645 sq ft = 338.63 sq meters.' },
+  ],
+  howToSteps: [
+    'Type a value in any field — Ropani, Aana, Paisa, Dam, Bigha, Kattha, Dhur, Sq Ft, Sq Meter, Acre, or Hectare.',
+    'All other fields update instantly with the converted values.',
+    'Use the copy button next to any result to copy it.',
+    'Refer to the quick reference tables at the bottom for standard conversions.',
+    'Click "Clear all" to reset and start a new conversion.',
+  ],
+  relatedToolSlugs: ['unit-converter', 'nepali-date-converter', 'nepal-salary-tax-calculator', 'percentage-calculator'],
+  icon: 'Map',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── NEPAL SALARY & TAX CALCULATOR ───────────────────────────────────────────
+tools.push({
+  slug: 'nepal-salary-tax-calculator',
+  name: 'Nepal Salary & Tax Calculator',
+  shortDescription: 'Calculate net take-home salary in Nepal with PF, CIT, SSF deductions and income tax slabs for FY 2081/82.',
+  longDescription: `<p>Nepal's payroll system is unique — employees have mandatory deductions for Provident Fund (PF), Citizens Investment Trust (CIT), or Social Security Fund (SSF), plus income tax based on Nepal's own tax slabs. This calculator handles all of it accurately for FY 2081/82 (2024/25).</p>
+<h2>Nepal Tax Slabs FY 2081/82</h2>
+<p>For unmarried individuals: 0% up to Rs. 5,00,000; 10% on next Rs. 2,00,000; 20% on next Rs. 3,00,000; 30% on next Rs. 13,00,000; 36% above that. Married couples get an extra Rs. 1,00,000 tax-free threshold.</p>
+<h2>PF + CIT vs SSF</h2>
+<p>Most government and large company employees contribute to PF (10% of basic) + CIT (10% of basic). Newer employees may be under SSF (11% of gross), with employers contributing 20% under SSF. Both employee contributions are tax-deductible.</p>
+<h2>Employer Contributions</h2>
+<p>Under PF+CIT: employer also contributes 10%+10% of basic (not deducted from your salary — extra cost to employer). Under SSF: employer contributes 20% of gross salary.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal salary tax calculator',
+  secondaryKeywords: ['nepal income tax calculator 2081 82', 'PF CIT calculator nepal', 'SSF calculator nepal', 'net salary calculator nepal', 'take home salary nepal', 'nepal payroll calculator', 'nepal tax slab 2081', 'nepali salary calculator', 'nepal income tax 2024 25'],
+  metaTitle: 'Nepal Salary & Tax Calculator 2081/82 — PF, CIT, SSF',
+  metaDescription: 'Calculate Nepal net salary with PF, CIT & SSF deductions + income tax slabs FY 2081/82. Monthly/annual breakdown. Free Nepal payroll calculator.',
+  faqs: [
+    { question: 'What is PF in Nepal salary?', answer: 'Provident Fund (PF) requires employees to contribute 10% of their basic salary each month. The employer also contributes 10% of basic. Employee PF is deductible for income tax purposes.' },
+    { question: 'What is CIT in Nepal?', answer: 'Citizens Investment Trust (CIT) is a government fund where employees contribute 10% of basic salary (employer matches 10%). Similar to PF, the employee\'s contribution is tax-deductible.' },
+    { question: 'What is SSF in Nepal?', answer: 'Social Security Fund (SSF) is an alternative to PF+CIT. Employee contributes 11% of gross salary; employer contributes 20%. SSF provides more social security benefits.' },
+    { question: 'What is the income tax rate in Nepal for 2081/82?', answer: 'For unmarried individuals: 0% up to Rs 5L, 10% on Rs 5-7L, 20% on Rs 7-10L, 30% on Rs 10-23L, 36% above Rs 23L. Married individuals get Rs 6L tax-free threshold.' },
+    { question: 'How is basic salary determined in Nepal?', answer: 'Basic salary is typically 50-60% of gross salary. The percentage is set by the employer. PF, CIT, and other deductions are calculated as a % of basic.' },
+  ],
+  howToSteps: [
+    'Enter your gross monthly salary in Rupees.',
+    'Set the basic salary percentage (typically 60%).',
+    'Select marital status — married individuals get a higher tax-free threshold.',
+    'Choose your deduction scheme: PF+CIT (most common) or SSF.',
+    'View the full monthly and annual salary breakdown with each deduction and tax slab.',
+  ],
+  relatedToolSlugs: ['epf-calculator', 'income-tax-calculator', 'emi-calculator', 'gratuity-calculator', 'nepal-land-converter'],
+  icon: 'Calculator',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── NEPSE BONUS & RIGHTS CALCULATOR ─────────────────────────────────────────
+tools.push({
+  slug: 'nepse-bonus-calculator',
+  name: 'NEPSE Bonus & Rights Share Calculator',
+  shortDescription: 'Calculate adjusted price after NEPSE bonus share, TERP for rights issue, and dividend yield with tax.',
+  longDescription: `<p>Nepal's stock market (NEPSE) has over 5 million registered investors who need accurate calculations when companies announce bonus shares, rights issues, or cash dividends. This tool provides three calculators in one.</p>
+<h2>Bonus Share Calculator</h2>
+<p>When a company announces bonus shares (e.g., 20%), the market price adjusts downward. Enter your current price, shares held, and bonus %, and the tool calculates the exact adjusted (ex-bonus) price and your new total shares. It also shows the 5% tax on bonus shares (at face value Rs. 100).</p>
+<h2>Rights Share Calculator</h2>
+<p>Rights issues let existing shareholders buy additional shares at a set price. The Theoretical Ex-Rights Price (TERP) shows the expected market price after the rights issue. Enter current price, shares held, rights %, and issue price to get TERP and the cost to subscribe.</p>
+<h2>Cash Dividend Calculator</h2>
+<p>Calculate dividend per share and dividend yield based on the announced dividend % and current market price. Shows 5% TDS deducted at source and net dividend per share.</p>`,
+  category: 'calculators',
+  targetKeyword: 'NEPSE bonus share calculator',
+  secondaryKeywords: ['nepse bonus share adjusted price', 'nepse rights share calculator', 'TERP calculator nepal', 'bonus share adjusted price calculator nepal', 'nepse dividend yield calculator', 'nepse bonus rights calculator', 'share adjusted price nepal', 'bonus share tax nepal', 'rights share nepal calculator'],
+  metaTitle: 'NEPSE Bonus & Rights Share Calculator — Adjusted Price',
+  metaDescription: 'Calculate NEPSE bonus share adjusted price, rights share TERP & cost, and dividend yield with 5% tax. Free Nepal stock calculator for investors.',
+  faqs: [
+    { question: 'What is a bonus share in Nepal?', answer: 'Bonus shares are additional free shares given to existing shareholders from the company\'s retained earnings or share premium. They don\'t cost money but the market price adjusts proportionally downward.' },
+    { question: 'How is adjusted price calculated after bonus?', answer: 'Adjusted Price = (Market Price × Old Shares) ÷ (Old Shares + Bonus Shares). For example, if price is Rs 500 and 20% bonus is announced: Rs 500 ÷ 1.20 = Rs 416.67.' },
+    { question: 'What is TERP for rights share?', answer: 'TERP (Theoretical Ex-Rights Price) is the expected share price after a rights issue. Formula: (Market Price × Old Shares + Issue Price × Rights Shares) ÷ Total Shares.' },
+    { question: 'Is there tax on bonus shares in Nepal?', answer: 'Yes. A 5% capital gains tax is levied on the face value (Rs. 100) of each bonus share received. So for 10 bonus shares, you pay 5% × Rs. 100 × 10 = Rs. 50 tax.' },
+    { question: 'What is dividend yield?', answer: 'Dividend yield = (Dividend per Share ÷ Market Price) × 100. In Nepal, cash dividend is declared as % of face value (Rs. 100). A 5% TDS is withheld from cash dividends.' },
+  ],
+  howToSteps: [
+    'Select a tab: Bonus Share, Rights Share, or Cash Dividend.',
+    'For Bonus Share: enter current market price, shares held, and bonus % announced.',
+    'View the adjusted price, new bonus shares, total shares after, and tax on bonus.',
+    'For Rights Share: enter price, shares, rights %, and issue price to get TERP.',
+    'For Dividend: enter dividend % and market price to get yield and net dividend after TDS.',
+  ],
+  relatedToolSlugs: ['nepse-calculator', 'sip-calculator', 'compound-interest-calculator', 'percentage-calculator', 'nepal-salary-tax-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── SHREE LIPI TO UNICODE CONVERTER ──────────────────────────────────────────
+tools.push({
+  slug: 'shree-lipi-to-unicode',
+  name: 'Shree Lipi to Unicode Converter',
+  shortDescription: 'Convert Shree Lipi encoded Nepali text to Unicode Devanagari, and vice versa. Supports Shree Lipi 7.',
+  longDescription: `<p>Shree Lipi is one of the most widely used legacy Nepali fonts, alongside Preeti. Government offices, newspapers, and businesses across Nepal have years of documents typed in Shree Lipi encoding. This tool converts Shree Lipi text to proper Unicode Devanagari, making old documents searchable, copyable, and web-compatible.</p>
+<h2>Why Convert from Shree Lipi to Unicode?</h2>
+<p>Shree Lipi is a font-based encoding — the text appears Nepali on screen but is stored as random ASCII characters. When you copy-paste Shree Lipi text into email, web pages, or databases, it appears as gibberish. Unicode Devanagari is the international standard and works everywhere.</p>
+<h2>Bidirectional Conversion</h2>
+<p>This tool supports both directions — Shree Lipi to Unicode AND Unicode to Shree Lipi. This is useful when you need to create content for legacy systems that still use Shree Lipi fonts.</p>
+<h2>What's Supported</h2>
+<p>All standalone vowels (अ आ इ ई उ ऊ ए ऐ ओ औ), consonants (क to ह), matras (vowel signs like ा ि ी ु ू), anusvara (ं), visarga (ः), chandrabindu (ँ), halant (्), and Nepali numerals (०–९) are fully converted. Complex conjunct consonants may need manual review.</p>`,
+  category: 'text-tools',
+  targetKeyword: 'shree lipi to unicode converter',
+  secondaryKeywords: ['shree lipi unicode converter online', 'convert shree lipi to unicode', 'shreelipito unicode', 'unicode to shree lipi', 'nepali font converter shree lipi', 'shree lipi 7 converter', 'legacy nepali font converter', 'shree lipi devanagari converter'],
+  metaTitle: 'Shree Lipi to Unicode Converter — Free Nepali Font Tool',
+  metaDescription: 'Convert Shree Lipi legacy Nepali font to Unicode Devanagari instantly. Supports Shree Lipi 7, bidirectional conversion. Free online tool — no install needed.',
+  faqs: [
+    { question: 'What is Shree Lipi?', answer: 'Shree Lipi is a legacy Nepali font encoding system widely used in Nepal before Unicode. It maps ASCII keyboard characters to Devanagari glyphs, so the text is stored as ASCII but displayed as Nepali when the Shree Lipi font is installed.' },
+    { question: 'Why do I need to convert Shree Lipi to Unicode?', answer: 'Shree Lipi text doesn\'t work on websites, email, or modern apps without the specific font. Unicode Devanagari works everywhere — search engines can index it, screen readers can read it, and it displays correctly on all devices.' },
+    { question: 'What version of Shree Lipi is supported?', answer: 'This tool supports Shree Lipi 7, which is the most common version. Core characters including all vowels, consonants, matras, and Nepali numerals are fully supported.' },
+    { question: 'Are complex conjunct consonants supported?', answer: 'Basic conjuncts formed with halant (्) are supported. Very complex multi-consonant conjuncts may need manual correction, as the encoding varies across different Shree Lipi versions.' },
+    { question: 'Can I convert Unicode back to Shree Lipi?', answer: 'Yes! Click the "Unicode → Shree Lipi" tab to reverse-convert. This is useful when you need to generate content for legacy systems that still use Shree Lipi fonts.' },
+  ],
+  howToSteps: [
+    'Select the conversion direction: "Shree Lipi → Unicode" or "Unicode → Shree Lipi".',
+    'Paste your text in the left panel, or click "Paste from Clipboard".',
+    'The converted text appears instantly in the right panel.',
+    'Click "Copy All" to copy the output, or "Download .txt" to save it.',
+    'Use "Swap & Reverse" to flip the direction and re-convert the output.',
+  ],
+  relatedToolSlugs: ['preeti-to-unicode', 'nepali-typing', 'nepali-date-converter', 'case-converter'],
+  icon: 'Type',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {

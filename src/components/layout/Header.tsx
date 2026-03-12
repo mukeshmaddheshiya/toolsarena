@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
-import { Zap, Menu, Search } from 'lucide-react';
+import { Zap, Menu, Search, BookOpen } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { ThemeToggle } from '@/components/common/ThemeToggle';
@@ -50,6 +50,13 @@ export function Header() {
                   {t(cat.nameKey)}
                 </Link>
               ))}
+              <Link
+                href="/guides"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-slate-600 dark:text-slate-400 hover:text-primary-700 dark:hover:text-primary-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors font-medium"
+              >
+                <BookOpen className="w-3.5 h-3.5" aria-hidden />
+                Guides
+              </Link>
             </nav>
 
             {/* Search */}

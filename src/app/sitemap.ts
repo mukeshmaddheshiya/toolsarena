@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { tools } from '@/lib/tools-registry';
+import { getAllGuides } from '@/lib/guides-registry';
 import type { ToolCategory } from '@/types/tools';
 import { SITE_URL as BASE_URL } from '@/lib/constants';
 import { locales, defaultLocale } from '@/i18n/config';
@@ -53,6 +54,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}${path}`,
       lastModified: lastUpdated,
       changeFrequency: 'monthly',
+      priority: 0.8,
+      alternates: getAlternates(path),
+    });
+  }
+
+  // Guide pages
+  entries.push({
+    url: `${BASE_URL}/guides`,
+    lastModified: lastUpdated,
+    changeFrequency: 'weekly',
+    priority: 0.8,
+    alternates: getAlternates('/guides'),
+  });
+
+  for (const guide of getAllGuides()) {
+    const path = `/guides/${guide.slug}`;
+    entries.push({
+      url: `${BASE_URL}${path}`,
+      lastModified: new Date(guide.lastUpdated),
+      changeFrequency: 'weekly',
       priority: 0.8,
       alternates: getAlternates(path),
     });

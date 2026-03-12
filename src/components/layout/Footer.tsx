@@ -3,19 +3,21 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { tools, categories } from '@/lib/tools-registry';
 import { CATEGORY_NAME_KEYS } from '@/lib/constants';
+import { getAllGuides } from '@/lib/guides-registry';
 import type { ToolCategory } from '@/types/tools';
 
 const FOOTER_CATEGORIES: ToolCategory[] = ['image-tools', 'pdf-tools', 'text-tools', 'calculators', 'developer-tools', 'converters'];
 
 export function Footer() {
   const t = useTranslations();
+  const footerGuides = getAllGuides().slice(0, 5);
 
   return (
     <footer className="bg-slate-900 text-slate-300 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-8">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-1">
+          <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 font-heading font-bold text-xl text-white mb-3">
               <span className="w-8 h-8 bg-gradient-to-br from-blue-800 to-blue-500 rounded-lg flex items-center justify-center">
                 <Zap className="w-5 h-5 text-amber-400" fill="currentColor" />
@@ -49,6 +51,27 @@ export function Footer() {
             <p className="text-xs text-slate-400 mt-3">{t('footer.madeInIndia')}</p>
           </div>
 
+          {/* Guides column */}
+          <div>
+            <Link href="/guides" className="font-semibold text-white text-sm mb-3 block hover:text-primary-400 transition-colors">
+              Guides & Tutorials
+            </Link>
+            <ul className="space-y-2">
+              {footerGuides.map(guide => (
+                <li key={guide.slug}>
+                  <Link href={`/guides/${guide.slug}`} className="text-xs text-slate-300 hover:text-slate-100 transition-colors">
+                    {guide.title.split(':')[0]}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/guides" className="text-xs text-primary-400 hover:text-primary-300 transition-colors font-medium">
+                  View all guides →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Category links */}
           {FOOTER_CATEGORIES.map(catKey => {
             const cat = categories[catKey];
@@ -78,6 +101,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} ToolsArena. {t('footer.allRightsReserved')}
           </p>
           <nav aria-label="Footer" className="flex items-center gap-6 text-xs text-slate-300">
+            <Link href="/guides" className="hover:text-slate-200 transition-colors">Guides</Link>
             <Link href="/about" className="hover:text-slate-200 transition-colors">{t('common.about')}</Link>
             <Link href="/privacy-policy" className="hover:text-slate-200 transition-colors">{t('common.privacyPolicy')}</Link>
             <Link href="/terms" className="hover:text-slate-200 transition-colors">{t('common.termsOfService')}</Link>

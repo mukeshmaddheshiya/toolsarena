@@ -1,5 +1,5 @@
 'use client';
-import { X, Zap } from 'lucide-react';
+import { X, Zap, BookOpen } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { NAV_CATEGORIES } from '@/lib/constants';
@@ -49,6 +49,14 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
                 {t(cat.nameKey)}
               </Link>
             ))}
+            <Link
+              href="/guides"
+              onClick={onClose}
+              className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:text-primary-700 dark:hover:text-primary-400 transition-colors font-medium"
+            >
+              <BookOpen className="w-4 h-4" aria-hidden />
+              Guides & Tutorials
+            </Link>
           </div>
           <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-800 space-y-1">
             <Link href="/about" onClick={onClose} className="block px-3 py-2 text-sm text-slate-600 dark:text-slate-400 hover:text-primary-700 dark:hover:text-primary-400 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">{t('common.about')}</Link>
