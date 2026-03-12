@@ -6633,9 +6633,10 @@ tools.push({
     'Use the deductions section to subtract PF/CIT/SSF and insurance premiums.',
     'View monthly TDS amount (annual tax ÷ 12) at the bottom.',
   ],
-  relatedToolSlugs: ['nepal-salary-calculator', 'nepal-salary-tax-calculator', 'epf-calculator', 'income-tax-calculator'],
+  relatedToolSlugs: ['nepal-salary-calculator', 'nepal-salary-tax-calculator', 'nepal-land-converter', 'nepse-calculator', 'emi-calculator'],
   icon: 'Receipt',
   isNew: true,
+  isPopular: true,
   estimatedTime: 'Instant',
 });
 
@@ -6668,7 +6669,7 @@ tools.push({
     'View monthly and annual net salary with full breakdown.',
     'See the tax slab table showing how much tax falls in each bracket.',
   ],
-  relatedToolSlugs: ['nepal-salary-tax-calculator', 'epf-calculator', 'income-tax-calculator', 'emi-calculator', 'nepal-land-converter'],
+  relatedToolSlugs: ['nepal-salary-tax-calculator', 'nepal-income-tax-calculator', 'nepse-calculator', 'emi-calculator', 'nepal-land-converter'],
   icon: 'Wallet',
   isNew: true,
   estimatedTime: 'Instant',
@@ -6711,6 +6712,7 @@ tools.push({
   relatedToolSlugs: ['unit-converter', 'nepali-date-converter', 'nepal-salary-tax-calculator', 'percentage-calculator'],
   icon: 'Map',
   isNew: true,
+  isPopular: true,
   estimatedTime: 'Instant',
 });
 
@@ -6721,7 +6723,7 @@ tools.push({
   shortDescription: 'Calculate net take-home salary in Nepal with PF, CIT, SSF deductions and income tax slabs for FY 2081/82.',
   longDescription: `<p>Nepal's payroll system is unique — employees have mandatory deductions for Provident Fund (PF), Citizens Investment Trust (CIT), or Social Security Fund (SSF), plus income tax based on Nepal's own tax slabs. This calculator handles all of it accurately for FY 2081/82 (2024/25).</p>
 <h2>Nepal Tax Slabs FY 2081/82</h2>
-<p>For unmarried individuals: 0% up to Rs. 5,00,000; 10% on next Rs. 2,00,000; 20% on next Rs. 3,00,000; 30% on next Rs. 13,00,000; 36% above that. Married couples get an extra Rs. 1,00,000 tax-free threshold.</p>
+<p>For unmarried individuals: 1% up to Rs. 5,00,000; 10% on next Rs. 2,00,000 (up to Rs. 7L); 20% on next Rs. 13,00,000 (up to Rs. 20L); 30% on next Rs. 20,00,000 (up to Rs. 40L); 36% above Rs. 40,00,000. Married couples get an extra Rs. 1,00,000 tax-free threshold (exempt up to Rs. 6L).</p>
 <h2>PF + CIT vs SSF</h2>
 <p>Most government and large company employees contribute to PF (10% of basic) + CIT (10% of basic). Newer employees may be under SSF (11% of gross), with employers contributing 20% under SSF. Both employee contributions are tax-deductible.</p>
 <h2>Employer Contributions</h2>
@@ -6735,7 +6737,7 @@ tools.push({
     { question: 'What is PF in Nepal salary?', answer: 'Provident Fund (PF) requires employees to contribute 10% of their basic salary each month. The employer also contributes 10% of basic. Employee PF is deductible for income tax purposes.' },
     { question: 'What is CIT in Nepal?', answer: 'Citizens Investment Trust (CIT) is a government fund where employees contribute 10% of basic salary (employer matches 10%). Similar to PF, the employee\'s contribution is tax-deductible.' },
     { question: 'What is SSF in Nepal?', answer: 'Social Security Fund (SSF) is an alternative to PF+CIT. Employee contributes 11% of gross salary; employer contributes 20%. SSF provides more social security benefits.' },
-    { question: 'What is the income tax rate in Nepal for 2081/82?', answer: 'For unmarried individuals: 0% up to Rs 5L, 10% on Rs 5-7L, 20% on Rs 7-10L, 30% on Rs 10-23L, 36% above Rs 23L. Married individuals get Rs 6L tax-free threshold.' },
+    { question: 'What is the income tax rate in Nepal for 2081/82?', answer: 'For unmarried individuals: 1% up to Rs 5L, 10% on Rs 5–7L, 20% on Rs 7–20L, 30% on Rs 20–40L, 36% above Rs 40L. Married individuals get Rs 6L tax-free threshold (1% up to Rs 6L).' },
     { question: 'How is basic salary determined in Nepal?', answer: 'Basic salary is typically 50-60% of gross salary. The percentage is set by the employer. PF, CIT, and other deductions are calculated as a % of basic.' },
   ],
   howToSteps: [
@@ -6745,7 +6747,7 @@ tools.push({
     'Choose your deduction scheme: PF+CIT (most common) or SSF.',
     'View the full monthly and annual salary breakdown with each deduction and tax slab.',
   ],
-  relatedToolSlugs: ['epf-calculator', 'income-tax-calculator', 'emi-calculator', 'gratuity-calculator', 'nepal-land-converter'],
+  relatedToolSlugs: ['nepal-salary-calculator', 'nepal-income-tax-calculator', 'emi-calculator', 'nepse-calculator', 'nepal-land-converter'],
   icon: 'Calculator',
   isNew: true,
   estimatedTime: 'Instant',
@@ -6785,6 +6787,7 @@ tools.push({
   relatedToolSlugs: ['nepse-calculator', 'sip-calculator', 'compound-interest-calculator', 'percentage-calculator', 'nepal-salary-tax-calculator'],
   icon: 'TrendingUp',
   isNew: true,
+  isPopular: true,
   estimatedTime: 'Instant',
 });
 
