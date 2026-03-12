@@ -21,7 +21,7 @@ function getAlternates(path: string) {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
-  const lastUpdated = new Date('2026-03-08');
+  const lastUpdated = new Date();
 
   // Static pages
   const staticPages = ['', '/about', '/privacy-policy', '/terms', '/contact'];
