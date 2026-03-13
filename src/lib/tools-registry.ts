@@ -9447,27 +9447,53 @@ export function getNewTools(limit = 6): Tool[] {
 export function searchTools(query: string): Tool[] {
   const q = query.toLowerCase().trim();
   if (!q) return tools;
-  // Word-boundary match: "ipl" matches "ipl squad" but not "multiple"
-  const wordMatch = (text: string) =>
-    new RegExp(`(^|\\s|-)${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i').test(text);
 
-  // Tier 1: name or slug starts with / contains query as a word, or targetKeyword word-matches
-  const tier1 = tools.filter(t =>
-    t.name.toLowerCase().includes(q) ||
-    t.slug.includes(q) ||
-    wordMatch(t.targetKeyword)
-  );
-  const seen = new Set(tier1.map(t => t.slug));
+  // Split multi-word queries into tokens for better matching
+  const tokens = q.split(/\s+/).filter(Boolean);
+  const isSingleToken = tokens.length === 1;
 
-  // Tier 2: secondary keywords or category word-match
-  const tier2 = tools.filter(t =>
+  // Word-boundary match for a single term
+  const wordMatch = (text: string, term: string) =>
+    new RegExp(`(^|\\s|-)${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i').test(text);
+
+  // All tokens must match somewhere in the tool's searchable text
+  const allTokensMatch = (t: Tool) => {
+    const searchable = [
+      t.name, t.slug, t.targetKeyword,
+      ...t.secondaryKeywords, t.category, t.shortDescription,
+    ].join(' ').toLowerCase();
+    return tokens.every(tok => searchable.includes(tok));
+  };
+
+  // Tier 0: name starts with query, or slug word-boundary match (highest priority)
+  const tier0 = tools.filter(t => {
+    const name = t.name.toLowerCase();
+    return name.startsWith(q) || wordMatch(name, isSingleToken ? q : tokens[0]) && tokens.every(tok => name.includes(tok));
+  });
+  const seen0 = new Set(tier0.map(t => t.slug));
+
+  // Tier 1: exact phrase in name/slug, or targetKeyword matches all tokens
+  const tier1 = tools.filter(t => {
+    if (seen0.has(t.slug)) return false;
+    const name = t.name.toLowerCase();
+    const slug = t.slug;
+    if (isSingleToken) {
+      return name.includes(q) || slug.includes(q) || wordMatch(t.targetKeyword, q);
+    }
+    // Multi-word: name/slug contains full phrase, OR all tokens found across searchable fields
+    return name.includes(q) || slug.includes(q.replace(/\s+/g, '-')) || allTokensMatch(t);
+  });
+  const seen = new Set([...seen0, ...tier1.map(t => t.slug)]);
+
+  // Tier 2: secondary keywords or category match (single token only)
+  const tier2 = isSingleToken ? tools.filter(t =>
     !seen.has(t.slug) && (
-      t.secondaryKeywords.some(kw => wordMatch(kw)) ||
-      wordMatch(t.category)
+      t.secondaryKeywords.some(kw => wordMatch(kw, q)) ||
+      wordMatch(t.category, q)
     )
-  );
+  ) : [];
 
-  return [...tier1, ...tier2];
+  return [...tier0, ...tier1, ...tier2];
 }
 
 export function getRelatedTools(slug: string, limit = 6): Tool[] {
