@@ -6828,6 +6828,954 @@ tools.push({
   estimatedTime: 'Instant',
 });
 
+tools.push({
+  slug: 'neb-see-grade-calculator',
+  name: 'NEB/SEE Grade Calculator',
+  shortDescription: 'Convert marks to NEB/SEE grades and GPA. Calculate overall GPA for Grade 10 SEE and Grade 11/12 NEB exams.',
+  longDescription: `<p>The <strong>NEB/SEE Grade Calculator</strong> instantly converts your raw marks (0–100) into the official NEB grade letter and GPA for Nepal's national examinations. Whether you're a SEE (Grade 10) student or appearing in NEB (Grade 11/12), this tool gives you accurate results without any guesswork.</p>
+<h2>How the NEB Grading System Works</h2>
+<p>Nepal's National Examinations Board (NEB) uses a GPA-based grading system. Marks are converted to grades as follows: 90–100 = A+ (4.0 GPA), 80–89 = A (3.6), 70–79 = B+ (3.2), 60–69 = B (2.8), 50–59 = C+ (2.4), 40–49 = C (2.0), 30–39 = D (1.6), and below 30 = NG (Not Graded).</p>
+<h2>Features</h2>
+<p>Enter marks for up to 8 subjects. The calculator instantly shows the grade and GPA for each subject, computes your overall GPA as the average across all subjects, and tells you whether you are Promoted, Pass with Supplement, or Not Promoted. A full grade reference table is included below the calculator.</p>
+<h2>SEE vs NEB</h2>
+<p>The Secondary Education Examination (SEE) is taken at Grade 10, while NEB examinations cover Grades 11 and 12. Both use the same A+ to NG grading scale, making this calculator useful for all levels.</p>`,
+  category: 'calculators',
+  targetKeyword: 'NEB SEE grade calculator Nepal',
+  secondaryKeywords: ['SEE result grade calculator', 'NEB GPA calculator', 'SEE GPA calculator nepal', 'convert marks to grade nepal', 'NEB grading system'],
+  metaTitle: 'NEB/SEE Grade Calculator — Convert Marks to Grade & GPA',
+  metaDescription: 'Free NEB/SEE Grade Calculator for Nepal. Convert marks to A+/A/B+/B/C+/C/D/NG grades and GPA. Calculate overall GPA for up to 8 subjects instantly.',
+  faqs: [
+    { question: 'What marks are needed to get A+ in NEB?', answer: 'You need 90 or above (out of 100) to achieve an A+ grade with a 4.0 GPA in the NEB grading system.' },
+    { question: 'What is the minimum passing marks in SEE?', answer: 'You need at least 35 marks (Grade D, 1.6 GPA) to pass a subject. Getting NG (below 30) in any subject means you are Not Promoted.' },
+    { question: 'How is overall GPA calculated in NEB?', answer: 'Overall GPA is the average of GPA points across all subjects. For example, if you have 4.0, 3.6, and 3.2 in three subjects, your overall GPA is (4.0+3.6+3.2)/3 = 3.6.' },
+    { question: 'What does NG mean in NEB result?', answer: 'NG stands for Not Graded. It is assigned when a student scores below 30 marks. Getting NG in any subject means the student is Not Promoted.' },
+    { question: 'Can I use this for Grade 11 and 12 NEB results?', answer: 'Yes, NEB uses the same grading scale for both SEE (Grade 10) and Grade 11/12 examinations.' },
+  ],
+  howToSteps: [
+    'Enter your subject names and marks (0–100) for each subject.',
+    'Grades and GPA are calculated instantly as you type.',
+    'Add up to 8 subjects using the "Add Subject" button.',
+    'View your overall GPA and promotion status at the top.',
+    'Check the grade reference table for the complete NEB grading scale.',
+  ],
+  relatedToolSlugs: ['gpa-calculator', 'cgpa-to-percentage', 'percentage-calculator', 'nepal-loksewa-age-calculator'],
+  icon: 'GraduationCap',
+  isNew: true,
+  isPopular: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'nepal-vehicle-tax-calculator',
+  name: 'Nepal Vehicle Tax Calculator',
+  shortDescription: 'Calculate annual vehicle tax renewal amount for motorcycles and cars in Nepal by engine CC and province.',
+  longDescription: `<p>The <strong>Nepal Vehicle Tax Calculator</strong> helps vehicle owners quickly find out how much annual tax they need to pay for vehicle renewal. Whether you own a motorcycle, car, jeep, or van, this tool calculates your tax based on engine CC and province.</p>
+<h2>How Vehicle Tax Works in Nepal</h2>
+<p>In Nepal, vehicle owners must pay annual tax (नवीकरण कर) to renew their vehicle registration. The tax amount depends on the vehicle type, engine capacity (CC), and the province where the vehicle is registered. Bagmati Province (Kathmandu Valley) has the highest rates due to higher traffic volume and urban infrastructure costs.</p>
+<h2>Motorcycle Tax Rates (Bagmati Province)</h2>
+<p>Motorcycles up to 125cc pay Rs 2,500 per year. Bikes from 126–250cc pay Rs 4,500/year, and bikes above 250cc pay Rs 7,500/year. Electric motorcycles enjoy a discounted rate of approximately Rs 2,000/year.</p>
+<h2>Car Tax Rates (Bagmati Province)</h2>
+<p>Cars up to 1000cc pay Rs 5,000/year. The rate increases with engine size: 1001–1500cc (Rs 7,500), 1501–2000cc (Rs 10,000), 2001–2500cc (Rs 15,000), and above 2500cc (Rs 25,000). Electric cars are charged approximately Rs 4,000/year.</p>
+<h2>Renewal Deadline</h2>
+<p>Vehicle tax in Nepal must be renewed by the end of Ashad (mid-July) each year. Late renewal attracts additional fines.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal vehicle tax calculator',
+  secondaryKeywords: ['bike tax calculator nepal', 'vehicle renewal tax nepal', 'motorcycle tax nepal', 'car tax calculator nepal', 'नेपाल सवारी कर'],
+  metaTitle: 'Nepal Vehicle Tax Calculator — Bike & Car Annual Tax 2081/82',
+  metaDescription: 'Calculate your annual vehicle renewal tax in Nepal. Motorcycle, car, jeep, van — enter engine CC to get exact tax amount for Bagmati and other provinces.',
+  faqs: [
+    { question: 'How much is the annual tax for a 150cc motorcycle in Nepal?', answer: 'A 150cc motorcycle falls in the 126–250cc bracket and pays Rs 4,500 per year in Bagmati Province.' },
+    { question: 'When is the vehicle tax renewal deadline in Nepal?', answer: 'Vehicle tax must be renewed by the end of Ashad (approximately mid-July) each year. After this date, late fees apply.' },
+    { question: 'How much tax does a 1600cc car pay in Nepal?', answer: 'A 1600cc car falls in the 1501–2000cc bracket and pays Rs 10,000 per year in Bagmati Province.' },
+    { question: 'Do electric vehicles pay lower tax in Nepal?', answer: 'Yes, the government provides a discount for electric vehicles to promote green transport. Electric motorcycles pay approximately Rs 2,000/year and electric cars pay approximately Rs 4,000/year.' },
+    { question: 'Are vehicle tax rates the same across all provinces?', answer: 'No, rates vary slightly by province. Bagmati Province (Kathmandu) has the highest rates. This calculator shows Bagmati Province rates as they apply to the largest number of vehicles.' },
+  ],
+  howToSteps: [
+    'Select your vehicle type: Motorcycle, Car/Jeep/Van, Electric Motorcycle, or Electric Car.',
+    'Enter your vehicle\'s engine capacity in CC (e.g., 150, 1600).',
+    'Select your province (Bagmati Province is the default).',
+    'Click "Calculate Tax" to see your annual vehicle tax amount.',
+    'Check the rate table to understand which CC bracket your vehicle falls in.',
+  ],
+  relatedToolSlugs: ['nepal-income-tax-calculator', 'nepal-salary-tax-calculator', 'nepal-fiscal-year-converter', 'gst-calculator'],
+  icon: 'Car',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'nrb-forex-converter',
+  name: 'NRB Forex Rate Converter',
+  shortDescription: 'Convert NPR to USD, EUR, INR, AED, SAR and 20+ currencies using Nepal Rastra Bank reference rates.',
+  longDescription: `<p>The <strong>NRB Forex Rate Converter</strong> lets you convert between Nepalese Rupees (NPR) and 21 major foreign currencies using reference rates based on Nepal Rastra Bank (NRB) published rates. Whether you're a migrant worker calculating remittances, a business tracking forex, or a traveller planning abroad, this tool gives you quick NPR conversions.</p>
+<h2>Currencies Supported</h2>
+<p>Convert NPR to and from USD, EUR, GBP, INR, AUD, CAD, CHF, JPY, CNY, SGD, AED, SAR, QAR, MYR, KRW, HKD, THB, SEK, DKK, KWD, and BHD. All major remittance corridors for Nepali workers are covered — including UAE (AED), Saudi Arabia (SAR), Qatar (QAR), and Malaysia (MYR).</p>
+<h2>INR/NPR Pegged Rate</h2>
+<p>The Indian Rupee (INR) and Nepalese Rupee (NPR) maintain a fixed exchange rate of 100 INR = 160 NPR, established under a bilateral agreement between Nepal and India. This rate is managed by NRB and does not fluctuate freely.</p>
+<h2>Remittance Calculator</h2>
+<p>Nepal receives over $9 billion in annual remittances — one of the highest per-capita globally. The remittance calculator tab shows how much NPR you will receive after accounting for typical bank/transfer service fees (0–5%), helping you compare options before sending money home.</p>
+<h2>Important Note</h2>
+<p>Rates in this tool are reference rates and may differ from live NRB daily rates. For official daily rates, visit Nepal Rastra Bank (nrb.org.np). Actual exchange rates at banks and remittance companies may include a spread.</p>`,
+  category: 'converters',
+  targetKeyword: 'NRB forex rate converter Nepal',
+  secondaryKeywords: ['nepal currency converter', 'NPR to USD converter', 'NRB exchange rate', 'nepal rupee converter', 'remittance calculator nepal'],
+  metaTitle: 'NRB Forex Converter — Nepal Rupee (NPR) Exchange Rate Calculator',
+  metaDescription: 'Convert NPR to USD, EUR, INR, AED, SAR and 20+ currencies. NRB reference rates, remittance calculator, full rate table. Free Nepal currency converter.',
+  faqs: [
+    { question: 'What is the INR to NPR exchange rate?', answer: 'The Indian Rupee to Nepali Rupee rate is fixed at 100 INR = 160 NPR (1 INR = 1.60 NPR). This is a pegged rate maintained by Nepal Rastra Bank and does not change freely with the market.' },
+    { question: 'Where does NRB publish official forex rates?', answer: 'Nepal Rastra Bank publishes official daily exchange rates on their website at nrb.org.np. Rates are updated on business days.' },
+    { question: 'How much NPR will I receive if I send money from UAE?', answer: 'Use the Remittance tab to calculate. Enter your AED amount and the fee percentage charged by your remittance service. Typical bank fees range from 1.5–3%. The calculator shows your NPR after deducting the fee.' },
+    { question: 'Why are there buying and selling rates?', answer: 'Banks buy foreign currency from you at the buying rate (slightly lower) and sell currency to you at the selling rate (slightly higher). The difference is the bank\'s margin. NRB publishes both rates daily.' },
+    { question: 'Can I use this for live/real-time rates?', answer: 'No, this tool uses reference rates based on approximate NRB rates. For live real-time rates, check nrb.org.np or your bank directly. Rates can change daily.' },
+  ],
+  howToSteps: [
+    'Select the currency you want to convert FROM in the first dropdown.',
+    'Select the currency you want to convert TO in the second dropdown.',
+    'Enter the amount and see the converted value instantly.',
+    'Use the Swap button to reverse the conversion direction.',
+    'For remittance calculations, go to the Remittance tab and enter your transfer amount and fee percentage.',
+  ],
+  relatedToolSlugs: ['nepal-income-tax-calculator', 'nepal-salary-tax-calculator', 'unit-converter', 'nepali-date-converter'],
+  icon: 'ArrowLeftRight',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'nepal-fiscal-year-converter',
+  name: 'Nepal Fiscal Year Converter',
+  shortDescription: 'Convert any AD date to Nepal fiscal year (FY) and BS quarter. Convert FY labels between BS and AD calendar years.',
+  longDescription: `<p>The <strong>Nepal Fiscal Year Converter</strong> helps accountants, government employees, students, and business owners quickly find which Nepal fiscal year (आर्थिक वर्ष) any date falls in, and convert FY labels between Bikram Sambat (BS) and Gregorian (AD) calendar years.</p>
+<h2>Nepal's Fiscal Year System</h2>
+<p>Nepal follows a fiscal year that runs from Shrawan 1 to Ashad end (approximately mid-July to mid-July in the Gregorian calendar). This is unique compared to most countries and can cause confusion when working with international reports, audits, or remittances.</p>
+<h2>FY Label Format</h2>
+<p>Nepal fiscal years are named using both BS years they span. For example, FY 2081/82 starts in Shrawan 2081 BS and ends in Ashad 2082 BS (approximately July 2024 to July 2025 AD). This dual-year naming convention is used in all government documents, budget reports, and tax filings.</p>
+<h2>Fiscal Year Quarters</h2>
+<p>Each Nepal FY is divided into four quarters: Q1 (Shrawan–Ashwin), Q2 (Kartik–Poush), Q3 (Magh–Chaitra), Q4 (Baisakh–Ashad). Government departments and companies submit quarterly reports based on this structure.</p>
+<h2>How to Use</h2>
+<p>Use the AD Date tab to find the Nepal FY for any Gregorian date. Use the FY Converter tab to look up the AD equivalent of any BS fiscal year. The Reference Table shows a decade of FY mappings at a glance.</p>`,
+  category: 'converters',
+  targetKeyword: 'nepal fiscal year converter',
+  secondaryKeywords: ['nepal FY calculator', 'BS AD fiscal year nepal', 'आर्थिक वर्ष converter', 'nepal fiscal year 2081/82', 'BS year to AD year nepal'],
+  metaTitle: 'Nepal Fiscal Year Converter — BS/AD FY Calculator',
+  metaDescription: 'Convert any date to Nepal fiscal year (FY). Find which BS fiscal quarter a date falls in. Convert FY 2081/82 labels to AD calendar years. Free online tool.',
+  faqs: [
+    { question: 'When does Nepal fiscal year start and end?', answer: 'Nepal fiscal year starts on Shrawan 1 (approximately July 16–17 in AD) and ends on Ashad end (approximately July 15–16 AD). So FY 2081/82 runs from mid-July 2024 to mid-July 2025.' },
+    { question: 'What is FY 2081/82 in AD calendar?', answer: 'Nepal FY 2081/82 corresponds to approximately July 16, 2024 to July 15, 2025 in the Gregorian (AD) calendar.' },
+    { question: 'Why does Nepal use BS years for fiscal year names?', answer: 'Nepal officially uses the Bikram Sambat (BS) calendar system for government and administrative purposes. The fiscal year is named after the two BS years it spans — e.g. FY 2081/82 starts in BS year 2081 and ends in BS year 2082.' },
+    { question: 'What are Nepal fiscal year quarters?', answer: 'Q1: Shrawan–Ashwin (approx Aug–Oct), Q2: Kartik–Poush (approx Nov–Jan), Q3: Magh–Chaitra (approx Feb–Apr), Q4: Baisakh–Ashad (approx May–Jul).' },
+    { question: 'How do I convert a Nepal FY to AD year?', answer: 'For any Nepal FY like 2081/82, the first AD year is BS year minus 57 (for the first half) or minus 56 (second half). FY 2081/82 = July 2024 – July 2025. Use the FY Converter tab above for instant results.' },
+  ],
+  howToSteps: [
+    'To find the Nepal FY for any date: go to the "AD Date" tab and pick your date.',
+    'To convert a FY label: go to the "FY Converter" tab and enter a BS year (e.g. 2081).',
+    'To browse multiple fiscal years at once: check the "Reference Table" tab.',
+    'The current active fiscal year is highlighted in the reference table.',
+  ],
+  relatedToolSlugs: ['nepali-date-converter', 'nepal-income-tax-calculator', 'nepal-vehicle-tax-calculator', 'timestamp-converter'],
+  icon: 'Calendar',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'nepal-loksewa-age-calculator',
+  name: 'Nepal Loksewa Age Calculator',
+  shortDescription: 'Check your age eligibility for Nepal Loksewa (PSC) exams. Calculate age in BS and verify min/max age limits by post category.',
+  longDescription: `<p>The <strong>Nepal Loksewa Age Calculator</strong> helps candidates check whether they meet the age eligibility criteria for Nepal's Public Service Commission (Lok Sewa Aayog) examinations. Enter your date of birth in BS (Bikram Sambat) and the application deadline to instantly see your age and eligibility status.</p>
+<h2>Why Age Matters in Loksewa</h2>
+<p>Every Loksewa vacancy notice specifies a minimum and maximum age limit based on the post category. Age is calculated as of the application deadline (dartaa miiti) in BS calendar. Even being one day over the maximum age disqualifies a candidate, making accurate calculation critical.</p>
+<h2>Age Limits by Post Category</h2>
+<p><strong>Non-Gazetted posts</strong> (Kharidar, etc.): Minimum 18, Maximum 35 years for general candidates. Women, disabled, and indigenous candidates get a 5-year relaxation (max 40). Government employees with 3+ years service can apply up to age 45.</p>
+<p><strong>Gazetted Class III / Officer Level</strong>: Minimum 21, Maximum 35 (general), 40 (women/disabled/indigenous), 45 (government employees).</p>
+<p><strong>Gazetted Class II</strong>: Minimum 21, Maximum 40 (general), 45 (women/disabled).</p>
+<p><strong>Police / APF / Army</strong>: Minimum 18, Maximum 25 (no relaxation).</p>
+<h2>BS Calendar Note</h2>
+<p>This calculator uses BS dates for input, as Loksewa age is officially calculated in the Bikram Sambat calendar. The tool also shows an approximate AD (Gregorian) equivalent of your birthdate.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal loksewa age calculator',
+  secondaryKeywords: ['PSC age calculator nepal', 'lok sewa age eligibility', 'loksewa BS age calculator', 'civil service age nepal', 'loksewa aayog age limit'],
+  metaTitle: 'Nepal Loksewa Age Calculator — PSC Age Eligibility Checker',
+  metaDescription: 'Check age eligibility for Nepal Loksewa (PSC) exams. Calculate your age in BS from date of birth and verify min/max limits for all post categories. Free tool.',
+  faqs: [
+    { question: 'What is the maximum age for Loksewa in Nepal?', answer: 'It depends on the post: Non-Gazetted and Gazetted Class III posts have a maximum age of 35 (general), 40 (women/disabled/indigenous), or 45 (government employees). Gazetted Class II allows up to 40 (general). Police/APF/Army posts have a maximum of 25.' },
+    { question: 'How is Loksewa age calculated?', answer: 'Age is calculated as of the application deadline (dartaa miiti) in BS (Bikram Sambat) calendar. You count full years from your BS date of birth to the deadline date.' },
+    { question: 'Do women get age relaxation in Loksewa?', answer: 'Yes, women, persons with disabilities, and indigenous (Adivasi Janajati) candidates generally get a 5-year relaxation on the maximum age limit for most post categories.' },
+    { question: 'What is the minimum age for Loksewa?', answer: 'For most posts, the minimum age is 18 years (Non-Gazetted) or 21 years (Gazetted posts). Police/APF/Army has a minimum age of 18.' },
+    { question: 'Can government employees apply for higher Loksewa posts?', answer: 'Yes, existing government employees with 3 or more years of service get a maximum age relaxation of 10 years (up to 45) for Non-Gazetted and Gazetted Class III/Officer Level posts.' },
+  ],
+  howToSteps: [
+    'Enter your date of birth in BS using the Year, Month, and Day dropdowns.',
+    'Set the application deadline date (dartaa miiti) — defaults to today\'s approximate BS date.',
+    'Select your target post category from the dropdown.',
+    'Choose your applicant group (General / Women-Disabled-Indigenous / Government Employee).',
+    'View your age in years, months, and days, plus your eligibility status with explanation.',
+  ],
+  relatedToolSlugs: ['nepali-date-converter', 'age-calculator', 'neb-see-grade-calculator', 'nepal-fiscal-year-converter'],
+  icon: 'UserCheck',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'body-fat-calculator',
+  name: 'Body Fat Percentage Calculator',
+  shortDescription: 'Calculate your body fat percentage using the US Navy method and BMI-based estimate. View body fat category and gauge.',
+  longDescription: `<p>The <strong>Body Fat Percentage Calculator</strong> estimates your body fat using the scientifically validated US Navy method and the BMI-based formula. Knowing your body fat percentage gives a more accurate picture of your fitness than weight alone — two people can weigh the same but have very different body compositions.</p>
+<h2>US Navy Method</h2>
+<p>The US Navy body fat formula uses circumference measurements (neck, waist, and hip for women) along with height to estimate body fat percentage. For men: 495 ÷ (1.0324 − 0.19077 × log(waist − neck) + 0.15456 × log(height)) − 450. This method is widely used by the military and fitness professionals.</p>
+<h2>Body Fat Categories</h2>
+<p>Essential fat (2–5% men, 10–13% women) is the minimum for basic body functions. Athletic (6–13% men, 14–20% women), Fitness (14–17% men, 21–24% women), Average (18–24% men, 25–31% women), and Obese (25%+ men, 32%+ women).</p>`,
+  category: 'calculators',
+  targetKeyword: 'body fat percentage calculator',
+  secondaryKeywords: ['body fat calculator online free', 'US navy body fat calculator', 'body fat percentage formula', 'how to calculate body fat'],
+  metaTitle: 'Body Fat Percentage Calculator — US Navy Method & BMI Formula',
+  metaDescription: 'Calculate your body fat % using the US Navy method and BMI formula. View your body fat category (athletic, fitness, average, obese) with a visual gauge.',
+  faqs: [
+    { question: 'What is a healthy body fat percentage?', answer: 'For men, 6–17% is considered athletic to fitness level, and 18–24% is average. For women, 14–24% is athletic to fitness, and 25–31% is average. Below essential fat levels can be dangerous.' },
+    { question: 'How accurate is the Navy body fat calculator?', answer: 'The US Navy method is generally accurate within 3–4% of DEXA scan results when measurements are taken correctly. It is commonly used in military fitness assessments.' },
+    { question: 'What measurements do I need for this calculator?', answer: 'For men: height, neck circumference, and waist circumference (at navel). For women: height, neck, waist, and hip circumference (at widest point).' },
+  ],
+  howToSteps: [
+    'Select your gender (Male or Female).',
+    'Choose Metric (cm) or Imperial (inches) units.',
+    'Enter your height, neck, waist, and (for women) hip measurements.',
+    'Optionally enter your weight and age for the BMI-based estimate.',
+    'View your body fat percentage, category, and visual gauge instantly.',
+  ],
+  relatedToolSlugs: ['bmi-calculator', 'ideal-weight-calculator', 'tdee-macro-calculator', 'water-intake-calculator'],
+  icon: 'Activity',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'ideal-weight-calculator',
+  name: 'Ideal Weight Calculator',
+  shortDescription: 'Calculate your ideal body weight using 4 medical formulas: Devine, Robinson, Miller, and Hamwi. Plus healthy BMI weight range.',
+  longDescription: `<p>The <strong>Ideal Weight Calculator</strong> computes your ideal body weight using four established medical formulas simultaneously — Devine (1974), Robinson (1983), Miller (1983), and Hamwi (1964). Rather than relying on a single formula, seeing all four together gives a more balanced picture of the healthy weight range for your height and gender.</p>
+<h2>The Four Formulas</h2>
+<p><strong>Devine Formula</strong> (1974) was originally created for calculating medication dosages. It's the most widely used in medical settings. <strong>Robinson Formula</strong> (1983) is a modification of Devine that is slightly more conservative. <strong>Miller Formula</strong> (1983) tends to give the highest ideal weight estimates. <strong>Hamwi Formula</strong> (1964) is one of the oldest and simplest methods, widely used by dietitians.</p>
+<h2>Healthy BMI Range</h2>
+<p>The calculator also shows the weight range corresponding to a healthy BMI of 18.5–24.9 for your height, which is the World Health Organization's standard for healthy weight.</p>`,
+  category: 'calculators',
+  targetKeyword: 'ideal weight calculator',
+  secondaryKeywords: ['ideal body weight calculator', 'Devine formula ideal weight', 'healthy weight for height', 'IBW calculator'],
+  metaTitle: 'Ideal Weight Calculator — Devine, Robinson, Miller & Hamwi Formulas',
+  metaDescription: 'Calculate your ideal body weight using all 4 medical formulas (Devine, Robinson, Miller, Hamwi) plus healthy BMI range. Results in kg and lbs.',
+  faqs: [
+    { question: 'Which ideal weight formula is most accurate?', answer: 'No single formula is universally "best." The Devine formula is most used in clinical settings. Viewing results from all four formulas gives you a realistic range rather than a single number.' },
+    { question: 'Is ideal weight the same as healthy weight?', answer: 'Not exactly. Ideal weight formulas give a specific target based on height and gender. Healthy weight is typically a range based on BMI 18.5–24.9. Both are useful references, not strict targets.' },
+    { question: 'Does the ideal weight calculator account for muscle mass?', answer: 'No. These formulas are based only on height and gender. Athletes and muscular individuals may weigh more than the formula suggests while still being very healthy.' },
+  ],
+  howToSteps: [
+    'Enter your height in cm or feet/inches.',
+    'Select your gender.',
+    'View results from all 4 formulas simultaneously.',
+    'Compare with the healthy BMI weight range shown at the bottom.',
+    'Toggle between kg and lbs for your preferred unit.',
+  ],
+  relatedToolSlugs: ['bmi-calculator', 'body-fat-calculator', 'tdee-macro-calculator', 'water-intake-calculator'],
+  icon: 'Scale',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'sleep-cycle-calculator',
+  name: 'Sleep Cycle Calculator',
+  shortDescription: 'Find the best times to wake up or go to sleep based on 90-minute sleep cycles. Wake up refreshed, not groggy.',
+  longDescription: `<p>The <strong>Sleep Cycle Calculator</strong> helps you find the optimal times to wake up or go to sleep based on natural 90-minute sleep cycles. Waking up in the middle of a deep sleep cycle leaves you feeling groggy — waking between cycles lets you feel alert and refreshed.</p>
+<h2>How Sleep Cycles Work</h2>
+<p>A complete sleep cycle lasts approximately 90 minutes and includes light sleep, deep sleep, and REM (dream) sleep phases. A full night's sleep consists of 5–6 complete cycles (7.5–9 hours). The calculator adds 15 minutes for the time it typically takes to fall asleep.</p>
+<h2>Two Calculation Modes</h2>
+<p>Enter your desired wake-up time to find the best bedtimes, or enter your bedtime to find the ideal wake-up windows. Up to 6 options are shown for each scenario, ranging from short naps (1–2 cycles) to full rest (5–6 cycles).</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'sleep cycle calculator',
+  secondaryKeywords: ['when to wake up calculator', 'sleep time calculator', 'best time to wake up', 'sleep cycle wake up time'],
+  metaTitle: 'Sleep Cycle Calculator — Best Wake Up Times Based on Sleep Cycles',
+  metaDescription: 'Find the ideal time to wake up or go to sleep using 90-minute sleep cycles. Wake refreshed, not groggy. Free sleep calculator online.',
+  faqs: [
+    { question: 'How long is a sleep cycle?', answer: 'One sleep cycle lasts approximately 90 minutes, progressing through light sleep, deep sleep, and REM sleep. Most adults go through 5–6 cycles per night (7.5–9 hours total).' },
+    { question: 'Why do I feel groggy even after 8 hours of sleep?', answer: 'If your alarm wakes you in the middle of a deep sleep phase, you will feel groggy regardless of total sleep duration. This is called sleep inertia. Waking between cycles minimises this effect.' },
+    { question: 'What if I cannot fall asleep in exactly 15 minutes?', answer: 'The 15-minute fall-asleep estimate is an average. If you typically fall asleep faster or slower, adjust your target bedtime by the difference.' },
+  ],
+  howToSteps: [
+    'Choose mode: "I want to wake up at" or "I want to sleep at".',
+    'Enter your desired time using the hour, minute, and AM/PM selectors.',
+    'View 6 optimal times based on 1–6 complete sleep cycles.',
+    'Choose the time marked "Recommended" (6 cycles = 9 hours) or "Optimal" (5 cycles = 7.5 hours).',
+    'Use the quick buttons to calculate wake times from right now.',
+  ],
+  relatedToolSlugs: ['water-intake-calculator', 'heart-rate-zone-calculator', 'pomodoro-timer', 'countdown-timer'],
+  icon: 'Moon',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'water-intake-calculator',
+  name: 'Daily Water Intake Calculator',
+  shortDescription: 'Calculate how much water you should drink daily based on weight, activity level, and climate. Get a personalised hourly schedule.',
+  longDescription: `<p>The <strong>Daily Water Intake Calculator</strong> gives you a personalised daily water goal based on your body weight, activity level, and climate. Proper hydration is essential for energy, concentration, digestion, and overall health.</p>
+<h2>How Much Water Do You Need?</h2>
+<p>The base formula is weight (kg) × 0.033 litres. However, this is adjusted upward for physical activity and hot/humid climates, which increase fluid loss through sweat. A sedentary person in a temperate climate needs less water than an athlete training in a hot environment.</p>
+<h2>Hourly Drinking Schedule</h2>
+<p>Rather than drinking large amounts infrequently, spreading water intake throughout the day is healthier for digestion and kidneys. The calculator generates a personalised hourly schedule from 7am to 11pm based on your daily target.</p>`,
+  category: 'calculators',
+  targetKeyword: 'water intake calculator',
+  secondaryKeywords: ['how much water should I drink calculator', 'daily water intake calculator', 'water consumption calculator', 'hydration calculator'],
+  metaTitle: 'Daily Water Intake Calculator — How Much Water Should I Drink?',
+  metaDescription: 'Calculate your daily water intake based on weight, activity level, and climate. Get results in litres, glasses, and bottles with an hourly drinking schedule.',
+  faqs: [
+    { question: 'How much water should I drink per day?', answer: 'The general guideline is 2–3 litres per day, but the right amount depends on your body weight, activity level, and climate. Use the calculator for a personalised recommendation.' },
+    { question: 'Does coffee or tea count toward daily water intake?', answer: 'Caffeinated drinks have a mild diuretic effect, but moderate consumption of coffee and tea still contributes to hydration. Water and non-caffeinated drinks are the best sources.' },
+    { question: 'Should I drink more water when exercising?', answer: 'Yes. Sweating during exercise increases fluid loss significantly. Drink 250–500ml of water before exercise, and 150–250ml every 15–20 minutes during exercise.' },
+  ],
+  howToSteps: [
+    'Enter your body weight in kg or lbs.',
+    'Select your activity level from Sedentary to Athlete.',
+    'Choose your climate (Temperate, Hot & Humid, or Cold & Dry).',
+    'View your daily water goal in litres, glasses, and bottle counts.',
+    'Follow the hourly drinking schedule for optimal hydration throughout the day.',
+  ],
+  relatedToolSlugs: ['bmi-calculator', 'body-fat-calculator', 'ideal-weight-calculator', 'tdee-macro-calculator'],
+  icon: 'Droplets',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'heart-rate-zone-calculator',
+  name: 'Heart Rate Zone Calculator',
+  shortDescription: 'Calculate your 5 heart rate training zones based on age and resting heart rate. Optimize your cardio workouts.',
+  longDescription: `<p>The <strong>Heart Rate Zone Calculator</strong> determines your five personalised heart rate training zones based on your age and optionally your resting heart rate. Training in the right zone ensures you are getting the intended benefit from your workout — whether that is fat burning, aerobic fitness, or peak performance.</p>
+<h2>The 5 Heart Rate Zones</h2>
+<p><strong>Zone 1 (50–60%)</strong>: Warm-up and active recovery. <strong>Zone 2 (60–70%)</strong>: Fat burning and endurance base — the "fat burn zone." <strong>Zone 3 (70–80%)</strong>: Aerobic fitness and cardiovascular improvement. <strong>Zone 4 (80–90%)</strong>: Anaerobic threshold — improves speed and performance. <strong>Zone 5 (90–100%)</strong>: Maximum effort — only sustainable for short bursts.</p>
+<h2>Karvonen Method</h2>
+<p>If you provide your resting heart rate, the calculator uses the more precise Karvonen formula: Target HR = ((Max HR − Resting HR) × intensity%) + Resting HR. This accounts for your cardiovascular fitness level and gives more personalised zones than the simple percentage method.</p>`,
+  category: 'calculators',
+  targetKeyword: 'heart rate zone calculator',
+  secondaryKeywords: ['target heart rate calculator', 'exercise heart rate zones', 'Karvonen heart rate calculator', 'cardio heart rate zones'],
+  metaTitle: 'Heart Rate Zone Calculator — 5 Training Zones for Cardio Workouts',
+  metaDescription: 'Calculate your 5 heart rate training zones by age and resting HR. Uses Karvonen method for precise zones. Optimise fat burn, aerobic fitness, and performance.',
+  faqs: [
+    { question: 'What is the maximum heart rate formula?', answer: 'The most common formula is Max HR = 220 − age. This is an estimate — actual maximum heart rate can vary by ±10–20 bpm between individuals of the same age.' },
+    { question: 'What heart rate zone burns the most fat?', answer: 'Zone 2 (60–70% of max HR) is often called the "fat burn zone" because fat is the primary fuel at this intensity. However, higher zones burn more total calories overall.' },
+    { question: 'What is the Karvonen method?', answer: 'The Karvonen method accounts for your resting heart rate (HRR — Heart Rate Reserve) when calculating zones: Target HR = ((Max HR − Resting HR) × intensity%) + Resting HR. It gives more personalised results than simple percentage calculations.' },
+  ],
+  howToSteps: [
+    'Enter your age to calculate maximum heart rate (220 − age).',
+    'Optionally enter your resting heart rate for the more precise Karvonen method.',
+    'View all 5 training zones with BPM ranges and colour-coded labels.',
+    'Use the zone that matches your workout goal: Zone 2 for fat burn, Zone 3-4 for fitness improvement.',
+  ],
+  relatedToolSlugs: ['bmi-calculator', 'body-fat-calculator', 'water-intake-calculator', 'tdee-macro-calculator'],
+  icon: 'HeartPulse',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'roi-calculator',
+  name: 'ROI Calculator',
+  shortDescription: 'Calculate return on investment (ROI) percentage, net profit, and annualised ROI. Compare multiple investments side by side.',
+  longDescription: `<p>The <strong>ROI Calculator</strong> helps you quickly determine the return on investment for any investment, project, or business decision. Enter your initial investment and final value (or net profit) to calculate ROI percentage, annualised ROI, and profit or loss.</p>
+<h2>What is ROI?</h2>
+<p>Return on Investment (ROI) is the percentage gain or loss on an investment relative to its cost. Formula: ROI% = (Net Profit ÷ Initial Investment) × 100. A positive ROI means you gained money; a negative ROI means a loss.</p>
+<h2>Annualised ROI</h2>
+<p>For investments held over multiple years, annualised ROI (CAGR) shows the equivalent annual return: Annualised ROI = ((1 + ROI/100)^(1/years) − 1) × 100. This allows fair comparison between investments held for different time periods.</p>
+<h2>Compare Investments</h2>
+<p>The comparison feature lets you add up to 3 investments side by side and ranks them by ROI, helping you identify which investment performed best.</p>`,
+  category: 'calculators',
+  targetKeyword: 'ROI calculator',
+  secondaryKeywords: ['return on investment calculator', 'roi percentage calculator', 'annualised ROI calculator', 'investment return calculator'],
+  metaTitle: 'ROI Calculator — Return on Investment Calculator Free Online',
+  metaDescription: 'Calculate ROI percentage, net profit/loss, and annualised ROI instantly. Compare up to 3 investments side by side. Free return on investment calculator.',
+  faqs: [
+    { question: 'What is a good ROI percentage?', answer: 'A "good" ROI depends on the investment type and risk. Stock market average is ~10%/year. Real estate typically 8–12%. Savings accounts 3–5%. Higher ROI usually comes with higher risk.' },
+    { question: 'What is the difference between ROI and annualised ROI?', answer: 'ROI is the total return over the entire investment period. Annualised ROI (CAGR) converts this to an equivalent annual rate, allowing fair comparison between investments held for different durations.' },
+    { question: 'How do I calculate ROI from initial and final value?', answer: 'ROI% = ((Final Value − Initial Investment) ÷ Initial Investment) × 100. For example, investing Rs 1,00,000 and getting Rs 1,40,000 back = 40% ROI.' },
+  ],
+  howToSteps: [
+    'Enter your initial investment amount.',
+    'Enter either the final value or net profit (toggle between modes).',
+    'Optionally enter the investment period in years and months for annualised ROI.',
+    'View ROI %, net profit/loss, and annualised ROI instantly.',
+    'Use "Compare Investments" to add more investments and rank them by performance.',
+  ],
+  relatedToolSlugs: ['compound-interest-calculator', 'sip-calculator', 'break-even-calculator', 'markup-margin-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'break-even-calculator',
+  name: 'Break-Even Calculator',
+  shortDescription: 'Calculate your break-even point in units and revenue. See contribution margin, profit at various sales volumes, and margin of safety.',
+  longDescription: `<p>The <strong>Break-Even Calculator</strong> helps businesses find the exact sales volume where total revenue equals total costs — the break-even point. Above this point, every unit sold generates profit; below it, the business makes a loss.</p>
+<h2>Key Concepts</h2>
+<p><strong>Contribution Margin</strong> = Selling Price − Variable Cost per unit. This is the amount each unit contributes toward covering fixed costs and generating profit. <strong>Break-Even Units</strong> = Fixed Costs ÷ Contribution Margin. <strong>Break-Even Revenue</strong> = Fixed Costs ÷ Contribution Margin Ratio.</p>
+<h2>Profit/Loss Table</h2>
+<p>The calculator shows projected profit or loss at 50%, 75%, 100% (break-even), 150%, and 200% of break-even volume. This helps you understand how quickly you can reach profitability with increased sales.</p>
+<h2>Margin of Safety</h2>
+<p>If you enter your current or projected sales volume, the margin of safety shows how far above the break-even point you are — the cushion before you start making a loss.</p>`,
+  category: 'calculators',
+  targetKeyword: 'break even calculator',
+  secondaryKeywords: ['break even point calculator', 'break even analysis calculator', 'BEP calculator', 'contribution margin calculator'],
+  metaTitle: 'Break-Even Calculator — Break-Even Point & Contribution Margin',
+  metaDescription: 'Calculate your break-even point in units and revenue. View contribution margin, profit at various sales volumes, and margin of safety. Free break-even analysis tool.',
+  faqs: [
+    { question: 'What is a break-even point?', answer: 'The break-even point is the sales volume at which total revenue exactly equals total costs — neither profit nor loss. It is calculated as: Fixed Costs ÷ (Selling Price − Variable Cost per unit).' },
+    { question: 'What is contribution margin?', answer: 'Contribution margin = Selling Price − Variable Cost per unit. It represents how much each unit sold contributes toward covering fixed costs. Once fixed costs are covered, contribution margin becomes profit.' },
+    { question: 'How can I lower my break-even point?', answer: 'You can lower your break-even point by: (1) reducing fixed costs, (2) reducing variable costs per unit, or (3) increasing selling price. Any combination of these will reduce the number of units needed to break even.' },
+  ],
+  howToSteps: [
+    'Enter your total fixed costs (rent, salaries, etc.).',
+    'Enter variable cost per unit (materials, direct labour, etc.).',
+    'Enter your selling price per unit.',
+    'View break-even units, break-even revenue, and contribution margin instantly.',
+    'Optionally enter current sales volume to see your margin of safety.',
+  ],
+  relatedToolSlugs: ['roi-calculator', 'markup-margin-calculator', 'loan-amortization-calculator', 'gst-calculator'],
+  icon: 'BarChart2',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'markup-margin-calculator',
+  name: 'Markup & Profit Margin Calculator',
+  shortDescription: 'Bidirectional markup and margin calculator. Edit any field — cost, selling price, profit, markup %, or margin % — and all others update instantly.',
+  longDescription: `<p>The <strong>Markup & Profit Margin Calculator</strong> is a fully bidirectional tool — edit any of the five fields (cost price, selling price, gross profit, markup %, or margin %) and all others update instantly. It also clearly explains the critical difference between markup and margin, which are often confused.</p>
+<h2>Markup vs Margin: The Key Difference</h2>
+<p><strong>Markup</strong> is calculated on <em>cost</em>: Markup% = (Gross Profit ÷ Cost) × 100. <strong>Margin</strong> is calculated on <em>selling price</em>: Margin% = (Gross Profit ÷ Selling Price) × 100. They are different numbers for the same transaction — a 50% markup equals only a 33.3% profit margin.</p>
+<h2>Quick Markup Buttons</h2>
+<p>Use the preset buttons (10%, 20%, 25%, 33%, 50%, 100%) to quickly apply a standard markup to your cost price, then see the resulting selling price and margin percentage instantly.</p>`,
+  category: 'calculators',
+  targetKeyword: 'markup calculator',
+  secondaryKeywords: ['profit margin calculator', 'markup vs margin calculator', 'gross profit calculator', 'selling price calculator'],
+  metaTitle: 'Markup & Profit Margin Calculator — Bidirectional Online Tool',
+  metaDescription: 'Calculate markup % and profit margin % from any field. Edit cost, selling price, gross profit, markup, or margin and all update instantly. Free online tool.',
+  faqs: [
+    { question: 'What is the difference between markup and margin?', answer: 'Markup is based on cost: (Profit ÷ Cost) × 100. Margin is based on selling price: (Profit ÷ Selling Price) × 100. A 50% markup gives a 33.3% margin — they are NOT the same number.' },
+    { question: 'How do I calculate selling price from cost and markup?', answer: 'Selling Price = Cost × (1 + Markup% / 100). For example, a product costing Rs 100 with a 40% markup: Selling Price = 100 × 1.40 = Rs 140.' },
+    { question: 'What is a good profit margin for a business?', answer: 'It varies significantly by industry. Retail typically targets 20–50% gross margin. SaaS businesses often aim for 60–80%. Restaurants operate on thin 3–9% net margins. Use this tool to work backwards from your target margin.' },
+  ],
+  howToSteps: [
+    'Enter your cost price to start.',
+    'Type in any field — selling price, gross profit, markup %, or margin % — and all others update.',
+    'Or use the quick markup buttons (10%–100%) to apply a preset markup.',
+    'See the clear breakdown with formulas below the calculator.',
+  ],
+  relatedToolSlugs: ['roi-calculator', 'break-even-calculator', 'gst-calculator', 'discount-calculator'],
+  icon: 'Percent',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'loan-amortization-calculator',
+  name: 'Loan Amortization Schedule',
+  shortDescription: 'Calculate EMI and view the full month-by-month loan amortization table showing principal, interest, and outstanding balance for every instalment.',
+  longDescription: `<p>The <strong>Loan Amortization Schedule Calculator</strong> computes your monthly EMI and generates a complete month-by-month amortization table showing exactly how much of each payment goes toward principal and how much goes toward interest — for every single instalment over the life of the loan.</p>
+<h2>What is Loan Amortization?</h2>
+<p>Amortization is the process of paying off a loan through regular equal payments. In the early months, most of each payment is interest; as the loan balance decreases, more of each payment goes toward principal. The amortization schedule shows this breakdown for every month.</p>
+<h2>EMI Formula</h2>
+<p>Monthly EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), where P = loan amount, r = monthly interest rate, n = total months. The total interest paid over the loan life is often surprisingly large — this calculator makes that visible.</p>
+<h2>Difference from Basic EMI Calculator</h2>
+<p>While a basic EMI calculator only shows the monthly payment amount, this tool provides the complete amortization schedule table so you can see the exact principal-interest split for any given month.</p>`,
+  category: 'calculators',
+  targetKeyword: 'loan amortization calculator',
+  secondaryKeywords: ['loan amortization schedule', 'EMI schedule calculator', 'loan repayment schedule', 'mortgage amortization calculator'],
+  metaTitle: 'Loan Amortization Schedule Calculator — Full EMI Breakdown Table',
+  metaDescription: 'Calculate EMI and generate a full month-by-month loan amortization schedule. See principal vs interest split for every payment. Free loan calculator online.',
+  faqs: [
+    { question: 'What is a loan amortization schedule?', answer: 'A loan amortization schedule is a table showing each monthly payment broken down into the principal portion and the interest portion, along with the remaining loan balance after each payment.' },
+    { question: 'Why is most of the early EMI interest?', answer: 'Because interest is calculated on the outstanding balance. At the start, the full loan amount is outstanding, so interest is high. As you repay principal, the balance decreases and so does the interest portion.' },
+    { question: 'How is this different from the EMI calculator?', answer: 'The basic EMI calculator shows only the monthly payment amount. This loan amortization tool shows the complete month-by-month schedule with principal/interest breakdown and running balance for every instalment.' },
+    { question: 'Can I use this for home loans, car loans, and personal loans?', answer: 'Yes, this calculator works for any fixed-rate loan — home loan, car loan, personal loan, or business loan. Just enter the loan amount, interest rate, and tenure.' },
+  ],
+  howToSteps: [
+    'Enter the loan amount.',
+    'Enter the annual interest rate (e.g. 10.5 for 10.5% per year).',
+    'Enter the loan tenure in years or months.',
+    'View your monthly EMI, total interest, and total payment in the summary cards.',
+    'Scroll down to see the full month-by-month amortization table. Click "Show All" to expand beyond 12 rows.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'emi-prepayment-calculator', 'loan-comparison-calculator', 'roi-calculator'],
+  icon: 'CalendarRange',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'color-contrast-checker',
+  name: 'Color Contrast Checker',
+  shortDescription: 'Check WCAG 2.1 color contrast ratio between foreground and background. Get AA/AAA pass/fail for text, large text, and UI components.',
+  longDescription: `<p>The <strong>Color Contrast Checker</strong> calculates the contrast ratio between any two colors and checks them against WCAG 2.1 accessibility standards. Building accessible websites requires ensuring sufficient contrast between text and its background so that people with low vision or color blindness can read your content.</p>
+<h2>WCAG 2.1 Standards</h2>
+<p><strong>AA (minimum):</strong> Normal text requires 4.5:1, large text (18pt+ or 14pt bold+) requires 3:1, UI components require 3:1. <strong>AAA (enhanced):</strong> Normal text requires 7:1, large text requires 4.5:1.</p>
+<h2>How Contrast Ratio is Calculated</h2>
+<p>Contrast ratio = (L1 + 0.05) ÷ (L2 + 0.05), where L1 is the relative luminance of the lighter color and L2 is the relative luminance of the darker color. Luminance is computed from the sRGB values using the WCAG formula.</p>
+<h2>Input Formats</h2>
+<p>Accepts hex codes (#1d4ed8), rgb() values, and hsl() values for both foreground and background colors. Use the native color picker for visual selection.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'color contrast checker',
+  secondaryKeywords: ['WCAG contrast checker', 'accessibility contrast ratio', 'web accessibility color checker', 'contrast ratio calculator'],
+  metaTitle: 'Color Contrast Checker — WCAG 2.1 AA/AAA Accessibility Tool',
+  metaDescription: 'Check WCAG 2.1 contrast ratio between foreground and background colors. Get instant AA/AAA pass/fail for normal text, large text, and UI components.',
+  faqs: [
+    { question: 'What contrast ratio do I need to pass WCAG AA?', answer: 'For WCAG AA compliance: normal text needs 4.5:1, large text (18pt+ or 14pt bold) needs 3:1, and UI components/graphical objects need 3:1 contrast ratio.' },
+    { question: 'What is WCAG AAA contrast?', answer: 'WCAG AAA is the enhanced accessibility level requiring 7:1 for normal text and 4.5:1 for large text. It is harder to achieve but provides better readability for users with low vision.' },
+    { question: 'How do I enter colors in this tool?', answer: 'You can enter colors as hex codes (#ffffff), rgb() values (rgb(255,255,255)), or hsl() values. You can also click the color swatch to use the native color picker.' },
+  ],
+  howToSteps: [
+    'Enter your foreground (text) color as a hex, rgb, or hsl value — or use the color picker.',
+    'Enter your background color.',
+    'View the contrast ratio and WCAG AA/AAA pass/fail badges instantly.',
+    'Use the live preview to see how your text looks on the background.',
+    'Try the preset pairs or use the Swap button to reverse foreground and background.',
+  ],
+  relatedToolSlugs: ['color-picker', 'hex-rgb-converter', 'css-gradient-generator', 'html-css-js-editor'],
+  icon: 'Eye',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'html-minifier',
+  name: 'HTML Minifier',
+  shortDescription: 'Minify HTML online — remove whitespace, comments, and optional tags. See file size savings instantly.',
+  longDescription: `<p>The <strong>HTML Minifier</strong> compresses your HTML code by removing unnecessary whitespace, comments, and optional closing tags, reducing file size for faster page loading. Smaller HTML files improve page speed scores and reduce bandwidth costs.</p>
+<h2>What Gets Removed</h2>
+<p>The minifier removes HTML comments (<!-- ... -->), collapses whitespace and newlines between tags, removes indentation, and optionally strips optional closing tags like </li> and </td> that browsers handle automatically.</p>
+<h2>How Much Can HTML Be Compressed?</h2>
+<p>Typical HTML files compress 10–40% with minification alone. Files with heavy indentation, many comments, and verbose formatting compress more. Minification is most effective when combined with gzip compression on the server.</p>
+<h2>CSS and JS Minifiers</h2>
+<p>For complete optimization, also minify your CSS and JavaScript files using the dedicated CSS Minifier and JS Minifier tools available on this site.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'html minifier online',
+  secondaryKeywords: ['minify html', 'html compressor online', 'html minify free', 'compress html online'],
+  metaTitle: 'HTML Minifier Online — Compress & Minify HTML Free',
+  metaDescription: 'Minify and compress HTML online. Remove whitespace, comments, and optional tags. See before/after file size comparison. Free HTML minifier tool.',
+  faqs: [
+    { question: 'Is it safe to minify HTML?', answer: 'Yes, HTML minification is safe for production use. It only removes whitespace and comments that have no effect on how the page renders. Optional: removing optional closing tags is also safe in all modern browsers.' },
+    { question: 'How much does HTML minification reduce file size?', answer: 'Typically 10–40%, depending on how much whitespace and comments your original HTML contains. Files with heavy indentation and many comments compress the most.' },
+    { question: 'Should I minify HTML before or after gzip compression?', answer: 'Minify first, then serve with gzip. Both work together — minification removes redundant characters, while gzip further compresses the remaining patterns. Most servers (nginx, Apache) apply gzip automatically.' },
+  ],
+  howToSteps: [
+    'Paste your HTML code into the input area.',
+    'Choose your minification options (remove comments, collapse whitespace, etc.).',
+    'Click "Minify" or wait for automatic processing for smaller files.',
+    'View the size savings and copy the minified output.',
+  ],
+  relatedToolSlugs: ['css-minifier', 'js-minifier', 'html-beautifier', 'html-css-js-editor'],
+  icon: 'Code',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'roman-numeral-converter',
+  name: 'Roman Numeral Converter',
+  shortDescription: 'Convert numbers to Roman numerals and Roman numerals to numbers. Supports 1–3999 with step-by-step conversion breakdown.',
+  longDescription: `<p>The <strong>Roman Numeral Converter</strong> instantly converts integers (1–3999) to Roman numerals and vice versa. It also shows a step-by-step breakdown of how each conversion works, making it a great learning tool for students.</p>
+<h2>Roman Numeral Symbols</h2>
+<p>The seven Roman numeral symbols are: I (1), V (5), X (10), L (50), C (100), D (500), and M (1000). Roman numerals use subtractive notation for values like 4 (IV), 9 (IX), 40 (XL), 90 (XC), 400 (CD), and 900 (CM).</p>
+<h2>Step-by-Step Breakdown</h2>
+<p>For each conversion, the tool shows exactly which Roman numeral symbols were used and what value they represent. For example, 1994 = M (1000) + CM (900) + XC (90) + IV (4) = MCMXCIV.</p>
+<h2>Range</h2>
+<p>Standard Roman numerals cover 1 to 3999. The number 4000 would require a vinculum (overline) notation which is outside the standard system.</p>`,
+  category: 'converters',
+  targetKeyword: 'roman numeral converter',
+  secondaryKeywords: ['number to roman numerals', 'roman numeral calculator', 'roman to number converter', 'convert to roman numerals'],
+  metaTitle: 'Roman Numeral Converter — Numbers to Roman Numerals & Back',
+  metaDescription: 'Convert any number (1–3999) to Roman numerals or decode Roman numerals to numbers. Shows step-by-step breakdown. Free online Roman numeral calculator.',
+  faqs: [
+    { question: 'How do you write 4 in Roman numerals?', answer: 'Four is written as IV in Roman numerals. I (1) before V (5) means subtract: 5 − 1 = 4. Similarly, 9 = IX, 40 = XL, 90 = XC, 400 = CD, 900 = CM.' },
+    { question: 'What is the largest Roman numeral?', answer: 'Using standard notation, the largest is 3999 = MMMCMXCIX. To write 4000 and above, extended notations like vinculum (overline) are needed, which are not part of the standard system.' },
+    { question: 'How do you read Roman numerals?', answer: 'Add symbol values left to right. If a smaller symbol precedes a larger one, subtract it instead of adding (e.g. IV = 4, not 6). Otherwise just add: VIII = 5+1+1+1 = 8.' },
+  ],
+  howToSteps: [
+    'Select "Number to Roman" tab and type any integer from 1 to 3999.',
+    'Or select "Roman to Number" tab and type a Roman numeral string.',
+    'The conversion result appears instantly.',
+    'View the step-by-step breakdown showing each symbol and its value.',
+    'Use the Copy button to copy the result.',
+  ],
+  relatedToolSlugs: ['number-to-words', 'binary-hex-octal-converter', 'scientific-notation-converter', 'unit-converter'],
+  icon: 'Hash',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'morse-code-converter',
+  name: 'Morse Code Translator',
+  shortDescription: 'Translate text to Morse code and Morse code to text. Includes audio playback of the Morse code signal.',
+  longDescription: `<p>The <strong>Morse Code Translator</strong> converts text to Morse code and Morse code back to text in real time. It also plays the Morse code as audio beeps using the Web Audio API, letting you hear the actual dots and dashes.</p>
+<h2>What is Morse Code?</h2>
+<p>Morse code is a character encoding system that represents letters, numbers, and punctuation as sequences of short (dot ·) and long (dash −) signals. Developed by Samuel Morse in the 1830s, it was the primary means of long-distance communication before the telephone and remains in use in aviation and amateur radio today.</p>
+<h2>Encoding Standard</h2>
+<p>This translator uses International Morse Code (ITU standard): A=·−, B=−···, S=···, O=−−−, and so on. Letters are separated by spaces; words are separated by " / ".</p>
+<h2>Audio Playback</h2>
+<p>The play button generates a 600Hz sine wave tone using the Web Audio API. Dots are 80ms, dashes are 240ms, gaps between symbols are 80ms, gaps between letters are 240ms, and gaps between words are 560ms.</p>`,
+  category: 'converters',
+  targetKeyword: 'morse code translator',
+  secondaryKeywords: ['morse code converter', 'text to morse code', 'morse code decoder', 'morse code generator'],
+  metaTitle: 'Morse Code Translator — Text to Morse Code with Audio Playback',
+  metaDescription: 'Translate text to Morse code or decode Morse code to text. Includes real-time conversion and audio playback of the Morse signal. Free online tool.',
+  faqs: [
+    { question: 'How do I read Morse code?', answer: 'Each letter is represented by a pattern of dots (·) and dashes (−). A (·−), E (·), T (−), S (···), O (−−−). Letters are separated by spaces; words by "/" in written Morse.' },
+    { question: 'What does SOS look like in Morse code?', answer: 'SOS is ··· −−− ··· (three dots, three dashes, three dots). It is the universal distress signal chosen because it is simple and easily recognisable even in poor conditions.' },
+    { question: 'Is Morse code still used today?', answer: 'Yes, Morse code is still used in aviation (navigational beacons transmit their identifiers in Morse), amateur (ham) radio, and as a supplemental communication method for people with disabilities.' },
+  ],
+  howToSteps: [
+    'Select "Text to Morse" tab and type your text — Morse code appears instantly below.',
+    'Select "Morse to Text" tab and type Morse code (use dots and dashes, space between letters, "/" between words).',
+    'Click the Play button to hear the Morse code as audio beeps.',
+    'Click the Stop button to stop audio playback.',
+    'Use the Copy button to copy the result.',
+  ],
+  relatedToolSlugs: ['roman-numeral-converter', 'text-encryption', 'binary-hex-octal-converter', 'base64-encode-decode'],
+  icon: 'Radio',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'text-encryption',
+  name: 'Text Encryption & Decryption',
+  shortDescription: 'Encrypt and decrypt text with Caesar cipher, ROT13, Atbash, and Vigenère cipher. Learn classic cryptography online.',
+  longDescription: `<p>The <strong>Text Encryption & Decryption</strong> tool lets you encode and decode text using four classic cipher techniques: Caesar cipher, ROT13, Atbash, and Vigenère cipher. All processing happens in your browser — your text is never sent to any server.</p>
+<h2>Caesar Cipher</h2>
+<p>One of the oldest and simplest encryption methods, used by Julius Caesar. Each letter is shifted by a fixed number of positions in the alphabet (1–25). A shift of 13 is the special case known as ROT13.</p>
+<h2>ROT13</h2>
+<p>ROT13 ("rotate by 13 places") is a Caesar cipher with a fixed shift of 13. Applying ROT13 twice returns the original text, making it its own inverse. Historically used to hide spoilers and off-topic content in online forums.</p>
+<h2>Atbash Cipher</h2>
+<p>An ancient Hebrew cipher where A↔Z, B↔Y, C↔X, etc. — the alphabet is reversed. Like ROT13, applying it twice returns the original.</p>
+<h2>Vigenère Cipher</h2>
+<p>A polyalphabetic cipher using a keyword. Each letter of the plaintext is shifted by the corresponding letter of the keyword, making it much harder to crack than simple Caesar ciphers. Considered unbreakable for centuries.</p>`,
+  category: 'text-tools',
+  targetKeyword: 'caesar cipher encoder decoder',
+  secondaryKeywords: ['ROT13 converter', 'text encryption online', 'cipher decoder', 'Vigenère cipher online', 'atbash cipher'],
+  metaTitle: 'Text Encryption & Decryption — Caesar, ROT13, Atbash, Vigenère',
+  metaDescription: 'Encrypt and decrypt text with Caesar cipher, ROT13, Atbash, and Vigenère cipher online. Real-time encoding/decoding, no data sent to server.',
+  faqs: [
+    { question: 'What is the Caesar cipher?', answer: 'The Caesar cipher shifts each letter in the text by a fixed number of positions (1–25) in the alphabet. For example, with a shift of 3: A→D, B→E, Z→C. It is one of the oldest encryption methods.' },
+    { question: 'What is ROT13?', answer: 'ROT13 is a special Caesar cipher with a shift of exactly 13. Since the alphabet has 26 letters, applying ROT13 twice returns the original text. A→N, B→O, N→A, etc.' },
+    { question: 'Is Vigenère cipher secure?', answer: 'The Vigenère cipher is stronger than Caesar cipher but is still breakable with modern techniques (Kasiski examination, frequency analysis). It is not suitable for real security — use AES or other modern encryption for actual security needs.' },
+  ],
+  howToSteps: [
+    'Select Encrypt or Decrypt mode.',
+    'Choose your cipher: Caesar, ROT13, Atbash, or Vigenère.',
+    'For Caesar cipher, set the shift value (1–25) using the slider.',
+    'For Vigenère cipher, enter your keyword (letters only).',
+    'Type your text and see the result appear instantly. Use the Copy button to copy the output.',
+  ],
+  relatedToolSlugs: ['morse-code-converter', 'roman-numeral-converter', 'base64-encode-decode', 'hash-generator'],
+  icon: 'Lock',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'youtube-description-generator',
+  name: 'YouTube Description Generator',
+  shortDescription: 'Generate SEO-optimised YouTube video descriptions with intro, timestamps, CTAs, and hashtags. Free template-based generator.',
+  longDescription: `<p>The <strong>YouTube Description Generator</strong> helps creators write professional, SEO-optimised video descriptions in seconds. A well-written description improves your video's discoverability in YouTube search and gives viewers and the YouTube algorithm essential context about your content.</p>
+<h2>What Makes a Great YouTube Description?</h2>
+<p>The ideal YouTube description includes a keyword-rich first 2–3 lines (shown before "Show more"), a detailed summary of the video content, timestamps for easy navigation, a call to action (subscribe, like), links to related content, and relevant hashtags.</p>
+<h2>How This Generator Works</h2>
+<p>Enter your video title, topic summary, target keyword, and channel niche. The generator creates a structured description with an intro paragraph using your keywords, "What you'll learn" bullet points, a timestamps template, a customisable CTA, and 10–15 relevant hashtags. Click Regenerate to cycle through alternative intro phrasings.</p>
+<h2>Character Limits</h2>
+<p>YouTube descriptions can be up to 5,000 characters. The first ~150 characters appear in search results, so front-loading your main keyword is crucial for SEO.</p>`,
+  category: 'seo-tools',
+  targetKeyword: 'youtube description generator',
+  secondaryKeywords: ['youtube video description template', 'youtube description SEO', 'youtube description writer', 'auto youtube description'],
+  metaTitle: 'YouTube Description Generator — Free SEO Description Template',
+  metaDescription: 'Generate SEO-optimised YouTube descriptions with intro, timestamps, CTA, and hashtags. Template-based generator with keyword integration. Free online tool.',
+  faqs: [
+    { question: 'How long should a YouTube description be?', answer: 'YouTube allows up to 5,000 characters. Aim for at least 200–300 words for SEO. The first 150 characters are shown in search results, so put your most important information first.' },
+    { question: 'What should I include in a YouTube description?', answer: 'Include: (1) keyword-rich intro paragraph, (2) what the video covers, (3) timestamps, (4) call to action (subscribe/like), (5) links to related videos or social media, (6) relevant hashtags.' },
+    { question: 'Do hashtags in YouTube descriptions help SEO?', answer: 'Yes. YouTube displays up to 3 hashtags above the video title and uses hashtags for categorisation. Use 10–15 relevant hashtags — more than 15 and YouTube ignores all of them.' },
+  ],
+  howToSteps: [
+    'Enter your video title and a brief summary of the video topic.',
+    'Add your main keyword and up to 3 secondary keywords.',
+    'Enter your channel name and select your niche/category.',
+    'Click "Generate Description" to create a structured YouTube description.',
+    'Click "Regenerate" to get an alternative intro phrasing. Copy the final description with one click.',
+  ],
+  relatedToolSlugs: ['youtube-title-generator', 'youtube-thumbnail-tester', 'hashtag-generator', 'meta-tag-generator'],
+  icon: 'Youtube',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'linkedin-post-formatter',
+  name: 'LinkedIn Post Formatter',
+  shortDescription: 'Format LinkedIn posts with bold and italic text using Unicode characters. Live preview, character counter, and emoji inserter.',
+  longDescription: `<p>The <strong>LinkedIn Post Formatter</strong> lets you add bold and italic formatting to LinkedIn posts using Unicode characters. LinkedIn's text editor doesn't support native bold/italic, but Unicode mathematical bold and italic characters display as formatted text in posts and comments.</p>
+<h2>How LinkedIn Formatting Works</h2>
+<p>LinkedIn renders Unicode Mathematical Bold Sans-Serif characters (𝗔-𝗭, 𝗮-𝘇) as bold text and Mathematical Italic characters as italic. These are actual Unicode characters, not HTML tags, so they work in LinkedIn's plain-text editor.</p>
+<h2>Character Limit</h2>
+<p>LinkedIn posts are limited to 3,000 characters. The character counter turns red when you approach or exceed this limit. Note: each Unicode bold/italic character counts as one character in LinkedIn's counter.</p>
+<h2>Live Preview</h2>
+<p>The preview panel shows exactly how your post will appear on LinkedIn, with line breaks, Unicode formatting, and emojis rendered as they will display to your audience.</p>`,
+  category: 'text-tools',
+  targetKeyword: 'linkedin post formatter',
+  secondaryKeywords: ['linkedin text formatter bold', 'format linkedin post', 'linkedin bold text generator', 'linkedin post editor'],
+  metaTitle: 'LinkedIn Post Formatter — Bold & Italic Text with Live Preview',
+  metaDescription: 'Format LinkedIn posts with bold and italic Unicode text. Live preview, emoji inserter, 3000 character counter. Write better LinkedIn content for free.',
+  faqs: [
+    { question: 'How do I make text bold on LinkedIn?', answer: 'LinkedIn does not natively support bold formatting. However, you can use Unicode Mathematical Bold Sans-Serif characters that visually appear bold. This tool converts your selected text to these Unicode characters automatically.' },
+    { question: 'Will Unicode bold text work on all LinkedIn versions?', answer: 'Yes. Unicode characters are stored in the text itself, not as formatting markup, so they display correctly across all LinkedIn interfaces — web, mobile app, and in notifications.' },
+    { question: 'Does LinkedIn have a character limit for posts?', answer: 'Yes, LinkedIn posts are limited to 3,000 characters. The character counter in this tool tracks your count and turns red when you approach or exceed the limit.' },
+  ],
+  howToSteps: [
+    'Type or paste your LinkedIn post text in the left panel.',
+    'Select text you want to bold, then click the Bold button.',
+    'Select text you want to italicise, then click the Italic button.',
+    'Use the emoji buttons to quickly insert common emojis.',
+    'Check the preview on the right, then click Copy to copy your formatted text to paste into LinkedIn.',
+  ],
+  relatedToolSlugs: ['twitter-thread-maker', 'social-media-bio-generator', 'hashtag-generator', 'text-to-slug'],
+  icon: 'Linkedin',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'fuel-cost-calculator',
+  name: 'Fuel Cost Calculator',
+  shortDescription: 'Calculate trip fuel cost for petrol, diesel, or electric vehicles. Supports km/miles, multiple efficiency units, and per-person cost.',
+  longDescription: `<p>The <strong>Fuel Cost Calculator</strong> helps you estimate how much fuel and money you will spend on any road trip or daily commute. Enter your distance, vehicle fuel efficiency, and current fuel price to get an instant cost breakdown.</p>
+<h2>Nepal Fuel Prices</h2>
+<p>For Nepal users, the calculator is pre-filled with current NOC (Nepal Oil Corporation) fuel prices — petrol at Rs 178/litre and diesel at Rs 163/litre. You can update these to the latest prices at any time. Electric vehicle users can enter their electricity rate per kWh.</p>
+<h2>Multiple Efficiency Formats</h2>
+<p>Enter fuel efficiency in any format: km/L (most common in Asia), L/100km (common in Europe), or MPG (used in the US and UK). The calculator converts between formats automatically.</p>
+<h2>Trip Planner</h2>
+<p>Plan multi-leg trips by adding up to 5 route segments with different distances. The total fuel cost and consumption is calculated across all legs.</p>`,
+  category: 'calculators',
+  targetKeyword: 'fuel cost calculator',
+  secondaryKeywords: ['petrol cost calculator for trip', 'trip fuel calculator', 'mileage cost calculator', 'fuel consumption calculator'],
+  metaTitle: 'Fuel Cost Calculator — Petrol, Diesel & EV Trip Cost Estimator',
+  metaDescription: 'Calculate fuel cost for any trip. Supports petrol, diesel, and electric vehicles. Nepal fuel prices pre-filled. Multi-leg trip planner. Free online tool.',
+  faqs: [
+    { question: 'What is the current petrol price in Nepal?', answer: 'As of 2024/25, Nepal Oil Corporation (NOC) has set petrol at Rs 178/litre and diesel at Rs 163/litre. Prices are subject to change — update the price field with the current rate for accurate results.' },
+    { question: 'How do I calculate fuel cost for a trip?', answer: 'Fuel needed = Distance ÷ Fuel efficiency (km/L). Fuel cost = Fuel needed × Price per litre. For example, a 200km trip at 15km/L with fuel at Rs 178/L costs 200÷15×178 = Rs 2,373.' },
+    { question: 'How do I convert mpg to km/L?', answer: '1 MPG (US) = 0.425 km/L. 1 MPG (UK) = 0.354 km/L. The calculator accepts any efficiency unit and converts internally.' },
+  ],
+  howToSteps: [
+    'Enter the trip distance in km or miles.',
+    'Enter your vehicle\'s fuel efficiency (km/L, L/100km, or mpg).',
+    'Enter the fuel price per litre (Nepal prices are pre-filled).',
+    'Select fuel type: Petrol, Diesel, or Electric.',
+    'Toggle Round Trip if applicable, and enter passenger count for per-person cost.',
+  ],
+  relatedToolSlugs: ['unit-converter', 'nepal-income-tax-calculator', 'nepal-vehicle-tax-calculator', 'tip-calculator'],
+  icon: 'Fuel',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'twitter-thread-maker',
+  name: 'Twitter / X Thread Maker',
+  shortDescription: 'Split long content into a numbered Twitter/X thread. Preview each tweet, edit inline, and copy all at once.',
+  longDescription: `<p>The <strong>Twitter / X Thread Maker</strong> helps you convert long-form content into a properly formatted Twitter/X thread. Write your full content, and the tool automatically splits it into numbered tweets respecting the 280-character limit.</p>
+<h2>Smart Splitting</h2>
+<p>The thread maker tries to split at natural sentence boundaries (periods, exclamation marks, question marks) first. If a sentence is too long for a single tweet, it falls back to word boundaries to avoid cutting words mid-way. This produces natural, readable threads rather than awkward mid-sentence breaks.</p>
+<h2>Numbering Formats</h2>
+<p>Choose between "1/ text" prefix format (common on Twitter) or "text (1/N)" suffix format. Both automatically update if you add or remove content.</p>
+<h2>Per-Tweet Editing</h2>
+<p>Each generated tweet can be edited inline — perfect for polishing specific tweets, adjusting breaks, or adding hashtags to the final tweet in a thread.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'twitter thread maker',
+  secondaryKeywords: ['tweet thread generator', 'X thread creator', 'twitter thread splitter', 'long tweet to thread'],
+  metaTitle: 'Twitter / X Thread Maker — Split Text into Numbered Tweets',
+  metaDescription: 'Convert long content into a Twitter/X thread automatically. Smart sentence splitting, inline editing, per-tweet copy, and thread stats. Free online tool.',
+  faqs: [
+    { question: 'How many characters is each tweet in a thread?', answer: 'Each tweet in a Twitter/X thread can be up to 280 characters. The thread maker ensures no generated tweet exceeds this limit.' },
+    { question: 'How many tweets can a thread have?', answer: 'Twitter/X allows unlimited tweets in a thread. However, very long threads (25+ tweets) tend to see drop-off in engagement. Aim for 5–15 tweets for the best reach.' },
+    { question: 'How do I start a thread on Twitter/X?', answer: 'Compose your first tweet, click the "+" button to add more tweets in sequence, then post them all together. Use this tool to plan and draft your full thread content before posting.' },
+  ],
+  howToSteps: [
+    'Type or paste your full content into the text area.',
+    'Click "Split into Thread" to automatically divide it into tweets.',
+    'Choose your numbering format (prefix "1/" or suffix "(1/N)").',
+    'Edit any individual tweet by clicking the Edit button on that card.',
+    'Copy individual tweets or use "Copy All" to copy the full thread at once.',
+  ],
+  relatedToolSlugs: ['linkedin-post-formatter', 'hashtag-generator', 'social-media-bio-generator', 'character-counter'],
+  icon: 'MessageSquare',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'statistics-calculator',
+  name: 'Statistics Calculator',
+  shortDescription: 'Calculate mean, median, mode, standard deviation, variance, quartiles, and more from any list of numbers.',
+  longDescription: `<p>The <strong>Statistics Calculator</strong> computes a full statistical summary from any list of numbers — paste or type comma, space, or newline-separated values and get 14 key statistics instantly. Ideal for students, data analysts, researchers, and anyone working with numerical data.</p>
+<h2>Statistics Calculated</h2>
+<p>Count, Sum, Mean (arithmetic average), Median, Mode, Minimum, Maximum, Range, Population Variance, Population Standard Deviation, Q1 (first quartile), Q2 (median), Q3 (third quartile), and IQR (interquartile range).</p>
+<h2>Sorted List and Frequency Table</h2>
+<p>The calculator also displays the input numbers sorted in ascending order and a frequency table showing how many times each unique value appears — useful for spotting patterns and outliers quickly.</p>`,
+  category: 'calculators',
+  targetKeyword: 'statistics calculator',
+  secondaryKeywords: ['mean median mode calculator', 'standard deviation calculator online', 'variance calculator', 'quartile calculator'],
+  metaTitle: 'Statistics Calculator — Mean, Median, Mode, Std Dev & More',
+  metaDescription: 'Calculate mean, median, mode, standard deviation, variance, quartiles, and IQR from any list of numbers. Free online statistics calculator.',
+  faqs: [
+    { question: 'What is the difference between mean and median?', answer: 'The mean is the arithmetic average (sum ÷ count). The median is the middle value when numbers are sorted. The median is less affected by extreme outliers than the mean.' },
+    { question: 'What is standard deviation?', answer: 'Standard deviation measures how spread out the numbers are from the mean. A low SD means values are close to the mean; a high SD means values are spread widely.' },
+    { question: 'What are Q1, Q2, Q3 and IQR?', answer: 'Q1, Q2, Q3 are the first, second (median), and third quartiles — the values that divide the sorted dataset into four equal quarters. IQR (Interquartile Range) = Q3 − Q1, representing the spread of the middle 50% of data.' },
+  ],
+  howToSteps: [
+    'Enter your numbers in the text area, separated by commas, spaces, or new lines.',
+    'All 14 statistics are calculated and displayed instantly.',
+    'View the sorted list and frequency table below the stats grid.',
+    'Use the Copy button to copy all statistics as formatted text.',
+  ],
+  relatedToolSlugs: ['average-calculator', 'percentage-calculator', 'scientific-calculator', 'permutation-combination'],
+  icon: 'BarChart',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'speed-distance-time',
+  name: 'Speed Distance Time Calculator',
+  shortDescription: 'Calculate speed, distance, or time — enter any two values and the third is computed automatically. Multiple unit support.',
+  longDescription: `<p>The <strong>Speed Distance Time Calculator</strong> solves for any one of the three variables when the other two are known. Enter speed and time to find distance, distance and time to find speed, or speed and distance to find time. Supports multiple units for each variable.</p>
+<h2>The Formula</h2>
+<p>The relationship between speed, distance, and time follows three simple formulas: Distance = Speed × Time, Speed = Distance ÷ Time, Time = Distance ÷ Speed. This calculator handles unit conversions automatically, so you can mix and match units freely.</p>
+<h2>Supported Units</h2>
+<p><strong>Speed:</strong> km/h, m/s, mph, knots. <strong>Distance:</strong> kilometres, metres, miles, nautical miles. <strong>Time:</strong> seconds, minutes, hours, days.</p>`,
+  category: 'calculators',
+  targetKeyword: 'speed distance time calculator',
+  secondaryKeywords: ['how long will it take to travel calculator', 'distance calculator time speed', 'velocity calculator', 'travel time calculator'],
+  metaTitle: 'Speed Distance Time Calculator — Solve for Any Variable',
+  metaDescription: 'Calculate speed, distance, or time by entering any two values. Supports km/h, mph, m/s, knots, km, miles. Free online speed distance time solver.',
+  faqs: [
+    { question: 'How do I calculate travel time?', answer: 'Time = Distance ÷ Speed. For example, a 300km journey at 60km/h takes 300÷60 = 5 hours. Enter the distance and speed in this calculator and it calculates time automatically.' },
+    { question: 'How do I convert km/h to m/s?', answer: 'Divide by 3.6. So 90 km/h = 90÷3.6 = 25 m/s. The calculator handles this conversion automatically when you select different units.' },
+    { question: 'What is a knot in speed?', answer: 'A knot is one nautical mile per hour = 1.852 km/h. It is the standard speed unit in aviation and maritime navigation.' },
+  ],
+  howToSteps: [
+    'Enter values for any two of the three fields: Speed, Distance, or Time.',
+    'Select the appropriate unit for each field.',
+    'The third field calculates automatically.',
+    'View the formula used below the calculator.',
+    'Try the quick example presets for common scenarios.',
+  ],
+  relatedToolSlugs: ['unit-converter', 'scientific-calculator', 'fuel-cost-calculator', 'statistics-calculator'],
+  icon: 'Gauge',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'scientific-notation-converter',
+  name: 'Scientific Notation Converter',
+  shortDescription: 'Convert numbers to scientific notation, E-notation, and engineering notation. Bidirectional with adjustable significant figures.',
+  longDescription: `<p>The <strong>Scientific Notation Converter</strong> converts numbers between standard decimal form and scientific notation (also called standard form). It supports scientific notation (4.5 × 10⁻⁵), E-notation (4.5e-5), and engineering notation (45 × 10⁻⁶), and allows you to set the number of significant figures.</p>
+<h2>Scientific vs Engineering Notation</h2>
+<p><strong>Scientific notation</strong> uses a coefficient between 1 and 10 multiplied by a power of 10: 4.5 × 10⁻⁵. <strong>Engineering notation</strong> uses a coefficient between 1 and 1000 with the exponent always a multiple of 3: 45 × 10⁻⁶. Engineering notation aligns with SI prefixes (μ, m, k, M, G).</p>
+<h2>Use Cases</h2>
+<p>Scientific notation is used in physics, chemistry, astronomy, and engineering to express very large numbers (speed of light: 3 × 10⁸ m/s) or very small numbers (electron mass: 9.11 × 10⁻³¹ kg) compactly without long strings of zeros.</p>`,
+  category: 'converters',
+  targetKeyword: 'scientific notation converter',
+  secondaryKeywords: ['standard form calculator', 'convert to scientific notation', 'E notation converter', 'engineering notation calculator'],
+  metaTitle: 'Scientific Notation Converter — Standard Form Calculator Online',
+  metaDescription: 'Convert numbers to scientific notation, E-notation, and engineering notation. Bidirectional, adjustable significant figures. Free standard form calculator.',
+  faqs: [
+    { question: 'How do you convert a number to scientific notation?', answer: 'Move the decimal point until you have a number between 1 and 10, then multiply by 10 to the power of how many places you moved. For 0.000045: move decimal 5 places right → 4.5 × 10⁻⁵.' },
+    { question: 'What is the difference between scientific and engineering notation?', answer: 'Scientific notation has the exponent as any integer (4.5 × 10⁻⁵). Engineering notation restricts the exponent to multiples of 3 (45 × 10⁻⁶), which aligns with SI prefixes like micro (10⁻⁶), milli (10⁻³), kilo (10³).' },
+    { question: 'What does "e" mean in calculator notation?', answer: 'E-notation (4.5e-5) means 4.5 × 10⁻⁵. The "e" stands for "exponent" and is used in calculators and programming languages because superscript formatting is not always available.' },
+  ],
+  howToSteps: [
+    'Select "Standard to Scientific" tab and enter any decimal number (e.g. 0.000045 or 299792458).',
+    'Or select "Scientific to Standard" tab and enter scientific notation (e.g. 4.5e-5 or 4.5×10^-5).',
+    'Adjust significant figures (1–10) using the selector.',
+    'View results in all three formats: scientific, E-notation, and engineering notation.',
+    'Copy any result with the Copy button.',
+  ],
+  relatedToolSlugs: ['roman-numeral-converter', 'binary-hex-octal-converter', 'unit-converter', 'scientific-calculator'],
+  icon: 'Superscript',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'permutation-combination',
+  name: 'Permutation & Combination Calculator',
+  shortDescription: 'Calculate nPr (permutations), nCr (combinations), and n! (factorial) with step-by-step working.',
+  longDescription: `<p>The <strong>Permutation and Combination Calculator</strong> computes nPr (permutations), nCr (combinations), and factorial (n!) simultaneously, with a clear step-by-step breakdown of each calculation. Essential for probability, statistics, and combinatorics problems.</p>
+<h2>Permutations vs Combinations</h2>
+<p><strong>Permutations (nPr)</strong>: Order matters. How many ways can you arrange r items from n? Formula: n! ÷ (n−r)!. Example: How many ways can 3 people finish 1st, 2nd, 3rd in a race of 10? = 10P3 = 720.</p>
+<p><strong>Combinations (nCr)</strong>: Order doesn't matter. How many ways can you choose r items from n? Formula: n! ÷ (r! × (n−r)!). Example: How many 3-person committees from 10 people? = 10C3 = 120.</p>
+<h2>Factorial Calculator</h2>
+<p>The separate factorial calculator handles values from 0 to 10,000 using logarithm approximations for very large numbers, with exact BigInt results for n ≤ 20.</p>`,
+  category: 'calculators',
+  targetKeyword: 'permutation calculator',
+  secondaryKeywords: ['combination calculator nCr', 'nPr nCr calculator', 'factorial calculator', 'combinatorics calculator'],
+  metaTitle: 'Permutation & Combination Calculator — nPr, nCr, Factorial',
+  metaDescription: 'Calculate nPr (permutations), nCr (combinations), and n! (factorial) with step-by-step working. Free online permutation and combination calculator.',
+  faqs: [
+    { question: 'What is the difference between permutation and combination?', answer: 'Permutation (nPr): order matters — selecting and arranging. Combination (nCr): order doesn\'t matter — just selecting. Choosing 3 from 10 people for specific roles (President, VP, Secretary) is a permutation. Choosing a 3-person committee is a combination.' },
+    { question: 'What is nCr formula?', answer: 'nCr = n! ÷ (r! × (n−r)!). For 10C3: 10! ÷ (3! × 7!) = 3,628,800 ÷ (6 × 5040) = 3,628,800 ÷ 30,240 = 120.' },
+    { question: 'What is 0! (zero factorial)?', answer: '0! = 1, by mathematical convention. This is necessary for the combination formula to work correctly when r = n (nCn = 1) or r = 0 (nC0 = 1).' },
+  ],
+  howToSteps: [
+    'Enter n (total items) and r (items to choose/arrange).',
+    'View nPr, nCr, and n! calculated simultaneously.',
+    'Read the step-by-step working below for each calculation.',
+    'Use the separate Factorial Calculator section for computing n! alone.',
+  ],
+  relatedToolSlugs: ['statistics-calculator', 'scientific-calculator', 'percentage-calculator', 'average-calculator'],
+  icon: 'Shuffle',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'matrix-calculator',
+  name: 'Matrix Calculator',
+  shortDescription: 'Add, subtract, multiply matrices. Calculate determinant, transpose, and inverse for 2×2 and 3×3 matrices with step-by-step working.',
+  longDescription: `<p>The <strong>Matrix Calculator</strong> performs common matrix operations on 2×2 and 3×3 matrices: addition, subtraction, multiplication, determinant, transpose, and inverse. Each operation includes a step-by-step explanation of the calculation.</p>
+<h2>Supported Operations</h2>
+<p><strong>Add/Subtract</strong>: Element-wise addition or subtraction of two matrices of the same size. <strong>Multiply</strong>: Standard matrix multiplication (dot product). <strong>Determinant</strong>: Scalar value det(A) — 2×2 uses ad−bc; 3×3 uses cofactor expansion along the first row. <strong>Transpose</strong>: Flip rows and columns. <strong>Inverse</strong>: For 2×2 matrices, (1/det) × [[d,−b],[−c,a]].</p>
+<h2>When is a Matrix Invertible?</h2>
+<p>A matrix is invertible (non-singular) only if its determinant is non-zero. If det = 0, the matrix is singular and has no inverse — the calculator will show an appropriate message.</p>`,
+  category: 'calculators',
+  targetKeyword: 'matrix calculator',
+  secondaryKeywords: ['2x2 matrix calculator', 'matrix multiplication calculator', 'determinant calculator', 'matrix inverse calculator'],
+  metaTitle: 'Matrix Calculator — Add, Multiply, Determinant, Inverse Online',
+  metaDescription: 'Calculate matrix addition, subtraction, multiplication, determinant, transpose, and inverse for 2×2 and 3×3 matrices with step-by-step working.',
+  faqs: [
+    { question: 'How do you multiply two matrices?', answer: 'Matrix multiplication (not element-wise): each element of the result matrix is the dot product of a row from the first matrix and a column from the second. For 2×2: C[i][j] = A[i][0]×B[0][j] + A[i][1]×B[1][j].' },
+    { question: 'How do you find the determinant of a 2×2 matrix?', answer: 'For a 2×2 matrix [[a,b],[c,d]], the determinant = ad − bc. For example, det([[3,2],[1,4]]) = 3×4 − 2×1 = 12 − 2 = 10.' },
+    { question: 'What does it mean if a matrix has no inverse?', answer: 'A matrix with determinant = 0 is called singular and has no inverse. This means the matrix equations it represents have either no solution or infinitely many solutions.' },
+  ],
+  howToSteps: [
+    'Select the matrix size (2×2 or 3×3).',
+    'Select the operation you want to perform.',
+    'Enter values into Matrix A (and Matrix B for add/subtract/multiply).',
+    'The result appears instantly in the result grid.',
+    'Read the step-by-step calculation below the result.',
+  ],
+  relatedToolSlugs: ['statistics-calculator', 'scientific-calculator', 'permutation-combination', 'speed-distance-time'],
+  icon: 'Grid3x3',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
