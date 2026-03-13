@@ -118,11 +118,10 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
           <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-4 not-prose">
             {t('toolPage.aboutTool', { toolName: tool.name })}
           </h2>
-          <div className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed space-y-3 not-prose">
-            {tool.longDescription.split('\n\n').map((para, i) => (
-              <p key={i}>{para.trim()}</p>
-            ))}
-          </div>
+          <div
+            className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed space-y-3 not-prose [&_h2]:text-base [&_h2]:font-semibold [&_h2]:text-slate-800 [&_h2]:dark:text-slate-200 [&_h2]:mt-4 [&_h2]:mb-2 [&_h3]:text-sm [&_h3]:font-semibold [&_h3]:text-slate-700 [&_h3]:dark:text-slate-300 [&_h3]:mt-3 [&_h3]:mb-1 [&_p]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_strong]:font-semibold [&_strong]:text-slate-700 [&_strong]:dark:text-slate-300"
+            dangerouslySetInnerHTML={{ __html: tool.longDescription }}
+          />
         </section>
 
         {/* In-content ad */}
