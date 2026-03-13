@@ -65,11 +65,18 @@ export const tools: Tool[] = [
     slug: 'word-counter',
     name: 'Word Counter',
     shortDescription: 'Count words, characters, sentences and paragraphs in real time.',
-    longDescription: `Our free online Word Counter tool gives you instant, accurate counts of words, characters (with and without spaces), sentences, and paragraphs as you type. Whether you're working on an essay, blog post, social media update, or any document with a character limit, this tool has you covered.
-
-The Word Counter also estimates your reading time based on the average adult reading speed of 200 words per minute, and speaking time at 130 words per minute — perfect for preparing speeches, podcasts, or presentations.
-
-Unlike Microsoft Word or Google Docs, our tool works entirely in your browser — no signup, no downloads, no account required. Your text never leaves your device, ensuring 100% privacy. It's fast, free, and works on all devices including smartphones and tablets.`,
+    longDescription: `<p>Our free online <strong>word counter</strong> tool gives you instant, accurate counts of words, characters (with and without spaces), sentences, and paragraphs as you type. Whether you're working on an essay, blog post, social media update, or any document with a character limit, this tool has you covered.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Real-Time Counting</strong>: Word, character, sentence, and paragraph counts update instantly as you type.</li>
+<li><strong>Reading Time Estimate</strong>: Calculates reading time at 200 words per minute — perfect for blog posts and speeches.</li>
+<li><strong>Speaking Time</strong>: Estimates speaking time at 130 words per minute for presentations and podcasts.</li>
+<li><strong>No Limits</strong>: Handles 100,000+ words without performance issues.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Writers crafting essays, bloggers checking post length, students meeting assignment word limits, social media managers staying within platform character limits (Twitter: 280, Instagram: 2,200, LinkedIn: 3,000), and anyone preparing speeches or presentations.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored. Your text never leaves your device.</p>`,
     category: 'text-tools',
     targetKeyword: 'word counter',
     secondaryKeywords: ['character counter', 'word count tool', 'online word counter', 'count words online', 'word count checker', 'word counter online', 'word counter free', 'word character counter', 'words count tool online', 'paragraph counter online'],
@@ -98,11 +105,18 @@ Unlike Microsoft Word or Google Docs, our tool works entirely in your browser �
     slug: 'character-counter',
     name: 'Character Counter',
     shortDescription: 'Count characters with and without spaces, words, and lines instantly.',
-    longDescription: `The Character Counter tool provides a precise count of every character in your text — including spaces, punctuation, and special characters. This is essential for meeting strict character limits on platforms like Twitter (280), SMS (160), meta descriptions (155), and ad copy.
-
-The tool shows both total characters (with spaces) and characters without spaces, along with word count, line count, and paragraph count. This gives you a complete picture of your content's density and structure.
-
-Everything runs locally in your browser, so your private text — whether it's passwords, confidential documents, or creative writing — never touches a server. It's fast, free, and works offline once the page is loaded.`,
+    longDescription: `<p>The <strong>character counter</strong> tool provides a precise count of every character in your text — including spaces, punctuation, and special characters. This is essential for meeting strict character limits on platforms like Twitter (280), SMS (160), meta descriptions (155), and ad copy.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Characters With & Without Spaces</strong>: See both totals for complete flexibility.</li>
+<li><strong>Full Content Breakdown</strong>: Word count, line count, and paragraph count displayed together.</li>
+<li><strong>Emoji Support</strong>: Correctly counts emojis, including their platform-specific character values.</li>
+<li><strong>No Practical Limit</strong>: Handles large documents without slowdown.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Social media managers checking Twitter, SMS, and Instagram limits; SEO professionals optimizing meta descriptions (120–155 characters); copywriters working on ad copy with strict character budgets; and developers testing input field lengths.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored. Your text never leaves your device.</p>`,
     category: 'text-tools',
     targetKeyword: 'character counter',
     secondaryKeywords: ['char counter', 'count characters online', 'letter counter', 'character count tool', 'text length counter'],
@@ -131,11 +145,18 @@ Everything runs locally in your browser, so your private text — whether it's p
     slug: 'case-converter',
     name: 'Case Converter',
     shortDescription: 'Convert text to UPPERCASE, lowercase, Title Case, camelCase, snake_case and more.',
-    longDescription: `The Case Converter tool lets you instantly transform any text between 8 different letter cases: UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, and kebab-case. This is invaluable for developers naming variables, writers fixing copy-pasted text, or anyone who needs to reformat text quickly.
-
-Developers can convert user-facing text to camelCase for JavaScript variables, snake_case for Python, or kebab-case for CSS class names and URL slugs. Writers and editors can quickly fix text that was accidentally typed in all caps, or properly capitalize a title without manually editing each word.
-
-The conversion happens instantly in your browser with zero latency. No data is sent to any server — your text stays private. Works on desktop, tablet, and mobile with no download or account needed.`,
+    longDescription: `<p>The <strong>case converter</strong> tool lets you instantly transform any text between 8 different letter cases: UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, and kebab-case. Invaluable for developers naming variables, writers fixing copy-pasted text, or anyone reformatting text quickly.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>8 Case Formats</strong>: UPPER, lower, Title, Sentence, camelCase, PascalCase, snake_case, kebab-case.</li>
+<li><strong>Instant Conversion</strong>: Results appear as soon as you click a format button — zero latency.</li>
+<li><strong>Large Text Support</strong>: Handles entire documents with thousands of words without slowdown.</li>
+<li><strong>One-Click Copy</strong>: Copy converted text to clipboard immediately.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers converting variable names between programming languages (camelCase for JavaScript, snake_case for Python, kebab-case for CSS); writers and editors fixing incorrectly capitalized text; content creators properly titling headings and articles.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored. Your text never leaves your device.</p>`,
     category: 'text-tools',
     targetKeyword: 'case converter',
     secondaryKeywords: ['text case converter', 'uppercase converter', 'camelcase converter', 'snake case converter', 'title case converter online'],
@@ -164,11 +185,18 @@ The conversion happens instantly in your browser with zero latency. No data is s
     slug: 'lorem-ipsum-generator',
     name: 'Lorem Ipsum Generator',
     shortDescription: 'Generate placeholder lorem ipsum text by paragraphs, sentences, or words.',
-    longDescription: `Lorem Ipsum is the de facto placeholder text used in publishing, graphic design, web development, and UI/UX prototyping since the 1500s. Our Lorem Ipsum Generator creates authentic, randomized placeholder text in seconds, perfect for filling in designs before real content is ready.
-
-You can generate by paragraphs (each 3-5 sentences), by sentences, or by a specific word count. The generator uses the classic Cicero-derived Latin text, shuffled to produce unique variations every time, so your placeholder content never looks repetitive.
-
-Whether you're a web designer building a mockup, a developer testing a layout, or a graphic designer creating a brochure template, this tool gives you the placeholder text you need instantly. Generate up to 100 paragraphs at once, copy with one click, and start from the classic "Lorem ipsum dolor sit amet…" or a random starting point.`,
+    longDescription: `<p>Our <strong>Lorem Ipsum generator</strong> creates authentic, randomized placeholder text in seconds — the de facto dummy text used in publishing, graphic design, web development, and UI/UX prototyping since the 1500s. Fill your designs with realistic content before real copy is ready.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Three Generation Modes</strong>: Generate by paragraphs, sentences, or a specific word count.</li>
+<li><strong>Classic or Random Start</strong>: Toggle to always begin with the classic "Lorem ipsum dolor sit amet…" phrase.</li>
+<li><strong>Up to 100 Paragraphs</strong>: Generate large amounts of placeholder text in one click.</li>
+<li><strong>Unique Each Time</strong>: The Cicero-derived text is shuffled so output never looks repetitive.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Web designers building mockups, developers testing layouts, graphic designers creating brochure and print templates, and UX designers prototyping interfaces — anyone who needs realistic-looking placeholder content before real copy is available.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'text-tools',
     targetKeyword: 'lorem ipsum generator',
     secondaryKeywords: ['placeholder text generator', 'dummy text generator', 'lorem ipsum online', 'generate lorem ipsum', 'fake text generator'],
@@ -197,11 +225,18 @@ Whether you're a web designer building a mockup, a developer testing a layout, o
     slug: 'text-to-slug',
     name: 'Text to Slug',
     shortDescription: 'Convert any text into a clean, SEO-friendly URL slug instantly.',
-    longDescription: `A URL slug is the part of a web address that identifies a specific page in a human-readable format. For example, the slug for this page is "text-to-slug". Clean, descriptive slugs are a crucial on-page SEO factor — they help search engines understand the page topic and improve click-through rates in search results.
-
-Our Text to Slug converter automatically handles all the transformations needed: converts to lowercase, replaces spaces with hyphens, removes special characters and accents, removes stop words (optional), and ensures no double hyphens or leading/trailing hyphens remain.
-
-This tool is essential for bloggers, SEO professionals, developers building CMS systems, and anyone creating web pages who wants clean, readable URLs. WordPress, Shopify, and other CMS platforms use this exact logic for their URL generation.`,
+    longDescription: `<p>Our <strong>text to slug converter</strong> instantly transforms any title, phrase, or heading into a clean, SEO-friendly URL slug. A URL slug — the human-readable part of a web address like "text-to-slug" — is a crucial on-page SEO factor that helps search engines understand page topics and improves click-through rates.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Full Slug Normalization</strong>: Converts to lowercase, replaces spaces with hyphens, removes special characters and accents.</li>
+<li><strong>Stop Word Removal</strong>: Optionally strips common words (the, a, and, of) to keep URLs short and keyword-focused.</li>
+<li><strong>No Double Hyphens</strong>: Automatically cleans up consecutive or leading/trailing hyphens.</li>
+<li><strong>Instant Output</strong>: Slug generated in real time as you type.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Bloggers and content creators setting post URLs, SEO professionals optimizing permalinks, developers building CMS systems, and anyone using WordPress, Shopify, or custom web platforms that require clean URL slugs.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'text-tools',
     targetKeyword: 'text to slug converter',
     secondaryKeywords: ['url slug generator', 'slug converter', 'seo friendly url generator', 'permalink generator', 'string to slug'],
@@ -229,11 +264,19 @@ This tool is essential for bloggers, SEO professionals, developers building CMS 
     slug: 'remove-duplicate-lines',
     name: 'Remove Duplicate Lines',
     shortDescription: 'Remove duplicate lines from text, sort lines, and clean up lists instantly.',
-    longDescription: `The Remove Duplicate Lines tool quickly cleans up any text by eliminating repeated lines, with options to sort alphabetically, ignore case, trim whitespace, and remove blank lines. This is perfect for cleaning up exported spreadsheet data, email lists, keyword lists, log files, and any text where duplicates need to be eliminated.
-
-Data analysts, SEO professionals managing keyword lists, developers cleaning log outputs, and marketers deduplicating email lists all rely on this type of tool daily. What would take minutes of manual work or complex Excel formulas is done in under a second here.
-
-The tool handles large inputs — paste in thousands of lines and get clean, deduplicated output instantly. No data is sent to a server; all processing happens locally in your browser for complete privacy.`,
+    longDescription: `<p>The <strong>remove duplicate lines</strong> tool quickly cleans up any text by eliminating repeated lines. With options to sort alphabetically, ignore case, trim whitespace, and remove blank lines, it handles spreadsheet exports, email lists, keyword lists, and log files in under a second.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Instant Deduplication</strong>: Removes repeated lines while preserving original order by default.</li>
+<li><strong>Case-Insensitive Matching</strong>: Optionally treat "Apple" and "apple" as duplicates.</li>
+<li><strong>Whitespace Trimming</strong>: Normalize lines before comparing so "  apple  " matches "apple".</li>
+<li><strong>Blank Line Removal</strong>: Strip empty lines from output in the same pass.</li>
+<li><strong>Large Input Support</strong>: Handles 500,000+ lines entirely in your browser.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Data analysts cleaning exported CSVs, SEO professionals deduplicating keyword lists, developers filtering log outputs, and marketers cleaning email subscriber lists — anyone who needs fast, reliable text deduplication.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'text-tools',
     targetKeyword: 'remove duplicate lines',
     secondaryKeywords: ['deduplicate text online', 'remove duplicate text', 'unique lines extractor', 'text deduplication tool', 'remove repeated lines'],
@@ -262,15 +305,19 @@ The tool handles large inputs — paste in thousands of lines and get clean, ded
     slug: 'hook-caption-scorer',
     name: 'Hook & Caption Scorer',
     shortDescription: 'Score your hooks, captions & headlines on 5 dimensions. Get actionable tips to boost engagement.',
-    longDescription: `Rate any hook, caption, or headline with our free Hook & Caption Scorer. The tool analyzes your text across 5 proven engagement dimensions — Power Words, Emotional Trigger, Clarity, Curiosity Gap, and Specificity — and gives you an overall score from 0 to 100.
-
-Choose your platform context (YouTube Title, Instagram Caption, Twitter/X Post, Blog Headline, Email Subject, TikTok Hook, or LinkedIn Post) and the scorer adjusts its ideal length targets, emoji handling, and tone expectations automatically.
-
-The built-in power words database contains 200+ categorized engagement words across urgency, emotion, value, curiosity, authority, and action categories. The tool checks for numbers, questions, curiosity gaps, ALL CAPS usage, passive voice, generic phrases, and platform-specific length optimization.
-
-After scoring, you get 3-5 actionable suggestions to improve — like adding a power word, creating a curiosity gap, or including a specific number. Your last 5 scored hooks are saved in browser history so you can compare iterations. Copy a full score report to share with your team.
-
-100% client-side — no AI, no API calls, no data sent to any server. Instant, private, and free.`,
+    longDescription: `<p>Rate any hook, caption, or headline with our free <strong>hook scorer</strong>. The tool analyzes your text across 5 proven engagement dimensions — Power Words, Emotional Trigger, Clarity, Curiosity Gap, and Specificity — and gives you an overall score from 0 to 100 with actionable improvement tips.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>5-Dimension Scoring</strong>: Power Words, Emotional Trigger, Clarity, Curiosity Gap, and Specificity — each scored 0–20.</li>
+<li><strong>Platform Context</strong>: Adjusts ideal length targets and tone for YouTube, Instagram, Twitter/X, Blog, Email, TikTok, or LinkedIn.</li>
+<li><strong>200+ Power Words Database</strong>: Checks urgency, emotion, value, curiosity, authority, and action words.</li>
+<li><strong>Actionable Suggestions</strong>: Get 3–5 specific tips to improve your score after every analysis.</li>
+<li><strong>Score History</strong>: Last 5 scored hooks saved in your browser so you can compare iterations.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Content creators writing YouTube titles and TikTok hooks, social media managers crafting Instagram captions, email marketers optimizing subject lines, and bloggers improving headline click-through rates.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no AI, no API calls, no data sent to any server. Instant, private, and free.</p>`,
     category: 'text-tools',
     targetKeyword: 'hook scorer',
     secondaryKeywords: ['caption scorer', 'headline analyzer', 'hook rating tool', 'caption analyzer', 'headline score', 'engagement scorer', 'hook grader', 'caption grader', 'title scorer', 'youtube title scorer'],
@@ -301,11 +348,19 @@ After scoring, you get 3-5 actionable suggestions to improve — like adding a p
     slug: 'age-calculator',
     name: 'Age Calculator',
     shortDescription: 'Calculate your exact age in years, months, days and hours from date of birth.',
-    longDescription: `Our Age Calculator gives you your exact age down to the day — no more guessing. Enter your date of birth and today's date, and instantly see your age in years, months, days, hours, minutes, and seconds. You'll also see how many days until your next birthday and what day of the week you were born on.
-
-This tool is used by millions of people for a wide range of purposes: filling out official forms, verifying age eligibility, calculating retirement milestones, preparing for birthdays, or simply satisfying curiosity. It correctly handles leap years, so your birthday calculations are always accurate.
-
-You can also calculate the age of anything — a car, a company, a tree — by entering any two dates. The tool shows the time difference in multiple units simultaneously, making it versatile for any date-based calculation.`,
+    longDescription: `<p>Our free <strong>age calculator</strong> gives you your exact age down to the day — enter your date of birth and instantly see your age in years, months, days, hours, minutes, and seconds. You'll also see how many days until your next birthday and what day of the week you were born on.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Exact Age Breakdown</strong>: View age in years, months, days, hours, and minutes simultaneously.</li>
+<li><strong>Leap Year Accurate</strong>: Correctly handles February 29 birthdays and all leap year calculations.</li>
+<li><strong>Birthday Countdown</strong>: Shows the exact number of days until your next birthday.</li>
+<li><strong>Day of Birth</strong>: Reveals what day of the week you were born.</li>
+<li><strong>Any Two Dates</strong>: Calculate the age of anything — a car, a company, a project — using custom dates.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone filling out official forms, verifying age eligibility, calculating retirement milestones, parents tracking children's ages, or simply curious about their exact age in days, hours, and minutes.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'age calculator',
     secondaryKeywords: ['age calculator online', 'date of birth age calculator', 'calculate my age', 'exact age calculator', 'age from date of birth', 'birthday age calculator', 'age calculator by date of birth', 'online age calculator India', 'how old am I calculator', 'age in days calculator'],
@@ -334,7 +389,19 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'text-compare',
     name: 'Text Compare Tool',
     shortDescription: 'Compare two texts side-by-side with word-level highlighting, file upload, and instant diff.',
-    longDescription: 'The most powerful free text comparison tool online. Compare two texts with line, word, or character-level precision. Features side-by-side and unified views, drag-and-drop file upload, ignore case/whitespace/punctuation/line-order options, navigate between changes, hide unchanged lines, search within diffs, similarity percentage, inline word highlighting, and export as PNG. All processing happens in your browser — your text never leaves your device.',
+    longDescription: `<p>The most powerful free <strong>text compare tool</strong> online. Compare two texts side-by-side with line, word, or character-level precision, complete with color-coded diff highlighting, similarity percentage, and one-click PNG export. All processing happens in your browser — your text never leaves your device.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Three Diff Modes</strong>: Line, Word, or Character-level comparison with inline highlighting.</li>
+<li><strong>File Upload</strong>: Drag-and-drop .txt, .md, .json, .csv, .js, .py, and many more file types.</li>
+<li><strong>Ignore Options</strong>: Ignore case, whitespace, punctuation, or line order for flexible comparisons.</li>
+<li><strong>Navigate Changes</strong>: Jump between differences with arrow buttons or Alt+Up/Down shortcuts.</li>
+<li><strong>Export as PNG</strong>: Download a screenshot of the diff for sharing or documentation.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers reviewing code changes, writers comparing document revisions, QA engineers checking test outputs, content editors tracking changes, and anyone who needs to quickly find differences between two pieces of text.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored. Your text never leaves your device.</p>`,
     category: 'text-tools',
     targetKeyword: 'text compare online',
     secondaryKeywords: ['text diff checker', 'compare two texts online', 'text comparison tool', 'find differences in text', 'diff tool online free', 'text compare tool', 'online diff checker', 'compare text files'],
@@ -359,7 +426,18 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'text-diff',
     name: 'Text Diff Checker',
     shortDescription: 'Compare two texts side-by-side and highlight the differences line by line.',
-    longDescription: 'Redirects to our improved Text Compare Tool with word-level diff, file upload, and more.',
+    longDescription: `<p>Our <strong>text diff checker</strong> compares two texts side-by-side and highlights every added, removed, and changed line in color-coded output. It uses word-level diffing so you can pinpoint the exact words that changed, not just the full lines.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Word-Level Diff</strong>: Highlights the specific words that differ within each changed line.</li>
+<li><strong>Color-Coded Output</strong>: Green for additions, red for removals — instantly scannable.</li>
+<li><strong>File Upload</strong>: Compare text files directly without copy-pasting.</li>
+<li><strong>Similarity Score</strong>: Shows the percentage of lines that are identical between the two texts.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Writers comparing drafts, developers reviewing code snippets, editors tracking revisions, and students checking for differences between documents.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'text-tools',
     targetKeyword: 'text diff checker online',
     secondaryKeywords: ['compare two texts', 'text comparison tool', 'find differences in text', 'diff tool online free'],
@@ -375,7 +453,18 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'fancy-text-generator',
     name: 'Fancy Text Generator',
     shortDescription: 'Convert text into cool Unicode fonts for Instagram, Twitter, WhatsApp and more.',
-    longDescription: 'Transform any text into 14+ Unicode font styles — bold, italic, monospace, fraktur, script, circled, block letters, strikethrough, underline, wide, tiny caps, upside down, and more. Click any style to instantly copy it and paste anywhere.',
+    longDescription: `<p>Transform any text into 14+ Unicode font styles with our free <strong>fancy text generator</strong>. Choose from bold, italic, monospace, fraktur, script, circled, block letters, strikethrough, underline, wide, tiny caps, upside down, and more — then copy and paste anywhere these characters are supported.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>14+ Style Options</strong>: Bold, italic, script, fraktur, circled, block letters, strikethrough, upside down, and more.</li>
+<li><strong>One-Click Copy</strong>: Click any style card to instantly copy it to your clipboard.</li>
+<li><strong>Works Everywhere</strong>: Uses real Unicode characters that work on all modern platforms.</li>
+<li><strong>Number Support</strong>: Several styles (bold, monospace, circled) also transform numbers.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Social media users decorating Instagram bios and posts, content creators standing out in Twitter/X feeds, gamers styling usernames, and anyone who wants to add visual flair to their text on WhatsApp, Discord, or any platform.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'text-tools',
     targetKeyword: 'fancy text generator',
     secondaryKeywords: ['unicode font generator', 'cool text generator', 'instagram fonts', 'fancy letters online', 'stylish text maker'],
@@ -397,7 +486,19 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'uuid-generator',
     name: 'UUID Generator',
     shortDescription: 'Generate UUID v4, v1-style, nil UUIDs and short IDs in bulk.',
-    longDescription: 'Generate cryptographically random UUIDs instantly. Choose UUID v4 (fully random), v1-like (time-based prefix), nil UUID (all zeros), or short 12-character IDs. Generate 1–20 at a time. Toggle uppercase, copy individual or all at once.',
+    longDescription: `<p>Generate cryptographically random UUIDs instantly with our free <strong>UUID generator online</strong>. Choose from UUID v4 (fully random), v1-like (time-based prefix), nil UUID (all zeros), or compact 12-character short IDs — generate up to 20 at a time with one click.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>UUID v4</strong>: Fully random, 122 bits of entropy — effectively unique for all practical purposes.</li>
+<li><strong>UUID v1-Like</strong>: Time-based prefix for sortable identifiers.</li>
+<li><strong>Short IDs</strong>: Compact 12-character URL-safe base64 strings for when UUID length is too long.</li>
+<li><strong>Bulk Generation</strong>: Generate 1–20 UUIDs at once; copy individually or all together.</li>
+<li><strong>Cryptographically Secure</strong>: Uses the Web Crypto API (crypto.getRandomValues).</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Backend developers seeding database primary keys, frontend engineers generating temporary IDs, QA engineers creating test data, and developers building distributed systems that need globally unique identifiers.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'UUID generator online',
     secondaryKeywords: ['uuid v4 generator', 'generate unique id online', 'guid generator', 'random uuid', 'bulk uuid generator'],
@@ -419,7 +520,18 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'jwt-decoder',
     name: 'JWT Decoder',
     shortDescription: 'Decode and inspect JWT tokens — header, payload, expiry and claims.',
-    longDescription: 'Paste any JSON Web Token and instantly decode its header and payload. See the algorithm, all claims, issued-at and expiry dates, and whether the token is currently valid or expired. Color-coded sections for header, payload, and signature. Useful for debugging auth issues.',
+    longDescription: `<p>Paste any JSON Web Token and instantly decode it with our free <strong>JWT decoder online</strong>. View the header, payload claims, issued-at and expiry dates, and a color-coded validity badge — all in your browser without sending your token anywhere.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Full Claim Inspection</strong>: Displays all standard and custom claims (sub, name, iat, exp, iss, aud, etc.).</li>
+<li><strong>Expiry Status</strong>: Compares the "exp" claim to current time — shows green "Valid" or red "Expired" badge.</li>
+<li><strong>Color-Coded Sections</strong>: Header (purple), Payload (blue), and Signature clearly separated.</li>
+<li><strong>Algorithm Display</strong>: Shows the signing algorithm (HS256, RS256, ES256, etc.).</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Backend and frontend developers debugging authentication flows, security engineers inspecting token claims, and anyone troubleshooting JWT-based API access issues without needing a full development environment.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your token is never sent to any server. No signup, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'JWT decoder online',
     secondaryKeywords: ['decode jwt token', 'jwt parser online', 'json web token decoder', 'jwt inspector', 'jwt claims viewer'],
@@ -441,7 +553,18 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'tip-calculator',
     name: 'Tip Calculator',
     shortDescription: 'Calculate tip amount and split the bill between multiple people.',
-    longDescription: 'Enter your bill amount, choose a tip percentage (or custom), and set how many people are splitting. Instantly see the tip amount, total bill, and per-person share. Includes a tipping etiquette guide for different service levels.',
+    longDescription: `<p>Our free <strong>tip calculator</strong> makes splitting restaurant bills effortless. Enter the bill amount, choose a tip percentage (or enter a custom one), set how many people are splitting, and instantly see the tip amount, total bill, and per-person share.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Quick Tip Presets</strong>: Common percentages (10%, 15%, 18%, 20%) selectable in one tap.</li>
+<li><strong>Custom Tip Percentage</strong>: Enter any percentage for complete flexibility.</li>
+<li><strong>Bill Splitting</strong>: Divide the total evenly among any number of people.</li>
+<li><strong>Tipping Guide</strong>: Includes etiquette reference for different service levels and countries.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Diners splitting restaurant bills with friends, travelers who need tipping guidance in unfamiliar countries, and anyone who wants fast, accurate bill math without mental arithmetic.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'tip calculator',
     secondaryKeywords: ['bill split calculator', 'restaurant tip calculator', 'tip and split calculator free', 'how much to tip calculator'],
@@ -463,7 +586,19 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'css-gradient-generator',
     name: 'CSS Gradient Generator',
     shortDescription: 'Create beautiful linear, radial, and conic CSS gradients visually.',
-    longDescription: 'Design stunning CSS gradients with a live preview. Choose linear, radial, or conic gradient type. Add unlimited color stops, set their positions, and adjust the angle. Includes 6 beautiful presets. Copy the CSS with one click.',
+    longDescription: `<p>Design stunning backgrounds with our free <strong>CSS gradient generator</strong>. Choose from linear, radial, or conic gradient types, add unlimited color stops, adjust the angle, and get production-ready CSS code with a single click.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Three Gradient Types</strong>: Linear (directional), radial (circular), and conic (rotating) gradients.</li>
+<li><strong>Unlimited Color Stops</strong>: Add as many stops as you need, each with its own color and position.</li>
+<li><strong>Live Preview</strong>: See your gradient update in real time as you adjust settings.</li>
+<li><strong>6 Built-In Presets</strong>: Start from beautiful preset gradients and customize from there.</li>
+<li><strong>Standard CSS Output</strong>: Clean, vendor-prefix-free CSS ready to paste into any project.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Web designers styling hero sections, landing pages, and UI components; frontend developers building design systems; and anyone who wants to create polished gradient backgrounds without manually writing CSS.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'CSS gradient generator',
     secondaryKeywords: ['css gradient maker', 'linear gradient generator', 'gradient color picker', 'css background gradient tool'],
@@ -485,13 +620,7 @@ You can also calculate the age of anything — a car, a company, a tree — by e
     slug: 'css-gradient-text-generator',
     name: 'CSS Gradient Text Generator',
     shortDescription: 'Create stunning gradient text effects with live preview. Copy CSS instantly.',
-    longDescription: `Create eye-catching gradient text with our free CSS Gradient Text Generator. Choose from beautiful presets or create custom gradients using any colors — see the effect live on your custom text. Copy the exact CSS code with one click.
-
-The tool generates standard CSS using background-clip and -webkit-background-clip for maximum browser compatibility. Supports linear gradients in any direction, and works on headings, paragraphs, buttons, and any text element.
-
-Features include 12 beautiful gradient presets (Sunset, Ocean, Neon, Forest, Berry, Fire, Galaxy, Candy, Midnight, Emerald, Peach, Electric), custom color pickers for start and end colors, angle control, font size adjustment, and live preview with your own text. The generated CSS is clean and copy-paste ready.
-
-Perfect for web designers creating hero headings, landing page titles, social media graphics, and any project that needs visually striking text effects.`,
+    longDescription: `<p>Create eye-catching text effects with our free <strong>CSS gradient text generator</strong>. Choose from 12 beautiful presets or build custom gradients with any colors, see the effect live on your own text, and copy the exact CSS code with one click.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>12 Gradient Presets</strong>: Sunset, Ocean, Neon, Forest, Berry, Fire, Galaxy, Candy, Midnight, Emerald, Peach, and Electric.</li>\n<li><strong>Custom Color Pickers</strong>: Set start and end colors and gradient angle for fully unique effects.</li>\n<li><strong>Live Preview</strong>: Type your own text and see the gradient applied in real time.</li>\n<li><strong>Cross-Browser CSS</strong>: Generates both standard and -webkit- prefixed properties for maximum compatibility.</li>\n<li><strong>Works on Any Element</strong>: CSS applies to headings, paragraphs, buttons, spans, and any text element.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Web designers creating hero headings and landing page titles, frontend developers adding visual flair to UI, and content creators designing social media graphics that need striking, colorful text effects.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'CSS gradient text generator',
     secondaryKeywords: ['gradient text css', 'text gradient generator', 'css text color gradient', 'gradient text effect css', 'rainbow text css', 'gradient heading generator', 'colorful text css generator'],
@@ -514,7 +643,7 @@ Perfect for web designers creating hero headings, landing page titles, social me
     slug: 'box-shadow-generator',
     name: 'Box Shadow Generator',
     shortDescription: 'Generate CSS box-shadow code visually with live preview and presets.',
-    longDescription: 'Design CSS box shadows interactively with a live preview canvas. Control X/Y offset, blur, spread, opacity, and color for each shadow layer. Add multiple shadow layers for complex effects. Includes 6 presets (soft, hard, layered, glow, inset). Copy the CSS instantly.',
+    longDescription: `<p>Design CSS box shadows interactively with our free <strong>CSS box shadow generator</strong>. Control every shadow property visually on a live canvas and copy production-ready CSS with a single click.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>Full Control</strong>: Adjust X/Y offset, blur radius, spread, opacity, and color per layer.</li>\n<li><strong>Multiple Layers</strong>: Stack multiple shadow layers for realistic, complex effects.</li>\n<li><strong>6 Presets</strong>: Soft, hard, layered, glow, and inset shadows to start from.</li>\n<li><strong>Inset Shadows</strong>: Create "pressed" or "embedded" inner shadow effects.</li>\n<li><strong>Instant Copy</strong>: One-click copy of the complete box-shadow CSS declaration.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>UI designers perfecting card and button shadows, frontend developers implementing design specs, and anyone who wants to create polished depth effects without manually tuning CSS values.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'CSS box shadow generator',
     secondaryKeywords: ['box shadow css tool', 'css shadow generator online', 'box-shadow maker', 'drop shadow generator css'],
@@ -536,7 +665,7 @@ Perfect for web designers creating hero headings, landing page titles, social me
     slug: 'css-flexbox-generator',
     name: 'CSS Flexbox Generator',
     shortDescription: 'Build CSS flexbox layouts visually with a live interactive playground.',
-    longDescription: 'Interactive CSS Flexbox playground with real-time preview. Control flex-direction, justify-content, align-items, flex-wrap, and gap on the container. Customize per-item properties like flex-grow, flex-shrink, flex-basis, align-self, and order. Includes layout presets (Navbar, Card Grid, Holy Grail, Centered, Sidebar). Copy production-ready CSS instantly.',
+    longDescription: `<p>Build CSS layouts visually with our free <strong>CSS flexbox generator</strong> playground. Control every flexbox property on the container and individual items, preview the result in real time, and copy production-ready CSS instantly.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>Container Controls</strong>: flex-direction, justify-content, align-items, flex-wrap, and gap.</li>\n<li><strong>Per-Item Controls</strong>: flex-grow, flex-shrink, flex-basis, align-self, and order for each item.</li>\n<li><strong>Layout Presets</strong>: Navbar, Card Grid, Holy Grail, Centered, and Sidebar to get started fast.</li>\n<li><strong>Live Preview</strong>: See layout changes update in real time as you adjust values.</li>\n<li><strong>Instant CSS Export</strong>: Copy the generated CSS with all properties ready for production.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Frontend developers learning flexbox concepts visually, designers prototyping layouts, and developers who want to experiment with flexbox properties without writing CSS manually.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'CSS flexbox generator',
     secondaryKeywords: ['flexbox playground', 'css flex generator online', 'flexbox layout builder', 'flexbox cheat sheet visual', 'css flex tool'],
@@ -558,7 +687,7 @@ Perfect for web designers creating hero headings, landing page titles, social me
     slug: 'countdown-timer',
     name: 'Countdown Timer',
     shortDescription: 'A simple, beautiful countdown timer with circular progress and presets.',
-    longDescription: 'Set a countdown timer with quick presets (1 min to 1 hour) or enter a custom hours/minutes/seconds value. A circular progress ring shows time remaining visually. Pause, resume, reset, or add 1 minute on the fly. Works entirely in your browser.',
+    longDescription: `<p>Set a free <strong>countdown timer online</strong> with quick presets from 1 minute to 1 hour, or enter a custom hours/minutes/seconds value. A beautiful circular progress ring shows the time remaining at a glance.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>Quick Presets</strong>: 1, 5, 10, 15, 25, 30, and 60-minute presets for instant setup.</li>\n<li><strong>Custom Time</strong>: Set any hours, minutes, and seconds combination — no maximum limit.</li>\n<li><strong>Circular Progress Ring</strong>: Visual arc indicator shows how much time remains.</li>\n<li><strong>Pause & Resume</strong>: Stop and continue the timer without losing your place.</li>\n<li><strong>+1 Minute</strong>: Add a minute on the fly while the timer is running.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Students using the Pomodoro technique (25 min work / 5 min break), cooks timing recipes, teachers managing classroom activities, and anyone who needs a quick, reliable timer without installing an app.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'utility-tools',
     targetKeyword: 'countdown timer online',
     secondaryKeywords: ['online countdown timer', 'free timer online', 'kitchen timer online', 'study timer', 'pomodoro timer'],
@@ -581,7 +710,7 @@ Perfect for web designers creating hero headings, landing page titles, social me
     slug: 'random-generator',
     name: 'Random Generator',
     shortDescription: 'Generate random numbers, roll dice, flip coins, and pick from a list.',
-    longDescription: 'Four tools in one: random number generator (set min/max/count), dice roller (D4 to D100, multiple dice), coin flipper (multiple flips with heads/tails count), and random list picker (paste items and pick N randomly). All use cryptographically random or Math.random generation.',
+    longDescription: `<p>Four tools in one free <strong>random number generator</strong>: generate numbers in any range, roll virtual dice, flip coins, and pick randomly from a custom list — all with one click.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>Number Generator</strong>: Set custom min, max, and count — generate multiple numbers at once.</li>\n<li><strong>Dice Roller</strong>: D4, D6, D8, D10, D12, D20, and D100 — roll up to 10 dice simultaneously.</li>\n<li><strong>Coin Flipper</strong>: Flip multiple coins and see the heads/tails breakdown.</li>\n<li><strong>List Picker</strong>: Paste any list of items and randomly pick one or more winners.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Tabletop RPG and board game players, teachers picking random students, contest organizers drawing winners, developers needing quick random test data, and anyone who needs a fast, fair random decision.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'utility-tools',
     targetKeyword: 'random number generator',
     secondaryKeywords: ['dice roller online', 'coin flip online', 'random picker', 'random name picker', 'online dice roll'],
@@ -603,7 +732,7 @@ Perfect for web designers creating hero headings, landing page titles, social me
     slug: 'password-strength-checker',
     name: 'Password Strength Checker',
     shortDescription: 'Check how strong your password is with detailed analysis and tips.',
-    longDescription: 'Analyze any password\'s strength against 7 security criteria including length, character variety, and common patterns. Shows a color-coded strength bar (Very Weak to Very Strong), entropy estimate in bits, character type counts, and detailed checklist. Warns if the password is in the list of most common passwords.',
+    longDescription: `<p>Analyze any password instantly with our free <strong>password strength checker</strong>. Get a color-coded strength rating, entropy score in bits, and a detailed security checklist — all without your password ever leaving your device.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>7-Criteria Analysis</strong>: Checks length, uppercase, lowercase, numbers, symbols, uniqueness, and common patterns.</li>\n<li><strong>Strength Bar</strong>: Color-coded rating from Very Weak to Very Strong.</li>\n<li><strong>Entropy Estimate</strong>: Shows password entropy in bits — aim for 60+ bits for good security.</li>\n<li><strong>Common Password Warning</strong>: Flags if your password matches the 15 most commonly used passwords.</li>\n<li><strong>Improvement Tips</strong>: Actionable advice on how to make your password stronger.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Anyone creating new account passwords, IT administrators setting password policies, security-conscious users auditing existing passwords, and developers building password validation features.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — your password is never sent to any server. No signup, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'password strength checker',
     secondaryKeywords: ['password strength tester', 'how strong is my password', 'check password security', 'password analyzer online'],
@@ -625,7 +754,7 @@ Perfect for web designers creating hero headings, landing page titles, social me
     slug: 'meta-tag-generator',
     name: 'Meta Tag Generator',
     shortDescription: 'Generate SEO meta tags, Open Graph, and Twitter Card tags for your website.',
-    longDescription: 'Create complete HTML meta tags for any webpage in seconds. Covers Basic SEO (title, description, keywords, robots, canonical), Open Graph (for Facebook/LinkedIn sharing previews), and Twitter Card tags. Live generated code updates as you type. Copy individual sections or all tags at once.',
+    longDescription: `<p>Create complete HTML meta tags for any webpage in seconds with our free <strong>meta tag generator</strong>. Covers Basic SEO, Open Graph, and Twitter Card tags — live code updates as you type, ready to paste into your site's &lt;head&gt;.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>Basic SEO Tags</strong>: Title, description, keywords, robots directives, and canonical URL.</li>\n<li><strong>Open Graph Tags</strong>: Control how your page looks when shared on Facebook, LinkedIn, and WhatsApp.</li>\n<li><strong>Twitter Card Tags</strong>: Set card type, title, description, and image for Twitter/X link previews.</li>\n<li><strong>Character Counter</strong>: Live counter warns when title (60 chars) or description (160 chars) is too long.</li>\n<li><strong>Copy All or Per-Section</strong>: Copy individual tag groups or all tags at once.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>SEO professionals optimizing new pages, web developers adding social sharing support, bloggers improving link previews, and anyone who wants their site to display correctly in search results and on social media.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'seo-tools',
     targetKeyword: 'meta tag generator',
     secondaryKeywords: ['seo meta tags generator', 'open graph meta tag generator', 'twitter card generator', 'html meta tags maker', 'og tags generator'],
@@ -647,14 +776,19 @@ Perfect for web designers creating hero headings, landing page titles, social me
     slug: 'average-calculator',
     name: 'Average Calculator',
     shortDescription: 'Calculate mean, median, mode, standard deviation and more from a list of numbers.',
-    longDescription: `A full-featured statistics calculator that goes far beyond just finding the average. Enter any list of numbers — separated by commas, spaces, or new lines — and instantly get:
-
-**Central Tendency**: Arithmetic mean, geometric mean, harmonic mean, and mode.
-**Spread**: Minimum, maximum, range, variance, and standard deviation (σ).
-**Quartiles**: Q1 (25th percentile), Q2 (median), Q3 (75th percentile), and IQR.
-**Distribution bar**: Visual bar chart showing relative distribution of each value.
-
-All results update in real-time as you type. Each value has a copy button for easy use. Works with integers, decimals, and large datasets.`,
+    longDescription: `<p>Our full-featured <strong>average calculator</strong> goes far beyond the mean. Enter any list of numbers and instantly get a complete statistical breakdown — central tendency, spread, and quartiles — all updating in real time as you type.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Central Tendency</strong>: Arithmetic mean, geometric mean, harmonic mean, and mode.</li>
+<li><strong>Spread</strong>: Minimum, maximum, range, variance, and standard deviation (σ).</li>
+<li><strong>Quartiles</strong>: Q1 (25th percentile), Q2 (median), Q3 (75th percentile), and IQR.</li>
+<li><strong>Distribution Bar</strong>: Visual chart showing the relative distribution of each value.</li>
+<li><strong>Flexible Input</strong>: Separate numbers by commas, spaces, semicolons, or new lines.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Students doing statistics homework, data analysts summarizing datasets, teachers checking student scores, researchers performing descriptive statistics, and anyone who needs more than just the average from a list of numbers.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'average calculator',
     secondaryKeywords: ['mean median mode calculator', 'statistics calculator', 'standard deviation calculator', 'arithmetic mean calculator', 'number average online'],
@@ -682,11 +816,18 @@ All results update in real-time as you type. Each value has a copy button for ea
     slug: 'percentage-calculator',
     name: 'Percentage Calculator',
     shortDescription: 'Calculate percentages, percent changes, and what percent one number is of another.',
-    longDescription: `Percentages are everywhere — discounts, taxes, interest rates, exam scores, statistics — and our Percentage Calculator makes every type of percentage calculation simple and fast. The tool covers all common percentage problems in one place: finding X% of a number, calculating what percentage X is of Y, finding the original number before a percentage increase/decrease, and calculating percentage change between two values.
-
-Students use it for calculating grade percentages and exam scores. Shoppers use it to calculate sale discounts and final prices. Accountants and business owners use it for profit margins, tax calculations, and growth rates. The tool shows step-by-step working for each calculation, so you understand how the result was reached.
-
-All calculations happen instantly in your browser. No ads blocking your results, no popups, no account required. Just fast, accurate percentage math.`,
+    longDescription: `<p>Our free <strong>percentage calculator</strong> covers every common percentage problem in one place — finding X% of a number, calculating what percentage X is of Y, finding the original value before a change, and calculating percent change between two values. With step-by-step working shown for every result.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All Percentage Types</strong>: X% of Y, Y as % of X, original value, and percent change.</li>
+<li><strong>Step-by-Step Solutions</strong>: See the formula and working for every calculation.</li>
+<li><strong>Instant Results</strong>: Results update as you type — no need to click Calculate.</li>
+<li><strong>Multi-Tab Layout</strong>: Switch between calculation types without losing your input.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Students calculating exam scores and grade percentages, shoppers computing sale discounts, business owners working out profit margins and growth rates, and accountants doing tax and GST calculations.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'percentage calculator',
     secondaryKeywords: ['percent calculator', 'calculate percentage online', 'percentage change calculator', 'percent increase calculator', 'what percent of calculator', 'percentage calculator online', 'how to calculate percentage', 'percentage difference calculator', 'marks percentage calculator', 'discount percentage calculator'],
@@ -715,11 +856,18 @@ All calculations happen instantly in your browser. No ads blocking your results,
     slug: 'emi-calculator',
     name: 'EMI Calculator',
     shortDescription: 'Calculate your monthly EMI for home, car or personal loans with amortization schedule.',
-    longDescription: `Our EMI Calculator helps you plan your loan repayments accurately before you commit to any loan. Enter the principal amount, annual interest rate, and loan tenure — instantly get your monthly EMI, total interest payable, and total amount payable. The tool also generates a complete month-by-month amortization schedule showing how much of each EMI goes toward principal vs. interest.
-
-EMI (Equated Monthly Installment) is the fixed payment made to a lender each month for a specified number of months until the loan is fully paid off. Understanding your EMI breakdown helps you make informed financial decisions, compare loan offers, and plan your monthly budget.
-
-This calculator works for all loan types: home loans, car loans, personal loans, education loans, and business loans. The formula used is the standard banking formula: EMI = [P × R × (1+R)^N] / [(1+R)^N - 1] where P = Principal, R = Monthly interest rate, N = Number of months.`,
+    longDescription: `<p>Our free <strong>EMI calculator</strong> helps you plan loan repayments accurately before you commit. Enter the principal amount, annual interest rate, and tenure — instantly get your monthly EMI, total interest payable, and a complete month-by-month amortization schedule.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Instant EMI Calculation</strong>: Uses the standard banking formula EMI = [P × R × (1+R)^N] / [(1+R)^N - 1].</li>
+<li><strong>Amortization Schedule</strong>: Full month-by-month breakdown of principal vs. interest per EMI.</li>
+<li><strong>Total Cost Summary</strong>: See total interest payable and total amount over the loan life.</li>
+<li><strong>All Loan Types</strong>: Works for home loans, car loans, personal loans, and education loans.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone evaluating a loan offer in India, homebuyers comparing home loan EMIs across banks, car buyers planning monthly budgets, and borrowers who want to understand the true cost of a loan before signing.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'EMI calculator',
     secondaryKeywords: ['loan EMI calculator', 'home loan EMI calculator', 'home loan EMI calculator India', 'car loan EMI calculator', 'personal loan EMI calculator', 'monthly installment calculator India', 'EMI calculator online', 'loan calculator India', 'bank loan EMI calculator', 'housing loan EMI calculator'],
@@ -748,11 +896,18 @@ This calculator works for all loan types: home loans, car loans, personal loans,
     slug: 'gst-calculator',
     name: 'GST Calculator',
     shortDescription: 'Calculate GST amount, CGST, SGST, IGST for any amount and tax rate.',
-    longDescription: `India's Goods and Services Tax (GST) has multiple rate slabs — 0%, 5%, 12%, 18%, and 28% — and our GST Calculator makes it easy to calculate GST for any transaction. Whether you need to add GST to a base price or extract the GST from a GST-inclusive price, this tool handles both scenarios.
-
-The calculator shows the breakdown of CGST (Central GST), SGST (State GST) for intra-state transactions, and IGST (Integrated GST) for inter-state transactions. This is essential for business owners, accountants, freelancers, and shoppers who need to understand the tax component of any purchase or sale.
-
-GST calculations are needed when raising invoices, filing GST returns, calculating input tax credits, and verifying bills. Our tool provides clear, accurate calculations instantly, eliminating manual errors in tax computation.`,
+    longDescription: `<p>Our free <strong>GST calculator India</strong> handles all five GST rate slabs — 0%, 5%, 12%, 18%, and 28% — for both exclusive (add GST) and inclusive (extract GST) scenarios, with a full CGST/SGST/IGST breakdown.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Add or Remove GST</strong>: Calculate GST-inclusive price from base price, or extract GST from a total.</li>
+<li><strong>CGST & SGST Breakdown</strong>: Shows split for intra-state transactions (Central + State GST).</li>
+<li><strong>IGST for Inter-State</strong>: Toggle to show Integrated GST for transactions across state borders.</li>
+<li><strong>All GST Slabs</strong>: Covers 5%, 12%, 18%, and 28% rate slabs.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Business owners raising GST invoices, accountants filing GST returns, freelancers calculating tax on services, shoppers verifying bills, and anyone who needs quick, accurate GST computation for Indian transactions.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'GST calculator',
     secondaryKeywords: ['GST calculator India', 'GST calculation online', 'CGST SGST calculator', 'GST inclusive exclusive calculator', 'tax calculator India', 'GST calculator online', 'GST rate calculator', '18% GST calculator', 'reverse GST calculator', 'IGST calculator India'],
@@ -781,11 +936,19 @@ GST calculations are needed when raising invoices, filing GST returns, calculati
     slug: 'bmi-calculator',
     name: 'BMI Calculator',
     shortDescription: 'Calculate your Body Mass Index and find out if you are underweight, normal or obese.',
-    longDescription: `BMI (Body Mass Index) is a widely used screening tool that estimates body fat based on your height and weight. Our BMI Calculator gives you an instant BMI score along with your weight category (Underweight, Normal weight, Overweight, or Obese) and a visual indicator on the BMI scale.
-
-The tool supports both metric (kg/cm) and imperial (lbs/ft/in) units, making it accessible for users worldwide. Along with your BMI, you'll see the healthy weight range for your height — showing exactly how many kilograms you'd need to gain or lose to reach the normal BMI range.
-
-BMI is used by healthcare professionals as a quick initial assessment of weight-related health risk. While BMI doesn't directly measure body fat and doesn't account for muscle mass, it's a valuable starting point for understanding your weight status. The World Health Organization (WHO) defines normal BMI as 18.5 to 24.9.`,
+    longDescription: `<p>Our free <strong>BMI calculator</strong> gives you an instant Body Mass Index score along with your weight category — Underweight, Normal, Overweight, or Obese — and a visual position on the WHO BMI scale. Supports both metric (kg/cm) and imperial (lbs/ft/in) units.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Instant BMI Score</strong>: Calculates BMI = Weight (kg) / Height (m)² in real time.</li>
+<li><strong>Weight Category</strong>: Shows your WHO classification and a visual scale indicator.</li>
+<li><strong>Healthy Weight Range</strong>: Displays exactly how much weight to gain or lose to reach normal BMI.</li>
+<li><strong>Metric & Imperial</strong>: Switch between kg/cm and lbs/ft/in units.</li>
+<li><strong>Asian BMI Standards</strong>: Option to apply lower WHO cutoffs recommended for Asian populations.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Adults monitoring their weight status, people on fitness journeys tracking progress, healthcare students learning BMI assessment, and anyone filling out health forms that ask for BMI.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'BMI calculator',
     secondaryKeywords: ['body mass index calculator', 'BMI calculator India', 'BMI calculator kg cm', 'healthy weight calculator', 'BMI calculator online', 'BMI check online', 'BMI calculator for men', 'BMI calculator for women', 'Asian BMI calculator', 'weight calculator BMI'],
@@ -814,11 +977,18 @@ BMI is used by healthcare professionals as a quick initial assessment of weight-
     slug: 'sip-calculator',
     name: 'SIP Calculator',
     shortDescription: 'Calculate SIP returns and future value of your mutual fund investments.',
-    longDescription: `SIP (Systematic Investment Plan) allows you to invest a fixed amount in mutual funds at regular intervals. Our SIP Calculator helps you estimate the future value of your SIP investments, taking into account the power of compound interest and rupee cost averaging.
-
-Enter your monthly investment amount, expected annual returns, and investment duration to see your total invested amount, estimated returns, and final corpus. The calculator uses the standard SIP formula to show you how disciplined investing can grow your wealth significantly over time.
-
-This is an essential planning tool for first-time investors, financial planners, and anyone looking to build long-term wealth through mutual funds in India. Understanding SIP returns helps you set realistic financial goals and choose the right investment amount to meet them.`,
+    longDescription: `<p>Our free <strong>SIP calculator India</strong> estimates the future value of your mutual fund Systematic Investment Plan. Enter your monthly amount, expected annual returns, and duration — instantly see your total invested amount, estimated returns, and final wealth corpus.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>SIP Returns Calculation</strong>: Uses the standard SIP formula to project maturity value accurately.</li>
+<li><strong>Growth Chart</strong>: Visual chart showing how your wealth compounds over the investment period.</li>
+<li><strong>Total vs. Returns Breakdown</strong>: See exactly how much is your investment vs. gains.</li>
+<li><strong>Adjustable Inputs</strong>: Tweak monthly amount, rate, and duration to model different scenarios.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>First-time mutual fund investors in India, financial planners building wealth projections, anyone comparing SIP options, and salaried professionals wanting to understand how small monthly investments grow over 10–30 years.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'SIP calculator',
     secondaryKeywords: ['SIP calculator India', 'mutual fund SIP calculator', 'SIP return calculator', 'systematic investment plan calculator', 'investment calculator India', 'SIP calculator online', 'monthly SIP calculator', 'SIP interest calculator', 'SIP maturity calculator', 'best SIP calculator India'],
@@ -846,13 +1016,7 @@ This is an essential planning tool for first-time investors, financial planners,
     slug: 'salary-calculator',
     name: 'Salary Calculator (CTC to In-Hand)',
     shortDescription: 'Calculate your in-hand salary from CTC with Old vs New Tax Regime comparison for FY 2025-26.',
-    longDescription: `India's most accurate CTC to In-Hand Salary Calculator for FY 2025-26 (AY 2026-27). Enter your annual CTC and instantly see your monthly take-home salary with a complete breakdown of all salary components — Basic, HRA, Special Allowance, PF, Gratuity, Professional Tax, and Income Tax.
-
-Compare your tax liability under both Old and New Tax Regimes side by side. The calculator automatically recommends which regime saves you more money based on your deductions. Supports all standard Indian salary structures including employer PF (with 15K cap option), gratuity, LTA, and variable pay.
-
-For the Old Tax Regime, enter your deductions under Section 80C (PPF, ELSS, LIC), 80D (health insurance), 80CCD(1B) (NPS), home loan interest (Section 24b), and HRA exemption. The tool calculates your exact taxable income and tax payable under both regimes, including surcharge and 4% health & education cess.
-
-Features include visual salary distribution chart, annual/monthly toggle, quick CTC presets from 3L to 50L, and detailed tax slab reference for both regimes. Updated with the latest Budget 2025 changes — new regime basic exemption at 4L, rebate up to 12L, and 75K standard deduction. Perfect for job offer evaluation, salary negotiation, and annual tax planning.`,
+    longDescription: `<p>India's most accurate <strong>salary calculator India</strong> for FY 2025-26. Enter your annual CTC and instantly see your monthly take-home salary with a complete component breakdown — Basic, HRA, PF, Gratuity, Professional Tax, and Income Tax — plus an Old vs New Tax Regime comparison.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>Full Salary Breakup</strong>: Basic, HRA, Special Allowance, employer PF, gratuity, and all deductions.</li>\n<li><strong>Old vs New Tax Regime</strong>: Side-by-side comparison with automatic recommendation of which saves more.</li>\n<li><strong>Deductions Support</strong>: Enter 80C, 80D, 80CCD(1B), home loan interest, and HRA exemption for Old Regime.</li>\n<li><strong>Budget 2025 Updated</strong>: New regime basic exemption at ₹4L, rebate up to ₹12L, ₹75K standard deduction.</li>\n<li><strong>Visual Chart & Presets</strong>: Salary distribution chart, annual/monthly toggle, CTC presets from ₹3L to ₹50L.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Salaried employees evaluating job offers, HR professionals explaining CTC structures, individuals doing annual tax planning, and anyone who wants to understand their exact take-home salary under both tax regimes in India.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'salary calculator India',
     secondaryKeywords: ['CTC to in-hand salary calculator', 'CTC calculator', 'take home salary calculator', 'in-hand salary calculator', 'old vs new tax regime calculator', 'salary breakup calculator', 'income tax calculator FY 2025-26', 'CTC to net salary', 'salary after tax India', 'salary calculator online India', 'CTC to take home calculator', 'monthly salary calculator'],
@@ -884,11 +1048,18 @@ Features include visual salary distribution chart, annual/monthly toggle, quick 
     slug: 'discount-calculator',
     name: 'Discount Calculator',
     shortDescription: 'Calculate sale price, discount amount and savings percentage instantly.',
-    longDescription: `Our Discount Calculator makes shopping math easy. Enter the original price and the discount percentage, and instantly see the sale price, the rupee amount you save, and verify the savings percentage. Or work backwards — enter the original and sale price to calculate what percentage discount was applied.
-
-This tool is perfect for shoppers comparing deals online, retailers calculating promotional prices, and students studying percentage problems. During sale seasons like Diwali, Big Billion Day, or Black Friday, quickly compare discounts across products to find the best deal.
-
-The calculator also handles stacked discounts (discount on top of discount), which are common in retail. For example, an additional 10% off on an already 20%-discounted item is not the same as 30% off — our tool shows you the correct combined discount.`,
+    longDescription: `<p>Our free <strong>discount calculator</strong> makes shopping math instant. Enter the original price and discount percentage to see the sale price and your savings — or work backwards from the sale price to find the discount percentage applied.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Discount to Sale Price</strong>: Enter original price + discount % → get sale price and savings amount.</li>
+<li><strong>Reverse Mode</strong>: Enter original and sale price to calculate the discount percentage.</li>
+<li><strong>Stacked Discounts</strong>: Calculate the correct combined discount when discounts are applied on top of each other.</li>
+<li><strong>Instant Results</strong>: All calculations update in real time as you type.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Online shoppers comparing deals during Diwali or Big Billion Day sales, retailers setting promotional prices, students studying percentage problems, and anyone who wants quick, accurate discount math without mental arithmetic.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'discount calculator',
     secondaryKeywords: ['sale price calculator', 'percent off calculator', 'discount percentage calculator', 'how much discount calculator', 'savings calculator'],
@@ -918,11 +1089,19 @@ The calculator also handles stacked discounts (discount on top of discount), whi
     slug: 'json-formatter',
     name: 'JSON Formatter',
     shortDescription: 'Format, validate, minify and beautify JSON data online instantly.',
-    longDescription: `Our JSON Formatter and Validator is an essential tool for any developer working with APIs, configuration files, or data interchange. Paste any JSON string — no matter how minified or messy — and instantly get a beautifully formatted, syntax-highlighted, human-readable output.
-
-The tool validates your JSON as you type, showing clear error messages that identify exactly where the syntax error is (line number and column). This is far faster than hunting through raw JSON manually. You can also minify JSON to remove all whitespace for production use or API payloads, reducing the size of your data.
-
-The tree view mode lets you explore nested JSON objects and arrays visually, collapse/expand nodes, and navigate complex data structures. This is particularly useful when working with deeply nested API responses or complex configuration objects.`,
+    longDescription: `<p>Our free online <strong>JSON formatter</strong> and validator is an essential tool for any developer working with APIs, config files, or data interchange. Paste any minified or messy JSON and instantly get a beautifully formatted, syntax-highlighted, human-readable output.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Format & Beautify</strong>: Adds proper indentation and line breaks for readability.</li>
+<li><strong>Validate with Error Location</strong>: Shows the exact line and column of any syntax error.</li>
+<li><strong>Minify</strong>: Removes all whitespace for compact production payloads.</li>
+<li><strong>Tree View</strong>: Visually explore nested objects and arrays with collapse/expand nodes.</li>
+<li><strong>Handles Large JSON</strong>: Processes multi-MB JSON files comfortably in modern browsers.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Backend and frontend developers debugging API responses, DevOps engineers reading config files, data engineers inspecting large JSON datasets, and anyone who needs to quickly read or validate JSON data.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'JSON formatter',
     secondaryKeywords: ['JSON beautifier', 'JSON validator', 'JSON minifier', 'format JSON online', 'JSON prettifier', 'JSON viewer', 'JSON formatter online', 'JSON format validator', 'JSON editor online', 'beautify JSON online free'],
@@ -951,11 +1130,18 @@ The tree view mode lets you explore nested JSON objects and arrays visually, col
     slug: 'base64-encode-decode',
     name: 'Base64 Encode & Decode',
     shortDescription: 'Encode text or files to Base64 and decode Base64 strings back to text.',
-    longDescription: `Base64 is a binary-to-text encoding scheme that represents binary data using only printable ASCII characters. Our Base64 tool handles both encoding (text/file → Base64) and decoding (Base64 → text) in a clean, simple interface.
-
-Base64 encoding is used widely in web development: embedding images directly in HTML/CSS, encoding binary data for JSON APIs, email attachments (MIME), HTTP Basic Authentication headers, and storing binary data in text-based formats like XML or JSON. Developers regularly need to encode and decode Base64 strings when debugging APIs or building integrations.
-
-The tool also handles file encoding — upload any file (image, PDF, document) and get its Base64 representation, ready to embed in HTML img tags, CSS background URLs, or JSON payloads. The encoded string is shown with the appropriate data URI prefix for direct use.`,
+    longDescription: `<p>Our free <strong>Base64 encode decode</strong> tool handles both encoding (text or file → Base64) and decoding (Base64 → text) in a clean, simple interface. Base64 is the standard encoding for embedding images in HTML/CSS, HTTP auth headers, MIME email attachments, and JSON/XML binary payloads.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Text & File Encoding</strong>: Encode any text string or upload a file (image, PDF, document) to Base64.</li>
+<li><strong>Instant Decoding</strong>: Paste any Base64 string and decode it back to text or download as a file.</li>
+<li><strong>Data URI Ready</strong>: Output includes the correct data URI prefix for direct use in HTML and CSS.</li>
+<li><strong>URL-Safe Option</strong>: Replaces + and / with - and _ for URL-safe Base64 output.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers debugging API authentication headers, web developers embedding images in HTML without separate files, backend engineers encoding binary data for JSON payloads, and anyone working with Base64-encoded data in any context.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'Base64 encode decode',
     secondaryKeywords: ['base64 encoder', 'base64 decoder', 'base64 online', 'encode to base64', 'decode base64 string', 'base64 converter'],
@@ -984,11 +1170,18 @@ The tool also handles file encoding — upload any file (image, PDF, document) a
     slug: 'url-encode-decode',
     name: 'URL Encode & Decode',
     shortDescription: 'Encode and decode URL components and query strings instantly.',
-    longDescription: `URL encoding (percent encoding) converts special characters in URLs into a format that can be safely transmitted over the internet. Characters like spaces, &, =, ?, #, and non-ASCII characters must be encoded to avoid breaking URL parsing.
-
-Our URL Encoder/Decoder handles both full URL encoding and component encoding. Full URL encoding preserves the URL structure (keeping ://,?, &, =) while encoding only the parts that need encoding. Component encoding is stricter, encoding every special character — use this for individual query parameter values.
-
-This tool is invaluable for developers debugging API requests, building URL parameters programmatically, decoding query strings from web analytics, and understanding redirect URLs in marketing campaigns. It correctly handles UTF-8 characters, emojis, and multi-byte Unicode characters.`,
+    longDescription: `<p>Our free <strong>URL encode decode</strong> tool converts special characters in URLs to their percent-encoded equivalents and back. Handles both full URL encoding (preserves URL structure) and component encoding (strictly encodes all special characters for query parameter values).</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Full URL Mode</strong>: Encodes only unsafe characters while preserving :, /, ?, &, = structure.</li>
+<li><strong>Component Mode</strong>: Strictly encodes every special character for safe use in query parameter values.</li>
+<li><strong>Unicode & Emoji Support</strong>: Correctly handles UTF-8 multi-byte characters and emojis.</li>
+<li><strong>Instant Decode</strong>: Paste any percent-encoded string to decode it back to readable text.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers building and debugging API requests, web analytics engineers decoding query strings, marketers inspecting redirect URLs, and anyone who needs to understand or construct properly encoded URLs.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'URL encode decode',
     secondaryKeywords: ['percent encoding', 'url encoder', 'url decoder online', 'encode url parameters', 'query string encoder', 'uri encode decode'],
@@ -1016,11 +1209,19 @@ This tool is invaluable for developers debugging API requests, building URL para
     slug: 'qr-code-generator',
     name: 'QR Code Generator',
     shortDescription: 'Generate QR codes for URLs, text, email, phone numbers and WiFi credentials.',
-    longDescription: `Our QR Code Generator creates high-quality QR codes instantly for any content: website URLs, plain text, email addresses, phone numbers, SMS messages, WhatsApp messages, and WiFi network credentials. Generated QR codes can be downloaded as PNG or SVG and are ready to use in print, digital media, or any application.
-
-QR codes are used everywhere today — restaurant menus, business cards, product packaging, event tickets, payment systems, and digital marketing campaigns. A well-generated QR code is readable by any smartphone camera without a dedicated app.
-
-Customize your QR code with different sizes, error correction levels, and colors to match your brand. Higher error correction levels make QR codes scannable even when partially damaged or obscured — perfect for outdoor signage or printed materials that might get scratched.`,
+    longDescription: `<p>Our free <strong>QR code generator</strong> creates high-quality QR codes instantly for URLs, plain text, email addresses, phone numbers, SMS, WhatsApp messages, and WiFi credentials — downloadable as PNG or SVG, no watermark.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Content Types</strong>: URL, text, email, phone, SMS, WhatsApp, WiFi, and more.</li>
+<li><strong>PNG & SVG Download</strong>: SVG for print (infinite resolution), PNG for digital use.</li>
+<li><strong>Error Correction Levels</strong>: L, M, Q, H — higher levels allow scanning even if partially damaged.</li>
+<li><strong>Custom Colors & Size</strong>: Match your brand with color customization and size control.</li>
+<li><strong>WiFi QR Codes</strong>: Guests scan to connect to your network automatically — no password typing needed.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Businesses creating restaurant menus, business cards, and product packaging; event organizers linking to tickets; marketers running print campaigns; and anyone who needs a free, instant, no-watermark QR code.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'QR code generator',
     secondaryKeywords: ['QR code maker', 'free QR code generator', 'QR code generator online', 'generate QR code for URL', 'WiFi QR code generator', 'QR code creator online free', 'custom QR code generator', 'QR code generator free', 'WhatsApp QR code generator', 'QR code for business card'],
@@ -1049,11 +1250,7 @@ Customize your QR code with different sizes, error correction levels, and colors
     slug: 'color-picker',
     name: 'Color Picker',
     shortDescription: 'Pick colors and convert between HEX, RGB, HSL, and HSV color formats.',
-    longDescription: `Our Color Picker is a comprehensive color tool for designers and developers. Pick any color from a visual color palette and instantly get the values in all major color formats: HEX (#1e40af), RGB (30, 64, 175), HSL (226°, 71%, 40%), and HSV/HSB (226°, 83%, 69%).
-
-The tool includes a color gradient picker, hue slider, and opacity/alpha channel control for full RGBA and HSLA support. It also generates lighter and darker shades of your chosen color, complementary colors, analogous colors, and the full color palette — perfect for building a design system or choosing accessible color combinations.
-
-You can also input any HEX code or RGB values directly to convert between formats. This tool is built for Tailwind CSS, CSS custom properties, Figma, and any design or development workflow where accurate color values are needed.`,
+    longDescription: `<p>Our comprehensive free <strong>color picker</strong> lets you pick any color visually and instantly get its values in all major formats: HEX, RGB, HSL, and HSV/HSB — with full alpha/opacity support for RGBA and HSLA.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>All Color Formats</strong>: Pick once and get HEX, RGB, HSL, and HSV values simultaneously.</li>\n<li><strong>Alpha Channel</strong>: Full opacity/transparency control with RGBA and HSLA output.</li>\n<li><strong>Shades & Tints</strong>: Auto-generated lighter and darker variations of your chosen color.</li>\n<li><strong>Complementary Colors</strong>: See complementary, analogous, and triadic color combinations.</li>\n<li><strong>Direct Input</strong>: Type any HEX or RGB value to convert to all other formats instantly.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Web designers picking brand colors, frontend developers converting HEX to RGB for CSS variables, Figma and Tailwind CSS users finding exact color values, and anyone building accessible, harmonious color palettes.</p>\n<h2>Privacy & Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'color picker',
     secondaryKeywords: ['color converter online', 'hex to rgb converter', 'rgb to hex', 'hsl color picker', 'color code picker online', 'color picker online', 'html color picker', 'hex color picker', 'color picker from image', 'color code generator'],
@@ -1082,11 +1279,18 @@ You can also input any HEX code or RGB values directly to convert between format
     slug: 'hash-generator',
     name: 'Hash Generator',
     shortDescription: 'Generate MD5, SHA-1, SHA-256, SHA-512 cryptographic hashes from text or files.',
-    longDescription: `Our Hash Generator creates cryptographic hash digests from text or files using multiple algorithms: MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512. A hash function takes any input and produces a fixed-length string — the same input always produces the same hash, and even a tiny change produces a completely different hash.
-
-Hashes are used to verify file integrity (check if a downloaded file matches the expected hash), store passwords securely, create digital signatures, verify data hasn't been tampered with, and as unique identifiers in data systems.
-
-Important security note: MD5 and SHA-1 are considered cryptographically broken for security purposes (collision attacks are known). For security applications like password hashing, use SHA-256 or SHA-512 (or better yet, bcrypt/Argon2 for passwords). This tool runs entirely in your browser — your sensitive input never reaches any server.`,
+    longDescription: `<p>Our free <strong>hash generator</strong> creates cryptographic hash digests from text or files using MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512 algorithms — all computed simultaneously so you can compare and choose the right one.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>6 Algorithms</strong>: MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512 all shown at once.</li>
+<li><strong>Text & File Input</strong>: Hash any string or upload a file to generate its checksum.</li>
+<li><strong>Verify Mode</strong>: Check if an input matches a known hash value — useful for download verification.</li>
+<li><strong>Security Notes</strong>: Warns that MD5 and SHA-1 are broken for security; recommends SHA-256 or higher.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers verifying file downloads, security engineers checking data integrity, DevOps professionals comparing checksums, and anyone who needs to generate or verify cryptographic hash values.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your input never reaches any server. No signup, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'hash generator',
     secondaryKeywords: ['md5 generator', 'sha256 generator', 'sha-1 online', 'cryptographic hash tool', 'file hash calculator', 'checksum generator'],
@@ -1115,11 +1319,7 @@ Important security note: MD5 and SHA-1 are considered cryptographically broken f
     slug: 'regex-tester',
     name: 'Regex Tester',
     shortDescription: 'Test and debug regular expressions with real-time match highlighting.',
-    longDescription: `Regular expressions (regex) are powerful pattern-matching tools used in virtually every programming language for string searching, validation, and text processing. Our Regex Tester provides a real-time environment to write, test, and debug regex patterns with instant visual feedback — matching text is highlighted in color as you type.
-
-The tester shows all matches, capture groups, and group values clearly. You can enable flags (global, case insensitive, multiline, dotAll, sticky, unicode) with simple toggles. The tool also shows your regex pattern's structure breakdown, helping you understand what each part does.
-
-Common use cases: validating email addresses, phone numbers, dates, and URLs; extracting specific data from text; find-and-replace operations; parsing log files; and building form validation in web applications. This is an indispensable tool for developers, data engineers, and QA engineers.`,
+    longDescription: `<p>Our free <strong>regex tester</strong> provides a real-time environment to write, test, and debug regular expressions with instant visual feedback — matches are color-highlighted as you type, with full capture group and flag support.</p>\n<h2>Key Features</h2>\n<ul>\n<li><strong>Real-Time Highlighting</strong>: Matches highlighted instantly as you type your pattern.</li>\n<li><strong>All Regex Flags</strong>: Toggle g, i, m, s, u, and y flags with simple buttons.</li>\n<li><strong>Capture Groups</strong>: See all named and numbered capture group values clearly displayed.</li>\n<li><strong>JavaScript Engine</strong>: Uses browser RegExp — compatible with JS, TypeScript, and most modern languages.</li>\n</ul>\n<h2>Who Is This For?</h2>\n<p>Developers building form validation and data extraction, data engineers parsing log files, QA engineers writing test patterns, and anyone learning or debugging regular expressions.</p>\n<h2>Privacy &amp; Security</h2>\n<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'regex tester',
     secondaryKeywords: ['regular expression tester', 'regex validator online', 'regex debugger', 'test regex online', 'regex checker', 'javascript regex tester'],
@@ -1148,11 +1348,19 @@ Common use cases: validating email addresses, phone numbers, dates, and URLs; ex
     slug: 'html-to-markdown',
     name: 'HTML to Markdown',
     shortDescription: 'Convert HTML code to clean Markdown syntax instantly.',
-    longDescription: `Convert HTML to Markdown format with our fast, accurate HTML-to-Markdown converter. Whether you're migrating content from an HTML website to a static site generator (Hugo, Jekyll, Gatsby), converting web content to Markdown for a wiki, or moving blog posts to a Markdown-based CMS, this tool handles the conversion cleanly.
-
-The converter handles all common HTML elements: headings (h1-h6), paragraphs, bold and italic text, links, images, ordered and unordered lists, blockquotes, code blocks and inline code, tables, horizontal rules, and more. It intelligently handles nested elements and preserves the document structure.
-
-Content creators, developers building documentation systems, and writers migrating from WordPress to Markdown-based platforms use this tool daily to avoid the tedious work of manual conversion.`,
+    longDescription: `<p>Convert HTML to Markdown format with our fast, accurate <strong>HTML to Markdown converter</strong>. Whether you're migrating content from an HTML website to a static site generator (Hugo, Jekyll, Gatsby), converting web content for a wiki, or moving blog posts to a Markdown-based CMS, this tool handles the conversion cleanly.</p>
+<h2>Supported HTML Elements</h2>
+<ul>
+<li><strong>Headings</strong>: h1–h6 converted to # through ###### syntax.</li>
+<li><strong>Text Formatting</strong>: Bold, italic, links, images, blockquotes, inline code.</li>
+<li><strong>Lists</strong>: Ordered and unordered lists including nested lists.</li>
+<li><strong>Code Blocks</strong>: Fenced code blocks with language hints for syntax highlighting.</li>
+<li><strong>Tables</strong>: HTML tables converted to GitHub Flavored Markdown (GFM) table syntax.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Content creators migrating from WordPress, developers building documentation systems, and writers moving blog posts to Markdown-based platforms like Ghost, Notion, or Obsidian.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'HTML to Markdown converter',
     secondaryKeywords: ['html to md converter', 'convert html to markdown online', 'html markdown tool', 'webpage to markdown', 'html to github markdown'],
@@ -1182,11 +1390,19 @@ Content creators, developers building documentation systems, and writers migrati
     slug: 'image-compressor',
     name: 'Image Compressor',
     shortDescription: 'Compress JPEG, PNG, WebP images online without losing visible quality.',
-    longDescription: `Reduce your image file sizes by up to 90% while maintaining excellent visual quality with our free online Image Compressor. Large images slow down websites and consume mobile data — our tool uses advanced lossy and lossless compression algorithms to optimize your images for the web.
-
-Upload up to 20 images at once, adjust the quality slider to find the perfect balance between file size and image quality, and download the compressed images individually or as a ZIP file. The tool shows you the before/after file sizes and the compression percentage for each image.
-
-Our compressor works entirely in your browser using the browser-image-compression library — your images never leave your device, ensuring complete privacy. It supports JPEG, PNG, WebP, and GIF formats. No watermarks are added to compressed images.`,
+    longDescription: `<p>Reduce your image file sizes by up to 90% while maintaining excellent visual quality with our free online <strong>image compressor</strong>. Large images slow down websites and consume mobile data — our tool uses advanced compression algorithms to optimize images for the web.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Batch Upload</strong>: Compress up to 20 images at once and download as a ZIP.</li>
+<li><strong>Quality Slider</strong>: Fine-tune the balance between file size and visual quality.</li>
+<li><strong>Before/After Stats</strong>: See original vs compressed size and compression percentage for each image.</li>
+<li><strong>No Watermarks</strong>: Output is clean and ready to use, unlike many online alternatives.</li>
+<li><strong>All Formats</strong>: Supports JPEG, PNG, WebP, and GIF.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Web developers optimizing page load times, bloggers reducing image sizes before uploading, e-commerce sellers compressing product photos, and anyone who needs smaller images without visible quality loss.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images never leave your device. No signup required.</p>`,
     category: 'image-tools',
     targetKeyword: 'compress image online',
     secondaryKeywords: ['image compressor', 'compress image', 'reduce image size', 'jpg compressor online', 'png compressor', 'image optimizer free', 'compress photo online', 'compress image to 100KB', 'compress image to 50KB', 'image size reducer online', 'photo compressor free'],
@@ -1215,11 +1431,19 @@ Our compressor works entirely in your browser using the browser-image-compressio
     slug: 'image-resizer',
     name: 'Image Resizer',
     shortDescription: 'Resize images to exact dimensions while maintaining aspect ratio.',
-    longDescription: `Resize any image to exact pixel dimensions with our free online Image Resizer. Whether you need a specific thumbnail size, social media image dimensions, or need to reduce image dimensions before compression, this tool handles it quickly and accurately.
-
-Set exact width and height in pixels, or just set one dimension and let the tool automatically maintain the aspect ratio to prevent distortion. The tool also lets you resize by percentage (e.g., 50% of original), which is useful when you need to quickly halve or double an image's size.
-
-All resizing is done client-side in your browser using the HTML Canvas API — your images are never uploaded to a server. The tool preserves image quality as much as possible using high-quality image interpolation for smooth downscaling.`,
+    longDescription: `<p>Resize any image to exact pixel dimensions with our free online <strong>image resizer</strong>. Whether you need a specific thumbnail size, social media dimensions, or want to reduce image dimensions before compression, this tool handles it accurately.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Exact Dimensions</strong>: Set precise width and height in pixels.</li>
+<li><strong>Aspect Ratio Lock</strong>: Set one dimension and the other adjusts automatically to prevent distortion.</li>
+<li><strong>Percentage Resize</strong>: Resize to 50%, 75%, or any percentage of the original.</li>
+<li><strong>Batch Processing</strong>: Resize up to 10 images simultaneously to the same dimensions.</li>
+<li><strong>High Quality</strong>: Uses high-quality interpolation for smooth results when downscaling.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Social media managers resizing images for specific platforms, web developers preparing thumbnails, bloggers optimizing images before upload, and anyone needing images at exact pixel sizes.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser using the HTML Canvas API — your images are never uploaded to any server.</p>`,
     category: 'image-tools',
     targetKeyword: 'resize image online',
     secondaryKeywords: ['image resizer', 'resize image online free', 'image resize tool', 'change image size', 'reduce image dimensions', 'photo resizer online', 'resize image to specific size', 'resize image pixels', 'image resizer online free', 'resize photo for passport', 'resize image KB'],
@@ -1248,11 +1472,18 @@ All resizing is done client-side in your browser using the HTML Canvas API — y
     slug: 'png-to-jpg',
     name: 'PNG to JPG Converter',
     shortDescription: 'Convert PNG images to JPG format online with quality control.',
-    longDescription: `Convert PNG images to JPG (JPEG) format quickly with our free online converter. JPG is ideal for photographs and complex images where file size matters — it uses lossy compression to achieve significantly smaller files than PNG, making it perfect for web pages where load speed is critical.
-
-PNG supports transparency (alpha channel), which JPG does not. Our converter lets you choose the background color to replace transparent areas (white, black, or custom color) before conversion. You can also adjust the JPG quality (1-100) to balance file size against image quality.
-
-Batch processing is supported — upload up to 20 PNG files at once and convert them all in seconds. All processing happens in your browser; your images stay private on your device.`,
+    longDescription: `<p>Convert PNG images to JPG format quickly with our free online <strong>PNG to JPG converter</strong>. JPG is ideal for photographs where file size matters — its lossy compression achieves significantly smaller files than PNG, perfect for web pages where load speed is critical.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Background Color Choice</strong>: Replace PNG transparency with white, black, or a custom color.</li>
+<li><strong>Quality Control</strong>: Adjust JPG quality (1–100) to balance file size against visual quality.</li>
+<li><strong>Batch Conversion</strong>: Upload up to 20 PNG files and convert them all at once.</li>
+<li><strong>No Watermarks</strong>: Clean output files ready for immediate use.</li>
+</ul>
+<h2>When to Use JPG Instead of PNG</h2>
+<p>Use JPG for photographs and images with many colors where small file size matters. Keep PNG for logos, icons, screenshots, and images requiring transparent backgrounds.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images never leave your device. No signup required.</p>`,
     category: 'image-tools',
     targetKeyword: 'PNG to JPG converter',
     secondaryKeywords: ['png to jpeg converter', 'convert png to jpg online free', 'png jpg conversion', 'png to jpg online', 'batch png to jpg'],
@@ -1281,11 +1512,18 @@ Batch processing is supported — upload up to 20 PNG files at once and convert 
     slug: 'jpg-to-png',
     name: 'JPG to PNG Converter',
     shortDescription: 'Convert JPG/JPEG images to PNG format online free with lossless output.',
-    longDescription: `Convert JPG images to PNG format instantly with our free online converter. PNG offers lossless compression and transparency support, making it ideal for screenshots, logos, icons, and any image that will be edited further or requires a transparent background.
-
-When you convert JPG to PNG, the image is re-saved without additional lossy compression. The output PNG will be slightly larger than the JPG (since PNG uses lossless compression) but will have no additional quality loss from the conversion process itself.
-
-Note: since JPG compression is lossy, the original high-frequency detail lost during JPG compression cannot be recovered. Converting JPG to PNG gives you a lossless PNG, but it won't add back detail that was lost when the original JPEG was created.`,
+    longDescription: `<p>Convert JPG images to PNG format instantly with our free online <strong>JPG to PNG converter</strong>. PNG offers lossless compression and transparency support — ideal for screenshots, logos, icons, and images that need further editing.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Lossless Output</strong>: PNG stores the full image without any additional compression artifacts.</li>
+<li><strong>Transparency Support</strong>: PNG supports alpha transparency, unlike JPG.</li>
+<li><strong>Batch Conversion</strong>: Upload up to 20 JPG files and convert them all at once.</li>
+<li><strong>No Extra Quality Loss</strong>: The conversion itself adds no degradation beyond what the original JPEG already had.</li>
+</ul>
+<h2>When to Use PNG Instead of JPG</h2>
+<p>Use PNG when you need a transparent background, plan to edit the image further, or need sharp edges for text and logos. For photos and images where file size matters, JPG is usually the better choice.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images never leave your device. No signup required.</p>`,
     category: 'image-tools',
     targetKeyword: 'JPG to PNG converter',
     secondaryKeywords: ['jpeg to png converter', 'convert jpg to png online free', 'jpg png conversion', 'photo to png', 'batch jpg to png'],
@@ -1314,11 +1552,18 @@ Note: since JPG compression is lossy, the original high-frequency detail lost du
     slug: 'webp-to-png',
     name: 'WebP to PNG Converter',
     shortDescription: 'Convert WebP images to PNG format online free instantly.',
-    longDescription: `WebP is Google's modern image format offering superior compression, but not all applications and older software support it. Our WebP to PNG Converter instantly converts WebP files to universally compatible PNG format — no software installation required.
-
-This is useful when you download images from modern websites (which increasingly serve WebP), want to edit images in older software that doesn't support WebP, or need to share images in a more universally supported format.
-
-The conversion maintains the full quality of the WebP image in the PNG output. If the WebP image has transparency, it will be preserved in the PNG output since both formats support alpha transparency.`,
+    longDescription: `<p>Convert WebP files to universally compatible PNG format instantly with our free <strong>WebP to PNG converter</strong>. WebP is Google's modern image format with superior compression, but not all apps and older software support it — PNG works everywhere.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Transparency Preserved</strong>: WebP alpha transparency carries over to PNG automatically.</li>
+<li><strong>Full Quality</strong>: No additional quality loss during the WebP to PNG conversion.</li>
+<li><strong>Batch Conversion</strong>: Convert up to 20 WebP files at once.</li>
+<li><strong>No Installation</strong>: Works directly in your browser — no software needed.</li>
+</ul>
+<h2>When Do You Need This?</h2>
+<p>When you download images from modern websites (which often serve WebP), need to edit them in older software like Photoshop CS6 or Microsoft Paint, or want to share images in a format that opens everywhere.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images never leave your device. No signup required.</p>`,
     category: 'image-tools',
     targetKeyword: 'WebP to PNG converter',
     secondaryKeywords: ['convert webp to png online', 'webp to jpg', 'webp converter', 'webp to png free', 'google webp converter'],
@@ -1346,11 +1591,18 @@ The conversion maintains the full quality of the WebP image in the PNG output. I
     slug: 'image-to-base64',
     name: 'Image to Base64',
     shortDescription: 'Convert images to Base64 encoded strings for embedding in HTML and CSS.',
-    longDescription: `Convert any image to a Base64-encoded data URI for direct embedding in HTML, CSS, or JSON without needing a separate image file. This technique is used to reduce HTTP requests for small images, store images in databases as text, embed images in email HTML, and include images in JSON API responses.
-
-Upload any image (JPEG, PNG, WebP, GIF, SVG) and instantly get the Base64 string along with the ready-to-use data URI for HTML img tags and CSS background images. The tool shows you the encoded string length so you can judge if inlining is appropriate.
-
-Best practice: inline Base64 images for small icons and UI elements (under 10KB). For larger images, serving from a CDN is almost always better for performance, as Base64 increases data size by ~33% and prevents browser caching.`,
+    longDescription: `<p>Convert any image to a Base64-encoded data URI for direct embedding in HTML, CSS, or JSON with our free <strong>image to Base64 converter</strong>. No separate image file needed — embed images directly in your code.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All Formats</strong>: Supports JPEG, PNG, WebP, GIF, and SVG.</li>
+<li><strong>Ready-to-Use Output</strong>: Generates the Base64 string, HTML img tag, and CSS background-image syntax.</li>
+<li><strong>Size Indicator</strong>: Shows encoded string length so you can judge if inlining is appropriate.</li>
+<li><strong>Instant Conversion</strong>: Results appear immediately after upload.</li>
+</ul>
+<h2>When to Use Base64 Images</h2>
+<p>Ideal for small icons and UI elements under 10KB to reduce HTTP requests. Also useful for email HTML templates (where remote images may be blocked) and offline apps. For larger images, serving from a CDN is better — Base64 increases size by ~33% and prevents browser caching.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images never leave your device. No signup required.</p>`,
     category: 'image-tools',
     targetKeyword: 'image to base64',
     secondaryKeywords: ['image to base64 converter', 'base64 image encoder', 'convert image to base64 online', 'img to base64', 'base64 image online'],
@@ -1380,11 +1632,18 @@ Best practice: inline Base64 images for small icons and UI elements (under 10KB)
     slug: 'pdf-merge',
     name: 'PDF Merge',
     shortDescription: 'Merge multiple PDF files into a single PDF online — free and secure.',
-    longDescription: `Combine multiple PDF files into a single, organized document with our free PDF Merge tool. Whether you're assembling a report from multiple chapters, combining invoices, or merging scanned documents, this tool handles it quickly and securely — entirely in your browser.
-
-Drag and reorder the PDFs before merging to control the final page order. Upload up to 20 PDF files at once (up to 50MB each). The merged PDF is assembled client-side using the pdf-lib JavaScript library, meaning your documents never leave your device — essential for sensitive financial or legal documents.
-
-The output PDF maintains the original quality, fonts, and formatting of all input PDFs. No watermarks are added to merged PDFs, unlike many online alternatives.`,
+    longDescription: `<p>Combine multiple PDF files into one organized document with our free <strong>PDF merge</strong> tool. Assemble reports, combine invoices, or merge scanned documents — entirely in your browser, with no file uploads to any server.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Drag to Reorder</strong>: Arrange PDFs in any order before merging to control page sequence.</li>
+<li><strong>Up to 20 Files</strong>: Merge up to 20 PDFs at once (up to 50MB each).</li>
+<li><strong>No Watermarks</strong>: Output is clean — unlike many online PDF tools.</li>
+<li><strong>Quality Preserved</strong>: Fonts, formatting, and image quality are fully maintained.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Professionals combining multi-chapter reports, accountants merging invoices, lawyers assembling document packages, and anyone who needs to combine PDF files without installing software.</p>
+<h2>Privacy & Security</h2>
+<p>Uses pdf-lib entirely in your browser — your documents never leave your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'merge PDF',
     secondaryKeywords: ['merge PDF online', 'merge PDF files online free', 'combine PDF', 'join PDF online free', 'PDF combiner', 'merge multiple PDFs', 'PDF merger online', 'combine PDF files free', 'PDF joiner', 'merge PDF without watermark'],
@@ -1413,11 +1672,18 @@ The output PDF maintains the original quality, fonts, and formatting of all inpu
     slug: 'pdf-split',
     name: 'PDF Split',
     shortDescription: 'Split a PDF into individual pages or specific page ranges online.',
-    longDescription: `Split any PDF document into individual pages or custom page ranges with our free PDF Split tool. Extract specific pages from a large PDF, split each page into a separate file, or divide a PDF into equal chunks — all without uploading to any server.
-
-Common use cases: extracting a specific chapter from an e-book, separating a combined invoice PDF into individual invoices, extracting pages for review before sharing, or splitting a scanned document into individual forms.
-
-The tool uses pdf-lib to perform splitting client-side. Your PDF files never leave your device, making it safe for confidential contracts, medical documents, and financial records. No watermarks, no file size reductions, no quality loss.`,
+    longDescription: `<p>Split any PDF into individual pages or custom page ranges with our free <strong>split PDF</strong> tool. Extract specific pages, separate each page into its own file, or divide a document into chunks — all without uploading to any server.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Custom Ranges</strong>: Enter page ranges like "1-5, 8, 11-15" to extract exactly the pages you need.</li>
+<li><strong>Split All Pages</strong>: Create one separate PDF per page, packaged into a ZIP.</li>
+<li><strong>No Quality Loss</strong>: Pages are extracted without re-rendering — fonts and formatting stay intact.</li>
+<li><strong>No Watermarks</strong>: Clean, unmodified output files.</li>
+</ul>
+<h2>Common Use Cases</h2>
+<p>Extracting a chapter from an e-book, separating combined invoices into individual files, extracting pages for review, or splitting a scanned document into individual forms.</p>
+<h2>Privacy & Security</h2>
+<p>Uses pdf-lib entirely in your browser — your documents never leave your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'split PDF',
     secondaryKeywords: ['split PDF online', 'split PDF online free', 'extract pages from PDF', 'divide PDF', 'PDF page extractor', 'separate PDF pages free', 'PDF splitter online', 'split PDF by pages', 'PDF cutter online', 'extract PDF pages free'],
@@ -1446,11 +1712,18 @@ The tool uses pdf-lib to perform splitting client-side. Your PDF files never lea
     slug: 'pdf-compress',
     name: 'PDF Compressor',
     shortDescription: 'Compress PDF files to reduce size while maintaining quality online.',
-    longDescription: `Reduce the file size of your PDF documents while maintaining acceptable quality with our free PDF Compressor. Smaller PDFs are faster to email, upload, and share — and many email clients and websites have file size limits that this tool helps you meet.
-
-The compressor optimizes embedded images, removes redundant data streams, and applies lossless optimizations to the PDF structure. You can choose compression levels: maximum quality (slight reduction), balanced (good quality, smaller size), or maximum compression (smallest size, reduced image quality).
-
-All compression happens client-side using pdf-lib — your sensitive documents never reach our servers. No watermarks are added. The tool shows you the compressed file size before you download.`,
+    longDescription: `<p>Reduce PDF file sizes while keeping acceptable quality with our free <strong>PDF compressor</strong>. Smaller PDFs email faster, upload quicker, and fit within file size limits imposed by email clients and websites.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Compression Levels</strong>: Maximum Quality, Balanced, or Maximum Compression — choose your trade-off.</li>
+<li><strong>Image Optimization</strong>: Compresses embedded images which account for most PDF size.</li>
+<li><strong>Size Preview</strong>: See the compressed file size before downloading.</li>
+<li><strong>No Watermarks</strong>: Clean output with no added marks or branding.</li>
+</ul>
+<h2>How Much Can a PDF Be Compressed?</h2>
+<p>PDFs with large embedded images can shrink 50–80%. Text-only PDFs may only reduce by 10–20%. Scanned documents (which are essentially image PDFs) can often be significantly reduced.</p>
+<h2>Privacy & Security</h2>
+<p>Uses pdf-lib entirely in your browser — your documents never leave your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'compress PDF',
     secondaryKeywords: ['compress PDF online free', 'reduce PDF file size', 'PDF compressor', 'PDF compressor online', 'shrink PDF', 'make PDF smaller online', 'compress PDF to 100KB', 'compress PDF to 200KB', 'reduce PDF size online', 'PDF size reducer free'],
@@ -1479,11 +1752,18 @@ All compression happens client-side using pdf-lib — your sensitive documents n
     slug: 'pdf-to-image',
     name: 'PDF to Image',
     shortDescription: 'Convert PDF pages to high-quality PNG or JPG images online.',
-    longDescription: `Convert any page of a PDF document to a high-quality PNG or JPG image with our free PDF to Image converter. This is useful for creating PDF thumbnails, extracting specific pages as images for presentations, sharing a non-editable view of a document page, or preparing PDF content for social media.
-
-Select specific pages to convert or convert all pages at once. Adjust the output resolution (DPI) for the perfect balance of quality and file size — 150 DPI for web/screen use, 300 DPI for print. Output formats include PNG (best quality, supports transparency) and JPG (smaller files, good for photos).
-
-The tool uses PDF.js for rendering, giving you high-fidelity image output that accurately represents the original PDF layout.`,
+    longDescription: `<p>Convert any PDF page to a high-quality PNG or JPG image with our free <strong>PDF to JPG</strong> converter. Create thumbnails, extract pages for presentations, share non-editable document views, or prepare PDF content for social media.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Select Specific Pages</strong>: Convert all pages or enter a custom range (e.g., "1, 3, 5-8").</li>
+<li><strong>DPI Control</strong>: Choose 72–600 DPI — 150 DPI for web, 300 DPI for print quality.</li>
+<li><strong>PNG or JPG Output</strong>: PNG for crisp text and graphics; JPG for smaller file sizes.</li>
+<li><strong>ZIP Download</strong>: Multiple pages are packaged into a ZIP file automatically.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Marketers creating social media images from PDF slides, developers generating PDF thumbnails, teachers sharing individual PDF pages, and anyone needing images from a PDF document.</p>
+<h2>Privacy & Security</h2>
+<p>Uses PDF.js entirely in your browser — your documents never leave your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'PDF to JPG',
     secondaryKeywords: ['PDF to image converter', 'PDF to PNG', 'PDF to JPG converter online', 'convert PDF to JPG', 'convert PDF to image free', 'PDF to JPG online free', 'PDF to photo converter', 'extract image from PDF', 'PDF page to image', 'PDF to JPEG converter'],
@@ -1512,11 +1792,18 @@ The tool uses PDF.js for rendering, giving you high-fidelity image output that a
     slug: 'pdf-to-word',
     name: 'PDF to Word Converter',
     shortDescription: 'Convert PDF files to editable Word documents (.docx) online — free and secure.',
-    longDescription: `Convert any PDF document to an editable Microsoft Word (.docx) file with our free PDF to Word converter. Extract text, paragraphs, and headings from your PDF and download a fully editable Word document — all processed entirely in your browser.
-
-This tool uses PDF.js to accurately extract text content from each page of your PDF, then generates a properly formatted .docx file using the docx library. The output preserves paragraph structure, line breaks, and page separation, making it easy to edit the content in Microsoft Word, Google Docs, or any other word processor.
-
-Perfect for editing scanned contracts, modifying old PDF reports, extracting text from academic papers, or converting PDF resumes into editable formats. Since everything runs client-side, your documents never leave your device — ideal for confidential or sensitive files.`,
+    longDescription: `<p>Convert any PDF to an editable Microsoft Word (.docx) file with our free <strong>PDF to Word converter</strong>. Extract text, paragraphs, and headings from your PDF — all processed entirely in your browser, never uploaded to any server.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Accurate Text Extraction</strong>: PDF.js extracts text content from each page faithfully.</li>
+<li><strong>Paragraph Structure</strong>: Output preserves paragraphs, line breaks, and page separation.</li>
+<li><strong>Universal .docx Format</strong>: Opens in Microsoft Word, Google Docs, LibreOffice, and Apple Pages.</li>
+<li><strong>No Watermarks</strong>: Clean, unbranded output file.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone who needs to edit a PDF contract, modify an old report, extract text from an academic paper, or convert a PDF resume into an editable format — without spending money on Adobe Acrobat.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your documents never leave your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'PDF to Word converter',
     secondaryKeywords: ['pdf to docx', 'convert pdf to word online free', 'pdf to word converter free', 'pdf to editable word', 'extract text from pdf to word'],
@@ -1547,11 +1834,19 @@ Perfect for editing scanned contracts, modifying old PDF reports, extracting tex
     slug: 'unit-converter',
     name: 'Unit Converter',
     shortDescription: 'Convert length, weight, volume, area, speed and data units instantly.',
-    longDescription: `Our Unit Converter is a comprehensive measurement conversion tool covering all major unit categories: length (meters, feet, miles, kilometers), weight/mass (kilograms, pounds, ounces, grams), volume (liters, gallons, milliliters, cups), area (square meters, acres, hectares, square feet), speed (km/h, mph, m/s, knots), data storage (bytes, KB, MB, GB, TB), and more.
-
-Each conversion is calculated with high precision (up to 10 significant figures), making it suitable for scientific, engineering, and everyday use. The interface is clean and intuitive — select the category, choose input and output units, enter your value, and get the result instantly.
-
-This is an essential tool for engineers, students, scientists, travellers, shoppers comparing international prices, and anyone who regularly works with measurements from different systems (metric vs imperial).`,
+    longDescription: `<p>Our <strong>unit converter</strong> is a comprehensive measurement conversion tool covering all major categories: length (meters, feet, miles, kilometers), weight/mass (kilograms, pounds, ounces, grams), volume (liters, gallons, milliliters, cups), area (square meters, acres, hectares, square feet), speed (km/h, mph, m/s, knots), data storage (bytes, KB, MB, GB, TB), and more.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>High Precision</strong>: Conversions calculated with up to 10 significant figures — ideal for scientific and engineering work.</li>
+<li><strong>All Major Categories</strong>: Length, Weight, Volume, Area, Speed, Temperature, Data Storage, Energy, Pressure, and more.</li>
+<li><strong>Bidirectional Conversion</strong>: See both directions simultaneously (e.g., meters to feet and feet to meters at once).</li>
+<li><strong>Metric and Imperial</strong>: Full support for metric, imperial, and US customary measurement systems.</li>
+<li><strong>Instant Results</strong>: Select the category, choose units, enter your value — result appears instantly.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>This is an essential tool for engineers, students, scientists, travellers, shoppers comparing international prices, and anyone who regularly works with measurements from different systems.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'unit converter',
     secondaryKeywords: ['measurement converter', 'length converter', 'weight converter', 'metric to imperial', 'unit conversion calculator', 'convert units online'],
@@ -1580,11 +1875,18 @@ This is an essential tool for engineers, students, scientists, travellers, shopp
     slug: 'temperature-converter',
     name: 'Temperature Converter',
     shortDescription: 'Convert temperatures between Celsius, Fahrenheit, and Kelvin instantly.',
-    longDescription: `Convert temperatures between Celsius (°C), Fahrenheit (°F), and Kelvin (K) with our instant Temperature Converter. Enter a temperature in any unit and see the equivalent in all three scales simultaneously — no need to convert back and forth manually.
-
-Temperature conversion is needed in weather forecasting (US uses Fahrenheit, most of the world uses Celsius), cooking (recipes from different countries use different scales), scientific work (Kelvin is the SI unit for thermodynamic temperature), and medicine (body temperature, fever thresholds differ by scale).
-
-The converter also shows common temperature reference points (water freezing/boiling, body temperature, oven temperatures) as quick reference anchors for each scale.`,
+    longDescription: `<p>Our <strong>temperature converter</strong> instantly converts between Celsius (°C), Fahrenheit (°F), and Kelvin (K). Enter a temperature in any unit and see the equivalent in all three scales simultaneously — no need to convert back and forth manually.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All Three Scales at Once</strong>: Celsius, Fahrenheit, and Kelvin results shown simultaneously.</li>
+<li><strong>Instant Conversion</strong>: Results update live as you type — no button press needed.</li>
+<li><strong>Reference Points</strong>: Common landmarks like water freezing/boiling, body temperature, and oven temperatures shown for each scale.</li>
+<li><strong>Swap Direction</strong>: Easily reverse the conversion direction with the swap button.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Temperature conversion is needed in weather forecasting (US uses Fahrenheit, most of the world uses Celsius), cooking (recipes from different countries use different scales), scientific work (Kelvin is the SI unit for thermodynamic temperature), and medicine (body temperature and fever thresholds differ by scale).</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'temperature converter',
     secondaryKeywords: ['celsius to fahrenheit', 'fahrenheit to celsius', 'celsius to kelvin', 'convert temperature online', 'temperature conversion calculator'],
@@ -1612,11 +1914,19 @@ The converter also shows common temperature reference points (water freezing/boi
     slug: 'timestamp-converter',
     name: 'Unix Timestamp Converter',
     shortDescription: 'Convert Unix timestamps to readable dates and dates to Unix timestamps.',
-    longDescription: `Convert Unix timestamps (epoch time) to human-readable dates and times, and vice versa. Unix timestamp is the number of seconds elapsed since January 1, 1970, 00:00:00 UTC (the Unix epoch). It's widely used in programming, databases, APIs, and system logs.
-
-Our converter handles both seconds and milliseconds (used in JavaScript), shows the timestamp in multiple timezone formats, and lets you convert any date to its corresponding Unix timestamp. This is an essential tool for developers debugging API responses, analyzing logs, working with database timestamps, and understanding cron job schedules.
-
-The current Unix timestamp is shown at the top and auto-updates every second — useful when you need the current timestamp for testing.`,
+    longDescription: `<p>Convert <strong>Unix timestamps</strong> (epoch time) to human-readable dates and times, and vice versa. A Unix timestamp is the number of seconds elapsed since January 1, 1970, 00:00:00 UTC (the Unix epoch). It is widely used in programming, databases, APIs, and system logs.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Seconds and Milliseconds</strong>: Handles both Unix seconds (10-digit) and JavaScript milliseconds (13-digit) timestamps.</li>
+<li><strong>Multiple Formats</strong>: Shows results in local time, UTC, and ISO 8601 format simultaneously.</li>
+<li><strong>Date to Timestamp</strong>: Convert any date and time back to its Unix timestamp with timezone selection.</li>
+<li><strong>Live Counter</strong>: Current Unix timestamp shown at the top, auto-updating every second — handy for testing.</li>
+<li><strong>Copy Results</strong>: One-click copy for any output value.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>This is an essential tool for developers debugging API responses, analyzing logs, working with database timestamps, and understanding cron job schedules. Anyone who encounters epoch time in their work will benefit from this converter.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'Unix timestamp converter',
     secondaryKeywords: ['epoch converter', 'timestamp to date', 'date to timestamp', 'unix epoch converter', 'milliseconds converter', 'epoch time converter'],
@@ -1644,13 +1954,19 @@ The current Unix timestamp is shown at the top and auto-updates every second —
     slug: 'nepali-date-converter',
     name: 'Nepali Date Converter',
     shortDescription: 'Convert dates between Bikram Sambat (BS) and Gregorian (AD) calendar instantly.',
-    longDescription: `Convert dates between Nepali Bikram Sambat (BS/विक्रम संवत) and English Gregorian (AD) calendars with our free Nepali Date Converter. Enter any date in BS and get the exact AD equivalent, or convert AD to BS — accurate from 2000 BS to 2099 BS (1943 AD to 2043 AD).
-
-The converter displays results with Nepali month names (बैशाख, जेठ, असार...), day of the week in both Nepali and English, and Nepali numerals (१, २, ३...). It also shows today's date in both BS and AD formats — perfect for quickly checking the Nepali date.
-
-Built with accurate BS calendar data that accounts for the variable number of days in each Nepali month (which differ from year to year, unlike the Gregorian calendar). This tool is essential for filling government forms, scheduling events across calendars, checking dates for festivals (Dashain, Tihar), and everyday date conversions.
-
-Works 100% in your browser — no data is sent to any server. Fast, accurate, and free with no signup required.`,
+    longDescription: `<p>Our free <strong>Nepali date converter</strong> converts dates between Nepali Bikram Sambat (BS/विक्रम संवत) and English Gregorian (AD) calendars. Enter any date in BS and get the exact AD equivalent, or convert AD to BS — accurate from 2000 BS to 2099 BS (1943 AD to 2043 AD).</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>BS to AD and AD to BS</strong>: Full bidirectional conversion with a single toggle.</li>
+<li><strong>Nepali Month Names</strong>: Results displayed with Nepali month names (बैशाख, जेठ, असार...) and Nepali numerals (१, २, ३...).</li>
+<li><strong>Day of Week</strong>: Shows the day of the week in both Nepali and English.</li>
+<li><strong>Today's Date</strong>: Instantly see the current date in both BS and AD formats.</li>
+<li><strong>Accurate Data</strong>: Built with verified BS calendar data that accounts for the variable days in each Nepali month.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>This tool is essential for filling government forms, scheduling events across calendars, checking dates for festivals (Dashain, Tihar), and everyday date conversions for anyone living or working in Nepal.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'Nepali date converter',
     secondaryKeywords: ['BS to AD converter', 'AD to BS converter', 'Nepali calendar converter', 'bikram sambat to english date', 'nepali date today', 'miti converter', 'nepali miti pariwartan', 'english to nepali date'],
@@ -1680,13 +1996,19 @@ Works 100% in your browser — no data is sent to any server. Fast, accurate, an
     slug: 'preeti-to-unicode',
     name: 'Preeti to Unicode Converter',
     shortDescription: 'Convert Preeti font Nepali text to standard Unicode (युनिकोड) instantly. Free online tool.',
-    longDescription: `Convert Preeti font Nepali text to Unicode (standard Devanagari) instantly with our free Preeti to Unicode converter. Preeti is the most popular legacy Nepali font used in government offices, banks, newspapers, and older documents across Nepal. However, Preeti text doesn't display correctly on the web or modern devices without the font installed — Unicode solves this.
-
-Simply paste your Preeti-encoded text in the input box and get perfectly formatted Unicode Nepali (देवनागरी) output in real time. The converter handles all Preeti characters, conjuncts (संयुक्त अक्षर), special symbols, numbers, and punctuation with high accuracy.
-
-Also includes Unicode to Preeti reverse conversion for users who need to work with legacy documents. Both conversions happen instantly in your browser — your text is never sent to any server. No signup, no limits, completely free.
-
-Essential for Nepali government employees, journalists, content creators, students, and anyone who works with Nepali text across old and modern systems.`,
+    longDescription: `<p>Our free <strong>Preeti to Unicode converter</strong> instantly converts Preeti font Nepali text to standard Unicode Devanagari. Preeti is the most popular legacy Nepali font used in government offices, banks, newspapers, and older documents across Nepal — but it doesn't display correctly on modern devices without the font installed. Unicode solves this.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Bidirectional Conversion</strong>: Preeti to Unicode and Unicode to Preeti — switch modes with a toggle.</li>
+<li><strong>High Accuracy</strong>: Handles all Preeti characters, conjuncts (संयुक्त अक्षर), special symbols, numbers, and punctuation.</li>
+<li><strong>Real-Time Output</strong>: Paste text and get perfectly formatted Unicode Nepali (देवनागरी) output instantly.</li>
+<li><strong>Copy to Clipboard</strong>: One-click copy to paste anywhere — websites, emails, social media, Google Docs.</li>
+<li><strong>No Limits</strong>: Convert unlimited text with no restrictions.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Essential for Nepali government employees, journalists, content creators, students, and anyone who works with Nepali text across old and modern systems.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'Preeti to Unicode converter',
     secondaryKeywords: ['preeti to unicode', 'unicode to preeti', 'nepali font converter', 'preeti unicode converter online', 'preeti to unicode nepali', 'convert preeti to unicode online free', 'nepali unicode converter', 'preeti font to unicode'],
@@ -1716,13 +2038,19 @@ Essential for Nepali government employees, journalists, content creators, studen
     slug: 'nepali-typing',
     name: 'Nepali Typing Tool',
     shortDescription: 'Type in Nepali (नेपाली) using your English keyboard. Romanized to Devanagari conversion.',
-    longDescription: `Type in Nepali using your regular English keyboard with our free Nepali Typing Tool. Simply type Romanized Nepali (like "namaste" → "नमस्ते") and the tool converts it to Devanagari script in real-time. No Nepali keyboard layout or special software needed.
-
-The tool uses phonetic transliteration — type how the word sounds in English and get the Nepali Unicode output instantly. Supports all Nepali consonants, vowels, conjuncts (संयुक्त अक्षर), and special characters. Common mappings: ka→क, kha→ख, ga→ग, gha→घ, cha→च, chha→छ, ja→ज, etc.
-
-Features include a virtual Nepali keyboard for clicking characters, real-time conversion as you type, word suggestions, copy to clipboard, and a complete character mapping reference. Output is in standard Unicode that works everywhere — websites, emails, social media, documents.
-
-Perfect for Nepali speakers who are comfortable with English keyboards, students writing Nepali assignments, content creators, and anyone who needs to type Nepali text quickly and accurately.`,
+    longDescription: `<p>Type in <strong>Nepali</strong> using your regular English keyboard with our free Nepali Typing Tool. Simply type Romanized Nepali (like "namaste" to get "नमस्ते") and the tool converts it to Devanagari script in real-time. No Nepali keyboard layout or special software needed.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Phonetic Transliteration</strong>: Type how the word sounds in English and get Nepali Unicode output instantly.</li>
+<li><strong>Virtual Keyboard</strong>: Click Nepali characters directly if you are unsure of the mapping.</li>
+<li><strong>All Characters Supported</strong>: Consonants, vowels, conjuncts (संयुक्त अक्षर), and special characters all supported.</li>
+<li><strong>Universal Unicode Output</strong>: Output works on websites, emails, social media, and documents everywhere.</li>
+<li><strong>Character Mapping Reference</strong>: Built-in reference showing all Romanized-to-Devanagari mappings (ka→क, kha→ख, ga→ग, etc.).</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for Nepali speakers comfortable with English keyboards, students writing Nepali assignments, content creators, and anyone who needs to type Nepali text quickly and accurately without installing extra software.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'Nepali typing',
     secondaryKeywords: ['type in nepali', 'nepali typing online', 'romanized nepali to unicode', 'nepali keyboard online', 'english to nepali typing', 'nepali unicode typing', 'type nepali online free', 'nepali font typing'],
@@ -1745,15 +2073,19 @@ Perfect for Nepali speakers who are comfortable with English keyboards, students
     slug: 'nepse-calculator',
     name: 'NEPSE Share Calculator',
     shortDescription: 'Calculate NEPSE share profit/loss, WACC & target price with broker commission, SEBON fee, DP charge & CGT.',
-    longDescription: `Nepal's most complete NEPSE Share Calculator with three powerful tools: Profit/Loss Calculator, WACC (Weighted Average Cost) Calculator, and Target Price Calculator. All with official SEBON-regulated broker commission tiers, SEBON fee, DP charge, and Capital Gains Tax.
-
-Profit/Loss Calculator: Enter buy price, sell price, and quantity (kitta) to instantly see net profit/loss after all charges. Includes visual fee breakdown chart, circuit breaker limits, break-even price, effective buy/sell price per share, and detailed buy-side + sell-side fee breakdown.
-
-WACC Calculator: Bought the same stock at different prices? Add multiple buy transactions and calculate your weighted average cost per share including all fees. See per-transaction weight distribution and total investment breakdown.
-
-Target Price Calculator: Enter your desired profit amount and the tool calculates the exact sell price needed accounting for all broker commissions, SEBON fee, DP charge, and Capital Gains Tax. Know exactly what price target to set.
-
-Commission tiers: 0.36% (up to Rs 50K), 0.33% (50K-5L), 0.31% (5L-20L), 0.27% (20L-1Cr), 0.24% (above 1Cr). CGT: 5% individual (>365 days), 7.5% individual (<=365 days), 10% institutional. Updated for fiscal year 2081/2082.`,
+    longDescription: `<p>Nepal's most complete <strong>NEPSE calculator</strong> with three powerful tools in one: Profit/Loss Calculator, WACC (Weighted Average Cost) Calculator, and Target Price Calculator — all using official SEBON-regulated broker commission tiers, SEBON fee, DP charge, and Capital Gains Tax.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Profit/Loss Calculator</strong>: Enter buy price, sell price, and quantity (kitta) to see net profit/loss after all charges, with a visual fee breakdown chart and break-even price.</li>
+<li><strong>WACC Calculator</strong>: Add multiple buy transactions to calculate your weighted average cost per share including all fees.</li>
+<li><strong>Target Price Calculator</strong>: Enter your desired profit amount and find the exact sell price needed after all charges and Capital Gains Tax.</li>
+<li><strong>Official Commission Tiers</strong>: 0.36% (up to Rs 50K) down to 0.24% (above 1Cr) — updated for FY 2081/2082.</li>
+<li><strong>CGT Calculation</strong>: 5% individual (more than 365 days), 7.5% individual (365 days or less), 10% institutional.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Essential for Nepal stock market investors who want to accurately calculate net returns after all SEBON fees, broker commissions, DP charges, and capital gains tax on NEPSE share transactions.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'calculators',
     targetKeyword: 'NEPSE calculator',
     secondaryKeywords: ['nepse share calculator', 'nepse profit calculator', 'share calculator nepal', 'stock calculator nepal', 'nepse profit loss calculator', 'nepse share profit calculator', 'broker commission nepal', 'nepse tax calculator', 'share market calculator nepal', 'nepse break even calculator', 'sebon commission rate', 'capital gains tax nepal shares', 'nepse wacc calculator', 'share average cost calculator nepal', 'nepse target price calculator', 'नेप्से क्यालकुलेटर', 'नेप्से शेयर क्यालकुलेटर', 'शेयर नाफा नोक्सानी', 'नेप्से ब्रोकर कमिसन'],
@@ -1788,11 +2120,19 @@ Commission tiers: 0.36% (up to Rs 50K), 0.33% (50K-5L), 0.31% (5L-20L), 0.27% (2
     slug: 'number-to-words',
     name: 'Number to Words',
     shortDescription: 'Convert numbers to words in Indian and international formats.',
-    longDescription: `Convert any number into its word representation with our Number to Words converter. Enter any number — from simple integers to large figures — and instantly get the written English equivalent. The tool supports both International (million, billion) and Indian (lakh, crore) numbering systems.
-
-This is essential for writing cheques (where the amount must be written in words), drafting legal and financial documents, converting currency amounts, and preparing educational materials. The tool handles numbers up to 999 crore (Indian system) or 999 billion (International system).
-
-The Indian numbering system (used in India, Pakistan, Bangladesh, Nepal) uses lakh (100,000) and crore (10,000,000) as primary groupings after ten thousand, which differs from the Western system that uses million and billion.`,
+    longDescription: `<p>Our <strong>number to words converter</strong> instantly converts any number into its written English equivalent. Enter any figure — from simple integers to large amounts — and get the word representation in either Indian (lakh, crore) or International (million, billion) numbering format.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Indian and International Formats</strong>: Switch between Indian (lakh/crore) and International (million/billion) numbering systems.</li>
+<li><strong>Cheque Format</strong>: Output includes "Only" suffix — ready for writing on cheques and financial documents.</li>
+<li><strong>Decimal Support</strong>: Handles decimal numbers (e.g., 1234.56 becomes "One Thousand Two Hundred Thirty-Four and Fifty-Six Paise").</li>
+<li><strong>Large Numbers</strong>: Supports up to 99,999 crore (Indian) or nearly 1 trillion (International).</li>
+<li><strong>One-Click Copy</strong>: Copy the word output directly to your clipboard.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Essential for writing cheques, drafting legal and financial documents, converting currency amounts, and preparing educational materials — for anyone in India, Nepal, Pakistan, or Bangladesh using the Indian numbering system.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'number to words converter',
     secondaryKeywords: ['number to words India', 'convert number to words', 'amount in words', 'cheque amount in words', 'number spelling converter', 'crore lakh in words'],
@@ -1822,11 +2162,18 @@ The Indian numbering system (used in India, Pakistan, Bangladesh, Nepal) uses la
     slug: 'internet-speed-test',
     name: 'Internet Speed Test',
     shortDescription: 'Test your internet download speed and ping directly in your browser.',
-    longDescription: `Our free Internet Speed Test measures your real-time download speed and ping (latency) directly in the browser — no plugins, no apps, no sign-up required. It works by downloading a test payload from Cloudflare's global edge network and precisely timing the transfer using the browser's high-resolution Performance API.
-
-Unlike other speed test tools that require Flash or native apps, this tool runs 100% in your browser. The test uses multiple progressive download rounds to produce a stable, averaged result that closely matches what you'd see from industry tools like Speedtest.net or fast.com.
-
-The ping test measures your network latency — how quickly your device can communicate with a remote server. Lower ping means faster response times, which is crucial for gaming, video calls, and real-time applications.`,
+    longDescription: `<p>Our free <strong>internet speed test</strong> measures your real-time download speed and ping (latency) directly in the browser — no plugins, no apps, no sign-up required. It downloads a test payload from Cloudflare's global edge network and precisely times the transfer using the browser's high-resolution Performance API.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Download Speed Test</strong>: Multiple progressive download rounds produce a stable, averaged result comparable to Speedtest.net or fast.com.</li>
+<li><strong>Ping/Latency Test</strong>: Measures round-trip time in milliseconds — critical for gaming, video calls, and real-time apps.</li>
+<li><strong>No App Required</strong>: Runs 100% in your browser — no Flash, no plugins, no installation needed.</li>
+<li><strong>Quick Results</strong>: Full test completes in approximately 10-15 seconds.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for anyone wanting to verify their broadband, Wi-Fi, or mobile internet speed. Use it to troubleshoot slow connections, check if your ISP is delivering promised speeds, or test before important video calls or gaming sessions.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no server-side processing, no personal data collected.</p>`,
     category: 'developer-tools',
     targetKeyword: 'internet speed test',
     secondaryKeywords: ['online speed test', 'check internet speed', 'download speed test', 'ping test', 'broadband speed test', 'wifi speed test', 'network speed checker'],
@@ -1857,11 +2204,18 @@ The ping test measures your network latency — how quickly your device can comm
     slug: 'timezone-checker',
     name: 'Time Zone Checker',
     shortDescription: 'See current time across multiple world cities. Perfect for remote teams.',
-    longDescription: `The Time Zone Checker — your Office Buddy for remote teams — lets you instantly see the current local time in cities around the world, all updating live every second. No more mentally calculating time differences or Googling "what time is it in Tokyo right now."
-
-Add any city from our curated list of 50+ major business hubs across all time zones. The tool clearly shows each city's current time, date, day of the week, and UTC offset. A visual indicator highlights whether it's currently working hours, early/late hours, or nighttime — so you'll always know the best time to reach a colleague.
-
-Perfect for scheduling international meetings, coordinating with remote teams, tracking market hours, or planning travel. All calculations happen locally in your browser using the Intl.DateTimeFormat API — no server calls, always accurate.`,
+    longDescription: `<p>The <strong>Time Zone Checker</strong> — your Office Buddy for remote teams — lets you instantly see the current local time in cities around the world, all updating live every second. No more mentally calculating time differences or searching what time it is in Tokyo right now.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>50+ World Cities</strong>: Add any major business hub from a curated list covering all global time zones.</li>
+<li><strong>Live Clocks</strong>: Every city card shows current time, date, day of week, and UTC offset — updating every second.</li>
+<li><strong>Working Hours Indicator</strong>: Color-coded status (green = working hours, yellow = early/evening, dark = nighttime) so you instantly know who is available.</li>
+<li><strong>DST Aware</strong>: Automatically handles Daylight Saving Time transitions using the browser's Intl.DateTimeFormat API.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for scheduling international meetings, coordinating with remote teams, tracking market hours, or planning travel across multiple time zones.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'converters',
     targetKeyword: 'time zone checker',
     secondaryKeywords: ['world clock', 'time zone converter', 'international time zones', 'remote team time zones', 'office time zones', 'what time is it in', 'meeting time planner'],
@@ -1891,11 +2245,19 @@ Perfect for scheduling international meetings, coordinating with remote teams, t
     slug: 'html-css-js-editor',
     name: 'HTML CSS JS Editor',
     shortDescription: 'Live HTML, CSS & JavaScript editor with instant preview — like CodePen.',
-    longDescription: `A powerful, browser-based HTML/CSS/JavaScript live code editor with real-time preview. Write HTML, CSS, and JavaScript in the editor panels and see your output update instantly — no installation, no sign-up required.
-
-Features a professional dark-themed code editor with tab support (Tab key inserts spaces), auto-run with 600ms debounce, manual run mode, full-screen preview, and a built-in console panel that captures console.log, console.error, and console.warn output from your code.
-
-Choose from 4 layout modes: side-by-side (editor left, preview right), top/bottom split, editor-only, or preview-only. Load from 6 starter templates (Hello World, Counter, Todo App, Profile Card, Digital Clock, or Blank) to get started instantly. Download your project as a standalone HTML file.`,
+    longDescription: `<p>A powerful, browser-based <strong>online HTML CSS JS editor</strong> with real-time preview. Write HTML, CSS, and JavaScript in the editor panels and see your output update instantly — no installation, no sign-up required.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Live Preview</strong>: Output updates automatically 600ms after you stop typing, or run manually with one click.</li>
+<li><strong>Built-in Console</strong>: Captures console.log, console.error, and console.warn output directly in the panel.</li>
+<li><strong>4 Layout Modes</strong>: Side-by-side, top/bottom split, editor-only, or preview-only — choose what works for you.</li>
+<li><strong>6 Starter Templates</strong>: Hello World, Counter, Todo App, Profile Card, Digital Clock, or Blank — get started instantly.</li>
+<li><strong>Download Project</strong>: Save your work as a standalone HTML file with CSS and JavaScript embedded.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for front-end developers prototyping ideas, students learning web development, and anyone who needs a quick CodePen-style playground without leaving their browser.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'online HTML CSS JS editor',
     secondaryKeywords: ['html css js compiler', 'online code editor', 'live html editor', 'codepen alternative', 'html preview online', 'javascript playground', 'web code editor free'],
@@ -1923,9 +2285,19 @@ Choose from 4 layout modes: side-by-side (editor left, preview right), top/botto
     slug: 'jpg-to-pdf',
     name: 'JPG to PDF',
     shortDescription: 'Convert JPG, PNG and WebP images to a single PDF file online.',
-    longDescription: `Convert one or multiple images (JPG, PNG, WebP, GIF, BMP) into a single PDF file instantly in your browser. No uploads, no server — everything happens locally for complete privacy.
-
-Upload images, drag them to reorder the pages, choose your page size (A4, Letter, or fit to image), orientation, and margin. Then click convert to download a clean PDF.`,
+    longDescription: `<p>Convert one or multiple images into a single PDF file instantly with our free <strong>JPG to PDF</strong> converter. Supports JPG, PNG, WebP, GIF, and BMP formats. No uploads, no server — everything happens locally in your browser for complete privacy.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Images</strong>: Upload as many images as you need — each image becomes one page in the PDF.</li>
+<li><strong>Drag to Reorder</strong>: Rearrange pages before converting by dragging images into your preferred order.</li>
+<li><strong>Page Size Options</strong>: Choose A4, Letter, or Fit to Image which sizes each page to match the image dimensions exactly.</li>
+<li><strong>Orientation and Margin</strong>: Set portrait or landscape orientation and customize the page margin.</li>
+<li><strong>All Image Formats</strong>: JPG, PNG, WebP, GIF, and BMP are all supported.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for students, professionals, and anyone who needs to combine photos or scanned documents into a single PDF file for easy sharing or submission.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — your images never leave your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'JPG to PDF',
     secondaryKeywords: ['JPG to PDF converter', 'JPG to PDF online', 'image to PDF', 'PNG to PDF', 'convert JPG to PDF free', 'photos to PDF', 'JPG to PDF converter online free', 'multiple JPG to PDF', 'picture to PDF', 'convert image to PDF online'],
@@ -1953,9 +2325,18 @@ Upload images, drag them to reorder the pages, choose your page size (A4, Letter
     slug: 'pdf-rotate',
     name: 'Rotate PDF',
     shortDescription: 'Rotate PDF pages 90°, 180° or 270° — all pages or individually.',
-    longDescription: `Rotate one, some, or all pages of a PDF file directly in your browser. No uploads required — everything stays on your device for complete privacy.
-
-Choose to rotate all pages at once (90° clockwise, 90° counter-clockwise, or 180°) or fine-tune individual pages independently. Preview the rotation labels for each page before downloading.`,
+    longDescription: `<p>Easily <strong>rotate PDF</strong> pages online — rotate one, some, or all pages of a PDF file directly in your browser. No uploads required — everything stays on your device for complete privacy.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Bulk Rotation</strong>: Rotate all pages at once — 90° clockwise, 90° counter-clockwise, or 180°.</li>
+<li><strong>Per-Page Control</strong>: Fine-tune individual pages independently with different rotation values.</li>
+<li><strong>Rotation Preview</strong>: Rotation labels are shown for each page before you download.</li>
+<li><strong>Supports Most PDFs</strong>: Works with standard PDFs and attempts to open most encrypted files too.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Useful for anyone who has received a PDF with incorrectly oriented pages — scanned documents, reports, or presentations that need to be fixed before sharing or printing.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser using pdf-lib — your PDF never leaves your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'rotate PDF online',
     secondaryKeywords: ['rotate pdf pages', 'turn pdf sideways', 'flip pdf', 'pdf rotation tool free'],
@@ -1983,9 +2364,18 @@ Choose to rotate all pages at once (90° clockwise, 90° counter-clockwise, or 1
     slug: 'pdf-watermark',
     name: 'Watermark PDF',
     shortDescription: 'Add text or image watermarks to every page of your PDF.',
-    longDescription: `Stamp a custom text or logo watermark onto every page of your PDF — completely in your browser with no server upload needed.
-
-Choose watermark type (text or image), customize the text, font size, color, opacity, rotation, and position (center, corners, or tiled). Download the watermarked PDF instantly.`,
+    longDescription: `<p>Stamp a custom text or logo watermark onto every page of your PDF with our free tool to <strong>add watermark to PDF online</strong> — completely in your browser with no server upload needed.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Text Watermarks</strong>: Add custom text with control over font size, color, opacity, and rotation angle.</li>
+<li><strong>Image Watermarks</strong>: Upload a PNG or JPG logo to use as an image watermark centered on every page.</li>
+<li><strong>Flexible Positioning</strong>: Place the watermark at the center, corners, or tile it in a repeating grid across the page.</li>
+<li><strong>Opacity Control</strong>: Adjust the opacity slider — 30% is typical for document watermarks, 10-20% for subtle branding.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for businesses protecting documents, lawyers watermarking contracts, photographers protecting proofs, and anyone who needs to mark PDFs as confidential, draft, or branded before sharing.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser using pdf-lib — your files stay private, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'add watermark to PDF online',
     secondaryKeywords: ['pdf watermark tool', 'stamp pdf watermark', 'confidential watermark pdf', 'watermark pdf free'],
@@ -2013,9 +2403,19 @@ Choose watermark type (text or image), customize the text, font size, color, opa
     slug: 'pdf-page-numbers',
     name: 'Add Page Numbers to PDF',
     shortDescription: 'Automatically add page numbers to every page of your PDF.',
-    longDescription: `Insert page numbers into any PDF instantly — no upload, no sign-up, fully private. Choose position (bottom center, corners, top), format (1, 2, 3 / Page 1 of 10 / - 1 -), font size, color, and margin.
-
-Optionally set the starting number and skip the first page (useful for cover pages).`,
+    longDescription: `<p>Automatically <strong>add page numbers to PDF</strong> online — insert page numbers into any PDF instantly with no upload, no sign-up, and full privacy. Choose from multiple position and format options.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Positions</strong>: Place page numbers at the bottom center, corners, or top of each page.</li>
+<li><strong>Format Options</strong>: Choose from simple numbers, "Page 1 of 10" style, or custom prefixed formats.</li>
+<li><strong>Custom Starting Number</strong>: Set a starting number to account for a table of contents or front matter.</li>
+<li><strong>Skip Cover Page</strong>: Enable the "Skip first page" option to leave the cover unnumbered.</li>
+<li><strong>Font and Color</strong>: Customize font size and color to match your document style.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for authors, students, and professionals who need to add page numbers to reports, theses, manuals, or any multi-page PDF document before printing or submitting.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — your PDF never leaves your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'add page numbers to PDF online',
     secondaryKeywords: ['pdf page numbering', 'number pdf pages', 'insert page numbers pdf free', 'pdf footer numbering'],
@@ -2043,9 +2443,19 @@ Optionally set the starting number and skip the first page (useful for cover pag
     slug: 'pdf-organize',
     name: 'Organize PDF',
     shortDescription: 'Reorder, delete, and duplicate PDF pages with a click.',
-    longDescription: `Rearrange, remove, or duplicate pages in any PDF file — completely in your browser with no file upload required.
-
-Upload your PDF, see all pages listed in order, then use the arrow buttons to reorder them, trash icon to delete pages, or copy icon to duplicate pages. Download the reorganized PDF when done.`,
+    longDescription: `<p>Rearrange, remove, or duplicate pages in any PDF file with our free tool to <strong>organize PDF pages online</strong> — completely in your browser with no file upload required.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Reorder Pages</strong>: Use the arrow buttons to move any page up or down to your desired position.</li>
+<li><strong>Delete Pages</strong>: Click the trash icon next to any page to remove it from the PDF.</li>
+<li><strong>Duplicate Pages</strong>: Click the copy icon to insert a duplicate of any page immediately after it.</li>
+<li><strong>Undo/Reset</strong>: Click "Reset order" to restore the original page sequence at any time.</li>
+<li><strong>No Page Limit</strong>: No hard limit on pages, though very large PDFs may be slower to load.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Useful for anyone who needs to restructure a PDF — removing blank pages, reordering chapters, duplicating sections, or cleaning up a document before sharing.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — your PDF never leaves your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'organize PDF pages online',
     secondaryKeywords: ['reorder pdf pages', 'delete pdf pages', 'rearrange pdf free', 'pdf page organizer'],
@@ -2073,18 +2483,20 @@ Upload your PDF, see all pages listed in order, then use the arrow buttons to re
     slug: 'redact-pdf',
     name: 'Redact PDF',
     shortDescription: 'Black out sensitive content in your PDF — draw redaction boxes and download a clean file.',
-    longDescription: `Redact sensitive information from PDF documents entirely in your browser — no server upload, no data exposure. Upload any PDF, navigate through pages, and draw redaction rectangles over text, images, or any content you want hidden.
-
-**Key features:**
-- Draw black, white, or gray redaction boxes on any page
-- Select, move, and resize redaction boxes after drawing
-- Undo/redo support for all operations
-- Page thumbnails sidebar for quick navigation
-- Text search with auto-redact — find matching text and redact it across all pages
-- Zoom controls for precise redaction placement
-- Download the redacted PDF with permanent filled rectangles
-
-All processing happens locally using pdf-lib and PDF.js. Your document never leaves your device.`,
+    longDescription: `<p>Easily <strong>redact PDF online free</strong> — remove sensitive information from PDF documents entirely in your browser with no server upload and no data exposure. Draw redaction rectangles over any text, images, or content you want hidden.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Draw Redaction Boxes</strong>: Click and drag to draw black, white, or gray redaction rectangles on any page.</li>
+<li><strong>Select and Edit</strong>: Move, resize, or delete individual redaction boxes before finalizing.</li>
+<li><strong>Undo/Redo</strong>: Full undo/redo support for all drawing operations.</li>
+<li><strong>Text Search and Auto-Redact</strong>: Enter a name, number, or phrase and automatically redact all matching text across all pages.</li>
+<li><strong>Page Thumbnails</strong>: Sidebar thumbnails for quick navigation through multi-page documents.</li>
+<li><strong>Permanent Redactions</strong>: Downloaded PDF has solid filled rectangles burned into the page content.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Essential for legal professionals, HR teams, healthcare workers, and anyone who needs to share documents with sensitive information such as names, addresses, or financial data removed.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser using pdf-lib and PDF.js — your document never leaves your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'redact PDF online free',
     secondaryKeywords: ['black out pdf text', 'censor pdf', 'remove sensitive info pdf', 'pdf redaction tool', 'hide text in pdf'],
@@ -2113,9 +2525,18 @@ All processing happens locally using pdf-lib and PDF.js. Your document never lea
     slug: 'pdf-crop',
     name: 'Crop PDF',
     shortDescription: 'Crop and trim margins from all pages of a PDF file.',
-    longDescription: `Remove unwanted white margins or trim specific edges from every page of your PDF — instantly in your browser with no upload required.
-
-Set crop values for top, right, bottom, and left margins (in PDF points). Use quick presets (small, medium, large) or enter exact values. See a visual preview before downloading.`,
+    longDescription: `<p>Remove unwanted white margins or trim specific edges from every page of your PDF with our free tool to <strong>crop PDF online</strong> — instantly in your browser with no upload required.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Custom Crop Values</strong>: Set exact top, right, bottom, and left crop values in PDF points (72pt = 1 inch).</li>
+<li><strong>Quick Presets</strong>: Use small, medium, or large presets for fast cropping without manual entry.</li>
+<li><strong>Visual Preview</strong>: See a crop preview before downloading so you can verify the result.</li>
+<li><strong>All Pages at Once</strong>: Uniform cropping is applied to every page of the PDF in one step.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for removing excess white space from scanned documents, trimming oversized margins from academic papers, or resizing PDFs to fit a specific layout before printing or publishing.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — your PDF never leaves your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'crop PDF online',
     secondaryKeywords: ['trim pdf margins', 'remove pdf white space', 'crop pdf pages free', 'cut pdf border'],
@@ -2143,13 +2564,19 @@ Set crop values for top, right, bottom, and left margins (in PDF points). Use qu
     slug: 'pdf-sign',
     name: 'Sign PDF',
     shortDescription: 'Add your electronic signature to any PDF — draw, type, or upload.',
-    longDescription: `Sign PDF documents electronically directly in your browser — no software to install, no server upload required. Choose from three signature methods:
-
-**Draw**: Use your mouse or touchscreen to handwrite your signature on a digital canvas.
-**Type**: Enter your name and pick a cursive font style for a clean typed signature.
-**Upload**: Use an existing signature image (PNG with transparent background works best).
-
-Place the signature on the last page, first page, all pages, or any specific page. Adjust size and position using sliders. Download the signed PDF instantly.`,
+    longDescription: `<p><strong>Sign PDF online free</strong> — add your electronic signature to PDF documents directly in your browser with no software to install and no server upload required. Choose from three signature methods.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Draw</strong>: Use your mouse or touchscreen to handwrite your signature on a digital canvas.</li>
+<li><strong>Type</strong>: Enter your name and pick a cursive font style for a clean typed signature.</li>
+<li><strong>Upload</strong>: Use an existing signature image (PNG with transparent background works best).</li>
+<li><strong>Flexible Placement</strong>: Place the signature on the last page, first page, all pages, or any specific page number.</li>
+<li><strong>Size and Position</strong>: Adjust signature size and position precisely using sliders.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for remote workers, freelancers, and professionals who need to sign contracts, agreements, or forms digitally without printing, signing, and scanning.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser using pdf-lib — your PDF and signature never leave your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'sign PDF online free',
     secondaryKeywords: ['electronic signature pdf', 'digital signature pdf', 'pdf e-sign', 'sign pdf without printing', 'draw signature pdf'],
@@ -2177,9 +2604,19 @@ Place the signature on the last page, first page, all pages, or any specific pag
     slug: 'pdf-add-image',
     name: 'Insert Image into PDF',
     shortDescription: 'Add logos, stamps, and images to PDF pages at any position.',
-    longDescription: `Insert one or multiple images (PNG, JPG, WebP, GIF) into any PDF document — completely in your browser with no server upload required.
-
-Upload your PDF and then add images one by one. For each image, configure which pages to apply it to (all, first, last, or a custom page), position (left/top offset in PDF points), width, and opacity. Great for adding company logos, stamps, or illustrations.`,
+    longDescription: `<p><strong>Insert images into PDF</strong> online — add logos, stamps, illustrations, or any PNG, JPG, WebP, or GIF image to your PDF pages completely in your browser with no server upload required.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Images</strong>: Add several images to the same PDF, each with independent settings.</li>
+<li><strong>Page Selection</strong>: Apply each image to all pages, first page, last page, or a specific custom page number.</li>
+<li><strong>Position and Size</strong>: Control the left/top offset in PDF points and set the width precisely.</li>
+<li><strong>Opacity Control</strong>: Adjust image opacity to create subtle watermarks or solid stamps.</li>
+<li><strong>All Image Formats</strong>: PNG with transparency, JPG, WebP, and GIF are all supported.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Great for businesses adding company logos to every page, professionals stamping documents, and designers embedding illustrations into PDF presentations or reports.</p>
+<h2>Privacy &amp; Security</h2>
+<p>Runs 100% in your browser — your PDF and images never leave your device, no signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'insert image into PDF online',
     secondaryKeywords: ['add image to pdf', 'add logo to pdf', 'insert logo pdf', 'pdf stamp image free', 'embed image pdf'],
@@ -2207,9 +2644,19 @@ Upload your PDF and then add images one by one. For each image, configure which 
     slug: 'csv-to-pdf',
     name: 'CSV to PDF',
     shortDescription: 'Convert CSV and Excel spreadsheet data into a formatted PDF table.',
-    longDescription: `Transform any CSV file or tabular data into a clean, professional PDF table — instantly in your browser with no server upload required.
-
-Paste your CSV data or upload a .csv file. Customize delimiter (comma, semicolon, tab, pipe), table style (striped, bordered, minimal), header color, font size, and document title. Auto-paginates for large datasets. Live preview shows the table before you export.`,
+    longDescription: `<p>Transform any CSV file or tabular data into a clean, professional PDF table with our free <strong>CSV to PDF converter</strong> — instantly in your browser with no server upload required.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Delimiters</strong>: Supports comma, semicolon, tab, and pipe-delimited files.</li>
+<li><strong>Table Styles</strong>: Choose striped, bordered, or minimal table design.</li>
+<li><strong>Customization</strong>: Set header color, font size, and document title.</li>
+<li><strong>Auto-Pagination</strong>: Large datasets automatically paginate across A4 landscape pages.</li>
+<li><strong>Live Preview</strong>: See the formatted table before exporting to PDF.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Data analysts sharing reports, accountants presenting financial tables, developers generating PDF exports, and anyone needing a professional table PDF from spreadsheet data.</p>
+<h2>Privacy & Security</h2>
+<p>Uses pdf-lib in your browser — your CSV data never leaves your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'CSV to PDF converter online',
     secondaryKeywords: ['csv to pdf', 'excel to pdf table', 'convert csv to pdf free', 'spreadsheet to pdf', 'csv pdf export'],
@@ -2237,9 +2684,19 @@ Paste your CSV data or upload a .csv file. Customize delimiter (comma, semicolon
     slug: 'password-generator',
     name: 'Password Generator',
     shortDescription: 'Generate strong, secure random passwords with one click.',
-    longDescription: `Create strong, cryptographically secure random passwords instantly. Choose length (6–64 characters), select character types (uppercase, lowercase, numbers, symbols), and generate with one click.
-
-Uses the Web Crypto API (crypto.getRandomValues) for true cryptographic randomness. Passwords are never stored or sent anywhere. Includes strength indicator and quick presets.`,
+    longDescription: `<p>Generate strong, cryptographically secure random <strong>passwords</strong> instantly. Choose length (6–64 characters), select character types, and click once to get a secure password you can trust.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Crypto Randomness</strong>: Uses Web Crypto API (crypto.getRandomValues) — the same standard used by security software.</li>
+<li><strong>Character Options</strong>: Mix uppercase, lowercase, numbers, and symbols freely.</li>
+<li><strong>Strength Indicator</strong>: Visual score shows how strong your generated password is.</li>
+<li><strong>Quick Presets</strong>: PIN, Simple, Strong, and Maximum Security presets for common use cases.</li>
+<li><strong>Never Stored</strong>: Passwords are generated in your browser and never sent anywhere.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone creating new accounts, IT admins setting up credentials, developers generating API secrets, and security-conscious users who want passwords that can't be guessed or brute-forced.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your passwords are never stored or transmitted. No signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'password generator',
     secondaryKeywords: ['random password generator', 'strong password generator', 'secure password maker', 'password creator online', 'password generator online', 'generate strong password', 'random password generator online', 'password generator free', '16 character password generator', 'safe password generator'],
@@ -2268,9 +2725,19 @@ Uses the Web Crypto API (crypto.getRandomValues) for true cryptographic randomne
     slug: 'csv-to-json',
     name: 'CSV to JSON',
     shortDescription: 'Convert CSV to JSON and JSON to CSV — fast bidirectional converter.',
-    longDescription: `Convert CSV data to JSON format and vice versa instantly. Paste data, upload a file, or type in the editor — output is generated in real time.
-
-Supports multiple delimiters (comma, semicolon, tab, pipe), auto-detects numeric values, and handles quoted fields correctly. Download as .json or .csv file.`,
+    longDescription: `<p>Convert CSV data to JSON and JSON back to CSV instantly with our free bidirectional <strong>CSV to JSON converter</strong>. Paste data, upload a file, and get results in real time.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Bidirectional</strong>: Convert CSV→JSON or JSON→CSV with a single toggle.</li>
+<li><strong>Multiple Delimiters</strong>: Supports comma, semicolon, tab, and pipe-delimited files.</li>
+<li><strong>Auto Type Detection</strong>: Numeric string values like "42" are automatically converted to JSON numbers.</li>
+<li><strong>Quoted Fields</strong>: Handles quoted fields containing commas correctly per CSV spec.</li>
+<li><strong>Download Output</strong>: Save result as .json or .csv file.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers transforming data between formats, data analysts working with spreadsheets and APIs, and anyone needing a quick CSV/JSON conversion without writing code.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data is sent to any server. No signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'CSV to JSON converter',
     secondaryKeywords: ['csv to json online', 'json to csv converter', 'convert csv to json free', 'data converter online'],
@@ -2298,9 +2765,19 @@ Supports multiple delimiters (comma, semicolon, tab, pipe), auto-detects numeric
     slug: 'markdown-to-html',
     name: 'Markdown to HTML',
     shortDescription: 'Convert Markdown to HTML with live preview — split-screen editor.',
-    longDescription: `Convert Markdown text to clean HTML with a live split-screen preview. Supports full Markdown: headings, bold, italic, code blocks, tables, lists, blockquotes, links, and images.
-
-Download as a complete HTML file with CSS included. Perfect for bloggers, developers, and technical writers.`,
+    longDescription: `<p>Convert Markdown text to clean HTML with a live split-screen preview using our free <strong>Markdown to HTML converter</strong>. See your rendered output instantly as you type.</p>
+<h2>Supported Markdown Features</h2>
+<ul>
+<li><strong>Headings & Text</strong>: H1–H6, bold, italic, strikethrough, inline code.</li>
+<li><strong>Lists & Quotes</strong>: Ordered lists, unordered lists, nested lists, blockquotes.</li>
+<li><strong>Code Blocks</strong>: Fenced code blocks with language hints for syntax highlighting.</li>
+<li><strong>Tables</strong>: GitHub Flavored Markdown (GFM) tables with header rows.</li>
+<li><strong>Links & Images</strong>: Inline links, reference links, and image embeds.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Bloggers previewing Markdown posts, developers converting README files, technical writers creating documentation, and anyone working with Markdown-based platforms like Ghost, Jekyll, or Notion.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data is sent to any server. No signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'Markdown to HTML converter',
     secondaryKeywords: ['markdown to html online', 'md to html', 'markdown preview online', 'convert markdown free', 'markdown renderer'],
@@ -2328,11 +2805,18 @@ Download as a complete HTML file with CSS included. Perfect for bloggers, develo
     slug: 'json-to-typescript',
     name: 'JSON to TypeScript',
     shortDescription: 'Convert JSON to TypeScript interfaces and types instantly online.',
-    longDescription: `Paste any JSON and instantly get clean, well-structured TypeScript interfaces. Our JSON to TypeScript converter analyzes your JSON data recursively — handling nested objects, arrays, mixed-type arrays (union types), null values, and empty structures — and generates production-ready TypeScript types.
-
-Customize the output with options like interface vs type alias, optional properties, readonly modifiers, exported types, and inline vs separate nested interfaces. The converter automatically creates named sub-interfaces for nested objects (e.g., Address, Order) and determines array element types intelligently, producing union types when array items differ.
-
-Perfect for developers working with REST APIs, GraphQL responses, or any JSON data source who need TypeScript type definitions quickly without writing them by hand.`,
+    longDescription: `<p>Paste any JSON and instantly get clean, well-structured TypeScript interfaces with our free <strong>JSON to TypeScript converter</strong>. Stop writing type definitions by hand — generate production-ready types in seconds.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Recursive Analysis</strong>: Handles nested objects, arrays, mixed-type arrays (union types), and null values.</li>
+<li><strong>Named Sub-Interfaces</strong>: Automatically creates separate named interfaces for nested objects (e.g., Address, Order).</li>
+<li><strong>Output Options</strong>: Choose interface vs type alias, optional properties, readonly modifiers, and exports.</li>
+<li><strong>Union Types</strong>: Mixed-type arrays generate proper TypeScript union types.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Frontend and backend developers working with REST APIs, GraphQL responses, or any JSON data source who need TypeScript type definitions quickly without writing them by hand.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your JSON is never sent to any server. No signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'JSON to TypeScript converter',
     secondaryKeywords: ['json to ts', 'json to typescript online', 'json to interface', 'json to type', 'generate typescript from json', 'json to ts converter'],
@@ -2362,11 +2846,19 @@ Perfect for developers working with REST APIs, GraphQL responses, or any JSON da
     slug: 'rashi-checker',
     name: 'Rashi Checker',
     shortDescription: 'Find your Rashi (zodiac sign) by name — English & Hindi supported.',
-    longDescription: `Discover your Vedic Rashi (Moon sign / zodiac sign) instantly by entering your name. Our Rashi Checker uses the traditional Hindu naming system based on Nakshatra (birth star) syllables, where the first syllable of your name reveals your Rashi.
-
-In Vedic astrology, each of the 27 Nakshatras is divided into 4 Padas (quarters), each associated with a unique syllable (Akshara). Parents traditionally choose a baby's name beginning with the syllable matching the child's birth Nakshatra, making your name a window into your astrological sign.
-
-This tool supports both English (Roman) and Hindi (Devanagari) name input. Once you enter your name, we identify the first syllable, match it to the corresponding Nakshatra, and display your Rashi along with its ruling planet, element, lucky numbers, key personality traits, and Nakshatra name — all in both English and Hindi.`,
+    longDescription: `<p>Discover your Vedic <strong>Rashi by name</strong> instantly. Our Rashi Checker uses the traditional Hindu naming system based on Nakshatra syllables — the first syllable of your name reveals your zodiac sign in Vedic astrology.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>Your Rashi</strong>: The Vedic zodiac sign (Mesh through Meen) linked to your name's first syllable.</li>
+<li><strong>Nakshatra</strong>: The birth star associated with your name syllable.</li>
+<li><strong>Ruling Planet & Element</strong>: Planetary ruler and element for your Rashi.</li>
+<li><strong>Personality Traits</strong>: Key characteristics associated with your Rashi.</li>
+<li><strong>Lucky Numbers</strong>: Traditionally auspicious numbers for your sign.</li>
+</ul>
+<h2>English & Hindi Support</h2>
+<p>Enter your name in English (Roman) or Hindi (Devanagari) — the tool detects the script automatically and identifies your Rashi from the first syllable using the traditional 108-syllable Nakshatra system.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data is sent to any server. No signup required.</p>`,
     category: 'converters',
     targetKeyword: 'Rashi checker by name',
     secondaryKeywords: ['rashi by name', 'find rashi from name', 'naam se rashi', 'rashi kaise jane', 'janm rashi', 'zodiac by name hindi', 'rashi calculator'],
@@ -2394,11 +2886,20 @@ This tool supports both English (Roman) and Hindi (Devanagari) name input. Once 
     slug: 'gun-milan',
     name: 'Gun Milan',
     shortDescription: 'Check marriage compatibility with Ashtakoota Gun Milan — 36 points score.',
-    longDescription: `Our Gun Milan calculator checks marriage compatibility between a boy and a girl using the traditional Vedic Ashtakoota matching system. Simply enter both names and get an instant compatibility report with scores for all 8 Kootas (compatibility factors) out of 36 total points.
-
-The Ashtakoota system evaluates 8 aspects of compatibility: Varna (temperament), Vashya (dominance), Tara (destiny), Yoni (nature), Graha Maitri (planetary friendship), Gana (character), Bhakoot (love & health), and Nadi (genetic compatibility). Each Koota has a maximum score and contributes to the total of 36 Gunas.
-
-A score above 18 is generally considered acceptable, 25+ is good, and 32+ is excellent. The tool also highlights key doshas (flaws) like Nadi Dosha, Bhakoot Dosha, and Gana Dosha and explains their significance. Results are shown in both English and Hindi for easy understanding.`,
+    longDescription: `<p>Check marriage compatibility using the traditional Vedic Ashtakoota system with our free <strong>Gun Milan calculator</strong>. Enter both names and get an instant 36-point compatibility report with detailed Koota breakdown.</p>
+<h2>The 8 Kootas Evaluated</h2>
+<ul>
+<li><strong>Varna</strong>: Spiritual compatibility and temperament.</li>
+<li><strong>Vashya</strong>: Dominance and mutual control.</li>
+<li><strong>Tara</strong>: Destiny and birth star compatibility.</li>
+<li><strong>Yoni</strong>: Nature and physical compatibility.</li>
+<li><strong>Graha Maitri</strong>: Planetary friendship and mental compatibility.</li>
+<li><strong>Gana</strong>: Character and nature (Deva, Manushya, Rakshasa).</li>
+<li><strong>Bhakoot</strong>: Love, health, and financial compatibility.</li>
+<li><strong>Nadi</strong>: Genetic and health compatibility — highest weight of all 8.</li>
+</ul>
+<h2>Score Interpretation</h2>
+<p>Below 18 points: not recommended. 18–24: acceptable. 25–32: good match. 33–36: excellent match. Key doshas (Nadi, Bhakoot, Gana) are flagged with explanations in both English and Hindi.</p>`,
     category: 'converters',
     targetKeyword: 'Gun Milan calculator',
     secondaryKeywords: ['kundali matching', 'kundli milan', 'ashtakoota matching', 'marriage compatibility calculator', 'guna milan online', '36 gun milan', 'shaadi compatibility'],
@@ -2428,13 +2929,18 @@ A score above 18 is generally considered acceptable, 25+ is good, and 32+ is exc
     slug: 'ipl-team-squad-explorer',
     name: 'IPL Team Squad Explorer',
     shortDescription: 'Explore all 10 IPL 2026 team squads. Filter by role, nationality and view auction prices.',
-    longDescription: `The IPL Team Squad Explorer is a comprehensive fan tool to browse complete squad details for all 10 Indian Premier League 2026 teams. Whether you're a die-hard CSK fan or tracking Mumbai Indians' overseas players, this tool gives you all the information in one place.
-
-Explore player details including their role (Batter, Bowler, All-rounder, Wicket-keeper), nationality (Indian/Overseas), auction price, and whether they were retained or bought at the mega auction. Filter across all 10 IPL franchises to compare squad strengths.
-
-Each team card shows key information like the captain's name, home ground, total purse used, and squad composition at a glance. The search feature lets you find any IPL player instantly across all franchises without scrolling through endless lists.
-
-This is a 100% free, unofficial fan-made tool. All squad data is based on publicly available information. For official squad details, visit the BCCI website. Data is updated based on official announcements.`,
+    longDescription: `<p>Browse complete <strong>IPL 2026 squad</strong> details for all 10 teams in one place. Find player roles, nationalities, auction prices, and retained players — free fan tool, no signup needed.</p>
+<h2>What You Can Explore</h2>
+<ul>
+<li><strong>Full Squads</strong>: All 10 IPL 2026 teams with complete player lists.</li>
+<li><strong>Player Details</strong>: Role (Batter, Bowler, All-rounder, WK), nationality, auction price, retained/bought status.</li>
+<li><strong>Team Summary</strong>: Captain, home ground, purse used, and squad composition at a glance.</li>
+<li><strong>Smart Filters</strong>: Filter by role or nationality across any team.</li>
+<li><strong>Search</strong>: Find any IPL player instantly across all 10 franchises.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>IPL fans tracking their favourite team's squad, fantasy cricket players picking their XI, and cricket enthusiasts comparing franchise strengths before the season.</p>
+<p><em>Unofficial fan-made tool. Not affiliated with BCCI or IPL.</em></p>`,
     category: 'cricket-tools',
     targetKeyword: 'IPL 2026 squad',
     secondaryKeywords: ['IPL team squad', 'IPL 2026 players list', 'CSK squad 2026', 'MI squad 2026', 'IPL squad explorer', 'IPL auction 2026', 'IPL retained players'],
@@ -2463,13 +2969,18 @@ This is a 100% free, unofficial fan-made tool. All squad data is based on public
     slug: 'ipl-match-schedule',
     name: 'IPL 2026 Match Schedule',
     shortDescription: 'Full IPL 2026 fixture list with live countdown to next match. Filter by team or venue.',
-    longDescription: `The IPL 2026 Match Schedule tool gives you the complete fixture list for the entire Indian Premier League season in one easy-to-browse interface. No more searching through multiple websites — get every match date, time, venue, and team pairing in a clean, mobile-friendly view.
-
-Track your favourite team's upcoming matches with the team filter. Choose from all 10 IPL franchises and instantly see only their home and away fixtures. The venue filter lets you plan ahead if you're attending matches at specific stadiums like Wankhede, Chinnaswamy, or Eden Gardens.
-
-A live countdown timer shows exactly how long until the next IPL match begins, keeping fans engaged throughout the season. Matches are grouped by month for easy navigation across the full season spanning March to June.
-
-This is an unofficial fan-made schedule tool. Match timings are in IST (Indian Standard Time). For official schedule updates, check the BCCI website. Rescheduled matches will be updated as announcements are made.`,
+    longDescription: `<p>View the complete <strong>IPL 2026 match schedule</strong> — every fixture, date, time, venue, and team pairing in one clean interface. No more searching multiple websites.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Live Countdown</strong>: Real-time timer showing exactly when the next IPL match begins.</li>
+<li><strong>Team Filter</strong>: Instantly view only your favourite franchise's home and away fixtures.</li>
+<li><strong>Venue Filter</strong>: Plan ahead for matches at Wankhede, Chinnaswamy, Eden Gardens, and more.</li>
+<li><strong>Monthly Grouping</strong>: Fixtures organized by month for easy navigation across the full season.</li>
+<li><strong>Add to Calendar</strong>: One click to add any match to Google Calendar.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>IPL fans planning which matches to watch or attend, fantasy cricket players tracking upcoming fixtures, and cricket enthusiasts wanting to follow the full season schedule. All times in IST.</p>
+<p><em>Unofficial fan-made tool. Not affiliated with BCCI or IPL.</em></p>`,
     category: 'cricket-tools',
     targetKeyword: 'IPL 2026 match schedule',
     secondaryKeywords: ['IPL 2026 fixtures', 'IPL schedule 2026', 'IPL match time table', 'IPL 2026 dates', 'IPL next match', 'IPL 2026 venue', 'IPL schedule today'],
@@ -2498,13 +3009,16 @@ This is an unofficial fan-made schedule tool. Match timings are in IST (Indian S
     slug: 'ipl-player-comparison',
     name: 'IPL Player Comparison Tool',
     shortDescription: 'Compare any 2 IPL players side by side with career stats, averages and strike rates.',
-    longDescription: `The IPL Player Comparison Tool lets cricket fans compare the career IPL statistics of any two players side by side. Select two players from the dropdown menus and instantly see a detailed head-to-head breakdown across batting and bowling metrics.
-
-For batting comparisons, view total runs, matches played, batting average, strike rate, highest score, number of half-centuries (50s) and centuries (100s), and boundary counts. For bowling, compare wickets taken, economy rate, bowling average, and best bowling figures — all in one clean visual layout.
-
-Each stat category highlights the better performer in green, making it easy to spot strengths and weaknesses at a glance. The tool covers top IPL players including legends and current stars across all franchises, with career IPL statistics (not just one season).
-
-This is an unofficial fan-made comparison tool for entertainment and educational purposes. Statistics are based on historical IPL data and may not reflect mid-season updates. For live stats, visit the official IPL website.`,
+    longDescription: `<p>Compare the career IPL statistics of any two players side by side with our free <strong>IPL player comparison</strong> tool. Instant head-to-head breakdown across all key batting and bowling metrics.</p>
+<h2>Stats Compared</h2>
+<ul>
+<li><strong>Batting</strong>: Matches, innings, runs, average, strike rate, highest score, 50s, 100s, 4s, and 6s.</li>
+<li><strong>Bowling</strong>: Wickets, economy rate, bowling average, and best bowling figures.</li>
+<li><strong>Winner Highlight</strong>: The better performer in each category is highlighted in green.</li>
+</ul>
+<h2>60+ Top IPL Players</h2>
+<p>Covers current stars and legends — Virat Kohli, Rohit Sharma, MS Dhoni, Jasprit Bumrah, and many more. Compare any two players regardless of their primary role.</p>
+<p><em>Unofficial fan-made tool using historical IPL career data. Not affiliated with BCCI or IPL.</em></p>`,
     category: 'cricket-tools',
     targetKeyword: 'IPL player comparison',
     secondaryKeywords: ['compare IPL players', 'IPL player stats', 'IPL batting stats', 'IPL bowling stats', 'Virat Kohli vs Rohit Sharma IPL', 'IPL player head to head', 'IPL career stats'],
@@ -2533,13 +3047,17 @@ This is an unofficial fan-made comparison tool for entertainment and educational
     slug: 'ipl-points-table',
     name: 'IPL 2026 Points Table',
     shortDescription: 'Live IPL 2026 standings with NRR, qualification zones and sortable columns.',
-    longDescription: `The IPL 2026 Points Table tool gives you a clear, up-to-date view of the Indian Premier League standings throughout the season. Track which teams are in the playoff qualification zone (Top 4) and which teams are leading on Net Run Rate (NRR).
-
-The table displays all essential columns: team name, matches played, wins, losses, no-results, net run rate, and total points. The top 4 teams — who qualify for the playoffs — are highlighted in green, while the top 2 teams who earn a double chance are highlighted in blue.
-
-Sort the table by any column to get different perspectives on the competition. Teams can be ranked by points, NRR, or number of wins. The NRR (Net Run Rate) column is especially useful for understanding close playoff races where multiple teams are level on points.
-
-At the start of the season, all teams begin at 0 points. The table updates automatically when match results are reflected in the data. This is an unofficial fan-made tool — for real-time live scores, visit the official IPL website or Cricbuzz.`,
+    longDescription: `<p>Track the <strong>IPL 2026 points table</strong> — standings, Net Run Rate, wins/losses, and playoff qualification zones for all 10 teams in one clear view.</p>
+<h2>Table Columns</h2>
+<ul>
+<li><strong>Points</strong>: 2 per win, 1 for no-result, 0 for loss.</li>
+<li><strong>NRR</strong>: Net Run Rate — tiebreaker when teams are level on points.</li>
+<li><strong>Qualification Zones</strong>: Top 2 (double chance) highlighted in blue; 3rd–4th (also qualify) in green.</li>
+<li><strong>Sortable</strong>: Click any column header to rank teams by points, NRR, or wins.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>IPL fans monitoring the playoff race, fantasy cricket players tracking their teams' standings, and cricket enthusiasts understanding the NRR tiebreaker dynamics as the season progresses.</p>
+<p><em>Unofficial fan-made tool. Not affiliated with BCCI or IPL.</em></p>`,
     category: 'cricket-tools',
     targetKeyword: 'IPL 2026 points table',
     secondaryKeywords: ['IPL standings 2026', 'IPL points table today', 'IPL NRR calculator', 'IPL qualification table', 'IPL league table', 'IPL team rankings', 'IPL playoff qualification'],
@@ -2570,13 +3088,20 @@ At the start of the season, all teams begin at 0 points. The table updates autom
     slug: 'invoice-generator',
     name: 'Invoice Generator',
     shortDescription: 'Create professional invoices in seconds. Download as PDF — free, no signup.',
-    longDescription: `The ToolsArena Invoice Generator is a free, no-signup tool that lets you create professional invoices in seconds and download them as PDF. Whether you're a freelancer billing a client, a small business owner, or a startup founder, this tool helps you generate clean, branded invoices without any accounting software.
-
-Everything runs 100% in your browser. Your business data, client details, and invoice amounts never leave your device — making this one of the most private invoice generators available online. No account needed, no data stored on servers, unlimited invoices.
-
-Choose from 3 professionally designed templates (Modern, Classic, Minimal), add your company logo, pick your brand color, and fill in your line items. The tool automatically calculates subtotal, tax (GST/VAT/Sales Tax), discounts, and grand total. Supports 30+ global currencies including USD, EUR, GBP, INR, NPR, AED, and more.
-
-Save your business details as a template so you never have to re-enter them. Each invoice features auto-incrementing invoice numbers, customizable prefixes, date and due date fields, payment terms, and notes. The live preview updates in real-time as you type, and the final PDF is beautifully formatted with your brand colors and logo — ready to send to your clients.`,
+    longDescription: `<p>Create professional invoices in seconds and download them as PDF with our free <strong>invoice generator</strong>. No accounting software, no signup, no data stored on servers — unlimited invoices.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Templates</strong>: Modern, Classic, and Minimal — professionally designed for any business.</li>
+<li><strong>Logo & Branding</strong>: Upload your company logo and pick your brand color.</li>
+<li><strong>Auto Calculations</strong>: Subtotal, tax (GST/VAT/Sales Tax), discounts, and grand total calculated automatically.</li>
+<li><strong>30+ Currencies</strong>: USD, EUR, GBP, INR, NPR, AED, CAD, AUD, and more.</li>
+<li><strong>Save Template</strong>: Store your business details in browser localStorage for instant re-use.</li>
+<li><strong>Live Preview</strong>: See your invoice update in real time as you type.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Freelancers billing clients, small business owners creating invoices, and startup founders who need professional invoices without paying for accounting software.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your business data and invoice amounts never leave your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'free invoice generator',
     secondaryKeywords: ['invoice generator online', 'invoice maker', 'create invoice online free', 'invoice generator pdf', 'free invoice maker no signup', 'GST invoice generator', 'online bill maker', 'invoice template generator', 'professional invoice creator', 'freelance invoice tool'],
@@ -2609,13 +3134,19 @@ Save your business details as a template so you never have to re-enter them. Eac
     slug: 'loan-comparison-calculator',
     name: 'Loan Comparison Calculator',
     shortDescription: 'Compare multiple loan offers side-by-side. See EMI, total interest & total cost differences.',
-    longDescription: `Compare up to 4 loan offers side-by-side with our free Loan Comparison Calculator. Enter the loan amount, interest rate, and tenure for each option — instantly see the monthly EMI, total interest paid, total amount payable, and savings compared to the most expensive option.
-
-The calculator uses the standard EMI formula: EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is monthly interest rate, and n is number of months. Results are shown in a clean comparison table with visual bar charts highlighting the best and worst deals.
-
-Perfect for comparing home loans, personal loans, car loans, education loans, or any EMI-based financing. Supports Indian Rupee (₹) formatting with lakh/crore notation. All calculations happen instantly in your browser — no data stored, no signup needed.
-
-Essential for anyone shopping for loans and wanting to make an informed decision about which offer saves the most money.`,
+    longDescription: `<p>Compare up to 4 loan offers side by side with our free <strong>loan comparison calculator</strong>. See exactly which loan saves you the most money in total interest paid.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Side-by-Side Comparison</strong>: Enter amount, rate, and tenure for up to 4 loan options.</li>
+<li><strong>Full Breakdown</strong>: See monthly EMI, total interest, total payable, and savings vs the worst deal.</li>
+<li><strong>Visual Charts</strong>: Bar charts highlight the best and worst loan offers at a glance.</li>
+<li><strong>Standard EMI Formula</strong>: EMI = P × r × (1+r)^n / ((1+r)^n - 1) — transparent calculations.</li>
+<li><strong>₹ Lakh/Crore Formatting</strong>: Indian Rupee notation for easy reading of large amounts.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone shopping for home loans, personal loans, car loans, or education loans who wants to make an informed decision about which bank offer is genuinely cheaper over the full tenure.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'loan comparison calculator',
     secondaryKeywords: ['compare loans', 'EMI comparison calculator', 'loan interest comparison', 'home loan comparison', 'best loan calculator', 'loan EMI compare', 'compare home loan rates', 'loan offer comparison tool'],
@@ -2638,13 +3169,19 @@ Essential for anyone shopping for loans and wanting to make an informed decision
     slug: 'compound-interest-calculator',
     name: 'Compound Interest Calculator',
     shortDescription: 'Calculate compound interest with yearly breakdown. Supports monthly, quarterly & yearly compounding.',
-    longDescription: `The ToolsArena Compound Interest Calculator is a free, no-signup tool that helps you calculate how your money grows with compound interest over time. Whether you're planning a fixed deposit (FD), recurring deposit (RD), PPF investment, or simply understanding how compounding works — this calculator gives you instant, accurate results.
-
-Enter your principal amount, annual interest rate, time period, and choose your compounding frequency (monthly, quarterly, half-yearly, or yearly). The calculator instantly shows your total maturity value, total interest earned, and a detailed year-by-year breakdown of how your investment grows.
-
-The tool also compares compound interest vs simple interest side by side, so you can see exactly how much extra you earn through the power of compounding. A visual breakdown bar shows the proportion of principal to interest in your final amount.
-
-Everything runs 100% in your browser — no data is sent to any server, no signup required. The compound interest formula used is A = P × (1 + r/n)^(n×t), displayed transparently on the page so you can verify the math yourself. Perfect for students, investors, and anyone planning their financial future.`,
+    longDescription: `<p>The <strong>compound interest calculator</strong> by ToolsArena is a free, no-signup tool that helps you calculate how your money grows over time. Whether you're planning a fixed deposit (FD), recurring deposit (RD), PPF investment, or simply understanding the power of compounding — get instant, accurate results.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Compounding Frequencies</strong>: Choose monthly, quarterly, half-yearly, or yearly compounding to match your investment.</li>
+<li><strong>Year-by-Year Breakdown</strong>: See exactly how your investment grows each year with a detailed table.</li>
+<li><strong>CI vs SI Comparison</strong>: Compare compound interest vs simple interest side by side to see the real advantage of compounding.</li>
+<li><strong>Visual Breakdown Bar</strong>: Shows the proportion of principal to interest in your final maturity amount.</li>
+<li><strong>Transparent Formula</strong>: Uses A = P × (1 + r/n)^(n×t), displayed on the page so you can verify the math.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Students, investors, and anyone planning their financial future. Ideal for comparing FD rates, understanding PPF growth, or learning how compounding accelerates wealth creation over time.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data is sent to any server, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'compound interest calculator',
     secondaryKeywords: ['CI calculator', 'compound interest formula', 'compound interest calculator with steps', 'monthly compound interest calculator', 'quarterly compound interest calculator', 'compound interest calculator India', 'FD interest calculator', 'compound interest calculator online free', 'power of compounding calculator', 'interest on interest calculator'],
@@ -2674,13 +3211,19 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     slug: 'fd-rd-calculator',
     name: 'FD & RD Calculator',
     shortDescription: 'Calculate Fixed Deposit & Recurring Deposit maturity amount with year-by-year breakdown.',
-    longDescription: `The ToolsArena FD & RD Calculator is a free, no-signup tool that helps you calculate the maturity value of your Fixed Deposit (FD) and Recurring Deposit (RD) investments. Whether you're comparing FD rates across banks or planning a monthly RD savings goal, this calculator gives you instant, accurate results.
-
-Switch between FD and RD modes with a single click. For Fixed Deposits, enter your lump sum deposit amount, interest rate, and tenure. For Recurring Deposits, enter your monthly deposit amount, interest rate, and tenure. Choose your compounding frequency (monthly, quarterly, half-yearly, or yearly) — most Indian banks use quarterly compounding for FDs and RDs.
-
-The calculator shows your total maturity value, interest earned, effective return percentage, and a visual breakdown of deposit vs interest. A quick comparison table shows maturity values at different tenures (FD) or monthly amounts (RD) side by side. The year-by-year breakdown table lets you see exactly how your money grows each year.
-
-Everything runs 100% in your browser — no data is sent to any server, no signup needed. Perfect for comparing bank FD rates, planning RD savings, or understanding how your deposits grow over time.`,
+    longDescription: `<p>The <strong>FD calculator</strong> and RD Calculator by ToolsArena is a free, no-signup tool to calculate the maturity value of your Fixed Deposit and Recurring Deposit investments. Whether comparing bank FD rates or planning a monthly RD savings goal, get instant, accurate results.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>FD & RD Modes</strong>: Switch between Fixed Deposit and Recurring Deposit modes with a single click.</li>
+<li><strong>Compounding Frequency</strong>: Choose monthly, quarterly, half-yearly, or yearly — most Indian banks use quarterly compounding.</li>
+<li><strong>Year-by-Year Breakdown</strong>: See exactly how your deposit grows each year with a detailed table.</li>
+<li><strong>Visual Breakdown</strong>: Proportional bar chart showing deposit amount vs interest earned.</li>
+<li><strong>Comparison Table</strong>: Instantly compare maturity values across different tenures or monthly amounts.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for bank customers comparing FD rates, salaried individuals planning RD savings, and anyone who wants to understand how their deposits compound over time.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data is sent to any server, no signup needed.</p>`,
     category: 'calculators',
     targetKeyword: 'FD calculator',
     secondaryKeywords: ['RD calculator', 'fixed deposit calculator', 'recurring deposit calculator', 'FD maturity calculator', 'RD maturity calculator', 'FD interest calculator', 'bank FD calculator India', 'RD calculator with monthly deposit', 'fixed deposit return calculator', 'FD RD comparison calculator'],
@@ -2712,15 +3255,20 @@ Everything runs 100% in your browser — no data is sent to any server, no signu
     slug: 'resume-builder',
     name: 'Resume Builder',
     shortDescription: 'Build a professional resume in minutes. Choose from templates, add sections, and download as PDF — free.',
-    longDescription: `The ToolsArena Resume Builder is a free, no-signup online tool that helps you create a professional, ATS-friendly resume in minutes. Whether you're a fresh graduate, experienced professional, or career changer, this tool gives you everything you need to build a standout resume and download it as a polished PDF.
-
-Choose from 3 professionally designed templates — Modern (with accent sidebar), Classic (traditional ATS-optimized), and Minimal (clean and elegant). Pick your brand color from 8 accent options to personalize your resume. The live preview updates in real-time as you type, so you always see exactly how your resume will look.
-
-Add and customize multiple sections: Personal Information, Professional Summary, Work Experience (with bullet points for achievements), Education, Skills (grouped by category), Projects (with tech stack and links), Certifications, and Languages. Toggle sections on or off to tailor your resume for different job applications. Each experience entry supports multiple bullet points to highlight your key achievements and responsibilities.
-
-Your data is auto-saved to your browser's local storage — come back anytime and continue where you left off. Everything runs 100% in your browser: your personal details, career history, and resume data never leave your device. No account needed, no watermarks, no limits on downloads.
-
-The generated PDF is clean, well-formatted, and ATS-compatible — meaning it passes through Applicant Tracking Systems used by recruiters at companies like Google, Amazon, TCS, Infosys, and more. Perfect for job applications, campus placements, internship applications, and freelance proposals.`,
+    longDescription: `<p>The <strong>free resume builder</strong> by ToolsArena helps you create a professional, ATS-friendly resume in minutes. Whether you're a fresh graduate, experienced professional, or career changer, this tool gives you everything you need to build a standout resume and download it as a polished PDF — no signup required.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Professional Templates</strong>: Modern (with accent sidebar), Classic (traditional ATS-optimized), and Minimal (clean and elegant).</li>
+<li><strong>8 Accent Colors</strong>: Personalize your resume with your preferred brand color.</li>
+<li><strong>Multiple Sections</strong>: Personal Info, Summary, Work Experience (with bullet points), Education, Skills, Projects, Certifications, and Languages.</li>
+<li><strong>Live Preview</strong>: See your resume update in real-time as you type.</li>
+<li><strong>Auto-Save</strong>: Your data is saved to browser localStorage so you can return and continue anytime.</li>
+<li><strong>ATS-Compatible PDF</strong>: Clean formatting that passes Applicant Tracking Systems used by top recruiters.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for freshers, students, experienced professionals, and career changers. Perfect for job applications, campus placements, internships, and freelance proposals.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your personal details and career history never leave your device. No account needed, no watermarks, unlimited downloads.</p>`,
     category: 'utility-tools',
     targetKeyword: 'free resume builder',
     secondaryKeywords: ['resume builder online free', 'resume maker', 'CV builder free', 'resume generator', 'ATS resume builder', 'professional resume maker', 'resume builder no signup', 'free resume download PDF', 'online CV maker', 'resume builder for freshers', 'resume builder India', 'job resume creator'],
@@ -2755,15 +3303,19 @@ The generated PDF is clean, well-formatted, and ATS-compatible — meaning it pa
     slug: 'scientific-calculator',
     name: 'Scientific Calculator',
     shortDescription: 'Free online scientific calculator with trigonometry, logarithms, powers, factorial, and more.',
-    longDescription: `The ToolsArena Scientific Calculator is a free, full-featured online calculator designed for students, engineers, scientists, and anyone who needs advanced mathematical calculations. It looks and works like a real physical scientific calculator — right in your browser.
-
-Perform basic arithmetic (addition, subtraction, multiplication, division) along with advanced scientific functions: trigonometric functions (sin, cos, tan and their inverses), hyperbolic functions, logarithms (log base 10 and natural log), square root, cube root, powers and exponents, factorial, absolute value, reciprocal, and modulo operations. Switch between degree (DEG) and radian (RAD) mode for angle calculations.
-
-The calculator features a clean, modern UI with a realistic button layout. The display shows your current expression and result separately, supports keyboard input for fast calculations, and maintains a scrollable history of your last 20 calculations so you can revisit or reuse previous results.
-
-Built entirely with JavaScript — no server-side processing, no signup required, works offline. Supports mathematical constants π (pi) and e (Euler's number), implicit multiplication (e.g., 2π = 6.28), and proper operator precedence. The expression parser handles nested parentheses and complex multi-function expressions accurately.
-
-Perfect for homework, exam preparation, engineering calculations, physics problems, financial math, and everyday number crunching. Works on desktop, tablet, and mobile devices with responsive button sizing.`,
+    longDescription: `<p>The <strong>scientific calculator online</strong> by ToolsArena is a free, full-featured calculator for students, engineers, and scientists. It looks and works just like a real physical scientific calculator — right in your browser, no download needed.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Scientific Functions</strong>: sin, cos, tan, asin, acos, atan, log, ln, square root, cube root, powers, factorial, absolute value, and modulo.</li>
+<li><strong>DEG/RAD Mode</strong>: Toggle between degree and radian mode for angle calculations.</li>
+<li><strong>Keyboard Input</strong>: Type calculations directly using your keyboard for faster use.</li>
+<li><strong>Calculation History</strong>: Scrollable history of your last 20 calculations — click any result to reload it.</li>
+<li><strong>Constants</strong>: Built-in π (pi) and e (Euler's number), with proper operator precedence and nested parentheses support.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Students doing homework or exam prep, engineers and scientists for calculations, and anyone needing advanced math beyond basic arithmetic. Works on desktop, tablet, and mobile.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no server-side processing, no signup required, works offline.</p>`,
     category: 'calculators',
     targetKeyword: 'scientific calculator online',
     secondaryKeywords: ['scientific calculator', 'online calculator', 'free scientific calculator', 'scientific calculator with steps', 'trigonometry calculator', 'logarithm calculator online', 'sin cos tan calculator', 'advanced calculator online', 'math calculator free', 'calculator with history', 'scientific calculator for students', 'engineering calculator online'],
@@ -2799,13 +3351,19 @@ Perfect for homework, exam preparation, engineering calculations, physics proble
     slug: 'image-background-remover',
     name: 'Image Background Remover',
     shortDescription: 'Remove image backgrounds instantly using AI — 100% free, no signup, works right in your browser.',
-    longDescription: `Need to remove a background from an image but don't want to pay for Canva Pro or Adobe? You're in the right place. Our free AI Background Remover does it right inside your browser — no signup, no upload to any server, no watermarks. Your images stay on your device, always.
-
-Here's how it works: the first time you use the tool, a small AI model (~40MB) downloads to your browser. After that, it's cached — so every future use is fast. The AI identifies the subject in your photo (a person, product, pet, logo — anything) and removes the background automatically. You get a clean, transparent PNG ready to download.
-
-Is it as perfect as Photoshop? Let's be honest — not always. Complex edges like hair or fur can be tricky for any automated tool. But for most everyday needs — product photos, profile pictures, social media posts, presentations, school projects — it gets the job done really well. And unlike paid tools, you can use it unlimited times, completely free.
-
-We built this for students, small business owners, freelancers, and creators who need professional-looking images without professional-level budgets. You deserve good tools without paywalls. Upload your image and see for yourself.`,
+    longDescription: `<p>Need to <strong>remove background from image</strong> without paying for Canva Pro or Adobe? Our free AI Background Remover does it right inside your browser — no signup, no upload to any server, no watermarks. Your images stay on your device, always.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>AI-Powered Removal</strong>: Uses U2-Net AI model (runs locally in your browser via WebAssembly) to identify and remove backgrounds automatically.</li>
+<li><strong>Transparent PNG Output</strong>: Download a clean, transparent PNG ready for use anywhere.</li>
+<li><strong>No Watermarks</strong>: Use it unlimited times, completely free, with no branding on results.</li>
+<li><strong>Works On Any Subject</strong>: People, products, pets, logos — the AI handles a wide range of subjects.</li>
+<li><strong>Cached After First Use</strong>: The AI model downloads once (~40MB) and is cached for fast future use.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Students, small business owners, freelancers, and content creators who need professional-looking images without professional-level budgets. Ideal for product photos, profile pictures, social media posts, and presentations.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images never leave your device, no server uploads, no data stored.</p>`,
     category: 'image-tools',
     targetKeyword: 'remove background from image',
     secondaryKeywords: ['background remover', 'remove bg', 'transparent background maker', 'image background eraser', 'free background remover online', 'remove image background online', 'bg remover free', 'remove bg from photo', 'transparent background generator', 'background eraser online free', 'remove white background', 'product photo background remover', 'background remover online free', 'remove background from photo free', 'AI background remover'],
@@ -2837,11 +3395,18 @@ We built this for students, small business owners, freelancers, and creators who
     slug: 'svg-to-png',
     name: 'SVG to PNG Converter',
     shortDescription: 'Convert SVG files to high-quality PNG images with custom scale and background.',
-    longDescription: `Convert your SVG (Scalable Vector Graphics) files to PNG images instantly with our free online converter. Choose custom scale factors (1x to 4x) for crisp, high-resolution output perfect for retina displays.
-
-Upload an SVG file or paste SVG code directly. The tool renders your SVG on an HTML canvas and exports it as a PNG image. Choose transparent or custom-colored backgrounds, and select the output scale for the resolution you need.
-
-All processing happens in your browser using the Canvas API — your files are never uploaded to any server. Perfect for designers who need rasterized versions of vector graphics for social media, presentations, or platforms that don't support SVG.`,
+    longDescription: `<p>Convert your SVG files to PNG images instantly with our free <strong>SVG to PNG converter</strong>. Choose custom scale factors (1x to 4x) for crisp, high-resolution output perfect for retina displays — no upload required.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Custom Scale</strong>: Output at 1x, 2x, 3x, or 4x scale for standard or high-DPI displays.</li>
+<li><strong>Transparent Background</strong>: Enable transparent background or set a custom background color.</li>
+<li><strong>Paste SVG Code</strong>: Upload an .svg file or paste SVG markup directly into the text area.</li>
+<li><strong>Pixel-Perfect Output</strong>: A 100x100 SVG at 2x produces a crisp 200x200 PNG with no quality loss.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Designers and developers who need rasterized versions of vector graphics for social media, presentations, email templates, or platforms that don't support SVG format.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser using the Canvas API — your files are never uploaded to any server.</p>`,
     category: 'converters',
     targetKeyword: 'svg to png converter',
     secondaryKeywords: ['convert svg to png', 'svg to png online', 'svg converter', 'vector to png', 'svg to image', 'svg to raster'],
@@ -2868,11 +3433,19 @@ All processing happens in your browser using the Canvas API — your files are n
     slug: 'hex-rgb-converter',
     name: 'HEX to RGB Converter',
     shortDescription: 'Convert colors between HEX, RGB, and HSL formats instantly.',
-    longDescription: `Convert colors between HEX, RGB, and HSL formats instantly with our free color converter. Type a HEX code like #3b82f6, adjust RGB sliders, or use the native color picker — all formats update in real-time.
-
-The tool displays your selected color as a large preview swatch, plus provides ready-to-copy CSS code snippets. Whether you're a web developer matching brand colors, a designer working across tools, or just curious about color values — this is the fastest way to convert.
-
-Includes visual RGB sliders for intuitive color exploration and one-click copy buttons for every format. Everything runs client-side with zero latency.`,
+    longDescription: `<p>Convert colors between HEX, RGB, and HSL formats instantly with our free <strong>hex to RGB converter</strong>. Type a HEX code like #3b82f6, adjust RGB sliders, or use the native color picker — all formats update in real-time.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Real-Time Conversion</strong>: All formats (HEX, RGB, HSL, CSS) update simultaneously as you type or adjust sliders.</li>
+<li><strong>Color Preview Swatch</strong>: Large visual preview of your selected color.</li>
+<li><strong>One-Click Copy</strong>: Copy any format to clipboard instantly.</li>
+<li><strong>Shorthand Support</strong>: Shorthand codes like #f00 are automatically expanded to #ff0000.</li>
+<li><strong>Native Color Picker</strong>: Click the swatch to open your browser's built-in color picker.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Web developers matching brand colors, UI designers working across tools like Figma and CSS, and anyone who needs to quickly convert between color code formats.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% client-side — zero latency, no server calls, completely private.</p>`,
     category: 'developer-tools',
     targetKeyword: 'hex to rgb converter',
     secondaryKeywords: ['rgb to hex', 'hex to rgb', 'color converter', 'hex color code', 'rgb to hex converter', 'hsl converter', 'css color converter'],
@@ -2898,11 +3471,19 @@ Includes visual RGB sliders for intuitive color exploration and one-click copy b
     slug: 'css-minifier',
     name: 'CSS Minifier',
     shortDescription: 'Minify CSS code to reduce file size — remove comments, whitespace, and optimize.',
-    longDescription: `Minify your CSS code instantly to reduce file size and improve website loading speed. Our CSS Minifier removes comments, collapses whitespace, strips unnecessary semicolons, and applies basic optimizations like converting 0px to 0.
-
-Paste your CSS code on the left, click "Minify CSS," and get the optimized output on the right. The tool shows you the exact bytes saved and compression percentage. Copy the minified CSS with one click and paste it into your production files.
-
-All processing is done client-side in your browser — your code is never sent to any server. Perfect for quick minification without setting up build tools.`,
+    longDescription: `<p>Minify your CSS code instantly with our free <strong>CSS minifier</strong>. Remove comments, collapse whitespace, strip unnecessary semicolons, and apply basic optimizations like converting 0px to 0 — all with one click.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Instant Minification</strong>: Paste your CSS and get optimized output immediately.</li>
+<li><strong>Bytes Saved Display</strong>: Shows exact bytes saved and compression percentage.</li>
+<li><strong>Safe Transformations</strong>: Removes formatting only — your CSS rules remain functionally identical.</li>
+<li><strong>One-Click Copy</strong>: Copy the minified CSS to clipboard instantly.</li>
+<li><strong>Typical Savings</strong>: Reduces file size by 20-60% depending on formatting style.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Front-end developers who need quick minification of stylesheets without configuring Webpack, Gulp, or other build tools. Great for one-off files, code challenges, and CMS themes.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your code is never sent to any server.</p>`,
     category: 'developer-tools',
     targetKeyword: 'css minifier',
     secondaryKeywords: ['minify css', 'css compressor', 'css optimizer', 'compress css online', 'css minify online', 'reduce css file size'],
@@ -2929,11 +3510,19 @@ All processing is done client-side in your browser — your code is never sent t
     slug: 'online-notepad',
     name: 'Online Notepad',
     shortDescription: 'A simple, distraction-free online notepad with auto-save and word count.',
-    longDescription: `A clean, distraction-free online notepad that auto-saves your notes to your browser. Start typing and your text is automatically saved — come back anytime and pick up where you left off.
-
-Features include adjustable font size, real-time word/character/line count, download as .txt file, and a clean writing interface. No login, no account, no cloud sync — your notes are stored locally in your browser's localStorage.
-
-Perfect for quick notes during meetings, brainstorming sessions, drafting messages, jotting down ideas, or anytime you need a quick, no-fuss text editor. Everything stays private on your device.`,
+    longDescription: `<p>A clean, distraction-free <strong>online notepad</strong> that auto-saves your notes to your browser. Start typing and your text is automatically saved — come back anytime and pick up where you left off.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Auto-Save</strong>: Notes are saved to localStorage every half second — no manual saving needed.</li>
+<li><strong>Word & Character Count</strong>: Real-time word, character, and line count as you type.</li>
+<li><strong>Adjustable Font Size</strong>: Choose your preferred reading and writing size.</li>
+<li><strong>Download as .txt</strong>: Save your notes as a plain text file to your computer anytime.</li>
+<li><strong>Distraction-Free</strong>: Clean, minimal interface focused entirely on writing.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for quick notes during meetings, brainstorming sessions, drafting messages, jotting down ideas, or anytime you need a fast, no-fuss text editor.</p>
+<h2>Privacy & Security</h2>
+<p>No login, no account, no cloud sync — your notes are stored locally in your browser and never sent to any server.</p>`,
     category: 'utility-tools',
     targetKeyword: 'online notepad',
     secondaryKeywords: ['notepad online', 'online text editor', 'quick notepad', 'online notes', 'free notepad', 'web notepad', 'simple text editor'],
@@ -2961,11 +3550,19 @@ Perfect for quick notes during meetings, brainstorming sessions, drafting messag
     slug: 'js-minifier',
     name: 'JavaScript Minifier',
     shortDescription: 'Minify JavaScript code to reduce file size — remove comments, whitespace, and optimize.',
-    longDescription: `Minify your JavaScript code instantly to shrink file sizes and boost website performance. Our JS Minifier strips out comments, collapses whitespace, removes unnecessary semicolons, and produces compact output ready for production.
-
-Paste your JavaScript on the left, click "Minify JavaScript," and get optimized output on the right. The tool shows exact bytes saved and compression percentage. All processing happens in your browser — your code never leaves your device.
-
-Perfect for quick minification of small scripts without configuring Webpack, Rollup, or other build tools. For production apps with multiple files, we recommend a proper bundler — but for single-file minification, this tool is fast, free, and private.`,
+    longDescription: `<p>Minify your JavaScript code instantly with our free <strong>JavaScript minifier</strong>. Strip out comments, collapse whitespace, remove unnecessary semicolons, and produce compact output ready for production — all in one click.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Instant Minification</strong>: Paste your JS and get a compact, production-ready output immediately.</li>
+<li><strong>Bytes Saved Display</strong>: Shows exact bytes saved and the compression percentage.</li>
+<li><strong>Safe Transformations</strong>: Removes whitespace and comments only — does not rename variables or break logic.</li>
+<li><strong>One-Click Copy</strong>: Copy the minified code to clipboard in a single click.</li>
+<li><strong>Typical Savings</strong>: Reduces file size by 20-50% for well-commented code.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers needing quick, one-off minification of scripts without setting up Webpack, Rollup, or Vite. Ideal for small projects, code snippets, and CMS-based sites.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your code never leaves your device.</p>`,
     category: 'developer-tools',
     targetKeyword: 'javascript minifier',
     secondaryKeywords: ['minify javascript', 'js compressor', 'js minifier online', 'compress javascript', 'minify js online free', 'javascript compressor online'],
@@ -2986,11 +3583,18 @@ Perfect for quick minification of small scripts without configuring Webpack, Rol
     slug: 'image-cropper',
     name: 'Image Cropper',
     shortDescription: 'Crop images online with preset aspect ratios — free, instant, no upload required.',
-    longDescription: `Crop your images to the perfect size with our free online Image Cropper. Choose from preset aspect ratios (1:1 for Instagram, 16:9 for YouTube, 9:16 for Stories, 4:3, 3:2) or crop freely with custom dimensions.
-
-Upload your image, select your desired crop area by dragging, and download the cropped result as a high-quality PNG. The tool shows a rule-of-thirds grid overlay to help you compose the perfect crop. A live pixel dimension indicator shows the exact output size.
-
-Everything runs in your browser using the Canvas API — your images are never uploaded to any server. Perfect for social media posts, profile pictures, product photos, and any project that needs precisely cropped images.`,
+    longDescription: `<p>Crop your images to the perfect size with our free online tool to <strong>crop image online</strong>. Choose from preset aspect ratios (1:1 for Instagram, 16:9 for YouTube, 9:16 for Stories, 4:3, 3:2) or crop freely with custom dimensions.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Preset Aspect Ratios</strong>: 1:1 (Instagram), 16:9 (YouTube), 9:16 (Stories), 4:3, 3:2, and free crop.</li>
+<li><strong>Rule-of-Thirds Grid</strong>: Overlay grid helps you compose the perfect crop.</li>
+<li><strong>Live Pixel Dimensions</strong>: Shows exact output width and height as you adjust the crop area.</li>
+<li><strong>High-Quality PNG Output</strong>: Downloads the cropped image at full original resolution — no quality loss.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Content creators, social media managers, and photographers who need precisely cropped images for Instagram posts, profile pictures, product photos, and thumbnails.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser using the Canvas API — your images are never uploaded to any server.</p>`,
     category: 'image-tools',
     targetKeyword: 'crop image online',
     secondaryKeywords: ['image cropper', 'crop photo online', 'free image cropper', 'online photo cropper', 'crop picture', 'resize and crop image', 'crop image for instagram'],
@@ -3012,11 +3616,18 @@ Everything runs in your browser using the Canvas API — your images are never u
     slug: 'stopwatch',
     name: 'Online Stopwatch',
     shortDescription: 'Free online stopwatch with lap timer — accurate to centiseconds.',
-    longDescription: `A clean, accurate online stopwatch with lap timing functionality. Start, pause, and reset with one click. Record unlimited laps and see split times with best/worst lap highlighting.
-
-The stopwatch displays hours, minutes, seconds, and centiseconds (1/100th of a second) with a large, easy-to-read display. Lap times are shown in a scrollable list with the fastest lap highlighted in green and the slowest in red — just like a professional sports timer.
-
-Built with high-resolution timing using Date.now() for accuracy. Perfect for workouts, cooking, study sessions, sports timing, or any task where you need precise time measurement. No installation needed — works instantly in your browser.`,
+    longDescription: `<p>A clean, accurate <strong>online stopwatch</strong> with lap timing functionality. Start, pause, and reset with one click. Record unlimited laps and see split times with best/worst lap highlighting.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Centisecond Accuracy</strong>: Displays hours, minutes, seconds, and centiseconds (1/100th of a second).</li>
+<li><strong>Lap Timer</strong>: Record unlimited laps with split times shown in a scrollable list.</li>
+<li><strong>Best/Worst Lap Highlighting</strong>: Fastest lap shown in green, slowest in red — just like a professional sports timer.</li>
+<li><strong>Tab-Accurate</strong>: Uses absolute timestamps so the timer stays accurate even if you switch browser tabs.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for athletes timing workouts, students timing study sessions, cooks timing recipes, and anyone who needs precise elapsed time measurement.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no installation needed, no data collected.</p>`,
     category: 'utility-tools',
     targetKeyword: 'online stopwatch',
     secondaryKeywords: ['stopwatch', 'stopwatch online', 'free stopwatch', 'lap timer online', 'timer stopwatch', 'digital stopwatch', 'sports timer'],
@@ -3038,11 +3649,19 @@ Built with high-resolution timing using Date.now() for accuracy. Perfect for wor
     slug: 'pomodoro-timer',
     name: 'Pomodoro Timer',
     shortDescription: 'Stay focused with the Pomodoro Technique — customizable work/break intervals with audio alerts.',
-    longDescription: `Boost your productivity with our free Pomodoro Timer. The Pomodoro Technique breaks your work into focused 25-minute sessions separated by short 5-minute breaks, with a longer 15-minute break after every 4 sessions.
-
-Features a beautiful circular progress indicator, audio notifications when timers complete, automatic session switching (work → break → work), and customizable durations. Track your completed sessions to see your daily productivity.
-
-The timer runs entirely in your browser — no account, no data collection. Customize focus time (1-120 min), short break (1-30 min), and long break (1-60 min) to match your personal workflow. Used by millions of students, developers, writers, and professionals worldwide.`,
+    longDescription: `<p>Boost your productivity with our free <strong>Pomodoro Timer</strong>. Work in focused 25-minute sessions with 5-minute breaks — the Pomodoro Technique trusted by millions of students, developers, and professionals worldwide.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Circular Progress</strong>: Beautiful visual timer shows how much of the session remains.</li>
+<li><strong>Audio Alerts</strong>: Gentle notification when each interval completes.</li>
+<li><strong>Auto-Switch</strong>: Automatically moves from work → short break → work → long break after 4 sessions.</li>
+<li><strong>Customizable</strong>: Set focus time (1–120 min), short break (1–30 min), long break (1–60 min).</li>
+<li><strong>Session Tracker</strong>: Count completed sessions to measure your daily productivity.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Students studying for exams, developers working on deep focus tasks, writers battling distraction, and anyone who wants to work more effectively using time-boxing.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no account, no data collection.</p>`,
     category: 'utility-tools',
     targetKeyword: 'pomodoro timer',
     secondaryKeywords: ['pomodoro timer online', 'pomodoro technique', 'focus timer', 'study timer', 'productivity timer', 'work timer', '25 minute timer'],
@@ -3063,11 +3682,18 @@ The timer runs entirely in your browser — no account, no data collection. Cust
     slug: 'text-to-speech',
     name: 'Text to Speech',
     shortDescription: 'Convert text to speech online — listen to any text read aloud in 50+ voices and languages.',
-    longDescription: `Convert any text to natural-sounding speech right in your browser. Our Text to Speech tool uses the Web Speech API built into modern browsers to read your text aloud in dozens of voices and languages — completely free, no downloads, no signup.
-
-Choose from 50+ voices across multiple languages (English, Hindi, Spanish, French, German, Japanese, and more). Adjust speech speed (0.25x to 2x) and pitch to find the perfect voice for your needs. Pause, resume, or stop at any time.
-
-Perfect for proofreading by listening to your writing, language learning, accessibility, creating audio from articles, or simply having text read to you while you multitask. Everything runs locally in your browser — your text is never sent to any server.`,
+    longDescription: `<p>Convert any text to natural-sounding speech right in your browser with our free <strong>text to speech</strong> tool. Listen to any text read aloud in 50+ voices and languages — no downloads, no signup.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>50+ Voices</strong>: Multiple voices per language — choose the one that sounds best to you.</li>
+<li><strong>12+ Languages</strong>: English, Hindi, Spanish, French, German, Japanese, Chinese, Arabic, and more.</li>
+<li><strong>Speed & Pitch Control</strong>: Adjust from 0.25x to 2x speed and customize pitch.</li>
+<li><strong>Pause/Resume</strong>: Full playback controls for listening at your own pace.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Writers proofreading by ear, language learners hearing native pronunciation, accessibility users, and anyone who wants articles or documents read aloud while multitasking.</p>
+<h2>Privacy & Security</h2>
+<p>Uses the Web Speech API built into your browser — your text is never sent to ToolsArena servers.</p>`,
     category: 'text-tools',
     targetKeyword: 'text to speech online',
     secondaryKeywords: ['text to speech', 'tts online', 'read text aloud', 'text reader online', 'text to voice', 'free text to speech', 'convert text to audio'],
@@ -3089,11 +3715,18 @@ Perfect for proofreading by listening to your writing, language learning, access
     slug: 'html-beautifier',
     name: 'HTML Beautifier',
     shortDescription: 'Format and beautify messy HTML code with proper indentation — free online tool.',
-    longDescription: `Clean up messy, minified, or poorly formatted HTML code with our free HTML Beautifier. Paste your HTML, choose your indent size, and get perfectly formatted, readable HTML in one click.
-
-The formatter properly indents nested elements, handles void tags (br, img, input, etc.) correctly, preserves comments, and produces clean, consistent output. Choose between 2-space or 4-space indentation.
-
-All processing is client-side — your code never leaves your browser. Perfect for debugging, code review, learning HTML structure, or cleaning up auto-generated HTML from CMS platforms and WYSIWYG editors.`,
+    longDescription: `<p>Clean up messy, minified, or poorly formatted HTML with our free <strong>HTML beautifier</strong>. Paste your code, choose indent size, and get perfectly readable HTML in one click.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Proper Indentation</strong>: Correctly indents nested elements with 2 or 4 spaces.</li>
+<li><strong>Void Tag Handling</strong>: br, img, input, meta, and other void tags handled correctly.</li>
+<li><strong>Comment Preservation</strong>: HTML comments are kept intact in the output.</li>
+<li><strong>No Behavior Change</strong>: Only adds/removes whitespace — your HTML structure stays identical.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers debugging HTML, doing code reviews, learning HTML structure, or cleaning up auto-generated code from CMS platforms and WYSIWYG editors.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your code never leaves your device. No signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'html beautifier',
     secondaryKeywords: ['html formatter', 'format html online', 'html prettifier', 'beautify html', 'html indenter', 'html code formatter', 'pretty print html'],
@@ -3113,11 +3746,18 @@ All processing is client-side — your code never leaves your browser. Perfect f
     slug: 'image-watermark',
     name: 'Image Watermark',
     shortDescription: 'Add text watermarks to images — custom font, color, position, opacity, and tiling.',
-    longDescription: `Protect your images with custom text watermarks. Our free Image Watermark tool lets you add text overlays with full control over font size, color, opacity, position, and rotation. Choose single placement (center, bottom-right, bottom-left) or tile the watermark across the entire image.
-
-Upload any image, type your watermark text, adjust the settings in real-time, and download the watermarked image as a PNG. The live canvas preview updates instantly as you change settings — so you can see exactly how your watermark will look before downloading.
-
-All processing happens in your browser using the Canvas API — your images are never uploaded to any server. Perfect for photographers, designers, content creators, and businesses who need to protect their visual content.`,
+    longDescription: `<p>Protect your images with custom text watermarks using our free <strong>image watermark</strong> tool. Full control over font, color, opacity, position, and rotation — live preview before you download.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Flexible Positioning</strong>: Center, bottom-right, bottom-left, or tiled across the entire image.</li>
+<li><strong>Full Customization</strong>: Font size, color, opacity (5–100%), and rotation angle.</li>
+<li><strong>Live Preview</strong>: Canvas updates instantly as you adjust settings.</li>
+<li><strong>PNG Output</strong>: Download your watermarked image as a clean PNG file.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Photographers protecting their work, content creators branding their images, and businesses adding copyright notices to visual content before sharing online.</p>
+<h2>Privacy & Security</h2>
+<p>Uses the Canvas API in your browser — your images are never uploaded to any server. No signup required.</p>`,
     category: 'image-tools',
     targetKeyword: 'add watermark to image',
     secondaryKeywords: ['image watermark', 'watermark photo online', 'add watermark free', 'watermark tool', 'text watermark', 'photo watermark online', 'watermark image online free'],
@@ -3137,11 +3777,18 @@ All processing happens in your browser using the Canvas API — your images are 
     slug: 'file-size-converter',
     name: 'File Size Converter',
     shortDescription: 'Convert between bytes, KB, MB, GB, TB — instant file size unit conversion.',
-    longDescription: `Instantly convert file sizes between Bits, Bytes, Kilobytes (KB), Megabytes (MB), Gigabytes (GB), Terabytes (TB), and binary units (KiB, MiB, GiB). Enter a value in any unit and see all other conversions at once.
-
-Includes a quick reference table for common conversions. One-click copy for any result. The tool uses binary (1024-based) calculations — the standard used by operating systems and file managers.
-
-Perfect for developers, sysadmins, students, and anyone who needs to quickly convert between storage units. Completely client-side — no server calls needed for simple math.`,
+    longDescription: `<p>Convert file sizes between Bits, Bytes, KB, MB, GB, TB, and binary units (KiB, MiB, GiB) instantly with our free <strong>file size converter</strong>. Enter any value and see all conversions at once.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All Storage Units</strong>: Bits, Bytes, KB, MB, GB, TB, and binary equivalents (KiB, MiB, GiB).</li>
+<li><strong>Enter in Any Unit</strong>: Type a value in whichever unit you know — all others update instantly.</li>
+<li><strong>One-Click Copy</strong>: Copy any converted value to clipboard.</li>
+<li><strong>Quick Reference Table</strong>: Common conversions shown for fast lookup.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers checking API limits, sysadmins planning storage, students learning about data units, and anyone who needs to quickly convert between KB, MB, and GB.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — pure math, no server calls needed.</p>`,
     category: 'converters',
     targetKeyword: 'file size converter',
     secondaryKeywords: ['bytes to mb', 'kb to mb', 'mb to gb', 'file size calculator', 'bytes converter', 'data size converter', 'storage unit converter', 'gb to mb'],
@@ -3160,11 +3807,18 @@ Perfect for developers, sysadmins, students, and anyone who needs to quickly con
     slug: 'sql-formatter',
     name: 'SQL Formatter',
     shortDescription: 'Format and beautify SQL queries with proper indentation and keyword highlighting.',
-    longDescription: `Format messy SQL queries into clean, readable code with our free SQL Formatter. The tool automatically uppercases SQL keywords, adds proper line breaks and indentation, and structures your queries for easy reading.
-
-Supports SELECT, INSERT, UPDATE, DELETE, CREATE, JOIN, subqueries, and all standard SQL syntax. Choose between 2 or 4 space indentation. Paste a complex one-liner query and get beautifully formatted SQL in one click.
-
-All formatting happens in your browser — your queries never leave your device. Essential for developers, DBAs, data analysts, and students working with databases. Makes code reviews, debugging, and learning SQL much easier.`,
+    longDescription: `<p>Format messy SQL queries into clean, readable code with our free <strong>SQL formatter</strong>. Auto-uppercase keywords, proper indentation, and well-structured output in one click.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Keyword Uppercasing</strong>: SELECT, FROM, WHERE, JOIN, etc. are automatically uppercased.</li>
+<li><strong>Proper Indentation</strong>: Choose 2 or 4 space indentation for your preferred style.</li>
+<li><strong>Full SQL Support</strong>: SELECT, INSERT, UPDATE, DELETE, CREATE, JOINs, and subqueries.</li>
+<li><strong>Multi-Dialect</strong>: Works with MySQL, PostgreSQL, SQLite, SQL Server, and Oracle syntax.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers debugging complex queries, DBAs doing code reviews, data analysts cleaning up ad-hoc SQL, and students learning to write readable database queries.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your queries never leave your device. No signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'sql formatter',
     secondaryKeywords: ['sql beautifier', 'format sql online', 'sql formatter online', 'sql pretty print', 'sql query formatter', 'beautify sql', 'sql indenter'],
@@ -3184,11 +3838,18 @@ All formatting happens in your browser — your queries never leave your device.
     slug: 'xml-to-json',
     name: 'XML to JSON Converter',
     shortDescription: 'Convert XML data to JSON format instantly — handles attributes, nested elements, and arrays.',
-    longDescription: `Convert XML to JSON instantly with our free online converter. The tool parses your XML, handles attributes (prefixed with @), nested elements, repeated elements (converted to arrays), and text content — producing clean, well-formatted JSON output.
-
-Paste your XML, click convert, and get properly indented JSON. Choose between 2 or 4 space indentation. Error messages help you identify any XML parsing issues.
-
-All conversion happens in your browser using the DOMParser API — your data never leaves your device. Perfect for API development, data migration, configuration file conversion, and any workflow that requires moving data between XML and JSON formats.`,
+    longDescription: `<p>Convert XML to JSON instantly with our free online <strong>XML to JSON converter</strong>. Handles attributes, nested elements, repeated elements, and text content — producing clean, properly indented JSON output.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Attribute Handling</strong>: XML attributes converted to JSON keys with @ prefix (e.g., &lt;user id="1"&gt; → {"@id":"1"}).</li>
+<li><strong>Array Detection</strong>: Repeated child elements with the same tag are automatically converted to arrays.</li>
+<li><strong>CDATA Support</strong>: CDATA content is included as text content in the output.</li>
+<li><strong>Error Reporting</strong>: Clear error messages help identify XML parsing issues.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers working with legacy XML APIs, data engineers migrating XML data to JSON, and anyone needing to quickly convert configuration files or API responses between formats.</p>
+<h2>Privacy & Security</h2>
+<p>Uses the DOMParser API in your browser — your data never leaves your device. No signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'xml to json converter',
     secondaryKeywords: ['xml to json', 'convert xml to json', 'xml to json online', 'xml converter', 'xml to json tool', 'xml json converter free'],
@@ -3208,11 +3869,19 @@ All conversion happens in your browser using the DOMParser API — your data nev
     slug: 'cron-generator',
     name: 'Cron Expression Generator',
     shortDescription: 'Build and decode cron expressions visually — with presets, builder UI, and plain English descriptions.',
-    longDescription: `Create cron expressions effortlessly with our visual Cron Generator. Select minutes, hours, days, months, and weekdays from dropdown menus — or choose from 10 common presets like "Every 5 minutes," "Every Monday at 9am," or "Every weekday."
-
-The tool generates the cron expression in real-time and shows a plain English description of the schedule. You can also paste an existing cron expression to decode what it means.
-
-Includes a syntax reference guide and supports all standard cron features: wildcards (*), lists (1,3,5), ranges (1-5), and step values (*/5). Perfect for setting up cron jobs, CI/CD schedules, cloud functions, and any system that uses cron syntax.`,
+    longDescription: `<p>Build cron expressions visually without memorizing syntax with our free <strong>cron expression generator</strong>. Select fields from dropdowns or pick a preset — the expression and its English description update in real time.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Visual Builder</strong>: Dropdowns for minute, hour, day, month, and weekday fields.</li>
+<li><strong>10+ Presets</strong>: "Every 5 minutes", "Every Monday at 9am", "Every weekday", and more.</li>
+<li><strong>Plain English</strong>: Instantly see what your cron expression means in human-readable language.</li>
+<li><strong>Decode Mode</strong>: Paste an existing cron expression to decode it back to plain English.</li>
+<li><strong>Syntax Reference</strong>: Built-in guide covering wildcards, lists, ranges, and step values.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers setting up cron jobs, DevOps engineers scheduling CI/CD pipelines, and cloud engineers configuring scheduled functions on AWS, GCP, or Azure.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'cron expression generator',
     secondaryKeywords: ['cron generator', 'crontab generator', 'cron builder', 'cron schedule generator', 'cron expression builder', 'crontab guru', 'cron job generator'],
@@ -3232,13 +3901,19 @@ Includes a syntax reference guide and supports all standard cron features: wildc
     slug: 'fake-data-generator',
     name: 'Fake Data Generator',
     shortDescription: 'Generate realistic fake names, emails, addresses, phone numbers & more for testing.',
-    longDescription: `Generate realistic fake data for testing, development, and prototyping with our free Fake Data Generator. Create random names, email addresses, phone numbers, physical addresses, company names, credit card numbers, dates, UUIDs, usernames, passwords, and more — all in one tool.
-
-Choose from 10+ data types and generate up to 100 rows at once. Export as JSON, CSV, or copy individual values. The data looks realistic but is entirely fictional — perfect for populating test databases, creating demo content, filling mockups, testing form validation, and building prototypes without using real personal information.
-
-Supports multiple locales including US, UK, India, and international formats. All generation happens in your browser — no API calls, no data stored, no signup required. GDPR-friendly since no real personal data is involved.
-
-Essential for developers, QA testers, UI/UX designers, data analysts, and anyone who needs realistic-looking sample data without privacy concerns.`,
+    longDescription: `<p>Generate realistic fake data for testing and prototyping with our free <strong>fake data generator</strong>. Create names, emails, phone numbers, addresses, company names, dates, UUIDs, and more — entirely fictional and ready for test databases.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>10+ Data Types</strong>: Names, emails, phones, addresses, companies, credit cards, dates, UUIDs, usernames, and passwords.</li>
+<li><strong>Bulk Generation</strong>: Generate up to 100 rows at once in a single click.</li>
+<li><strong>Export Options</strong>: Download as JSON or CSV, or copy individual values.</li>
+<li><strong>Multiple Locales</strong>: US, UK, India, and international formats.</li>
+<li><strong>GDPR-Friendly</strong>: All data is fictional — no real personal information involved.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers seeding test databases, QA testers filling forms, UI/UX designers populating mockups, and data analysts creating sample datasets without privacy concerns.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no API calls, no data stored, no signup required.</p>`,
     category: 'developer-tools',
     targetKeyword: 'fake data generator',
     secondaryKeywords: ['random data generator', 'test data generator', 'mock data generator', 'fake name generator', 'random email generator', 'fake address generator', 'dummy data generator', 'sample data generator'],
@@ -3268,11 +3943,18 @@ Essential for developers, QA testers, UI/UX designers, data analysts, and anyone
     slug: 'speech-to-text',
     name: 'Speech to Text',
     shortDescription: 'Convert speech to text in real time — free voice typing in 12+ languages.',
-    longDescription: `Dictate text using your voice with our free Speech to Text tool. Click the microphone, start speaking, and watch your words appear in real-time. Supports continuous dictation with interim results shown in gray as the AI processes your speech.
-
-Choose from 12+ languages including English, Hindi, Nepali, Spanish, French, German, Japanese, Chinese, and more. Download your transcription as a .txt file or copy it to clipboard.
-
-Uses the Web Speech Recognition API built into Chrome and Edge — no downloads, no account, no data sent to ToolsArena servers. Note: the speech recognition engine itself is provided by your browser (Google for Chrome, Microsoft for Edge).`,
+    longDescription: `<p>Dictate text using your voice with our free <strong>speech to text</strong> tool. Click the microphone, start speaking, and watch your words appear in real time — no downloads, no signup.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Real-Time Transcription</strong>: Words appear instantly as you speak, with interim results shown in gray.</li>
+<li><strong>12+ Languages</strong>: English, Hindi, Nepali, Spanish, French, German, Japanese, Chinese, Arabic, and more.</li>
+<li><strong>Download Output</strong>: Save your transcription as a .txt file or copy to clipboard.</li>
+<li><strong>Continuous Dictation</strong>: Keep speaking without interruption for long-form transcription.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Writers who prefer dictating over typing, students taking notes hands-free, professionals creating quick voice memos, and accessibility users who find typing difficult.</p>
+<h2>Privacy & Security</h2>
+<p>Uses the Web Speech Recognition API in Chrome/Edge — speech processing is done by your browser, not by ToolsArena. Best in Chrome and Edge.</p>`,
     category: 'text-tools',
     targetKeyword: 'speech to text online',
     secondaryKeywords: ['speech to text', 'voice to text', 'voice typing', 'dictation online', 'speech recognition online', 'free voice to text', 'transcribe speech'],
@@ -3293,11 +3975,19 @@ Uses the Web Speech Recognition API built into Chrome and Edge — no downloads,
     slug: 'screen-recorder',
     name: 'Screen Recorder',
     shortDescription: 'Record your screen directly in the browser — free, no download, no watermark.',
-    longDescription: `Record your screen, a browser tab, or an application window directly in your browser — completely free with no watermarks, no time limits, and no downloads required. Optionally include microphone audio for narration.
-
-Click "Start Recording," choose what to share (entire screen, app window, or browser tab), and the recording begins immediately. A live timer shows your recording duration. When done, preview your recording and download it as a WebM video file.
-
-Uses the browser's native MediaRecorder API and getDisplayMedia API — your screen recording never touches any server. Everything is processed locally. Perfect for tutorials, bug reports, presentations, demos, and quick screen captures.`,
+    longDescription: `<p>Record your screen directly in your browser — free, no downloads, no watermarks, no time limits with our <strong>screen recorder online</strong> tool. Choose to capture your full screen, a window, or a single browser tab.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>No Installation</strong>: Works entirely in Chrome, Edge, and Firefox — nothing to download.</li>
+<li><strong>Microphone Audio</strong>: Optionally include your voice narration alongside screen capture.</li>
+<li><strong>Live Timer</strong>: See your recording duration in real time.</li>
+<li><strong>WebM Download</strong>: Save your recording as a WebM video file — plays in any modern browser.</li>
+<li><strong>No Time Limit</strong>: Record for as long as you need.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Developers recording bug reports, teachers creating tutorials, designers presenting mockups, and anyone needing a quick screen capture without installing software.</p>
+<h2>Privacy & Security</h2>
+<p>Uses the native MediaRecorder API — your recording is saved locally and never touches any server.</p>`,
     category: 'utility-tools',
     targetKeyword: 'screen recorder online',
     secondaryKeywords: ['screen recorder', 'free screen recorder', 'online screen recorder', 'record screen online', 'screen capture online', 'browser screen recorder', 'screen recording no download'],
@@ -3320,11 +4010,19 @@ Uses the browser's native MediaRecorder API and getDisplayMedia API — your scr
     slug: 'ip-address-lookup',
     name: 'IP Address Lookup',
     shortDescription: 'Find your public IP address and location — city, country, ISP, timezone, and coordinates.',
-    longDescription: `Instantly see your public IP address along with detailed location information including city, region, country, timezone, postal code, ISP/organization, and geographic coordinates.
-
-Your IP is displayed prominently with a one-click copy button. You can also look up any other IP address to see its location details. The tool uses the free ipinfo.io API to fetch accurate geolocation data.
-
-Note: Unlike most ToolsArena tools, this one does make an external API call to ipinfo.io to look up IP information. We display a privacy notice about this. No data is stored by ToolsArena — the API call goes directly from your browser to ipinfo.io.`,
+    longDescription: `<p>Instantly find out <strong>what is my IP address</strong> — your public IP with full location details including city, region, country, timezone, ISP, and geographic coordinates.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>Your Public IP</strong>: Displayed prominently with one-click copy.</li>
+<li><strong>Location Details</strong>: City, region, country, postal code, and coordinates.</li>
+<li><strong>ISP Info</strong>: Your internet service provider and organization name.</li>
+<li><strong>Timezone</strong>: Your connection's detected timezone.</li>
+<li><strong>Lookup Any IP</strong>: Enter any IP address to see its location details.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone checking their IP before connecting to a VPN, developers debugging network issues, and IT professionals verifying ISP and location information.</p>
+<h2>Privacy Note</h2>
+<p>This tool calls the ipinfo.io API directly from your browser to fetch geolocation data. ToolsArena does not store your IP address.</p>`,
     category: 'utility-tools',
     targetKeyword: 'what is my ip',
     secondaryKeywords: ['my ip address', 'ip address lookup', 'ip lookup', 'find my ip', 'check my ip', 'ip location', 'ip geolocation', 'what is my ip address'],
@@ -3345,11 +4043,19 @@ Note: Unlike most ToolsArena tools, this one does make an external API call to i
     slug: 'image-to-pdf',
     name: 'Image to PDF Converter',
     shortDescription: 'Convert multiple images to a single PDF — arrange pages, set margins, choose page size.',
-    longDescription: `Convert your images (JPEG, PNG) into a single PDF document with our free Image to PDF converter. Upload multiple images, arrange them in your preferred order, set page size (A4, US Letter, or fit-to-image), adjust margins, and generate a professional-looking PDF.
-
-Each image becomes one page in the PDF. Images are centered on the page and scaled to fit while maintaining their aspect ratio. Reorder images before generating to control the page sequence.
-
-All processing happens in your browser using the pdf-lib library — your images are never uploaded to any server. Perfect for scanning documents, combining photos into an album, creating portfolios, or sending multiple images as a single file.`,
+    longDescription: `<p>Convert multiple images into a single PDF document with our free <strong>image to PDF</strong> converter. Upload, arrange, and download a professional PDF — all in your browser, no server upload.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Images</strong>: Each image becomes one page in the PDF — no hard limit on number of pages.</li>
+<li><strong>Page Size Options</strong>: A4, US Letter, or Fit-to-Image (page matches image dimensions).</li>
+<li><strong>Reorder Pages</strong>: Drag pages up/down to control the sequence before generating.</li>
+<li><strong>Margin Control</strong>: Set custom margins for a professional look.</li>
+<li><strong>Aspect Ratio Preserved</strong>: Images are scaled to fit the page without distortion.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone scanning documents with their phone, combining photos into a portfolio, creating image-based reports, or sending multiple images as a single email attachment.</p>
+<h2>Privacy & Security</h2>
+<p>Uses pdf-lib in your browser — your images never leave your device. No signup required.</p>`,
     category: 'pdf-tools',
     targetKeyword: 'image to PDF',
     secondaryKeywords: ['image to PDF converter', 'image to PDF converter online', 'JPG to PDF', 'PNG to PDF', 'convert image to PDF', 'photo to PDF', 'images to PDF online', 'picture to PDF free', 'multiple images to PDF', 'image to PDF online free', 'convert photo to PDF free'],
@@ -3371,11 +4077,19 @@ All processing happens in your browser using the pdf-lib library — your images
     slug: 'online-whiteboard',
     name: 'Online Whiteboard',
     shortDescription: 'A free drawing whiteboard — sketch, doodle, and brainstorm right in your browser.',
-    longDescription: `A simple, distraction-free online whiteboard for sketching ideas, drawing diagrams, brainstorming, or just doodling. Choose from 9 preset colors plus a custom color picker, adjust brush size, use the eraser, and undo mistakes.
-
-Features pen and eraser tools, 9+ colors, adjustable line width, undo history (up to 30 steps), and download as PNG. The canvas supports both mouse and touch input — works on tablets and touchscreen devices.
-
-No account, no saving to cloud — it is a quick-use whiteboard for when you need to sketch something fast. Download your drawing as a PNG image when done. Everything runs locally in your browser with zero latency.`,
+    longDescription: `<p>A simple, distraction-free <strong>online whiteboard</strong> for sketching ideas, drawing diagrams, and brainstorming — directly in your browser with zero latency and no account needed.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>9+ Colors</strong>: Preset colors plus a custom color picker for any shade.</li>
+<li><strong>Adjustable Brush</strong>: Set line width for thin lines or thick strokes.</li>
+<li><strong>Undo History</strong>: Up to 30 undo steps (Ctrl+Z supported).</li>
+<li><strong>Touch Support</strong>: Draw with your finger or stylus on tablets and touchscreens.</li>
+<li><strong>Save as PNG</strong>: Download your drawing as a PNG image anytime.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone who needs to quickly sketch an idea, draw a diagram for a meeting, brainstorm on a virtual board, or doodle without installing drawing software.</p>
+<h2>Privacy & Security</h2>
+<p>Runs locally in your browser — no cloud saving, no account, no data collection.</p>`,
     category: 'utility-tools',
     targetKeyword: 'online whiteboard',
     secondaryKeywords: ['whiteboard online', 'free whiteboard', 'drawing board online', 'online drawing tool', 'digital whiteboard', 'sketch online', 'web whiteboard free'],
@@ -3398,13 +4112,19 @@ No account, no saving to cloud — it is a quick-use whiteboard for when you nee
     slug: 'typing-speed-test',
     name: 'Typing Speed Test',
     shortDescription: 'Test your typing speed and accuracy with a free online WPM typing test.',
-    longDescription: `Take the ultimate Typing Speed Test and find out how fast you can type! This free online tool measures your Words Per Minute (WPM) and accuracy in real time as you type a given passage. Choose from 1, 2, 3, or 5-minute test durations to match your practice routine.
-
-As you type, the tool highlights correct characters in green and errors in red, giving you instant visual feedback. A live WPM counter, accuracy percentage, and error count are displayed throughout the test so you can track your performance in real time.
-
-After the test, you get a detailed results page showing your final WPM, accuracy, total characters typed, correct characters, and errors. A visual comparison chart shows how your speed compares to beginner, average, fast, and excellent typists worldwide. Whether you're a student, professional, or competitive typist — practice daily to improve your speed and accuracy.
-
-This tool works 100% in your browser. No sign-up, no downloads, no data collection. Your typing data never leaves your device.`,
+    longDescription: `<p>Measure your typing speed and accuracy with our free <strong>typing speed test</strong>. Find your WPM in real time as you type — with live error highlighting and a detailed results breakdown.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Live WPM Counter</strong>: See your words per minute update in real time as you type.</li>
+<li><strong>Error Highlighting</strong>: Correct characters in green, mistakes in red — instant feedback.</li>
+<li><strong>Multiple Durations</strong>: Choose 1, 2, 3, or 5-minute tests to match your practice routine.</li>
+<li><strong>Detailed Results</strong>: Final WPM, accuracy %, total characters, errors, and comparison with global averages.</li>
+<li><strong>Speed Benchmark</strong>: See how you compare to beginner, average, fast, and excellent typists.</li>
+</ul>
+<h2>What Is a Good Typing Speed?</h2>
+<p>Average: 40 WPM. Professional: 60–80 WPM. Excellent: 80+ WPM. Practice daily focusing on accuracy first — speed follows naturally.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your typed text never leaves your device. No signup required.</p>`,
     category: 'utility-tools',
     targetKeyword: 'typing speed test',
     secondaryKeywords: ['typing test', 'wpm test', 'typing speed test online', 'online typing test', 'free typing test', 'typing practice', 'words per minute test', 'keyboard speed test', 'typing test English', 'typing master online', 'fast typing test', 'typing speed checker', 'typing test online free', '1 minute typing test'],
@@ -3435,11 +4155,23 @@ This tool works 100% in your browser. No sign-up, no downloads, no data collecti
     slug: 'passport-photo-maker',
     name: 'Passport Photo Maker',
     shortDescription: 'Create passport size photos for India, US, UK, and more. Free online tool.',
-    longDescription: `Create perfect passport size photos online for free with our Passport Photo Maker. Upload any photo, crop it to the exact dimensions required by your country, choose a background color, and download the result instantly — no sign-up or software needed.
-
-Supports standard passport photo sizes for India (2x2 inches), US (2x2 inches), UK (35x45 mm), EU/Schengen (35x45 mm), China (33x48 mm), Japan (35x45 mm), and custom dimensions. The interactive crop tool with guide lines helps you position your face perfectly within the frame.
-
-Need to print? Use the "Print Sheet" button to generate a 4x6 inch sheet with multiple passport photos arranged for easy printing at home or at a photo shop. All processing happens in your browser — your photo never leaves your device.`,
+    longDescription: `<p>Create perfect <strong>passport size photos</strong> online for free. Upload any photo, crop to the exact dimensions required for your country, set the background color, and download instantly — no software, no signup.</p>
+<h2>Supported Countries & Sizes</h2>
+<ul>
+<li><strong>India</strong>: 2×2 inches (51×51 mm) — white background recommended.</li>
+<li><strong>US</strong>: 2×2 inches — white background required.</li>
+<li><strong>UK</strong>: 35×45 mm — plain light gray or cream background.</li>
+<li><strong>EU/Schengen</strong>: 35×45 mm.</li>
+<li><strong>China</strong>: 33×48 mm. <strong>Japan</strong>: 35×45 mm.</li>
+<li><strong>Custom</strong>: Enter any dimensions.</li>
+</ul>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Print Sheet</strong>: Generate a 4×6 inch sheet with multiple passport photos for home printing.</li>
+<li><strong>Interactive Crop</strong>: Guide lines help position your face correctly within the frame.</li>
+</ul>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser using HTML5 Canvas — your photo never leaves your device. No signup required.</p>`,
     category: 'image-tools',
     targetKeyword: 'passport size photo maker',
     secondaryKeywords: ['passport photo online', 'passport size photo', 'passport photo maker free', 'passport photo editor', 'visa photo maker', 'passport photo generator', '2x2 photo maker', 'passport photo india', 'passport photo crop', 'photo print sheet', 'passport photo background'],
@@ -3470,11 +4202,16 @@ Need to print? Use the "Print Sheet" button to generate a 4x6 inch sheet with mu
     slug: 'love-calculator',
     name: 'Love Calculator',
     shortDescription: 'Calculate love compatibility between two names. Fun & free love meter.',
-    longDescription: `Our Love Calculator is a fun, entertaining tool that calculates the love compatibility percentage between two names. Simply enter your name and your partner's name, and the algorithm generates a unique compatibility score with a personalized love message.
-
-The tool uses a deterministic hash algorithm — meaning the same two names will always produce the same result, making it perfect for sharing with friends or your special someone. The beautiful animated heart displays your love percentage with smooth animations and color-coded results.
-
-This is purely for entertainment purposes. Whether you score 99% or 30%, remember that real love is built on trust, respect, and communication — not algorithms! Share your results on social media and have fun with friends.`,
+    longDescription: `<p>Calculate the <strong>love compatibility</strong> between two names with our fun, free love calculator. Enter two names and get an instant compatibility percentage with an animated heart result.</p>
+<h2>How It Works</h2>
+<p>A deterministic hash algorithm converts both names into a unique compatibility score — meaning the same two names always produce the same result. Share it with friends and have fun comparing results.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Animated Result</strong>: Beautiful heart animation with color-coded percentage.</li>
+<li><strong>Personalized Message</strong>: A unique love message based on your score.</li>
+<li><strong>Consistent Results</strong>: Same names always give the same percentage.</li>
+</ul>
+<p><em>For entertainment only — real love is built on trust, respect, and communication, not algorithms!</em></p>`,
     category: 'utility-tools',
     targetKeyword: 'love calculator',
     secondaryKeywords: ['love meter', 'love percentage calculator', 'love tester', 'love compatibility test', 'love calculator by name', 'love match calculator', 'true love calculator', 'crush calculator', 'name love calculator', 'love calculator online', 'love calculator percentage', 'flame calculator', 'love test online'],
@@ -3502,11 +4239,19 @@ This is purely for entertainment purposes. Whether you score 99% or 30%, remembe
     slug: 'youtube-thumbnail-downloader',
     name: 'YouTube Thumbnail Downloader',
     shortDescription: 'Download YouTube video thumbnails in all sizes. Free and instant.',
-    longDescription: `Download YouTube video thumbnails in all available resolutions with our free YouTube Thumbnail Downloader. Simply paste the video URL or ID, and instantly get thumbnails in maximum resolution (1280x720), standard (640x480), high quality (480x360), medium (320x180), and default (120x90) sizes.
-
-Each thumbnail can be downloaded with a single click or you can copy the direct image URL. The tool supports all YouTube URL formats including standard watch URLs, short youtu.be links, embed URLs, and YouTube Shorts.
-
-Perfect for content creators, bloggers, and designers who need high-quality YouTube thumbnails for reference, analysis, or inspiration. All processing happens in your browser — no server-side storage or tracking.`,
+    longDescription: `<p>Download YouTube video thumbnails in all available resolutions instantly with our free <strong>YouTube thumbnail downloader</strong>. Paste any YouTube URL and get all sizes in one click.</p>
+<h2>Available Thumbnail Sizes</h2>
+<ul>
+<li><strong>Max Resolution</strong>: 1280×720 (HD) — best for design use.</li>
+<li><strong>Standard</strong>: 640×480.</li>
+<li><strong>High Quality</strong>: 480×360.</li>
+<li><strong>Medium</strong>: 320×180.</li>
+<li><strong>Default</strong>: 120×90.</li>
+</ul>
+<h2>Supported URL Formats</h2>
+<p>Works with standard watch URLs, short youtu.be links, embed URLs, and YouTube Shorts. Download any thumbnail with one click or copy the direct image URL.</p>
+<h2>Privacy & Security</h2>
+<p>Runs in your browser — no server-side storage or tracking. No signup required.</p>`,
     category: 'utility-tools',
     targetKeyword: 'YouTube thumbnail downloader',
     secondaryKeywords: ['YouTube thumbnail download', 'yt thumbnail downloader', 'YouTube video thumbnail', 'download YouTube thumbnail HD', 'YouTube thumbnail grabber', 'YouTube thumbnail saver', 'YouTube thumbnail image download', 'yt thumbnail download HD', 'YouTube thumbnail downloader online', 'download thumbnail from YouTube video'],
@@ -3535,13 +4280,19 @@ Perfect for content creators, bloggers, and designers who need high-quality YouT
     slug: 'youtube-money-calculator',
     name: 'YouTube Money Calculator',
     shortDescription: 'Estimate YouTube earnings from views, subscribers, and CPM. Free & instant.',
-    longDescription: `Estimate how much money a YouTube channel or video earns with our free YouTube Money Calculator. Enter daily views, total video views, or subscribers to get instant earnings estimates based on real CPM (Cost Per Mille) data for different countries and niches.
-
-The calculator uses industry-standard CPM ranges — from $0.25 for developing markets to $15+ for high-value niches like finance, insurance, and technology in the US. Customize the CPM slider to match your niche, select your primary audience country, and see estimated daily, monthly, and yearly revenue.
-
-Features include a visual earnings breakdown chart, CPM comparison by country and niche, a subscriber milestone tracker showing projected earnings at 1K, 10K, 100K, and 1M subscribers, and tips to increase your YouTube revenue. All calculations are instant and run in your browser.
-
-Perfect for aspiring YouTubers planning their content strategy, existing creators benchmarking earnings, and anyone curious about how much YouTubers make. No signup required, no data stored.`,
+    longDescription: `<p>Estimate how much money a YouTube channel or video earns with our free <strong>YouTube Money Calculator</strong>. Enter daily views, total views, or subscribers to get instant earnings estimates based on real CPM data for different countries and niches.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>CPM Slider</strong>: Customize CPM from $0.25 (developing markets) to $15+ (finance/tech in US) to match your niche.</li>
+<li><strong>Country Selection</strong>: Choose your primary audience country for region-specific revenue estimates.</li>
+<li><strong>Daily/Monthly/Yearly Breakdown</strong>: See projected earnings across all time horizons.</li>
+<li><strong>Subscriber Milestones</strong>: Projected earnings at 1K, 10K, 100K, and 1M subscribers.</li>
+<li><strong>Visual Chart</strong>: Earnings breakdown chart and CPM comparison by country and niche.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for aspiring YouTubers planning their content strategy, existing creators benchmarking their earnings, and anyone curious about how much YouTubers actually make.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no signup required, no data stored.</p>`,
     category: 'utility-tools',
     targetKeyword: 'YouTube money calculator',
     secondaryKeywords: ['youtube earnings calculator', 'how much do youtubers make', 'youtube revenue calculator', 'youtube income calculator', 'youtube CPM calculator', 'youtube money estimator', 'youtube pay calculator', 'how much youtube pays'],
@@ -3571,13 +4322,19 @@ Perfect for aspiring YouTubers planning their content strategy, existing creator
     slug: 'instagram-engagement-calculator',
     name: 'Instagram Engagement Calculator',
     shortDescription: 'Calculate your Instagram engagement rate from followers, likes, and comments. Free tool.',
-    longDescription: `Calculate your Instagram engagement rate with our free Instagram Engagement Calculator. Enter your total followers, average likes, and average comments per post to get your engagement rate percentage — the key metric brands use to evaluate influencer partnerships.
-
-The tool calculates engagement rate using the standard formula: (Average Likes + Average Comments) / Total Followers × 100. It provides a rating (Excellent, Good, Average, Low) based on industry benchmarks, comparison with average rates by follower count, estimated post reach, and tips to improve your engagement.
-
-Features include engagement rate by follower tier benchmarks (nano to mega influencers), estimated earnings per post based on your engagement rate, and a visual engagement score meter. Perfect for influencers checking their stats, brands evaluating creators, and social media managers tracking account health.
-
-All calculations happen instantly in your browser — no Instagram login required, no data stored.`,
+    longDescription: `<p>Calculate your <strong>Instagram engagement rate</strong> with our free Instagram Engagement Calculator. Enter your followers, average likes, and average comments to get your engagement rate — the key metric brands use to evaluate influencer partnerships.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Standard Formula</strong>: Calculates using (Avg Likes + Avg Comments) / Followers × 100.</li>
+<li><strong>Engagement Rating</strong>: Rates your result as Excellent, Good, Average, or Low based on industry benchmarks.</li>
+<li><strong>Follower Tier Benchmarks</strong>: Compare against nano, micro, mid-tier, and mega influencer averages.</li>
+<li><strong>Earnings Estimate</strong>: See estimated earnings per post based on your engagement rate and follower count.</li>
+<li><strong>Visual Score Meter</strong>: See your engagement score at a glance with improvement tips.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for influencers checking their stats, brands evaluating creators before partnerships, and social media managers tracking account health.</p>
+<h2>Privacy & Security</h2>
+<p>No Instagram login required — all calculations happen instantly in your browser with no data stored.</p>`,
     category: 'utility-tools',
     targetKeyword: 'Instagram engagement calculator',
     secondaryKeywords: ['instagram engagement rate calculator', 'ig engagement calculator', 'instagram engagement rate', 'check instagram engagement', 'instagram engagement checker', 'instagram rate calculator', 'calculate engagement rate instagram'],
@@ -3607,11 +4364,19 @@ All calculations happen instantly in your browser — no Instagram login require
     slug: 'online-signature-maker',
     name: 'Online Signature Maker',
     shortDescription: 'Create a digital signature by drawing or typing. Download as PNG.',
-    longDescription: `Create a professional digital signature online for free with our Signature Maker. Choose between two modes: draw your signature with your mouse, trackpad, or touchscreen, or type your name and select from multiple signature fonts.
-
-Customize your signature with different ink colors (black, blue, red, green, brown, purple), adjust pen thickness for drawn signatures, or change font style and size for typed signatures. The tool includes undo functionality and a clear canvas option for drawn signatures.
-
-Download your signature as a standard PNG with a white background, or as a transparent PNG — perfect for placing on documents, contracts, PDFs, emails, or digital forms. All processing happens locally in your browser. Your signature data is never uploaded or stored.`,
+    longDescription: `<p>Create a professional <strong>digital signature online</strong> for free with our Signature Maker. Draw with your mouse, trackpad, or touchscreen, or type your name and choose from multiple signature fonts.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Draw Mode</strong>: Sign on canvas with mouse, trackpad, or touchscreen with adjustable pen thickness.</li>
+<li><strong>Type Mode</strong>: Generate a signature from your name with multiple font styles and sizes.</li>
+<li><strong>Color Options</strong>: Choose ink color — black, blue, red, green, brown, or purple.</li>
+<li><strong>Transparent PNG</strong>: Download with white background or transparent background for overlaying on documents.</li>
+<li><strong>Undo & Clear</strong>: Undo strokes or clear the canvas and start over.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for professionals needing a quick digital signature for contracts, PDFs, emails, or digital forms without a full e-signature service.</p>
+<h2>Privacy & Security</h2>
+<p>All processing happens locally in your browser — your signature is never uploaded or stored on any server.</p>`,
     category: 'utility-tools',
     targetKeyword: 'online signature maker',
     secondaryKeywords: ['signature maker', 'digital signature maker', 'free signature maker', 'electronic signature creator', 'signature generator', 'create signature online', 'draw signature online', 'signature maker free', 'e-signature maker', 'handwritten signature generator'],
@@ -3641,11 +4406,19 @@ Download your signature as a standard PNG with a white background, or as a trans
     slug: 'marriage-biodata-maker',
     name: 'Marriage Biodata Maker',
     shortDescription: 'Create beautiful marriage biodata online for free. 10 templates, PDF & image download.',
-    longDescription: `Create a professional marriage biodata online for free with our Marriage Biodata Maker. Choose from 10 beautifully designed templates — Classic Gold, Royal Blue, Floral Pink, Modern Minimal, Auspicious Red, Ganesh Blessing, Peacock Green, Elegant Purple, Simple White, and Saffron — each crafted for Indian matrimonial traditions.
-
-Fill in your personal details, education, career, family information, and partner expectations through an easy step-by-step form. Upload your photo, preview the biodata in real time, and download it as a high-quality PNG image or PDF — ready to share with family, matrimonial agents, or on marriage portals.
-
-All fields are optional except your name, so you can include as much or as little detail as you want. Your data never leaves your browser — everything is processed locally with 100% privacy. No signup, no watermarks, no hidden charges.`,
+    longDescription: `<p>Create a professional <strong>marriage biodata online</strong> for free with our Marriage Biodata Maker. Choose from 10 beautifully designed templates crafted for Indian matrimonial traditions — Classic Gold, Royal Blue, Floral Pink, Modern Minimal, Auspicious Red, and more.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>10 Templates</strong>: Classic Gold, Royal Blue, Floral Pink, Modern Minimal, Auspicious Red, Ganesh Blessing, Peacock Green, Elegant Purple, Simple White, and Saffron.</li>
+<li><strong>Step-by-Step Form</strong>: Fill personal, education, career, family, and partner expectations easily.</li>
+<li><strong>Photo Upload</strong>: Add your photo — processed locally, never stored on any server.</li>
+<li><strong>PDF & PNG Download</strong>: Download as high-quality PNG image or PDF for printing or digital sharing.</li>
+<li><strong>Real-Time Preview</strong>: See your biodata update live as you fill in the form.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for individuals and families creating biodata for matrimonial platforms, sharing with relatives, or submitting to marriage bureaus. All fields except name are optional.</p>
+<h2>Privacy & Security</h2>
+<p>Your data never leaves your browser — 100% private, no signup, no watermarks, no hidden charges.</p>`,
     category: 'utility-tools',
     targetKeyword: 'marriage biodata maker',
     secondaryKeywords: ['biodata for marriage', 'marriage biodata format', 'biodata maker online', 'marriage biodata template', 'biodata format for marriage', 'shadi biodata', 'marriage biodata pdf', 'biodata for marriage free download', 'marriage biodata maker online free', 'vivah biodata', 'wedding biodata maker', 'biodata for marriage format in hindi'],
@@ -3678,11 +4451,19 @@ All fields are optional except your name, so you can include as much or as littl
     slug: 'electricity-bill-calculator',
     name: 'Electricity Bill Calculator',
     shortDescription: 'Calculate your monthly electricity bill based on units consumed and state tariff slabs.',
-    longDescription: `India's most comprehensive Electricity Bill Calculator covering 15 states with accurate domestic tariff slabs for FY 2025-26. Select your state, enter units consumed, and instantly see a detailed bill breakdown including energy charges, fixed charges, meter rent, fuel surcharge, and electricity duty.
-
-The calculator shows slab-wise breakdown with visual bars so you can understand exactly how your bill is computed at each tariff tier. Supported states include Maharashtra (MSEDCL), Delhi (BSES/Tata Power), Karnataka (BESCOM), Tamil Nadu (TNEB), Uttar Pradesh (UPPCL), Rajasthan, Gujarat, Madhya Pradesh, West Bengal, Andhra Pradesh, Telangana, Kerala, Punjab, Bihar, and Haryana.
-
-View your bill in monthly, quarterly, and annual projections. Includes an appliance power consumption guide showing daily kWh usage for LED bulbs, fans, AC, refrigerator, and more. Also features energy-saving tips to help you reduce your electricity bill. Custom rate option available if your state is not listed.`,
+    longDescription: `<p>India's most comprehensive <strong>electricity bill calculator</strong> covering 15 states with accurate domestic tariff slabs for FY 2025-26. Select your state, enter units consumed, and instantly see a detailed bill breakdown.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>15 States Covered</strong>: Maharashtra (MSEDCL), Delhi, Karnataka (BESCOM), Tamil Nadu (TNEB), UP (UPPCL), Rajasthan, Gujarat, MP, West Bengal, AP, Telangana, Kerala, Punjab, Bihar, and Haryana.</li>
+<li><strong>Slab-Wise Breakdown</strong>: Visual bars showing energy charges, fixed charges, meter rent, fuel surcharge, and electricity duty at each tariff tier.</li>
+<li><strong>Projections</strong>: Monthly, quarterly, and annual bill projections for budget planning.</li>
+<li><strong>Appliance Guide</strong>: Daily kWh usage for LED bulbs, fans, AC, refrigerator, and more.</li>
+<li><strong>Energy-Saving Tips</strong>: Actionable tips to reduce your electricity consumption.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for households tracking monthly electricity costs, renters verifying bills, and anyone comparing appliance power consumption across Indian states.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'electricity bill calculator India',
     secondaryKeywords: ['electricity bill calculator', 'bijli bill calculator', 'electricity unit rate calculator', 'MSEDCL bill calculator', 'state wise electricity tariff', 'electricity bill per unit rate', 'monthly electricity cost calculator'],
@@ -3711,11 +4492,19 @@ View your bill in monthly, quarterly, and annual projections. Includes an applia
     slug: 'text-repeater',
     name: 'Text Repeater',
     shortDescription: 'Repeat any text up to 10,000 times with custom separators. Copy instantly.',
-    longDescription: `Text Repeater lets you duplicate any text, word, or phrase up to 10,000 times in a single click. Choose from multiple separator options — new line, space, comma, dash, tab, or a custom separator of your choice.
-
-Features include optional line numbering (1. 2. 3...), live character and word count, and instant copy to clipboard. Quick count presets from 5x to 5000x make common tasks fast.
-
-Perfect for generating test data, filling forms, creating WhatsApp/Instagram text art, SEO testing, load testing, and any task where you need repeated text. The tool runs 100% in your browser — your text is never sent to any server.`,
+    longDescription: `<p>The <strong>Text Repeater</strong> lets you duplicate any text, word, or phrase up to 10,000 times in a single click — with flexible separator options and instant copy to clipboard.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Up to 10,000 Repetitions</strong>: Repeat any text thousands of times instantly.</li>
+<li><strong>Custom Separators</strong>: Choose new line, space, comma, dash, tab, or enter a custom separator.</li>
+<li><strong>Line Numbering</strong>: Optionally prefix each line with 1. 2. 3. for numbered output.</li>
+<li><strong>Quick Presets</strong>: One-click presets for 5x, 10x, 50x, 100x, 500x, 1000x, and 5000x.</li>
+<li><strong>Live Count</strong>: Real-time character and word count as you type.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for generating test data, filling forms, creating WhatsApp/Instagram text art, SEO testing, and load testing scenarios.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your text is never sent to any server.</p>`,
     category: 'text-tools',
     targetKeyword: 'text repeater',
     secondaryKeywords: ['repeat text online', 'text repeater tool', 'copy paste repeater', 'word repeater', 'text multiplier', 'repeat text 1000 times', 'WhatsApp text repeater'],
@@ -3743,13 +4532,19 @@ Perfect for generating test data, filling forms, creating WhatsApp/Instagram tex
     slug: 'tax-regime-calculator',
     name: 'Old vs New Tax Regime Calculator',
     shortDescription: 'Compare Old vs New Tax Regime for FY 2025-26 and find which saves you more tax.',
-    longDescription: `India's most detailed Old vs New Tax Regime comparison calculator, updated for FY 2025-26 (AY 2026-27) as per Budget 2025. Enter your gross income and deductions to instantly see which regime saves you more money.
-
-The calculator computes your taxable income and tax payable under both regimes with full slab-wise visual breakdown. For the Old Regime, enter your deductions: Section 80C (PPF, ELSS, LIC), Section 80D (health insurance), Section 80CCD(1B) (NPS), Section 80E (education loan interest), home loan interest (Section 24b), and HRA exemption.
-
-New Regime features for FY 2025-26: basic exemption at Rs 4 lakh, standard deduction of Rs 75,000, and rebate under Section 87A making income up to Rs 12 lakh effectively tax-free. Old Regime features: basic exemption at Rs 2.5 lakh, standard deduction of Rs 50,000, all Chapter VIA deductions allowed, and HRA exemption.
-
-Both calculations include surcharge (for income above 50L) and 4% health & education cess. Side-by-side comparison cards show the exact savings with a clear recommendation on which regime to choose.`,
+    longDescription: `<p>India's most detailed <strong>Old vs New Tax Regime calculator</strong>, updated for FY 2025-26 (AY 2026-27) as per Budget 2025. Enter your gross income and deductions to instantly see which regime saves you more money.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Full Deduction Support</strong>: Enter 80C, 80D, 80CCD(1B) NPS, Section 24b home loan interest, and HRA exemption for Old Regime.</li>
+<li><strong>Slab-Wise Breakdown</strong>: Visual tax slab breakdown for both regimes including surcharge and 4% cess.</li>
+<li><strong>New Regime 2025-26</strong>: Reflects Rs 4L basic exemption, Rs 75K standard deduction, and 87A rebate making up to Rs 12L tax-free.</li>
+<li><strong>Side-by-Side Comparison</strong>: Clear comparison cards showing tax payable under both regimes with annual and monthly savings.</li>
+<li><strong>Regime Recommendation</strong>: Instant recommendation on which regime is better for your income profile.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for salaried employees deciding which regime to choose at the start of a financial year, and for anyone verifying their Form 16 or TDS deductions.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run in your browser instantly — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'old vs new tax regime calculator',
     secondaryKeywords: ['tax regime comparison calculator', 'income tax calculator 2025-26', 'which tax regime is better', 'new tax regime calculator', 'old regime vs new regime', 'tax calculator India FY 2025-26', 'income tax slab calculator'],
@@ -3778,11 +4573,19 @@ Both calculations include surcharge (for income above 50L) and 4% health & educa
     slug: 'color-palette-from-image',
     name: 'Color Palette from Image',
     shortDescription: 'Extract dominant colors from any image. Get HEX, RGB, HSL codes with one click.',
-    longDescription: `Upload any image and instantly extract its dominant color palette using advanced k-means clustering algorithm. The tool identifies 4 to 12 colors from your image, showing each color with HEX, RGB, and HSL values, plus the percentage of the image each color represents.
-
-Click any color to copy its HEX code. The palette strip at the top shows all colors proportionally. Export the entire palette as CSS custom properties (variables) for use in your web projects.
-
-The color extraction runs entirely in your browser using HTML5 Canvas — no image is uploaded to any server. Works with PNG, JPG, and WEBP images. Perfect for designers, web developers, illustrators, and anyone who needs to match colors from a reference image, create brand color schemes, or find complementary colors for their projects.`,
+    longDescription: `<p>Upload any image and instantly extract its dominant <strong>color palette</strong> using an advanced k-means clustering algorithm. Get 4 to 12 dominant colors with HEX, RGB, and HSL values plus the percentage each color represents.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>K-Means Clustering</strong>: Samples ~10,000 pixels to accurately identify the most dominant colors in your image.</li>
+<li><strong>HEX, RGB & HSL Values</strong>: Every color shows all three formats — click to copy HEX instantly.</li>
+<li><strong>Proportional Palette Strip</strong>: Visual strip showing colors sized by their percentage in the image.</li>
+<li><strong>CSS Export</strong>: Copy all colors as CSS custom properties (--color-1, --color-2) ready for your stylesheet.</li>
+<li><strong>Adjustable Count</strong>: Extract 4, 6, 8, 10, or 12 colors depending on your needs.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for designers matching colors from reference images, developers building color schemes, and brand teams extracting palette colors from logos or photography.</p>
+<h2>Privacy & Security</h2>
+<p>Runs entirely in your browser using HTML5 Canvas — no image is ever uploaded to any server.</p>`,
     category: 'image-tools',
     targetKeyword: 'color palette from image',
     secondaryKeywords: ['extract colors from image', 'image color picker', 'color palette generator', 'get colors from photo', 'image to color palette', 'dominant colors from image', 'color scheme from photo'],
@@ -3810,11 +4613,19 @@ The color extraction runs entirely in your browser using HTML5 Canvas — no ima
     slug: 'meme-generator',
     name: 'Meme Generator',
     shortDescription: 'Create memes with custom text, fonts, and colors. Upload image or use blank canvas.',
-    longDescription: `Create hilarious memes in seconds with our free online Meme Generator. Upload any image or use a blank colored canvas, then add multiple text layers with full customization — font size, fill color, stroke color, bold styling, and precise positioning by drag-and-drop.
-
-Each text layer can be independently styled and positioned anywhere on the image. The Impact font with white fill and black stroke gives you that classic meme look, but you can customize colors for any style. Add as many text layers as you need.
-
-Features include drag-to-reposition text, adjustable canvas size, background color picker for blank canvas mode, and high-quality PNG download. Perfect for creating memes for social media, WhatsApp groups, Instagram stories, and Twitter posts. Everything runs in your browser — no watermark, no signup, no limits.`,
+    longDescription: `<p>Create hilarious memes in seconds with our free online <strong>Meme Generator</strong>. Upload any image or use a blank colored canvas, then add multiple text layers with full customization and drag-and-drop positioning.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Text Layers</strong>: Add as many text layers as you need, each independently styled and positioned.</li>
+<li><strong>Full Customization</strong>: Adjust font size, fill color, stroke color, and bold styling for each text layer.</li>
+<li><strong>Classic Meme Look</strong>: Impact font with white fill and black stroke pre-configured for the iconic meme style.</li>
+<li><strong>Drag & Drop</strong>: Click and drag text directly on the canvas to position it exactly where you want.</li>
+<li><strong>No Watermark</strong>: Download high-quality PNG memes with no branding or watermark.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for creating memes for social media, WhatsApp groups, Instagram stories, and Twitter posts — with no app download needed.</p>
+<h2>Privacy & Security</h2>
+<p>Everything runs in your browser — no signup, no limits, no uploads.</p>`,
     category: 'image-tools',
     targetKeyword: 'meme generator',
     secondaryKeywords: ['meme maker online', 'free meme generator', 'create meme', 'meme creator', 'custom meme maker', 'meme generator no watermark', 'WhatsApp meme maker'],
@@ -3843,13 +4654,19 @@ Features include drag-to-reposition text, adjustable canvas size, background col
     slug: 'image-to-text',
     name: 'Image to Text (OCR)',
     shortDescription: 'Extract text from images using OCR. Supports 18+ languages including Hindi, Tamil, Bengali.',
-    longDescription: `Extract text from any image using powerful Optical Character Recognition (OCR) powered by Tesseract.js. Upload a photo, screenshot, scanned document, or handwritten note — the tool will recognize and extract all readable text from it.
-
-Supports 18+ languages including English, Hindi, Marathi, Tamil, Telugu, Kannada, Bengali, Gujarati, Malayalam, Punjabi, Urdu, Arabic, French, German, Spanish, Japanese, Korean, and Chinese. Select the correct language for better accuracy.
-
-The OCR engine runs 100% in your browser — your images are never uploaded to any server, ensuring complete privacy. Features include real-time progress tracking, word and character count, copy to clipboard, and download as .txt file.
-
-Tips for best results: use clear, high-resolution images with good contrast between text and background. Ensure text is not rotated or heavily skewed. Cropping the image to include only the text area significantly improves accuracy.`,
+    longDescription: `<p>Extract text from any image using powerful <strong>OCR (Optical Character Recognition)</strong> powered by Tesseract.js. Upload a photo, screenshot, scanned document, or handwritten note and get the text instantly.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>18+ Languages</strong>: English, Hindi, Marathi, Tamil, Telugu, Kannada, Bengali, Gujarati, Malayalam, Punjabi, Urdu, Arabic, French, German, Spanish, Japanese, Korean, and Chinese.</li>
+<li><strong>Browser-Based OCR</strong>: Tesseract.js runs entirely in your browser — no image ever leaves your device.</li>
+<li><strong>Progress Tracking</strong>: Real-time progress bar shows OCR processing status.</li>
+<li><strong>Copy & Download</strong>: Copy extracted text to clipboard or download as a .txt file.</li>
+<li><strong>Word & Character Count</strong>: Instant count of extracted words and characters.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for digitizing printed documents, extracting text from screenshots, converting scanned PDFs to editable text, and processing images with Indian regional language text.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images are never uploaded to any server, ensuring complete privacy.</p>`,
     category: 'image-tools',
     targetKeyword: 'image to text',
     secondaryKeywords: ['OCR online', 'image to text converter', 'extract text from image', 'photo to text', 'OCR Hindi', 'scan image to text', 'picture to text converter', 'handwriting to text'],
@@ -3878,13 +4695,19 @@ Tips for best results: use clear, high-resolution images with good contrast betw
     slug: 'photo-collage-maker',
     name: 'Photo Collage Maker',
     shortDescription: 'Create stunning photo collages with 10 layouts, custom borders, and social media sizes.',
-    longDescription: `Create beautiful photo collages in seconds with our free online Photo Collage Maker. Choose from 10 professionally designed layouts — 2-photo splits, 3-photo focus layouts, 4/6/9 grids, and asymmetric designs. Upload your photos and they automatically fill the layout cells.
-
-Customize every aspect: border width (0-14px), corner radius, and background color. Choose from preset output sizes for Instagram Post (1080x1080), Instagram Story (1080x1920), Facebook Cover (820x312), HD landscape (1920x1080), and more.
-
-Photos are automatically center-cropped to fill each cell, ensuring the best composition regardless of original photo dimensions. Add, remove, and reorder photos easily. The collage preview updates in real-time as you make changes.
-
-Download your collage as a high-quality PNG image. Perfect for social media posts, family photo albums, event galleries, before/after comparisons, and creative projects. Everything runs in your browser — no watermark, no signup, no limits.`,
+    longDescription: `<p>Create beautiful photo collages in seconds with our free online <strong>photo collage maker</strong>. Choose from 10 professionally designed layouts — 2-photo splits, 3-photo focus layouts, 4/6/9 grids, and asymmetric designs. Upload your photos and they automatically fill the layout cells.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>10 Layouts</strong>: Choose from 2-cell to 9-cell grids, splits, and asymmetric designs for varied compositions.</li>
+<li><strong>Social Media Sizes</strong>: Preset sizes for Instagram Post (1080x1080), Instagram Story (1080x1920), Facebook Cover, HD landscape, and more.</li>
+<li><strong>Customizable Borders</strong>: Adjust border width (0-14px), corner radius, and background color.</li>
+<li><strong>Auto Center-Crop</strong>: Photos are automatically center-cropped to fill cells regardless of original dimensions.</li>
+<li><strong>Real-Time Preview</strong>: See changes live as you adjust layouts and settings.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for social media creators, families making photo albums, event photographers, and anyone needing before/after comparisons or creative collage projects.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no watermark, no signup, no limits, and photos never leave your device.</p>`,
     category: 'image-tools',
     targetKeyword: 'photo collage maker',
     secondaryKeywords: ['collage maker online', 'photo grid maker', 'Instagram collage maker', 'free collage maker', 'photo collage generator', 'picture collage online', 'grid photo maker'],
@@ -3913,11 +4736,19 @@ Download your collage as a high-quality PNG image. Perfect for social media post
     slug: 'compress-image-to-kb',
     name: 'Compress Image to KB',
     shortDescription: 'Compress any image to an exact target file size in KB — 50 KB, 100 KB, 200 KB, or any custom size.',
-    longDescription: `Compress any image to an exact target file size in KB with our free online tool. Need to compress an image to exactly 50 KB, 100 KB, or 200 KB for a form upload, email attachment, or website requirement? This tool uses a smart binary search algorithm to find the perfect JPEG quality setting that produces a file as close as possible to your target size.
-
-Upload your JPG, PNG, or WebP image, enter your desired file size in KB, and the tool automatically iterates through quality levels (up to 20 iterations) to find the closest match. You get full details: the resulting file size, JPEG quality used, compression percentage, and iteration count.
-
-All processing happens entirely in your browser using the HTML5 Canvas API — your images are never uploaded to any server. No watermarks, no signup, no limits. Perfect for government form uploads, job applications, passport photo submissions, and any scenario where exact file size matters.`,
+    longDescription: `<p>Compress any image to an <strong>exact target file size in KB</strong> with our free online tool. Need exactly 50 KB, 100 KB, or 200 KB for a form, application, or email? Our smart binary search algorithm finds the perfect JPEG quality setting for your target.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Binary Search Compression</strong>: Iterates up to 20 quality levels to find the closest match to your target KB.</li>
+<li><strong>Custom Target Size</strong>: Enter any KB value — 50 KB, 100 KB, 200 KB, or any custom size.</li>
+<li><strong>Detailed Results</strong>: Shows resulting file size, JPEG quality used, compression percentage, and iteration count.</li>
+<li><strong>Multiple Input Formats</strong>: Accepts JPG, PNG, and WebP images.</li>
+<li><strong>Instant Download</strong>: Download the compressed image with one click.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for government form uploads, job applications, passport photo submissions, and any scenario where an exact file size limit is enforced.</p>
+<h2>Privacy & Security</h2>
+<p>All processing happens in your browser using HTML5 Canvas — your images are never uploaded to any server. No watermarks, no signup, no limits.</p>`,
     category: 'image-tools',
     targetKeyword: 'compress image to kb',
     secondaryKeywords: ['compress image to 50kb', 'compress image to 100kb', 'compress image to 200kb', 'reduce image to exact size', 'image size reducer kb', 'compress photo to kb online', 'resize image to kb'],
@@ -3947,13 +4778,19 @@ All processing happens entirely in your browser using the HTML5 Canvas API — y
     slug: 'paraphrasing-tool',
     name: 'Paraphrasing Tool',
     shortDescription: 'Rewrite text in 6 styles — Standard, Formal, Casual, Shorter, Longer, Creative.',
-    longDescription: `Paraphrase and rewrite your text in 6 different styles with our free online Paraphrasing Tool. Choose from Standard (clear rewording), Formal (professional tone), Casual (friendly & simple), Shorter (concise version), Longer (expanded version), or Creative (unique phrasing).
-
-The tool uses an intelligent synonym replacement engine with context-aware transformations. Formal mode converts contractions and informal language to professional wording. Casual mode simplifies complex vocabulary. Shorter mode removes filler words. Longer mode adds connecting phrases for elaboration. Creative mode restructures sentences for fresh perspectives.
-
-Features include live word count comparison between original and paraphrased text, percentage change indicator, copy to clipboard, and instant mode switching. Process runs 100% in your browser — your text is never sent to any server, ensuring complete privacy.
-
-Perfect for students rewriting essays, professionals improving emails, content writers creating unique versions, and anyone who needs to express the same idea in different words.`,
+    longDescription: `<p>Paraphrase and rewrite your text in 6 different styles with our free online <strong>Paraphrasing Tool</strong>. Choose Standard, Formal, Casual, Shorter, Longer, or Creative mode to instantly transform your writing.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>6 Rewriting Modes</strong>: Standard (clear rewording), Formal (professional tone), Casual (friendly & simple), Shorter (concise), Longer (expanded), Creative (unique phrasing).</li>
+<li><strong>Intelligent Transformations</strong>: Context-aware synonym replacement, contraction handling, passive voice reduction, and filler word removal.</li>
+<li><strong>Word Count Comparison</strong>: Live word count for both original and paraphrased text with percentage change indicator.</li>
+<li><strong>Instant Mode Switching</strong>: Toggle between all 6 modes without re-entering your text.</li>
+<li><strong>Copy to Clipboard</strong>: One-click copy of the rewritten output.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for students rewriting essays, professionals improving emails, content writers creating unique versions, and anyone needing to express the same idea in different words.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your text is never sent to any server.</p>`,
     category: 'text-tools',
     targetKeyword: 'paraphrasing tool',
     secondaryKeywords: ['paraphrase online', 'text rewriter', 'sentence rewriter', 'rephrase tool', 'paraphrasing tool free', 'reword text online', 'text paraphraser'],
@@ -3982,13 +4819,19 @@ Perfect for students rewriting essays, professionals improving emails, content w
     slug: 'ai-text-humanizer',
     name: 'AI Text Humanizer',
     shortDescription: 'Make AI-generated text sound natural and human-written. Bypass AI detectors instantly.',
-    longDescription: `Transform robotic AI-generated text into natural, human-sounding content with our free AI Text Humanizer. Whether you wrote with ChatGPT, Gemini, Claude, or any other AI, this tool restructures your text to sound authentic and bypass AI detection tools like GPTZero, Turnitin, and Originality.ai.
-
-The humanizer applies 7 powerful transformations: adds natural contractions, replaces overused AI phrases ("delve into", "it's important to note"), varies sentence length, injects conversational transitions, removes robotic patterns, adds personal touches, and reduces passive voice. Choose from 4 intensity levels — Light, Medium, Heavy, and Aggressive — to control how much the text changes.
-
-A built-in AI Detection Score gives you a real-time estimate of how "AI-like" or "human-like" your text sounds, with a visual meter. The tool processes text 100% in your browser — nothing is sent to any server, so your content stays completely private. No signup, no limits, no watermarks.
-
-Perfect for students, bloggers, content writers, marketers, and professionals who use AI as a writing assistant but want the final output to read naturally and pass AI detection checks.`,
+    longDescription: `<p>Transform robotic AI-generated text into natural, human-sounding content with our free <strong>AI Text Humanizer</strong>. Restructure ChatGPT, Gemini, or Claude output to sound authentic and bypass AI detection tools.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>7 Transformations</strong>: Adds contractions, replaces overused AI phrases, varies sentence length, injects conversational transitions, removes robotic patterns, adds personal touches, and reduces passive voice.</li>
+<li><strong>4 Intensity Levels</strong>: Light, Medium, Heavy, and Aggressive — control how much your text changes.</li>
+<li><strong>AI Detection Score</strong>: Built-in visual meter estimates how "AI-like" or "human-like" your text sounds before and after humanizing.</li>
+<li><strong>Bypass AI Detectors</strong>: Reduces patterns that tools like GPTZero, Turnitin, and Originality.ai look for.</li>
+<li><strong>No Limits</strong>: Process any amount of text — no word caps, no signup, no watermarks.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for students, bloggers, content writers, and professionals who use AI writing tools but want the final output to read naturally and authentically.</p>
+<h2>Privacy & Security</h2>
+<p>Processes text 100% in your browser — nothing is sent to any server, your content stays completely private.</p>`,
     category: 'text-tools',
     targetKeyword: 'AI text humanizer',
     secondaryKeywords: ['humanize AI text', 'AI to human text converter', 'bypass AI detection', 'make AI text human', 'AI humanizer free', 'ChatGPT humanizer', 'undetectable AI text', 'AI text converter'],
@@ -4018,13 +4861,19 @@ Perfect for students, bloggers, content writers, marketers, and professionals wh
     slug: 'ats-resume-checker',
     name: 'ATS Resume Score Checker',
     shortDescription: 'Check your resume against a job description and get an ATS compatibility score with actionable tips.',
-    longDescription: `Check how well your resume matches a job description with our free ATS Resume Score Checker. Get an instant ATS compatibility score out of 100, with a detailed breakdown across 5 key dimensions: keyword match, section detection, action verbs, quantifiable metrics, and formatting.
-
-The tool extracts keywords from the job description (including multi-word phrases) and checks which ones appear in your resume. It scans for essential resume sections like Contact Info, Summary, Experience, Education, Skills, and Certifications. It also evaluates whether you use strong action verbs and quantifiable achievements — two factors that make resumes stand out to both ATS software and human recruiters.
-
-You get color-coded keyword chips showing which JD keywords are present or missing, a section-by-section checklist, and 5-8 personalized suggestions to improve your score. Everything runs 100% in your browser — your resume is never uploaded, stored, or sent to any server. Complete privacy guaranteed.
-
-Perfect for job seekers, career changers, and anyone applying to competitive roles who wants to ensure their resume passes automated screening systems before reaching a recruiter.`,
+    longDescription: `<p>Check how well your resume matches a job description with our free <strong>ATS Resume Score Checker</strong>. Get an instant ATS compatibility score out of 100 with detailed breakdown across 5 key dimensions.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>5-Dimension Score</strong>: Keyword match (35%), section detection (20%), action verbs (15%), quantifiable metrics (15%), and formatting (15%).</li>
+<li><strong>Keyword Analysis</strong>: Color-coded chips showing which job description keywords are present or missing in your resume.</li>
+<li><strong>Section Checklist</strong>: Scans for Contact Info, Summary, Experience, Education, Skills, and Certifications.</li>
+<li><strong>Personalized Suggestions</strong>: 5-8 actionable tips to improve your ATS score based on your specific gaps.</li>
+<li><strong>Copy Report</strong>: Copy your full analysis report with one click for easy sharing.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for job seekers, career changers, and anyone applying to competitive roles who wants to ensure their resume passes automated screening systems.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your resume is never uploaded, stored, or sent to any server.</p>`,
     category: 'text-tools',
     targetKeyword: 'ATS resume checker',
     secondaryKeywords: ['ATS score checker', 'resume ATS score', 'ATS resume scanner', 'resume keyword checker', 'ATS friendly resume checker', 'resume score checker free', 'ATS compatibility checker'],
@@ -4056,11 +4905,19 @@ Perfect for job seekers, career changers, and anyone applying to competitive rol
     slug: 'rent-receipt-generator',
     name: 'Rent Receipt Generator',
     shortDescription: 'Generate HRA rent receipts for tax saving with PDF download.',
-    longDescription: `Generate professional rent receipts instantly for HRA tax exemption claims. Our Rent Receipt Generator creates multiple monthly receipts with all required details — tenant name, landlord name, address, rent amount, payment mode, and revenue stamp.
-
-Enter your rental details once and generate receipts for any period (monthly, quarterly, or full financial year). Each receipt includes a unique receipt number, date, amount in words, and space for landlord signature and revenue stamp.
-
-Download all receipts as a single PDF file — ready to submit to your employer for HRA exemption under Section 10(13A). The tool also shows a PAN warning when annual rent exceeds ₹1,00,000 as required by Income Tax rules. 100% free, no signup, works offline in your browser.`,
+    longDescription: `<p>Generate professional <strong>rent receipts for HRA tax exemption</strong> instantly. Enter your rental details once and download all monthly receipts as a single PDF — ready to submit to your employer.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Bulk Generation</strong>: Create receipts for any period — monthly, quarterly, or a full financial year — in one click.</li>
+<li><strong>Complete Details</strong>: Each receipt includes unique receipt number, date, amount in words, payment mode, and space for landlord signature and revenue stamp.</li>
+<li><strong>PAN Warning</strong>: Automatically alerts when annual rent exceeds ₹1,00,000 (landlord PAN required for HRA claim).</li>
+<li><strong>PDF Download</strong>: All receipts bundled into a single PDF file ready for employer submission.</li>
+<li><strong>Section 10(13A) Ready</strong>: Complies with Income Tax Act requirements for HRA exemption claims.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for salaried employees who pay rent and need to claim HRA exemption from their employer's TDS deductions.</p>
+<h2>Privacy & Security</h2>
+<p>100% free, no signup — works offline in your browser with no data sent to any server.</p>`,
     category: 'utility-tools',
     targetKeyword: 'rent receipt generator',
     secondaryKeywords: ['rent receipt generator online', 'HRA rent receipt', 'house rent receipt PDF', 'rent receipt for income tax', 'rent receipt format India', 'free rent receipt generator'],
@@ -4089,13 +4946,19 @@ Download all receipts as a single PDF file — ready to submit to your employer 
     slug: 'salary-slip-generator',
     name: 'Salary Slip Generator',
     shortDescription: 'Generate professional salary slips / payslips with earnings, deductions & net pay. Download as PNG or PDF.',
-    longDescription: `Create professional salary slips (payslips) instantly with the ToolsArena Salary Slip Generator. Fill in company details, employee information, earnings, and deductions — and download a clean, well-formatted salary slip as PNG or PDF.
-
-The tool auto-calculates HRA (40% or 50% of basic salary) and Provident Fund (12% of basic) with options to override with custom amounts. Add all standard Indian salary components including Basic Salary, HRA, Conveyance Allowance, Medical Allowance, Special Allowance, Professional Tax, TDS, and ESI.
-
-Everything runs 100% in your browser — no data is sent to any server. Your employee details, salary figures, and company information stay completely private. Perfect for HR departments, small businesses, startups, and freelancers who need to generate monthly payslips quickly.
-
-Features include live preview, company logo upload, custom earning/deduction line items, and instant PNG or PDF download. The generated salary slip includes company header, employee details grid, earnings and deductions table, net pay summary, and authorized signatory line.`,
+    longDescription: `<p>Create professional <strong>salary slips (payslips)</strong> instantly with our free Salary Slip Generator. Fill in company details, employee information, earnings, and deductions — then download a clean payslip as PNG or PDF.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Auto-Calculation</strong>: HRA (40% or 50% of basic) and PF (12% of basic) calculated automatically with custom override option.</li>
+<li><strong>Standard Components</strong>: Basic Salary, HRA, Conveyance Allowance, Medical Allowance, Special Allowance, Professional Tax, TDS, and ESI.</li>
+<li><strong>Company Logo</strong>: Upload your logo (PNG, JPG, SVG) to include in the payslip header.</li>
+<li><strong>Custom Line Items</strong>: Add any custom earnings or deductions beyond the standard fields.</li>
+<li><strong>Live Preview</strong>: See the final payslip update in real time as you enter details.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for HR departments, small businesses, startups, and freelancers who need to generate clean, professional monthly payslips quickly.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data sent to any server. Your salary and company information stays completely private.</p>`,
     category: 'utility-tools',
     targetKeyword: 'salary slip generator',
     secondaryKeywords: ['salary slip generator online', 'payslip generator free', 'salary slip format PDF', 'salary slip maker', 'pay slip download', 'salary slip template India'],
@@ -4127,11 +4990,19 @@ Features include live preview, company logo upload, custom earning/deduction lin
     slug: 'whatsapp-link-generator',
     name: 'WhatsApp Link Generator',
     shortDescription: 'Create click-to-chat WhatsApp links with pre-filled messages instantly.',
-    longDescription: `Generate WhatsApp click-to-chat links (wa.me) that let anyone message you without saving your number. Perfect for businesses, freelancers, and social media profiles.
-
-Enter a phone number with country code, add an optional pre-filled message, and get your wa.me link instantly. The tool also generates the API link format for website integration, a QR code for print materials, and ready-to-use HTML button code.
-
-Supports 20+ country codes including India (+91), USA (+1), UK (+44), UAE (+971), and more. Choose from quick message templates for common scenarios like order inquiries, appointments, support, and price quotes. Share your WhatsApp link on Instagram bio, Facebook, Google My Business, or embed it on your website.`,
+    longDescription: `<p>Generate <strong>WhatsApp click-to-chat links (wa.me)</strong> that let anyone message you without saving your number. Perfect for businesses, freelancers, and social media profiles.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>wa.me Link</strong>: Instant WhatsApp chat link with optional pre-filled message — URL-encoded automatically.</li>
+<li><strong>QR Code</strong>: Generate a QR code for your WhatsApp link to use on business cards and print materials.</li>
+<li><strong>HTML Button Code</strong>: Ready-to-use HTML code for a WhatsApp chat button on your website.</li>
+<li><strong>20+ Country Codes</strong>: India (+91), USA (+1), UK (+44), UAE (+971), and more.</li>
+<li><strong>Quick Templates</strong>: Pre-built message templates for order inquiries, appointments, support, and price quotes.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for e-commerce stores, customer support teams, freelancers, and anyone adding WhatsApp to their Instagram bio, Facebook page, or website.</p>
+<h2>Privacy & Security</h2>
+<p>No data stored — your phone number and messages are never sent to any server.</p>`,
     category: 'utility-tools',
     targetKeyword: 'WhatsApp link generator',
     secondaryKeywords: ['wa.me link generator', 'WhatsApp chat link', 'click to chat WhatsApp', 'WhatsApp direct message link', 'WhatsApp link for website', 'WhatsApp QR code generator', 'WhatsApp link generator online', 'create WhatsApp link', 'WhatsApp link for Instagram bio', 'WhatsApp business link generator'],
@@ -4160,11 +5031,19 @@ Supports 20+ country codes including India (+91), USA (+1), UK (+44), UAE (+971)
     slug: 'gratuity-calculator',
     name: 'Gratuity Calculator India',
     shortDescription: 'Calculate gratuity amount under the Payment of Gratuity Act, 1972.',
-    longDescription: `Calculate your gratuity entitlement as per India's Payment of Gratuity Act, 1972. Enter your last drawn basic salary, dearness allowance, and years of service to get an instant calculation of your gratuity amount.
-
-The calculator supports both employee categories — those covered under the Act (organizations with 10+ employees, divisor = 26) and those not covered (divisor = 30). It automatically rounds up service years when the last year exceeds 6 months, as per the Act's rules.
-
-See the complete breakdown including tax implications — gratuity up to ₹20 lakh is tax-free for employees covered under the Act. The visual tax bar shows your exempt vs taxable portions. Quick presets help you estimate gratuity for common salary-tenure combinations instantly.`,
+    longDescription: `<p>Calculate your <strong>gratuity entitlement</strong> as per India's Payment of Gratuity Act, 1972. Enter your basic salary, dearness allowance, and years of service for an instant, accurate calculation.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Both Categories</strong>: Supports employees covered under the Act (divisor 26) and those not covered (divisor 30).</li>
+<li><strong>Auto Rounding</strong>: Automatically rounds up service years when the last year exceeds 6 months, as per Act rules.</li>
+<li><strong>Tax Breakdown</strong>: Shows exempt vs taxable portions — gratuity up to ₹20 lakh is tax-free under the Act.</li>
+<li><strong>Visual Tax Bar</strong>: Clear visual showing how much of your gratuity is tax-free.</li>
+<li><strong>Quick Presets</strong>: Common salary-tenure presets for instant estimates.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for employees nearing retirement or resignation who want to verify their gratuity entitlement before leaving a job.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'gratuity calculator',
     secondaryKeywords: ['gratuity calculator India', 'gratuity calculation formula', 'gratuity amount calculator', 'payment of gratuity act calculator', 'gratuity tax exemption calculator'],
@@ -4193,11 +5072,19 @@ See the complete breakdown including tax implications — gratuity up to ₹20 l
     slug: 'hra-calculator',
     name: 'HRA Exemption Calculator',
     shortDescription: 'Calculate HRA tax exemption under Section 10(13A) for salaried employees.',
-    longDescription: `Calculate your House Rent Allowance (HRA) tax exemption under Section 10(13A) of the Income Tax Act. The calculator shows you exactly how much of your HRA is tax-exempt and how much is taxable — helping you plan your tax savings effectively.
-
-HRA exemption is the minimum of three conditions: (1) Actual HRA received, (2) Rent paid minus 10% of basic salary + DA, and (3) 50% of basic + DA for metro cities or 40% for non-metro cities. Our calculator computes all three conditions and highlights which one determines your exemption.
-
-See your annual tax savings at different slab rates (20% and 30%), switch between monthly and annual views, and use quick presets for common salary brackets. Metro cities include Delhi, Mumbai, Kolkata, and Chennai — all others are non-metro at 40% rate.`,
+    longDescription: `<p>Calculate your <strong>HRA tax exemption</strong> under Section 10(13A) of the Income Tax Act. See exactly how much of your House Rent Allowance is tax-exempt and how much is taxable.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3-Condition Calculation</strong>: Computes all three HRA exemption conditions and highlights which one determines your exemption.</li>
+<li><strong>Metro vs Non-Metro</strong>: 50% of Basic+DA for Delhi, Mumbai, Kolkata, Chennai; 40% for all other cities.</li>
+<li><strong>Tax Savings</strong>: Shows annual savings at both 20% and 30% tax slab rates.</li>
+<li><strong>Monthly & Annual Views</strong>: Toggle between monthly and annual HRA figures.</li>
+<li><strong>Quick Presets</strong>: Common salary bracket presets for instant estimates.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for salaried employees deciding between old vs new tax regime, or verifying HRA deductions before submitting rent receipts to their employer.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'HRA calculator',
     secondaryKeywords: ['HRA exemption calculator', 'HRA calculator India', 'house rent allowance calculator', 'HRA tax exemption calculator', 'HRA calculator online', 'Section 10(13A) calculator', 'HRA exemption calculation online', 'HRA calculator for salaried', 'HRA calculator metro non-metro', 'HRA tax benefit calculator'],
@@ -4226,11 +5113,19 @@ See your annual tax savings at different slab rates (20% and 30%), switch betwee
     slug: 'pregnancy-calculator',
     name: 'Pregnancy Due Date Calculator',
     shortDescription: 'Calculate your baby\'s expected due date with week-by-week milestones.',
-    longDescription: `Calculate your estimated due date (EDD) using four different methods — Last Menstrual Period (LMP), conception date, IVF transfer date, or ultrasound measurements. Our Pregnancy Calculator uses Naegele's rule and medical standards to provide accurate due date estimates.
-
-See your current pregnancy week, trimester progress bar, and key milestone dates including first trimester end, anatomy scan week, full term date, and expected delivery. The week-by-week timeline shows 12 major pregnancy milestones with checkmarks for completed weeks.
-
-Supports IVF pregnancies with Day 3 and Day 5 embryo options, and ultrasound-based calculation when you know gestational age from a scan. All calculations happen in your browser — your health data is never sent to any server.`,
+    longDescription: `<p>Calculate your baby's <strong>expected due date (EDD)</strong> using four methods — Last Menstrual Period (LMP), conception date, IVF transfer date, or ultrasound measurements — using Naegele's rule and medical standards.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>4 Calculation Methods</strong>: LMP (Naegele's rule), conception date, IVF transfer (Day 3 or Day 5 embryo), and ultrasound gestational age.</li>
+<li><strong>Trimester Progress Bar</strong>: Visual progress through first, second, and third trimesters.</li>
+<li><strong>Milestone Timeline</strong>: 12 major pregnancy milestones with checkmarks for completed weeks.</li>
+<li><strong>Key Dates</strong>: First trimester end, anatomy scan week (18-20 weeks), full term date, and expected delivery.</li>
+<li><strong>IVF Support</strong>: Day 3 and Day 5 embryo transfer options for IVF pregnancies.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for expecting mothers tracking their pregnancy journey and planning appointments, scans, and preparation milestones.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations happen in your browser — your health data is never sent to any server.</p>`,
     category: 'calculators',
     targetKeyword: 'pregnancy calculator',
     secondaryKeywords: ['due date calculator', 'pregnancy due date calculator', 'pregnancy week calculator', 'expected delivery date calculator', 'EDD calculator', 'pregnancy calculator India', 'pregnancy calculator by LMP', 'pregnancy due date calculator online', 'delivery date calculator', 'how many weeks pregnant calculator'],
@@ -4259,11 +5154,19 @@ Supports IVF pregnancies with Day 3 and Day 5 embryo options, and ultrasound-bas
     slug: 'gold-price-calculator',
     name: 'Gold Jewellery Price Calculator',
     shortDescription: 'Calculate gold jewellery price with making charges, GST, and purity.',
-    longDescription: `Calculate the total price of gold jewellery in India including gold value, making charges, GST, stone charges, and discounts. Supports all purity levels — 24K (99.9%), 22K (91.6%), 18K (75%), and 14K (58.5%).
-
-Enter the current 24K gold rate per gram, select purity, enter weight in grams/tola/ounce/kg, and set making charges (percentage, per-gram, or flat). The calculator instantly shows a complete price breakdown with the effective cost per gram including all charges.
-
-Compare rates across all four purity levels side by side. Use quick weight presets (1g to 100g) and rate presets for fast estimates. Essential tool for buying gold jewellery, evaluating prices at jewellers, or planning wedding jewellery budgets in India.`,
+    longDescription: `<p>Calculate the total price of <strong>gold jewellery in India</strong> including gold value, making charges, GST, stone charges, and discounts. Supports all purity levels — 24K, 22K, 18K, and 14K.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All Purity Levels</strong>: 24K (99.9%), 22K (91.6%), 18K (75%), and 14K (58.5%) purity calculations.</li>
+<li><strong>Flexible Making Charges</strong>: Enter as percentage of gold value, per-gram rate, or flat amount.</li>
+<li><strong>Multiple Weight Units</strong>: Calculate in grams, tola, ounce, or kg.</li>
+<li><strong>Complete Breakdown</strong>: Gold value + making charges + stone charges + 3% GST + discounts.</li>
+<li><strong>Side-by-Side Comparison</strong>: Compare rates across all four purity levels simultaneously.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Essential for buying gold jewellery, evaluating prices at jewellers, or planning wedding jewellery budgets in India.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'gold price calculator',
     secondaryKeywords: ['gold jewellery price calculator', 'gold rate calculator India', 'gold making charges calculator', 'gold price with GST calculator', '22k gold price calculator', 'gold price per gram calculator'],
@@ -4292,11 +5195,19 @@ Compare rates across all four purity levels side by side. Use quick weight prese
     slug: 'ifsc-code-finder',
     name: 'IFSC Code Finder',
     shortDescription: 'Find bank branch details by IFSC code — supports NEFT, RTGS, IMPS, UPI.',
-    longDescription: `Look up any Indian bank branch details using its IFSC code. Enter the 11-character IFSC code and instantly get the bank name, branch name, full address, city, district, state, MICR code, and supported payment methods (NEFT, RTGS, IMPS, UPI).
-
-Powered by Razorpay's IFSC API with data for 150,000+ bank branches across India. The tool validates the IFSC format (AAAA0NNNNNN) and provides quick-access buttons for popular banks — SBI, HDFC, ICICI, Axis, PNB, BOB, Kotak, and more.
-
-Essential for verifying bank details before making fund transfers, filling out forms, or setting up direct deposits. Copy any detail with one click. Works with all banks registered with RBI.`,
+    longDescription: `<p>Look up any Indian bank branch details using its <strong>IFSC code</strong>. Enter the 11-character IFSC code and instantly get the bank name, branch, full address, MICR code, and supported payment methods.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>150,000+ Branches</strong>: Powered by Razorpay's IFSC API with comprehensive data for all RBI-registered banks.</li>
+<li><strong>Complete Details</strong>: Bank name, branch name, address, city, district, state, MICR code, NEFT/RTGS/IMPS/UPI support.</li>
+<li><strong>IFSC Validation</strong>: Validates the AAAA0NNNNNN format before lookup.</li>
+<li><strong>Popular Bank Shortcuts</strong>: Quick-access buttons for SBI, HDFC, ICICI, Axis, PNB, BOB, Kotak, and more.</li>
+<li><strong>One-Click Copy</strong>: Copy IFSC code, MICR code, or any other detail instantly.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Essential for verifying bank details before fund transfers, filling out online forms, or setting up direct deposits and salary transfers.</p>
+<h2>Privacy & Security</h2>
+<p>No data stored — your searches are not logged or tracked.</p>`,
     category: 'utility-tools',
     targetKeyword: 'IFSC code finder',
     secondaryKeywords: ['IFSC code search', 'bank IFSC code', 'IFSC code lookup', 'find IFSC code by bank name', 'IFSC MICR code finder', 'bank branch details by IFSC'],
@@ -4325,11 +5236,19 @@ Essential for verifying bank details before making fund transfers, filling out f
     slug: 'numerology-calculator',
     name: 'Numerology Calculator',
     shortDescription: 'Discover your Life Path, Destiny, Soul & Personality numbers instantly.',
-    longDescription: `Calculate your core numerology numbers using the Pythagorean system — the most widely used numerology method worldwide. Enter your full name and date of birth to discover five key numbers that reveal your life purpose, inner desires, and personality.
-
-The calculator shows: Life Path Number (from DOB — your life journey), Destiny Number (from full name — your purpose), Soul Urge Number (from vowels — your inner desires), Personality Number (from consonants — how others see you), and Birthday Number (special talent).
-
-See the letter-by-letter breakdown with color-coded vowels and consonants, detailed interpretations for each number including traits, strengths, challenges, and ideal careers. Supports Master Numbers (11, 22, 33) with special interpretations. For entertainment and self-reflection.`,
+    longDescription: `<p>Calculate your core <strong>numerology numbers</strong> using the Pythagorean system. Enter your full name and date of birth to discover five key numbers that reveal your life purpose, inner desires, and personality.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>5 Core Numbers</strong>: Life Path (from DOB), Destiny (full name), Soul Urge (vowels), Personality (consonants), and Birthday Number.</li>
+<li><strong>Letter-by-Letter Breakdown</strong>: Color-coded vowels and consonants showing how each number is derived.</li>
+<li><strong>Detailed Interpretations</strong>: Traits, strengths, challenges, and ideal careers for each number.</li>
+<li><strong>Master Numbers</strong>: Special interpretations for Master Numbers 11, 22, and 33.</li>
+<li><strong>Pythagorean System</strong>: The most widely used numerology method worldwide.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for anyone curious about numerology, self-reflection, or exploring personality insights through name and birth date analysis. For entertainment purposes.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'numerology calculator',
     secondaryKeywords: ['numerology calculator by name', 'life path number calculator', 'destiny number calculator', 'numerology name calculator', 'name numerology calculator', 'Pythagorean numerology calculator'],
@@ -4358,11 +5277,19 @@ See the letter-by-letter breakdown with color-coded vowels and consonants, detai
     slug: 'ppf-calculator',
     name: 'PPF Calculator India',
     shortDescription: 'Calculate PPF maturity amount with year-by-year growth and tax savings.',
-    longDescription: `Calculate the maturity amount of your Public Provident Fund (PPF) investment with our comprehensive PPF Calculator. Enter your annual deposit (₹500 to ₹1,50,000), interest rate, and tenure to see total invested amount, interest earned, and final maturity value.
-
-The calculator features a visual donut chart showing the investment vs interest split, year-by-year breakdown table, and growth progress bar. Current PPF interest rate is 7.1% p.a. (Q4 FY 2025-26), compounded annually.
-
-PPF is one of India's safest and most tax-efficient investment options with EEE (Exempt-Exempt-Exempt) status — your deposit qualifies for Section 80C deduction, interest earned is tax-free, and the maturity amount is also completely tax-free. Minimum tenure is 15 years, extendable in 5-year blocks.`,
+    longDescription: `<p>Calculate the maturity amount of your <strong>PPF (Public Provident Fund)</strong> investment. Enter annual deposit, interest rate, and tenure to see total invested amount, interest earned, and final maturity value.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Current Rate Pre-filled</strong>: 7.1% p.a. (Q4 FY 2025-26) pre-loaded, adjustable for scenario planning.</li>
+<li><strong>Visual Donut Chart</strong>: Investment vs interest split displayed visually.</li>
+<li><strong>Year-by-Year Breakdown</strong>: Annual balance, contribution, and interest table for all 15+ years.</li>
+<li><strong>EEE Tax Status</strong>: Shows Section 80C deduction benefit and confirms tax-free interest and maturity.</li>
+<li><strong>Extension Planning</strong>: Plan returns for 15, 20, 25-year tenures (5-year extension blocks).</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for long-term savers, tax planners, and anyone building a safe, government-backed retirement corpus with tax-free returns.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'PPF calculator',
     secondaryKeywords: ['PPF calculator India', 'PPF interest calculator', 'PPF maturity calculator', 'public provident fund calculator', 'PPF returns calculator', 'PPF calculator with yearly breakdown', 'PPF calculator online', 'PPF calculator 2025', 'PPF maturity amount calculator', 'PPF account calculator India'],
@@ -4391,11 +5318,19 @@ PPF is one of India's safest and most tax-efficient investment options with EEE 
     slug: 'mutual-fund-calculator',
     name: 'Mutual Fund Returns Calculator',
     shortDescription: 'Calculate SIP and lumpsum mutual fund returns with growth visualization.',
-    longDescription: `Calculate expected returns on mutual fund investments with our comprehensive calculator. Supports three modes — SIP (monthly investment), Lumpsum (one-time investment), and SIP + Lumpsum (combined strategy).
-
-Enter your investment amount, expected annual return rate, and investment period to see total invested amount, estimated returns, final corpus value, and wealth multiplier. The calculator features interactive sliders, visual growth bar chart, year-by-year breakdown table, and comparison metrics.
-
-Browse fund category guidelines — Large Cap (10-12%), Mid Cap (12-15%), Small Cap (15-18%), Index Fund (10-13%), ELSS (12-15%), and Debt Fund (6-8%) — to set realistic return expectations. Understanding the power of compounding helps you make informed investment decisions for your financial goals.`,
+    longDescription: `<p>Calculate expected returns on <strong>mutual fund investments</strong> with our comprehensive calculator. Supports SIP (monthly investment), Lumpsum (one-time), and SIP + Lumpsum combined strategy.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Investment Modes</strong>: SIP, Lumpsum, or SIP + Lumpsum combined strategy.</li>
+<li><strong>Visual Growth Chart</strong>: Bar chart showing investment vs returns over time.</li>
+<li><strong>Wealth Multiplier</strong>: See how many times your investment grows.</li>
+<li><strong>Year-by-Year Breakdown</strong>: Annual corpus and returns table for the full investment period.</li>
+<li><strong>Fund Category Guidelines</strong>: Large Cap (10-12%), Mid Cap (12-15%), Small Cap (15-18%), Index (10-13%), ELSS (12-15%), Debt (6-8%) reference rates.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for investors planning SIPs, evaluating lumpsum opportunities, or understanding the power of compounding for long-term financial goals.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'mutual fund calculator',
     secondaryKeywords: ['mutual fund returns calculator', 'mutual fund SIP calculator', 'lumpsum calculator', 'mutual fund calculator India', 'investment return calculator', 'SIP lumpsum calculator'],
@@ -4424,7 +5359,19 @@ Browse fund category guidelines — Large Cap (10-12%), Mid Cap (12-15%), Small 
     slug: 'greeting-card-maker',
     name: 'Greeting Card Maker',
     shortDescription: 'Create beautiful greeting cards online. 50+ templates for Birthday, Wedding, Diwali, Anniversary & more. Download PNG or share via link.',
-    longDescription: `Create stunning greeting cards online for free with 50+ professionally designed templates. Choose from categories like Birthday, Wedding, Anniversary, Diwali, Holi, New Year, Valentine's Day, Mother's Day, Eid, Christmas, and many more.\n\nCustomize every detail — add the recipient's name, write a personal message, pick from 8 font styles, and choose accent colors. The live preview updates in real-time so you see exactly what your card looks like before downloading.\n\nShare your card instantly via a unique link (no sign-up required) or download as a high-quality PNG image. Everything runs in your browser — your data is never stored on any server. Perfect for sending wishes to loved ones via WhatsApp, email, or social media.`,
+    longDescription: `<p>Create stunning <strong>greeting cards online</strong> for free with 50+ professionally designed templates — Birthday, Wedding, Anniversary, Diwali, Holi, New Year, Valentine's Day, Eid, Christmas, and more.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>50+ Templates</strong>: Professionally designed cards across 15+ occasion categories.</li>
+<li><strong>Full Customization</strong>: Add recipient name, personal message, choose from 8 font styles and accent colors.</li>
+<li><strong>Live Preview</strong>: Real-time preview updates as you customize.</li>
+<li><strong>Share via Link</strong>: Generate a unique URL to share your card on WhatsApp, email, or social media — no download needed.</li>
+<li><strong>PNG Download</strong>: High-quality PNG image ready to save or print.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for sending digital wishes to family and friends for birthdays, festivals, and special occasions via WhatsApp, Instagram, or email.</p>
+<h2>Privacy & Security</h2>
+<p>Runs in your browser — no data stored on any server. Share links encode card data in the URL itself.</p>`,
     category: 'utility-tools',
     targetKeyword: 'greeting card maker online free',
     secondaryKeywords: [
@@ -4461,17 +5408,19 @@ Browse fund category guidelines — Large Cap (10-12%), Mid Cap (12-15%), Small 
     slug: 'cgpa-to-percentage',
     name: 'CGPA to Percentage Converter',
     shortDescription: 'Convert CGPA to percentage for 10-point (Indian), 4-point (US), 5-point, and 7-point (Australian) grading scales.',
-    longDescription: `Convert your CGPA to percentage instantly with support for all major grading systems worldwide. Whether you follow the Indian 10-point scale, the US 4.0 GPA system, the 5-point scale, or the Australian 7-point scale — get accurate percentage equivalents in one click.
-
-**Key features:**
-- **Multiple grading scales**: 10-point (CBSE, VTU, Anna University), 4-point (US GPA), 5-point, and 7-point (Australian).
-- **Live conversion**: Adjust CGPA with a slider or number input and see percentage update in real-time.
-- **Grade letter display**: See your grade (A+, A, B+, etc.) with color coding.
-- **Cross-conversion table**: View equivalent GPA on all other scales simultaneously.
-- **Grade chart**: Full grade range table for the selected scale.
-- **SGPA to CGPA calculator**: Enter semester-wise SGPAs to compute cumulative CGPA and equivalent percentage.
-
-Uses the standard Indian formula (CGPA x 9.5) and standard mapping tables for other systems. 100% browser-based — no data stored.`,
+    longDescription: `<p>Convert your <strong>CGPA to percentage</strong> instantly with support for all major grading systems — Indian 10-point, US 4.0 GPA, 5-point, and Australian 7-point scales.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All Grading Scales</strong>: 10-point (CBSE, VTU, Anna University), 4-point (US GPA), 5-point, and 7-point (Australian).</li>
+<li><strong>Live Conversion</strong>: Slider and number input with real-time percentage update.</li>
+<li><strong>Grade Letter Display</strong>: Color-coded grade (A+, A, B+, etc.) for your CGPA.</li>
+<li><strong>Cross-Conversion Table</strong>: See your equivalent GPA on all other scales simultaneously.</li>
+<li><strong>SGPA to CGPA Calculator</strong>: Enter semester-wise SGPAs to compute your cumulative CGPA.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for Indian students applying to universities abroad, converting grades for job applications, or calculating cumulative CGPA from semester results.</p>
+<h2>Privacy & Security</h2>
+<p>100% browser-based — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'cgpa to percentage',
     secondaryKeywords: ['cgpa to percentage calculator', 'gpa to percentage', 'cgpa converter', 'sgpa to cgpa calculator', '10 point cgpa to percentage', 'cbse cgpa to percentage', 'us gpa to percentage', 'australian gpa to percentage'],
@@ -4499,11 +5448,19 @@ Uses the standard Indian formula (CGPA x 9.5) and standard mapping tables for ot
     slug: 'favicon-generator',
     name: 'Favicon Generator',
     shortDescription: 'Generate favicons from an image or text/emoji. Download PNGs in all standard sizes.',
-    longDescription: `Create perfect favicons for your website from any image or custom text/emoji. Upload a JPG, PNG, SVG, or WebP image, or design one from scratch using text characters and emojis with full control over colors, font, and border radius.
-
-The tool generates favicons in all standard sizes: 16x16, 32x32, 48x48, 180x180 (Apple Touch Icon), 192x192, and 512x512 (PWA). Download individual PNG files and copy the ready-to-use HTML meta tags for your website's <head> section.
-
-Everything runs in your browser using the Canvas API — no uploads to any server. Your images stay private and processing is instant.`,
+    longDescription: `<p>Create perfect <strong>favicons for your website</strong> from any image or custom text/emoji — generate all standard sizes with one tool.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>From Image</strong>: Upload JPG, PNG, SVG, or WebP and auto-crop to favicon proportions.</li>
+<li><strong>From Text/Emoji</strong>: Design from scratch with any character or emoji — choose colors, font, and border radius.</li>
+<li><strong>All Standard Sizes</strong>: 16x16, 32x32, 48x48, 180x180 (Apple Touch), 192x192, and 512x512 (PWA).</li>
+<li><strong>HTML Meta Tags</strong>: Ready-to-copy HTML meta tags for your website's &lt;head&gt; section.</li>
+<li><strong>Individual Downloads</strong>: Download each size as a separate PNG file.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for web developers, indie makers, and anyone launching a website who needs a complete favicon set in minutes.</p>
+<h2>Privacy & Security</h2>
+<p>Runs in your browser using Canvas API — no uploads to any server, instant processing.</p>`,
     category: 'image-tools',
     targetKeyword: 'favicon generator',
     secondaryKeywords: ['favicon maker', 'favicon from image', 'favicon from text', 'favicon creator online', 'generate favicon png'],
@@ -4532,13 +5489,19 @@ Everything runs in your browser using the Canvas API — no uploads to any serve
     slug: 'attendance-calculator',
     name: 'Attendance Calculator',
     shortDescription: 'Check your attendance percentage and plan how many classes to attend or skip.',
-    longDescription: `A must-have tool for college students to track and plan attendance. Two powerful modes:
-
-**Check Attendance**: Enter total classes and classes attended to instantly see your current attendance percentage with a color-coded circular progress chart. Status indicators show whether you are in the Safe (>=75%), Warning (65-75%), or Danger (<65%) zone.
-
-**Plan Attendance**: Set a target percentage (75%, 80%, 85%, or 90%) and find out exactly how many more classes you need to attend to reach your goal — or how many you can safely skip while staying above the threshold.
-
-Visual SVG donut chart, real-time calculations, and quick-reference stats cards make it easy to stay on top of your attendance.`,
+    longDescription: `<p>A must-have <strong>attendance calculator</strong> for college students to track and plan classes. Two powerful modes in one tool.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Check Attendance Mode</strong>: Enter total classes and attended classes — instantly see your percentage with a color-coded progress chart (Safe ≥75%, Warning 65-75%, Danger &lt;65%).</li>
+<li><strong>Plan Attendance Mode</strong>: Set a target (75%, 80%, 85%, 90%) and find exactly how many classes you must attend or can safely skip.</li>
+<li><strong>Visual Donut Chart</strong>: SVG progress chart with real-time updates as you enter values.</li>
+<li><strong>Status Zones</strong>: Clear Safe, Warning, and Danger indicators with actionable guidance.</li>
+<li><strong>Quick Stats Cards</strong>: Key numbers at a glance — current %, classes needed, classes can skip.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for college and university students in India who need to maintain 75% attendance for exam eligibility.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'attendance calculator',
     secondaryKeywords: ['college attendance calculator', 'attendance percentage calculator', 'how many classes can I skip', 'attendance tracker', '75 percent attendance calculator'],
@@ -4565,11 +5528,19 @@ Visual SVG donut chart, real-time calculations, and quick-reference stats cards 
     slug: 'binary-hex-octal-converter',
     name: 'Binary, Hex & Octal Converter',
     shortDescription: 'Convert numbers between binary, decimal, octal, and hexadecimal instantly.',
-    longDescription: `Convert numbers between binary (base 2), decimal (base 10), octal (base 8), and hexadecimal (base 16) in real time. Type in any field and all other representations update instantly — no button clicks needed.
-
-Supports arbitrarily large numbers using BigInt. See bit-level details including nibble and byte groupings, total bits needed, and whether the number fits in 8-bit, 16-bit, 32-bit, or 64-bit. Quick example chips let you explore common values like 255, 1024, and 65535.
-
-Also includes a Text to Binary section: type any text and see each character's ASCII code, binary, and hex representation in a neat table. Perfect for programmers, students, and anyone working with number systems.`,
+    longDescription: `<p>Convert numbers between <strong>binary, decimal, octal, and hexadecimal</strong> in real time. Type in any field and all other representations update instantly — no button clicks needed.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Real-Time Conversion</strong>: All four bases (binary, decimal, octal, hex) update simultaneously as you type.</li>
+<li><strong>BigInt Support</strong>: Handles arbitrarily large numbers beyond the 64-bit limit.</li>
+<li><strong>Bit Analysis</strong>: Shows nibble and byte groupings, total bits needed, and 8/16/32/64-bit fit status.</li>
+<li><strong>Quick Examples</strong>: Chips for common values (255, 1024, 65535) for quick exploration.</li>
+<li><strong>Text to Binary</strong>: Convert any text to see each character's ASCII code, binary, and hex in a table.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for programmers working with low-level data, CS students learning number systems, and anyone debugging binary or hex values.</p>
+<h2>Privacy & Security</h2>
+<p>All conversions run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'converters',
     targetKeyword: 'binary to hex converter',
     secondaryKeywords: ['binary to decimal', 'hex to binary', 'octal converter', 'number base converter', 'decimal to binary', 'hex to decimal', 'binary translator', 'base converter'],
@@ -4597,11 +5568,19 @@ Also includes a Text to Binary section: type any text and see each character's A
     slug: 'blur-face-in-photo',
     name: 'Blur Face in Photo',
     shortDescription: 'Blur faces or sensitive areas in photos online. Draw rectangles to select regions, adjust blur intensity, and download instantly.',
-    longDescription: `Protect privacy by blurring faces, license plates, or any sensitive areas in your photos. Simply upload an image, draw rectangles over the areas you want to blur, adjust the blur intensity, and download the result.
-
-Select multiple regions to blur at once. Each region is shown as a highlighted overlay so you can see exactly what will be blurred. Use the blur intensity slider to control the strength from subtle (5px) to heavy (50px). Undo individual regions or clear them all.
-
-Everything runs 100% in your browser using the Canvas API — no images are uploaded to any server. Your photos remain completely private and processing is instant.`,
+    longDescription: `<p>Protect privacy by <strong>blurring faces, license plates, or any sensitive areas</strong> in your photos. Draw rectangles to select regions, adjust blur intensity, and download instantly.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multiple Regions</strong>: Draw as many blur rectangles as you need — each numbered and independently removable.</li>
+<li><strong>Adjustable Intensity</strong>: Blur strength slider from subtle (5px) to heavy (50px) for full control.</li>
+<li><strong>Live Overlay</strong>: Highlighted overlay shows exactly which regions will be blurred before applying.</li>
+<li><strong>Undo & Clear</strong>: Undo last region, remove individual regions, or clear all selections.</li>
+<li><strong>PNG & JPEG Download</strong>: Download the blurred result in lossless PNG or smaller JPEG format.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for protecting privacy in social media photos, blurring sensitive documents, censoring license plates, or anonymizing any personal information in images.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser using Canvas API — no images are uploaded to any server, completely private.</p>`,
     category: 'image-tools',
     targetKeyword: 'blur face in photo online',
     secondaryKeywords: ['blur face online', 'blur photo face', 'blur image area', 'pixelate face', 'censor photo', 'blur sensitive area in image'],
@@ -4633,13 +5612,19 @@ Everything runs 100% in your browser using the Canvas API — no images are uplo
     slug: 'certificate-maker',
     name: 'Certificate Maker',
     shortDescription: 'Create professional certificates online for free. 5 templates, PNG download — no signup.',
-    longDescription: `The ToolsArena Certificate Maker is a free, no-signup tool that lets you create beautiful, professional certificates in seconds. Whether you need a Certificate of Achievement, Appreciation, Completion, Participation, Excellence, or Training — this tool has you covered.
-
-Choose from 5 professionally designed templates: Classic (gold), Modern (blue), Elegant (green), Corporate (navy), and Creative (purple). Each template features ornamental borders, decorative accents, and elegant typography that looks like a real printed certificate.
-
-Fill in the recipient name, certificate title, description, organization name, date, signatory details, and an optional certificate ID (auto-generated or custom). The live preview updates in real-time as you type, showing exactly how your certificate will look.
-
-Everything runs 100% in your browser — your data never leaves your device. Download as a high-resolution PNG (2x scale) ready for printing or digital sharing. Perfect for schools, companies, training programs, workshops, and events.`,
+    longDescription: `<p>Create beautiful, professional <strong>certificates online for free</strong> in seconds. Choose from 5 elegant templates and 6 certificate types — Achievement, Appreciation, Completion, Participation, Excellence, and Training.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>5 Templates</strong>: Classic (gold), Modern (blue), Elegant (green), Corporate (navy), and Creative (purple) with ornamental borders and elegant typography.</li>
+<li><strong>6 Certificate Types</strong>: Achievement, Appreciation, Completion, Participation, Excellence, and Training.</li>
+<li><strong>Live Preview</strong>: Real-time preview updates as you fill in the form.</li>
+<li><strong>Custom Certificate ID</strong>: Auto-generated or enter your own custom certificate number.</li>
+<li><strong>High-Resolution Download</strong>: PNG at 2x scale — print-ready at A4 landscape ratio.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for schools, companies, training programs, workshops, and events needing professional certificates without design software.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your data never leaves your device. No signup required.</p>`,
     category: 'converters',
     targetKeyword: 'certificate maker online free',
     secondaryKeywords: ['certificate generator', 'certificate of achievement maker', 'free certificate maker', 'online certificate creator', 'certificate template generator', 'certificate of completion maker', 'certificate of appreciation maker', 'certificate of participation maker', 'professional certificate maker'],
@@ -4669,11 +5654,19 @@ Everything runs 100% in your browser — your data never leaves your device. Dow
     slug: 'exif-metadata-remover',
     name: 'EXIF Metadata Remover',
     shortDescription: 'Remove hidden EXIF metadata from images — strip GPS location, camera info, timestamps, and more.',
-    longDescription: `Protect your privacy by removing hidden EXIF metadata from your photos before sharing them online. EXIF data embedded in JPEG images can reveal your GPS location, camera make and model, date and time, software used, and other personal information.
-
-This tool re-encodes your images using the Canvas API, which inherently strips all embedded metadata including EXIF, IPTC, XMP, GPS coordinates, camera info, and timestamps. Choose JPEG (with adjustable quality) or PNG output format. Process multiple images at once in batch mode.
-
-Everything runs 100% in your browser — your images are never uploaded to any server and never leave your device.`,
+    longDescription: `<p>Protect your privacy by removing hidden <strong>EXIF metadata from your photos</strong> before sharing online. EXIF data can reveal your GPS location, camera model, date/time, and other personal information.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Complete Metadata Strip</strong>: Removes EXIF, IPTC, XMP, GPS coordinates, camera info, and timestamps.</li>
+<li><strong>Batch Processing</strong>: Process multiple images at once in a single session.</li>
+<li><strong>Output Format Choice</strong>: Download as JPEG (with adjustable quality) or lossless PNG.</li>
+<li><strong>Canvas Re-encoding</strong>: Re-encodes images via HTML5 Canvas, inherently stripping all embedded metadata.</li>
+<li><strong>Instant Processing</strong>: No waiting — results are ready immediately after upload.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for anyone sharing photos on social media, journalists protecting source locations, and privacy-conscious users who don't want GPS or device information embedded in their images.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your images are never uploaded to any server and never leave your device.</p>`,
     category: 'image-tools',
     targetKeyword: 'exif metadata remover',
     secondaryKeywords: ['remove exif data', 'strip metadata from image', 'remove gps from photo', 'image metadata remover online', 'exif remover', 'photo metadata cleaner', 'remove image metadata'],
@@ -4702,11 +5695,19 @@ Everything runs 100% in your browser — your images are never uploaded to any s
     slug: 'robots-txt-generator',
     name: 'Robots.txt Generator',
     shortDescription: 'Generate a valid robots.txt file to control search engine crawling of your website.',
-    longDescription: `Create a production-ready robots.txt file with an intuitive visual editor. Add multiple user-agent groups with Allow/Disallow rules, set crawl-delay, and specify sitemap URLs.
-
-Choose from quick presets — Allow All, Block All, Block AI Bots (GPTBot, ChatGPT-User, CCBot, Google-Extended), Standard, or WordPress Default — or build custom rules from scratch. The live preview updates in real time as you configure rules.
-
-Copy the output to your clipboard or download it as a robots.txt file. Built-in validation warns you about conflicting rules, and the syntax guide explains every directive.`,
+    longDescription: `<p>Create a production-ready <strong>robots.txt file</strong> with an intuitive visual editor — control which pages search engine crawlers can or cannot access on your website.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Quick Presets</strong>: Allow All, Block All, Block AI Bots (GPTBot, ChatGPT-User, CCBot, Google-Extended), Standard, and WordPress Default.</li>
+<li><strong>Custom Rules</strong>: Add multiple user-agent groups with Allow/Disallow paths, crawl-delay, and sitemap URLs.</li>
+<li><strong>Live Preview</strong>: See your robots.txt output update in real time as you configure rules.</li>
+<li><strong>Validation</strong>: Built-in warnings for conflicting rules.</li>
+<li><strong>Copy & Download</strong>: Copy to clipboard or download as a robots.txt file.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for SEO professionals, web developers, and website owners who want to control search engine and AI bot crawling without manually writing syntax.</p>
+<h2>Privacy & Security</h2>
+<p>All generation runs in your browser — no data stored, no signup required.</p>`,
     category: 'seo-tools',
     targetKeyword: 'robots txt generator',
     secondaryKeywords: ['robots.txt generator', 'robots txt file generator', 'create robots txt', 'robots txt maker', 'block ai bots robots txt', 'wordpress robots txt'],
@@ -4735,13 +5736,19 @@ Copy the output to your clipboard or download it as a robots.txt file. Built-in 
     slug: 'aspect-ratio-calculator',
     name: 'Aspect Ratio Calculator',
     shortDescription: 'Calculate, simplify, and resize aspect ratios for images, videos, and screens.',
-    longDescription: `Calculate and convert aspect ratios instantly with our free Aspect Ratio Calculator. Two powerful modes help you work with any ratio:
-
-**Calculate Ratio**: Enter width and height to get the simplified aspect ratio (e.g., 1920x1080 = 16:9), decimal value, and percentage. A visual preview shows the proportional rectangle, and the tool highlights matching standard ratios like 16:9, 4:3, 1:1, and more.
-
-**Resize by Ratio**: Select a preset ratio (16:9, 4:3, 1:1, 21:9, 3:2, 9:16, etc.) or use a custom ratio, enter one dimension, and the other calculates automatically. Lock/unlock width or height to control which dimension you set.
-
-Includes a quick-reference table of common aspect ratios with names, use cases, and example resolutions. Click any ratio to instantly use it in the calculator. Perfect for video editors, photographers, designers, and developers working with responsive layouts.`,
+    longDescription: `<p>Calculate and convert <strong>aspect ratios</strong> instantly. Two powerful modes help you work with any ratio — check what ratio your dimensions are, or calculate missing dimensions from a known ratio.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Calculate Ratio Mode</strong>: Enter width and height to get the simplified ratio (e.g., 1920x1080 = 16:9), decimal value, and matching standard ratios.</li>
+<li><strong>Resize by Ratio Mode</strong>: Pick a preset ratio (16:9, 4:3, 1:1, 21:9, 3:2, 9:16) or custom, enter one dimension, the other calculates automatically.</li>
+<li><strong>Visual Preview</strong>: Proportional rectangle preview for the calculated ratio.</li>
+<li><strong>Ratio Reference Table</strong>: Common ratios with names, use cases, and example resolutions — click any to use it.</li>
+<li><strong>Lock Dimension</strong>: Lock/unlock width or height to control which dimension you're setting.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for video editors, photographers, UI designers, and developers working with responsive layouts, canvas sizes, or social media image dimensions.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'aspect ratio calculator',
     secondaryKeywords: ['aspect ratio converter', 'screen ratio calculator', 'video aspect ratio', 'image aspect ratio', '16:9 calculator', 'resize aspect ratio'],
@@ -4768,11 +5775,19 @@ Includes a quick-reference table of common aspect ratios with names, use cases, 
     slug: 'barcode-generator',
   name: 'Barcode Generator',
   shortDescription: 'Generate Code 128, Code 39, and EAN-13 barcodes instantly in your browser.',
-  longDescription: `Generate professional barcodes online with our free Barcode Generator. Supports three popular formats: Code 128 (full ASCII alphanumeric), Code 39 (letters and numbers), and EAN-13 (13-digit product codes).
-
-Customize bar width, height, colors, and toggle text display below the barcode. Download as PNG or copy to clipboard. Batch mode lets you generate multiple barcodes at once by entering one value per line.
-
-Everything runs locally in your browser using the Canvas API — no data is uploaded to any server. Your barcode data stays completely private.`,
+  longDescription: `<p>Generate professional <strong>barcodes online</strong> for free. Supports Code 128 (full ASCII), Code 39 (alphanumeric), and EAN-13 (13-digit product codes) — customizable and instantly downloadable.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Formats</strong>: Code 128 (most versatile), Code 39 (letters and numbers), and EAN-13 (retail product barcodes with check digit).</li>
+<li><strong>Full Customization</strong>: Adjust bar width, height, foreground/background colors, and toggle human-readable text below the barcode.</li>
+<li><strong>Batch Mode</strong>: Enter multiple values (one per line) to generate all barcodes simultaneously.</li>
+<li><strong>Download & Copy</strong>: Save as PNG or copy to clipboard for immediate use.</li>
+<li><strong>Real-Time Preview</strong>: Barcode updates instantly as you type.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for product labeling, inventory management, library systems, shipping labels, and developers testing barcode scanning applications.</p>
+<h2>Privacy & Security</h2>
+<p>Runs locally in your browser using Canvas API — no data uploaded to any server, completely private.</p>`,
   category: 'developer-tools',
   targetKeyword: 'barcode generator',
   secondaryKeywords: ['barcode maker', 'code 128 generator', 'ean-13 barcode', 'code 39 barcode', 'free barcode generator online', 'barcode creator'],
@@ -4801,11 +5816,19 @@ Everything runs locally in your browser using the Canvas API — no data is uplo
     slug: 'privacy-policy-generator',
   name: 'Privacy Policy Generator',
   shortDescription: 'Generate a free, comprehensive privacy policy for your website or app in seconds.',
-  longDescription: `Create a professional, legally-sounding privacy policy tailored to your website or application. Fill in your company details, select which types of data you collect, and toggle compliance sections for GDPR, CCPA, and COPPA.
-
-The generated policy covers all essential sections including information collection, data usage, sharing practices, security measures, and user rights. Customize it for your specific needs — whether you collect personal info, cookies, payment data, location data, or use third-party analytics services like Google Analytics and Facebook Pixel.
-
-Download as .txt or .html, or copy to clipboard instantly. The tool generates a comprehensive policy with a disclaimer that it is not legal advice — always consult a qualified attorney for your specific situation.`,
+  longDescription: `<p>Generate a professional <strong>privacy policy</strong> tailored to your website or application in minutes. Fill in your details, select what data you collect, and toggle compliance sections.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>GDPR, CCPA & COPPA</strong>: Toggle compliance sections for EU, California, and children's privacy laws.</li>
+<li><strong>Data Collection Options</strong>: Select what you collect — personal info, cookies, payment data, location, analytics (Google Analytics, Facebook Pixel).</li>
+<li><strong>All Essential Sections</strong>: Information collection, data usage, sharing practices, security measures, and user rights.</li>
+<li><strong>Download & Copy</strong>: Save as .txt or .html, or copy to clipboard instantly.</li>
+<li><strong>Free & Unlimited</strong>: Generate unlimited policies with no signup.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for website owners, app developers, and SaaS founders who need a comprehensive privacy policy template quickly. Always consult a qualified attorney for legal advice specific to your situation.</p>
+<h2>Privacy & Security</h2>
+<p>All generation runs in your browser — no data stored on any server.</p>`,
   category: 'seo-tools',
   targetKeyword: 'privacy policy generator',
   secondaryKeywords: ['free privacy policy generator', 'website privacy policy generator', 'privacy policy template', 'GDPR privacy policy generator', 'CCPA privacy policy generator', 'online privacy policy maker'],
@@ -4834,11 +5857,19 @@ Download as .txt or .html, or copy to clipboard instantly. The tool generates a 
     slug: 'terms-and-conditions-generator',
     name: 'Terms & Conditions Generator',
     shortDescription: 'Generate comprehensive terms and conditions for your website, app or SaaS. Free template with all essential clauses.',
-    longDescription: `Generate professional Terms & Conditions (Terms of Service) for your website, mobile app, e-commerce store, or SaaS product. Fill in your business details, select applicable clauses, and get a comprehensive legal document in minutes.
-
-Choose which sections to include: user accounts, payments & refunds, intellectual property, user-generated content, prohibited activities, limitation of liability, termination, governing law, dispute resolution, and more.
-
-The generated document uses standard legal language and covers all essential clauses. Download as HTML or plain text, or copy to clipboard. While comprehensive, we recommend consulting a legal professional for your specific jurisdiction. Completely free with no signup.`,
+    longDescription: `<p>Generate professional <strong>Terms & Conditions</strong> (Terms of Service) for your website, mobile app, e-commerce store, or SaaS product. Fill in your business details, select clauses, and get a comprehensive legal document in minutes.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Customizable Clauses</strong>: Toggle user accounts, payments & refunds, intellectual property, user-generated content, prohibited activities, limitation of liability, termination, governing law, and more.</li>
+<li><strong>Multiple Site Types</strong>: Blog, e-commerce, SaaS, app, marketplace — each with relevant default clauses.</li>
+<li><strong>Standard Legal Language</strong>: Professionally worded to cover all essential legal bases.</li>
+<li><strong>Download & Copy</strong>: Save as HTML or plain text, or copy to clipboard.</li>
+<li><strong>Free & Unlimited</strong>: Generate unlimited T&C documents with no signup.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for website owners, app developers, and SaaS founders who need T&C documentation quickly. Consulting a legal professional for jurisdiction-specific advice is recommended.</p>
+<h2>Privacy & Security</h2>
+<p>All generation runs in your browser — no data stored on any server.</p>`,
     category: 'utility-tools',
     targetKeyword: 'terms and conditions generator',
     secondaryKeywords: ['terms and conditions generator free', 'terms of service generator', 'terms and conditions template', 'terms of use generator', 'tos generator', 'free terms and conditions maker', 'website terms generator', 'terms and conditions for website'],
@@ -4866,13 +5897,19 @@ The generated document uses standard legal language and covers all essential cla
     slug: 'rent-agreement-generator',
     name: 'Rent Agreement Generator',
     shortDescription: 'Generate legally formatted rent agreements for India. All states, customizable clauses, free PDF download.',
-    longDescription: `Create professional rent agreements (lease deeds) for any Indian state in minutes. Our Rent Agreement Generator produces legally formatted documents with all essential clauses — landlord/tenant details, property information, rent & deposit terms, lock-in period, notice period, and more.
-
-Customize every aspect: choose property type (apartment, house, room, shop, office), furnishing status, maintenance terms, annual increment, payment mode, and additional clauses like pets, parking, sub-letting, and smoking policy. Add unlimited custom clauses to suit your specific needs.
-
-State-specific stamp duty information is displayed for all major Indian states. Download your agreement as a professional PDF or plain text — ready to print on stamp paper. Aadhaar numbers are automatically masked (XXXX-XXXX-1234) for privacy protection.
-
-Everything runs 100% in your browser — no data is uploaded to any server. Your personal details, Aadhaar, PAN, and financial information stay completely private on your device. No signup, no registration, no limits.`,
+    longDescription: `<p>Create professional <strong>rent agreements</strong> for any Indian state in minutes — legally formatted documents with all essential clauses ready to print on stamp paper.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Complete Details</strong>: Landlord/tenant info, property details, rent & deposit terms, lock-in period, notice period, and payment mode.</li>
+<li><strong>Customizable Clauses</strong>: Toggle pets, parking, sub-letting, smoking, maintenance, and add unlimited custom clauses.</li>
+<li><strong>All Property Types</strong>: Apartment, house, room, shop, and office space support.</li>
+<li><strong>State Stamp Duty Info</strong>: State-specific stamp duty guidance for all major Indian states.</li>
+<li><strong>Aadhaar Masking</strong>: Numbers automatically masked (XXXX-XXXX-1234) for privacy.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for landlords and tenants creating 11-month rental agreements for apartments, rooms, shops, or offices across India.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — Aadhaar, PAN, and financial details never leave your device.</p>`,
     category: 'utility-tools',
     targetKeyword: 'rent agreement generator',
     secondaryKeywords: ['rent agreement format India', 'rental agreement online free', 'rent agreement PDF download', 'rent agreement maker', 'lease agreement generator India', 'rent agreement format PDF', '11 month rent agreement', 'house rent agreement online', 'room rent agreement format'],
@@ -4903,13 +5940,19 @@ Everything runs 100% in your browser — no data is uploaded to any server. Your
     slug: 'letter-application-writer',
     name: 'Letter & Application Writer',
     shortDescription: 'Generate professionally formatted letters and applications for employment, banking, school, and official purposes. India-focused templates.',
-    longDescription: `Write professional letters and applications in minutes with our free Letter & Application Writer. Choose from 18+ India-focused templates covering employment, banking, school/college, official, and personal letters.
-
-Templates include: Leave Application, Resignation Letter, Experience Certificate Request, Salary Increment Request, Transfer Request, Bank Account Opening/Closing, Cheque Book Request, Address Change, School Leave Application, Bonafide Certificate, Transfer Certificate, Complaint Letter, NOC Request, Notice to Vacate, Character Certificate, Permission Letter, and more.
-
-Simply select a template, fill in the blanks with your details, and download a professionally formatted letter as PDF or text. Real-time preview shows your letter as you type. "Try Example" button pre-fills all fields to show you the format.
-
-Features history of your last 5 letters (stored locally), keyboard shortcuts for power users, and works completely offline. No data ever leaves your browser — your personal details stay 100% private.`,
+    longDescription: `<p>Write professional letters and applications in minutes with our free <strong>Letter & Application Writer</strong>. Choose from 18+ India-focused templates — employment, banking, school/college, official, and personal letters.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>18+ Templates</strong>: Leave Application, Resignation, Experience Certificate, Salary Increment, Bank Letters, School Applications, Complaint, NOC Request, Character Certificate, and more.</li>
+<li><strong>Fill-in-the-Blank Format</strong>: Just fill your details — the template handles the professional language.</li>
+<li><strong>Real-Time Preview</strong>: See your formatted letter update live as you type.</li>
+<li><strong>Letter History</strong>: Last 5 letters stored locally for quick access.</li>
+<li><strong>PDF & Text Download</strong>: Download in your preferred format, or copy to clipboard.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for employees, students, and individuals in India who need properly formatted official letters quickly without knowing the correct format.</p>
+<h2>Privacy & Security</h2>
+<p>Works completely offline — no data ever leaves your browser, your personal details stay 100% private.</p>`,
     category: 'utility-tools',
     targetKeyword: 'letter writing format',
     secondaryKeywords: ['leave application format', 'resignation letter format India', 'formal letter generator', 'application letter maker', 'bank letter format', 'letter writing online', 'school leave application', 'complaint letter format', 'official letter format India', 'letter format in English'],
@@ -4938,13 +5981,19 @@ Features history of your last 5 letters (stored locally), keyboard shortcuts for
     slug: 'experience-letter-generator',
     name: 'Experience Letter Generator',
     shortDescription: 'Generate professional experience certificates and relieving letters. Download as PNG — free, instant, no signup.',
-    longDescription: `Create professional experience certificates and relieving letters instantly with the ToolsArena Experience Letter Generator. Fill in company details, employee information, employment period, and performance rating — and download a clean, formal letter as PNG.
-
-Choose between two letter types: Experience Certificate (attesting employment history and performance) or Relieving Letter (confirming separation and clearance of dues). The letter wording automatically adjusts based on performance rating (Excellent, Good, or Satisfactory) and reason for leaving (Resignation, End of Contract, or Mutual Separation).
-
-Features auto-calculated employment duration, auto-generated reference numbers, professional Indian corporate letter formatting, company seal placeholder, and HR signature block. Perfect for HR departments, small businesses, startups, and individuals who need properly formatted employment documents.
-
-100% private — all data stays in your browser. Nothing is uploaded to any server.`,
+    longDescription: `<p>Create professional <strong>experience certificates and relieving letters</strong> instantly. Fill in company and employee details, and download a clean, formal letter as PNG.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Two Letter Types</strong>: Experience Certificate (attesting employment history and performance) or Relieving Letter (confirming formal separation and clearance of dues).</li>
+<li><strong>Auto-Adjusted Wording</strong>: Letter language automatically adapts based on performance rating (Excellent/Good/Satisfactory) and reason for leaving (Resignation/End of Contract/Mutual Separation).</li>
+<li><strong>Auto Calculations</strong>: Employment duration and reference number auto-generated.</li>
+<li><strong>Professional Formatting</strong>: Indian corporate letter format with company seal placeholder and HR signature block.</li>
+<li><strong>PNG Download</strong>: High-quality PNG ready for printing on company letterhead.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for HR departments, small businesses, startups, and managers who need to issue employment documents quickly without starting from scratch.</p>
+<h2>Privacy & Security</h2>
+<p>100% private — all data stays in your browser, nothing is uploaded to any server.</p>`,
     category: 'utility-tools',
     targetKeyword: 'experience letter generator',
     secondaryKeywords: ['experience certificate generator', 'relieving letter generator', 'employment certificate maker', 'work experience letter format', 'experience letter format India', 'relieving letter format', 'service certificate generator', 'experience certificate online', 'HR letter generator free', 'job experience letter maker'],
@@ -4973,13 +6022,19 @@ Features auto-calculated employment duration, auto-generated reference numbers, 
     slug: 'resignation-letter-generator',
     name: 'Resignation Letter Generator',
     shortDescription: 'Generate professional resignation letters instantly. 4 templates — Standard, Grateful, Immediate & Short. India-focused, free download.',
-    longDescription: `Create a professional resignation letter in minutes with our free Resignation Letter Generator. Choose from 4 letter types — Standard, Grateful, Immediate, and Short & Simple — each tailored for different resignation scenarios common in Indian workplaces.
-
-Fill in your details (name, designation, department, employee ID), manager and company information, and select your notice period (15, 30, 60, or 90 days) to auto-calculate your last working date. Optionally mention your reason for leaving and adjust the tone between Formal, Warm, or Brief.
-
-Each template generates realistic, ready-to-use resignation letters that mention notice period, handover, full & final settlement, and other details that Indian HR departments expect. The Grateful template adds heartfelt appreciation, the Immediate template includes apology for short notice, and the Short template keeps it to 3-4 lines.
-
-Preview your letter on a clean paper layout, copy the text to clipboard, or download as PNG. "Try Example" button pre-fills all fields so you can see the format instantly. 100% client-side — your personal details never leave your browser.`,
+    longDescription: `<p>Create a professional <strong>resignation letter</strong> in minutes. Choose from 4 templates tailored for different resignation scenarios common in Indian workplaces.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>4 Letter Types</strong>: Standard, Grateful (with appreciation), Immediate (with short notice apology), and Short & Simple (3-4 lines).</li>
+<li><strong>Auto Last Working Date</strong>: Select notice period (15/30/60/90 days) — last working date calculates automatically.</li>
+<li><strong>Tone Options</strong>: Choose Formal, Warm, or Brief tone to match your relationship with the employer.</li>
+<li><strong>India-Focused</strong>: Mentions notice period, handover, full & final settlement as Indian HR departments expect.</li>
+<li><strong>Preview & Download</strong>: Paper-style preview, copy text, or download as PNG.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for employees in India who need a properly formatted resignation letter quickly — whether giving standard notice or resigning immediately.</p>
+<h2>Privacy & Security</h2>
+<p>100% client-side — your personal details never leave your browser.</p>`,
     category: 'utility-tools',
     targetKeyword: 'resignation letter generator',
     secondaryKeywords: ['resignation letter format India', 'resignation letter template', 'professional resignation letter', 'resignation letter maker', 'resignation letter online', 'how to write resignation letter', 'notice period resignation letter', 'immediate resignation letter', 'short resignation letter format', 'resignation letter with notice period'],
@@ -5009,13 +6064,18 @@ Preview your letter on a clean paper layout, copy the text to clipboard, or down
     slug: 'period-ovulation-calculator',
     name: 'Period & Ovulation Calculator',
     shortDescription: 'Track your menstrual cycle, predict periods, ovulation dates, and fertile windows. Privacy-first — all calculations happen in your browser.',
-    longDescription: `Track and predict your menstrual cycle with our free Period & Ovulation Calculator. Enter your last period date, average cycle length, and period duration to get accurate predictions for upcoming periods, ovulation dates, and fertile windows.
-
-Features a beautiful color-coded 2-month calendar showing period days, ovulation, fertile window, and luteal phase at a glance. Countdown cards show days until your next period, ovulation, and fertile window.
-
-View up to 8 upcoming cycles in a detailed table with predicted start dates, end dates, ovulation dates, and fertile windows. Export your cycle data as CSV for personal records or to share with your healthcare provider.
-
-100% privacy-first: All calculations happen entirely in your browser. No data is ever sent to any server. Your cycle history is stored only in your browser's localStorage on your device.`,
+    longDescription: `<p>Track and predict your menstrual cycle with our free <strong>period calculator</strong>. Enter your last period date, average cycle length, and period duration to get accurate predictions for upcoming periods, ovulation dates, and fertile windows.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Color-Coded Calendar</strong>: A beautiful 2-month calendar shows period days, ovulation, fertile window, and luteal phase at a glance.</li>
+<li><strong>Countdown Cards</strong>: See days remaining until your next period, ovulation, and fertile window.</li>
+<li><strong>8-Cycle Forecast Table</strong>: View predicted start dates, end dates, ovulation dates, and fertile windows for up to 8 upcoming cycles.</li>
+<li><strong>CSV Export</strong>: Download your cycle data for personal records or to share with your healthcare provider.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for anyone tracking their menstrual health, planning family, or monitoring fertility. Healthcare providers can use the exported data during consultations.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server. Your cycle history is saved only in your browser's localStorage on your device.</p>`,
     category: 'calculators',
     targetKeyword: 'period calculator',
     secondaryKeywords: ['ovulation calculator', 'fertility calculator', 'menstrual cycle tracker', 'period tracker online', 'ovulation date calculator', 'fertile window calculator', 'next period predictor', 'menstrual calendar', 'cycle length calculator', 'period calculator online free'],
@@ -5044,11 +6104,18 @@ View up to 8 upcoming cycles in a detailed table with predicted start dates, end
     slug: 'social-media-post-mockup',
     name: 'Social Media Post Mockup Generator',
     shortDescription: 'Create realistic social media post mockups for Twitter/X, Instagram, Facebook, and LinkedIn. Download as PNG.',
-    longDescription: `Create pixel-perfect social media post mockups for Twitter/X, Instagram, Facebook, and LinkedIn. Customize profile name, handle, avatar, post text, engagement numbers, and timestamp. Toggle dark/light mode for each platform.
-
-Download your mockup as a high-resolution PNG. Perfect for presentations, marketing materials, social proof, and content previews. Every platform mockup matches the real UI exactly.
-
-Try Example pre-fills a demo post. History saves your last 5 mockups. 100% private — all processing happens in your browser.`,
+    longDescription: `<p>Create pixel-perfect <strong>social media post mockups</strong> for Twitter/X, Instagram, Facebook, and LinkedIn. Customize profile name, handle, avatar, post text, engagement numbers, and timestamp. Toggle dark/light mode for each platform.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>4 Platforms</strong>: Twitter/X, Instagram, Facebook, and LinkedIn — each matching the real platform UI exactly.</li>
+<li><strong>Full Customization</strong>: Set profile name, handle, avatar, post text, engagement stats, and timestamp.</li>
+<li><strong>Dark/Light Mode</strong>: Toggle themes for any platform mockup.</li>
+<li><strong>PNG Download</strong>: Export as a high-resolution PNG perfect for presentations and marketing.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for marketers, designers, content creators, and social media managers creating presentations, mockups, or social proof assets.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
     category: 'image-tools',
     targetKeyword: 'social media post mockup generator',
     secondaryKeywords: ['twitter post generator', 'fake tweet generator', 'instagram post mockup', 'linkedin post mockup', 'facebook post generator', 'social media mockup tool', 'tweet screenshot generator', 'social media post template', 'X post mockup'],
@@ -5076,11 +6143,19 @@ Try Example pre-fills a demo post. History saves your last 5 mockups. 100% priva
     slug: 'business-card-maker',
     name: 'Business Card / Visiting Card Maker',
     shortDescription: 'Design professional business cards with 8 templates, QR code, front/back flip preview, and PNG download.',
-    longDescription: `Design stunning professional business cards in minutes. Choose from 8 beautiful templates — Minimal, Corporate, Creative, Gradient, Dark Luxury, Tech, Nature, and Bold. Customize colors, fonts, and add your logo.
-
-Features front and back card design with a realistic flip animation. The back includes auto-generated QR code for your contact details. Download both sides as PNG.
-
-Perfect for freelancers, professionals, and businesses. All processing happens in your browser — your data stays private.`,
+    longDescription: `<p>Design stunning professional business cards in minutes with our free <strong>business card maker online</strong>. Choose from 8 beautiful templates — Minimal, Corporate, Creative, Gradient, Dark Luxury, Tech, Nature, and Bold. Customize colors, fonts, and add your logo.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>8 Templates</strong>: Minimal, Corporate, Creative, Gradient, Dark Luxury, Tech, Nature, and Bold styles.</li>
+<li><strong>Front & Back Design</strong>: Realistic flip animation to preview both sides of your card.</li>
+<li><strong>Auto QR Code</strong>: Auto-generated vCard QR code on the back with your contact details.</li>
+<li><strong>Logo Upload</strong>: Add your company logo to personalize the card.</li>
+<li><strong>PNG Download</strong>: Download both sides as high-quality PNG images.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for freelancers, entrepreneurs, professionals, and businesses who need a polished visiting card without hiring a designer.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
     category: 'image-tools',
     targetKeyword: 'business card maker online',
     secondaryKeywords: ['visiting card maker', 'business card generator free', 'visiting card design online', 'business card template', 'professional card maker', 'free business card creator', 'business card with QR code', 'visiting card maker India'],
@@ -5108,11 +6183,19 @@ Perfect for freelancers, professionals, and businesses. All processing happens i
     slug: 'tdee-macro-calculator',
     name: 'TDEE & Macro Calculator (Indian Foods)',
     shortDescription: 'Calculate your TDEE and macros with Mifflin-St Jeor formula. Includes 45+ Indian food database and meal planner.',
-    longDescription: `Calculate your Total Daily Energy Expenditure (TDEE) and recommended macronutrient breakdown using the Mifflin-St Jeor equation. Features a comprehensive Indian food database with 45+ items across 8 categories.
-
-Three-step wizard: Enter personal details, select activity level, choose your goal (lose/maintain/gain weight). Get your BMR, TDEE, and macro breakdown with beautiful animated donut chart.
-
-Build a daily meal plan from the Indian food database — Dal, Paneer, Biryani, Roti, Dosa, and more. Track running totals vs your TDEE target. Export meal plan as CSV.`,
+    longDescription: `<p>Calculate your <strong>TDEE (Total Daily Energy Expenditure)</strong> and macronutrient breakdown using the Mifflin-St Jeor equation. Features a comprehensive Indian food database with 45+ items across 8 categories.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3-Step Wizard</strong>: Personal details, activity level, and goal (lose/maintain/gain weight).</li>
+<li><strong>BMR & TDEE</strong>: Mifflin-St Jeor calculation with animated donut chart macro breakdown.</li>
+<li><strong>Indian Food Database</strong>: 45+ dishes — Dal, Paneer, Biryani, Roti, Dosa across 8 categories.</li>
+<li><strong>Meal Planner</strong>: Track running calorie totals vs your TDEE target.</li>
+<li><strong>CSV Export</strong>: Download your meal plan with full nutritional details.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for fitness enthusiasts, dieters, and anyone tracking calorie intake using Indian foods. Great for weight loss, muscle gain, and maintenance goals.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
     category: 'calculators',
     targetKeyword: 'TDEE calculator',
     secondaryKeywords: ['macro calculator', 'calorie calculator India', 'TDEE calculator with Indian food', 'macronutrient calculator', 'BMR calculator', 'Indian food calories', 'meal planner India', 'calorie counter Indian food', 'protein calculator India'],
@@ -5140,11 +6223,19 @@ Build a daily meal plan from the Indian food database — Dal, Paneer, Biryani, 
     slug: 'stamp-duty-calculator',
     name: 'Stamp Duty Calculator (All Indian States)',
     shortDescription: 'Calculate stamp duty, registration fees, and total charges for property purchase across all 28 Indian states and 8 UTs.',
-    longDescription: `Calculate stamp duty and registration charges for property purchases across all 28 Indian states and 8 Union Territories. Accurate rates with concessions for women buyers, senior citizens, and joint registrations.
-
-Includes GST calculation for under-construction properties, municipal charges, and total cost breakdown with animated stacked bar chart. Compare stamp duty across top states for the same property value.
-
-Features tips on saving stamp duty, complete rates reference table, FAQ section, and glossary of property registration terms.`,
+    longDescription: `<p>Calculate <strong>stamp duty</strong> and registration charges for property purchases across all 28 Indian states and 8 Union Territories. Get accurate rates with concessions for women buyers, senior citizens, and joint registrations.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All States & UTs</strong>: Covers all 28 states and 8 Union Territories with current stamp duty and registration rates.</li>
+<li><strong>GST Calculation</strong>: Includes GST for under-construction properties and total cost breakdown with animated stacked bar chart.</li>
+<li><strong>State Comparison</strong>: Compare stamp duty across top states for the same property value.</li>
+<li><strong>Women Buyer Concessions</strong>: Auto-applies reduced stamp duty for female buyers where applicable.</li>
+<li><strong>Saving Tips & Glossary</strong>: Helpful tips, complete rates reference, and property registration terminology.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for home buyers, real estate investors, and property sellers across India looking to plan registration costs before purchasing.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
     category: 'calculators',
     targetKeyword: 'stamp duty calculator',
     secondaryKeywords: ['stamp duty calculator India', 'registration charges calculator', 'stamp duty rates all states', 'property registration cost', 'stamp duty for women', 'stamp duty Maharashtra', 'stamp duty Delhi', 'property stamp duty calculator', 'house registration charges India'],
@@ -5172,11 +6263,19 @@ Features tips on saving stamp duty, complete rates reference table, FAQ section,
     slug: 'youtube-thumbnail-tester',
     name: 'YouTube Thumbnail A/B Tester',
     shortDescription: 'Compare YouTube thumbnails in realistic contexts — homepage, search, sidebar, mobile. A/B vote mode with analysis.',
-    longDescription: `Upload 2-4 YouTube thumbnails and preview them in realistic YouTube contexts — homepage feed, search results, sidebar suggestions, and mobile feed. Compare thumbnails side by side to pick the best one.
-
-Features A/B vote mode with animated counters and percentage bars. Get thumbnail analysis tips covering contrast, brightness, aspect ratio, and resolution. Dark/light mode toggle for YouTube mockups.
-
-Customize video title, channel name, view count, and upload date. Download comparison as PNG. Perfect for YouTubers optimizing their click-through rate.`,
+    longDescription: `<p>Upload 2–4 thumbnails and use our free <strong>YouTube thumbnail tester</strong> to preview them in realistic contexts — homepage feed, search results, sidebar, and mobile feed. Compare side by side to pick the best one.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>4 Preview Contexts</strong>: Homepage feed, search results, sidebar suggestions, and mobile feed.</li>
+<li><strong>A/B Vote Mode</strong>: Head-to-head comparison with animated vote counters and percentage bars.</li>
+<li><strong>Analysis Tips</strong>: Feedback on contrast, brightness, aspect ratio, and resolution.</li>
+<li><strong>Dark/Light Mode</strong>: Toggle YouTube themes to see thumbnails in both display modes.</li>
+<li><strong>PNG Download</strong>: Download your thumbnail comparison to share with collaborators.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for YouTubers, video marketers, and content creators optimizing click-through rates before publishing.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no server uploads, no data stored.</p>`,
     category: 'image-tools',
     targetKeyword: 'youtube thumbnail tester',
     secondaryKeywords: ['youtube thumbnail preview', 'thumbnail A/B test', 'youtube thumbnail comparison', 'thumbnail tester online', 'youtube thumbnail checker', 'youtube thumbnail preview tool', 'thumbnail AB testing', 'CTR optimization youtube'],
@@ -5204,11 +6303,20 @@ Customize video title, channel name, view count, and upload date. Download compa
     slug: 'instagram-carousel-maker',
     name: 'Instagram Carousel Maker',
     shortDescription: 'Create beautiful Instagram carousel posts with up to 10 slides. Custom backgrounds, text, templates, and PNG download.',
-    longDescription: `Create stunning Instagram carousel posts with up to 10 slides. Choose from solid colors, gradient backgrounds, or upload images. Add headlines, body text, and customize fonts, colors, and alignment.
-
-5 slide templates included: Title Slide, Quote Slide, Tip/Fact, Numbered List, and CTA Slide. Preview with Instagram-style swipe navigation and dots indicator.
-
-Download individual slides or all at once as high-quality 1080x1080 PNG images. Perfect for creators, marketers, and educators building engaging carousel content.`,
+    longDescription: `<p>Create stunning <strong>Instagram carousel</strong> posts with up to 10 slides. Choose from solid colors, gradient backgrounds, or upload images. Add headlines, body text, and customize fonts, colors, and alignment.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Up to 10 Slides</strong>: Match Instagram's maximum slide count per post.</li>
+<li><strong>5 Templates</strong>: Title Slide, Quote Slide, Tip/Fact, Numbered List, and CTA Slide.</li>
+<li><strong>Custom Backgrounds</strong>: Solid colors, 17+ gradient presets, or upload your own image.</li>
+<li><strong>Live Preview</strong>: Instagram-style swipe navigation with dots indicator.</li>
+<li><strong>PNG Download</strong>: Export individual or all slides as 1080x1080 PNG images.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for content creators, marketers, educators, and brands building engaging Instagram carousel content without design software.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>
+`,
     category: 'image-tools',
     targetKeyword: 'instagram carousel maker',
     secondaryKeywords: ['instagram carousel creator', 'carousel post maker', 'instagram slide maker', 'instagram carousel template', 'social media carousel', 'carousel post generator', 'instagram carousel design', 'free carousel maker online'],
@@ -5236,11 +6344,19 @@ Download individual slides or all at once as high-quality 1080x1080 PNG images. 
     slug: 'citation-generator',
     name: 'Citation Generator',
     shortDescription: 'Generate academic citations in APA, MLA, Chicago, Harvard, IEEE, and Vancouver. Support 8 source types with bibliography builder.',
-    longDescription: `Generate properly formatted academic citations in APA 7th, MLA 9th, Chicago, Harvard, IEEE, and Vancouver styles. Support 8 source types: Book, Journal Article, Website, Conference Paper, Thesis, Newspaper, Video, and Report.
-
-Multiple authors support with proper "et al." rules per style. Real-time citation preview showing both in-text citation and reference list entry. Build a complete bibliography — add, reorder, sort alphabetically, and export.
-
-Perfect for students, researchers, and academics. Copy individual citations or export entire bibliography as TXT.`,
+    longDescription: `<p>Generate properly formatted academic citations with our free <strong>citation generator</strong>. Supports APA 7th, MLA 9th, Chicago, Harvard, IEEE, and Vancouver styles across 8 source types: Book, Journal Article, Website, Conference Paper, Thesis, Newspaper, Video, and Report.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>6 Citation Styles</strong>: APA 7th, MLA 9th, Chicago, Harvard, IEEE, and Vancouver.</li>
+<li><strong>8 Source Types</strong>: Book, Journal Article, Website, Conference Paper, Thesis, Newspaper, Video, Report.</li>
+<li><strong>Multiple Authors</strong>: Proper "et al." rules automatically applied per style.</li>
+<li><strong>Real-Time Preview</strong>: See both in-text citation and reference list entry instantly.</li>
+<li><strong>Bibliography Builder</strong>: Add, reorder, sort alphabetically, and export as TXT.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Essential for students, researchers, academics, and writers who need accurate, consistently formatted citations for essays, papers, and publications.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
     category: 'text-tools',
     targetKeyword: 'citation generator',
     secondaryKeywords: ['APA citation generator', 'MLA citation generator', 'Harvard referencing generator', 'bibliography generator', 'reference generator free', 'Chicago citation maker', 'IEEE citation format', 'academic citation tool', 'cite sources online', 'Vancouver citation generator'],
@@ -5268,11 +6384,19 @@ Perfect for students, researchers, and academics. Copy individual citations or e
     slug: 'rent-vs-buy-calculator',
     name: 'Rent vs Buy Calculator (India)',
     shortDescription: 'Compare renting vs buying a home in India. Factors in stamp duty, tax benefits (80C, 24b), HRA, and investment returns.',
-    longDescription: `Decide whether to rent or buy a home in India with our comprehensive comparison calculator. Accounts for Indian-specific factors: stamp duty, registration charges, GST, home loan interest deduction (Section 24b), principal deduction (Section 80C), and HRA tax exemption.
-
-Compare total costs over 5-30 years with animated line charts showing cumulative costs and net worth. Year-by-year breakdown table with clear winner badges. Investment returns calculated for surplus savings.
-
-Features realistic Mumbai/Delhi example, CSV export, and clear verdict showing when buying becomes more economical.`,
+    longDescription: `<p>Decide whether to rent or buy a home with our free <strong>rent vs buy calculator India</strong>. Accounts for stamp duty, registration charges, GST, Section 24b home loan interest deduction, Section 80C principal deduction, and HRA tax exemption.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>5–30 Year Analysis</strong>: Animated line charts comparing cumulative costs and net worth over time.</li>
+<li><strong>Tax Benefits</strong>: Factors in Section 80C, Section 24b, and HRA exemption for accurate comparisons.</li>
+<li><strong>Investment Returns</strong>: Calculates returns on surplus savings if you rent instead of buy.</li>
+<li><strong>Year-by-Year Table</strong>: Clear winner badges showing which option is better each year.</li>
+<li><strong>CSV Export</strong>: Download the full breakdown for reference or sharing with a financial advisor.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for Indian home buyers, renters, and financial planners evaluating the long-term economics of renting versus buying property.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
     category: 'calculators',
     targetKeyword: 'rent vs buy calculator India',
     secondaryKeywords: ['rent or buy calculator', 'should I rent or buy India', 'rent vs buy comparison', 'home buying calculator India', 'rent vs EMI calculator', 'property investment calculator', 'rent vs buy break even', 'housing affordability calculator India'],
@@ -5300,11 +6424,20 @@ Features realistic Mumbai/Delhi example, CSV export, and clear verdict showing w
     slug: 'css-animation-generator',
     name: 'CSS Animation Generator',
     shortDescription: 'Visual CSS animation builder with 17 presets, keyframe editor, cubic-bezier curve editor, and live preview.',
-    longDescription: `Build CSS animations visually with our comprehensive CSS Animation Generator. Choose from 17 presets (Bounce, Fade, Slide, Spin, Pulse, Shake, Flip, and more) or build custom animations from scratch.
-
-Features a visual keyframe editor with timeline, per-keyframe property controls (transform, opacity, filters), and a cubic-bezier curve editor with draggable control points. Live preview uses actual CSS animations — what you see is exactly what your CSS will produce.
-
-Copy the generated CSS code with syntax highlighting. Adjust speed, play/pause/restart, and preview on different element shapes.`,
+    longDescription: `<p>Build CSS animations visually with our free <strong>CSS animation generator</strong>. Choose from 17 presets — Bounce, Fade, Slide, Spin, Pulse, Shake, Flip, and more — or create fully custom animations from scratch.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>17 Presets</strong>: Bounce, Fade In/Out, Slide, Spin, Pulse, Shake, Flip, Swing, Zoom, and more.</li>
+<li><strong>Keyframe Editor</strong>: Visual timeline with per-keyframe property controls for transform, opacity, and filters.</li>
+<li><strong>Cubic-Bezier Editor</strong>: Drag control points to define custom easing functions with live curve preview.</li>
+<li><strong>Real CSS Preview</strong>: Live preview injects actual @keyframes CSS — exactly what your code will produce.</li>
+<li><strong>Code Export</strong>: Copy generated CSS with syntax highlighting ready for your project.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for front-end developers, UI designers, and CSS learners who want to create polished animations without writing code from scratch.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>
+`,
     category: 'developer-tools',
     targetKeyword: 'CSS animation generator',
     secondaryKeywords: ['CSS keyframe generator', 'CSS animation builder', 'CSS animation maker online', 'keyframe animation tool', 'CSS transition generator', 'cubic bezier editor', 'CSS animation code generator', 'animate CSS online', 'CSS animation playground'],
@@ -5332,11 +6465,19 @@ Copy the generated CSS code with syntax highlighting. Adjust speed, play/pause/r
     slug: 'essay-counter-readability',
     name: 'Essay Counter + Readability Analyzer',
     shortDescription: 'Count words, characters, sentences. Get Flesch, Gunning Fog, SMOG readability scores. Word frequency and writing tips.',
-    longDescription: `Comprehensive text analysis tool. Count words, characters (with/without spaces), sentences, paragraphs, reading time, and speaking time. Calculate 6 readability scores: Flesch Reading Ease, Flesch-Kincaid Grade Level, Gunning Fog, Coleman-Liau, SMOG, and ARI.
-
-Features beautiful semi-circular gauge visualizations for readability scores, word frequency analysis with bar charts (excluding stop words), sentence length distribution histogram, and actionable writing suggestions.
-
-Perfect for students, writers, content creators, and SEO professionals. All analysis happens in real-time as you type.`,
+    longDescription: `<p>Comprehensive text analysis counting words, characters, sentences, and paragraphs. Calculate 6 readability scores with our free <strong>essay word counter</strong> — Flesch Reading Ease, Gunning Fog, SMOG, Coleman-Liau, and more — all updating in real-time as you type.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>6 Readability Scores</strong>: Flesch Reading Ease, Flesch-Kincaid Grade Level, Gunning Fog, Coleman-Liau, SMOG, and ARI.</li>
+<li><strong>Visual Gauges</strong>: Semi-circular gauge visualizations for each readability score.</li>
+<li><strong>Word Frequency</strong>: Bar chart analysis of top content words, excluding stop words.</li>
+<li><strong>Sentence Distribution</strong>: Histogram showing sentence length patterns in your text.</li>
+<li><strong>Writing Suggestions</strong>: Actionable tips to improve clarity and readability.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for students, writers, bloggers, content creators, and SEO professionals who need to optimize writing for clarity, grade level, and engagement.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
     category: 'text-tools',
     targetKeyword: 'essay word counter',
     secondaryKeywords: ['readability checker', 'word counter online', 'readability score calculator', 'Flesch reading ease calculator', 'text analyzer', 'essay readability checker', 'Gunning Fog calculator', 'writing analyzer', 'character counter', 'sentence counter'],
@@ -5364,11 +6505,20 @@ Perfect for students, writers, content creators, and SEO professionals. All anal
     slug: 'font-identifier',
     name: 'Font Identifier from Image',
     shortDescription: 'Upload an image with text and visually match it against 50+ system fonts. Compare side by side, adjust size/weight/spacing.',
-    longDescription: `Identify fonts from images by visual comparison. Upload an image containing text, type the same text, and browse through 50+ system fonts to find the closest match.
-
-Fonts grouped by category: Sans-Serif, Serif, Monospace, Display, and Handwriting. Adjust font size, weight (100-900), style (normal/italic), letter spacing, and line height for precise matching.
-
-Star your best matches, compare up to 3 fonts side-by-side against the image, and copy the CSS font-family declaration. Grid and list view toggle for the font gallery.`,
+    longDescription: `<p>Use our free <strong>font identifier from image</strong> to find fonts by visual comparison. Upload an image with text, type the same text, and browse 50+ system fonts to find the closest match.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>50+ Fonts</strong>: Grouped by Sans-Serif, Serif, Monospace, Display, and Handwriting categories.</li>
+<li><strong>Precise Matching</strong>: Adjust font size, weight (100–900), style, letter spacing, and line height.</li>
+<li><strong>Side-by-Side Compare</strong>: Star your best matches and compare up to 3 fonts against the original image.</li>
+<li><strong>CSS Export</strong>: Copy the CSS font-family declaration for your matched font.</li>
+<li><strong>Grid/List View</strong>: Toggle between gallery views for easy browsing.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for designers, developers, and branding professionals who need to identify or recreate fonts from logos, screenshots, and printed materials.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>
+`,
     category: 'image-tools',
     targetKeyword: 'font identifier from image',
     secondaryKeywords: ['what font is this', 'identify font from image', 'font finder', 'font matcher', 'font recognition', 'what font is used', 'font detector', 'find font from screenshot', 'font identification tool'],
@@ -5396,11 +6546,19 @@ Star your best matches, compare up to 3 fonts side-by-side against the image, an
     slug: 'roast-my-website',
     name: 'Roast My Website',
     shortDescription: 'Get a humorous but helpful website audit. URL analysis, 20-point checklist, and a witty roast report with actionable feedback.',
-    longDescription: `Get your website roasted with humor and helpful feedback! Enter your URL, upload a screenshot, and answer a quick 20-question audit checklist covering SEO, performance, design, content, security, and UX.
-
-Receive a comprehensive roast report with an overall score (0-100), letter grade with fun titles ("Digital Dumpster Fire" to "Absolute Legend"), and category-by-category scores with witty roast commentary and serious recommendations.
-
-URL analysis checks HTTPS, domain quality, TLD, and more automatically. Share your roast result as PNG. Perfect for developers wanting a fun reality check.`,
+    longDescription: `<p>Get your website roasted with humor and helpful feedback! Enter your URL, upload a screenshot, and answer a quick 20-question audit checklist to get your free <strong>roast my website</strong> report covering SEO, performance, design, content, security, and UX.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Comprehensive Score</strong>: Overall score (0–100) with letter grade and fun titles from "Digital Dumpster Fire" to "Absolute Legend."</li>
+<li><strong>20-Point Checklist</strong>: Category-by-category audit across SEO, performance, design, content, security, and UX.</li>
+<li><strong>URL Analysis</strong>: Automatically checks HTTPS, domain quality, TLD, and URL structure.</li>
+<li><strong>Witty Commentary</strong>: Humorous roast commentary alongside serious actionable recommendations.</li>
+<li><strong>PNG Share</strong>: Download and share your roast result as a PNG image.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for developers, startup founders, and marketers who want a fun but honest reality check on their website's fundamentals.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no server access to your website, no data stored.</p>`,
     category: 'developer-tools',
     targetKeyword: 'roast my website',
     secondaryKeywords: ['website roast', 'website audit tool', 'website checker', 'website analyzer', 'site audit free', 'website review tool', 'website grader', 'web audit checklist', 'website score checker'],
@@ -5428,11 +6586,20 @@ URL analysis checks HTTPS, domain quality, TLD, and more automatically. Share yo
     slug: 'tailwind-playground',
     name: 'Tailwind CSS Playground',
     shortDescription: 'Live Tailwind CSS playground with class editor, visual builder, color palette, autocomplete, and CSS output.',
-    longDescription: `A live Tailwind CSS playground where you type classes and see instant visual preview. Two modes: Class Editor for typing classes directly, and Visual Builder for clicking through categorized Tailwind utilities.
-
-Class Editor features autocomplete suggestions, class validation (green = valid, red = unknown), box model visualizer, and responsive preview (mobile/tablet/desktop). Visual Builder has 9 categories with clickable class buttons and full Tailwind color palette grids.
-
-See the equivalent raw CSS for any Tailwind classes. 8 pre-built snippets included. Perfect for learning Tailwind or rapid prototyping.`,
+    longDescription: `<p>A live <strong>Tailwind CSS playground</strong> where you type classes and see an instant visual preview. Two modes: Class Editor for typing classes directly, and Visual Builder for clicking through categorized Tailwind utilities.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Class Editor</strong>: Autocomplete suggestions, class validation (green = valid, red = unknown), and box model visualizer.</li>
+<li><strong>Visual Builder</strong>: 9 categories with clickable class buttons and full Tailwind color palette grids.</li>
+<li><strong>Responsive Preview</strong>: Toggle between mobile, tablet, and desktop breakpoints.</li>
+<li><strong>CSS Output</strong>: See the equivalent raw CSS for every Tailwind class you apply.</li>
+<li><strong>8 Snippets</strong>: Pre-built examples to jump-start your prototyping.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for front-end developers learning Tailwind CSS, rapid UI prototyping, and anyone who wants to see what Tailwind classes produce without setting up a project.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>
+`,
     category: 'developer-tools',
     targetKeyword: 'tailwind playground',
     secondaryKeywords: ['tailwind CSS playground', 'tailwind CSS tester', 'tailwind class to CSS', 'tailwind live preview', 'tailwind builder online', 'tailwind CSS converter', 'tailwind visual builder', 'tailwind CSS generator', 'tailwind editor online'],
@@ -5460,13 +6627,19 @@ See the equivalent raw CSS for any Tailwind classes. 8 pre-built snippets includ
     slug: 'whatsapp-chat-generator',
     name: 'WhatsApp Chat Generator',
     shortDescription: 'Create realistic WhatsApp chat screenshots with pixel-perfect UI. Edit messages, contacts, ticks, wallpaper. Download as PNG.',
-    longDescription: `Create pixel-perfect WhatsApp chat screenshots that look exactly like the real app. Fully editable — customize contact name, profile photo, online status, and every single message.
-
-Support for text messages, voice messages, image placeholders, and deleted messages. Each message has editable timestamp, read receipt ticks (sent, delivered, read/blue tick), reply quotes, and starred status. Drag to reorder messages.
-
-Choose between WhatsApp light and dark themes. Customize wallpaper with 14 color presets or upload your own image. Edit status bar time and battery level for maximum realism. Download as high-resolution PNG (3x scale).
-
-Perfect for presentations, mockups, UI/UX design, social media content, and educational materials. 100% private — everything runs in your browser.`,
+    longDescription: `<p>Create pixel-perfect <strong>WhatsApp chat screenshots</strong> that look exactly like the real app — fully editable for presentations, mockups, and social media content.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>4 Message Types</strong>: Text, voice messages (with waveform), image placeholders (with caption), and deleted messages.</li>
+<li><strong>Read Receipts</strong>: Single tick (sent), double tick (delivered), blue double tick (read) — per message.</li>
+<li><strong>Light & Dark Themes</strong>: Toggle between WhatsApp light and dark UI themes.</li>
+<li><strong>Custom Wallpaper</strong>: 14 color presets or upload your own background image.</li>
+<li><strong>High-Res PNG</strong>: 3x scale download for crisp presentations and print quality.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for presentations, UI/UX design mockups, social media content creators, and educational materials. Not for creating deceptive content.</p>
+<h2>Privacy & Security</h2>
+<p>100% private — everything runs in your browser. No messages are sent, no data uploaded.</p>`,
     category: 'image-tools',
     targetKeyword: 'whatsapp chat generator',
     secondaryKeywords: ['fake whatsapp chat generator', 'whatsapp screenshot generator', 'whatsapp chat maker online', 'whatsapp message generator', 'fake chat generator', 'whatsapp conversation generator', 'whatsapp mockup generator', 'whatsapp chat screenshot maker', 'fake whatsapp conversation', 'whatsapp chat creator'],
@@ -5496,13 +6669,19 @@ Perfect for presentations, mockups, UI/UX design, social media content, and educ
     slug: 'email-signature-generator',
     name: 'Email Signature Generator',
     shortDescription: 'Create professional HTML email signatures with 6 templates, social icons, CTA button, and photo. Works in Gmail, Outlook & Apple Mail.',
-    longDescription: `Design stunning professional email signatures that work perfectly in Gmail, Outlook, Apple Mail, and all major email clients. Choose from 6 beautiful templates — Classic, Modern, Compact, Corporate, Creative, and Minimal.
-
-Add your photo, company logo, social media links (LinkedIn, Twitter/X, GitHub, Instagram, Facebook, YouTube), and a custom CTA button like "Book a Meeting" or "Visit Our Website." Customize colors to match your brand.
-
-The generated signatures use HTML tables with inline styles — the gold standard for email client compatibility. No CSS classes, no flexbox, no grid — just battle-tested table-based layouts that render perfectly everywhere.
-
-Copy the raw HTML to paste into your email client settings, or copy the rendered signature directly. Step-by-step instructions included for Gmail, Outlook, and Apple Mail. 100% private — all processing happens in your browser.`,
+    longDescription: `<p>Design stunning professional <strong>email signatures</strong> that work in Gmail, Outlook, Apple Mail, and all major email clients. Choose from 6 beautiful templates and customize to match your brand.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>6 Templates</strong>: Classic, Modern, Compact, Corporate, Creative, and Minimal designs.</li>
+<li><strong>Photo & Logo</strong>: Add profile photo and company logo via URL.</li>
+<li><strong>Social Icons</strong>: LinkedIn, Twitter/X, GitHub, Instagram, Facebook, and YouTube icon links.</li>
+<li><strong>CTA Button</strong>: Custom call-to-action like "Book a Meeting" or "Visit Our Website".</li>
+<li><strong>Email-Safe HTML</strong>: Table-based layouts with inline styles — maximum compatibility with all email clients.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for professionals, freelancers, and businesses who want a polished, consistent email signature that renders correctly in every inbox.</p>
+<h2>Privacy & Security</h2>
+<p>100% private — all processing happens in your browser. Step-by-step setup instructions for Gmail, Outlook, and Apple Mail included.</p>`,
     category: 'utility-tools',
     targetKeyword: 'email signature generator',
     secondaryKeywords: ['email signature maker', 'HTML email signature', 'professional email signature', 'Gmail signature generator', 'Outlook signature creator', 'free email signature template', 'email signature with logo', 'email signature with social icons', 'business email signature maker'],
@@ -5534,13 +6713,19 @@ Copy the raw HTML to paste into your email client settings, or copy the rendered
     slug: 'noc-generator',
     name: 'NOC Generator',
     shortDescription: 'Generate professional No Objection Certificate (NOC) letters for employment, property, vehicle, travel & bank purposes.',
-    longDescription: `Create professional No Objection Certificates (NOC) instantly with our free online NOC Generator. Choose from 5 ready-made templates — Employment, Property, Vehicle Transfer, Travel, and Bank/Loan — and fill in the details to generate a formal, well-worded NOC letter.
-
-Each template is professionally worded following Indian legal and business standards. The tool provides a live letter preview styled as a formal document with letterhead, reference number, date, and official formatting.
-
-Download your NOC as a high-resolution PNG image ready for printing, or copy the text to paste into your own letterhead. Auto-generated reference numbers, editable dates, and "Try Example" buttons make it easy to get started.
-
-Perfect for HR departments, housing societies, banks, RTOs, and individuals who need to issue or draft NOC letters quickly. 100% private — everything runs in your browser with no data uploaded to any server.`,
+    longDescription: `<p>Create professional <strong>No Objection Certificates (NOC)</strong> instantly with 5 ready-made templates — Employment, Property, Vehicle Transfer, Travel, and Bank/Loan.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>5 NOC Types</strong>: Employment, Property, Vehicle Transfer, Travel consent, and Bank/Loan closure.</li>
+<li><strong>Professional Wording</strong>: Each template follows Indian legal and business standards with proper letterhead format.</li>
+<li><strong>Live Preview</strong>: Formal document preview with reference number, date, and official formatting.</li>
+<li><strong>Try Example Button</strong>: Pre-fills all fields to show the format instantly.</li>
+<li><strong>PNG Download</strong>: High-resolution 2x scale image ready for printing, or copy text for your own letterhead.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for HR departments, housing societies, banks, RTOs, and individuals who need to issue or draft NOC letters quickly.</p>
+<h2>Privacy & Security</h2>
+<p>100% private — everything runs in your browser with no data uploaded to any server.</p>`,
     category: 'text-tools',
     targetKeyword: 'noc generator',
     secondaryKeywords: ['no objection certificate generator', 'noc letter format', 'noc format india', 'noc certificate maker', 'employment noc format', 'vehicle noc format', 'property noc format', 'bank noc format', 'travel noc format', 'noc letter maker online'],
@@ -5571,11 +6756,19 @@ Perfect for HR departments, housing societies, banks, RTOs, and individuals who 
     slug: 'font-pairing',
     name: 'Font Pairing Tool',
     shortDescription: 'Browse 27 curated Google Font pairings with live preview, type scale, and one-click CSS export.',
-    longDescription: `Find the perfect font combination for your next project with our curated Font Pairing Tool. Browse 27+ handpicked Google Font pairings organized by style (Modern, Classic, Elegant, Playful, Technical, Minimal, Bold, Warm) and use case (Blog, Portfolio, SaaS, E-commerce, Agency, Documentation, Magazine, Landing Page, Corporate).
-
-Each pairing features a live preview with editable heading and body text, a full type scale (H1 through small), a long-form reading preview, and dark/light background toggle. Export any pairing instantly — copy the CSS font-family declarations, Google Fonts HTML import link, or Tailwind CSS config snippet with one click.
-
-Fonts are loaded dynamically from Google Fonts so you see the real typefaces in your browser. Filter by style or use case, or hit "Random" to discover unexpected combinations. 100% free, no signup, works entirely in your browser.`,
+    longDescription: `<p>Find the perfect <strong>font combination</strong> for your next project with 27+ curated Google Font pairings. Filter by style or use case and export code with one click.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>27+ Curated Pairings</strong>: Organized by style (Modern, Classic, Elegant, Playful, Technical, Minimal, Bold, Warm) and use case (Blog, Portfolio, SaaS, E-commerce, Agency, etc.).</li>
+<li><strong>Live Preview</strong>: Editable heading and body text, full type scale (H1–small), and long-form reading preview.</li>
+<li><strong>Dark/Light Toggle</strong>: Preview fonts on both light and dark backgrounds.</li>
+<li><strong>One-Click Export</strong>: Copy CSS font-family, Google Fonts HTML import link, or Tailwind CSS config snippet.</li>
+<li><strong>Random Discovery</strong>: Hit "Random" to discover unexpected combinations.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for designers, developers, and content creators picking typography for websites, apps, and marketing materials.</p>
+<h2>Privacy & Security</h2>
+<p>100% free, no signup — fonts loaded from Google Fonts, everything else runs in your browser.</p>`,
     category: 'developer-tools',
     targetKeyword: 'font pairing tool',
     secondaryKeywords: ['google font pairing', 'font combination generator', 'font pair finder', 'best font pairings', 'heading body font pairing', 'typography pairing tool', 'font pairing generator'],
@@ -5603,11 +6796,19 @@ Fonts are loaded dynamically from Google Fonts so you see the real typefaces in 
     slug: 'offer-letter-generator',
     name: 'Offer Letter Generator',
     shortDescription: 'Generate professional offer letters for Indian businesses with CTC breakdown, terms & conditions, and PNG download.',
-    longDescription: `Create professional, ready-to-use offer letters for Indian businesses in seconds. Fill in company details, candidate information, compensation (Annual CTC), and employment terms \u2014 the tool auto-generates a formal offer letter with a detailed CTC breakdown including Basic, HRA, Special Allowance, PF, and Gratuity.
-
-Choose from 3 template styles: Formal, Modern, or Minimal. The CTC breakdown is mathematically accurate \u2014 PF employer contribution is capped at INR 1,800/month as per EPFO rules, and gratuity is calculated at 4.81% of basic salary.
-
-Download the letter as a high-resolution PNG or copy the text. Everything runs 100% in your browser \u2014 no data is uploaded. Perfect for HR teams, startups, and small businesses in India.`,
+    longDescription: `<p>Generate professional <strong>offer letters for Indian businesses</strong> with accurate CTC breakdown in seconds. Fill in details and download a formal, ready-to-send letter.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Accurate CTC Breakdown</strong>: Auto-calculates Basic, HRA, Special Allowance, PF (capped at ₹1,800/month per EPFO), and Gratuity (4.81% of basic).</li>
+<li><strong>3 Template Styles</strong>: Formal (classic corporate), Modern (clean contemporary), and Minimal (simple and elegant).</li>
+<li><strong>Adjustable Percentages</strong>: Set Basic % of CTC and HRA % of Basic — all other components auto-calculate.</li>
+<li><strong>Employment Terms</strong>: Include joining date, offer expiry, probation period, and employment type.</li>
+<li><strong>PNG Download</strong>: High-resolution image ready to send, or copy text for your own letterhead.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for HR teams, startups, and small businesses in India who need correctly formatted offer letters quickly.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no data uploaded, completely private.</p>`,
     category: 'utility-tools',
     targetKeyword: 'offer letter generator',
     secondaryKeywords: ['offer letter format India', 'offer letter maker', 'job offer letter generator', 'CTC breakdown generator', 'employment offer letter template', 'offer letter with salary breakup', 'HR offer letter tool'],
@@ -5638,13 +6839,19 @@ Download the letter as a high-resolution PNG or copy the text. Everything runs 1
     slug: 'bio-link-generator',
     name: 'Bio Link Page Generator',
     shortDescription: 'Create a beautiful link-in-bio page with a live phone preview — export as HTML or PNG.',
-    longDescription: `Build a stunning link-in-bio page in minutes with our free Bio Link Page Generator. Add your name, bio, avatar, and unlimited links with custom icons — then style everything with 8 gorgeous themes, 5 button styles, custom accent colors, and font options.
-
-The live phone mockup preview updates in real time as you edit, so you can see exactly how your page will look on mobile. Choose from Minimal Light, Minimal Dark, Gradient Sunset, Gradient Ocean, Neon, Pastel, Professional, or Glassmorphism themes. Add social icons for Instagram, Twitter/X, YouTube, TikTok, LinkedIn, GitHub, and Email.
-
-When you are happy with your page, export it as a complete self-contained HTML file you can host anywhere — no external dependencies, fully responsive, with social sharing meta tags built in. You can also download a PNG screenshot of the phone preview or copy the raw HTML to your clipboard.
-
-Everything runs 100% in your browser. No sign-up, no server uploads, no data collection. Your content never leaves your device.`,
+    longDescription: `<p>Build a stunning <strong>link-in-bio page</strong> in minutes — a free Linktree alternative with full customization and live phone preview.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>8 Themes</strong>: Minimal Light, Minimal Dark, Gradient Sunset, Gradient Ocean, Neon, Pastel, Professional, and Glassmorphism.</li>
+<li><strong>Unlimited Links</strong>: Add any number of links with custom icons — drag to reorder.</li>
+<li><strong>Social Icons</strong>: Instagram, Twitter/X, YouTube, TikTok, LinkedIn, GitHub, and Email icon row.</li>
+<li><strong>Live Phone Preview</strong>: Real-time phone mockup shows exactly how your page will look on mobile.</li>
+<li><strong>Export Options</strong>: Download as self-contained HTML (host anywhere), PNG screenshot, or copy raw HTML.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for creators, influencers, freelancers, and small businesses who want a free, fully-owned link-in-bio page without ongoing subscription fees.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no sign-up, no server uploads, no data collection.</p>`,
     category: 'utility-tools',
     targetKeyword: 'bio link generator',
     secondaryKeywords: ['link in bio', 'bio link page', 'linktree alternative', 'free link in bio', 'bio link maker', 'link page generator', 'social media link page', 'one page link site'],
@@ -5673,11 +6880,19 @@ Everything runs 100% in your browser. No sign-up, no server uploads, no data col
     slug: 'social-media-bio-generator',
     name: 'Social Media Bio Generator',
     shortDescription: 'Generate creative bios for Instagram, Twitter/X, LinkedIn, TikTok & YouTube. 120+ templates, personalization, emoji picker, and one-click copy.',
-    longDescription: `Create the perfect social media bio with our free Bio Generator. Choose from 120+ professionally written templates across 5 platforms — Instagram, Twitter/X, LinkedIn, TikTok, and YouTube — and 8 style categories including Creator, Business, Professional, Funny/Witty, Motivational, and Aesthetic.
-
-Each template features smart placeholders like [name], [niche], [company], and [role] that you fill in to personalize your bio instantly. Live character count shows you exactly how many characters you have left for each platform (Instagram: 150, Twitter: 160, LinkedIn: 220, TikTok: 80, YouTube: 1000).
-
-Includes an emoji picker with 50 popular bio emojis, invisible line break formatter for Instagram, favorites system to save your best bios, and one-click copy. Write custom bios or use templates — everything runs 100% in your browser.`,
+    longDescription: `<p>Create the perfect <strong>social media bio</strong> with 120+ professionally written templates across Instagram, Twitter/X, LinkedIn, TikTok, and YouTube.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>120+ Templates</strong>: Across 8 styles — Creator, Business, Personal, Funny/Witty, Professional, Motivational, Minimalist, and Aesthetic.</li>
+<li><strong>Smart Placeholders</strong>: Fill in [name], [niche], [company] fields and see the bio personalize in real time.</li>
+<li><strong>Platform Character Counts</strong>: Live counter for each platform's limit (Instagram 150, Twitter 160, LinkedIn 220, TikTok 80, YouTube 1000).</li>
+<li><strong>Emoji Picker</strong>: 50 popular bio emojis plus Instagram invisible line break formatter.</li>
+<li><strong>Favorites System</strong>: Save your best bios locally and access them anytime.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for influencers, content creators, and professionals who need a catchy, on-brand bio for their social media profiles.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your bio text and personal details are never sent to any server.</p>`,
     category: 'text-tools',
     targetKeyword: 'social media bio generator',
     secondaryKeywords: ['instagram bio generator', 'twitter bio generator', 'linkedin bio generator', 'tiktok bio ideas', 'youtube about generator', 'bio ideas for instagram', 'professional bio generator', 'funny bio generator', 'aesthetic bio ideas', 'social media bio ideas'],
@@ -5706,11 +6921,19 @@ Includes an emoji picker with 50 popular bio emojis, invisible line break format
     slug: 'github-readme-generator',
     name: 'GitHub Profile README Generator',
     shortDescription: 'Create a stunning GitHub profile README with badges, stats, tech stack and social links.',
-    longDescription: `Build a professional GitHub profile README in minutes with our visual editor. Toggle sections for your header with typing animation, about me, social connect badges, tech stack with 100+ technology badges, GitHub stats cards, blog post placeholders, and support links.
-
-The generator produces clean, well-formatted Markdown using shields.io badges, github-readme-stats cards, and readme-typing-svg animations. Preview your README in real-time as you build it, then copy the raw Markdown or download the .md file directly.
-
-Everything runs in your browser \u2014 no signup, no server, 100% private. Works great on desktop and mobile with full dark mode support.`,
+    longDescription: `<p>Build a professional <strong>GitHub profile README</strong> in minutes with a visual editor — toggle sections, pick tech badges, and preview Markdown in real time.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Section Builder</strong>: Header with typing animation, About Me, social connect badges, tech stack, GitHub stats cards, blog post placeholders, and support links.</li>
+<li><strong>100+ Tech Badges</strong>: shields.io badges for all major technologies with official brand colors.</li>
+<li><strong>GitHub Stats Cards</strong>: Auto-fetched github-readme-stats cards — just enter your username.</li>
+<li><strong>Live Markdown Preview</strong>: See your README update in real time as you build it.</li>
+<li><strong>Download .md File</strong>: Copy raw Markdown or download the .md file directly.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for developers who want a visually impressive GitHub profile without manually writing Markdown syntax for badges and stats cards.</p>
+<h2>Privacy & Security</h2>
+<p>Runs in your browser — no signup, no server, 100% private. Works on desktop and mobile with full dark mode support.</p>`,
     category: 'developer-tools',
     targetKeyword: 'github readme generator',
     secondaryKeywords: ['github profile readme generator', 'github readme maker', 'github profile readme builder', 'github readme creator', 'awesome github profile readme'],
@@ -5742,13 +6965,19 @@ tools.push({
   slug: 'plagiarism-checker',
   name: 'Plagiarism Checker',
   shortDescription: 'Compare two texts for similarity using Jaccard, cosine & n-gram analysis. 100% private.',
-  longDescription: `Check your text for potential plagiarism by comparing two passages side by side with our free Plagiarism Self-Checker. The tool uses three powerful similarity algorithms — Jaccard index, cosine similarity with TF-IDF vectors, and n-gram overlap analysis — all running 100% in your browser.
-
-Paste your source text and the text you want to check, then hit Compare. You'll get an overall similarity score with a clear verdict: Low (likely original), Moderate (review needed), or High (significant overlap). Every sentence is individually scored and color-coded — green for unique, yellow for somewhat similar, and red for near-identical matches.
-
-Three analysis tabs let you dig deeper: Sentence Matching shows each sentence pair with its Jaccard similarity score. N-gram Analysis reveals shared 3-word and 5-word phrases between the texts. Word Frequency displays a visual comparison of the top 20 content words used in each passage.
-
-Your texts never leave your device — everything is computed client-side with zero server calls. Perfect for students checking essays, writers verifying originality, teachers reviewing submissions, and researchers comparing drafts. No signup, no limits, no data collection.`,
+  longDescription: `<p>Compare two texts for <strong>plagiarism and similarity</strong> using three powerful algorithms — all running 100% in your browser with complete privacy.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Algorithms</strong>: Jaccard index (word overlap), cosine similarity with TF-IDF vectors, and n-gram overlap (3-word and 5-word phrases).</li>
+<li><strong>Color-Coded Sentences</strong>: Each sentence individually scored — green (unique), yellow (somewhat similar), red (near-identical).</li>
+<li><strong>Verdict</strong>: Overall score with clear classification — Low (likely original), Moderate (review needed), or High (significant overlap).</li>
+<li><strong>Deep Analysis Tabs</strong>: Sentence matching pairs, n-gram analysis of shared phrases, and word frequency comparison charts.</li>
+<li><strong>No Limits</strong>: Unlimited comparisons, no signup, no data collection.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for students checking essays, writers verifying originality, teachers reviewing submissions, and researchers comparing drafts between two known documents.</p>
+<h2>Privacy & Security</h2>
+<p>Your texts never leave your device — everything computed client-side with zero server calls.</p>`,
   category: 'text-tools',
   targetKeyword: 'plagiarism checker',
   secondaryKeywords: ['plagiarism detector', 'text similarity checker', 'check plagiarism online', 'compare two texts', 'similarity checker', 'text comparison tool', 'plagiarism checker free'],
@@ -5810,11 +7039,19 @@ tools.push({
   slug: 'dream11-points-calculator',
   name: 'Fantasy Cricket Points Calculator',
   shortDescription: 'Calculate fantasy cricket points for any player based on match performance stats for T20, ODI & Test.',
-  longDescription: `Calculate fantasy cricket points for any player using our free Fantasy Points Calculator. Enter batting, bowling, and fielding stats and instantly see a detailed points breakdown with all bonuses and penalties applied. Supports T20, ODI, and Test match formats with format-specific scoring rules including strike rate bonuses, economy rate modifiers, milestone bonuses (half-century, century, wicket hauls), and duck penalties.
-
-Choose the player role (Batsman, Bowler, All-Rounder, Wicket-Keeper), toggle Captain (2x) or Vice-Captain (1.5x) multipliers, and see your total fantasy points update in real time. Compare two players side by side to make smarter team selections for IPL, World Cup, or any cricket fantasy league.
-
-The calculator includes a complete scoring rules reference section for each format so you can verify every point. Try our pre-loaded T20 innings example to see the tool in action. 100% free, works entirely in your browser — no signup, no app download required. Not affiliated with any fantasy sports platform.`,
+  longDescription: `<p>Calculate <strong>fantasy cricket points</strong> for any player based on match performance stats. Supports T20, ODI, and Test match formats with format-specific scoring rules.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>All Formats</strong>: T20, ODI, and Test with format-specific strike rate/economy rate bonuses and penalties.</li>
+<li><strong>Complete Breakdown</strong>: Batting, bowling, and fielding points with milestone bonuses (50s, 100s, wicket hauls) and duck penalties.</li>
+<li><strong>Captain & VC Multipliers</strong>: Toggle Captain (2x) or Vice-Captain (1.5x) to see adjusted totals.</li>
+<li><strong>Two-Player Comparison</strong>: Compare stats of two players side by side to make smarter team picks.</li>
+<li><strong>Scoring Rules Reference</strong>: Full point chart for each format included in the tool.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for Dream11, MPL, and other fantasy cricket players building optimal lineups for IPL, World Cup, and domestic cricket matches.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no app download. Not affiliated with any fantasy sports platform.</p>`,
   category: 'cricket-tools',
   targetKeyword: 'fantasy cricket points calculator',
   secondaryKeywords: ['cricket fantasy points calculator', 'fantasy scoring system cricket', 'fantasy points calculator IPL', 'T20 fantasy points', 'ODI fantasy scoring', 'captain points calculator fantasy cricket', 'IPL fantasy points calculator'],
@@ -5849,13 +7086,19 @@ tools.push({
   slug: 'recipe-scaler',
   name: 'Recipe Scaler & Converter',
   shortDescription: 'Scale any recipe up or down with smart fractions. Convert between metric and imperial units instantly.',
-  longDescription: `Scale any recipe to the number of servings you need with our free Recipe Scaler & Converter. Enter your ingredients with quantities and units, set original and desired servings, and instantly see the scaled amounts displayed as smart fractions \u2014 you'll see "1\u00BD cups" instead of "1.5 cups" and "\u2153 cup" instead of "0.333 cups".
-
-Use quick-scale buttons to halve, double, triple, or quadruple your recipe with one click. The tool handles whole-number items intelligently \u2014 eggs, pieces, and slices are always rounded to the nearest whole number.
-
-Switch between original, metric, and imperial unit systems on the fly. Cups convert to ml, ounces to grams, pounds to kg, and vice versa. A built-in temperature converter handles Fahrenheit to Celsius conversions for oven temperatures.
-
-Copy the scaled recipe as formatted text for easy sharing. Try our pre-loaded Chocolate Chip Cookies example to see the tool in action. 100% free, works entirely in your browser \u2014 no signup, no data stored.`,
+  longDescription: `<p>Scale any recipe to the servings you need with our free <strong>Recipe Scaler</strong>. Get smart fractions like "1½ cups" instead of "1.5 cups" — perfect for cooking.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Smart Fractions</strong>: Displays results as ½, ⅓, ¼ etc. instead of decimals for easy measuring.</li>
+<li><strong>Quick Scale Buttons</strong>: Halve, double, triple, or quadruple your recipe with one click.</li>
+<li><strong>Whole-Number Intelligence</strong>: Eggs, pieces, and slices always rounded to nearest whole number.</li>
+<li><strong>Unit Conversion</strong>: Switch between original, metric (ml, g, kg), and imperial (cups, oz, lb) units on the fly.</li>
+<li><strong>Temperature Converter</strong>: Fahrenheit ↔ Celsius converter for oven temperatures.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for home cooks scaling recipes for more or fewer guests, meal preppers, and bakers adjusting batch sizes.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no data stored.</p>`,
   category: 'converters',
   targetKeyword: 'recipe scaler',
   secondaryKeywords: ['recipe converter', 'scale recipe up', 'recipe multiplier', 'recipe serving calculator', 'double recipe calculator', 'half recipe calculator', 'recipe unit converter', 'cooking measurement converter', 'recipe scaling tool'],
@@ -5886,11 +7129,19 @@ tools.push({
   slug: 'epf-calculator',
   name: 'EPF Calculator India',
   shortDescription: 'Calculate your Employee Provident Fund maturity amount at retirement with year-by-year breakdown.',
-  longDescription: `Plan your retirement with our free EPF Calculator for India. Enter your monthly basic salary and DA, choose your contribution rate, and see exactly how much your Provident Fund will grow by retirement. The calculator uses the latest EPF interest rate of 8.25% (FY 2025-26) and factors in annual salary increments to give you an accurate projection.
-
-The tool shows a detailed year-by-year breakdown including opening balance, employee contribution (12% default), employer EPF contribution (3.67%), interest earned, and closing balance for each year. A visual growth chart helps you see how your corpus grows over time through the power of compounding.
-
-Understand the employer contribution split — 3.67% goes to your EPF account while 8.33% goes to EPS (Pension Scheme). Add your existing EPF balance for a complete picture. All calculations happen privately in your browser with no data stored on any server.`,
+  longDescription: `<p>Plan your retirement with our free <strong>EPF Calculator for India</strong>. Enter monthly basic salary and DA to see exactly how your Provident Fund grows by retirement.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Latest Rate Pre-filled</strong>: 8.25% EPF interest rate (FY 2025-26) — adjustable for scenario planning.</li>
+<li><strong>Year-by-Year Breakdown</strong>: Opening balance, employee (12%) and employer (3.67%) contributions, interest, and closing balance for each year.</li>
+<li><strong>Salary Increment</strong>: Factor in annual pay raises for accurate long-term projections.</li>
+<li><strong>Employer Split Explained</strong>: Shows the 3.67% EPF vs 8.33% EPS employer contribution split.</li>
+<li><strong>Existing Balance</strong>: Add your current EPF balance for a complete retirement projection.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for salaried employees in India planning for retirement and wanting to understand the power of EPF compounding over a career.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations happen privately in your browser — no data stored on any server.</p>`,
   category: 'calculators',
   targetKeyword: 'EPF calculator',
   secondaryKeywords: ['PF calculator India', 'provident fund calculator', 'EPF maturity calculator', 'PF interest calculator 2026', 'employee provident fund calculator', 'EPF retirement calculator', 'EPF balance calculator'],
@@ -5923,13 +7174,19 @@ tools.push({
   slug: 'emi-prepayment-calculator',
   name: 'EMI Prepayment Calculator',
   shortDescription: 'Calculate how much you save by making prepayments on home, car, or personal loans.',
-  longDescription: `Find out exactly how much money and time you save by making prepayments on your loan with our EMI Prepayment Calculator. Enter your loan details — principal amount, interest rate, and tenure — then add lump-sum prepayments or recurring extra monthly payments to see the impact.
-
-The calculator shows a side-by-side comparison of your original loan vs. the loan with prepayments, highlighting total interest saved and months reduced. Choose whether each prepayment should reduce your tenure (pay off faster) or reduce your EMI (lower monthly payments).
-
-Features include an interactive amortization schedule that highlights prepayment months, a visual bar chart comparing original vs. prepayment scenarios, INR formatting with Indian numbering system (lakhs/crores), and a copy-to-clipboard summary. Supports multiple lump-sum prepayments at different months plus a recurring extra monthly payment.
-
-Perfect for home loan borrowers, car loan holders, and anyone with an EMI-based loan who wants to understand the benefit of making part payments or prepayments. All calculations happen entirely in your browser — no data is sent to any server.`,
+  longDescription: `<p>Find out exactly how much money and time you save by making prepayments on your loan with our free <strong>EMI Prepayment Calculator</strong>.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Side-by-Side Comparison</strong>: Original loan vs. loan with prepayments — interest saved and months reduced displayed prominently.</li>
+<li><strong>Tenure or EMI Reduction</strong>: Choose whether each prepayment reduces your tenure (faster payoff) or your monthly EMI (lower payments).</li>
+<li><strong>Multiple Prepayments</strong>: Add lump-sum prepayments at different months plus a recurring extra monthly payment.</li>
+<li><strong>Highlighted Amortization</strong>: Month-by-month schedule with prepayment months highlighted in amber.</li>
+<li><strong>INR Formatting</strong>: Indian numbering system (lakhs/crores) throughout.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for home loan borrowers, car loan holders, and anyone with an EMI-based loan who wants to understand the benefit of part payments.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations happen entirely in your browser — no data sent to any server.</p>`,
   category: 'calculators',
   targetKeyword: 'EMI prepayment calculator',
   secondaryKeywords: ['home loan prepayment calculator', 'loan prepayment benefit calculator', 'part payment calculator', 'prepayment interest savings', 'loan prepayment savings calculator', 'EMI prepayment benefit', 'home loan part payment calculator', 'car loan prepayment calculator', 'personal loan prepayment calculator', 'loan tenure reduction calculator'],
@@ -5961,13 +7218,19 @@ tools.push({
   slug: 'json-tree-viewer',
   name: 'JSON Tree Viewer',
   shortDescription: 'Paste JSON and explore it as an interactive collapsible tree with path copying.',
-  longDescription: `Visualize any JSON data as a beautiful, interactive tree structure with our JSON Tree Viewer. Paste or type JSON in the left panel and instantly see a fully navigable tree in the right panel — with collapsible nodes, color-coded values, array indices, and item count badges.
-
-Click any node to copy its JSON path (e.g., "data.users[0].name") to your clipboard — perfect for debugging APIs, writing code, or documenting data structures. Use the search bar to find keys or values deep in the tree — matching nodes are highlighted and their parent nodes auto-expand so you can find anything instantly.
-
-Features include Expand All / Collapse All / Expand to depth 1, 2, or 3, Format and Minify toggles, real-time JSON validation with detailed error messages, a stats bar showing total keys, max nesting depth, and data size, and a one-click example to get started. Value types are color-coded: strings in green, numbers in blue, booleans in purple, and null in gray.
-
-Ideal for developers working with REST APIs, GraphQL responses, configuration files, database exports, or any structured JSON data. Everything runs 100% client-side — your data never leaves your browser.`,
+  longDescription: `<p>Visualize any JSON as a beautiful, <strong>interactive tree structure</strong> with collapsible nodes, color-coded values, and one-click JSON path copying.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Interactive Tree</strong>: Collapsible nodes with array indices, item count badges, and color-coded types (strings green, numbers blue, booleans purple, null gray).</li>
+<li><strong>JSON Path Copy</strong>: Hover any node and click to copy its path (e.g., "data.users[0].name") to clipboard.</li>
+<li><strong>Search</strong>: Find keys or values deep in the tree — matches highlighted, parent nodes auto-expand.</li>
+<li><strong>Expand Controls</strong>: Expand All, Collapse All, or expand to depth L1, L2, or L3.</li>
+<li><strong>Validation</strong>: Real-time JSON validation with detailed error messages for invalid JSON.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Ideal for developers working with REST APIs, GraphQL responses, config files, database exports, or any deeply nested JSON data.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% client-side — your data never leaves your browser.</p>`,
   category: 'developer-tools',
   targetKeyword: 'JSON tree viewer',
   secondaryKeywords: ['JSON viewer online', 'JSON explorer', 'JSON path finder', 'JSON tree visualizer', 'interactive JSON viewer', 'JSON path copier', 'collapsible JSON viewer', 'JSON navigator', 'JSON data explorer'],
@@ -6000,11 +7263,19 @@ tools.push({
   slug: 'css-grid-generator',
   name: 'CSS Grid Generator',
   shortDescription: 'Build CSS Grid layouts visually with live code output. Set columns, rows, gaps, alignment and item spans.',
-  longDescription: `Create complex CSS Grid layouts effortlessly with our free visual CSS Grid Generator. Define grid-template-columns and grid-template-rows using any valid CSS value — fr units, pixels, percentages, auto, repeat(), or minmax(). Adjust column-gap and row-gap in px or rem, and fine-tune alignment with justify-items, align-items, justify-content, and align-content controls.
-
-The interactive preview updates in real time as you tweak settings. Click any grid cell to edit its grid-column and grid-row spans, letting you create spanning layouts like headers, sidebars, and full-width footers. Choose from 7 preset layouts — Holy Grail, Dashboard, Gallery, Blog, 2-Column, 3-Column, and 4-Column — to jumpstart your design.
-
-Clean, production-ready CSS and HTML code is generated live with syntax highlighting. Copy either snippet with one click and paste directly into your project. Everything runs 100% in your browser with zero server calls — your layouts stay completely private. No signup, no downloads, works on desktop and mobile.`,
+  longDescription: `<p>Create complex <strong>CSS Grid layouts</strong> effortlessly with our free visual builder. Define columns, rows, gaps, and alignment — then copy production-ready code.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Full Grid Support</strong>: Set grid-template-columns, grid-template-rows, column-gap, row-gap, justify-items, align-items, justify-content, and align-content.</li>
+<li><strong>Spanning Items</strong>: Click any grid cell to set its column/row start and span — create headers, sidebars, and full-width footers.</li>
+<li><strong>7 Preset Layouts</strong>: Holy Grail, Dashboard, Gallery, Blog, 2-Column, 3-Column, and 4-Column to jumpstart your design.</li>
+<li><strong>Live Code Output</strong>: Production-ready CSS and HTML with syntax highlighting, updated in real time.</li>
+<li><strong>All CSS Values</strong>: Supports fr, px, %, auto, repeat(), and minmax() in template fields.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for web developers and designers building responsive grid layouts without memorizing complex CSS Grid syntax.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no server calls, layouts stay completely private.</p>`,
   category: 'developer-tools',
   targetKeyword: 'CSS grid generator',
   secondaryKeywords: ['CSS grid layout builder', 'CSS grid template generator', 'visual CSS grid tool', 'CSS grid code generator', 'grid layout maker online', 'CSS grid template columns generator'],
@@ -6037,13 +7308,19 @@ tools.push({
   slug: 'property-registration-calculator',
   name: 'Property Registration Cost Calculator',
   shortDescription: 'Calculate total property registration cost — stamp duty, registration fee, GST & TDS — for all Indian states.',
-  longDescription: `Calculate the complete cost of registering a property in India with our free Property Registration Cost Calculator. Get an instant breakdown of stamp duty, registration fee, GST (for under-construction properties), and TDS (for properties above ₹50 lakh) — all tailored to your specific state, property type, and owner profile.
-
-The calculator covers 25+ Indian states and union territories with accurate stamp duty and registration fee rates. It factors in concessions for female owners (available in Delhi, UP, Rajasthan, Punjab, Haryana, Odisha, Uttarakhand, and more), joint ownership discounts, first-time home buyer rebates, and property type variations (residential, commercial, agricultural, plot).
-
-Features include a state-wise comparison chart that ranks all states by total registration cost for the same property value — perfect for investors evaluating which state offers the lowest registration charges. Results are displayed in Indian numbering format (lakhs and crores) with a visual cost distribution bar.
-
-All calculations happen entirely in your browser. No data is sent to any server. Copy the detailed cost summary to share with your family, broker, or financial advisor.`,
+  longDescription: `<p>Calculate the complete cost of <strong>property registration in India</strong> with an instant breakdown of stamp duty, registration fee, GST, and TDS — tailored to your state and profile.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>25+ States Covered</strong>: Accurate stamp duty and registration fee rates for all major Indian states and union territories.</li>
+<li><strong>Owner Concessions</strong>: Female buyer discounts in Delhi, UP, Rajasthan, Punjab, Haryana, Odisha, Uttarakhand, and more.</li>
+<li><strong>All Property Types</strong>: Residential, commercial, agricultural, and plot with type-specific rates.</li>
+<li><strong>GST & TDS</strong>: GST for under-construction properties, 1% TDS for properties above ₹50 lakh.</li>
+<li><strong>State Comparison Chart</strong>: See how registration costs compare across all states for the same property value.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for property buyers budgeting total purchase cost, real estate investors comparing states, and first-time buyers understanding registration charges.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations happen entirely in your browser — no data sent to any server.</p>`,
   category: 'calculators',
   targetKeyword: 'property registration calculator India',
   secondaryKeywords: ['stamp duty calculator state wise', 'registry cost calculator', 'property registration charges India', 'stamp duty calculator India', 'registration fee calculator', 'property stamp duty by state', 'stamp duty for female owners India', 'property buying cost calculator', 'total property cost India', 'stamp duty and registration charges'],
@@ -6079,11 +7356,19 @@ tools.push({
   slug: 'pixel-art-maker',
   name: 'Pixel Art Maker',
   shortDescription: 'Create pixel art on a grid canvas and export as PNG. Free online pixel art creator.',
-  longDescription: `Design stunning pixel art directly in your browser with our free Pixel Art Maker. Choose from 8x8, 16x16, 32x32, or 64x64 grid sizes, pick colors from a 16-color preset palette or use the full color picker, and start drawing with intuitive tools like Pencil, Eraser, Flood Fill, Eyedropper, and Line.
-
-Enable Mirror Mode for horizontal symmetry to create perfectly balanced characters, icons, and sprites. Undo and redo up to 50 steps so you never lose progress. Toggle the grid overlay on or off, and use keyboard shortcuts (B for Pencil, E for Eraser, G for Fill) for a smooth creative workflow.
-
-When your artwork is ready, export it as a crisp PNG at 1x, 2x, 4x, 8x, or 16x scale — perfect for game sprites, social media avatars, or retro-style graphics. Everything runs entirely in your browser with zero uploads and complete privacy. Try the built-in heart example to get started instantly.`,
+  longDescription: `<p>Design stunning <strong>pixel art</strong> directly in your browser with an intuitive grid canvas, full drawing tools, and crisp PNG export at up to 16x scale.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>4 Canvas Sizes</strong>: 8x8, 16x16, 32x32, and 64x64 grid options.</li>
+<li><strong>5 Drawing Tools</strong>: Pencil, Eraser, Flood Fill, Eyedropper, and Line tools with keyboard shortcuts.</li>
+<li><strong>Mirror Mode</strong>: Horizontal symmetry for creating balanced characters, icons, and sprites.</li>
+<li><strong>50-Step Undo/Redo</strong>: Full undo history so you never lose progress.</li>
+<li><strong>Crisp PNG Export</strong>: Export at 1x, 2x, 4x, 8x, or 16x scale — perfect for game sprites and avatars.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for game developers making sprites, designers creating retro-style icons, and anyone who wants to make pixel art without installing software.</p>
+<h2>Privacy & Security</h2>
+<p>Runs entirely in your browser — zero uploads, complete privacy.</p>`,
   category: 'image-tools',
   targetKeyword: 'pixel art maker online',
   secondaryKeywords: ['pixel art creator free', 'pixel art generator', 'pixel art editor online', 'pixel drawing tool', 'sprite maker online', 'pixel art grid', 'make pixel art free', '8 bit art maker', 'retro pixel art creator'],
@@ -6116,13 +7401,19 @@ tools.push({
   slug: 'income-tax-calculator',
   name: 'Income Tax Calculator India',
   shortDescription: 'Calculate income tax for FY 2024-27 with all deductions, Old vs New regime comparison, slab-wise breakdown, and monthly take-home.',
-  longDescription: `India's most comprehensive Income Tax Calculator, updated for FY 2024-25, 2025-26, and 2026-27. Enter your complete income — salary, house property, capital gains, and other sources — along with all applicable deductions to get a precise, side-by-side comparison of your tax liability under both Old and New Tax Regimes.
-
-Old Regime deductions supported: Standard Deduction (Rs 50,000), Section 80C (up to Rs 1.5 lakh — PPF, ELSS, LIC, etc.), Section 80D (health insurance — Rs 25K/50K for self, Rs 50K for parents), Section 80CCD(1B) NPS (Rs 50,000), Section 80TTA savings interest (Rs 10,000), Section 24(b) home loan interest (Rs 2 lakh), Section 80E education loan interest (no limit), Section 80G donations, and full HRA exemption calculation with metro/non-metro toggle.
-
-New Regime features for FY 2025-26+: Standard Deduction of Rs 75,000, revised slabs (0-4L nil, 4-8L 5%, 8-12L 10%, 12-16L 15%, 16-20L 20%, 20-24L 25%, above 24L 30%), Section 87A rebate making income up to Rs 12 lakh effectively tax-free, and employer NPS deduction under Section 80CCD(2).
-
-Both regimes include surcharge calculation (10% to 37% based on income), 4% Health & Education Cess, and Section 87A rebate. The calculator shows SVG donut charts for tax component breakdown, horizontal comparison bars, monthly take-home estimates, a clear recommendation badge, and a one-click copy summary. All calculations happen entirely in your browser — no data is sent to any server.`,
+  longDescription: `<p>India's most comprehensive <strong>Income Tax Calculator</strong>, updated for FY 2024-25, 2025-26, and 2026-27. Get a precise side-by-side comparison of Old vs New Tax Regime with all deductions.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Multi-Year Support</strong>: FY 2024-25, 2025-26, and 2026-27 with year-specific slabs and rates.</li>
+<li><strong>All Old Regime Deductions</strong>: 80C, 80D, 80CCD(1B) NPS, 80TTA, Section 24(b) home loan, 80E education loan, 80G donations, and full HRA exemption.</li>
+<li><strong>New Regime 2025-26</strong>: Rs 75K standard deduction, revised slabs, Section 87A rebate making up to Rs 12L tax-free.</li>
+<li><strong>Complete Tax Calculation</strong>: Surcharge (10%-37%), 4% Health & Education Cess, and Section 87A rebate included.</li>
+<li><strong>Visual Breakdown</strong>: Donut charts, comparison bars, monthly take-home estimate, and recommendation badge.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for salaried employees comparing regimes before declaring investments, and for anyone wanting precise tax liability for multiple income sources.</p>
+<h2>Privacy & Security</h2>
+<p>All calculations happen entirely in your browser — no data sent to any server.</p>`,
   category: 'calculators',
   targetKeyword: 'income tax calculator India',
   secondaryKeywords: ['income tax calculator 2025-26', 'tax calculator India', 'income tax old vs new regime', 'income tax slab calculator', 'tax calculator FY 2025-26', 'income tax calculator online', 'old regime tax calculator', 'new regime tax calculator', 'income tax deductions calculator', 'salary tax calculator India', 'income tax calculator online India', 'new tax regime calculator 2025', 'income tax calculator with deductions'],
@@ -6155,9 +7446,19 @@ tools.push({
   slug: 'hashtag-generator',
   name: 'Hashtag Generator',
   shortDescription: 'Generate relevant hashtags for Instagram, TikTok, Twitter & LinkedIn grouped by popularity tier.',
-  longDescription: `Find the perfect hashtags for your social media posts with our free Hashtag Generator. Enter a topic or keyword and instantly get curated hashtags organized into three popularity tiers — high-reach (500K+ posts), medium (50K-500K), and niche/low competition (under 50K posts).
-
-Choose from 16 niche presets including Travel, Food, Fitness, Fashion, Tech, Photography, and more — each with 50+ handpicked hashtags. Select your platform to get the right number of hashtags for each platform's best practices. Click individual hashtags to select or deselect, copy all or copy a curated set of 30 for Instagram. 100% free, no signup, no API.`,
+  longDescription: `<p>Find the perfect hashtags for your social media posts with our free <strong>Hashtag Generator</strong>. Get curated hashtags organized by popularity tier for maximum reach.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Popularity Tiers</strong>: High-reach (500K+ posts), Medium (50K-500K), and Niche/low competition (under 50K posts).</li>
+<li><strong>16 Niche Presets</strong>: Travel, Food, Fitness, Fashion, Tech, Photography, and more — each with 50+ handpicked hashtags.</li>
+<li><strong>Platform Optimization</strong>: Select your platform to get the right number of hashtags per best practices.</li>
+<li><strong>Select & Copy</strong>: Click individual hashtags to select/deselect, copy all or a curated set.</li>
+<li><strong>No API Needed</strong>: 100% offline, browser-based — no rate limits, no signup.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for content creators, social media managers, and brands who want to maximize post reach on Instagram, TikTok, Twitter, and LinkedIn.</p>
+<h2>Privacy & Security</h2>
+<p>100% free, no signup, no API calls — runs entirely in your browser.</p>`,
   category: 'seo-tools',
   targetKeyword: 'hashtag generator',
   secondaryKeywords: ['Instagram hashtag generator', 'TikTok hashtag generator', 'best hashtags for Instagram', 'hashtag finder', 'trending hashtags generator', 'social media hashtags', 'hashtag generator for Instagram', 'hashtag generator online', 'free hashtag generator', 'Instagram hashtag generator free', 'YouTube hashtag generator'],
@@ -6189,9 +7490,19 @@ tools.push({
   slug: 'indian-food-calorie-counter',
   name: 'Indian Food Calorie Counter',
   shortDescription: 'Search calories in 200+ Indian dishes. Track daily meals with protein, carbs & fat breakdown.',
-  longDescription: `Track your daily calorie intake with our Indian Food Calorie Counter — a database of 200+ Indian dishes with calories, protein, carbs, fat, and fiber per serving in standard Indian portions like "1 medium roti" or "1 katori dal".
-
-Browse by category — Breakfast, Dal & Curries, Rice Dishes, Roti & Bread, Snacks, Sweets, Drinks, and Salads. Add items to your daily meal tracker organized by meal. Set your calorie goal and track progress with a visual ring. All data stays in your browser — no app download, no account required.`,
+  longDescription: `<p>Track your daily calorie intake with our <strong>Indian Food Calorie Counter</strong> — a database of 200+ Indian dishes with calories, protein, carbs, fat, and fiber in standard Indian portions.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>200+ Indian Dishes</strong>: Comprehensive database using IFCT and NIN nutritional references.</li>
+<li><strong>Standard Portions</strong>: Values in natural Indian measures — "1 medium roti", "1 katori dal", "1 plate rice".</li>
+<li><strong>Category Browsing</strong>: Breakfast, Dal & Curries, Rice Dishes, Roti & Bread, Snacks, Sweets, Drinks, Salads.</li>
+<li><strong>Daily Meal Tracker</strong>: Add items to Breakfast/Lunch/Dinner/Snacks, set your calorie goal, track with a visual ring.</li>
+<li><strong>Quantity Multiplier</strong>: Adjust portions from 0.5x to 2x for each food item.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for health-conscious Indians tracking their diet, fitness enthusiasts, and anyone managing their weight on traditional Indian food.</p>
+<h2>Privacy & Security</h2>
+<p>All data stays in your browser — no app download, no account required, nothing sent to any server.</p>`,
   category: 'calculators',
   targetKeyword: 'Indian food calorie counter',
   secondaryKeywords: ['calories in Indian food', 'Indian food calorie chart', 'Indian diet calorie calculator', 'calories in dal rice', 'calories in roti', 'calorie counter India'],
@@ -6222,9 +7533,19 @@ tools.push({
   slug: 'wedding-budget-calculator',
   name: 'Wedding Budget Calculator India',
   shortDescription: 'Plan your Indian wedding budget with pre-filled categories — venue, catering, lehenga, mehndi, baraat & more.',
-  longDescription: `Plan your dream Indian wedding within budget. Enter your total budget and guest count, and the tool allocates money across 13 Indian wedding categories: Venue & Mandap, Catering, Decoration, Photography, Bride's Outfit & Jewellery, Groom's Outfit, Mehndi & Sangeet, Baraat & Band, Invitations, Makeup, Transport, Pandit & Rituals, and Miscellaneous.
-
-Each category has a default percentage based on typical Indian wedding spending. Edit amounts, track actual spending vs. budget with visual progress bars. See per-guest cost and remaining budget in real time. All in INR with lakhs/crores formatting.`,
+  longDescription: `<p>Plan your dream <strong>Indian wedding within budget</strong>. Enter your total budget and guest count, and the tool allocates across 13 wedding categories with visual tracking.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>13 Indian Wedding Categories</strong>: Venue & Mandap, Catering, Decoration, Photography, Bride's Outfit, Groom's Outfit, Mehndi & Sangeet, Baraat & Band, Invitations, Makeup, Transport, Pandit & Rituals, and Miscellaneous.</li>
+<li><strong>Smart Defaults</strong>: Pre-filled percentages based on typical Indian wedding spending patterns.</li>
+<li><strong>Actual vs Budget Tracking</strong>: Enter actual spending for each category with visual progress bars.</li>
+<li><strong>Per-Guest Cost</strong>: Real-time per-guest cost calculation based on guest count.</li>
+<li><strong>INR Formatting</strong>: All amounts in Indian numbering format (lakhs/crores).</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for couples and families planning Indian weddings — from simple ₹5-10L celebrations to grand ₹50L+ events.</p>
+<h2>Privacy & Security</h2>
+<p>All data stays in your browser session — nothing sent to any server.</p>`,
   category: 'calculators',
   targetKeyword: 'wedding budget calculator India',
   secondaryKeywords: ['marriage budget planner', 'shaadi budget calculator', 'Indian wedding cost estimator', 'wedding cost calculator', 'wedding budget planner'],
@@ -6257,9 +7578,19 @@ tools.push({
   slug: 'social-media-image-resizer',
   name: 'Social Media Image Resizer',
   shortDescription: 'Upload one image and resize for Instagram, Facebook, Twitter, LinkedIn, YouTube & more at once.',
-  longDescription: `Resize images for every social media platform in one go. Upload a single image and select multiple presets — Instagram Post, Story, Facebook Cover, Twitter Header, YouTube Thumbnail, LinkedIn Banner, and 10+ more sizes. Preview each with smart center-cropping.
-
-Choose JPG or PNG output, adjust quality, and download individual images or all at once. All processing happens in your browser using Canvas API — images never leave your device. Perfect for social media managers and creators.`,
+  longDescription: `<p>Resize images for every <strong>social media platform</strong> in one go. Upload a single image and get perfectly sized versions for Instagram, Facebook, Twitter, LinkedIn, YouTube, and 10+ more platforms instantly.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>15+ Platform Presets</strong>: Instagram Post/Story/Reel, Facebook Post/Cover/Story, Twitter/X, LinkedIn, YouTube Thumbnail, Pinterest, WhatsApp, TikTok, and more.</li>
+<li><strong>Smart Center-Cropping</strong>: Automatically scales and crops each image from center to fit the exact required dimensions.</li>
+<li><strong>Batch Download</strong>: Download all selected sizes at once — each file named with platform and dimensions.</li>
+<li><strong>Format & Quality Control</strong>: Choose JPG or PNG output with quality from 60–100%.</li>
+<li><strong>100% Browser-Based</strong>: All processing uses Canvas API — images never leave your device.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Perfect for social media managers, content creators, and marketers who need to repurpose a single image across multiple platforms without manually resizing in design tools.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no uploads, no server processing, no data stored. Your images stay completely private.</p>`,
   category: 'image-tools',
   targetKeyword: 'social media image resizer',
   secondaryKeywords: ['resize image for Instagram', 'social media image sizes 2026', 'multi-platform image resizer', 'Instagram post size', 'YouTube thumbnail size'],
@@ -6290,9 +7621,19 @@ tools.push({
   slug: 'legal-notice-generator',
   name: 'Legal Notice Generator India',
   shortDescription: 'Generate formatted legal notices for cheque bounce, recovery, rent eviction & more.',
-  longDescription: `Generate properly formatted Indian legal notices for common scenarios. Choose from six types — Cheque Bounce (Sec 138), Recovery of Money, Rent Eviction, Breach of Contract, Defamation, and Property Dispute — with correct legal language and section references.
-
-Fill in details, see a live preview in formal legal format with numbered paragraphs, demand clause, and consequences. Download as PNG or copy text. Optionally include advocate details. Note: This generates templates — consult a lawyer for legal advice.`,
+  longDescription: `<p>Generate properly formatted <strong>Indian legal notices</strong> for common scenarios with correct legal language and section references — in minutes, not hours.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>6 Notice Types</strong>: Cheque Bounce (Section 138), Recovery of Money, Rent Eviction, Breach of Contract, Defamation, and Property Dispute.</li>
+<li><strong>Proper Legal Format</strong>: Numbered paragraphs, demand clause, statutory references, and consequence statements in formal legal language.</li>
+<li><strong>Advocate Details</strong>: Optional advocate name, enrollment number, and bar council field for professional notices.</li>
+<li><strong>Live Preview</strong>: See the formatted notice update in real-time as you fill in details.</li>
+<li><strong>Download & Copy</strong>: Save as PNG or copy plain text to use on letterhead.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Individuals and businesses needing to draft legal notices for cheque bounce recovery, unpaid dues, rent eviction, or contract breaches before approaching a lawyer. Note: These are templates — consult an advocate for legal validity.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your personal and legal information is never sent to any server.</p>`,
   category: 'utility-tools',
   targetKeyword: 'legal notice format India',
   secondaryKeywords: ['legal notice generator free', 'cheque bounce notice format', 'legal notice template India', 'legal notice for recovery', 'Section 138 notice'],
@@ -6324,9 +7665,19 @@ tools.push({
   slug: 'affidavit-generator',
   name: 'Affidavit Generator India',
   shortDescription: 'Generate formatted Indian affidavits — name change, address change, DOB correction & more.',
-  longDescription: `Create properly formatted Indian affidavits for common purposes. Choose from seven types — General Purpose, Name Change, Address Change, DOB Correction, Income Declaration, Gap Certificate, and Identity Declaration — with correct legal format.
-
-Fill in personal details and type-specific fields. The tool generates affidavits with declaration paragraphs, verification clause, deponent signature, and notary section. Download as PNG to print and get notarized. All processing is 100% private.`,
+  longDescription: `<p>Create properly formatted <strong>Indian affidavits</strong> for common legal purposes with correct declaration language, verification clause, and notary section — ready to print on stamp paper.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>7 Affidavit Types</strong>: General Purpose, Name Change, Address Change, DOB Correction, Income Declaration, Gap Certificate, and Identity Declaration.</li>
+<li><strong>Correct Legal Format</strong>: Declaration paragraphs, verification clause, deponent signature area, and notary/oath commissioner section.</li>
+<li><strong>Type-Specific Fields</strong>: Each affidavit type has fields specific to its purpose — old/new name for name change, old/new address for address change, etc.</li>
+<li><strong>Print-Ready Download</strong>: Download as PNG sized for A4 paper — print on stamp paper and get notarized.</li>
+<li><strong>Date & Place</strong>: Set the place and date of execution for legal completeness.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Individuals needing affidavits for passport applications, bank name changes, college gap certificates, government document corrections, or income declarations. After downloading, sign before a Notary Public to make it legally valid.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — personal details are never sent to any server or stored anywhere.</p>`,
   category: 'utility-tools',
   targetKeyword: 'affidavit format India',
   secondaryKeywords: ['name change affidavit format', 'affidavit generator online', 'general affidavit format', 'affidavit for passport', 'gap certificate affidavit'],
@@ -6358,9 +7709,19 @@ tools.push({
   slug: 'text-behind-image',
   name: 'Text Behind Image Generator',
   shortDescription: 'Create the viral text-behind-subject effect — text appears to go behind a person or object.',
-  longDescription: `Create the trending "text behind image" effect. Upload a photo, add text, then paint over the subject that should appear in front — the masked area renders above the text, creating the illusion of text behind the subject.
-
-Customize with 10 fonts, adjustable size/weight/spacing/color/opacity. Use brush tool to mask the foreground with adjustable size and eraser. Three-layer Canvas rendering: background → text → masked foreground. Download as PNG. No AI, no signup — works in your browser.`,
+  longDescription: `<p>Create the viral <strong>text behind image</strong> effect that makes text appear to go behind a person or object. Upload, mask, and download — no Photoshop needed.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Three-Layer Rendering</strong>: Background image → text layer → masked foreground — creates the perfect depth illusion using Canvas API.</li>
+<li><strong>Brush Masking Tool</strong>: Paint over the subject (person, object) to extract it above the text. Adjustable brush size and eraser for precision.</li>
+<li><strong>10 Font Choices</strong>: Arial, Impact, Georgia, Playfair Display, Bebas Neue, Oswald, Montserrat, Lobster, Roboto Condensed, and Anton.</li>
+<li><strong>Full Text Customization</strong>: Adjust size, weight, letter spacing, color, opacity, and position.</li>
+<li><strong>High-Quality Output</strong>: Download as PNG at original image resolution with no watermarks.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Content creators, social media influencers, designers, and marketers wanting to create the trending text-behind-subject effect for Instagram posts, YouTube thumbnails, and promotional graphics.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser using Canvas API — images never leave your device. No AI, no signup required.</p>`,
   category: 'image-tools',
   targetKeyword: 'text behind image generator',
   secondaryKeywords: ['text behind image online free', 'text behind photo effect', 'text behind subject tool', 'text behind person effect'],
@@ -6392,9 +7753,19 @@ tools.push({
   slug: 'youtube-title-generator',
   name: 'YouTube Title & Description Generator',
   shortDescription: 'Generate SEO-optimized YouTube titles and descriptions using proven template formulas.',
-  longDescription: `Create click-worthy YouTube titles and professional descriptions. Choose from 14 niches — Tech, Gaming, Vlog, Tutorial, Review, Cooking, Fitness, Finance, Travel, and more — and get 10+ title suggestions based on proven viral formulas.
-
-Switch to Description mode to generate structured descriptions with hook paragraph, timestamps, key points, links, social links, and hashtags. Character count tracks the 5000-char limit. 100% template-based — no AI, no API, no signup.`,
+  longDescription: `<p>Generate click-worthy, SEO-optimized <strong>YouTube titles</strong> and professional video descriptions using proven viral formulas — no AI, no API, instant results.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>10+ Title Formulas</strong>: Templates based on top-performing videos — curiosity gaps, numbered lists, how-tos, challenges, reviews, and more.</li>
+<li><strong>14 Content Niches</strong>: Tech, Gaming, Vlog, Tutorial, Review, Cooking, Fitness, Finance, Travel, Education, Entertainment, News, Music, and Motivation.</li>
+<li><strong>SEO Score & Length</strong>: Each title shows a character count with color indicators for optimal 50–70 character range.</li>
+<li><strong>Description Generator</strong>: Structured descriptions with hook paragraph, timestamps, key points, resource links, social links, hashtags, and disclaimer.</li>
+<li><strong>5000-Char Tracker</strong>: Real-time character counter keeps descriptions within YouTube's limit.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>YouTubers, video marketers, and content creators who want to quickly generate optimized titles and descriptions without staring at a blank screen.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no AI calls, no data sent to any server, completely free and private.</p>`,
   category: 'seo-tools',
   targetKeyword: 'YouTube title generator',
   secondaryKeywords: ['YouTube description generator', 'YouTube SEO title tool', 'video title ideas generator', 'YouTube title ideas', 'YouTube description template'],
@@ -6427,9 +7798,19 @@ tools.push({
   slug: 'og-preview-tester',
   name: 'Open Graph Preview Tester',
   shortDescription: 'Preview how your OG meta tags appear on Google, Facebook, Twitter, LinkedIn, Discord & WhatsApp.',
-  longDescription: `See how your website appears when shared on social media. Enter OG meta tags or paste your HTML head to auto-extract them. Preview pixel-accurate mockups for Google Search, Facebook, Twitter/X, LinkedIn, Discord, WhatsApp, and Slack.
-
-Validates required tags, warns about suboptimal lengths, checks image dimensions. Generate the complete HTML meta tag block with one click. Works entirely client-side — no URL fetching, instant results.`,
+  longDescription: `<p>Preview exactly how your website appears when shared on social media with our free <strong>Open Graph preview tester</strong> — pixel-accurate mockups across 7 platforms, instant and client-side.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>7 Platform Previews</strong>: Google Search, Facebook, Twitter/X, LinkedIn, Discord, WhatsApp, and Slack — each rendered as an accurate card mockup.</li>
+<li><strong>Auto-Extract from HTML</strong>: Paste your HTML &lt;head&gt; section and all OG tags are auto-extracted into the fields.</li>
+<li><strong>Tag Validation</strong>: Checks for required tags, warns about suboptimal title/description lengths, and validates image dimensions.</li>
+<li><strong>One-Click HTML Generator</strong>: Copy the complete HTML meta tag block ready to paste into your website's &lt;head&gt;.</li>
+<li><strong>Instant Results</strong>: No URL fetching, no CORS issues — works entirely in your browser.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Web developers, SEO specialists, and marketers who need to verify that social sharing previews look correct before publishing — without waiting for platform caches to update.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% client-side — no URLs are fetched, no data is sent to any server. Instant and completely private.</p>`,
   category: 'seo-tools',
   targetKeyword: 'open graph preview',
   secondaryKeywords: ['OG tag tester', 'social media card preview', 'meta tag preview tool', 'Twitter card preview', 'Facebook share preview', 'og meta tag tester'],
@@ -6461,9 +7842,19 @@ tools.push({
   slug: 'blood-pressure-tracker',
   name: 'Blood Pressure Tracker & Log',
   shortDescription: 'Log BP readings, visualize trends with charts, and generate printable reports for your doctor.',
-  longDescription: `Track blood pressure over time. Enter systolic, diastolic, and pulse with date/time. Auto-classifies readings: Normal (<120/80), Elevated, High Stage 1, Stage 2, or Crisis — with color-coded badges.
-
-SVG line chart shows trends with color-coded background zones. View 7/30/all-time averages. Export as CSV, import backups, print reports for your doctor. Data stored in localStorage — health data never leaves your device.`,
+  longDescription: `<p>Log, visualize, and analyze your blood pressure over time with our free <strong>blood pressure tracker</strong> — complete with trend charts, automatic classification, and printable doctor reports.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Auto-Classification</strong>: Each reading is automatically classified as Normal (&lt;120/80), Elevated, High Stage 1, Stage 2, or Crisis — with color-coded badges.</li>
+<li><strong>Trend Chart</strong>: SVG line chart with color-coded background zones shows systolic, diastolic, and pulse trends over time.</li>
+<li><strong>Averages Dashboard</strong>: View 7-day, 30-day, and all-time average readings at a glance.</li>
+<li><strong>CSV Export & Import</strong>: Export readings for backup or import a previous export to restore data.</li>
+<li><strong>Print Reports</strong>: Generate a formatted summary with readings, averages, and chart — ideal for doctor visits.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Patients monitoring hypertension, people tracking cardiovascular health, or anyone advised by their doctor to keep a blood pressure log. Data is stored locally in your browser — never shared.</p>
+<h2>Privacy & Security</h2>
+<p>Health data stays in your browser's localStorage only — nothing is ever sent to any server or third party.</p>`,
   category: 'calculators',
   targetKeyword: 'blood pressure tracker online',
   secondaryKeywords: ['BP log chart', 'blood pressure chart', 'hypertension tracker', 'blood pressure monitor log', 'BP tracker web'],
@@ -6495,9 +7886,19 @@ tools.push({
   slug: 'essay-outline-builder',
   name: 'Essay Outline Builder',
   shortDescription: 'Generate structured essay outlines for argumentative, persuasive, expository & more essay types.',
-  longDescription: `Build structured essay outlines with our free Essay Outline Builder. Select your type — Argumentative, Persuasive, Expository, Narrative, Compare & Contrast, Cause & Effect, Descriptive, or Analytical — enter topic and thesis to generate a complete framework.
-
-Includes Introduction (hook, background, thesis), 3-5 Body Paragraphs (topic sentences, evidence slots, analysis, transitions), and Conclusion. All sections are editable. Reorder paragraphs, export as text or Markdown. Perfect for students, writers, and educators.`,
+  longDescription: `<p>Generate a structured, complete <strong>essay outline</strong> in seconds — choose your essay type, enter your topic and thesis, and get a ready-to-fill framework with introduction, body paragraphs, and conclusion.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>8 Essay Types</strong>: Argumentative, Persuasive, Expository, Narrative, Compare &amp; Contrast, Cause &amp; Effect, Descriptive, and Analytical.</li>
+<li><strong>Full Structure</strong>: Introduction (hook, background, thesis statement), 3–5 Body Paragraphs (topic sentence, evidence slots, analysis, transitions), and Conclusion.</li>
+<li><strong>Fully Editable</strong>: All sections are editable. Add or remove body paragraphs and reorder them with drag.</li>
+<li><strong>Multiple Export Formats</strong>: Export as plain text, Markdown, or copy to clipboard instantly.</li>
+<li><strong>Academic Conventions</strong>: Follows standard academic essay structure with evidence and analysis prompts in each paragraph.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Students from high school to university, writers working on structured articles, and educators creating essay templates for classroom use.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — no signup, no data stored, completely free and private.</p>`,
   category: 'text-tools',
   targetKeyword: 'essay outline generator',
   secondaryKeywords: ['essay outline builder', 'essay structure template', 'essay planner', 'how to outline an essay', 'argumentative essay outline'],
@@ -6530,9 +7931,19 @@ tools.push({
   slug: 'gpa-calculator',
   name: 'GPA Calculator',
   shortDescription: 'Calculate GPA/CGPA across Indian 10-point, US 4.0, and percentage scales with semester tracking.',
-  longDescription: `Calculate GPA, SGPA, and CGPA across multiple grading systems. Choose Indian 10-point CGPA, US 4.0 GPA, or percentage-based. Add semesters with subjects, credits, and grades for cumulative results.
-
-Shows semester-wise SGPA with visual bars, cumulative CGPA, equivalent percentage, and academic classification. Target GPA feature tells you what you need next semester. Supports up to 8 semesters with unlimited subjects. All calculations in your browser.`,
+  longDescription: `<p>Calculate your <strong>GPA and CGPA</strong> across multiple grading systems — Indian 10-point, US 4.0, and percentage-based — with full semester-by-semester tracking and a target GPA planner.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>3 Grading Systems</strong>: Indian 10-point CGPA (O=10 through F=0), US 4.0 GPA (A+=4.0 through F=0), and percentage-based grading.</li>
+<li><strong>Semester Tracking</strong>: Add up to 8 semesters with unlimited subjects, credits, and grades — see SGPA per semester and cumulative CGPA.</li>
+<li><strong>Visual Progress Bars</strong>: Color-coded bars show SGPA for each semester at a glance.</li>
+<li><strong>Percentage Conversion</strong>: Automatically converts CGPA to equivalent percentage and academic classification (Distinction, First Class, etc.).</li>
+<li><strong>Target GPA Calculator</strong>: Enter your desired CGPA and see exactly what SGPA you need next semester to reach it.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>College and university students in India and abroad who need to track academic performance, plan for target grades, or convert CGPA for job applications and graduate school admissions.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — all calculations happen locally with no data sent to any server.</p>`,
   category: 'calculators',
   targetKeyword: 'GPA calculator',
   secondaryKeywords: ['CGPA calculator', 'SGPA to CGPA calculator', 'GPA calculator India', 'college GPA calculator', 'grade calculator'],
@@ -6565,15 +7976,19 @@ tools.push({
   slug: 'pdf-editor',
   name: 'PDF Editor',
   shortDescription: 'Edit PDF files online free — add text, images, shapes, highlights, signatures, stamps & more. 100% private.',
-  longDescription: `The most powerful free online PDF editor that runs entirely in your browser. Edit any PDF document without uploading it to any server — your files never leave your device, guaranteeing complete privacy.
-
-Add text with custom fonts, sizes, colors, and alignment. Draw freehand with a pen tool. Insert shapes — rectangles, circles, lines, and arrows. Highlight important text, whiteout sensitive content, and add images from your device.
-
-Need to sign a document? Use the built-in signature pad to draw your signature and place it anywhere. Add professional stamps — APPROVED, DRAFT, CONFIDENTIAL, COPY, VOID, and more. Every annotation supports full color, opacity, and positioning control.
-
-Navigate multi-page PDFs with thumbnail preview, zoom in/out, and use keyboard shortcuts for maximum productivity. Undo/redo every action. When done, download the edited PDF with all annotations baked into the file.
-
-Unlike iLovePDF, SmallPDF, and Adobe, which upload your files to their servers, this tool processes everything locally. No watermarks, no file size limits, no daily caps, no signup required. It's free, fast, and private — forever.`,
+  longDescription: `<p>The most powerful free <strong>PDF editor online</strong> that runs entirely in your browser — add text, images, shapes, highlights, signatures, and stamps without uploading your file to any server.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Rich Annotation Tools</strong>: Text (custom fonts, sizes, colors), freehand pen, rectangles, circles, lines, arrows, highlights, whiteout/redaction, images, signatures, and professional stamps (APPROVED, DRAFT, CONFIDENTIAL, VOID, etc.).</li>
+<li><strong>Signature Pad</strong>: Draw your signature with mouse or touch, then place and resize it anywhere on the PDF.</li>
+<li><strong>Multi-Page Support</strong>: Navigate pages with thumbnail preview, zoom in/out, and keyboard shortcuts (V, T, P, R, H, Ctrl+Z, Ctrl+Y, Ctrl+S).</li>
+<li><strong>No Watermarks</strong>: Downloaded PDF is clean — no branding, no "Created with..." stamps, no hidden overlays.</li>
+<li><strong>No File Size Limits</strong>: No artificial caps or daily limits — works on PDFs up to 50–100 MB on modern browsers.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Anyone needing to sign contracts, fill forms, annotate reports, redact sensitive information, or add text to PDF documents — without paying for Adobe Acrobat or uploading files to iLovePDF or SmallPDF.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser — your PDF never leaves your device. No signup, no upload, no data stored. Completely private, always free.</p>`,
   category: 'pdf-tools',
   targetKeyword: 'PDF editor online',
   secondaryKeywords: ['edit PDF online', 'PDF editor free', 'online PDF editor', 'edit PDF online free', 'PDF editor no signup', 'add text to PDF', 'sign PDF online', 'annotate PDF free', 'highlight PDF online', 'free PDF editor no watermark', 'PDF editor without upload', 'edit PDF in browser', 'PDF markup tool'],
