@@ -175,7 +175,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
           <h2 className="text-lg font-heading font-bold text-slate-900 dark:text-slate-100 mb-3">15. Contact Us</h2>
           <p className="mb-3">If you have any questions about these Terms of Service, please contact us:</p>
           <ul className="list-none space-y-1">
-            <li><strong>Email:</strong> legal@toolsarena.in</li>
+            <li><strong>Email:</strong> mukeshdr005@gmail.com</li>
             <li><strong>Website:</strong> toolsarena.in/contact</li>
             <li><strong>Platform:</strong> ToolsArena, India</li>
           </ul>

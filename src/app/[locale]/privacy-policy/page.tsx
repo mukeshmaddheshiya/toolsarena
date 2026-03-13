@@ -142,7 +142,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
         <section>
           <h2 className="text-lg font-heading font-bold text-slate-900 dark:text-slate-100 mb-3">9. Children&rsquo;s Privacy</h2>
           <p>
-            ToolsArena does not knowingly collect personal information from children under the age of 13. Our services are intended for general audiences. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <strong>privacy@toolsarena.in</strong> and we will promptly delete such information.
+            ToolsArena does not knowingly collect personal information from children under the age of 13. Our services are intended for general audiences. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <strong>mukeshdr005@gmail.com</strong> and we will promptly delete such information.
           </p>
         </section>
 
@@ -156,7 +156,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
             <li>Withdraw consent for data processing</li>
             <li>Lodge a complaint with the relevant data protection authority</li>
           </ul>
-          <p className="mt-3">To exercise these rights, contact us at <strong>privacy@toolsarena.in</strong>.</p>
+          <p className="mt-3">To exercise these rights, contact us at <strong>mukeshdr005@gmail.com</strong>.</p>
         </section>
 
         <section>
@@ -177,7 +177,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
           <h2 className="text-lg font-heading font-bold text-slate-900 dark:text-slate-100 mb-3">13. Contact Us</h2>
           <p className="mb-3">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
           <ul className="list-none space-y-1">
-            <li><strong>Email:</strong> privacy@toolsarena.in</li>
+            <li><strong>Email:</strong> mukeshdr005@gmail.com</li>
             <li><strong>Website:</strong> toolsarena.in/contact</li>
             <li><strong>Platform:</strong> ToolsArena, India</li>
           </ul>
