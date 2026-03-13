@@ -1888,9 +1888,679 @@ Kelvin to Celsius:        °C = K − 273.15</code></pre>
     },
   },
 
-];
+  // ── 11. IMAGE RESIZER GUIDE ────────────────────────────────────
+  {
+    slug: 'image-resizer-guide',
+    toolSlug: 'image-resizer',
+    category: 'image-tools',
+    title: 'How to Resize Images Online Free — Complete Guide (2026)',
+    subtitle: 'Social media sizes, pixel dimensions, DPI, file formats and everything you need to resize images perfectly.',
+    metaTitle: 'Resize Image Online Free — Complete Guide 2026',
+    metaDescription: 'Learn how to resize images for social media, web, print, and government forms. Includes size tables for Instagram, Facebook, YouTube, and more.',
+    targetKeyword: 'resize image online free',
+    secondaryKeywords: ['image resizer online', 'how to resize image', 'compress image size', 'change image dimensions', 'photo resizer free', 'resize photo for Instagram', 'image size for social media'],
+    lastUpdated: '2026-03-13',
+    readingTime: '7 min read',
+    tags: ['Images', 'Social Media', 'Design', 'Web'],
+    intro: `<p>Resizing images is one of the most common digital tasks — whether you are uploading a profile picture, preparing a thumbnail, submitting a government form, or optimising a website. Yet most people either use the wrong tool, lose quality in the process, or end up with a file that's too large or too small.</p>
+<p>This guide explains everything you need to know about image resizing: the correct dimensions for every major platform, the difference between resizing and compressing, when to use JPEG vs PNG vs WebP, and how to resize without losing quality.</p>`,
+    sections: [
+      {
+        id: 'social-media-image-sizes',
+        title: 'Correct Image Sizes for Every Social Media Platform (2026)',
+        content: `<p>Using the wrong image size is the fastest way to get blurry, cropped, or pixelated images on social media. Every platform has specific recommended dimensions, and they change periodically. Here are the current standards:</p>
+<table>
+  <thead><tr><th>Platform</th><th>Image Type</th><th>Recommended Size</th><th>Aspect Ratio</th><th>Max File Size</th></tr></thead>
+  <tbody>
+    <tr><td>Instagram</td><td>Profile Picture</td><td>180 × 180 px</td><td>1:1</td><td>8 MB</td></tr>
+    <tr><td>Instagram</td><td>Square Post</td><td>1080 × 1080 px</td><td>1:1</td><td>30 MB</td></tr>
+    <tr><td>Instagram</td><td>Portrait Post</td><td>1080 × 1350 px</td><td>4:5</td><td>30 MB</td></tr>
+    <tr><td>Instagram</td><td>Story / Reel</td><td>1080 × 1920 px</td><td>9:16</td><td>30 MB</td></tr>
+    <tr><td>Facebook</td><td>Profile Picture</td><td>170 × 170 px</td><td>1:1</td><td>—</td></tr>
+    <tr><td>Facebook</td><td>Cover Photo</td><td>820 × 312 px</td><td>2.63:1</td><td>100 MB</td></tr>
+    <tr><td>Facebook</td><td>Shared Image</td><td>1200 × 630 px</td><td>1.91:1</td><td>—</td></tr>
+    <tr><td>Twitter / X</td><td>Profile Picture</td><td>400 × 400 px</td><td>1:1</td><td>2 MB</td></tr>
+    <tr><td>Twitter / X</td><td>Header Image</td><td>1500 × 500 px</td><td>3:1</td><td>5 MB</td></tr>
+    <tr><td>YouTube</td><td>Thumbnail</td><td>1280 × 720 px</td><td>16:9</td><td>2 MB</td></tr>
+    <tr><td>YouTube</td><td>Channel Art</td><td>2560 × 1440 px</td><td>16:9</td><td>6 MB</td></tr>
+    <tr><td>LinkedIn</td><td>Profile Picture</td><td>400 × 400 px</td><td>1:1</td><td>8 MB</td></tr>
+    <tr><td>LinkedIn</td><td>Cover Photo</td><td>1584 × 396 px</td><td>4:1</td><td>8 MB</td></tr>
+    <tr><td>WhatsApp</td><td>Profile Picture</td><td>500 × 500 px</td><td>1:1</td><td>5 MB</td></tr>
+  </tbody>
+</table>
+<h3>Pro tip: Always upload at 2× the minimum size</h3>
+<p>High-DPI (Retina) screens display images at double resolution. An Instagram profile picture displays at 110px but should be uploaded at 220px or ideally the recommended 180px minimum — higher is better up to the recommended size.</p>`,
+      },
+      {
+        id: 'pixels-dimensions-dpi-explained',
+        title: 'Pixels, Dimensions, and DPI Explained Simply',
+        content: `<p>Understanding these three concepts will make every image resizing decision easier:</p>
+<h3>Pixels (px)</h3>
+<p>A pixel is the smallest unit of a digital image. A 1920 × 1080 image contains 1920 columns and 1080 rows of pixels — about 2 million pixels total. More pixels = higher detail, but also a larger file size.</p>
+<h3>Image Dimensions</h3>
+<p>Dimensions describe an image's width × height in pixels. When you resize an image from 4000 × 3000 px to 800 × 600 px, you are reducing the number of pixels by 95%, which dramatically reduces file size while maintaining the same proportions (4:3 aspect ratio).</p>
+<h3>DPI (Dots Per Inch) — web vs print</h3>
+<p>DPI only matters when printing. For digital/web use, DPI is irrelevant — only pixel dimensions matter. Here is the key distinction:</p>
+<ul>
+  <li><strong>Web / screen images</strong>: 72 DPI standard. A 1080 × 1080 px image at 72 DPI displays identically to one at 300 DPI on screen.</li>
+  <li><strong>Print images</strong>: 300 DPI minimum. A 4 × 4 inch print at 300 DPI requires 1200 × 1200 px. Lower resolution = visible pixelation when printed.</li>
+  <li><strong>Large format print</strong> (banners, posters): 150 DPI is often sufficient since they are viewed from a distance.</li>
+</ul>
+<h3>Aspect ratio</h3>
+<p>The ratio of width to height. Always maintain the original aspect ratio when resizing to avoid stretching. Common ratios: 1:1 (square), 16:9 (widescreen), 4:3 (standard), 9:16 (portrait/stories), 4:5 (Instagram portrait).</p>`,
+      },
+      {
+        id: 'resizing-vs-compressing',
+        title: 'Resizing vs Compressing — What Is the Difference?',
+        content: `<p>Many people confuse resizing and compressing, but they are fundamentally different operations:</p>
+<h3>Resizing</h3>
+<p><strong>Resizing changes the pixel dimensions</strong> of an image. A 4000 × 3000 px image resized to 800 × 600 px will automatically have a smaller file size because it has fewer pixels to store. Resizing is lossless in concept — you are simply discarding pixels you do not need.</p>
+<h3>Compressing</h3>
+<p><strong>Compression reduces file size without necessarily changing dimensions.</strong> It works by either:</p>
+<ul>
+  <li><strong>Lossy compression</strong> (JPEG, WebP): Permanently discards some image data to reduce size. A JPEG at 80% quality looks nearly identical to the original but at 40–60% of the file size.</li>
+  <li><strong>Lossless compression</strong> (PNG, GIF): Reduces file size without any quality loss, but savings are smaller (10–30%).</li>
+</ul>
+<h3>Which format should you use?</h3>
+<table>
+  <thead><tr><th>Format</th><th>Best For</th><th>Compression</th><th>Transparency</th></tr></thead>
+  <tbody>
+    <tr><td>JPEG</td><td>Photos, gradients</td><td>Lossy (high ratio)</td><td>No</td></tr>
+    <tr><td>PNG</td><td>Graphics, logos, screenshots</td><td>Lossless</td><td>Yes</td></tr>
+    <tr><td>WebP</td><td>Web images (best overall)</td><td>Lossy + Lossless</td><td>Yes</td></tr>
+    <tr><td>GIF</td><td>Simple animations</td><td>Lossless (256 colors)</td><td>Yes (1-bit)</td></tr>
+    <tr><td>AVIF</td><td>Next-gen web images</td><td>Lossy (excellent ratio)</td><td>Yes</td></tr>
+  </tbody>
+</table>
+<p><strong>Rule of thumb:</strong> Use WebP for web images (30% smaller than JPEG at equal quality), JPEG for photos you'll share or print, PNG for logos and images with text.</p>`,
+      },
+      {
+        id: 'resize-for-government-forms',
+        title: 'Image Size Requirements for Government & Exam Forms',
+        content: `<p>Government portals and competitive exam websites often have strict file size and dimension requirements for photo uploads. Using the wrong size is one of the most common reasons applications get rejected.</p>
+<table>
+  <thead><tr><th>Portal / Exam</th><th>Photo Dimensions</th><th>Max File Size</th><th>Format</th></tr></thead>
+  <tbody>
+    <tr><td>Passport (India)</td><td>51 × 51 mm (600 × 600 px min)</td><td>—</td><td>JPEG</td></tr>
+    <tr><td>UPSC Civil Services</td><td>3.5 × 4.5 cm</td><td>300 KB</td><td>JPEG</td></tr>
+    <tr><td>SSC (CGL / CHSL)</td><td>100 × 120 px</td><td>20 KB</td><td>JPEG</td></tr>
+    <tr><td>Aadhaar / UIDAI</td><td>—</td><td>200 KB</td><td>JPEG</td></tr>
+    <tr><td>NTA / JEE / NEET</td><td>10–200 KB</td><td>200 KB</td><td>JPEG</td></tr>
+    <tr><td>Bank PO / IBPS</td><td>—</td><td>50 KB</td><td>JPEG</td></tr>
+    <tr><td>Nepal Lok Sewa</td><td>—</td><td>100 KB</td><td>JPEG</td></tr>
+    <tr><td>Visa applications</td><td>35 × 45 mm</td><td>—</td><td>JPEG</td></tr>
+  </tbody>
+</table>
+<h3>How to resize photo to exact KB</h3>
+<p>Most image resize tools let you set the output quality percentage. To hit a specific file size target: start at 80% JPEG quality and check the output size. Reduce to 70% or 60% if still too large. For SSC's 20KB limit, you may need to both resize dimensions to ~200 × 250 px AND reduce quality to 60–70%.</p>
+<div class="callout-tip"><strong>Tip:</strong> ToolsArena's Image Resizer lets you set target dimensions in pixels, percentage, or centimetres, and preview file size before downloading.</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Open the Image Resizer', description: 'Go to ToolsArena\'s free Image Resizer tool — no sign-up required.' },
+      { title: 'Upload your image', description: 'Drag and drop your image or click to upload. Supports JPEG, PNG, WebP, GIF up to 50 MB.' },
+      { title: 'Set the new dimensions', description: 'Enter width and height in pixels, or choose a preset for Instagram, YouTube, Facebook, etc. Enable "Lock aspect ratio" to avoid stretching.' },
+      { title: 'Choose output format and quality', description: 'Select JPEG, PNG, or WebP. For JPEG, set quality (80% is optimal for most uses). Preview the estimated file size.' },
+      { title: 'Download your resized image', description: 'Click Download. The resized image is processed entirely in your browser — your original file is never uploaded to any server.' },
+    ],
+    faqs: [
+      { question: 'How do I resize an image without losing quality?', answer: 'Always resize down, never up. Enlarging an image (upscaling) always reduces quality because you\'re creating pixels from guesswork. For resizing down: use WebP or PNG for lossless quality, or JPEG at 80%+ quality. Keep dimensions proportional by maintaining the aspect ratio.' },
+      { question: 'What size should my Instagram profile picture be?', answer: 'Instagram recommends 180 × 180 pixels for profile pictures, displayed at 110 × 110 px on mobile. Upload a square image (1:1 ratio) at least 180 × 180 px. Higher resolution (400 × 400 px) displays better on Retina screens.' },
+      { question: 'What is the difference between resizing and cropping?', answer: 'Resizing changes the total dimensions while keeping all the image content (the whole image gets bigger or smaller). Cropping removes part of the image — you keep the same pixel density but cut away edges. Use resize to change size, crop to change composition.' },
+      { question: 'What DPI should I use for web vs print images?', answer: 'For web/screen: DPI does not matter — only pixel dimensions count. For print: use 300 DPI minimum. To calculate: print size in inches × 300 DPI = required pixels. A 4×6 inch photo needs at least 1200 × 1800 px at 300 DPI.' },
+      { question: 'How do I make an image smaller in KB without changing dimensions?', answer: 'Use image compression (not resizing). Convert to JPEG and lower the quality to 70–80%. Or convert to WebP — same visual quality as JPEG at 25–35% smaller file size. ToolsArena\'s Image Compressor tool is purpose-built for reducing KB without changing dimensions.' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'pdf-compressor-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Resize Your Image Free — No Sign-up',
+      description: 'Set exact pixel dimensions, choose presets for Instagram/YouTube/Facebook, pick your format, and download instantly. 100% browser-based.',
+      buttonText: 'Open Image Resizer',
+    },
+  },
 
-// ── Helper functions ───────────────────────────────────────────────
+  // ── 12. PASSWORD GENERATOR GUIDE ──────────────────────────────
+  {
+    slug: 'password-generator-guide',
+    toolSlug: 'password-generator',
+    category: 'utility-tools',
+    title: 'Strong Password Guide: How to Create Uncrackable Passwords (2026)',
+    subtitle: 'NIST 2024 guidelines, time-to-crack tables, and the right way to manage passwords.',
+    metaTitle: 'Strong Password Generator — Complete Security Guide 2026',
+    metaDescription: 'Learn what makes passwords strong, how long they take to crack, NIST 2024 guidelines, and how to use a password manager. Free password generator included.',
+    targetKeyword: 'strong password generator',
+    secondaryKeywords: ['how to create strong password', 'password security guide', 'best password practices', 'password manager tips', 'two factor authentication', 'how long to crack password', 'NIST password guidelines'],
+    lastUpdated: '2026-03-13',
+    readingTime: '8 min read',
+    tags: ['Security', 'Privacy', 'Passwords', 'Cybersecurity'],
+    intro: `<p>In 2026, the average person has over 100 online accounts — and most people reuse the same 3–5 passwords across all of them. That is a catastrophic security risk. A single data breach at any one service exposes every account that shares that password.</p>
+<p>This guide covers exactly what makes a password strong, how quickly modern hardware can crack weak passwords, the latest NIST 2024 guidelines that changed everything about password advice, and how to protect yourself without memorising hundreds of complex strings.</p>`,
+    sections: [
+      {
+        id: 'what-makes-password-strong',
+        title: 'What Makes a Password Strong? The Science of Password Entropy',
+        content: `<p>Password strength is measured in <strong>entropy</strong> — the mathematical unpredictability of a password. The higher the entropy, the longer it takes to crack by brute force.</p>
+<h3>The four factors of a strong password</h3>
+<ul>
+  <li><strong>Length</strong>: The single most important factor. Each additional character exponentially multiplies the possible combinations.</li>
+  <li><strong>Character set size</strong>: Using uppercase + lowercase + numbers + symbols gives 94 possible characters per position vs 26 for lowercase only.</li>
+  <li><strong>Randomness</strong>: Truly random passwords (generated by a computer) are far stronger than human-chosen ones. Humans are predictable — we use names, dates, common words, and predictable substitutions (@ for a, 3 for e).</li>
+  <li><strong>Uniqueness</strong>: Even a strong password becomes worthless if it is reused across sites and one of those sites is breached.</li>
+</ul>
+<h3>Time to crack — 2024/2025 hardware</h3>
+<table>
+  <thead><tr><th>Password Length</th><th>Lowercase only</th><th>+ Uppercase</th><th>+ Numbers</th><th>+ Symbols (94 chars)</th></tr></thead>
+  <tbody>
+    <tr><td>6 characters</td><td>Instant</td><td>Instant</td><td>Instant</td><td>5 seconds</td></tr>
+    <tr><td>8 characters</td><td>5 seconds</td><td>22 minutes</td><td>1 hour</td><td>8 hours</td></tr>
+    <tr><td>10 characters</td><td>58 minutes</td><td>4 weeks</td><td>7 months</td><td>5 years</td></tr>
+    <tr><td>12 characters</td><td>3 weeks</td><td>300 years</td><td>2,000 years</td><td>34,000 years</td></tr>
+    <tr><td>14 characters</td><td>51 years</td><td>1M years</td><td>100M years</td><td>Billions of years</td></tr>
+    <tr><td>16 characters</td><td>34,000 years</td><td>Trillions</td><td>—</td><td>—</td></tr>
+  </tbody>
+</table>
+<p><em>Based on bcrypt hashing at 10K hashes/second on a modern GPU cluster. MD5 hashing is ~1000× faster — older sites using MD5 are far more vulnerable.</em></p>
+<div class="callout-tip"><strong>Key insight:</strong> A 12-character random password with mixed characters would take 34,000 years to crack by brute force. Length beats complexity every time.</div>`,
+      },
+      {
+        id: 'nist-2024-password-guidelines',
+        title: 'NIST 2024 Password Guidelines — What Changed',
+        content: `<p>The US National Institute of Standards and Technology (NIST) updated their password guidelines in 2024, reversing decades of conventional wisdom. Here is what changed and why:</p>
+<h3>OLD advice (now wrong)</h3>
+<ul>
+  <li>Force password changes every 60–90 days</li>
+  <li>Require complex combinations (uppercase + lowercase + numbers + symbols)</li>
+  <li>Limit passwords to 8–12 characters</li>
+  <li>Use security questions as backup</li>
+</ul>
+<h3>NEW NIST 2024 guidelines</h3>
+<ul>
+  <li><strong>Minimum 8 characters, but 15+ strongly recommended</strong></li>
+  <li><strong>No forced rotation</strong> — change only when compromised. Frequent forced changes lead to predictable patterns (Password1 → Password2 → Password!)</li>
+  <li><strong>Allow all characters</strong> including spaces — enables long passphrases</li>
+  <li><strong>No complexity requirements</strong> — a long passphrase like "correct horse battery staple" (29 chars) is far stronger than "P@ssw0rd!" (9 chars)</li>
+  <li><strong>Check against breached password lists</strong> — reject known compromised passwords</li>
+  <li><strong>No security questions</strong> — they are easily guessable or findable via social media</li>
+</ul>
+<h3>The passphrase approach</h3>
+<p>A passphrase is 4–6 random words strung together: "correct-horse-battery-staple-river". At 36 characters, it is exponentially stronger than any 8-character complex password, and far easier to remember. This is now the NIST-recommended approach for passwords you must memorise.</p>`,
+      },
+      {
+        id: 'common-password-attacks',
+        title: 'How Hackers Actually Crack Passwords',
+        content: `<p>Understanding attack methods helps you understand why certain password practices matter:</p>
+<h3>Brute force attack</h3>
+<p>Tries every possible combination systematically. Defeated by: long passwords (12+ chars). A short password, no matter how complex, falls quickly to brute force on modern GPU hardware.</p>
+<h3>Dictionary attack</h3>
+<p>Uses lists of common words, names, phrases, and known passwords. Defeated by: random passwords that are not dictionary words. "Summer2024!" fails instantly against dictionary attacks despite appearing complex.</p>
+<h3>Credential stuffing</h3>
+<p>Uses username/password pairs leaked in previous breaches to try logging into other services. This is the #1 way accounts get hijacked in 2024–2025. Defeated by: using a unique password for every site.</p>
+<h3>Most common passwords (still being used in 2025)</h3>
+<ul>
+  <li>123456 / 12345678 / 123456789</li>
+  <li>password / password1 / Password1!</li>
+  <li>qwerty / qwerty123</li>
+  <li>abc123 / iloveyou / admin</li>
+  <li>Your name + birth year (e.g. john1990)</li>
+</ul>
+<p>If your password appears on this list, change it immediately. These are cracked in milliseconds.</p>`,
+      },
+      {
+        id: 'password-managers',
+        title: 'Password Managers — The Only Practical Solution',
+        content: `<p>The correct answer to the password problem is a password manager. Here is why and how to choose one:</p>
+<h3>What a password manager does</h3>
+<ul>
+  <li>Generates a truly random, unique password for every site</li>
+  <li>Stores all passwords in an encrypted vault protected by one master password</li>
+  <li>Auto-fills credentials across devices</li>
+  <li>Alerts you when a saved password appears in a known breach</li>
+</ul>
+<h3>Reputable password managers (2026)</h3>
+<table>
+  <thead><tr><th>Manager</th><th>Free Plan</th><th>Paid Plan</th><th>Open Source</th></tr></thead>
+  <tbody>
+    <tr><td>Bitwarden</td><td>Yes (unlimited)</td><td>$10/year</td><td>Yes</td></tr>
+    <tr><td>1Password</td><td>No</td><td>$36/year</td><td>No</td></tr>
+    <tr><td>Dashlane</td><td>Limited</td><td>$33/year</td><td>No</td></tr>
+    <tr><td>KeePass</td><td>Yes (full)</td><td>Free</td><td>Yes</td></tr>
+    <tr><td>Apple Keychain</td><td>Yes</td><td>Free</td><td>No</td></tr>
+  </tbody>
+</table>
+<h3>Two-Factor Authentication (2FA)</h3>
+<p>Enable 2FA on every important account (email, banking, social media). Even if your password is compromised, 2FA prevents access. Use an authenticator app (Google Authenticator, Authy) rather than SMS 2FA — SIM-swap attacks can intercept SMS codes.</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Set password length to 16+ characters', description: 'Open the Password Generator and drag the length slider to at least 16. Longer is always better — 20 characters takes billions of years to crack.' },
+      { title: 'Enable all character types', description: 'Check all four boxes: uppercase letters, lowercase letters, numbers, and symbols. This maximises the character set and dramatically increases entropy.' },
+      { title: 'Generate and inspect the password', description: 'Click Generate. If the password contains any dictionary words or recognisable patterns, generate again. True random passwords look like noise: "K#9mQ$vL2@nX8p!"' },
+      { title: 'Copy and save to a password manager', description: 'Copy the generated password immediately. Open your password manager (Bitwarden, 1Password, etc.) and save it with the site name before closing the tab.' },
+      { title: 'Enable 2FA on the account', description: 'After setting your new strong password, also enable two-factor authentication on the account. This is your second layer of protection if your password is ever breached.' },
+    ],
+    faqs: [
+      { question: 'How long should my password be?', answer: 'At minimum 12 characters, ideally 16–20 for important accounts. Length is the single most important factor — a 16-character random password with only lowercase letters is stronger than an 8-character password with all character types. NIST 2024 recommends minimum 8 but encourages 15+.' },
+      { question: 'Is it safe to use an online password generator?', answer: 'Yes, if the generator runs in your browser (client-side). ToolsArena\'s password generator generates passwords entirely in your browser using the Web Crypto API — the password is never sent to any server. Avoid generators that send your password to their server to generate it.' },
+      { question: 'What is a passphrase and how is it different from a password?', answer: 'A passphrase is 4–6 random words joined together: "lamp-frog-window-algebra". At 20+ characters, it offers enormous entropy while being more memorable than a random string. NIST 2024 now recommends passphrases for passwords you must memorise (like your password manager master password).' },
+      { question: 'Should I use the same password for multiple sites?', answer: 'Never. Credential stuffing is the #1 account hacking method in 2025 — attackers take passwords from one breach and try them on hundreds of other sites automatically. Every account must have a unique password. Use a password manager to make this practical.' },
+      { question: 'What is two-factor authentication (2FA) and do I need it?', answer: 'Two-factor authentication requires a second verification step (usually a 6-digit code from an app) in addition to your password. Even if your password is stolen, 2FA prevents access. Enable it on all important accounts: email, banking, social media, password manager. Use an authenticator app, not SMS.' },
+    ],
+    relatedGuides: ['word-counter-guide', 'json-formatter-guide', 'bmi-calculator-guide'],
+    toolCTA: {
+      heading: 'Generate a Strong Password — Free, Instant, Private',
+      description: 'Create cryptographically random passwords up to 128 characters. All processing happens in your browser — your password never touches our servers.',
+      buttonText: 'Open Password Generator',
+    },
+  },
+
+  // ── 13. SIP CALCULATOR GUIDE ──────────────────────────────────
+  {
+    slug: 'sip-calculator-guide',
+    toolSlug: 'sip-calculator',
+    category: 'calculators',
+    title: 'SIP Calculator Guide: How to Calculate SIP Returns (2026)',
+    subtitle: 'SIP formula, return tables, India mutual fund comparison, and step-by-step investing guide.',
+    metaTitle: 'SIP Calculator — How to Calculate SIP Returns 2026',
+    metaDescription: 'Learn how SIP works, calculate expected returns with the SIP formula, compare top India mutual funds, and plan your investment with our free SIP calculator.',
+    targetKeyword: 'SIP calculator',
+    secondaryKeywords: ['SIP return calculator', 'systematic investment plan calculator', 'SIP maturity calculator', 'monthly SIP returns', 'best SIP to invest 2026', 'SIP vs FD', 'ELSS SIP tax saving'],
+    lastUpdated: '2026-03-13',
+    readingTime: '9 min read',
+    tags: ['Investment', 'Mutual Funds', 'Finance', 'India'],
+    intro: `<p>A Systematic Investment Plan (SIP) is the most popular way for Indian investors to build wealth through mutual funds. Instead of investing a lump sum, SIP lets you invest a fixed amount every month — as little as ₹100 — and benefit from rupee cost averaging and the power of compounding.</p>
+<p>This guide explains the SIP formula, shows you exactly what ₹500, ₹1,000, ₹5,000 invested monthly will grow to over 10, 20, and 30 years, compares SIP against FD and RD, and walks you through the best platforms to start investing in India today.</p>`,
+    sections: [
+      {
+        id: 'how-sip-works',
+        title: 'How SIP Works — Rupee Cost Averaging Explained',
+        content: `<p>SIP works on two powerful principles: <strong>rupee cost averaging</strong> and <strong>compounding</strong>.</p>
+<h3>Rupee Cost Averaging</h3>
+<p>When you invest a fixed amount every month, you automatically buy more mutual fund units when prices are low and fewer units when prices are high. Over time, this averages out your purchase cost, reducing the risk of investing at a market peak.</p>
+<p>Example: You invest ₹1,000/month in a fund:</p>
+<ul>
+  <li>Month 1: NAV ₹50 → you buy 20 units</li>
+  <li>Month 2: NAV ₹40 → you buy 25 units (market dip — you benefit!)</li>
+  <li>Month 3: NAV ₹55 → you buy 18.18 units</li>
+  <li>Average cost: ₹44.56/unit (vs ₹48.33 if you had bought at average NAV)</li>
+</ul>
+<h3>The Power of Compounding</h3>
+<p>Compounding means your returns earn returns. In SIP, dividends and capital gains are reinvested, generating their own returns the following month. The longer you invest, the more dramatic this effect becomes — which is why starting early is the single most important factor in SIP success.</p>
+<h3>The SIP formula</h3>
+<p>Future Value = P × [((1 + r)^n − 1) / r] × (1 + r)</p>
+<ul>
+  <li><strong>P</strong> = Monthly investment amount</li>
+  <li><strong>r</strong> = Monthly rate of return (annual rate ÷ 12)</li>
+  <li><strong>n</strong> = Total number of months</li>
+</ul>
+<p>Example: ₹5,000/month for 20 years at 12% annual return: FV = 5000 × [((1.01)^240 − 1)/0.01] × 1.01 = <strong>₹49.96 lakh</strong></p>`,
+      },
+      {
+        id: 'sip-returns-table',
+        title: 'SIP Returns Table — How Much Will You Earn?',
+        content: `<p>Based on 12% annual returns (approximate long-term NIFTY 50 CAGR), here is what your monthly SIP could grow to:</p>
+<table>
+  <thead><tr><th>Monthly SIP</th><th>10 Years</th><th>15 Years</th><th>20 Years</th><th>30 Years</th></tr></thead>
+  <tbody>
+    <tr><td>₹500</td><td>₹1.16 L</td><td>₹2.52 L</td><td>₹4.99 L</td><td>₹17.65 L</td></tr>
+    <tr><td>₹1,000</td><td>₹2.32 L</td><td>₹5.05 L</td><td>₹9.99 L</td><td>₹35.30 L</td></tr>
+    <tr><td>₹2,000</td><td>₹4.64 L</td><td>₹10.10 L</td><td>₹19.98 L</td><td>₹70.59 L</td></tr>
+    <tr><td>₹5,000</td><td>₹11.62 L</td><td>₹25.23 L</td><td>₹49.96 L</td><td>₹1.76 Cr</td></tr>
+    <tr><td>₹10,000</td><td>₹23.23 L</td><td>₹50.46 L</td><td>₹99.91 L</td><td>₹3.53 Cr</td></tr>
+    <tr><td>₹25,000</td><td>₹58.08 L</td><td>₹1.26 Cr</td><td>₹2.50 Cr</td><td>₹8.83 Cr</td></tr>
+  </tbody>
+</table>
+<p><em>Note: 12% is a historical approximation — actual returns vary. Past performance does not guarantee future results. Consult a SEBI-registered advisor.</em></p>
+<h3>Step-Up SIP</h3>
+<p>A step-up SIP automatically increases your monthly investment by a fixed percentage each year (typically 10%). If you start with ₹5,000/month and increase by 10% annually, your 20-year corpus grows from ₹49.96L to approximately <strong>₹1.2 Cr</strong> — more than double — due to the compounding effect of higher investments in later years.</p>`,
+      },
+      {
+        id: 'sip-vs-fd-rd',
+        title: 'SIP vs FD vs RD — Which Gives Better Returns?',
+        content: `<p>Many Indian investors default to Fixed Deposits (FD) and Recurring Deposits (RD) because they are familiar and safe. Here is an honest comparison:</p>
+<table>
+  <thead><tr><th>Parameter</th><th>SIP (Mutual Fund)</th><th>Bank FD</th><th>Bank RD</th></tr></thead>
+  <tbody>
+    <tr><td>Expected Returns</td><td>10–15% (market-linked)</td><td>6.5–7.5%</td><td>6–7%</td></tr>
+    <tr><td>Risk</td><td>Market risk (low to high)</td><td>Very low</td><td>Very low</td></tr>
+    <tr><td>Liquidity</td><td>High (exit anytime except ELSS)</td><td>Lock-in with penalty</td><td>Lock-in with penalty</td></tr>
+    <tr><td>Tax on gains</td><td>LTCG 12.5% (above ₹1.25L)</td><td>As per income slab</td><td>As per income slab</td></tr>
+    <tr><td>Inflation beating</td><td>Yes (historically)</td><td>Rarely</td><td>Rarely</td></tr>
+    <tr><td>Minimum investment</td><td>₹100/month</td><td>₹1,000 typically</td><td>₹100/month</td></tr>
+  </tbody>
+</table>
+<h3>Tax-Saving SIP: ELSS Funds</h3>
+<p>Equity Linked Savings Schemes (ELSS) are mutual funds that qualify for Section 80C deduction — up to ₹1.5 lakh per year. They have a 3-year lock-in (shortest among 80C instruments) and have historically delivered 12–15% CAGR. For investors in the 20–30% tax bracket, ELSS is often the best 80C option.</p>
+<h3>Where to invest in SIP (India 2026)</h3>
+<ul>
+  <li><strong>Groww</strong> — Zero commission, best UI for beginners</li>
+  <li><strong>Zerodha Coin</strong> — Direct mutual funds at zero commission</li>
+  <li><strong>Paytm Money</strong> — Good for existing Paytm users</li>
+  <li><strong>MF Central</strong> — Official AMFI portal, all fund houses</li>
+  <li><strong>PhonePe</strong> — Quick KYC, popular for small amounts</li>
+</ul>`,
+      },
+      {
+        id: 'best-sip-funds-india',
+        title: 'Best SIP Mutual Funds in India (2026)',
+        content: `<p>These consistently high-performing funds are popular among Indian SIP investors. Always check current ratings before investing:</p>
+<table>
+  <thead><tr><th>Fund Name</th><th>Category</th><th>3Y Returns</th><th>5Y Returns</th><th>Min SIP</th></tr></thead>
+  <tbody>
+    <tr><td>Parag Parikh Flexi Cap</td><td>Flexi Cap</td><td>~18%</td><td>~22%</td><td>₹1,000</td></tr>
+    <tr><td>Mirae Asset Large Cap</td><td>Large Cap</td><td>~15%</td><td>~16%</td><td>₹1,000</td></tr>
+    <tr><td>SBI Bluechip Fund</td><td>Large Cap</td><td>~14%</td><td>~15%</td><td>₹500</td></tr>
+    <tr><td>HDFC Flexi Cap Fund</td><td>Flexi Cap</td><td>~22%</td><td>~18%</td><td>₹100</td></tr>
+    <tr><td>Axis Midcap Fund</td><td>Mid Cap</td><td>~17%</td><td>~23%</td><td>₹500</td></tr>
+    <tr><td>Quant Small Cap Fund</td><td>Small Cap</td><td>~28%</td><td>~42%</td><td>₹1,000</td></tr>
+  </tbody>
+</table>
+<p><em>Returns are approximate as of early 2026. Higher returns come with higher risk. Diversify across 2–3 funds across categories. Consult a SEBI-registered investment adviser for personalised advice.</em></p>
+<h3>Important SEBI regulations</h3>
+<p>All mutual funds in India are regulated by SEBI (Securities and Exchange Board of India). SEBI mandates: (1) Daily NAV publication, (2) Standardised expense ratios capped by category, (3) Mandatory KYC for all investors, (4) Direct vs Regular plan distinction (always choose Direct for lower expense ratio).</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Enter monthly investment amount', description: 'Open the SIP Calculator and enter how much you plan to invest each month — even ₹500 is enough to start.' },
+      { title: 'Set the investment duration', description: 'Enter how many years you plan to invest. SIP works best over 10+ years — the compounding effect is dramatic over long periods.' },
+      { title: 'Enter expected annual return', description: 'For large-cap funds, use 12% as a conservative estimate. For mid/small cap, 14–15%. For debt funds, 7–8%.' },
+      { title: 'View your projected corpus', description: 'The calculator shows your total investment, expected returns, and final corpus. Compare different durations to see the impact of investing for 5 more years.' },
+      { title: 'Start your SIP', description: 'Open Groww, Zerodha Coin, or Paytm Money. Complete KYC (takes 10 minutes with Aadhaar), choose a Direct plan, and start your SIP. Set auto-debit to never miss a month.' },
+    ],
+    faqs: [
+      { question: 'What is the minimum SIP amount in India?', answer: 'Most mutual funds accept SIP from ₹100/month (HDFC, Axis, many others). Some require ₹500 or ₹1,000 minimum. There is no maximum limit. You can start with ₹100 and increase as your income grows.' },
+      { question: 'Is SIP safe? Can I lose money?', answer: 'SIP in equity mutual funds is market-linked and carries market risk — your investment can go down in value during market downturns. However, SIP\'s rupee cost averaging reduces timing risk. Over 10+ year periods, diversified equity SIPs have historically delivered positive returns. Debt SIPs carry lower risk.' },
+      { question: 'Can I stop SIP anytime?', answer: 'Yes, SIP can be paused or cancelled anytime without penalty (except ELSS funds which have a 3-year lock-in). Your existing invested units remain in the fund and continue to grow. Simply log in to your platform and pause/cancel the SIP mandate.' },
+      { question: 'How is SIP taxed in India?', answer: 'For equity SIPs: Short-Term Capital Gains (STCG) tax of 20% on units sold within 1 year. Long-Term Capital Gains (LTCG) tax of 12.5% on gains above ₹1.25 lakh per year for units held more than 1 year. For ELSS: locked for 3 years, then LTCG applies. Debt SIPs: gains taxed as per your income tax slab.' },
+      { question: 'What is the difference between SIP and lump sum investment?', answer: 'SIP invests a fixed amount monthly regardless of market conditions, reducing timing risk through rupee cost averaging. Lump sum invests everything at once — better if you are confident the market is at a low point, but worse if you invest at a peak. For most retail investors without market expertise, SIP is recommended over lump sum.' },
+    ],
+    relatedGuides: ['emi-calculator-guide', 'percentage-calculator-guide', 'age-calculator-guide'],
+    toolCTA: {
+      heading: 'Calculate Your SIP Returns — Free Tool',
+      description: 'Enter monthly amount, duration, and expected return rate to see your projected corpus. Try different scenarios to plan your investment goal.',
+      buttonText: 'Open SIP Calculator',
+    },
+  },
+
+  // ── 14. INCOME TAX CALCULATOR GUIDE ──────────────────────────
+  {
+    slug: 'income-tax-calculator-guide',
+    toolSlug: 'income-tax-calculator',
+    category: 'calculators',
+    title: 'Income Tax Calculator India 2025-26 — New vs Old Tax Regime',
+    subtitle: 'Complete guide to FY 2025-26 tax slabs, deductions, and which regime saves you more money.',
+    metaTitle: 'Income Tax Calculator India 2025-26 — New vs Old Regime',
+    metaDescription: 'Calculate your income tax for FY 2025-26. Compare new vs old tax regime slabs, Section 80C deductions, HRA exemption, and find which saves more. Free tool.',
+    targetKeyword: 'income tax calculator India 2025-26',
+    secondaryKeywords: ['income tax slab 2025-26', 'new tax regime vs old tax regime', 'section 80C deductions', 'how to calculate income tax India', 'income tax for salaried employees', 'HRA exemption calculator', 'ITR filing 2025'],
+    lastUpdated: '2026-03-13',
+    readingTime: '10 min read',
+    tags: ['Tax', 'Finance', 'India', 'Salary'],
+    intro: `<p>Every salaried employee and self-employed individual in India must file an Income Tax Return (ITR) annually. For FY 2025-26 (Assessment Year 2026-27), you have the choice between the <strong>New Tax Regime</strong> (default) and the <strong>Old Tax Regime</strong>. Choosing the wrong regime could mean paying thousands of rupees more in tax than necessary.</p>
+<p>This guide explains both regimes in plain language, shows exactly how much tax you would pay at different salary levels, lists all major deductions available under the old regime, and helps you decide which regime is right for your situation.</p>`,
+    sections: [
+      {
+        id: 'tax-slabs-2025-26',
+        title: 'Income Tax Slabs FY 2025-26 — New Regime vs Old Regime',
+        content: `<p>India has two tax regimes as of FY 2025-26. The new regime is now the default — if you do not specify, you will be taxed under it.</p>
+<h3>New Tax Regime Slabs (FY 2025-26)</h3>
+<table>
+  <thead><tr><th>Income Range</th><th>Tax Rate</th></tr></thead>
+  <tbody>
+    <tr><td>Up to ₹3,00,000</td><td>0%</td></tr>
+    <tr><td>₹3,00,001 – ₹7,00,000</td><td>5%</td></tr>
+    <tr><td>₹7,00,001 – ₹10,00,000</td><td>10%</td></tr>
+    <tr><td>₹10,00,001 – ₹12,00,000</td><td>15%</td></tr>
+    <tr><td>₹12,00,001 – ₹15,00,000</td><td>20%</td></tr>
+    <tr><td>Above ₹15,00,000</td><td>30%</td></tr>
+  </tbody>
+</table>
+<p><strong>Key benefit:</strong> Section 87A rebate — income up to ₹7 lakh = zero tax under the new regime. Standard deduction of ₹75,000 for salaried employees.</p>
+<h3>Old Tax Regime Slabs (FY 2025-26)</h3>
+<table>
+  <thead><tr><th>Income Range</th><th>Tax Rate</th></tr></thead>
+  <tbody>
+    <tr><td>Up to ₹2,50,000</td><td>0%</td></tr>
+    <tr><td>₹2,50,001 – ₹5,00,000</td><td>5%</td></tr>
+    <tr><td>₹5,00,001 – ₹10,00,000</td><td>20%</td></tr>
+    <tr><td>Above ₹10,00,000</td><td>30%</td></tr>
+  </tbody>
+</table>
+<p><strong>Key benefit:</strong> Allows deductions under Section 80C (₹1.5L), 80D, HRA, LTA, and more — which can significantly reduce taxable income. Add 4% Health & Education Cess on top of base tax in both regimes.</p>`,
+      },
+      {
+        id: 'new-vs-old-regime-comparison',
+        title: 'New vs Old Regime — Which Is Better for You?',
+        content: `<p>The answer depends on how much you invest in tax-saving instruments. Here is the tax comparison at various salary levels:</p>
+<table>
+  <thead><tr><th>Gross Salary</th><th>Old Regime Tax*</th><th>New Regime Tax*</th><th>Better Regime</th></tr></thead>
+  <tbody>
+    <tr><td>₹5,00,000</td><td>₹0 (87A rebate)</td><td>₹0 (87A rebate)</td><td>Equal</td></tr>
+    <tr><td>₹8,00,000</td><td>₹46,800</td><td>₹31,200</td><td>New</td></tr>
+    <tr><td>₹10,00,000</td><td>₹75,400</td><td>₹54,600</td><td>New</td></tr>
+    <tr><td>₹12,00,000</td><td>₹1,09,200</td><td>₹83,200</td><td>New</td></tr>
+    <tr><td>₹15,00,000</td><td>₹1,48,200†</td><td>₹1,30,000</td><td>New/Old (close)</td></tr>
+    <tr><td>₹20,00,000</td><td>₹2,34,000†</td><td>₹2,73,000</td><td>Old</td></tr>
+  </tbody>
+</table>
+<p><em>*Approximate. Old regime assumes full 80C (₹1.5L), standard deduction ₹50K. New regime assumes standard deduction ₹75K. †Old regime saves more at higher incomes with maximum deductions claimed.</em></p>
+<h3>Simple decision rule</h3>
+<ul>
+  <li><strong>Income below ₹7L:</strong> New regime — zero tax due to 87A rebate</li>
+  <li><strong>Income ₹7L–₹15L:</strong> Calculate both — new regime often wins unless you have high deductions (home loan, HRA, full 80C)</li>
+  <li><strong>Income above ₹15L with maximum deductions:</strong> Old regime may save more</li>
+</ul>`,
+      },
+      {
+        id: 'section-80c-deductions',
+        title: 'Section 80C and Other Deductions (Old Regime)',
+        content: `<p>The old tax regime allows numerous deductions that can significantly reduce your taxable income. The most important is Section 80C:</p>
+<h3>Section 80C — ₹1.5 Lakh limit (most popular)</h3>
+<ul>
+  <li><strong>EPF/PF contributions</strong> — automatically deducted from salary</li>
+  <li><strong>PPF (Public Provident Fund)</strong> — 7.1% interest, 15-year lock-in, EEE status</li>
+  <li><strong>ELSS Mutual Funds</strong> — 3-year lock-in, market-linked returns (highest return potential)</li>
+  <li><strong>NSC (National Savings Certificate)</strong> — 7.7% interest, 5-year lock-in</li>
+  <li><strong>LIC Premium</strong> — life insurance premium paid</li>
+  <li><strong>Children's school tuition fees</strong> — up to 2 children</li>
+  <li><strong>Home loan principal repayment</strong></li>
+  <li><strong>5-year bank FD</strong> — tax-saver FDs at ~6.5–7%</li>
+</ul>
+<h3>Other key deductions</h3>
+<ul>
+  <li><strong>Section 80D:</strong> Health insurance premium — ₹25,000 (self + family), ₹50,000 for senior citizen parents</li>
+  <li><strong>HRA Exemption:</strong> House Rent Allowance — actual rent paid minus 10% of basic salary (complex formula, use calculator)</li>
+  <li><strong>Standard Deduction:</strong> ₹50,000 flat for salaried employees under old regime</li>
+  <li><strong>Section 80E:</strong> Interest on education loan — full deduction, 8 years</li>
+  <li><strong>Section 24(b):</strong> Home loan interest — up to ₹2 lakh/year</li>
+</ul>`,
+      },
+      {
+        id: 'itr-filing-guide',
+        title: 'ITR Filing — Deadlines, Forms, and How to File',
+        content: `<p>Every taxpayer must file an ITR by the due date to avoid penalties and interest.</p>
+<h3>ITR Filing Deadlines (FY 2025-26 / AY 2026-27)</h3>
+<ul>
+  <li><strong>July 31, 2026</strong> — For salaried individuals and non-audit cases (original deadline)</li>
+  <li><strong>October 31, 2026</strong> — For audit cases (businesses/professionals)</li>
+  <li><strong>December 31, 2026</strong> — Belated return (with penalty)</li>
+</ul>
+<h3>Which ITR form to use?</h3>
+<table>
+  <thead><tr><th>ITR Form</th><th>Who Should File</th></tr></thead>
+  <tbody>
+    <tr><td>ITR-1 (Sahaj)</td><td>Salaried individuals, income up to ₹50L, one house property</td></tr>
+    <tr><td>ITR-2</td><td>Individuals with capital gains or more than one property</td></tr>
+    <tr><td>ITR-3</td><td>Business/profession income (freelancers, consultants)</td></tr>
+    <tr><td>ITR-4 (Sugam)</td><td>Presumptive income scheme (44AD/44ADA)</td></tr>
+  </tbody>
+</table>
+<h3>What is Form 16?</h3>
+<p>Form 16 is issued by your employer by June 15 each year. It is the TDS certificate showing your salary, all deductions claimed, and tax deducted at source. Part A shows TDS details; Part B shows your salary breakdown and deductions. Most salaried employees can file ITR-1 using only Form 16 and their AIS (Annual Information Statement) from the Income Tax portal.</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Enter your gross annual salary', description: 'Open the Income Tax Calculator and enter your CTC or gross annual salary. Include all components: basic, HRA, special allowance, bonus.' },
+      { title: 'Enter deductions (old regime)', description: 'If comparing old regime: enter your Section 80C investments, HRA paid, health insurance premium, home loan interest, and other deductions.' },
+      { title: 'Compare both regimes', description: 'The calculator shows tax under both regimes side by side. Note which regime gives you lower tax for your specific situation.' },
+      { title: 'Inform your employer', description: 'At the start of the financial year (April), declare your chosen regime to your employer so they deduct correct TDS from your salary each month.' },
+      { title: 'File ITR by July 31', description: 'Visit incometax.gov.in, log in with PAN/Aadhaar, pre-fill from AIS, verify using Form 16, and e-verify using Aadhaar OTP. Takes 15–30 minutes for salaried employees.' },
+    ],
+    faqs: [
+      { question: 'Which tax regime is better for salaried employees in 2025-26?', answer: 'For income below ₹7L: new regime wins (zero tax due to 87A rebate). For income ₹7L–₹15L: calculate both — new regime typically wins if you claim less than ₹2–3L in deductions. For income above ₹15L with maximum 80C + HRA + home loan: old regime may save more. Use our calculator to compare your exact figures.' },
+      { question: 'How do I calculate income tax on my salary?', answer: 'Step 1: Calculate gross salary. Step 2: Subtract standard deduction (₹75K new regime / ₹50K old regime). Step 3: Subtract applicable deductions (only old regime). Step 4: Apply tax slabs to remaining taxable income. Step 5: Subtract 87A rebate if applicable. Step 6: Add 4% health & education cess.' },
+      { question: 'What is Section 80C and what can I invest in?', answer: 'Section 80C allows deductions up to ₹1.5 lakh per year for specified investments and expenses: EPF/PPF contributions, ELSS mutual funds, LIC premiums, NSC, 5-year tax saver FD, children\'s tuition fees, home loan principal. Available only under the old tax regime.' },
+      { question: 'What is the standard deduction for FY 2025-26?', answer: 'For the new tax regime: ₹75,000 standard deduction for salaried employees (increased from ₹50,000 in Budget 2024). For the old tax regime: ₹50,000. This is a flat deduction from your gross salary — no proof required.' },
+      { question: 'What is the ITR filing deadline for FY 2025-26?', answer: 'July 31, 2026 is the last date to file ITR for FY 2025-26 (AY 2026-27) for salaried individuals without audit. Filing after this deadline incurs a late fee of ₹5,000 (₹1,000 if income is below ₹5 lakh). Belated returns can be filed until December 31, 2026.' },
+    ],
+    relatedGuides: ['sip-calculator-guide', 'emi-calculator-guide', 'percentage-calculator-guide'],
+    toolCTA: {
+      heading: 'Calculate Your Income Tax — New vs Old Regime',
+      description: 'Enter your salary and deductions to instantly compare tax under both regimes for FY 2025-26. Find out which saves you more money.',
+      buttonText: 'Open Income Tax Calculator',
+    },
+  },
+
+  // ── 15. COLOR PICKER GUIDE ────────────────────────────────────
+  {
+    slug: 'color-picker-guide',
+    toolSlug: 'color-picker',
+    category: 'developer-tools',
+    title: 'Color Picker Guide: HEX, RGB, HSL Color Codes Explained (2026)',
+    subtitle: 'Everything designers and developers need to know about color formats, color theory, and picking accessible colors.',
+    metaTitle: 'Color Picker Guide — HEX, RGB, HSL Codes Explained 2026',
+    metaDescription: 'Learn the difference between HEX, RGB, HSL, and CMYK color formats. Includes color theory basics, brand color codes, and how to pick accessible colors.',
+    targetKeyword: 'color picker online',
+    secondaryKeywords: ['hex color code picker', 'rgb color picker', 'hsl color picker', 'color code finder', 'what is hex color', 'color palette generator', 'web color codes'],
+    lastUpdated: '2026-03-13',
+    readingTime: '7 min read',
+    tags: ['Design', 'Web Dev', 'CSS', 'Colors'],
+    intro: `<p>Color is one of the most powerful tools in design — it communicates brand identity, guides attention, conveys emotion, and determines whether a design feels professional or amateurish. Yet most beginners struggle with color codes: what is the difference between HEX and RGB? When do you use HSL? What is CMYK for?</p>
+<p>This guide covers every color format used in web and print design, explains color theory fundamentals, lists the official color codes of major brands, and shows you how to choose accessible color combinations that work for all users.</p>`,
+    sections: [
+      {
+        id: 'color-formats-explained',
+        title: 'HEX, RGB, HSL, CMYK — Color Formats Explained',
+        content: `<p>Every color format is just a different way of expressing the same underlying color. Here is when and why each is used:</p>
+<table>
+  <thead><tr><th>Format</th><th>Example</th><th>Best Used For</th><th>Range</th></tr></thead>
+  <tbody>
+    <tr><td>HEX</td><td>#1d4ed8</td><td>CSS, HTML, web design</td><td>#000000–#ffffff</td></tr>
+    <tr><td>RGB</td><td>rgb(29, 78, 216)</td><td>CSS, screens, digital</td><td>0–255 per channel</td></tr>
+    <tr><td>RGBA</td><td>rgba(29, 78, 216, 0.5)</td><td>CSS with transparency</td><td>RGB + 0–1 alpha</td></tr>
+    <tr><td>HSL</td><td>hsl(221, 76%, 48%)</td><td>CSS animations, theming</td><td>H:0–360, S/L:0–100%</td></tr>
+    <tr><td>HSLA</td><td>hsla(221, 76%, 48%, 0.5)</td><td>CSS with transparency</td><td>HSL + alpha</td></tr>
+    <tr><td>CMYK</td><td>cmyk(87, 64, 0, 15)</td><td>Print design (Photoshop)</td><td>0–100% per channel</td></tr>
+    <tr><td>HSV/HSB</td><td>hsv(221, 87%, 85%)</td><td>Photoshop, design apps</td><td>H:0–360, S/V:0–100%</td></tr>
+  </tbody>
+</table>
+<h3>HEX explained</h3>
+<p>A HEX color code is a 6-digit hexadecimal number: #RRGGBB. Each pair of digits represents Red, Green, Blue (0–255 in base-16). #000000 is black (0,0,0), #ffffff is white (255,255,255), #ff0000 is pure red. Shorthand: #fff = #ffffff, #f00 = #ff0000.</p>
+<h3>RGB explained</h3>
+<p>RGB stands for Red, Green, Blue. rgb(255, 0, 0) is red; rgb(0, 255, 0) is green; rgb(0, 0, 255) is blue. Mixing equal amounts of all three creates grey (rgb(128,128,128)) or white (rgb(255,255,255)).</p>
+<h3>HSL explained — the most intuitive for design</h3>
+<p>HSL stands for Hue, Saturation, Lightness. Hue is the color angle on the color wheel (0° = red, 120° = green, 240° = blue). Saturation is how vivid vs grey (0% = grey, 100% = vivid). Lightness is how light vs dark (0% = black, 100% = white, 50% = the "true" color). HSL is the most intuitive for designers — to make a color lighter, just increase L. To create a muted palette, reduce S.</p>`,
+      },
+      {
+        id: 'color-theory-basics',
+        title: 'Color Theory Basics for Designers and Developers',
+        content: `<p>Color theory gives you a framework for choosing colors that work well together. Here are the fundamental relationships:</p>
+<h3>The color wheel</h3>
+<p>Primary colors: Red, Yellow, Blue. Secondary colors: Orange (R+Y), Green (Y+B), Violet (B+R). Tertiary colors are between primary and secondary. On the digital color wheel, primary colors are Red (0°), Green (120°), Blue (240°).</p>
+<h3>Color harmonies</h3>
+<ul>
+  <li><strong>Complementary</strong>: Colors opposite on the wheel (blue + orange, red + green). High contrast, eye-catching. Good for CTAs and accents.</li>
+  <li><strong>Analogous</strong>: 3 adjacent colors on the wheel (blue, blue-green, green). Harmonious and easy on the eye. Good for backgrounds and serene designs.</li>
+  <li><strong>Triadic</strong>: 3 colors equally spaced (red, yellow, blue). Vibrant and balanced. Good for playful brands.</li>
+  <li><strong>Split-complementary</strong>: A color plus the two colors adjacent to its complement. Softer than complementary but still high contrast.</li>
+  <li><strong>Monochromatic</strong>: Different shades and tints of one hue. Clean, elegant, sophisticated.</li>
+</ul>
+<h3>Psychology of color</h3>
+<ul>
+  <li><strong>Red</strong>: Urgency, passion, danger (used by YouTube, Netflix, Coca-Cola)</li>
+  <li><strong>Blue</strong>: Trust, reliability, calm (used by Facebook, LinkedIn, Samsung)</li>
+  <li><strong>Green</strong>: Nature, growth, health (used by WhatsApp, Spotify, Whole Foods)</li>
+  <li><strong>Yellow</strong>: Energy, optimism, warning (used by McDonald\'s, IKEA, Snapchat)</li>
+  <li><strong>Black</strong>: Luxury, sophistication (used by Chanel, Apple, Nike)</li>
+</ul>`,
+      },
+      {
+        id: 'brand-color-codes',
+        title: 'Official Brand Color Codes (HEX Reference)',
+        content: `<p>Brand colors are usually protected intellectual property — only use them for reference or when building integrations/partner content. Here are the official colors of major brands:</p>
+<table>
+  <thead><tr><th>Brand</th><th>Primary Color</th><th>HEX Code</th><th>RGB</th></tr></thead>
+  <tbody>
+    <tr><td>Google (blue)</td><td>Google Blue</td><td>#4285F4</td><td>66, 133, 244</td></tr>
+    <tr><td>Meta / Facebook</td><td>Meta Blue</td><td>#1877F2</td><td>24, 119, 242</td></tr>
+    <tr><td>WhatsApp</td><td>WhatsApp Green</td><td>#25D366</td><td>37, 211, 102</td></tr>
+    <tr><td>YouTube</td><td>YouTube Red</td><td>#FF0000</td><td>255, 0, 0</td></tr>
+    <tr><td>Twitter / X</td><td>X Black</td><td>#000000</td><td>0, 0, 0</td></tr>
+    <tr><td>Instagram</td><td>Instagram Purple</td><td>#833AB4</td><td>131, 58, 180</td></tr>
+    <tr><td>LinkedIn</td><td>LinkedIn Blue</td><td>#0077B5</td><td>0, 119, 181</td></tr>
+    <tr><td>Amazon</td><td>Amazon Orange</td><td>#FF9900</td><td>255, 153, 0</td></tr>
+    <tr><td>Netflix</td><td>Netflix Red</td><td>#E50914</td><td>229, 9, 20</td></tr>
+    <tr><td>Spotify</td><td>Spotify Green</td><td>#1DB954</td><td>29, 185, 84</td></tr>
+    <tr><td>Apple</td><td>Apple Silver</td><td>#A2AAAD</td><td>162, 170, 173</td></tr>
+  </tbody>
+</table>
+<h3>CSS Custom Properties (CSS Variables)</h3>
+<p>For web projects, define your brand colors once and reuse everywhere:</p>
+<pre><code>:root {
+  --color-primary: #1d4ed8;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1e40af;
+  --color-accent: #f59e0b;
+  --color-text: #111827;
+  --color-bg: #ffffff;
+}</code></pre>`,
+      },
+      {
+        id: 'accessible-colors',
+        title: 'How to Choose Accessible Colors (WCAG Compliance)',
+        content: `<p>Color accessibility means ensuring that people with color blindness or low vision can read and understand your content. About 8% of men and 0.5% of women have some form of color vision deficiency.</p>
+<h3>WCAG contrast requirements</h3>
+<ul>
+  <li><strong>AA standard (minimum)</strong>: 4.5:1 contrast ratio for normal text, 3:1 for large text</li>
+  <li><strong>AAA standard (enhanced)</strong>: 7:1 for normal text, 4.5:1 for large text</li>
+</ul>
+<h3>Contrast ratio quick reference</h3>
+<table>
+  <thead><tr><th>Text Color</th><th>Background</th><th>Contrast Ratio</th><th>WCAG AA</th></tr></thead>
+  <tbody>
+    <tr><td>#000000 (black)</td><td>#ffffff (white)</td><td>21:1</td><td>Pass ✓</td></tr>
+    <tr><td>#ffffff (white)</td><td>#1d4ed8 (blue)</td><td>8.59:1</td><td>Pass ✓</td></tr>
+    <tr><td>#ffffff (white)</td><td>#3b82f6 (light blue)</td><td>3.02:1</td><td>Fail ✗</td></tr>
+    <tr><td>#1f2937 (dark)</td><td>#f9fafb (light grey)</td><td>16.1:1</td><td>Pass ✓</td></tr>
+    <tr><td>#6b7280 (grey)</td><td>#ffffff (white)</td><td>4.48:1</td><td>Borderline</td></tr>
+  </tbody>
+</table>
+<h3>Color blindness safe palettes</h3>
+<p>The most common color blindness is red-green (deuteranopia). Never rely on red vs green alone to convey meaning. Use blue + orange or blue + yellow as safe alternatives. Always add icons or text labels alongside color to ensure meaning is not lost for colorblind users.</p>
+<div class="callout-tip"><strong>Tool tip:</strong> Use ToolsArena\'s Color Contrast Checker to instantly verify if your color combination meets WCAG AA/AAA standards.</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Open the Color Picker', description: 'Go to ToolsArena\'s Color Picker. Click anywhere on the color spectrum or enter a known HEX/RGB/HSL value to start.' },
+      { title: 'Select your color visually', description: 'Click the color square to open the visual picker. Drag the crosshair to your desired color, then adjust the hue slider and lightness.' },
+      { title: 'Copy in your preferred format', description: 'Click the HEX, RGB, or HSL tab to switch formats. Click the copy button next to the value to copy it to your clipboard.' },
+      { title: 'Get color from an image', description: 'Use the eyedropper / screen picker (supported in Chrome/Edge) to pick any color visible on your screen — from a website, image, or application.' },
+      { title: 'Check contrast accessibility', description: 'Paste your chosen colors into ToolsArena\'s Color Contrast Checker to verify they meet WCAG AA requirements before using them in your design.' },
+    ],
+    faqs: [
+      { question: 'What is the difference between RGB and HEX color codes?', answer: 'HEX and RGB represent the same colors in different notations. HEX uses base-16 notation (#rrggbb) while RGB uses decimal (0–255 per channel). #ff0000 and rgb(255,0,0) are identical red. Use HEX for shorthand in HTML/CSS; RGB when you need to manipulate individual color channels or add transparency with rgba().' },
+      { question: 'How do I find the color code from an image?', answer: 'Use the browser\'s built-in eyedropper tool (available in Chrome 95+, Edge, Firefox): open the color picker in DevTools or use an online color picker with screen capture. Alternatively, open the image in Photoshop or GIMP and use the eyedropper tool, then read the HEX value from the color info panel.' },
+      { question: 'What is HSL color and when should I use it?', answer: 'HSL (Hue, Saturation, Lightness) is the most intuitive format for designers. Hue (0–360°) is the base color, Saturation is vividness, Lightness is brightness. Use HSL in CSS when you want to programmatically create color variations — for example, to make a hover state lighter: increase L by 10%. CSS custom properties with HSL make theming much easier.' },
+      { question: 'How do I choose accessible text and background colors?', answer: 'Your text/background combination must have a contrast ratio of at least 4.5:1 for normal text (WCAG AA standard). Dark text on light background and light text on dark background generally work. Avoid light grey text on white, yellow text on white, or pastel colors on white. Use a contrast checker tool before finalising your color choices.' },
+      { question: 'What is CMYK color and why is it different from RGB?', answer: 'RGB (Red, Green, Blue) is an additive color model for screens — mixing light. CMYK (Cyan, Magenta, Yellow, Black) is a subtractive model for printing — mixing ink. The same color can look different in RGB vs CMYK because printers cannot reproduce every color screens can display (the "gamut" is smaller for print). Always work in CMYK when designing for physical print materials.' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Pick Any Color — Free Online Color Picker',
+      description: 'Get HEX, RGB, HSL, and CMYK values instantly. Visual picker, screen eyedropper, and copy-to-clipboard. No sign-up needed.',
+      buttonText: 'Open Color Picker',
+    },
+  },
+
+];
 
 export function getGuideBySlug(slug: string, locale: string = 'en'): Guide | undefined {
   if (locale === 'hi') return guidesHi.find(g => g.slug === slug);

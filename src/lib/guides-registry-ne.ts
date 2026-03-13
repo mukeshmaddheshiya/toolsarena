@@ -537,4 +537,640 @@ export const guidesNe: Guide[] = [
     toolCTA: { heading: 'अहिले Unit Convert गर्नुहोस्!', description: 'रोपनी, आना, धर्नी — कुनै पनि नेपाली एकाइ तुरुन्त convert।', buttonText: 'Unit Converter खोल्नुहोस् →' },
   },
 
+  // ── 11. IMAGE RESIZER GUIDE (Nepali) ─────────────────────────
+  {
+    slug: 'image-resizer-guide',
+    toolSlug: 'image-resizer',
+    category: 'image-tools',
+    title: 'फोटो साइज घटाउने — अनलाइन Image Resize गाइड (2026)',
+    subtitle: 'Lok Sewa, Passport, Social Media र Daraz को लागि सही फोटो साइज जान्नुहोस्।',
+    metaTitle: 'फोटो साइज घटाउने — अनलाइन Image Resize',
+    metaDescription: 'Lok Sewa Aayog, Passport, NID र social media को लागि सही photo size। NTC/Ncell data बचाउन WebP format। Daraz product photo guide। Free tool।',
+    targetKeyword: 'फोटो साइज घटाउने',
+    secondaryKeywords: ['image resize Nepal', 'Lok Sewa photo size', 'passport photo size Nepal', 'NID card photo', 'Daraz product image size', 'फोटो कम्प्रेस'],
+    lastUpdated: '2026-03-13',
+    readingTime: '७ मिनेट पढ्नुहोस्',
+    tags: ['Image', 'Lok Sewa', 'Social Media', 'Nepal'],
+    intro: `<p>नेपालमा फोटो resize गर्नु अत्यन्त आवश्यक छ — चाहे Lok Sewa Aayog को form भर्नुस्, Passport को लागि photo upload गर्नुस्, वा Instagram मा photo post गर्नुस्। गलत size को photo upload भएमा form reject हुन सक्छ।</p>
+<p>यस गाइडमा: नेपालका सरकारी portals को photo requirements, social media sizes, NTC/Ncell data बचाउने tricks, र बिना quality घटाई photo resize कसरी गर्ने।</p>`,
+    sections: [
+      {
+        id: 'nepal-government-photo-requirements',
+        title: 'नेपाल सरकारी Forms को Photo Requirements',
+        content: `<p>नेपालका सरकारी portals र competitive exams मा exact photo specifications follow गर्नुपर्छ:</p>
+<table>
+  <thead><tr><th>Portal / Form</th><th>Photo Size</th><th>Max File Size</th><th>Format</th></tr></thead>
+  <tbody>
+    <tr><td>Lok Sewa Aayog</td><td>—</td><td>100 KB</td><td>JPG</td></tr>
+    <tr><td>Passport Application</td><td>35 × 45 mm</td><td>—</td><td>JPEG</td></tr>
+    <tr><td>NID (National ID)</td><td>—</td><td>200 KB</td><td>JPEG</td></tr>
+    <tr><td>Citizenship Certificate</td><td>3.5 × 4.5 cm</td><td>—</td><td>JPEG</td></tr>
+    <tr><td>TU/KU Admission</td><td>—</td><td>150 KB</td><td>JPEG</td></tr>
+    <tr><td>NEB/SEE Registration</td><td>—</td><td>100 KB</td><td>JPEG</td></tr>
+    <tr><td>Bank Account Opening</td><td>—</td><td>200 KB</td><td>JPEG</td></tr>
+  </tbody>
+</table>
+<h3>Lok Sewa को 100 KB Limit मा Photo कसरी राख्ने?</h3>
+<ol>
+  <li>Photo dimensions 400 × 500 pixels मा resize गर्नुस्</li>
+  <li>Format: JPEG (PNG होइन)</li>
+  <li>JPEG quality 70-75% मा set गर्नुस्</li>
+  <li>File size check गर्नुस् — 100 KB भन्दा कम हुनुपर्छ</li>
+</ol>
+<div class="callout-tip"><strong>महत्वपूर्ण:</strong> Passport photo को background plain white वा light gray हुनुपर्छ। Face clearly visible र centered हुनुपर्छ।</div>`,
+      },
+      {
+        id: 'social-media-sizes-nepal',
+        title: 'Social Media Image Sizes — Nepal Users को लागि',
+        content: `<p>नेपालमा सबभन्दा popular social media platforms का recommended sizes:</p>
+<table>
+  <thead><tr><th>Platform</th><th>Image Type</th><th>Recommended Size</th><th>Aspect Ratio</th></tr></thead>
+  <tbody>
+    <tr><td>Facebook</td><td>Profile Picture</td><td>170 × 170 px</td><td>1:1</td></tr>
+    <tr><td>Facebook</td><td>Cover Photo</td><td>820 × 312 px</td><td>2.63:1</td></tr>
+    <tr><td>TikTok</td><td>Profile Picture</td><td>200 × 200 px</td><td>1:1</td></tr>
+    <tr><td>Instagram</td><td>Square Post</td><td>1080 × 1080 px</td><td>1:1</td></tr>
+    <tr><td>YouTube</td><td>Thumbnail</td><td>1280 × 720 px</td><td>16:9</td></tr>
+    <tr><td>WhatsApp</td><td>DP</td><td>500 × 500 px</td><td>1:1</td></tr>
+  </tbody>
+</table>
+<h3>NTC/Ncell Data बचाउने — WebP Format</h3>
+<p>नेपालमा mobile internet महँगो छ। WebP format JPEG भन्दा 25-35% सानो हुन्छ — same quality मा। Website मा images WebP मा convert गर्नुस्: तपाईंको visitors को data बच्छ र site faster load हुन्छ।</p>
+<h3>Daraz Nepal Product Images</h3>
+<p>Daraz Nepal मा product sell गर्छु भने: minimum 500 × 500 px, recommended 1000 × 1000 px, JPEG, white background। Higher resolution = better search ranking on Daraz।</p>`,
+      },
+      {
+        id: 'pixels-vs-kb-nepali',
+        title: 'Pixels र KB — के फरक छ?',
+        content: `<p>यो common confusion हो। सजिलो भाषामा बुझौं:</p>
+<h3>Pixels = Image को Dimensions</h3>
+<p>1080 × 1080 pixel image मा 11,66,400 pixels छन्। जति धेरै pixels, उति धेरै detail — तर file size पनि ठूलो।</p>
+<h3>KB/MB = File को Actual Size</h3>
+<p>यो pixels + compression format दुवैमा depend गर्छ। 1080 × 1080 JPEG हुन सक्छ:
+<ul>
+  <li>Low quality (60%) = ~50-80 KB</li>
+  <li>Medium quality (80%) = ~150-250 KB</li>
+  <li>High quality (95%) = ~500 KB - 1 MB</li>
+</ul>
+</p>
+<h3>के गर्ने?</h3>
+<ul>
+  <li><strong>Dimensions सानो बनाउन:</strong> Resize गर्नुस् (pixel count घटाउनुस्)</li>
+  <li><strong>KB कम गर्न:</strong> Compress गर्नुस् (JPEG quality घटाउनुस्)</li>
+  <li><strong>दुवै एकैसाथ:</strong> पहिले resize, त्यसपछि compress</li>
+</ul>`,
+      },
+      {
+        id: 'image-formats-nepal',
+        title: 'कुन Image Format कहिले Use गर्ने?',
+        content: `<p>सही format छान्नु important छ:</p>
+<table>
+  <thead><tr><th>Format</th><th>Best For</th><th>Transparent?</th></tr></thead>
+  <tbody>
+    <tr><td>JPEG / JPG</td><td>Photos, सरकारी forms</td><td>छैन</td></tr>
+    <tr><td>PNG</td><td>Logo, screenshot, text images</td><td>छ</td></tr>
+    <tr><td>WebP</td><td>Website images (best choice)</td><td>छ</td></tr>
+    <tr><td>GIF</td><td>Simple animations</td><td>छ</td></tr>
+  </tbody>
+</table>
+<h3>Smartphone Photos — Nepal Context</h3>
+<p>नेपालमा अधिकांश users Samsung, Xiaomi, Realme smartphones use गर्छन् — 12-50 MP cameras। यिनीहरूले 3-8 MB photos लिन्छन्। कुनै पनि form वा social media मा upload गर्नु अघि resize गर्नुस्।</p>
+<p>Hamro Patro, Sasto Deal, र नेपाली ecommerce sites को लागि: JPEG, 300-500 KB maximum।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Image Resizer खोल्नुस्', description: 'ToolsArena को free Image Resizer tool open गर्नुस् — कुनै sign-up चाहिँदैन।' },
+      { title: 'Photo Upload गर्नुस्', description: 'Photo drag & drop गर्नुस् वा click गरेर select गर्नुस्। JPEG, PNG, WebP support छ।' },
+      { title: 'नया Size हाल्नुस्', description: 'Width र height pixels मा enter गर्नुस्, वा Instagram/YouTube/Facebook preset select गर्नुस्।' },
+      { title: 'Format र Quality छान्नुस्', description: 'Lok Sewa forms को लागि JPEG 70%, social media को लागि JPEG 85%, website को लागि WebP।' },
+      { title: 'Download गर्नुस्', description: 'Download button click गर्नुस्। Image तपाईंको browser मै process हुन्छ — server मा upload हुँदैन।' },
+    ],
+    faqs: [
+      { question: 'Lok Sewa form मा photo reject किन हुन्छ?', answer: 'Lok Sewa Aayog को photo limit 100 KB छ। यो limit exceed भयो भने automatically reject हुन्छ। ToolsArena को Image Resizer बाट 400 × 500 px resize गरेर JPEG quality 70% राख्नुस् — 100 KB भन्दा कम हुन्छ।' },
+      { question: 'Passport photo को exact size के हो?', answer: 'नेपाल passport photo: 35 × 45 mm (physical print), white background, face clearly visible। Online application को लागि high resolution JPEG — minimum 600 × 780 pixels। Face 70-80% of frame हुनुपर्छ।' },
+      { question: 'Photo resize गर्दा quality खराब हुन्छ?', answer: 'Photo सानो बनाउँदा (downscale) quality खराब हुँदैन। तर photo ठूलो बनाउँदा (upscale) blur हुन्छ। जहिले पनि original भन्दा सानो मात्र बनाउनुस्।' },
+      { question: 'WhatsApp DP को best size के हो?', answer: 'WhatsApp profile picture (DP) को लागि 500 × 500 pixels best छ। Square image (1:1 ratio) upload गर्नुस्।' },
+      { question: 'JPEG र PNG मा के फरक छ?', answer: 'JPEG photos को लागि best छ — high compression, no transparency। PNG graphics, logos, र screenshots को लागि — lossless, transparency support। Sarkari forms को लागि जहिले JPEG use गर्नुस्।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'pdf-compressor-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'फोटो Resize गर्नुस् — Free, Fast',
+      description: 'Exact pixels set गर्नुस्, social media presets use गर्नुस्, instantly download गर्नुस्। Browser मा process — server मा upload हुँदैन।',
+      buttonText: 'Image Resizer खोल्नुस् →',
+    },
+  },
+
+  // ── 12. PASSWORD GENERATOR GUIDE (Nepali) ────────────────────
+  {
+    slug: 'password-generator-guide',
+    toolSlug: 'password-generator',
+    category: 'utility-tools',
+    title: 'बलियो पासवर्ड बनाउनुहोस् — Nepal Cyber Security Guide 2026',
+    subtitle: 'eSewa, Khalti, FonePay account hack हुनबाट जोगाउनुस् — complete password guide।',
+    metaTitle: 'बलियो पासवर्ड बनाउनुहोस् — Free Generator',
+    metaDescription: 'eSewa, Khalti, Mero Share account secure गर्नुस्। Nepal Cyber Bureau guidelines, SIM swap attack बाट कसरी जोगिने। Free strong password generator।',
+    targetKeyword: 'बलियो पासवर्ड बनाउने',
+    secondaryKeywords: ['strong password Nepal', 'eSewa account security', 'Mero Share password', 'Nepal cyber fraud', 'two factor authentication Nepal', 'NTA cyber security'],
+    lastUpdated: '2026-03-13',
+    readingTime: '७ मिनेट पढ्नुहोस्',
+    tags: ['Security', 'Cybersecurity', 'eSewa', 'Nepal'],
+    intro: `<p>नेपालमा cyber fraud तेजी बढ्दैछ। eSewa र Khalti account hack, Facebook impersonation scam, Mero Share (CDSC) trading account compromise — यी सबै weak password वा reused password को कारण हुन्छन्।</p>
+<p>यस गाइडमा: Nepal Cyber Bureau को guidelines, eSewa/Khalti account कसरी secure गर्ने, NepSE trading account protection, र strong password बनाउने formula।</p>`,
+    sections: [
+      {
+        id: 'nepal-cyber-fraud-types',
+        title: 'नेपालमा Cyber Fraud — Common Attack Types',
+        content: `<p>Nepal Police Cyber Bureau को report अनुसार नेपालमा सबभन्दा धेरै देखिएका cyber frauds:</p>
+<h3>eSewa र Khalti Account Hack</h3>
+<p>Hackers fake customer care numbers (Google मा advertise गरेर) बाट call गर्छन् — eSewa/Khalti employee भएको नाटक गर्दै OTP माग्छन्। OTP दिएमा account instant empty। <strong>Rule: कसैलाई पनि OTP नदिनुस् — कुनै पनि company ले OTP माग्दैन।</strong></p>
+<h3>Facebook/Social Media Hacking</h3>
+<p>Weak password भएको Facebook account hack गरेर friends लाई loan माग्ने scam common छ। एकपटक hack भएमा attacker तपाईंको नाममा नयाँ accounts बनाउन सक्छ।</p>
+<h3>Mero Share (CDSC) Account</h3>
+<p>Nepal Stock Exchange (NepSE) मा invest गर्नेहरूको Mero Share account hack गरेर shares बेच्ने cases बढ्दैछन्। Strong password + 2FA enable गर्नुस्।</p>
+<h3>SIM Swap Attack</h3>
+<p>Hacker ले तपाईंको नाममा नयाँ SIM लिएर OTP intercept गर्छ। NTC/Ncell users target हुन्छन्। यो attack तब dangerous हुन्छ जब banking password पनि weak होस्।</p>`,
+      },
+      {
+        id: 'strong-password-nepal',
+        title: 'बलियो Password को Formula — Crack गर्न कति समय लाग्छ?',
+        content: `<p>Password strength mathematics मा based छ:</p>
+<table>
+  <thead><tr><th>Password Length</th><th>Numbers Only</th><th>Letters Only</th><th>Mixed (सबै types)</th></tr></thead>
+  <tbody>
+    <tr><td>6 characters</td><td>Instant</td><td>Instant</td><td>5 seconds</td></tr>
+    <tr><td>8 characters</td><td>Instant</td><td>22 minutes</td><td>8 hours</td></tr>
+    <tr><td>10 characters</td><td>Instant</td><td>4 weeks</td><td>5 years</td></tr>
+    <tr><td>12 characters</td><td>Instant</td><td>300 years</td><td>34,000 years</td></tr>
+    <tr><td>16 characters</td><td>—</td><td>Millions of years</td><td>Trillions of years</td></tr>
+  </tbody>
+</table>
+<h3>Rules</h3>
+<ul>
+  <li><strong>कम से कम 12 characters</strong></li>
+  <li><strong>4 types mix:</strong> ABCD + abcd + 1234 + !@#$</li>
+  <li><strong>Dictionary words avoid:</strong> "nepal2024" weak छ</li>
+  <li><strong>Passphrase try:</strong> "mero-ghar-kathmandu-2026" — 24 chars, याद गर्न सजिलो</li>
+</ul>`,
+      },
+      {
+        id: 'nepal-specific-security',
+        title: 'नेपाल-Specific Security Tips — eSewa देखि NepSE सम्म',
+        content: `<p>नेपालमा popular digital services को security best practices:</p>
+<table>
+  <thead><tr><th>Service</th><th>2FA Available?</th><th>Security Tips</th></tr></thead>
+  <tbody>
+    <tr><td>eSewa</td><td>OTP via SMS</td><td>Strong password + OTP enable, कसैलाई OTP नदिनुस्</td></tr>
+    <tr><td>Khalti</td><td>OTP via SMS</td><td>Transaction PIN अलग राख्नुस्</td></tr>
+    <tr><td>FonePay</td><td>PIN based</td><td>6-digit PIN, known numbers use नगर्नुस्</td></tr>
+    <tr><td>Mero Share (CDSC)</td><td>Yes (2FA)</td><td>2FA अवश्य enable गर्नुस् — shares को लागि critical</td></tr>
+    <tr><td>Nepal SBI/Everest Bank</td><td>OTP</td><td>Net banking password quarterly change</td></tr>
+    <tr><td>IMEPay</td><td>OTP + PIN</td><td>Public WiFi मा use नगर्नुस्</td></tr>
+  </tbody>
+</table>
+<h3>NTA र Nepal Cyber Bureau Guidelines</h3>
+<ul>
+  <li>प्रत्येक account को अलग password राख्नुस्</li>
+  <li>Public WiFi मा banking/digital payment नगर्नुस्</li>
+  <li>Unknown links click नगर्नुस् — phishing sites बढ्दैछन्</li>
+  <li>Phone number, birthday, र "nepal123" जस्ता passwords avoid गर्नुस्</li>
+</ul>`,
+      },
+      {
+        id: 'password-manager-nepal',
+        title: 'Password Manager — नेपालमा कसरी Use गर्ने?',
+        content: `<p>100+ accounts को अलग-अलग passwords याद राख्न impossible छ। Password manager एकमात्र practical solution हो:</p>
+<h3>Recommended Free Options</h3>
+<ul>
+  <li><strong>Bitwarden</strong> — Free, open source, unlimited passwords। Nepal users को लागि best choice।</li>
+  <li><strong>Google Password Manager</strong> — Chrome मा built-in, basic तर convenient।</li>
+</ul>
+<h3>Important: के Store गर्ने, के नगर्ने</h3>
+<ul>
+  <li><strong>Store गर्न मिल्छ:</strong> Website passwords, email passwords, social media passwords</li>
+  <li><strong>Store नगर्नुस्:</strong> eSewa/Khalti PIN, Bank ATM PIN, UPI PIN — यी memory मा मात्र राख्नुस्</li>
+</ul>
+<p>Mero Share account को लागि: strong unique password + 2FA enable — यो तपाईंको investment portfolio हो, maximum security दिनुस्।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Password Generator खोल्नुस्', description: 'ToolsArena को free Password Generator open गर्नुस्।' },
+      { title: 'Length 16+ set गर्नुस्', description: 'Slider लाई कम से कम 16 characters मा set गर्नुस्। eSewa र banking accounts को लागि 20 characters recommend।' },
+      { title: 'सबै character types enable गर्नुस्', description: 'Uppercase, lowercase, numbers, symbols — चारवटै check boxes tick गर्नुस्।' },
+      { title: 'Generate र check गर्नुस्', description: 'Generate button click गर्नुस्। Password मा कुनै common word वा pattern नहोस् — random noise जस्तो देखिनुपर्छ।' },
+      { title: 'Password Manager मा save गर्नुस्', description: 'Copy गरेर Bitwarden मा save गर्नुस्। त्यसपछि account मा 2FA enable गर्नुस्।' },
+    ],
+    faqs: [
+      { question: 'Online password generator safe छ?', answer: 'हो, यदि generator browser मै password बनाउँछ भने। ToolsArena को generator Web Crypto API use गर्छ — password तपाईंको browser मा बन्छ, कुनै server मा जाँदैन।' },
+      { question: 'eSewa PIN password generator बाट बनाउने?', answer: 'eSewa/Khalti PIN 4-6 digits को हुन्छ र कहिले पनि digitally store गर्नुहुँदैन। PIN memory मा मात्र राख्नुस् — phone number वा birthday use नगर्नुस्।' },
+      { question: 'Mero Share account कसरी secure गर्ने?', answer: 'Mero Share (CDSC) को लागि: (1) Strong unique password — 16+ characters, (2) 2FA enable गर्नुस् — यो most important छ, (3) Shared computer मा login नगर्नुस्, (4) Password quarterly change गर्नुस्। तपाईंको NepSE portfolio यसमा छ।' },
+      { question: 'Facebook account hack भयो भने के गर्ने?', answer: 'तुरुन्त: (1) facebook.com/hacked मा गएर report गर्नुस्, (2) Linked email बाट password reset गर्नुस्, (3) Friends लाई inform गर्नुस् कि account hack भएको छ, (4) Recover भएपछि 2FA enable गर्नुस् र password change गर्नुस्।' },
+      { question: 'Nepal मा most common password attacks कुन हुन्?', answer: 'नेपालमा top attacks: (1) Phishing — fake eSewa/Khalti websites, (2) Social engineering — customer care नाटक गरेर OTP माग्ने, (3) SIM swap — new SIM लिएर OTP intercept, (4) Credential stuffing — leaked passwords use गर्ने। Strong unique passwords + 2FA = सबैबाट protection।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'json-formatter-guide', 'bmi-calculator-guide'],
+    toolCTA: {
+      heading: 'बलियो Password Generate गर्नुस् — Free, Private',
+      description: 'Browser मै generate हुन्छ — कुनै data server मा जाँदैन। 128 characters सम्म support।',
+      buttonText: 'Password Generator खोल्नुस् →',
+    },
+  },
+
+  // ── 13. SIP CALCULATOR GUIDE (Nepali) ────────────────────────
+  {
+    slug: 'sip-calculator-guide',
+    toolSlug: 'sip-calculator',
+    category: 'calculators',
+    title: 'SIP लगानी नेपाल — Mutual Fund Calculator Guide 2026',
+    subtitle: 'नेपालमा SIP कसरी गर्ने? SEBON registered funds, NepSE vs SIP comparison।',
+    metaTitle: 'SIP क्याल्कुलेटर नेपाल — लगानी गणना',
+    metaDescription: 'नेपालमा SIP लगानी कसरी गर्ने? SEBON registered mutual funds, NMB/Nabil/NIBL funds comparison, Rs 1000 monthly 20 years मा कति हुन्छ। Free SIP calculator।',
+    targetKeyword: 'SIP लगानी नेपाल',
+    secondaryKeywords: ['Nepal mutual fund SIP', 'SEBON mutual fund', 'Mero Share SIP', 'NepSE vs mutual fund', 'Nepal investment guide', 'C-ASBA Nepal'],
+    lastUpdated: '2026-03-13',
+    readingTime: '८ मिनेट पढ्नुहोस्',
+    tags: ['SIP', 'Mutual Fund', 'NepSE', 'Nepal Finance'],
+    intro: `<p>नेपालमा mutual fund र SIP को popularity बढ्दैछ। पहिले मानिसहरू bank FD र NepSE stocks मा मात्र invest गर्थे — अब SEBON registered mutual funds मार्फत SIP सुरु गर्न सकिन्छ। Rs 1,000/month बाट सुरु गर्न सकिन्छ।</p>
+<p>यस गाइडमा: नेपालमा SIP कसरी काम गर्छ, best Nepal mutual funds 2026, NepSE vs SIP comparison, र Mero Share बाट कसरी invest गर्ने।</p>`,
+    sections: [
+      {
+        id: 'sip-nepal-how-works',
+        title: 'नेपालमा SIP कसरी काम गर्छ?',
+        content: `<p>SIP (Systematic Investment Plan) मार्फत तपाईं हरेक महिना fixed amount mutual fund मा invest गर्नुहुन्छ।</p>
+<h3>Compounding को शक्ति</h3>
+<p>Rs 1,000/month × 10% annual return × 20 years = <strong>Rs 7,59,369</strong><br/>तपाईंले invest गर्नुभयो: Rs 2,40,000 मात्र<br/>Profit: Rs 5,19,369 — पैसाले पैसा कमाउँछ!</p>
+<h3>Rupee Cost Averaging</h3>
+<p>हरेक महिना fixed amount invest गर्दा — market down भएमा बढी units मिल्छ, market up भएमा कम units। दीर्घकालमा average cost कम हुन्छ।</p>
+<h3>नेपालमा SIP को Formula</h3>
+<p>Future Value = P × [((1 + r)^n − 1) / r] × (1 + r)<br/>जहाँ P = monthly amount, r = monthly return rate, n = total months</p>`,
+      },
+      {
+        id: 'nepal-sip-returns-table',
+        title: 'SIP Returns Table — नेपालको Context मा',
+        content: `<p>10% annual returns मा (नेपाल mutual funds को conservative estimate):</p>
+<table>
+  <thead><tr><th>Monthly SIP</th><th>५ वर्ष</th><th>१० वर्ष</th><th>२० वर्ष</th></tr></thead>
+  <tbody>
+    <tr><td>Rs 1,000</td><td>Rs 77,437</td><td>Rs 2,06,552</td><td>Rs 7,59,369</td></tr>
+    <tr><td>Rs 2,000</td><td>Rs 1,54,874</td><td>Rs 4,13,104</td><td>Rs 15,18,738</td></tr>
+    <tr><td>Rs 5,000</td><td>Rs 3,87,185</td><td>Rs 10,32,760</td><td>Rs 37,96,845</td></tr>
+    <tr><td>Rs 10,000</td><td>Rs 7,74,371</td><td>Rs 20,65,520</td><td>Rs 75,93,690</td></tr>
+  </tbody>
+</table>
+<p><em>Note: 10% नेपाल mutual funds को approximate estimate। Actual returns vary। Past performance = future guarantee होइन।</em></p>
+<h3>Nepal Bank FD vs SIP</h3>
+<table>
+  <thead><tr><th>Parameter</th><th>SIP (Equity MF)</th><th>Bank FD Nepal</th></tr></thead>
+  <tbody>
+    <tr><td>Expected Returns</td><td>8-12% (market linked)</td><td>8-9% (fixed)</td></tr>
+    <tr><td>Risk</td><td>Market risk</td><td>बहुत कम</td></tr>
+    <tr><td>Liquidity</td><td>High</td><td>Penalty with early exit</td></tr>
+    <tr><td>Inflation Beat</td><td>Possibly</td><td>Barely</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'nepal-mutual-funds-2026',
+        title: 'नेपालका Best Mutual Funds 2026 — SEBON Registered',
+        content: `<p>SEBON (Securities Board of Nepal) registered mutual funds मा मात्र invest गर्नुस्:</p>
+<table>
+  <thead><tr><th>Fund Name</th><th>Type</th><th>Fund House</th><th>Min Investment</th></tr></thead>
+  <tbody>
+    <tr><td>NMB Sulav Income Fund</td><td>Balanced</td><td>NMB Bank</td><td>Rs 100</td></tr>
+    <tr><td>Nabil Balanced Fund</td><td>Balanced</td><td>Nabil Bank</td><td>Rs 100</td></tr>
+    <tr><td>NIBL Pragati Fund</td><td>Growth</td><td>NIBL</td><td>Rs 100</td></tr>
+    <tr><td>Siddhartha Equity Fund</td><td>Equity</td><td>Siddhartha Bank</td><td>Rs 100</td></tr>
+    <tr><td>Global IME Samunnat</td><td>Growth</td><td>Global IME</td><td>Rs 100</td></tr>
+    <tr><td>Sunrise First Mutual Fund</td><td>Balanced</td><td>Sunrise Bank</td><td>Rs 100</td></tr>
+  </tbody>
+</table>
+<h3>नेपालमा Mutual Fund कसरी किन्ने?</h3>
+<ol>
+  <li>Mero Share (meroshare.cdsc.com.np) मा Demat account खोल्नुस्</li>
+  <li>C-ASBA मार्फत fund को IPO/FPO apply गर्नुस्</li>
+  <li>Secondary market मा NepSE बाट buy/sell गर्न सकिन्छ</li>
+  <li>Fund House directly contact गर्न पनि मिल्छ</li>
+</ol>
+<h3>Tax on Mutual Fund Nepal</h3>
+<p>नेपालमा mutual fund dividend मा 5% TDS लाग्छ। Capital gains tax: listed funds मा 7.5%, non-listed मा 15%।</p>`,
+      },
+      {
+        id: 'remittance-investment-nepal',
+        title: 'Remittance र NRN Investment — विदेशबाट नेपालमा Invest',
+        content: `<p>नेपालका धेरै नागरिक विदेशमा काम गर्छन् र नेपालमा पैसा पठाउँछन्। यो पैसा smart तरिकाले invest गर्न सकिन्छ:</p>
+<h3>NRN (Non-Resident Nepali) Investment Options</h3>
+<ul>
+  <li><strong>NRN Demat Account</strong> — CDSC मार्फत NepSE मा invest गर्न सकिन्छ</li>
+  <li><strong>Fixed Deposits</strong> — Nepal banks मा 8-9% interest</li>
+  <li><strong>Mutual Funds</strong> — SEBON registered funds मा invest</li>
+  <li><strong>Real Estate</strong> — काठमाडौं/पोखरा मा property</li>
+</ul>
+<h3>Monthly Remittance को SIP Investment Plan</h3>
+<p>Rs 5,000/month remittance आउँछ भने:</p>
+<ul>
+  <li>Rs 2,000 → Emergency fund (bank savings)</li>
+  <li>Rs 2,000 → SIP mutual fund (long-term growth)</li>
+  <li>Rs 1,000 → Fixed Deposit (short-term safety)</li>
+</ul>
+<p>यो diversification approach नेपालको financial context मा recommended छ।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Monthly Amount हाल्नुस्', description: 'SIP Calculator मा हरेक महिना invest गर्ने amount हाल्नुस् — Rs 1,000 बाट सुरु गर्न सकिन्छ।' },
+      { title: 'Duration set गर्नुस्', description: 'कति वर्ष invest गर्ने? SIP को magic 10+ years मा देखिन्छ।' },
+      { title: 'Expected Return Rate हाल्नुस्', description: 'नेपाल mutual funds को लागि conservative 8-10% use गर्नुस्।' },
+      { title: 'Results हेर्नुस्', description: 'Calculator ले total investment, returns, र final corpus देखाउँछ।' },
+      { title: 'Mero Share मा Account खोल्नुस्', description: 'meroshare.cdsc.com.np मा Demat account खोल्नुस्। SEBON registered fund छान्नुस् र invest सुरु गर्नुस्।' },
+    ],
+    faqs: [
+      { question: 'नेपालमा SIP को minimum amount कति हो?', answer: 'नेपालका अधिकांश mutual funds Rs 100 बाट SIP accept गर्छन्। Rs 1,000/month बाट comfortable सुरुवात गर्न सकिन्छ।' },
+      { question: 'नेपालमा Mutual Fund safe छ?', answer: 'SEBON registered mutual funds regulated छन् — तर market risk हुन्छ। Short term मा value घट्न सक्छ। 5+ years को horizon मा invest गर्नुस्। Non-registered schemes मा invest नगर्नुस्।' },
+      { question: 'NepSE stocks vs Mutual Fund — कुन बेहतर?', answer: 'NepSE stocks: higher potential returns तर higher risk, research र time चाहिन्छ। Mutual Fund: professional management, diversification, beginners को लागि better। दुवैको combination ideal छ।' },
+      { question: 'नेपालमा Mutual Fund मा tax कति लाग्छ?', answer: 'Dividend: 5% TDS। Capital Gains: listed funds मा 7.5%, non-listed मा 15%। FD भन्दा tax-efficient हुन सक्छ दीर्घकालमा।' },
+      { question: 'Mero Share बाट Mutual Fund कसरी किन्ने?', answer: 'Mero Share (meroshare.cdsc.com.np) मा account छ भने: ASBA Service Provider (आफ्नो bank) मार्फत fund को IPO/FPO apply गर्न सकिन्छ। Secondary market मा NepSE listed units buy गर्न broker account चाहिन्छ।' },
+    ],
+    relatedGuides: ['emi-calculator-guide', 'percentage-calculator-guide', 'age-calculator-guide'],
+    toolCTA: {
+      heading: 'SIP Returns Calculate गर्नुस् — Free Tool',
+      description: 'Monthly amount, duration र return rate हाल्नुस् — corpus instantly calculate हुन्छ।',
+      buttonText: 'SIP Calculator खोल्नुस् →',
+    },
+  },
+
+  // ── 14. INCOME TAX CALCULATOR GUIDE (Nepali) ─────────────────
+  {
+    slug: 'income-tax-calculator-guide',
+    toolSlug: 'income-tax-calculator',
+    category: 'calculators',
+    title: 'आयकर गणना नेपाल २०८१/८२ — Salary Tax Guide',
+    subtitle: 'नेपालको income tax slabs, SSF/PF deductions, र IRD filing guide।',
+    metaTitle: 'आयकर क्याल्कुलेटर नेपाल २०८१/८२',
+    metaDescription: 'नेपालको FY 2081/82 income tax slabs, SSF contribution, tax-free allowances। Rs 5L-20L salary मा कति tax लाग्छ। IRD filing guide। Free tax calculator।',
+    targetKeyword: 'आयकर गणना नेपाल',
+    secondaryKeywords: ['Nepal income tax 2081/82', 'SSF contribution Nepal', 'IRD Nepal tax filing', 'Nepal salary tax calculator', 'PF deduction Nepal', 'Nepal tax slab'],
+    lastUpdated: '2026-03-13',
+    readingTime: '९ मिनेट पढ्नुहोस्',
+    tags: ['Tax', 'Nepal Finance', 'Salary', 'IRD'],
+    intro: `<p>नेपालमा हरेक salaried employee लाई Inland Revenue Department (IRD) मा income tax तिर्नु र return file गर्नु अनिवार्य छ। FY 2081/82 (BS) को tax slabs, SSF (Social Security Fund) contribution, र tax-free allowances बुझ्नु आवश्यक छ।</p>
+<p>यस गाइडमा: नेपालको tax slabs, couple vs single filing benefit, SSF/PF deductions, tax-exempt allowances, र IRD online filing process।</p>`,
+    sections: [
+      {
+        id: 'nepal-tax-slabs-2081-82',
+        title: 'नेपाल Income Tax Slabs FY २०८१/८२ (BS)',
+        content: `<p>Nepal ko FY 2081/82 (2024/25 AD) income tax rates:</p>
+<h3>Individual (Single) Tax Slabs</h3>
+<table>
+  <thead><tr><th>Income Range (Rs)</th><th>Tax Rate</th></tr></thead>
+  <tbody>
+    <tr><td>0 – 5,00,000</td><td>1%</td></tr>
+    <tr><td>5,00,001 – 7,00,000</td><td>10%</td></tr>
+    <tr><td>7,00,001 – 10,00,000</td><td>20%</td></tr>
+    <tr><td>10,00,001 – 20,00,000</td><td>30%</td></tr>
+    <tr><td>20,00,000 माथि</td><td>36%</td></tr>
+  </tbody>
+</table>
+<h3>Couple Filing Benefit</h3>
+<p>Married couples jointly file गर्दा: threshold Rs 1,00,000 बढी हुन्छ। अर्थात् Rs 6,00,000 सम्म 1% rate र Rs 8,00,000 सम्म 10% rate।</p>
+<h3>Tax Calculation Example</h3>
+<p>Rs 10,00,000 annual salary (single):</p>
+<ul>
+  <li>First Rs 5,00,000 × 1% = Rs 5,000</li>
+  <li>Next Rs 2,00,000 × 10% = Rs 20,000</li>
+  <li>Next Rs 3,00,000 × 20% = Rs 60,000</li>
+  <li><strong>Total Tax = Rs 85,000</strong></li>
+</ul>`,
+      },
+      {
+        id: 'nepal-salary-tax-comparison',
+        title: 'Salary-wise Tax Table — Rs 5L देखि Rs 20L सम्म',
+        content: `<p>Different salary levels मा Nepal income tax (approximate, single filing):</p>
+<table>
+  <thead><tr><th>Annual Salary</th><th>Tax Amount</th><th>Effective Rate</th></tr></thead>
+  <tbody>
+    <tr><td>Rs 5,00,000</td><td>Rs 5,000</td><td>1%</td></tr>
+    <tr><td>Rs 7,00,000</td><td>Rs 25,000</td><td>3.6%</td></tr>
+    <tr><td>Rs 10,00,000</td><td>Rs 85,000</td><td>8.5%</td></tr>
+    <tr><td>Rs 12,00,000</td><td>Rs 1,45,000</td><td>12.1%</td></tr>
+    <tr><td>Rs 15,00,000</td><td>Rs 2,35,000</td><td>15.7%</td></tr>
+    <tr><td>Rs 20,00,000</td><td>Rs 3,85,000</td><td>19.3%</td></tr>
+  </tbody>
+</table>
+<h3>Tax-Exempt Allowances</h3>
+<p>निम्न allowances taxable income बाट exempt छन्:</p>
+<ul>
+  <li><strong>Transport Allowance:</strong> Rs 2,500/month (Rs 30,000/year)</li>
+  <li><strong>Medical Allowance:</strong> Rs 1,000/month (Rs 12,000/year)</li>
+  <li><strong>Remote Allowance:</strong> Varies by location</li>
+  <li><strong>Uniform Allowance:</strong> Actual amount</li>
+</ul>`,
+      },
+      {
+        id: 'ssf-pf-nepal',
+        title: 'SSF र PF Contribution — Nepal',
+        content: `<p>नेपालमा SSF (Social Security Fund) र PF (Provident Fund) दुवैमा contribution हुन्छ:</p>
+<h3>SSF (Social Security Fund)</h3>
+<p>SSF नेपाल सरकारको mandatory scheme हो:</p>
+<table>
+  <thead><tr><th>Contribution</th><th>Rate</th><th>On What Base</th></tr></thead>
+  <tbody>
+    <tr><td>Employee</td><td>11%</td><td>Basic Salary</td></tr>
+    <tr><td>Employer</td><td>20%</td><td>Basic Salary</td></tr>
+    <tr><td>Government (civil servants)</td><td>10%</td><td>Basic Salary</td></tr>
+  </tbody>
+</table>
+<p>SSF contribution taxable income बाट deduct गर्न मिल्छ — यसले tax कम हुन्छ।</p>
+<h3>PF (Provident Fund)</h3>
+<p>Government employees को लागि mandatory। Employee 10% + Employer 10% = 20% basic salary।</p>
+<h3>Gratuity</h3>
+<p>5 years service complete भएपछि: Gratuity = (Basic Salary × Years of Service) / 3। Gratuity exempt from tax।</p>`,
+      },
+      {
+        id: 'ird-filing-nepal',
+        title: 'IRD मा Tax Return कसरी File गर्ने?',
+        content: `<p>Inland Revenue Department (IRD) Nepal मा online tax filing:</p>
+<h3>Filing Deadline</h3>
+<ul>
+  <li><strong>Individual:</strong> Ashwin end (approximately October 15)</li>
+  <li><strong>Business:</strong> Poush end (approximately January 15)</li>
+  <li>Late filing: Penalty + interest लाग्छ</li>
+</ul>
+<h3>IRD Online Filing Steps</h3>
+<ol>
+  <li>ird.gov.np मा जानुस् र taxpayer ID (PAN) बाट login गर्नुस्</li>
+  <li>e-Filing section मा जानुस्</li>
+  <li>Form IT-1 (individual) select गर्नुस्</li>
+  <li>Employer को TDS certificate (Form 107) use गर्नुस्</li>
+  <li>Income, deductions, tax paid fill गर्नुस्</li>
+  <li>Submit र e-verification गर्नुस्</li>
+</ol>
+<h3>TDS (Tax Deducted at Source)</h3>
+<p>नेपालमा employer ले प्रत्येक महिना employee को salary बाट TDS deduct गर्छ र IRD मा deposit गर्छ। Year end मा TDS certificate (Form 107) employer बाट लिनुस् — tax return filing को लागि चाहिन्छ।</p>
+<table>
+  <thead><tr><th>Payment Type</th><th>TDS Rate</th></tr></thead>
+  <tbody>
+    <tr><td>Salary</td><td>As per slab</td></tr>
+    <tr><td>Rent (Rs 25,000+/month)</td><td>10%</td></tr>
+    <tr><td>Service fee</td><td>15%</td></tr>
+    <tr><td>Bank interest</td><td>5%</td></tr>
+    <tr><td>Dividend</td><td>5%</td></tr>
+  </tbody>
+</table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Annual Salary हाल्नुस्', description: 'Income Tax Calculator मा आफ्नो annual gross salary हाल्नुस्।' },
+      { title: 'SSF/PF Deduction हाल्नुस्', description: 'SSF (11% of basic) र PF contribution amount हाल्नुस् — यो taxable income बाट deduct हुन्छ।' },
+      { title: 'Tax-Free Allowances enter गर्नुस्', description: 'Transport allowance (Rs 30,000/yr), medical allowance (Rs 12,000/yr) enter गर्नुस्।' },
+      { title: 'Tax calculate गर्नुस्', description: 'Calculator ले Nepal tax slabs apply गरेर total tax देखाउँछ।' },
+      { title: 'IRD मा File गर्नुस्', description: 'Ashwin end सम्म ird.gov.np मा online return file गर्नुस्। Employer बाट Form 107 लिनुस्।' },
+    ],
+    faqs: [
+      { question: 'नेपालमा कति income tax-free छ?', answer: 'FY 2081/82 मा: Individual — Rs 5,00,000 सम्म 1% मात्र (effectively Rs 5,000)। Couple — Rs 6,00,000 सम्म 1%। SSF/PF contributions र tax-free allowances deduct गर्दा effective taxable income कम हुन्छ।' },
+      { question: 'SSF contribution taxable income बाट deduct हुन्छ?', answer: 'हो। SSF (employee 11% + employer 20%) र PF contributions taxable income बाट deduct गर्न मिल्छ। यसले tax liability significantly कम गर्छ।' },
+      { question: 'नेपाल tax return कहिले file गर्ने?', answer: 'Individual taxpayers को लागि Ashwin end (approximately October 15) deadline छ। Business entities को लागि Poush end। Late filing मा penalty + 15% annual interest लाग्छ।' },
+      { question: 'Nepal मा TDS certificate (Form 107) के हो?', answer: 'Form 107 employer ले दिने TDS certificate हो — जसमा तपाईंको total salary, deductions, र deducted tax को record हुन्छ। Tax return filing को लागि अनिवार्य छ। April/May मा employer बाट माग्नुस्।' },
+      { question: 'Freelancer र self-employed को लागि Nepal tax कसरी?', answer: 'Self-employed/freelancers: quarterly advance tax तिर्नुपर्छ (estimated annual tax को 40% Q1, 70% Q2, 100% Q3)। Advance payment नगरेमा 15% interest लाग्छ। Business income अलग form (IT-2) मा file गर्ने।' },
+    ],
+    relatedGuides: ['sip-calculator-guide', 'emi-calculator-guide', 'percentage-calculator-guide'],
+    toolCTA: {
+      heading: 'Nepal Income Tax Calculate गर्नुस्',
+      description: 'Salary हाल्नुस्, SSF/PF deductions enter गर्नुस्, र FY 2081/82 को tax instantly calculate गर्नुस्।',
+      buttonText: 'Tax Calculator खोल्नुस् →',
+    },
+  },
+
+  // ── 15. COLOR PICKER GUIDE (Nepali) ──────────────────────────
+  {
+    slug: 'color-picker-guide',
+    toolSlug: 'color-picker',
+    category: 'developer-tools',
+    title: 'रङ कोड पिकर — HEX RGB अनलाइन नेपाल (2026)',
+    subtitle: 'नेपाली web designers को लागि color formats, Nepal brand colors, र CSS guide।',
+    metaTitle: 'रङ कोड पिकर — HEX RGB अनलाइन नेपाल',
+    metaDescription: 'HEX, RGB, HSL color formats बुझ्नुस्। Nepal Airlines, NTC, Ncell, Nabil Bank को official colors। CSS color variables guide। Free color picker tool।',
+    targetKeyword: 'रङ कोड अनलाइन',
+    secondaryKeywords: ['hex color code Nepal', 'RGB color picker Nepali', 'Nepal brand colors', 'CSS color guide Nepali', 'Canva color Nepal', 'web design Nepal'],
+    lastUpdated: '2026-03-13',
+    readingTime: '६ मिनेट पढ्नुहोस्',
+    tags: ['Design', 'Web Dev', 'CSS', 'Nepal'],
+    intro: `<p>Color design मा सबभन्दा powerful element हो। नेपालमा web designers, graphic designers, र freelancers को लागि color codes बुझ्नु आवश्यक छ — Canva मा काम गर्नुस् वा React/HTML projects बनाउनुस्।</p>
+<p>यस गाइडमा: HEX, RGB, HSL formats को फरक, Nepal को top companies को official brand colors, CSS variables, र accessible colors कसरी छान्ने।</p>`,
+    sections: [
+      {
+        id: 'color-formats-nepali',
+        title: 'Color Formats — HEX, RGB, HSL, CMYK के हुन्?',
+        content: `<p>सबै color formats एउटै color लाई अलग तरिकाले express गर्छन्:</p>
+<table>
+  <thead><tr><th>Format</th><th>Example</th><th>कहिले Use गर्ने</th></tr></thead>
+  <tbody>
+    <tr><td>HEX</td><td>#1d4ed8</td><td>CSS, HTML, web projects</td></tr>
+    <tr><td>RGB</td><td>rgb(29, 78, 216)</td><td>CSS, digital screens</td></tr>
+    <tr><td>RGBA</td><td>rgba(29, 78, 216, 0.5)</td><td>CSS मा transparency</td></tr>
+    <tr><td>HSL</td><td>hsl(221, 76%, 48%)</td><td>CSS animations, theming</td></tr>
+    <tr><td>CMYK</td><td>cmyk(87, 64, 0, 15)</td><td>Print design, Photoshop</td></tr>
+  </tbody>
+</table>
+<h3>HEX Code कसरी पढ्ने?</h3>
+<p>HEX code = #RRGGBB। R=Red, G=Green, B=Blue, प्रत्येक 00 देखि FF सम्म। #000000 = कालो, #ffffff = सेतो, #ff0000 = pure red।</p>
+<h3>HSL — Design को लागि Best Format</h3>
+<p>HSL = Hue (रङ angle 0-360°), Saturation (0% grey - 100% vivid), Lightness (0% black - 100% white)। Color lighter बनाउनु छ? Lightness बढाउनुस्। Canva र Figma दुवैले HSL use गर्छन्।</p>`,
+      },
+      {
+        id: 'nepal-brand-colors',
+        title: 'नेपालका Top Companies को Official Brand Colors',
+        content: `<p>नेपालका top brands को official color codes (reference को लागि मात्र):</p>
+<table>
+  <thead><tr><th>Brand</th><th>Color Name</th><th>HEX Code</th><th>RGB</th></tr></thead>
+  <tbody>
+    <tr><td>Nepal Airlines</td><td>Nepal Red</td><td>#C8102E</td><td>200, 16, 46</td></tr>
+    <tr><td>NTC (Nepal Telecom)</td><td>NTC Red</td><td>#E31E24</td><td>227, 30, 36</td></tr>
+    <tr><td>Ncell</td><td>Ncell Green</td><td>#7BC043</td><td>123, 192, 67</td></tr>
+    <tr><td>Himalayan Bank</td><td>HBL Navy</td><td>#003087</td><td>0, 48, 135</td></tr>
+    <tr><td>Nabil Bank</td><td>Nabil Red</td><td>#C41E3A</td><td>196, 30, 58</td></tr>
+    <tr><td>Global IME Bank</td><td>Global Blue</td><td>#1A3A6B</td><td>26, 58, 107</td></tr>
+    <tr><td>eSewa</td><td>eSewa Green</td><td>#60BB46</td><td>96, 187, 70</td></tr>
+    <tr><td>Khalti</td><td>Khalti Purple</td><td>#5C2D91</td><td>92, 45, 145</td></tr>
+    <tr><td>FonePay</td><td>FonePay Blue</td><td>#1B6EC2</td><td>27, 110, 194</td></tr>
+    <tr><td>Daraz Nepal</td><td>Daraz Orange</td><td>#F85606</td><td>248, 86, 6</td></tr>
+  </tbody>
+</table>
+<h3>नेपाली Flag Colors</h3>
+<ul>
+  <li><strong>Crimson Red:</strong> #CC0000 (rgb 204, 0, 0)</li>
+  <li><strong>Blue Border:</strong> #003580 (rgb 0, 53, 128)</li>
+  <li><strong>White Moon/Sun:</strong> #FFFFFF</li>
+</ul>`,
+      },
+      {
+        id: 'css-color-guide-nepal',
+        title: 'CSS Color Variables — Professional तरिकाले Colors Manage',
+        content: `<p>Professional website मा colors centrally manage गरिन्छ:</p>
+<pre><code>:root {
+  --color-primary: #1d4ed8;
+  --color-primary-light: #3b82f6;
+  --color-accent: #f59e0b;
+  --color-text: #111827;
+  --color-bg: #ffffff;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}</code></pre>
+<h3>नेपाली Festivals को Colors</h3>
+<ul>
+  <li><strong>Dashain:</strong> Saffron/Orange (#FF8C00), Red (#CC0000), Green (#228B22)</li>
+  <li><strong>Tihar/Deepawali:</strong> Yellow (#FFD700), Orange (#FF8C00)</li>
+  <li><strong>Holi:</strong> Multiple bright colors — Red, Blue, Yellow, Green</li>
+</ul>
+<h3>Canva Tip नेपाली Users को लागि</h3>
+<p>Canva मा brand colors save गर्न: Brand Kit → Add a color → HEX code paste गर्नुस्। एकपटक save भयो भने सबै designs मा reuse गर्न सकिन्छ।</p>`,
+      },
+      {
+        id: 'accessible-colors-nepal',
+        title: 'Accessible Colors — WCAG Standards',
+        content: `<p>नेपालमा पनि ~8% पुरुषहरूमा color blindness हुन्छ। Accessible colors choose गर्नु important छ:</p>
+<h3>WCAG Contrast Requirements</h3>
+<ul>
+  <li><strong>AA Standard:</strong> Normal text को लागि 4.5:1 contrast ratio</li>
+  <li><strong>AAA Standard:</strong> Normal text को लागि 7:1</li>
+</ul>
+<h3>Quick Reference</h3>
+<table>
+  <thead><tr><th>Text</th><th>Background</th><th>Ratio</th><th>WCAG AA</th></tr></thead>
+  <tbody>
+    <tr><td>Black (#000)</td><td>White (#fff)</td><td>21:1</td><td>Pass ✓</td></tr>
+    <tr><td>White (#fff)</td><td>NTC Red (#E31E24)</td><td>~5:1</td><td>Pass ✓</td></tr>
+    <tr><td>White (#fff)</td><td>Ncell Green (#7BC043)</td><td>~3:1</td><td>Fail ✗</td></tr>
+  </tbody>
+</table>
+<h3>नेपाली Websites मा Common Mistakes</h3>
+<ul>
+  <li>Light yellow text on white — बहुत common, WCAG fail</li>
+  <li>Red text on green — color blind users को लागि unreadable</li>
+  <li>Grey text on white — borderline fail</li>
+</ul>
+<div class="callout-tip"><strong>Tip:</strong> ToolsArena को Color Contrast Checker use गर्नुस् — कुनै पनि 2 colors हाल्नुस्, instantly WCAG result थाहा पाउनुस्।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Color Picker खोल्नुस्', description: 'ToolsArena को free Color Picker open गर्नुस् — कुनै login चाहिँदैन।' },
+      { title: 'Color Select गर्नुस्', description: 'Color spectrum मा click गर्नुस् वा directly HEX/RGB/HSL value type गर्नुस्।' },
+      { title: 'Format Switch गर्नुस्', description: 'HEX, RGB, वा HSL tab click गरेर आफ्नो preferred format select गर्नुस्।' },
+      { title: 'Copy गर्नुस्', description: 'Copy button click गर्नुस् — color code clipboard मा copy हुन्छ। Canva/Figma/CSS मा paste गर्नुस्।' },
+      { title: 'Screen बाट Color Pick गर्नुस्', description: 'Eyedropper tool use गर्नुस् (Chrome/Edge मा supported) — screen मा कतैबाट पनि color pick गर्न सकिन्छ।' },
+    ],
+    faqs: [
+      { question: 'HEX र RGB मा के फरक छ?', answer: 'HEX र RGB एउटै color लाई अलग notation मा express गर्छन्। #ff0000 र rgb(255,0,0) एउटै red color हो। HEX CSS मा shorter र popular छ। RGB तब use गर्नुस् जब transparency चाहिन्छ (rgba) वा individual channels manipulate गर्नुपर्छ।' },
+      { question: 'Image बाट color code कसरी निकाल्ने?', answer: 'Browser को eyedropper tool use गर्नुस् (Chrome 95+ मा built-in)। Canva मा image upload गरेर color picker use गर्नुस्। ToolsArena को Color Picker मा screen eyedropper use गर्नुस्।' },
+      { question: 'HSL color format के हो?', answer: 'HSL = Hue (color angle 0-360°), Saturation (vividity), Lightness (brightness)। Design मा most intuitive format। CSS animations र theming को लागि best। Color lighter बनाउनु छ? Lightness बढाउनुस्।' },
+      { question: 'CMYK र RGB मा के फरक छ?', answer: 'RGB screen को लागि (light mixing), CMYK printing को लागि (ink mixing)। Web design को लागि RGB/HEX use गर्नुस्। Visiting cards, brochures, banners को लागि CMYK।' },
+      { question: 'Accessible colors कसरी छान्ने?', answer: 'Text र background को contrast ratio कम्तिमा 4.5:1 हुनुपर्छ (WCAG AA)। Dark text on light background वा light text on dark background generally safe छ। ToolsArena को Color Contrast Checker use गर्नुस्।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Color Code Pick गर्नुस् — Free Online Tool',
+      description: 'HEX, RGB, HSL instantly get गर्नुस्। Visual picker, eyedropper, copy-to-clipboard। कुनै signup छैन।',
+      buttonText: 'Color Picker खोल्नुस् →',
+    },
+  },
+
 ];

@@ -1637,4 +1637,670 @@ export const guidesHi: Guide[] = [
     },
   },
 
+  // ── 11. IMAGE RESIZER GUIDE (Hindi) ───────────────────────────
+  {
+    slug: 'image-resizer-guide',
+    toolSlug: 'image-resizer',
+    category: 'image-tools',
+    title: 'इमेज रिसाइज़ करें ऑनलाइन — फोटो साइज़ कैसे बदलें (2026)',
+    subtitle: 'सोशल मीडिया, सरकारी फॉर्म और वेबसाइट के लिए सही इमेज साइज़ की पूरी गाइड।',
+    metaTitle: 'इमेज रिसाइज़ करें — फ्री ऑनलाइन फोटो साइज़ टूल',
+    metaDescription: 'Instagram, Facebook, YouTube, WhatsApp और सरकारी फॉर्म के लिए सही फोटो साइज़ जानें। SSC, UPSC, Aadhaar फोटो size limit guide. फ्री ऑनलाइन टूल।',
+    targetKeyword: 'इमेज रिसाइज़ करें ऑनलाइन फ्री',
+    secondaryKeywords: ['फोटो साइज़ कम करें', 'image resize online', 'photo resize karna', 'Instagram photo size', 'SSC photo size', 'UPSC photo size', 'Aadhaar photo size'],
+    lastUpdated: '2026-03-13',
+    readingTime: '7 मिनट पढ़ें',
+    tags: ['इमेज', 'सोशल मीडिया', 'डिज़ाइन', 'सरकारी फॉर्म'],
+    intro: `<p>इमेज रिसाइज़ करना एक बेहद ज़रूरी डिजिटल skill है — चाहे आप Instagram पर photo upload करें, सरकारी exam form भरें, या website के लिए images optimize करें। गलत size की photo upload करने से image blur, cropped या reject हो सकती है।</p>
+<p>इस गाइड में आप जानेंगे: हर social media platform की सही size, SSC/UPSC/Aadhaar जैसे सरकारी portals की photo requirements, pixels vs KB का फर्क, और बिना quality खोए image कैसे resize करें।</p>`,
+    sections: [
+      {
+        id: 'social-media-sizes-india',
+        title: 'भारत में Social Media के लिए सही Image Size (2026)',
+        content: `<p>हर platform की अपनी recommended size होती है। गलत size upload करने पर platform खुद image को crop या compress कर देता है, जिससे quality खराब हो जाती है।</p>
+<table>
+  <thead><tr><th>Platform</th><th>Image Type</th><th>Recommended Size</th><th>Aspect Ratio</th></tr></thead>
+  <tbody>
+    <tr><td>Instagram</td><td>Profile Picture</td><td>180 × 180 px</td><td>1:1</td></tr>
+    <tr><td>Instagram</td><td>Square Post</td><td>1080 × 1080 px</td><td>1:1</td></tr>
+    <tr><td>Instagram</td><td>Portrait Post</td><td>1080 × 1350 px</td><td>4:5</td></tr>
+    <tr><td>Instagram</td><td>Story/Reel</td><td>1080 × 1920 px</td><td>9:16</td></tr>
+    <tr><td>Facebook</td><td>Profile Picture</td><td>170 × 170 px</td><td>1:1</td></tr>
+    <tr><td>Facebook</td><td>Cover Photo</td><td>820 × 312 px</td><td>2.63:1</td></tr>
+    <tr><td>YouTube</td><td>Thumbnail</td><td>1280 × 720 px</td><td>16:9</td></tr>
+    <tr><td>WhatsApp</td><td>DP (Profile)</td><td>500 × 500 px</td><td>1:1</td></tr>
+    <tr><td>WhatsApp</td><td>Status Image</td><td>1080 × 1920 px</td><td>9:16</td></tr>
+    <tr><td>LinkedIn</td><td>Profile Picture</td><td>400 × 400 px</td><td>1:1</td></tr>
+  </tbody>
+</table>
+<h3>Data बचाने के लिए WebP format use करें</h3>
+<p>Jio और Airtel users के लिए: WebP format JPEG से 25-35% छोटा होता है — same quality में। अगर आपकी website slow load हो रही है, तो images को WebP में convert करें। Mobile data भी कम लगेगा।</p>`,
+      },
+      {
+        id: 'government-form-photo-requirements',
+        title: 'सरकारी Forms के लिए Photo Size Requirements',
+        content: `<p>India में competitive exams और government portals पर photo upload करते समय exact size follow करनी होती है। गलत size से application reject हो सकती है।</p>
+<table>
+  <thead><tr><th>Portal / Exam</th><th>Photo Size</th><th>Max File Size</th><th>Format</th></tr></thead>
+  <tbody>
+    <tr><td>SSC CGL / CHSL</td><td>100 × 120 px</td><td>20 KB</td><td>JPEG</td></tr>
+    <tr><td>UPSC Civil Services</td><td>3.5 × 4.5 cm</td><td>300 KB</td><td>JPEG</td></tr>
+    <tr><td>Aadhaar / UIDAI Update</td><td>—</td><td>200 KB</td><td>JPEG</td></tr>
+    <tr><td>NTA / JEE / NEET</td><td>—</td><td>200 KB</td><td>JPEG</td></tr>
+    <tr><td>Bank PO / IBPS</td><td>—</td><td>50 KB</td><td>JPEG</td></tr>
+    <tr><td>Railway NTPC / Group D</td><td>—</td><td>50 KB</td><td>JPEG</td></tr>
+    <tr><td>Passport Application</td><td>51 × 51 mm</td><td>—</td><td>JPEG</td></tr>
+    <tr><td>PAN Card Online</td><td>—</td><td>200 KB</td><td>JPEG</td></tr>
+  </tbody>
+</table>
+<h3>SSC की 20 KB limit में photo कैसे लाएं?</h3>
+<p>SSC का 20 KB limit बहुत strict है। यहाँ step-by-step तरीका है:</p>
+<ol>
+  <li>Photo को 100 × 120 pixels में resize करें</li>
+  <li>Format: JPEG (PNG नहीं)</li>
+  <li>JPEG quality 60-70% पर set करें</li>
+  <li>File size check करें — ज़्यादातर cases में 20 KB से कम हो जाएगी</li>
+</ol>`,
+      },
+      {
+        id: 'pixels-vs-kb-difference',
+        title: 'Pixels vs KB — क्या फर्क है?',
+        content: `<p>यह confusion बहुत common है। आइए simple language में समझें:</p>
+<h3>Pixels क्या होते हैं?</h3>
+<p><strong>Pixels = image के dimensions</strong> (width × height)। एक 1080 × 1080 pixel image में कुल 11,66,400 pixels होते हैं। जितने ज़्यादा pixels, उतनी ज़्यादा detail — लेकिन file size भी बड़ी होगी।</p>
+<h3>KB/MB क्या होता है?</h3>
+<p><strong>KB/MB = file का actual size</strong> (storage में)। यह pixels + compression format दोनों पर depend करता है। एक 1080 × 1080 JPEG image हो सकती है:
+<ul>
+  <li>Low quality (60%) = ~50-80 KB</li>
+  <li>Medium quality (80%) = ~150-250 KB</li>
+  <li>High quality (100%) = ~500 KB - 1 MB</li>
+</ul>
+</p>
+<h3>सही approach:</h3>
+<ul>
+  <li><strong>Dimensions छोटे करने के लिए:</strong> Resize करें (pixel count कम करें)</li>
+  <li><strong>File size (KB) कम करने के लिए:</strong> Compress करें (JPEG quality कम करें)</li>
+  <li><strong>दोनों एक साथ:</strong> पहले resize, फिर compress</li>
+</ul>
+<div class="callout-tip"><strong>याद रखें:</strong> Government forms के लिए अक्सर दोनों की limit होती है — dimensions भी और KB भी। दोनों check करें।</div>`,
+      },
+      {
+        id: 'best-image-formats',
+        title: 'कौन सा Image Format कब Use करें?',
+        content: `<p>सही format choose करना important है — quality और file size दोनों affect होते हैं:</p>
+<table>
+  <thead><tr><th>Format</th><th>Best For</th><th>Compression</th><th>Transparent?</th></tr></thead>
+  <tbody>
+    <tr><td>JPEG / JPG</td><td>Photos, portraits, exam forms</td><td>Lossy (high ratio)</td><td>नहीं</td></tr>
+    <tr><td>PNG</td><td>Logo, screenshots, text images</td><td>Lossless</td><td>हाँ</td></tr>
+    <tr><td>WebP</td><td>Website images (best choice)</td><td>Lossy + Lossless</td><td>हाँ</td></tr>
+    <tr><td>GIF</td><td>Simple animations</td><td>Lossless</td><td>हाँ (1-bit)</td></tr>
+  </tbody>
+</table>
+<h3>Mobile Photography Tips (India)</h3>
+<p>आजकल Indians mostly smartphones से photos लेते हैं। Samsung Galaxy, Redmi, Realme जैसे phones 12-50 MP cameras के साथ आते हैं जिनसे photos 3-8 MB की होती हैं। इन्हें किसी भी form या social media पर upload करने से पहले resize ज़रूर करें।</p>
+<ul>
+  <li>WhatsApp DP के लिए: 500 × 500 px, JPEG, ~50-100 KB</li>
+  <li>Instagram post के लिए: 1080 × 1080 px, JPEG, ~200-500 KB</li>
+  <li>Exam form के लिए: Platform की specified size, JPEG, required KB limit</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Image Resizer खोलें', description: 'ToolsArena का free Image Resizer tool open करें। कोई sign-up नहीं चाहिए।' },
+      { title: 'Photo Upload करें', description: 'अपनी photo drag & drop करें या click करके select करें। JPEG, PNG, WebP support है।' },
+      { title: 'नई Size डालें', description: 'Width और height pixels में enter करें, या Instagram/YouTube/Facebook जैसे preset select करें। "Aspect Ratio Lock" enable रखें।' },
+      { title: 'Format और Quality Choose करें', description: 'Exam forms के लिए JPEG 70-80%, social media के लिए JPEG 85%, website के लिए WebP select करें।' },
+      { title: 'Download करें', description: 'Download button click करें। Image आपके browser में ही process होती है — कोई upload नहीं होता server पर।' },
+    ],
+    faqs: [
+      { question: 'SSC exam form में photo reject क्यों होती है?', answer: 'SSC की photo limit बहुत strict है: 100 × 120 pixels और maximum 20 KB। अगर इससे बड़ी photo upload होगी तो automatically reject होगी। ToolsArena के Image Resizer से exact size set करें और JPEG quality 65% रखें।' },
+      { question: 'Instagram profile picture best size क्या है?', answer: 'Instagram profile picture का recommended size है 180 × 180 pixels (square, 1:1 ratio)। यह Retina display पर 110 × 110 px पर display होती है। बेहतर quality के लिए 400 × 400 px upload करें।' },
+      { question: 'Photo resize करने से quality खराब होती है?', answer: 'Photo को छोटा करने (downscale) से quality नहीं खराब होती — बस कम pixels होते हैं। लेकिन photo को बड़ा करने (upscale) से quality blur हो जाती है क्योंकि नए pixels "guess" किए जाते हैं। हमेशा original से छोटा ही करें।' },
+      { question: 'WhatsApp DP के लिए best photo size क्या है?', answer: 'WhatsApp profile picture (DP) के लिए 500 × 500 pixels best है। Square image (1:1 ratio) upload करें। WhatsApp automatically crop करता है अगर image square नहीं है।' },
+      { question: 'Aadhaar update के लिए photo size क्या होनी चाहिए?', answer: 'UIDAI portal पर photo upload के लिए: JPEG format, maximum 200 KB file size। Dimensions specific नहीं हैं लेकिन clearly visible face photo होनी चाहिए। Plain white/light background recommended है।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'pdf-compressor-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'इमेज Resize करें — Free, Fast, No Upload',
+      description: 'Exact pixels set करें, social media presets use करें, format choose करें और instantly download करें। Browser में process — server पर upload नहीं।',
+      buttonText: 'Image Resizer खोलें →',
+    },
+  },
+
+  // ── 12. PASSWORD GENERATOR GUIDE (Hindi) ─────────────────────
+  {
+    slug: 'password-generator-guide',
+    toolSlug: 'password-generator',
+    category: 'utility-tools',
+    title: 'मज़बूत पासवर्ड कैसे बनाएं — Password Security Guide 2026',
+    subtitle: 'UPI fraud, SIM swap और hacking से बचें — India-specific password security guide।',
+    metaTitle: 'मज़बूत पासवर्ड बनाएं — फ्री Password Generator',
+    metaDescription: 'Strong password कैसे बनाएं? UPI fraud, SIM swap attack से कैसे बचें? CERT-In guidelines, Indian banking security tips। Free password generator tool।',
+    targetKeyword: 'मज़बूत पासवर्ड बनाएं',
+    secondaryKeywords: ['strong password generator Hindi', 'UPI fraud se bachna', 'password security India', 'CERT-In guidelines', 'online banking password', 'two factor authentication India'],
+    lastUpdated: '2026-03-13',
+    readingTime: '8 मिनट पढ़ें',
+    tags: ['Security', 'Cybersecurity', 'UPI', 'Banking'],
+    intro: `<p>India में cyber fraud के मामले तेज़ी से बढ़ रहे हैं। 2024 में India में ₹11,333 crore से ज़्यादा का online fraud हुआ — जिसमें most cases में weak password या reused password की वजह था। UPI account hack, bank account empty, social media hack — यह सब weak passwords की वजह से होता है।</p>
+<p>यह guide आपको बताएगी कि mज़बूत password क्या होता है, India में hackers कैसे attack करते हैं, CERT-In के guidelines क्या हैं, और एक ही password से कई accounts चलाना क्यों dangerous है।</p>`,
+    sections: [
+      {
+        id: 'india-cyber-fraud-password',
+        title: 'India में Cyber Fraud — Password की वजह से कैसे होते हैं?',
+        content: `<p>भारत में online fraud के सबसे common तरीके:</p>
+<h3>UPI Fraud</h3>
+<p>Hackers UPI PIN और account password दोनों target करते हैं। Common tricks: fake customer care calls (SBI/HDFC/Paytm के नाम पर), fake UPI refund links, screen sharing के ज़रिए PIN steal करना। Strong password और 2FA enable करने से यह attacks fail हो जाते हैं।</p>
+<h3>SIM Swap Attack</h3>
+<p>Hacker आपके नाम पर नया SIM लेकर आपके mobile number पर आने वाले OTP intercept करते हैं। यह attack तब ज़्यादा dangerous होता है जब आपका banking password भी weak हो। HDFC, SBI, ICICI सभी banks इससे target होते हैं।</p>
+<h3>Credential Stuffing</h3>
+<p>एक website का breach हुआ, वहाँ का username/password लेकर hackers दूसरी 100 websites पर try करते हैं। अगर आप एक ही password सभी जगह use करते हैं, तो एक breach = सब कुछ hack।</p>
+<h3>Common Indian Password Mistakes</h3>
+<ul>
+  <li>Phone number को password बनाना: 9876543210</li>
+  <li>Date of birth: 01011990, 1jan1990</li>
+  <li>Name + year: rahul2024, priya@123</li>
+  <li>Simple predictable: 123456, password, india@123</li>
+  <li>Same password on Gmail + Facebook + Banking</li>
+</ul>`,
+      },
+      {
+        id: 'strong-password-formula',
+        title: 'मज़बूत Password की Formula — कितना समय लगता है Crack करने में?',
+        content: `<p>Password strength mathematics पर based है — जितने ज़्यादा possible combinations, उतना ज़्यादा time crack करने में:</p>
+<table>
+  <thead><tr><th>Password Length</th><th>Only Numbers</th><th>Letters Only</th><th>Mixed (A-Z+a-z+0-9+symbols)</th></tr></thead>
+  <tbody>
+    <tr><td>6 characters</td><td>Instant</td><td>Instant</td><td>5 seconds</td></tr>
+    <tr><td>8 characters</td><td>Instant</td><td>22 minutes</td><td>8 hours</td></tr>
+    <tr><td>10 characters</td><td>Instant</td><td>4 weeks</td><td>5 years</td></tr>
+    <tr><td>12 characters</td><td>Instant</td><td>300 years</td><td>34,000 years</td></tr>
+    <tr><td>16 characters</td><td>—</td><td>Millions of years</td><td>Trillions of years</td></tr>
+  </tbody>
+</table>
+<h3>Rule of Thumb</h3>
+<ul>
+  <li><strong>Minimum 12 characters</strong> — हर important account के लिए</li>
+  <li><strong>4 types mix करें</strong>: ABCD (uppercase) + abcd (lowercase) + 1234 (numbers) + !@#$ (symbols)</li>
+  <li><strong>Dictionary words avoid करें</strong> — "singham" strong नहीं है भले ही unique लगे</li>
+  <li><strong>Passphrase try करें</strong>: "mera-ghar-neel-asman-2026" — 25 characters, याद रखना आसान</li>
+</ul>`,
+      },
+      {
+        id: 'cert-in-guidelines-india',
+        title: 'CERT-In Guidelines — भारत सरकार की Cybersecurity Advice',
+        content: `<p>CERT-In (Indian Computer Emergency Response Team) India की official cybersecurity agency है। उनकी key recommendations:</p>
+<ul>
+  <li><strong>हर account का अलग password</strong> रखें</li>
+  <li><strong>Minimum 8 characters</strong> (recommended 12+)</li>
+  <li><strong>Two-Factor Authentication (2FA)</strong> हमेशा enable करें</li>
+  <li><strong>Public WiFi पर</strong> banking/UPI कभी न करें</li>
+  <li>अपना password <strong>कभी किसी से share न करें</strong> — bank/UPI helpline भी नहीं माँगती</li>
+  <li>Password <strong>हर 90 दिन में बदलें</strong> (important accounts के लिए)</li>
+</ul>
+<h3>Indian Banking Apps में 2FA Enable करें</h3>
+<table>
+  <thead><tr><th>App</th><th>2FA Option</th><th>कैसे Enable करें</th></tr></thead>
+  <tbody>
+    <tr><td>SBI YONO</td><td>MPIN + OTP</td><td>Settings → Security → MPIN Change</td></tr>
+    <tr><td>HDFC NetBanking</td><td>Secure Access OTP</td><td>Profile → Security Settings</td></tr>
+    <tr><td>ICICI iMobile</td><td>Biometric + PIN</td><td>Settings → App Security</td></tr>
+    <tr><td>PhonePe/GPay/Paytm</td><td>UPI PIN + App lock</td><td>Settings → Privacy</td></tr>
+    <tr><td>DigiLocker</td><td>Aadhaar OTP</td><td>Profile → Security</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'password-manager-india',
+        title: 'Password Manager — India में कैसे Use करें?',
+        content: `<p>100+ accounts के अलग-अलग strong passwords याद रखना impossible है। Password manager एकमात्र practical solution है:</p>
+<h3>Password Manager कैसे काम करता है?</h3>
+<p>एक encrypted vault में सभी passwords store होते हैं। आपको सिर्फ एक "master password" याद रखना है। यह vault automatically websites पर login details fill करता है।</p>
+<h3>Free Options</h3>
+<ul>
+  <li><strong>Bitwarden</strong> — Free plan में unlimited passwords, open source, highly recommended</li>
+  <li><strong>Google Password Manager</strong> — Chrome users के लिए built-in, basic features</li>
+  <li><strong>Apple Keychain</strong> — iPhone/Mac users के लिए</li>
+</ul>
+<h3>Important Note for India</h3>
+<p>Password manager में banking passwords store करना safe है — encryption इतनी strong होती है कि brute force practically impossible है। लेकिन UPI PIN कभी कहीं digital store न करें — यह सिर्फ memory में रखें।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Password Generator खोलें', description: 'ToolsArena का free Password Generator open करें — कोई login नहीं चाहिए।' },
+      { title: 'Length 16+ set करें', description: 'Slider को कम से कम 16 characters पर set करें। Banking और email accounts के लिए 20 characters recommend किए जाते हैं।' },
+      { title: 'सभी character types enable करें', description: 'Uppercase, lowercase, numbers और symbols — चारों check boxes tick करें। यह maximum security देता है।' },
+      { title: 'Generate और check करें', description: 'Generate button click करें। Password में कोई common word या pattern नहीं होना चाहिए — random noise जैसा दिखना चाहिए।' },
+      { title: 'Password Manager में save करें', description: 'Generated password copy करें और Bitwarden या Google Password Manager में save करें। फिर उस account पर 2FA enable करें।' },
+    ],
+    faqs: [
+      { question: 'क्या online password generator safe है?', answer: 'हाँ, अगर generator browser में ही password बनाए (client-side)। ToolsArena का generator Web Crypto API use करता है — password आपके browser में बनता है, कोई server पर नहीं जाता। किसी भी ऐसे generator से बचें जो "generate" button click करने पर server call करे।' },
+      { question: 'UPI PIN को password generator से बनाएं या नहीं?', answer: 'UPI PIN 4-6 digits का होता है और इसे कभी भी digital store नहीं करना चाहिए — न password manager में, न notepad में। UPI PIN सिर्फ memory में रखें। एक PIN जो आपको याद हो लेकिन obvious न हो (जैसे phone number या DOB नहीं) use करें।' },
+      { question: 'India में most common password attacks कौन से हैं?', answer: 'India में top attacks: (1) Phishing — fake bank/UPI websites से password steal, (2) SIM swap — नया SIM लेकर OTP intercept, (3) Credential stuffing — पुराने breach के passwords से try, (4) Social engineering — customer care बनकर password माँगना। Strong unique passwords + 2FA से इन सभी से बचाव होता है।' },
+      { question: 'Gmail/Google account का password कितना strong होना चाहिए?', answer: 'Gmail बहुत important है क्योंकि यह "master key" है — Gmail से आप किसी भी app का "Forgot Password" reset कर सकते हैं। Gmail के लिए: कम से कम 16 characters, unique password (कहीं और use न करें), और 2-Step Verification (Google Authenticator app) ज़रूर enable करें।' },
+      { question: 'Password कितने दिनों में बदलना चाहिए?', answer: 'CERT-In recommendation है 90 दिन। लेकिन NIST (US) की नई guidelines कहती हैं कि बिना वजह password change करने से लोग weak predictable patterns बनाते हैं (Password1 → Password2)। बेहतर है: एक strong unique password रखें और उसे तभी बदलें जब breach हो या आपको suspicious activity दिखे।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'json-formatter-guide', 'bmi-calculator-guide'],
+    toolCTA: {
+      heading: 'मज़बूत Password Generate करें — Free, Private',
+      description: 'Browser में ही generate होता है — कोई data server पर नहीं जाता। 128 characters तक, सभी character types support।',
+      buttonText: 'Password Generator खोलें →',
+    },
+  },
+
+  // ── 13. SIP CALCULATOR GUIDE (Hindi) ─────────────────────────
+  {
+    slug: 'sip-calculator-guide',
+    toolSlug: 'sip-calculator',
+    category: 'calculators',
+    title: 'SIP कैलकुलेटर — हर महीने कितना निवेश करें? (2026)',
+    subtitle: 'SIP formula, returns table, best mutual funds India और step-by-step investment guide।',
+    metaTitle: 'SIP कैलकुलेटर — हर महीने कितना निवेश करें?',
+    metaDescription: 'SIP क्या है? ₹500 से SIP शुरू करें। ₹1000/महीना 20 साल में कितना बनेगा? Best SIP mutual funds 2026, ELSS tax saving, Groww/Zerodha guide। Free calculator।',
+    targetKeyword: 'SIP कैलकुलेटर',
+    secondaryKeywords: ['SIP returns calculator Hindi', 'best SIP 2026 India', 'SIP vs FD comparison', 'ELSS tax saving SIP', 'monthly SIP calculator', 'Groww SIP kaise kare', 'mutual fund SIP guide'],
+    lastUpdated: '2026-03-13',
+    readingTime: '9 मिनट पढ़ें',
+    tags: ['SIP', 'Mutual Fund', 'Investment', 'India Finance'],
+    intro: `<p>SIP (Systematic Investment Plan) आज India में investment का सबसे popular तरीका बन गया है। हर महीने सिर्फ ₹500 से शुरू करके, SIP के ज़रिए आप करोड़पति बन सकते हैं — बशर्ते patience हो।</p>
+<p>यह guide आपको बताएगी: SIP कैसे काम करता है, ₹500/₹1000/₹5000 monthly SIP 10-30 साल में कितना बनेगा, SIP vs FD comparison, India के best SIP funds 2026, और Groww/Zerodha पर SIP कैसे शुरू करें।</p>`,
+    sections: [
+      {
+        id: 'sip-kaise-kaam-karta-hai',
+        title: 'SIP कैसे काम करता है — Compounding की ताकत',
+        content: `<p>SIP की असली ताकत है <strong>Compounding</strong> और <strong>Rupee Cost Averaging</strong>।</p>
+<h3>Compounding क्या है?</h3>
+<p>जब आपके returns पर भी returns मिलने लगते हैं। Example:</p>
+<ul>
+  <li>₹10,000 invest → 12% return → साल के अंत में ₹11,200</li>
+  <li>अगले साल ₹11,200 पर 12% → ₹12,544</li>
+  <li>Original ₹10,000 पर नहीं, बल्कि ₹11,200 पर return मिला!</li>
+</ul>
+<p>20-30 साल में यह effect dramatic हो जाता है। इसीलिए Warren Buffett ने कहा: <em>"Compounding is the 8th wonder of the world."</em></p>
+<h3>Rupee Cost Averaging</h3>
+<p>हर महीने fixed amount invest करने से — market गिरने पर ज़्यादा units मिलते हैं, market चढ़ने पर कम। इससे average cost कम हो जाती है।</p>
+<h3>SIP Formula</h3>
+<p>Future Value = P × [((1 + r)^n − 1) / r] × (1 + r)</p>
+<ul>
+  <li><strong>P</strong> = Monthly investment (जैसे ₹1,000)</li>
+  <li><strong>r</strong> = Monthly return (12% annual = 1% monthly = 0.01)</li>
+  <li><strong>n</strong> = Total months (20 years = 240 months)</li>
+</ul>`,
+      },
+      {
+        id: 'sip-returns-table-hindi',
+        title: 'SIP Returns Table — ₹500 से ₹10,000 monthly, 10-30 साल',
+        content: `<p>12% annual returns पर (NIFTY 50 का approximate long-term CAGR):</p>
+<table>
+  <thead><tr><th>Monthly SIP</th><th>10 साल</th><th>15 साल</th><th>20 साल</th><th>30 साल</th></tr></thead>
+  <tbody>
+    <tr><td>₹500</td><td>₹1.16 लाख</td><td>₹2.52 लाख</td><td>₹4.99 लाख</td><td>₹17.65 लाख</td></tr>
+    <tr><td>₹1,000</td><td>₹2.32 लाख</td><td>₹5.05 लाख</td><td>₹9.99 लाख</td><td>₹35.30 लाख</td></tr>
+    <tr><td>₹2,000</td><td>₹4.64 लाख</td><td>₹10.10 लाख</td><td>₹19.98 लाख</td><td>₹70.59 लाख</td></tr>
+    <tr><td>₹5,000</td><td>₹11.62 लाख</td><td>₹25.23 लाख</td><td>₹49.96 लाख</td><td>₹1.76 करोड़</td></tr>
+    <tr><td>₹10,000</td><td>₹23.23 लाख</td><td>₹50.46 लाख</td><td>₹99.91 लाख</td><td>₹3.53 करोड़</td></tr>
+  </tbody>
+</table>
+<p><em>Note: यह approximate figures हैं। Actual returns market conditions पर depend करते हैं। Past performance future results guarantee नहीं करती।</em></p>
+<h3>Step-Up SIP — हर साल 10% बढ़ाएं</h3>
+<p>अगर आप हर साल अपना SIP 10% बढ़ाते हैं (Step-Up SIP), तो ₹5,000 monthly से 20 साल में corpus ₹49.96 लाख की जगह लगभग <strong>₹1.20 करोड़</strong> हो जाएगा। यह double से ज़्यादा है!</p>`,
+      },
+      {
+        id: 'sip-vs-fd-rd-comparison',
+        title: 'SIP vs FD vs RD — कौन सा बेहतर है?',
+        content: `<p>India में FD और RD traditional investment options हैं। SIP से comparison:</p>
+<table>
+  <thead><tr><th>Parameter</th><th>SIP (Equity MF)</th><th>Bank FD</th><th>Bank RD</th></tr></thead>
+  <tbody>
+    <tr><td>Expected Returns</td><td>10-15% (market linked)</td><td>6.5-7.5%</td><td>6-7%</td></tr>
+    <tr><td>Risk</td><td>Market risk (medium)</td><td>बहुत कम</td><td>बहुत कम</td></tr>
+    <tr><td>Liquidity</td><td>High (ELSS छोड़कर)</td><td>Penalty with early exit</td><td>Penalty with early exit</td></tr>
+    <tr><td>Tax on Returns</td><td>LTCG 12.5% (₹1.25L से ज़्यादा पर)</td><td>Income slab के अनुसार</td><td>Income slab के अनुसार</td></tr>
+    <tr><td>Inflation Beat करें?</td><td>हाँ (historically)</td><td>मुश्किल से</td><td>नहीं</td></tr>
+    <tr><td>Minimum Amount</td><td>₹100/month</td><td>₹1,000</td><td>₹100/month</td></tr>
+  </tbody>
+</table>
+<h3>ELSS — Tax Saving SIP (Section 80C)</h3>
+<p>ELSS (Equity Linked Savings Scheme) mutual funds Section 80C के under ₹1.5 लाख तक tax deduction देते हैं। यह 80C के सबसे अच्छे options में से एक है क्योंकि:</p>
+<ul>
+  <li>सिर्फ 3 साल lock-in (PPF = 15 साल, NSC = 5 साल से कम)</li>
+  <li>Historical returns 12-15% CAGR</li>
+  <li>30% tax bracket में ₹1.5L investment = ₹46,800 tax saving</li>
+</ul>`,
+      },
+      {
+        id: 'best-sip-funds-2026',
+        title: 'India के Best SIP Mutual Funds 2026',
+        content: `<p>लगातार अच्छा performance देने वाले popular funds (invest करने से पहले current ratings ज़रूर check करें):</p>
+<table>
+  <thead><tr><th>Fund Name</th><th>Category</th><th>3Y Returns</th><th>Minimum SIP</th></tr></thead>
+  <tbody>
+    <tr><td>Parag Parikh Flexi Cap</td><td>Flexi Cap</td><td>~18%</td><td>₹1,000</td></tr>
+    <tr><td>Mirae Asset Large Cap</td><td>Large Cap</td><td>~15%</td><td>₹1,000</td></tr>
+    <tr><td>SBI Bluechip Fund</td><td>Large Cap</td><td>~14%</td><td>₹500</td></tr>
+    <tr><td>HDFC Flexi Cap Fund</td><td>Flexi Cap</td><td>~22%</td><td>₹100</td></tr>
+    <tr><td>Axis Midcap Fund</td><td>Mid Cap</td><td>~17%</td><td>₹500</td></tr>
+    <tr><td>Quant Small Cap Fund</td><td>Small Cap</td><td>~28%</td><td>₹1,000</td></tr>
+  </tbody>
+</table>
+<h3>SIP कहाँ से शुरू करें (India 2026)</h3>
+<ul>
+  <li><strong>Groww</strong> — Beginners के लिए best, zero commission, simple UI</li>
+  <li><strong>Zerodha Coin</strong> — Direct mutual funds, lowest expense ratio</li>
+  <li><strong>Paytm Money</strong> — Existing Paytm users के लिए convenient</li>
+  <li><strong>PhonePe</strong> — Quick KYC, small amounts के लिए popular</li>
+</ul>
+<p><em>हमेशा Direct Plan choose करें — Regular Plan में distributor commission होता है जो आपके returns कम करता है।</em></p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Monthly Amount डालें', description: 'SIP Calculator में वह amount डालें जो आप हर महीने invest करना चाहते हैं। ₹500 से शुरू कर सकते हैं।' },
+      { title: 'Investment Duration Set करें', description: 'कितने साल invest करना है? SIP का जादू 10+ साल में दिखता है। 20-30 साल में corpus dramatic हो जाता है।' },
+      { title: 'Expected Return Rate डालें', description: 'Large cap के लिए 12%, mid cap के लिए 14%, debt funds के लिए 7-8% use करें।' },
+      { title: 'Results देखें', description: 'Calculator आपका total investment, expected returns और final corpus दिखाएगा। Different durations compare करें।' },
+      { title: 'SIP शुरू करें', description: 'Groww या Zerodha Coin download करें। Aadhaar से 10 मिनट में KYC complete करें, Direct Plan choose करें, SIP start करें।' },
+    ],
+    faqs: [
+      { question: 'SIP की minimum amount क्या है India में?', answer: 'ज़्यादातर mutual funds ₹100/month से SIP accept करते हैं (HDFC, Axis, SBI जैसे)। कुछ ₹500 या ₹1,000 minimum रखते हैं। Maximum की कोई limit नहीं है। ₹100 से शुरू करें और income बढ़ने के साथ बढ़ाते जाएं।' },
+      { question: 'क्या SIP safe है? पैसा डूब सकता है?', answer: 'Equity SIP market linked है — short term में value घट सकती है। लेकिन 10+ साल के horizon में diversified equity SIP ने historically positive returns दिए हैं। Risk कम करने के लिए: large cap funds choose करें, कम से कम 7-10 साल invest करें, और market गिरने पर SIP बंद न करें।' },
+      { question: 'SIP कभी भी बंद कर सकते हैं?', answer: 'हाँ, SIP कभी भी pause या cancel कर सकते हैं — कोई penalty नहीं (ELSS के 3 साल छोड़कर)। Already invested units fund में रहेंगे और grow करते रहेंगे। Groww/Zerodha app पर login करें और SIP cancel करें।' },
+      { question: 'SIP पर tax कितना लगता है?', answer: 'Equity SIP returns पर: 1 साल से कम hold करें तो STCG tax 20%, 1 साल से ज़्यादा hold करें तो LTCG tax 12.5% (₹1.25 लाख से ज़्यादा profit पर)। ELSS पर: 3 साल lock-in के बाद LTCG apply होगा। Debt SIP: income slab के अनुसार tax।' },
+      { question: 'SIP vs Lump Sum — कौन सा बेहतर है?', answer: 'SIP better है अगर: आपके पास एक बड़ी रकम नहीं है, market timing नहीं जानते, या regular income से invest करना चाहते हैं। Lump Sum better है अगर: बड़ी रकम है और market clearly low है। अधिकतर retail investors के लिए SIP recommend किया जाता है।' },
+    ],
+    relatedGuides: ['emi-calculator-guide', 'percentage-calculator-guide', 'age-calculator-guide'],
+    toolCTA: {
+      heading: 'SIP Returns Calculate करें — Free Tool',
+      description: 'Monthly amount, duration और expected return डालें — corpus instantly calculate होगा। Different scenarios compare करें।',
+      buttonText: 'SIP Calculator खोलें →',
+    },
+  },
+
+  // ── 14. INCOME TAX CALCULATOR GUIDE (Hindi) ──────────────────
+  {
+    slug: 'income-tax-calculator-guide',
+    toolSlug: 'income-tax-calculator',
+    category: 'calculators',
+    title: 'इनकम टैक्स कैलकुलेटर 2025-26 — नया vs पुराना Regime',
+    subtitle: 'FY 2025-26 के tax slabs, Section 80C, HRA और कौन सा regime बेहतर है — complete guide।',
+    metaTitle: 'इनकम टैक्स कैलकुलेटर 2025-26 — नया vs पुराना',
+    metaDescription: 'FY 2025-26 income tax calculate करें। New vs old tax regime comparison, Section 80C deductions, HRA exemption, salary tax table। Free income tax calculator India।',
+    targetKeyword: 'इनकम टैक्स कैलकुलेटर 2025-26',
+    secondaryKeywords: ['new tax regime vs old 2025-26', 'Section 80C kya hai', 'income tax slab Hindi', 'HRA exemption calculator', 'ITR kab bhare', 'salary tax calculator India'],
+    lastUpdated: '2026-03-13',
+    readingTime: '10 मिनट पढ़ें',
+    tags: ['Income Tax', 'ITR', 'India Finance', 'Salary'],
+    intro: `<p>India में हर salaried employee को FY 2025-26 (April 2025 – March 2026) का Income Tax Return (ITR) July 31, 2026 तक file करना होगा। लेकिन उससे पहले एक important decision: <strong>New Tax Regime या Old Tax Regime?</strong></p>
+<p>यह choice गलत होने पर हज़ारों रुपए ज़्यादा tax देना पड़ सकता है। यह guide आपको दोनों regimes के slabs, deductions, और आपके salary के अनुसार कौन सा better है — यह सब simple Hindi में समझाएगी।</p>`,
+    sections: [
+      {
+        id: 'tax-slabs-hindi-2025-26',
+        title: 'FY 2025-26 Tax Slabs — नया और पुराना Regime',
+        content: `<p>FY 2025-26 से New Tax Regime default हो गई है। Employer को April में ही बताएं कि आप कौन सा choose कर रहे हैं।</p>
+<h3>नया Tax Regime (New Regime) — FY 2025-26</h3>
+<table>
+  <thead><tr><th>Income Range</th><th>Tax Rate</th></tr></thead>
+  <tbody>
+    <tr><td>₹0 – ₹3,00,000</td><td>0%</td></tr>
+    <tr><td>₹3,00,001 – ₹7,00,000</td><td>5%</td></tr>
+    <tr><td>₹7,00,001 – ₹10,00,000</td><td>10%</td></tr>
+    <tr><td>₹10,00,001 – ₹12,00,000</td><td>15%</td></tr>
+    <tr><td>₹12,00,001 – ₹15,00,000</td><td>20%</td></tr>
+    <tr><td>₹15,00,000 से ज़्यादा</td><td>30%</td></tr>
+  </tbody>
+</table>
+<p><strong>खास बात:</strong> Section 87A rebate — ₹7 लाख तक income पर zero tax। Salaried employees को ₹75,000 standard deduction भी मिलता है।</p>
+<h3>पुराना Tax Regime (Old Regime) — FY 2025-26</h3>
+<table>
+  <thead><tr><th>Income Range</th><th>Tax Rate</th></tr></thead>
+  <tbody>
+    <tr><td>₹0 – ₹2,50,000</td><td>0%</td></tr>
+    <tr><td>₹2,50,001 – ₹5,00,000</td><td>5%</td></tr>
+    <tr><td>₹5,00,001 – ₹10,00,000</td><td>20%</td></tr>
+    <tr><td>₹10,00,000 से ज़्यादा</td><td>30%</td></tr>
+  </tbody>
+</table>
+<p><strong>खास बात:</strong> Section 80C, HRA, LTA जैसे deductions claim कर सकते हैं जो taxable income कम करते हैं। ₹50,000 standard deduction।</p>
+<p>दोनों पर 4% Health & Education Cess add होता है।</p>`,
+      },
+      {
+        id: 'new-vs-old-regime-comparison-hindi',
+        title: 'कौन सा Regime Better है? — Salary-wise Comparison',
+        content: `<p>Different salary levels पर दोनों regimes का comparison (approximate):</p>
+<table>
+  <thead><tr><th>Gross Salary</th><th>Old Regime Tax*</th><th>New Regime Tax*</th><th>Better</th></tr></thead>
+  <tbody>
+    <tr><td>₹5,00,000</td><td>₹0</td><td>₹0</td><td>Equal</td></tr>
+    <tr><td>₹8,00,000</td><td>₹46,800</td><td>₹31,200</td><td>New Regime</td></tr>
+    <tr><td>₹10,00,000</td><td>₹75,400</td><td>₹54,600</td><td>New Regime</td></tr>
+    <tr><td>₹12,00,000</td><td>₹1,09,200</td><td>₹83,200</td><td>New Regime</td></tr>
+    <tr><td>₹15,00,000</td><td>₹1,48,200†</td><td>₹1,30,000</td><td>लगभग Equal</td></tr>
+    <tr><td>₹20,00,000</td><td>₹2,34,000†</td><td>₹2,73,000</td><td>Old Regime</td></tr>
+  </tbody>
+</table>
+<p><em>*Old regime: full 80C (₹1.5L) + standard deduction ₹50K assumed। New regime: standard deduction ₹75K assumed।</em></p>
+<h3>Simple Decision Rule</h3>
+<ul>
+  <li><strong>₹7 लाख से कम income:</strong> New Regime — zero tax (87A rebate)</li>
+  <li><strong>₹7-15 लाख income:</strong> दोनों calculate करें — जो ज़्यादा investments/deductions हों, old regime better हो सकती है</li>
+  <li><strong>₹15 लाख से ज़्यादा + maximum deductions:</strong> Old regime बेहतर</li>
+</ul>`,
+      },
+      {
+        id: 'section-80c-details-hindi',
+        title: 'Section 80C में क्या आता है? — ₹1.5 लाख की पूरी List',
+        content: `<p>Section 80C सबसे popular tax deduction है — ₹1.5 लाख तक की investments पर taxable income कम होती है। यह only Old Regime में available है।</p>
+<h3>Section 80C के अंदर आने वाले investments</h3>
+<ul>
+  <li><strong>EPF / PF Contribution</strong> — Salary से automatically deduct होता है</li>
+  <li><strong>PPF (Public Provident Fund)</strong> — 7.1% interest, 15 साल lock-in, EEE (triple tax exempt)</li>
+  <li><strong>ELSS Mutual Funds</strong> — सिर्फ 3 साल lock-in, market returns, best option for young investors</li>
+  <li><strong>LIC Premium</strong> — Life insurance premium</li>
+  <li><strong>NSC (National Savings Certificate)</strong> — 7.7% interest, 5 साल</li>
+  <li><strong>Home Loan Principal</strong> — Principal repayment amount</li>
+  <li><strong>Children की School Fees</strong> — 2 बच्चों तक tuition fees</li>
+  <li><strong>5-Year Bank FD</strong> — Tax saver FD (~6.5-7%)</li>
+  <li><strong>Sukanya Samriddhi Yojana</strong> — बेटी के लिए, 8.2% interest</li>
+</ul>
+<h3>Other Important Deductions (Old Regime)</h3>
+<ul>
+  <li><strong>Section 80D:</strong> Health insurance — ₹25,000 (self + family), senior citizen parents के लिए ₹50,000</li>
+  <li><strong>HRA Exemption:</strong> किराए पर रहते हैं तो HRA partially exempt</li>
+  <li><strong>Section 24(b):</strong> Home loan interest — ₹2 लाख/साल तक</li>
+  <li><strong>Section 80E:</strong> Education loan का interest — 8 साल तक full deduction</li>
+</ul>`,
+      },
+      {
+        id: 'itr-filing-guide-hindi',
+        title: 'ITR कैसे भरें — Step by Step Guide 2026',
+        content: `<p>FY 2025-26 का ITR July 31, 2026 तक file करना है। यह process अब बहुत simple हो गई है:</p>
+<h3>कौन सा ITR Form भरें?</h3>
+<table>
+  <thead><tr><th>Form</th><th>कौन भरे</th></tr></thead>
+  <tbody>
+    <tr><td>ITR-1 (Sahaj)</td><td>Salaried, income ₹50L तक, एक house property</td></tr>
+    <tr><td>ITR-2</td><td>Capital gains वाले, multiple properties</td></tr>
+    <tr><td>ITR-3</td><td>Business/profession income (freelancers)</td></tr>
+    <tr><td>ITR-4 (Sugam)</td><td>Presumptive scheme (small business)</td></tr>
+  </tbody>
+</table>
+<h3>ITR Filing Steps</h3>
+<ol>
+  <li>incometax.gov.in पर जाएं, PAN/Aadhaar से login करें</li>
+  <li>AIS (Annual Information Statement) download करके check करें</li>
+  <li>Employer से Form 16 (June 15 तक मिलेगी) लें</li>
+  <li>ITR-1 select करें, pre-filled data verify करें</li>
+  <li>Deductions enter करें (80C, 80D, HRA)</li>
+  <li>Tax calculate करें और due amount pay करें</li>
+  <li>Aadhaar OTP से e-verify करें</li>
+</ol>
+<h3>Deadline miss करने पर?</h3>
+<p>July 31 के बाद भी belated return file हो सकती है December 31, 2026 तक — लेकिन ₹5,000 late fee लगेगी (income ₹5L से कम हो तो ₹1,000)।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Gross Salary डालें', description: 'Income Tax Calculator में अपनी annual gross salary डालें — basic + HRA + special allowance + bonus सब मिलाकर।' },
+      { title: 'Deductions Enter करें', description: 'Old regime compare करने के लिए: 80C investments, health insurance premium, HRA, home loan interest डालें।' },
+      { title: 'दोनों Regimes Compare करें', description: 'Calculator दोनों regimes में tax side by side दिखाएगा। जो कम है वह choose करें।' },
+      { title: 'Employer को बताएं', description: 'April में employer को form submit करें कि आप कौन सा regime choose कर रहे हैं। इससे सही TDS deduct होगा।' },
+      { title: 'July 31 से पहले ITR File करें', description: 'incometax.gov.in पर जाएं, Form 16 use करके ITR-1 file करें, Aadhaar OTP से e-verify करें।' },
+    ],
+    faqs: [
+      { question: 'Salaried employee के लिए कौन सा regime better है 2025-26 में?', answer: '₹7 लाख तक: New Regime (zero tax)। ₹7-15 लाख: दोनों calculate करें — new regime अगर investments कम हों, old regime अगर full 80C + HRA + home loan claim हो। ₹15 लाख से ज़्यादा + maximum deductions: old regime usually better। हमारे calculator से exact comparison करें।' },
+      { question: 'New Tax Regime में कौन से deductions नहीं मिलते?', answer: 'New regime में ये major deductions नहीं मिलते: Section 80C (PPF, ELSS, LIC), HRA exemption, LTA, Section 80D (health insurance), home loan interest (24b)। मिलते हैं: ₹75,000 standard deduction, NPS employer contribution (80CCD(2))।' },
+      { question: 'Section 80C में क्या क्या include होता है?', answer: 'Section 80C में ₹1.5 लाख तक: EPF/PF contribution, PPF, ELSS mutual funds, LIC premium, NSC, 5-year tax saver FD, children tuition fees (2 बच्चे), home loan principal, Sukanya Samriddhi Yojana। Only Old Tax Regime में available है।' },
+      { question: 'Standard Deduction FY 2025-26 में कितनी है?', answer: 'New Tax Regime में: ₹75,000 standard deduction (Budget 2024 में ₹50,000 से बढ़ाया गया)। Old Tax Regime में: ₹50,000। यह flat deduction है — कोई proof नहीं चाहिए, automatically मिलती है।' },
+      { question: 'ITR file करने की last date क्या है FY 2025-26 के लिए?', answer: 'FY 2025-26 (AY 2026-27) के लिए: July 31, 2026। Belated return: December 31, 2026 (₹5,000 late fee के साथ, ₹5L से कम income पर ₹1,000)। Audit cases: October 31, 2026।' },
+    ],
+    relatedGuides: ['sip-calculator-guide', 'emi-calculator-guide', 'percentage-calculator-guide'],
+    toolCTA: {
+      heading: 'Income Tax Calculate करें — New vs Old Regime',
+      description: 'Salary और deductions enter करें, दोनों regimes का tax instantly compare करें FY 2025-26 के लिए।',
+      buttonText: 'Tax Calculator खोलें →',
+    },
+  },
+
+  // ── 15. COLOR PICKER GUIDE (Hindi) ───────────────────────────
+  {
+    slug: 'color-picker-guide',
+    toolSlug: 'color-picker',
+    category: 'developer-tools',
+    title: 'कलर कोड पिकर — HEX, RGB, HSL क्या होते हैं? (2026)',
+    subtitle: 'Web designers और developers के लिए color formats, Indian brand colors, और CSS tips।',
+    metaTitle: 'कलर कोड पिकर — HEX RGB Color फ्री में पाएं',
+    metaDescription: 'HEX, RGB, HSL color formats क्या हैं? Indian brand colors codes, CSS color variables, और WCAG accessibility guide। Free online color picker tool।',
+    targetKeyword: 'कलर कोड ऑनलाइन',
+    secondaryKeywords: ['hex color code Hindi', 'RGB color picker', 'brand color codes India', 'CSS color Hindi guide', 'Canva color picker', 'web design color guide'],
+    lastUpdated: '2026-03-13',
+    readingTime: '6 मिनट पढ़ें',
+    tags: ['Design', 'Web Dev', 'CSS', 'Colors'],
+    intro: `<p>Color design में सबसे powerful element है। एक सही color choice website को professional बनाती है, गलत choice से user trust कम होता है। India में web designers और freelancers के लिए color codes समझना ज़रूरी है — चाहे Canva पर work करें या React/HTML projects बनाएं।</p>
+<p>इस guide में: HEX, RGB, HSL formats का फर्क, India की top companies के official brand colors, CSS variables कैसे use करें, और accessible colors कैसे choose करें।</p>`,
+    sections: [
+      {
+        id: 'color-formats-hindi',
+        title: 'Color Formats — HEX, RGB, HSL, CMYK क्या हैं?',
+        content: `<p>सभी color formats एक ही color को अलग तरीके से express करते हैं:</p>
+<table>
+  <thead><tr><th>Format</th><th>Example</th><th>कब Use करें</th></tr></thead>
+  <tbody>
+    <tr><td>HEX</td><td>#1d4ed8</td><td>CSS, HTML, सभी web projects</td></tr>
+    <tr><td>RGB</td><td>rgb(29, 78, 216)</td><td>CSS, digital screens</td></tr>
+    <tr><td>RGBA</td><td>rgba(29, 78, 216, 0.5)</td><td>CSS में transparency के साथ</td></tr>
+    <tr><td>HSL</td><td>hsl(221, 76%, 48%)</td><td>CSS animations, theming</td></tr>
+    <tr><td>CMYK</td><td>cmyk(87, 64, 0, 15)</td><td>Print design, Photoshop</td></tr>
+  </tbody>
+</table>
+<h3>HEX Code कैसे पढ़ें?</h3>
+<p>HEX code = #RRGGBB। R = Red, G = Green, B = Blue, हर एक 00 से FF (0-255 decimal) तक। #000000 = काला, #ffffff = सफेद, #ff0000 = pure red।</p>
+<h3>HSL — Design के लिए सबसे अच्छा Format</h3>
+<p>HSL = Hue (रंग angle 0-360°), Saturation (0% grey - 100% vivid), Lightness (0% black - 100% white)। किसी color को lighter बनाना हो? Lightness बढ़ा दें। Muted palette चाहिए? Saturation कम करें। Canva और Figma दोनों HSL use करते हैं।</p>`,
+      },
+      {
+        id: 'indian-brand-colors',
+        title: 'India की Top Companies के Official Brand Colors',
+        content: `<p>India की top brands के official color codes (reference के लिए — trademark use avoid करें):</p>
+<table>
+  <thead><tr><th>Brand</th><th>Primary Color</th><th>HEX Code</th><th>RGB</th></tr></thead>
+  <tbody>
+    <tr><td>Jio</td><td>Jio Blue</td><td>#0F62AC</td><td>15, 98, 172</td></tr>
+    <tr><td>Airtel</td><td>Airtel Red</td><td>#E40000</td><td>228, 0, 0</td></tr>
+    <tr><td>Zomato</td><td>Zomato Red</td><td>#E23744</td><td>226, 55, 68</td></tr>
+    <tr><td>Swiggy</td><td>Swiggy Orange</td><td>#FC8019</td><td>252, 128, 25</td></tr>
+    <tr><td>Paytm</td><td>Paytm Blue</td><td>#00B9F1</td><td>0, 185, 241</td></tr>
+    <tr><td>Flipkart</td><td>Flipkart Yellow</td><td>#F7C600</td><td>247, 198, 0</td></tr>
+    <tr><td>IRCTC</td><td>IRCTC Navy</td><td>#003974</td><td>0, 57, 116</td></tr>
+    <tr><td>HDFC Bank</td><td>HDFC Red</td><td>#004B8D</td><td>0, 75, 141</td></tr>
+    <tr><td>SBI</td><td>SBI Blue</td><td>#22409A</td><td>34, 64, 154</td></tr>
+    <tr><td>OLA</td><td>OLA Green</td><td>#1CAC78</td><td>28, 172, 120</td></tr>
+  </tbody>
+</table>
+<h3>Canva और Figma में Color Picker Tips</h3>
+<ul>
+  <li><strong>Canva:</strong> Color box click करें → HEX field में code paste करें। Brand Kit में save करें।</li>
+  <li><strong>Figma:</strong> Fill → HEX code type करें। Styles में save करके reuse करें।</li>
+  <li><strong>Chrome DevTools:</strong> F12 → Elements → किसी color पर click → eyedropper से screen से color pick करें।</li>
+</ul>`,
+      },
+      {
+        id: 'css-color-variables',
+        title: 'CSS Color Variables — Professional तरीके से Colors Manage करें',
+        content: `<p>एक professional website में colors centrally manage होते हैं — एक जगह change करने पर पूरी site change हो जाती है:</p>
+<pre><code>:root {
+  --color-primary: #1d4ed8;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1e40af;
+  --color-accent: #f59e0b;
+  --color-text: #111827;
+  --color-bg: #ffffff;
+}
+
+/* Use करना */
+button {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}</code></pre>
+<h3>Dark Mode Support</h3>
+<pre><code>@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f172a;
+    --color-text: #f1f5f9;
+  }
+}</code></pre>
+<p>Tailwind CSS use करते हैं? tailwind.config.js में अपने brand colors define करें:</p>
+<pre><code>colors: {
+  brand: {
+    primary: '#1d4ed8',
+    accent: '#f59e0b',
+  }
+}</code></pre>`,
+      },
+      {
+        id: 'accessible-colors-hindi',
+        title: 'Accessible Colors — WCAG Standards क्या हैं?',
+        content: `<p>India में ~8% पुरुष और ~0.5% महिलाएं color blindness से affected हैं। Accessible colors choose करने से आपकी website ज़्यादा inclusive बनती है।</p>
+<h3>WCAG Contrast Requirements</h3>
+<ul>
+  <li><strong>AA Standard (minimum):</strong> Normal text के लिए 4.5:1 contrast ratio, large text के लिए 3:1</li>
+  <li><strong>AAA Standard (enhanced):</strong> Normal text के लिए 7:1</li>
+</ul>
+<h3>Quick Reference</h3>
+<table>
+  <thead><tr><th>Text Color</th><th>Background</th><th>Ratio</th><th>WCAG AA</th></tr></thead>
+  <tbody>
+    <tr><td>Black (#000)</td><td>White (#fff)</td><td>21:1</td><td>Pass ✓</td></tr>
+    <tr><td>White (#fff)</td><td>Jio Blue (#0F62AC)</td><td>~7:1</td><td>Pass ✓</td></tr>
+    <tr><td>White (#fff)</td><td>Light Gray (#aaa)</td><td>~2:1</td><td>Fail ✗</td></tr>
+  </tbody>
+</table>
+<h3>Common Mistakes India में</h3>
+<ul>
+  <li>Light yellow text on white background — very common in Indian websites, fails WCAG</li>
+  <li>Red text on green background — color blind users के लिए unreadable</li>
+  <li>Grey (#999) text on white — borderline fail</li>
+</ul>
+<div class="callout-tip"><strong>Tip:</strong> ToolsArena का Color Contrast Checker use करें — कोई भी 2 colors डालें, instantly WCAG AA/AAA pass/fail बताएगा।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Color Picker खोलें', description: 'ToolsArena का free Color Picker open करें — कोई login नहीं चाहिए।' },
+      { title: 'Color Select करें', description: 'Color spectrum पर click करें, या directly HEX/RGB/HSL value type करें।' },
+      { title: 'Format Switch करें', description: 'HEX, RGB, या HSL tab click करके अपना preferred format select करें।' },
+      { title: 'Copy करें', description: 'Copy button click करें — color code clipboard में copy हो जाएगा। Canva/Figma/CSS में paste करें।' },
+      { title: 'Screen से Color Pick करें', description: 'Eyedropper tool use करें (Chrome/Edge में supported) — screen पर कहीं भी से color pick करें।' },
+    ],
+    faqs: [
+      { question: 'HEX और RGB में क्या फर्क है?', answer: 'HEX और RGB एक ही color को अलग notation में express करते हैं। #ff0000 और rgb(255,0,0) एक ही red color है। HEX shorter और CSS में popular है। RGB तब use करें जब transparency चाहिए (rgba) या individual channels manipulate करने हों।' },
+      { question: 'किसी image से color code कैसे निकालें?', answer: 'Browser में eyedropper tool use करें (Chrome 95+ में built-in)। या image को Canva में upload करें, color picker से click करें। Figma में भी eyedropper tool available है। ToolsArena के Color Picker में screen capture eyedropper use करें।' },
+      { question: 'HSL color format क्या है और कब use करें?', answer: 'HSL = Hue (color angle), Saturation (vividity), Lightness। Design में most intuitive format है। CSS animations में, या जब programmatically lighter/darker shades बनानी हों तो HSL best है। hsl(221, 76%, 48%) को lighter बनाना हो? Lightness 60% कर दें।' },
+      { question: 'CMYK और RGB में क्या फर्क है?', answer: 'RGB screen के लिए (light mixing), CMYK printing के लिए (ink mixing)। Web design के लिए RGB/HEX use करें। Print materials (visiting cards, brochures, banners) के लिए CMYK। Same color screen पर और print पर slightly different दिख सकता है।' },
+      { question: 'Website के लिए accessible colors कैसे choose करें?', answer: 'Text और background का contrast ratio कम से कम 4.5:1 होना चाहिए (WCAG AA)। Dark text on light background या light text on dark background generally safe है। Light gray text on white background avoid करें। ToolsArena का Color Contrast Checker use करें — instantly WCAG result बताएगा।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Color Code Pick करें — Free Online Tool',
+      description: 'HEX, RGB, HSL, CMYK instantly get करें। Visual picker, eyedropper, copy-to-clipboard। कोई signup नहीं।',
+      buttonText: 'Color Picker खोलें →',
+    },
+  },
+
 ];
