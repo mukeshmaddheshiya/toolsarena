@@ -324,7 +324,7 @@ export const guidesHi: Guide[] = [
     title: 'इमेज कंप्रेसर गाइड: WhatsApp, Instagram और Website के लिए Photo Compress करें',
     subtitle: 'बिना quality खोए photos की size कम करें — WhatsApp, Instagram, website और government forms के लिए पूरी जानकारी।',
     metaTitle: 'इमेज कंप्रेसर - Photo Compress करें फ्री में',
-    metaDescription: 'इमेज कंप्रेसर से फोटो की size घटाएं बिना quality खोए। WhatsApp, Instagram, website और government form upload के लिए JPG, PNG compress करने की पूरी guide यहाँ पाएं।',
+    metaDescription: 'इमेज कंप्रेसर से JPG, PNG फोटो की size घटाएं बिना quality खोए। WhatsApp, Instagram, website और सरकारी form upload के लिए compress guide हिंदी में।',
     targetKeyword: 'इमेज कंप्रेसर',
     secondaryKeywords: [
       'photo compress karna', 'image size kam karna', 'WhatsApp ke liye image compress',
@@ -969,7 +969,7 @@ export const guidesHi: Guide[] = [
     title: 'PDF कंप्रेसर गाइड: सरकारी फॉर्म, Email और WhatsApp के लिए PDF Compress करें',
     subtitle: 'बड़ी PDF files को छोटा करें बिना quality खोए — government portals, email और WhatsApp के लिए size limits की पूरी जानकारी।',
     metaTitle: 'PDF कंप्रेसर - PDF Size कम करें फ्री में',
-    metaDescription: 'PDF कंप्रेसर से बड़ी PDF files छोटी करें बिना quality खोए। सरकारी form upload, email और WhatsApp के लिए PDF size limits और compress करने की पूरी guide हिंदी में।',
+    metaDescription: 'PDF कंप्रेसर से बड़ी PDF files छोटी करें बिना quality खोए। सरकारी form, email, WhatsApp के लिए PDF size limits और compress guide हिंदी में।',
     targetKeyword: 'PDF कंप्रेसर',
     secondaryKeywords: [
       'PDF size kam karna', 'PDF compress kaise karein', 'badi PDF choti karna',
@@ -1292,7 +1292,7 @@ export const guidesHi: Guide[] = [
     title: 'ईएमआई कैलकुलेटर गाइड: Home Loan, Car Loan और Personal Loan की EMI कैसे निकालें',
     subtitle: 'EMI formula, भारतीय बैंकों की interest rates, salary vs loan eligibility — 2026 की पूरी जानकारी।',
     metaTitle: 'ईएमआई कैलकुलेटर - Loan EMI निकालें फ्री में',
-    metaDescription: 'ईएमआई कैलकुलेटर से home loan, car loan और personal loan की monthly EMI निकालें। HDFC, SBI, ICICI bank rates, salary eligibility और EMI कम करने के तरीके हिंदी में।',
+    metaDescription: 'ईएमआई कैलकुलेटर से home loan, car loan और personal loan की monthly EMI निकालें। SBI, HDFC, ICICI rates, eligibility और EMI कम करने के tips हिंदी में।',
     targetKeyword: 'ईएमआई कैलकुलेटर',
     secondaryKeywords: [
       'home loan EMI calculator', 'car loan EMI calculate', 'personal loan EMI',
@@ -1473,7 +1473,7 @@ export const guidesHi: Guide[] = [
     title: 'यूनिट कन्वर्टर गाइड: बीघा, तोला, सेर और भारतीय माप-तौल की पूरी जानकारी',
     subtitle: 'बीघा से एकड़, तोला से ग्राम, इंच से सेंटीमीटर — भारतीय और अंतरराष्ट्रीय माप-तौल सब एक जगह।',
     metaTitle: 'यूनिट कन्वर्टर - बीघा, तोला Convert करें',
-    metaDescription: 'यूनिट कन्वर्टर से बीघा को एकड़ में, तोला को ग्राम में, और इंच को सेंटीमीटर में convert करें। State-wise बीघा conversion table और पारंपरिक भारतीय माप-तौल की पूरी जानकारी।',
+    metaDescription: 'यूनिट कन्वर्टर से बीघा, तोला, इंच convert करें। State-wise बीघा to एकड़ table, पारंपरिक भारतीय माप-तौल और सभी unit conversion guide हिंदी में।',
     targetKeyword: 'यूनिट कन्वर्टर',
     secondaryKeywords: [
       '1 bigha kitna hota hai', 'bigha to acre convert', 'tola to gram',
@@ -1644,7 +1644,7 @@ export const guidesHi: Guide[] = [
     category: 'image-tools',
     title: 'इमेज रिसाइज़ करें ऑनलाइन — फोटो साइज़ कैसे बदलें (2026)',
     subtitle: 'सोशल मीडिया, सरकारी फॉर्म और वेबसाइट के लिए सही इमेज साइज़ की पूरी गाइड।',
-    metaTitle: 'इमेज रिसाइज़ करें — फ्री ऑनलाइन फोटो साइज़ टूल',
+    metaTitle: 'इमेज रिसाइज़र — Photo Resize करें फ्री में',
     metaDescription: 'Instagram, Facebook, YouTube, WhatsApp और सरकारी फॉर्म के लिए सही फोटो साइज़ जानें। SSC, UPSC, Aadhaar फोटो size limit guide. फ्री ऑनलाइन टूल।',
     targetKeyword: 'इमेज रिसाइज़ करें ऑनलाइन फ्री',
     secondaryKeywords: ['फोटो साइज़ कम करें', 'image resize online', 'photo resize karna', 'Instagram photo size', 'SSC photo size', 'UPSC photo size', 'Aadhaar photo size'],
@@ -2023,7 +2023,7 @@ export const guidesHi: Guide[] = [
     title: 'इनकम टैक्स कैलकुलेटर 2025-26 — नया vs पुराना Regime',
     subtitle: 'FY 2025-26 के tax slabs, Section 80C, HRA और कौन सा regime बेहतर है — complete guide।',
     metaTitle: 'इनकम टैक्स कैलकुलेटर 2025-26 — नया vs पुराना',
-    metaDescription: 'FY 2025-26 income tax calculate करें। New vs old tax regime comparison, Section 80C deductions, HRA exemption, salary tax table। Free income tax calculator India।',
+    metaDescription: 'FY 2025-26 income tax calculate करें। New vs old tax regime comparison, 80C deductions, HRA exemption और salary tax table। Free calculator India।',
     targetKeyword: 'इनकम टैक्स कैलकुलेटर 2025-26',
     secondaryKeywords: ['new tax regime vs old 2025-26', 'Section 80C kya hai', 'income tax slab Hindi', 'HRA exemption calculator', 'ITR kab bhare', 'salary tax calculator India'],
     lastUpdated: '2026-03-13',

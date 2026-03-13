@@ -256,7 +256,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '9 min read',
     tags: ['Health', 'Fitness', 'Wellness', 'Calculator'],
-    intro: `<p>Body Mass Index (BMI) is the most widely used screening tool for body weight classification worldwide. Your doctor uses it, insurance companies reference it, and public health agencies track it nationally. Yet most people either don't know their BMI, or know it without understanding what it actually means for their health.</p>
+    intro: `<p>A <strong>BMI calculator</strong> instantly tells you whether your weight is in the healthy range based on your height. Body Mass Index (BMI) is the most widely used screening tool for body weight classification worldwide. Your doctor uses it, insurance companies reference it, and public health agencies track it nationally. Yet most people either don't know their BMI, or know it without understanding what it actually means for their health.</p>
 <p>This guide explains the BMI formula, walks through every weight category, shows you how BMI varies by age and gender, and — crucially — explains the significant limitations of BMI so you can use it as the rough screening tool it is, not a definitive health verdict.</p>`,
     sections: [
       {
@@ -451,7 +451,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '10 min read',
     tags: ['Images', 'Web Performance', 'SEO', 'Design'],
-    intro: `<p>Images account for <strong>over 50% of the average webpage's total byte size</strong>. A single uncompressed hero image can weigh more than all the JavaScript and CSS on your page combined. Unoptimised images slow down your site, frustrate mobile users, hurt your Core Web Vitals scores, and cost you Google rankings.</p>
+    intro: `<p>An <strong>image compressor</strong> reduces file size while preserving visual quality — essential because images account for <strong>over 50% of the average webpage's total byte size</strong>. A single uncompressed hero image can weigh more than all the JavaScript and CSS on your page combined. Unoptimised images slow down your site, frustrate mobile users, hurt your Core Web Vitals scores, and cost you Google rankings.</p>
 <p>This guide covers everything you need to know about image compression: the science behind it, the difference between lossy and lossless techniques, which format to choose for each use case, and the exact sizes recommended for every major platform. By the end, you will be able to compress images intelligently — not just blindly reducing quality until they look bad.</p>`,
     sections: [
       {
@@ -663,7 +663,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '9 min read',
     tags: ['Business', 'Marketing', 'Tech', 'Productivity'],
-    intro: `<p>QR codes went from obscure supply-chain barcode to ubiquitous everyday technology during the COVID-19 pandemic — and they haven't looked back. Restaurant menus, business cards, event tickets, product packaging, advertising billboards, and even gravestone memorials now use QR codes. Global QR code scans grew from 1.5 billion in 2020 to over 4 billion in 2024.</p>
+    intro: `<p>A <strong>QR code generator</strong> creates scannable codes for URLs, WiFi, UPI payments, and contacts in seconds — free, online, no app required. QR codes went from obscure supply-chain barcode to ubiquitous everyday technology during the COVID-19 pandemic — and they haven't looked back. Restaurant menus, business cards, event tickets, product packaging, advertising billboards, and even gravestone memorials now use QR codes. Global QR code scans grew from 1.5 billion in 2020 to over 4 billion in 2024.</p>
 <p>Despite this ubiquity, most people create QR codes without understanding how they work, what makes them scan reliably, or how to design them so they get scanned. This guide covers all of that — plus creative use cases most people haven't considered.</p>`,
     sections: [
       {
@@ -853,7 +853,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '7 min read',
     tags: ['Calculator', 'Dates', 'Life Events', 'Fun Facts'],
-    intro: `<p>"How old are you?" seems like the simplest question in the world. But calculating <em>exact</em> age — down to years, months, days, and even hours — is surprisingly complex. Leap years, month-length variations, timezone differences, and even which calendar system you use all affect the answer.</p>
+    intro: `<p>An <strong>age calculator</strong> computes your exact age in years, months, and days from your date of birth — instantly and without manual counting. "How old are you?" seems like the simplest question in the world. But calculating <em>exact</em> age — down to years, months, days, and even hours — is surprisingly complex. Leap years, month-length variations, timezone differences, and even which calendar system you use all affect the answer.</p>
 <p>This guide explains how age is actually calculated, the math behind it, and the surprising ways different cultures and legal systems define age differently. Plus: interesting age milestones and why your "age in days" is a more satisfying number than you might expect.</p>`,
     sections: [
       {
@@ -1071,7 +1071,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '10 min read',
     tags: ['Math', 'Finance', 'Shopping', 'GST', 'India'],
-    intro: `<p>Percentages are everywhere — from a 20% discount at your favourite store to an 8.5% interest rate on a home loan, from your exam score to the GST on your restaurant bill. Yet many people still reach for a calculator and wonder if they are applying the right formula.</p>
+    intro: `<p>A <strong>percentage calculator</strong> instantly solves any percentage problem — from discounts and GST to exam scores and profit margins. Percentages are everywhere — from a 20% discount at your favourite store to an 8.5% interest rate on a home loan, from your exam score to the GST on your restaurant bill. Yet many people still reach for a calculator and wonder if they are applying the right formula.</p>
 <p>This guide demystifies every type of percentage calculation with clear formulas, worked examples, and a quick-reference table covering the 20 most commonly searched calculations. By the end, you will be able to solve any percentage problem in seconds — and understand exactly what you calculated.</p>`,
     sections: [
       {
@@ -1210,7 +1210,7 @@ export const guides: Guide[] = [
     category: 'pdf-tools',
     title: 'PDF Compressor Guide: Reduce PDF File Size Without Losing Quality (2026)',
     subtitle: 'Everything you need to know to shrink PDFs for email, web upload, and sharing — on every platform, without expensive software.',
-    metaTitle: 'PDF Compressor Guide: Reduce PDF Size Free Online (2026)',
+    metaTitle: 'Compress PDF Online Free — Reduce PDF Size Guide 2026',
     metaDescription: 'Compress PDFs on Windows, Mac, Word, and Google Drive without losing quality. Target sizes by use case, scanned vs text PDFs, and free online PDF compressor.',
     targetKeyword: 'compress PDF',
     secondaryKeywords: [
@@ -1223,7 +1223,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '9 min read',
     tags: ['PDF', 'File Compression', 'Productivity', 'Documents'],
-    intro: `<p>You need to email a PDF but it's 45 MB and the attachment limit is 10 MB. Your website upload form rejects PDFs over 5 MB. Your WhatsApp won't send the document. Sound familiar?</p>
+    intro: `<p>The fastest way to <strong>compress PDF</strong> files is with a free online tool — no software to install, no sign-up needed. You need to email a PDF but it's 45 MB and the attachment limit is 10 MB. Your website upload form rejects PDFs over 5 MB. Your WhatsApp won't send the document. Sound familiar?</p>
 <p>Large PDFs are one of the most common daily frustrations in digital work. This guide explains exactly why PDFs get large, how compression reduces them, and — most importantly — the step-by-step method to compress a PDF on every platform: Windows, Mac, Adobe Acrobat, Microsoft Word, Google Drive, and online tools like ToolsArena. No paid software required for most use cases.</p>`,
     sections: [
       {
@@ -1365,7 +1365,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '9 min read',
     tags: ['Developer Tools', 'JSON', 'API', 'Debugging', 'JavaScript'],
-    intro: `<p>JSON (JavaScript Object Notation) is the universal language of APIs, configuration files, and data exchange. Every developer working with REST APIs, Node.js, Python data processing, or modern web development encounters JSON daily. Yet a single misplaced comma or missing quote can break everything — and error messages like "Unexpected token &lt; at position 0" are notoriously cryptic.</p>
+    intro: `<p>A <strong>JSON formatter</strong> makes raw, minified JSON instantly readable and validates it for errors — a daily essential for every developer. JSON (JavaScript Object Notation) is the universal language of APIs, configuration files, and data exchange. Every developer working with REST APIs, Node.js, Python data processing, or modern web development encounters JSON daily. Yet a single misplaced comma or missing quote can break everything — and error messages like "Unexpected token &lt; at position 0" are notoriously cryptic.</p>
 <p>This guide covers JSON from first principles: syntax rules, all data types, every common parse error and its fix, formatting options, and how JSON compares to XML. Whether you are a beginner seeing JSON for the first time or a senior developer who needs a quick reference, this is the complete guide.</p>`,
     sections: [
       {
@@ -1541,7 +1541,7 @@ export const guides: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '11 min read',
     tags: ['Finance', 'Loans', 'India', 'Home Loan', 'Calculator'],
-    intro: `<p>An EMI (Equated Monthly Instalment) is the fixed monthly payment you make to repay a loan. Whether you are taking a home loan of ₹50 lakh, a car loan of ₹8 lakh, or a personal loan of ₹2 lakh, the EMI calculation works the same way — and understanding it can save you lakhs of rupees over the life of your loan.</p>
+    intro: `<p>An <strong>EMI calculator</strong> tells you exactly how much you will pay each month on any loan — home, car, or personal — before you sign anything. An EMI (Equated Monthly Instalment) is the fixed monthly payment you make to repay a loan. Whether you are taking a home loan of ₹50 lakh, a car loan of ₹8 lakh, or a personal loan of ₹2 lakh, the EMI calculation works the same way — and understanding it can save you lakhs of rupees over the life of your loan.</p>
 <p>This guide covers the complete picture: the EMI formula with worked examples, how to read an amortisation schedule (the breakdown of interest vs principal in each payment), a comparison of current loan rates in India, smart prepayment strategies, and what happens if you miss an EMI. By the end, you will have the financial clarity to make confident borrowing decisions.</p>`,
     sections: [
       {
@@ -1711,7 +1711,7 @@ Where:
     lastUpdated: '2026-03-12',
     readingTime: '8 min read',
     tags: ['Conversions', 'Math', 'Science', 'India', 'Cooking'],
-    intro: `<p>The world runs on two measurement systems — the metric system (used by most of the world) and the imperial/US customary system (used by the US and Myanmar, with the UK using a mix). India officially adopted the metric system in 1957, but imperial units persist in real estate (acres, yards), cooking (cups, ounces), and everyday speech ("he's 5 feet 10 inches tall").</p>
+    intro: `<p>A <strong>unit converter</strong> instantly switches between metric, imperial, and traditional measurement systems — no manual calculation needed. The world runs on two measurement systems — the metric system (used by most of the world) and the imperial/US customary system (used by the US and Myanmar, with the UK using a mix). India officially adopted the metric system in 1957, but imperial units persist in real estate (acres, yards), cooking (cups, ounces), and everyday speech ("he's 5 feet 10 inches tall").</p>
 <p>This guide is your complete unit conversion reference. It covers length, weight, temperature, volume, and area conversions with exact formulas, quick-reference tables for the most commonly searched pairs, and a section on India-specific units that most unit converter guides ignore entirely.</p>`,
     sections: [
       {
@@ -1902,7 +1902,7 @@ Kelvin to Celsius:        °C = K − 273.15</code></pre>
     lastUpdated: '2026-03-13',
     readingTime: '7 min read',
     tags: ['Images', 'Social Media', 'Design', 'Web'],
-    intro: `<p>Resizing images is one of the most common digital tasks — whether you are uploading a profile picture, preparing a thumbnail, submitting a government form, or optimising a website. Yet most people either use the wrong tool, lose quality in the process, or end up with a file that's too large or too small.</p>
+    intro: `<p>An <strong>image resizer</strong> lets you change photo dimensions instantly — without installing software or losing quality. Resizing images is one of the most common digital tasks — whether you are uploading a profile picture, preparing a thumbnail, submitting a government form, or optimising a website. Yet most people either use the wrong tool, lose quality in the process, or end up with a file that's too large or too small.</p>
 <p>This guide explains everything you need to know about image resizing: the correct dimensions for every major platform, the difference between resizing and compressing, when to use JPEG vs PNG vs WebP, and how to resize without losing quality.</p>`,
     sections: [
       {
@@ -2032,7 +2032,7 @@ Kelvin to Celsius:        °C = K − 273.15</code></pre>
     lastUpdated: '2026-03-13',
     readingTime: '8 min read',
     tags: ['Security', 'Privacy', 'Passwords', 'Cybersecurity'],
-    intro: `<p>In 2026, the average person has over 100 online accounts — and most people reuse the same 3–5 passwords across all of them. That is a catastrophic security risk. A single data breach at any one service exposes every account that shares that password.</p>
+    intro: `<p>A <strong>password generator</strong> creates strong, random passwords that are virtually impossible to crack — protecting every account you own. In 2026, the average person has over 100 online accounts — and most people reuse the same 3–5 passwords across all of them. That is a catastrophic security risk. A single data breach at any one service exposes every account that shares that password.</p>
 <p>This guide covers exactly what makes a password strong, how quickly modern hardware can crack weak passwords, the latest NIST 2024 guidelines that changed everything about password advice, and how to protect yourself without memorising hundreds of complex strings.</p>`,
     sections: [
       {
@@ -2166,7 +2166,7 @@ Kelvin to Celsius:        °C = K − 273.15</code></pre>
     lastUpdated: '2026-03-13',
     readingTime: '9 min read',
     tags: ['Investment', 'Mutual Funds', 'Finance', 'India'],
-    intro: `<p>A Systematic Investment Plan (SIP) is the most popular way for Indian investors to build wealth through mutual funds. Instead of investing a lump sum, SIP lets you invest a fixed amount every month — as little as ₹100 — and benefit from rupee cost averaging and the power of compounding.</p>
+    intro: `<p>A <strong>SIP calculator</strong> shows exactly how much wealth your monthly mutual fund investments will build over time — factoring in compounding returns automatically. A Systematic Investment Plan (SIP) is the most popular way for Indian investors to build wealth through mutual funds. Instead of investing a lump sum, SIP lets you invest a fixed amount every month — as little as ₹100 — and benefit from rupee cost averaging and the power of compounding.</p>
 <p>This guide explains the SIP formula, shows you exactly what ₹500, ₹1,000, ₹5,000 invested monthly will grow to over 10, 20, and 30 years, compares SIP against FD and RD, and walks you through the best platforms to start investing in India today.</p>`,
     sections: [
       {
@@ -2294,7 +2294,7 @@ Kelvin to Celsius:        °C = K − 273.15</code></pre>
     lastUpdated: '2026-03-13',
     readingTime: '10 min read',
     tags: ['Tax', 'Finance', 'India', 'Salary'],
-    intro: `<p>Every salaried employee and self-employed individual in India must file an Income Tax Return (ITR) annually. For FY 2025-26 (Assessment Year 2026-27), you have the choice between the <strong>New Tax Regime</strong> (default) and the <strong>Old Tax Regime</strong>. Choosing the wrong regime could mean paying thousands of rupees more in tax than necessary.</p>
+    intro: `<p>An <strong>income tax calculator</strong> instantly computes how much tax you owe for FY 2025-26 under both the New and Old Tax Regimes — so you can choose the one that saves you the most money. Every salaried employee and self-employed individual in India must file an Income Tax Return (ITR) annually. For FY 2025-26 (Assessment Year 2026-27), you have the choice between the <strong>New Tax Regime</strong> (default) and the <strong>Old Tax Regime</strong>. Choosing the wrong regime could mean paying thousands of rupees more in tax than necessary.</p>
 <p>This guide explains both regimes in plain language, shows exactly how much tax you would pay at different salary levels, lists all major deductions available under the old regime, and helps you decide which regime is right for your situation.</p>`,
     sections: [
       {
@@ -2426,14 +2426,14 @@ Kelvin to Celsius:        °C = K − 273.15</code></pre>
     category: 'developer-tools',
     title: 'Color Picker Guide: HEX, RGB, HSL Color Codes Explained (2026)',
     subtitle: 'Everything designers and developers need to know about color formats, color theory, and picking accessible colors.',
-    metaTitle: 'Color Picker Guide — HEX, RGB, HSL Codes Explained 2026',
+    metaTitle: 'Color Picker Online — HEX RGB HSL Codes Guide 2026',
     metaDescription: 'Learn the difference between HEX, RGB, HSL, and CMYK color formats. Includes color theory basics, brand color codes, and how to pick accessible colors.',
     targetKeyword: 'color picker online',
     secondaryKeywords: ['hex color code picker', 'rgb color picker', 'hsl color picker', 'color code finder', 'what is hex color', 'color palette generator', 'web color codes'],
     lastUpdated: '2026-03-13',
     readingTime: '7 min read',
     tags: ['Design', 'Web Dev', 'CSS', 'Colors'],
-    intro: `<p>Color is one of the most powerful tools in design — it communicates brand identity, guides attention, conveys emotion, and determines whether a design feels professional or amateurish. Yet most beginners struggle with color codes: what is the difference between HEX and RGB? When do you use HSL? What is CMYK for?</p>
+    intro: `<p>A <strong>color picker</strong> lets you select any color and instantly get its HEX, RGB, and HSL codes — the foundation of every design and web project. Color is one of the most powerful tools in design — it communicates brand identity, guides attention, conveys emotion, and determines whether a design feels professional or amateurish. Yet most beginners struggle with color codes: what is the difference between HEX and RGB? When do you use HSL? What is CMYK for?</p>
 <p>This guide covers every color format used in web and print design, explains color theory fundamentals, lists the official color codes of major brands, and shows you how to choose accessible color combinations that work for all users.</p>`,
     sections: [
       {
