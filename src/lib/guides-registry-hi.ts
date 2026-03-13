@@ -2303,4 +2303,1590 @@ button {
     },
   },
 
+  // ── TIER 1 ────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'word-to-pdf-guide',
+    toolSlug: 'word-to-pdf',
+    category: 'pdf-tools',
+    title: 'Word को PDF में कैसे बदलें — 5 आसान तरीके (Free)',
+    subtitle: 'Word Document को PDF में convert करने के सभी तरीके — बिना किसी software के',
+    metaTitle: 'Word to PDF Converter — Word फ़ाइल को PDF में बदलें (Free गाइड)',
+    metaDescription: 'Word document को PDF में convert करें — online, Microsoft Word, Google Docs या mobile से। Formatting सुरक्षित रहे, file size कम हो। कोई software install नहीं।',
+    targetKeyword: 'word to pdf',
+    secondaryKeywords: ['word to pdf converter', 'word file ko pdf mein convert kare', 'docx to pdf', 'word se pdf banana', 'free word to pdf'],
+    lastUpdated: '2026-03-13',
+    readingTime: '6 मिनट पढ़ें',
+    tags: ['Word to PDF', 'PDF Tools', 'Document', 'Converter'],
+    intro: `<p>किसी को job application भेजनी हो, college assignment submit करनी हो, या government portal पर document upload करना हो — <strong>PDF format सबसे ज़्यादा accepted format</strong> है। Word file (.docx) को PDF में convert करना बहुत ज़रूरी skill है जो हर किसी को आनी चाहिए।</p>
+<p>इस गाइड में हम 5 तरीके देखेंगे — mobile से, online tool से, Microsoft Word से, Google Docs से, और बिना internet के।</p>`,
+    sections: [
+      {
+        id: 'word-pdf-kyun',
+        title: 'Word की जगह PDF क्यों भेजें?',
+        content: `<p>PDF format के कई फायदे हैं जो Word (.docx) में नहीं हैं:</p>
+<table>
+  <thead><tr><th>विशेषता</th><th>Word (.docx)</th><th>PDF</th></tr></thead>
+  <tbody>
+    <tr><td>Formatting</td><td>अलग device पर बदल सकती है</td><td>हर जगह एक जैसी दिखती है</td></tr>
+    <tr><td>Edit करना</td><td>कोई भी edit कर सकता है</td><td>आसानी से edit नहीं होती</td></tr>
+    <tr><td>File size</td><td>बड़ी हो सकती है</td><td>Compress होती है</td></tr>
+    <tr><td>Compatibility</td><td>Microsoft Word चाहिए</td><td>हर device, हर OS पर खुलती है</td></tr>
+    <tr><td>Government portals</td><td>अक्सर accept नहीं होती</td><td>सभी portals accept करते हैं</td></tr>
+    <tr><td>Email attachment</td><td>Virus scan में flag हो सकती है</td><td>Safe और professional मानी जाती है</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'conversion-methods',
+        title: 'Word को PDF में बदलने के 5 तरीके',
+        content: `<h3>1. ToolsArena Word to PDF Converter (Online, Free)</h3>
+<p>सबसे आसान तरीका — बिना कोई software install किए। बस file upload करें और PDF download करें। आपकी file कभी server पर नहीं जाती — सब कुछ browser में होता है।</p>
+<h3>2. Microsoft Word से (Save As PDF)</h3>
+<p>File → Save As → PDF select करें → Save। यह सबसे accurate तरीका है — original formatting 100% preserve रहती है।</p>
+<h3>3. Google Docs से (Free)</h3>
+<p>File → Download → PDF Document (.pdf)। Google account से login करके Word file upload करें, फिर PDF में download करें।</p>
+<h3>4. Mobile से (Android/iPhone)</h3>
+<p>Android: Microsoft Word app → Share → Print → PDF में save। iPhone: Share → Print → Pinch to zoom on preview → Share as PDF।</p>
+<h3>5. Print to PDF (Windows/Mac)</h3>
+<p>कोई भी document खोलें → Ctrl+P → Printer में "Microsoft Print to PDF" (Windows) या "Save as PDF" (Mac) select करें।</p>`,
+      },
+      {
+        id: 'formatting-tips',
+        title: 'Formatting सुरक्षित रखने के Tips',
+        content: `<p>Convert करते समय formatting बिगड़ने से बचाने के लिए:</p>
+<ul>
+  <li><strong>Fonts embed करें</strong> — अगर custom fonts use किए हैं, तो Word में File → Options → Save → "Embed fonts in the file" check करें</li>
+  <li><strong>Images inline रखें</strong> — floating images PDF में shift हो सकती हैं, inline format prefer करें</li>
+  <li><strong>Page margins check करें</strong> — narrow margins वाले documents PDF में सही दिखते हैं</li>
+  <li><strong>Microsoft Word से convert करें</strong> — third-party tools में formatting issues आ सकते हैं</li>
+  <li><strong>PDF preview ज़रूर देखें</strong> — share करने से पहले एक बार खोलकर देखें</li>
+</ul>
+<table>
+  <thead><tr><th>Problem</th><th>कारण</th><th>Solution</th></tr></thead>
+  <tbody>
+    <tr><td>Font बदल गया</td><td>Font system में नहीं है</td><td>Font embed करें या standard font use करें</td></tr>
+    <tr><td>Images shift हो गईं</td><td>Floating image placement</td><td>Images को "In Line with Text" करें</td></tr>
+    <tr><td>Extra blank page</td><td>Page break या extra spacing</td><td>End में extra paragraphs हटाएं</td></tr>
+    <tr><td>Table cut off</td><td>Table page से बड़ी है</td><td>Font size कम करें या landscape orientation use करें</td></tr>
+  </tbody>
+</table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Word to PDF Converter खोलें', description: 'कोई login नहीं, कोई signup नहीं। सीधे tool खोलें।' },
+      { title: 'Word file upload करें', description: '.docx या .doc file drag & drop करें। Maximum 50MB।' },
+      { title: 'Settings choose करें', description: 'Page size (A4/Letter), margins, font size और line spacing select करें।' },
+      { title: 'Convert होने का इंतज़ार करें', description: 'Headings, paragraphs, bold, italic, lists — सब कुछ automatically detect होता है।' },
+      { title: 'PDF download करें', description: 'Download बटन दबाएं। File आपके device पर save हो जाएगी।' },
+    ],
+    faqs: [
+      { question: 'क्या Word to PDF conversion free है?', answer: 'हाँ, ToolsArena का Word to PDF Converter बिल्कुल free है। कोई account, subscription, या payment नहीं। Unlimited conversions।' },
+      { question: 'क्या मेरी Word file server पर upload होती है?', answer: 'नहीं। ToolsArena का tool 100% browser-based है। आपकी file कभी किसी server पर नहीं जाती — सब processing आपके device पर होती है। Confidential documents के लिए पूरी तरह safe है।' },
+      { question: 'Mobile पर Word को PDF में कैसे बदलें?', answer: 'ToolsArena का tool mobile पर भी काम करता है। Browser में open करें, file upload करें, PDF download करें। Android पर Microsoft Word app से भी PDF export कर सकते हैं।' },
+      { question: 'PDF में images और tables सही दिखती हैं क्या?', answer: 'हाँ, अधिकतर cases में। ToolsArena का tool mammoth.js library से Word parse करता है जो headings, paragraphs, bold, italic और lists support करता है। Complex floating layouts में कभी-कभी adjustment की ज़रूरत हो सकती है।' },
+      { question: 'Government portal के लिए PDF size कितनी होनी चाहिए?', answer: 'अधिकतर Indian government portals 1–2MB तक PDF accept करते हैं। Scanned documents के लिए 200 DPI में scan करें। ToolsArena का PDF Compressor tool use करें अगर size बड़ी है।' },
+    ],
+    relatedGuides: ['pdf-merge-guide', 'pdf-to-word-guide', 'jpg-to-pdf-guide', 'pdf-to-excel-guide'],
+    toolCTA: {
+      heading: 'Free Word to PDF Converter — Browser में, Upload नहीं',
+      description: 'Word (.docx) file को PDF में convert करें। Formatting preserve होती है। 100% local processing — कोई server upload नहीं।',
+      buttonText: 'Word को PDF में बदलें',
+    },
+  },
+
+  {
+    slug: 'image-background-remover-guide',
+    toolSlug: 'image-background-remover',
+    category: 'image-tools',
+    title: 'Photo का Background कैसे हटाएं — Free AI Tool से 5 सेकंड में',
+    subtitle: 'किसी भी photo का background हटाएं — बिना Photoshop, बिना skill के',
+    metaTitle: 'Background Remover — Photo का Background हटाएं Free में (गाइड)',
+    metaDescription: 'AI से photo का background हटाएं — passport photo, product images, profile pictures के लिए। Free, no signup, 5 seconds में result। Mobile पर भी काम करता है।',
+    targetKeyword: 'background remover',
+    secondaryKeywords: ['photo background hataye', 'background remove kare', 'image background remover free', 'photo ka background kaise hataye', 'remove background online'],
+    lastUpdated: '2026-03-13',
+    readingTime: '5 मिनट पढ़ें',
+    tags: ['Background Remove', 'Image Tools', 'AI', 'Photo Editing'],
+    intro: `<p>किसी भी photo का background हटाना अब बहुत आसान हो गया है। <strong>AI-powered tools</strong> कुछ ही seconds में background remove कर देते हैं — बिना Photoshop सीखे, बिना किसी skill के।</p>
+<p>Passport photo, LinkedIn profile picture, e-commerce product images, या WhatsApp DP — इन सभी के लिए background removal काम आती है। इस गाइड में जानेंगे कि यह कैसे काम करता है और best results कैसे पाएं।</p>`,
+    sections: [
+      {
+        id: 'background-removal-uses',
+        title: 'Background Removal कब और क्यों ज़रूरी है?',
+        content: `<ul>
+  <li><strong>Passport / Visa photo</strong> — सफेद background required होता है। AI tool instantly white background लगा देता है।</li>
+  <li><strong>Job application / LinkedIn</strong> — professional headshot के लिए clean background ज़रूरी है।</li>
+  <li><strong>E-commerce product photos</strong> — Amazon, Flipkart, Meesho पर white background वाली product photos ज़्यादा बिकती हैं।</li>
+  <li><strong>WhatsApp / Social media DP</strong> — creative backgrounds लगाने के लिए पहले original background हटाएं।</li>
+  <li><strong>Presentations और certificates</strong> — clean cutout images slides में professional लगती हैं।</li>
+  <li><strong>Stickers बनाना</strong> — background remove करके WhatsApp stickers या memes बनाएं।</li>
+</ul>`,
+      },
+      {
+        id: 'ai-background-removal',
+        title: 'AI Background Removal कैसे काम करती है?',
+        content: `<p>Modern AI background removal tools <strong>deep learning models</strong> use करते हैं जो millions of images पर trained हैं:</p>
+<ol>
+  <li><strong>Semantic segmentation</strong> — AI हर pixel को identify करता है कि वह subject (foreground) है या background</li>
+  <li><strong>Edge detection</strong> — hair, fur, और complex edges को accurately detect करता है</li>
+  <li><strong>Alpha matte generation</strong> — semi-transparent pixels (जैसे hair strands) को properly handle करता है</li>
+  <li><strong>Background removal</strong> — detected background pixels को transparent कर देता है</li>
+</ol>
+<div class="callout-tip"><strong>💡 Best results के लिए</strong><p>Photo में clear contrast हो subject और background के बीच। अच्छी lighting में ली गई photos में AI ज़्यादा accurate होता है। Busy/patterned backgrounds में थोड़ी manual correction की ज़रूरत हो सकती है।</p></div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'Background कैसे हटाएं — Step by Step',
+        content: `<ol>
+  <li><strong>ToolsArena Background Remover खोलें</strong> — browser में, कोई app download नहीं।</li>
+  <li><strong>Photo upload करें</strong> — drag & drop करें या browse करके select करें। JPG, PNG, WebP सभी support हैं।</li>
+  <li><strong>Processing का इंतज़ार करें</strong> — AI कुछ seconds में background remove कर देता है।</li>
+  <li><strong>Result check करें</strong> — transparent background (checkerboard pattern) दिखेगा जहाँ background था।</li>
+  <li><strong>New background लगाएं (optional)</strong> — white, colored, या custom background choose करें।</li>
+  <li><strong>PNG में download करें</strong> — transparent background preserve रहे, इसलिए PNG format use करें।</li>
+</ol>
+<div class="callout-warning"><strong>⚠️ JPEG में save मत करें</strong><p>JPEG transparency support नहीं करता। Background remove की हुई image हमेशा PNG में save करें। JPG में save करने से transparent area white हो जाएगा।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Background Remover tool खोलें', description: 'ToolsArena का Image Background Remover open करें। कोई login नहीं।' },
+      { title: 'Photo upload करें', description: 'Drag & drop करें या click करके photo select करें।' },
+      { title: 'AI processing होने दें', description: 'कुछ seconds में background automatically remove हो जाएगा।' },
+      { title: 'Result check करें', description: 'Transparent background preview देखें। ज़रूरत हो तो new background add करें।' },
+      { title: 'PNG में download करें', description: 'Download बटन दबाएं। PNG format में save करें।' },
+    ],
+    faqs: [
+      { question: 'Passport photo का background white कैसे बनाएं?', answer: 'Background Remover में photo upload करें। Background remove होने के बाद, "Add Background" option में white color (#FFFFFF) select करें। PNG download करें। यह सफेद background वाली passport photo बन जाएगी।' },
+      { question: 'क्या यह tool mobile पर काम करता है?', answer: 'हाँ, ToolsArena का Background Remover mobile browser पर पूरी तरह काम करता है। Android और iPhone दोनों पर Chrome या Safari में open करें — कोई app download नहीं करना।' },
+      { question: 'Hair और curly background remove होगा accurately?', answer: 'Modern AI tools बालों को काफी accurately handle करते हैं। Clear lighting और plain/simple background वाली photos में results बेहतर होते हैं। Studio-quality photos में 95%+ accuracy होती है।' },
+      { question: 'Background remove करने के बाद कौन सा format use करें?', answer: 'हमेशा PNG use करें। PNG transparency support करता है जिससे removed background transparent रहता है। JPG में transparency नहीं होती — background white हो जाएगा।' },
+      { question: 'क्या मेरी photo server पर upload होती है?', answer: 'ToolsArena का tool local browser processing use करता है। आपकी personal photos किसी server पर store नहीं होती। Privacy के लिए पूरी तरह safe है।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'image-flip-rotate-guide', 'photo-effects-guide'],
+    toolCTA: {
+      heading: 'Free Background Remover — AI से 5 सेकंड में',
+      description: 'किसी भी photo का background हटाएं। Passport photo, product images, profile pictures के लिए। PNG download, कोई signup नहीं।',
+      buttonText: 'Background हटाएं',
+    },
+  },
+
+  {
+    slug: 'pdf-merge-guide',
+    toolSlug: 'pdf-merge',
+    category: 'pdf-tools',
+    title: 'Multiple PDF Files को एक में कैसे जोड़ें — Free Online Tool',
+    subtitle: 'PDFs merge करने के सभी तरीके — बिना Adobe Acrobat के',
+    metaTitle: 'PDF Merge — कई PDF Files को एक में जोड़ें (Free गाइड)',
+    metaDescription: 'Multiple PDF files को एक single PDF में merge करें online। Government documents, assignments, और reports के लिए। Free, browser-based, कोई upload नहीं।',
+    targetKeyword: 'pdf merge',
+    secondaryKeywords: ['pdf files ko ek mein kaise jode', 'merge pdf online free', 'pdf combine', 'multiple pdf ek file', 'pdf jodna'],
+    lastUpdated: '2026-03-13',
+    readingTime: '5 मिनट पढ़ें',
+    tags: ['PDF Merge', 'PDF Tools', 'Document'],
+    intro: `<p>Multiple PDF files को एक में combine करना — college admission के लिए documents, job application के लिए portfolio, या government form के साथ attachments — यह बहुत common ज़रूरत है।</p>
+<p>Adobe Acrobat Pro के लिए ₹1,500/month देने की ज़रूरत नहीं। Free online tools से यह काम seconds में होता है।</p>`,
+    sections: [
+      {
+        id: 'merge-kab-zaruri',
+        title: 'PDF Merge कब करनी होती है?',
+        content: `<ul>
+  <li><strong>College admission</strong> — marksheet, certificate, ID proof सब एक PDF में</li>
+  <li><strong>Job application</strong> — resume + cover letter + certificates एक file में</li>
+  <li><strong>Government forms</strong> — आवेदन पत्र + supporting documents एक में</li>
+  <li><strong>Bank KYC</strong> — Aadhaar + PAN + address proof combined</li>
+  <li><strong>Legal documents</strong> — multiple agreements या contracts एक file में</li>
+  <li><strong>Invoice bundling</strong> — monthly invoices एक PDF report में</li>
+  <li><strong>Email attachment limit</strong> — 5 छोटी PDFs की जगह 1 PDF send करें</li>
+</ul>`,
+      },
+      {
+        id: 'merge-methods',
+        title: 'PDF Merge करने के तरीके',
+        content: `<table>
+  <thead><tr><th>तरीका</th><th>Cost</th><th>Privacy</th><th>Ease</th></tr></thead>
+  <tbody>
+    <tr><td>ToolsArena PDF Merge</td><td>Free</td><td>100% local — upload नहीं</td><td>बहुत आसान</td></tr>
+    <tr><td>Adobe Acrobat Pro</td><td>₹1,500+/month</td><td>Cloud optional</td><td>Powerful</td></tr>
+    <tr><td>Smallpdf / ILovePDF</td><td>Free (2/hour)</td><td>Server पर upload</td><td>आसान</td></tr>
+    <tr><td>Google Drive</td><td>Free</td><td>Google servers</td><td>मध्यम</td></tr>
+    <tr><td>Mac Preview</td><td>Free (Mac only)</td><td>Local</td><td>आसान</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Privacy ध्यान दें</strong><p>Bank statements, Aadhaar, PAN, या कोई भी sensitive document merge करते समय ऐसा tool use करें जो file server पर upload न करे। ToolsArena का PDF Merge tool 100% browser-based है।</p></div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'PDFs Merge कैसे करें — Step by Step',
+        content: `<ol>
+  <li><strong>ToolsArena PDF Merge खोलें</strong>।</li>
+  <li><strong>PDF files upload करें</strong> — drag & drop या browse। Multiple files एक साथ select करें।</li>
+  <li><strong>Order set करें</strong> — files को drag करके reorder करें जैसा चाहते हैं।</li>
+  <li><strong>Merge बटन दबाएं</strong> — सब PDF एक में combine हो जाती हैं।</li>
+  <li><strong>Merged PDF download करें</strong> — एक single PDF file मिलेगी।</li>
+</ol>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF Merge tool खोलें', description: 'ToolsArena PDF Merge open करें। कोई login नहीं।' },
+      { title: 'PDF files upload करें', description: 'सभी PDFs drag & drop करें या browse करें।' },
+      { title: 'Order arrange करें', description: 'Files को drag करके सही order में रखें।' },
+      { title: 'Merge करें', description: 'Merge बटन दबाएं।' },
+      { title: 'Download करें', description: 'Combined PDF download करें।' },
+    ],
+    faqs: [
+      { question: 'क्या PDFs merge करना free है?', answer: 'हाँ, ToolsArena का PDF Merge tool पूरी तरह free है। कोई account नहीं, कोई limit नहीं।' },
+      { question: 'Aadhaar और PAN को एक PDF में merge करना safe है?', answer: 'ToolsArena में हाँ — क्योंकि processing आपके browser में होती है, server पर file upload नहीं होती। दूसरे online tools में files server पर जाती हैं जो sensitive documents के लिए risky हो सकता है।' },
+      { question: 'कितनी PDF files merge कर सकते हैं?', answer: 'ToolsArena में कोई hard limit नहीं है। Browser memory के हिसाब से आमतौर पर 20-30 files आसानी से merge होती हैं। बहुत बड़ी files (50MB+) के लिए पहले compress करें।' },
+      { question: 'Merge के बाद page order बदल सकते हैं?', answer: 'हाँ। Files upload करने के बाद drag & drop से reorder करें। Page level reordering के लिए PDF Organizer tool use करें।' },
+      { question: 'Password protected PDF merge हो सकती है?', answer: 'नहीं, password protected PDFs directly merge नहीं होतीं। पहले password remove करें (अगर आप owner हैं), फिर merge करें।' },
+    ],
+    relatedGuides: ['pdf-split-guide', 'word-to-pdf-guide', 'jpg-to-pdf-guide', 'pdf-to-word-guide'],
+    toolCTA: {
+      heading: 'Free PDF Merge — Multiple PDFs को एक में जोड़ें',
+      description: 'कई PDF files को एक में combine करें। Drag & drop reordering। 100% browser-based — कोई upload नहीं।',
+      buttonText: 'PDFs Merge करें',
+    },
+  },
+
+  {
+    slug: 'pdf-to-word-guide',
+    toolSlug: 'pdf-to-word',
+    category: 'pdf-tools',
+    title: 'PDF को Word में कैसे बदलें — Editable Document बनाएं (Free)',
+    subtitle: 'PDF file को editable Word document में convert करने के सभी तरीके',
+    metaTitle: 'PDF to Word Converter — PDF को Edit करने योग्य Word में बदलें (Free)',
+    metaDescription: 'PDF को Word (.docx) में convert करें online free में। Text-based और scanned PDF दोनों। Formatting preserve होती है। कोई software install नहीं।',
+    targetKeyword: 'pdf to word',
+    secondaryKeywords: ['pdf ko word mein convert kare', 'pdf to word converter free', 'pdf editable kaise kare', 'pdf se word banana', 'pdf to docx'],
+    lastUpdated: '2026-03-13',
+    readingTime: '5 मिनट पढ़ें',
+    tags: ['PDF to Word', 'PDF Tools', 'Converter', 'Document'],
+    intro: `<p>PDF file को edit करना directly मुश्किल है। इसलिए PDF को Word (.docx) में convert करते हैं — फिर easily edit, add text, change formatting कर सकते हैं।</p>
+<p>Resume update करना हो, contract में changes करने हों, या old PDF document को reuse करना हो — PDF to Word conversion बहुत काम आती है।</p>`,
+    sections: [
+      {
+        id: 'text-vs-scanned-pdf',
+        title: 'Text PDF vs Scanned PDF — फर्क क्या है?',
+        content: `<p>Conversion की quality इस पर depend करती है कि आपकी PDF किस type की है:</p>
+<table>
+  <thead><tr><th>Type</th><th>कैसे पहचानें</th><th>Conversion Quality</th></tr></thead>
+  <tbody>
+    <tr><td>Text-based PDF</td><td>Text select और copy हो जाता है</td><td>Excellent — 95%+ accurate</td></tr>
+    <tr><td>Scanned PDF (image)</td><td>Text select नहीं होता</td><td>OCR की ज़रूरत — 70-85% accurate</td></tr>
+    <tr><td>Mixed PDF</td><td>कुछ pages select होते हैं, कुछ नहीं</td><td>Text pages अच्छे, scanned कम</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Quick test</strong><p>अपनी PDF में text को mouse से select करने की कोशिश करें। अगर text select हो जाता है, तो text-based PDF है और conversion excellent होगी। अगर select नहीं होता, scanned image है।</p></div>`,
+      },
+      {
+        id: 'conversion-methods',
+        title: 'PDF to Word Convert करने के तरीके',
+        content: `<table>
+  <thead><tr><th>तरीका</th><th>Quality</th><th>Cost</th><th>Privacy</th></tr></thead>
+  <tbody>
+    <tr><td>ToolsArena PDF to Word</td><td>अच्छी</td><td>Free</td><td>Local processing</td></tr>
+    <tr><td>Adobe Acrobat</td><td>Excellent</td><td>Paid</td><td>Cloud</td></tr>
+    <tr><td>Microsoft Word (खोलें directly)</td><td>Excellent</td><td>Free (Office users)</td><td>Local</td></tr>
+    <tr><td>Google Docs</td><td>अच्छी</td><td>Free</td><td>Google servers</td></tr>
+    <tr><td>Smallpdf</td><td>अच्छी</td><td>Free (limited)</td><td>Server upload</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Microsoft Word tip</strong><p>अगर आपके पास Microsoft Word है, तो सबसे best तरीका है: Word में File → Open → PDF file select करें। Word automatically PDF को editable document में convert करता है। यह सबसे accurate method है।</p></div>`,
+      },
+      {
+        id: 'accuracy-tips',
+        title: 'Conversion Accuracy बेहतर करने के Tips',
+        content: `<ul>
+  <li><strong>Fresh PDF से convert करें</strong> — बहुत पुरानी या re-saved PDFs में fonts scrambled हो सकते हैं</li>
+  <li><strong>Simple formatting वाली PDFs</strong> बेहतर convert होती हैं — complex tables और columns में adjustment की ज़रूरत हो सकती है</li>
+  <li><strong>Scanned PDFs के लिए</strong> — पहले Image to Text (OCR) tool use करें</li>
+  <li><strong>Result check करें</strong> — conversion के बाद एक बार पूरी file check करें headings, tables और lists के लिए</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF to Word tool खोलें', description: 'ToolsArena PDF to Word Converter open करें।' },
+      { title: 'PDF upload करें', description: 'File drag & drop करें। Maximum 50MB।' },
+      { title: 'Convert होने दें', description: 'Text extraction और Word formatting automatic होती है।' },
+      { title: 'Preview देखें', description: 'Extracted content का preview देखें।' },
+      { title: 'Word file download करें', description: '.docx file download करें और Word में edit करें।' },
+    ],
+    faqs: [
+      { question: 'PDF को Word में free में convert कर सकते हैं?', answer: 'हाँ। ToolsArena का PDF to Word Converter free है। Microsoft Word भी directly PDFs open करके edit करने देता है (File → Open → PDF)।' },
+      { question: 'Scanned PDF को Word में convert कैसे करें?', answer: 'Scanned PDFs image होती हैं — directly convert नहीं होतीं। पहले ToolsArena का Image to Text (OCR) tool use करें text extract करने के लिए, फिर Word में paste करें।' },
+      { question: 'PDF की tables Word में सही आती हैं?', answer: 'Simple tables अच्छी convert होती हैं। Complex merged cells या unusual layouts में manual adjustment की ज़रूरत हो सकती है। Microsoft Word का built-in PDF converter tables को best handle करता है।' },
+      { question: 'क्या Hindi PDF को Word में convert कर सकते हैं?', answer: 'Text-based Hindi PDFs (जिनमें Devanagari text embed है) convert हो सकती हैं। Scanned Hindi documents के लिए Hindi OCR support वाला tool चाहिए।' },
+      { question: 'Convert की हुई Word file में fonts बदल जाते हैं?', answer: 'अगर original PDF में custom fonts थे जो system में install नहीं हैं, तो Word में substitute font use होगा। Common fonts (Times New Roman, Arial, Calibri) correctly preserve होते हैं।' },
+    ],
+    relatedGuides: ['word-to-pdf-guide', 'pdf-merge-guide', 'pdf-to-excel-guide', 'jpg-to-pdf-guide'],
+    toolCTA: {
+      heading: 'Free PDF to Word Converter — Editable Document बनाएं',
+      description: 'PDF को .docx में convert करें। Text, headings, formatting preserve। 100% browser-based।',
+      buttonText: 'PDF को Word में बदलें',
+    },
+  },
+
+  {
+    slug: 'jpg-to-pdf-guide',
+    toolSlug: 'jpg-to-pdf',
+    category: 'pdf-tools',
+    title: 'JPG/Photo को PDF में कैसे बदलें — Mobile से भी (Free)',
+    subtitle: 'Images और photos को PDF में convert करें — government forms, applications और documents के लिए',
+    metaTitle: 'JPG to PDF — Photo को PDF में बदलें Free में (Mobile & Desktop)',
+    metaDescription: 'JPG, PNG, photos को PDF में convert करें online free में। Government portals, college forms, और job applications के लिए। Mobile पर भी काम करता है।',
+    targetKeyword: 'jpg to pdf',
+    secondaryKeywords: ['photo ko pdf mein convert kare', 'image to pdf', 'jpg to pdf online free', 'mobile se pdf banana', 'photo se pdf kaise banaye'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['JPG to PDF', 'Image to PDF', 'PDF Tools', 'Mobile'],
+    intro: `<p>Phone से खींची गई photo को PDF में convert करना अब सबसे common digital task बन गया है। Government forms, college admissions, job applications — सभी जगह PDF format required होता है।</p>
+<p>इस गाइड में आप सीखेंगे कि अपने phone की photo को PDF में कैसे बदलें — बिना किसी paid app के।</p>`,
+    sections: [
+      {
+        id: 'jpg-pdf-uses',
+        title: 'JPG to PDF कब ज़रूरी होता है?',
+        content: `<ul>
+  <li><strong>Government portals</strong> — RERA, MCA, EPFO, income tax — सभी PDF accept करते हैं</li>
+  <li><strong>College admission</strong> — marksheet, certificate की scanned copy PDF में</li>
+  <li><strong>Job application</strong> — documents PDF format में submit</li>
+  <li><strong>Bank KYC</strong> — Aadhaar, PAN की photo को PDF में convert करना</li>
+  <li><strong>Police verification / government form</strong> — photos के साथ supporting documents</li>
+  <li><strong>E-mail attachment</strong> — photos को professional PDF में भेजना</li>
+</ul>
+<table>
+  <thead><tr><th>Portal</th><th>Max Size</th><th>Format</th></tr></thead>
+  <tbody>
+    <tr><td>EPFO (PF portal)</td><td>500KB</td><td>PDF/JPG</td></tr>
+    <tr><td>Income Tax</td><td>5MB</td><td>PDF</td></tr>
+    <tr><td>Common Admission Portal</td><td>2MB</td><td>PDF</td></tr>
+    <tr><td>RERA</td><td>5MB</td><td>PDF</td></tr>
+    <tr><td>Passport Seva</td><td>4MB</td><td>PDF</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'mobile-se-pdf',
+        title: 'Mobile से Photo को PDF में बदलने के तरीके',
+        content: `<h3>तरीका 1: ToolsArena (Browser, Free)</h3>
+<p>Phone के Chrome browser में ToolsArena JPG to PDF tool खोलें। Photo upload करें, PDF download करें। App install नहीं करना।</p>
+<h3>तरीका 2: Android — Google Files</h3>
+<p>Google Files app → Photo select करें → Share → Print → PDF में save करें।</p>
+<h3>तरीका 3: iPhone — Built-in feature</h3>
+<p>Photos app में photo खोलें → Share → Print → Preview को pinch करके zoom करें → Share as PDF।</p>
+<h3>तरीका 4: CamScanner / Adobe Scan (App)</h3>
+<p>Documents scan करने के लिए best apps हैं। Photo automatically crop, enhance, और PDF में save होती है।</p>`,
+      },
+      {
+        id: 'size-requirements',
+        title: 'File Size कम करने के Tips',
+        content: `<p>Government portals अक्सर strict file size limits रखते हैं। Photo को PDF में convert करते समय size manage करें:</p>
+<ul>
+  <li><strong>Photo resolution कम करें</strong> — phone camera की 12MP photo compress करें। 200 DPI काफी है documents के लिए।</li>
+  <li><strong>JPEG quality</strong> — 80% quality पर good resolution और small size दोनों मिलती है।</li>
+  <li><strong>ToolsArena PDF Compressor</strong> — convert के बाद size बड़ी हो तो compress करें।</li>
+  <li><strong>Multiple pages</strong> — 4–5 images को एक PDF में combine करें instead of separate files।</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'JPG to PDF tool खोलें', description: 'ToolsArena JPG to PDF tool open करें — mobile browser पर भी काम करता है।' },
+      { title: 'Photos upload करें', description: 'एक या multiple photos drag & drop करें। JPG, PNG, WebP सभी support हैं।' },
+      { title: 'Settings choose करें', description: 'Page size (A4), orientation, और margins select करें।' },
+      { title: 'PDF बनाएं', description: 'Convert बटन दबाएं।' },
+      { title: 'Download करें', description: 'PDF download करें और portal पर upload करें।' },
+    ],
+    faqs: [
+      { question: 'Mobile पर photo को PDF में कैसे बदलें?', answer: 'ToolsArena JPG to PDF tool को mobile browser में open करें — कोई app नहीं। Photo upload करें, PDF download करें। iPhone पर Files app में save होगी, Android पर Downloads folder में।' },
+      { question: 'Multiple photos को एक PDF में कैसे combine करें?', answer: 'ToolsArena में multiple images एक साथ upload करें। सभी एक PDF में combine हो जाएंगी। Page order drag & drop से adjust करें।' },
+      { question: 'PDF size बड़ी हो जाती है — क्या करें?', answer: 'Phone camera की high-res photos को पहले compress करें। ToolsArena का Image Compressor use करें photos को upload करने से पहले, या convert के बाद PDF Compressor use करें।' },
+      { question: 'Aadhaar / PAN card की photo को PDF कैसे बनाएं?', answer: 'Card की clear photo लें (good lighting में, angle नहीं)। JPG to PDF tool में upload करें। A4 size में fit करें। PDF download करें। Size check करें — अधिकतर portals पर 500KB-2MB limit होती है।' },
+      { question: 'Photo की quality PDF में कम हो जाती है क्या?', answer: 'ToolsArena original quality preserve करता है। अगर आप चाहते हैं size कम हो और quality acceptable रहे, तो 80% JPEG quality पर compress करके upload करें।' },
+    ],
+    relatedGuides: ['pdf-merge-guide', 'word-to-pdf-guide', 'image-compressor-guide', 'pdf-to-word-guide'],
+    toolCTA: {
+      heading: 'Free JPG to PDF — Photo को PDF में बदलें (Mobile & Desktop)',
+      description: 'Photos और images को PDF में convert करें। Multiple images एक PDF में। Mobile browser पर काम करता है।',
+      buttonText: 'Photo को PDF बनाएं',
+    },
+  },
+
+  {
+    slug: 'gst-calculator-guide',
+    toolSlug: 'gst-calculator',
+    category: 'calculators',
+    title: 'GST Calculator — GST कैसे Calculate करें (CGST, SGST, IGST)',
+    subtitle: 'GST का full formula, examples और Indian tax system की पूरी जानकारी',
+    metaTitle: 'GST Calculator India — CGST SGST IGST Calculate करें (Free गाइड)',
+    metaDescription: 'GST calculate करें आसानी से। Exclusive और inclusive दोनों methods। CGST, SGST, IGST breakdown। 5%, 12%, 18%, 28% सभी rates। Free online tool।',
+    targetKeyword: 'gst calculator',
+    secondaryKeywords: ['gst kaise calculate kare', 'gst formula', 'cgst sgst igst kya hota hai', 'gst inclusive exclusive', 'gst calculation hindi'],
+    lastUpdated: '2026-03-13',
+    readingTime: '7 मिनट पढ़ें',
+    tags: ['GST', 'Calculator', 'Tax', 'India', 'Finance'],
+    intro: `<p>GST (Goods and Services Tax) 2017 में पूरे India में लागू हुआ और इसने पिछले complicated tax system को replace किया। लेकिन आज भी बहुत से लोगों को GST calculation समझ नहीं आती — खासकर CGST, SGST, IGST का फर्क।</p>
+<p>इस गाइड में GST की पूरी calculation step-by-step समझेंगे — formula के साथ, examples के साथ।</p>`,
+    sections: [
+      {
+        id: 'gst-types',
+        title: 'CGST, SGST और IGST में क्या फर्क है?',
+        content: `<table>
+  <thead><tr><th>Tax</th><th>Full Form</th><th>किसे जाता है?</th><th>कब लगता है?</th></tr></thead>
+  <tbody>
+    <tr><td>CGST</td><td>Central GST</td><td>Central Government</td><td>Same state में transaction</td></tr>
+    <tr><td>SGST</td><td>State GST</td><td>State Government</td><td>Same state में transaction</td></tr>
+    <tr><td>IGST</td><td>Integrated GST</td><td>Central Government (फिर state को)</td><td>Different state में transaction</td></tr>
+  </tbody>
+</table>
+<p><strong>Example:</strong> Delhi में seller Delhi buyer को 18% GST पर ₹1,000 का item बेचता है:</p>
+<ul>
+  <li>CGST = 9% = ₹90 → Central Government</li>
+  <li>SGST = 9% = ₹90 → Delhi Government</li>
+  <li>Total GST = ₹180, Invoice = ₹1,180</li>
+</ul>
+<p>वही seller Mumbai buyer को बेचता है:</p>
+<ul>
+  <li>IGST = 18% = ₹180 → Central Government (बाद में Maharashtra को हिस्सा)</li>
+</ul>`,
+      },
+      {
+        id: 'gst-formula',
+        title: 'GST Calculation Formula',
+        content: `<div class="callout-tip"><strong>GST Exclusive (Price में GST शामिल नहीं):</strong>
+<ul>
+  <li>GST Amount = Base Price × GST Rate / 100</li>
+  <li>Final Price = Base Price + GST Amount</li>
+</ul>
+<strong>GST Inclusive (Price में GST शामिल है):</strong>
+<ul>
+  <li>Base Price = Inclusive Price × 100 / (100 + GST Rate)</li>
+  <li>GST Amount = Inclusive Price − Base Price</li>
+</ul></div>
+<p><strong>Practical Examples:</strong></p>
+<table>
+  <thead><tr><th>Item</th><th>Base Price</th><th>GST Rate</th><th>GST Amount</th><th>Total</th></tr></thead>
+  <tbody>
+    <tr><td>Groceries (exempt)</td><td>₹500</td><td>0%</td><td>₹0</td><td>₹500</td></tr>
+    <tr><td>Clothes ₹1,000+</td><td>₹1,500</td><td>12%</td><td>₹180</td><td>₹1,680</td></tr>
+    <tr><td>Restaurant bill</td><td>₹800</td><td>5%</td><td>₹40</td><td>₹840</td></tr>
+    <tr><td>AC, TV</td><td>₹25,000</td><td>28%</td><td>₹7,000</td><td>₹32,000</td></tr>
+    <tr><td>IT Services</td><td>₹50,000</td><td>18%</td><td>₹9,000</td><td>₹59,000</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'gst-rates',
+        title: 'GST Rates — कौन सी चीज़ पर कितना?',
+        content: `<table>
+  <thead><tr><th>Rate</th><th>Items</th></tr></thead>
+  <tbody>
+    <tr><td>0% (Exempt)</td><td>अनाज, दाल, सब्ज़ियाँ, दूध, अंडे, बच्चों की किताबें</td></tr>
+    <tr><td>5%</td><td>Sugar, tea, coffee, kerosene, medicines (essential), restaurant (no AC)</td></tr>
+    <tr><td>12%</td><td>Butter, ghee, fruit juice, mobiles under ₹999, processed food</td></tr>
+    <tr><td>18%</td><td>AC restaurant, IT services, most manufactured goods, hotel ₹2,500–7,500</td></tr>
+    <tr><td>28%</td><td>AC, refrigerator, cars, cigarettes, luxury goods, hotel ₹7,500+</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 GST Registration limit</strong><p>अगर आपका annual turnover ₹40 लाख (goods) या ₹20 लाख (services) से ज़्यादा है तो GST registration ज़रूरी है। E-commerce sellers के लिए यह limit पहली rupee से ही applicable है।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'GST Calculator खोलें', description: 'ToolsArena GST Calculator open करें।' },
+      { title: 'Amount enter करें', description: 'Base price या inclusive price enter करें।' },
+      { title: 'GST Rate select करें', description: '5%, 12%, 18%, या 28% choose करें।' },
+      { title: 'GST Type choose करें', description: '"GST Exclusive" या "GST Inclusive" mode select करें।' },
+      { title: 'Result देखें', description: 'CGST, SGST, IGST और total amount instantly दिखेगा।' },
+    ],
+    faqs: [
+      { question: '₹1,000 पर 18% GST कितना होगा?', answer: 'GST = 1,000 × 18/100 = ₹180। Total = ₹1,180। Intra-state: CGST = ₹90 + SGST = ₹90। Inter-state: IGST = ₹180।' },
+      { question: 'Inclusive price से GST कैसे निकालें?', answer: 'Base Price = (Inclusive Price × 100) / (100 + GST Rate)। Example: ₹1,180 inclusive with 18% GST → Base = (1,180 × 100) / 118 = ₹1,000। GST = ₹180।' },
+      { question: 'Freelancer पर GST कब लगती है?', answer: 'अगर annual income ₹20 लाख (services) से ज़्यादा है। Foreign clients को services export करने पर 0% GST (zero-rated export)। IT/software services पर 18% GST।' },
+      { question: 'Restaurant में GST कितनी होती है?', answer: 'AC restaurant: 5% (input credit नहीं)। Non-AC restaurant: 5%। Hotel restaurant (₹7,500+ room): 18%। Packaged food: 12-18% depending on item।' },
+      { question: 'CGST और SGST का मतलब क्या है?', answer: 'Same state के अंदर transaction में GST दो हिस्सों में बँटती है — CGST (central government को) और SGST (state government को)। दोनों total GST rate का आधा-आधा होते हैं। Different states के बीच IGST लगती है।' },
+    ],
+    relatedGuides: ['income-tax-calculator-guide', 'emi-calculator-guide', 'sip-calculator-guide', 'percentage-calculator-guide'],
+    toolCTA: {
+      heading: 'Free GST Calculator — CGST, SGST, IGST Breakdown',
+      description: 'किसी भी amount पर GST instantly calculate करें। Exclusive और inclusive दोनों modes। Free, no signup।',
+      buttonText: 'GST Calculate करें',
+    },
+  },
+
+  // ── TIER 2 ────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'pdf-to-excel-guide',
+    toolSlug: 'pdf-to-excel',
+    category: 'pdf-tools',
+    title: 'PDF को Excel में कैसे Convert करें — Table और Data Extract करें (Free)',
+    subtitle: 'PDF से table और data निकालकर Excel spreadsheet में बदलें — बिना किसी software के',
+    metaTitle: 'PDF to Excel Converter — PDF से Data Excel में निकालें (Free गाइड)',
+    metaDescription: 'PDF को Excel या CSV में convert करें online free में। Table, numbers और data extract करें। Browser में processing — कोई upload नहीं। Hindi guide।',
+    targetKeyword: 'pdf to excel converter',
+    secondaryKeywords: ['pdf se excel banana', 'pdf to excel online free', 'pdf table extract', 'pdf to xlsx', 'pdf data excel mein'],
+    lastUpdated: '2026-03-13',
+    readingTime: '6 मिनट पढ़ें',
+    tags: ['PDF to Excel', 'PDF Tools', 'Data Extraction', 'Spreadsheet'],
+    intro: `<p>Bank statements, invoices, reports — ये सब अक्सर PDF में होते हैं लेकिन इनका data Excel में चाहिए होता है। पहले यह काम बहुत मुश्किल था, लेकिन अब free online tools से यह seconds में हो जाता है।</p>
+<p>इस गाइड में जानेंगे कि PDF to Excel conversion कब काम करती है, कब नहीं, और best results कैसे पाएं।</p>`,
+    sections: [
+      {
+        id: 'text-vs-scanned',
+        title: 'कौन सी PDF Convert होगी और कौन सी नहीं?',
+        content: `<p>PDF to Excel conversion की quality इस पर depend करती है कि PDF किस type की है:</p>
+<table>
+  <thead><tr><th>PDF Type</th><th>कैसे पहचानें</th><th>Conversion</th></tr></thead>
+  <tbody>
+    <tr><td>Text-based PDF</td><td>Text select और copy होता है</td><td>Excellent — 80-95% accurate</td></tr>
+    <tr><td>Scanned PDF (image)</td><td>Text select नहीं होता</td><td>नहीं होगी — OCR चाहिए</td></tr>
+    <tr><td>Complex tables</td><td>Merged cells, unusual layout</td><td>Partial — manual cleanup चाहिए</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Quick test</strong><p>PDF में text को select करने की कोशिश करें। Select हो जाए तो text-based है और conversion अच्छी होगी। Select न हो तो scanned image है।</p></div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'PDF को Excel में Convert करें — Step by Step',
+        content: `<ol>
+  <li><strong>ToolsArena PDF to Excel खोलें</strong> — कोई login नहीं।</li>
+  <li><strong>PDF upload करें</strong> — drag & drop करें। Max 50MB। File browser में process होती है, server पर upload नहीं।</li>
+  <li><strong>Extraction का इंतज़ार करें</strong> — tool हर page से text निकालता है, rows और columns detect करता है।</li>
+  <li><strong>Preview check करें</strong> — table का preview देखें। Multiple pages के लिए page selector use करें।</li>
+  <li><strong>Export format choose करें</strong> — Excel (.xlsx) या CSV (.csv) या दोनों।</li>
+  <li><strong>Download करें</strong> — file download हो जाएगी।</li>
+</ol>
+<div class="callout-tip"><strong>💡 Multi-page PDF</strong><p>Multiple pages वाली PDF के लिए Excel में Summary sheet + अलग-अलग page sheets मिलती हैं (max 10 pages)।</p></div>`,
+      },
+      {
+        id: 'accuracy-tips',
+        title: 'Accuracy बेहतर करने के Tips',
+        content: `<ul>
+  <li><strong>Original source से fresh PDF export करें</strong> — अगर original Excel/Word file available है</li>
+  <li><strong>Scanned PDF के लिए</strong> — पहले Image to Text (OCR) tool use करें</li>
+  <li><strong>Result check करें</strong> — Excel खोलकर columns और numbers verify करें</li>
+  <li><strong>Complex financial reports</strong> — Adobe Acrobat या Python camelot library ज़्यादा accurate हैं</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF to Excel tool खोलें', description: 'ToolsArena PDF to Excel Converter open करें।' },
+      { title: 'PDF upload करें', description: 'File drag & drop करें। 100% local processing।' },
+      { title: 'Extraction होने दें', description: 'Tool automatically rows और columns detect करता है।' },
+      { title: 'Preview देखें', description: 'Table preview check करें।' },
+      { title: 'Excel या CSV download करें', description: 'Format choose करें और download करें।' },
+    ],
+    faqs: [
+      { question: 'Bank statement PDF को Excel में convert कर सकते हैं?', answer: 'हाँ, अगर bank statement text-based PDF है। ToolsArena में upload करें। ध्यान दें — bank statements sensitive documents हैं, इसलिए ToolsArena का local processing tool use करें जो file server पर upload नहीं करता।' },
+      { question: 'Scanned PDF को Excel में कैसे convert करें?', answer: 'Scanned PDF directly Excel में convert नहीं होती। पहले ToolsArena का Image to Text (OCR) tool use करें text extract करने के लिए, फिर manually Excel में paste करें।' },
+      { question: 'CSV और Excel में क्या फर्क है?', answer: 'Excel (.xlsx) में multiple sheets, formatting और column widths होती हैं। CSV plain text है — universal compatibility, किसी भी spreadsheet software में खुलती है। Multi-page PDFs के लिए Excel बेहतर है।' },
+      { question: 'Columns misaligned हैं — क्या करें?', answer: 'Column detection X-position clustering से होता है। Complex layouts में गड़बड़ हो सकती है। Excel में manually "Text to Columns" (Data tab) use करके fix करें।' },
+      { question: 'कितने pages convert हो सकते हैं?', answer: 'सभी pages से text extract होता है। Excel export में first 10 pages के individual sheets बनते हैं। CSV में सभी pages का data आता है।' },
+    ],
+    relatedGuides: ['pdf-merge-guide', 'pdf-split-guide', 'pdf-to-word-guide', 'word-to-pdf-guide'],
+    toolCTA: {
+      heading: 'Free PDF to Excel Converter — Local Processing, Upload नहीं',
+      description: 'PDF से tables और data extract करें Excel या CSV में। 100% browser-based — कोई server upload नहीं।',
+      buttonText: 'PDF को Excel में बदलें',
+    },
+  },
+
+  {
+    slug: 'pdf-split-guide',
+    toolSlug: 'pdf-split',
+    category: 'pdf-tools',
+    title: 'PDF को Pages में कैसे Split करें — Free Online Tool',
+    subtitle: 'PDF से specific pages निकालें या बड़ी PDF को छोटे parts में divide करें',
+    metaTitle: 'PDF Split — PDF को Pages में बाँटें Free में (गाइड)',
+    metaDescription: 'PDF को split करें — specific pages extract करें, range से divide करें, या हर page अलग file बनाएं। Free, browser-based, कोई upload नहीं।',
+    targetKeyword: 'pdf split',
+    secondaryKeywords: ['pdf ko pages mein baantna', 'pdf split online free', 'pdf se page nikalna', 'pdf divide karna', 'pdf pages extract'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['PDF Split', 'PDF Tools', 'Extract Pages'],
+    intro: `<p>बड़ी PDF से specific pages निकालना, या एक PDF को छोटे parts में divide करना — यह daily life में बहुत ज़रूरत होती है। Email size limit से बचना हो, या किसी को सिर्फ एक chapter share करना हो — PDF split काम आती है।</p>`,
+    sections: [
+      {
+        id: 'split-kab',
+        title: 'PDF Split कब करनी होती है?',
+        content: `<ul>
+  <li><strong>Email attachment limit</strong> — Gmail 25MB, WhatsApp 100MB limit। बड़ी PDF को split करके parts में भेजें।</li>
+  <li><strong>Specific chapter share करना</strong> — textbook या report का सिर्फ एक section किसी को देना।</li>
+  <li><strong>Confidential pages हटाना</strong> — share करने से पहले sensitive pages अलग करना।</li>
+  <li><strong>Government portal size limit</strong> — EPFO, RERA जैसे portals 500KB-5MB limit रखते हैं।</li>
+  <li><strong>Archive organization</strong> — combined scanned documents को individual files में divide करना।</li>
+</ul>`,
+      },
+      {
+        id: 'page-range-syntax',
+        title: 'Pages Specify करने का तरीका',
+        content: `<table>
+  <thead><tr><th>Input</th><th>मतलब</th></tr></thead>
+  <tbody>
+    <tr><td><code>1</code></td><td>सिर्फ page 1</td></tr>
+    <tr><td><code>1-5</code></td><td>Pages 1 से 5</td></tr>
+    <tr><td><code>1,3,7</code></td><td>Pages 1, 3, और 7</td></tr>
+    <tr><td><code>2-5,8,10-12</code></td><td>Pages 2–5, 8, और 10–12</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Password protected PDF</strong><p>Password protected PDF directly split नहीं होती। पहले password remove करें। Adobe Reader में File → Print → Save as PDF (password-free copy बनती है)।</p></div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'PDF Split कैसे करें — Step by Step',
+        content: `<ol>
+  <li><strong>ToolsArena PDF Split खोलें</strong>।</li>
+  <li><strong>PDF upload करें</strong>।</li>
+  <li><strong>Split mode choose करें</strong>:
+    <ul>
+      <li>Specific pages extract करें (e.g., 1, 3, 5-8)</li>
+      <li>Every N pages में divide करें</li>
+      <li>हर page को अलग file बनाएं</li>
+    </ul>
+  </li>
+  <li><strong>Download करें</strong> — single PDF या ZIP file।</li>
+</ol>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF Split tool खोलें', description: 'ToolsArena PDF Split open करें।' },
+      { title: 'PDF upload करें', description: 'File drag & drop करें।' },
+      { title: 'Split mode choose करें', description: 'Pages range, every N pages, या individual pages select करें।' },
+      { title: 'Page numbers enter करें', description: '"1-5, 8, 10-12" format में pages specify करें।' },
+      { title: 'Download करें', description: 'PDF या ZIP download करें।' },
+    ],
+    faqs: [
+      { question: 'PDF से एक page कैसे निकालें?', answer: 'ToolsArena PDF Split में PDF upload करें। Page range में वह page number enter करें। Download करें — सिर्फ वह page एक नई PDF में होगा।' },
+      { question: 'बड़ी PDF को email के लिए कैसे split करें?', answer: 'PDF Split tool में upload करें। "Split every N pages" mode choose करें। जितने pages से size limit में रहे उतना set करें। सभी parts ZIP में मिलेंगे।' },
+      { question: 'Mac पर free में PDF split कैसे करें?', answer: 'Mac Preview app बहुत अच्छा है। PDF खोलें → View → Thumbnails → जो pages चाहिए select करें → Right-click → Export as PDF।' },
+      { question: 'Maximum कितनी size की PDF split हो सकती है?', answer: 'ToolsArena 100MB तक handle करता है। Local processing है इसलिए size limit server की नहीं, आपके device की memory की है।' },
+      { question: 'Scanned PDF split हो सकती है?', answer: 'हाँ। Scanned PDF भी page-by-page split होती है। Content searchable नहीं होगा लेकिन pages सही निकलेंगे।' },
+    ],
+    relatedGuides: ['pdf-merge-guide', 'pdf-to-excel-guide', 'word-to-pdf-guide', 'jpg-to-pdf-guide'],
+    toolCTA: {
+      heading: 'Free PDF Split — Pages Extract करें, PDF को Divide करें',
+      description: 'PDF से specific pages निकालें या छोटे parts में split करें। 100% browser-based।',
+      buttonText: 'PDF Split करें',
+    },
+  },
+
+  {
+    slug: 'compound-interest-guide',
+    toolSlug: 'compound-interest-calculator',
+    category: 'calculators',
+    title: 'Compound Interest (चक्रवृद्धि ब्याज) Calculator — Formula और Examples',
+    subtitle: 'Compound interest का formula, real examples, और investment growth की पूरी जानकारी हिंदी में',
+    metaTitle: 'Compound Interest Calculator — चक्रवृद्धि ब्याज Formula और Examples (Free)',
+    metaDescription: 'Compound interest calculate करें आसानी से। Formula समझें, ₹10,000 से ₹1 लाख तक के examples देखें। Monthly vs Annual compounding comparison। Free Hindi guide।',
+    targetKeyword: 'compound interest calculator',
+    secondaryKeywords: ['chakravridhi byaj formula', 'compound interest hindi', 'compound interest kaise calculate kare', 'ci formula in hindi', 'compound interest examples'],
+    lastUpdated: '2026-03-13',
+    readingTime: '7 मिनट पढ़ें',
+    tags: ['Compound Interest', 'Calculator', 'Investment', 'Finance'],
+    intro: `<p><strong>चक्रवृद्धि ब्याज (Compound Interest)</strong> को Einstein ने "दुनिया का आठवाँ अजूबा" कहा था। इसका कारण simple है — यह interest पर interest लगाता है, जिससे पैसा exponentially बढ़ता है।</p>
+<p>₹1 लाख को 10% simple interest पर 20 साल में ₹3 लाख मिलते हैं। वहीं compound interest पर ₹6.7 लाख से ज़्यादा। इस गाइड में formula, examples, और investment tips सब हिंदी में।</p>`,
+    sections: [
+      {
+        id: 'simple-vs-compound',
+        title: 'Simple Interest vs Compound Interest — फर्क क्या है?',
+        content: `<p>₹10,000 का investment, 10% rate, 3 साल:</p>
+<table>
+  <thead><tr><th>Year</th><th>Simple Interest</th><th>Compound Interest</th></tr></thead>
+  <tbody>
+    <tr><td>Year 1</td><td>₹10,000 + ₹1,000 = ₹11,000</td><td>₹10,000 + ₹1,000 = ₹11,000</td></tr>
+    <tr><td>Year 2</td><td>₹11,000 + ₹1,000 = ₹12,000</td><td>₹11,000 + ₹1,100 = ₹12,100</td></tr>
+    <tr><td>Year 3</td><td>₹12,000 + ₹1,000 = ₹13,000</td><td>₹12,100 + ₹1,210 = ₹13,310</td></tr>
+  </tbody>
+</table>
+<p>3 साल में ₹310 का फर्क। 20 साल में यही ₹10,000 → Simple: ₹30,000, Compound: <strong>₹67,275</strong>!</p>`,
+      },
+      {
+        id: 'formula',
+        title: 'Compound Interest Formula',
+        content: `<div class="callout-tip"><strong>A = P × (1 + r/n)^(n×t)</strong>
+<ul>
+  <li><strong>A</strong> = Final amount (principal + interest)</li>
+  <li><strong>P</strong> = Principal (शुरुआती राशि)</li>
+  <li><strong>r</strong> = Annual interest rate (decimal में, e.g., 8% = 0.08)</li>
+  <li><strong>n</strong> = Compounding frequency per year</li>
+  <li><strong>t</strong> = Time in years</li>
+</ul>
+<p><strong>CI = A − P</strong></p></div>
+<p><strong>Example:</strong> ₹50,000 at 8%, quarterly compounding (n=4), 5 years:</p>
+<ul>
+  <li>A = 50,000 × (1 + 0.08/4)^(4×5) = 50,000 × (1.02)^20 = 50,000 × 1.4859 = <strong>₹74,297</strong></li>
+  <li>CI = ₹74,297 − ₹50,000 = <strong>₹24,297</strong></li>
+</ul>`,
+      },
+      {
+        id: 'rule-of-72',
+        title: 'Rule of 72 — Mental Math Shortcut',
+        content: `<div class="callout-tip"><strong>पैसा double होने में कितने साल लगेंगे = 72 ÷ Interest Rate (%)</strong></div>
+<table>
+  <thead><tr><th>Interest Rate</th><th>Double होने में साल</th><th>Real Example</th></tr></thead>
+  <tbody>
+    <tr><td>6%</td><td>12 साल</td><td>PPF (7.1%) → ~10 साल</td></tr>
+    <tr><td>8%</td><td>9 साल</td><td>FD at 8%</td></tr>
+    <tr><td>12%</td><td>6 साल</td><td>Equity mutual fund average</td></tr>
+    <tr><td>15%</td><td>4.8 साल</td><td>Aggressive equity/small cap</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Inflation भी compound होती है!</strong><p>6% inflation पर ₹1 लाख की purchasing power 12 साल में आधी हो जाती है। Investment return inflation से ज़्यादा होना चाहिए real wealth बढ़ाने के लिए।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Compound Interest Calculator खोलें', description: 'ToolsArena Compound Interest Calculator open करें।' },
+      { title: 'Principal amount enter करें', description: 'शुरुआती investment राशि enter करें।' },
+      { title: 'Interest rate enter करें', description: 'Annual interest rate percentage में enter करें।' },
+      { title: 'Time period और compounding frequency set करें', description: 'Years और compounding frequency (annual/quarterly/monthly/daily) select करें।' },
+      { title: 'Results देखें', description: 'Final amount, total interest, और year-by-year growth chart देखें।' },
+    ],
+    faqs: [
+      { question: '₹1 लाख पर 5 साल में 10% compound interest कितना होगा?', answer: 'A = 1,00,000 × (1.10)^5 = 1,00,000 × 1.6105 = ₹1,61,051। Compound Interest = ₹61,051। Simple interest में सिर्फ ₹50,000 मिलते।' },
+      { question: 'India में कौन सी FD पर सबसे ज़्यादा interest मिलता है?', answer: '2026 में Small Finance Banks जैसे Unity, Suryoday, Jana 8.5–9.5% दे रहे हैं। SBI, HDFC, ICICI 6.5–7.5% दे रहे हैं। Senior citizens को 0.25–0.5% extra मिलता है।' },
+      { question: 'Monthly और Annual compounding में क्या फर्क है?', answer: '₹1 लाख at 12%, 10 साल: Annual compounding → ₹3,10,585। Monthly compounding → ₹3,30,039। Monthly compounding ₹19,454 ज़्यादा देता है।' },
+      { question: 'SIP में compound interest कैसे काम करता है?', answer: 'SIP में fixed interest rate नहीं होती — returns market performance पर depend करती है। Returns को CAGR (Compound Annual Growth Rate) से measure करते हैं। SIP Calculator use करें assumed return rate पर projection देखने के लिए।' },
+      { question: 'Loan में compound interest क्यों नुकसानदेह है?', answer: 'Loan में compound interest आपके against काम करता है। Bank daily/monthly outstanding balance पर interest calculate करता है। इसीलिए 20 साल के home loan में कभी-कभी principal से ज़्यादा interest देना पड़ता है। EMI Calculator से पूरी repayment schedule देखें।' },
+    ],
+    relatedGuides: ['emi-calculator-guide', 'sip-calculator-guide', 'income-tax-calculator-guide', 'gst-calculator-guide'],
+    toolCTA: {
+      heading: 'Free Compound Interest Calculator — Annual, Quarterly, Monthly',
+      description: 'Compound interest calculate करें। Year-by-year growth chart। Simple interest से comparison। Free।',
+      buttonText: 'Compound Interest Calculate करें',
+    },
+  },
+
+  {
+    slug: 'image-to-text-guide',
+    toolSlug: 'image-to-text',
+    category: 'image-tools',
+    title: 'Image से Text कैसे निकालें — OCR Tool से (Free)',
+    subtitle: 'Photo, screenshot या scanned document से text extract करें — बिना typing के',
+    metaTitle: 'Image to Text OCR — Photo से Text निकालें Free में (Hindi Guide)',
+    metaDescription: 'किसी भी image, photo, या scanned document से text extract करें OCR से। Hindi, English सभी languages support। Free, no signup, browser में काम करता है।',
+    targetKeyword: 'image to text',
+    secondaryKeywords: ['photo se text nikalna', 'ocr online hindi', 'image text extract', 'scan to text', 'image to text converter hindi'],
+    lastUpdated: '2026-03-13',
+    readingTime: '5 मिनट पढ़ें',
+    tags: ['OCR', 'Image to Text', 'Image Tools', 'Productivity'],
+    intro: `<p>OCR (Optical Character Recognition) एक ऐसी technology है जो images में printed या handwritten text को digital, editable text में convert करती है।</p>
+<p>Scanned documents, textbook pages की photos, screenshots, visiting cards, Aadhaar card — किसी से भी text निकालने के लिए OCR use होती है। इस गाइड में जानेंगे कि यह कैसे काम करती है और best results कैसे पाएं।</p>`,
+    sections: [
+      {
+        id: 'ocr-use-cases',
+        title: 'OCR कहाँ काम आती है?',
+        content: `<ul>
+  <li><strong>Scanned documents</strong> — पुराने paper documents को searchable digital text में convert करें</li>
+  <li><strong>Visiting cards</strong> — photo से name, phone, email extract करके contact save करें</li>
+  <li><strong>Screenshots</strong> — किसी article या software के screenshot से text copy करें जो otherwise select नहीं होता</li>
+  <li><strong>Receipts और invoices</strong> — amounts और details extract करें expense tracking के लिए</li>
+  <li><strong>Textbooks</strong> — scanned pages से passages निकालें notes के लिए</li>
+  <li><strong>Government documents</strong> — Aadhaar, PAN, marksheet से data extract करें</li>
+  <li><strong>Handwritten notes</strong> — handwriting को digital text में convert करें (accuracy varies)</li>
+</ul>`,
+      },
+      {
+        id: 'accuracy-tips',
+        title: 'OCR Accuracy बेहतर करने के Tips',
+        content: `<table>
+  <thead><tr><th>Factor</th><th>अच्छा</th><th>बुरा</th></tr></thead>
+  <tbody>
+    <tr><td>Resolution</td><td>300 DPI या ज़्यादा</td><td>150 DPI से कम (blurry)</td></tr>
+    <tr><td>Lighting</td><td>Even, bright lighting</td><td>Shadows, glare, uneven light</td></tr>
+    <tr><td>Angle</td><td>Straight-on, flat</td><td>Tilted, curved pages</td></tr>
+    <tr><td>Background</td><td>White या light background</td><td>Dark, patterned background</td></tr>
+    <tr><td>Font</td><td>Standard serif/sans-serif</td><td>Handwriting, decorative fonts</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Instant improvement</strong><p>अगर OCR output में errors हैं: (1) photo को 300 DPI पर scan करें, (2) brightness और contrast बढ़ाएं, (3) image को crop करें — सिर्फ text area रखें।</p></div>`,
+      },
+      {
+        id: 'hindi-ocr',
+        title: 'Hindi और Regional Language OCR',
+        content: `<p>Hindi, Tamil, Telugu, Bengali, Kannada text को OCR से extract किया जा सकता है। ध्यान रखें:</p>
+<ul>
+  <li><strong>Clear Devanagari font</strong> वाले documents best results देते हैं</li>
+  <li><strong>Google Lens</strong> Hindi OCR के लिए excellent है — phone camera से directly text copy करें</li>
+  <li><strong>Scanned Hindi books</strong> — older prints में accuracy 70-80% हो सकती है</li>
+  <li><strong>Handwritten Hindi</strong> — accuracy limited है, manual correction ज़रूरी</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Image to Text tool खोलें', description: 'ToolsArena Image to Text (OCR) open करें।' },
+      { title: 'Image upload करें', description: 'Photo, screenshot, या scanned document upload करें।' },
+      { title: 'Language select करें', description: 'Hindi, English, या अन्य language choose करें।' },
+      { title: 'Text Extract करें', description: 'OCR automatically text identify और extract करेगा।' },
+      { title: 'Copy या download करें', description: 'Extracted text copy करें या .txt file में download करें।' },
+    ],
+    faqs: [
+      { question: 'Phone से खींची गई photo से text निकाल सकते हैं?', answer: 'हाँ, अगर photo clear और well-lit है। Back camera use करें, document flat रखें, अच्छी lighting में photo लें। Text पूरे frame में आना चाहिए।' },
+      { question: 'Scanned PDF से text कैसे निकालें?', answer: 'Image to Text tool में PDF upload करें (अगर image-based PDF है)। Extract होने के बाद text copy करें या Word document में paste करें।' },
+      { question: 'Handwriting OCR काम करती है?', answer: 'Clear, neat handwriting में 70-85% accuracy मिलती है। Cursive writing harder है। Best results के लिए dark pen on white paper, clear lighting।' },
+      { question: 'Google Lens बेहतर है या OCR tool?', answer: 'Google Lens mobile पर extremely convenient है — camera से directly text copy करें। ToolsArena OCR bulk processing और privacy के लिए बेहतर है। Complex documents के लिए ToolsArena या Adobe Acrobat ज़्यादा reliable हैं।' },
+      { question: 'क्या OCR result accurate होती है?', answer: 'Clean, printed text में 95-99% accuracy। Handwriting में 70-85%। Low-quality scans में कम। हमेशा result proofread करें especially numbers और names के लिए।' },
+    ],
+    relatedGuides: ['pdf-to-word-guide', 'pdf-to-excel-guide', 'image-compressor-guide', 'word-to-pdf-guide'],
+    toolCTA: {
+      heading: 'Free Image to Text (OCR) — किसी भी Photo से Text निकालें',
+      description: 'Images, photos, scanned documents से text extract करें। Hindi, English, 50+ languages support। No signup।',
+      buttonText: 'Image से Text निकालें',
+    },
+  },
+
+  {
+    slug: 'youtube-thumbnail-downloader-guide',
+    toolSlug: 'youtube-thumbnail-downloader',
+    category: 'seo-social-media',
+    title: 'YouTube Thumbnail कैसे Download करें — HD में Free',
+    subtitle: 'किसी भी YouTube video की thumbnail HD quality में download करें',
+    metaTitle: 'YouTube Thumbnail Download करें HD में — Free Tool (Hindi Guide)',
+    metaDescription: 'YouTube video की thumbnail HD (1280×720) या maxres (1920×1080) में download करें। URL paste करें, image save करें। Free, no login।',
+    targetKeyword: 'youtube thumbnail download',
+    secondaryKeywords: ['youtube thumbnail kaise download kare', 'yt thumbnail download', 'youtube thumbnail hd', 'youtube thumbnail save', 'video thumbnail download'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['YouTube', 'Thumbnail', 'Downloader', 'Social Media'],
+    intro: `<p>YouTube thumbnail किसी video की पहली impression होती है। Content creators competitor's thumbnails study करते हैं, designers mockups बनाते हैं, और bloggers articles में images use करते हैं।</p>
+<p>YouTube thumbnail download करना बहुत आसान है — बस URL paste करें और image save करें।</p>`,
+    sections: [
+      {
+        id: 'thumbnail-sizes',
+        title: 'YouTube Thumbnail Sizes',
+        content: `<table>
+  <thead><tr><th>Quality</th><th>Resolution</th><th>Use Case</th></tr></thead>
+  <tbody>
+    <tr><td>maxresdefault</td><td>1280×720 या 1920×1080</td><td>Best quality — design/mockup के लिए</td></tr>
+    <tr><td>hqdefault</td><td>480×360</td><td>High quality — हमेशा available</td></tr>
+    <tr><td>mqdefault</td><td>320×180</td><td>Medium quality</td></tr>
+    <tr><td>sddefault</td><td>640×480</td><td>Standard quality</td></tr>
+    <tr><td>default</td><td>120×90</td><td>Tiny preview</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 maxresdefault black image?</strong><p>अगर maxresdefault option में black image आती है, तो video low resolution में upload हुई थी। hqdefault use करें — यह हमेशा available होती है।</p></div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'YouTube Thumbnail Download कैसे करें',
+        content: `<ol>
+  <li><strong>YouTube video का URL copy करें</strong> — browser address bar से या Share → Copy Link। दोनों formats काम करते हैं: youtube.com/watch?v=ID और youtu.be/ID।</li>
+  <li><strong>ToolsArena YouTube Thumbnail Downloader खोलें</strong>।</li>
+  <li><strong>URL paste करें</strong>।</li>
+  <li><strong>Resolution choose करें</strong> — maxresdefault (highest) या hqdefault।</li>
+  <li><strong>Download करें</strong> — Right-click → Save Image As, या Download बटन।</li>
+</ol>
+<div class="callout-tip"><strong>💡 Direct URL method</strong><p>Video ID find करें (URL में v= के बाद वाला हिस्सा) और browser में खोलें: <code>https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg</code></p></div>`,
+      },
+      {
+        id: 'copyright',
+        title: 'Copyright — ध्यान रखें',
+        content: `<div class="callout-warning"><strong>⚠️ Copyright</strong><p>YouTube thumbnails copyright होती हैं। Personal reference, design inspiration, या academic use के लिए download करना generally acceptable है। किसी और की thumbnail को अपने content में use करना, या commercially use करना copyright violation हो सकता है।</p></div>
+<p>अपने YouTube channel के लिए thumbnails create करने के लिए ToolsArena का YouTube Thumbnail A/B Tester tool use करें।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'YouTube video URL copy करें', description: 'Browser से या Share button से URL copy करें।' },
+      { title: 'Thumbnail Downloader खोलें', description: 'ToolsArena YouTube Thumbnail Downloader open करें।' },
+      { title: 'URL paste करें', description: 'Input field में URL paste करें।' },
+      { title: 'Resolution choose करें', description: 'maxresdefault (HD) या hqdefault select करें।' },
+      { title: 'Download करें', description: 'Image save करें।' },
+    ],
+    faqs: [
+      { question: 'YouTube thumbnail HD में कैसे download करें?', answer: 'ToolsArena YouTube Thumbnail Downloader में URL paste करें और "maxresdefault" option select करें। यह 1280×720 या 1920×1080 resolution देता है।' },
+      { question: 'YouTube Shorts की thumbnail download होगी?', answer: 'हाँ। Shorts का URL (youtube.com/shorts/VIDEO_ID) paste करें — thumbnail same तरीके से download होगी।' },
+      { question: 'Thumbnail download होती नहीं — क्या करें?', answer: 'अगर maxresdefault black image है तो hqdefault try करें। URL format check करें — full URL paste करें, सिर्फ video ID नहीं।' },
+      { question: 'YouTube thumbnail किस size में होनी चाहिए?', answer: 'YouTube recommended size 1280×720 pixels (16:9 ratio), max 2MB। JPG, PNG, या WebP format। हमेशा 16:9 aspect ratio maintain करें।' },
+      { question: 'अपनी channel के लिए thumbnail कैसे बनाएं?', answer: 'ToolsArena का YouTube Thumbnail A/B Tester tool use करें जहाँ आप multiple thumbnail variations compare कर सकते हैं।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'image-background-remover-guide'],
+    toolCTA: {
+      heading: 'Free YouTube Thumbnail Downloader — सभी Resolutions',
+      description: 'YouTube video की thumbnail HD, HQ, या SD में download करें। URL paste करें, instant download।',
+      buttonText: 'YouTube Thumbnail Download करें',
+    },
+  },
+
+  {
+    slug: 'base64-encode-decode-guide',
+    toolSlug: 'base64-encode-decode',
+    category: 'developer-tools',
+    title: 'Base64 Encode & Decode — क्या है, कैसे काम करता है? (Developer Guide)',
+    subtitle: 'Base64 encoding की पूरी जानकारी — use cases, online decoder, और common pitfalls',
+    metaTitle: 'Base64 Encode Decode Online Free — Developer Guide Hindi',
+    metaDescription: 'Base64 encoding क्या है, कैसे काम करता है, और कब use करते हैं — complete Hindi guide। Free online encoder/decoder tool। JWT decode, image embed।',
+    targetKeyword: 'base64 decode',
+    secondaryKeywords: ['base64 kya hota hai', 'base64 encode decode online', 'base64 decoder hindi', 'base64 to text', 'jwt decode base64'],
+    lastUpdated: '2026-03-13',
+    readingTime: '5 मिनट पढ़ें',
+    tags: ['Base64', 'Developer Tools', 'Encoding', 'API'],
+    intro: `<p>Web development में काम करते हुए आपने Base64 encoded strings ज़रूर देखी होंगी — JWT tokens में, HTML में embedded images में, API responses में। यह guide Base64 को simple Hindi में explain करती है।</p>`,
+    sections: [
+      {
+        id: 'base64-kya-hai',
+        title: 'Base64 क्या होता है?',
+        content: `<p>Base64 एक <strong>encoding scheme</strong> है जो binary data (bytes) को printable ASCII characters में convert करता है। यह 64 characters use करता है: A–Z, a–z, 0–9, + और /।</p>
+<p><strong>Example:</strong></p>
+<ul>
+  <li>Text: <code>Hi!</code></li>
+  <li>Base64: <code>SGkh</code></li>
+</ul>
+<div class="callout-warning"><strong>⚠️ ज़रूरी बात: Base64 encryption नहीं है!</strong><p>Base64 encoding कोई security provide नहीं करती। कोई भी Base64 string को 2 seconds में decode कर सकता है। Passwords, API keys, या sensitive data को Base64 में store करना बिल्कुल safe नहीं है।</p></div>`,
+      },
+      {
+        id: 'use-cases',
+        title: 'Base64 कहाँ Use होता है?',
+        content: `<ul>
+  <li><strong>HTML/CSS में images embed करना</strong> — <code>src="data:image/png;base64,..."</code> — extra HTTP request नहीं लगती</li>
+  <li><strong>JWT tokens</strong> — JSON Web Token का header और payload Base64URL encoded होता है</li>
+  <li><strong>Email attachments</strong> — SMTP text-based protocol है, binary files Base64 encode होकर जाती हैं</li>
+  <li><strong>HTTP Basic Auth</strong> — <code>Authorization: Basic base64(username:password)</code></li>
+  <li><strong>JSON में binary data</strong> — images या files को JSON field में store करने के लिए</li>
+</ul>`,
+      },
+      {
+        id: 'how-to-use',
+        title: 'Base64 Encode/Decode कैसे करें?',
+        content: `<p>ToolsArena का Base64 tool text और files दोनों handle करता है:</p>
+<ul>
+  <li><strong>Text encode</strong> — कोई भी text paste करें, Base64 string मिलेगी</li>
+  <li><strong>Text decode</strong> — Base64 string paste करें, original text मिलेगी</li>
+  <li><strong>Image to Base64</strong> — image upload करें, data URI मिलेगी (HTML में use के लिए)</li>
+  <li><strong>JWT decode</strong> — JWT token paste करें, header और payload readable JSON में दिखेगा</li>
+</ul>
+<div class="callout-tip"><strong>💡 Browser console में</strong><p>Chrome DevTools console में: encode के लिए <code>btoa("text")</code>, decode के लिए <code>atob("base64string")</code>।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Base64 tool खोलें', description: 'ToolsArena Base64 Encode & Decode open करें।' },
+      { title: 'Encode या Decode mode choose करें', description: '"Encode" text/file को Base64 में, "Decode" Base64 को text में।' },
+      { title: 'Input paste करें', description: 'Text paste करें या file upload करें।' },
+      { title: 'Result copy करें', description: 'Output instantly दिखता है। Copy करें।' },
+      { title: 'Use करें', description: 'HTML/CSS में paste करें, या API request में use करें।' },
+    ],
+    faqs: [
+      { question: 'Base64 string को online decode कैसे करें?', answer: 'ToolsArena Base64 tool में string paste करें और "Decode" mode select करें। Browser console में: atob("your-base64-string")।' },
+      { question: 'JWT token को decode कैसे करें?', answer: 'JWT में तीन parts होते हैं (dots से separated): header.payload.signature। Header और payload Base64URL encoded हैं। ToolsArena का dedicated JWT Decoder tool use करें जो automatically तीनों parts decode करता है।' },
+      { question: 'Image को HTML में Base64 से embed कैसे करें?', answer: 'Image को Base64 encoder में upload करें। Data URI output copy करें (data:image/png;base64,...) और img tag के src में paste करें। Small icons के लिए useful है।' },
+      { question: 'Base64 data size बड़ा क्यों होता है?', answer: 'Base64 encoding original data को 33% बड़ा बनाती है। 3 bytes → 4 characters। इसलिए बड़ी images को Base64 में embed करना HTML size बढ़ाता है।' },
+      { question: 'Base64URL और Base64 में क्या फर्क है?', answer: 'Standard Base64 में + और / characters होते हैं जो URLs में problems create करते हैं। Base64URL में + की जगह -, / की जगह _ use होता है। JWTs Base64URL use करते हैं।' },
+    ],
+    relatedGuides: ['json-formatter-guide', 'password-generator-guide', 'url-encode-decode-guide'],
+    toolCTA: {
+      heading: 'Free Base64 Encoder & Decoder — Text, Files & Data URIs',
+      description: 'Text या files को Base64 में encode करें, decode करें, data URIs generate करें। Instant results।',
+      buttonText: 'Base64 Encode/Decode करें',
+    },
+  },
+
+  {
+    slug: 'password-strength-guide',
+    toolSlug: 'password-strength-checker',
+    category: 'developer-tools',
+    title: 'Password कितना Strong है? — Password Security की पूरी जानकारी',
+    subtitle: 'Password strength check करें और जानें कि secure password कैसे बनाएं',
+    metaTitle: 'Password Strength Checker — Strong Password कैसे बनाएं (Hindi Guide)',
+    metaDescription: 'अपने password की strength check करें online free में। जानें कितने time में crack होगा, entropy क्या है, और 2026 में best password practices क्या हैं।',
+    targetKeyword: 'password strength checker',
+    secondaryKeywords: ['strong password kaise banaye', 'password security hindi', 'password kitna safe hai', 'password checker online', 'secure password tips'],
+    lastUpdated: '2026-03-13',
+    readingTime: '5 मिनट पढ़ें',
+    tags: ['Password', 'Security', 'Cybersecurity', 'Developer Tools'],
+    intro: `<p>2024 में दुनिया का सबसे common password अभी भी "123456" है — 30 लाख से ज़्यादा leaked databases में। Weak password account hack होने का सबसे बड़ा कारण है।</p>
+<p>इस guide में जानेंगे कि password strong क्यों होना चाहिए, कैसे measure करें, और 2026 के best practices क्या हैं।</p>`,
+    sections: [
+      {
+        id: 'strong-password-kya',
+        title: 'Strong Password क्या होता है?',
+        content: `<p>Password strength दो चीज़ों पर depend करती है: <strong>length</strong> और <strong>character variety</strong>।</p>
+<table>
+  <thead><tr><th>Password</th><th>Crack होने का Time</th></tr></thead>
+  <tbody>
+    <tr><td>123456</td><td>Instantly (wordlists में)</td></tr>
+    <tr><td>password</td><td>Instantly</td></tr>
+    <tr><td>Rahul@2024</td><td>Minutes (pattern attack)</td></tr>
+    <tr><td>R@hul#9X2m</td><td>Hours to days</td></tr>
+    <tr><td>correct-horse-battery-staple</td><td>Centuries</td></tr>
+    <tr><td>k#9Xm$2qP@5wL (13 random chars)</td><td>Millions of years</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Tricky passwords भी weak हैं</strong><p>"P@ssw0rd!" complex लगता है लेकिन यह हर dictionary attack list में है। "password" को 0 से replace करना, @ लगाना — attackers यह सब जानते हैं।</p></div>`,
+      },
+      {
+        id: 'password-best-practices',
+        title: '2026 में Password Best Practices',
+        content: `<ol>
+  <li><strong>Password Manager use करें</strong> — Bitwarden (free, open source) या 1Password। हर site के लिए 20+ character random password generate करे। सिर्फ एक master password याद रखें।</li>
+  <li><strong>Password reuse कभी नहीं</strong> — एक site breach होने पर बाकी accounts safe रहें।</li>
+  <li><strong>2FA enable करें</strong> — Authenticator app (Google Authenticator, Authy) use करें — SMS 2FA से बेहतर है (SIM swap attack से बचाव)।</li>
+  <li><strong>Passphrase use करें</strong> — 4-5 random words जैसे "सही-घोड़ा-बैटरी-स्टेपल" याद रखने में आसान और बहुत secure।</li>
+  <li><strong>Breach check करें</strong> — haveibeenpwned.com पर अपना email check करें।</li>
+</ol>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Password Strength Checker खोलें', description: 'ToolsArena Password Strength Checker open करें।' },
+      { title: 'Password type करें', description: 'Password input करें — real-time analysis होती है।' },
+      { title: 'Strength score देखें', description: 'Weak/Fair/Good/Strong/Very Strong rating, entropy bits, crack time estimate।' },
+      { title: 'Suggestions check करें', description: 'क्या missing है — length, uppercase, symbols — सब दिखता है।' },
+      { title: 'Password Generator use करें', description: 'Strong random password generate करने के लिए Password Generator tool switch करें।' },
+    ],
+    faqs: [
+      { question: 'क्या real password online checker में enter करना safe है?', answer: 'ToolsArena का tool 100% browser-based है — password कभी server पर नहीं जाता। Safe है। फिर भी सावधानी के लिए similar pattern का test password use कर सकते हैं।' },
+      { question: 'Password कितना लंबा होना चाहिए?', answer: 'NIST recommend करता है minimum 15 characters। 20+ best है। Length complexity से ज़्यादा important है — 20 char lowercase password 8 char complex password से ज़्यादा secure है।' },
+      { question: '"Rahul@1998" strong password है?', answer: 'नहीं। नाम + year + symbol pattern attackers के पास है। यह minutes में crack हो सकता है। Random characters या passphrase use करें।' },
+      { question: 'Password Manager safe है?', answer: 'हाँ, reputable password managers (Bitwarden, 1Password) AES-256 encryption use करते हैं। Master password सिर्फ आपके device पर encrypt होता है। Server पर plain text कभी नहीं जाता।' },
+      { question: 'Phone पर password manager कैसे use करें?', answer: 'Bitwarden app download करें (free)। App में passwords save करें। Browser extension install करें — websites पर automatically fill होगा।' },
+    ],
+    relatedGuides: ['password-generator-guide', 'base64-encode-decode-guide', 'json-formatter-guide'],
+    toolCTA: {
+      heading: 'Free Password Strength Checker — Real-time Analysis',
+      description: 'Password strength instantly check करें। Entropy, crack time, improvement suggestions। Browser में — password server पर नहीं जाता।',
+      buttonText: 'Password Strength Check करें',
+    },
+  },
+
+  {
+    slug: 'url-encode-decode-guide',
+    toolSlug: 'url-encode-decode',
+    category: 'developer-tools',
+    title: 'URL Encode & Decode — क्या होता है और कब Use करें? (Developer Guide)',
+    subtitle: 'URL encoding (percent-encoding) की पूरी जानकारी हिंदी में',
+    metaTitle: 'URL Encode Decode Online Free — Developer Guide Hindi',
+    metaDescription: 'URL encoding क्या है, special characters कैसे encode होते हैं, और %20 का मतलब क्या है — complete Hindi guide। Free online encoder/decoder tool।',
+    targetKeyword: 'url encode decode',
+    secondaryKeywords: ['url encoding kya hai', 'percent encoding hindi', 'url me special characters', '%20 ka matlab', 'url encode online'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['URL Encoding', 'Developer Tools', 'Web Development'],
+    intro: `<p>URLs में space, Hindi text, या special characters नहीं होते — इन्हें encode करना पड़ता है। इसीलिए URLs में अक्सर %20, %2F, %E0%A4%B9 जैसे sequences दिखते हैं।</p>
+<p>यह guide URL encoding को simple examples से explain करती है।</p>`,
+    sections: [
+      {
+        id: 'url-encoding-kya-hai',
+        title: 'URL Encoding क्यों ज़रूरी है?',
+        content: `<p>URLs में सिर्फ specific characters allowed हैं: A–Z, a–z, 0–9, और कुछ special characters (-, _, ., ~)। बाकी सब कुछ encode करना पड़ता है।</p>
+<table>
+  <thead><tr><th>Character</th><th>Encoded</th><th>क्यों?</th></tr></thead>
+  <tbody>
+    <tr><td>Space</td><td>%20</td><td>URLs में space नहीं होता</td></tr>
+    <tr><td>&</td><td>%26</td><td>Query parameters separate करता है</td></tr>
+    <tr><td>=</td><td>%3D</td><td>Key=value separate करता है</td></tr>
+    <tr><td>#</td><td>%23</td><td>Fragment identifier है</td></tr>
+    <tr><td>Hindi "ह"</td><td>%E0%A4%B9</td><td>Non-ASCII UTF-8 encoding</td></tr>
+  </tbody>
+</table>
+<p><strong>Example:</strong> <code>https://example.com/search?q=हिंदी content</code> → <code>https://example.com/search?q=%E0%A4%B9%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%80%20content</code></p>`,
+      },
+      {
+        id: 'encodeuricomponent',
+        title: 'encodeURIComponent vs encodeURI — कब क्या use करें?',
+        content: `<ul>
+  <li><strong>encodeURIComponent()</strong> — query parameter values के लिए। & और = भी encode करता है।</li>
+  <li><strong>encodeURI()</strong> — complete URL के लिए। Structure characters (/, ?, #, &, =) preserve करता है।</li>
+</ul>
+<div class="callout-tip"><strong>Rule:</strong> Query string values के लिए <code>encodeURIComponent()</code>, full URL के लिए <code>encodeURI()</code>।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'URL Encode/Decode tool खोलें', description: 'ToolsArena URL Encode & Decode open करें।' },
+      { title: 'Text या URL paste करें', description: 'Encode या decode करना हो वह paste करें।' },
+      { title: 'Mode choose करें', description: '"Encode" special characters को %XX में, "Decode" वापस readable text में।' },
+      { title: 'Result copy करें', description: 'Encoded URL या decoded text copy करें।' },
+      { title: 'Use करें', description: 'API request, HTML form, या browser में use करें।' },
+    ],
+    faqs: [
+      { question: 'URL में %20 का मतलब क्या होता है?', answer: '%20 space character का encoded form है। "New Delhi" URL में "New%20Delhi" बनता है। URLs में spaces allowed नहीं हैं।' },
+      { question: 'Hindi text को URL में कैसे use करें?', answer: 'Hindi characters को पहले UTF-8 bytes में convert किया जाता है, फिर हर byte को percent-encode किया जाता है। ToolsArena का URL Encoder automatically यह करता है।' },
+      { question: '%2F क्या होता है?', answer: '%2F forward slash (/) का encoded form है। यह tab तब use होता है जब / URL structure का हिस्सा नहीं बल्कि data value का हिस्सा है।' },
+      { question: 'Space के लिए %20 या + use करें?', answer: 'URL path में %20 use करें। HTML form data में + space को represent करता है। Confusion से बचने के लिए हमेशा %20 use करें।' },
+      { question: 'URL encoding और HTML encoding में क्या फर्क है?', answer: 'URL encoding (%20, %26) URLs में special characters के लिए है। HTML encoding (&amp;amp;, &amp;lt;) HTML में special characters को safely display करने के लिए है। दोनों अलग contexts में use होते हैं।' },
+    ],
+    relatedGuides: ['base64-encode-decode-guide', 'json-formatter-guide', 'password-generator-guide'],
+    toolCTA: {
+      heading: 'Free URL Encoder & Decoder — Hindi और Special Characters',
+      description: 'URLs में special characters encode करें। Hindi, Nepali, Chinese text support। Instant results।',
+      buttonText: 'URL Encode/Decode करें',
+    },
+  },
+
+  {
+    slug: 'epf-calculator-guide',
+    toolSlug: 'epf-calculator',
+    category: 'calculators',
+    title: 'EPF Calculator — PF Balance, Interest और Retirement Corpus Calculate करें',
+    subtitle: 'Employee Provident Fund की पूरी जानकारी — contribution, interest, withdrawal rules',
+    metaTitle: 'EPF Calculator India — PF Balance और Interest Calculate करें 2026',
+    metaDescription: 'EPF/PF balance, monthly contributions, interest, और retirement corpus calculate करें। EPF interest rate 2025-26, withdrawal rules, tax benefits — Hindi में।',
+    targetKeyword: 'epf calculator',
+    secondaryKeywords: ['pf calculator hindi', 'epf interest rate 2026', 'pf balance check', 'epf withdrawal rules', 'employee provident fund calculator'],
+    lastUpdated: '2026-03-13',
+    readingTime: '7 मिनट पढ़ें',
+    tags: ['EPF', 'PF', 'Calculator', 'India', 'Retirement', 'Finance'],
+    intro: `<p>India में 6 करोड़ से ज़्यादा employees हर महीने EPF (Employee Provident Fund) में contribute करते हैं। लेकिन अधिकतर employees को नहीं पता कि उनका exact balance कितना है, interest कैसे calculate होती है, और retirement पर कितना मिलेगा।</p>
+<p>इस guide में EPF की पूरी calculation हिंदी में — contributions, interest, और withdrawal rules के साथ।</p>`,
+    sections: [
+      {
+        id: 'epf-contribution',
+        title: 'EPF में कौन कितना देता है?',
+        content: `<table>
+  <thead><tr><th>Component</th><th>Employee</th><th>Employer</th></tr></thead>
+  <tbody>
+    <tr><td>EPF Account (PF)</td><td>12% of Basic + DA</td><td>3.67% of Basic + DA</td></tr>
+    <tr><td>EPS (Pension)</td><td>0%</td><td>8.33% (max ₹1,250/month)</td></tr>
+    <tr><td>EDLI (Insurance)</td><td>0%</td><td>0.5% (max ₹75/month)</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Important</strong><p>Employer के 12% में से सिर्फ 3.67% आपके EPF account में जाता है। 8.33% EPS (Pension Scheme) में जाता है। इसीलिए PF balance सिर्फ employee contribution + 3.67% employer contribution होता है।</p></div>
+<p>EPF interest rate 2025–26: <strong>8.25% per annum</strong></p>`,
+      },
+      {
+        id: 'withdrawal-rules',
+        title: 'EPF Withdrawal कब और कैसे?',
+        content: `<table>
+  <thead><tr><th>Situation</th><th>Withdrawal</th><th>Tax</th></tr></thead>
+  <tbody>
+    <tr><td>Retirement (58 साल)</td><td>100% balance</td><td>Tax-free (5+ साल service)</td></tr>
+    <tr><td>Job change (2+ months unemployed)</td><td>75% या पूरा</td><td>5 साल से कम service पर taxable</td></tr>
+    <tr><td>Home purchase (5+ साल बाद)</td><td>90% तक</td><td>Tax-free</td></tr>
+    <tr><td>Medical emergency</td><td>6 months salary तक</td><td>Tax-free</td></tr>
+    <tr><td>Education/Marriage (7+ साल बाद)</td><td>Employee share का 50%</td><td>Tax-free</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Job change पर PF withdraw मत करें!</strong><p>5 साल से पहले EPF withdraw करने पर पूरा amount taxable हो जाता है। Job change पर PF transfer करें — EPFO member portal (oneepf.epfindia.gov.in) से online transfer होता है।</p></div>`,
+      },
+      {
+        id: 'tax-benefits',
+        title: 'EPF के Tax Benefits (EEE Status)',
+        content: `<p>EPF India के best tax-efficient investments में से एक है — <strong>EEE (Exempt-Exempt-Exempt)</strong>:</p>
+<ul>
+  <li><strong>Contribution पर exempt</strong> — Employee contribution ₹1.5 लाख तक Section 80C में deductible</li>
+  <li><strong>Interest पर exempt</strong> — 9.5% तक interest tax-free (rate कभी exceed नहीं हुई)</li>
+  <li><strong>Withdrawal पर exempt</strong> — 5 साल continuous service के बाद पूरी withdrawal tax-free</li>
+</ul>
+<div class="callout-tip"><strong>💡 Budget 2021 update</strong><p>₹2.5 लाख/year से ज़्यादा EPF contribution पर interest taxable है। यह सिर्फ उन employees पर apply होता है जिनकी basic salary ₹1.74 लाख/month से ज़्यादा है।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'EPF Calculator खोलें', description: 'ToolsArena EPF Calculator open करें।' },
+      { title: 'Basic salary enter करें', description: 'Current basic salary + DA enter करें।' },
+      { title: 'Age और retirement age set करें', description: 'Current age enter करें। Default retirement age 58 है।' },
+      { title: 'Salary growth rate set करें', description: 'Expected annual increment percentage enter करें।' },
+      { title: 'Retirement corpus देखें', description: 'Total contributions, interest earned, और projected balance दिखेगा।' },
+    ],
+    faqs: [
+      { question: 'EPF interest rate 2025-26 क्या है?', answer: 'EPF interest rate 2025-26 में 8.25% per annum है। EPFO हर साल rate announce करता है। पिछले 5 सालों में 8.10%–8.65% के बीच रहा है।' },
+      { question: 'PF balance कैसे check करें?', answer: 'EPFO member portal (passbook.epfindia.gov.in) पर UAN से login करें। UMANG app use करें। SMS: "EPFOHO UAN ENG" को 7738299899 पर भेजें। Missed call: registered mobile से 011-22901406 पर।' },
+      { question: 'Job change पर PF transfer कैसे करें?', answer: 'EPFO member portal पर login करें। "One Member One EPF Account" option में transfer claim submit करें। 10-20 working days में transfer होता है। पुराना employer approve करेगा।' },
+      { question: 'EPF और NPS में कौन बेहतर है?', answer: 'EPF: Fixed 8.25% returns, simple, EEE tax status। NPS: Market-linked (higher potential), extra ₹50,000 tax deduction (80CCD(1B)), लेकिन 40% annuitize करना compulsory। Most salaried employees के लिए EPF preferred है।' },
+      { question: 'EPS (Pension) का पैसा कहाँ जाता है?', answer: 'Employer का 8.33% EPS में जाता है जहाँ से retirement पर monthly pension मिलती है। यह lump sum में नहीं मिलता। Minimum 10 साल service के बाद pension eligible। Formula: Monthly Pension = (Pensionable Salary × Service) ÷ 70।' },
+    ],
+    relatedGuides: ['income-tax-calculator-guide', 'sip-calculator-guide', 'compound-interest-guide', 'gst-calculator-guide'],
+    toolCTA: {
+      heading: 'Free EPF Calculator — PF Balance और Retirement Corpus',
+      description: 'EPF contributions, interest, और retirement corpus calculate करें। 8.25% current rate पर।',
+      buttonText: 'EPF Calculate करें',
+    },
+  },
+
+  // ── TIER 3 ────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'image-flip-rotate-guide',
+    toolSlug: 'image-flip-rotate',
+    category: 'image-tools',
+    title: 'Image Flip और Rotate कैसे करें — Free Online Tool',
+    subtitle: 'Photos को mirror करें, rotate करें — quality loss के बिना',
+    metaTitle: 'Image Flip & Rotate Online Free — Photo Mirror और Rotate (Hindi Guide)',
+    metaDescription: 'Image को horizontally या vertically flip करें, 90°/180° rotate करें — online free में। Quality नहीं खोती। Mobile और desktop दोनों पर काम करता है।',
+    targetKeyword: 'image rotate online',
+    secondaryKeywords: ['photo flip karna', 'image mirror kaise kare', 'photo rotate online free', 'selfie mirror fix', 'image ulta seedha karna'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['Image Flip', 'Image Rotate', 'Image Tools', 'Photo Editing'],
+    intro: `<p>Selfie mirror में उल्टी दिखती है? Photo sideways ली गई है? Product image को mirror करना है? — इन सब के लिए Image Flip & Rotate tool काम आता है।</p>
+<p>बिना किसी app download किए, browser में ही photos flip और rotate करें।</p>`,
+    sections: [
+      {
+        id: 'flip-vs-rotate',
+        title: 'Flip और Rotate में क्या फर्क है?',
+        content: `<table>
+  <thead><tr><th>Operation</th><th>क्या होता है</th><th>Use Case</th></tr></thead>
+  <tbody>
+    <tr><td>Flip Horizontal</td><td>Left-right mirror होती है</td><td>Selfie un-mirror करना, mirror effect</td></tr>
+    <tr><td>Flip Vertical</td><td>Top-bottom उल्टी होती है</td><td>Reflection effect design में</td></tr>
+    <tr><td>Rotate 90° CW</td><td>Right में turn</td><td>Sideways ली गई photos fix करना</td></tr>
+    <tr><td>Rotate 90° CCW</td><td>Left में turn</td><td>Opposite direction fix</td></tr>
+    <tr><td>Rotate 180°</td><td>Upside down</td><td>Inverted scans correct करना</td></tr>
+    <tr><td>Custom angle</td><td>किसी भी angle पर</td><td>Crooked horizon straighten करना</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'common-problems',
+        title: 'Common Problems जो Flip/Rotate से Fix होती हैं',
+        content: `<ul>
+  <li><strong>WhatsApp photo rotation bug</strong> — Android पर photos कभी-कभी 90° rotate होकर जाती हैं। Send करने से पहले fix करें।</li>
+  <li><strong>EXIF orientation problem</strong> — कुछ websites EXIF rotation data ignore करती हैं और photo sideways दिखती है। Rotation bake-in करें।</li>
+  <li><strong>Scanned documents rotate</strong> — Scanner कभी-कभी pages sideways scan करता है।</li>
+  <li><strong>Selfie mirror reverse</strong> — Phone camera selfies mirror image लेती है। Flip horizontal करें।</li>
+  <li><strong>E-commerce product photos</strong> — Required orientation में convert करें।</li>
+</ul>`,
+      },
+      {
+        id: 'quality',
+        title: 'क्या Quality कम होती है?',
+        content: `<p>नहीं — अगर PNG में save करें तो:</p>
+<ul>
+  <li>ToolsArena का tool <strong>PNG format में export</strong> करता है जो lossless है</li>
+  <li>कितनी भी बार flip/rotate करें — quality same रहती है</li>
+  <li>JPEG में save करने पर हर save में थोड़ी quality loss होती है — PNG prefer करें</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Image Flip & Rotate tool खोलें', description: 'ToolsArena tool open करें। Mobile browser पर भी काम करता है।' },
+      { title: 'Image upload करें', description: 'Photo drag & drop करें। JPG, PNG, WebP, GIF support।' },
+      { title: 'Operation choose करें', description: 'Flip H/V, Rotate 90° CW/CCW, 180°, या custom angle slider।' },
+      { title: 'Preview देखें', description: 'Instant preview दिखता है।' },
+      { title: 'PNG download करें', description: 'Download करें — lossless PNG format।' },
+    ],
+    faqs: [
+      { question: 'Selfie को un-mirror कैसे करें?', answer: 'Image Flip & Rotate tool में photo upload करें और "Flip Horizontal" button दबाएं। Mirror image normal हो जाएगी।' },
+      { question: 'Phone पर photo sideways आती है — fix कैसे करें?', answer: 'Tool में photo upload करें। "Rotate 90° CW" या "Rotate 90° CCW" दबाएं जब तक photo सीधी न हो। PNG download करें — अब हर जगह सीधी दिखेगी।' },
+      { question: 'Custom angle पर rotate हो सकती है?', answer: 'हाँ। Angle slider से -180° से +180° तक कोई भी angle set करें। Horizon straighten करने के लिए 2-3° rotate करें।' },
+      { question: 'Multiple photos एक साथ rotate हो सकती हैं?', answer: 'हाँ। Batch upload support है। सभी photos एक ही operation से process होती हैं और ZIP में download होती हैं।' },
+      { question: 'Rotate करने से quality कम होगी?', answer: 'PNG output में नहीं। Tool lossless Canvas processing use करता है और PNG में export करता है।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'image-background-remover-guide', 'photo-effects-guide'],
+    toolCTA: {
+      heading: 'Free Image Flip & Rotate — Mirror, Rotate, Any Angle',
+      description: 'Photos flip और rotate करें। Batch support। PNG output — no quality loss।',
+      buttonText: 'Image Flip/Rotate करें',
+    },
+  },
+
+  {
+    slug: 'number-to-words-guide',
+    toolSlug: 'number-to-words',
+    category: 'converters',
+    title: 'संख्या को शब्दों में कैसे लिखें — Cheque और Legal Documents के लिए',
+    subtitle: 'Cheque पर amount words में सही तरीके से लिखें — RBI guidelines के अनुसार',
+    metaTitle: 'Number to Words — Cheque पर Amount शब्दों में लिखें (Free Tool)',
+    metaDescription: 'किसी भी number को words में convert करें। Cheque, invoice, legal documents के लिए। Indian numbering (लाख, करोड़) support। Rupees में words। Free tool।',
+    targetKeyword: 'number to words',
+    secondaryKeywords: ['cheque mein amount kaise likhe', 'rupees in words', 'amount in words hindi', 'lakhs crore in words', 'cheque words likhna'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['Number to Words', 'Cheque', 'Finance', 'India', 'Converters'],
+    intro: `<p>Cheque पर amount words में लिखना compulsory है — और एक गलती cheque invalid कर सकती है। "Twenty Thousand" की जगह "Two Thousand" लिखने से ₹18,000 का नुकसान हो सकता है।</p>
+<p>इस guide में सीखेंगे कि Indian numbering system में numbers को correctly words में कैसे लिखते हैं।</p>`,
+    sections: [
+      {
+        id: 'indian-numbering',
+        title: 'Indian Numbering System — लाख और करोड़',
+        content: `<table>
+  <thead><tr><th>Number</th><th>Indian Name</th><th>International Name</th></tr></thead>
+  <tbody>
+    <tr><td>1,000</td><td>एक हज़ार</td><td>One Thousand</td></tr>
+    <tr><td>10,000</td><td>दस हज़ार</td><td>Ten Thousand</td></tr>
+    <tr><td>1,00,000</td><td>एक लाख</td><td>One Hundred Thousand</td></tr>
+    <tr><td>10,00,000</td><td>दस लाख</td><td>One Million</td></tr>
+    <tr><td>1,00,00,000</td><td>एक करोड़</td><td>Ten Million</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'cheque-rules',
+        title: 'Cheque पर Amount लिखने के Rules',
+        content: `<ol>
+  <li><strong>"Rupees" से शुरू करें</strong> — "Rupees Twenty-Five Thousand Only"</li>
+  <li><strong>"Only" से end करें</strong> — tampering से बचाव</li>
+  <li><strong>Hyphens use करें</strong> — "Twenty-Five" न कि "Twenty Five"</li>
+  <li><strong>Abbreviations नहीं</strong> — "Thousand" लिखें, "K" नहीं</li>
+  <li><strong>Words के बाद line खींचें</strong> — space नहीं छोड़ें</li>
+  <li><strong>Paise भी words में</strong> — "and Fifty Paise Only" (₹500.50 के लिए)</li>
+</ol>`,
+      },
+      {
+        id: 'examples',
+        title: 'Common Examples',
+        content: `<table>
+  <thead><tr><th>Amount</th><th>Words में</th></tr></thead>
+  <tbody>
+    <tr><td>₹1,000</td><td>Rupees One Thousand Only</td></tr>
+    <tr><td>₹25,000</td><td>Rupees Twenty-Five Thousand Only</td></tr>
+    <tr><td>₹1,50,000</td><td>Rupees One Lakh Fifty Thousand Only</td></tr>
+    <tr><td>₹10,00,000</td><td>Rupees Ten Lakh Only</td></tr>
+    <tr><td>₹2,57,843</td><td>Rupees Two Lakh Fifty-Seven Thousand Eight Hundred Forty-Three Only</td></tr>
+  </tbody>
+</table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Number to Words tool खोलें', description: 'ToolsArena Number to Words open करें।' },
+      { title: 'Amount enter करें', description: 'Number type करें (decimal paise के साथ भी, e.g., 25750.50)।' },
+      { title: 'Indian format select करें', description: 'Indian numbering (लाख/करोड़) या International choose करें।' },
+      { title: 'Result copy करें', description: 'Words में amount instantly दिखता है। Copy करें।' },
+      { title: 'Cheque पर use करें', description: '"Rupees" add करें शुरुआत में और "Only" end में।' },
+    ],
+    faqs: [
+      { question: '₹1,50,000 cheque पर कैसे लिखें?', answer: '"Rupees One Lakh Fifty Thousand Only।" Indian numbering में। "Rupees" से शुरू और "Only" से end।' },
+      { question: '₹10 करोड़ words में कैसे?', answer: '"Rupees Ten Crore Only।" International में "Rupees One Hundred Million Only।" India में हमेशा Indian system use करें।' },
+      { question: 'Lakh और Million में क्या फर्क है?', answer: '1 Lakh = 1,00,000 = 100 Thousand। 1 Million = 10 Lakh = 10,00,000। India में lakh/crore system use होता है।' },
+      { question: 'Paise words में कैसे लिखें?', answer: '₹500.50 → "Rupees Five Hundred and Fifty Paise Only।" Round amount पर "Only" directly: "Rupees Five Hundred Only।"' },
+      { question: 'GST invoice पर amount words में लिखना ज़रूरी है?', answer: 'GST invoices पर mandatory नहीं लेकिन professional practice है। कुछ companies अपने invoice format में amount in words include करती हैं।' },
+    ],
+    relatedGuides: ['gst-calculator-guide', 'percentage-calculator-guide', 'compound-interest-guide'],
+    toolCTA: {
+      heading: 'Free Number to Words — Indian और International Format',
+      description: 'कोई भी number words में convert करें। लाख, करोड़ support। Cheque और invoice के लिए।',
+      buttonText: 'Number को Words में बदलें',
+    },
+  },
+
+  {
+    slug: 'photo-effects-guide',
+    toolSlug: 'photo-effects-editor',
+    category: 'image-tools',
+    title: 'Photo पर Effects कैसे लगाएं — Grayscale, Sepia, Sketch और 9 और Effects',
+    subtitle: 'किसी भी photo को artistic बनाएं — free browser-based tool से',
+    metaTitle: 'Photo Effects Editor Online Free — Sketch, Vintage, Sepia Filter (Hindi)',
+    metaDescription: 'Photos पर grayscale, sepia, vintage, pencil sketch, emboss, vignette effects लगाएं online free में। No signup, mobile पर काम करता है।',
+    targetKeyword: 'photo effects',
+    secondaryKeywords: ['photo par filter lagana', 'photo ko sketch kaise banaye', 'vintage photo effect', 'photo effects online free hindi', 'image filter online'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['Photo Effects', 'Image Filters', 'Image Tools', 'Photo Editing'],
+    intro: `<p>Photo को pencil sketch में बदलना, vintage feel देना, या dramatic vignette effect add करना — यह सब Photoshop के बिना मुमकिन है।</p>
+<p>ToolsArena का Photo Effects Editor 12 effects देता है जो सीधे browser में काम करते हैं — कोई app नहीं, कोई upload नहीं।</p>`,
+    sections: [
+      {
+        id: 'effects-list',
+        title: '12 Effects — क्या करते हैं?',
+        content: `<table>
+  <thead><tr><th>Effect</th><th>क्या होता है</th><th>Best Use</th></tr></thead>
+  <tbody>
+    <tr><td>Grayscale</td><td>Color हट जाती है, black & white</td><td>Portraits, documentary photos</td></tr>
+    <tr><td>Sepia</td><td>Warm brown tones — पुरानी photo जैसी</td><td>Retro, vintage themes</td></tr>
+    <tr><td>Vintage</td><td>Faded colors, warm cast</td><td>Social media, lifestyle posts</td></tr>
+    <tr><td>Pencil Sketch</td><td>Drawing जैसी दिखती है</td><td>Portraits, greeting cards</td></tr>
+    <tr><td>Warm</td><td>Red/yellow tones boost होती हैं</td><td>Sunset, food photos</td></tr>
+    <tr><td>Cool</td><td>Blue tones — cold feel</td><td>Winter, night, tech themes</td></tr>
+    <tr><td>Invert</td><td>Colors उल्टी होती हैं</td><td>Artistic, X-ray look</td></tr>
+    <tr><td>Posterize</td><td>Limited colors — comic book effect</td><td>Pop art, bold designs</td></tr>
+    <tr><td>Emboss</td><td>3D relief जैसा texture</td><td>Patterns, abstract art</td></tr>
+    <tr><td>Sharpen</td><td>Edges sharper होती हैं</td><td>Blurry photos fix</td></tr>
+    <tr><td>Vignette</td><td>Corners dark होते हैं, center focus</td><td>Portraits, landscapes</td></tr>
+    <tr><td>Original</td><td>सब reset</td><td>undo</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'intensity-slider',
+        title: 'Intensity Slider क्या करता है?',
+        content: `<p>Intensity slider (0-100%) effect को original image के साथ blend करता है:</p>
+<ul>
+  <li>100% = pure effect</li>
+  <li>50% = effect और original का mix</li>
+  <li>30% = subtle effect — जैसे light vintage wash</li>
+</ul>
+<p>Subtle effects के लिए intensity 30-50% रखें। Full artistic look के लिए 100%।</p>`,
+      },
+      {
+        id: 'pencil-sketch',
+        title: 'Pencil Sketch Effect कैसे काम करता है?',
+        content: `<p>Pencil sketch algorithm:</p>
+<ol>
+  <li>Photo को grayscale में convert करें</li>
+  <li>Inverted copy बनाएं (हर pixel को 255 से subtract करें)</li>
+  <li>Inverted copy को blur करें</li>
+  <li>Color dodge blend करें — edges dark lines बनती हैं</li>
+</ol>
+<div class="callout-tip"><strong>💡 Best results</strong><p>Clear subject वाली photos में pencil sketch best लगता है। Busy/cluttered backgrounds में result messy हो सकता है। Portrait photos में best।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Photo Effects Editor खोलें', description: 'ToolsArena Photo Effects Editor open करें।' },
+      { title: 'Photo upload करें', description: 'JPG, PNG, WebP drag & drop करें।' },
+      { title: 'Effect choose करें', description: '12 effects में से कोई भी click करें।' },
+      { title: 'Intensity adjust करें', description: 'Slider से 0-100% blend set करें।' },
+      { title: 'PNG download करें', description: 'Download बटन दबाएं।' },
+    ],
+    faqs: [
+      { question: 'Photo को pencil sketch में कैसे बदलें?', answer: 'Photo Effects Editor में photo upload करें और "Pencil Sketch" button click करें। Intensity slider adjust करें — 100% full sketch, 60% subtle sketch। PNG download करें।' },
+      { question: 'Sepia और Vintage effect में क्या फर्क है?', answer: 'Sepia = pure brown tones, 19th century photo जैसा। Vintage = faded colors, warm cast, 1970s film photo जैसा। Sepia ज़्यादा extreme है, vintage ज़्यादा subtle।' },
+      { question: 'Multiple effects एक साथ लगा सकते हैं?', answer: 'एक बार में एक effect। Multiple effects के लिए: पहला apply करें → PNG download करें → re-upload करें → दूसरा apply करें।' },
+      { question: 'Mobile पर काम करता है?', answer: 'हाँ, fully mobile responsive है। 1600px से बड़ी images automatically scale होती हैं performance के लिए।' },
+      { question: 'Effect लगाने के बाद undo कैसे करें?', answer: '"Original" button click करें — photo बिना किसी effect के original state में वापस आ जाएगी।' },
+    ],
+    relatedGuides: ['image-flip-rotate-guide', 'image-background-remover-guide', 'image-compressor-guide'],
+    toolCTA: {
+      heading: 'Free Photo Effects Editor — 12 Filters: Sketch, Vintage, Sepia',
+      description: 'Photos पर grayscale, sepia, pencil sketch, vintage, vignette effects लगाएं। Intensity slider। PNG output।',
+      buttonText: 'Photo Effects Add करें',
+    },
+  },
+
+  {
+    slug: 'reading-time-calculator-guide',
+    toolSlug: 'reading-time-calculator',
+    category: 'text-tools',
+    title: 'Reading Time Calculator — किसी भी Text को पढ़ने में कितना समय लगेगा?',
+    subtitle: 'Reading speed, Flesch readability score, और content optimization की पूरी जानकारी',
+    metaTitle: 'Reading Time Calculator — Text पढ़ने का Time Calculate करें (Free)',
+    metaDescription: 'किसी भी text, article, या book को पढ़ने में कितना समय लगेगा calculate करें। Average reading speed 238 WPM। Flesch readability score। Hindi guide।',
+    targetKeyword: 'reading time calculator',
+    secondaryKeywords: ['reading time kaise calculate kare', 'padhne ka samay', 'words per minute hindi', 'average reading speed', 'article padhne ka time'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['Reading Time', 'Text Tools', 'Content', 'Writing'],
+    intro: `<p>Blog post, article, या assignment — reading time जानना क्यों ज़रूरी है? क्योंकि Medium हर article पर reading time दिखाता है, email marketers subject lines में time बताते हैं, और teachers lessons plan करते हैं।</p>
+<p>इस guide में जानेंगे reading speed क्या होती है, reading time कैसे calculate होती है, और content कितना readable होना चाहिए।</p>`,
+    sections: [
+      {
+        id: 'reading-speeds',
+        title: 'Reading Speed — Average कितनी होती है?',
+        content: `<table>
+  <thead><tr><th>Reader Type</th><th>Speed (WPM)</th></tr></thead>
+  <tbody>
+    <tr><td>Average adult (non-fiction)</td><td>238 WPM</td></tr>
+    <tr><td>Average adult (fiction)</td><td>260–280 WPM</td></tr>
+    <tr><td>University students</td><td>250–300 WPM</td></tr>
+    <tr><td>Speech / presentation</td><td>130 WPM</td></tr>
+    <tr><td>Audiobook pace</td><td>155 WPM</td></tr>
+    <tr><td>Children (grade 5-6)</td><td>150–200 WPM</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 238 WPM standard</strong><p>Brysbaert (2019) की study — 190 studies के meta-analysis से — adult non-fiction reading speed 238 WPM निकली। ToolsArena यही baseline use करता है।</p></div>`,
+      },
+      {
+        id: 'formula',
+        title: 'Reading Time Formula',
+        content: `<div class="callout-tip"><strong>Reading Time (minutes) = Word Count ÷ Reading Speed (WPM)</strong></div>
+<p><strong>Examples:</strong></p>
+<ul>
+  <li>500 words ÷ 238 = <strong>2.1 minutes</strong></li>
+  <li>1,500 words ÷ 238 = <strong>6.3 minutes</strong></li>
+  <li>3,000 words ÷ 238 = <strong>12.6 minutes</strong></li>
+</ul>`,
+      },
+      {
+        id: 'flesch-score',
+        title: 'Flesch Readability Score क्या है?',
+        content: `<p>यह score बताता है कि text कितना easy या difficult है:</p>
+<table>
+  <thead><tr><th>Score</th><th>Level</th><th>Target</th></tr></thead>
+  <tbody>
+    <tr><td>90–100</td><td>बहुत आसान</td><td>5th grade, simple messages</td></tr>
+    <tr><td>60–70</td><td>Standard</td><td>Blog posts, general content</td></tr>
+    <tr><td>30–50</td><td>Difficult</td><td>Academic writing</td></tr>
+    <tr><td>0–30</td><td>बहुत मुश्किल</td><td>Professional/legal documents</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Web content के लिए</strong><p>General web content के लिए 60-70 score aim करें। Short sentences और common words score बढ़ाते हैं।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Reading Time Calculator खोलें', description: 'ToolsArena Reading Time Calculator open करें।' },
+      { title: 'Text paste करें', description: 'Article, essay, या कोई भी text paste करें।' },
+      { title: 'Reader profile choose करें', description: 'Slow (150 WPM), Average (238 WPM), Fast (350 WPM), या custom WPM।' },
+      { title: 'Results देखें', description: 'Reading time, speaking time, Flesch score, word count, keywords।' },
+      { title: 'Content optimize करें', description: 'Paragraph breakdown से identify करें कौन section trim करना है।' },
+    ],
+    faqs: [
+      { question: '1,000 words पढ़ने में कितना समय लगता है?', answer: '238 WPM average speed पर: 1,000 ÷ 238 = 4.2 minutes। Slow reader (150 WPM) को 6.7 minutes। Fast reader (350 WPM) को 2.9 minutes।' },
+      { question: 'एक किताब पढ़ने में कितना समय लगेगा?', answer: 'Average novel 70,000–100,000 words का होता है। 238 WPM पर: 294–420 minutes (5–7 hours)। रोज़ 30-60 minutes पढ़ें तो 1-2 हफ्ते में किताब पूरी।' },
+      { question: 'Medium article reading time कैसे calculate होती है?', answer: 'Medium 265 WPM baseline use करता है। ToolsArena 238 WPM (research-based) use करता है। Medium nearest minute में round करता है।' },
+      { question: 'Blog post kitne words ka hona chahiye?', answer: 'SEO के लिए 1,500–2,500 words best है according to Backlinko और HubSpot research। लेकिन quality ज़रूरी है — padded content से focused 1,000 word article better rank करता है।' },
+      { question: 'Speech script के लिए reading time कैसे calculate करें?', answer: 'Tool में "speaking time" option है जो 130 WPM (standard speech rate) पर calculate करता है। 5 minute speech = 650 words।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'pdf-to-word-guide'],
+    toolCTA: {
+      heading: 'Free Reading Time Calculator — Accurate Estimate',
+      description: 'किसी भी text का reading time calculate करें। 4 reader profiles, Flesch score, speaking time। Instant results।',
+      buttonText: 'Reading Time Calculate करें',
+    },
+  },
+
+  {
+    slug: 'temperature-converter-guide',
+    toolSlug: 'temperature-converter',
+    category: 'converters',
+    title: 'Temperature Converter — Celsius, Fahrenheit और Kelvin Formula',
+    subtitle: 'Temperature convert करें — formula, examples, और quick reference chart के साथ',
+    metaTitle: 'Temperature Converter — Celsius to Fahrenheit Formula (Free Hindi Guide)',
+    metaDescription: 'Celsius, Fahrenheit, Kelvin में temperature convert करें। Formula, step-by-step examples, और common temperatures की reference table। Free online tool।',
+    targetKeyword: 'temperature converter',
+    secondaryKeywords: ['celsius to fahrenheit formula', 'temperature conversion hindi', 'celsius fahrenheit convert kaise kare', '37 celsius to fahrenheit', 'temperature calculator'],
+    lastUpdated: '2026-03-13',
+    readingTime: '4 मिनट पढ़ें',
+    tags: ['Temperature', 'Converter', 'Celsius', 'Fahrenheit', 'Kelvin'],
+    intro: `<p>विदेश का weather forecast check करना हो, American recipe follow करनी हो, या science का कोई concept समझना हो — temperature conversion बहुत काम आती है।</p>
+<p>Celsius, Fahrenheit, और Kelvin — तीनों scales के बीच convert करना इस guide में आसानी से सीखें।</p>`,
+    sections: [
+      {
+        id: 'three-scales',
+        title: 'तीन Temperature Scales',
+        content: `<table>
+  <thead><tr><th>Scale</th><th>Zero Point</th><th>Water Boiling Point</th><th>कहाँ Use</th></tr></thead>
+  <tbody>
+    <tr><td>Celsius (°C)</td><td>0°C = पानी जमता है</td><td>100°C</td><td>India, पूरी दुनिया</td></tr>
+    <tr><td>Fahrenheit (°F)</td><td>32°F = पानी जमता है</td><td>212°F</td><td>USA</td></tr>
+    <tr><td>Kelvin (K)</td><td>0K = absolute zero (−273.15°C)</td><td>373.15K</td><td>Science</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Kelvin में degree symbol नहीं</strong><p>"300 K" सही है, "300°K" गलत। Kelvin absolute scale है।</p></div>`,
+      },
+      {
+        id: 'formulas',
+        title: 'Conversion Formulas',
+        content: `<table>
+  <thead><tr><th>Convert</th><th>Formula</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>°C → °F</td><td>°F = (°C × 9/5) + 32</td><td>100°C → 212°F</td></tr>
+    <tr><td>°F → °C</td><td>°C = (°F − 32) × 5/9</td><td>98.6°F → 37°C</td></tr>
+    <tr><td>°C → K</td><td>K = °C + 273.15</td><td>0°C → 273.15K</td></tr>
+    <tr><td>K → °C</td><td>°C = K − 273.15</td><td>373.15K → 100°C</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Mental math shortcut</strong><p>Celsius to Fahrenheit rough estimate: Celsius को double करें और 30 add करें। 20°C → 40+30 = 70°F (actual 68°F)। Approximate answer के लिए काम करता है।</p></div>`,
+      },
+      {
+        id: 'reference-chart',
+        title: 'Common Temperatures — Reference Chart',
+        content: `<table>
+  <thead><tr><th>Description</th><th>Celsius</th><th>Fahrenheit</th></tr></thead>
+  <tbody>
+    <tr><td>पानी जमता है</td><td>0°C</td><td>32°F</td></tr>
+    <tr><td>Room temperature</td><td>20–22°C</td><td>68–72°F</td></tr>
+    <tr><td>Normal body temperature</td><td>37°C</td><td>98.6°F</td></tr>
+    <tr><td>Fever</td><td>38°C+</td><td>100.4°F+</td></tr>
+    <tr><td>India में गर्मी</td><td>40–45°C</td><td>104–113°F</td></tr>
+    <tr><td>Oven (baking)</td><td>180°C</td><td>356°F</td></tr>
+    <tr><td>पानी उबलता है</td><td>100°C</td><td>212°F</td></tr>
+  </tbody>
+</table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Temperature Converter खोलें', description: 'ToolsArena Temperature Converter open करें।' },
+      { title: 'Temperature value enter करें', description: 'Number type करें (negative values भी, e.g., −10)।' },
+      { title: 'Source scale select करें', description: 'Celsius, Fahrenheit, या Kelvin choose करें।' },
+      { title: 'सभी conversions देखें', description: 'तीनों scales में values instantly दिखती हैं।' },
+      { title: 'Copy करें', description: 'जो value चाहिए वह copy करें।' },
+    ],
+    faqs: [
+      { question: '37 Celsius Fahrenheit में कितना होता है?', answer: '°F = (37 × 9/5) + 32 = 66.6 + 32 = 98.6°F। यह normal body temperature है। 38°C (100.4°F) से fever माना जाता है।' },
+      { question: 'Celsius को Fahrenheit में कैसे convert करें?', answer: 'Formula: °F = (°C × 9/5) + 32। Example: 25°C → (25 × 9/5) + 32 = 45 + 32 = 77°F।' },
+      { question: '100 Fahrenheit Celsius में कितना होता है?', answer: '°C = (100 − 32) × 5/9 = 68 × 5/9 = 37.78°C। यह body temperature के just ऊपर है इसीलिए 100°F को mild fever माना जाता है।' },
+      { question: 'America Fahrenheit और India Celsius क्यों use करता है?', answer: 'USA ने historical Fahrenheit scale (1724) retain की। UK ने 1970s में Celsius switch किया। India metric system follow करता है जिसमें Celsius standard है। Celsius scientifically intuitive है — water के properties पर based।' },
+      { question: 'Celsius और Kelvin में क्या फर्क है?', answer: 'Scale size same है (1°C = 1K difference), लेकिन zero point अलग है। Celsius zero = water freezing। Kelvin zero = −273.15°C (absolute zero — coldest possible temperature)। K = °C + 273.15।' },
+    ],
+    relatedGuides: ['unit-converter-guide', 'percentage-calculator-guide'],
+    toolCTA: {
+      heading: 'Free Temperature Converter — Celsius, Fahrenheit, Kelvin',
+      description: 'Temperature instantly convert करें। तीनों scales एक साथ। Common temperatures reference chart।',
+      buttonText: 'Temperature Convert करें',
+    },
+  },
+
 ];

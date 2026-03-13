@@ -1173,4 +1173,956 @@ button {
     },
   },
 
+  // ── TIER 1 GUIDES ─────────────────────────────────────────────
+
+  // ── T1-1. WORD TO PDF ──────────────────────────────────────────
+  {
+    slug: 'word-to-pdf-guide',
+    toolSlug: 'word-to-pdf',
+    category: 'pdf-tools',
+    title: 'Word to PDF कन्भर्ट गाइड: Free Online (2026)',
+    subtitle: 'Microsoft Word (.docx/.doc) फाइललाई PDF मा कन्भर्ट गर्ने सजिलो तरिका — Office बिना पनि।',
+    metaTitle: 'Word to PDF - नेपाली गाइड | निःशुल्क अनलाइन',
+    metaDescription: 'Word document लाई PDF मा कन्भर्ट गर्नुहोस् — निःशुल्क, तुरुन्त, र बिना software। Lok Sewa, TU application, सरकारी फारम सबैका लागि।',
+    targetKeyword: 'Word to PDF कन्भर्ट',
+    secondaryKeywords: ['word to pdf nepali', 'docx to pdf', 'word pdf बनाउने', 'lok sewa pdf', 'TU application pdf', 'word pdf free nepal', 'online word converter'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['PDF', 'Word', 'Document', 'Convert'],
+    intro: `<p><strong>Word to PDF कन्भर्ट</strong> गर्नु आजको डिजिटल युगमा अत्यन्त आवश्यक सीप हो। Lok Sewa आयोगमा आवेदन दिन, TU मा thesis submit गर्न, वा job application पठाउन — <strong>PDF format</strong> नै मानक हो।</p><p>हाम्रो निःशुल्क अनलाइन Word to PDF कन्भर्टरले .docx र .doc फाइललाई सेकेन्डमा PDF बनाउँछ — Microsoft Office install नगरी पनि।</p>`,
+    sections: [
+      {
+        id: 'word-pdf-kina',
+        title: 'Word लाई PDF मा किन कन्भर्ट गर्ने?',
+        content: `<ul><li><strong>Lok Sewa आयोग:</strong> सबै documents PDF format मा माग्छ।</li><li><strong>Formatting सुरक्षित:</strong> PDF खोल्दा formatting नबिग्रने।</li><li><strong>Print-ready:</strong> जुनसुकै printer मा exactly same देखिन्छ।</li><li><strong>Professional:</strong> Job applications र official submissions को लागि standard।</li><li><strong>Small size:</strong> Email attachments को लागि Word भन्दा छोटो हुन सक्छ।</li></ul>`,
+      },
+      {
+        id: 'convert-tarika',
+        title: 'Word to PDF कन्भर्ट गर्ने ५ तरिका',
+        content: `<table><tr><th>तरिका</th><th>Cost</th><th>Quality</th></tr><tr><td>ToolsArena Online</td><td>निःशुल्क</td><td>उत्कृष्ट</td></tr><tr><td>MS Word → Save As</td><td>License चाहिन्छ</td><td>उत्कृष्ट</td></tr><tr><td>Google Docs</td><td>निःशुल्क (account चाहिन्छ)</td><td>राम्रो</td></tr><tr><td>WPS Office</td><td>Free/Paid</td><td>राम्रो</td></tr><tr><td>LibreOffice</td><td>निःशुल्क (install चाहिन्छ)</td><td>राम्रो</td></tr></table>`,
+      },
+      {
+        id: 'lok-sewa-pdf',
+        title: 'Lok Sewa र सरकारी कागजात PDF',
+        content: `<p>Lok Sewa आयोगले online application मा PDF format मात्र accept गर्छ। SLC/SEE certificate, नागरिकता, र अन्य documents scan गरेर PDF बनाउनुपर्छ।</p><div class="callout-tip"><strong>Tip:</strong> PDF file size 200KB भन्दा कम राख्नुहोस् — upload limit अनुसार।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Tool खोल्नुहोस्', description: 'ToolsArena को Word to PDF tool खोल्नुहोस्।' },
+      { title: 'File Upload', description: 'आफ्नो .docx वा .doc file drag-and-drop वा browse गरेर upload गर्नुहोस्।' },
+      { title: 'Convert', description: '"Convert to PDF" button थिच्नुहोस्।' },
+      { title: 'Download', description: 'PDF file download गर्नुहोस् — formatting exactly same रहन्छ।' },
+    ],
+    faqs: [
+      { question: 'Word to PDF मा Nepali font देखिन्छ?', answer: 'हो, Preeti, Kantipur र Unicode Nepali font सहित सबै formatting सुरक्षित रहन्छ।' },
+      { question: 'File size limit छ?', answer: 'हाम्रो tool 50MB सम्मको file support गर्छ — सामान्य documents को लागि पर्याप्त।' },
+      { question: 'Mobile मा पनि काम गर्छ?', answer: 'हो, Android र iPhone दुवैमा browser बाट directly use गर्न सकिन्छ।' },
+      { question: 'Convert पछि PDF edit गर्न सकिन्छ?', answer: 'हो, ToolsArena को PDF Editor tool use गर्नुहोस् — text, image थप्न सकिन्छ।' },
+    ],
+    relatedGuides: ['pdf-to-word-guide', 'pdf-merge-guide', 'jpg-to-pdf-guide'],
+    toolCTA: {
+      heading: 'Word to PDF अहिले कन्भर्ट गर्नुहोस्',
+      description: 'निःशुल्क, तुरुन्त, कुनै software बिना। Formatting सुरक्षित।',
+      buttonText: 'Word to PDF खोल्नुहोस् →',
+    },
+  },
+
+  // ── T1-2. IMAGE BACKGROUND REMOVER ────────────────────────────
+  {
+    slug: 'image-background-remover-guide',
+    toolSlug: 'image-background-remover',
+    category: 'image-tools',
+    title: 'Image Background हटाउने गाइड: Free AI Tool (2026)',
+    subtitle: 'Photo को background एक click मा हटाउनुहोस् — Passport photo, CV, eCommerce सबैका लागि।',
+    metaTitle: 'Image Background हटाउने - AI Free Tool नेपाली',
+    metaDescription: 'Photo background हटाउनुहोस् AI ले — निःशुल्क र सेकेन्डमा। Passport photo, job CV, Daraz product photo, social media सबैका लागि। Transparent PNG download।',
+    targetKeyword: 'image background हटाउने',
+    secondaryKeywords: ['photo background remove nepali', 'passport photo background', 'cv photo nepal', 'daraz product photo', 'remove bg free', 'transparent background nepal', 'AI photo edit free'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['Image', 'Background Remove', 'AI', 'Photo'],
+    intro: `<p><strong>Image background हटाउने</strong> काम पहिले Photoshop सिकेर मात्र हुन्थ्यो। अहिले AI ले सेकेन्डमा गर्छ — बिल्कुल निःशुल्क।</p><p>Passport photo को white background, job CV को professional photo, Daraz/Hamrobazar को product photo — सबैका लागि हाम्रो AI Background Remover use गर्नुहोस्।</p>`,
+    sections: [
+      {
+        id: 'background-remove-use',
+        title: 'Background Remove कहाँ-कहाँ काम लाग्छ?',
+        content: `<table><tr><th>Use Case</th><th>Background</th></tr><tr><td>Passport Photo</td><td>White (#ffffff)</td></tr><tr><td>Lok Sewa Application</td><td>White वा Blue</td></tr><tr><td>Daraz/Sastodeal Product</td><td>Transparent/White</td></tr><tr><td>Job CV</td><td>Professional light</td></tr><tr><td>Social Media</td><td>Custom color</td></tr></table>`,
+      },
+      {
+        id: 'passport-photo-nepal',
+        title: 'नेपाली Passport Photo मानदण्ड',
+        content: `<ul><li><strong>Size:</strong> 35mm × 45mm</li><li><strong>Background:</strong> White</li><li><strong>Face:</strong> 70-80% frame</li><li><strong>Resolution:</strong> 300 DPI</li><li><strong>Glasses:</strong> हटाउनुपर्छ</li></ul><div class="callout-tip"><strong>Note:</strong> Department of Passports को latest guidelines अनुसार white background अनिवार्य।</div>`,
+      },
+      {
+        id: 'ecommerce-product',
+        title: 'Daraz र eCommerce Product Photos',
+        content: `<p>Daraz Nepal, Sastodeal, र Hamrobazar मा product listing को लागि white background अनिवार्य छ। Professional product photos बनाउन background remove गरेर white background थप्नुहोस्।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Photo Upload', description: 'आफ्नो photo drag-and-drop वा click गरेर upload गर्नुहोस्।' },
+      { title: 'AI Processing', description: 'AI ले automatically background detect र remove गर्छ।' },
+      { title: 'Review', description: 'Preview हेर्नुहोस् — edges ठीक छन् कि छैनन्।' },
+      { title: 'Background थप्नुहोस् (optional)', description: 'White, color, वा custom background थप्नुहोस्।' },
+      { title: 'Download', description: 'Transparent PNG वा background-added image download गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Passport photo को लागि suitable छ?', answer: 'हो, white background थपेर professional passport photo बनाउन सकिन्छ। तर official passport application को लागि studio photo नै recommended।' },
+      { question: 'Hair र complex edges ठीकसँग remove हुन्छ?', answer: 'हाम्रो AI hair, fur, र complex edges राम्रोसँग handle गर्छ। तर very detailed backgrounds मा manual touch-up चाहिन सक्छ।' },
+      { question: 'Free मा कति photos process गर्न सकिन्छ?', answer: 'Unlimited — कुनै daily limit छैन, कुनै signup चाहिँदैन।' },
+      { question: 'Output quality कस्तो हुन्छ?', answer: 'Original resolution मा transparent PNG download हुन्छ — print quality।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'photo-effects-guide'],
+    toolCTA: {
+      heading: 'Background अहिले हटाउनुहोस् — AI Free Tool',
+      description: 'Passport, CV, product photo — सेकेन्डमा professional background remove।',
+      buttonText: 'Background Remover खोल्नुहोस् →',
+    },
+  },
+
+  // ── T1-3. PDF MERGE ────────────────────────────────────────────
+  {
+    slug: 'pdf-merge-guide',
+    toolSlug: 'pdf-merge',
+    category: 'pdf-tools',
+    title: 'PDF Merge गाइड: Multiple PDF एकमा जोड्ने (2026)',
+    subtitle: 'धेरै PDF files लाई एउटा document मा merge गर्नुहोस् — निःशुल्क र सेकेन्डमा।',
+    metaTitle: 'PDF Merge - PDF जोड्ने निःशुल्क अनलाइन टूल',
+    metaDescription: 'Multiple PDF files एउटामा merge गर्नुहोस् — निःशुल्क। Lok Sewa documents, university certificates, office reports सबैका लागि। Online, कुनै software बिना।',
+    targetKeyword: 'PDF merge गर्ने',
+    secondaryKeywords: ['pdf jod nepal', 'combine pdf nepali', 'merge pdf free', 'lok sewa documents merge', 'pdf combine online', 'multiple pdf एउटा'],
+    lastUpdated: '2026-03-12',
+    readingTime: '४ मिनेट पढ्ने',
+    tags: ['PDF', 'Merge', 'Document'],
+    intro: `<p><strong>PDF merge</strong> भनेको धेरै PDF files लाई एउटा single document मा जोड्नु हो। Lok Sewa आयोगको online application मा धेरै documents एउटै PDF मा upload गर्नुपर्दा, university admission मा certificates compile गर्दा — PDF merge अत्यन्त उपयोगी हुन्छ।</p>`,
+    sections: [
+      {
+        id: 'pdf-merge-use',
+        title: 'PDF Merge कहाँ उपयोगी छ?',
+        content: `<ul><li><strong>Lok Sewa आवेदन:</strong> नागरिकता, SLC certificate, अनुभव सबै एउटै PDF मा।</li><li><strong>बैंक KYC:</strong> ID, address proof, photo एउटा file मा।</li><li><strong>University Admission:</strong> SLC, +2, degree सबै compile।</li><li><strong>Office Reports:</strong> Monthly reports एउटै document मा।</li><li><strong>Visa Application:</strong> Embassy documents एउटा PDF मा।</li></ul>`,
+      },
+      {
+        id: 'file-size-tip',
+        title: 'Merge पछि File Size व्यवस्थापन',
+        content: `<p>Merge गरेपछि file size ठूलो हुन सक्छ। Upload limit भएमा ToolsArena को PDF Compressor use गर्नुहोस् — quality नगुमाई size घटाउन सकिन्छ।</p><div class="callout-tip"><strong>Lok Sewa tip:</strong> Scan quality 150-200 DPI राख्नुहोस् — file small हुन्छ, तर readable।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF files Upload', description: 'Merge गर्नुपर्ने सबै PDF files upload गर्नुहोस्।' },
+      { title: 'Order मिलाउनुहोस्', description: 'Drag-and-drop गरेर page order मिलाउनुहोस्।' },
+      { title: 'Merge', description: '"Merge PDF" button थिच्नुहोस्।' },
+      { title: 'Download', description: 'Combined PDF download गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'कतिवटा PDF files merge गर्न सकिन्छ?', answer: 'ToolsArena मा unlimited files merge गर्न सकिन्छ — कुनै limit छैन।' },
+      { question: 'Page order change गर्न सकिन्छ?', answer: 'हो, drag-and-drop गरेर pages reorder गर्न सकिन्छ।' },
+      { question: 'Password-protected PDF merge हुन्छ?', answer: 'Password-protected PDF merge गर्न पहिले password हटाउनुपर्छ।' },
+      { question: 'Merge पछि quality घट्छ?', answer: 'होइन, original quality सुरक्षित रहन्छ।' },
+    ],
+    relatedGuides: ['pdf-split-guide', 'word-to-pdf-guide', 'pdf-to-word-guide'],
+    toolCTA: {
+      heading: 'PDF Merge अहिले गर्नुहोस् — निःशुल्क',
+      description: 'Multiple PDFs एउटामा जोड्नुहोस् — सेकेन्डमा, कुनै software बिना।',
+      buttonText: 'PDF Merge Tool खोल्नुहोस् →',
+    },
+  },
+
+  // ── T1-4. PDF TO WORD ──────────────────────────────────────────
+  {
+    slug: 'pdf-to-word-guide',
+    toolSlug: 'pdf-to-word',
+    category: 'pdf-tools',
+    title: 'PDF to Word कन्भर्ट गाइड: Edit गर्न सकिने (2026)',
+    subtitle: 'PDF document लाई editable Word file मा कन्भर्ट गर्नुहोस् — formatting सहित।',
+    metaTitle: 'PDF to Word - PDF कन्भर्ट गर्ने निःशुल्क अनलाइन',
+    metaDescription: 'PDF लाई Word (.docx) मा कन्भर्ट गर्नुहोस् — edit गर्न, text copy गर्न। Scanned PDF OCR support। निःशुल्क, तुरुन्त।',
+    targetKeyword: 'PDF to Word कन्भर्ट',
+    secondaryKeywords: ['pdf word nepali', 'pdf edit garne', 'pdf to docx free', 'scanned pdf to word', 'pdf text copy', 'pdf converter nepal'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['PDF', 'Word', 'Convert', 'Edit'],
+    intro: `<p><strong>PDF to Word कन्भर्ट</strong> गर्नु तब चाहिन्छ जब PDF document edit गर्नुपर्छ। Government notice, university circular, वा office document PDF मा आउँछ — तर content copy गर्न वा edit गर्न Word file चाहिन्छ।</p>`,
+    sections: [
+      {
+        id: 'pdf-word-kina',
+        title: 'PDF to Word किन चाहिन्छ?',
+        content: `<ul><li><strong>Edit गर्न:</strong> PDF direct edit हुँदैन — Word मा कन्भर्ट गरेर edit गर्नुहोस्।</li><li><strong>Text copy:</strong> Scanned PDF बाट text extract गर्न।</li><li><strong>Template बनाउन:</strong> Government forms Word मा कन्भर्ट गरेर reuse।</li><li><strong>Translation:</strong> Document translate गर्न text चाहिन्छ।</li></ul>`,
+      },
+      {
+        id: 'scanned-pdf',
+        title: 'Scanned PDF र OCR',
+        content: `<p>Scanned PDF (photo of a document) मा text directly copy हुँदैन। OCR (Optical Character Recognition) technology ले image बाट text read गर्छ।</p><p><strong>नेपाली Devanagari OCR:</strong> हाम्रो tool नेपाली र अंग्रेजी दुवै text recognize गर्छ — तर accuracy scan quality मा निर्भर गर्छ।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF Upload', description: 'PDF file upload गर्नुहोस्।' },
+      { title: 'Convert', description: '"Convert to Word" button थिच्नुहोस्।' },
+      { title: 'Download', description: '.docx file download गर्नुहोस्।' },
+      { title: 'Edit', description: 'Word, Google Docs, वा WPS Office मा open गरेर edit गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Nepali font PDF to Word convert हुन्छ?', answer: 'Unicode Nepali (Noto Sans Devanagari) राम्रोसँग convert हुन्छ। Legacy fonts (Preeti, Kantipur) मा conversion accurate नहुन सक्छ।' },
+      { question: 'Tables र images convert हुन्छन्?', answer: 'हो, tables र embedded images सहित convert हुन्छ — formatting possible हदसम्म maintain हुन्छ।' },
+      { question: 'Scanned PDF को accuracy कति हुन्छ?', answer: '300 DPI scan को OCR accuracy 90%+ हुन्छ। 150 DPI मा accuracy घट्छ।' },
+    ],
+    relatedGuides: ['word-to-pdf-guide', 'pdf-merge-guide', 'pdf-to-excel-guide'],
+    toolCTA: {
+      heading: 'PDF to Word अहिले कन्भर्ट गर्नुहोस्',
+      description: 'Edit गर्न सकिने Word file — formatting सहित। निःशुल्क।',
+      buttonText: 'PDF to Word खोल्नुहोस् →',
+    },
+  },
+
+  // ── T1-5. JPG TO PDF ───────────────────────────────────────────
+  {
+    slug: 'jpg-to-pdf-guide',
+    toolSlug: 'jpg-to-pdf',
+    category: 'pdf-tools',
+    title: 'JPG to PDF कन्भर्ट गाइड: Photo लाई PDF बनाउने (2026)',
+    subtitle: 'Photos र images लाई PDF document मा कन्भर्ट गर्नुहोस् — Lok Sewa र university documents को लागि।',
+    metaTitle: 'JPG to PDF - Photo PDF बनाउने निःशुल्क टूल',
+    metaDescription: 'JPG, PNG, WEBP images लाई PDF मा कन्भर्ट गर्नुहोस् — निःशुल्क। Lok Sewa documents, citizenship scan, certificates सबै PDF बनाउनुहोस्।',
+    targetKeyword: 'JPG to PDF कन्भर्ट',
+    secondaryKeywords: ['image to pdf nepali', 'photo pdf banaune', 'jpg pdf free nepal', 'citizenship pdf', 'scan to pdf nepal', 'photo document pdf'],
+    lastUpdated: '2026-03-12',
+    readingTime: '४ मिनेट पढ्ने',
+    tags: ['JPG', 'PDF', 'Image', 'Convert'],
+    intro: `<p>Mobile मा photo खिचेर <strong>JPG to PDF</strong> बनाउनु — Lok Sewa documents submit गर्न, बैंकमा KYC दिन, वा university admission को लागि certificates PDF बनाउन सबैभन्दा सजिलो तरिका हो।</p>`,
+    sections: [
+      {
+        id: 'jpg-pdf-use-cases',
+        title: 'JPG to PDF कहाँ-कहाँ चाहिन्छ?',
+        content: `<table><tr><th>Document</th><th>उपयोग</th></tr><tr><td>नागरिकता/Passport</td><td>Lok Sewa, Bank KYC</td></tr><tr><td>SLC/SEE certificate</td><td>College admission</td></tr><tr><td>Marksheet</td><td>University, Job</td></tr><tr><td>Property documents</td><td>Bank loan, legal</td></tr><tr><td>Medical reports</td><td>Insurance, embassy</td></tr></table>`,
+      },
+      {
+        id: 'scan-quality',
+        title: 'राम्रो Scan को लागि Tips',
+        content: `<ul><li>Natural light मा photo खिच्नुहोस् — flash avoid गर्नुहोस्।</li><li>Document flat surface मा राख्नुहोस्।</li><li>Camera directly माथिबाट (straight angle) लिनुहोस्।</li><li>Adobe Scan वा Microsoft Lens app use गर्नुहोस् — automatic crop हुन्छ।</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Images Upload', description: 'JPG, PNG वा WEBP files upload गर्नुहोस् — multiple images एकसाथ।' },
+      { title: 'Order मिलाउनुहोस्', description: 'Pages को order drag-and-drop गरेर set गर्नुहोस्।' },
+      { title: 'PDF बनाउनुहोस्', description: '"Convert to PDF" button थिच्नुहोस्।' },
+      { title: 'Download', description: 'PDF download गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Mobile photo directly PDF बन्छ?', answer: 'हो, mobile camera को JPEG photo directly upload गर्न सकिन्छ।' },
+      { question: 'Multiple photos एउटा PDF मा?', answer: 'हो, unlimited photos एउटै PDF मा merge गर्न सकिन्छ।' },
+      { question: 'PDF quality कस्तो हुन्छ?', answer: 'Original image quality maintain हुन्छ — print गर्दा clear देखिन्छ।' },
+    ],
+    relatedGuides: ['pdf-merge-guide', 'word-to-pdf-guide', 'pdf-compressor-guide'],
+    toolCTA: {
+      heading: 'JPG to PDF अहिले कन्भर्ट गर्नुहोस्',
+      description: 'Photos लाई PDF document मा — सेकेन्डमा, निःशुल्क।',
+      buttonText: 'JPG to PDF खोल्नुहोस् →',
+    },
+  },
+
+  // ── T1-6. GST CALCULATOR ───────────────────────────────────────
+  {
+    slug: 'gst-calculator-guide',
+    toolSlug: 'gst-calculator',
+    category: 'calculators',
+    title: 'GST / VAT Calculator गाइड: Nepal र India (2026)',
+    subtitle: 'VAT/GST calculation सजिलो बनाउनुहोस् — Nepal को 13% VAT र India को GST rates सबै।',
+    metaTitle: 'GST VAT Calculator - नेपाल India निःशुल्क',
+    metaDescription: 'GST र VAT calculate गर्नुहोस् — Nepal को 13% VAT, India को 5%/12%/18%/28% GST। Business, online shopping, tax calculation को लागि free calculator।',
+    targetKeyword: 'GST calculator Nepal',
+    secondaryKeywords: ['vat calculator nepal', 'nepal 13% vat', 'gst india calculator', 'tax calculation nepal', 'vat amount nepali', 'gst inclusive exclusive', 'व्यापार कर हिसाब'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['Tax', 'VAT', 'GST', 'Calculator'],
+    intro: `<p>नेपालमा <strong>VAT (Value Added Tax)</strong> — मूल्य अभिवृद्धि कर — 13% छ। भारतमा <strong>GST (Goods and Services Tax)</strong> 5%, 12%, 18%, वा 28% हुन्छ। Business owner, shopkeeper, वा online shopper — सबैलाई tax calculation जान्नु आवश्यक छ।</p>`,
+    sections: [
+      {
+        id: 'nepal-vat',
+        title: 'Nepal VAT (मूल्य अभिवृद्धि कर) — 13%',
+        content: `<p>Nepal मा VAT standard rate <strong>13%</strong> छ। VAT दर्ता गरेको व्यापारीहरूले customer बाट 13% VAT लिन्छन्।</p><table><tr><th>Amount</th><th>VAT 13%</th><th>Total</th></tr><tr><td>रु. 1,000</td><td>रु. 130</td><td>रु. 1,130</td></tr><tr><td>रु. 5,000</td><td>रु. 650</td><td>रु. 5,650</td></tr><tr><td>रु. 10,000</td><td>रु. 1,300</td><td>रु. 11,300</td></tr></table><div class="callout-tip"><strong>VAT Registration:</strong> वार्षिक turnover रु. 50 लाख भन्दा बढी भएमा VAT registration अनिवार्य।</div>`,
+      },
+      {
+        id: 'india-gst',
+        title: 'India GST Rates (2026)',
+        content: `<table><tr><th>GST Rate</th><th>Goods/Services</th></tr><tr><td>0%</td><td>Essential foods, health</td></tr><tr><td>5%</td><td>Basic foods, transport</td></tr><tr><td>12%</td><td>Processed food, phones</td></tr><tr><td>18%</td><td>Electronics, restaurants</td></tr><tr><td>28%</td><td>Luxury, automobiles</td></tr></table>`,
+      },
+      {
+        id: 'inclusive-exclusive',
+        title: 'Tax Inclusive vs Exclusive',
+        content: `<p><strong>Tax Exclusive:</strong> Price मा tax थपिन्छ। रु. 1,000 + 13% = रु. 1,130</p><p><strong>Tax Inclusive:</strong> Price भित्रै tax छ। रु. 1,130 मा tax = रु. 130</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Amount दर्ता', description: 'Base amount वा tax-inclusive amount दर्ता गर्नुहोस्।' },
+      { title: 'Tax Rate छान्नुहोस्', description: 'Nepal VAT 13% वा India GST rate छान्नुहोस्।' },
+      { title: 'Calculate', description: 'Tax amount र total automatically calculate हुन्छ।' },
+      { title: 'Result', description: 'Tax amount, base price, र total price देखिन्छ।' },
+    ],
+    faqs: [
+      { question: 'Nepal मा GST छ?', answer: 'Nepal मा GST छैन — VAT (मूल्य अभिवृद्धि कर) 13% छ। India को GST र Nepal को VAT concept उस्तै भए पनि फरक system हो।' },
+      { question: 'Online shopping मा VAT लाग्छ?', answer: 'हो, Nepal मा registered eCommerce platforms ले VAT charge गर्छन्।' },
+      { question: 'Bill मा VAT देखिएन भने?', answer: 'VAT registered व्यापारीले bill मा VAT छुट्टै देखाउनु पर्छ। नदेखाएमा IRD (Inland Revenue Department) मा complaint गर्न सकिन्छ।' },
+    ],
+    relatedGuides: ['compound-interest-guide', 'epf-calculator-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'GST/VAT अहिले Calculate गर्नुहोस्',
+      description: 'Nepal VAT र India GST — instant calculation, निःशुल्क।',
+      buttonText: 'GST Calculator खोल्नुहोस् →',
+    },
+  },
+
+  // ── TIER 2 GUIDES ─────────────────────────────────────────────
+
+  // ── T2-1. PDF TO EXCEL ─────────────────────────────────────────
+  {
+    slug: 'pdf-to-excel-guide',
+    toolSlug: 'pdf-to-excel',
+    category: 'pdf-tools',
+    title: 'PDF to Excel कन्भर्ट गाइड: Tables Extract गर्ने (2026)',
+    subtitle: 'PDF को tables र data लाई Excel spreadsheet मा कन्भर्ट गर्नुहोस् — bank statements, reports सबै।',
+    metaTitle: 'PDF to Excel - PDF Table कन्भर्ट निःशुल्क',
+    metaDescription: 'PDF tables लाई Excel मा कन्भर्ट गर्नुहोस् — bank statement, financial report, data extract। Free online tool, कुनै software बिना।',
+    targetKeyword: 'PDF to Excel कन्भर्ट',
+    secondaryKeywords: ['pdf excel nepali', 'bank statement excel', 'pdf table extract', 'pdf to xlsx free', 'financial report excel nepal'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['PDF', 'Excel', 'Data', 'Convert'],
+    intro: `<p>बैंकको statement PDF मा आउँछ — तर <strong>Excel मा analyze</strong> गर्नुपर्छ। Financial reports, attendance sheets, product lists — <strong>PDF to Excel</strong> convert गर्दा data directly editable हुन्छ।</p>`,
+    sections: [
+      {
+        id: 'pdf-excel-use',
+        title: 'PDF to Excel कहाँ काम लाग्छ?',
+        content: `<ul><li><strong>Bank Statement:</strong> NRB, commercial bank statements Excel मा analyze।</li><li><strong>Financial Reports:</strong> Company accounts, tax returns।</li><li><strong>Product Catalogs:</strong> Price lists data extract।</li><li><strong>Attendance Sheets:</strong> HR records Excel मा।</li></ul>`,
+      },
+      {
+        id: 'nepal-bank-statement',
+        title: 'Nepal Bank Statement Excel मा',
+        content: `<p>NIBL, Himalayan Bank, NMB, Prabhu Bank — सबैको PDF statement ToolsArena बाट Excel मा convert गर्न सकिन्छ। Transaction history, balance, dates — सबै Excel rows मा आउँछ।</p><div class="callout-tip"><strong>Tip:</strong> Convert गरेपछि duplicate rows check गर्नुहोस् — header rows sometimes repeat हुन्छन्।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF Upload', description: 'PDF file upload गर्नुहोस्।' },
+      { title: 'Convert', description: '"Convert to Excel" button थिच्नुहोस्।' },
+      { title: 'Download', description: '.xlsx file download गर्नुहोस्।' },
+      { title: 'Excel मा खोल्नुहोस्', description: 'Microsoft Excel, Google Sheets, वा LibreOffice Calc मा open गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Scanned PDF to Excel हुन्छ?', answer: 'OCR-enabled tool ले scanned PDF tables पनि extract गर्न सक्छ — accuracy scan quality मा भर पर्छ।' },
+      { question: 'Multiple pages को tables?', answer: 'हो, multi-page PDF को सबै tables एउटै Excel file मा आउँछ।' },
+      { question: 'Nepal bank statement accurately convert हुन्छ?', answer: 'Standard PDF format को bank statements राम्रोसँग convert हुन्छ।' },
+    ],
+    relatedGuides: ['pdf-to-word-guide', 'pdf-merge-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'PDF to Excel अहिले कन्भर्ट गर्नुहोस्',
+      description: 'Tables र data Excel मा — instant, निःशुल्क।',
+      buttonText: 'PDF to Excel खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-2. PDF SPLIT ────────────────────────────────────────────
+  {
+    slug: 'pdf-split-guide',
+    toolSlug: 'pdf-split',
+    category: 'pdf-tools',
+    title: 'PDF Split गाइड: PDF Pages अलग गर्ने (2026)',
+    subtitle: 'ठूलो PDF बाट specific pages extract गर्नुहोस् — निःशुल्क र सजिलो।',
+    metaTitle: 'PDF Split - PDF Pages अलग गर्ने निःशुल्क',
+    metaDescription: 'PDF split गर्नुहोस् — specific pages extract गर्नुहोस् वा multiple small files मा divide गर्नुहोस्। Government forms, reports, certificates — जरुरी pages मात्र लिनुहोस्।',
+    targetKeyword: 'PDF split गर्ने',
+    secondaryKeywords: ['pdf pages extract', 'pdf alag garne', 'split pdf free nepal', 'pdf divide online', 'pdf specific pages'],
+    lastUpdated: '2026-03-12',
+    readingTime: '४ मिनेट पढ्ने',
+    tags: ['PDF', 'Split', 'Pages'],
+    intro: `<p>100 pages को PDF बाट 3 pages मात्र चाहिएको छ? <strong>PDF split</strong> tool ले specific pages extract गर्न वा PDF लाई multiple files मा divide गर्न सकिन्छ।</p>`,
+    sections: [
+      {
+        id: 'split-use-cases',
+        title: 'PDF Split कहाँ उपयोगी छ?',
+        content: `<ul><li><strong>Government forms:</strong> Multi-page PDF बाट specific form pages।</li><li><strong>Book chapters:</strong> Textbook बाट chapter-wise split।</li><li><strong>Email attachments:</strong> Large PDF लाई small parts मा।</li><li><strong>Specific pages submit:</strong> Annual report बाट relevant pages।</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'PDF Upload', description: 'Split गर्नुपर्ने PDF upload गर्नुहोस्।' },
+      { title: 'Pages छान्नुहोस्', description: 'Extract गर्नुपर्ने page numbers specify गर्नुहोस् (e.g., 1-3, 5, 8-10)।' },
+      { title: 'Split', description: '"Split PDF" button थिच्नुहोस्।' },
+      { title: 'Download', description: 'Split PDF files download गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Non-consecutive pages extract हुन्छ?', answer: 'हो, "1,3,5-7" format मा pages specify गर्न सकिन्छ।' },
+      { question: 'Split पछि quality घट्छ?', answer: 'होइन, original quality maintain हुन्छ।' },
+      { question: 'Large PDF split हुन्छ?', answer: 'हो, 100MB सम्मको PDF split गर्न सकिन्छ।' },
+    ],
+    relatedGuides: ['pdf-merge-guide', 'word-to-pdf-guide', 'pdf-to-word-guide'],
+    toolCTA: {
+      heading: 'PDF Split अहिले गर्नुहोस्',
+      description: 'Specific pages extract गर्नुहोस् — सजिलो र निःशुल्क।',
+      buttonText: 'PDF Split Tool खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-3. COMPOUND INTEREST ────────────────────────────────────
+  {
+    slug: 'compound-interest-guide',
+    toolSlug: 'compound-interest-calculator',
+    category: 'calculators',
+    title: 'Compound Interest Calculator गाइड: Nepal Banks (2026)',
+    subtitle: 'चक्रवृद्धि ब्याज calculate गर्नुहोस् — Nepal को fixed deposit, savings account सबैका लागि।',
+    metaTitle: 'Compound Interest Calculator Nepal - चक्रवृद्धि ब्याज',
+    metaDescription: 'Compound interest calculate गर्नुहोस् — Nepal को bank FD, savings, मुद्दती निक्षेपका लागि। NRB regulated rates, annual/quarterly compounding। Free calculator।',
+    targetKeyword: 'compound interest calculator Nepal',
+    secondaryKeywords: ['chakrabridhi byaj nepal', 'fixed deposit calculator nepal', 'FD calculator NRB', 'savings interest nepali', 'bank interest calculator nepal', 'muddhati nikshepa calculator'],
+    lastUpdated: '2026-03-12',
+    readingTime: '७ मिनेट पढ्ने',
+    tags: ['Calculator', 'Investment', 'Bank', 'Interest'],
+    intro: `<p><strong>चक्रवृद्धि ब्याज (Compound Interest)</strong> — "ब्याजमा ब्याज" — धन बढाउने सबैभन्दा शक्तिशाली तरिका हो। Nepal को banks मा Fixed Deposit (मुद्दती निक्षेप) राख्दा compound interest पाउनुहुन्छ।</p>`,
+    sections: [
+      {
+        id: 'nepal-fd-rates',
+        title: 'Nepal Bank Fixed Deposit Rates (2026)',
+        content: `<table><tr><th>Period</th><th>Rate (approx)</th></tr><tr><td>3 months</td><td>6–8%</td></tr><tr><td>6 months</td><td>7–9%</td></tr><tr><td>1 year</td><td>8–11%</td></tr><tr><td>2 years</td><td>9–12%</td></tr></table><p><em>NRB regulated rates — actual rates bank अनुसार फरक। Check your bank for current rates.</em></p>`,
+      },
+      {
+        id: 'compound-vs-simple',
+        title: 'Compound vs Simple Interest',
+        content: `<p><strong>Simple Interest:</strong> रु. 1,00,000 × 10% × 5 years = रु. 50,000 interest</p><p><strong>Compound Interest (annual):</strong> रु. 1,00,000 at 10% for 5 years = रु. 61,051 interest</p><p>Difference: रु. 11,051 — compound interest बाट बढी कमाइ।</p>`,
+      },
+      {
+        id: 'investment-tips',
+        title: 'Nepal मा Smart Investment Tips',
+        content: `<ul><li><strong>Early शुरू गर्नुहोस्:</strong> 25 वर्षमा शुरू गरेको investment 35 मा शुरू भन्दा double हुन्छ।</li><li><strong>Regular deposit:</strong> Monthly SIP (Systematic Investment Plan) compound power दिन्छ।</li><li><strong>Tax efficiency:</strong> Cooperative र bank FD को tax treatment फरक — accountant सँग सल्लाह लिनुहोस्।</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Principal दर्ता', description: 'Initial investment amount दर्ता गर्नुहोस्।' },
+      { title: 'Interest Rate', description: 'Annual interest rate दर्ता गर्नुहोस् (bank rate)।' },
+      { title: 'Period', description: 'Investment duration (years/months) दर्ता गर्नुहोस्।' },
+      { title: 'Compounding', description: 'Annual, quarterly, वा monthly compounding छान्नुहोस्।' },
+      { title: 'Calculate', description: 'Final amount र interest instantly देखिन्छ।' },
+    ],
+    faqs: [
+      { question: 'Nepal को bank मा quarterly compounding हुन्छ?', answer: 'धेरै Nepal banks quarterly compound गर्छन् — bank को terms check गर्नुहोस्।' },
+      { question: 'Cooperative को ब्याज बढी हुन्छ?', answer: 'हो, cooperatives 12-15% सम्म दिन्छन् — तर risk पनि बढी। NRB regulated commercial banks safer छन्।' },
+      { question: 'FD तोड्दा penalty लाग्छ?', answer: 'हो, premature withdrawal मा 1-2% penalty हुन्छ — bank अनुसार फरक।' },
+    ],
+    relatedGuides: ['epf-calculator-guide', 'gst-calculator-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Compound Interest अहिले Calculate गर्नुहोस्',
+      description: 'FD, savings को exact return जान्नुहोस् — free calculator।',
+      buttonText: 'Compound Interest Calculator खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-4. IMAGE TO TEXT (OCR) ──────────────────────────────────
+  {
+    slug: 'image-to-text-guide',
+    toolSlug: 'image-to-text',
+    category: 'image-tools',
+    title: 'Image to Text (OCR) गाइड: Photo बाट Text निकाल्ने (2026)',
+    subtitle: 'Photos, screenshots, र scanned documents बाट text extract गर्नुहोस् — नेपाली र अंग्रेजी दुवै।',
+    metaTitle: 'Image to Text OCR - Photo बाट Text Free Nepal',
+    metaDescription: 'Image बाट text extract गर्नुहोस् — OCR technology ले। Nepali Devanagari, English दुवै। Scanned documents, screenshots, notice boards सबैका लागि।',
+    targetKeyword: 'image to text OCR Nepal',
+    secondaryKeywords: ['photo text extract nepali', 'ocr nepali devanagari', 'scan text copy nepal', 'image text copy free', 'nepali ocr tool', 'devanagari text recognition'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['OCR', 'Image', 'Text', 'Nepali'],
+    intro: `<p>Notice board को photo, book page scan, government circular screenshot — <strong>Image to Text (OCR)</strong> tool ले image बाट text extract गर्छ। Nepali Devanagari र English दुवै support।</p>`,
+    sections: [
+      {
+        id: 'ocr-use-nepal',
+        title: 'OCR को उपयोग नेपालमा',
+        content: `<ul><li><strong>Government notices:</strong> Notice board photo बाट text copy।</li><li><strong>Old documents digitize:</strong> Handwritten/typed documents digital बनाउन।</li><li><strong>Books/textbooks:</strong> Chapter scan गरेर text extract।</li><li><strong>Receipt/bills:</strong> Business records digitize।</li><li><strong>Screenshots:</strong> Social media posts, news text copy।</li></ul>`,
+      },
+      {
+        id: 'nepali-ocr-accuracy',
+        title: 'नेपाली OCR Accuracy',
+        content: `<p>नेपाली Devanagari OCR accuracy image quality मा निर्भर गर्छ:</p><table><tr><th>Condition</th><th>Accuracy</th></tr><tr><td>300 DPI clean scan</td><td>90-95%</td></tr><tr><td>Mobile photo, good light</td><td>80-90%</td></tr><tr><td>Low quality/blurry</td><td>60-70%</td></tr></table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Image Upload', description: 'Photo, screenshot वा scan upload गर्नुहोस्।' },
+      { title: 'Language छान्नुहोस्', description: 'Nepali, English, वा Both छान्नुहोस्।' },
+      { title: 'Extract', description: '"Extract Text" button थिच्नुहोस्।' },
+      { title: 'Copy/Edit', description: 'Extracted text copy गर्नुहोस् वा edit गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Handwritten नेपाली recognize हुन्छ?', answer: 'Standard typed Devanagari राम्रोसँग recognize हुन्छ। Handwriting recognition limited छ।' },
+      { question: 'Mixed language (Nepali + English) document?', answer: 'हो, हाम्रो OCR mixed language documents handle गर्छ।' },
+      { question: 'PDF बाट text extract गर्न?', answer: 'PDF to Word tool use गर्नुहोस् — better results हुन्छ।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'pdf-to-word-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Image बाट Text अहिले Extract गर्नुहोस्',
+      description: 'Nepali र English OCR — free, instant।',
+      buttonText: 'Image to Text खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-5. YOUTUBE THUMBNAIL DOWNLOADER ────────────────────────
+  {
+    slug: 'youtube-thumbnail-downloader-guide',
+    toolSlug: 'youtube-thumbnail-downloader',
+    category: 'social-media-tools',
+    title: 'YouTube Thumbnail Download गाइड: HD Quality (2026)',
+    subtitle: 'YouTube video को thumbnail download गर्नुहोस् — HD, Full HD, र 4K quality मा।',
+    metaTitle: 'YouTube Thumbnail Download - HD Free Nepal',
+    metaDescription: 'YouTube video thumbnail download गर्नुहोस् — HD/Full HD quality मा। Nepal YouTubers को thumbnail ideas, size guidelines, best practices। Free tool।',
+    targetKeyword: 'YouTube thumbnail download',
+    secondaryKeywords: ['youtube thumbnail download nepal', 'yt thumbnail hd free', 'youtube thumbnail size', 'nepal youtube channel', 'thumbnail downloader nepali', 'youtube thumbnail ideas'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['YouTube', 'Thumbnail', 'Download', 'Video'],
+    intro: `<p>Nepal मा YouTube channel बनाउने र content create गर्नेको संख्या दिनदिनै बढ्दैछ। <strong>YouTube thumbnail download</strong> गर्नु content creators को लागि reference material collect गर्न, competitors analyze गर्न, र thumbnail ideas लिन उपयोगी छ।</p>`,
+    sections: [
+      {
+        id: 'thumbnail-sizes',
+        title: 'YouTube Thumbnail Size Guidelines (2026)',
+        content: `<table><tr><th>Quality</th><th>Resolution</th><th>Use</th></tr><tr><td>maxresdefault</td><td>1280×720 (HD)</td><td>Best quality</td></tr><tr><td>hqdefault</td><td>480×360</td><td>Standard</td></tr><tr><td>mqdefault</td><td>320×180</td><td>Medium</td></tr><tr><td>sddefault</td><td>640×480</td><td>SD</td></tr></table><p><strong>Recommended:</strong> YouTube thumbnail 1280×720 pixels, 16:9 ratio, 2MB भन्दा कम।</p>`,
+      },
+      {
+        id: 'nepal-youtube',
+        title: 'Nepal YouTube Scene र Thumbnail Tips',
+        content: `<ul><li><strong>Face close-up:</strong> Nepali viewers face वाला thumbnails मा बढी click गर्छन्।</li><li><strong>Nepali text:</strong> Title thumbnail मा नेपालीमा लेख्दा local audience attract हुन्छ।</li><li><strong>Bright colors:</strong> Mobile screen मा bright thumbnails standout गर्छन्।</li><li><strong>Emotion:</strong> Surprise, excitement expressions काम गर्छन्।</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'URL Copy', description: 'YouTube video को URL copy गर्नुहोस्।' },
+      { title: 'Paste', description: 'Tool मा URL paste गर्नुहोस्।' },
+      { title: 'Quality छान्नुहोस्', description: 'HD, Full HD, वा available quality छान्नुहोस्।' },
+      { title: 'Download', description: 'Download button थिच्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Downloaded thumbnail use गर्न copyright issue हुन्छ?', answer: 'Others को thumbnail direct use नगर्नुहोस् — inspiration लिन use गर्नुस्। Reference को लागि download गर्नु OK।' },
+      { question: 'सबै videos को HD thumbnail available हुन्छ?', answer: 'पुराना videos मा HD thumbnail नहुन सक्छ — available highest quality automatically show हुन्छ।' },
+      { question: 'Shorts को thumbnail download हुन्छ?', answer: 'हो, YouTube Shorts को thumbnail पनि download गर्न सकिन्छ।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'photo-effects-guide'],
+    toolCTA: {
+      heading: 'YouTube Thumbnail अहिले Download गर्नुहोस्',
+      description: 'HD quality, instant download — free।',
+      buttonText: 'YouTube Thumbnail Downloader खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-6. BASE64 ENCODE/DECODE ─────────────────────────────────
+  {
+    slug: 'base64-encode-decode-guide',
+    toolSlug: 'base64-encoder-decoder',
+    category: 'developer-tools',
+    title: 'Base64 Encode/Decode गाइड: Developers को लागि (2026)',
+    subtitle: 'Base64 encoding र decoding — API development, data transmission, image embedding सबैका लागि।',
+    metaTitle: 'Base64 Encode Decode - Developer Tool Free Nepal',
+    metaDescription: 'Base64 encode र decode गर्नुहोस् — API, JWT tokens, image embedding, file transfer। Web developers र programmers को लागि free online tool।',
+    targetKeyword: 'Base64 encode decode',
+    secondaryKeywords: ['base64 encoder nepali', 'base64 decode online', 'api base64 nepal', 'jwt token decode', 'base64 image', 'developer tools nepal'],
+    lastUpdated: '2026-03-12',
+    readingTime: '६ मिनेट पढ्ने',
+    tags: ['Developer', 'Base64', 'Encoding', 'API'],
+    intro: `<p><strong>Base64</strong> encoding binary data लाई ASCII text मा convert गर्ने method हो। Web developers र programmers को daily workflow मा Base64 अत्यावश्यक छ — API responses, JWT tokens, image embedding, file attachments।</p>`,
+    sections: [
+      {
+        id: 'base64-kina',
+        title: 'Base64 किन use गरिन्छ?',
+        content: `<ul><li><strong>Email attachments:</strong> Binary files email मा text format मा send गर्न।</li><li><strong>API data:</strong> JSON payload मा binary data include गर्न।</li><li><strong>Image embedding:</strong> CSS/HTML मा image directly embed गर्न।</li><li><strong>JWT tokens:</strong> Authentication tokens Base64 encoded हुन्छन्।</li><li><strong>Data URLs:</strong> <code>data:image/png;base64,...</code></li></ul>`,
+      },
+      {
+        id: 'base64-example',
+        title: 'Base64 Encoding Example',
+        content: `<p><strong>Original:</strong> <code>Hello Nepal!</code></p><p><strong>Base64 Encoded:</strong> <code>SGVsbG8gTmVwYWwh</code></p><p>हर 3 bytes → 4 Base64 characters। Encoded string original भन्दा ~33% ठूलो हुन्छ।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Text वा Data', description: 'Encode गर्नुपर्ने text वा data box मा paste गर्नुहोस्।' },
+      { title: 'Encode/Decode', description: '"Encode" वा "Decode" button थिच्नुहोस्।' },
+      { title: 'Result Copy', description: 'Output copy गर्नुहोस् — one-click copy button available।' },
+    ],
+    faqs: [
+      { question: 'Base64 encryption हो?', answer: 'होइन! Base64 encoding हो, encryption होइन। Easily reversible छ — sensitive data को लागि proper encryption use गर्नुहोस्।' },
+      { question: 'Nepali text Base64 encode हुन्छ?', answer: 'हो, Unicode text (Devanagari सहित) Base64 encode/decode हुन्छ।' },
+      { question: 'Image to Base64?', answer: 'हो, image file upload गरेर Base64 data URL generate गर्न सकिन्छ।' },
+    ],
+    relatedGuides: ['url-encode-decode-guide', 'password-strength-guide', 'qr-code-generator-guide'],
+    toolCTA: {
+      heading: 'Base64 अहिले Encode/Decode गर्नुहोस्',
+      description: 'Fast, accurate, free — developers को लागि।',
+      buttonText: 'Base64 Tool खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-7. PASSWORD STRENGTH ────────────────────────────────────
+  {
+    slug: 'password-strength-guide',
+    toolSlug: 'password-strength-checker',
+    category: 'security-tools',
+    title: 'Password Strength Checker गाइड: Strong Password बनाउने (2026)',
+    subtitle: 'आफ्नो password कति strong छ जाँच्नुहोस् — र Nepal मा हुने cyber attacks बाट बच्नुहोस्।',
+    metaTitle: 'Password Strength Check - Strong Password Nepal',
+    metaDescription: 'Password strength check गर्नुहोस् — weak password थाहा पाउनुहोस् र strong password बनाउनुहोस्। Nepal मा बढ्दो cyber fraud बाट बच्नुहोस्। Free tool।',
+    targetKeyword: 'password strength checker Nepal',
+    secondaryKeywords: ['strong password nepali', 'password check free', 'cyber security nepal', 'nepal online fraud', 'secure password generator', 'password tips nepali'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['Security', 'Password', 'Cyber', 'Protection'],
+    intro: `<p>Nepal मा online banking, eSewa, Khalti, FonePay, social media — सबैका लागि <strong>strong password</strong> अत्यावश्यक छ। Weak password ले account hack हुन सक्छ र आर्थिक नोक्सान हुन सक्छ।</p>`,
+    sections: [
+      {
+        id: 'nepal-cyber-fraud',
+        title: 'Nepal मा Cyber Fraud र Password Security',
+        content: `<p>Nepal Police को Cyber Bureau अनुसार Nepal मा online fraud cases बर्सेनि बढ्दैछ। Common attacks:</p><ul><li><strong>Phishing:</strong> Fake eSewa/Khalti pages बाट password चोर्ने।</li><li><strong>Brute force:</strong> Simple passwords automatically try गरिन्छ।</li><li><strong>Dictionary attack:</strong> Common words र phrases try गरिन्छ।</li></ul>`,
+      },
+      {
+        id: 'strong-password-rules',
+        title: 'Strong Password बनाउने नियमहरू',
+        content: `<table><tr><th>Rule</th><th>Example</th></tr><tr><td>12+ characters</td><td>लामो = बढी secure</td></tr><tr><td>Uppercase + lowercase</td><td>Nepal vs NEPAL</td></tr><tr><td>Numbers</td><td>Nepal2026</td></tr><tr><td>Special characters</td><td>Nepal@2026!</td></tr><tr><td>Avoid personal info</td><td>आफ्नो नाम, जन्म मिति avoid</td></tr></table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Password दर्ता', description: 'Check गर्नुपर्ने password box मा type गर्नुहोस्।' },
+      { title: 'Strength देख्नुहोस्', description: 'Weak, Fair, Good, Strong, Very Strong indicator देखिन्छ।' },
+      { title: 'Suggestions', description: 'Password improve गर्ने suggestions हेर्नुहोस्।' },
+      { title: 'Strong Password बनाउनुहोस्', description: 'Generator button use गरेर secure password create गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Tool मा password safe छ?', answer: 'हो, password हाम्रा servers मा store हुँदैन — browser मा नै check हुन्छ।' },
+      { question: 'नेपाली characters password मा use गर्न सकिन्छ?', answer: 'Technically possible, तर compatibility issues हुन सक्छ — English characters नै recommended।' },
+      { question: 'एउटै password सबैतिर use गर्न हुन्छ?', answer: 'हुँदैन! हर account को लागि unique password — Password Manager (Bitwarden, free) use गर्नुहोस्।' },
+    ],
+    relatedGuides: ['base64-encode-decode-guide', 'url-encode-decode-guide', 'qr-code-generator-guide'],
+    toolCTA: {
+      heading: 'Password Strength अहिले Check गर्नुहोस्',
+      description: 'Strong password बनाउनुहोस् — cyber fraud बाट बच्नुहोस्।',
+      buttonText: 'Password Checker खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-8. URL ENCODE/DECODE ────────────────────────────────────
+  {
+    slug: 'url-encode-decode-guide',
+    toolSlug: 'url-encoder-decoder',
+    category: 'developer-tools',
+    title: 'URL Encode/Decode गाइड: Web Developers को लागि (2026)',
+    subtitle: 'URLs मा special characters र Nepali text encode गर्नुहोस् — web development र SEO को लागि।',
+    metaTitle: 'URL Encode Decode - Nepali URL Tool Free',
+    metaDescription: 'URL encode र decode गर्नुहोस् — Nepali Devanagari URLs, query parameters, special characters। Web developers र SEO professionals को लागि free tool।',
+    targetKeyword: 'URL encode decode',
+    secondaryKeywords: ['url encoding nepali', 'nepali url encode', 'percent encoding', 'query string encode', 'url decode online nepal', 'nepali seo url'],
+    lastUpdated: '2026-03-12',
+    readingTime: '५ मिनेट पढ्ने',
+    tags: ['URL', 'Developer', 'SEO', 'Encoding'],
+    intro: `<p>URL मा space, Nepali text, वा special characters (<code>&, ?, =, #</code>) directly use गर्न मिल्दैन — <strong>URL encoding</strong> ले यी characters लाई <code>%20</code>, <code>%26</code> जस्तो format मा convert गर्छ।</p>`,
+    sections: [
+      {
+        id: 'url-encode-kina',
+        title: 'URL Encoding किन चाहिन्छ?',
+        content: `<ul><li><strong>Nepali URLs:</strong> नेपाली भाषाको website URLs encode गर्नुपर्छ।</li><li><strong>Search queries:</strong> "नेपाल खाना" → <code>%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2...</code></li><li><strong>API parameters:</strong> Query strings safe pass गर्न।</li><li><strong>Form data:</strong> HTML forms automatically encode गर्छन्।</li></ul>`,
+      },
+      {
+        id: 'nepali-url-seo',
+        title: 'Nepali Website URL र SEO',
+        content: `<p>Nepali language websites को URLs Devanagari मा राख्दा local SEO better हुन्छ। Google Nepali URLs support गर्छ — तर properly encoded हुनुपर्छ।</p><div class="callout-tip"><strong>Best practice:</strong> Nepali content को लागि slug मा romanized Nepali वा proper Unicode URL use गर्नुहोस्।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Text दर्ता', description: 'Encode गर्नुपर्ने URL वा text paste गर्नुहोस्।' },
+      { title: 'Encode/Decode', description: '"Encode" वा "Decode" button थिच्नुहोस्।' },
+      { title: 'Result Copy', description: 'Encoded/decoded URL copy गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Nepali text URL encode कसरी गर्ने?', answer: 'Tool मा Nepali text paste गर्नुहोस् → Encode button → percent-encoded URL पाउनुहुन्छ।' },
+      { question: 'URL Encoding र Base64 फरक छ?', answer: 'हो, URL encoding special chars लाई % notation मा, Base64 ले binary data लाई ASCII मा convert गर्छ। Different use cases।' },
+      { question: 'Full URL वा query parameter मात्र encode?', answer: 'Query parameters मात्र encode गर्नुहोस् — full URL encode गर्दा slashes र domain पनि encode हुन्छन्।' },
+    ],
+    relatedGuides: ['base64-encode-decode-guide', 'password-strength-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'URL अहिले Encode/Decode गर्नुहोस्',
+      description: 'Nepali URLs, query strings — instant, free।',
+      buttonText: 'URL Encoder खोल्नुहोस् →',
+    },
+  },
+
+  // ── T2-9. EPF CALCULATOR ───────────────────────────────────────
+  {
+    slug: 'epf-calculator-guide',
+    toolSlug: 'epf-calculator',
+    category: 'calculators',
+    title: 'EPF/PF Calculator गाइड: Nepal Provident Fund (2026)',
+    subtitle: 'Nepal को Provident Fund र Social Security Fund (SSF) calculator — retirement savings जान्नुहोस्।',
+    metaTitle: 'EPF PF Calculator Nepal - SSF Provident Fund',
+    metaDescription: 'Nepal Provident Fund र SSF (Social Security Fund) calculate गर्नुहोस्। Employee र employer contribution, interest, maturity amount। Government employees, private sector सबैका लागि।',
+    targetKeyword: 'EPF calculator Nepal',
+    secondaryKeywords: ['provident fund nepal', 'ssf calculator nepal', 'social security fund nepal', 'pf calculation nepal', 'retirement savings nepali', 'karmachari sanchay kosh', 'EPF nepal employee'],
+    lastUpdated: '2026-03-12',
+    readingTime: '७ मिनेट पढ्ने',
+    tags: ['EPF', 'Provident Fund', 'Retirement', 'Nepal'],
+    intro: `<p>Nepal मा <strong>Provident Fund (PF)</strong> कर्मचारीको retirement savings को मुख्य आधार हो। Government employees को Karmachari Sanchay Kosh (KSK) र private sector को Social Security Fund (SSF) मा contribute गर्नुपर्छ।</p>`,
+    sections: [
+      {
+        id: 'nepal-pf-system',
+        title: 'Nepal को Provident Fund System',
+        content: `<table><tr><th>System</th><th>Employee</th><th>Employer</th></tr><tr><td>Karmachari Sanchay Kosh (KSK)</td><td>10%</td><td>10%</td></tr><tr><td>Social Security Fund (SSF)</td><td>11%</td><td>20%</td></tr><tr><td>Citizen Investment Trust (CIT)</td><td>Varies</td><td>Varies</td></tr></table><p>SSF includes pension, gratuity, accident, health, maternity benefits।</p>`,
+      },
+      {
+        id: 'ssf-benefits',
+        title: 'Social Security Fund (SSF) Benefits',
+        content: `<ul><li><strong>Pension:</strong> 60 वर्ष पछि monthly pension।</li><li><strong>Gratuity:</strong> Service end मा lump sum।</li><li><strong>Medical:</strong> Health insurance coverage।</li><li><strong>Accident:</strong> Workplace accident compensation।</li><li><strong>Maternity:</strong> Maternity leave benefits।</li></ul>`,
+      },
+      {
+        id: 'pf-calculation',
+        title: 'PF Calculation Example',
+        content: `<p><strong>Monthly Salary:</strong> रु. 50,000</p><p><strong>KSK Employee Contribution:</strong> रु. 5,000 (10%)</p><p><strong>KSK Employer Contribution:</strong> रु. 5,000 (10%)</p><p><strong>Total Monthly:</strong> रु. 10,000</p><p><strong>Annual:</strong> रु. 1,20,000 + interest</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Salary दर्ता', description: 'Monthly basic salary दर्ता गर्नुहोस्।' },
+      { title: 'System छान्नुहोस्', description: 'KSK, SSF, वा CIT छान्नुहोस्।' },
+      { title: 'Service Duration', description: 'कति वर्ष service गर्नुभयो/गर्नुहुन्छ specify गर्नुहोस्।' },
+      { title: 'Calculate', description: 'Total PF amount, interest र maturity amount देखिन्छ।' },
+    ],
+    faqs: [
+      { question: 'SSF र KSK मा के फरक छ?', answer: 'KSK government/semi-government employees को लागि। SSF private sector को लागि। SSF मा health, accident, maternity benefits थप छन्।' },
+      { question: 'PF interest rate कति छ?', answer: 'KSK ले बर्सेनि interest rate announce गर्छ — recently 8-9% को हाराहारीमा।' },
+      { question: 'Early withdrawal गर्न सकिन्छ?', answer: 'Service terminate गरेपछि वा specific circumstances मा withdraw गर्न सकिन्छ — penalties हुन सक्छन्।' },
+    ],
+    relatedGuides: ['compound-interest-guide', 'gst-calculator-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Provident Fund अहिले Calculate गर्नुहोस्',
+      description: 'KSK, SSF maturity amount जान्नुहोस् — free calculator।',
+      buttonText: 'EPF Calculator खोल्नुहोस् →',
+    },
+  },
+
+  // ── TIER 3 GUIDES ─────────────────────────────────────────────
+
+  // ── T3-1. IMAGE FLIP ROTATE ────────────────────────────────────
+  {
+    slug: 'image-flip-rotate-guide',
+    toolSlug: 'image-flip-rotate',
+    category: 'image-tools',
+    title: 'Image Flip र Rotate गाइड: Photo Orientation Fix (2026)',
+    subtitle: 'Photo तेर्सो/उल्टो भएको fix गर्नुहोस् — flip, rotate, straighten सबै एक tool मा।',
+    metaTitle: 'Image Flip Rotate - Photo Orientation Fix Free',
+    metaDescription: 'Image flip र rotate गर्नुहोस् — उल्टो photo fix, 90°/180°/270° rotate, horizontal/vertical flip। Free online tool, mobile friendly।',
+    targetKeyword: 'image flip rotate',
+    secondaryKeywords: ['photo rotate free', 'image ulto fix', 'flip image horizontal', 'photo orientation fix', 'rotate image online free', 'image straighten'],
+    lastUpdated: '2026-03-12',
+    readingTime: '३ मिनेट पढ्ने',
+    tags: ['Image', 'Rotate', 'Flip', 'Photo'],
+    intro: `<p>Mobile मा photo खिच्दा कहिलेकाहीँ photo <strong>उल्टो वा sideways</strong> आउँछ। <strong>Image rotate र flip</strong> tool ले photo orientation सही गर्न सकिन्छ — social media, documents, presentations सबैका लागि।</p>`,
+    sections: [
+      {
+        id: 'rotate-vs-flip',
+        title: 'Rotate र Flip मा के फरक छ?',
+        content: `<ul><li><strong>Rotate 90°:</strong> Photo 90 degree घुमाउनुहोस् (clockwise वा counter-clockwise)।</li><li><strong>Rotate 180°:</strong> Photo completely उल्टो पार्नुहोस्।</li><li><strong>Horizontal Flip:</strong> Mirror image — left-right swap।</li><li><strong>Vertical Flip:</strong> Top-bottom swap।</li></ul>`,
+      },
+      {
+        id: 'exif-orientation',
+        title: 'EXIF Orientation र Auto-Rotation',
+        content: `<p>Modern smartphones EXIF metadata मा photo orientation save गर्छन्। तर केही apps र platforms EXIF read नगर्दा photo sideways देखिन्छ।</p><div class="callout-tip"><strong>Fix:</strong> ToolsArena को rotate tool ले EXIF strip गरेर correct orientation PDF/PNG बनाउँछ।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Image Upload', description: 'Photo upload गर्नुहोस्।' },
+      { title: 'Action छान्नुहोस्', description: 'Rotate 90°, 180°, Flip Horizontal, वा Flip Vertical छान्नुहोस्।' },
+      { title: 'Preview', description: 'Result preview हेर्नुहोस्।' },
+      { title: 'Download', description: 'Corrected image download गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Quality घट्छ?', answer: 'होइन, rotate/flip operation lossless छ — quality exactly same।' },
+      { question: 'Multiple images एकसाथ rotate?', answer: 'Currently एक पटकमा एउटा image। Bulk rotation को लागि desktop software use गर्नुहोस्।' },
+      { question: 'Video rotate गर्न सकिन्छ?', answer: 'यो tool image को लागि मात्र। Video rotation को लागि separate video editor use गर्नुहोस्।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'image-background-remover-guide'],
+    toolCTA: {
+      heading: 'Image अहिले Flip/Rotate गर्नुहोस्',
+      description: 'Photo orientation fix गर्नुहोस् — instant, free।',
+      buttonText: 'Image Flip Rotate खोल्नुहोस् →',
+    },
+  },
+
+  // ── T3-2. NUMBER TO WORDS ──────────────────────────────────────
+  {
+    slug: 'number-to-words-guide',
+    toolSlug: 'number-to-words',
+    category: 'text-tools',
+    title: 'Number to Words गाइड: अंकलाई शब्दमा (2026)',
+    subtitle: 'संख्यालाई शब्दमा लेख्नुहोस् — नेपाली र अंग्रेजी दुवैमा। Cheque, legal documents, banking।',
+    metaTitle: 'Number to Words - अंक शब्दमा नेपाली English',
+    metaDescription: 'Number लाई words मा convert गर्नुहोस् — नेपाली र English दुवैमा। Cheque writing, legal documents, banking forms को लागि। Lakh, Crore, Arab system support।',
+    targetKeyword: 'number to words Nepali',
+    secondaryKeywords: ['anka shabdama nepali', 'cheque words nepali', 'number nepali words', 'lakh crore words', 'rupees in words nepal', 'banking form words'],
+    lastUpdated: '2026-03-12',
+    readingTime: '४ मिनेट पढ्ने',
+    tags: ['Number', 'Words', 'Nepali', 'Banking'],
+    intro: `<p>बैंकमा cheque भर्दा, legal documents तयार गर्दा, वा government forms भर्दा — <strong>अंकलाई शब्दमा</strong> लेख्नु आवश्यक हुन्छ। नेपाली number system (Lakh, Crore, Arab) अंग्रेजी भन्दा फरक छ।</p>`,
+    sections: [
+      {
+        id: 'nepali-number-system',
+        title: 'नेपाली Number System',
+        content: `<table><tr><th>अंक</th><th>नेपाली</th><th>English</th></tr><tr><td>1,000</td><td>एक हजार</td><td>One Thousand</td></tr><tr><td>1,00,000</td><td>एक लाख</td><td>One Hundred Thousand</td></tr><tr><td>10,00,000</td><td>दश लाख</td><td>One Million</td></tr><tr><td>1,00,00,000</td><td>एक करोड</td><td>Ten Million</td></tr><tr><td>1,00,00,00,000</td><td>एक अर्ब</td><td>One Billion</td></tr></table>`,
+      },
+      {
+        id: 'cheque-writing',
+        title: 'Cheque मा Words लेख्ने तरिका',
+        content: `<p>Nepal Rastra Bank को guidelines अनुसार cheque मा amount words मा सही लेख्नुपर्छ।</p><p><strong>Example:</strong> रु. 25,500 → "पच्चीस हजार पाँच सय मात्र" (only)</p><div class="callout-tip"><strong>Important:</strong> Amount पछि "मात्र" वा "Only" अनिवार्य लेख्नुहोस् — alteration रोक्न।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Number दर्ता', description: 'Words मा convert गर्नुपर्ने number दर्ता गर्नुहोस्।' },
+      { title: 'Language छान्नुहोस्', description: 'नेपाली, English, वा दुवै छान्नुहोस्।' },
+      { title: 'Convert', description: 'Result automatically देखिन्छ।' },
+      { title: 'Copy', description: 'Words copy गर्नुहोस् — document मा paste गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Decimal numbers (Paisa) support हुन्छ?', answer: 'हो, 25500.50 → "पच्चीस हजार पाँच सय पचास पैसा मात्र"' },
+      { question: 'Crore भन्दा माथिको number?', answer: 'हो, Arba (Arab) र Kharba सम्म support गर्छ।' },
+      { question: 'Indian system (Lakh/Crore) vs International system?', answer: 'हाम्रो tool नेपाली/Indian system (लाख, करोड) use गर्छ — Nepal banking standard।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'compound-interest-guide', 'epf-calculator-guide'],
+    toolCTA: {
+      heading: 'Number to Words अहिले Convert गर्नुहोस्',
+      description: 'नेपाली र English — Cheque, banking, documents को लागि।',
+      buttonText: 'Number to Words खोल्नुहोस् →',
+    },
+  },
+
+  // ── T3-3. PHOTO EFFECTS ────────────────────────────────────────
+  {
+    slug: 'photo-effects-guide',
+    toolSlug: 'photo-effects',
+    category: 'image-tools',
+    title: 'Photo Effects गाइड: Online Photo Editor (2026)',
+    subtitle: 'Photos मा filters, effects र adjustments थप्नुहोस् — Instagram-worthy photos बनाउनुहोस्।',
+    metaTitle: 'Photo Effects - Online Filter Editor Free Nepal',
+    metaDescription: 'Photo effects र filters थप्नुहोस् — brightness, contrast, saturation, vintage, B&W, blur। Instagram, Facebook, Viber को लागि perfect photos। Free online editor।',
+    targetKeyword: 'photo effects online free',
+    secondaryKeywords: ['photo filter nepali', 'online photo editor nepal', 'instagram filter free', 'photo brightness contrast', 'vintage filter photo', 'black white photo nepali'],
+    lastUpdated: '2026-03-12',
+    readingTime: '४ मिनेट पढ्ने',
+    tags: ['Photo', 'Effects', 'Filter', 'Instagram'],
+    intro: `<p>Professional photo editing को लागि Photoshop सिक्नु जरुरी छैन। <strong>Online photo effects</strong> tool ले seconds मा Instagram-worthy photos बनाउन सकिन्छ — filters, brightness, contrast, vintage effects सबै।</p>`,
+    sections: [
+      {
+        id: 'effects-types',
+        title: 'Available Photo Effects',
+        content: `<table><tr><th>Effect</th><th>उपयोग</th></tr><tr><td>Brightness/Contrast</td><td>Dark photos brighten गर्न</td></tr><tr><td>Saturation</td><td>Colors vivid बनाउन</td></tr><tr><td>Vintage/Sepia</td><td>Retro feel</td></tr><tr><td>Black & White</td><td>Classic look</td></tr><tr><td>Blur</td><td>Background bokeh</td></tr><tr><td>Sharpen</td><td>Blurry photos sharpen</td></tr></table>`,
+      },
+      {
+        id: 'social-media-tips',
+        title: 'Nepal Social Media को लागि Photo Tips',
+        content: `<ul><li><strong>Facebook:</strong> Warm tones, bright — family photos well perform गर्छन्।</li><li><strong>Instagram:</strong> Consistent filter style, feed aesthetic।</li><li><strong>Viber:</strong> Clear, well-lit photos message मा राम्रो देखिन्छन्।</li><li><strong>TikTok:</strong> Vibrant colors, high contrast videos popular छन्।</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Photo Upload', description: 'Edit गर्नुपर्ने photo upload गर्नुहोस्।' },
+      { title: 'Effect छान्नुहोस्', description: 'Filter वा adjustment select गर्नुहोस्।' },
+      { title: 'Adjust', description: 'Slider use गरेर intensity adjust गर्नुहोस्।' },
+      { title: 'Preview', description: 'Before/after compare गर्नुहोस्।' },
+      { title: 'Download', description: 'Edited photo download गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Original photo safe रहन्छ?', answer: 'हो, हाम्रो tool original file modify गर्दैन — edited version separately download हुन्छ।' },
+      { question: 'RAW photos support हुन्छ?', answer: 'JPG, PNG, WebP support छ। RAW format को लागि Lightroom वा Darktable use गर्नुहोस्।' },
+      { question: 'Multiple photos batch edit?', answer: 'Currently एक-एक photo। Batch editing को लागि desktop Lightroom वा GIMP use गर्नुहोस्।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-background-remover-guide', 'image-resizer-guide'],
+    toolCTA: {
+      heading: 'Photo Effects अहिले थप्नुहोस्',
+      description: 'Instagram-ready photos — filters, adjustments, free।',
+      buttonText: 'Photo Effects Tool खोल्नुहोस् →',
+    },
+  },
+
+  // ── T3-4. READING TIME CALCULATOR ─────────────────────────────
+  {
+    slug: 'reading-time-calculator-guide',
+    toolSlug: 'reading-time-calculator',
+    category: 'text-tools',
+    title: 'Reading Time Calculator गाइड: पढ्न कति समय लाग्छ? (2026)',
+    subtitle: 'Article, blog, वा document पढ्न कति समय लाग्छ calculate गर्नुहोस् — content creators को लागि।',
+    metaTitle: 'Reading Time Calculator - Article Read Time Free',
+    metaDescription: 'Article पढ्न कति समय लाग्छ calculate गर्नुहोस् — blog posts, news articles, reports। Content creators, bloggers, students को लागि। Nepali र English दुवै।',
+    targetKeyword: 'reading time calculator',
+    secondaryKeywords: ['article read time nepali', 'blog reading time', 'content length calculator', 'reading speed nepali', 'wpm calculator nepali', 'padna kati samay lagcha'],
+    lastUpdated: '2026-03-12',
+    readingTime: '३ मिनेट पढ्ने',
+    tags: ['Reading', 'Content', 'Calculator', 'Blog'],
+    intro: `<p>Medium, Dev.to र professional blogs मा "5 min read" देखिन्छ — यो <strong>reading time calculator</strong> ले estimate गर्छ। Content creators, bloggers र students को लागि यो tool helpful छ।</p>`,
+    sections: [
+      {
+        id: 'reading-speed',
+        title: 'Average Reading Speed',
+        content: `<table><tr><th>Type</th><th>WPM (Words Per Minute)</th></tr><tr><td>Average adult</td><td>200-250 WPM</td></tr><tr><td>Slow reader</td><td>100-150 WPM</td></tr><tr><td>Fast reader</td><td>300-400 WPM</td></tr><tr><td>नेपाली text</td><td>150-200 WPM</td></tr></table>`,
+      },
+      {
+        id: 'content-length-seo',
+        title: 'Content Length र SEO',
+        content: `<ul><li><strong>Blog post:</strong> 1,500-2,500 words (7-12 min read) best for SEO।</li><li><strong>News article:</strong> 500-800 words (2-4 min read)।</li><li><strong>Social media:</strong> Short — 30 seconds to 2 minutes।</li><li><strong>Academic paper:</strong> 5,000+ words — deep content।</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Text paste गर्नुहोस्', description: 'Article वा content box मा paste गर्नुहोस्।' },
+      { title: 'Reading speed', description: 'Average (250 WPM) वा custom speed set गर्नुहोस्।' },
+      { title: 'Calculate', description: 'Reading time instantly देखिन्छ।' },
+    ],
+    faqs: [
+      { question: 'नेपाली text को reading time accurate हुन्छ?', answer: 'Devanagari text को word count accurate हुन्छ — तर reading speed individual vary गर्छ।' },
+      { question: 'Images र videos count हुन्छन्?', answer: 'ToolsArena tool images र videos exclude गर्छ — text-only calculation।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'photo-effects-guide', 'number-to-words-guide'],
+    toolCTA: {
+      heading: 'Reading Time अहिले Calculate गर्नुहोस्',
+      description: 'Content length optimize गर्नुहोस् — free, instant।',
+      buttonText: 'Reading Time Calculator खोल्नुहोस् →',
+    },
+  },
+
+  // ── T3-5. TEMPERATURE CONVERTER ───────────────────────────────
+  {
+    slug: 'temperature-converter-guide',
+    toolSlug: 'temperature-converter',
+    category: 'converters',
+    title: 'Temperature Converter गाइड: Celsius, Fahrenheit, Kelvin (2026)',
+    subtitle: 'Temperature units instantly convert गर्नुहोस् — weather, cooking, science सबैका लागि।',
+    metaTitle: 'Temperature Converter - Celsius Fahrenheit Kelvin Free',
+    metaDescription: 'Temperature convert गर्नुहोस् — Celsius to Fahrenheit, Kelvin। Nepal weather, cooking recipes, science calculations। Free instant converter।',
+    targetKeyword: 'temperature converter',
+    secondaryKeywords: ['celsius fahrenheit nepali', 'temperature convert nepal', 'weather unit convert', 'cooking temperature celsius', 'kelvin converter', 'tapakram pariwartan'],
+    lastUpdated: '2026-03-12',
+    readingTime: '३ मिनेट पढ्ने',
+    tags: ['Temperature', 'Convert', 'Weather', 'Science'],
+    intro: `<p>Nepal को weather report Celsius (°C) मा हुन्छ — तर American recipes Fahrenheit (°F) मा, र science Kelvin (K) मा। <strong>Temperature converter</strong> ले instantly सबै units convert गर्छ।</p>`,
+    sections: [
+      {
+        id: 'temperature-formulas',
+        title: 'Temperature Conversion Formulas',
+        content: `<table><tr><th>Convert</th><th>Formula</th></tr><tr><td>°C → °F</td><td>(C × 9/5) + 32</td></tr><tr><td>°F → °C</td><td>(F - 32) × 5/9</td></tr><tr><td>°C → K</td><td>C + 273.15</td></tr><tr><td>K → °C</td><td>K - 273.15</td></tr></table>`,
+      },
+      {
+        id: 'nepal-weather',
+        title: 'Nepal Weather Reference Temperatures',
+        content: `<table><tr><th>Nepal Weather</th><th>°C</th><th>°F</th></tr><tr><td>Terai Summer</td><td>40-45°C</td><td>104-113°F</td></tr><tr><td>Kathmandu Summer</td><td>25-32°C</td><td>77-90°F</td></tr><tr><td>Kathmandu Winter</td><td>2-15°C</td><td>36-59°F</td></tr><tr><td>High Himalaya</td><td>-20 to -40°C</td><td>-4 to -40°F</td></tr></table>`,
+      },
+      {
+        id: 'cooking-temps',
+        title: 'Cooking Temperature Reference',
+        content: `<table><tr><th>Cooking</th><th>°C</th><th>°F</th></tr><tr><td>Water boils</td><td>100°C</td><td>212°F</td></tr><tr><td>Oven baking</td><td>180°C</td><td>356°F</td></tr><tr><td>Deep fry</td><td>175-190°C</td><td>350-375°F</td></tr><tr><td>Milk पाउन</td><td>70-80°C</td><td>160-175°F</td></tr></table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Value दर्ता', description: 'Convert गर्नुपर्ने temperature value दर्ता गर्नुहोस्।' },
+      { title: 'Unit छान्नुहोस्', description: 'Input unit (°C, °F, K) छान्नुहोस्।' },
+      { title: 'Result', description: 'सबै units मा converted values instantly देखिन्छन्।' },
+    ],
+    faqs: [
+      { question: 'Body temperature कति normal हुन्छ?', answer: 'Normal body temperature 37°C (98.6°F) हो। 38°C (100.4°F) भन्दा माथि fever।' },
+      { question: 'Absolute zero के हो?', answer: 'Absolute zero = 0 Kelvin = -273.15°C = -459.67°F — theoretically सबैभन्दा कम temperature।' },
+      { question: 'Nepal मा किन Celsius use गरिन्छ?', answer: 'Nepal metric system follow गर्छ — Celsius international standard हो। Fahrenheit primarily US मा use हुन्छ।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'compound-interest-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Temperature अहिले Convert गर्नुहोस्',
+      description: 'Celsius, Fahrenheit, Kelvin — instant, free।',
+      buttonText: 'Temperature Converter खोल्नुहोस् →',
+    },
+  },
+
 ];

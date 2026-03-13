@@ -30,12 +30,13 @@
 22. [Deployment (Vercel)](#22-deployment-vercel)
 23. [Common Mistakes to Avoid](#23-common-mistakes-to-avoid)
 24. [Visual Map: Page → Code](#24-visual-map-page--code)
+25. [Tools Added — March 2026](#25-tools-added--march-2026)
 
 ---
 
 ## 1. Project Overview
 
-**ToolsArena** (live at [toolsarena.in](https://toolsarena.in)) is a free, privacy-first online tools platform. It provides **150+ browser-based tools** — things like a word counter, QR code generator, image compressor, PDF merger, EMI calculator, and many more.
+**ToolsArena** (live at [toolsarena.in](https://toolsarena.in)) is a free, privacy-first online tools platform. It provides **155+ browser-based tools** — things like a word counter, QR code generator, image compressor, PDF merger, EMI calculator, and many more.
 
 ### Core Principles
 
@@ -61,7 +62,10 @@
 | Icons | **lucide-react** | 0.575 | Clean SVG icon library |
 | UI Primitives | **Radix UI** | various | Accessible dropdowns, dialogs, accordions |
 | Animations | **framer-motion** | 12.x | Page transitions, UI animations |
-| PDF Processing | **pdf-lib** | 1.17 | Client-side PDF operations |
+| PDF Processing | **pdf-lib** | 1.17 | Client-side PDF creation and manipulation |
+| PDF Text Extraction | **pdfjs-dist** | — | Extract text/tables from PDF in browser |
+| Word Parsing | **mammoth** | — | Convert .docx Word files to HTML |
+| Excel Export | **xlsx (SheetJS)** | — | Generate .xlsx spreadsheet files in browser |
 | OCR | **tesseract.js** | 7.x | Browser-based text recognition |
 | QR Code | **qrcode** | 1.5 | QR generation |
 | Image Compression | **browser-image-compression** | — | Client-side image optimization |
@@ -2102,6 +2106,85 @@ KEY RULES:
   • metaTitle < 70 chars, metaDescription < 160 chars
   • Use @/* path alias (not ../../../)
 ```
+
+---
+
+---
+
+## 25. Tools Added — March 2026
+
+Five new client-side tools were added as part of a traffic-growth initiative targeting high-volume search keywords.
+
+### New Tools Summary
+
+| Tool | Slug | Category | Dependencies | Monthly Searches |
+|------|------|----------|-------------|-----------------|
+| Reading Time Calculator | `reading-time-calculator` | text-tools | None (pure JS) | 80K–200K |
+| Image Flip & Rotate | `image-flip-rotate` | image-tools | None (Canvas API) | 100K–250K |
+| Photo Effects Editor | `photo-effects-editor` | image-tools | None (Canvas pixel ops) | 200K–500K |
+| Word to PDF Converter | `word-to-pdf` | pdf-tools | `mammoth` + `pdf-lib` | 500K–1M |
+| PDF to Excel Converter | `pdf-to-excel` | pdf-tools | `pdfjs-dist` + `xlsx` | 150K–350K |
+
+### File Locations
+
+```
+src/app/[locale]/tools/reading-time-calculator/
+├── page.tsx
+└── ReadingTimeCalculatorTool.tsx    ← pure JS, Flesch score, WPM slider, paragraph breakdown
+
+src/app/[locale]/tools/image-flip-rotate/
+├── page.tsx
+└── ImageFlipRotateTool.tsx          ← Canvas API, flip H/V, rotate any angle, batch support
+
+src/app/[locale]/tools/photo-effects-editor/
+├── page.tsx
+└── PhotoEffectsEditorTool.tsx       ← 12 Canvas pixel effects, intensity slider, live preview
+
+src/app/[locale]/tools/word-to-pdf/
+├── page.tsx
+└── WordToPdfTool.tsx                ← mammoth (DOCX→HTML) + pdf-lib (render PDF), A4/Letter/Legal
+
+src/app/[locale]/tools/pdf-to-excel/
+├── page.tsx
+└── PdfToExcelTool.tsx               ← pdfjs-dist (text extraction) + xlsx/SheetJS (.xlsx export)
+```
+
+### New npm Packages Installed
+
+```bash
+npm install mammoth xlsx pdfjs-dist
+```
+
+| Package | Purpose | How It's Used |
+|---------|---------|---------------|
+| `mammoth` | Parse `.docx` Word files → HTML | Dynamic import in `WordToPdfTool.tsx` |
+| `xlsx` (SheetJS) | Generate `.xlsx` Excel files in browser | Dynamic import in `PdfToExcelTool.tsx` |
+| `pdfjs-dist` | Extract text/positions from PDFs | Dynamic import in `PdfToExcelTool.tsx` — worker loaded from cdnjs CDN |
+
+### Key Implementation Notes
+
+**Reading Time Calculator** — All computation via `useMemo()`. Flesch Reading Ease formula: `206.835 − 1.015 × (words/sentences) − 84.6 × (syllables/words)`. Keyword frequency strips common stop-words. WPM slider range: 80–700.
+
+**Image Flip & Rotate** — Uses `ctx.translate() + ctx.rotate() + ctx.scale(-1,1/-1,1)` for transforms. Canvas auto-expands to fit rotated content so nothing is cropped. Always outputs PNG (preserves transparency). Supports batch upload.
+
+**Photo Effects Editor** — All 12 effects directly mutate `ImageData.data` pixel array (no library needed). Convolution kernels power Emboss and Sharpen. Sketch = color-dodge blend on inverted blurred grayscale. Images >1600px are scaled down for browser performance before processing.
+
+**Word to PDF** — Dynamic imports for both `mammoth` and `pdf-lib`. Walks the parsed HTML DOM (`h1–h3`, `p`, `li`) and renders each block onto `pdf-lib` pages using `Helvetica` / `HelveticaBold` / `HelveticaOblique` standard fonts. Manual word-wrapping ensures text fits within page margins.
+
+**PDF to Excel** — Worker URL set to `cdnjs.cloudflare.com/pdf.js/${version}/pdf.worker.min.js` to avoid bundling the worker. Text items grouped by rounded Y-coordinate (same Y = same row). Column boundaries detected by clustering X-positions with threshold `max(30, xRange/10)`. Multi-page PDFs: Summary sheet + one sheet per page (max 10 shown).
+
+### SEO Applied to All 5 New Tools
+
+| SEO Element | Standard Applied |
+|-------------|-----------------|
+| `metaTitle` | 56–66 chars, primary keyword first |
+| `metaDescription` | 152–161 chars, includes "free / no signup / no watermark" |
+| `targetKeyword` | Matches the #1 Google search query exactly |
+| `secondaryKeywords` | 10–12 long-tail variants per tool |
+| `faqs` | 5 Q&As targeting "People Also Ask" featured snippets |
+| `howToSteps` | 5 steps (powers HowTo schema markup in ToolPageWrapper) |
+| `isPopular: true` | All 5 shown in popular tools grids |
+| Bidirectional links | 10 existing tools updated to link back to new tools |
 
 ---
 

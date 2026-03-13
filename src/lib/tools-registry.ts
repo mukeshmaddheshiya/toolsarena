@@ -86,7 +86,7 @@ export const tools: Tool[] = [
       { question: 'How accurate is the word counter?', answer: 'Our word counter uses the same word-splitting algorithm as most word processors — it counts any sequence of characters separated by spaces or punctuation as a word, giving you results identical to Microsoft Word or Google Docs.' },
       { question: 'Does the word counter save my text?', answer: 'No. Your text is processed entirely in your browser and never sent to any server. Your content is 100% private.' },
       { question: 'What is the character limit?', answer: 'There is no practical limit. The tool handles very large texts (100,000+ words) without performance issues.' },
-      { question: 'How is reading time calculated?', answer: 'Reading time is estimated at 200 words per minute, which is the average adult reading speed. Speaking time is calculated at 130 words per minute.' },
+      { question: 'How is reading time calculated?', answer: 'Reading time is estimated at 238 words per minute, which is the research-backed average adult silent reading speed. Speaking time uses 130 words per minute. For a more detailed breakdown with custom WPM, try our Reading Time Calculator.' },
       { question: 'Can I use this for social media character limits?', answer: 'Yes! Twitter/X allows 280 characters, Instagram captions up to 2,200, and LinkedIn posts up to 3,000 characters. Use our character count to stay within limits.' },
     ],
     howToSteps: [
@@ -96,7 +96,7 @@ export const tools: Tool[] = [
       'Use the "Clear" button to reset and start fresh.',
       'Copy any count by clicking on the number.',
     ],
-    relatedToolSlugs: ['character-counter', 'case-converter', 'lorem-ipsum-generator', 'text-to-slug', 'remove-duplicate-lines'],
+    relatedToolSlugs: ['reading-time-calculator', 'character-counter', 'case-converter', 'lorem-ipsum-generator', 'text-to-slug'],
     icon: 'AlignLeft',
     isPopular: true,
     estimatedTime: 'Instant',
@@ -1422,7 +1422,7 @@ export const tools: Tool[] = [
       'Compare the original vs compressed file sizes for each image.',
       'Download each image individually or all as a ZIP file.',
     ],
-    relatedToolSlugs: ['image-resizer', 'png-to-jpg', 'jpg-to-png', 'webp-to-png', 'image-to-base64'],
+    relatedToolSlugs: ['image-flip-rotate', 'photo-effects-editor', 'image-resizer', 'png-to-jpg', 'jpg-to-png'],
     icon: 'ImageDown',
     isPopular: true,
     estimatedTime: '2-5 seconds',
@@ -1463,7 +1463,7 @@ export const tools: Tool[] = [
       'Preview the resized image and compare with the original.',
       'Click "Download Resized Image" to save.',
     ],
-    relatedToolSlugs: ['image-compressor', 'png-to-jpg', 'jpg-to-png', 'webp-to-png'],
+    relatedToolSlugs: ['image-flip-rotate', 'photo-effects-editor', 'image-compressor', 'png-to-jpg', 'jpg-to-png'],
     icon: 'Maximize2',
     isPopular: true,
     estimatedTime: '1-3 seconds',
@@ -1743,7 +1743,7 @@ export const tools: Tool[] = [
       'View the compression results: original vs compressed size.',
       'Download the compressed PDF.',
     ],
-    relatedToolSlugs: ['pdf-merge', 'pdf-split', 'pdf-to-image', 'image-compressor'],
+    relatedToolSlugs: ['word-to-pdf', 'pdf-to-excel', 'pdf-merge', 'pdf-split', 'pdf-to-image'],
     icon: 'FileArchive',
     isPopular: true,
     estimatedTime: '3-10 seconds',
@@ -1823,7 +1823,7 @@ export const tools: Tool[] = [
       'Click "Download Word Document" to save the .docx file.',
       'Open the downloaded file in Word, Google Docs, or any word processor to edit.',
     ],
-    relatedToolSlugs: ['pdf-to-image', 'pdf-merge', 'pdf-split', 'image-to-text'],
+    relatedToolSlugs: ['word-to-pdf', 'pdf-to-excel', 'pdf-to-image', 'pdf-merge', 'pdf-split'],
     icon: 'FileText',
     isPopular: true,
     estimatedTime: '5-15 seconds',
@@ -2317,7 +2317,7 @@ export const tools: Tool[] = [
       'Click "Convert to PDF & Download".',
       'Open the PDF to verify all pages look correct.',
     ],
-    relatedToolSlugs: ['pdf-merge', 'pdf-compress', 'pdf-split', 'image-compressor'],
+    relatedToolSlugs: ['word-to-pdf', 'pdf-merge', 'pdf-compress', 'pdf-split', 'image-flip-rotate'],
     icon: 'FilePlus',
     estimatedTime: '2-5 seconds',
   },
@@ -3386,7 +3386,7 @@ export const tools: Tool[] = [
       'Click "Download PNG" to save your transparent image.',
       'Click "New Image" to process another photo. No limits!',
     ],
-    relatedToolSlugs: ['image-compressor', 'image-resizer', 'png-to-jpg', 'jpg-to-png', 'image-to-base64', 'webp-to-png'],
+    relatedToolSlugs: ['photo-effects-editor', 'image-flip-rotate', 'image-compressor', 'image-resizer', 'png-to-jpg'],
     icon: 'Eraser',
     isPopular: true,
     estimatedTime: '10-30 seconds',
@@ -3607,7 +3607,7 @@ export const tools: Tool[] = [
       { question: 'Are my images uploaded?', answer: 'No. Everything runs locally in your browser using the Canvas API. Your images never leave your device.' },
     ],
     howToSteps: ['Upload an image by dragging or clicking the upload area.', 'Select an aspect ratio preset or use free crop.', 'Drag the crop area to position it. Resize using the corner handle.', 'Click "Crop" to generate the cropped image.', 'Download the cropped PNG or click "Crop Again" to adjust.'],
-    relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-watermark', 'image-background-remover', 'png-to-jpg'],
+    relatedToolSlugs: ['image-flip-rotate', 'photo-effects-editor', 'image-compressor', 'image-resizer', 'image-background-remover'],
     icon: 'Crop',
     isPopular: true,
     estimatedTime: '2-5 seconds',
@@ -4809,7 +4809,7 @@ export const tools: Tool[] = [
       'Compare word counts between original and paraphrased versions.',
       'Click "Copy Result" to copy the paraphrased text to your clipboard.',
     ],
-    relatedToolSlugs: ['word-counter', 'case-converter', 'text-repeater', 'lorem-ipsum-generator'],
+    relatedToolSlugs: ['reading-time-calculator', 'word-counter', 'case-converter', 'ai-text-humanizer', 'lorem-ipsum-generator'],
     icon: 'Wand2',
     isPopular: true,
     isNew: true,
@@ -6496,7 +6496,7 @@ export const tools: Tool[] = [
       'Review word frequency and sentence distribution.',
       'Read writing improvement suggestions.',
     ],
-    relatedToolSlugs: ['word-counter', 'citation-generator', 'ai-text-humanizer', 'case-converter'],
+    relatedToolSlugs: ['reading-time-calculator', 'word-counter', 'citation-generator', 'ai-text-humanizer', 'paraphrasing-tool'],
     icon: 'FileText',
     isNew: true,
     estimatedTime: '1 minute',
@@ -9189,6 +9189,241 @@ tools.push({
   icon: 'Grid3x3',
   isNew: true,
   estimatedTime: 'Instant',
+});
+
+// ─── IMAGE FLIP & ROTATE ─────────────────────────────────────────────────────
+tools.push({
+  slug: 'image-flip-rotate',
+  name: 'Image Flip & Rotate',
+  shortDescription: 'Flip images horizontally or vertically, rotate by 90°/180°/270° or any custom angle. Batch support, instant preview.',
+  longDescription: `<p>Flip, mirror, and rotate any image instantly with our free online <strong>image flip and rotate tool</strong>. Whether you need to fix a photo taken upside down, create a mirror reflection, or rotate an image to the perfect angle, this tool handles it all — 100% in your browser with zero uploads.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Flip Horizontal & Vertical</strong>: Create perfect mirror images in one click — ideal for logos, product photos, and social media graphics.</li>
+<li><strong>Rotate 90°, 180°, 270°</strong>: Fix portrait/landscape orientation instantly.</li>
+<li><strong>Custom Angle Slider</strong>: Rotate to any angle from -180° to +180° with a smooth precision slider.</li>
+<li><strong>Batch Processing</strong>: Upload multiple images and apply the same transformation to all at once.</li>
+<li><strong>Transparency Support</strong>: Checkerboard preview shows transparent areas on PNG output.</li>
+<li><strong>No Quality Loss</strong>: Canvas-based rendering preserves original image quality.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Photographers fixing camera orientation, designers creating mirror/reflection effects, social media managers preparing properly oriented graphics, and developers needing quick image transforms without installing software.</p>
+<h2>Privacy & Security</h2>
+<p>Runs 100% in your browser using the HTML5 Canvas API — your images are never uploaded to any server. No watermarks added.</p>`,
+  category: 'image-tools',
+  targetKeyword: 'flip image online',
+  secondaryKeywords: ['rotate image online', 'flip photo online', 'mirror image online', 'flip image horizontally', 'flip image vertically', 'rotate image 90 degrees', 'image rotator online', 'flip picture online free', 'rotate photo free', 'mirror photo online', 'image flipper', 'turn image upside down'],
+  metaTitle: 'Flip & Rotate Image Online Free — Mirror, 90°/180° or Custom Angle',
+  metaDescription: 'Flip images horizontally or vertically, rotate 90°/180°/270° or any custom angle online. Batch support, instant preview, no upload, no watermark. Free.',
+  faqs: [
+    { question: 'What is the difference between flip and rotate?', answer: 'Flipping creates a mirror image — Flip Horizontal reverses left-right (like a mirror), Flip Vertical reverses top-bottom (upside down mirror). Rotating turns the image by a set number of degrees (90°, 180°, etc.) while keeping the same content orientation.' },
+    { question: 'Can I flip and rotate at the same time?', answer: 'Yes. You can combine any flip (horizontal, vertical, or both) with any rotation angle. The transforms are applied together in a single step.' },
+    { question: 'What output format is used?', answer: 'All output images are saved as PNG to preserve quality and support transparency. This is ideal for images with transparent backgrounds.' },
+    { question: 'Does rotating to a custom angle add white or transparent borders?', answer: 'When rotating to a non-90° angle, the canvas size expands to fit the rotated image, and corners are transparent (saved as PNG with alpha channel).' },
+    { question: 'How many images can I process at once?', answer: 'You can upload and process multiple images in one batch. All images receive the same flip and rotation settings. Download them individually or all at once.' },
+  ],
+  howToSteps: [
+    'Choose your flip and/or rotation settings using the control buttons.',
+    'Use the custom angle slider for precise rotation between -180° and +180°.',
+    'Upload one or more images by dragging them onto the upload area.',
+    'Preview the transformed result instantly.',
+    'Click "Download" to save each image, or "Download All" for batch downloads.',
+  ],
+  relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-cropper', 'image-watermark', 'png-to-jpg'],
+  icon: 'RotateCw',
+  isNew: true,
+  isPopular: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── READING TIME CALCULATOR ─────────────────────────────────────────────────
+tools.push({
+  slug: 'reading-time-calculator',
+  name: 'Reading Time Calculator',
+  shortDescription: 'Calculate reading time for any text. Adjustable WPM, speaking time, readability score, paragraph breakdown, and keyword frequency.',
+  longDescription: `<p>Accurately calculate the <strong>reading time</strong> for any article, blog post, essay, speech, or document. Paste your text and instantly see reading time for different reader profiles, speaking time for presentations, and a full Flesch readability score.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Adjustable Reading Speed</strong>: Set your personal WPM from 80 to 700. Average adult reads at 238 WPM.</li>
+<li><strong>4 Reader Profiles</strong>: See estimated time for Slow (150 WPM), Average (238 WPM), Fast (350 WPM), and Speed Reader (600 WPM) — all at once.</li>
+<li><strong>Speaking & Audiobook Time</strong>: Perfect for speech writers, podcasters, and presenters.</li>
+<li><strong>Flesch Readability Score</strong>: Instantly know if your text is Too Complex, Standard, or Very Easy to read.</li>
+<li><strong>Paragraph Breakdown</strong>: See word count and reading time for each individual paragraph.</li>
+<li><strong>Top Keywords</strong>: Automatic keyword frequency analysis (stop-words removed).</li>
+<li><strong>Live Stats</strong>: Words, characters, sentences, paragraphs update in real-time.</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Bloggers checking estimated reading time before publishing, teachers calculating student reading loads, public speakers timing their speeches, SEO writers targeting article length, and students estimating how long to study a text.</p>
+<h2>Privacy & Security</h2>
+<p>All processing is done locally in your browser — your text is never sent to any server.</p>`,
+  category: 'text-tools',
+  targetKeyword: 'reading time calculator',
+  secondaryKeywords: ['reading time estimator', 'how long to read', 'calculate reading time', 'words per minute calculator', 'article reading time', 'blog reading time', 'speech time calculator', 'reading speed calculator', 'wpm calculator', 'text reading time', 'minutes to read calculator', 'flesch reading score'],
+  metaTitle: 'Reading Time Calculator — Estimate Article & Speech Time Free',
+  metaDescription: 'Calculate reading time for any text instantly. Set your WPM, see 4 reader profiles, speaking time, Flesch readability score & paragraph breakdown. Free.',
+  faqs: [
+    { question: 'How is reading time calculated?', answer: 'Reading time = Total word count ÷ Words Per Minute (WPM). The average adult reads at 238 WPM silently. Speaking time uses 130 WPM. Audiobook narration averages 150 WPM. You can set your own custom WPM using the slider.' },
+    { question: 'What is a good reading speed?', answer: 'The average adult reads 200-250 WPM silently. Slow readers average 100-150 WPM. Fast/efficient readers average 300-400 WPM. Speed readers using techniques like skimming can reach 600+ WPM, though comprehension often decreases above 400 WPM.' },
+    { question: 'What is the Flesch Reading Ease score?', answer: 'The Flesch Reading Ease score (0-100) measures how easy a text is to read. 90-100 = Very Easy (5th grade). 60-70 = Standard (8th-9th grade). 0-30 = Very Difficult (college graduate). Most web content should aim for 60-70.' },
+    { question: 'How long should a blog post be to rank on Google?', answer: 'Most top-ranking blog posts are 1,500-2,500 words (~6-10 minutes reading time). However, quality and relevance matter more than length. For technical topics, 2,000-4,000 words is common. For news, 300-600 words works fine.' },
+    { question: 'How long should a speech be for different times?', answer: 'A 5-minute speech needs ~650 words (at 130 WPM). 10 minutes = ~1,300 words. 20 minutes = ~2,600 words. A 1-hour keynote = ~7,800 words.' },
+  ],
+  howToSteps: [
+    'Paste your text into the text area at the bottom of the tool.',
+    'Adjust the "Your Reading Speed" slider to match your personal WPM.',
+    'See real-time reading time, speaking time, and audiobook time.',
+    'Check the Flesch readability score and paragraph-by-paragraph breakdown.',
+    'Expand "Top Keywords" to see the most frequent meaningful words.',
+  ],
+  relatedToolSlugs: ['word-counter', 'character-counter', 'paraphrasing-tool', 'essay-counter-readability', 'text-to-speech'],
+  icon: 'Clock',
+  isNew: true,
+  isPopular: true,
+  estimatedTime: 'Instant',
+});
+
+// ─── PHOTO EFFECTS EDITOR ────────────────────────────────────────────────────
+tools.push({
+  slug: 'photo-effects-editor',
+  name: 'Photo Effects Editor',
+  shortDescription: 'Apply 12 artistic photo effects: Pencil Sketch, Sepia, Vintage, Grayscale, Emboss, Posterize, Vignette, Sharpen & more. Free, no signup.',
+  longDescription: `<p>Transform your photos with 12 stunning artistic effects using our free online <strong>photo effects editor</strong>. Apply pencil sketch, vintage film, sepia tone, vignette, posterize, and more — all processed instantly in your browser with no uploads and no watermarks.</p>
+<h2>Available Effects</h2>
+<ul>
+<li><strong>Pencil Sketch</strong>: Converts your photo into a realistic hand-drawn pencil sketch using color dodge blending.</li>
+<li><strong>Sepia</strong>: Classic warm brownish-tone effect that makes photos look aged and nostalgic.</li>
+<li><strong>Vintage</strong>: Faded retro film look with reduced saturation and warm highlights.</li>
+<li><strong>Grayscale</strong>: Classic black & white conversion using luminance-weighted averaging.</li>
+<li><strong>Warm / Cool</strong>: Adjust the color temperature to give photos a warm golden or cool blue tone.</li>
+<li><strong>Negative</strong>: Inverts all colors for a striking photographic negative look.</li>
+<li><strong>Emboss</strong>: Creates a 3D relief texture effect that makes photos look like raised metal.</li>
+<li><strong>Posterize</strong>: Reduces colors to a limited palette for a pop-art poster style.</li>
+<li><strong>Vignette</strong>: Darkens edges to draw focus to the center of the image.</li>
+<li><strong>Sharpen</strong>: Enhances edges and fine details for a crisper, more defined look.</li>
+</ul>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Intensity Slider</strong>: Blend any effect from subtle to full strength.</li>
+<li><strong>Real-Time Preview</strong>: See the effect applied instantly as you select it.</li>
+<li><strong>No Watermarks</strong>: Download clean, watermark-free PNG files.</li>
+<li><strong>Privacy First</strong>: All processing runs locally — photos never leave your device.</li>
+</ul>`,
+  category: 'image-tools',
+  targetKeyword: 'photo effects editor online',
+  secondaryKeywords: ['photo filter online', 'pencil sketch effect online', 'vintage photo effect', 'sepia photo online', 'photo to sketch', 'image filter online free', 'artistic photo effects', 'photo effect maker', 'old photo effect online', 'grayscale photo converter', 'vignette effect online', 'photo cartoon effect free'],
+  metaTitle: 'Photo Effects Editor Online — 12 Artistic Filters Free, No Signup',
+  metaDescription: 'Apply 12 photo effects online: Pencil Sketch, Sepia, Vintage, Grayscale, Emboss, Vignette & more. Intensity slider, instant preview, no watermark, 100% private.',
+  faqs: [
+    { question: 'How does the Pencil Sketch effect work?', answer: 'The sketch effect uses a technique called color dodge blending. First, the image is converted to grayscale. Then a blurred version of the inverted grayscale is created. These two layers are blended using color dodge math (base × 256 / (256 - blend)), which creates the characteristic pencil-stroke look.' },
+    { question: 'Can I adjust the strength of each effect?', answer: 'Yes. The Intensity slider (10%–100%) blends between the original image and the full effect. At 50%, you get a subtle version; at 100%, you get the maximum effect strength. The slider is available for all effects except Original.' },
+    { question: 'What image formats are supported?', answer: 'You can upload JPEG, PNG, WebP, and GIF files. The output is always saved as a PNG file to preserve any transparency and maintain maximum quality.' },
+    { question: 'Will my photo be uploaded to a server?', answer: 'No. All effects are applied using the HTML5 Canvas API and JavaScript pixel manipulation. Your photo never leaves your device — no server, no uploads, no cloud storage.' },
+    { question: 'What is the maximum image size?', answer: 'Images up to 20MB can be processed. Internally, images larger than 1600px on either dimension are scaled down for faster processing while maintaining visual quality.' },
+  ],
+  howToSteps: [
+    'Upload your photo by dragging it onto the upload area or clicking to browse.',
+    'Click any of the 12 effect buttons to apply it instantly.',
+    'Use the Intensity slider to adjust the effect strength from subtle to full.',
+    'Preview the result in the large canvas below the effect buttons.',
+    'Click "Download PNG" to save your edited photo — no watermark.',
+  ],
+  relatedToolSlugs: ['image-compressor', 'image-background-remover', 'image-resizer', 'image-cropper', 'image-watermark'],
+  icon: 'Wand2',
+  isNew: true,
+  isPopular: true,
+  estimatedTime: '< 5 seconds',
+});
+
+// ─── WORD TO PDF ─────────────────────────────────────────────────────────────
+tools.push({
+  slug: 'word-to-pdf',
+  name: 'Word to PDF Converter',
+  shortDescription: 'Convert .docx Word files to PDF online. Preserves headings, bold, italic, lists. Choose page size, margins, font size. Free, no signup.',
+  longDescription: `<p>Convert Microsoft Word documents (.docx) to professional PDF files instantly with our free online <strong>Word to PDF converter</strong>. No software to install, no sign-up required — your document is processed entirely in your browser for complete privacy.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Preserves Formatting</strong>: Headings (H1, H2, H3), bold text, italic text, bullet lists, and numbered lists are all converted accurately.</li>
+<li><strong>Page Size Options</strong>: Choose A4 (international standard), US Letter (8.5×11 in), or US Legal (8.5×14 in).</li>
+<li><strong>Margin Control</strong>: Narrow (0.5 in), Normal (1 in), or Wide (1.5 in) margins.</li>
+<li><strong>Font Size Slider</strong>: Adjust base font size from 8pt to 18pt to control text density.</li>
+<li><strong>Line Spacing</strong>: From single (1.0×) to double (2.5×) spacing.</li>
+<li><strong>Instant Conversion</strong>: Processing happens in seconds, entirely client-side.</li>
+<li><strong>No File Size Limit</strong>: Handles standard business documents of any page count.</li>
+</ul>
+<h2>What Is Converted</h2>
+<p>Headings, paragraphs, bold/italic text, bullet and numbered lists. Complex elements like tables and embedded images are converted to their text representation.</p>
+<h2>Privacy & Security</h2>
+<p>Your document is never uploaded to any server. All conversion happens locally using mammoth.js and pdf-lib — 100% private.</p>`,
+  category: 'pdf-tools',
+  targetKeyword: 'word to pdf converter',
+  secondaryKeywords: ['docx to pdf', 'convert word to pdf online', 'word to pdf free', 'doc to pdf converter', 'word document to pdf', 'word to pdf no signup', 'convert docx to pdf free', 'microsoft word to pdf', 'word file to pdf', 'online word to pdf converter free', 'word to pdf converter without watermark'],
+  metaTitle: 'Word to PDF Converter — Convert .docx to PDF Free Online',
+  metaDescription: 'Convert Word documents (.docx) to PDF online. Preserves headings, bold, italic & lists. Choose A4/Letter, margins & font size. Free, no signup, 100% private.',
+  faqs: [
+    { question: 'What Word formats are supported?', answer: 'The tool supports .docx files (Microsoft Word 2007 and later). Legacy .doc files (Word 97-2003) are not supported. If you have a .doc file, first open it in Word or LibreOffice and save as .docx.' },
+    { question: 'Is my document kept private?', answer: 'Yes, 100%. The conversion runs entirely in your browser using JavaScript (mammoth.js + pdf-lib). Your file is never uploaded to any server, and no data is stored anywhere.' },
+    { question: 'Does it preserve formatting like bold and headings?', answer: 'Yes. The converter preserves: Headings (H1-H3 with appropriate font sizes), bold text, italic text, bullet lists, and numbered lists. Complex elements like tables, images, headers/footers, and text boxes are simplified to text.' },
+    { question: 'What is the difference between A4 and US Letter?', answer: 'A4 (210×297mm) is the standard paper size used internationally. US Letter (8.5×11 inches = 216×279mm) is the standard in the United States and Canada. A4 is slightly taller and narrower than Letter.' },
+    { question: 'Can I convert multiple Word files at once?', answer: 'Currently the tool converts one file at a time. For each conversion, you can adjust page size, margins, font size, and line spacing independently.' },
+  ],
+  howToSteps: [
+    'Select your page size (A4, Letter, or Legal) and margins in the settings panel.',
+    'Adjust font size and line spacing to your preference.',
+    'Drag and drop your .docx file onto the upload area, or click to browse.',
+    'The conversion runs automatically — see the page count and file size when done.',
+    'Click "Download PDF" to save your converted document.',
+  ],
+  relatedToolSlugs: ['pdf-to-word', 'pdf-compress', 'pdf-merge', 'pdf-split', 'jpg-to-pdf'],
+  icon: 'FileOutput',
+  isNew: true,
+  isPopular: true,
+  estimatedTime: '5-15 seconds',
+});
+
+// ─── PDF TO EXCEL ────────────────────────────────────────────────────────────
+tools.push({
+  slug: 'pdf-to-excel',
+  name: 'PDF to Excel Converter',
+  shortDescription: 'Extract text and tables from PDF files and export to Excel (.xlsx) or CSV. Multi-column detection, page-by-page preview. Free, no upload.',
+  longDescription: `<p>Extract data from PDF files and convert it to editable Excel spreadsheets or CSV files with our free online <strong>PDF to Excel converter</strong>. Perfect for extracting data from reports, invoices, financial statements, and data tables.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Smart Column Detection</strong>: Automatically detects multi-column layouts and preserves column alignment in the output spreadsheet.</li>
+<li><strong>Page-by-Page Preview</strong>: Preview extracted data for each page before exporting to verify accuracy.</li>
+<li><strong>Export to Excel (.xlsx)</strong>: Creates properly formatted spreadsheets with page tabs, column widths, and a summary sheet for multi-page PDFs.</li>
+<li><strong>Export to CSV</strong>: Universal format compatible with any spreadsheet application including Google Sheets.</li>
+<li><strong>Export Both Formats</strong>: Download .xlsx and .csv simultaneously in one click.</li>
+<li><strong>Multi-Page PDFs</strong>: Handles PDFs with up to 100+ pages, with each page as a separate sheet.</li>
+<li><strong>No Upload Required</strong>: All text extraction happens in your browser using PDF.js.</li>
+</ul>
+<h2>Best For</h2>
+<p>Bank statements, financial reports, invoices, price lists, and any text-based PDF containing tabular data. Works on text-based PDFs (not scanned image PDFs).</p>
+<h2>Privacy & Security</h2>
+<p>Your PDF is processed entirely in your browser — never uploaded to any server. No account required.</p>`,
+  category: 'pdf-tools',
+  targetKeyword: 'pdf to excel converter',
+  secondaryKeywords: ['pdf to xlsx', 'convert pdf to excel online', 'pdf to spreadsheet', 'extract table from pdf', 'pdf table to excel', 'pdf to csv converter', 'pdf data extraction', 'pdf to excel free', 'convert pdf table to excel online free', 'extract data from pdf', 'pdf to google sheets', 'bank statement pdf to excel'],
+  metaTitle: 'PDF to Excel Converter — Extract PDF Tables to .xlsx Free Online',
+  metaDescription: 'Convert PDF to Excel (.xlsx) or CSV online. Smart column detection, page preview, multi-page support. Extract tables from PDF free, no upload, no signup.',
+  faqs: [
+    { question: 'What types of PDFs work best?', answer: 'Text-based PDFs work best — these are PDFs where the text was generated digitally (from Word, Excel, or a report tool). Scanned PDFs (photos of documents) contain images, not text, and require OCR to extract. Our tool will show no content for image-only PDFs.' },
+    { question: 'How does column detection work?', answer: 'The tool analyzes the X-position (horizontal placement) of each text item on the page. Items at similar X positions are grouped into the same column. This works well for simple two or three-column layouts. Very complex tables with merged cells may not align perfectly.' },
+    { question: 'What is the Excel output structure?', answer: 'For single-page PDFs: one sheet with rows matching the PDF content. For multi-page PDFs: a Summary sheet showing page previews, plus one sheet per page (up to 10 pages). Each sheet is named "Page 1", "Page 2", etc.' },
+    { question: 'Can I open the CSV in Google Sheets?', answer: 'Yes. Download the CSV file, then in Google Sheets go to File → Import → Upload and select the CSV file. The data will import into columns and rows matching the PDF structure.' },
+    { question: 'Why does the extracted data look scrambled?', answer: 'PDFs with complex multi-column layouts, rotated text, or tables with merged cells may not extract perfectly. Try switching to single-page PDFs or extracting specific page ranges. For complex tables, manual cleanup in Excel after export is sometimes needed.' },
+  ],
+  howToSteps: [
+    'Upload your PDF file by dragging it onto the upload area.',
+    'Wait for the extraction to complete — you will see the row count per page.',
+    'Use the page selector to preview extracted data for each page.',
+    'Choose your export format: Excel (.xlsx), CSV, or both.',
+    'Click the Export button to download your spreadsheet file.',
+  ],
+  relatedToolSlugs: ['pdf-to-word', 'pdf-merge', 'pdf-compress', 'pdf-split', 'csv-to-pdf'],
+  icon: 'FileSpreadsheet',
+  isNew: true,
+  isPopular: true,
+  estimatedTime: '10-30 seconds',
 });
 
 export const TOOL_COUNT = tools.length;
