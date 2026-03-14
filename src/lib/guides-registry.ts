@@ -5669,4 +5669,48 @@ export function getAllGuides(): Guide[] {
   return guides;
 }
 
+export function searchGuides(query: string): Guide[] {
+  const q = query.toLowerCase().trim();
+  if (!q) return guides;
+  const tokens = q.split(/\s+/);
+
+  const scored: { guide: Guide; score: number }[] = [];
+
+  for (const guide of guides) {
+    const name = guide.title.toLowerCase();
+    const slug = guide.slug.toLowerCase();
+    const subtitle = guide.subtitle.toLowerCase();
+    const category = guide.category.toLowerCase();
+    const tags = guide.tags.map(t => t.toLowerCase());
+    const targetKw = guide.targetKeyword.toLowerCase();
+    const secondaryKws = guide.secondaryKeywords.map(k => k.toLowerCase());
+
+    let score = 0;
+
+    // Tier 0: title/slug starts with query or exact keyword match
+    if (name.startsWith(q) || slug.startsWith(q)) score = 100;
+    else if (name.includes(q) || targetKw.includes(q)) score = 80;
+    // Tier 1: all tokens found in title+subtitle+tags
+    else if (tokens.every(t => name.includes(t) || subtitle.includes(t) || tags.some(tag => tag.includes(t)))) score = 60;
+    // Tier 2: all tokens found across any searchable field
+    else if (tokens.every(t =>
+      name.includes(t) || slug.includes(t) || subtitle.includes(t) ||
+      category.includes(t) || targetKw.includes(t) ||
+      tags.some(tag => tag.includes(t)) ||
+      secondaryKws.some(k => k.includes(t))
+    )) score = 40;
+    // Tier 3: at least one token matches
+    else if (tokens.some(t =>
+      name.includes(t) || slug.includes(t) || subtitle.includes(t) ||
+      category.includes(t) || targetKw.includes(t) ||
+      tags.some(tag => tag.includes(t)) ||
+      secondaryKws.some(k => k.includes(t))
+    )) score = 20;
+
+    if (score > 0) scored.push({ guide, score });
+  }
+
+  return scored.sort((a, b) => b.score - a.score).map(s => s.guide);
+}
+
 export const GUIDE_COUNT = guides.length;

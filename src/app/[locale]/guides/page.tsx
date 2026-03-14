@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Link } from '@/i18n/navigation';
 import { getAllGuides, GUIDE_COUNT } from '@/lib/guides-registry';
-import { GuideCard } from '@/components/guides/GuideCard';
+import { GuideSearch } from '@/components/guides/GuideSearch';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { getAlternateLanguages } from '@/lib/seo';
@@ -126,24 +126,9 @@ export default async function GuidesIndexPage({ params }: { params: Promise<{ lo
         </div>
       </section>
 
-      {/* ── Guide grid ────────────────────────────────────────────── */}
+      {/* ── Guide search + grid ─────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h2 className="font-heading font-bold text-2xl text-slate-900 dark:text-slate-100">
-              All Guides
-            </h2>
-            <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-              {allGuides.length} guide{allGuides.length !== 1 ? 's' : ''} available — more coming soon
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {allGuides.map(guide => (
-            <GuideCard key={guide.slug} guide={guide} />
-          ))}
-        </div>
+        <GuideSearch guides={allGuides} />
 
         {/* Coming soon placeholder */}
         <div className="mt-8 border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-2xl p-10 text-center">
