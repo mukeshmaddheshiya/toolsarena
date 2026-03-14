@@ -2125,4 +2125,321 @@ button {
     },
   },
 
+
+  // ── TEXT TO SPEECH GUIDE (Nepali) ─────────────────────────────────
+  {
+    slug: 'text-to-speech-guide',
+    toolSlug: 'text-to-speech',
+    category: 'text-tools',
+    title: 'Text to Speech गाइड: नेपालीमा बोल्ने AI टूल (2026)',
+    subtitle: 'लेख, निबन्ध वा कुनै पनि text लाई आवाजमा बदल्नुहोस् — निःशुल्क अनलाइन TTS उपकरण।',
+    metaTitle: 'Text to Speech नेपाली — निःशुल्क AI बोल्ने टूल',
+    metaDescription: 'Text to Speech (TTS) ले तपाईंको लेख, notes वा कुनै पनि text लाई natural आवाजमा बदल्छ। नेपाली, अंग्रेजी, हिन्दी — सबै भाषा support। निःशुल्क अनलाइन।',
+    targetKeyword: 'text to speech nepali',
+    secondaryKeywords: ['text to speech', 'TTS online free', 'text bata voice', 'नेपाली text to speech', 'AI voice generator', 'text to audio converter', 'text to speech for students Nepal', 'online padhne tool', 'accessibility tool Nepal', 'screen reader Nepal'],
+    lastUpdated: '2026-03-14',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['TTS', 'AI', 'accessibility', 'students'],
+    intro: `<p><strong>Text to Speech (TTS)</strong> भनेको लिखित text लाई natural human voice मा बदल्ने technology हो। विद्यार्थीहरूले notes सुन्न, दृष्टिविहीन व्यक्तिहरूले content access गर्न, र content creators ले voiceover बनाउन — TTS अत्यन्त उपयोगी छ।</p><p>नेपालमा बढ्दो internet penetration सँगै TTS tools को माग बढ्दै छ। ToolsArena को <strong>निःशुल्क Text to Speech</strong> टूलले 50+ भाषामा instant voice generation गर्छ।</p>`,
+    sections: [
+      {
+        id: 'tts-ke-ho',
+        title: 'Text to Speech (TTS) के हो?',
+        content: `<p>Text to Speech (TTS) एक AI technology हो जसले लिखित text पढेर natural-sounding आवाज produce गर्छ। Modern TTS ले:</p><ul><li><strong>Neural voices:</strong> Real मानिस जस्तो natural आवाज</li><li><strong>Multi-language:</strong> नेपाली, अंग्रेजी, हिन्दी, र 50+ भाषा support</li><li><strong>Speed control:</strong> बिस्तारै वा छिटो — तपाईंको preference अनुसार</li><li><strong>Free access:</strong> कुनै signup वा payment बिना use गर्न सकिन्छ</li></ul><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>के थाहा छ?</strong> Nepal मा 2.4% जनसंख्या दृष्टिविहीन छ — TTS tools ले digital content accessible बनाउँछ।</div>`,
+      },
+      {
+        id: 'nepal-ma-tts-use',
+        title: 'नेपालमा TTS कसरी उपयोगी छ?',
+        content: `<table><tr><th>प्रयोगकर्ता</th><th>TTS को फाइदा</th></tr><tr><td>SEE/NEB विद्यार्थी</td><td>Notes सुनेर revision गर्न — multisensory learning</td></tr><tr><td>TU/KU विद्यार्थी</td><td>Research papers र textbook audio मा सुन्न</td></tr><tr><td>Lok Sewa तयारी</td><td>Current affairs र notes commute मा सुन्न</td></tr><tr><td>Content Creator</td><td>YouTube, TikTok, Reels का लागि voiceover</td></tr><tr><td>दृष्टिविहीन व्यक्ति</td><td>Website र document access (accessibility)</td></tr><tr><td>व्यापारी</td><td>IVR system, customer support automation</td></tr></table>`,
+      },
+      {
+        id: 'tts-kasari-use-garne',
+        title: 'Text to Speech कसरी प्रयोग गर्ने?',
+        content: `<ol><li><strong>Text paste गर्नुहोस्:</strong> आफ्नो लेख, notes वा कुनै पनि text copy-paste गर्नुहोस्</li><li><strong>भाषा छान्नुहोस्:</strong> Nepali, English, Hindi वा अरू 50+ भाषा</li><li><strong>Voice select गर्नुहोस्:</strong> Male, Female वा विभिन्न AI voices</li><li><strong>Speed adjust गर्नुहोस्:</strong> 0.5x (बिस्तारै) देखि 2x (छिटो) सम्म</li><li><strong>Play वा Download:</strong> तुरुन्त सुन्नुहोस् वा MP3 download गर्नुहोस्</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Pro Tip:</strong> Lok Sewa तयारी गर्दै हुनुहुन्छ? Current affairs notes TTS मा convert गरेर commute मा सुन्नुहोस् — time बचत हुन्छ!</div>`,
+      },
+      {
+        id: 'tts-vs-alternatives',
+        title: 'TTS Tools तुलना: कुन राम्रो?',
+        content: `<table><tr><th>Feature</th><th>ToolsArena TTS</th><th>Google TTS</th><th>Amazon Polly</th></tr><tr><td>मूल्य</td><td>✅ निःशुल्क</td><td>⚠️ Limited free</td><td>❌ Paid</td></tr><tr><td>Signup</td><td>✅ नचाहिने</td><td>❌ Google account</td><td>❌ AWS account</td></tr><tr><td>नेपाली Support</td><td>✅ छ</td><td>✅ छ</td><td>❌ छैन</td></tr><tr><td>Download</td><td>✅ MP3</td><td>❌ No download</td><td>✅ MP3</td></tr><tr><td>Speed Control</td><td>✅ छ</td><td>❌ छैन</td><td>✅ छ</td></tr></table>`,
+      },
+      {
+        id: 'tts-tips-nepal',
+        title: 'Nepal का लागि TTS Tips',
+        content: `<ul><li><strong>Slow internet?</strong> Text छोटो-छोटो paragraph मा divide गर्नुहोस् — loading fast हुन्छ</li><li><strong>Mixed language?</strong> Nepali-English mix text पनि naturally पढ्छ</li><li><strong>Offline सुन्ने?</strong> MP3 download गरेर phone मा save गर्नुहोस्</li><li><strong>Study technique:</strong> Notes type गर्नुहोस् → TTS मा सुन्नुहोस् → retention 40% बढ्छ (dual coding theory)</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>ध्यान दिनुहोस्:</strong> TTS audio लाई commercial use गर्नु अघि copyright policy जाँच गर्नुहोस्।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena TTS टूल खोल्नुहोस्', description: 'toolsarena.in/tools/text-to-speech मा जानुहोस्' },
+      { title: 'Text paste गर्नुहोस्', description: 'आफ्नो notes, लेख वा कुनै text copy-paste गर्नुहोस्' },
+      { title: 'भाषा र voice छान्नुहोस्', description: 'Nepali, English वा अरू भाषा — Male/Female voice' },
+      { title: 'Play वा Download गर्नुहोस्', description: 'तुरुन्त सुन्नुहोस् वा MP3 download गर्नुहोस्' },
+    ],
+    faqs: [
+      { question: 'के TTS ले नेपाली भाषा support गर्छ?', answer: 'हो, ToolsArena TTS ले नेपाली देवनागरी text natural voice मा पढ्छ। English र Hindi पनि support छ।' },
+      { question: 'के TTS निःशुल्क छ?', answer: 'हो, ToolsArena को TTS 100% निःशुल्क छ — कुनै signup वा limit छैन।' },
+      { question: 'के म audio download गर्न सक्छु?', answer: 'हो, MP3 format मा download गर्न सकिन्छ — offline सुन्न phone मा save गर्नुहोस्।' },
+      { question: 'TTS कुन device मा काम गर्छ?', answer: 'Mobile, tablet, laptop — कुनै पनि browser भएको device मा काम गर्छ। App install गर्नु पर्दैन।' },
+    ],
+    relatedGuides: ['speech-to-text-guide', 'word-counter-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Text to Speech अहिले प्रयोग गर्नुहोस्',
+      description: 'Text paste गर्नुहोस् — सेकेन्डमा natural voice सुन्नुहोस्।',
+      buttonText: 'Text to Speech खोल्नुहोस् →',
+    },
+  },
+
+  // ── COMPRESS IMAGE GUIDE (Nepali) ─────────────────────────────────
+  {
+    slug: 'compress-image-guide',
+    toolSlug: 'compress-image',
+    category: 'image-tools',
+    title: 'Image Compress गाइड: फोटो साइज घटाउने तरिका (2026)',
+    subtitle: 'फोटो quality नबिगारी file size ७०% सम्म घटाउनुहोस् — Daraz, website, form सबैका लागि।',
+    metaTitle: 'Image Compress गर्नुहोस् — निःशुल्क फोटो साइज घटाउने',
+    metaDescription: 'Image compress गरेर file size ७०% सम्म घटाउनुहोस् — quality नबिगारी। Daraz product photo, passport size, government form सबैका लागि। निःशुल्क अनलाइन टूल।',
+    targetKeyword: 'image compress nepal',
+    secondaryKeywords: ['image compress', 'photo size ghatauney', 'फोटो compress', 'image size reducer', 'photo compress online free', 'Daraz product photo size', 'passport photo compress', 'government form photo size', 'KB ma photo', 'image optimize Nepal'],
+    lastUpdated: '2026-03-14',
+    readingTime: '७ मिनेट पढ्ने',
+    tags: ['image', 'compress', 'photo', 'optimization'],
+    intro: `<p>Nepal मा धेरै ठाउँमा <strong>image compress</strong> गर्नु पर्छ — government form मा 200KB photo चाहिन्छ, Daraz मा product photo 1MB भन्दा कम हुनुपर्छ, website मा heavy image ले page slow बनाउँछ। तर photo quality बिग्रिने डर हुन्छ।</p><p>ToolsArena को <strong>निःशुल्क Image Compressor</strong> ले quality नबिगारी file size ७०% सम्म घटाउँछ — एकदमै सजिलो!</p>`,
+    sections: [
+      {
+        id: 'image-compress-kina',
+        title: 'Image Compress किन गर्नुपर्छ?',
+        content: `<ul><li><strong>Government Forms:</strong> Nepal को passport, NID, driving license form मा photo size limit हुन्छ (50KB–200KB)</li><li><strong>Daraz/Online Shopping:</strong> Product photo 1MB भन्दा कम चाहिन्छ — compress नगरे upload हुँदैन</li><li><strong>Website Speed:</strong> Heavy images ले website slow बनाउँछ — Nepal को internet speed मा यो major issue हो</li><li><strong>WhatsApp/Email:</strong> Large photo send गर्दा data खर्च हुन्छ — compress गरेर data बचत</li><li><strong>Storage:</strong> Phone storage full? Compress गरेर space बचाउनुहोस्</li></ul><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>तथ्य:</strong> Nepal मा average mobile internet speed 20 Mbps — 5MB को image load हुन 2 second लाग्छ। Compress गरेर 0.3 second मा load हुन्छ!</div>`,
+      },
+      {
+        id: 'nepal-photo-size-requirements',
+        title: 'Nepal का विभिन्न Photo Size Requirements',
+        content: `<table><tr><th>उद्देश्य</th><th>Max File Size</th><th>Dimensions</th></tr><tr><td>Nepal Passport Photo</td><td>200 KB</td><td>35mm × 45mm</td></tr><tr><td>NID (राष्ट्रिय परिचयपत्र)</td><td>150 KB</td><td>Specified by DoR</td></tr><tr><td>Driving License</td><td>100 KB</td><td>Passport size</td></tr><tr><td>Lok Sewa Application</td><td>200 KB</td><td>PP size</td></tr><tr><td>Daraz Product Photo</td><td>1 MB</td><td>800×800 px minimum</td></tr><tr><td>Facebook Profile</td><td>10 MB</td><td>320×320 px minimum</td></tr><tr><td>Website/Blog</td><td>100–200 KB ideal</td><td>Varies</td></tr></table>`,
+      },
+      {
+        id: 'compress-kasari-garne',
+        title: 'Image Compress कसरी गर्ने? (Step-by-Step)',
+        content: `<ol><li><strong>ToolsArena Image Compressor खोल्नुहोस्</strong></li><li><strong>Photo upload गर्नुहोस्:</strong> Drag & drop वा browse गरेर JPG, PNG, WebP file छान्नुहोस्</li><li><strong>Quality level छान्नुहोस्:</strong><ul><li>High (90%) — passport, NID जस्तो important photo</li><li>Medium (70%) — website, blog, Daraz product photo</li><li>Low (50%) — WhatsApp, quick share</li></ul></li><li><strong>Compress गर्नुहोस्:</strong> Button click गर्नुहोस् — सेकेन्डमा result</li><li><strong>Download गर्नुहोस्:</strong> Compressed photo download गर्नुहोस्</li></ol>`,
+      },
+      {
+        id: 'compression-types',
+        title: 'Lossy vs Lossless Compression बुझ्नुहोस्',
+        content: `<table><tr><th>Feature</th><th>Lossy Compression</th><th>Lossless Compression</th></tr><tr><td>Size reduction</td><td>60–80% सम्म</td><td>20–40% सम्म</td></tr><tr><td>Quality</td><td>थोरै घट्छ (देखिँदैन)</td><td>बिल्कुलै नघट्ने</td></tr><tr><td>Best for</td><td>Website, social media, Daraz</td><td>Professional photography, print</td></tr><tr><td>Formats</td><td>JPG, WebP</td><td>PNG, WebP lossless</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>सिफारिस:</strong> Website र Daraz का लागि Lossy (70% quality) use गर्नुहोस् — size धेरै घट्छ तर quality difference आँखाले थाहा पाउँदैन।</div>`,
+      },
+      {
+        id: 'image-format-nepal',
+        title: 'कुन Image Format कहिले प्रयोग गर्ने?',
+        content: `<ul><li><strong>JPG:</strong> Photo, Daraz product image, social media — सबैभन्दा universal</li><li><strong>PNG:</strong> Logo, screenshot, transparent background चाहिने — quality best तर size ठूलो</li><li><strong>WebP:</strong> Website images — JPG भन्दा 30% सानो, modern browser सबैले support गर्छ</li><li><strong>SVG:</strong> Icons, illustrations — infinite zoom, tiny size</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>ध्यान:</strong> Nepal government forms मा JPG/JPEG मात्र accept हुन्छ — PNG वा WebP submit नगर्नुहोस्।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Image Compressor खोल्नुहोस्', description: 'toolsarena.in/tools/compress-image मा जानुहोस्' },
+      { title: 'Photo upload गर्नुहोस्', description: 'JPG, PNG, WebP — कुनै पनि format drag & drop गर्नुहोस्' },
+      { title: 'Quality level छान्नुहोस्', description: 'High (90%), Medium (70%), वा Low (50%)' },
+      { title: 'Compress र Download', description: 'Button click गर्नुहोस् र compressed photo save गर्नुहोस्' },
+    ],
+    faqs: [
+      { question: 'Compress गर्दा photo quality बिग्रिन्छ?', answer: '70% quality मा compress गर्दा difference आँखाले थाहा पाउँदैन। Passport photo का लागि 90% use गर्नुहोस्।' },
+      { question: 'Nepal passport photo कसरी compress गर्ने?', answer: 'Photo upload गर्नुहोस् → 90% quality select → compress → 200KB भन्दा कम हुन्छ। JPG format मा save गर्नुहोस्।' },
+      { question: 'के multiple photos एकैचोटि compress गर्न सकिन्छ?', answer: 'हो, ToolsArena ले batch compression support गर्छ — एकैचोटि धेरै photos compress गर्नुहोस्।' },
+      { question: 'Phone बाट compress गर्न सकिन्छ?', answer: 'हो, mobile browser मा सजिलै काम गर्छ — कुनै app install गर्नु पर्दैन।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'compound-interest-guide'],
+    toolCTA: {
+      heading: 'Photo अहिले Compress गर्नुहोस्',
+      description: 'Quality नबिगारी file size ७०% सम्म घटाउनुहोस्।',
+      buttonText: 'Image Compressor खोल्नुहोस् →',
+    },
+  },
+
+  // ── SPEECH TO TEXT GUIDE (Nepali) ─────────────────────────────────
+  {
+    slug: 'speech-to-text-guide',
+    toolSlug: 'speech-to-text',
+    category: 'text-tools',
+    title: 'Speech to Text गाइड: बोलेर टाइप गर्ने AI टूल (2026)',
+    subtitle: 'बोल्नुहोस् — AI ले automatically टाइप गर्छ। नेपाली, अंग्रेजी, हिन्दी support।',
+    metaTitle: 'Speech to Text नेपाली — बोलेर टाइप गर्नुहोस्',
+    metaDescription: 'Speech to Text ले तपाईंको आवाज सुनेर automatically text मा बदल्छ। नेपाली, अंग्रेजी, हिन्दी support। Notes, assignment, message — सबै बोलेर टाइप गर्नुहोस्। निःशुल्क।',
+    targetKeyword: 'speech to text nepali',
+    secondaryKeywords: ['speech to text', 'voice to text', 'bolera type garne', 'voice typing nepali', 'बोलेर लेख्ने', 'dictation tool', 'voice recognition Nepal', 'STT online free', 'nepali voice typing', 'audio to text converter'],
+    lastUpdated: '2026-03-14',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['STT', 'voice', 'AI', 'typing'],
+    intro: `<p><strong>Speech to Text (STT)</strong> ले तपाईंको आवाज सुनेर automatically text मा convert गर्छ। Keyboard मा टाइप गर्नु भन्दा ३× छिटो — बोल्नुहोस्, AI ले लेख्छ!</p><p>Nepal मा Devanagari typing गाह्रो छ भन्ने धेरैको complaint हो। Speech to Text ले यो problem solve गर्छ — नेपाली बोल्नुहोस्, नेपाली text आउँछ।</p>`,
+    sections: [
+      {
+        id: 'stt-ke-ho',
+        title: 'Speech to Text के हो र कसरी काम गर्छ?',
+        content: `<p>Speech to Text (STT) AI-powered technology हो जसले:</p><ol><li><strong>Audio capture:</strong> Microphone बाट तपाईंको आवाज record गर्छ</li><li><strong>Processing:</strong> AI model ले sound waves analyze गर्छ</li><li><strong>Recognition:</strong> शब्दहरू identify गर्छ (even accent र background noise handle गर्छ)</li><li><strong>Output:</strong> Accurate text produce गर्छ — real-time मा</li></ol><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>तथ्य:</strong> Modern STT को accuracy 95%+ छ — human transcriber जत्तिकै accurate!</div>`,
+      },
+      {
+        id: 'stt-nepal-use-cases',
+        title: 'Nepal मा Speech to Text को प्रयोग',
+        content: `<table><tr><th>को</th><th>कसरी use गर्ने</th></tr><tr><td>विद्यार्थी</td><td>Lecture notes बोलेर लेख्ने — class मा teacher बोलेको real-time type</td></tr><tr><td>पत्रकार</td><td>Interview transcribe गर्ने — hours को recording minutes मा text</td></tr><tr><td>सरकारी कर्मचारी</td><td>Report र minutes बोलेर draft गर्ने — नेपाली typing नजान्दा पनि हुन्छ</td></tr><tr><td>Business Owner</td><td>Email, message, proposal बोलेर लेख्ने — time बचत</td></tr><tr><td>Content Creator</td><td>Blog post, script बोलेर draft गर्ने — writer's block हट्छ</td></tr><tr><td>अपाङ्गता भएका</td><td>Typing गर्न नसक्ने व्यक्तिका लागि essential accessibility tool</td></tr></table>`,
+      },
+      {
+        id: 'stt-kasari-use',
+        title: 'Speech to Text कसरी प्रयोग गर्ने?',
+        content: `<ol><li><strong>ToolsArena STT खोल्नुहोस्:</strong> toolsarena.in/tools/speech-to-text</li><li><strong>Microphone permission दिनुहोस्:</strong> Browser ले mic access माग्छ — Allow click गर्नुहोस्</li><li><strong>भाषा छान्नुहोस्:</strong> नेपाली, अंग्रेजी, हिन्दी वा अरू</li><li><strong>बोल्न सुरु गर्नुहोस्:</strong> स्पष्ट र normal speed मा बोल्नुहोस्</li><li><strong>Text edit गर्नुहोस्:</strong> AI ले लेखेको text review र edit गर्नुहोस्</li><li><strong>Copy वा Download:</strong> Final text copy गर्नुहोस् वा file save गर्नुहोस्</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Pro Tip:</strong> Quiet room मा बोल्नुहोस् — background noise कम हुँदा accuracy बढ्छ।</div>`,
+      },
+      {
+        id: 'stt-accuracy-tips',
+        title: 'Accuracy बढाउने Tips',
+        content: `<ul><li><strong>स्पष्ट बोल्नुहोस्:</strong> Normal speed, clear pronunciation — rush नगर्नुहोस्</li><li><strong>Quiet environment:</strong> Background noise (TV, traffic) कम गर्नुहोस्</li><li><strong>Good microphone:</strong> Laptop built-in mic भन्दा headset mic राम्रो काम गर्छ</li><li><strong>Punctuation बोल्नुहोस्:</strong> "Full stop", "comma", "question mark" बोल्दा STT ले punctuation add गर्छ</li><li><strong>Short sentences:</strong> लामो monologue भन्दा छोटो-छोटो sentence बोल्नुहोस्</li></ul>`,
+      },
+      {
+        id: 'typing-vs-stt',
+        title: 'Typing vs Speech to Text: कुन छिटो?',
+        content: `<table><tr><th>Method</th><th>Speed (WPM)</th><th>Best For</th></tr><tr><td>Handwriting</td><td>15–25 WPM</td><td>Exam, personal notes</td></tr><tr><td>Typing (Romanized Nepali)</td><td>30–50 WPM</td><td>Formal documents</td></tr><tr><td>Typing (Devanagari keyboard)</td><td>20–35 WPM</td><td>Slow but accurate</td></tr><tr><td><strong>Speech to Text</strong></td><td><strong>80–120 WPM</strong></td><td><strong>Draft, notes, messages</strong></td></tr></table><p>Speech to Text typing भन्दा <strong>3× छिटो</strong> छ — draft बनाउन best, तर final editing keyboard मा गर्नुहोस्।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Speech to Text खोल्नुहोस्', description: 'toolsarena.in/tools/speech-to-text मा जानुहोस्' },
+      { title: 'Microphone permission दिनुहोस्', description: 'Browser ले mic access माग्छ — Allow गर्नुहोस्' },
+      { title: 'भाषा छान्नुहोस् र बोल्नुहोस्', description: 'नेपाली, English वा Hindi — स्पष्ट बोल्नुहोस्' },
+      { title: 'Text copy वा download गर्नुहोस्', description: 'Review गरेर final text save गर्नुहोस्' },
+    ],
+    faqs: [
+      { question: 'के STT ले नेपाली बुझ्छ?', answer: 'हो, ToolsArena STT ले नेपाली देवनागरी accurately recognize गर्छ। Mixed Nepali-English पनि handle गर्छ।' },
+      { question: 'Internet बिना काम गर्छ?', answer: 'STT लाई internet चाहिन्छ किनभने AI processing cloud मा हुन्छ। Good internet connection recommended।' },
+      { question: 'के recording save हुन्छ?', answer: 'होइन — तपाईंको audio server मा save हुँदैन। Privacy 100% safe छ।' },
+      { question: 'Mobile मा काम गर्छ?', answer: 'हो, mobile browser (Chrome, Safari) मा perfectly काम गर्छ — app install नचाहिने।' },
+    ],
+    relatedGuides: ['text-to-speech-guide', 'word-counter-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'बोलेर टाइप गर्नुहोस् — अहिले!',
+      description: 'Keyboard छोड्नुहोस्, बोल्नुहोस् — AI ले लेख्छ।',
+      buttonText: 'Speech to Text खोल्नुहोस् →',
+    },
+  },
+
+  // ── PERCENTAGE GUIDE (Nepali) ─────────────────────────────────────
+  {
+    slug: 'percentage-how-to-guide',
+    toolSlug: 'percentage-calculator',
+    category: 'math-tools',
+    title: 'Percentage कसरी निकाल्ने? सम्पूर्ण गाइड (2026)',
+    subtitle: 'SEE/NEB marks, Daraz discount, loan interest — percentage गणना सजिलो बनाउनुहोस्।',
+    metaTitle: 'Percentage कसरी निकाल्ने — सजिलो Calculator',
+    metaDescription: 'Percentage कसरी निकाल्ने सिक्नुहोस्। SEE/NEB marks percentage, Daraz discount, bank loan interest — सबै formula र calculator एकै ठाउँमा। निःशुल्क।',
+    targetKeyword: 'percentage kasari nikalney',
+    secondaryKeywords: ['percentage कसरी निकाल्ने', 'प्रतिशत निकाल्ने', 'percentage calculator', 'SEE marks percentage', 'NEB percentage', 'Daraz discount calculation', 'loan interest percentage', 'percentage formula Nepal', 'marks to percentage', 'profit loss percentage'],
+    lastUpdated: '2026-03-14',
+    readingTime: '९ मिनेट पढ्ने',
+    tags: ['math', 'percentage', 'calculator', 'students'],
+    intro: `<p><strong>Percentage</strong> हाम्रो दैनिक जीवनमा सबैतिर छ — SEE को marks percentage, Daraz मा 40% discount, bank को 12% loan interest, pizza को 15% tip। तर formula बिर्सिने समस्या common छ।</p><p>यो guide ले percentage को सबै formula, Nepal-specific examples, र instant calculator दिन्छ — विद्यार्थी, व्यापारी, र सबैका लागि।</p>`,
+    sections: [
+      {
+        id: 'percentage-ke-ho',
+        title: 'Percentage (प्रतिशत) के हो?',
+        content: `<p>Percentage भनेको "प्रति सय" हो — 100 मध्ये कति भन्ने अर्थ।</p><ul><li><strong>50%</strong> = 100 मध्ये 50 = आधा</li><li><strong>25%</strong> = 100 मध्ये 25 = चौथाई</li><li><strong>100%</strong> = पूरा (सबै)</li></ul><p><strong>Formula:</strong> Percentage = (Part ÷ Total) × 100</p><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>उदाहरण:</strong> SEE मा 500 मध्ये 420 marks → (420 ÷ 500) × 100 = <strong>84%</strong></div>`,
+      },
+      {
+        id: 'see-neb-percentage',
+        title: 'SEE/NEB Marks Percentage कसरी निकाल्ने?',
+        content: `<p>Nepal को school/college परीक्षाको percentage निकाल्ने तरिका:</p><table><tr><th>परीक्षा</th><th>Total Marks</th><th>Formula</th></tr><tr><td>SEE</td><td>विषय अनुसार (100 per subject)</td><td>(प्राप्तांक ÷ पूर्णांक) × 100</td></tr><tr><td>NEB Class 11</td><td>Subject wise (75/100)</td><td>(Obtained ÷ Full marks) × 100</td></tr><tr><td>NEB Class 12</td><td>Subject wise (75/100)</td><td>(Obtained ÷ Full marks) × 100</td></tr></table><h4>GPA to Percentage Conversion (SEE)</h4><table><tr><th>GPA</th><th>Grade</th><th>Percentage Range</th></tr><tr><td>3.61–4.00</td><td>A+</td><td>90–100%</td></tr><tr><td>3.21–3.60</td><td>A</td><td>80–89%</td></tr><tr><td>2.81–3.20</td><td>B+</td><td>70–79%</td></tr><tr><td>2.41–2.80</td><td>B</td><td>60–69%</td></tr><tr><td>2.01–2.40</td><td>C+</td><td>50–59%</td></tr><tr><td>1.61–2.00</td><td>C</td><td>40–49%</td></tr><tr><td>1.21–1.60</td><td>D+</td><td>30–39%</td></tr><tr><td>0.81–1.20</td><td>D</td><td>20–29%</td></tr></table>`,
+      },
+      {
+        id: 'percentage-formulas',
+        title: 'सबै Percentage Formulas (चार्ट)',
+        content: `<table><tr><th>गणना</th><th>Formula</th><th>उदाहरण</th></tr><tr><td>X को Y%</td><td>(Y/100) × X</td><td>5000 को 13% = 650</td></tr><tr><td>X, Y को कति %?</td><td>(X/Y) × 100</td><td>420, 500 को 84%</td></tr><tr><td>% increase</td><td>((New-Old)/Old) × 100</td><td>Price 200→250 = 25% increase</td></tr><tr><td>% decrease</td><td>((Old-New)/Old) × 100</td><td>Price 500→400 = 20% decrease</td></tr><tr><td>Discount amount</td><td>(Discount%/100) × MRP</td><td>40% off on Rs.2000 = Rs.800 बचत</td></tr><tr><td>Final price after discount</td><td>MRP - Discount amount</td><td>Rs.2000 - Rs.800 = Rs.1200</td></tr></table>`,
+      },
+      {
+        id: 'nepal-daily-percentage',
+        title: 'Nepal मा दैनिक जीवनमा Percentage',
+        content: `<ul><li><strong>Daraz Sale:</strong> "50% off" मा Rs.3000 को जुत्ता → Rs.1500 मा (3000 × 50/100 = 1500 छुट)</li><li><strong>Bank Loan:</strong> Rs.10,00,000 home loan @ 12% annual → Rs.1,20,000/year interest</li><li><strong>VAT (Nepal):</strong> 13% VAT — Rs.1000 को खाना → Rs.1130 (1000 + 130 VAT)</li><li><strong>Tip:</strong> Restaurant मा 10% tip — Rs.2000 bill → Rs.200 tip</li><li><strong>Salary Increment:</strong> Rs.30,000 salary मा 15% increment → Rs.4,500 बढी = Rs.34,500</li></ul><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Quick Trick:</strong> 10% निकाल्न decimal point एक ठाउँ सार्नुहोस् (Rs.2500 को 10% = Rs.250)। 5% = 10% को आधा।</div>`,
+      },
+      {
+        id: 'percentage-mistakes',
+        title: 'Common Percentage Mistakes (नगर्नुहोस्!)',
+        content: `<ul><li><strong>❌ Mistake:</strong> 50% increase भएपछि 50% decrease गर्दा original हुन्छ → <strong>✅ सत्य:</strong> Rs.100 → 50% up = Rs.150 → 50% down = Rs.75 (original भन्दा कम!)</li><li><strong>❌ Mistake:</strong> Percentage add गर्ने (20% + 30% = 50%) → <strong>✅ सत्य:</strong> Successive discounts: 20% + 30% ≠ 50%। Rs.1000 मा 20% off = Rs.800, then 30% off = Rs.560 (44% total discount)</li><li><strong>❌ Mistake:</strong> "Per annum" बुझ्दा monthly सम्झने → <strong>✅ सत्य:</strong> 12% per annum = 1% per month</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Percentage Calculator खोल्नुहोस्', description: 'toolsarena.in/tools/percentage-calculator मा जानुहोस्' },
+      { title: 'गणनाको प्रकार छान्नुहोस्', description: 'Basic %, increase/decrease %, वा discount calculation' },
+      { title: 'Numbers हाल्नुहोस्', description: 'Marks, price, वा amount input गर्नुहोस्' },
+      { title: 'तुरुन्त result पाउनुहोस्', description: 'Percentage, amount, र step-by-step solution देख्नुहोस्' },
+    ],
+    faqs: [
+      { question: 'SEE GPA लाई percentage मा कसरी बदल्ने?', answer: 'GPA 3.61-4.00 = 90-100%, 3.21-3.60 = 80-89%, 2.81-3.20 = 70-79%। Exact conversion: (GPA × 25) approximate percentage।' },
+      { question: 'Daraz मा "Up to 50% off" को मतलब के हो?', answer: '"Up to 50% off" भनेको maximum 50% discount — सबै product मा 50% छैन। केही मा 10%, केही मा 50% हुन्छ।' },
+      { question: 'VAT कसरी calculate गर्ने?', answer: 'Nepal मा VAT 13% छ। Price × 1.13 = VAT सहित price। Rs.1000 → Rs.1130।' },
+      { question: 'Percentage र percentile मा के फरक छ?', answer: 'Percentage = तपाईंको score कति (85%)। Percentile = तपाईं कति % मान्छे भन्दा अगाडि छ (90th percentile = 90% भन्दा राम्रो)।' },
+    ],
+    relatedGuides: ['compound-interest-guide', 'word-counter-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Percentage तुरुन्त Calculate गर्नुहोस्',
+      description: 'Marks, discount, interest — कुनै पनि percentage सेकेन्डमा।',
+      buttonText: 'Percentage Calculator खोल्नुहोस् →',
+    },
+  },
+
+  // ── ATS RESUME CHECKER GUIDE (Nepali) ─────────────────────────────
+  {
+    slug: 'ats-resume-checker-guide',
+    toolSlug: 'ats-resume-checker',
+    category: 'career-tools',
+    title: 'ATS Resume Checker गाइड: Job पाउने CV बनाउनुहोस् (2026)',
+    subtitle: 'Nepal र विदेशको job apply गर्दा ATS-friendly resume कसरी बनाउने — complete guide।',
+    metaTitle: 'ATS Resume Checker — Job पाउने CV बनाउनुहोस्',
+    metaDescription: 'ATS Resume Checker ले तपाईंको CV score गर्छ र सुधार सुझाउँछ। Nepal, Gulf, Australia, Canada job apply गर्नु अघि resume check गर्नुहोस्। निःशुल्क।',
+    targetKeyword: 'ATS resume checker Nepal',
+    secondaryKeywords: ['ATS resume checker', 'resume checker free', 'CV check online', 'ATS friendly resume', 'job resume Nepal', 'Gulf job CV format', 'Australia PR resume', 'Canada job resume', 'resume score checker', 'ATS ke ho'],
+    lastUpdated: '2026-03-14',
+    readingTime: '९ मिनेट पढ्ने',
+    tags: ['resume', 'ATS', 'job', 'career'],
+    intro: `<p>Nepal बाट हजारौं मान्छे हरेक दिन job apply गर्छन् — Nepal भित्र, Gulf countries, Australia, Canada, UK। तर <strong>75% resume ATS (Applicant Tracking System)</strong> ले reject गर्छ — HR ले देख्नै पाउँदैन!</p><p>ATS भनेको software हो जसले resume scan गर्छ। यदि तपाईंको resume ATS-friendly छैन भने, कति राम्रो qualification भए पनि shortlist हुँदैन। ToolsArena को <strong>निःशुल्क ATS Resume Checker</strong> ले तपाईंको CV score गर्छ र कसरी सुधार्ने बताउँछ।</p>`,
+    sections: [
+      {
+        id: 'ats-ke-ho',
+        title: 'ATS (Applicant Tracking System) के हो?',
+        content: `<p>ATS एक software हो जुन companies ले job applications filter गर्न use गर्छन्:</p><ol><li><strong>Resume upload:</strong> तपाईंले online apply गर्नुभयो</li><li><strong>ATS scan:</strong> Software ले resume पढ्छ — keywords, format, sections check गर्छ</li><li><strong>Score:</strong> Resume लाई relevancy score दिन्छ (0–100%)</li><li><strong>Filter:</strong> Low score = rejected। High score = HR को inbox मा जान्छ</li></ol><div style="background:#fef2f2;border-left:4px solid #ef4444;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Important:</strong> Nepal का ठूला companies (Ncell, Nabil Bank, Unilever Nepal) र सबै international companies ATS use गर्छन्। Gulf (Dubai, Qatar, Saudi) मा पनि ATS mandatory छ।</div>`,
+      },
+      {
+        id: 'ats-fail-kina',
+        title: 'Resume ATS मा किन Fail हुन्छ?',
+        content: `<table><tr><th>गल्ती</th><th>किन fail?</th><th>Solution</th></tr><tr><td>Photo/Graphics</td><td>ATS ले image read गर्दैन</td><td>Photo नहाल्नुहोस् (Nepal/Gulf बाहेक)</td></tr><tr><td>Table/Column layout</td><td>ATS ले columns correctly parse गर्दैन</td><td>Single column layout use गर्नुहोस्</td></tr><tr><td>Fancy fonts</td><td>ATS ले read गर्न सक्दैन</td><td>Arial, Calibri, Times New Roman</td></tr><tr><td>Missing keywords</td><td>Job description का keywords नभेटेपछि reject</td><td>JD बाट keywords copy गर्नुहोस्</td></tr><tr><td>PDF image</td><td>Scanned PDF मा text छैन</td><td>Editable PDF/DOCX submit गर्नुहोस्</td></tr><tr><td>Header/Footer मा info</td><td>ATS ले header/footer skip गर्छ</td><td>Name, contact body मा राख्नुहोस्</td></tr></table>`,
+      },
+      {
+        id: 'ats-friendly-resume',
+        title: 'ATS-Friendly Resume कसरी बनाउने?',
+        content: `<h4>Must-Have Sections (यो order मा):</h4><ol><li><strong>Contact Information:</strong> Name, Phone, Email, LinkedIn, Location</li><li><strong>Professional Summary:</strong> 2-3 lines — experience + top skills + target role</li><li><strong>Work Experience:</strong> Company, Title, Dates, Bullet points with achievements</li><li><strong>Education:</strong> Degree, Institution, Year (Nepal: SLC/SEE, +2/NEB, Bachelor, Master)</li><li><strong>Skills:</strong> Technical + soft skills — JD बाट keywords match गर्नुहोस्</li><li><strong>Certifications:</strong> (Optional) Relevant certifications</li></ol><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Golden Rule:</strong> प्रत्येक job को लागि resume customize गर्नुहोस् — एउटै resume सबैतिर नपठाउनुहोस्। Job Description पढ्नुहोस् र keywords match गर्नुहोस्।</div>`,
+      },
+      {
+        id: 'resume-nepal-vs-foreign',
+        title: 'Nepal vs Foreign Job Resume: के फरक?',
+        content: `<table><tr><th>Element</th><th>Nepal Job</th><th>Gulf Job</th><th>Australia/Canada/UK</th></tr><tr><td>Photo</td><td>✅ हाल्ने</td><td>✅ हाल्ने</td><td>❌ नहाल्ने</td></tr><tr><td>Personal Details</td><td>DOB, marital status</td><td>DOB, nationality, visa status</td><td>❌ नहाल्ने (discrimination law)</td></tr><tr><td>Length</td><td>1-2 pages</td><td>2-3 pages</td><td>2 pages max</td></tr><tr><td>Format</td><td>PDF</td><td>PDF/DOCX</td><td>DOCX preferred (ATS)</td></tr><tr><td>References</td><td>Required</td><td>Required</td><td>"Available upon request"</td></tr><tr><td>Salary Info</td><td>Sometimes mentioned</td><td>Expected salary mention</td><td>❌ नहाल्ने</td></tr></table>`,
+      },
+      {
+        id: 'ats-checker-kasari',
+        title: 'ToolsArena ATS Checker कसरी Use गर्ने?',
+        content: `<ol><li><strong>Resume upload गर्नुहोस्:</strong> PDF वा DOCX format मा</li><li><strong>Job description paste गर्नुहोस्:</strong> (Optional) Target job को JD paste गर्नुहोस् — keyword matching check</li><li><strong>Score हेर्नुहोस्:</strong> Overall ATS score (0-100%) + section-wise breakdown</li><li><strong>Suggestions follow गर्नुहोस्:</strong><ul><li>Missing keywords</li><li>Format issues</li><li>Section improvements</li><li>Content optimization tips</li></ul></li><li><strong>Fix र re-check:</strong> सुधार गरेर फेरि check गर्नुहोस् — 80%+ aim गर्नुहोस्</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Target Score:</strong> 80%+ = Strong। 60-79% = Needs improvement। 60% भन्दा कम = Major revision चाहिन्छ।</div>`,
+      },
+      {
+        id: 'keywords-tips',
+        title: 'ATS Keywords Strategy (Nepal Jobs)',
+        content: `<p>Nepal र international job market मा common keywords:</p><ul><li><strong>IT/Software:</strong> Python, JavaScript, React, Node.js, AWS, Agile, Scrum</li><li><strong>Banking/Finance:</strong> Financial Analysis, Risk Management, Compliance, NRB regulations</li><li><strong>NGO/INGO:</strong> Project Management, M&E, Stakeholder Engagement, Report Writing</li><li><strong>Gulf (Construction):</strong> AutoCAD, Project Planning, Safety Management, QA/QC</li><li><strong>Australia (Skilled):</strong> Registration number, skill assessment body, IELTS score</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Warning:</strong> Keywords stuff नगर्नुहोस्! Natural sentence मा keywords use गर्नुहोस्। ATS र HR दुवैले पढ्छ।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena ATS Checker खोल्नुहोस्', description: 'toolsarena.in/tools/ats-resume-checker मा जानुहोस्' },
+      { title: 'Resume upload गर्नुहोस्', description: 'PDF वा DOCX format मा upload गर्नुहोस्' },
+      { title: 'Job description paste गर्नुहोस्', description: 'Target job को JD paste गर्नुहोस् (optional)' },
+      { title: 'Score र suggestions हेर्नुहोस्', description: 'ATS score + improvement tips follow गर्नुहोस्' },
+    ],
+    faqs: [
+      { question: 'ATS resume checker निःशुल्क छ?', answer: 'हो, ToolsArena को ATS checker 100% निःशुल्क छ — unlimited resume check गर्न सकिन्छ।' },
+      { question: 'Gulf job का लागि photo हाल्नुपर्छ?', answer: 'हो, Gulf countries (UAE, Qatar, Saudi, Kuwait) मा resume मा photo हाल्ने culture छ। तर Australia, Canada, UK मा photo नहाल्नुहोस्।' },
+      { question: 'नेपाली भाषामा resume बनाउने?', answer: 'Nepal सरकारी job बाहेक सबैतिर English resume recommended छ। INGO, private sector, र foreign job मा English mandatory।' },
+      { question: 'Resume PDF वा DOCX मा पठाउने?', answer: 'ATS का लागि DOCX best हो। तर Nepal मा PDF पनि accept हुन्छ। Job posting मा specify गरेको format follow गर्नुहोस्।' },
+      { question: 'कति पटक resume update गर्नुपर्छ?', answer: 'हरेक 3-6 महिनामा update गर्नुहोस् — नयाँ skills, experience, certification add गर्नुहोस्। प्रत्येक job apply अघि customize गर्नुहोस्।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'text-to-speech-guide'],
+    toolCTA: {
+      heading: 'Resume Score अहिले Check गर्नुहोस्',
+      description: 'ATS ले तपाईंको CV कसरी देख्छ? निःशुल्क check गर्नुहोस्।',
+      buttonText: 'ATS Resume Checker खोल्नुहोस् →',
+    },
+  },
+
 ];
