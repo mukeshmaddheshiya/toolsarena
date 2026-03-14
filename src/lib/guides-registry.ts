@@ -4841,6 +4841,987 @@ GST Amount = Inclusive Price - Base Price</code></pre>
     },
   },
 
+  // ── 38. TEXT TO SPEECH GUIDE ─────────────────────────────────────
+  {
+    slug: 'text-to-speech-guide',
+    toolSlug: 'text-to-speech',
+    category: 'text-tools',
+    title: 'Text to Speech Guide: Convert Text to Audio Online Free (2026)',
+    subtitle: 'The complete guide to text-to-speech technology — how it works, best use cases, voice options, and how to convert any text to natural-sounding audio instantly.',
+    metaTitle: 'Text to Speech Guide: Convert Text to Audio Free Online (2026)',
+    metaDescription: 'Learn how to convert text to speech online for free. Covers TTS technology, voice selection, use cases for accessibility, learning, and productivity. Free TTS tool included.',
+    targetKeyword: 'text to speech',
+    secondaryKeywords: [
+      'text to speech online', 'text to speech free', 'convert text to audio',
+      'TTS online', 'text to voice converter', 'read text aloud online',
+      'text to speech for students', 'text to speech accessibility',
+      'best text to speech tool', 'text to speech Hindi',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '9 min read',
+    tags: ['Accessibility', 'Productivity', 'Learning', 'Audio'],
+    intro: `<p><strong>Text to speech (TTS)</strong> converts written text into natural-sounding audio — and it has become one of the most powerful tools for accessibility, learning, and productivity. Whether you are a student who learns better by listening, a professional proofreading a document by ear, or someone with a visual impairment who relies on screen readers, TTS technology saves time and opens doors.</p>
+<p>This guide explains how text-to-speech works, when and why you should use it, how to choose the right voice and settings, and how to get the best results from ToolsArena's free online TTS converter — no download, no signup, no limits.</p>`,
+    sections: [
+      {
+        id: 'what-is-text-to-speech',
+        title: 'What Is Text to Speech and How Does It Work?',
+        content: `<p><strong>Text to speech (TTS)</strong> is a technology that reads digital text aloud using synthesised speech. Modern TTS systems use neural networks trained on thousands of hours of human speech recordings to produce audio that sounds remarkably natural — complete with proper intonation, pauses, and emphasis.</p>
+<h3>How modern TTS works (simplified)</h3>
+<ol>
+  <li><strong>Text analysis</strong> — The system parses your text, identifies sentences, handles abbreviations (e.g., "Dr." becomes "Doctor"), and determines punctuation-based pauses.</li>
+  <li><strong>Phoneme conversion</strong> — Words are converted into phonemes (the smallest units of sound). English has approximately 44 phonemes. "Hello" becomes /h/ /ɛ/ /l/ /oʊ/.</li>
+  <li><strong>Prosody prediction</strong> — The system determines pitch, speed, and emphasis for each word based on context. Questions go up in pitch at the end; exclamations are louder.</li>
+  <li><strong>Audio synthesis</strong> — The final waveform is generated. Neural TTS models (like those used by Google, Amazon, and Microsoft) produce audio that is nearly indistinguishable from human speech.</li>
+</ol>
+<h3>Browser-based TTS vs cloud TTS</h3>
+<p>ToolsArena uses the <strong>Web Speech API</strong> built into your browser. This means your text is processed locally on your device — nothing is sent to external servers. The available voices depend on your operating system and browser, but most modern systems offer 20–50+ voices across multiple languages.</p>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Chrome on Windows typically offers the most voice options (50+), including high-quality neural voices from Microsoft. Safari on macOS offers premium Apple voices. Try different browsers to find the voice you prefer.</p></div>`,
+      },
+      {
+        id: 'why-use-text-to-speech',
+        title: 'Why Use Text to Speech? 7 Powerful Use Cases',
+        content: `<p>TTS is not just for people with disabilities — it is a productivity multiplier for everyone. Here are the most impactful use cases:</p>
+<h3>1. Accessibility</h3>
+<p>For people with visual impairments, dyslexia, or other reading difficulties, TTS is essential. It makes the entire written internet accessible. Screen readers like JAWS and NVDA are specialised TTS tools, but a simple online TTS converter works for quick tasks.</p>
+<h3>2. Proofreading and editing</h3>
+<p>Listening to your writing read aloud reveals errors your eyes miss. Your brain auto-corrects mistakes when reading silently, but hearing them spoken forces you to notice awkward phrasing, missing words, and grammatical errors. Professional editors routinely use TTS as a proofreading step.</p>
+<h3>3. Learning and studying</h3>
+<p>Auditory learners retain information better when they hear it. Convert lecture notes, textbook chapters, or study guides to audio and listen while commuting, exercising, or doing chores. This effectively doubles your study time.</p>
+<h3>4. Multitasking</h3>
+<p>Convert emails, articles, or reports to audio and listen while driving, cooking, or working out. TTS turns any text into a podcast-like experience.</p>
+<h3>5. Language learning</h3>
+<p>Hear correct pronunciation of words and sentences in a foreign language. TTS supports dozens of languages including Hindi, Spanish, French, German, Japanese, and more. Listening to native-speed speech improves your comprehension.</p>
+<h3>6. Content creation</h3>
+<p>Generate voiceovers for YouTube videos, presentations, tutorials, and social media content. While professional voice actors produce higher quality, TTS is perfect for drafts, internal presentations, and quick content.</p>
+<h3>7. Reading long documents</h3>
+<p>Research papers, legal documents, and technical manuals are exhausting to read. TTS lets you "listen through" a 50-page document while taking notes on the important parts.</p>
+<div class="callout-info"><strong>ℹ️ Accessibility fact</strong><p>According to the WHO, over 2.2 billion people globally have some form of vision impairment. TTS technology is not a convenience — it is a necessity for a significant portion of the world's population.</p></div>`,
+      },
+      {
+        id: 'how-to-use-text-to-speech',
+        title: 'How to Use Text to Speech Online: Step-by-Step',
+        content: `<p>Using ToolsArena's free TTS converter takes less than 30 seconds:</p>
+<ol>
+  <li><strong>Open the tool</strong> — Navigate to ToolsArena's Text to Speech page. No signup or installation needed.</li>
+  <li><strong>Paste or type your text</strong> — Enter the text you want to hear read aloud. There is no character limit.</li>
+  <li><strong>Select a voice</strong> — Choose from the available voices on your system. Options typically include male and female voices in multiple languages and accents (US English, British English, Indian English, Hindi, etc.).</li>
+  <li><strong>Adjust speed and pitch</strong> — Use the sliders to control how fast the text is read (0.5x to 2x) and the pitch of the voice (lower or higher).</li>
+  <li><strong>Click Play</strong> — The text is read aloud immediately. You can pause, resume, and stop at any time.</li>
+</ol>
+<h3>Choosing the right voice</h3>
+<p>The best voice depends on your use case:</p>
+<ul>
+  <li><strong>For proofreading</strong> — Use a clear, neutral voice at normal speed. Avoid overly expressive voices that might mask errors.</li>
+  <li><strong>For studying</strong> — Use a slightly slower speed (0.8x) for complex material. Speed up (1.2x–1.5x) for review sessions.</li>
+  <li><strong>For language learning</strong> — Select a native voice in the target language. Start at 0.7x speed and gradually increase as your comprehension improves.</li>
+  <li><strong>For content creation</strong> — Choose the most natural-sounding voice available. Neural voices (labelled "Online" or "Premium" in some browsers) sound significantly better than standard voices.</li>
+</ul>
+<div class="callout-tip"><strong>💡 Speed tip</strong><p>Most people can comfortably listen at 1.5x speed after a few minutes of adjustment. This means you can "read" a 10-minute article in under 7 minutes. Audiobook listeners regularly use 1.5x–2x speed.</p></div>`,
+      },
+      {
+        id: 'text-to-speech-languages',
+        title: 'Text to Speech Languages and Voices: Complete List',
+        content: `<p>Modern browsers support TTS in dozens of languages. The exact voice list depends on your operating system and browser, but here are the most commonly available options:</p>
+<table>
+  <thead>
+    <tr><th>Language</th><th>Typical Voices Available</th><th>Quality Level</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>English (US)</td><td>5–15 voices (male + female)</td><td>Excellent — neural voices available</td></tr>
+    <tr><td>English (UK)</td><td>3–8 voices</td><td>Excellent</td></tr>
+    <tr><td>English (India)</td><td>1–3 voices</td><td>Good</td></tr>
+    <tr><td>Hindi</td><td>1–4 voices</td><td>Good — improving rapidly</td></tr>
+    <tr><td>Spanish</td><td>3–8 voices</td><td>Excellent</td></tr>
+    <tr><td>French</td><td>3–6 voices</td><td>Excellent</td></tr>
+    <tr><td>German</td><td>3–5 voices</td><td>Excellent</td></tr>
+    <tr><td>Japanese</td><td>2–4 voices</td><td>Very good</td></tr>
+    <tr><td>Chinese (Mandarin)</td><td>2–5 voices</td><td>Very good</td></tr>
+    <tr><td>Korean</td><td>2–3 voices</td><td>Good</td></tr>
+    <tr><td>Portuguese (Brazil)</td><td>2–4 voices</td><td>Good</td></tr>
+    <tr><td>Arabic</td><td>1–3 voices</td><td>Good</td></tr>
+    <tr><td>Tamil / Telugu / Bengali</td><td>1–2 voices each</td><td>Basic to good</td></tr>
+  </tbody>
+</table>
+<h3>How to get more voices</h3>
+<ul>
+  <li><strong>Windows 10/11:</strong> Go to Settings → Time & Language → Speech → Add voices. Microsoft offers 100+ neural voices.</li>
+  <li><strong>macOS:</strong> System Preferences → Accessibility → Spoken Content → System Voice → Manage Voices. Apple's premium voices are free to download.</li>
+  <li><strong>Chrome:</strong> Automatically includes Google's online TTS voices if you are connected to the internet.</li>
+  <li><strong>Android:</strong> Settings → Accessibility → Text-to-speech output. Google TTS engine is pre-installed.</li>
+</ul>
+<div class="callout-info"><strong>ℹ️ Hindi TTS</strong><p>Hindi text-to-speech quality has improved dramatically since 2024. Windows 11 and Google Chrome both offer natural-sounding Hindi voices. If Hindi TTS sounds robotic on your device, try updating your browser or installing additional language packs.</p></div>`,
+      },
+      {
+        id: 'text-to-speech-tips',
+        title: 'Pro Tips: Get Better Results from Text to Speech',
+        content: `<p>The quality of TTS output depends heavily on how you format your input text. These tips make a noticeable difference:</p>
+<h3>Formatting tips</h3>
+<ul>
+  <li><strong>Use proper punctuation.</strong> TTS engines use periods, commas, and question marks to determine pauses and intonation. "Let's eat grandma" sounds very different from "Let's eat, grandma."</li>
+  <li><strong>Break long paragraphs.</strong> Insert line breaks between sections. This creates natural pauses and makes it easier to follow along.</li>
+  <li><strong>Spell out abbreviations.</strong> "Dr." usually works, but "approx." might be read as "approx" instead of "approximately." When in doubt, spell it out.</li>
+  <li><strong>Use hyphens for compound words.</strong> "State-of-the-art" is read more naturally than "state of the art" in most TTS engines.</li>
+  <li><strong>Add periods after headings.</strong> Without punctuation, TTS runs headings into the following paragraph without pause.</li>
+</ul>
+<h3>Speed and comprehension</h3>
+<table>
+  <thead>
+    <tr><th>Speed Setting</th><th>Best For</th><th>Words Per Minute</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>0.5x – 0.7x</td><td>Language learning, complex material</td><td>75–105 wpm</td></tr>
+    <tr><td>0.8x – 1.0x</td><td>First-time listening, proofreading</td><td>120–150 wpm</td></tr>
+    <tr><td>1.2x – 1.5x</td><td>Review, familiar content</td><td>180–225 wpm</td></tr>
+    <tr><td>1.7x – 2.0x</td><td>Speed listening (experienced users)</td><td>255–300 wpm</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Proofreading hack</strong><p>Read your text silently while TTS reads it aloud simultaneously. This dual-channel approach catches errors that neither reading nor listening alone would find. It is the single most effective proofreading technique available.</p></div>`,
+      },
+      {
+        id: 'text-to-speech-vs-alternatives',
+        title: 'Text to Speech: Free Online vs Apps vs AI Services',
+        content: `<p>There are many TTS options available. Here is how they compare:</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Cost</th><th>Quality</th><th>Privacy</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ToolsArena (browser-based)</td><td>Free</td><td>Good – Very Good</td><td>Excellent (local processing)</td><td>Quick text reading, proofreading, studying</td></tr>
+    <tr><td>Google Text-to-Speech</td><td>Free (limited)</td><td>Very Good</td><td>Low (cloud processing)</td><td>Android apps, Google products</td></tr>
+    <tr><td>Amazon Polly</td><td>$4/million characters</td><td>Excellent</td><td>Medium</td><td>App developers, high volume</td></tr>
+    <tr><td>ElevenLabs</td><td>Free tier + paid plans</td><td>Excellent (AI cloning)</td><td>Low</td><td>Content creators, voice cloning</td></tr>
+    <tr><td>NaturalReader</td><td>Free tier + $10/month</td><td>Very Good</td><td>Medium</td><td>Students, document reading</td></tr>
+    <tr><td>Built-in OS TTS</td><td>Free</td><td>Good</td><td>Excellent (local)</td><td>System-wide accessibility</td></tr>
+  </tbody>
+</table>
+<h3>Why browser-based TTS wins for most users</h3>
+<ul>
+  <li><strong>Zero setup</strong> — No download, no installation, no account creation</li>
+  <li><strong>Privacy</strong> — Your text never leaves your device</li>
+  <li><strong>Speed</strong> — Paste text, click play, listen immediately</li>
+  <li><strong>Cost</strong> — Completely free, no character limits, no daily caps</li>
+</ul>
+<p>For professional voiceover work or voice cloning, paid services like ElevenLabs are superior. But for everyday use cases — proofreading, studying, listening to articles, accessibility — free browser-based TTS is more than sufficient.</p>`,
+      },
+      {
+        id: 'text-to-speech-accessibility',
+        title: 'Text to Speech for Accessibility: What You Need to Know',
+        content: `<p>TTS is a cornerstone of digital accessibility. Here is how it helps different groups of users:</p>
+<h3>Visual impairments</h3>
+<p>For users who are blind or have low vision, TTS (via screen readers like JAWS, NVDA, or VoiceOver) is the primary way to interact with digital content. Web developers should ensure their sites work with screen readers by using semantic HTML, alt text for images, and ARIA labels.</p>
+<h3>Dyslexia</h3>
+<p>Research shows that people with dyslexia comprehend text significantly better when they can hear it read aloud while following along visually. TTS effectively removes the decoding barrier while preserving comprehension. Many schools and universities provide TTS tools as standard accommodations.</p>
+<h3>ADHD</h3>
+<p>Listening to text being read aloud helps maintain focus for many people with ADHD. The auditory input provides an additional anchor that prevents mind-wandering during reading. Combining TTS with text highlighting (where available) further improves focus.</p>
+<h3>Motor disabilities</h3>
+<p>Users who cannot easily scroll or navigate pages can use TTS to have content read to them sequentially, reducing the need for manual interaction.</p>
+<h3>Literacy challenges</h3>
+<p>For new readers, language learners, and children developing reading skills, TTS provides a scaffold. Hearing words pronounced correctly while seeing them on screen builds reading fluency over time.</p>
+<div class="callout-info"><strong>ℹ️ Legal requirement</strong><p>In many countries, digital accessibility is legally required. The ADA (US), EAA (EU), and RPWD Act (India) all mandate that digital content be accessible to people with disabilities. TTS compatibility is a key component of accessibility compliance.</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Open ToolsArena Text to Speech', description: 'Navigate to the Text to Speech tool. No signup or download required — works in any modern browser.' },
+      { title: 'Paste or type your text', description: 'Enter the text you want to hear. Supports any length — articles, essays, emails, or entire documents.' },
+      { title: 'Choose a voice', description: 'Select from available voices on your device. Options include male/female voices in multiple languages and accents.' },
+      { title: 'Adjust speed and pitch', description: 'Use sliders to set your preferred speaking speed (0.5x to 2x) and voice pitch.' },
+      { title: 'Click Play and listen', description: 'Press the Play button. Pause, resume, or stop at any time. The text is processed locally — nothing is uploaded.' },
+    ],
+    faqs: [
+      { question: 'Is text to speech free to use?', answer: 'Yes. ToolsArena\'s text-to-speech tool is completely free with no character limits, no daily caps, and no signup required. It uses your browser\'s built-in speech synthesis, so your text never leaves your device.' },
+      { question: 'Can text to speech read in Hindi?', answer: 'Yes. Most modern browsers and operating systems support Hindi TTS voices. On Windows 11, you can install additional Hindi voices from Settings → Time & Language → Speech. Chrome also includes Google\'s Hindi voice when connected to the internet.' },
+      { question: 'What is the best speed for text to speech?', answer: 'For first-time listening or proofreading, use 1.0x (normal speed). For review or familiar content, 1.2x–1.5x is comfortable. Experienced listeners often use 1.5x–2.0x. Start at normal speed and gradually increase as you get used to it.' },
+      { question: 'Can I download the audio from text to speech?', answer: 'Browser-based TTS (including ToolsArena) typically plays audio in real-time without generating a downloadable file. For downloadable audio files, you would need a cloud-based TTS service like Google Cloud TTS or Amazon Polly, which process text on their servers.' },
+      { question: 'Why does text to speech sound robotic?', answer: 'Older TTS engines used concatenative synthesis (stitching recorded syllables together), which sounded robotic. Modern neural TTS engines sound much more natural. If your TTS sounds robotic, try a different voice — voices labelled "Online," "Neural," or "Premium" typically sound significantly better.' },
+      { question: 'Is text to speech good for studying?', answer: 'Research supports TTS as a study aid, especially for auditory learners. Listening to notes while reading along improves retention. TTS also enables studying during activities where reading is not possible — commuting, exercising, or doing chores.' },
+      { question: 'How many languages does text to speech support?', answer: 'Modern TTS systems support 40–100+ languages depending on the platform. Common languages include English (multiple accents), Hindi, Spanish, French, German, Japanese, Chinese, Korean, Arabic, Portuguese, and most major Indian languages.' },
+      { question: 'Does text to speech work on mobile?', answer: 'Yes. ToolsArena\'s TTS tool works on mobile browsers (Chrome, Safari, Firefox). Android devices include Google TTS engine by default. iPhones use Apple\'s built-in speech synthesis. Performance is comparable to desktop.' },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'speech-to-text-guide'],
+    toolCTA: {
+      heading: 'Convert Text to Speech Instantly — Free',
+      description: 'Paste any text and hear it read aloud with natural-sounding voices. Choose from multiple languages, adjust speed and pitch. No signup, no limits, 100% private.',
+      buttonText: 'Open Text to Speech Tool',
+    },
+  },
+
+  // ── 39. COMPRESS IMAGE GUIDE ────────────────────────────────────
+  {
+    slug: 'compress-image-guide',
+    toolSlug: 'image-compressor',
+    category: 'image-tools',
+    title: 'How to Compress Images Without Losing Quality: Complete Guide (2026)',
+    subtitle: 'Everything you need to know about image compression — formats, techniques, optimal settings, and how to reduce image file size by 80% or more.',
+    metaTitle: 'Compress Images Without Losing Quality — Free Guide (2026)',
+    metaDescription: 'Learn how to compress images without losing quality. Covers JPEG vs PNG vs WebP, optimal compression settings, batch processing, and a free online image compressor tool.',
+    targetKeyword: 'compress image',
+    secondaryKeywords: [
+      'compress image online', 'image compressor free', 'reduce image size',
+      'compress image without losing quality', 'how to compress photos',
+      'reduce photo file size', 'image compression for website',
+      'compress JPEG online', 'compress PNG online', 'image size reducer',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '10 min read',
+    tags: ['Images', 'Optimization', 'Web Performance', 'Photography'],
+    intro: `<p>Large images slow down websites, eat up storage, and make sharing files painful. But aggressive compression destroys visual quality, leaving you with blurry, artefact-ridden photos. The sweet spot — <strong>reducing file size by 60–80% while keeping images visually identical</strong> — is easier to achieve than most people think.</p>
+<p>This guide covers everything about image compression: how it works technically, which format to use for which situation, the optimal quality settings for web, email, and social media, and how to compress images in seconds using ToolsArena's free online compressor.</p>`,
+    sections: [
+      {
+        id: 'what-is-image-compression',
+        title: 'What Is Image Compression? Lossy vs Lossless Explained',
+        content: `<p>Image compression reduces the file size of an image by removing redundant or less important data. There are two fundamental approaches:</p>
+<h3>Lossy compression</h3>
+<p>Lossy compression permanently removes some image data to achieve smaller file sizes. The key insight is that human eyes cannot distinguish between the original and a lossy-compressed version at reasonable quality levels. A JPEG saved at 80% quality is typically 60–70% smaller than the original while appearing visually identical to most viewers.</p>
+<p>How it works: Lossy algorithms analyse the image and discard information that human vision is least sensitive to — subtle colour variations, fine texture details in busy areas, and high-frequency noise. The result is a smaller file that looks the same to human eyes.</p>
+<h3>Lossless compression</h3>
+<p>Lossless compression reduces file size without removing any data. The original image can be perfectly reconstructed from the compressed version. PNG uses lossless compression. The tradeoff is smaller compression ratios — typically 20–50% reduction vs 60–90% for lossy.</p>
+<p>How it works: Lossless algorithms find patterns in the data and encode them more efficiently. For example, instead of storing "blue, blue, blue, blue, blue" (5 values), it stores "blue × 5" (2 values). This is called run-length encoding.</p>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Lossy (JPEG, WebP lossy)</th><th>Lossless (PNG, WebP lossless)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>File size reduction</td><td>60–90%</td><td>20–50%</td></tr>
+    <tr><td>Quality loss</td><td>Imperceptible at 75–85%</td><td>Zero</td></tr>
+    <tr><td>Best for</td><td>Photos, complex images</td><td>Screenshots, logos, text, transparency</td></tr>
+    <tr><td>Supports transparency</td><td>No (JPEG) / Yes (WebP)</td><td>Yes</td></tr>
+    <tr><td>Repeated compression</td><td>Quality degrades each time</td><td>No degradation</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Never re-compress JPEGs repeatedly</strong><p>Each time you open, edit, and re-save a JPEG, quality degrades. This is called "generation loss." If you need to edit an image multiple times, work with a lossless format (PNG or TIFF) and export to JPEG only as the final step.</p></div>`,
+      },
+      {
+        id: 'jpeg-vs-png-vs-webp',
+        title: 'JPEG vs PNG vs WebP: Which Format Should You Use?',
+        content: `<p>Choosing the right format before compression is the single most impactful decision for file size. Using PNG for a photograph or JPEG for a logo with transparency wastes enormous amounts of space.</p>
+<table>
+  <thead>
+    <tr><th>Format</th><th>Best For</th><th>Typical Size (1920×1080)</th><th>Transparency</th><th>Animation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>JPEG</strong></td><td>Photos, complex images</td><td>200–500 KB</td><td>No</td><td>No</td></tr>
+    <tr><td><strong>PNG</strong></td><td>Screenshots, logos, text, transparency</td><td>1–5 MB</td><td>Yes</td><td>No</td></tr>
+    <tr><td><strong>WebP</strong></td><td>Everything (modern replacement)</td><td>100–300 KB</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td><strong>AVIF</strong></td><td>Photos (next-gen)</td><td>80–200 KB</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td><strong>GIF</strong></td><td>Simple animations</td><td>500 KB – 5 MB</td><td>Yes (1-bit)</td><td>Yes</td></tr>
+    <tr><td><strong>SVG</strong></td><td>Icons, logos, illustrations</td><td>5–50 KB</td><td>Yes</td><td>Yes</td></tr>
+  </tbody>
+</table>
+<h3>Quick decision guide</h3>
+<ul>
+  <li><strong>Photo or image with many colours?</strong> → JPEG (or WebP for 30% smaller files)</li>
+  <li><strong>Screenshot with text?</strong> → PNG (text stays sharp) or WebP lossless</li>
+  <li><strong>Logo or icon?</strong> → SVG (scalable) or PNG (if raster needed)</li>
+  <li><strong>Image needs transparent background?</strong> → PNG or WebP</li>
+  <li><strong>Building a website and want smallest files?</strong> → WebP with JPEG fallback</li>
+</ul>
+<div class="callout-tip"><strong>💡 WebP is the best all-round choice in 2026</strong><p>WebP is supported by 97%+ of browsers globally. It produces files 25–35% smaller than JPEG at equivalent quality and supports transparency. Unless you need to support very old browsers, WebP should be your default format for web images.</p></div>`,
+      },
+      {
+        id: 'optimal-compression-settings',
+        title: 'Optimal Image Compression Settings for Every Use Case',
+        content: `<p>The "right" compression level depends on where the image will be used. Here are the settings professionals use:</p>
+<table>
+  <thead>
+    <tr><th>Use Case</th><th>Format</th><th>Quality Setting</th><th>Target File Size</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Website hero image</td><td>WebP or JPEG</td><td>80–85%</td><td>100–300 KB</td></tr>
+    <tr><td>Blog post image</td><td>WebP or JPEG</td><td>75–80%</td><td>50–150 KB</td></tr>
+    <tr><td>Thumbnail / preview</td><td>WebP or JPEG</td><td>70–75%</td><td>15–50 KB</td></tr>
+    <tr><td>Email attachment</td><td>JPEG</td><td>80%</td><td>Under 1 MB</td></tr>
+    <tr><td>WhatsApp / messaging</td><td>JPEG</td><td>75–80%</td><td>Under 500 KB</td></tr>
+    <tr><td>Social media upload</td><td>JPEG or PNG</td><td>85–90%</td><td>Under 2 MB</td></tr>
+    <tr><td>E-commerce product</td><td>WebP or JPEG</td><td>85%</td><td>100–200 KB</td></tr>
+    <tr><td>Print (300 DPI)</td><td>TIFF or PNG</td><td>Lossless</td><td>5–50 MB</td></tr>
+    <tr><td>Passport / ID photo</td><td>JPEG</td><td>90–95%</td><td>Under 200 KB (check requirements)</td></tr>
+    <tr><td>App icon</td><td>PNG</td><td>Lossless</td><td>Under 50 KB</td></tr>
+  </tbody>
+</table>
+<h3>The quality perception curve</h3>
+<p>Image quality perception is not linear. Going from 100% to 85% quality removes 50–60% of the file size with virtually no visible difference. Going from 85% to 70% removes another 20–30% with minimal visible difference. Below 60%, artefacts become noticeable. Below 40%, images look obviously degraded.</p>
+<p>The sweet spot for most use cases is <strong>75–85% quality</strong>. This typically reduces file size by 60–80% while maintaining visual quality that satisfies even critical viewers.</p>
+<div class="callout-tip"><strong>💡 The 200 KB rule for web</strong><p>For websites, aim to keep every image under 200 KB. Google's PageSpeed Insights flags images over this threshold. A page with ten 500 KB images loads 5 MB of images — that is 10–15 seconds on a 3G connection. Ten 150 KB images load in 3–4 seconds.</p></div>`,
+      },
+      {
+        id: 'compress-images-for-website',
+        title: 'How to Compress Images for Websites: The Complete Checklist',
+        content: `<p>Website images directly affect page speed, which affects SEO rankings, user experience, and conversion rates. Google has confirmed that page speed is a ranking factor, and images are typically the largest contributor to page weight.</p>
+<h3>Website image optimisation checklist</h3>
+<ol>
+  <li><strong>Resize before compressing.</strong> A 4000×3000 photo from your camera is 12 megapixels. Your website displays it at 800×600 (0.48 megapixels). Resize first, then compress — this alone can reduce file size by 90%.</li>
+  <li><strong>Choose the right format.</strong> Photos → WebP/JPEG. Screenshots → PNG/WebP. Icons → SVG.</li>
+  <li><strong>Compress at 75–85% quality.</strong> Visually identical, 60–80% smaller.</li>
+  <li><strong>Use responsive images.</strong> Serve different sizes for mobile, tablet, and desktop using <code>&lt;picture&gt;</code> or <code>srcset</code>.</li>
+  <li><strong>Lazy load below-the-fold images.</strong> Add <code>loading="lazy"</code> to images not visible on initial load.</li>
+  <li><strong>Strip metadata.</strong> EXIF data (camera info, GPS location) adds 10–50 KB per image. Remove it for web use.</li>
+</ol>
+<h3>Impact on page speed and SEO</h3>
+<table>
+  <thead>
+    <tr><th>Metric</th><th>Before Optimisation</th><th>After Optimisation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Total image weight (10 images)</td><td>5–15 MB</td><td>500 KB – 1.5 MB</td></tr>
+    <tr><td>Page load time (3G)</td><td>12–20 seconds</td><td>3–5 seconds</td></tr>
+    <tr><td>Google PageSpeed score</td><td>30–50</td><td>80–95</td></tr>
+    <tr><td>Bounce rate</td><td>40–60%</td><td>20–35%</td></tr>
+  </tbody>
+</table>
+<div class="callout-info"><strong>ℹ️ Google Core Web Vitals</strong><p>Largest Contentful Paint (LCP) measures when the largest visible element loads — often a hero image. Google requires LCP under 2.5 seconds for a "good" score. Compressing your hero image from 2 MB to 200 KB can cut LCP from 8 seconds to under 2 seconds.</p></div>`,
+      },
+      {
+        id: 'compress-images-for-email',
+        title: 'Compress Images for Email, WhatsApp, and Social Media',
+        content: `<p>Different platforms have different requirements. Here is exactly what to do for each:</p>
+<h3>Email attachments</h3>
+<ul>
+  <li>Most email providers limit attachments to <strong>25 MB</strong> total</li>
+  <li>Compress images to <strong>80% quality JPEG</strong> — this keeps them looking good while staying under limits</li>
+  <li>Resize to a maximum of <strong>1920×1080</strong> — recipients rarely need larger</li>
+  <li>Multiple images? Compress each to under <strong>1 MB</strong></li>
+</ul>
+<h3>WhatsApp</h3>
+<ul>
+  <li>WhatsApp automatically compresses images when sent, often reducing quality significantly</li>
+  <li>To keep quality: send as a <strong>document</strong> instead of a photo (attach → Document → select image)</li>
+  <li>Pre-compress to <strong>500 KB</strong> at 80% quality if sending as a regular photo — WhatsApp's own compression will be less aggressive</li>
+</ul>
+<h3>Instagram</h3>
+<ul>
+  <li>Feed posts: Upload at <strong>1080×1080</strong> (square) or <strong>1080×1350</strong> (portrait) for best quality</li>
+  <li>Stories: <strong>1080×1920</strong></li>
+  <li>Instagram re-compresses everything, so upload at <strong>90–95% quality</strong> to account for double compression</li>
+</ul>
+<h3>Facebook</h3>
+<ul>
+  <li>Upload PNG for graphics with text (Facebook preserves PNG quality better)</li>
+  <li>Upload JPEG at 85–90% for photos</li>
+  <li>Recommended size: <strong>1200×630</strong> for shared links, <strong>2048×2048</strong> max for photos</li>
+</ul>
+<h3>LinkedIn</h3>
+<ul>
+  <li>Profile photo: <strong>400×400</strong></li>
+  <li>Post images: <strong>1200×627</strong></li>
+  <li>Banner: <strong>1584×396</strong></li>
+  <li>Use JPEG at 85% quality</li>
+</ul>`,
+      },
+      {
+        id: 'batch-compression',
+        title: 'Batch Image Compression: How to Compress Multiple Images at Once',
+        content: `<p>Compressing images one at a time is tedious when you have dozens or hundreds of files. Here are the fastest approaches:</p>
+<h3>Online batch compression (easiest)</h3>
+<p>ToolsArena's image compressor supports <strong>multiple file uploads</strong>. Drag and drop up to 20 images at once, set your quality level, and download all compressed images in one click. Everything processes in your browser — no uploads to external servers.</p>
+<h3>When to use batch compression</h3>
+<ul>
+  <li><strong>Website migration</strong> — Compressing hundreds of product images or blog images before uploading to a new site</li>
+  <li><strong>Event photography</strong> — Reducing file sizes of 200+ event photos before sharing via cloud link</li>
+  <li><strong>Document scanning</strong> — Compressing scanned documents before emailing or uploading to portals</li>
+  <li><strong>Social media scheduling</strong> — Preparing a month's worth of social media images in one session</li>
+</ul>
+<h3>Batch compression best practices</h3>
+<ul>
+  <li><strong>Group by type.</strong> Photos and screenshots need different quality settings. Compress them separately.</li>
+  <li><strong>Keep originals.</strong> Always keep a backup of your original uncompressed images. You cannot un-compress a lossy-compressed image.</li>
+  <li><strong>Test with one image first.</strong> Before batch-compressing 500 images, compress one and verify the quality meets your needs.</li>
+  <li><strong>Use consistent naming.</strong> Rename compressed files with a suffix like "_compressed" or "_web" to avoid confusion with originals.</li>
+</ul>
+<div class="callout-tip"><strong>💡 Storage savings</strong><p>A photographer with 10,000 images at an average of 5 MB each uses 50 GB of storage. Compressing all images to 80% quality at 1 MB each reduces this to 10 GB — saving 40 GB and making backups 5× faster.</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Open ToolsArena Image Compressor', description: 'Navigate to the Image Compressor tool. No signup or installation required.' },
+      { title: 'Upload your images', description: 'Drag and drop one or more images (JPEG, PNG, WebP supported). Files are processed in your browser — nothing is uploaded to servers.' },
+      { title: 'Adjust quality level', description: 'Use the quality slider to set compression level. 80% is recommended for most use cases — visually identical to the original at 60–70% smaller file size.' },
+      { title: 'Preview the result', description: 'Compare the original and compressed versions side by side. Check that quality meets your needs before downloading.' },
+      { title: 'Download compressed images', description: 'Click download to save your compressed images. File size reduction is shown for each image.' },
+    ],
+    faqs: [
+      { question: 'Does compressing an image reduce its quality?', answer: 'Lossy compression (JPEG, WebP) removes some data, but at quality settings of 75–85%, the difference is imperceptible to human eyes. Lossless compression (PNG) reduces file size with zero quality loss. The key is choosing the right quality setting for your use case.' },
+      { question: 'What is the best quality setting for image compression?', answer: 'For most use cases, 80% quality offers the best balance — files are 60–70% smaller with no visible quality loss. For web images, 75% is often sufficient. For print or professional work, stay at 90–95% or use lossless compression.' },
+      { question: 'Can I compress images without installing software?', answer: 'Yes. ToolsArena\'s image compressor works entirely in your browser. No download, no installation, no signup. Your images are processed locally on your device and never uploaded to any server.' },
+      { question: 'How much can I reduce image file size?', answer: 'Typical results: JPEG at 80% quality is 60–70% smaller than the original. Converting PNG photos to WebP can reduce size by 80–90%. Resizing a 4000px image to 1920px before compression can reduce total file size by 90–95%.' },
+      { question: 'What image format gives the smallest file size?', answer: 'For photos: WebP gives the smallest file size (25–35% smaller than JPEG at equal quality). AVIF is even smaller but has limited browser support. For screenshots and graphics: WebP lossless or optimised PNG. For icons and logos: SVG (vector, scales infinitely).' },
+      { question: 'Does image compression affect SEO?', answer: 'Indirectly, yes. Compressed images load faster, which improves Core Web Vitals (especially LCP). Google uses page speed as a ranking factor. A page with optimised images can score 80+ on PageSpeed Insights vs 30–50 with unoptimised images.' },
+      { question: 'Is it safe to compress images online?', answer: 'With ToolsArena, yes — your images are processed entirely in your browser using JavaScript. No files are uploaded to any server. However, be cautious with other online compressors that upload your files — read their privacy policies, especially for sensitive images.' },
+      { question: 'How do I compress images for WhatsApp?', answer: 'Compress to 80% quality JPEG and resize to 1920×1080 or smaller. WhatsApp applies its own compression on top, so pre-compressing to around 500 KB gives the best results. To avoid WhatsApp compression entirely, send images as Documents instead of Photos.' },
+    ],
+    relatedGuides: ['image-resizer-guide', 'image-background-remover-guide', 'jpg-to-pdf-guide'],
+    toolCTA: {
+      heading: 'Compress Images Instantly — Free Online Tool',
+      description: 'Reduce image file size by up to 80% without visible quality loss. Supports JPEG, PNG, and WebP. Drag and drop multiple files. No signup, 100% private.',
+      buttonText: 'Open Image Compressor',
+    },
+  },
+
+  // ── 40. SPEECH TO TEXT GUIDE ────────────────────────────────────
+  {
+    slug: 'speech-to-text-guide',
+    toolSlug: 'speech-to-text',
+    category: 'text-tools',
+    title: 'Speech to Text Guide: Convert Voice to Text Online Free (2026)',
+    subtitle: 'The complete guide to speech-to-text technology — how voice recognition works, accuracy tips, use cases, and how to transcribe speech to text instantly.',
+    metaTitle: 'Speech to Text Guide: Convert Voice to Text Free Online (2026)',
+    metaDescription: 'Learn how to convert speech to text online for free. Covers voice recognition accuracy, dictation tips, transcription use cases, and a free speech-to-text tool.',
+    targetKeyword: 'speech to text',
+    secondaryKeywords: [
+      'speech to text online', 'voice to text converter', 'speech to text free',
+      'dictation online', 'voice typing', 'transcribe audio to text',
+      'speech recognition online', 'convert voice to text',
+      'speech to text for students', 'voice to text Hindi',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '9 min read',
+    tags: ['Productivity', 'Accessibility', 'Transcription', 'Voice'],
+    intro: `<p><strong>Speech to text (STT)</strong> converts spoken words into written text in real time. Whether you are a student transcribing a lecture, a journalist recording an interview, a professional drafting emails by voice, or someone with a physical disability that makes typing difficult — STT technology makes the keyboard optional.</p>
+<p>This guide explains how speech recognition works, how to get the most accurate results, the best use cases for voice-to-text, and how to use ToolsArena's free online speech-to-text converter.</p>`,
+    sections: [
+      {
+        id: 'what-is-speech-to-text',
+        title: 'What Is Speech to Text and How Does It Work?',
+        content: `<p>Speech to text (also called speech recognition, voice-to-text, or automatic speech recognition / ASR) is technology that converts spoken language into written text. Modern STT systems use deep learning models trained on millions of hours of speech to achieve 95%+ accuracy.</p>
+<h3>How speech recognition works</h3>
+<ol>
+  <li><strong>Audio capture</strong> — Your microphone records your voice as a digital audio signal (waveform).</li>
+  <li><strong>Audio processing</strong> — Background noise is filtered. The audio is broken into short segments (typically 20–40 milliseconds each).</li>
+  <li><strong>Feature extraction</strong> — Each segment is converted into a compact mathematical representation (mel-frequency cepstral coefficients or spectrograms).</li>
+  <li><strong>Pattern matching</strong> — A neural network compares these features against patterns learned from training data to predict which words were spoken.</li>
+  <li><strong>Language modelling</strong> — A language model adjusts predictions based on context. "I ate ice cream" is more likely than "I eight eyes cream" even though they sound similar.</li>
+  <li><strong>Text output</strong> — The final transcription appears as text, often with real-time updates as you speak.</li>
+</ol>
+<h3>Browser-based STT</h3>
+<p>ToolsArena uses the <strong>Web Speech API</strong>, which connects to your browser's built-in speech recognition engine. In Chrome, this uses Google's speech recognition service. In Safari, it uses Apple's Siri engine. The recognition is highly accurate for supported languages.</p>
+<div class="callout-info"><strong>ℹ️ Accuracy levels in 2026</strong><p>Google's speech recognition achieves 95%+ accuracy for clear English speech. For Hindi, accuracy is 90–93%. For noisy environments or heavy accents, accuracy drops to 80–90%. Professional transcription services still outperform automated STT for difficult audio.</p></div>`,
+      },
+      {
+        id: 'speech-to-text-use-cases',
+        title: '8 Best Use Cases for Speech to Text',
+        content: `<p>Speech to text saves time and enables workflows that are not possible with typing alone:</p>
+<h3>1. Lecture and meeting notes</h3>
+<p>Record lectures or meetings and get a text transcript. Review, search, and share notes instantly. Students report saving 2–3 hours per week by transcribing lectures instead of taking handwritten notes.</p>
+<h3>2. Hands-free writing</h3>
+<p>Draft emails, documents, and messages by speaking. Average typing speed is 40 wpm; average speaking speed is 130 wpm. Voice typing is 3× faster than keyboard typing for most people.</p>
+<h3>3. Accessibility</h3>
+<p>For people with motor disabilities, repetitive strain injuries, or conditions that make typing difficult or painful, voice input is essential. STT makes computers and smartphones fully usable without a keyboard.</p>
+<h3>4. Interview transcription</h3>
+<p>Journalists, researchers, and HR professionals can transcribe interviews in real time. A 30-minute interview produces approximately 4,500 words of text.</p>
+<h3>5. Multilingual communication</h3>
+<p>Speak in one language and get text output. This text can then be translated or shared. Useful for multilingual teams and international communication.</p>
+<h3>6. Content creation</h3>
+<p>Bloggers and content writers often find that speaking their ideas first produces more natural, conversational writing. Dictate a rough draft, then edit for structure and clarity.</p>
+<h3>7. Medical and legal documentation</h3>
+<p>Doctors dictate patient notes. Lawyers dictate case summaries. Voice-to-text is faster than typing for professionals who need to document extensive observations.</p>
+<h3>8. Programming and coding</h3>
+<p>While STT is not yet ideal for code syntax, it works well for writing comments, documentation, and commit messages. Voice coding tools like Talon are emerging for full voice-based programming.</p>`,
+      },
+      {
+        id: 'how-to-use-speech-to-text',
+        title: 'How to Use Speech to Text Online: Step-by-Step',
+        content: `<p>Getting started with ToolsArena's speech-to-text converter:</p>
+<ol>
+  <li><strong>Open the tool</strong> — Navigate to ToolsArena's Speech to Text page. No signup needed.</li>
+  <li><strong>Allow microphone access</strong> — Your browser will ask for microphone permission. Click "Allow." This is required for voice input.</li>
+  <li><strong>Select your language</strong> — Choose the language you will be speaking. This dramatically improves accuracy.</li>
+  <li><strong>Click the microphone button</strong> — Start speaking clearly. Your words appear as text in real time.</li>
+  <li><strong>Edit and copy</strong> — Once done, review the transcript, make corrections, and copy the text to use anywhere.</li>
+</ol>
+<h3>Microphone tips for best results</h3>
+<ul>
+  <li><strong>Use a headset or external microphone</strong> — Built-in laptop microphones pick up more ambient noise. A $10 headset mic dramatically improves accuracy.</li>
+  <li><strong>Reduce background noise</strong> — Close windows, turn off fans, move away from noisy environments. Background noise is the #1 cause of transcription errors.</li>
+  <li><strong>Speak at a natural pace</strong> — Neither too fast nor too slow. Moderate, conversational speed gives the best results.</li>
+  <li><strong>Stay close to the mic</strong> — Optimal distance is 6–12 inches (15–30 cm). Too far reduces clarity; too close causes distortion.</li>
+  <li><strong>Enunciate clearly</strong> — Pronounce words fully. Mumbling or trailing off reduces accuracy significantly.</li>
+</ul>
+<div class="callout-tip"><strong>💡 Punctuation by voice</strong><p>Say "period," "comma," "question mark," or "new paragraph" while dictating, and most STT systems will insert the correct punctuation. This eliminates the need to edit punctuation manually afterward.</p></div>`,
+      },
+      {
+        id: 'improve-accuracy',
+        title: 'How to Improve Speech to Text Accuracy: 10 Pro Tips',
+        content: `<p>The difference between 80% accuracy and 98% accuracy often comes down to how you set up and use STT:</p>
+<ol>
+  <li><strong>Choose the correct language and dialect.</strong> "English (India)" gives better results for Indian English speakers than "English (US)." The dialect setting adjusts for accent patterns and local vocabulary.</li>
+  <li><strong>Use a quality microphone.</strong> A $20 USB microphone outperforms a $1,000 laptop's built-in mic for speech recognition. Headset microphones are ideal because they maintain consistent distance.</li>
+  <li><strong>Minimise background noise.</strong> Close doors, turn off music, avoid typing while speaking. Use noise-cancelling microphones if available.</li>
+  <li><strong>Speak in complete sentences.</strong> STT language models predict words based on context. Complete sentences give more context, improving accuracy. "Schedule meeting for Tuesday at three" works better than "meeting... uh... Tuesday... three."</li>
+  <li><strong>Pause between sentences.</strong> Brief pauses help the system identify sentence boundaries and process longer utterances more accurately.</li>
+  <li><strong>Avoid filler words.</strong> "Um," "uh," "like," and "you know" confuse the recogniser. If you catch yourself using fillers, brief silence is better.</li>
+  <li><strong>Train yourself, not the machine.</strong> Modern STT does not need voice training. Instead, train yourself to speak more clearly and consistently.</li>
+  <li><strong>Use a wired connection.</strong> Bluetooth microphones can introduce latency and compression artefacts that reduce accuracy. Wired connections are more reliable.</li>
+  <li><strong>Check your browser.</strong> Chrome generally provides the best speech recognition accuracy because it uses Google's servers. Firefox and Safari use different engines with varying accuracy.</li>
+  <li><strong>Edit as you go.</strong> Correct errors promptly while the context is fresh. Waiting until the end to edit a long transcript is much harder.</li>
+</ol>
+<div class="callout-info"><strong>ℹ️ Accuracy by language</strong><p>English, Spanish, French, German, and Mandarin have the highest STT accuracy (95%+). Hindi achieves 90–93%. Less widely spoken languages may have lower accuracy due to less training data. Accuracy improves every year as more training data becomes available.</p></div>`,
+      },
+      {
+        id: 'speech-to-text-languages',
+        title: 'Speech to Text Language Support',
+        content: `<p>Modern speech recognition supports a wide range of languages. Here are the most commonly supported languages with typical accuracy levels:</p>
+<table>
+  <thead>
+    <tr><th>Language</th><th>Accuracy</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>English (US/UK)</td><td>95–98%</td><td>Best supported language globally</td></tr>
+    <tr><td>English (India)</td><td>90–95%</td><td>Select "English (India)" dialect for best results</td></tr>
+    <tr><td>Hindi</td><td>90–93%</td><td>Improved significantly since 2024</td></tr>
+    <tr><td>Spanish</td><td>94–97%</td><td>Multiple dialects supported</td></tr>
+    <tr><td>French</td><td>93–96%</td><td>European and Canadian French</td></tr>
+    <tr><td>German</td><td>93–96%</td><td>Standard German</td></tr>
+    <tr><td>Mandarin Chinese</td><td>93–96%</td><td>Simplified and Traditional</td></tr>
+    <tr><td>Japanese</td><td>90–94%</td><td>Mixed kanji/hiragana output</td></tr>
+    <tr><td>Korean</td><td>90–94%</td><td>Good accuracy</td></tr>
+    <tr><td>Portuguese (Brazil)</td><td>92–95%</td><td>European Portuguese also supported</td></tr>
+    <tr><td>Arabic</td><td>85–92%</td><td>Modern Standard Arabic best supported</td></tr>
+    <tr><td>Tamil / Telugu / Bengali</td><td>85–90%</td><td>Improving with more training data</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Hindi speech to text tip</strong><p>For Hindi dictation, select "हिन्दी (भारत)" as your language, not "English (India)." Speaking Hindi to an English-configured STT will produce gibberish. If you code-switch (mix Hindi and English), some systems handle this well — Google's speech recognition is particularly good at Hindi-English code-switching.</p></div>`,
+      },
+      {
+        id: 'speech-to-text-vs-alternatives',
+        title: 'Free Online STT vs Paid Transcription Services',
+        content: `<p>When should you use free online speech-to-text vs paid alternatives?</p>
+<table>
+  <thead>
+    <tr><th>Option</th><th>Cost</th><th>Accuracy</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ToolsArena (browser STT)</td><td>Free</td><td>90–95%</td><td>Quick dictation, notes, drafts</td></tr>
+    <tr><td>Google Docs Voice Typing</td><td>Free</td><td>92–96%</td><td>Writing documents by voice</td></tr>
+    <tr><td>Otter.ai</td><td>Free tier + $17/month</td><td>93–97%</td><td>Meeting transcription, collaboration</td></tr>
+    <tr><td>Rev.com (AI)</td><td>$0.25/minute</td><td>90–95%</td><td>Quick automated transcription</td></tr>
+    <tr><td>Rev.com (Human)</td><td>$1.50/minute</td><td>99%+</td><td>Legal, medical, critical transcription</td></tr>
+    <tr><td>Whisper (OpenAI)</td><td>Free (self-hosted)</td><td>95–98%</td><td>Developers, batch transcription</td></tr>
+  </tbody>
+</table>
+<h3>When free online STT is enough</h3>
+<ul>
+  <li>Dictating personal notes, emails, and messages</li>
+  <li>Converting short speeches or presentations to text</li>
+  <li>Quick transcription where minor errors are acceptable</li>
+  <li>Students taking lecture notes</li>
+</ul>
+<h3>When you need a paid service</h3>
+<ul>
+  <li>Legal proceedings requiring verbatim accuracy</li>
+  <li>Medical documentation with specialised terminology</li>
+  <li>Published content where errors are unacceptable</li>
+  <li>Audio with multiple speakers, heavy accents, or significant background noise</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Open ToolsArena Speech to Text', description: 'Navigate to the Speech to Text tool. No signup or download required.' },
+      { title: 'Allow microphone access', description: 'Click "Allow" when your browser asks for microphone permission. This is required for voice input.' },
+      { title: 'Select your language', description: 'Choose the language you will speak. Selecting the correct language and dialect improves accuracy significantly.' },
+      { title: 'Start speaking', description: 'Click the microphone button and speak clearly at a natural pace. Your words appear as text in real time.' },
+      { title: 'Edit and copy your transcript', description: 'Review the text, correct any errors, and copy the result to use in documents, emails, or messages.' },
+    ],
+    faqs: [
+      { question: 'Is online speech to text accurate?', answer: 'Modern browser-based speech recognition achieves 90–98% accuracy for clear speech in supported languages. Accuracy depends on microphone quality, background noise, accent clarity, and language selection. English typically achieves the highest accuracy (95%+).' },
+      { question: 'Does speech to text work in Hindi?', answer: 'Yes. Google Chrome supports Hindi speech recognition with 90–93% accuracy. Select "हिन्दी (भारत)" as your language setting. Hindi-English code-switching is also supported in Chrome.' },
+      { question: 'Is my voice data private?', answer: 'ToolsArena uses your browser\'s built-in speech recognition. In Chrome, audio is sent to Google\'s servers for processing. In Safari, it uses Apple\'s on-device processing. The transcribed text stays in your browser and is not stored by ToolsArena.' },
+      { question: 'How fast is speech to text compared to typing?', answer: 'Average typing speed is 40 words per minute. Average speaking speed is 130 words per minute. Speech to text is approximately 3× faster than typing for most people, though you may need to spend time editing the transcript afterward.' },
+      { question: 'Can speech to text add punctuation automatically?', answer: 'Some STT systems add basic punctuation automatically based on pauses and intonation. You can also dictate punctuation by saying "period," "comma," "question mark," or "new paragraph" — most systems recognise these voice commands.' },
+      { question: 'Why is speech to text not working in my browser?', answer: 'Ensure you have allowed microphone permission. Check that your microphone is working (test in your OS settings). Try Chrome for best compatibility. Some browsers (Firefox) have limited Web Speech API support. Also check that you are not in a private/incognito window, which may block the API.' },
+    ],
+    relatedGuides: ['text-to-speech-guide', 'word-counter-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Convert Speech to Text Instantly — Free',
+      description: 'Speak into your microphone and see your words transcribed in real time. Supports multiple languages including Hindi. No signup, no download needed.',
+      buttonText: 'Open Speech to Text Tool',
+    },
+  },
+
+  // ── 41. PERCENTAGE CALCULATOR HOW-TO GUIDE ──────────────────────
+  {
+    slug: 'percentage-how-to-guide',
+    toolSlug: 'percentage-calculator',
+    category: 'calculators',
+    title: 'How to Calculate Percentage: Formulas, Examples & Free Calculator (2026)',
+    subtitle: 'Master percentage calculations with simple formulas, real-world examples for discounts, marks, tax, tips, and more. Free online percentage calculator included.',
+    metaTitle: 'How to Calculate Percentage — Formulas & Examples (2026)',
+    metaDescription: 'Learn how to calculate percentage with simple formulas. Includes percentage of a number, percentage change, percentage increase/decrease, marks percentage, and more. Free calculator.',
+    targetKeyword: 'how to calculate percentage',
+    secondaryKeywords: [
+      'percentage calculator', 'how to find percentage', 'percentage formula',
+      'percentage of a number', 'percentage increase', 'percentage decrease',
+      'percentage change formula', 'how to calculate percentage of marks',
+      'discount percentage formula', 'percentage difference',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '8 min read',
+    tags: ['Math', 'Calculators', 'Students', 'Finance'],
+    intro: `<p>Percentages are everywhere — discounts, exam scores, tax rates, tips, interest rates, battery levels, survey results, and nutrition labels. Yet many people struggle with percentage calculations beyond the basics. The formulas are simple once you understand them, and they save you from relying on guesswork.</p>
+<p>This guide covers every type of percentage calculation you will encounter in daily life, with clear formulas, worked examples, and common pitfalls. Use ToolsArena's free percentage calculator alongside this guide to verify your answers instantly.</p>`,
+    sections: [
+      {
+        id: 'what-is-percentage',
+        title: 'What Is a Percentage? The Basics',
+        content: `<p>A <strong>percentage</strong> is a number expressed as a fraction of 100. The word comes from Latin "per centum" meaning "by the hundred." When we say 25%, we mean 25 out of every 100, or 25/100, or 0.25 as a decimal.</p>
+<h3>The three forms</h3>
+<table>
+  <thead>
+    <tr><th>Form</th><th>Example</th><th>Conversion</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Percentage</td><td>75%</td><td>Divide by 100 → 0.75</td></tr>
+    <tr><td>Decimal</td><td>0.75</td><td>Multiply by 100 → 75%</td></tr>
+    <tr><td>Fraction</td><td>3/4</td><td>Divide numerator by denominator, multiply by 100 → 75%</td></tr>
+  </tbody>
+</table>
+<h3>Why percentages matter</h3>
+<p>Percentages make it easy to compare values on a common scale. "32 out of 40" and "45 out of 60" are hard to compare directly. But 80% vs 75% is instantly clear. This is why test scores, growth rates, and statistics are expressed as percentages.</p>
+<div class="callout-tip"><strong>💡 Quick mental math</strong><p>To find 10% of any number, just move the decimal point one place left. 10% of 850 = 85. From there, you can quickly calculate 5% (half of 10%), 20% (double 10%), and 15% (10% + 5%).</p></div>`,
+      },
+      {
+        id: 'percentage-formulas',
+        title: 'Essential Percentage Formulas: The Complete List',
+        content: `<p>There are five main types of percentage problems. Here is each formula with examples:</p>
+<h3>1. What is X% of Y?</h3>
+<p><strong>Formula:</strong> (X / 100) × Y</p>
+<p><strong>Example:</strong> What is 18% of 12,500?</p>
+<p>(18 / 100) × 12,500 = 0.18 × 12,500 = <strong>2,250</strong></p>
+<p><em>Use case: Calculating GST (18% of price), tips, discounts</em></p>
+
+<h3>2. X is what percentage of Y?</h3>
+<p><strong>Formula:</strong> (X / Y) × 100</p>
+<p><strong>Example:</strong> 450 is what percentage of 600?</p>
+<p>(450 / 600) × 100 = 0.75 × 100 = <strong>75%</strong></p>
+<p><em>Use case: Exam marks percentage, completion rate, market share</em></p>
+
+<h3>3. Percentage change (increase or decrease)</h3>
+<p><strong>Formula:</strong> ((New Value − Old Value) / Old Value) × 100</p>
+<p><strong>Example:</strong> Price went from ₹800 to ₹920. What is the percentage increase?</p>
+<p>((920 − 800) / 800) × 100 = (120 / 800) × 100 = <strong>15% increase</strong></p>
+<p><em>Use case: Price changes, salary hikes, stock performance, population growth</em></p>
+
+<h3>4. Find the original value before percentage change</h3>
+<p><strong>Formula:</strong> Final Value / (1 + Percentage/100) for increase; Final Value / (1 − Percentage/100) for decrease</p>
+<p><strong>Example:</strong> After a 20% discount, the price is ₹4,000. What was the original price?</p>
+<p>4,000 / (1 − 20/100) = 4,000 / 0.80 = <strong>₹5,000</strong></p>
+
+<h3>5. Percentage difference between two values</h3>
+<p><strong>Formula:</strong> (|A − B| / ((A + B) / 2)) × 100</p>
+<p><strong>Example:</strong> What is the percentage difference between 150 and 200?</p>
+<p>(|150 − 200| / ((150 + 200) / 2)) × 100 = (50 / 175) × 100 = <strong>28.57%</strong></p>`,
+      },
+      {
+        id: 'percentage-of-marks',
+        title: 'How to Calculate Percentage of Marks (Students)',
+        content: `<p>This is one of the most searched percentage calculations, especially during exam season in India.</p>
+<h3>Formula</h3>
+<p><strong>Percentage = (Obtained Marks / Total Marks) × 100</strong></p>
+<h3>Single subject</h3>
+<p>You scored 72 out of 80 in Mathematics.</p>
+<p>(72 / 80) × 100 = <strong>90%</strong></p>
+<h3>Multiple subjects (aggregate percentage)</h3>
+<table>
+  <thead>
+    <tr><th>Subject</th><th>Marks Obtained</th><th>Total Marks</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Mathematics</td><td>72</td><td>80</td></tr>
+    <tr><td>Science</td><td>85</td><td>100</td></tr>
+    <tr><td>English</td><td>68</td><td>80</td></tr>
+    <tr><td>Hindi</td><td>78</td><td>100</td></tr>
+    <tr><td>Social Studies</td><td>62</td><td>80</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>365</strong></td><td><strong>440</strong></td></tr>
+  </tbody>
+</table>
+<p>Aggregate percentage = (365 / 440) × 100 = <strong>82.95%</strong></p>
+<h3>CGPA to percentage conversion</h3>
+<p>Many Indian universities use CGPA (Cumulative Grade Point Average) on a 10-point scale. The common conversion:</p>
+<p><strong>Percentage = CGPA × 9.5</strong> (CBSE formula)</p>
+<p>Example: CGPA 8.2 → 8.2 × 9.5 = <strong>77.9%</strong></p>
+<div class="callout-warning"><strong>⚠️ Different institutions use different conversion formulas</strong><p>The CGPA × 9.5 formula is specific to CBSE. Your university may use a different multiplier (some use × 10, others have custom lookup tables). Always check your institution's official conversion formula.</p></div>`,
+      },
+      {
+        id: 'percentage-in-daily-life',
+        title: 'Percentage in Daily Life: Discounts, Tax, Tips, and More',
+        content: `<p>Here are the most common real-world percentage calculations:</p>
+<h3>Shopping discounts</h3>
+<p><strong>Discounted Price = Original Price × (1 − Discount% / 100)</strong></p>
+<p>A shirt costs ₹1,200 with a 30% discount:</p>
+<p>1,200 × (1 − 30/100) = 1,200 × 0.70 = <strong>₹840</strong></p>
+<p>Savings: ₹360</p>
+
+<h3>GST calculation (India)</h3>
+<p><strong>GST Amount = Base Price × GST Rate / 100</strong></p>
+<p>Product costs ₹5,000 + 18% GST:</p>
+<p>GST = 5,000 × 18/100 = ₹900</p>
+<p>Total = 5,000 + 900 = <strong>₹5,900</strong></p>
+<p>CGST = ₹450, SGST = ₹450 (each is half of total GST for intra-state)</p>
+
+<h3>Restaurant tip</h3>
+<p>Bill is ₹1,800. You want to tip 10%:</p>
+<p>1,800 × 10/100 = <strong>₹180 tip</strong> → Total: ₹1,980</p>
+
+<h3>Salary percentage increase</h3>
+<p>Current salary: ₹45,000/month. Offered 12% hike:</p>
+<p>Increase = 45,000 × 12/100 = ₹5,400</p>
+<p>New salary = 45,000 + 5,400 = <strong>₹50,400/month</strong></p>
+
+<h3>Loan interest</h3>
+<p>FD of ₹1,00,000 at 7% annual interest for 1 year:</p>
+<p>Interest = 1,00,000 × 7/100 = <strong>₹7,000</strong></p>
+
+<div class="callout-tip"><strong>💡 Double discount trap</strong><p>"50% off + additional 20% off" is NOT 70% off. First discount: ₹1,000 × 0.50 = ₹500. Second discount: ₹500 × 0.80 = ₹400. Actual total discount: ₹600 out of ₹1,000 = 60%, not 70%.</p></div>`,
+      },
+      {
+        id: 'common-percentage-mistakes',
+        title: 'Common Percentage Mistakes to Avoid',
+        content: `<p>These errors are surprisingly common, even among educated adults:</p>
+<h3>Mistake 1: Confusing percentage points and percentages</h3>
+<p>If inflation goes from 4% to 6%, it increased by <strong>2 percentage points</strong>, not 2%. The percentage increase is actually ((6−4)/4) × 100 = <strong>50%</strong>. Inflation rose by 50% (from 4% to 6%), or by 2 percentage points. These are very different statements.</p>
+
+<h3>Mistake 2: Assuming percentage changes are reversible</h3>
+<p>A 50% decrease followed by a 50% increase does NOT return to the original value.</p>
+<p>₹1,000 → 50% decrease → ₹500 → 50% increase → ₹750 (not ₹1,000!)</p>
+<p>You lost ₹250. This is why stock market losses are so painful — a 50% drop requires a 100% gain to recover.</p>
+
+<h3>Mistake 3: Adding percentages of different bases</h3>
+<p>"I got 20% off, then used a 10% coupon, so I saved 30%." Wrong. The 10% coupon applies to the already-discounted price, not the original. Actual saving: 28% (not 30%).</p>
+
+<h3>Mistake 4: Dividing by the wrong number</h3>
+<p>"What is 30 as a percentage of 150?" → (30/150) × 100 = 20%. NOT (150/30) × 100. The "of" value always goes in the denominator.</p>
+
+<h3>Mistake 5: Forgetting to convert back</h3>
+<p>0.18 × 500 = 90 ✓ (correct: 18% of 500 = 90)</p>
+<p>18 × 500 = 9,000 ✗ (forgot to divide by 100 first)</p>`,
+      },
+      {
+        id: 'percentage-reference-table',
+        title: 'Quick Percentage Reference Table',
+        content: `<p>Print this table or bookmark this page for quick reference:</p>
+<table>
+  <thead>
+    <tr><th>Percentage</th><th>Decimal</th><th>Fraction</th><th>Common Use</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>5%</td><td>0.05</td><td>1/20</td><td>Service tax, small tip</td></tr>
+    <tr><td>10%</td><td>0.10</td><td>1/10</td><td>Standard tip, easy mental math</td></tr>
+    <tr><td>12%</td><td>0.12</td><td>3/25</td><td>GST slab (India)</td></tr>
+    <tr><td>15%</td><td>0.15</td><td>3/20</td><td>Generous tip</td></tr>
+    <tr><td>18%</td><td>0.18</td><td>9/50</td><td>GST slab (India)</td></tr>
+    <tr><td>20%</td><td>0.20</td><td>1/5</td><td>Common discount</td></tr>
+    <tr><td>25%</td><td>0.25</td><td>1/4</td><td>Quarter</td></tr>
+    <tr><td>28%</td><td>0.28</td><td>7/25</td><td>GST slab — luxury (India)</td></tr>
+    <tr><td>33.33%</td><td>0.333</td><td>1/3</td><td>One-third split</td></tr>
+    <tr><td>50%</td><td>0.50</td><td>1/2</td><td>Half-price sale</td></tr>
+    <tr><td>75%</td><td>0.75</td><td>3/4</td><td>Three-quarter completion</td></tr>
+    <tr><td>100%</td><td>1.00</td><td>1/1</td><td>Full, complete, doubling</td></tr>
+    <tr><td>150%</td><td>1.50</td><td>3/2</td><td>Overtime pay (1.5×)</td></tr>
+    <tr><td>200%</td><td>2.00</td><td>2/1</td><td>Doubled, 2× growth</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Mental math shortcut</strong><p>To calculate any percentage mentally: find 10% first (move decimal left), then multiply. For 35% of 800: 10% = 80, so 30% = 240, and 5% = 40. Total: 240 + 40 = 280. This works for any percentage and is faster than reaching for a calculator.</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Open ToolsArena Percentage Calculator', description: 'Navigate to the Percentage Calculator. No signup or download required.' },
+      { title: 'Choose calculation type', description: 'Select what you need: percentage of a number, what percent X is of Y, or percentage increase/decrease.' },
+      { title: 'Enter your values', description: 'Type in the numbers. The calculator handles all the formula work automatically.' },
+      { title: 'Get instant results', description: 'The answer appears immediately with step-by-step formula breakdown showing how it was calculated.' },
+      { title: 'Use for more calculations', description: 'Switch between calculation types without reloading. All processing happens in your browser.' },
+    ],
+    faqs: [
+      { question: 'How do I calculate percentage of marks?', answer: 'Divide obtained marks by total marks, then multiply by 100. Example: 365 out of 440 = (365/440) × 100 = 82.95%. For aggregate percentage across subjects, add all obtained marks and divide by total possible marks.' },
+      { question: 'How to calculate percentage increase?', answer: 'Use the formula: ((New Value − Old Value) / Old Value) × 100. Example: Price went from ₹800 to ₹1,000. Increase = ((1000−800)/800) × 100 = 25% increase.' },
+      { question: 'How to calculate percentage discount?', answer: 'Discount % = ((Original Price − Sale Price) / Original Price) × 100. Example: Original ₹2,000, sale ₹1,400. Discount = ((2000−1400)/2000) × 100 = 30% discount.' },
+      { question: 'What is 18% GST on ₹10,000?', answer: '₹10,000 × 18/100 = ₹1,800 GST. Total price = ₹11,800. For intra-state: CGST = ₹900, SGST = ₹900.' },
+      { question: 'How to convert CGPA to percentage?', answer: 'The CBSE formula is: Percentage = CGPA × 9.5. Example: CGPA 8.6 → 8.6 × 9.5 = 81.7%. Note: different universities may use different conversion formulas.' },
+      { question: 'What is the percentage difference between two numbers?', answer: 'Percentage difference = (|A − B| / ((A + B) / 2)) × 100. This gives the relative difference between two values regardless of which is larger.' },
+    ],
+    relatedGuides: ['gst-calculator-guide', 'emi-calculator-guide', 'compound-interest-guide'],
+    toolCTA: {
+      heading: 'Calculate Percentage Instantly — Free',
+      description: 'Find percentage of any number, calculate percentage change, or convert between fractions and percentages. Step-by-step formula shown. No signup needed.',
+      buttonText: 'Open Percentage Calculator',
+    },
+  },
+
+  // ── 42. ATS RESUME CHECKER GUIDE ────────────────────────────────
+  {
+    slug: 'ats-resume-checker-guide',
+    toolSlug: 'ats-resume-checker',
+    category: 'text-tools',
+    title: 'ATS Resume Checker Guide: Beat Applicant Tracking Systems in 2026',
+    subtitle: 'Learn how ATS software works, why most resumes get rejected automatically, and how to optimise your resume to pass ATS screening and land interviews.',
+    metaTitle: 'ATS Resume Checker: How to Beat ATS Systems (2026 Guide)',
+    metaDescription: 'Learn how ATS systems work and why 75% of resumes get rejected before a human sees them. Includes ATS formatting rules, keyword optimization tips, and a free ATS resume checker.',
+    targetKeyword: 'ATS resume checker',
+    secondaryKeywords: [
+      'ATS friendly resume', 'how to pass ATS', 'resume ATS score',
+      'applicant tracking system', 'ATS resume format', 'resume screening software',
+      'ATS compatible resume', 'how to beat ATS', 'resume keywords',
+      'ATS resume tips', 'resume checker free',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '10 min read',
+    tags: ['Career', 'Resume', 'Job Search', 'Hiring'],
+    intro: `<p>You spent hours perfecting your resume, tailored it to the job description, and hit "Apply." But a human never saw it. An <strong>Applicant Tracking System (ATS)</strong> scanned your resume, found it did not match its criteria, and automatically rejected it — along with 75% of all other applicants.</p>
+<p>This is not hypothetical. Over 99% of Fortune 500 companies and 75% of all employers use ATS software to screen resumes before a recruiter ever looks at them. Understanding how these systems work — and how to optimise your resume for them — is the difference between landing interviews and hearing nothing back.</p>`,
+    sections: [
+      {
+        id: 'what-is-ats',
+        title: 'What Is an ATS and How Does It Work?',
+        content: `<p>An <strong>Applicant Tracking System (ATS)</strong> is software that companies use to manage job applications. Popular ATS platforms include Workday, Taleo, Greenhouse, Lever, iCIMS, and BambooHR. When you submit a resume through a company's careers page, it goes through the ATS first.</p>
+<h3>What the ATS does with your resume</h3>
+<ol>
+  <li><strong>Parsing</strong> — The ATS extracts text from your resume file (PDF, DOCX, or plain text) and organises it into structured fields: name, email, phone, work experience, education, skills.</li>
+  <li><strong>Keyword matching</strong> — Your resume is compared against the job description. The system looks for specific keywords, skills, certifications, and qualifications.</li>
+  <li><strong>Ranking</strong> — Resumes are scored and ranked based on how well they match the job requirements. High-scoring resumes are forwarded to recruiters.</li>
+  <li><strong>Filtering</strong> — Resumes that do not meet minimum criteria (required skills, years of experience, education level) are filtered out entirely.</li>
+</ol>
+<h3>The rejection rate is brutal</h3>
+<p>Industry data shows that 75% of resumes are rejected by ATS before a human sees them. For popular positions at large companies, this can be 90%+. Your resume needs to be both ATS-optimised and compelling to human readers.</p>
+<div class="callout-warning"><strong>⚠️ Beautiful design can work against you</strong><p>Creative resume templates with columns, graphics, icons, and fancy formatting often confuse ATS parsers. A beautifully designed resume that an ATS cannot parse is worse than a plain-text resume with the right keywords.</p></div>`,
+      },
+      {
+        id: 'ats-formatting-rules',
+        title: 'ATS-Friendly Resume Formatting: 12 Essential Rules',
+        content: `<p>These formatting rules ensure your resume is parsed correctly by every major ATS:</p>
+<ol>
+  <li><strong>Use a standard file format.</strong> Submit as .docx (best compatibility) or .pdf. Avoid images, scanned PDFs, or .pages files.</li>
+  <li><strong>Use standard section headings.</strong> "Work Experience" not "Where I've Made an Impact." "Education" not "Academic Journey." ATS looks for standard labels: Experience, Education, Skills, Summary, Certifications.</li>
+  <li><strong>Avoid tables and columns.</strong> ATS parsers read left-to-right, top-to-bottom. Multi-column layouts scramble the reading order. Use single-column layouts only.</li>
+  <li><strong>No headers or footers.</strong> Many ATS systems cannot read content in headers/footers. Put your name and contact info in the main body.</li>
+  <li><strong>Use standard fonts.</strong> Arial, Calibri, Times New Roman, Helvetica. Avoid decorative fonts that may not render correctly.</li>
+  <li><strong>No images, icons, or graphics.</strong> ATS cannot read images. A skills bar showing "Python: 90%" is invisible to ATS. Write "Python (Advanced)" instead.</li>
+  <li><strong>Use simple bullet points.</strong> Standard bullet characters (•) only. Fancy bullets, checkmarks, or arrows may not parse correctly.</li>
+  <li><strong>Spell out acronyms once.</strong> Write "Search Engine Optimisation (SEO)" the first time, then use "SEO" afterward. This ensures the ATS matches both forms.</li>
+  <li><strong>Use standard date formats.</strong> "Jan 2023 – Present" or "01/2023 – Present." Avoid "January two thousand and twenty-three."</li>
+  <li><strong>Keep it to 1–2 pages.</strong> ATS can handle longer documents, but recruiters prefer concise resumes. 1 page for under 5 years experience, 2 pages for senior roles.</li>
+  <li><strong>Include a skills section.</strong> A dedicated "Skills" section with comma-separated keywords gives ATS a clear list to match against the job description.</li>
+  <li><strong>Save with a professional filename.</strong> "Mukesh_Maddheshiya_Resume.pdf" not "resume_final_v3_FINAL.pdf."</li>
+</ol>`,
+      },
+      {
+        id: 'ats-keywords',
+        title: 'ATS Keywords: How to Match the Job Description',
+        content: `<p>Keywords are the most critical factor in ATS screening. Here is how to identify and use them effectively:</p>
+<h3>Where to find the right keywords</h3>
+<ol>
+  <li><strong>The job description itself.</strong> Read it carefully and highlight every required skill, tool, technology, and qualification mentioned. These are your target keywords.</li>
+  <li><strong>Required vs preferred.</strong> Required skills are non-negotiable — if you have them, they MUST be on your resume. Preferred skills boost your ranking but missing them will not auto-reject you.</li>
+  <li><strong>Similar job postings.</strong> Look at 3–5 similar job postings from different companies. Skills mentioned across multiple postings are industry-standard keywords you should include.</li>
+</ol>
+<h3>How to use keywords naturally</h3>
+<ul>
+  <li><strong>In your Skills section:</strong> List them explicitly. "Skills: Python, JavaScript, React, Node.js, PostgreSQL, AWS, Docker, CI/CD, Agile, Scrum"</li>
+  <li><strong>In your experience bullets:</strong> "Built React dashboard that reduced customer support tickets by 35%" — includes both the keyword (React) and a measurable achievement.</li>
+  <li><strong>In your summary:</strong> "Full-stack developer with 4 years of experience in React, Node.js, and AWS, specialising in scalable web applications."</li>
+</ul>
+<h3>Keyword matching examples</h3>
+<table>
+  <thead>
+    <tr><th>Job Description Says</th><th>Your Resume Should Say</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>"Proficient in Python"</td><td>"Python" in skills + used Python in experience bullets</td></tr>
+    <tr><td>"Experience with CI/CD pipelines"</td><td>"Implemented CI/CD pipeline using GitHub Actions" in experience</td></tr>
+    <tr><td>"Strong communication skills"</td><td>"Presented technical proposals to stakeholders" — show, don't just claim</td></tr>
+    <tr><td>"Project management"</td><td>"Led 3-person team to deliver project 2 weeks ahead of schedule"</td></tr>
+    <tr><td>"Bachelor's degree in CS"</td><td>"B.Tech in Computer Science, XYZ University, 2022"</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Do not keyword-stuff</strong><p>Listing "Python Python Python Python" or hiding white text with keywords is easily detected by modern ATS and will get your resume rejected or flagged. Use keywords naturally in context.</p></div>`,
+      },
+      {
+        id: 'ats-resume-sections',
+        title: 'The Perfect ATS Resume Structure',
+        content: `<p>This structure is proven to pass every major ATS while also looking professional to human readers:</p>
+<h3>1. Contact information (top of page, no header)</h3>
+<p>Full name, phone number, email, LinkedIn URL, city/state (no full address needed). Optional: GitHub, portfolio link.</p>
+<h3>2. Professional summary (3–4 lines)</h3>
+<p>A brief paragraph with your title, years of experience, top 3–4 skills, and a key achievement. This is prime keyword real estate.</p>
+<p><em>Example: "Full-stack developer with 5 years of experience building scalable web applications using React, Node.js, and AWS. Led migration of legacy system to microservices architecture, reducing server costs by 40% and improving response times by 60%."</em></p>
+<h3>3. Skills section</h3>
+<p>A comma-separated list of your technical and professional skills. Match these directly to the job description.</p>
+<h3>4. Work experience (reverse chronological)</h3>
+<p>For each role: Company name, job title, dates, 3–5 bullet points starting with action verbs. Include measurable achievements with numbers.</p>
+<p><strong>Strong bullet:</strong> "Reduced page load time by 65% by implementing image lazy loading and code splitting, improving Google PageSpeed score from 42 to 91"</p>
+<p><strong>Weak bullet:</strong> "Responsible for website performance" (no action verb, no metrics)</p>
+<h3>5. Education</h3>
+<p>Degree, university, graduation year. Include GPA only if above 3.5/4.0 or 8.0/10.0.</p>
+<h3>6. Certifications (if applicable)</h3>
+<p>AWS Certified, Google Analytics Certified, PMP, etc. Certifications are high-value ATS keywords.</p>`,
+      },
+      {
+        id: 'ats-score-checker',
+        title: 'How to Check Your ATS Score Before Applying',
+        content: `<p>Before submitting your resume, run it through an ATS checker to identify issues. Here is what to look for:</p>
+<h3>What an ATS checker analyses</h3>
+<ul>
+  <li><strong>Keyword match rate</strong> — What percentage of job description keywords appear in your resume? Aim for 70%+ match.</li>
+  <li><strong>Formatting issues</strong> — Tables, columns, images, or non-standard section headings that confuse parsers.</li>
+  <li><strong>Missing sections</strong> — No skills section, no summary, missing contact info.</li>
+  <li><strong>Action verbs</strong> — Strong experience bullets start with action verbs (Led, Built, Designed, Implemented). Weak bullets start with "Responsible for" or "Helped with."</li>
+  <li><strong>Measurable achievements</strong> — Numbers and metrics (%, $, time saved) make your resume stand out to both ATS and humans.</li>
+  <li><strong>File format</strong> — Some checkers verify that your PDF is text-based (not a scanned image).</li>
+</ul>
+<h3>Using ToolsArena's ATS Resume Checker</h3>
+<p>ToolsArena's free ATS checker analyses your resume text and provides scores across multiple criteria — keyword density, formatting, action verbs, and more. Paste your resume text and job description to get an instant compatibility score with specific improvement suggestions.</p>
+<h3>What is a good ATS score?</h3>
+<table>
+  <thead>
+    <tr><th>ATS Score</th><th>What It Means</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>80–100%</td><td>Excellent match</td><td>Submit with confidence</td></tr>
+    <tr><td>60–79%</td><td>Good, needs minor tweaks</td><td>Add missing keywords from job description</td></tr>
+    <tr><td>40–59%</td><td>Below average</td><td>Significant keyword gaps — rewrite skills and summary</td></tr>
+    <tr><td>Below 40%</td><td>Likely to be rejected</td><td>Resume needs major revision for this specific role</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Tailor every application</strong><p>A resume that scores 90% for one job might score 40% for another. The most effective strategy is to maintain a "master resume" with all your experience, then create tailored versions for each application by emphasising relevant keywords and experience.</p></div>`,
+      },
+      {
+        id: 'ats-common-mistakes',
+        title: 'Top 10 ATS Mistakes That Get Resumes Rejected',
+        content: `<p>Avoid these errors that cause immediate rejection:</p>
+<ol>
+  <li><strong>Using a creative template with columns and graphics</strong> — Use single-column, text-only layout.</li>
+  <li><strong>Submitting a scanned PDF</strong> — ATS cannot read image-based PDFs. Ensure your PDF contains selectable text.</li>
+  <li><strong>Missing keywords from the job description</strong> — If the JD says "React" and your resume says "ReactJS," some ATS may not match. Include both forms.</li>
+  <li><strong>Putting contact info in the header</strong> — Use the main document body instead.</li>
+  <li><strong>Using abbreviations without spelling them out</strong> — Write "Search Engine Optimisation (SEO)" at least once.</li>
+  <li><strong>No dedicated Skills section</strong> — This is the easiest section for ATS to parse. Always include one.</li>
+  <li><strong>Generic resume for every job</strong> — Tailoring your resume to each job description increases your match rate from 30% to 70%+.</li>
+  <li><strong>Listing skills without context</strong> — "Python" in skills is good. "Built data pipeline in Python that processes 2M records/day" in experience is much better.</li>
+  <li><strong>Fancy file names</strong> — "resume_finalFINAL_v2_edited(1).pdf" looks unprofessional. Use "FirstName_LastName_Resume.pdf."</li>
+  <li><strong>Not including relevant certifications</strong> — Certifications are high-signal keywords. AWS Certified, Google Analytics, PMP — these significantly boost ATS scores.</li>
+</ol>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Open ToolsArena ATS Resume Checker', description: 'Navigate to the ATS Resume Checker tool. No signup or download required.' },
+      { title: 'Paste your resume text', description: 'Copy your resume content and paste it into the text area. The tool analyses formatting, keywords, and structure.' },
+      { title: 'Add the job description', description: 'Paste the target job description to check keyword match rate between your resume and the job requirements.' },
+      { title: 'Review your ATS score', description: 'Get scores for keyword match, formatting, action verbs, and measurable achievements. Each category shows specific issues.' },
+      { title: 'Fix issues and re-check', description: 'Follow the improvement suggestions, update your resume, and run the check again. Aim for 80%+ overall score.' },
+    ],
+    faqs: [
+      { question: 'What is a good ATS resume score?', answer: 'Aim for 80% or higher keyword match with the job description. Scores above 70% generally pass initial ATS screening. Below 50% means your resume is likely missing critical keywords from the job description.' },
+      { question: 'Should I use PDF or DOCX for ATS?', answer: 'Both work, but .docx has the best compatibility across all ATS platforms. If using PDF, ensure it is text-based (you can select and copy text), not a scanned image. Some older ATS systems parse DOCX more reliably than PDF.' },
+      { question: 'Do all companies use ATS?', answer: 'Over 99% of Fortune 500 companies and approximately 75% of all employers use some form of ATS. Even small companies increasingly use tools like Lever, Greenhouse, or BambooHR. Assume every online application goes through ATS screening.' },
+      { question: 'Can I use the same resume for every job?', answer: 'You can, but you should not. Tailoring your resume to each job description by adjusting keywords, reordering skills, and emphasising relevant experience can increase your ATS match rate from 30% to 70%+. Keep a master resume and create tailored versions.' },
+      { question: 'How do I find the right keywords for my resume?', answer: 'Read the job description carefully and highlight every skill, tool, technology, certification, and qualification mentioned. These are your target keywords. Also look at 3–5 similar job postings to identify industry-standard terms you should include.' },
+      { question: 'Is it okay to use a creative resume design?', answer: 'For ATS submission, no. Use a clean, single-column format without tables, graphics, or icons. Save creative designs for direct email applications or in-person handoffs where you know no ATS is involved.' },
+    ],
+    relatedGuides: ['word-counter-guide', 'word-to-pdf-guide', 'pdf-merge-guide'],
+    toolCTA: {
+      heading: 'Check Your Resume ATS Score — Free',
+      description: 'Paste your resume and job description to get instant ATS compatibility analysis. Checks keywords, formatting, action verbs, and measurable achievements. No signup needed.',
+      buttonText: 'Open ATS Resume Checker',
+    },
+  },
+
 ];
 
 export function getGuideBySlug(slug: string, locale: string = 'en'): Guide | undefined {

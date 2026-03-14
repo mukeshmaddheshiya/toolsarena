@@ -3889,4 +3889,865 @@ button {
     },
   },
 
+  // ── TEXT TO SPEECH GUIDE (HINDI) ─────────────────────────────────
+  {
+    slug: 'text-to-speech-guide',
+    toolSlug: 'text-to-speech',
+    category: 'text-tools',
+    title: 'Text to Speech गाइड: टेक्स्ट को ऑडियो में बदलें — Free Online (2026)',
+    subtitle: 'Text to Speech क्या है, कैसे काम करता है, कौन सी voices उपलब्ध हैं, और किसी भी text को natural आवाज़ में कैसे सुनें — पूरी जानकारी।',
+    metaTitle: 'Text to Speech गाइड: टेक्स्ट को आवाज़ में बदलें Free (2026)',
+    metaDescription: 'Text to Speech से किसी भी लिखे हुए text को आवाज़ में बदलें। Hindi TTS voices, speed control, accessibility, students के लिए study tips। Free online TTS tool।',
+    targetKeyword: 'text to speech Hindi',
+    secondaryKeywords: [
+      'text to speech online free', 'टेक्स्ट को ऑडियो में बदलें', 'TTS Hindi',
+      'text to voice converter', 'read aloud tool', 'text to speech कैसे करें',
+      'Hindi text to speech', 'TTS online free', 'text बोलने वाला tool',
+      'text to speech students के लिए',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '9 मिनट पढ़ें',
+    tags: ['Accessibility', 'Productivity', 'Learning', 'Audio'],
+    intro: `<p><strong>Text to Speech (TTS)</strong> technology किसी भी लिखे हुए text को natural आवाज़ में बोलकर सुनाती है। चाहे आप student हों जो सुनकर बेहतर सीखते हैं, professional हों जो document proofread करना चाहते हैं, या visually impaired user हों — TTS आपके लिए बेहद useful tool है।</p>
+<p>इस guide में जानें: TTS कैसे काम करता है, कब और क्यों इस्तेमाल करें, voice और speed कैसे select करें, और ToolsArena के free online TTS converter से best results कैसे पाएं।</p>`,
+    sections: [
+      {
+        id: 'what-is-text-to-speech',
+        title: 'Text to Speech क्या है और कैसे काम करता है?',
+        content: `<p><strong>Text to Speech (TTS)</strong> एक technology है जो digital text को synthesised speech में convert करती है। Modern TTS systems neural networks use करते हैं जो हज़ारों घंटों की human speech recordings पर trained होते हैं।</p>
+<h3>TTS कैसे काम करता है</h3>
+<ol>
+  <li><strong>Text Analysis</strong> — System text parse करता है, sentences identify करता है, abbreviations handle करता है ("Dr." को "Doctor" बनाता है)।</li>
+  <li><strong>Phoneme Conversion</strong> — Words को phonemes (ध्वनि की सबसे छोटी इकाई) में convert करता है।</li>
+  <li><strong>Prosody Prediction</strong> — Pitch, speed, emphasis determine करता है। Questions का pitch ऊपर जाता है।</li>
+  <li><strong>Audio Synthesis</strong> — Final audio waveform generate होता है जो natural human speech जैसा सुनाई देता है।</li>
+</ol>
+<h3>Browser-based TTS का फायदा</h3>
+<p>ToolsArena <strong>Web Speech API</strong> use करता है जो आपके browser में built-in है। इसका मतलब — आपका text आपके device पर ही process होता है, कहीं भी upload नहीं होता। Privacy 100% safe रहती है।</p>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Chrome Windows पर सबसे ज़्यादा voices (50+) देता है, including Microsoft neural voices। Safari macOS पर Apple की premium voices offer करता है। अलग browsers try करें best voice ढूंढने के लिए।</p></div>`,
+      },
+      {
+        id: 'why-use-text-to-speech',
+        title: 'Text to Speech क्यों इस्तेमाल करें? 7 Best Use Cases',
+        content: `<p>TTS सिर्फ disabled लोगों के लिए नहीं है — यह हर किसी की productivity बढ़ाता है:</p>
+<h3>1. Accessibility (सुलभता)</h3>
+<p>Visual impairment, dyslexia, या reading difficulties वाले लोगों के लिए TTS essential है। यह पूरे written internet को accessible बनाता है।</p>
+<h3>2. Proofreading (गलतियाँ ढूंढना)</h3>
+<p>अपनी writing को ज़ोर से सुनने पर वो गलतियाँ दिखती हैं जो आँखों से miss हो जाती हैं। Brain silently पढ़ते समय auto-correct करता है, लेकिन सुनते समय errors catch होते हैं।</p>
+<h3>3. Studying (पढ़ाई)</h3>
+<p>Auditory learners सुनकर बेहतर सीखते हैं। Lecture notes, textbook chapters को audio में convert करें और commute, exercise, या housework करते समय सुनें। Study time effectively double हो जाता है।</p>
+<h3>4. Multitasking</h3>
+<p>Emails, articles, reports को audio में convert करें और driving, cooking, workout करते समय सुनें। TTS किसी भी text को podcast जैसा experience बना देता है।</p>
+<h3>5. Language Learning</h3>
+<p>Foreign language में correct pronunciation सुनें। Hindi, English, Spanish, French — dozens of languages supported हैं।</p>
+<h3>6. Content Creation</h3>
+<p>YouTube videos, presentations, tutorials के लिए voiceover generate करें। Professional voice actors से cheaper और faster।</p>
+<h3>7. लंबे Documents पढ़ना</h3>
+<p>Research papers, legal documents 50 pages के हों तो पढ़ना exhausting है। TTS से "listen through" करें और important points note करें।</p>`,
+      },
+      {
+        id: 'how-to-use-text-to-speech',
+        title: 'Text to Speech कैसे इस्तेमाल करें — Step by Step',
+        content: `<p>ToolsArena के free TTS converter से 30 seconds में शुरू करें:</p>
+<ol>
+  <li><strong>Tool खोलें</strong> — ToolsArena का Text to Speech page open करें। कोई signup नहीं चाहिए।</li>
+  <li><strong>Text paste या type करें</strong> — वो text enter करें जो सुनना है। कोई character limit नहीं।</li>
+  <li><strong>Voice select करें</strong> — Male/female voices में से चुनें। Hindi, English, और अन्य भाषाओं में voices available हैं।</li>
+  <li><strong>Speed और Pitch adjust करें</strong> — Sliders से control करें कितना fast (0.5x to 2x) और कितना high/low pitch चाहिए।</li>
+  <li><strong>Play दबाएं</strong> — Text तुरंत बोलना शुरू हो जाएगा। Pause, resume, stop कभी भी कर सकते हैं।</li>
+</ol>
+<h3>सही Voice कैसे चुनें</h3>
+<ul>
+  <li><strong>Proofreading के लिए</strong> — Clear, neutral voice normal speed पर</li>
+  <li><strong>Studying के लिए</strong> — Complex material पर 0.8x speed। Review session में 1.2x–1.5x।</li>
+  <li><strong>Language Learning</strong> — Target language की native voice। 0.7x speed से शुरू करें।</li>
+  <li><strong>Content Creation</strong> — सबसे natural-sounding voice। "Neural" या "Premium" labelled voices बेहतर हैं।</li>
+</ul>
+<div class="callout-tip"><strong>💡 Speed Tip</strong><p>ज़्यादातर लोग कुछ minutes बाद 1.5x speed पर आराम से सुन सकते हैं। इसका मतलब 10-minute article 7 minutes में "पढ़" सकते हैं। Audiobook listeners regularly 1.5x–2x speed use करते हैं।</p></div>`,
+      },
+      {
+        id: 'text-to-speech-hindi',
+        title: 'Hindi Text to Speech: कैसे इस्तेमाल करें',
+        content: `<p>Hindi TTS की quality 2024 के बाद से काफी improve हुई है। यहाँ Hindi TTS best use करने के tips:</p>
+<h3>Hindi voices कैसे पाएं</h3>
+<ul>
+  <li><strong>Windows 10/11:</strong> Settings → Time & Language → Speech → Add voices → "हिन्दी" download करें। Microsoft की neural Hindi voices बहुत natural हैं।</li>
+  <li><strong>Chrome:</strong> Internet connected होने पर Google की online Hindi voice automatically available होती है।</li>
+  <li><strong>Android:</strong> Settings → Accessibility → Text-to-speech output। Google TTS engine pre-installed है, Hindi support included।</li>
+  <li><strong>macOS/iPhone:</strong> System Preferences → Accessibility → Spoken Content → Manage Voices → Hindi download करें।</li>
+</ul>
+<h3>Hindi TTS Tips</h3>
+<ul>
+  <li><strong>Devanagari script में लिखें</strong> — "नमस्ते दुनिया" लिखें, "namaste duniya" नहीं। Devanagari script pronunciation ज़्यादा accurate होती है।</li>
+  <li><strong>Punctuation use करें</strong> — Full stop (।), comma (,) से natural pauses आते हैं।</li>
+  <li><strong>Mixed Hindi-English</strong> — "मैं Google पर search कर रहा हूँ" जैसे mixed text भी support होता है।</li>
+</ul>
+<table>
+  <thead>
+    <tr><th>Platform</th><th>Hindi Voice Quality</th><th>Voices Available</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Windows 11</td><td>बहुत अच्छी (Neural)</td><td>2–4 voices</td></tr>
+    <tr><td>Chrome (Google)</td><td>अच्छी</td><td>1–2 voices</td></tr>
+    <tr><td>Android</td><td>अच्छी</td><td>1–2 voices</td></tr>
+    <tr><td>macOS/iOS</td><td>ठीक</td><td>1 voice</td></tr>
+  </tbody>
+</table>
+<div class="callout-info"><strong>ℹ️ Hindi TTS Quality</strong><p>2024 के बाद से Hindi TTS dramatically improve हुई है। अगर आपके device पर robotic लग रहा है, तो browser update करें या additional language packs install करें।</p></div>`,
+      },
+      {
+        id: 'text-to-speech-tips',
+        title: 'Pro Tips: TTS से बेहतर Results कैसे पाएं',
+        content: `<p>TTS output की quality आपके input text के formatting पर depend करती है:</p>
+<h3>Formatting Tips</h3>
+<ul>
+  <li><strong>Proper punctuation use करें।</strong> TTS periods, commas, question marks से pauses और intonation determine करता है।</li>
+  <li><strong>Long paragraphs break करें।</strong> Line breaks से natural pauses आते हैं।</li>
+  <li><strong>Abbreviations spell out करें।</strong> "Dr." usually काम करता है, लेकिन "approx." को "approximately" लिखें।</li>
+  <li><strong>Headings के बाद period लगाएं।</strong> बिना punctuation के TTS heading और next paragraph को एक साथ पढ़ता है।</li>
+</ul>
+<h3>Speed और Comprehension Guide</h3>
+<table>
+  <thead>
+    <tr><th>Speed</th><th>किसके लिए Best</th><th>Words Per Minute</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>0.5x – 0.7x</td><td>Language learning, कठिन material</td><td>75–105 wpm</td></tr>
+    <tr><td>0.8x – 1.0x</td><td>पहली बार सुनना, proofreading</td><td>120–150 wpm</td></tr>
+    <tr><td>1.2x – 1.5x</td><td>Review, familiar content</td><td>180–225 wpm</td></tr>
+    <tr><td>1.7x – 2.0x</td><td>Speed listening (experienced)</td><td>255–300 wpm</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Proofreading Hack</strong><p>TTS सुनते समय text को आँखों से भी पढ़ें। यह dual-channel approach वो errors catch करता है जो सिर्फ पढ़ने या सिर्फ सुनने से miss हो जाते हैं। सबसे effective proofreading technique।</p></div>`,
+      },
+      {
+        id: 'text-to-speech-comparison',
+        title: 'Free TTS vs Paid Services: कौन सा बेहतर?',
+        content: `<table>
+  <thead>
+    <tr><th>Option</th><th>Cost</th><th>Quality</th><th>Privacy</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ToolsArena (browser)</td><td>Free</td><td>अच्छी</td><td>Excellent (local)</td><td>Quick reading, study, proofreading</td></tr>
+    <tr><td>Google TTS</td><td>Free (limited)</td><td>बहुत अच्छी</td><td>कम (cloud)</td><td>Android apps</td></tr>
+    <tr><td>Amazon Polly</td><td>$4/million chars</td><td>Excellent</td><td>Medium</td><td>App developers</td></tr>
+    <tr><td>ElevenLabs</td><td>Free + paid</td><td>Excellent (AI)</td><td>कम</td><td>Content creators</td></tr>
+    <tr><td>NaturalReader</td><td>Free + ₹800/month</td><td>बहुत अच्छी</td><td>Medium</td><td>Students</td></tr>
+  </tbody>
+</table>
+<h3>Browser-based TTS क्यों best है</h3>
+<ul>
+  <li><strong>Zero setup</strong> — कोई download, installation, account नहीं</li>
+  <li><strong>Privacy</strong> — Text device पर रहता है, कहीं upload नहीं होता</li>
+  <li><strong>Speed</strong> — Paste, play, सुनें — instantly</li>
+  <li><strong>Cost</strong> — पूरी तरह free, कोई limits नहीं</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Text to Speech खोलें', description: 'Text to Speech tool पर जाएं। कोई signup या download ज़रूरी नहीं।' },
+      { title: 'Text paste या type करें', description: 'वो text enter करें जो सुनना चाहते हैं। Hindi, English, कोई भी भाषा।' },
+      { title: 'Voice चुनें', description: 'Hindi, English या अन्य भाषा की voice select करें।' },
+      { title: 'Speed और Pitch set करें', description: 'Sliders से speaking speed (0.5x to 2x) और pitch adjust करें।' },
+      { title: 'Play दबाएं और सुनें', description: 'Play button दबाएं। Pause, resume, stop कभी भी। Text locally process होता है।' },
+    ],
+    faqs: [
+      { question: 'क्या Text to Speech free है?', answer: 'हाँ। ToolsArena का TTS tool पूरी तरह free है — कोई character limit नहीं, कोई daily cap नहीं, कोई signup नहीं। यह browser का built-in speech synthesis use करता है।' },
+      { question: 'क्या Hindi में text to speech काम करता है?', answer: 'हाँ। Modern browsers और operating systems Hindi TTS voices support करते हैं। Windows 11 पर Settings → Speech से Hindi voices install करें। Chrome में Google Hindi voice internet connected होने पर available है।' },
+      { question: 'TTS के लिए best speed क्या है?', answer: 'पहली बार सुनने के लिए 1.0x (normal)। Review या familiar content के लिए 1.2x–1.5x। Experienced listeners 1.5x–2.0x use करते हैं।' },
+      { question: 'क्या TTS से audio download कर सकते हैं?', answer: 'Browser-based TTS real-time audio play करता है, downloadable file generate नहीं करता। Audio files के लिए Google Cloud TTS या Amazon Polly जैसी cloud services चाहिए।' },
+      { question: 'TTS robotic क्यों लगता है?', answer: 'Older TTS engines robotic होते हैं। Modern neural voices बहुत natural हैं। अलग voice try करें — "Online," "Neural," या "Premium" labelled voices बेहतर होती हैं।' },
+      { question: 'क्या TTS पढ़ाई के लिए अच्छा है?', answer: 'हाँ। Research support करती है कि auditory learners TTS से बेहतर सीखते हैं। Notes सुनते हुए पढ़ने से retention improve होती है। Commute, exercise में study time बढ़ता है।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'speech-to-text-guide'],
+    toolCTA: {
+      heading: 'Text to Speech — Free Online Tool',
+      description: 'किसी भी text को natural आवाज़ में सुनें। Hindi सहित कई भाषाओं में। Speed और pitch adjust करें। कोई signup नहीं, 100% private।',
+      buttonText: 'Text to Speech खोलें →',
+    },
+  },
+
+  // ── COMPRESS IMAGE GUIDE (HINDI) ────────────────────────────────
+  {
+    slug: 'compress-image-guide',
+    toolSlug: 'image-compressor',
+    category: 'image-tools',
+    title: 'Image Compress कैसे करें बिना Quality खोए: Complete Guide (2026)',
+    subtitle: 'Image compression की पूरी जानकारी — JPEG vs PNG vs WebP, optimal settings, website के लिए, WhatsApp के लिए, और 80% तक file size कम करें।',
+    metaTitle: 'Image Compress करें बिना Quality Loss — Free Guide (2026)',
+    metaDescription: 'Image compress कैसे करें बिना quality खोए। JPEG vs PNG vs WebP comparison, website optimization, WhatsApp compression tips। Free online image compressor tool।',
+    targetKeyword: 'image compress कैसे करें',
+    secondaryKeywords: [
+      'image compressor online free', 'photo size कम करें', 'image compress without losing quality',
+      'photo compress kaise kare', 'image size reducer', 'JPEG compress online',
+      'PNG compress online', 'website ke liye image optimize', 'WhatsApp photo compress',
+      'image file size kaise kam kare',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '10 मिनट पढ़ें',
+    tags: ['Images', 'Optimization', 'Web Performance', 'Photography'],
+    intro: `<p>बड़ी images website slow करती हैं, storage खाती हैं, और sharing मुश्किल बनाती हैं। लेकिन ज़्यादा compression quality बर्बाद करता है — blurry, pixelated photos। <strong>File size 60–80% कम करना और visual quality बरकरार रखना</strong> — यह sweet spot पाना बहुत आसान है।</p>
+<p>इस guide में सीखें: image compression कैसे काम करता है, कौन सा format कब use करें, website/email/WhatsApp के लिए optimal settings, और ToolsArena के free compressor से seconds में images compress करें।</p>`,
+    sections: [
+      {
+        id: 'what-is-image-compression',
+        title: 'Image Compression क्या है? Lossy vs Lossless',
+        content: `<p>Image compression file size कम करता है unnecessary या कम important data हटाकर। दो तरीके हैं:</p>
+<h3>Lossy Compression</h3>
+<p>Lossy compression कुछ image data permanently हटाकर file छोटी करता है। लेकिन human eyes reasonable quality levels पर difference नहीं पहचान सकती। JPEG 80% quality पर original से 60–70% छोटी होती है लेकिन दिखने में identical।</p>
+<h3>Lossless Compression</h3>
+<p>Lossless compression कोई data नहीं हटाता — original image perfectly reconstruct हो सकती है। PNG lossless compression use करता है। Tradeoff: कम compression — typically 20–50% reduction।</p>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Lossy (JPEG, WebP)</th><th>Lossless (PNG)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>File size reduction</td><td>60–90%</td><td>20–50%</td></tr>
+    <tr><td>Quality loss</td><td>75–85% पर invisible</td><td>Zero</td></tr>
+    <tr><td>Best for</td><td>Photos, complex images</td><td>Screenshots, logos, text</td></tr>
+    <tr><td>Transparency</td><td>No (JPEG) / Yes (WebP)</td><td>Yes</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ JPEG बार-बार compress न करें</strong><p>हर बार JPEG open, edit, re-save करने पर quality degrade होती है। अगर multiple edits करने हैं, तो PNG/TIFF में काम करें और final step में JPEG export करें।</p></div>`,
+      },
+      {
+        id: 'jpeg-vs-png-vs-webp',
+        title: 'JPEG vs PNG vs WebP: कौन सा Format कब?',
+        content: `<p>सही format चुनना compression से पहले सबसे impactful decision है:</p>
+<table>
+  <thead>
+    <tr><th>Format</th><th>Best For</th><th>Size (1920×1080)</th><th>Transparency</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>JPEG</strong></td><td>Photos, complex images</td><td>200–500 KB</td><td>No</td></tr>
+    <tr><td><strong>PNG</strong></td><td>Screenshots, logos, text</td><td>1–5 MB</td><td>Yes</td></tr>
+    <tr><td><strong>WebP</strong></td><td>Everything (modern)</td><td>100–300 KB</td><td>Yes</td></tr>
+    <tr><td><strong>AVIF</strong></td><td>Photos (next-gen)</td><td>80–200 KB</td><td>Yes</td></tr>
+    <tr><td><strong>SVG</strong></td><td>Icons, logos</td><td>5–50 KB</td><td>Yes</td></tr>
+  </tbody>
+</table>
+<h3>Quick Decision</h3>
+<ul>
+  <li><strong>Photo?</strong> → JPEG या WebP</li>
+  <li><strong>Screenshot with text?</strong> → PNG या WebP lossless</li>
+  <li><strong>Logo/icon?</strong> → SVG (scalable) या PNG</li>
+  <li><strong>Transparent background?</strong> → PNG या WebP</li>
+  <li><strong>Website?</strong> → WebP (97%+ browsers support)</li>
+</ul>
+<div class="callout-tip"><strong>💡 2026 में WebP best choice है</strong><p>WebP JPEG से 25–35% छोटी files बनाता है same quality पर, और transparency भी support करता है। जब तक बहुत old browsers support करने हों, WebP को default format रखें।</p></div>`,
+      },
+      {
+        id: 'optimal-settings',
+        title: 'हर Use Case के लिए Optimal Compression Settings',
+        content: `<table>
+  <thead>
+    <tr><th>Use Case</th><th>Format</th><th>Quality</th><th>Target Size</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Website hero image</td><td>WebP/JPEG</td><td>80–85%</td><td>100–300 KB</td></tr>
+    <tr><td>Blog post image</td><td>WebP/JPEG</td><td>75–80%</td><td>50–150 KB</td></tr>
+    <tr><td>Thumbnail</td><td>WebP/JPEG</td><td>70–75%</td><td>15–50 KB</td></tr>
+    <tr><td>Email attachment</td><td>JPEG</td><td>80%</td><td>1 MB से कम</td></tr>
+    <tr><td>WhatsApp photo</td><td>JPEG</td><td>75–80%</td><td>500 KB से कम</td></tr>
+    <tr><td>Social media</td><td>JPEG/PNG</td><td>85–90%</td><td>2 MB से कम</td></tr>
+    <tr><td>E-commerce product</td><td>WebP/JPEG</td><td>85%</td><td>100–200 KB</td></tr>
+    <tr><td>Passport/ID photo</td><td>JPEG</td><td>90–95%</td><td>200 KB से कम</td></tr>
+    <tr><td>Print (300 DPI)</td><td>TIFF/PNG</td><td>Lossless</td><td>5–50 MB</td></tr>
+  </tbody>
+</table>
+<h3>Quality Perception Curve</h3>
+<p>100% से 85% quality पर जाने से file 50–60% छोटी हो जाती है बिना visible difference के। 85% से 70% पर और 20–30% कम। 60% से नीचे artifacts दिखने लगते हैं।</p>
+<p><strong>Sweet spot: 75–85% quality</strong> — file size 60–80% कम, visual quality intact।</p>
+<div class="callout-tip"><strong>💡 Web के लिए 200 KB Rule</strong><p>Website पर हर image 200 KB से कम रखें। Google PageSpeed इससे बड़ी images flag करता है। 10 images × 500 KB = 5 MB — 3G पर 10–15 seconds। 10 × 150 KB = 1.5 MB — 3–4 seconds।</p></div>`,
+      },
+      {
+        id: 'compress-for-website',
+        title: 'Website के लिए Images Optimize कैसे करें',
+        content: `<p>Website images directly page speed affect करती हैं, जो SEO ranking, user experience, और conversion rates पर असर डालता है।</p>
+<h3>Website Image Optimization Checklist</h3>
+<ol>
+  <li><strong>Compress करने से पहले resize करें।</strong> Camera की 4000×3000 photo website पर 800×600 में दिखती है। पहले resize करें — अकेले यह file size 90% कम कर सकता है।</li>
+  <li><strong>सही format चुनें।</strong> Photos → WebP/JPEG। Screenshots → PNG/WebP। Icons → SVG।</li>
+  <li><strong>75–85% quality पर compress करें।</strong></li>
+  <li><strong>Responsive images use करें।</strong> Mobile, tablet, desktop के लिए अलग sizes।</li>
+  <li><strong>Lazy load करें।</strong> Below-the-fold images पर <code>loading="lazy"</code> लगाएं।</li>
+  <li><strong>EXIF data strip करें।</strong> Camera info, GPS location 10–50 KB add करता है।</li>
+</ol>
+<h3>SEO पर Impact</h3>
+<table>
+  <thead>
+    <tr><th>Metric</th><th>Before Optimization</th><th>After Optimization</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Total image weight</td><td>5–15 MB</td><td>500 KB – 1.5 MB</td></tr>
+    <tr><td>Page load time (3G)</td><td>12–20 seconds</td><td>3–5 seconds</td></tr>
+    <tr><td>Google PageSpeed</td><td>30–50</td><td>80–95</td></tr>
+    <tr><td>Bounce rate</td><td>40–60%</td><td>20–35%</td></tr>
+  </tbody>
+</table>
+<div class="callout-info"><strong>ℹ️ Google Core Web Vitals</strong><p>LCP (Largest Contentful Paint) measure करता है सबसे बड़ा visible element कब load हुआ — अक्सर hero image। Hero image 2 MB से 200 KB करने से LCP 8 seconds से 2 seconds हो सकता है।</p></div>`,
+      },
+      {
+        id: 'compress-for-whatsapp',
+        title: 'WhatsApp, Email, Social Media के लिए Photos Compress करें',
+        content: `<h3>WhatsApp</h3>
+<ul>
+  <li>WhatsApp automatically photos compress करता है, quality काफी कम हो जाती है</li>
+  <li><strong>Quality बचाने के लिए:</strong> Photo के बजाय <strong>Document</strong> के रूप में भेजें (Attach → Document → image select करें)</li>
+  <li>Regular photo भेजने से पहले 500 KB पर compress करें — WhatsApp की compression कम aggressive होगी</li>
+</ul>
+<h3>Email</h3>
+<ul>
+  <li>ज़्यादातर email providers 25 MB attachment limit रखते हैं</li>
+  <li>80% quality JPEG पर compress करें</li>
+  <li>Maximum 1920×1080 पर resize करें</li>
+  <li>Multiple images? हर एक 1 MB से कम रखें</li>
+</ul>
+<h3>Instagram</h3>
+<ul>
+  <li>Feed posts: <strong>1080×1080</strong> (square) या <strong>1080×1350</strong> (portrait)</li>
+  <li>Stories: <strong>1080×1920</strong></li>
+  <li>Instagram re-compress करता है, इसलिए <strong>90–95% quality</strong> पर upload करें</li>
+</ul>
+<h3>Facebook</h3>
+<ul>
+  <li>Text वाली graphics: PNG upload करें (Facebook PNG quality better preserve करता है)</li>
+  <li>Photos: JPEG 85–90%</li>
+  <li>Shared links: <strong>1200×630</strong></li>
+</ul>
+<h3>LinkedIn</h3>
+<ul>
+  <li>Profile photo: <strong>400×400</strong></li>
+  <li>Post images: <strong>1200×627</strong></li>
+  <li>Banner: <strong>1584×396</strong></li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Image Compressor खोलें', description: 'Image Compressor tool पर जाएं। कोई signup ज़रूरी नहीं।' },
+      { title: 'Images upload करें', description: 'एक या ज़्यादा images drag-and-drop करें (JPEG, PNG, WebP)। Files browser में process होती हैं।' },
+      { title: 'Quality level set करें', description: 'Quality slider से compression level set करें। 80% recommended — visually identical, 60–70% smaller।' },
+      { title: 'Preview देखें', description: 'Original और compressed version compare करें।' },
+      { title: 'Download करें', description: 'Compressed images download करें। File size reduction दिखाई जाती है।' },
+    ],
+    faqs: [
+      { question: 'क्या image compress करने से quality खराब होती है?', answer: '75–85% quality settings पर difference human eyes को दिखाई नहीं देता। Lossless compression (PNG) में zero quality loss होता है। सही quality setting choose करें अपने use case के अनुसार।' },
+      { question: 'Image compression का best quality setting क्या है?', answer: 'ज़्यादातर use cases के लिए 80% quality best balance देता है — files 60–70% smaller, visible quality loss zero। Web images के लिए 75%। Print के लिए 90–95%।' },
+      { question: 'बिना software install किए image compress कर सकते हैं?', answer: 'हाँ। ToolsArena का image compressor browser में काम करता है। कोई download, installation, signup नहीं। Images locally process होती हैं, कहीं upload नहीं होतीं।' },
+      { question: 'Image file size कितनी कम हो सकती है?', answer: 'JPEG 80% quality पर 60–70% smaller। PNG photo को WebP में convert करने पर 80–90% reduction। 4000px image को 1920px resize + compress करने पर 90–95% total reduction।' },
+      { question: 'WhatsApp के लिए photo compress कैसे करें?', answer: '80% quality JPEG पर compress करें और 1920×1080 resize करें। Quality बचाने के लिए photo के बजाय Document के रूप में भेजें।' },
+    ],
+    relatedGuides: ['image-resizer-guide', 'image-background-remover-guide', 'jpg-to-pdf-guide'],
+    toolCTA: {
+      heading: 'Image Compress करें — Free Online Tool',
+      description: 'Image file size 80% तक कम करें बिना visible quality loss। JPEG, PNG, WebP support। Multiple files drag-and-drop। कोई signup नहीं, 100% private।',
+      buttonText: 'Image Compressor खोलें →',
+    },
+  },
+
+  // ── SPEECH TO TEXT GUIDE (HINDI) ────────────────────────────────
+  {
+    slug: 'speech-to-text-guide',
+    toolSlug: 'speech-to-text',
+    category: 'text-tools',
+    title: 'Speech to Text गाइड: आवाज़ को Text में बदलें — Free Online (2026)',
+    subtitle: 'Speech to Text कैसे काम करता है, accuracy कैसे बढ़ाएं, dictation tips, और किसी भी भाषा में voice-to-text convert करें।',
+    metaTitle: 'Speech to Text: आवाज़ को Text में बदलें Free Online (2026)',
+    metaDescription: 'Speech to Text से आवाज़ को text में बदलें। Voice recognition accuracy tips, Hindi dictation, transcription use cases। Free speech-to-text converter tool।',
+    targetKeyword: 'speech to text Hindi',
+    secondaryKeywords: [
+      'speech to text online free', 'voice to text converter', 'आवाज़ को text में बदलें',
+      'dictation online free', 'voice typing Hindi', 'speech recognition online',
+      'audio to text converter', 'बोलकर लिखें', 'voice se type kaise kare',
+      'speech to text kaise use kare',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '8 मिनट पढ़ें',
+    tags: ['Productivity', 'Accessibility', 'Transcription', 'Voice'],
+    intro: `<p><strong>Speech to Text (STT)</strong> बोले हुए शब्दों को real-time में लिखित text में बदलता है। चाहे आप student हों जो lecture transcribe करना चाहते हैं, journalist interview record कर रहे हों, या professional email voice से draft करना चाहते हों — STT keyboard को optional बना देता है।</p>
+<p>इस guide में सीखें: speech recognition कैसे काम करता है, accuracy कैसे बढ़ाएं, best use cases, और ToolsArena का free online speech-to-text converter कैसे use करें।</p>`,
+    sections: [
+      {
+        id: 'what-is-speech-to-text',
+        title: 'Speech to Text क्या है और कैसे काम करता है?',
+        content: `<p>Speech to Text (STT), जिसे voice recognition या automatic speech recognition (ASR) भी कहते हैं, बोली गई भाषा को written text में convert करता है। Modern STT systems millions of hours की speech पर trained deep learning models use करते हैं और 95%+ accuracy achieve करते हैं।</p>
+<h3>Speech Recognition Process</h3>
+<ol>
+  <li><strong>Audio Capture</strong> — Microphone आवाज़ record करता है digital audio signal के रूप में।</li>
+  <li><strong>Audio Processing</strong> — Background noise filter होता है। Audio छोटे segments (20–40 milliseconds) में break होता है।</li>
+  <li><strong>Feature Extraction</strong> — हर segment mathematical representation में convert होता है।</li>
+  <li><strong>Pattern Matching</strong> — Neural network training data से match करके predict करता है कौन से words बोले गए।</li>
+  <li><strong>Language Modelling</strong> — Context के आधार पर predictions adjust होते हैं। "मैं आइसक्रीम खा रहा हूँ" ज़्यादा likely है बनाम random sounds।</li>
+  <li><strong>Text Output</strong> — Final transcription text के रूप में दिखता है, real-time updates के साथ।</li>
+</ol>
+<div class="callout-info"><strong>ℹ️ 2026 में Accuracy</strong><p>Google speech recognition clear English speech के लिए 95%+ accuracy achieve करता है। Hindi के लिए 90–93%। Noisy environments या heavy accents में 80–90%।</p></div>`,
+      },
+      {
+        id: 'speech-to-text-use-cases',
+        title: 'Speech to Text के 7 Best Use Cases',
+        content: `<h3>1. Lecture और Meeting Notes</h3>
+<p>Lectures या meetings record करें और text transcript पाएं। Students report करते हैं कि handwritten notes की बजाय transcription से weekly 2–3 hours बचते हैं।</p>
+<h3>2. Hands-Free Writing</h3>
+<p>Emails, documents, messages बोलकर draft करें। Average typing speed 40 wpm है; average speaking speed 130 wpm। Voice typing typing से <strong>3× faster</strong> है।</p>
+<h3>3. Accessibility</h3>
+<p>Motor disabilities, repetitive strain injuries, या typing difficult बनाने वाली conditions में voice input essential है। STT keyboard optional बना देता है।</p>
+<h3>4. Interview Transcription</h3>
+<p>Journalists, researchers real-time में interviews transcribe कर सकते हैं। 30-minute interview = approximately 4,500 words text।</p>
+<h3>5. Content Creation</h3>
+<p>Bloggers अक्सर पाते हैं कि ideas बोलकर express करने से ज़्यादा natural, conversational writing आती है।</p>
+<h3>6. Medical और Legal Documentation</h3>
+<p>Doctors patient notes dictate करते हैं। Lawyers case summaries। Typing से faster है detailed observations document करने के लिए।</p>
+<h3>7. Multilingual Communication</h3>
+<p>एक language में बोलें, text output पाएं, translate करें। Multilingual teams के लिए useful।</p>`,
+      },
+      {
+        id: 'how-to-use-speech-to-text',
+        title: 'Speech to Text कैसे Use करें — Step by Step',
+        content: `<ol>
+  <li><strong>Tool खोलें</strong> — ToolsArena का Speech to Text page open करें। कोई signup नहीं।</li>
+  <li><strong>Microphone permission दें</strong> — Browser microphone access मांगेगा। "Allow" click करें।</li>
+  <li><strong>Language select करें</strong> — वो language चुनें जिसमें बोलेंगे। Hindi बोलना है तो "हिन्दी (भारत)" select करें।</li>
+  <li><strong>Microphone button दबाएं</strong> — Clear बोलना शुरू करें। Words real-time में text बनकर दिखेंगे।</li>
+  <li><strong>Edit और copy करें</strong> — Transcript review करें, corrections करें, text copy करें।</li>
+</ol>
+<h3>Best Results के लिए Microphone Tips</h3>
+<ul>
+  <li><strong>Headset या external mic use करें</strong> — Laptop mic ambient noise ज़्यादा pickup करता है। ₹500 का headset mic accuracy dramatically improve करता है।</li>
+  <li><strong>Background noise कम करें</strong> — Windows बंद करें, fan बंद करें, noisy environment से दूर जाएं।</li>
+  <li><strong>Natural pace में बोलें</strong> — न बहुत fast, न बहुत slow। Conversational speed best results देता है।</li>
+  <li><strong>Mic से 6–12 inches दूर रहें</strong> — बहुत दूर = unclear। बहुत पास = distortion।</li>
+</ul>
+<div class="callout-tip"><strong>💡 Punctuation by Voice</strong><p>"Period," "comma," "question mark," या "new paragraph" बोलें — ज़्यादातर STT systems correct punctuation insert कर देते हैं।</p></div>`,
+      },
+      {
+        id: 'improve-accuracy',
+        title: 'Speech to Text Accuracy कैसे बढ़ाएं: 8 Pro Tips',
+        content: `<ol>
+  <li><strong>सही language और dialect चुनें।</strong> Indian English speakers के लिए "English (India)" बेहतर results देता है "English (US)" से।</li>
+  <li><strong>Quality microphone use करें।</strong> ₹1,500 का USB microphone ₹70,000 laptop के built-in mic से better है speech recognition के लिए।</li>
+  <li><strong>Background noise minimize करें।</strong> Doors बंद करें, music बंद करें, speaking करते समय typing न करें।</li>
+  <li><strong>Complete sentences बोलें।</strong> "Meeting Tuesday three बजे schedule करो" बेहतर है "Meeting... um... Tuesday... three..." से।</li>
+  <li><strong>Sentences के बीच pause रखें।</strong> Brief pauses sentence boundaries identify करने में help करते हैं।</li>
+  <li><strong>Filler words avoid करें।</strong> "Um," "uh," "like" recognition confuse करते हैं। Brief silence better है।</li>
+  <li><strong>Chrome browser use करें।</strong> Chrome generally best speech recognition accuracy provide करता है Google servers use करने की वजह से।</li>
+  <li><strong>Errors तुरंत correct करें।</strong> Context fresh होते ही correct करना बाद में edit करने से easier है।</li>
+</ol>
+<div class="callout-info"><strong>ℹ️ Hindi Accuracy Tips</strong><p>Hindi STT use करते समय "हिन्दी (भारत)" select करें, "English (India)" नहीं। Hindi-English code-switching (Hinglish) Google Chrome में अच्छी तरह support होती है।</p></div>`,
+      },
+      {
+        id: 'speech-to-text-comparison',
+        title: 'Free vs Paid Transcription Services',
+        content: `<table>
+  <thead>
+    <tr><th>Option</th><th>Cost</th><th>Accuracy</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ToolsArena (browser)</td><td>Free</td><td>90–95%</td><td>Quick dictation, notes, drafts</td></tr>
+    <tr><td>Google Docs Voice Typing</td><td>Free</td><td>92–96%</td><td>Documents voice से लिखना</td></tr>
+    <tr><td>Otter.ai</td><td>Free + $17/month</td><td>93–97%</td><td>Meeting transcription</td></tr>
+    <tr><td>Rev.com (AI)</td><td>$0.25/minute</td><td>90–95%</td><td>Quick automated transcription</td></tr>
+    <tr><td>Rev.com (Human)</td><td>$1.50/minute</td><td>99%+</td><td>Legal, medical transcription</td></tr>
+    <tr><td>Whisper (OpenAI)</td><td>Free (self-hosted)</td><td>95–98%</td><td>Developers, batch transcription</td></tr>
+  </tbody>
+</table>
+<h3>Free online STT कब enough है</h3>
+<ul>
+  <li>Personal notes, emails, messages dictate करना</li>
+  <li>Short speeches transcribe करना</li>
+  <li>Minor errors acceptable हों</li>
+  <li>Students lecture notes ले रहे हों</li>
+</ul>
+<h3>Paid service कब चाहिए</h3>
+<ul>
+  <li>Legal proceedings — verbatim accuracy ज़रूरी</li>
+  <li>Medical documentation — specialised terminology</li>
+  <li>Published content — errors acceptable नहीं</li>
+  <li>Multiple speakers, heavy accents, significant noise</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Speech to Text खोलें', description: 'Speech to Text tool पर जाएं। कोई signup या download ज़रूरी नहीं।' },
+      { title: 'Microphone permission दें', description: 'Browser microphone access माँगे तो "Allow" click करें।' },
+      { title: 'Language select करें', description: 'Hindi, English, या जिस भाषा में बोलना है वो चुनें।' },
+      { title: 'बोलना शुरू करें', description: 'Microphone button दबाएं और clear, natural pace में बोलें। Words real-time में text बनेंगे।' },
+      { title: 'Edit और copy करें', description: 'Text review करें, corrections करें, copy करके कहीं भी use करें।' },
+    ],
+    faqs: [
+      { question: 'क्या online speech to text accurate है?', answer: 'Modern browser-based speech recognition clear speech के लिए 90–98% accuracy achieve करता है। Accuracy microphone quality, background noise, accent clarity, और language selection पर depend करती है।' },
+      { question: 'क्या Hindi में speech to text काम करता है?', answer: 'हाँ। Google Chrome Hindi speech recognition 90–93% accuracy के साथ support करता है। "हिन्दी (भारत)" language setting select करें। Hindi-English code-switching भी Chrome में supported है।' },
+      { question: 'Typing से voice typing कितनी fast है?', answer: 'Average typing speed 40 wpm। Average speaking speed 130 wpm। Voice typing typing से approximately 3× faster है, लेकिन बाद में editing time लग सकता है।' },
+      { question: 'Microphone permission safe है?', answer: 'हाँ। ToolsArena आपके audio को store नहीं करता। Chrome Google servers पर processing करता है। Safari Apple on-device processing करता है। Transcribed text browser में रहता है।' },
+      { question: 'Speech to text काम क्यों नहीं कर रहा?', answer: 'Microphone permission check करें। Microphone काम कर रहा है verify करें (OS settings में)। Chrome try करें best compatibility के लिए। Private/incognito window में API block हो सकती है।' },
+    ],
+    relatedGuides: ['text-to-speech-guide', 'word-counter-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Speech to Text — Free Online Tool',
+      description: 'Microphone में बोलें, real-time में text पाएं। Hindi सहित कई भाषाओं में। कोई signup नहीं, कोई download नहीं।',
+      buttonText: 'Speech to Text खोलें →',
+    },
+  },
+
+  // ── PERCENTAGE HOW-TO GUIDE (HINDI) ─────────────────────────────
+  {
+    slug: 'percentage-how-to-guide',
+    toolSlug: 'percentage-calculator',
+    category: 'calculators',
+    title: 'Percentage कैसे Calculate करें: Formulas, Examples और Free Calculator (2026)',
+    subtitle: 'Percentage calculation master करें — discount, marks, GST, salary hike, tips के formulas और real-world examples। Free online percentage calculator।',
+    metaTitle: 'Percentage कैसे Calculate करें — Formulas & Examples (2026)',
+    metaDescription: 'Percentage calculate करना सीखें — marks percentage, discount, percentage increase/decrease, GST calculation। Simple formulas और examples। Free percentage calculator।',
+    targetKeyword: 'percentage kaise nikale',
+    secondaryKeywords: [
+      'percentage calculator', 'percentage kaise calculate kare', 'प्रतिशत कैसे निकालें',
+      'marks ka percentage', 'discount percentage formula', 'percentage increase formula',
+      'GST percentage kaise nikale', 'salary hike percentage', 'CGPA to percentage',
+      'percentage formula Hindi mein',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '8 मिनट पढ़ें',
+    tags: ['Math', 'Calculators', 'Students', 'Finance'],
+    intro: `<p>Percentage हर जगह है — discounts, exam scores, GST, tips, interest rates, battery level, survey results। लेकिन बहुत लोग basic से आगे percentage calculate करने में struggle करते हैं। Formulas simple हैं एक बार समझ लें तो।</p>
+<p>इस guide में हर type का percentage calculation सीखें — clear formulas, solved examples, common mistakes, और ToolsArena का free percentage calculator use करें answers verify करने के लिए।</p>`,
+    sections: [
+      {
+        id: 'what-is-percentage',
+        title: 'Percentage (प्रतिशत) क्या है?',
+        content: `<p><strong>Percentage</strong> एक number है जो 100 के fraction के रूप में express होता है। "Per centum" Latin है जिसका मतलब "प्रति सौ।" जब हम 25% कहते हैं, मतलब 100 में से 25, या 25/100, या decimal में 0.25।</p>
+<h3>तीन Forms</h3>
+<table>
+  <thead>
+    <tr><th>Form</th><th>Example</th><th>Conversion</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Percentage</td><td>75%</td><td>100 से divide करें → 0.75</td></tr>
+    <tr><td>Decimal</td><td>0.75</td><td>100 से multiply करें → 75%</td></tr>
+    <tr><td>Fraction</td><td>3/4</td><td>Numerator ÷ Denominator × 100 → 75%</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Quick Mental Math</strong><p>किसी भी number का 10% निकालने के लिए decimal point एक जगह left move करें। 850 का 10% = 85। फिर: 5% = 42.5 (10% का half), 20% = 170 (10% का double), 15% = 127.5 (10% + 5%)।</p></div>`,
+      },
+      {
+        id: 'percentage-formulas',
+        title: 'सभी Important Percentage Formulas',
+        content: `<h3>1. Y का X% कितना है?</h3>
+<p><strong>Formula:</strong> (X / 100) × Y</p>
+<p><strong>Example:</strong> 12,500 का 18% कितना है?</p>
+<p>(18 / 100) × 12,500 = 0.18 × 12,500 = <strong>₹2,250</strong></p>
+<p><em>Use: GST calculation (18% of price), tips, discounts</em></p>
+
+<h3>2. X, Y का कितने percent है?</h3>
+<p><strong>Formula:</strong> (X / Y) × 100</p>
+<p><strong>Example:</strong> 450, 600 का कितने percent है?</p>
+<p>(450 / 600) × 100 = <strong>75%</strong></p>
+<p><em>Use: Exam marks percentage, completion rate</em></p>
+
+<h3>3. Percentage Change (Increase / Decrease)</h3>
+<p><strong>Formula:</strong> ((New − Old) / Old) × 100</p>
+<p><strong>Example:</strong> Price ₹800 से ₹920 हो गया। Percentage increase?</p>
+<p>((920 − 800) / 800) × 100 = (120 / 800) × 100 = <strong>15% increase</strong></p>
+
+<h3>4. Original Value निकालना (Discount से पहले)</h3>
+<p><strong>Formula:</strong> Final Value / (1 − Discount%/100)</p>
+<p><strong>Example:</strong> 20% discount के बाद price ₹4,000 है। Original price?</p>
+<p>4,000 / (1 − 20/100) = 4,000 / 0.80 = <strong>₹5,000</strong></p>
+
+<h3>5. दो Values के बीच Percentage Difference</h3>
+<p><strong>Formula:</strong> (|A − B| / ((A + B) / 2)) × 100</p>
+<p><strong>Example:</strong> 150 और 200 के बीच percentage difference?</p>
+<p>(50 / 175) × 100 = <strong>28.57%</strong></p>`,
+      },
+      {
+        id: 'marks-percentage',
+        title: 'Marks का Percentage कैसे निकालें (Students)',
+        content: `<p>India में exam results के समय सबसे ज़्यादा search होने वाला calculation:</p>
+<h3>Formula</h3>
+<p><strong>Percentage = (प्राप्त अंक / कुल अंक) × 100</strong></p>
+<h3>Single Subject</h3>
+<p>Mathematics में 80 में से 72 marks मिले:</p>
+<p>(72 / 80) × 100 = <strong>90%</strong></p>
+<h3>Multiple Subjects (Aggregate)</h3>
+<table>
+  <thead>
+    <tr><th>विषय</th><th>प्राप्त अंक</th><th>कुल अंक</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>गणित</td><td>72</td><td>80</td></tr>
+    <tr><td>विज्ञान</td><td>85</td><td>100</td></tr>
+    <tr><td>अंग्रेज़ी</td><td>68</td><td>80</td></tr>
+    <tr><td>हिंदी</td><td>78</td><td>100</td></tr>
+    <tr><td>सामाजिक विज्ञान</td><td>62</td><td>80</td></tr>
+    <tr><td><strong>कुल</strong></td><td><strong>365</strong></td><td><strong>440</strong></td></tr>
+  </tbody>
+</table>
+<p>Aggregate percentage = (365 / 440) × 100 = <strong>82.95%</strong></p>
+<h3>CGPA to Percentage (CBSE)</h3>
+<p><strong>Percentage = CGPA × 9.5</strong></p>
+<p>Example: CGPA 8.2 → 8.2 × 9.5 = <strong>77.9%</strong></p>
+<div class="callout-warning"><strong>⚠️ अलग-अलग institutions अलग formula use करते हैं</strong><p>CGPA × 9.5 formula CBSE specific है। आपकी university अलग multiplier use कर सकती है (कुछ × 10, कुछ custom lookup tables)। अपने institution का official formula ज़रूर check करें।</p></div>`,
+      },
+      {
+        id: 'daily-life-percentage',
+        title: 'Daily Life में Percentage: Discount, GST, Salary, Tips',
+        content: `<h3>Shopping Discount</h3>
+<p><strong>Discounted Price = Original × (1 − Discount%/100)</strong></p>
+<p>Shirt ₹1,200 की, 30% discount:</p>
+<p>1,200 × 0.70 = <strong>₹840</strong> (बचत: ₹360)</p>
+
+<h3>GST Calculation</h3>
+<p><strong>GST = Base Price × GST Rate / 100</strong></p>
+<p>Product ₹5,000 + 18% GST:</p>
+<p>GST = ₹900। Total = <strong>₹5,900</strong>। CGST = ₹450, SGST = ₹450</p>
+
+<h3>Restaurant Tip</h3>
+<p>Bill ₹1,800। 10% tip:</p>
+<p>1,800 × 10/100 = <strong>₹180 tip</strong> → Total: ₹1,980</p>
+
+<h3>Salary Hike</h3>
+<p>Current salary ₹45,000/month। 12% hike मिली:</p>
+<p>Increase = 45,000 × 12/100 = ₹5,400</p>
+<p>New salary = <strong>₹50,400/month</strong></p>
+
+<h3>FD Interest</h3>
+<p>₹1,00,000 FD, 7% annual interest, 1 year:</p>
+<p>Interest = 1,00,000 × 7/100 = <strong>₹7,000</strong></p>
+
+<div class="callout-tip"><strong>💡 Double Discount Trap</strong><p>"50% off + extra 20% off" = 70% off नहीं है! पहला discount: ₹1,000 × 0.50 = ₹500। दूसरा: ₹500 × 0.80 = ₹400। Actual discount: ₹600/₹1,000 = <strong>60%</strong>, 70% नहीं।</p></div>`,
+      },
+      {
+        id: 'common-mistakes',
+        title: 'Percentage की Common Mistakes जो सबसे ज़्यादा होती हैं',
+        content: `<h3>Mistake 1: Percentage Points vs Percentage</h3>
+<p>Inflation 4% से 6% गया — यह 2 <strong>percentage points</strong> increase है, 2% नहीं। Percentage increase actually = ((6−4)/4) × 100 = <strong>50%</strong>।</p>
+
+<h3>Mistake 2: Percentage Changes Reversible नहीं हैं</h3>
+<p>50% decrease + 50% increase = original नहीं:</p>
+<p>₹1,000 → 50% decrease → ₹500 → 50% increase → <strong>₹750</strong> (₹1,000 नहीं!)</p>
+<p>₹250 का नुकसान। Stock market में 50% drop recover करने के लिए 100% gain चाहिए।</p>
+
+<h3>Mistake 3: अलग Bases के Percentages जोड़ना</h3>
+<p>"20% off + 10% coupon = 30% saving" — गलत! 10% coupon already-discounted price पर लगता है। Actual saving: <strong>28%</strong>।</p>
+
+<h3>Mistake 4: गलत Number से Divide करना</h3>
+<p>"150 का 30 कितने percent है?" → (30/150) × 100 = 20%। (150/30) × 100 नहीं। "Of" वाला number denominator में जाता है।</p>
+
+<h3>Mistake 5: 100 से Divide करना भूलना</h3>
+<p>सही: 0.18 × 500 = 90 ✓ (18% of 500)</p>
+<p>गलत: 18 × 500 = 9,000 ✗ (100 से divide नहीं किया)</p>`,
+      },
+      {
+        id: 'reference-table',
+        title: 'Quick Percentage Reference Table',
+        content: `<table>
+  <thead>
+    <tr><th>Percentage</th><th>Decimal</th><th>Fraction</th><th>Common Use</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>5%</td><td>0.05</td><td>1/20</td><td>Service tax, छोटा tip</td></tr>
+    <tr><td>10%</td><td>0.10</td><td>1/10</td><td>Standard tip, mental math</td></tr>
+    <tr><td>12%</td><td>0.12</td><td>3/25</td><td>GST slab (India)</td></tr>
+    <tr><td>15%</td><td>0.15</td><td>3/20</td><td>अच्छा tip</td></tr>
+    <tr><td>18%</td><td>0.18</td><td>9/50</td><td>GST slab (India)</td></tr>
+    <tr><td>20%</td><td>0.20</td><td>1/5</td><td>Common discount</td></tr>
+    <tr><td>25%</td><td>0.25</td><td>1/4</td><td>Quarter</td></tr>
+    <tr><td>28%</td><td>0.28</td><td>7/25</td><td>GST — luxury (India)</td></tr>
+    <tr><td>33.33%</td><td>0.333</td><td>1/3</td><td>एक-तिहाई बँटवारा</td></tr>
+    <tr><td>50%</td><td>0.50</td><td>1/2</td><td>Half-price sale</td></tr>
+    <tr><td>75%</td><td>0.75</td><td>3/4</td><td>तीन-चौथाई</td></tr>
+    <tr><td>100%</td><td>1.00</td><td>1/1</td><td>पूरा, complete, doubling</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Mental Math Shortcut</strong><p>कोई भी percentage mentally calculate करें: पहले 10% निकालें (decimal left shift), फिर multiply करें। 800 का 35%: 10% = 80, तो 30% = 240, 5% = 40। Total: 240 + 40 = <strong>280</strong>।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena Percentage Calculator खोलें', description: 'Percentage Calculator पर जाएं। कोई signup या download नहीं।' },
+      { title: 'Calculation type चुनें', description: 'Number का percentage, X is what % of Y, या percentage increase/decrease चुनें।' },
+      { title: 'Values enter करें', description: 'Numbers type करें। Calculator automatically formula apply करेगा।' },
+      { title: 'Instant result पाएं', description: 'Answer तुरंत दिखेगा step-by-step formula breakdown के साथ।' },
+      { title: 'और calculations करें', description: 'Calculation types switch करें बिना reload किए। सब browser में process होता है।' },
+    ],
+    faqs: [
+      { question: 'Marks का percentage कैसे निकालें?', answer: 'प्राप्त अंक ÷ कुल अंक × 100। Example: 440 में से 365 = (365/440) × 100 = 82.95%। Multiple subjects के लिए सभी obtained marks जोड़ें और total possible marks से divide करें।' },
+      { question: 'Percentage increase कैसे calculate करें?', answer: 'Formula: ((New − Old) / Old) × 100। Example: Price ₹800 से ₹1,000 हो गया। Increase = ((1000−800)/800) × 100 = 25%।' },
+      { question: 'GST 18% कैसे calculate करें?', answer: '₹10,000 × 18/100 = ₹1,800 GST। Total = ₹11,800। Intra-state: CGST = ₹900, SGST = ₹900।' },
+      { question: 'CGPA to percentage कैसे convert करें?', answer: 'CBSE formula: Percentage = CGPA × 9.5। Example: CGPA 8.6 → 8.6 × 9.5 = 81.7%। अपने institution का official formula check करें।' },
+      { question: 'Discount percentage कैसे calculate करें?', answer: 'Discount % = ((Original − Sale Price) / Original) × 100। Example: Original ₹2,000, sale ₹1,400। Discount = ((2000−1400)/2000) × 100 = 30%।' },
+    ],
+    relatedGuides: ['gst-calculator-guide', 'emi-calculator-guide', 'compound-interest-guide'],
+    toolCTA: {
+      heading: 'Percentage Calculate करें — Free Online Tool',
+      description: 'किसी भी number का percentage निकालें, percentage change calculate करें, fractions को percentage में convert करें। Step-by-step formula। कोई signup नहीं।',
+      buttonText: 'Percentage Calculator खोलें →',
+    },
+  },
+
+  // ── ATS RESUME CHECKER GUIDE (HINDI) ────────────────────────────
+  {
+    slug: 'ats-resume-checker-guide',
+    toolSlug: 'ats-resume-checker',
+    category: 'text-tools',
+    title: 'ATS Resume Checker Guide: ATS से Resume Pass कैसे कराएं (2026)',
+    subtitle: 'ATS software कैसे काम करता है, 75% resumes automatically reject क्यों होते हैं, और अपना resume ATS-friendly कैसे बनाएं — पूरी जानकारी।',
+    metaTitle: 'ATS Resume Checker: ATS से Resume Pass करें (2026 Guide)',
+    metaDescription: 'ATS system कैसे काम करता है, 75% resumes reject क्यों होते हैं। ATS-friendly resume formatting rules, keyword optimization tips। Free ATS resume checker tool।',
+    targetKeyword: 'ATS resume checker',
+    secondaryKeywords: [
+      'ATS friendly resume kaise banaye', 'ATS resume format', 'resume ATS score',
+      'applicant tracking system kya hai', 'resume screening software',
+      'ATS se resume kaise pass kare', 'resume keywords kaise add kare',
+      'ATS resume tips Hindi', 'job application resume tips', 'resume checker free',
+    ],
+    lastUpdated: '2026-03-14',
+    readingTime: '10 मिनट पढ़ें',
+    tags: ['Career', 'Resume', 'Job Search', 'Hiring'],
+    intro: `<p>आपने घंटों लगाकर resume perfect किया, job description के हिसाब से customize किया, और "Apply" दबाया। लेकिन किसी human ने इसे देखा ही नहीं। एक <strong>Applicant Tracking System (ATS)</strong> ने आपका resume scan किया, criteria match नहीं पाया, और automatically reject कर दिया — 75% applicants के साथ।</p>
+<p>यह काल्पनिक नहीं है। 99%+ Fortune 500 companies और 75% employers ATS software use करते हैं। यह समझना कि ATS कैसे काम करता है — और resume कैसे optimize करें — interview मिलने और rejection के बीच का difference है।</p>`,
+    sections: [
+      {
+        id: 'what-is-ats',
+        title: 'ATS क्या है और कैसे काम करता है?',
+        content: `<p><strong>Applicant Tracking System (ATS)</strong> एक software है जो companies job applications manage करने के लिए use करती हैं। Popular ATS: Workday, Taleo, Greenhouse, Lever, iCIMS, BambooHR। जब आप careers page से resume submit करते हैं, पहले ATS देखता है।</p>
+<h3>ATS आपके Resume के साथ क्या करता है</h3>
+<ol>
+  <li><strong>Parsing</strong> — Resume file (PDF/DOCX) से text extract करता है और structured fields में organise करता है: name, email, phone, experience, education, skills।</li>
+  <li><strong>Keyword Matching</strong> — Resume को job description से compare करता है। Specific keywords, skills, certifications, qualifications देखता है।</li>
+  <li><strong>Ranking</strong> — Resumes score और rank होते हैं job requirements से match के basis पर। High-scoring resumes recruiters को forward होते हैं।</li>
+  <li><strong>Filtering</strong> — Minimum criteria (required skills, experience years, education) meet नहीं करने वाले resumes filter out हो जाते हैं।</li>
+</ol>
+<h3>Rejection rate बहुत brutal है</h3>
+<p>Industry data: <strong>75% resumes ATS reject करता है</strong> human देखने से पहले। Popular positions पर 90%+। Resume ATS-optimised भी होना चाहिए और human readers को भी impress करना चाहिए।</p>
+<div class="callout-warning"><strong>⚠️ Beautiful design नुकसान कर सकता है</strong><p>Creative resume templates columns, graphics, icons के साथ ATS parsers confuse करते हैं। जो resume ATS parse नहीं कर सकता, वो reject हो जाता है — चाहे कितना भी सुंदर हो।</p></div>`,
+      },
+      {
+        id: 'ats-formatting',
+        title: 'ATS-Friendly Resume Formatting: 10 ज़रूरी Rules',
+        content: `<ol>
+  <li><strong>Standard file format use करें।</strong> .docx (best compatibility) या .pdf submit करें। Scanned PDFs, images, .pages files avoid करें।</li>
+  <li><strong>Standard section headings use करें।</strong> "Work Experience" लिखें, "Where I've Made an Impact" नहीं। ATS standard labels ढूंढता है: Experience, Education, Skills, Summary।</li>
+  <li><strong>Tables और columns avoid करें।</strong> ATS left-to-right, top-to-bottom पढ़ता है। Multi-column layouts reading order scramble करते हैं। Single-column layout only।</li>
+  <li><strong>Headers/Footers में content न रखें।</strong> बहुत से ATS headers/footers नहीं पढ़ सकते। Name और contact info main body में रखें।</li>
+  <li><strong>Standard fonts use करें।</strong> Arial, Calibri, Times New Roman। Decorative fonts avoid करें।</li>
+  <li><strong>कोई images, icons, graphics नहीं।</strong> ATS images नहीं पढ़ सकता। "Python: 90%" skill bar invisible है ATS को। "Python (Advanced)" लिखें instead।</li>
+  <li><strong>Simple bullet points।</strong> Standard bullet (•) only। Fancy bullets, checkmarks parse नहीं हो सकते।</li>
+  <li><strong>Acronyms spell out करें।</strong> "Search Engine Optimisation (SEO)" पहली बार लिखें, फिर "SEO"। ATS दोनों forms match करता है।</li>
+  <li><strong>Skills section ज़रूर रखें।</strong> Comma-separated keywords का dedicated section ATS को clear list देता है match करने के लिए।</li>
+  <li><strong>Professional filename रखें।</strong> "Mukesh_Resume.pdf" — "resume_final_v3_FINAL.pdf" नहीं।</li>
+</ol>`,
+      },
+      {
+        id: 'ats-keywords',
+        title: 'ATS Keywords: Job Description से Match कैसे करें',
+        content: `<p>Keywords ATS screening का सबसे critical factor है:</p>
+<h3>सही Keywords कहाँ से ढूंढें</h3>
+<ol>
+  <li><strong>Job description से।</strong> ध्यान से पढ़ें और हर required skill, tool, technology, qualification highlight करें। ये आपके target keywords हैं।</li>
+  <li><strong>Required vs Preferred।</strong> Required skills ज़रूरी हैं — अगर हैं तो resume में MUST हों। Preferred skills ranking boost करती हैं।</li>
+  <li><strong>Similar job postings देखें।</strong> 3–5 similar postings देखें different companies की। जो skills multiple postings में हों, वो industry-standard keywords हैं।</li>
+</ol>
+<h3>Keywords naturally कैसे use करें</h3>
+<ul>
+  <li><strong>Skills section में:</strong> "Skills: Python, JavaScript, React, Node.js, PostgreSQL, AWS, Docker"</li>
+  <li><strong>Experience bullets में:</strong> "React dashboard build किया जिसने customer support tickets 35% कम किए" — keyword (React) + measurable achievement</li>
+  <li><strong>Summary में:</strong> "4 years experience React, Node.js, AWS में, scalable web applications में specialisation"</li>
+</ul>
+<h3>Keyword Matching Examples</h3>
+<table>
+  <thead>
+    <tr><th>Job Description कहता है</th><th>Resume में लिखें</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>"Proficient in Python"</td><td>Skills में "Python" + experience में Python use</td></tr>
+    <tr><td>"CI/CD pipeline experience"</td><td>"GitHub Actions से CI/CD pipeline implement किया"</td></tr>
+    <tr><td>"Project management"</td><td>"3-person team lead किया, project 2 weeks ahead deliver किया"</td></tr>
+    <tr><td>"Bachelor's in CS"</td><td>"B.Tech Computer Science, XYZ University, 2022"</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ Keyword stuffing न करें</strong><p>"Python Python Python" list करना या white text में keywords छुपाना modern ATS detect कर लेता है और resume reject या flag हो जाता है। Keywords naturally context में use करें।</p></div>`,
+      },
+      {
+        id: 'ats-resume-structure',
+        title: 'Perfect ATS Resume Structure',
+        content: `<h3>1. Contact Information (page top, no header)</h3>
+<p>Full name, phone, email, LinkedIn URL, city। GitHub/portfolio optional।</p>
+<h3>2. Professional Summary (3–4 lines)</h3>
+<p>Title, experience years, top 3–4 skills, key achievement। Prime keyword space।</p>
+<p><em>Example: "Full-stack developer, 5 years experience, React, Node.js, AWS। Legacy system को microservices में migrate किया, server costs 40% कम, response times 60% improve।"</em></p>
+<h3>3. Skills Section</h3>
+<p>Job description से directly match करती हुई comma-separated skills list।</p>
+<h3>4. Work Experience (Reverse Chronological)</h3>
+<p>हर role: Company, title, dates, 3–5 bullets action verbs से शुरू। Numbers include करें।</p>
+<p><strong>अच्छा:</strong> "Image lazy loading और code splitting implement करके page load time 65% कम किया, Google PageSpeed 42 से 91 किया"</p>
+<p><strong>कमज़ोर:</strong> "Website performance की responsibility थी" (no verb, no metrics)</p>
+<h3>5. Education</h3>
+<p>Degree, university, graduation year। GPA only if 8.0/10 से ऊपर।</p>
+<h3>6. Certifications</h3>
+<p>AWS Certified, Google Analytics, PMP — high-value ATS keywords।</p>`,
+      },
+      {
+        id: 'ats-score',
+        title: 'Apply करने से पहले ATS Score कैसे Check करें',
+        content: `<h3>ATS Checker क्या analyse करता है</h3>
+<ul>
+  <li><strong>Keyword match rate</strong> — Job description के कितने keywords resume में हैं? 70%+ aim करें।</li>
+  <li><strong>Formatting issues</strong> — Tables, columns, images, non-standard headings</li>
+  <li><strong>Missing sections</strong> — Skills section नहीं, summary नहीं, contact info missing</li>
+  <li><strong>Action verbs</strong> — "Led, Built, Designed, Implemented" vs "Responsible for"</li>
+  <li><strong>Measurable achievements</strong> — Numbers (%, ₹, time saved)</li>
+</ul>
+<h3>ToolsArena ATS Resume Checker</h3>
+<p>ToolsArena का free ATS checker resume text analyse करता है multiple criteria पर — keyword density, formatting, action verbs। Resume text और job description paste करें instant compatibility score और improvement suggestions पाएं।</p>
+<h3>Good ATS Score क्या है?</h3>
+<table>
+  <thead>
+    <tr><th>ATS Score</th><th>मतलब</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>80–100%</td><td>Excellent match</td><td>Confidence से submit करें</td></tr>
+    <tr><td>60–79%</td><td>अच्छा, minor tweaks चाहिए</td><td>Missing keywords add करें</td></tr>
+    <tr><td>40–59%</td><td>Below average</td><td>Skills और summary rewrite करें</td></tr>
+    <tr><td>40% से कम</td><td>Reject होने की संभावना</td><td>Major revision ज़रूरी</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 हर Application के लिए Tailor करें</strong><p>एक resume जो एक job के लिए 90% score करे, दूसरी job के लिए 40% हो सकता है। "Master resume" रखें सारे experience के साथ, फिर हर application के लिए tailored version बनाएं relevant keywords emphasise करके।</p></div>`,
+      },
+      {
+        id: 'ats-mistakes',
+        title: '10 ATS Mistakes जो Resume Reject कराती हैं',
+        content: `<ol>
+  <li><strong>Columns और graphics वाला creative template</strong> — Single-column, text-only layout use करें।</li>
+  <li><strong>Scanned PDF submit करना</strong> — ATS image-based PDFs नहीं पढ़ सकता। PDF में text selectable होना चाहिए।</li>
+  <li><strong>Job description के keywords missing</strong> — JD "React" कहता है, resume "ReactJS" कहता है — कुछ ATS match नहीं करते। दोनों forms include करें।</li>
+  <li><strong>Contact info header में</strong> — Main body में रखें।</li>
+  <li><strong>Abbreviations spell out नहीं करना</strong> — "Search Engine Optimisation (SEO)" एक बार लिखें।</li>
+  <li><strong>Skills section नहीं</strong> — ATS के लिए सबसे easy section parse करने का।</li>
+  <li><strong>हर job के लिए same resume</strong> — Tailoring match rate 30% से 70%+ बढ़ाती है।</li>
+  <li><strong>Skills without context</strong> — "Python" skills में अच्छा। "Python में data pipeline build किया जो 2M records/day process करता है" experience में ज़्यादा better।</li>
+  <li><strong>Unprofessional filename</strong> — "resume_finalFINAL_v2(1).pdf" → "FirstName_LastName_Resume.pdf"</li>
+  <li><strong>Certifications include नहीं करना</strong> — Certifications high-signal keywords हैं।</li>
+</ol>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ToolsArena ATS Resume Checker खोलें', description: 'ATS Resume Checker tool पर जाएं। कोई signup ज़रूरी नहीं।' },
+      { title: 'Resume text paste करें', description: 'Resume content copy करके text area में paste करें।' },
+      { title: 'Job description add करें', description: 'Target job description paste करें keyword match rate check करने के लिए।' },
+      { title: 'ATS score देखें', description: 'Keywords, formatting, action verbs, achievements के scores पाएं specific issues के साथ।' },
+      { title: 'Fix करें और re-check करें', description: 'Suggestions follow करें, resume update करें, फिर check करें। 80%+ aim करें।' },
+    ],
+    faqs: [
+      { question: 'ATS resume score अच्छा कितना होना चाहिए?', answer: 'Job description के साथ 80%+ keyword match aim करें। 70%+ generally ATS screening pass करता है। 50% से कम means critical keywords missing हैं।' },
+      { question: 'PDF या DOCX — ATS के लिए कौन सा बेहतर?', answer: 'दोनों काम करते हैं, लेकिन .docx सबसे अच्छी compatibility देता है सभी ATS platforms पर। PDF text-based होना चाहिए (text select हो सके), scanned image नहीं।' },
+      { question: 'क्या सभी companies ATS use करती हैं?', answer: '99%+ Fortune 500 companies और approximately 75% सभी employers कुछ form का ATS use करते हैं। Assume करें कि हर online application ATS screening से गुज़रती है।' },
+      { question: 'हर job के लिए अलग resume बनाना ज़रूरी है?', answer: 'ज़रूरी नहीं, लेकिन बहुत beneficial है। Resume tailor करने से ATS match rate 30% से 70%+ बढ़ सकती है। Master resume रखें और हर job के लिए tailored version बनाएं।' },
+      { question: 'Resume में keywords कैसे add करें?', answer: 'Job description ध्यान से पढ़ें, हर skill, tool, technology highlight करें। ये Skills section में list करें और Experience bullets में naturally use करें।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'word-to-pdf-guide', 'pdf-merge-guide'],
+    toolCTA: {
+      heading: 'Resume ATS Score Check करें — Free',
+      description: 'Resume और job description paste करें, instant ATS compatibility analysis पाएं। Keywords, formatting, action verbs check होते हैं। कोई signup नहीं।',
+      buttonText: 'ATS Resume Checker खोलें →',
+    },
+  },
+
 ];
