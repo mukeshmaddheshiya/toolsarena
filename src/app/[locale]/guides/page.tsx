@@ -2,7 +2,7 @@ import { BookOpen, ArrowRight, Sparkles, TrendingUp, Search } from 'lucide-react
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Link } from '@/i18n/navigation';
-import { getAllGuides, GUIDE_COUNT } from '@/lib/guides-registry';
+import { getAllGuides } from '@/lib/guides-registry';
 import { GuideSearch } from '@/components/guides/GuideSearch';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
@@ -33,19 +33,19 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const BENEFITS = [
-  { icon: BookOpen,    label: 'In-Depth Guides',   desc: 'Thorough, expert-written content' },
-  { icon: TrendingUp,  label: 'Real Use Cases',     desc: 'Practical examples for every context' },
-  { icon: Sparkles,    label: 'Pro Tips',           desc: 'Techniques used by professionals' },
-  { icon: Search,      label: 'SEO-Optimised',      desc: 'Trusted by thousands of readers' },
-];
-
 export default async function GuidesIndexPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  await getTranslations(); // initialise i18n for server components below
+  const t = await getTranslations('guides');
 
-  const allGuides = getAllGuides();
+  const allGuides = getAllGuides(locale);
+
+  const BENEFITS = [
+    { icon: BookOpen,   label: t('inDepthGuides'),  desc: t('inDepthGuidesDesc') },
+    { icon: TrendingUp, label: t('realUseCases'),    desc: t('realUseCasesDesc') },
+    { icon: Sparkles,   label: t('proTips'),         desc: t('proTipsDesc') },
+    { icon: Search,     label: t('seoOptimised'),    desc: t('seoOptimisedDesc') },
+  ];
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -81,15 +81,15 @@ export default async function GuidesIndexPage({ params }: { params: Promise<{ lo
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium mb-6">
             <BookOpen className="w-3.5 h-3.5 text-accent-400" aria-hidden />
-            <span>{GUIDE_COUNT} Free Guides</span>
+            <span>{t('freeGuides', { count: allGuides.length })}</span>
           </div>
           <h1 className="font-heading font-bold text-4xl sm:text-5xl leading-tight mb-4">
-            Online Tool Guides
+            {t('heroTitle')}
             <br />
-            <span className="text-accent-400">&amp; Tutorials</span>
+            <span className="text-accent-400">{t('heroTitleAccent')}</span>
           </h1>
           <p className="text-lg text-primary-200 dark:text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-            In-depth, expert-written guides for every tool on ToolsArena. Discover pro tips, real-world use cases, reference tables, and step-by-step tutorials.
+            {t('heroDescription')}
           </p>
 
           {/* Benefit pills */}
@@ -128,15 +128,12 @@ export default async function GuidesIndexPage({ params }: { params: Promise<{ lo
 
       {/* ── Guide search + grid ─────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <GuideSearch guides={allGuides} />
+        <GuideSearch guides={allGuides} locale={locale} />
 
         {/* Coming soon placeholder */}
         <div className="mt-8 border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-2xl p-10 text-center">
           <Sparkles className="w-8 h-8 text-slate-300 dark:text-slate-600 mx-auto mb-3" aria-hidden />
-          <p className="font-semibold text-slate-500 dark:text-slate-400">More guides coming soon</p>
-          <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">
-            We publish new guides every week. Check back for guides on PDF tools, converters, developer tools, and more.
-          </p>
+          <p className="font-semibold text-slate-500 dark:text-slate-400">{t('comingSoon')}</p>
         </div>
       </section>
 
@@ -144,16 +141,16 @@ export default async function GuidesIndexPage({ params }: { params: Promise<{ lo
       <section className="bg-slate-50 dark:bg-slate-800/40 border-t border-slate-200 dark:border-slate-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
           <h2 className="font-heading font-bold text-2xl text-slate-900 dark:text-slate-100 mb-3">
-            Ready to try the tools?
+            {t('readyToTry')}
           </h2>
           <p className="text-slate-500 dark:text-slate-400 mb-6 max-w-lg mx-auto text-sm leading-relaxed">
-            Every guide links to a free, instant tool. No signup, no downloads, no hidden fees.
+            {t('readyToTryDesc')}
           </p>
           <Link
             href="/"
             className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors shadow-sm"
           >
-            Browse All Tools
+            {t('browseAllTools')}
             <ArrowRight className="w-4 h-4" aria-hidden />
           </Link>
         </div>

@@ -1,17 +1,19 @@
 'use client';
 import { useState, useMemo } from 'react';
 import { Search, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { searchGuides } from '@/lib/guides-registry';
 import { GuideCard } from './GuideCard';
 import type { Guide } from '@/types/guides';
 
-export function GuideSearch({ guides }: { guides: Guide[] }) {
+export function GuideSearch({ guides, locale = 'en' }: { guides: Guide[]; locale?: string }) {
   const [query, setQuery] = useState('');
+  const t = useTranslations('guides');
 
   const filtered = useMemo(() => {
     if (!query.trim()) return guides;
-    return searchGuides(query);
-  }, [query, guides]);
+    return searchGuides(query, locale);
+  }, [query, guides, locale]);
 
   return (
     <>
@@ -22,7 +24,7 @@ export function GuideSearch({ guides }: { guides: Guide[] }) {
           type="text"
           value={query}
           onChange={e => setQuery(e.target.value)}
-          placeholder={`Search ${guides.length} guides...`}
+          placeholder={t('searchPlaceholder', { count: guides.length })}
           className="w-full pl-11 pr-10 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 dark:text-slate-100 placeholder-slate-500 shadow-sm"
           aria-label="Search guides"
         />
@@ -37,10 +39,12 @@ export function GuideSearch({ guides }: { guides: Guide[] }) {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h2 className="font-heading font-bold text-2xl text-slate-900 dark:text-slate-100">
-            {query.trim() ? 'Search Results' : 'All Guides'}
+            {query.trim() ? t('searchResults') : t('allGuides')}
           </h2>
           <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-            {filtered.length} guide{filtered.length !== 1 ? 's' : ''}{query.trim() ? ` for "${query.trim()}"` : ' available — more coming soon'}
+            {query.trim()
+              ? t('guidesFound', { count: filtered.length })
+              : t('guidesAvailable', { count: filtered.length })}
           </p>
         </div>
       </div>
@@ -55,8 +59,8 @@ export function GuideSearch({ guides }: { guides: Guide[] }) {
       ) : (
         <div className="text-center py-12">
           <Search className="w-10 h-10 text-slate-300 dark:text-slate-600 mx-auto mb-3" />
-          <p className="font-semibold text-slate-500 dark:text-slate-400">No guides found for &ldquo;{query}&rdquo;</p>
-          <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">Try a different keyword like &ldquo;PDF&rdquo;, &ldquo;image&rdquo;, or &ldquo;calculator&rdquo;</p>
+          <p className="font-semibold text-slate-500 dark:text-slate-400">{t('noGuidesFound')} &ldquo;{query}&rdquo;</p>
+          <p className="text-sm text-slate-400 dark:text-slate-500 mt-1">{t('tryDifferent')}</p>
         </div>
       )}
     </>

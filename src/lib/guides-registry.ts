@@ -6991,18 +6991,21 @@ export function getRelatedGuides(slugs: string[], locale: string = 'en'): Guide[
     .filter((g): g is Guide => g !== undefined);
 }
 
-export function getAllGuides(): Guide[] {
+export function getAllGuides(locale: string = 'en'): Guide[] {
+  if (locale === 'hi') return guidesHi;
+  if (locale === 'ne') return guidesNe;
   return guides;
 }
 
-export function searchGuides(query: string): Guide[] {
+export function searchGuides(query: string, locale: string = 'en'): Guide[] {
+  const registry = locale === 'hi' ? guidesHi : locale === 'ne' ? guidesNe : guides;
   const q = query.toLowerCase().trim();
-  if (!q) return guides;
+  if (!q) return registry;
   const tokens = q.split(/\s+/);
 
   const scored: { guide: Guide; score: number }[] = [];
 
-  for (const guide of guides) {
+  for (const guide of registry) {
     const name = guide.title.toLowerCase();
     const slug = guide.slug.toLowerCase();
     const subtitle = guide.subtitle.toLowerCase();
