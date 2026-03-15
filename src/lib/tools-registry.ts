@@ -9504,6 +9504,35 @@ tools.push({
   isPopular: false,
 });
 
+tools.push({
+  slug: 'markdown-editor',
+  name: 'Markdown Editor',
+  shortDescription: 'Write and preview markdown in real time — free online editor with toolbar, file upload, and HTML export.',
+  longDescription: `<p>Write, edit, and preview <strong>Markdown</strong> in real time with this free online editor. A split-pane layout shows your raw Markdown on the left and a beautifully rendered HTML preview on the right — all running entirely in your browser.</p><h2>Why Use This Markdown Editor?</h2><p>Whether you're drafting a README, writing documentation, or composing blog posts, this editor gives you instant visual feedback. No signup, no server upload, and no distractions — just write.</p><h2>Features</h2><ul><li>Live split-pane preview that updates as you type</li><li>Toolbar buttons for bold, italic, headings, links, images, code, lists, blockquotes, and horizontal rules</li><li>Upload existing .md files and continue editing</li><li>Download your work as a .md file</li><li>Copy the rendered HTML to your clipboard</li><li>Word, character, and line count</li><li>Dark mode support</li><li>Responsive design — works on mobile and desktop</li><li>100% client-side — your content never leaves your device</li></ul>`,
+  category: 'developer-tools',
+  targetKeyword: 'markdown editor online',
+  secondaryKeywords: ['markdown editor', 'markdown preview', 'online markdown editor', 'markdown to html', 'md editor', 'markdown writer', 'live markdown preview', 'free markdown editor'],
+  metaTitle: 'Markdown Editor — Free Online Live Preview Editor',
+  metaDescription: 'Write and preview Markdown in real time. Free online editor with toolbar, file upload, .md download, and HTML copy. No signup, runs in your browser.',
+  faqs: [
+    { question: 'Is my content saved or uploaded anywhere?', answer: 'No. Everything runs in your browser. Your markdown content is never sent to any server. If you close the tab, your work is lost — use the Download button to save.' },
+    { question: 'Can I upload an existing Markdown file?', answer: 'Yes. Click the Upload button in the toolbar to load any .md or .txt file. The content will appear in the editor instantly.' },
+    { question: 'How do I export the rendered HTML?', answer: 'Click the Copy HTML button in the toolbar. The rendered HTML is copied to your clipboard, ready to paste into your website, CMS, or email.' },
+    { question: 'Does it support all Markdown syntax?', answer: 'It supports the most common Markdown features: headings, bold, italic, links, images, code blocks, inline code, lists, blockquotes, and horizontal rules. Some extended syntax like tables and footnotes are not yet supported.' },
+    { question: 'Can I use this on my phone?', answer: 'Yes. On smaller screens, the editor and preview stack vertically for a comfortable mobile editing experience.' },
+  ],
+  howToSteps: [
+    'Type or paste your Markdown in the editor pane',
+    'Use the toolbar buttons to insert formatting quickly',
+    'View the live HTML preview on the right (or below on mobile)',
+    'Download as .md or copy the rendered HTML when done',
+  ],
+  relatedToolSlugs: ['markdown-to-html', 'html-to-markdown', 'json-formatter', 'code-formatter', 'word-counter'],
+  icon: 'FileCode',
+  isNew: true,
+  isPopular: false,
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {

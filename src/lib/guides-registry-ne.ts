@@ -2712,4 +2712,308 @@ button {
     },
   },
 
+  // ── FD CALCULATOR GUIDE (Nepali) ─────────────────────────────────────
+  {
+    slug: 'fd-calculator-guide',
+    toolSlug: 'fd-rd-calculator',
+    category: 'calculators',
+    title: 'FD क्यालकुलेटर: नेपालमा Fixed Deposit कसरी गणना गर्ने (2026)',
+    subtitle: 'नेपालका बैंकहरूमा FD ब्याज दर, कर कटौती र maturity रकम गणना गर्ने सम्पूर्ण गाइड।',
+    metaTitle: 'FD क्यालकुलेटर नेपाल — Fixed Deposit ब्याज गणना',
+    metaDescription: 'नेपालका बैंकहरूको FD ब्याज दर तुलना, कर कटौती, र maturity रकम गणना। Nabil, NIC Asia, Prabhu Bank FD rates। निःशुल्क FD क्यालकुलेटर।',
+    targetKeyword: 'FD क्यालकुलेटर',
+    secondaryKeywords: ['fixed deposit nepal', 'FD ब्याज दर', 'नेपाल बैंक FD', 'FD maturity गणना', 'fixed deposit calculator nepali', 'NIC Asia FD rate', 'Nabil Bank FD', 'FD कर कटौती नेपाल', 'मुद्दती निक्षेप', 'Nepal Rastra Bank rate'],
+    lastUpdated: '2026-03-15',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['FD', 'बैंकिङ', 'लगानी', 'नेपाल'],
+    intro: `<p><strong>Fixed Deposit (मुद्दती निक्षेप)</strong> नेपालमा सबैभन्दा सुरक्षित लगानीको माध्यम हो। Nepal Rastra Bank को नियमन अन्तर्गत Nabil Bank, NIC Asia, Prabhu Bank जस्ता वाणिज्य बैंकहरूले ३% देखि ११% सम्म ब्याज दर प्रदान गर्छन्।</p><p>तर FD मा कति ब्याज पाइन्छ? कर कति कटिन्छ? Maturity मा कति रकम आउँछ? यी सबै प्रश्नको जवाफ हाम्रो <strong>FD क्यालकुलेटर</strong> ले दिन्छ। यो गाइडले नेपालको FD बारेमा सम्पूर्ण जानकारी दिन्छ।</p>`,
+    sections: [
+      {
+        id: 'fd-kina-garney',
+        title: 'नेपालमा FD किन गर्ने? फाइदाहरू',
+        content: `<ul><li><strong>सुरक्षित लगानी:</strong> Nepal Rastra Bank (NRB) ले regulate गर्छ — Deposit Insurance रु. ५ लाख सम्म गारेन्टी</li><li><strong>निश्चित ब्याज:</strong> शेयर बजार जस्तो उतारचढाव छैन — तोकिएको ब्याज दर guaranteed</li><li><strong>सजिलो:</strong> कुनै पनि बैंक शाखा वा eSewa/Khalti mobile banking बाट खोल्न सकिन्छ</li><li><strong>ऋण सुविधा:</strong> FD Against Loan — आफ्नो FD रकमको ९०% सम्म ऋण लिन सकिन्छ</li><li><strong>जेष्ठ नागरिक बोनस:</strong> ६० वर्ष माथिका लागि अतिरिक्त ०.५% — १% ब्याज</li></ul><div class="callout-info">ℹ️ <strong>जानकारी:</strong> नेपालमा Individual FD को ब्याजमा ५% TDS (Tax Deducted at Source) कटिन्छ। संस्थागत FD मा १५% कटिन्छ।</div>`,
+      },
+      {
+        id: 'nepal-bank-fd-rates',
+        title: 'नेपालका प्रमुख बैंकहरूको FD ब्याज दर (2026)',
+        content: `<table><tr><th>बैंक</th><th>३ महिना</th><th>६ महिना</th><th>१ वर्ष</th><th>२+ वर्ष</th></tr><tr><td>Nabil Bank</td><td>३.५%</td><td>५.५%</td><td>७.२५%</td><td>७.७५%</td></tr><tr><td>NIC Asia Bank</td><td>४.०%</td><td>६.०%</td><td>७.५%</td><td>८.०%</td></tr><tr><td>Prabhu Bank</td><td>३.७५%</td><td>५.७५%</td><td>७.०%</td><td>७.५%</td></tr><tr><td>Global IME Bank</td><td>४.२५%</td><td>६.२५%</td><td>७.७५%</td><td>८.२५%</td></tr><tr><td>Sanima Bank</td><td>४.०%</td><td>६.५%</td><td>८.०%</td><td>८.५%</td></tr><tr><td>Nepal SBI Bank</td><td>३.२५%</td><td>५.०%</td><td>६.५%</td><td>७.०%</td></tr></table><div class="callout-warning">⚠️ <strong>ध्यान दिनुहोस्:</strong> ब्याज दरहरू NRB को मौद्रिक नीति अनुसार परिवर्तन हुन्छन्। बैंकको आधिकारिक वेबसाइट वा शाखामा पुष्टि गर्नुहोस्।</div>`,
+      },
+      {
+        id: 'fd-ganana-formula',
+        title: 'FD ब्याज गणना कसरी हुन्छ? (Formula)',
+        content: `<p>FD मा दुई प्रकारको ब्याज गणना हुन्छ:</p><h4>१. Simple Interest (साधारण ब्याज)</h4><p><code>Maturity = P + (P × R × T / 100)</code></p><p>जहाँ P = मूलधन, R = वार्षिक ब्याज दर, T = वर्ष</p><h4>२. Compound Interest (चक्रीय ब्याज — त्रैमासिक)</h4><p><code>Maturity = P × (1 + R/400)^(4×T)</code></p><p>नेपालका धेरै बैंकहरूले <strong>quarterly compounding</strong> (त्रैमासिक) प्रयोग गर्छन्।</p><h4>उदाहरण:</h4><p>रु. ५,००,००० को FD, ७.५% ब्याज दर, २ वर्षका लागि (quarterly compounding):</p><p><code>Maturity = 5,00,000 × (1 + 7.5/400)^(4×2) = रु. ५,८०,३६१</code></p><p>ब्याज आम्दानी = रु. ८०,३६१<br/>TDS (५%) = रु. ४,०१८<br/><strong>हातमा आउने = रु. ५,७६,३४३</strong></p><div class="callout-tip">💡 <strong>सुझाव:</strong> Manual गणनाको झन्झट नलिनुहोस् — हाम्रो FD क्यालकुलेटर प्रयोग गर्नुहोस्। TDS सहित सटीक maturity रकम तुरुन्तै पाउनुहोस्।</div>`,
+      },
+      {
+        id: 'fd-tax-nepal',
+        title: 'नेपालमा FD ब्याजमा कर (Tax) कटौती',
+        content: `<p>Nepal को Income Tax Act अनुसार FD ब्याजमा TDS कटिन्छ:</p><table><tr><th>विवरण</th><th>TDS दर</th></tr><tr><td>व्यक्तिगत (Individual) FD</td><td>५%</td></tr><tr><td>संस्थागत (Institutional) FD</td><td>१५%</td></tr><tr><td>जेष्ठ नागरिक (६०+ वर्ष)</td><td>५% (अतिरिक्त ब्याज दर पाइन्छ)</td></tr></table><p>यदि तपाईंको वार्षिक ब्याज आम्दानी रु. १ लाख भन्दा बढी छ भने, आयकर विवरणीमा यो declare गर्नुपर्छ।</p><div class="callout-info">ℹ️ <strong>eSewa/Khalti TDS:</strong> Digital wallet मा राखेको रकममा पनि ब्याज दिइन्छ तर TDS कटिन्छ। FD मा राख्नुभन्दा बैंकको दर बढी हुन्छ।</div>`,
+      },
+      {
+        id: 'fd-tips-nepal',
+        title: 'नेपालमा FD गर्दा ध्यान दिनुपर्ने कुराहरू',
+        content: `<ul><li><strong>Laddering Strategy:</strong> सबै पैसा एउटै FD मा नराख्नुहोस् — ३ महिना, ६ महिना, १ वर्ष गरेर बिभाजन गर्नुहोस्</li><li><strong>Auto-Renewal:</strong> Maturity मा auto-renew हुने set गर्नुहोस् — ब्याज गुम्दैन</li><li><strong>बैंक तुलना:</strong> NIC Asia, Sanima जस्ता बैंकहरूले development banks भन्दा कम ब्याज दिन सक्छन् तर सुरक्षित हुन्छन्</li><li><strong>Dashain अघि FD:</strong> केही बैंकहरूले त्योहारमा special FD rates दिन्छन्</li><li><strong>Joint FD:</strong> दम्पतीले joint account मा FD गर्दा दुवैको नामबाट लाभ हुन्छ</li></ul><div class="callout-tip">💡 <strong>Pro Tip:</strong> Daraz, Sastodeal मा ठूलो खर्च गर्नुभन्दा FD मा राखे compound interest ले रकम बढ्छ। रु. १ लाख, ८% मा ५ वर्ष = रु. १,४८,९४५!</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'FD रकम र अवधि राख्नुहोस्', description: 'आफ्नो मूलधन रकम (जस्तै रु. ५ लाख) र FD अवधि (३ महिना — ५ वर्ष) प्रविष्ट गर्नुहोस्।' },
+      { title: 'ब्याज दर सेट गर्नुहोस्', description: 'आफ्नो बैंकको FD ब्याज दर राख्नुहोस् (जस्तै NIC Asia को ७.५%)।' },
+      { title: 'Compounding frequency छान्नुहोस्', description: 'Quarterly (त्रैमासिक) — नेपालका धेरै बैंकहरूले यही प्रयोग गर्छन्।' },
+      { title: 'Maturity रकम हेर्नुहोस्', description: 'ब्याज, TDS कटौती र final maturity amount तुरुन्तै देख्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'नेपालमा FD को minimum रकम कति हो?', answer: 'धेरै वाणिज्य बैंकहरूमा minimum रु. १,००० देखि FD खोल्न सकिन्छ। केही बैंकहरूमा रु. ५,००० वा रु. १०,००० minimum हुन्छ।' },
+      { question: 'FD समय अघि भाँच्न (premature withdrawal) सकिन्छ?', answer: 'हो, तर penalty लाग्छ — सामान्यतया ०.५% — १% ब्याज दरबाट कटिन्छ। बैंक अनुसार फरक हुन्छ।' },
+      { question: 'FD मा कति TDS कटिन्छ?', answer: 'व्यक्तिगत FD मा ५% TDS कटिन्छ। यो ब्याज रकमबाट automatic कटिन्छ। संस्थागत FD मा १५% हुन्छ।' },
+      { question: 'FD Against Loan कसरी लिने?', answer: 'आफ्नो FD रकमको ९०% सम्म overdraft ऋण लिन सकिन्छ। FD ब्याज दर भन्दा १-२% बढी ब्याज तिर्नुपर्छ।' },
+      { question: 'eSewa/Khalti बाट FD खोल्न सकिन्छ?', answer: 'धेरै बैंकहरूको mobile banking app बाट FD खोल्न सकिन्छ। eSewa/Khalti बाट direct FD अहिले सीमित छ तर connect banking बाट सम्भव छ।' },
+    ],
+    relatedGuides: ['loan-calculator-guide', 'salary-calculator-guide', 'sip-calculator-guide'],
+    toolCTA: {
+      heading: 'FD Maturity रकम तुरुन्तै गणना गर्नुहोस्',
+      description: 'मूलधन, ब्याज दर र अवधि राख्नुहोस् — TDS सहित maturity amount पाउनुहोस्।',
+      buttonText: 'FD क्यालकुलेटर खोल्नुहोस् →',
+    },
+  },
+
+  // ── LOAN CALCULATOR GUIDE (Nepali) ─────────────────────────────────────
+  {
+    slug: 'loan-calculator-guide',
+    toolSlug: 'loan-comparison-calculator',
+    category: 'calculators',
+    title: 'ऋण क्यालकुलेटर: नेपालमा EMI र ब्याज गणना गर्ने गाइड (2026)',
+    subtitle: 'Home loan, personal loan र vehicle loan को EMI, कुल ब्याज र नेपालका बैंकहरूको ब्याज दर तुलना।',
+    metaTitle: 'ऋण क्यालकुलेटर नेपाल — EMI र Loan ब्याज गणना',
+    metaDescription: 'नेपालमा home loan, personal loan EMI गणना गर्नुहोस्। Nabil, NIC Asia, Prabhu Bank ब्याज दर तुलना। NRB base rate, EMI formula र loan tips।',
+    targetKeyword: 'ऋण क्यालकुलेटर',
+    secondaryKeywords: ['EMI calculator nepal', 'home loan nepal', 'loan ब्याज दर', 'NRB base rate', 'personal loan EMI', 'vehicle loan nepal', 'loan comparison nepal', 'बैंक ऋण नेपाल', 'घर कर्जा EMI', 'Nabil loan rate'],
+    lastUpdated: '2026-03-15',
+    readingTime: '९ मिनेट पढ्ने',
+    tags: ['ऋण', 'EMI', 'बैंकिङ', 'नेपाल'],
+    intro: `<p>नेपालमा <strong>घर किन्ने</strong>, गाडी किन्ने वा व्यापार सुरु गर्ने सपना पूरा गर्न बैंक ऋण (loan) अपरिहार्य छ। तर कति EMI तिर्नुपर्छ? कुल कति ब्याज जान्छ? कुन बैंकको दर सस्तो छ?</p><p>हाम्रो <strong>ऋण क्यालकुलेटर</strong> ले यी सबै प्रश्नको तुरुन्तै जवाफ दिन्छ। NRB को base rate, विभिन्न बैंकका ब्याज दर, र EMI formula बारे यो गाइडमा सिक्नुहोस्।</p>`,
+    sections: [
+      {
+        id: 'loan-types-nepal',
+        title: 'नेपालमा उपलब्ध ऋणका प्रकारहरू',
+        content: `<table><tr><th>ऋण प्रकार</th><th>ब्याज दर (approx.)</th><th>अवधि</th><th>उद्देश्य</th></tr><tr><td>Home Loan (घर कर्जा)</td><td>८.५% — ११%</td><td>५ — २५ वर्ष</td><td>घर/जग्गा खरिद, निर्माण</td></tr><tr><td>Personal Loan</td><td>१२% — १६%</td><td>१ — ५ वर्ष</td><td>विवाह, उपचार, शिक्षा</td></tr><tr><td>Vehicle Loan</td><td>९% — १३%</td><td>१ — ७ वर्ष</td><td>कार, मोटरसाइकल खरिद</td></tr><tr><td>Education Loan</td><td>८% — १२%</td><td>५ — १५ वर्ष</td><td>विदेश अध्ययन, MBA</td></tr><tr><td>Business Loan</td><td>१०% — १४%</td><td>१ — १० वर्ष</td><td>व्यापार सुरु/विस्तार</td></tr></table><div class="callout-info">ℹ️ <strong>NRB Base Rate:</strong> Nepal Rastra Bank ले base rate तोक्छ जसमा बैंकहरूले spread थपेर ब्याज दर निर्धारण गर्छन्।</div>`,
+      },
+      {
+        id: 'nepal-bank-loan-rates',
+        title: 'नेपालका प्रमुख बैंकहरूको Home Loan ब्याज दर (2026)',
+        content: `<table><tr><th>बैंक</th><th>Base Rate</th><th>Home Loan Rate</th><th>Max अवधि</th></tr><tr><td>Nabil Bank</td><td>७.२%</td><td>९.२% — १०.५%</td><td>२५ वर्ष</td></tr><tr><td>NIC Asia Bank</td><td>७.५%</td><td>९.५% — ११.०%</td><td>२० वर्ष</td></tr><tr><td>Prabhu Bank</td><td>७.८%</td><td>९.८% — १०.८%</td><td>२० वर्ष</td></tr><tr><td>Global IME Bank</td><td>७.३%</td><td>९.३% — १०.३%</td><td>२५ वर्ष</td></tr><tr><td>Sanima Bank</td><td>७.０%</td><td>९.０% — १०.２%</td><td>२० वर्ष</td></tr><tr><td>Agriculture Dev Bank</td><td>८.५%</td><td>१०.५% — ११.५%</td><td>१५ वर्ष</td></tr></table><div class="callout-warning">⚠️ <strong>Floating Rate:</strong> नेपालमा home loan मा floating rate लागू हुन्छ — NRB को नीति अनुसार ब्याज दर बढ्न/घट्न सक्छ।</div>`,
+      },
+      {
+        id: 'emi-formula',
+        title: 'EMI गणना कसरी हुन्छ? (Formula)',
+        content: `<p><strong>EMI (Equated Monthly Installment)</strong> = हरेक महिना तिर्ने निश्चित रकम।</p><p><code>EMI = P × R × (1+R)^N / [(1+R)^N − 1]</code></p><p>जहाँ:<br/>P = मूलधन (Loan Amount)<br/>R = मासिक ब्याज दर (वार्षिक दर / 12 / 100)<br/>N = कुल महिना (वर्ष × 12)</p><h4>उदाहरण: रु. ५० लाख Home Loan, ९.५%, २० वर्ष</h4><p>R = 9.5/12/100 = 0.00792<br/>N = 20 × 12 = 240 महिना</p><p><strong>EMI = रु. ४६,६०७</strong><br/>कुल ब्याज = रु. ६१,८५,६८०<br/>कुल भुक्तानी = रु. १,११,८५,६८०</p><div class="callout-tip">💡 <strong>सुझाव:</strong> EMI तपाईंको मासिक आम्दानीको ४०% भन्दा बढी नहोस् — यो NRB को guideline पनि हो।</div>`,
+      },
+      {
+        id: 'loan-tips-nepal',
+        title: 'नेपालमा ऋण लिँदा ध्यान दिनुपर्ने कुराहरू',
+        content: `<ul><li><strong>Processing Fee:</strong> बैंकहरूले ऋण रकमको ०.५% — १.५% processing fee लिन्छन् — तुलना गर्नुहोस्</li><li><strong>Prepayment Penalty:</strong> केही बैंकहरूले early repayment मा penalty लगाउँछन् — पहिले सोध्नुहोस्</li><li><strong>Insurance:</strong> Home loan मा property insurance अनिवार्य हुन्छ — यो cost पनि हिसाब गर्नुहोस्</li><li><strong>Down Payment:</strong> Home loan मा minimum ३०% — ४०% down payment चाहिन्छ</li><li><strong>Credit Score:</strong> CIB report राम्रो राख्नुहोस् — blacklisted भए ऋण पाउनु असम्भव</li><li><strong>बैंक तुलना:</strong> कम्तिमा ३-४ बैंकमा enquiry गर्नुहोस् — ०.५% फरकले लाखौं बचत हुन्छ</li></ul><div class="callout-info">ℹ️ <strong>CIB Report:</strong> Nepal को Credit Information Bureau बाट आफ्नो credit report निःशुल्क हेर्न सकिन्छ — www.cib.org.np</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'ऋण रकम राख्नुहोस्', description: 'तपाईंले लिन चाहनुभएको ऋण रकम प्रविष्ट गर्नुहोस् (जस्तै रु. ५० लाख)।' },
+      { title: 'ब्याज दर र अवधि सेट गर्नुहोस्', description: 'बैंकको ब्याज दर (जस्तै ९.५%) र ऋण अवधि (जस्तै २० वर्ष) राख्नुहोस्।' },
+      { title: 'EMI र कुल ब्याज हेर्नुहोस्', description: 'मासिक EMI, कुल ब्याज र कुल भुक्तानी तुरुन्तै गणना हुन्छ।' },
+      { title: 'बैंकहरू तुलना गर्नुहोस्', description: 'विभिन्न बैंकको ब्याज दर राखेर EMI तुलना गर्नुहोस् — सबैभन्दा सस्तो विकल्प छान्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'नेपालमा home loan को maximum अवधि कति हो?', answer: 'धेरै वाणिज्य बैंकहरूमा home loan को maximum अवधि २० — २५ वर्ष सम्म हुन्छ। बैंक अनुसार फरक हुन्छ।' },
+      { question: 'EMI कति हुनुपर्छ?', answer: 'NRB को guideline अनुसार EMI तपाईंको मासिक आम्दानीको ४०% भन्दा बढी हुनु हुँदैन। उदाहरण: तलब रु. १ लाख भए EMI max रु. ४०,००० हुनुपर्छ।' },
+      { question: 'Floating rate भनेको के हो?', answer: 'Floating rate NRB को नीति र बजार अनुसार परिवर्तन हुन्छ। नेपालमा home loan मा floating rate मात्र हुन्छ — fixed rate home loan उपलब्ध छैन।' },
+      { question: 'CIB blacklist भए ऋण पाइँदैन?', answer: 'हो। CIB मा blacklisted भए कुनै पनि बैंकबाट ऋण पाइँदैन। पहिले विवाद मिलाएर CIB clearance लिनुपर्छ।' },
+      { question: 'Down payment कति चाहिन्छ?', answer: 'Home loan मा property मूल्यको ३०% — ४०% down payment आफैले तिर्नुपर्छ। Vehicle loan मा २०% — ३०% down payment चाहिन्छ।' },
+    ],
+    relatedGuides: ['fd-calculator-guide', 'salary-calculator-guide', 'sip-calculator-guide'],
+    toolCTA: {
+      heading: 'EMI र कुल ब्याज तुरुन्तै गणना गर्नुहोस्',
+      description: 'ऋण रकम, ब्याज दर र अवधि राख्नुहोस् — EMI, कुल ब्याज र भुक्तानी तालिका पाउनुहोस्।',
+      buttonText: 'ऋण क्यालकुलेटर खोल्नुहोस् →',
+    },
+  },
+
+  // ── SALARY CALCULATOR GUIDE (Nepali) ─────────────────────────────────────
+  {
+    slug: 'salary-calculator-guide',
+    toolSlug: 'salary-calculator',
+    category: 'calculators',
+    title: 'तलब क्यालकुलेटर नेपाल: SSF, कर र हातमा आउने तलब (2026)',
+    subtitle: 'नेपालमा SSF योगदान, आयकर स्ल्याब, PF, Gratuity र दशैं बोनस सहित तलब गणना गर्ने सम्पूर्ण गाइड।',
+    metaTitle: 'तलब क्यालकुलेटर नेपाल — SSF, कर र Net Salary गणना',
+    metaDescription: 'नेपालको तलब गणना: SSF योगदान, आयकर स्ल्याब 2080/81, PF, Gratuity, दशैं बोनस। हातमा आउने तलब तुरुन्तै गणना गर्नुहोस्।',
+    targetKeyword: 'तलब क्यालकुलेटर नेपाल',
+    secondaryKeywords: ['salary calculator nepal', 'SSF nepal', 'income tax nepal', 'आयकर स्ल्याब नेपाल', 'PF contribution nepal', 'gratuity nepal', 'dashain bonus', 'net salary nepal', 'तलब कर गणना', 'social security fund'],
+    lastUpdated: '2026-03-15',
+    readingTime: '१० मिनेट पढ्ने',
+    tags: ['तलब', 'कर', 'SSF', 'नेपाल'],
+    intro: `<p>नेपालमा काम गर्ने हरेक कर्मचारीको प्रश्न हुन्छ — <strong>"मेरो हातमा कति तलब आउँछ?"</strong> Gross salary बाट SSF (Social Security Fund), आयकर, PF कटिन्छ — अन्तिम रकम कति हुन्छ?</p><p>यो गाइडले नेपालको <strong>SSF योगदान</strong>, <strong>आयकर स्ल्याब 2082/83</strong>, PF, Gratuity, दशैं बोनस र हातमा आउने <strong>net salary</strong> बारे विस्तृत जानकारी दिन्छ। हाम्रो <strong>तलब क्यालकुलेटर</strong> ले सबै कटौती सहित तुरुन्तै गणना गर्छ।</p>`,
+    sections: [
+      {
+        id: 'salary-structure-nepal',
+        title: 'नेपालमा तलबको संरचना (Salary Structure)',
+        content: `<p>नेपालमा कर्मचारीको तलब यी components मा बिभाजित हुन्छ:</p><ul><li><strong>Basic Salary (मूल तलब):</strong> कुल तलबको मुख्य भाग</li><li><strong>Dearness Allowance (महँगी भत्ता):</strong> महँगी अनुसार थपिने</li><li><strong>Festival Bonus (दशैं बोनस):</strong> एक महिनाको मूल तलब बराबर — वर्षमा एक पटक</li><li><strong>Gratuity (उपदान):</strong> ३+ वर्ष सेवा पछि — मूल तलबको ८.३३%</li><li><strong>PF (भविष्य निधि):</strong> कर्मचारी र कम्पनी दुवैले योगदान गर्छन्</li></ul><div class="callout-info">ℹ️ <strong>दशैं बोनस:</strong> श्रम ऐन अनुसार प्रत्येक कर्मचारीले एक वर्ष पूरा गरेपछि एक महिनाको मूल तलब बराबर दशैं बोनस पाउँछ। यो अनिवार्य हो।</div>`,
+      },
+      {
+        id: 'ssf-contribution',
+        title: 'SSF (Social Security Fund) योगदान',
+        content: `<p>नेपाल सरकारको <strong>सामाजिक सुरक्षा कोष (SSF)</strong> मा कर्मचारी र रोजगारदाता दुवैले योगदान गर्नुपर्छ:</p><table><tr><th>विवरण</th><th>कर्मचारीको योगदान</th><th>रोजगारदाताको योगदान</th><th>जम्मा</th></tr><tr><td>SSF योगदान</td><td>मूल तलबको ११%</td><td>मूल तलबको २०%</td><td>३१%</td></tr></table><h4>SSF ले के कवर गर्छ?</h4><ul><li>चिकित्सा बीमा (Medical)</li><li>दुर्घटना बीमा (Accident)</li><li>अपाङ्गता सुरक्षा (Disability)</li><li>वृद्धावस्था पेन्सन (Old Age Pension)</li><li>आश्रित परिवार सुरक्षा</li></ul><div class="callout-warning">⚠️ <strong>अनिवार्य:</strong> १० वा बढी कर्मचारी भएका सबै संस्थाहरूमा SSF दर्ता अनिवार्य छ।</div>`,
+      },
+      {
+        id: 'income-tax-nepal',
+        title: 'नेपालको आयकर स्ल्याब (Income Tax Slabs 2082/83)',
+        content: `<p>नेपालमा व्यक्तिगत आयकर <strong>progressive slab system</strong> मा लागू हुन्छ:</p><h4>अविवाहित व्यक्ति (Individual):</h4><table><tr><th>वार्षिक आय</th><th>कर दर</th></tr><tr><td>पहिलो रु. ५,००,०००</td><td>१%</td></tr><tr><td>अर्को रु. २,००,०००</td><td>१०%</td></tr><tr><td>अर्को रु. ३,००,०००</td><td>२०%</td></tr><tr><td>अर्को रु. १०,००,०००</td><td>३०%</td></tr><tr><td>रु. २०,००,००० माथि</td><td>३६%</td></tr></table><h4>विवाहित व्यक्ति (Couple):</h4><table><tr><th>वार्षिक आय</th><th>कर दर</th></tr><tr><td>पहिलो रु. ६,००,०००</td><td>१%</td></tr><tr><td>अर्को रु. २,००,०००</td><td>१०%</td></tr><tr><td>अर्को रु. ३,००,०००</td><td>२०%</td></tr><tr><td>अर्को रु. ९,००,०००</td><td>३०%</td></tr><tr><td>रु. २०,००,००० माथि</td><td>३६%</td></tr></table><div class="callout-tip">💡 <strong>कर बचत:</strong> SSF मा गरिएको योगदान करयोग्य आयबाट घटाइन्छ। यसले तपाईंको कर दायित्व कम गर्छ।</div>`,
+      },
+      {
+        id: 'salary-example',
+        title: 'तलब गणनाको उदाहरण (Monthly रु. ८०,०००)',
+        content: `<p>मानौं तपाईंको मासिक gross salary रु. ८०,००० छ:</p><table><tr><th>विवरण</th><th>रकम (मासिक)</th></tr><tr><td>Gross Salary</td><td>रु. ८०,०००</td></tr><tr><td>SSF कर्मचारी (११%)</td><td>- रु. ८,८००</td></tr><tr><td>कर (अनुमानित)</td><td>- रु. ३,५००</td></tr><tr><td><strong>हातमा आउने (Net)</strong></td><td><strong>रु. ६७,७००</strong></td></tr></table><p>वार्षिक:</p><table><tr><th>विवरण</th><th>रकम (वार्षिक)</th></tr><tr><td>Gross Salary (12 महिना)</td><td>रु. ९,६०,०००</td></tr><tr><td>दशैं बोनस</td><td>+ रु. ८०,०००</td></tr><tr><td>SSF कर्मचारी (वार्षिक)</td><td>- रु. १,०५,६००</td></tr><tr><td>आयकर (SSF कटौती पछि)</td><td>- रु. ४२,०००</td></tr><tr><td><strong>वार्षिक हातमा आउने</strong></td><td><strong>रु. ८,९२,४००</strong></td></tr></table><div class="callout-info">ℹ️ <strong>नोट:</strong> यो अनुमानित गणना हो। सटीक रकमका लागि हाम्रो तलब क्यालकुलेटर प्रयोग गर्नुहोस्।</div>`,
+      },
+      {
+        id: 'salary-tips',
+        title: 'नेपालमा तलब सम्बन्धी Tips',
+        content: `<ul><li><strong>CIT (Citizen Investment Trust):</strong> कर बचतका लागि CIT मा लगानी गर्नुहोस् — करयोग्य आयबाट छुट पाइन्छ</li><li><strong>जीवन बीमा:</strong> जीवन बीमा premium करयोग्य आयबाट घटाइन्छ — रु. ४०,००० सम्म</li><li><strong>दशैं बोनस:</strong> नियमित तलबमा कर लाग्छ तर बोनसमा पनि कर लाग्न सक्छ — slab अनुसार</li><li><strong>PF निकाल्ने:</strong> PF सेवा छोडे पछि मात्र निकाल्न सकिन्छ — ५ वर्ष अघि निकाले कर लाग्छ</li><li><strong>Khalti/eSewa:</strong> तलब bank account मा आएपछि eSewa वा Khalti मा transfer गरेर utility bill तिर्नुहोस्</li></ul><div class="callout-tip">💡 <strong>Pro Tip:</strong> हरेक महिनाको तलबको २०% — ३०% बचत गर्ने बानी बसाल्नुहोस्। FD, CIT वा mutual fund मा लगानी गर्नुहोस्।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Gross Salary राख्नुहोस्', description: 'आफ्नो मासिक gross salary प्रविष्ट गर्नुहोस् (जस्तै रु. ८०,०००)।' },
+      { title: 'SSF र PF विवरण छान्नुहोस्', description: 'SSF enrolled हुनुहुन्छ भने check गर्नुहोस् — ११% कटौती automatically गणना हुन्छ।' },
+      { title: 'वैवाहिक स्थिति छान्नुहोस्', description: 'विवाहित वा अविवाहित — कर स्ल्याब फरक हुन्छ।' },
+      { title: 'Net Salary हेर्नुहोस्', description: 'SSF, कर कटौती पछि हातमा आउने net salary, दशैं बोनस सहित हेर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'SSF भनेको के हो?', answer: 'SSF (Social Security Fund / सामाजिक सुरक्षा कोष) नेपाल सरकारको योजना हो जसमा कर्मचारीले ११% र रोजगारदाताले २०% योगदान गर्छन्। यसले medical, accident, pension कवर गर्छ।' },
+      { question: 'दशैं बोनस कसले पाउँछ?', answer: 'एक वर्ष पूरा गरेका सबै कर्मचारीहरूले एक महिनाको मूल तलब बराबर दशैं बोनस पाउँछन्। यो श्रम ऐन अनुसार अनिवार्य हो।' },
+      { question: 'विवाहित र अविवाहित व्यक्तिको कर फरक हुन्छ?', answer: 'हो। विवाहित व्यक्तिले पहिलो रु. ६ लाखमा १% कर तिर्छन् भने अविवाहितले पहिलो रु. ५ लाखमा। विवाहित हुँदा रु. १ लाख बढी छुट पाइन्छ।' },
+      { question: 'SSF बाट exempt हुन सकिन्छ?', answer: '१० भन्दा कम कर्मचारी भएका संस्थामा SSF अनिवार्य छैन। तर ठूला कम्पनीहरूमा mandatory हो।' },
+      { question: 'Gratuity कहिले पाइन्छ?', answer: 'लगातार ३ वर्ष वा बढी सेवा गरेपछि gratuity (उपदान) पाइन्छ। यो मूल तलबको ८.३३% प्रति वर्ष हुन्छ।' },
+    ],
+    relatedGuides: ['fd-calculator-guide', 'loan-calculator-guide', 'sip-calculator-guide'],
+    toolCTA: {
+      heading: 'हातमा आउने तलब तुरुन्तै गणना गर्नुहोस्',
+      description: 'Gross salary राख्नुहोस् — SSF, कर, PF कटौती सहित net salary पाउनुहोस्।',
+      buttonText: 'तलब क्यालकुलेटर खोल्नुहोस् →',
+    },
+  },
+
+  // ── MARKDOWN EDITOR GUIDE (Nepali) ─────────────────────────────────────
+  {
+    slug: 'markdown-editor-guide',
+    toolSlug: 'markdown-editor',
+    category: 'developer-tools',
+    title: 'मार्कडाउन कसरी लेख्ने: Markdown Editor गाइड (2026)',
+    subtitle: 'GitHub README, blog, documentation र notes लेख्न Markdown syntax सिक्नुहोस् — नेपाली developers का लागि सम्पूर्ण गाइड।',
+    metaTitle: 'मार्कडाउन कसरी लेख्ने — Markdown Editor गाइड नेपाली',
+    metaDescription: 'Markdown syntax सिक्नुहोस्: headings, links, images, tables, code blocks। GitHub README, blog, documentation लेख्ने गाइड। नेपाली IT sector मा Markdown को उपयोग।',
+    targetKeyword: 'मार्कडाउन कसरी लेख्ने',
+    secondaryKeywords: ['markdown editor', 'markdown syntax nepali', 'GitHub README', 'markdown tutorial', 'markdown table', 'markdown code block', 'नेपाली developer', 'markdown guide nepali', 'documentation लेख्ने', 'markdown formatting'],
+    lastUpdated: '2026-03-15',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['Markdown', 'Developer', 'GitHub', 'Documentation'],
+    intro: `<p><strong>Markdown</strong> एक lightweight markup language हो जसले plain text लाई formatted text मा बदल्छ। GitHub मा README लेख्ने होस्, blog post लेख्ने होस्, वा documentation तयार गर्ने होस् — Markdown जान्नु आजको developer का लागि अनिवार्य छ।</p><p>नेपालको IT sector तीव्र गतिमा बढिरहेको छ — Leapfrog, Fusemachines, Cotiviti जस्ता कम्पनीहरूमा काम गर्न Markdown आउनै पर्छ। यो गाइडले Markdown को सबै syntax र हाम्रो <strong>Markdown Editor</strong> को प्रयोग सिकाउँछ।</p>`,
+    sections: [
+      {
+        id: 'markdown-kina',
+        title: 'Markdown किन सिक्ने? नेपाली IT मा Markdown',
+        content: `<ul><li><strong>GitHub/GitLab:</strong> README.md, CONTRIBUTING.md, pull request descriptions — सबै Markdown मा</li><li><strong>Documentation:</strong> API docs, technical docs — Docusaurus, MkDocs सबैले Markdown प्रयोग गर्छन्</li><li><strong>Blog:</strong> Next.js, Hugo, Jekyll blog posts Markdown मा लेखिन्छन्</li><li><strong>Notes:</strong> Obsidian, Notion, Logseq — personal knowledge management मा Markdown</li><li><strong>नेपाली IT कम्पनीहरू:</strong> Leapfrog, Fusemachines, Cotiviti, Verisk मा daily documentation Markdown मा हुन्छ</li></ul><div class="callout-info">ℹ️ <strong>जानकारी:</strong> Stack Overflow Developer Survey अनुसार ८०%+ developers ले Markdown daily प्रयोग गर्छन्। नेपालको IT job interview मा पनि GitHub profile हेरिन्छ — राम्रो README ले impression बनाउँछ।</div>`,
+      },
+      {
+        id: 'markdown-syntax',
+        title: 'Markdown Syntax Reference (चिट शीट)',
+        content: `<table><tr><th>Syntax</th><th>Output</th><th>प्रयोग</th></tr><tr><td><code># Heading 1</code></td><td>H1 Heading</td><td>Page title</td></tr><tr><td><code>## Heading 2</code></td><td>H2 Heading</td><td>Section title</td></tr><tr><td><code>**bold**</code></td><td><strong>bold</strong></td><td>Important text</td></tr><tr><td><code>*italic*</code></td><td><em>italic</em></td><td>Emphasis</td></tr><tr><td><code>~~strikethrough~~</code></td><td><s>strikethrough</s></td><td>Deleted text</td></tr><tr><td><code>[Link](url)</code></td><td>Clickable link</td><td>References</td></tr><tr><td><code>![Alt](image-url)</code></td><td>Image</td><td>Screenshots</td></tr><tr><td><code>\`code\`</code></td><td><code>inline code</code></td><td>Variable names</td></tr><tr><td><code>\`\`\`js ... \`\`\`</code></td><td>Code block</td><td>Code snippets</td></tr><tr><td><code>- item</code></td><td>Bullet list</td><td>Lists</td></tr><tr><td><code>1. item</code></td><td>Numbered list</td><td>Steps</td></tr><tr><td><code>> quote</code></td><td>Blockquote</td><td>Quotes</td></tr><tr><td><code>---</code></td><td>Horizontal rule</td><td>Section divider</td></tr></table>`,
+      },
+      {
+        id: 'github-readme',
+        title: 'GitHub README.md कसरी लेख्ने?',
+        content: `<p>राम्रो GitHub README ले project को पहिलो impression बनाउँछ। यसमा यी sections हुनुपर्छ:</p><ol><li><strong>Project Title + Badge:</strong> Project नाम र status badges</li><li><strong>Description:</strong> Project के हो, किन बनाइएको — २-३ lines</li><li><strong>Screenshots:</strong> UI screenshots वा demo GIF</li><li><strong>Installation:</strong> कसरी install गर्ने — step by step</li><li><strong>Usage:</strong> कसरी प्रयोग गर्ने — code examples</li><li><strong>Tech Stack:</strong> कुन technology प्रयोग भएको</li><li><strong>Contributing:</strong> कसरी contribute गर्ने</li><li><strong>License:</strong> MIT, Apache, etc.</li></ol><div class="callout-tip">💡 <strong>नेपाली Developer Tip:</strong> GitHub profile README बनाउनुहोस् (username/username repo)। यसमा आफ्नो introduction, skills, projects showcase गर्नुहोस् — IT job interview मा यो हेरिन्छ।</div>`,
+      },
+      {
+        id: 'markdown-tables-advanced',
+        title: 'Markdown Tables र Advanced Formatting',
+        content: `<p>Table syntax:</p><pre><code>| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |</code></pre><p>Alignment:</p><pre><code>| Left     | Center   | Right    |
+|:---------|:--------:|---------:|
+| text     | text     | text     |</code></pre><h4>Advanced Features:</h4><ul><li><strong>Task Lists:</strong> <code>- [x] Done</code> / <code>- [ ] Todo</code> — GitHub issues मा useful</li><li><strong>Footnotes:</strong> <code>Text[^1]</code> + <code>[^1]: footnote</code></li><li><strong>Collapsible:</strong> <code>&lt;details&gt;&lt;summary&gt;Click&lt;/summary&gt;Content&lt;/details&gt;</code></li><li><strong>Emoji:</strong> <code>:rocket:</code> → 🚀 (GitHub मा support)</li></ul><div class="callout-info">ℹ️ <strong>Note:</strong> GitHub Flavored Markdown (GFM) ले standard Markdown भन्दा बढी features support गर्छ — tables, task lists, autolinks।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Markdown Editor खोल्नुहोस्', description: 'ToolsArena को Markdown Editor मा जानुहोस् — बायाँ पट्टि editor, दायाँ पट्टि live preview।' },
+      { title: 'Markdown syntax लेख्नुहोस्', description: 'Headings (#), bold (**), links, code blocks लेख्नुहोस् — दायाँ तर्फ live preview देखिन्छ।' },
+      { title: 'Preview जाँच्नुहोस् र Export गर्नुहोस्', description: 'Formatting सही छ भनेर preview मा हेर्नुहोस्, त्यसपछि copy वा download गर्नुहोस्।' },
+    ],
+    faqs: [
+      { question: 'Markdown र HTML मा के फरक छ?', answer: 'Markdown सरल छ — # heading, **bold** लेख्दा HTML मा &lt;h1&gt;, &lt;strong&gt; मा convert हुन्छ। Markdown पढ्न र लेख्न सजिलो छ, HTML भन्दा।' },
+      { question: 'नेपाली (देवनागरी) Markdown मा लेख्न सकिन्छ?', answer: 'हो! Markdown ले Unicode support गर्छ — नेपाली देवनागरी, हिन्दी, जापानी जुनसुकै भाषा लेख्न सकिन्छ।' },
+      { question: 'GitHub README मा image कसरी राख्ने?', answer: 'Image लाई repo मा upload गरेर ![Alt text](./image.png) वा external URL ![Alt](https://...) प्रयोग गर्नुहोस्। Issues मा drag-and-drop गरेर पनि upload सकिन्छ।' },
+      { question: 'Markdown file को extension के हो?', answer: '.md वा .markdown — जस्तै README.md, CONTRIBUTING.md, CHANGELOG.md।' },
+      { question: 'कुन Markdown editor सबैभन्दा राम्रो हो?', answer: 'VS Code (Markdown preview extension), Obsidian (notes), र ToolsArena को online editor — सबै राम्रा छन्। Live preview भएको editor सिक्न सजिलो हुन्छ।' },
+    ],
+    relatedGuides: ['json-formatter-guide', 'text-to-speech-guide', 'word-counter-guide'],
+    toolCTA: {
+      heading: 'Markdown लेख्नुहोस् — Live Preview सहित',
+      description: 'Markdown लेख्नुहोस् र तुरुन्तै formatted output हेर्नुहोस्। Copy, download, share।',
+      buttonText: 'Markdown Editor खोल्नुहोस् →',
+    },
+  },
+
+  // ── FONT GENERATOR GUIDE (Nepali) ─────────────────────────────────────
+  {
+    slug: 'font-generator-guide',
+    toolSlug: 'fancy-text-generator',
+    category: 'text-tools',
+    title: 'फ्यान्सी फन्ट जनरेटर: Social Media का लागि Stylish Text (2026)',
+    subtitle: 'Facebook, Instagram, TikTok र WhatsApp का लागि stylish fonts generate गर्नुहोस् — निःशुल्क अनलाइन टूल।',
+    metaTitle: 'फ्यान्सी फन्ट जनरेटर — Stylish Text for Social Media',
+    metaDescription: 'Facebook, Instagram bio, TikTok, WhatsApp status का लागि fancy fonts बनाउनुहोस्। 100+ font styles, Unicode fonts। नेपालमा popular social media fonts।',
+    targetKeyword: 'फ्यान्सी फन्ट जनरेटर',
+    secondaryKeywords: ['fancy text generator', 'stylish font nepali', 'Instagram bio font', 'Facebook name font', 'TikTok font style', 'WhatsApp status font', 'Unicode fonts', 'cool text generator', 'social media fonts', 'fancy name maker'],
+    lastUpdated: '2026-03-15',
+    readingTime: '६ मिनेट पढ्ने',
+    tags: ['Font', 'Social Media', 'Text', 'Style'],
+    intro: `<p>Social media मा <strong>आफ्नो profile standout</strong> बनाउन चाहनुहुन्छ? Instagram bio मा stylish fonts, Facebook name मा fancy text, TikTok मा cool captions — यी सबैका लागि <strong>फ्यान्सी फन्ट जनरेटर</strong> चाहिन्छ।</p><p>नेपालमा Facebook र TikTok सबैभन्दा popular social media platforms हुन्। हाम्रो tool ले तपाईंको साधारण text लाई 𝓢𝓽𝔂𝓵𝓲𝓼𝓱, 𝔊𝔬𝔱𝔥𝔦𝔠, ᴛɪɴʏ, ⓒⓘⓡⓒⓛⓔⓓ, र 100+ अन्य styles मा बदल्छ — कुनै app install नचाहिने!</p>`,
+    sections: [
+      {
+        id: 'fancy-font-kina',
+        title: 'Fancy Font किन प्रयोग गर्ने? नेपालमा Social Media Trend',
+        content: `<ul><li><strong>Instagram Bio:</strong> Profile bio मा stylish font ले followers attract गर्छ — नेपाली influencers यो धेरै प्रयोग गर्छन्</li><li><strong>Facebook Name/Bio:</strong> Fancy name ले profile unique बनाउँछ</li><li><strong>TikTok:</strong> Video caption मा bold/italic text ले engagement बढाउँछ — नेपालमा TikTok धेरै popular छ</li><li><strong>WhatsApp Status:</strong> Status मा stylish text ले ध्यान खिच्छ</li><li><strong>YouTube:</strong> Channel description र comment मा fancy text</li></ul><div class="callout-info">ℹ️ <strong>कसरी काम गर्छ?</strong> यी "fonts" वास्तवमा Unicode characters हुन् — special symbols जुन सबै platform मा display हुन्छन्। कुनै font install गर्नुपर्दैन।</div>`,
+      },
+      {
+        id: 'font-styles',
+        title: 'उपलब्ध Font Styles र उदाहरणहरू',
+        content: `<table><tr><th>Style</th><th>उदाहरण</th><th>Best For</th></tr><tr><td>𝓢𝓬𝓻𝓲𝓹𝓽 (Cursive)</td><td>𝓝𝓮𝓹𝓪𝓵</td><td>Instagram bio, elegant posts</td></tr><tr><td>𝔊𝔬𝔱𝔥𝔦𝔠 (Fraktur)</td><td>𝔑𝔢𝔭𝔞𝔩</td><td>Gaming profiles, bold look</td></tr><tr><td>ᴛɪɴʏ ᴄᴀᴘs</td><td>ɴᴇᴘᴀʟ</td><td>Clean, minimal aesthetic</td></tr><tr><td>Ⓒⓘⓡⓒⓛⓔⓓ</td><td>Ⓝⓔⓟⓐⓛ</td><td>Fun, casual posts</td></tr><tr><td>🅱🅾🅻🅳 Square</td><td>🅽🅴🅿🅰🅻</td><td>Attention-grabbing</td></tr><tr><td>S̲u̲n̲d̲e̲r̲l̲i̲n̲e̲</td><td>N̲e̲p̲a̲l̲</td><td>Emphasis</td></tr><tr><td>ꜱᴍᴀʟʟ ᴄᴀᴘꜱ</td><td>ɴᴇᴘᴀʟ</td><td>Professional look</td></tr><tr><td>Ｆｕｌｌ Ｗｉｄｔｈ</td><td>Ｎｅｐａｌ</td><td>Aesthetic, vaporwave</td></tr></table>`,
+      },
+      {
+        id: 'platform-compatibility',
+        title: 'Platform Compatibility — कहाँ काम गर्छ?',
+        content: `<table><tr><th>Platform</th><th>Bio/Name</th><th>Posts</th><th>Comments</th><th>नेपालमा Users</th></tr><tr><td>Facebook</td><td>✅ (सीमित)</td><td>✅</td><td>✅</td><td>~१.२ करोड</td></tr><tr><td>Instagram</td><td>✅</td><td>✅ Caption</td><td>✅</td><td>~५० लाख</td></tr><tr><td>TikTok</td><td>✅</td><td>✅ Caption</td><td>✅</td><td>~८० लाख</td></tr><tr><td>WhatsApp</td><td>✅ Status</td><td>✅ Message</td><td>—</td><td>~१ करोड</td></tr><tr><td>YouTube</td><td>❌ Name</td><td>✅ Description</td><td>✅</td><td>~९० लाख</td></tr><tr><td>Twitter/X</td><td>✅</td><td>✅</td><td>✅</td><td>~१५ लाख</td></tr></table><div class="callout-warning">⚠️ <strong>ध्यान:</strong> Facebook ले केही fancy fonts लाई name मा allow गर्दैन। Bio र posts मा भने काम गर्छ। Instagram bio मा सबै styles काम गर्छन्।</div>`,
+      },
+      {
+        id: 'use-cases-nepal',
+        title: 'नेपालमा Fancy Font को Popular Use Cases',
+        content: `<ul><li><strong>Daraz Product Listing:</strong> Product title मा eye-catching text — बिक्री बढाउँछ</li><li><strong>eSewa/Khalti QR:</strong> Business name stylish बनाउनुहोस्</li><li><strong>Nepali Festivals:</strong> दशैं, तिहार, लोसारमा stylish शुभकामना message</li><li><strong>Wedding Invitations:</strong> Digital invitation card मा fancy Nepali text</li><li><strong>Gaming:</strong> PUBG, Free Fire username मा stylish fonts — नेपाली gamers मा popular</li><li><strong>School/College:</strong> Project cover page मा fancy title</li></ul><div class="callout-tip">💡 <strong>Tip:</strong> दशैंमा "𝓓𝓪𝓼𝓱𝓪𝓲𝓷 𝓢𝓱𝓾𝓫𝓱𝓪𝓴𝓪𝓶𝓪𝓷𝓪" — यस्तो message WhatsApp मा पठाउनुहोस्, सबैले सम्झन्छन्!</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Text टाइप गर्नुहोस्', description: 'आफ्नो नाम, message वा bio text input box मा लेख्नुहोस्।' },
+      { title: 'Font Style छान्नुहोस्', description: '100+ font styles बाट मनपर्ने style click गर्नुहोस् — तुरुन्तै preview देखिन्छ।' },
+      { title: 'Copy गर्नुहोस्', description: 'मनपर्ने style मा click गर्नुहोस् — text automatically copy हुन्छ।' },
+      { title: 'Paste गर्नुहोस्', description: 'Instagram, Facebook, TikTok, WhatsApp मा paste गर्नुहोस् — done!', },
+    ],
+    faqs: [
+      { question: 'Fancy fonts ले नेपाली (देवनागरी) text support गर्छ?', answer: 'Fancy font styles Unicode Latin characters मा आधारित छन् — अंग्रेजी text मा सबै styles काम गर्छन्। देवनागरी text मा सीमित styles (bold, italic, underline) काम गर्छन्।' },
+      { question: 'यी fonts कसरी काम गर्छन्?', answer: 'यी actual fonts होइनन् — Unicode characters हुन्। जस्तै 𝓐 एउटा Unicode symbol हो जुन cursive A जस्तो देखिन्छ। त्यसैले कुनै font install नचाहिने — सबै device मा देखिन्छ।' },
+      { question: 'Facebook name मा fancy font राख्न सकिन्छ?', answer: 'Facebook ले name मा केही Unicode characters allow गर्दैन। Bio, posts, र comments मा भने सबै fancy fonts काम गर्छन्।' },
+      { question: 'Mobile मा काम गर्छ?', answer: 'हो! सबै modern smartphones (Android र iPhone) ले Unicode fonts display गर्छन्। Browser मा tool खोल्नुहोस्, text generate गर्नुहोस्, copy-paste गर्नुहोस्।' },
+      { question: 'PUBG/Free Fire मा fancy name राख्न सकिन्छ?', answer: 'हो! Gaming profiles मा fancy Unicode names राख्न सकिन्छ। तर game अनुसार केही characters block हुन सक्छन् — try गर्नुहोस्।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'text-to-speech-guide', 'lorem-ipsum-guide'],
+    toolCTA: {
+      heading: 'Fancy Text तुरुन्तै बनाउनुहोस् — 100+ Styles',
+      description: 'Text लेख्नुहोस्, style छान्नुहोस्, copy गर्नुहोस् — Instagram, Facebook, TikTok मा paste गर्नुहोस्।',
+      buttonText: 'Font Generator खोल्नुहोस् →',
+    },
+  },
+
 ];

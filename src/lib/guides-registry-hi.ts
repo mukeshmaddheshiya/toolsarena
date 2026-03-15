@@ -5041,4 +5041,903 @@ button {
     },
   },
 
+  // ── FD CALCULATOR GUIDE (Hindi) ──────────────────────────────────
+  {
+    slug: 'fd-calculator-guide',
+    toolSlug: 'fd-rd-calculator',
+    category: 'calculators',
+    title: 'FD कैलकुलेटर — फिक्स्ड डिपॉज़िट पर ब्याज कैसे कैलकुलेट करें (2026)',
+    subtitle: 'SBI, HDFC, ICICI और अन्य बैंकों की FD ब्याज दरें, Section 80C टैक्स बेनिफिट, सीनियर सिटीजन रेट्स — पूरी गाइड हिंदी में।',
+    metaTitle: 'FD कैलकुलेटर — फिक्स्ड डिपॉज़िट ब्याज गणना (2026)',
+    metaDescription: 'FD कैलकुलेटर से जानें कि SBI, HDFC, ICICI FD पर कितना ब्याज मिलेगा। Section 80C बेनिफिट, सीनियर सिटीजन रेट्स और FD vs RD तुलना।',
+    targetKeyword: 'FD कैलकुलेटर',
+    secondaryKeywords: [
+      'fixed deposit calculator', 'FD ब्याज दर 2026', 'SBI FD rates',
+      'HDFC FD interest rate', 'FD पर टैक्स', 'सीनियर सिटीजन FD रेट',
+      'फिक्स्ड डिपॉज़िट कैलकुलेटर', 'FD maturity calculator', 'tax saving FD',
+      'FD vs RD comparison',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '१० मिनट पढ़ें',
+    tags: ['FD', 'Fixed Deposit', 'Banking', 'Investment'],
+    intro: `<p><strong>फिक्स्ड डिपॉज़िट (FD)</strong> भारत में सबसे लोकप्रिय और सुरक्षित निवेश विकल्पों में से एक है। बैंक या पोस्ट ऑफिस में एक निश्चित अवधि के लिए पैसा जमा करें और गारंटीड ब्याज पाएं — बाज़ार के उतार-चढ़ाव का कोई प्रभाव नहीं।</p>
+<p>लेकिन FD पर कितना ब्याज मिलेगा, maturity पर कितनी राशि होगी, और टैक्स कटने के बाद actual return क्या होगा — यह समझना ज़रूरी है। इस गाइड में हम <strong>FD कैलकुलेटर</strong> का उपयोग, प्रमुख बैंकों की ब्याज दरें, और स्मार्ट FD रणनीतियाँ विस्तार से जानेंगे।</p>`,
+    sections: [
+      {
+        id: 'fd-kya-hai',
+        title: 'फिक्स्ड डिपॉज़िट (FD) क्या है और कैसे काम करती है?',
+        content: `<p>FD एक बैंकिंग प्रोडक्ट है जिसमें आप एक तय राशि एक निश्चित अवधि (7 दिन से 10 साल) के लिए जमा करते हैं। बदले में बैंक आपको savings account से अधिक ब्याज देता है।</p>
+<h3>FD की मुख्य विशेषताएं</h3>
+<ul>
+  <li><strong>गारंटीड रिटर्न:</strong> ब्याज दर FD बुकिंग के समय fix हो जाती है — market crash का कोई असर नहीं</li>
+  <li><strong>DICGC बीमा:</strong> ₹5 लाख तक की FD बीमित है (प्रति बैंक, प्रति जमाकर्ता)</li>
+  <li><strong>लचीली अवधि:</strong> 7 दिन से 10 साल तक — अपनी ज़रूरत के हिसाब से चुनें</li>
+  <li><strong>Loan facility:</strong> FD पर 90% तक loan मिल सकता है — emergency में काम आता है</li>
+  <li><strong>Auto-renewal:</strong> Maturity पर FD ऑटोमैटिक renew हो सकती है</li>
+</ul>
+<h3>FD ब्याज गणना का फ़ॉर्मूला</h3>
+<p>FD में ब्याज दो तरीकों से calculate होता है:</p>
+<table>
+  <thead>
+    <tr><th>प्रकार</th><th>फ़ॉर्मूला</th><th>कब उपयोग</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Simple Interest</td><td>A = P × (1 + r × t)</td><td>Short-term FD (6 महीने से कम)</td></tr>
+    <tr><td>Compound Interest (Quarterly)</td><td>A = P × (1 + r/4)^(4×t)</td><td>अधिकांश बैंक FDs</td></tr>
+  </tbody>
+</table>
+<p>जहाँ P = मूलधन, r = वार्षिक ब्याज दर, t = वर्षों में अवधि, A = maturity राशि</p>
+<div class="callout-info">ℹ️ <strong>ध्यान दें:</strong> भारत में ज़्यादातर बैंक quarterly compounding करते हैं। कुछ small finance banks monthly compounding offer करते हैं जिससे effective return थोड़ा ज़्यादा होता है।</div>`,
+      },
+      {
+        id: 'bank-fd-rates-2026',
+        title: 'प्रमुख बैंकों की FD ब्याज दरें (मार्च 2026)',
+        content: `<p>नीचे भारत के प्रमुख बैंकों की FD ब्याज दरों की तुलना दी गई है। ये दरें सामान्य नागरिकों और सीनियर सिटीजन दोनों के लिए हैं:</p>
+<table>
+  <thead>
+    <tr><th>बैंक</th><th>1 वर्ष</th><th>3 वर्ष</th><th>5 वर्ष</th><th>सीनियर सिटीजन (अतिरिक्त)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SBI</td><td>6.80%</td><td>7.00%</td><td>6.50%</td><td>+0.50%</td></tr>
+    <tr><td>HDFC Bank</td><td>7.10%</td><td>7.15%</td><td>7.00%</td><td>+0.50%</td></tr>
+    <tr><td>ICICI Bank</td><td>7.00%</td><td>7.10%</td><td>6.90%</td><td>+0.50%</td></tr>
+    <tr><td>PNB</td><td>6.80%</td><td>7.00%</td><td>6.50%</td><td>+0.50%</td></tr>
+    <tr><td>Axis Bank</td><td>7.10%</td><td>7.15%</td><td>7.00%</td><td>+0.50%</td></tr>
+    <tr><td>Post Office TD</td><td>6.90%</td><td>7.00%</td><td>7.50%</td><td>N/A</td></tr>
+    <tr><td>Bajaj Finance FD</td><td>7.75%</td><td>8.05%</td><td>7.75%</td><td>+0.25%</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip">💡 <strong>प्रो टिप:</strong> सीनियर सिटीजन (60+) को लगभग सभी बैंकों में 0.25% से 0.50% अतिरिक्त ब्याज मिलता है। सुपर सीनियर सिटीजन (80+) को कुछ बैंकों में 0.75% तक extra मिलता है।</div>
+<h3>Small Finance Banks — ज़्यादा ब्याज</h3>
+<p>AU Small Finance Bank, Ujjivan SFB, और Equitas SFB जैसे बैंक 8.5% तक FD rates offer करते हैं। लेकिन ध्यान रखें कि DICGC बीमा ₹5 लाख तक ही है — इसलिए बड़ी राशि divide करके अलग-अलग बैंकों में रखें।</p>`,
+      },
+      {
+        id: 'fd-tax-80c',
+        title: 'FD पर टैक्स और Section 80C बेनिफिट',
+        content: `<p>FD से मिलने वाला ब्याज पूरी तरह taxable है — यह आपकी income में जुड़ता है और आपके tax slab के हिसाब से tax लगता है।</p>
+<h3>TDS (Tax Deducted at Source) नियम</h3>
+<ul>
+  <li>अगर एक financial year में सभी FDs से ब्याज ₹40,000 से ज़्यादा हो → बैंक 10% TDS काटता है</li>
+  <li>सीनियर सिटीजन के लिए यह सीमा ₹50,000 है</li>
+  <li>PAN नहीं दिया → 20% TDS कटेगा</li>
+  <li>TDS बचाने के लिए Form 15G (60 साल से कम) या Form 15H (60+) जमा करें — अगर taxable income nil है</li>
+</ul>
+<h3>Section 80C Tax Saving FD</h3>
+<table>
+  <thead>
+    <tr><th>विशेषता</th><th>विवरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Lock-in Period</td><td>5 वर्ष (समय से पहले निकासी नहीं)</td></tr>
+    <tr><td>Tax Deduction</td><td>₹1.5 लाख तक (Section 80C)</td></tr>
+    <tr><td>ब्याज पर Tax</td><td>ब्याज taxable है (सिर्फ principal पर deduction)</td></tr>
+    <tr><td>Nomination</td><td>ज़रूरी — nominee ज़रूर assign करें</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning">⚠️ <strong>सावधानी:</strong> Tax Saving FD का ब्याज taxable है! सिर्फ principal amount पर 80C deduction मिलता है। New Tax Regime (2026) में 80C deduction available नहीं है — Old Regime चुनने पर ही benefit मिलेगा।</div>
+<h3>FD Laddering Strategy — टैक्स optimize करें</h3>
+<p>पूरी राशि एक FD में डालने के बजाय, अलग-अलग अवधि (1, 2, 3, 4, 5 साल) में बाँटें। इससे:</p>
+<ul>
+  <li>हर साल एक FD mature होती है — liquidity बनी रहती है</li>
+  <li>ब्याज income हर साल बँटती है — tax burden कम होता है</li>
+  <li>Rising rates में re-invest का मौका मिलता है</li>
+</ul>`,
+      },
+      {
+        id: 'fd-vs-rd-vs-others',
+        title: 'FD vs RD vs अन्य निवेश — कहाँ लगाएं पैसा?',
+        content: `<p>FD सबसे safe है, लेकिन क्या यह सबसे अच्छा option है? आइए तुलना करें:</p>
+<table>
+  <thead>
+    <tr><th>निवेश</th><th>Expected Return</th><th>Risk Level</th><th>Lock-in</th><th>Tax Benefit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bank FD</td><td>6.5–7.5%</td><td>बहुत कम</td><td>Flexible</td><td>80C (5-yr FD)</td></tr>
+    <tr><td>RD (Recurring Deposit)</td><td>6.5–7.0%</td><td>बहुत कम</td><td>Flexible</td><td>नहीं</td></tr>
+    <tr><td>PPF</td><td>7.1%</td><td>Zero (Govt.)</td><td>15 वर्ष</td><td>EEE (पूरी तरह tax-free)</td></tr>
+    <tr><td>Debt Mutual Fund</td><td>7–9%</td><td>कम-मध्यम</td><td>कोई नहीं</td><td>Indexation benefit</td></tr>
+    <tr><td>Equity Mutual Fund (SIP)</td><td>12–15%</td><td>अधिक</td><td>ELSS: 3 वर्ष</td><td>80C (ELSS)</td></tr>
+    <tr><td>Post Office TD</td><td>6.9–7.5%</td><td>Zero (Govt.)</td><td>1–5 वर्ष</td><td>80C (5-yr)</td></tr>
+    <tr><td>NPS</td><td>9–12%</td><td>मध्यम</td><td>Retirement तक</td><td>80CCD(1B) ₹50K extra</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip">💡 <strong>स्मार्ट रणनीति:</strong> Emergency fund (6 महीने के खर्च) FD में रखें। बाकी पैसा PPF, ELSS, और SIP में diversify करें — inflation-beating returns के लिए।</div>
+<h3>FD कब चुनें?</h3>
+<ul>
+  <li><strong>Emergency Fund:</strong> तुरंत access चाहिए — sweeping FD या short-term FD</li>
+  <li><strong>सीनियर सिटीजन:</strong> नियमित income — quarterly interest payout FD</li>
+  <li><strong>Short-term Goal:</strong> 1–3 साल में पैसा चाहिए — market risk नहीं लेना</li>
+  <li><strong>Risk-averse:</strong> stock market से डरते हैं — FD + PPF combination</li>
+</ul>`,
+      },
+      {
+        id: 'fd-calculator-tips',
+        title: 'FD Calculator का उपयोग और प्रो टिप्स',
+        content: `<p>ToolsArena का FD कैलकुलेटर सेकंडों में बताता है कि आपकी FD maturity पर कितनी होगी।</p>
+<h3>कैलकुलेटर में क्या भरें?</h3>
+<ul>
+  <li><strong>मूलधन (Principal):</strong> ₹1,000 से ₹10 करोड़ तक</li>
+  <li><strong>ब्याज दर:</strong> बैंक की current rate डालें</li>
+  <li><strong>अवधि:</strong> महीनों या वर्षों में</li>
+  <li><strong>Compounding:</strong> Monthly, Quarterly, या Yearly</li>
+</ul>
+<h3>उदाहरण</h3>
+<p>₹5,00,000 की FD, 7.10% ब्याज दर, 3 वर्ष, quarterly compounding:</p>
+<ul>
+  <li>Maturity Amount: ₹6,17,847</li>
+  <li>ब्याज earned: ₹1,17,847</li>
+  <li>TDS (10%): ₹11,785 (अगर ₹40,000+ ब्याज हो)</li>
+</ul>
+<div class="callout-info">ℹ️ <strong>याद रखें:</strong> बैंक FD rates बदलते रहते हैं। FD बुक करने से पहले बैंक की website पर latest rates ज़रूर check करें। ToolsArena कैलकुलेटर आपकी planning में मदद करता है।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'मूलधन और अवधि डालें', description: 'FD राशि (₹), ब्याज दर (%), और अवधि (महीने/वर्ष) भरें।' },
+      { title: 'Compounding frequency चुनें', description: 'Monthly, Quarterly, Half-yearly, या Yearly compounding select करें।' },
+      { title: 'Maturity amount देखें', description: 'कैलकुलेटर तुरंत maturity राशि, कुल ब्याज, और breakdown दिखाएगा।' },
+      { title: 'Compare करें', description: 'अलग-अलग rates और tenures डालकर सबसे अच्छा option चुनें।' },
+    ],
+    faqs: [
+      { question: 'FD कैलकुलेटर कितना accurate है?', answer: 'कैलकुलेटर standard compound interest formula use करता है जो बैंक भी use करते हैं। Actual amount में ₹1-2 का minor difference हो सकता है rounding के कारण।' },
+      { question: 'क्या FD पर TDS कटता है?', answer: 'हाँ। अगर एक financial year में सभी FDs से interest ₹40,000 (senior citizens: ₹50,000) से ज़्यादा हो तो बैंक 10% TDS काटता है।' },
+      { question: 'Tax Saving FD और Normal FD में क्या अंतर है?', answer: 'Tax Saving FD में 5 साल का lock-in है और Section 80C under ₹1.5 लाख तक deduction मिलता है। Normal FD में premature withdrawal allowed है।' },
+      { question: 'FD तोड़ने पर penalty कितनी लगती है?', answer: 'ज़्यादातर बैंक 0.5% से 1% penalty काटते हैं। कुछ बैंक जैसे IDFC First Bank zero penalty premature withdrawal offer करते हैं।' },
+      { question: 'क्या NRI भी FD कर सकते हैं?', answer: 'हाँ। NRI NRE FD (tax-free, repatriable) या NRO FD (taxable, limited repatriation) में invest कर सकते हैं।' },
+    ],
+    relatedGuides: ['loan-calculator-guide', 'salary-calculator-guide', 'sip-calculator-guide'],
+    toolCTA: {
+      heading: 'FD पर कितना ब्याज मिलेगा? अभी कैलकुलेट करें',
+      description: 'मूलधन, ब्याज दर और अवधि डालें — maturity amount तुरंत जानें।',
+      buttonText: 'FD कैलकुलेटर खोलें →',
+    },
+  },
+
+  // ── LOAN CALCULATOR GUIDE (Hindi) ────────────────────────────────
+  {
+    slug: 'loan-calculator-guide',
+    toolSlug: 'loan-comparison-calculator',
+    category: 'calculators',
+    title: 'लोन कैलकुलेटर — EMI कैसे कैलकुलेट करें? Home, Personal, Car Loan गाइड (2026)',
+    subtitle: 'SBI, HDFC, ICICI के Home Loan, Personal Loan और Car Loan की EMI, ब्याज दर, और total cost — पूरी जानकारी हिंदी में।',
+    metaTitle: 'लोन कैलकुलेटर — EMI कैलकुलेट करें (Home, Personal, Car Loan)',
+    metaDescription: 'लोन EMI कैलकुलेटर से जानें कि Home Loan, Personal Loan, Car Loan की EMI कितनी होगी। SBI, HDFC rates, EMI formula, और prepayment tips।',
+    targetKeyword: 'लोन कैलकुलेटर',
+    secondaryKeywords: [
+      'EMI calculator', 'home loan EMI', 'personal loan EMI', 'car loan calculator',
+      'SBI home loan rate', 'HDFC loan rate', 'loan comparison', 'EMI कैसे निकालें',
+      'home loan कैलकुलेटर', 'personal loan interest rate 2026',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '१२ मिनट पढ़ें',
+    tags: ['Loan', 'EMI', 'Home Loan', 'Banking'],
+    intro: `<p>घर खरीदना हो, गाड़ी लेनी हो, या किसी emergency में पैसों की ज़रूरत हो — <strong>लोन</strong> आज हर भारतीय की ज़िंदगी का हिस्सा है। लेकिन लोन लेने से पहले सबसे ज़रूरी सवाल है: <strong>मेरी EMI कितनी होगी?</strong></p>
+<p>इस गाइड में हम <strong>EMI formula</strong>, प्रमुख बैंकों की ब्याज दरें, Home Loan vs Personal Loan की तुलना, और smart prepayment strategies विस्तार से समझेंगे। ToolsArena का लोन कैलकुलेटर आपको सेकंडों में EMI, total interest, और amortization schedule दिखाता है।</p>`,
+    sections: [
+      {
+        id: 'emi-formula',
+        title: 'EMI कैसे कैलकुलेट होती है? — फ़ॉर्मूला समझें',
+        content: `<p>EMI (Equated Monthly Installment) वह fixed amount है जो आप हर महीने बैंक को चुकाते हैं। इसमें principal और interest दोनों शामिल होते हैं।</p>
+<h3>EMI फ़ॉर्मूला</h3>
+<p><strong>EMI = P × r × (1+r)^n / [(1+r)^n – 1]</strong></p>
+<p>जहाँ:</p>
+<ul>
+  <li><strong>P</strong> = Loan amount (मूलधन)</li>
+  <li><strong>r</strong> = Monthly interest rate (वार्षिक दर ÷ 12 ÷ 100)</li>
+  <li><strong>n</strong> = कुल EMI की संख्या (वर्ष × 12)</li>
+</ul>
+<h3>उदाहरण: ₹50 लाख Home Loan</h3>
+<table>
+  <thead>
+    <tr><th>विवरण</th><th>मान</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Loan Amount</td><td>₹50,00,000</td></tr>
+    <tr><td>Interest Rate</td><td>8.50% p.a.</td></tr>
+    <tr><td>Tenure</td><td>20 वर्ष (240 EMIs)</td></tr>
+    <tr><td><strong>Monthly EMI</strong></td><td><strong>₹43,391</strong></td></tr>
+    <tr><td>Total Interest</td><td>₹54,13,840</td></tr>
+    <tr><td>Total Payment</td><td>₹1,04,13,840</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning">⚠️ <strong>चौंकाने वाला तथ्य:</strong> ₹50 लाख के loan पर 20 साल में ₹54 लाख+ सिर्फ ब्याज! इसलिए tenure कम रखना और prepayment करना बेहद ज़रूरी है।</div>`,
+      },
+      {
+        id: 'bank-loan-rates',
+        title: 'प्रमुख बैंकों की लोन ब्याज दरें (मार्च 2026)',
+        content: `<p>नीचे भारत के प्रमुख बैंकों की Home Loan, Personal Loan, और Car Loan ब्याज दरों की तुलना है:</p>
+<h3>Home Loan Rates</h3>
+<table>
+  <thead>
+    <tr><th>बैंक</th><th>Interest Rate</th><th>Processing Fee</th><th>Max Tenure</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SBI</td><td>8.25–9.65%</td><td>₹2,000 + GST</td><td>30 वर्ष</td></tr>
+    <tr><td>HDFC Bank</td><td>8.50–9.65%</td><td>0.50% of loan</td><td>30 वर्ष</td></tr>
+    <tr><td>ICICI Bank</td><td>8.40–9.50%</td><td>0.50% of loan</td><td>30 वर्ष</td></tr>
+    <tr><td>Bank of Baroda</td><td>8.15–10.65%</td><td>₹8,500</td><td>30 वर्ष</td></tr>
+    <tr><td>PNB</td><td>8.30–10.15%</td><td>0.35% of loan</td><td>30 वर्ष</td></tr>
+  </tbody>
+</table>
+<h3>Personal Loan Rates</h3>
+<table>
+  <thead>
+    <tr><th>बैंक</th><th>Interest Rate</th><th>Max Amount</th><th>Max Tenure</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SBI</td><td>11.00–14.00%</td><td>₹20 लाख</td><td>6 वर्ष</td></tr>
+    <tr><td>HDFC Bank</td><td>10.50–21.00%</td><td>₹40 लाख</td><td>5 वर्ष</td></tr>
+    <tr><td>ICICI Bank</td><td>10.75–16.00%</td><td>₹50 लाख</td><td>5 वर्ष</td></tr>
+    <tr><td>Bajaj Finserv</td><td>11.00–26.00%</td><td>₹35 लाख</td><td>5 वर्ष</td></tr>
+  </tbody>
+</table>
+<h3>Car Loan Rates</h3>
+<table>
+  <thead>
+    <tr><th>बैंक</th><th>New Car</th><th>Used Car</th><th>Max Tenure</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SBI</td><td>8.65–9.80%</td><td>10.65–12.65%</td><td>7 वर्ष</td></tr>
+    <tr><td>HDFC Bank</td><td>8.75–9.50%</td><td>11.50–13.75%</td><td>7 वर्ष</td></tr>
+    <tr><td>ICICI Bank</td><td>8.70–12.00%</td><td>12.00–14.00%</td><td>7 वर्ष</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip">💡 <strong>प्रो टिप:</strong> Home Loan हमेशा floating rate पर लें — fixed rate loans usually 1-2% ज़्यादा होते हैं। Personal Loan ज़रूरत हो तभी लें — rate बहुत ज़्यादा होती है।</div>`,
+      },
+      {
+        id: 'loan-types-comparison',
+        title: 'Home Loan vs Personal Loan vs Car Loan — कौन सा कब?',
+        content: `<p>अलग-अलग loans की ख़ासियतें और कब कौन सा loan लेना चाहिए:</p>
+<table>
+  <thead>
+    <tr><th>विशेषता</th><th>Home Loan</th><th>Personal Loan</th><th>Car Loan</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Interest Rate</td><td>8.25–10%</td><td>10.50–24%</td><td>8.65–14%</td></tr>
+    <tr><td>Loan Type</td><td>Secured (property)</td><td>Unsecured</td><td>Secured (car)</td></tr>
+    <tr><td>Tenure</td><td>5–30 वर्ष</td><td>1–5 वर्ष</td><td>1–7 वर्ष</td></tr>
+    <tr><td>Tax Benefit</td><td>Section 24b + 80C</td><td>कोई नहीं*</td><td>कोई नहीं</td></tr>
+    <tr><td>Prepayment Penalty</td><td>Floating: Nil</td><td>2–5%</td><td>बैंक-dependent</td></tr>
+    <tr><td>Processing Fee</td><td>0.25–1%</td><td>1–3%</td><td>0.5–1%</td></tr>
+  </tbody>
+</table>
+<p><em>* Personal Loan अगर business या home renovation के लिए है तो specific cases में tax benefit हो सकता है।</em></p>
+<h3>Home Loan Tax Benefits</h3>
+<ul>
+  <li><strong>Section 24(b):</strong> ₹2 लाख तक interest deduction (self-occupied property)</li>
+  <li><strong>Section 80C:</strong> ₹1.5 लाख तक principal repayment deduction</li>
+  <li><strong>Section 80EEA:</strong> Affordable housing के लिए additional ₹1.5 लाख (if applicable)</li>
+</ul>
+<div class="callout-info">ℹ️ <strong>New Tax Regime में:</strong> Home Loan interest deduction (Section 24b) let-out property के लिए available है, लेकिन self-occupied property के लिए सीमित। अपने CA से consult करें।</div>`,
+      },
+      {
+        id: 'prepayment-strategies',
+        title: 'EMI कम करने और जल्दी loan-free होने के टिप्स',
+        content: `<p>Smart prepayment से आप लाखों रुपये बचा सकते हैं। नीचे proven strategies हैं:</p>
+<h3>1. Part Prepayment करें</h3>
+<p>हर साल bonus, increment, या extra income से part prepayment करें। ₹50 लाख Home Loan (8.50%, 20 वर्ष) पर सिर्फ ₹1 लाख annual prepayment से:</p>
+<ul>
+  <li>Tenure 20 वर्ष से घटकर ~15 वर्ष हो जाता है</li>
+  <li>Total interest saving: ~₹15 लाख+</li>
+</ul>
+<h3>2. Tenure कम करें, EMI नहीं</h3>
+<p>Salary बढ़ने पर EMI बढ़ाएं (tenure reduce option choose करें)। यह सबसे effective strategy है।</p>
+<h3>3. Balance Transfer</h3>
+<p>अगर दूसरे बैंक में 0.50%+ कम rate मिल रहा है तो Home Loan transfer करें। Processing fee और legal charges calculate करने के बाद भी profitable हो सकता है।</p>
+<h3>4. EMI-to-Income Ratio</h3>
+<p>सभी EMIs का total 40% monthly income से ज़्यादा नहीं होना चाहिए। इससे ज़्यादा होने पर financial stress बढ़ता है।</p>
+<div class="callout-warning">⚠️ <strong>ध्यान रखें:</strong> Personal Loan और कुछ Car Loans में prepayment penalty (2-5%) लग सकती है। Floating rate Home Loan में RBI guidelines के अनुसार कोई prepayment penalty नहीं है।</div>
+<h3>Prepayment Impact Calculator Example</h3>
+<table>
+  <thead>
+    <tr><th>Scenario</th><th>Tenure</th><th>Total Interest</th><th>Saving</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>No prepayment</td><td>20 वर्ष</td><td>₹54.14 लाख</td><td>—</td></tr>
+    <tr><td>₹1L/year prepayment</td><td>~15 वर्ष</td><td>₹38.50 लाख</td><td>₹15.64 लाख</td></tr>
+    <tr><td>₹2L/year prepayment</td><td>~12 वर्ष</td><td>₹29.20 लाख</td><td>₹24.94 लाख</td></tr>
+  </tbody>
+</table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Loan details भरें', description: 'Loan amount (₹), interest rate (%), और tenure (वर्ष/महीने) enter करें।' },
+      { title: 'EMI और breakdown देखें', description: 'कैलकुलेटर तुरंत monthly EMI, total interest, और total payment दिखाएगा।' },
+      { title: 'Loans compare करें', description: 'अलग-अलग banks की rates डालकर compare करें — कौन सा loan सबसे सस्ता है।' },
+      { title: 'Prepayment plan बनाएं', description: 'Extra payment amount डालकर देखें कितने साल और पैसे बचेंगे।' },
+    ],
+    faqs: [
+      { question: 'EMI कैलकुलेटर कितना accurate है?', answer: 'यह standard EMI formula use करता है जो सभी बैंक use करते हैं। Actual EMI में processing fee, insurance premium, आदि अलग से जुड़ सकते हैं।' },
+      { question: 'Fixed rate और floating rate में क्या अंतर है?', answer: 'Fixed rate पूरे tenure में same रहती है। Floating rate RBI repo rate के साथ बदलती है — usually floating rate कम होती है।' },
+      { question: 'Home Loan पर कितना tax benefit मिलता है?', answer: 'Principal repayment पर Section 80C under ₹1.5 लाख और interest पर Section 24(b) under ₹2 लाख — कुल मिलाकर ₹3.5 लाख तक deduction।' },
+      { question: 'CIBIL score कितना होना चाहिए?', answer: 'Home Loan के लिए 750+, Personal Loan के लिए 700+, Car Loan के लिए 700+ CIBIL score recommended है। ज़्यादा score = कम interest rate।' },
+      { question: 'क्या EMI bounce होने पर penalty लगती है?', answer: 'हाँ। ₹500-1000 + GST bounce charges लगते हैं, CIBIL score भी गिरता है। Auto-debit setup करें और sufficient balance रखें।' },
+    ],
+    relatedGuides: ['fd-calculator-guide', 'salary-calculator-guide', 'sip-calculator-guide'],
+    toolCTA: {
+      heading: 'अपनी Loan EMI कैलकुलेट करें — तुरंत और फ्री',
+      description: 'Home, Personal, या Car Loan — amount और rate डालें, EMI तुरंत जानें।',
+      buttonText: 'Loan कैलकुलेटर खोलें →',
+    },
+  },
+
+  // ── SALARY CALCULATOR GUIDE (Hindi) ──────────────────────────────
+  {
+    slug: 'salary-calculator-guide',
+    toolSlug: 'salary-calculator',
+    category: 'calculators',
+    title: 'सैलरी कैलकुलेटर — CTC से इन-हैंड सैलरी कैसे निकालें? (2026)',
+    subtitle: 'CTC vs In-hand Salary, Old vs New Tax Regime, HRA Exemption, 80C/80D — भारतीय सैलरी structure की पूरी गाइड हिंदी में।',
+    metaTitle: 'सैलरी कैलकुलेटर इंडिया — CTC से इन-हैंड सैलरी (2026)',
+    metaDescription: 'सैलरी कैलकुलेटर से जानें CTC से कितनी in-hand salary आएगी। Old vs New Tax Regime comparison, HRA exemption, PF/Gratuity calculation।',
+    targetKeyword: 'सैलरी कैलकुलेटर इंडिया',
+    secondaryKeywords: [
+      'CTC to in-hand salary', 'salary calculator India', 'take home salary calculator',
+      'in hand salary kaise nikale', 'old vs new tax regime', 'HRA exemption calculator',
+      'income tax calculator 2026', 'CTC breakdown', 'सैलरी कैलकुलेटर',
+      'PF calculation on salary',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '१२ मिनट पढ़ें',
+    tags: ['Salary', 'Tax', 'Income Tax', 'HR'],
+    intro: `<p>नौकरी मिलते ही सबसे पहला सवाल आता है: <strong>"मेरी CTC ₹X लाख है, तो हाथ में कितना आएगा?"</strong> — और ज़्यादातर लोगों को इसका सही जवाब नहीं पता होता।</p>
+<p>CTC (Cost to Company) और in-hand salary में बड़ा अंतर होता है। PF, Gratuity, Professional Tax, Income Tax — ये सब कटने के बाद जो बचता है वह आपकी <strong>take-home salary</strong> है। इस गाइड में हम CTC structure, tax regime comparison, और smart tax-saving strategies विस्तार से समझेंगे।</p>`,
+    sections: [
+      {
+        id: 'ctc-breakdown',
+        title: 'CTC Structure — कहाँ-कहाँ बँटती है सैलरी?',
+        content: `<p>CTC = वह कुल खर्च जो company आप पर करती है। लेकिन CTC का एक बड़ा हिस्सा सीधे आपके account में नहीं आता।</p>
+<h3>CTC के Components</h3>
+<table>
+  <thead>
+    <tr><th>Component</th><th>% of CTC (approx)</th><th>In-hand?</th><th>विवरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Basic Salary</td><td>40-50%</td><td>हाँ (taxable)</td><td>सभी calculations का आधार</td></tr>
+    <tr><td>HRA</td><td>20-25%</td><td>हाँ (partly exempt)</td><td>किराये पर रहने वालों के लिए</td></tr>
+    <tr><td>Special Allowance</td><td>10-20%</td><td>हाँ (taxable)</td><td>Flexible component</td></tr>
+    <tr><td>Employer PF</td><td>12% of Basic</td><td>नहीं (retirement fund)</td><td>₹15,000 Basic तक mandatory</td></tr>
+    <tr><td>Gratuity</td><td>4.81% of Basic</td><td>नहीं (5 वर्ष बाद)</td><td>5 साल की सेवा के बाद मिलता है</td></tr>
+    <tr><td>Insurance/Perks</td><td>Variable</td><td>नहीं</td><td>Health insurance, car lease, etc.</td></tr>
+  </tbody>
+</table>
+<h3>उदाहरण: ₹12 LPA CTC Breakdown</h3>
+<table>
+  <thead>
+    <tr><th>Component</th><th>Monthly</th><th>Yearly</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Basic</td><td>₹40,000</td><td>₹4,80,000</td></tr>
+    <tr><td>HRA</td><td>₹20,000</td><td>₹2,40,000</td></tr>
+    <tr><td>Special Allowance</td><td>₹18,200</td><td>₹2,18,400</td></tr>
+    <tr><td>Employer PF (12%)</td><td>₹4,800</td><td>₹57,600</td></tr>
+    <tr><td>Insurance</td><td>₹333</td><td>₹4,000</td></tr>
+    <tr><td><strong>CTC</strong></td><td><strong>₹83,333</strong></td><td><strong>₹12,00,000</strong></td></tr>
+    <tr><td>Employee PF deduction</td><td>–₹4,800</td><td>–₹57,600</td></tr>
+    <tr><td>Professional Tax</td><td>–₹200</td><td>–₹2,400</td></tr>
+    <tr><td>Income Tax (New Regime)</td><td>–₹5,000*</td><td>–₹60,000*</td></tr>
+    <tr><td><strong>In-hand (approx)</strong></td><td><strong>₹68,333</strong></td><td><strong>₹8,20,000</strong></td></tr>
+  </tbody>
+</table>
+<p><em>* Tax approximate — actual deductions पर depend करता है।</em></p>
+<div class="callout-info">ℹ️ <strong>ध्यान दें:</strong> ₹12 LPA CTC पर in-hand salary लगभग ₹68,000/month (~68%) आती है। बाकी 32% PF, tax, insurance, gratuity में जाता है।</div>`,
+      },
+      {
+        id: 'old-vs-new-regime',
+        title: 'Old vs New Tax Regime — कौन सा बेहतर? (2026)',
+        content: `<p>भारत में दो income tax regimes हैं। सही regime चुनना हज़ारों रुपये बचा सकता है।</p>
+<h3>Tax Slabs Comparison (FY 2025-26)</h3>
+<table>
+  <thead>
+    <tr><th>Income Slab</th><th>Old Regime</th><th>New Regime (Default)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>₹0 – 3 लाख</td><td>Nil</td><td>Nil</td></tr>
+    <tr><td>₹3 – 7 लाख</td><td>5% (₹2.5-5L) / 20% (₹5-10L)</td><td>5%</td></tr>
+    <tr><td>₹7 – 10 लाख</td><td>20%</td><td>10%</td></tr>
+    <tr><td>₹10 – 12 लाख</td><td>30%</td><td>15%</td></tr>
+    <tr><td>₹12 – 15 लाख</td><td>30%</td><td>20%</td></tr>
+    <tr><td>₹15 लाख+</td><td>30%</td><td>30%</td></tr>
+  </tbody>
+</table>
+<h3>कब Old Regime बेहतर है?</h3>
+<ul>
+  <li>HRA exemption claim कर सकते हैं (metro city में किराये पर रहते हैं)</li>
+  <li>₹1.5 लाख+ investments हैं (PPF, ELSS, EPF, Life Insurance — 80C)</li>
+  <li>₹25,000+ health insurance premium (80D)</li>
+  <li>Home Loan interest pay करते हैं (Section 24b)</li>
+  <li><strong>Rule of thumb:</strong> अगर total deductions ₹3.75 लाख+ हैं → Old Regime बेहतर</li>
+</ul>
+<h3>कब New Regime बेहतर है?</h3>
+<ul>
+  <li>कोई major investments या loan नहीं</li>
+  <li>Parents के घर में रहते हैं (HRA claim नहीं कर सकते)</li>
+  <li>Company में flexible benefits कम हैं</li>
+  <li>Simple tax filing चाहते हैं</li>
+</ul>
+<div class="callout-tip">💡 <strong>प्रो टिप:</strong> दोनों regimes में tax calculate करें और जिसमें कम tax आए वह चुनें। Salaried employees हर साल regime switch कर सकते हैं। ToolsArena का Salary Calculator दोनों regimes compare करता है।</div>`,
+      },
+      {
+        id: 'hra-80c-80d',
+        title: 'HRA, 80C, 80D — Tax बचाने के प्रमुख तरीके',
+        content: `<h3>HRA Exemption (House Rent Allowance)</h3>
+<p>HRA exemption तीन में से सबसे कम amount पर मिलती है:</p>
+<ul>
+  <li>Actual HRA received</li>
+  <li>Rent paid – 10% of Basic Salary</li>
+  <li>50% of Basic (Metro city) या 40% of Basic (Non-metro)</li>
+</ul>
+<p><strong>उदाहरण:</strong> Basic ₹40,000, HRA ₹20,000, Rent ₹15,000, Delhi (Metro):</p>
+<ul>
+  <li>Actual HRA = ₹20,000</li>
+  <li>Rent – 10% Basic = ₹15,000 – ₹4,000 = ₹11,000</li>
+  <li>50% of Basic = ₹20,000</li>
+  <li><strong>Exempt HRA = ₹11,000/month = ₹1,32,000/year</strong></li>
+</ul>
+<h3>Section 80C — ₹1.5 लाख तक Deduction</h3>
+<table>
+  <thead>
+    <tr><th>Investment</th><th>Lock-in</th><th>Expected Return</th><th>Risk</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>EPF (Employee PF)</td><td>Retirement</td><td>8.25%</td><td>Zero</td></tr>
+    <tr><td>PPF</td><td>15 वर्ष</td><td>7.1%</td><td>Zero</td></tr>
+    <tr><td>ELSS Mutual Fund</td><td>3 वर्ष</td><td>12-15%</td><td>High</td></tr>
+    <tr><td>Life Insurance Premium</td><td>Policy term</td><td>4-6%</td><td>Zero</td></tr>
+    <tr><td>Tax Saving FD</td><td>5 वर्ष</td><td>7-7.5%</td><td>Zero</td></tr>
+    <tr><td>Sukanya Samriddhi</td><td>21 वर्ष</td><td>8.2%</td><td>Zero</td></tr>
+    <tr><td>Home Loan Principal</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+  </tbody>
+</table>
+<h3>Section 80D — Health Insurance</h3>
+<ul>
+  <li>Self + Family premium: ₹25,000 तक deduction</li>
+  <li>Parents (60 से कम): additional ₹25,000</li>
+  <li>Parents (60+): additional ₹50,000</li>
+  <li><strong>Maximum: ₹1,00,000</strong> (if both self 60+ and parents 60+)</li>
+</ul>
+<div class="callout-warning">⚠️ <strong>महत्वपूर्ण:</strong> ये सभी deductions सिर्फ Old Tax Regime में available हैं। New Tax Regime में standard deduction (₹75,000) और employer NPS contribution (80CCD(2)) के अलावा कोई major deduction नहीं है।</div>`,
+      },
+      {
+        id: 'salary-negotiation-tips',
+        title: 'Salary Negotiation और Structure Optimize करने के टिप्स',
+        content: `<p>Smart salary structuring से बिना CTC बढ़ाए in-hand salary बढ़ा सकते हैं:</p>
+<h3>1. HRA Maximize करें</h3>
+<p>अगर किराये पर रहते हैं तो HR से कहें कि HRA component बढ़ाएं (Special Allowance कम करके)। HRA exempt होता है, Special Allowance पूरा taxable।</p>
+<h3>2. NPS Employer Contribution</h3>
+<p>Company को कहें कि salary का 10% NPS में contribute करें — यह Old और New दोनों regimes में tax-free है (80CCD(2))।</p>
+<h3>3. Meal Coupons / Food Allowance</h3>
+<p>₹2,200/month तक meal coupons (Sodexo/Zeta) tax-free हैं = ₹26,400/year tax saving।</p>
+<h3>4. Leave Travel Allowance (LTA)</h3>
+<p>4 साल में 2 बार domestic travel का खर्च LTA से claim कर सकते हैं — travel tickets tax-free।</p>
+<h3>Salary Structure Optimization Example</h3>
+<table>
+  <thead>
+    <tr><th>Component</th><th>Before Optimization</th><th>After Optimization</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Basic</td><td>₹50,000</td><td>₹50,000</td></tr>
+    <tr><td>HRA</td><td>₹15,000</td><td>₹25,000</td></tr>
+    <tr><td>Special Allowance</td><td>₹30,000</td><td>₹12,800</td></tr>
+    <tr><td>NPS (Employer)</td><td>₹0</td><td>₹5,000</td></tr>
+    <tr><td>Meal Coupons</td><td>₹0</td><td>₹2,200</td></tr>
+    <tr><td><strong>Tax Saving/year</strong></td><td><strong>—</strong></td><td><strong>~₹45,000–60,000</strong></td></tr>
+  </tbody>
+</table>
+<div class="callout-tip">💡 <strong>Job Offer मिलने पर:</strong> CTC नहीं, in-hand salary compare करें। ₹15 LPA CTC with bad structure < ₹13 LPA CTC with optimized structure (in terms of take-home)। ToolsArena का Salary Calculator से दोनों offers compare करें।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'CTC या Monthly Salary डालें', description: 'Annual CTC (₹) या monthly gross salary enter करें।' },
+      { title: 'Components भरें', description: 'Basic, HRA, Special Allowance, PF contribution, और other components add करें।' },
+      { title: 'Deductions select करें', description: '80C investments, 80D insurance, HRA, home loan — applicable deductions choose करें।' },
+      { title: 'In-hand salary देखें', description: 'कैलकुलेटर Old और New regime दोनों में take-home salary दिखाएगा।' },
+    ],
+    faqs: [
+      { question: 'CTC और in-hand salary में कितना अंतर होता है?', answer: 'आमतौर पर in-hand salary CTC का 65-75% होती है। बाकी PF, gratuity, insurance, और tax में जाता है।' },
+      { question: 'क्या हर साल tax regime बदल सकते हैं?', answer: 'हाँ। Salaried employees (बिना business income) हर financial year में Old या New regime choose कर सकते हैं।' },
+      { question: 'EPF पर ब्याज taxable है?', answer: 'Annual contribution ₹2.5 लाख तक पर interest tax-free है। इससे ऊपर की contribution पर interest taxable है (Budget 2021 से)।' },
+      { question: 'Gratuity कब मिलती है?', answer: 'एक ही employer में 5 वर्ष पूरे होने पर। Formula: (Basic + DA) × 15/26 × years of service। ₹20 लाख तक tax-free।' },
+      { question: 'Professional Tax हर state में लगता है?', answer: 'नहीं। कुछ states जैसे Maharashtra, Karnataka, West Bengal में ₹200/month तक Professional Tax लगता है। कई states में यह नहीं है।' },
+    ],
+    relatedGuides: ['fd-calculator-guide', 'loan-calculator-guide', 'sip-calculator-guide'],
+    toolCTA: {
+      heading: 'CTC से In-hand Salary कैलकुलेट करें — Old & New Regime',
+      description: 'CTC डालें, tax regime चुनें — take-home salary तुरंत जानें।',
+      buttonText: 'सैलरी कैलकुलेटर खोलें →',
+    },
+  },
+
+  // ── MARKDOWN EDITOR GUIDE (Hindi) ────────────────────────────────
+  {
+    slug: 'markdown-editor-guide',
+    toolSlug: 'markdown-editor',
+    category: 'developer-tools',
+    title: 'मार्कडाउन कैसे लिखें — Markdown Syntax Guide हिंदी में (2026)',
+    subtitle: 'Markdown syntax, GitHub Flavored Markdown, tables, code blocks, और live preview — developers, bloggers और students के लिए पूरी गाइड।',
+    metaTitle: 'मार्कडाउन कैसे लिखें — Hindi Markdown Syntax Guide',
+    metaDescription: 'Markdown कैसे लिखें हिंदी में सीखें। Headings, bold, italic, links, images, tables, code blocks — GitHub, blogging और documentation के लिए।',
+    targetKeyword: 'मार्कडाउन कैसे लिखें',
+    secondaryKeywords: [
+      'markdown syntax hindi', 'markdown tutorial', 'markdown editor online',
+      'GitHub markdown guide', 'markdown table kaise banaye', 'markdown cheat sheet hindi',
+      'मार्कडाउन सिंटैक्स', 'markdown for beginners', 'markdown in hindi',
+      'markdown to HTML converter',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '१० मिनट पढ़ें',
+    tags: ['Markdown', 'Developer', 'Writing', 'GitHub'],
+    intro: `<p><strong>Markdown</strong> एक lightweight markup language है जिससे आप plain text लिखकर formatted documents बना सकते हैं। GitHub README, technical documentation, blog posts, notes — सब जगह Markdown use होता है।</p>
+<p>इस गाइड में हम Markdown के सभी syntax elements हिंदी में सीखेंगे — headings से लेकर tables, code blocks, और advanced features तक। साथ ही ToolsArena के free Markdown Editor से live preview के साथ practice कर सकते हैं।</p>`,
+    sections: [
+      {
+        id: 'markdown-kya-hai',
+        title: 'Markdown क्या है और क्यों सीखें?',
+        content: `<p>Markdown को 2004 में <strong>John Gruber</strong> और <strong>Aaron Swartz</strong> ने बनाया था। इसका उद्देश्य था कि plain text में लिखा गया content आसानी से HTML में convert हो सके — बिना HTML tags सीखे।</p>
+<h3>Markdown कहाँ-कहाँ use होता है?</h3>
+<ul>
+  <li><strong>GitHub / GitLab:</strong> README.md, issues, pull requests, wiki pages</li>
+  <li><strong>Documentation:</strong> Docusaurus, MkDocs, GitBook, Notion</li>
+  <li><strong>Blogging:</strong> Hugo, Jekyll, Next.js blogs, Dev.to, Hashnode</li>
+  <li><strong>Notes:</strong> Obsidian, Typora, Bear, Logseq</li>
+  <li><strong>Communication:</strong> Slack, Discord, Reddit, Stack Overflow</li>
+  <li><strong>Academic:</strong> Jupyter Notebooks, R Markdown, research papers</li>
+</ul>
+<h3>Markdown के फायदे</h3>
+<ul>
+  <li><strong>सीखना आसान:</strong> 15 मिनट में basic syntax सीख सकते हैं</li>
+  <li><strong>Platform independent:</strong> कोई भी text editor में लिख सकते हैं</li>
+  <li><strong>Version control friendly:</strong> Git diff में changes clearly दिखते हैं</li>
+  <li><strong>Future-proof:</strong> Plain text files हमेशा readable रहेंगी</li>
+  <li><strong>Convertible:</strong> HTML, PDF, DOCX — किसी भी format में convert होता है</li>
+</ul>
+<div class="callout-info">ℹ️ <strong>Fun fact:</strong> यह गाइड भी Markdown-like syntax में लिखी गई है! Markdown इतना popular है कि लगभग हर developer tool इसे support करता है।</div>`,
+      },
+      {
+        id: 'basic-syntax',
+        title: 'Basic Markdown Syntax — Headings, Text, Lists',
+        content: `<p>नीचे Markdown के सबसे common syntax elements दिए गए हैं:</p>
+<h3>Headings (शीर्षक)</h3>
+<table>
+  <thead>
+    <tr><th>Markdown</th><th>Output</th><th>Use Case</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code># Heading 1</code></td><td>H1 — सबसे बड़ा</td><td>Page title (एक बार ही use करें)</td></tr>
+    <tr><td><code>## Heading 2</code></td><td>H2 — Section heading</td><td>मुख्य sections</td></tr>
+    <tr><td><code>### Heading 3</code></td><td>H3 — Sub-section</td><td>Sub-topics</td></tr>
+    <tr><td><code>#### Heading 4</code></td><td>H4 — Minor heading</td><td>Details</td></tr>
+  </tbody>
+</table>
+<h3>Text Formatting (टेक्स्ट फ़ॉर्मेटिंग)</h3>
+<table>
+  <thead>
+    <tr><th>Markdown</th><th>Output</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>**bold text**</code></td><td><strong>bold text</strong></td></tr>
+    <tr><td><code>*italic text*</code></td><td><em>italic text</em></td></tr>
+    <tr><td><code>***bold italic***</code></td><td><strong><em>bold italic</em></strong></td></tr>
+    <tr><td><code>~~strikethrough~~</code></td><td><s>strikethrough</s></td></tr>
+    <tr><td><code>\`inline code\`</code></td><td><code>inline code</code></td></tr>
+  </tbody>
+</table>
+<h3>Lists (सूचियाँ)</h3>
+<p><strong>Unordered list:</strong></p>
+<pre><code>- पहला item
+- दूसरा item
+  - nested item
+  - एक और nested</code></pre>
+<p><strong>Ordered list:</strong></p>
+<pre><code>1. पहला step
+2. दूसरा step
+3. तीसरा step</code></pre>
+<p><strong>Task list (GitHub):</strong></p>
+<pre><code>- [x] यह काम हो गया
+- [ ] यह बाकी है
+- [ ] यह भी करना है</code></pre>
+<div class="callout-tip">💡 <strong>टिप:</strong> Headings के बाद एक blank line ज़रूर छोड़ें, नहीं तो कुछ parsers सही render नहीं करेंगे।</div>`,
+      },
+      {
+        id: 'links-images-code',
+        title: 'Links, Images, और Code Blocks',
+        content: `<h3>Links (लिंक्स)</h3>
+<table>
+  <thead>
+    <tr><th>Markdown</th><th>विवरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>[text](url)</code></td><td>Basic link</td></tr>
+    <tr><td><code>[text](url "title")</code></td><td>Link with hover title</td></tr>
+    <tr><td><code>[text][ref]</code> + <code>[ref]: url</code></td><td>Reference-style link</td></tr>
+    <tr><td><code>&lt;https://example.com&gt;</code></td><td>Auto-linked URL</td></tr>
+  </tbody>
+</table>
+<h3>Images (चित्र)</h3>
+<pre><code>![Alt text](image-url.png)
+![Alt text](image-url.png "Optional title")</code></pre>
+<p>GitHub पर images को drag & drop भी कर सकते हैं — auto-upload हो जाती हैं।</p>
+<h3>Code Blocks (कोड ब्लॉक्स)</h3>
+<p><strong>Inline code:</strong> backtick (\`) से wrap करें: <code>console.log("hello")</code></p>
+<p><strong>Fenced code block:</strong> triple backticks के बीच लिखें और language specify करें:</p>
+<pre><code>\`\`\`javascript
+function namaste() {
+  console.log("नमस्ते दुनिया!");
+}
+\`\`\`</code></pre>
+<p><strong>Supported languages:</strong> javascript, python, java, html, css, bash, json, typescript, sql, और 100+ अन्य।</p>
+<h3>Blockquotes (उद्धरण)</h3>
+<pre><code>&gt; यह एक blockquote है।
+&gt;
+&gt; यह दूसरा paragraph है।</code></pre>
+<h3>Horizontal Rule (विभाजक रेखा)</h3>
+<pre><code>---
+या
+***</code></pre>
+<div class="callout-info">ℹ️ <strong>GitHub Tip:</strong> GitHub Flavored Markdown (GFM) में syntax highlighting automatic है — बस language name specify करें। Code review और documentation के लिए बहुत useful है।</div>`,
+      },
+      {
+        id: 'tables-advanced',
+        title: 'Tables और Advanced Markdown Features',
+        content: `<h3>Tables (तालिकाएं)</h3>
+<p>Markdown में table बनाना आसान है:</p>
+<pre><code>| Column 1 | Column 2 | Column 3 |
+|----------|:--------:|---------:|
+| Left     | Center   | Right    |
+| aligned  | aligned  | aligned  |</code></pre>
+<p>Alignment: <code>:---</code> (left), <code>:---:</code> (center), <code>---:</code> (right)</p>
+<h3>Syntax Reference Table</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Syntax</th><th>Standard/GFM</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Table</td><td><code>| col |</code></td><td>GFM</td></tr>
+    <tr><td>Task List</td><td><code>- [x] done</code></td><td>GFM</td></tr>
+    <tr><td>Strikethrough</td><td><code>~~text~~</code></td><td>GFM</td></tr>
+    <tr><td>Footnote</td><td><code>[^1]</code></td><td>Extended</td></tr>
+    <tr><td>Emoji</td><td><code>:smile:</code></td><td>GFM</td></tr>
+    <tr><td>Highlight</td><td><code>==text==</code></td><td>Extended</td></tr>
+    <tr><td>Math (LaTeX)</td><td><code>$E=mc^2$</code></td><td>Extended</td></tr>
+    <tr><td>Mermaid Diagram</td><td><code>\`\`\`mermaid</code></td><td>GitHub</td></tr>
+  </tbody>
+</table>
+<h3>Escaping Characters</h3>
+<p>अगर Markdown syntax characters literal दिखाने हैं तो backslash (<code>\\</code>) use करें:</p>
+<pre><code>\\* यह bullet नहीं बनेगा
+\\# यह heading नहीं बनेगा
+\\[यह link नहीं बनेगा\\]</code></pre>
+<h3>HTML in Markdown</h3>
+<p>Markdown में raw HTML भी लिख सकते हैं — जब Markdown syntax काफी न हो:</p>
+<pre><code>&lt;details&gt;
+  &lt;summary&gt;Click to expand&lt;/summary&gt;
+  Hidden content here.
+&lt;/details&gt;</code></pre>
+<div class="callout-tip">💡 <strong>Pro Tip:</strong> GitHub README में Mermaid diagrams (<code>\`\`\`mermaid</code>) use करके flowcharts, sequence diagrams बना सकते हैं — बिना image upload किए।</div>`,
+      },
+      {
+        id: 'markdown-use-cases',
+        title: 'Markdown के Practical Use Cases — भारतीय Developers के लिए',
+        content: `<h3>1. GitHub README.md लिखें</h3>
+<p>एक अच्छे README में ये sections होने चाहिए:</p>
+<ul>
+  <li>Project title और description</li>
+  <li>Installation instructions</li>
+  <li>Usage examples (with code blocks)</li>
+  <li>Screenshots (images)</li>
+  <li>Contributing guidelines</li>
+  <li>License</li>
+</ul>
+<h3>2. Technical Documentation</h3>
+<p>Docusaurus, MkDocs, या GitBook से Markdown files से beautiful documentation sites बनाएं। Indian startups जैसे Razorpay, Zerodha भी Markdown-based docs use करते हैं।</p>
+<h3>3. Blog Writing</h3>
+<p>Next.js, Hugo, या Jekyll blog में posts Markdown में लिखें। Frontmatter (YAML header) से metadata add करें:</p>
+<pre><code>---
+title: "मेरा पहला ब्लॉग पोस्ट"
+date: 2026-03-15
+tags: [hindi, tutorial]
+---</code></pre>
+<h3>4. Notes और Knowledge Base</h3>
+<p>Obsidian या Logseq में personal knowledge base बनाएं — सब कुछ Markdown files में stored रहता है, कोई vendor lock-in नहीं।</p>
+<h3>5. Resume/CV</h3>
+<p>Markdown में resume लिखें, फिर PDF में convert करें — clean, version-controlled, और easy to update।</p>
+<div class="callout-info">ℹ️ <strong>Career Tip:</strong> Indian IT companies में GitHub profile बहुत important है placement/interview के लिए। अच्छे README.md वाले projects ज़्यादा attention attract करते हैं।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Markdown Editor खोलें', description: 'ToolsArena का Markdown Editor खोलें — left side में लिखें, right side में live preview देखें।' },
+      { title: 'Markdown syntax लिखें', description: 'Headings (#), bold (**), lists (-), links, code blocks — जो चाहें लिखें।' },
+      { title: 'Live preview check करें', description: 'Right panel में real-time rendered output verify करें — formatting सही है या नहीं।' },
+      { title: 'Copy या Export करें', description: 'Formatted content copy करें या HTML output use करें।' },
+    ],
+    faqs: [
+      { question: 'Markdown सीखने में कितना समय लगता है?', answer: 'Basic syntax (headings, bold, lists, links) 15-20 मिनट में सीख सकते हैं। Advanced features (tables, code blocks, GFM) 1-2 घंटे में। Daily use से 1 हफ्ते में comfortable हो जाएंगे।' },
+      { question: 'Markdown और HTML में क्या अंतर है?', answer: 'Markdown simple text-based है (# Heading), HTML tag-based (<h1>Heading</h1>)। Markdown internally HTML में convert होता है लेकिन लिखने में बहुत आसान है।' },
+      { question: 'क्या Markdown में Hindi लिख सकते हैं?', answer: 'बिल्कुल! Markdown language-agnostic है। Hindi, English, या कोई भी भाषा — syntax same रहता है, content कुछ भी हो सकता है।' },
+      { question: 'GitHub README में images कैसे add करें?', answer: 'Issue section में image drag & drop करें, generated URL copy करें, फिर README में ![alt](url) syntax use करें। या repo में images folder बनाकर relative path use करें।' },
+      { question: 'Best Markdown editor कौन सा है?', answer: 'Online: ToolsArena Markdown Editor, StackEdit। Desktop: VS Code (with Markdown preview), Typora, Obsidian। सबकी अपनी speciality है।' },
+    ],
+    relatedGuides: ['json-formatter-guide', 'html-to-pdf-guide', 'text-to-speech-guide'],
+    toolCTA: {
+      heading: 'Markdown लिखें, Live Preview देखें — Free Editor',
+      description: 'Real-time preview के साथ Markdown लिखें। कोई signup नहीं।',
+      buttonText: 'Markdown Editor खोलें →',
+    },
+  },
+
+  // ── FONT GENERATOR GUIDE (Hindi) ─────────────────────────────────
+  {
+    slug: 'font-generator-guide',
+    toolSlug: 'fancy-text-generator',
+    category: 'text-tools',
+    title: 'फैंसी फॉन्ट जनरेटर — Instagram, WhatsApp के लिए स्टाइलिश टेक्स्ट बनाएं (2026)',
+    subtitle: 'Instagram Bio, WhatsApp Status, Facebook Post, Twitter/X के लिए fancy और stylish fonts — copy-paste करके तुरंत use करें।',
+    metaTitle: 'फैंसी फॉन्ट जनरेटर — Instagram Bio और WhatsApp के लिए Stylish Text',
+    metaDescription: 'फैंसी फॉन्ट जनरेटर से Instagram bio, WhatsApp status, Facebook post के लिए stylish text बनाएं। Bold, italic, cursive, gothic fonts — free।',
+    targetKeyword: 'फैंसी फॉन्ट जनरेटर',
+    secondaryKeywords: [
+      'fancy text generator', 'Instagram bio fonts', 'WhatsApp stylish text',
+      'stylish name generator', 'fancy fonts copy paste', 'cool text generator',
+      'Instagram font style', 'social media fonts', 'फैंसी नाम जनरेटर',
+      'WhatsApp status font',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '८ मिनट पढ़ें',
+    tags: ['Fonts', 'Instagram', 'WhatsApp', 'Social Media'],
+    intro: `<p>Social media पर <strong>अलग दिखना</strong> बहुत ज़रूरी है — और सबसे आसान तरीका है <strong>fancy fonts</strong> का use करना। Instagram bio में stylish text, WhatsApp status में creative fonts, या Facebook post में eye-catching typography — ये सब एक <strong>Fancy Font Generator</strong> से संभव है।</p>
+<p>इस गाइड में जानें कि fancy fonts कैसे काम करते हैं, कौन से platforms पर कौन से fonts support होते हैं, और ToolsArena के free tool से कैसे instantly stylish text generate करें।</p>`,
+    sections: [
+      {
+        id: 'fancy-fonts-kaise-kaam-karte-hain',
+        title: 'Fancy Fonts कैसे काम करते हैं? — Unicode का जादू',
+        content: `<p>Fancy fonts असल में "fonts" नहीं हैं — ये <strong>Unicode characters</strong> हैं। Unicode standard में अलग-अलग mathematical और decorative character sets हैं जो normal alphabets जैसे दिखते हैं लेकिन technically अलग characters हैं।</p>
+<h3>उदाहरण</h3>
+<table>
+  <thead>
+    <tr><th>Style</th><th>Normal Text</th><th>Fancy Text</th><th>Unicode Range</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bold</td><td>Hello</td><td>𝗛𝗲𝗹𝗹𝗼</td><td>Mathematical Bold</td></tr>
+    <tr><td>Italic</td><td>Hello</td><td>𝐻𝑒𝑙𝑙𝑜</td><td>Mathematical Italic</td></tr>
+    <tr><td>Script</td><td>Hello</td><td>𝓗𝓮𝓵𝓵𝓸</td><td>Mathematical Script</td></tr>
+    <tr><td>Monospace</td><td>Hello</td><td>𝙷𝚎𝚕𝚕𝚘</td><td>Mathematical Monospace</td></tr>
+    <tr><td>Double-struck</td><td>Hello</td><td>ℍ𝕖𝕝𝕝𝕠</td><td>Double-struck</td></tr>
+    <tr><td>Circled</td><td>Hello</td><td>Ⓗⓔⓛⓛⓞ</td><td>Enclosed Alphanumerics</td></tr>
+    <tr><td>Fullwidth</td><td>Hello</td><td>Ｈｅｌｌｏ</td><td>Fullwidth Latin</td></tr>
+  </tbody>
+</table>
+<p>क्योंकि ये standard Unicode characters हैं, इन्हें कहीं भी copy-paste कर सकते हैं — जहाँ text type कर सकते हैं, वहाँ fancy text भी paste कर सकते हैं।</p>
+<div class="callout-info">ℹ️ <strong>ध्यान दें:</strong> ये characters font change नहीं करते — ये अलग Unicode code points हैं। इसलिए इन्हें search engines properly index नहीं करते और screen readers के लिए accessible नहीं हैं। Social media profiles और fun content के लिए ही use करें।</div>`,
+      },
+      {
+        id: 'platform-compatibility',
+        title: 'कौन से Platform पर कौन से Fonts काम करते हैं?',
+        content: `<p>हर social media platform सभी Unicode characters support नहीं करता। नीचे compatibility table है:</p>
+<table>
+  <thead>
+    <tr><th>Platform</th><th>Where</th><th>Bold/Italic</th><th>Script/Cursive</th><th>Symbols/Decorative</th><th>Emoji</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Instagram</td><td>Bio</td><td>✅</td><td>✅</td><td>⚠️ कुछ</td><td>✅</td></tr>
+    <tr><td>Instagram</td><td>Caption</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Instagram</td><td>Username</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+    <tr><td>WhatsApp</td><td>Status/Chat</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>WhatsApp</td><td>Group Name</td><td>✅</td><td>⚠️</td><td>⚠️</td><td>✅</td></tr>
+    <tr><td>Facebook</td><td>Post/Comment</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Facebook</td><td>Name</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+    <tr><td>Twitter/X</td><td>Tweet/Bio</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>YouTube</td><td>Comment</td><td>✅</td><td>⚠️</td><td>✅</td><td>✅</td></tr>
+    <tr><td>LinkedIn</td><td>Post</td><td>✅</td><td>✅</td><td>⚠️</td><td>✅</td></tr>
+    <tr><td>Telegram</td><td>Chat/Bio</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+  </tbody>
+</table>
+<p>✅ = पूरा support, ⚠️ = partial (कुछ characters दिख सकते हैं, कुछ नहीं), ❌ = support नहीं</p>
+<div class="callout-warning">⚠️ <strong>सावधानी:</strong> Instagram और Facebook username/name में fancy fonts allowed नहीं हैं — account restrict हो सकता है। Bio, caption, और posts में freely use करें।</div>`,
+      },
+      {
+        id: 'instagram-bio-tips',
+        title: 'Instagram Bio को Stylish कैसे बनाएं — Step by Step',
+        content: `<p>Instagram bio आपकी profile की पहली impression है। Fancy fonts से इसे attractive बनाएं:</p>
+<h3>Perfect Instagram Bio Formula</h3>
+<ul>
+  <li><strong>Line 1:</strong> आपका name/title (fancy font में) — जैसे: 𝓜𝓾𝓴𝓮𝓼𝓱 | 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿</li>
+  <li><strong>Line 2:</strong> क्या करते हैं (emoji के साथ) — 💻 Web Developer | 📸 Photography</li>
+  <li><strong>Line 3:</strong> Location या tagline — 📍 Mumbai, India</li>
+  <li><strong>Line 4:</strong> CTA (Call to Action) — 👇 Latest work check करें</li>
+</ul>
+<h3>Popular Font Styles for Instagram Bio</h3>
+<table>
+  <thead>
+    <tr><th>Style</th><th>Example</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bold Sans</td><td>𝗠𝘂𝗸𝗲𝘀𝗵 𝗦𝗵𝗮𝗿𝗺𝗮</td><td>Professional profiles</td></tr>
+    <tr><td>Script/Cursive</td><td>𝓜𝓾𝓴𝓮𝓼𝓱 𝓢𝓱𝓪𝓻𝓶𝓪</td><td>Creative/fashion profiles</td></tr>
+    <tr><td>Serif Bold</td><td>𝕸𝖚𝖐𝖊𝖘𝖍</td><td>Artistic profiles</td></tr>
+    <tr><td>Small Caps</td><td>ᴍᴜᴋᴇsʜ sʜᴀʀᴍᴀ</td><td>Minimal/clean look</td></tr>
+    <tr><td>Monospace</td><td>𝙼𝚞𝚔𝚎𝚜𝚑</td><td>Tech/developer profiles</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip">💡 <strong>Pro Tip:</strong> ज़्यादा fancy fonts mix न करें — एक या दो styles choose करें। बहुत ज़्यादा decoration spammy दिखता है। 𝗕𝗼𝗹𝗱 + normal text का combination सबसे professional लगता है।</div>
+<h3>WhatsApp Status Ideas</h3>
+<ul>
+  <li>𝘔𝘶𝘴𝘬𝘶𝘳𝘢𝘯𝘦 𝘬𝘪 𝘸𝘢𝘫𝘢𝘩 𝘵𝘶𝘮 𝘩𝘰 ❤️</li>
+  <li>𝕃𝕚𝕗𝕖 𝕚𝕤 𝔹𝕖𝕒𝕦𝕥𝕚𝕗𝕦𝕝 ✨</li>
+  <li>🔥 𝗡𝗲𝘃𝗲𝗿 𝗚𝗶𝘃𝗲 𝗨𝗽 🔥</li>
+</ul>`,
+      },
+      {
+        id: 'best-practices',
+        title: 'Fancy Fonts के Best Practices और सावधानियाँ',
+        content: `<h3>Do's — क्या करें</h3>
+<ul>
+  <li><strong>Selective use:</strong> सिर्फ headings या key phrases में fancy fonts use करें</li>
+  <li><strong>Preview करें:</strong> Phone पर check करें कि fonts सही दिख रहे हैं</li>
+  <li><strong>Combine wisely:</strong> 𝗕𝗼𝗹𝗱 heading + normal description = professional look</li>
+  <li><strong>Emoji balance:</strong> 2-3 emojis per line maximum — ज़्यादा unprofessional दिखता है</li>
+  <li><strong>Readability first:</strong> अगर text पढ़ने में मुश्किल हो तो simple font बेहतर है</li>
+</ul>
+<h3>Don'ts — क्या न करें</h3>
+<ul>
+  <li><strong>SEO content में:</strong> Blog posts, website content, या product descriptions में fancy fonts use न करें — Google index नहीं करेगा</li>
+  <li><strong>Formal communication:</strong> Email, resume, या official documents में avoid करें</li>
+  <li><strong>Username/Name:</strong> Instagram/Facebook name में fancy fonts डालने से account issue हो सकता है</li>
+  <li><strong>Accessibility:</strong> Screen readers fancy Unicode characters को properly नहीं पढ़ सकते</li>
+  <li><strong>Overuse:</strong> पूरा paragraph fancy font में लिखना — unreadable हो जाता है</li>
+</ul>
+<div class="callout-warning">⚠️ <strong>Accessibility Note:</strong> Fancy fonts screen readers के लिए problematic हैं। Visually impaired users के लिए "𝗛𝗲𝗹𝗹𝗼" = "mathematical bold H, mathematical bold e..." बोला जाता है। Inclusive content के लिए sparingly use करें।</div>
+<h3>Fancy Fonts vs Platform Native Formatting</h3>
+<table>
+  <thead>
+    <tr><th>Platform</th><th>Native Bold</th><th>Native Italic</th><th>Fancy Font Alternative</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>WhatsApp</td><td>*bold*</td><td>_italic_</td><td>Limited styles — fancy fonts ज़्यादा variety देते हैं</td></tr>
+    <tr><td>Telegram</td><td>**bold**</td><td>__italic__</td><td>Chat में native use करें, bio में fancy</td></tr>
+    <tr><td>Discord</td><td>**bold**</td><td>*italic*</td><td>Server names में fancy fonts popular हैं</td></tr>
+    <tr><td>Slack</td><td>*bold*</td><td>_italic_</td><td>Professional setting — native preferred</td></tr>
+  </tbody>
+</table>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Text type करें', description: 'ToolsArena Font Generator में अपना text (नाम, bio, status) type करें।' },
+      { title: 'Font style चुनें', description: 'Bold, Italic, Script, Gothic, Monospace — 30+ styles में से पसंदीदा चुनें।' },
+      { title: 'Copy करें', description: 'Generated fancy text पर click करके copy करें।' },
+      { title: 'Paste करें', description: 'Instagram bio, WhatsApp status, या कहीं भी paste करें — done!' },
+    ],
+    faqs: [
+      { question: 'क्या fancy fonts safe हैं? Account ban तो नहीं होगा?', answer: 'Bio, caption, posts, और status में fancy fonts use करना पूरी तरह safe है। बस username या real name field में use न करें — platform policies violate हो सकती हैं।' },
+      { question: 'Hindi text के लिए fancy fonts काम करते हैं?', answer: 'Fancy font styles primarily Latin alphabets (A-Z) के लिए available हैं। Hindi (Devanagari) text के लिए decorative symbols और emojis combine कर सकते हैं।' },
+      { question: 'क्या Google search में fancy text दिखेगा?', answer: 'नहीं। Google fancy Unicode characters को properly index नहीं करता। Website content, blog posts, और SEO-important text में fancy fonts avoid करें।' },
+      { question: 'Mobile पर fancy fonts सही दिखेंगे?', answer: 'Modern smartphones (Android 8+ और iOS 13+) ज़्यादातर Unicode fonts support करते हैं। बहुत पुराने phones पर कुछ characters boxes (□) दिख सकते हैं।' },
+      { question: 'WhatsApp में bold/italic native formatting बेहतर है या fancy fonts?', answer: 'Chat messages में WhatsApp native formatting (*bold*, _italic_) ज़्यादा readable है। Status और group name के लिए fancy fonts अच्छे दिखते हैं।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'text-to-speech-guide', 'lorem-ipsum-guide'],
+    toolCTA: {
+      heading: 'Fancy Text बनाएं — Instagram, WhatsApp के लिए',
+      description: 'Text type करें, 30+ stylish fonts में से चुनें, copy-paste करें।',
+      buttonText: 'Fancy Font Generator खोलें →',
+    },
+  },
+
 ];
