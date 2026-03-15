@@ -119,14 +119,18 @@ export function HtmlToPdfTool() {
       const ratio = pdfW / imgW;
       const scaledH = imgH * ratio;
 
-      // Handle multi-page content
-      let yOffset = 0;
-      let pageNum = 0;
-      while (yOffset < scaledH) {
-        if (pageNum > 0) pdf.addPage();
-        pdf.addImage(imgData, 'PNG', 0, -yOffset, pdfW, scaledH);
-        yOffset += pdfH;
-        pageNum++;
+      // Single page if content fits, otherwise multi-page
+      if (scaledH <= pdfH) {
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfW, scaledH);
+      } else {
+        let yOffset = 0;
+        let pageNum = 0;
+        while (yOffset < scaledH - 1) {
+          if (pageNum > 0) pdf.addPage();
+          pdf.addImage(imgData, 'PNG', 0, -yOffset, pdfW, scaledH);
+          yOffset += pdfH;
+          pageNum++;
+        }
       }
 
       pdf.save(fileName ? fileName.replace(/\.(html|htm)$/i, '.pdf') : 'converted.pdf');
