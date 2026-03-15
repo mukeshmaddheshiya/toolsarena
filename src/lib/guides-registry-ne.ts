@@ -3343,4 +3343,323 @@ button {
     },
   },
 
+  // ── INVOICE GENERATOR ─────────────────────────────────────────
+  {
+    slug: 'invoice-generator-guide',
+    toolSlug: 'invoice-generator',
+    category: 'utility-tools',
+    title: 'फ्री इनभ्वाइस जनरेटर गाइड: प्रोफेशनल इनभ्वाइस अनलाइन बनाउनुहोस् (2026)',
+    subtitle: 'फ्रीलान्सर, साना व्यवसाय र स्टार्टअपका लागि VAT-कम्प्लायन्ट इनभ्वाइस बनाउने पूर्ण गाइड — फ्री टेम्प्लेट, कर सुझाव र उदाहरणहरू।',
+    metaTitle: 'फ्री इनभ्वाइस जनरेटर: प्रोफेशनल बिल अनलाइन बनाउनुहोस् (2026)',
+    metaDescription: 'ToolsArena बाट फ्री प्रोफेशनल इनभ्वाइस बनाउनुहोस्। VAT कम्प्लायन्ट, 3 टेम्प्लेट, 30 करेन्सी, तुरुन्त PDF। साइनअप नचाहिने। फ्रीलान्सर र व्यवसायका लागि।',
+    targetKeyword: 'फ्री इनभ्वाइस जनरेटर',
+    secondaryKeywords: [
+      'इनभ्वाइस कसरी बनाउने',
+      'VAT बिल जनरेटर',
+      'अनलाइन बिलिङ सफ्टवेयर फ्री',
+      'इनभ्वाइस मेकर',
+      'कर बिल फर्म्याट नेपाल',
+      'फ्रीलान्सर इनभ्वाइस',
+      'इनभ्वाइस PDF डाउनलोड',
+      'इनभ्वाइस टेम्प्लेट फ्री',
+      'बिल बनाउने तरिका',
+      'नेपालमा VAT बिल',
+      'साना व्यवसायका लागि इनभ्वाइस',
+      'नेपाली इनभ्वाइस गाइड',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '10 मिनेट पढाइ',
+    tags: ['इनभ्वाइस', 'व्यवसाय', 'VAT', 'फ्रीलान्स'],
+    intro: `<p><strong>इनभ्वाइस</strong> भनेको व्यवसायिक कारोबारको आधिकारिक प्रमाण हो। नेपालमा फ्रीलान्सर देखि ठमेलका पसल मालिक, काठमाडौंका IT कम्पनी र निर्यात व्यवसायीहरू सबैलाई <strong>प्रोफेशनल इनभ्वाइस</strong> आवश्यक पर्छ। IRD (Inland Revenue Department) को नियमअनुसार VAT दर्ता भएका व्यवसायले VAT-कम्प्लायन्ट बिल जारी गर्नु अनिवार्य छ।</p>
+<p>ToolsArena को <strong>फ्री इनभ्वाइस जनरेटर</strong> ले मिनेटभित्र प्रोफेशनल, VAT-रेडी इनभ्वाइस बनाउन सक्नुहुन्छ — कुनै software किन्नु नपर्ने, साइनअप नचाहिने, र PDF तुरुन्त डाउनलोड हुन्छ। Upwork वा Fiverr बाट काम गर्ने फ्रीलान्सर, Daraz seller, वा NPR मा बिल गर्ने कुनै पनि व्यवसायका लागि यो टूल उत्तम छ।</p>`,
+    sections: [
+      {
+        id: 'invoice-generator-ke-ho',
+        title: 'इनभ्वाइस जनरेटर के हो र कसलाई चाहिन्छ',
+        content: `<p><strong>इनभ्वाइस जनरेटर</strong> एउटा अनलाइन टूल हो जसले व्यवसायिक बिल स्वचालित रूपमा तयार गर्छ। नाम, ठेगाना, सेवा विवरण, रकम, कर — सबै भरेपछि PDF तयार हुन्छ। नेपालमा यस्तो टूलको माग तीव्र रूपमा बढिरहेको छ।</p>
+<h4>कसलाई इनभ्वाइस जनरेटर चाहिन्छ?</h4>
+<ul>
+  <li><strong>फ्रीलान्सरहरू:</strong> Upwork, Fiverr, Toptal वा direct clients बाट भुक्तानी लिनका लागि। विदेशी clients लाई USD/EUR मा बिल गर्नुपर्छ।</li>
+  <li><strong>साना व्यवसाय (MSME):</strong> ठमेलका होटल, पसल, ट्राभल एजेन्सी, हस्तकला निर्यातकहरू।</li>
+  <li><strong>IT Companies:</strong> काठमाडौंका software firms, digital marketing agencies जसले monthly retainer वा project-based billing गर्छन्।</li>
+  <li><strong>Consultant र Trainer:</strong> Training, consulting, coaching सेवाका लागि बिल।</li>
+  <li><strong>निर्यातकहरू:</strong> Pashmina, Thangka, Handicraft निर्यात गर्दा commercial invoice अनिवार्य हुन्छ।</li>
+  <li><strong>Daraz/Online Sellers:</strong> B2B transactions र bulk orders का लागि।</li>
+</ul>
+<div class="callout-info">ℹ️ <strong>नेपाल कानूनी आवश्यकता:</strong> VAT दर्ता भएका व्यवसाय (वार्षिक कारोबार रु. ५० लाख वा सोभन्दा बढी) ले हरेक कारोबारमा VAT बिल (कर चालान) जारी गर्नु IRD को नियमअनुसार अनिवार्य छ। यो नगरेमा जरिवाना हुन सक्छ।</div>
+<h4>नेपालमा इनभ्वाइसको महत्व:</h4>
+<table>
+  <tr><th>प्रयोजन</th><th>विवरण</th></tr>
+  <tr><td>VAT फाइलिङ</td><td>IRD मा मासिक/त्रैमासिक VAT return दाखिला गर्न बिल अभिलेख चाहिन्छ</td></tr>
+  <tr><td>बैंक कर्जा</td><td>Business loan का लागि बैंकले invoice records माग्छ</td></tr>
+  <tr><td>Audit Trail</td><td>Tax audit मा बिलको प्रमाण चाहिन्छ</td></tr>
+  <tr><td>विदेशी भुक्तानी</td><td>Bank wire transfer वा PayPal को लागि invoice required</td></tr>
+  <tr><td>Customs/Export</td><td>निर्यात खेपमा commercial invoice अनिवार्य</td></tr>
+</table>`,
+      },
+      {
+        id: 'invoice-kasari-banaune',
+        title: 'प्रोफेशनल इनभ्वाइस कसरी बनाउने: स्टेप-बाइ-स्टेप',
+        content: `<p>ToolsArena को इनभ्वाइस जनरेटरबाट मात्र ५ मिनेटमा प्रोफेशनल इनभ्वाइस तयार गर्न सकिन्छ। तल विस्तृत स्टेप-बाइ-स्टेप प्रक्रिया दिइएको छ:</p>
+<h4>स्टेप १: आफ्नो व्यवसायको जानकारी भर्नुहोस्</h4>
+<p>Invoice From (पठाउने) सेक्सनमा आफ्नो पूरा नाम वा कम्पनी नाम, ठेगाना, PAN/VAT नम्बर, र सम्पर्क नम्बर भर्नुहोस्। VAT दर्ता भएको व्यवसायले VAT नम्बर अनिवार्य रूपमा उल्लेख गर्नुपर्छ।</p>
+<h4>स्टेप २: Client को जानकारी भर्नुहोस्</h4>
+<p>Invoice To (पाउने) सेक्सनमा client को नाम/कम्पनी नाम, ठेगाना र PAN/VAT नम्बर (भएमा) भर्नुहोस्। विदेशी client भए country, city, र billing address राख्नुहोस्।</p>
+<h4>स्टेप ३: इनभ्वाइस विवरण सेट गर्नुहोस्</h4>
+<ul>
+  <li><strong>Invoice Number:</strong> Sequential numbering राख्नुहोस् (जस्तै: INV-2081-001). IRD ले unique invoice number माग्छ।</li>
+  <li><strong>Invoice Date:</strong> आजको मिति। Nepali fiscal year (Shrawan–Ashadh) अनुसार records राख्नुहोस्।</li>
+  <li><strong>Due Date:</strong> भुक्तानीको अन्तिम मिति। Nepal mा NET 30 (३० दिनभित्र) सामान्य छ।</li>
+  <li><strong>Currency:</strong> NPR (नेपाली रुपैयाँ) वा USD/EUR (विदेशी clients का लागि)।</li>
+</ul>
+<h4>स्टेप ४: Items/Services थप्नुहोस्</h4>
+<p>प्रत्येक सेवा वा वस्तुको लागि नाम, विवरण, मात्रा, दर, र VAT rate भर्नुहोस्। थप items का लागि "Add Item" click गर्नुहोस्। Subtotal, VAT, र Grand Total स्वतः गणना हुन्छ।</p>
+<h4>स्टेप ५: PDF Download गर्नुहोस् वा Email पठाउनुहोस्</h4>
+<p>Template छानेर "Download PDF" click गर्नुहोस् — तुरुन्त professional invoice PDF तयार हुन्छ। Email मार्फत सिधै client लाई पठाउन पनि सकिन्छ।</p>
+<div class="callout-tip">💡 <strong>Pro Tip:</strong> Invoice Number को लागि एउटा consistent format प्रयोग गर्नुहोस्: <strong>INV-[वर्ष]-[क्रम]</strong> जस्तै INV-2081-047। यसले tax audit र record-keeping सजिलो बनाउँछ।</div>`,
+      },
+      {
+        id: 'invoice-fields',
+        title: 'इनभ्वाइसमा के समावेश गर्ने — सबै आवश्यक फिल्डहरू',
+        content: `<p>एउटा <strong>valid invoice</strong> मा निम्न सबै जानकारी हुनुपर्छ। कुनै एउटा छुटेमा invoice legally incomplete मानिन सक्छ — विशेषगरी VAT-registered businesses का लागि।</p>
+<table>
+  <tr><th>फिल्ड</th><th>विवरण</th><th>अनिवार्य?</th></tr>
+  <tr><td><strong>Invoice Number</strong></td><td>Unique sequential number (INV-2081-001)</td><td>✅ हो</td></tr>
+  <tr><td><strong>Invoice Date</strong></td><td>बिल जारी भएको मिति</td><td>✅ हो</td></tr>
+  <tr><td><strong>Due Date</strong></td><td>भुक्तानीको अन्तिम मिति</td><td>✅ हो</td></tr>
+  <tr><td><strong>Seller Name/Address</strong></td><td>तपाईंको वा कम्पनीको नाम, ठेगाना</td><td>✅ हो</td></tr>
+  <tr><td><strong>PAN/VAT Number</strong></td><td>IRD बाट प्राप्त PAN वा VAT नम्बर</td><td>✅ VAT-registered को लागि</td></tr>
+  <tr><td><strong>Buyer Name/Address</strong></td><td>Client/buyer को नाम र ठेगाना</td><td>✅ हो</td></tr>
+  <tr><td><strong>Item Description</strong></td><td>सेवा वा वस्तुको विस्तृत विवरण</td><td>✅ हो</td></tr>
+  <tr><td><strong>Quantity & Rate</strong></td><td>मात्रा र एकाइ मूल्य</td><td>✅ हो</td></tr>
+  <tr><td><strong>Subtotal</strong></td><td>कर भन्दा अगाडिको जम्मा रकम</td><td>✅ हो</td></tr>
+  <tr><td><strong>VAT Amount (13%)</strong></td><td>VAT रकम छुट्टाछुट्टै देखाउनुहोस्</td><td>✅ VAT-registered को लागि</td></tr>
+  <tr><td><strong>Grand Total</strong></td><td>VAT सहितको कुल रकम</td><td>✅ हो</td></tr>
+  <tr><td><strong>Payment Terms</strong></td><td>NET 30, भुक्तानी तरिका (Bank Transfer, eSewa)</td><td>सिफारिस गरिन्छ</td></tr>
+  <tr><td><strong>Bank Details</strong></td><td>Bank Account, Routing</td><td>Transfer payment को लागि</td></tr>
+  <tr><td><strong>Notes/Terms</strong></td><td>Late payment penalty, warranty, conditions</td><td>वैकल्पिक</td></tr>
+</table>
+<div class="callout-warning">⚠️ <strong>IRD ध्यान:</strong> VAT दर्ता व्यवसायले जारी गरेको बिलमा VAT Registration Number, कारोबारको मिति, र VAT रकम छुट्टाछुट्टै उल्लेख नभएमा त्यो बिल "Non-Compliant" मानिन्छ र VAT Input Credit लिन पाइँदैन।</div>`,
+      },
+      {
+        id: 'nepal-vat-invoice',
+        title: 'नेपालको VAT इनभ्वाइस आवश्यकताहरू',
+        content: `<p>नेपालमा <strong>VAT (Value Added Tax)</strong> दर हाल <strong>१३%</strong> छ। IRD (Inland Revenue Department) ले Value Added Tax Act 2052 र नियमावली अन्तर्गत VAT बिलको कडा मापदण्ड तोकेको छ।</p>
+<h4>VAT दर्ता कहिले गर्नुपर्छ?</h4>
+<table>
+  <tr><th>कारोबारको प्रकृति</th><th>VAT दर्ताको सीमा</th></tr>
+  <tr><td>वस्तु बिक्री (Trading/Manufacturing)</td><td>वार्षिक कारोबार रु. ५० लाख वा सोभन्दा बढी</td></tr>
+  <tr><td>सेवा व्यवसाय (Services)</td><td>वार्षिक कारोबार रु. २५ लाख वा सोभन्दा बढी</td></tr>
+  <tr><td>मिश्रित व्यवसाय</td><td>रु. ५० लाख (वस्तु + सेवा)</td></tr>
+  <tr><td>Voluntary दर्ता</td><td>सीमाभन्दा कम भए पनि ऐच्छिक रूपमा गर्न सकिन्छ</td></tr>
+</table>
+<h4>VAT बिलमा अनिवार्य जानकारी (IRD Requirement):</h4>
+<ul>
+  <li>"कर चालान" (Tax Invoice) शीर्षक स्पष्ट उल्लेख</li>
+  <li>बिक्रेताको VAT Registration Number</li>
+  <li>बिक्रेताको नाम, ठेगाना, र सम्पर्क नम्बर</li>
+  <li>खरिदकर्ताको नाम र ठेगाना (रु. १० हजारभन्दा बढीको कारोबारमा PAN/VAT Number पनि)</li>
+  <li>कारोबारको मिति र बिल नम्बर (Sequential)</li>
+  <li>वस्तु वा सेवाको विवरण, मात्रा र दर</li>
+  <li>करयोग्य रकम (Taxable Amount) र VAT रकम छुट्टाछुट्टै</li>
+  <li>कुल रकम (VAT सहित)</li>
+</ul>
+<h4>PAN vs VAT — के फरक छ?</h4>
+<table>
+  <tr><th>PAN (Permanent Account Number)</th><th>VAT Number</th></tr>
+  <tr><td>सबै व्यवसायले लिनुपर्छ</td><td>VAT दर्ता भएकाले मात्र</td></tr>
+  <tr><td>Income Tax को लागि</td><td>Value Added Tax को लागि</td></tr>
+  <tr><td>९ अंकको नम्बर</td><td>PAN नम्बर नै VAT को रूपमा प्रयोग</td></tr>
+  <tr><td>IRD बाट दिइन्छ</td><td>IRD बाट दिइन्छ</td></tr>
+</table>
+<div class="callout-info">ℹ️ <strong>Fiscal Year:</strong> नेपालको आर्थिक वर्ष <strong>श्रावण १ (जुलाई-मध्य) देखि असार मसान्त (जुलाई-मध्य)</strong> सम्म हुन्छ। VAT return हरेक महिना (वा त्रैमासिक) IRD e-filing portal मार्फत दाखिला गर्नुपर्छ। Invoice records कम्तीमा ७ वर्षसम्म राख्नुपर्छ।</div>
+<h4>Freelancer को लागि IRD सुझाव:</h4>
+<p>Upwork, Fiverr बाट USD मा आम्दानी गर्ने नेपाली फ्रीलान्सरले Nepal Rastra Bank को Exporter Code लिएर Foreign Currency Account खोल्नुपर्छ। यस्तो आम्दानीमा Income Tax लाग्छ तर export services VAT-exempt हुन्छन्। तथापि PAN दर्ता र वार्षिक Income Tax return दाखिला अनिवार्य छ।</p>`,
+      },
+      {
+        id: 'invoice-templates',
+        title: 'इनभ्वाइस टेम्प्लेट: Modern, Classic, Minimal — कुन छान्ने',
+        content: `<p>ToolsArena को इनभ्वाइस जनरेटरमा तीनवटा professional templates उपलब्ध छन्। सही template छान्नाले client माथि राम्रो impression पार्छ र branding consistent रहन्छ।</p>
+<table>
+  <tr><th>Template</th><th>उपयुक्त व्यवसाय</th><th>विशेषता</th><th>नेपाल Context</th></tr>
+  <tr><td><strong>Modern</strong></td><td>IT firms, Digital agencies, Startups, Freelancers</td><td>Bold colors, clean layout, logo को प्रमुख स्थान</td><td>Leapfrog, Cotiviti जस्ता IT companies; Kathmandu tech startups</td></tr>
+  <tr><td><strong>Classic</strong></td><td>Trading, Import/Export, Manufacturing, Retail</td><td>Traditional, formal, black-and-white print-friendly</td><td>Thamel handicraft shops, Kathmandu wholesale traders, निर्यातकहरू</td></tr>
+  <tr><td><strong>Minimal</strong></td><td>Consultant, Lawyer, CA, Designer, Trainer</td><td>सफा whitespace, typography-focused, subtle styling</td><td>CA firms, Legal advisors, Training institutes</td></tr>
+</table>
+<h4>Template छान्ने सुझावहरू:</h4>
+<ul>
+  <li><strong>Upwork/Fiverr Freelancer:</strong> Modern template — colorful, professional, tech-savvy image बनाउँछ। USD मा बिल गर्दा USD currency छान्नुहोस्।</li>
+  <li><strong>Thamel Hotel/Restaurant:</strong> Classic template — formal र print-friendly। NPR currency, VAT 13% automatically calculate हुन्छ।</li>
+  <li><strong>Pashmina/Handicraft Exporter:</strong> Classic template — commercial invoice format मा match हुन्छ। USD वा EUR मा बिल गर्नुहोस्।</li>
+  <li><strong>Kathmandu IT Company:</strong> Modern वा Minimal — milestone-based billing, retainer contracts का लागि उपयुक्त।</li>
+  <li><strong>Training/Consulting:</strong> Minimal template — professional र clean। terms & conditions section लाई notes मा राख्नुहोस्।</li>
+</ul>
+<div class="callout-tip">💡 <strong>Branding Tip:</strong> Company logo upload गर्नुहोस् र brand color set गर्नुहोस् — यसले client लाई professional impression दिन्छ र repeat business बढाउँछ। ToolsArena को tool मा logo upload directly support गर्छ।</div>
+<h4>Currency छान्ने गाइड:</h4>
+<table>
+  <tr><th>Client को देश</th><th>Currency सुझाव</th><th>भुक्तानी तरिका</th></tr>
+  <tr><td>नेपाल (Domestic)</td><td>NPR (रु.)</td><td>eSewa, Khalti, Bank Transfer, Cheque</td></tr>
+  <tr><td>अमेरिका/क्यानडा</td><td>USD ($)</td><td>Payoneer, Wise, Bank Wire</td></tr>
+  <tr><td>यूरोप</td><td>EUR (€)</td><td>Wise, Bank Wire, PayPal</td></tr>
+  <tr><td>भारत</td><td>INR (₹) वा USD</td><td>Bank Transfer, UPI (limited)</td></tr>
+  <tr><td>खाडी देश</td><td>USD वा AED/SAR</td><td>Bank Wire Transfer</td></tr>
+</table>`,
+      },
+      {
+        id: 'billing-tips-nepal',
+        title: 'फ्रीलान्सर र साना व्यवसायका लागि बिलिङ सुझाव',
+        content: `<p>राम्रो इनभ्वाइस बनाउनु मात्र पर्याप्त छैन — सही billing practices ले cash flow सुधार गर्छ र late payments कम गर्छ। नेपालको business context अनुसार विशेष सुझावहरू:</p>
+<h4>फ्रीलान्सरहरूका लागि:</h4>
+<ul>
+  <li><strong>Milestone Billing:</strong> ठूलो project लाई टुक्रामा billing गर्नुहोस् — ५०% Advance, ५०% Delivery। नेपालमा payment default कम गर्न यो effective छ।</li>
+  <li><strong>Retainer Agreement:</strong> Monthly client हरूसँग retainer contract गर्नुहोस् — महिना सुरुमा नै invoice पठाउनुहोस्।</li>
+  <li><strong>Due Date राख्नुहोस्:</strong> "Due upon receipt" नराखी specific date (जस्तै NET 15, NET 30) राख्नुहोस्।</li>
+  <li><strong>Late Fee Clause:</strong> Invoice मा note राख्नुहोस्: "Due मिति नाघेमा मासिक १.५% ब्याज लाग्नेछ।"</li>
+  <li><strong>Payoneer/Wise Account:</strong> विदेशी client बाट USD payment को लागि Payoneer वा Wise account लिनुहोस् — Nepal Rastra Bank को Freelancer Package पनि उपलब्ध छ।</li>
+</ul>
+<h4>साना व्यवसायहरूका लागि:</h4>
+<ul>
+  <li><strong>Invoice Numbering System:</strong> FY2081-001 जस्तो systematic numbering राख्नुहोस् — IRD audit मा सजिलो हुन्छ।</li>
+  <li><strong>Digital Record:</strong> हरेक invoice को digital copy राख्नुहोस् — ७ वर्षको records IRD ले माग्न सक्छ।</li>
+  <li><strong>eSewa/Khalti QR:</strong> Invoice मा eSewa वा Khalti QR code थप्नुहोस् — domestic clients को लागि तुरुन्त payment सजिलो हुन्छ।</li>
+  <li><strong>Reminder System:</strong> Due date नजिकिएमा client लाई WhatsApp वा email मार्फत reminder पठाउनुहोस्।</li>
+  <li><strong>Cash Flow Planning:</strong> Nepali fiscal year (Shrawan–Ashadh) अनुसार invoicing schedule बनाउनुहोस् — tax filing deadline नजिकिएपछि collections कडा गर्नुहोस्।</li>
+</ul>
+<h4>Thamel Shops र Tourism Business का लागि:</h4>
+<p>Thamel का handicraft shops, trekking agencies र tour operators विदेशी tourists लाई USD मा बिल गर्छन्। Nepal Tourism Board (NTB) दर्ता भएका businesses को invoice मा registration number उल्लेख गर्नुहोस्। Cash payment को लागि पनि invoice दिनुपर्छ — Tourist Receipt भन्न पनि सकिन्छ।</p>
+<div class="callout-info">ℹ️ <strong>Nepali Fiscal Year Note:</strong> नेपालको आर्थिक वर्ष श्रावण (July-mid) देखि असार (July-mid) सम्म हुन्छ। असार मसान्तमा वार्षिक accounts close हुन्छ र नयाँ invoice series सुरु हुन्छ। IRD ले fiscal year अनुसार VAT return र income tax return माग्छ।</div>`,
+      },
+      {
+        id: 'invoice-galtiharoo',
+        title: 'इनभ्वाइसका सामान्य गल्तीहरू',
+        content: `<p>धेरै फ्रीलान्सर र साना व्यवसायले invoice मा गल्ती गर्छन् — जसले payment delay, IRD penalty, वा legal issues निम्त्याउन सक्छ। तल नेपालमा सामान्य गल्तीहरू र तिनको समाधान दिइएको छ:</p>
+<table>
+  <tr><th>गल्ती</th><th>समस्या</th><th>समाधान</th></tr>
+  <tr><td>Invoice Number नदिनु</td><td>Duplicate invoicing, IRD audit fail</td><td>Sequential numbering system राख्नुहोस्</td></tr>
+  <tr><td>VAT छुट्टाछुट्टै नदेखाउनु</td><td>Non-compliant invoice, VAT credit लिन नपाइने</td><td>Subtotal + VAT 13% + Total format राख्नुहोस्</td></tr>
+  <tr><td>Due Date नराख्नु</td><td>Client ले payment ढिलो गर्छ</td><td>Specific due date (NET 30) अनिवार्य राख्नुहोस्</td></tr>
+  <tr><td>गलत Currency</td><td>Forex loss, client confusion</td><td>Contract मा currency specify गर्नुहोस्</td></tr>
+  <tr><td>PAN/VAT Number छुटाउनु</td><td>IRD penalty, buyer को input credit रोकिने</td><td>Business registration details सँधैं राख्नुहोस्</td></tr>
+  <tr><td>अस्पष्ट service description</td><td>Client dispute, payment hold</td><td>Scope of work clearly describe गर्नुहोस्</td></tr>
+  <tr><td>Records नराख्नु</td><td>Tax audit मा प्रमाण नहुने</td><td>Soft copy र hard copy दुवै ७ वर्ष राख्नुहोस्</td></tr>
+  <tr><td>Late भएपछि invoice पठाउनु</td><td>Cash flow समस्या</td><td>Service delivery सँगसँगै invoice पठाउनुहोस्</td></tr>
+</table>
+<h4>फ्रीलान्सरले विशेष ध्यान दिनुपर्ने:</h4>
+<ul>
+  <li><strong>Scope Creep:</strong> Contract बाहिरको काम गरेमा Addendum Invoice वा Change Order invoice छुट्टाछुट्टै बनाउनुहोस्।</li>
+  <li><strong>Partial Payment:</strong> Deposit वा advance लिएमा Proforma Invoice वा Receipt Invoice दिनुहोस् र final invoice मा adjust गर्नुहोस्।</li>
+  <li><strong>International Invoice:</strong> USD invoice मा payment date को exchange rate clearly mention गर्नुहोस् — NRB rate अनुसार NPR convert गर्नुहोस्।</li>
+</ul>
+<div class="callout-warning">⚠️ <strong>IRD Penalty:</strong> VAT दर्ता व्यवसायले बिल नदिएमा IRD ले रु. १,०००–५०,००० सम्म जरिवाना गर्न सक्छ। Repeated violations मा VAT registration रद्द हुन सक्छ। Digital billing नियमित गर्नुहोस्।</div>`,
+      },
+      {
+        id: 'invoice-checklist',
+        title: 'इनभ्वाइस चेकलिस्ट: पठाउनुअघि समीक्षा',
+        content: `<p>हरेक invoice पठाउनुअघि यो checklist एकपटक जाँच्नुहोस् — एउटा साना गल्तीले payment delay हुन सक्छ वा IRD compliance issue आउन सक्छ।</p>
+<h4>आधारभूत जानकारी:</h4>
+<ul>
+  <li>☑ Invoice number unique र sequential छ (INV-2081-XXX)</li>
+  <li>☑ Invoice date सही छ</li>
+  <li>☑ Due date स्पष्ट छ</li>
+  <li>☑ आफ्नो नाम/कम्पनी नाम, ठेगाना सही छ</li>
+  <li>☑ PAN/VAT Number उल्लेख छ (VAT-registered भए)</li>
+  <li>☑ Client को नाम, ठेगाना, PAN/VAT सही छ</li>
+</ul>
+<h4>Items र Pricing:</h4>
+<ul>
+  <li>☑ प्रत्येक item/service को description स्पष्ट छ</li>
+  <li>☑ Quantity र Unit Rate सही छ</li>
+  <li>☑ Subtotal गणना सही छ</li>
+  <li>☑ VAT 13% छुट्टाछुट्टै देखाइएको छ (VAT-applicable भए)</li>
+  <li>☑ Grand Total (VAT सहित) सही छ</li>
+  <li>☑ Currency सही छ (NPR/USD/EUR)</li>
+</ul>
+<h4>Payment र Terms:</h4>
+<ul>
+  <li>☑ Bank account details सही छ (IBAN वा Account Number)</li>
+  <li>☑ eSewa/Khalti number (domestic clients को लागि)</li>
+  <li>☑ Payment terms (NET 30, NET 15) स्पष्ट छ</li>
+  <li>☑ Late payment policy उल्लेख छ (वैकल्पिक)</li>
+</ul>
+<h4>Professional Touch:</h4>
+<ul>
+  <li>☑ Company logo राखिएको छ</li>
+  <li>☑ Thank you note / professional closing message छ</li>
+  <li>☑ Spelling र grammar जाँचिएको छ</li>
+  <li>☑ PDF preview एकपटक हेरिएको छ</li>
+</ul>
+<div class="callout-tip">💡 <strong>Quick Tip:</strong> Invoice पठाउनुअघि आफैंलाई एकपटक PDF email गर्नुहोस् — mobile मा कस्तो देखिन्छ हेर्नुहोस्। धेरै clients mobile मा invoice हेर्छन्, त्यसैले mobile-friendly PDF महत्वपूर्ण छ।</div>
+<h4>Export/International Invoice को लागि थप जाँच:</h4>
+<ul>
+  <li>☑ Incoterms (FOB, CIF, EXW) उल्लेख छ (निर्यातको लागि)</li>
+  <li>☑ HS Code / Product Code छ (Customs को लागि)</li>
+  <li>☑ Country of Origin — "Made in Nepal" उल्लेख छ</li>
+  <li>☑ Currency exchange rate reference date उल्लेख छ</li>
+</ul>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'व्यवसायको जानकारी भर्नुहोस्',
+        description: 'आफ्नो नाम वा कम्पनी नाम, ठेगाना, र PAN/VAT नम्बर "From" सेक्सनमा भर्नुहोस्। एकपटक save गरेपछि अर्को पटक automatically fill हुन्छ।',
+      },
+      {
+        title: 'Client को विवरण र Invoice Details राख्नुहोस्',
+        description: '"To" सेक्सनमा client को नाम, ठेगाना, र PAN/VAT नम्बर (भएमा) भर्नुहोस्। Invoice Number (INV-2081-001), Invoice Date, Due Date, र Currency (NPR/USD) सेट गर्नुहोस्।',
+      },
+      {
+        title: 'Services/Items थप्नुहोस्',
+        description: '"Add Item" थिच्नुहोस् र प्रत्येक सेवा वा वस्तुको नाम, विवरण, मात्रा, र दर भर्नुहोस्। VAT rate (13% वा 0%) छान्नुहोस् — Subtotal, VAT र Total स्वतः गणना हुन्छ।',
+      },
+      {
+        title: 'Template छान्नुहोस् र Customize गर्नुहोस्',
+        description: 'Modern, Classic, वा Minimal — आफ्नो व्यवसायअनुसार template छान्नुहोस्। Company logo upload गर्नुहोस् र brand color set गर्नुहोस्। Payment terms र notes थप्नुहोस्।',
+      },
+      {
+        title: 'PDF Download वा Email पठाउनुहोस्',
+        description: '"Download PDF" थिचेर तुरुन्त invoice PDF save गर्नुहोस्। वा directly client को email address हालेर पठाउनुहोस्। Digital copy आफैंकहाँ records को लागि राख्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'ToolsArena को इनभ्वाइस जनरेटर साँच्चै फ्री छ?',
+        answer: 'हो, १०० % फ्री छ। कुनै subscription fee, hidden charges वा credit card नचाहिने। साइनअप पनि नचाहिने — सिधै tool खोल्नुहोस्, invoice बनाउनुहोस् र PDF download गर्नुहोस्।',
+      },
+      {
+        question: 'नेपालको VAT 13% कसरी automatically calculate हुन्छ?',
+        answer: 'Item थप्दा VAT rate सेक्सनमा "13%" छान्नुहोस् — Subtotal, VAT Amount र Grand Total स्वतः गणना हुन्छ। प्रत्येक item को लागि अलग-अलग VAT rate राख्न पनि सकिन्छ (केही items VAT-exempt हुन सक्छन्)।',
+      },
+      {
+        question: 'USD मा invoice बनाउन सकिन्छ?',
+        answer: 'हो, ToolsArena को invoice generator ले 30+ currencies support गर्छ। Upwork/Fiverr clients लाई USD, European clients लाई EUR, र domestic clients लाई NPR मा बिल गर्न सकिन्छ। Currency symbol invoice मा automatically देखिन्छ।',
+      },
+      {
+        question: 'IRD VAT compliance को लागि यो invoice valid छ?',
+        answer: 'ToolsArena को invoice template मा VAT-compliant fields सबै छन् — VAT Number, Taxable Amount, VAT Amount, र Total Amount छुट्टाछुट्टै देखाइन्छ। तर IRD validation को लागि आफ्नो CA वा tax advisor सँग एकपटक confirm गर्नुहोस्।',
+      },
+      {
+        question: 'Invoice number को format कस्तो राख्ने?',
+        answer: 'नेपालका लागि सिफारिस गरिएको format: INV-[FiscalYear]-[SequentialNumber] जस्तै INV-2081-001। यसले IRD audit मा fiscal year अनुसार records track गर्न सजिलो हुन्छ। नयाँ आर्थिक वर्षमा sequence reset गर्नुहोस्।',
+      },
+      {
+        question: 'Pashmina/Handicraft export को लागि commercial invoice कसरी बनाउने?',
+        answer: 'Classic template छान्नुहोस्, USD currency राख्नुहोस्, र items section मा product name, HS Code, quantity (pieces/kg), unit price राख्नुहोस्। Notes section मा "Country of Origin: Nepal", Incoterms (FOB Kathmandu), र shipping details उल्लेख गर्नुहोस्। यो invoice Customs clearance को लागि valid हुन्छ।',
+      },
+      {
+        question: 'एउटै invoice मा multiple services राख्न सकिन्छ?',
+        answer: 'हो, "Add Item" button थिचेर जति items चाहिए थप्न सकिन्छ। प्रत्येक service/product को छुट्टाछुट्टै line item, description, quantity, rate, र VAT rate राख्न सकिन्छ। यो monthly retainer billing को लागि विशेष उपयोगी छ।',
+      },
+      {
+        question: 'Invoice पठाइसकेपछि edit गर्न सकिन्छ?',
+        answer: 'Sent भइसकेको invoice लाई technically edit गर्दा legal issues आउन सक्छ। गल्ती भएमा original invoice Void/Cancel गर्नुहोस् र नयाँ Corrected Invoice (जस्तै INV-2081-001-REV1) बनाउनुहोस्। Client लाई clearly communicate गर्नुहोस्। Credit Note जारी गर्ने option पनि छ।',
+      },
+    ],
+    relatedGuides: ['resume-builder-guide', 'salary-calculator-guide', 'fd-calculator-guide'],
+    toolCTA: {
+      heading: 'अहिले नै फ्री प्रोफेशनल इनभ्वाइस बनाउनुहोस्!',
+      description: 'VAT-कम्प्लायन्ट इनभ्वाइस मिनेटभित्र तयार। 3 टेम्प्लेट, 30+ करेन्सी, तुरुन्त PDF। साइनअप नचाहिने — आजै सुरु गर्नुहोस्।',
+      buttonText: 'इनभ्वाइस जनरेटर खोल्नुहोस् →',
+    },
+  },
+
 ];

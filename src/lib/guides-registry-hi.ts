@@ -6283,4 +6283,365 @@ tags: [hindi, tutorial]
     },
   },
 
+  // ── INVOICE GENERATOR ────────────────────────────────────────────
+  {
+    slug: 'invoice-generator-guide',
+    toolSlug: 'invoice-generator',
+    category: 'utility-tools',
+    title: 'फ्री इनवॉइस जनरेटर गाइड: प्रोफेशनल इनवॉइस ऑनलाइन बनाएं (2026)',
+    subtitle: 'फ्रीलांसर, छोटे व्यवसाय और स्टार्टअप के लिए GST-कंप्लायंट इनवॉइस बनाने की पूरी गाइड — फ्री टेम्पलेट, टैक्स टिप्स और उदाहरण।',
+    metaTitle: 'फ्री इनवॉइस जनरेटर: GST इनवॉइस ऑनलाइन बनाएं (2026)',
+    metaDescription: 'ToolsArena से फ्री प्रोफेशनल इनवॉइस बनाएं। GST/VAT कंप्लायंट, 3 टेम्पलेट, 30 करेंसी, तुरंत PDF। कोई साइनअप नहीं। फ्रीलांसर और बिजनेस के लिए।',
+    targetKeyword: 'फ्री इनवॉइस जनरेटर',
+    secondaryKeywords: [
+      'इनवॉइस कैसे बनाएं',
+      'GST इनवॉइस जनरेटर',
+      'ऑनलाइन बिलिंग सॉफ्टवेयर फ्री',
+      'इनवॉइस मेकर',
+      'टैक्स इनवॉइस फॉर्मेट',
+      'फ्रीलांसर इनवॉइस',
+      'इनवॉइस PDF डाउनलोड',
+      'इनवॉइस टेम्पलेट फ्री',
+      'बिल बनाने का तरीका',
+      'GST बिल फॉर्मेट हिंदी',
+      'छोटे बिजनेस के लिए इनवॉइस',
+      'इनवॉइस जनरेटर बिना साइनअप',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '10 मिनट पढ़ना',
+    tags: ['इनवॉइस', 'बिजनेस', 'GST', 'फ्रीलांस'],
+    intro: `<p><strong>इनवॉइस</strong> सिर्फ एक बिल नहीं है — यह आपके व्यवसाय की पहचान, कानूनी दस्तावेज़ और भुगतान की गारंटी है। चाहे आप एक फ्रीलांस वेब डिज़ाइनर हों, एक MSME कारोबारी हों, या एक नए स्टार्टअप के संस्थापक हों — सही और प्रोफेशनल इनवॉइस भेजना आपकी विश्वसनीयता बढ़ाता है और पेमेंट जल्दी आता है।</p>
+<p>भारत में GST लागू होने के बाद इनवॉइस की ज़रूरतें और जटिल हो गई हैं। GSTIN, HSN/SAC कोड, IGST/CGST/SGST का सही calculation — ये सब गलत हुए तो penalty भी लग सकती है। इस गाइड में हम सीखेंगे कि ToolsArena के फ्री Invoice Generator से GST-कंप्लायंट प्रोफेशनल इनवॉइस कैसे बनाएं — बिना किसी accounting software के और बिना एक पैसा खर्च किए।</p>`,
+    sections: [
+      {
+        id: 'invoice-kya-hai-kise-chahiye',
+        title: 'इनवॉइस जनरेटर क्या है और किसे चाहिए?',
+        content: `<p>इनवॉइस जनरेटर एक ऑनलाइन टूल है जो आपको कुछ ही मिनटों में प्रोफेशनल इनवॉइस बनाने, कस्टमाइज़ करने और PDF में डाउनलोड करने की सुविधा देता है। महंगे accounting software या Excel templates की कोई ज़रूरत नहीं।</p>
+<h3>इनवॉइस किसे चाहिए?</h3>
+<ul>
+  <li><strong>फ्रीलांसर:</strong> ग्राफिक डिज़ाइनर, कंटेंट राइटर, वेब डेवलपर, फोटोग्राफर — हर service provider को invoice चाहिए।</li>
+  <li><strong>MSME और छोटे व्यवसाय:</strong> 40 लाख से ज़्यादा turnover पर GST invoice अनिवार्य है।</li>
+  <li><strong>कंसल्टेंट और कोच:</strong> Professional fees के लिए proper documentation ज़रूरी है।</li>
+  <li><strong>ई-कॉमर्स सेलर:</strong> Amazon, Flipkart, Meesho पर बेचने वालों को हर order पर invoice देनी होती है।</li>
+  <li><strong>स्टार्टअप:</strong> Investor और client दोनों professional invoicing expect करते हैं।</li>
+  <li><strong>ट्यूटर और शिक्षक:</strong> Online coaching और tuition fees के लिए receipt/invoice।</li>
+</ul>
+<h3>इनवॉइस जनरेटर के फायदे</h3>
+<table>
+  <thead>
+    <tr><th>पारंपरिक तरीका</th><th>ToolsArena Invoice Generator</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Excel template में manually calculation</td><td>Automatic tax calculation</td></tr>
+    <tr><td>हर बार format से शुरू</td><td>Save किया data reuse करें</td></tr>
+    <tr><td>Tally/Zoho का monthly subscription</td><td>पूरी तरह फ्री</td></tr>
+    <tr><td>Design skills चाहिए</td><td>3 ready-made professional templates</td></tr>
+    <tr><td>Printing के लिए office जाना</td><td>तुरंत PDF download</td></tr>
+    <tr><td>Currency conversion manually</td><td>30+ currencies built-in</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-info">
+  <strong>भारत में MSME आंकड़े:</strong> भारत में 6.3 करोड़ से ज़्यादा MSME हैं। इनमें से अधिकांश छोटे कारोबारी अभी भी हस्तलिखित बिल या simple Excel से काम चलाते हैं — जो professional नहीं दिखता और tax compliance में भी दिक्कत आती है।
+</div>`,
+      },
+      {
+        id: 'invoice-kaise-banaye-steps',
+        title: 'प्रोफेशनल इनवॉइस कैसे बनाएं: स्टेप-बाय-स्टेप',
+        content: `<p>ToolsArena के Invoice Generator से इनवॉइस बनाना बेहद आसान है। नीचे पूरी प्रक्रिया step-by-step बताई गई है:</p>
+<h3>Step 1: टूल खोलें और टेम्पलेट चुनें</h3>
+<p>ToolsArena.in पर Invoice Generator खोलें। Modern, Classic, या Minimal — तीन में से अपनी पसंद का template चुनें। B2B clients के लिए Classic, creative clients के लिए Modern best रहता है।</p>
+<h3>Step 2: अपना बिजनेस विवरण भरें</h3>
+<p>Business name, address, phone, email, GSTIN (अगर registered हैं), और logo upload करें। यह जानकारी हर इनवॉइस पर automatically आएगी।</p>
+<h3>Step 3: क्लाइंट की जानकारी डालें</h3>
+<p>Client का नाम, पता, GSTIN (B2B के लिए ज़रूरी), और contact details भरें। GSTIN से IGST/CGST/SGST automatically determine होगा।</p>
+<h3>Step 4: इनवॉइस नंबर और तारीख सेट करें</h3>
+<p>Invoice number sequential रखें (जैसे INV-2026-001)। Due date भी set करें — Net 15, Net 30, या custom date। GST rules के अनुसार service invoice B2B के लिए महीने की 20 तारीख तक जारी करनी होती है।</p>
+<h3>Step 5: सेवाएं/उत्पाद और GST जोड़ें</h3>
+<p>हर line item के लिए description, quantity, rate, और HSN/SAC code डालें। GST rate (5%, 12%, 18%, 28%) चुनें — tool automatically CGST + SGST (intrastate) या IGST (interstate) calculate करेगा।</p>
+<h3>Step 6: Payment Terms और Notes जोड़ें</h3>
+<p>Bank account details, UPI ID, या payment link add करें। Late payment penalty clause भी लिख सकते हैं (जैसे "15 दिन बाद 2% प्रति माह interest")।</p>
+<h3>Step 7: Preview करें और PDF Download करें</h3>
+<p>Live preview में इनवॉइस देखें, ज़रूरत हो तो edit करें, और फिर Download PDF button से professional invoice download करें।</p>
+<div class="callout callout-success">
+  <strong>Pro Tip:</strong> पहली बार में अपनी business details save करें। अगली बार invoice number और client details बदलने भर से नई invoice तैयार हो जाएगी।
+</div>`,
+      },
+      {
+        id: 'invoice-fields-zaruri',
+        title: 'इनवॉइस में क्या शामिल करें — सभी ज़रूरी फील्ड',
+        content: `<p>एक legal और professional invoice में कुछ ज़रूरी elements होने चाहिए। इनके बिना invoice invalid हो सकती है — खासकर GST के तहत।</p>
+<table>
+  <thead>
+    <tr><th>फील्ड</th><th>ज़रूरी है?</th><th>विवरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Invoice Number</td><td>हाँ</td><td>Unique sequential number (INV-001)</td></tr>
+    <tr><td>Invoice Date</td><td>हाँ</td><td>जारी करने की तारीख</td></tr>
+    <tr><td>Due Date</td><td>अनुशंसित</td><td>Payment deadline</td></tr>
+    <tr><td>Seller का नाम और पता</td><td>हाँ</td><td>आपकी legal business identity</td></tr>
+    <tr><td>Seller का GSTIN</td><td>GST के लिए हाँ</td><td>15-digit GST number</td></tr>
+    <tr><td>Buyer का नाम और पता</td><td>हाँ</td><td>Client की billing address</td></tr>
+    <tr><td>Buyer का GSTIN</td><td>B2B के लिए हाँ</td><td>ITC claim के लिए ज़रूरी</td></tr>
+    <tr><td>HSN / SAC Code</td><td>हाँ (GST)</td><td>Product = HSN, Service = SAC</td></tr>
+    <tr><td>Description of Goods/Services</td><td>हाँ</td><td>स्पष्ट और detailed description</td></tr>
+    <tr><td>Quantity और Unit</td><td>हाँ</td><td>Nos., Hrs., Kg. आदि</td></tr>
+    <tr><td>Rate और Amount</td><td>हाँ</td><td>Per unit rate और total</td></tr>
+    <tr><td>Taxable Value</td><td>हाँ</td><td>Discount के बाद का amount</td></tr>
+    <tr><td>CGST / SGST / IGST</td><td>GST के लिए हाँ</td><td>Rate और amount दोनों</td></tr>
+    <tr><td>Total Amount (Words में)</td><td>हाँ</td><td>₹15,000/- (Fifteen Thousand Only)</td></tr>
+    <tr><td>Bank Details / UPI</td><td>अनुशंसित</td><td>Payment के लिए ज़रूरी</td></tr>
+    <tr><td>Signature</td><td>अनुशंसित</td><td>Digital या physical</td></tr>
+  </tbody>
+</table>
+<h3>TDS का उल्लेख — फ्रीलांसर ध्यान दें</h3>
+<p>अगर आपका client एक कंपनी है और आपकी annual payment ₹30,000 से ज़्यादा है, तो वे Section 194J के तहत 10% TDS काटेंगे। Invoice में clearly लिखें: <em>"TDS @ 10% u/s 194J applicable if applicable"</em>। इससे payment reconciliation आसान होती है।</p>
+<div class="callout callout-warning">
+  <strong>ध्यान रखें:</strong> B2C (consumer को) invoice में buyer का GSTIN ज़रूरी नहीं। B2B (business को) invoice में buyer का GSTIN mandatory है — बिना इसके buyer ITC claim नहीं कर पाएगा।
+</div>`,
+      },
+      {
+        id: 'gst-invoice-requirements-india',
+        title: 'भारतीय बिजनेस के लिए GST इनवॉइस आवश्यकताएं',
+        content: `<p>1 जुलाई 2017 से GST लागू होने के बाद भारत में invoice बनाना पहले से ज़्यादा नियम-बद्ध हो गया है। GST Act के Section 31 के तहत tax invoice की requirements clearly defined हैं।</p>
+<h3>GST Invoice के प्रकार</h3>
+<ul>
+  <li><strong>Tax Invoice:</strong> Regular taxable supply के लिए। GST registered supplier द्वारा जारी।</li>
+  <li><strong>Bill of Supply:</strong> Composition dealer या exempt supply के लिए। GST charge नहीं होता।</li>
+  <li><strong>Proforma Invoice:</strong> Advance payment या quotation के लिए — legally binding नहीं।</li>
+  <li><strong>Credit Note:</strong> Return या discount के बाद invoice revise करने के लिए।</li>
+  <li><strong>Debit Note:</strong> Additional charges या shortage पर।</li>
+</ul>
+<h3>IGST vs CGST+SGST — कब क्या लगाएं?</h3>
+<table>
+  <thead>
+    <tr><th>Supply का प्रकार</th><th>Tax</th><th>उदाहरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Same state (Intrastate)</td><td>CGST + SGST (50-50)</td><td>Delhi seller → Delhi client</td></tr>
+    <tr><td>Different state (Interstate)</td><td>IGST (full rate)</td><td>Mumbai seller → Bangalore client</td></tr>
+    <tr><td>Export</td><td>Zero-rated (LUT filing)</td><td>India → Foreign client</td></tr>
+    <tr><td>SEZ supply</td><td>Zero-rated</td><td>SEZ buyer को supply</td></tr>
+  </tbody>
+</table>
+<h3>GST Registration कब ज़रूरी?</h3>
+<ul>
+  <li>Goods business: Annual turnover ₹40 लाख से ज़्यादा (normal states)</li>
+  <li>Service business: Annual turnover ₹20 लाख से ज़्यादा</li>
+  <li>E-commerce seller: किसी भी turnover पर mandatory</li>
+  <li>Interstate supply: किसी भी turnover पर mandatory</li>
+</ul>
+<h3>Udyam Registration और MSME Benefits</h3>
+<p>Udyam portal पर MSME registration करवाने के बाद आपको कई फायदे मिलते हैं — collateral-free loans, government tender preference, और MSME Samadhaan portal पर late payment complaints। Invoice में Udyam Registration Number (URN) mention करने से government buyers को पता चलता है कि आप MSME vendor हैं और MSME Payment Act के तहत 45 दिन में payment obligated है।</p>
+<div class="callout callout-info">
+  <strong>E-Invoicing:</strong> ₹5 करोड़ से ज़्यादा turnover वाले businesses के लिए e-invoicing mandatory है। IRP (Invoice Registration Portal) पर upload करके IRN (Invoice Reference Number) generate करना होता है। ToolsArena का tool छोटे businesses के लिए है जहाँ e-invoicing अभी mandatory नहीं।
+</div>`,
+      },
+      {
+        id: 'invoice-templates-kaun-sa-chunen',
+        title: 'इनवॉइस टेम्पलेट: Modern, Classic, Minimal — कौन सा चुनें?',
+        content: `<p>इनवॉइस का design भी आपके brand की छवि बनाता है। ToolsArena पर तीन professionally designed templates हैं — हर एक अलग business need के लिए।</p>
+<h3>तीन Templates की तुलना</h3>
+<table>
+  <thead>
+    <tr><th>Template</th><th>डिज़ाइन स्टाइल</th><th>Best For</th><th>Look</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Modern</strong></td><td>Bold header, color accent, clean layout</td><td>Creative agencies, startups, IT freelancers</td><td>Dynamic और trendy</td></tr>
+    <tr><td><strong>Classic</strong></td><td>Traditional, formal, structured</td><td>CA firms, legal consultants, manufacturing</td><td>Professional और trustworthy</td></tr>
+    <tr><td><strong>Minimal</strong></td><td>White space, light typography</td><td>Designers, photographers, coaches</td><td>Elegant और subtle</td></tr>
+  </tbody>
+</table>
+<h3>किसे कौन सा चुनना चाहिए?</h3>
+<ul>
+  <li><strong>IT/Software Freelancer:</strong> Modern template — tech-forward image बनाता है।</li>
+  <li><strong>Chartered Accountant / Consultant:</strong> Classic — authority और professionalism दिखाता है।</li>
+  <li><strong>Graphic Designer / Photographer:</strong> Minimal — आपका काम बोलता है, invoice simple रखें।</li>
+  <li><strong>Retailer / Manufacturer:</strong> Classic — formal B2B relations के लिए appropriate।</li>
+  <li><strong>Online Coach / Trainer:</strong> Modern या Minimal — approachable yet professional।</li>
+</ul>
+<h3>Brand Colors और Logo का महत्व</h3>
+<p>अपना logo upload करें और brand color match करें। Research बताती है कि logo वाली invoices में payment 30% जल्दी आता है क्योंकि client को लगता है कि वे एक established business के साथ deal कर रहे हैं। यहाँ तक कि एक simple Canva logo भी invoice को 10 गुना professional बना देता है।</p>
+<div class="callout callout-success">
+  <strong>Quick Tip:</strong> अगर आप multiple clients को serve करते हैं तो हर industry के लिए अलग template style use करें। IT clients को Modern, traditional clients को Classic भेजें।
+</div>`,
+      },
+      {
+        id: 'freelancer-billing-tips',
+        title: 'फ्रीलांसर और छोटे बिजनेस के लिए बिलिंग टिप्स',
+        content: `<p>India में 1.5 करोड़ से ज़्यादा registered freelancers हैं और इनमें से अधिकांश को payment late मिलती है या disputes होते हैं। सही invoicing habits से ये समस्याएं काफी हद तक कम हो जाती हैं।</p>
+<h3>Payment Terms Clearly Define करें</h3>
+<ul>
+  <li><strong>Net 15:</strong> Invoice date से 15 दिन में payment — short-term projects के लिए।</li>
+  <li><strong>Net 30:</strong> Corporate clients के लिए standard — 30 दिन में payment।</li>
+  <li><strong>50% Advance:</strong> नए clients से हमेशा advance लें — project शुरू करने से पहले।</li>
+  <li><strong>Milestone-based:</strong> Long projects में 30-40-30 structure use करें।</li>
+</ul>
+<h3>Invoice Numbering System</h3>
+<p>Systematic invoice numbering से records clean रहते हैं और tax filing आसान होती है:</p>
+<ul>
+  <li><strong>Simple:</strong> INV-001, INV-002 (छोटे freelancers के लिए)</li>
+  <li><strong>Year-based:</strong> INV-2026-001 (financial year tracking के लिए)</li>
+  <li><strong>Client-based:</strong> ABC-001, XYZ-001 (multiple regular clients के लिए)</li>
+</ul>
+<h3>Late Payment से बचाव</h3>
+<ul>
+  <li>Invoice भेजने के बाद WhatsApp पर short message भेजें: "Invoice #INV-001 आपको email किया है, कृपया देख लें।"</li>
+  <li>Due date से 3 दिन पहले friendly reminder भेजें।</li>
+  <li>MSME businesses MSME Samadhaan portal पर 45 दिन के बाद complaint कर सकते हैं।</li>
+  <li>Invoice में clearly लिखें: "Late payment will attract 2% per month interest after due date."</li>
+</ul>
+<h3>International Clients के लिए</h3>
+<p>विदेशी clients को invoice भेजते समय:</p>
+<ul>
+  <li>Currency clearly mention करें (USD, EUR, GBP आदि)</li>
+  <li>SWIFT/IBAN details या Wise/PayPal details add करें</li>
+  <li>Export invoice पर "Zero Rated Supply — LUT No. [XXXX]" लिखें (अगर LUT filed है)</li>
+  <li>Foreign currency में ₹ equivalent भी लिखें (RBI rate पर)</li>
+</ul>
+<div class="callout callout-warning">
+  <strong>TDS Notice:</strong> Indian corporate clients आपके payment पर 10% TDS (Section 194J) काटेंगे। Invoice में gross amount लिखें। TDS काटने के बाद का net payment अलग से note करें। Form 26AS से TDS credit verify करें और ITR में claim करें।
+</div>`,
+      },
+      {
+        id: 'invoice-galtiyan-avoid',
+        title: 'इनवॉइस की आम गलतियां जो पैसे खर्च कराती हैं',
+        content: `<p>छोटी-छोटी invoice mistakes बड़ी परेशानी का कारण बन सकती हैं — delayed payment से लेकर GST penalty तक। ये सबसे common गलतियाँ जानें और इनसे बचें।</p>
+<h3>गलती 1: गलत GSTIN</h3>
+<p>Buyer का GSTIN गलत लिखने पर वे Input Tax Credit (ITC) claim नहीं कर सकते। ITC बड़ी रकम हो सकती है और इससे business relationship damage होती है। हमेशा GST portal से GSTIN verify करें।</p>
+<h3>गलती 2: Invoice Date और Supply Date का confusion</h3>
+<p>GST rules के अनुसार invoice supply date के 30 दिन के अंदर जारी करनी होती है (services के लिए 30 दिन, goods के लिए delivery date पर)। Late invoice पर penalty लग सकती है।</p>
+<h3>गलती 3: HSN/SAC Code गलत या missing</h3>
+<p>5 करोड़ से कम turnover वालों के लिए 4-digit HSN/SAC, और ज़्यादा के लिए 6-digit ज़रूरी है। गलत code से GST return mismatch होता है जो notices का कारण बनता है।</p>
+<h3>गलती 4: IGST vs CGST+SGST का गलत application</h3>
+<p>Intrastate supply पर IGST लगाने या interstate पर CGST+SGST लगाने पर wrong tax payment होती है। Refund process जटिल और समय-लेने वाली होती है।</p>
+<h3>गलती 5: Duplicate Invoice Numbers</h3>
+<p>Same invoice number दो बार use करने से accounts में confusion होती है और audit में problems आती हैं। Sequential numbering system follow करें।</p>
+<h3>गलती 6: Amount Words में न लिखना</h3>
+<p>Invoice पर total amount words में लिखना legal protection देता है — digit के साथ words में discrepancy होने पर words को valid माना जाता है।</p>
+<h3>गलती 7: Payment Details भूल जाना</h3>
+<p>Bank details या UPI ID न होने पर client को payment करने में inconvenience होती है — payment automatically delay होती है। हर invoice पर payment methods clearly list करें।</p>
+<table>
+  <thead>
+    <tr><th>गलती</th><th>परिणाम</th><th>समाधान</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>गलत GSTIN</td><td>Client ITC lose करता है</td><td>GST portal से verify करें</td></tr>
+    <tr><td>Late invoice</td><td>GST penalty</td><td>Supply के साथ ही invoice जारी करें</td></tr>
+    <tr><td>Wrong tax type</td><td>Tax refund process</td><td>State check करें</td></tr>
+    <tr><td>Missing HSN/SAC</td><td>GSTR-1 error</td><td>GST rate finder use करें</td></tr>
+    <tr><td>No payment terms</td><td>Late payment</td><td>Net 15/30 clearly लिखें</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'invoice-checklist-bhejne-se-pehle',
+        title: 'इनवॉइस चेकलिस्ट: भेजने से पहले रिव्यू',
+        content: `<p>हर invoice भेजने से पहले यह quick checklist run करें। 2 मिनट की यह जाँच आपको बड़ी गलतियों और payment delays से बचा सकती है।</p>
+<h3>Basic Information</h3>
+<ul>
+  <li>✓ Invoice number unique और sequential है</li>
+  <li>✓ Invoice date और due date सही हैं</li>
+  <li>✓ आपका business name, address, phone, email सही है</li>
+  <li>✓ Client का नाम और address बिल्कुल सही है (legal name use करें)</li>
+  <li>✓ Logo और brand colors सही हैं</li>
+</ul>
+<h3>GST Compliance</h3>
+<ul>
+  <li>✓ आपका GSTIN सही है (अगर registered हैं)</li>
+  <li>✓ Client का GSTIN सही है (B2B के लिए)</li>
+  <li>✓ HSN/SAC code सही है</li>
+  <li>✓ Correct tax type: CGST+SGST (intrastate) या IGST (interstate)</li>
+  <li>✓ GST rate सही है (5/12/18/28%)</li>
+</ul>
+<h3>Financial Details</h3>
+<ul>
+  <li>✓ हर line item की quantity, rate, और amount सही है</li>
+  <li>✓ Discount (अगर applicable) correctly applied है</li>
+  <li>✓ Tax calculation accurate है</li>
+  <li>✓ Grand total सही है</li>
+  <li>✓ Amount in words correct है</li>
+</ul>
+<h3>Payment Information</h3>
+<ul>
+  <li>✓ Bank account details (Account No., IFSC, Bank Name) सही हैं</li>
+  <li>✓ UPI ID mention किया है</li>
+  <li>✓ Payment terms clearly stated हैं</li>
+  <li>✓ Late payment penalty clause (अगर applicable)</li>
+</ul>
+<h3>Professional Touch</h3>
+<ul>
+  <li>✓ Thank you note या professional closing message</li>
+  <li>✓ Signature (digital या physical)</li>
+  <li>✓ TDS note (अगर corporate client है)</li>
+  <li>✓ Udyam Registration Number (अगर MSME registered हैं)</li>
+</ul>
+<div class="callout callout-success">
+  <strong>Final Step:</strong> Invoice PDF download करें, एक बार preview में check करें कि सब कुछ properly formatted है, और तब ही client को email या WhatsApp करें। Email subject line में invoice number और amount mention करें: "Invoice #INV-2026-042 — ₹25,000 — Web Design Services"।
+</div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Invoice Generator खोलें और Template चुनें',
+        description: 'ToolsArena.in पर Invoice Generator tool खोलें। Modern, Classic, या Minimal — अपने business और client के हिसाब से template चुनें। कोई account बनाने की ज़रूरत नहीं।',
+      },
+      {
+        title: 'Business और Client Details भरें',
+        description: 'अपना business name, address, GSTIN, और logo upload करें। फिर client की details भरें — नाम, address, और GSTIN (B2B के लिए)। यह automatically tax type (IGST/CGST+SGST) determine करेगा।',
+      },
+      {
+        title: 'Services/Products और GST Add करें',
+        description: 'हर item के लिए description, quantity, rate, और HSN/SAC code डालें। GST rate चुनें — tool automatically CGST+SGST या IGST calculate करेगा और total compute करेगा।',
+      },
+      {
+        title: 'Payment Terms और Bank Details जोड़ें',
+        description: 'Due date, payment terms (Net 15/30), और bank account details या UPI ID add करें। TDS note और कोई special terms भी mention करें।',
+      },
+      {
+        title: 'Preview करें और PDF Download करें',
+        description: 'Live preview में invoice देखें, सब कुछ verify करें, और Download PDF click करें। Professional invoice तुरंत तैयार — email या WhatsApp से client को भेजें।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'क्या ToolsArena का Invoice Generator पूरी तरह फ्री है?',
+        answer: 'हाँ, बिल्कुल फ्री है। कोई subscription, hidden charge, या watermark नहीं। बिना account बनाए असीमित invoices बना सकते हैं और PDF download कर सकते हैं।',
+      },
+      {
+        question: 'GST invoice बनाने के लिए GSTIN ज़रूरी है?',
+        answer: 'अगर आप GST registered नहीं हैं (turnover threshold से कम है), तो GSTIN की ज़रूरत नहीं। आप bill of supply या simple invoice बना सकते हैं। GST registered होने पर GSTIN mandatory है और tax invoice जारी करनी होती है।',
+      },
+      {
+        question: 'Freelancer को invoice कब भेजनी चाहिए?',
+        answer: 'Project completion पर या milestone complete होने पर तुरंत invoice भेजें। Delay करने से payment और देरी से आती है। Fixed monthly projects पर हर महीने की 1 तारीख को invoice भेजें।',
+      },
+      {
+        question: 'Invoice में CGST और SGST क्या होता है?',
+        answer: 'जब seller और buyer एक ही state में हों (intrastate supply), तो GST को दो बराबर भागों में बाँटा जाता है — CGST (Central GST, केंद्र सरकार को) और SGST (State GST, राज्य सरकार को)। अगर अलग-अलग state में हों तो IGST (Integrated GST) लगता है।',
+      },
+      {
+        question: 'क्या इनवॉइस पर मेरा photo या signature ज़रूरी है?',
+        answer: 'Physical signature legally required नहीं है digital invoices पर। लेकिन एक digital signature या "Authorised Signatory" स्टाम्प professional दिखता है और trust बढ़ाता है। बड़े transactions के लिए signed copy ज़रूर रखें।',
+      },
+      {
+        question: 'Invoice number कैसे structure करें?',
+        answer: 'Sequential numbering ज़रूरी है — gaps या duplicates नहीं होने चाहिए। Financial year से शुरू करें: INV-2026-27-001। नया financial year शुरू होने पर counter reset करें। Client-wise numbering (ABC-001) multiple clients के लिए useful है।',
+      },
+      {
+        question: 'क्या invoice cancel या edit कर सकते हैं?',
+        answer: 'GST invoice issue होने के बाद edit नहीं होती — उसकी जगह Credit Note (amount कम करने के लिए) या Debit Note (amount बढ़ाने के लिए) जारी किया जाता है। Non-GST invoice को cancel करके नई invoice issue कर सकते हैं — लेकिन original invoice का record रखें।',
+      },
+      {
+        question: 'विदेशी client को invoice कैसे भेजें?',
+        answer: 'Foreign currency में invoice बनाएं (USD/EUR/GBP)। Export services zero-rated हैं — LUT (Letter of Undertaking) file करने पर GST नहीं लगती। Invoice पर "Export of Services — Zero Rated Supply" लिखें। Payment के लिए Wise, PayPal, या SWIFT bank transfer details add करें।',
+      },
+    ],
+    relatedGuides: ['resume-builder-guide', 'salary-calculator-guide', 'gst-calculator-guide'],
+    toolCTA: {
+      heading: 'अभी फ्री GST इनवॉइस बनाएं — कोई साइनअप नहीं',
+      description: 'Professional template चुनें, details भरें, और तुरंत PDF download करें। 30 करेंसी, GST support, और एकदम फ्री।',
+      buttonText: 'Invoice Generator खोलें →',
+    },
+  },
+
 ];

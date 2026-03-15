@@ -7345,6 +7345,326 @@ $$</code></pre>
     },
   },
 
+  // ── INVOICE GENERATOR GUIDE ────────────────────────────────────
+  {
+    slug: 'invoice-generator-guide',
+    toolSlug: 'invoice-generator',
+    category: 'utility-tools',
+    title: 'Free Invoice Generator Guide: Create Professional Invoices Online (2026)',
+    subtitle: 'Complete guide to creating GST-compliant invoices for freelancers, small businesses, and startups — with free templates, tax tips, and real examples.',
+    metaTitle: 'Free Invoice Generator Online: Create GST Invoice (2026)',
+    metaDescription: 'Create professional invoices for free with ToolsArena. GST/VAT compliant, 3 templates, 30 currencies, instant PDF. No signup required. Perfect for freelancers & businesses.',
+    targetKeyword: 'free invoice generator',
+    secondaryKeywords: [
+      'invoice generator online free',
+      'invoice maker',
+      'GST invoice generator',
+      'free invoice template',
+      'invoice generator PDF',
+      'online billing software free',
+      'invoice creator no signup',
+      'freelance invoice generator',
+      'tax invoice format India',
+      'invoice generator for small business',
+      'how to make invoice online',
+      'best free invoice generator 2026',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '10 min read',
+    tags: ['Invoice', 'Business', 'GST', 'Freelance'],
+    intro: `<p>An <strong>invoice generator</strong> is the single most important billing tool for any freelancer, agency, or small business owner. Every time you deliver work or sell a product, you need a professional invoice that documents the transaction, specifies the payment terms, and — for registered businesses in India — complies with GST rules. Yet millions of small business owners still create invoices manually in Word or Excel, wasting hours every week and risking costly errors.</p>
+<p>ToolsArena's <strong>free invoice generator</strong> solves all of this in minutes. With three professional templates (Modern, Classic, Minimal), 30 currencies including INR and NPR, full GST/VAT tax configuration, logo upload, and instant PDF download — all without creating an account — it is the fastest way to send a professional invoice online. This comprehensive guide walks you through every aspect of invoicing: what to include, how to comply with Indian GST law, best practices for getting paid on time, and the most common mistakes that cost freelancers and small businesses real money.</p>`,
+    sections: [
+      {
+        id: 'what-is-an-invoice-generator',
+        title: 'What Is an Invoice Generator and Who Needs One',
+        content: `<p>An <strong>invoice generator</strong> (also called an invoice maker or billing tool) is an online application that lets you create, customise, and download professional invoices without needing accounting software, design skills, or a paid subscription. You enter your business details, your client's details, line items, tax, and discount — and the tool produces a polished, print-ready PDF that you can email or share immediately.</p>
+<h3>Who needs an invoice generator?</h3>
+<p>Nearly every person or business that earns money for services or products needs to issue invoices. The most common users include:</p>
+<ul>
+  <li><strong>Freelancers</strong> — designers, developers, writers, photographers, video editors, social media managers, consultants. If you work independently and bill clients, you need invoices.</li>
+  <li><strong>Small business owners</strong> — retailers, service providers, contractors, repair shops, caterers, tutors, trainers.</li>
+  <li><strong>Agencies</strong> — digital marketing, PR, IT, staffing. Agencies handle multiple clients simultaneously and need a fast, repeatable invoicing system.</li>
+  <li><strong>Startups</strong> — early-stage companies that have not yet invested in full accounting software like Tally, Zoho Books, or QuickBooks.</li>
+  <li><strong>Sole proprietors and traders</strong> — anyone registered under GST who must issue tax invoices compliant with the GST Act.</li>
+</ul>
+<div class="callout-info"><strong>ℹ️ Did You Know</strong><p>In India, any business with an annual turnover exceeding ₹20 lakh (₹10 lakh for northeastern states) must register for GST and issue proper tax invoices. Failure to comply can result in penalties of up to ₹25,000 per invoice.</p></div>
+<h3>ToolsArena vs. other invoice tools — comparison</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>ToolsArena (Free)</th><th>Zoho Invoice (Free)</th><th>Wave (Free)</th><th>PayPal Invoicing</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cost</td><td>100% Free</td><td>Free (limited)</td><td>Free</td><td>Free (2.9% + fee on payment)</td></tr>
+    <tr><td>No signup required</td><td>✅ Yes</td><td>❌ Required</td><td>❌ Required</td><td>❌ Required</td></tr>
+    <tr><td>GST / VAT support</td><td>✅ Full custom label + rate</td><td>✅ Yes</td><td>⚠️ Limited India support</td><td>⚠️ Basic tax line</td></tr>
+    <tr><td>Logo upload</td><td>✅ Yes</td><td>✅ Yes</td><td>✅ Yes</td><td>✅ Yes</td></tr>
+    <tr><td>Number of currencies</td><td>30</td><td>170+</td><td>130+</td><td>25+</td></tr>
+    <tr><td>Templates</td><td>3 (Modern, Classic, Minimal)</td><td>10+</td><td>1</td><td>1</td></tr>
+    <tr><td>Instant PDF download</td><td>✅ In-browser, instant</td><td>✅ Yes</td><td>✅ Yes</td><td>✅ Yes</td></tr>
+    <tr><td>Data privacy</td><td>✅ 100% browser-based</td><td>❌ Cloud-stored</td><td>❌ Cloud-stored</td><td>❌ Cloud-stored</td></tr>
+    <tr><td>Save template / details</td><td>✅ localStorage</td><td>✅ Cloud account</td><td>✅ Cloud account</td><td>✅ Cloud account</td></tr>
+  </tbody>
+</table>
+<p>The core advantage of ToolsArena is speed and privacy: open the tool, fill in your details, download the PDF — no account, no waiting, no data uploaded to any server. For freelancers and small businesses that need to send occasional invoices quickly, it is the most frictionless option available.</p>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Use ToolsArena's "Save Template" feature to store your business details, logo, and default payment terms in your browser. The next invoice takes under 2 minutes to generate — just update the client, line items, and invoice number.</p></div>`,
+      },
+      {
+        id: 'how-to-create-invoice-step-by-step',
+        title: 'How to Create a Professional Invoice: Step-by-Step',
+        content: `<p>Creating a professional invoice with ToolsArena takes less than five minutes once you know your details. Here is a complete walkthrough of every field and what it means.</p>
+<h3>Step 1 — Choose your template and accent colour</h3>
+<p>Select from <strong>Modern</strong> (clean two-column layout, ideal for tech and creative industries), <strong>Classic</strong> (traditional single-column, preferred for accounting, legal, and B2B trade), or <strong>Minimal</strong> (ultra-clean white space, great for premium services and consultants). Then pick one of eight accent colours to match your brand. The colour affects headers, borders, and accent lines — keeping your invoice visually consistent with your branding.</p>
+<h3>Step 2 — Upload your logo</h3>
+<p>Click the logo area and upload your company logo in PNG or JPG format (max 2MB). Your logo appears in the top-left corner of the invoice. If you do not have a logo, the invoice will display your business name as a styled text header. A logo dramatically increases the perceived professionalism of your invoice and makes it immediately recognisable to clients.</p>
+<h3>Step 3 — Enter your business details</h3>
+<p>Fill in your: <strong>Business Name</strong>, <strong>Email Address</strong>, <strong>Phone Number</strong>, <strong>Address</strong> (full mailing address), <strong>Website</strong> (optional but recommended), and <strong>Tax ID / GST Number / VAT Number</strong>. For Indian businesses registered under GST, your <strong>GSTIN (15-digit GST Identification Number)</strong> is mandatory on tax invoices. This field is flexible — enter your GST number, PAN, or any applicable tax registration.</p>
+<div class="callout-warning"><strong>⚠️ Warning</strong><p>Omitting your GSTIN from invoices when you are a GST-registered business is a compliance violation. Your clients who are also GST-registered cannot claim Input Tax Credit (ITC) on an invoice without your valid GSTIN. Always include it.</p></div>
+<h3>Step 4 — Enter client details</h3>
+<p>Enter your client's: <strong>Name</strong>, <strong>Company Name</strong>, <strong>Email Address</strong>, and <strong>Address</strong>. For B2B transactions in India, also note the client's GSTIN if they have provided it — this is required for them to claim ITC. For international clients, note the country and any applicable buyer reference number.</p>
+<h3>Step 5 — Set the invoice number, date, and due date</h3>
+<p>The <strong>Invoice Number</strong> is your unique reference for this invoice. Use a consistent numbering system (see Section 6 for best practices). The <strong>Invoice Date</strong> is the date the invoice is issued. The <strong>Due Date</strong> establishes when payment is expected — standard terms are Net 15, Net 30, or Due on Receipt.</p>
+<h3>Step 6 — Add line items</h3>
+<p>Each line item has: <strong>Description</strong> (what you delivered), <strong>Quantity</strong>, <strong>Rate</strong> (price per unit), and <strong>Amount</strong> (auto-calculated). You can drag items to reorder them. Be specific in descriptions — "Website Design — 5-page responsive website, deliverables per agreed scope" is better than "Web Design." Specificity reduces payment disputes and demonstrates professionalism.</p>
+<h3>Step 7 — Configure tax, discount, and notes</h3>
+<p>Set your <strong>Tax Label</strong> (GST, VAT, or Tax), enter the applicable <strong>tax rate percentage</strong>, and the tool auto-calculates the tax amount and grand total. Apply a <strong>discount</strong> as either a percentage or a flat amount. Add any <strong>Notes</strong> (e.g., bank details, UPI ID, project reference) and <strong>Payment Terms</strong> (e.g., "Payment due within 15 days via bank transfer or UPI").</p>
+<h3>Step 8 — Preview and download PDF</h3>
+<p>The live preview updates in real time as you type. Once satisfied, click <strong>Download PDF</strong>. The PDF is generated instantly in your browser — no server involved, no waiting. Save a copy for your records and email it to your client.</p>`,
+      },
+      {
+        id: 'essential-invoice-elements',
+        title: 'Essential Invoice Elements: What Every Invoice Must Include',
+        content: `<p>A professional invoice is more than a list of charges — it is a legal document that records a commercial transaction. Missing even one mandatory field can invalidate the invoice for tax purposes, delay payment, or create disputes. Here is a comprehensive breakdown of every element your invoice should contain.</p>
+<h3>Mandatory vs. optional invoice fields</h3>
+<table>
+  <thead>
+    <tr><th>Field</th><th>Type</th><th>Why It Matters</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Invoice Number</td><td>Mandatory</td><td>Unique identifier for tracking, accounting, and dispute resolution</td></tr>
+    <tr><td>Invoice Date</td><td>Mandatory</td><td>Establishes when the invoice was issued; triggers payment term countdown</td></tr>
+    <tr><td>Due Date / Payment Terms</td><td>Mandatory</td><td>Specifies when payment is expected; legally enforceable</td></tr>
+    <tr><td>Seller Name &amp; Address</td><td>Mandatory</td><td>Identifies the party issuing the invoice</td></tr>
+    <tr><td>Buyer Name &amp; Address</td><td>Mandatory</td><td>Identifies the party being billed</td></tr>
+    <tr><td>Description of Goods/Services</td><td>Mandatory</td><td>Specifies what was delivered; prevents payment disputes</td></tr>
+    <tr><td>Quantity &amp; Unit Rate</td><td>Mandatory</td><td>Basis for amount calculation; required for GST invoices</td></tr>
+    <tr><td>Total Amount</td><td>Mandatory</td><td>Sum payable; must agree with line item arithmetic</td></tr>
+    <tr><td>Tax (GST/VAT) Amount &amp; Rate</td><td>Mandatory (if registered)</td><td>Required for tax compliance; enables ITC claim by buyer</td></tr>
+    <tr><td>GSTIN of Seller</td><td>Mandatory (GST-registered)</td><td>Required on every tax invoice issued under GST law</td></tr>
+    <tr><td>GSTIN of Buyer</td><td>Mandatory (B2B)</td><td>Required for buyer to claim Input Tax Credit</td></tr>
+    <tr><td>HSN / SAC Code</td><td>Mandatory (turnover &gt;₹5 Cr)</td><td>Harmonised code classifying goods or services for GST</td></tr>
+    <tr><td>Place of Supply</td><td>Mandatory (GST)</td><td>Determines whether CGST+SGST or IGST applies</td></tr>
+    <tr><td>Currency</td><td>Mandatory (international)</td><td>Avoids ambiguity; required for foreign currency transactions</td></tr>
+    <tr><td>Logo</td><td>Optional</td><td>Enhances brand recognition and professionalism</td></tr>
+    <tr><td>Website</td><td>Optional</td><td>Reinforces brand credibility</td></tr>
+    <tr><td>Notes / Bank Details</td><td>Optional</td><td>Facilitates faster payment by providing payment instructions</td></tr>
+    <tr><td>Discount</td><td>Optional</td><td>Documents any agreed reductions; must be shown above the tax line</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Always include your bank account details or UPI ID in the Notes field. Indian clients overwhelmingly prefer UPI or NEFT payments — making it easy reduces the payment cycle by 2–5 days on average.</p></div>
+<h3>Invoice numbering best practices</h3>
+<p>Your invoice number must be unique and sequential. A good format for Indian businesses is <strong>INV-[YEAR]-[SEQUENCE]</strong> (e.g., INV-2026-001). For GST compliance, your invoice series should restart each financial year (April to March). Some businesses use client-specific prefixes: <strong>CLI001-INV-001</strong>. Whatever system you choose, <strong>never reuse an invoice number</strong> — it creates reconciliation nightmares and can attract GST audit scrutiny.</p>
+<div class="callout-warning"><strong>⚠️ Warning</strong><p>Under GST rules, if you cancel an invoice, do not reuse its number. Instead, issue a Credit Note referencing the original invoice. Reusing invoice numbers is a serious GST compliance violation.</p></div>`,
+      },
+      {
+        id: 'gst-invoice-requirements-india',
+        title: 'GST Invoice Requirements for Indian Businesses',
+        content: `<p>India's Goods and Services Tax (GST) framework, introduced in July 2017, fundamentally changed how businesses must document transactions. If your business is GST-registered, every invoice you issue must comply with the <strong>GST Invoice Rules under the CGST Act, 2017</strong>. Non-compliant invoices can result in your clients being denied Input Tax Credit and attract penalties for your business.</p>
+<h3>Key GST invoice requirements</h3>
+<ul>
+  <li><strong>GSTIN</strong> — Your 15-digit GST Identification Number must appear on every tax invoice.</li>
+  <li><strong>HSN / SAC Code</strong> — Harmonised System of Nomenclature (for goods) or Services Accounting Code (for services). Mandatory for businesses with annual turnover above ₹5 crore; optional but recommended below that threshold.</li>
+  <li><strong>Place of Supply</strong> — Determines the type of GST applicable: intra-state (CGST + SGST) or inter-state (IGST).</li>
+  <li><strong>Tax breakup</strong> — Show CGST, SGST, and/or IGST amounts separately. Do not lump them as a single "GST" figure on a compliant invoice.</li>
+  <li><strong>Reverse Charge</strong> — Indicate "Reverse Charge Applicable: Yes/No" when required.</li>
+  <li><strong>Serial number</strong> — Each invoice in a financial year must have a unique, consecutive serial number, not exceeding 16 characters.</li>
+</ul>
+<h3>B2B vs. B2C invoicing under GST</h3>
+<p><strong>B2B (Business to Business):</strong> The buyer's GSTIN must be mentioned. The buyer can claim ITC on the input tax shown. These invoices must be filed in GSTR-1 and are visible to the buyer in their GSTR-2B statement.</p>
+<p><strong>B2C (Business to Consumer):</strong> For supplies to unregistered buyers, you issue a simplified invoice or bill of supply. The buyer's GSTIN is not required, but your own GSTIN and other details remain mandatory if the transaction value exceeds ₹200.</p>
+<div class="callout-info"><strong>ℹ️ Did You Know</strong><p>E-invoicing (electronic invoice generation through the GST portal's Invoice Registration Portal) is mandatory for all GST-registered businesses with annual aggregate turnover above ₹5 crore. E-invoices receive an IRN (Invoice Reference Number) and QR code from the IRP, which must be printed on the invoice.</p></div>
+<h3>GST rates by category</h3>
+<table>
+  <thead>
+    <tr><th>GST Rate</th><th>Category Examples</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>0% (Exempt)</td><td>Fresh vegetables, milk, eggs, education services, healthcare</td><td>No GST charged; no ITC on inputs</td></tr>
+    <tr><td>5%</td><td>Packaged food, small restaurants, textile fabric, transport</td><td>Low-rate essentials</td></tr>
+    <tr><td>12%</td><td>Processed food, computers, business class air travel, hotels (₹1,000–₹7,500/night)</td><td>Standard goods slab</td></tr>
+    <tr><td>18%</td><td>IT services, software, professional services, restaurants (AC), hotels (&gt;₹7,500/night), most freelance services</td><td>Most common rate for service businesses</td></tr>
+    <tr><td>28%</td><td>Luxury goods, automobiles, aerated drinks, casinos, online gaming</td><td>Luxury/sin goods slab</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Most freelancers providing IT, design, marketing, or consulting services fall under the <strong>18% GST</strong> slab under SAC code 998314 (IT design and development) or 998311 (management consulting). When in doubt, consult a CA or check the GST rate finder on the official GST portal (gst.gov.in).</p></div>
+<h3>Composition scheme businesses</h3>
+<p>If you are registered under the <strong>GST Composition Scheme</strong> (available to businesses with turnover below ₹1.5 crore for goods, ₹50 lakh for services), you cannot issue a tax invoice and cannot charge GST to customers. Instead, you issue a <strong>Bill of Supply</strong>. You pay GST at a flat rate (1–6% depending on category) from your own pocket and cannot claim ITC. Service businesses (except restaurants) are generally not eligible for composition scheme.</p>`,
+      },
+      {
+        id: 'invoice-templates-comparison',
+        title: 'Invoice Templates: Modern, Classic, Minimal — Which Suits Your Business',
+        content: `<p>Your invoice template is a direct extension of your brand. The same invoice content presented in a crisp, branded layout versus a plain Word document creates a dramatically different perception of professionalism. ToolsArena offers three carefully designed templates, each suited to different industries and client relationships.</p>
+<h3>Modern Template</h3>
+<p>The Modern template features a two-column header layout with a bold accent bar, your logo prominently displayed alongside business details, and a clean table for line items with alternating row shading. It feels contemporary and polished without being flashy.</p>
+<p><strong>Best for:</strong> Tech companies, SaaS startups, digital agencies, UI/UX designers, developers, social media managers, video editors, e-commerce businesses.</p>
+<p><strong>Accent colour recommendation:</strong> Blue (#2563EB) for tech/finance; Teal for creative services; Purple for design/branding agencies.</p>
+<h3>Classic Template</h3>
+<p>The Classic template uses a traditional single-column layout with a structured header, clear section dividers, and a formal table. It looks like a standard accounting invoice — exactly what B2B clients, procurement teams, and finance departments expect.</p>
+<p><strong>Best for:</strong> Chartered accountants, law firms, consultants, contractors, manufacturers, suppliers, anyone invoicing large corporates or government entities.</p>
+<p><strong>Accent colour recommendation:</strong> Black or Dark Grey for maximum formality; Navy Blue for professional services.</p>
+<h3>Minimal Template</h3>
+<p>The Minimal template strips away visual decoration and lets white space carry the design. Clean typography, generous margins, and a restrained use of colour create a premium, editorial feel that signals confidence and quality.</p>
+<p><strong>Best for:</strong> Premium consultants, executive coaches, luxury brands, architects, interior designers, photographers, writers, anyone whose brand identity is built on simplicity and quality.</p>
+<p><strong>Accent colour recommendation:</strong> Black, Rose Gold, or a single strong accent colour that matches your brand identity.</p>
+<h3>Template comparison table</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Modern</th><th>Classic</th><th>Minimal</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Layout</td><td>Two-column header</td><td>Single-column</td><td>Ultra-clean, wide margins</td></tr>
+    <tr><td>Best industry fit</td><td>Tech, digital, creative</td><td>B2B, finance, legal, trade</td><td>Premium services, luxury, consulting</td></tr>
+    <tr><td>Formality level</td><td>Medium-high</td><td>High</td><td>High (through restraint)</td></tr>
+    <tr><td>Logo prominence</td><td>Very prominent</td><td>Moderate</td><td>Subtle but impactful</td></tr>
+    <tr><td>Recommended for startups</td><td>✅ Yes</td><td>⚠️ May feel old-fashioned</td><td>✅ Yes (premium positioning)</td></tr>
+    <tr><td>Recommended for GST invoices</td><td>✅ Yes</td><td>✅ Yes (preferred by large clients)</td><td>✅ Yes</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>If you regularly invoice both large corporates (who prefer Classic) and startups or agencies (who appreciate Modern), save two different templates using the browser save feature. Switch templates in seconds based on the client type — a small touch that makes a big difference in how your invoice is received.</p></div>`,
+      },
+      {
+        id: 'invoice-best-practices',
+        title: 'Invoice Best Practices for Freelancers and Small Businesses',
+        content: `<p>Getting the technical details right is only half the battle. The other half is setting up systems and habits that ensure you get paid on time, every time. Here are the most effective invoicing best practices used by experienced freelancers and thriving small businesses.</p>
+<h3>1. Send invoices immediately upon delivery</h3>
+<p>The longer you wait to send an invoice after delivering work, the longer you wait to get paid — and the more likely the client has moved on mentally. Send your invoice the same day you deliver the work, or within 24 hours. Under GST rules, a tax invoice for services must be issued within <strong>30 days of the date of supply</strong> (45 days for banks and financial institutions). Do not use this as a target — use it as an outer limit.</p>
+<h3>2. Use a consistent invoice numbering system</h3>
+<p>A logical numbering system protects you legally and simplifies your accounting. Recommended format for Indian freelancers: <strong>INV-FY2627-001</strong> (financial year + sequential number). This makes it immediately clear which financial year the invoice belongs to, which matters for GST return filing. Never skip numbers or reuse them.</p>
+<h3>3. Specify payment terms clearly — and follow up</h3>
+<p>Do not just write "Due upon receipt." Specify: "Payment due within 15 days via NEFT/IMPS/UPI. Bank details: [Account Name], [Account Number], [IFSC Code], [UPI ID]." The more specific your payment instructions, the fewer follow-up emails you need. For new clients, consider requiring <strong>50% advance payment</strong> before starting work — this is standard practice for high-value projects and protects you from non-payment.</p>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Add a late payment clause to your payment terms: "Invoices unpaid after 30 days attract a late payment fee of 1.5% per month on the outstanding amount." Even if you never enforce it, the clause makes clients take your payment terms seriously and accelerates collections.</p></div>
+<h3>4. Handle multiple currencies correctly</h3>
+<p>When billing international clients, always specify the currency explicitly (USD, EUR, GBP, etc.) and indicate whether the amount is inclusive or exclusive of any applicable taxes. ToolsArena supports 30 currencies. For Indian freelancers, keep in mind that foreign currency receipts must be reported under FEMA regulations, and amounts above $10,000 per transaction may require a FIRC (Foreign Inward Remittance Certificate) from your bank for GST zero-rating on export of services.</p>
+<h3>5. Keep meticulous records</h3>
+<p>Under GST law, you must retain all invoice records for <strong>72 months (6 years)</strong> from the due date of the annual return for the relevant financial year. Keep a digital folder organised by financial year and client, with copies of every invoice issued and every payment received. ToolsArena's invoices download as PDFs — save each one with a filename matching your invoice number (e.g., <code>INV-FY2627-001-ClientName.pdf</code>).</p>
+<h3>6. Follow up professionally but persistently</h3>
+<p>If payment is not received by the due date, send a polite reminder the next business day, referencing the invoice number and amount. If unpaid after 7 more days, send a firmer reminder. After 30 days overdue, a phone call is appropriate. Having these steps planned in advance removes the emotional friction from following up — it is simply your standard process, not a confrontation.</p>`,
+      },
+      {
+        id: 'common-invoicing-mistakes',
+        title: 'Common Invoicing Mistakes That Cost You Money',
+        content: `<p>Invoicing errors are surprisingly common — and they have real financial consequences. Wrong tax calculations can trigger GST audits. Missing details lead to payment disputes. Unprofessional formats damage client relationships. Here are the most costly invoicing mistakes and exactly how to avoid them.</p>
+<h3>Mistake 1: Incorrect tax calculations</h3>
+<p>Applying the wrong GST rate — for example, charging 18% on a service that is actually exempt or 12% — creates serious problems. If you overcharge GST, you must refund the excess to the client and pay the correct amount to the government. If you undercharge, you are personally liable for the shortfall plus interest. Always verify the correct GST rate for your specific service (check the official GST rate schedule or consult a CA) before sending any invoice.</p>
+<div class="callout-warning"><strong>⚠️ Warning</strong><p>Charging GST without a valid GSTIN registration is illegal and attracts a penalty of ₹10,000 or the equivalent of the tax charged, whichever is higher. Only charge GST if you are a registered GST taxpayer.</p></div>
+<h3>Mistake 2: Missing or incorrect GSTIN</h3>
+<p>A typo in your GSTIN renders the invoice non-compliant. Your client cannot claim ITC, which means they will ask you to reissue the invoice — delaying your payment. Always double-check your GSTIN before saving your template. ToolsArena's save feature stores your details locally — verify them once, and they autofill every subsequent invoice.</p>
+<h3>Mistake 3: Vague line item descriptions</h3>
+<p>"Services rendered" or "Work done" are not acceptable descriptions. They invite disputes, fail GST audit requirements, and look unprofessional. Write specific descriptions: "Social Media Management — Instagram + LinkedIn, 20 posts, 4-week period, March 2026." Every line item should be unambiguous and match the agreed scope of work.</p>
+<h3>Mistake 4: No payment terms</h3>
+<p>Invoices without explicit payment terms are treated differently across clients — some will pay in 7 days, others will stretch it to 90 days if there is no stated deadline. This alone can cripple a freelancer's cash flow. Always state your terms explicitly on every invoice.</p>
+<h3>Mistake 5: Unprofessional presentation</h3>
+<p>A handwritten invoice, a Word document with inconsistent formatting, or a plain text email with amounts listed — these signal inexperience and reduce the perceived value of your work. A polished, branded invoice in a consistent template signals that you are a professional business, which makes clients more likely to pay promptly and more likely to hire you again.</p>
+<h3>Mistake 6: Not keeping a copy</h3>
+<p>Sending an invoice and not saving a copy is a recordkeeping failure that can cost you in disputes ("I never received that invoice") and tax audits. Every invoice you send should be filed immediately in your records. If you send from email, also save the sent message.</p>
+<h3>Mistake 7: Forgetting to invoice for all billable items</h3>
+<p>Freelancers frequently forget to bill for: out-of-scope revisions, rush fees, materials purchased on behalf of the client, software subscriptions used for the project, or travel expenses. Define your billable items clearly in your contract and track them as you work — then make sure every one of them appears on the final invoice.</p>`,
+      },
+      {
+        id: 'invoice-checklist',
+        title: 'Invoice Checklist: Review Before You Send',
+        content: `<p>Before clicking send on any invoice, run through this checklist. It takes 60 seconds and can save you hours of back-and-forth with clients or tax authorities. Use this checklist for every single invoice — experienced freelancers still make errors when they rush.</p>
+<table>
+  <thead>
+    <tr><th>#</th><th>Checklist Item</th><th>Why It Matters</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Invoice number is unique and sequential</td><td>Required for GST compliance; prevents accounting confusion</td></tr>
+    <tr><td>2</td><td>Invoice date is correct</td><td>Triggers payment terms; must match the date of service for GST</td></tr>
+    <tr><td>3</td><td>Due date / payment terms are specified</td><td>Legally establishes when payment is owed</td></tr>
+    <tr><td>4</td><td>Your GSTIN is included (if GST-registered)</td><td>Mandatory on every tax invoice</td></tr>
+    <tr><td>5</td><td>Client GSTIN is included (if B2B)</td><td>Required for client to claim ITC</td></tr>
+    <tr><td>6</td><td>All line items are described specifically</td><td>Prevents disputes; satisfies GST audit requirements</td></tr>
+    <tr><td>7</td><td>Quantities and rates are correct</td><td>Arithmetic errors are embarrassing and damage trust</td></tr>
+    <tr><td>8</td><td>Correct GST rate applied (5% / 12% / 18% / 28%)</td><td>Wrong rate = compliance risk and client disputes</td></tr>
+    <tr><td>9</td><td>GST breakdown shows CGST/SGST or IGST correctly</td><td>Depends on place of supply; different rates for intra vs. inter-state</td></tr>
+    <tr><td>10</td><td>Discount is shown above the tax line</td><td>GST must be calculated on the discounted amount, not the gross</td></tr>
+    <tr><td>11</td><td>Total amount matches line item calculations</td><td>Any discrepancy destroys credibility</td></tr>
+    <tr><td>12</td><td>Currency is specified (especially for international clients)</td><td>Avoids ambiguity; required for FEMA compliance</td></tr>
+    <tr><td>13</td><td>Payment instructions (bank details / UPI) are included</td><td>Reduces payment friction; speeds up collections</td></tr>
+    <tr><td>14</td><td>Logo and branding are correct</td><td>Professionalism; brand consistency</td></tr>
+    <tr><td>15</td><td>Client's name and address are correctly spelled</td><td>Typos in legal documents look careless and may need reissuance</td></tr>
+    <tr><td>16</td><td>Copy saved to your records before sending</td><td>Required for GST recordkeeping (72-month retention)</td></tr>
+  </tbody>
+</table>
+<div class="callout-info"><strong>ℹ️ Did You Know</strong><p>A 2023 survey by FreshBooks found that freelancers who include a "thank you" note in their invoices get paid 5 days faster on average than those who do not. A simple "Thank you for your business — it is a pleasure working with you" in the Notes field costs nothing and can meaningfully improve your cash flow.</p></div>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Run the checklist while the PDF preview is open in ToolsArena. Check each item visually in the rendered invoice — the preview shows exactly what your client will see, making it much easier to spot errors in amounts, descriptions, or formatting before you download and send.</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Open ToolsArena Invoice Generator',
+        description: 'Navigate to the ToolsArena Invoice Generator. No login or signup is required — the tool is immediately ready to use in your browser.',
+      },
+      {
+        title: 'Enter your business and client details',
+        description: 'Fill in your business name, email, phone, address, GSTIN, and upload your logo. Then enter your client\'s name, company, email, and address. Use the "Save Template" button to store your business details for future invoices.',
+      },
+      {
+        title: 'Add line items with description, quantity, and rate',
+        description: 'Add each product or service as a line item with a clear description, quantity, and unit rate. The amount auto-calculates. Drag items to reorder them. Be specific in descriptions to prevent payment disputes.',
+      },
+      {
+        title: 'Configure tax (GST/VAT), discount, and payment terms',
+        description: 'Set your tax label (GST/VAT/Tax), enter the applicable rate (e.g., 18% for most services in India), and apply any discount as a percentage or flat amount. Add your bank details or UPI ID and payment terms in the Notes field.',
+      },
+      {
+        title: 'Preview and download PDF — free, no signup',
+        description: 'Review the live preview to verify all details are correct. Run through the 16-point checklist above. Click "Download PDF" to generate and save your invoice instantly — no server upload, no waiting, completely free.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is ToolsArena invoice generator really free?',
+        answer: 'Yes — 100% free, with no hidden costs, no freemium tier, and no paywall for PDF downloads. ToolsArena\'s invoice generator is free for unlimited use: create as many invoices as you need, with any template, any currency, and any configuration. There is no account required either.',
+      },
+      {
+        question: 'What is a GST invoice and when do I need one?',
+        answer: 'A GST invoice (formally called a "Tax Invoice" under the CGST Act) is a compliant billing document issued by GST-registered businesses that shows the GSTIN of both parties, a breakdown of CGST/SGST or IGST amounts, and other mandatory fields. You must issue a GST invoice for every taxable supply if you are GST-registered. If your annual turnover exceeds ₹20 lakh (₹10 lakh in northeastern states), GST registration is mandatory.',
+      },
+      {
+        question: 'Can I add my company logo to the invoice?',
+        answer: 'Yes. ToolsArena\'s invoice generator includes a logo upload feature that accepts PNG and JPG files up to 2MB. Your logo appears in the header of the invoice alongside your business details. Once uploaded, it is stored in your browser session. Use the "Save Template" feature to retain it across sessions.',
+      },
+      {
+        question: 'How many currencies does the invoice generator support?',
+        answer: 'ToolsArena\'s invoice generator supports 30 currencies, including USD (US Dollar), EUR (Euro), GBP (British Pound), INR (Indian Rupee), NPR (Nepalese Rupee), AED (UAE Dirham), SGD (Singapore Dollar), AUD, CAD, and more. Select your currency from the dropdown — the correct currency symbol appears throughout the invoice automatically.',
+      },
+      {
+        question: 'Can I save my business details for future invoices?',
+        answer: 'Yes. Use the "Save Template" button in ToolsArena\'s invoice generator to store your business name, contact details, GSTIN, logo, preferred template, accent colour, and default tax settings to your browser\'s localStorage. The next time you open the tool, your details are pre-filled. This is particularly useful for freelancers who send invoices regularly — a new invoice takes under 2 minutes once your template is saved.',
+      },
+      {
+        question: 'What\'s the difference between a tax invoice and a regular invoice?',
+        answer: 'A "tax invoice" is a specific legal term under the GST Act: it is an invoice issued by a GST-registered supplier that meets all mandatory requirements (GSTIN, HSN/SAC codes, tax breakup by rate, place of supply, etc.). A "regular invoice" or "proforma invoice" does not have these legal requirements and is used by unregistered businesses or for non-taxable supplies. If you are GST-registered, you must issue tax invoices — not regular invoices — for all taxable supplies.',
+      },
+      {
+        question: 'Is my data safe? Does it upload to any server?',
+        answer: 'Your data is completely private and never leaves your device. ToolsArena\'s invoice generator is 100% browser-based: all processing, PDF generation, and template saving happen locally in your browser using JavaScript. Nothing is sent to any server. This means your business details, client information, and financial data are never stored, tracked, or accessible to anyone other than you.',
+      },
+      {
+        question: 'Can I use this for international clients?',
+        answer: 'Yes. ToolsArena\'s invoice generator is well-suited for international invoicing: select the appropriate currency (USD, EUR, GBP, etc.), enter the client\'s international address, and configure tax as applicable. For Indian freelancers exporting services, note that services exported outside India are typically zero-rated under GST (i.e., GST is charged at 0%), provided they qualify as "export of services" under the IGST Act. Consult your CA for specific guidance on your situation.',
+      },
+    ],
+    relatedGuides: ['resume-builder-guide', 'salary-calculator-guide', 'gst-calculator-guide'],
+    toolCTA: {
+      heading: 'Create Your Professional Invoice — Free',
+      description: 'Generate GST-compliant invoices in minutes with ToolsArena. 3 templates, 30 currencies, instant PDF download. No signup, 100% browser-based.',
+      buttonText: 'Open Invoice Generator',
+    },
+  },
+
 ];
 
 export function getGuideBySlug(slug: string, locale: string = 'en'): Guide | undefined {
