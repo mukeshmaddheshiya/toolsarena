@@ -3662,4 +3662,393 @@ button {
     },
   },
 
+  // ── PDF EDITOR ─────────────────────────────────────────────────
+  {
+    slug: 'pdf-editor-guide',
+    toolSlug: 'pdf-editor',
+    category: 'pdf-tools',
+    title: 'फ्री PDF एडिटर गाइड: वाटरमार्क बिना PDF अनलाइन एडिट गर्नुहोस् (2026)',
+    subtitle: 'PDF फ्रीमा एडिट गर्ने पूर्ण गाइड — टेक्स्ट थप्नुहोस्, फन्ट बदल्नुहोस्, सामग्री परिमार्जन गर्नुहोस्, वाटरमार्क बिना सेभ गर्नुहोस्।',
+    metaTitle: 'PDF अनलाइन फ्री एडिट: वाटरमार्क बिना (2026)',
+    metaDescription: 'ToolsArena बाट कुनै पनि PDF फ्रीमा एडिट गर्नुहोस्। टेक्स्ट थप्नुहोस्, फन्ट र रङ बदल्नुहोस्, वाटरमार्क बिना सेभ गर्नुहोस्। साइनअप नचाहिने।',
+    targetKeyword: 'PDF एडिटर अनलाइन फ्री',
+    secondaryKeywords: [
+      'PDF कसरी एडिट गर्ने',
+      'फ्री PDF एडिटर',
+      'वाटरमार्क बिना PDF एडिट',
+      'PDF मा टेक्स्ट थप्ने',
+      'अनलाइन PDF एडिटर',
+      'PDF एडिट गर्ने तरिका',
+      'साइनअप बिना PDF एडिट',
+      'PDF टेक्स्ट एडिटर',
+      'Adobe बिना PDF एडिट',
+      'नेपालमा PDF एडिट',
+      'PDF मा परिवर्तन गर्ने',
+      'बेस्ट फ्री PDF एडिटर 2026',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '10 मिनेट पढाइ',
+    tags: ['PDF', 'एडिटर', 'फ्री उपकरण', 'डकुमेन्ट'],
+    intro: `<p>नेपालमा हरेक दिन लाखौं मानिसहरूले PDF फाइलहरूसँग काम गर्छन् — लोक सेवा आयोगको आवेदन फारम, त्रिभुवन विश्वविद्यालयको ट्रान्सक्रिप्ट, नागरिकता प्रमाणपत्र, SLC/SEE मार्कशिट, भिसा आवेदन फारम, र NGO/INGO का कागजातहरू। तर यी कागजातमा एउटा साना परिवर्तन गर्न पनि महँगो software चाहिन्छ भन्ने सोच गलत हो।</p>
+<p><strong>ToolsArena को फ्री PDF एडिटर</strong> ले Adobe Acrobat वा कुनै paid subscription बिना नै तपाईंलाई आफ्नो PDF मा टेक्स्ट थप्न, फन्ट र रङ बदल्न, सामग्री परिमार्जन गर्न, र वाटरमार्क बिना सेभ गर्न सक्षम बनाउँछ। साइनअप नचाहिने, कुनै credit card नचाहिने — एकदमै सरल र तुरुन्त प्रयोग गर्न सकिने उपकरण।</p>
+<p>यो गाइडमा तपाईंले PDF एडिटिङका सबै पक्षहरू — स्टेप-बाइ-स्टेप प्रक्रिया, उपलब्ध फिचरहरू, नेपाली सन्दर्भमा प्रयोगका तरिकाहरू, र सामान्य समस्याको समाधान — जान्न पाउनुहुनेछ।</p>`,
+    sections: [
+      {
+        id: 'pdf-editor-ke-ho',
+        title: 'अनलाइन PDF एडिटर के हो र किन चाहिन्छ',
+        content: `<p><strong>PDF एडिटर</strong> एउटा यस्तो उपकरण हो जसले तपाईंलाई PDF फाइलको सामग्री — टेक्स्ट, इमेज, फर्म फिल्डहरू — सिधै परिमार्जन गर्न दिन्छ। PDF (Portable Document Format) फाइलहरू normally read-only हुन्छन् र साधारण text editor ले खोल्न मिल्दैन। त्यसैले PDF एडिटरको आवश्यकता पर्छ।</p>
+<h4>नेपालमा PDF एडिटरको आवश्यकता किन छ?</h4>
+<ul>
+  <li><strong>लोक सेवा आयोगका फारमहरू:</strong> Lok Sewa आवेदन फारम प्रायः PDF मा हुन्छन्। हस्तलिखित भर्नुको सट्टा digital form भरेर print गर्न सकिन्छ।</li>
+  <li><strong>विश्वविद्यालयका कागजातहरू:</strong> TU, KU, PU का transcript, migration certificate, provisional certificate PDF मा आउँछन् — यिनमा थप जानकारी वा annotation थप्न एडिटर चाहिन्छ।</li>
+  <li><strong>नागरिकता र भिसा कागजात:</strong> Citizenship application, visa form, passport renewal form — यी सबैमा specific fields भर्न वा update गर्न PDF editor उपयोगी छ।</li>
+  <li><strong>SLC/SEE मार्कशिट र प्रमाणपत्रहरू:</strong> Job application को लागि cover letter वा additional documents attach गर्दा PDF editor आवश्यक पर्छ।</li>
+  <li><strong>NGO/INGO कागजातहरू:</strong> Project proposal, MOU, donor report — यी professional documents मा revision र annotation गर्न PDF editor चाहिन्छ।</li>
+  <li><strong>व्यापारिक कागजातहरू:</strong> Contract, agreement, invoice — signed र edited PDF पठाउन सहज हुन्छ।</li>
+</ul>
+<h4>Adobe Acrobat vs फ्री अनलाइन एडिटर:</h4>
+<table>
+  <tr><th>पक्ष</th><th>Adobe Acrobat Pro</th><th>ToolsArena PDF Editor</th></tr>
+  <tr><td>मूल्य</td><td>$19.99/महिना (लगभग रु. 2,700)</td><td>पूर्णतः निःशुल्क</td></tr>
+  <tr><td>साइनअप</td><td>अनिवार्य</td><td>आवश्यक छैन</td></tr>
+  <tr><td>स्थापना</td><td>Download/Install चाहिन्छ</td><td>Browser मा नै खुल्छ</td></tr>
+  <tr><td>वाटरमार्क</td><td>छैन</td><td>छैन</td></tr>
+  <tr><td>मोबाइल प्रयोग</td><td>App चाहिन्छ</td><td>Mobile browser मा काम गर्छ</td></tr>
+  <tr><td>Internet Speed</td><td>Fast चाहिन्छ (download)</td><td>Moderate internet मा काम गर्छ</td></tr>
+</table>
+<p>नेपालको सन्दर्भमा जहाँ महँगो software subscription सम्भव छैन र internet speed सीमित छ, त्यहाँ ToolsArena को फ्री PDF एडिटर सबैभन्दा व्यावहारिक विकल्प हो।</p>
+<div class="callout-tip">💡 <strong>नेपाली सुझाव:</strong> Kathmandu को cyber café हरूमा Adobe Acrobat नहुन सक्छ — ToolsArena को PDF Editor browser मा नै काम गर्छ, कुनै software install गर्नु पर्दैन।</div>`,
+      },
+      {
+        id: 'pdf-edit-kasari',
+        title: 'PDF अनलाइन कसरी एडिट गर्ने: स्टेप-बाइ-स्टेप',
+        content: `<p>ToolsArena को PDF एडिटरले PDF एडिटिङलाई अत्यन्त सरल बनाएको छ। तलका चरणहरू पालना गर्नुहोस् र मिनेटभित्र आफ्नो PDF एडिट गर्नुहोस्।</p>
+<h4>चरण १: PDF फाइल अपलोड गर्नुहोस्</h4>
+<p>ToolsArena को PDF Editor पेजमा जानुहोस् र "PDF अपलोड गर्नुहोस्" बटन थिच्नुहोस्। तपाईंले तीन तरिकाले PDF अपलोड गर्न सक्नुहुन्छ:</p>
+<ul>
+  <li><strong>Click to Browse:</strong> Computer वा mobile को file manager बाट PDF छान्नुहोस्।</li>
+  <li><strong>Drag & Drop:</strong> PDF file लाई सिधै upload area मा drag गरेर drop गर्नुहोस्।</li>
+  <li><strong>Google Drive / Dropbox:</strong> Cloud storage बाट directly import गर्नुहोस्।</li>
+</ul>
+<div class="callout-info">ℹ️ <strong>File Size Limit:</strong> अधिकतम 100 MB सम्मको PDF upload गर्न सकिन्छ। ठूलो PDF भए पहिले PDF Compressor बाट साइज घटाउनुहोस्।</div>
+<h4>चरण २: PDF पेज Navigate गर्नुहोस्</h4>
+<p>PDF upload भएपछि left panel मा सबै pages को thumbnail देखिन्छ। एडिट गर्नु पर्ने page click गर्नुहोस्। Multiple pages भएको document मा page number directly type गरेर specific page मा जान सकिन्छ।</p>
+<h4>चरण ३: एडिटिङ टूल छान्नुहोस्</h4>
+<p>Top toolbar मा विभिन्न editing tools उपलब्ध छन्:</p>
+<ul>
+  <li><strong>Text Tool (T):</strong> PDF मा नयाँ टेक्स्ट थप्न।</li>
+  <li><strong>Edit Tool (✏️):</strong> अवस्थित टेक्स्ट select र परिमार्जन गर्न।</li>
+  <li><strong>Highlight Tool:</strong> महत्वपूर्ण भाग yellow highlight गर्न।</li>
+  <li><strong>Image Tool:</strong> PDF मा photo वा logo थप्न।</li>
+  <li><strong>Draw Tool:</strong> Freehand drawing वा signature गर्न।</li>
+  <li><strong>Eraser Tool:</strong> अनावश्यक सामग्री मेटाउन।</li>
+</ul>
+<h4>चरण ४: परिवर्तन गर्नुहोस्</h4>
+<p>Text Tool छानेर PDF को जुनसुकै ठाउँमा click गर्नुहोस् र टाइप गर्न थाल्नुहोस्। Sidebar मा font family, size, color, bold/italic/underline सबै customize गर्न सकिन्छ। Existing टेक्स्ट block select गरेर drag गर्दा position पनि बदल्न सकिन्छ।</p>
+<h4>चरण ५: डाउनलोड गर्नुहोस्</h4>
+<p>सबै परिवर्तन गरेपछि "Download PDF" बटन थिच्नुहोस्। Edited PDF तुरुन्त डाउनलोड हुन्छ — वाटरमार्क बिना, साइज reasonable राखेर। File सेभ भएपछि server बाट automatically delete हुन्छ।</p>
+<div class="callout-warning">⚠️ <strong>Privacy Note:</strong> Sensitive कागजात (नागरिकता, पासपोर्ट) एडिट गरेपछि browser tab बन्द गर्नुहोस्। ToolsArena ले files server मा permanently store गर्दैन।</div>`,
+      },
+      {
+        id: 'pdf-editing-features',
+        title: 'PDF एडिटिङ फिचरहरूको जानकारी',
+        content: `<p>ToolsArena को PDF एडिटरमा professional-grade features उपलब्ध छन् जसले तपाईंको document editing अनुभवलाई सहज र प्रभावकारी बनाउँछ। तल सबै मुख्य फिचरहरूको विस्तृत जानकारी दिइएको छ।</p>
+<h4>टेक्स्ट एडिटिङ फिचरहरू:</h4>
+<table>
+  <tr><th>फिचर</th><th>विवरण</th><th>नेपाली उपयोग</th></tr>
+  <tr><td>नयाँ टेक्स्ट थप्ने</td><td>PDF को जुनसुकै ठाउँमा text box थप्न सकिन्छ</td><td>Blank form fields भर्न, Lok Sewa फारम fill गर्न</td></tr>
+  <tr><td>फन्ट फ्यामिली</td><td>Arial, Times New Roman, Helvetica, Courier लगायत 20+ fonts</td><td>Official document को font match गर्न</td></tr>
+  <tr><td>फन्ट साइज</td><td>6pt देखि 72pt सम्म</td><td>Header र body text को appropriate size राख्न</td></tr>
+  <tr><td>टेक्स्ट रङ</td><td>Color picker बाट कुनै पनि रङ</td><td>Important fields red मा highlight गर्न</td></tr>
+  <tr><td>Bold / Italic / Underline</td><td>Standard formatting options</td><td>Key terms emphasize गर्न</td></tr>
+  <tr><td>Text Alignment</td><td>Left, Center, Right, Justify</td><td>Table cells र paragraphs align गर्न</td></tr>
+  <tr><td>Line Spacing</td><td>Single, 1.5, Double spacing</td><td>Formal document formatting</td></tr>
+</table>
+<h4>Annotation र Markup फिचरहरू:</h4>
+<ul>
+  <li><strong>Highlight:</strong> Yellow, green, pink, blue रङमा text highlight। TU transcript को important grades highlight गर्न उपयोगी।</li>
+  <li><strong>Underline:</strong> Important text underline गर्न। Contract clause emphasize गर्न।</li>
+  <li><strong>Strikethrough:</strong> Delete गरिनुपर्ने text मार्क गर्न। Draft review को लागि।</li>
+  <li><strong>Comment/Note:</strong> Sticky note जस्तो annotation थप्न। Review process मा feedback दिन।</li>
+  <li><strong>Arrow र Lines:</strong> Specific section तर्फ pointer थप्न।</li>
+</ul>
+<h4>इमेज र Shape फिचरहरू:</h4>
+<ul>
+  <li><strong>Image Insert:</strong> JPG, PNG, GIF photo थप्न। Photo ID form मा photo paste गर्न।</li>
+  <li><strong>Image Resize:</strong> Inserted image को size handles बाट adjust गर्न।</li>
+  <li><strong>Shape Tools:</strong> Rectangle, Circle, Triangle, Line थप्न। Form boxes draw गर्न।</li>
+  <li><strong>Shape Fill/Border:</strong> Shape को color र border style customize गर्न।</li>
+</ul>
+<h4>Signature फिचर:</h4>
+<p>PDF मा digital signature थप्न तीन option छन्:</p>
+<ul>
+  <li><strong>Draw Signature:</strong> Mouse वा touchscreen ले signature draw गर्नुहोस्।</li>
+  <li><strong>Type Signature:</strong> Script font मा name type गर्नुहोस्।</li>
+  <li><strong>Upload Signature:</strong> Scanned signature image upload गर्नुहोस्।</li>
+</ul>
+<div class="callout-tip">💡 <strong>नेपाली Tip:</strong> Lok Sewa, TU, र government forms मा legal signature चाहिन्छ — digital signature पछि physical print र हस्ताक्षर गर्नुहोस्। Pure digital signature अहिले नेपालमा सबै ठाउँमा accept हुँदैन।</div>
+<h4>पेज Management फिचरहरू:</h4>
+<ul>
+  <li><strong>Page Rotate:</strong> Scanned page गलत angle मा भए rotate गर्नुहोस्।</li>
+  <li><strong>Page Delete:</strong> अनावश्यक pages हटाउनुहोस्।</li>
+  <li><strong>Page Reorder:</strong> Drag-drop ले pages को क्रम मिलाउनुहोस्।</li>
+</ul>`,
+      },
+      {
+        id: 'pdf-edit-tulana',
+        title: 'PDF एडिट गर्ने सबै तरिकाहरूको तुलना',
+        content: `<p>PDF एडिट गर्ने विभिन्न तरिकाहरू उपलब्ध छन् — प्रत्येकको आफ्नै फाइदा र बेफाइदा छ। नेपालको वास्तविक सन्दर्भमा कुन तरिका कहिले उपयुक्त छ भनेर तल विस्तृत तुलना गरिएको छ।</p>
+<h4>उपलब्ध विकल्पहरूको तुलनात्मक विश्लेषण:</h4>
+<table>
+  <tr><th>तरिका</th><th>मूल्य</th><th>Internet</th><th>फिचर</th><th>Privacy</th><th>उपयुक्त अवस्था</th></tr>
+  <tr><td><strong>ToolsArena PDF Editor</strong></td><td>फ्री</td><td>चाहिन्छ</td><td>पर्याप्त</td><td>राम्रो</td><td>दैनिक editing, Lok Sewa forms</td></tr>
+  <tr><td>Adobe Acrobat Pro</td><td>रु. 2,700/महिना</td><td>Initial download</td><td>Full</td><td>राम्रो</td><td>Heavy professional use</td></tr>
+  <tr><td>Foxit PDF Editor</td><td>रु. 1,200/महिना</td><td>Initial download</td><td>Advanced</td><td>राम्रो</td><td>Mid-level professional</td></tr>
+  <tr><td>LibreOffice Draw</td><td>फ्री</td><td>Download एकपटक</td><td>Basic</td><td>Offline</td><td>Offline editing, limited internet</td></tr>
+  <tr><td>Google Docs (Word Convert)</td><td>फ्री</td><td>चाहिन्छ</td><td>Limited</td><td>Google stores data</td><td>Simple text edit</td></tr>
+  <tr><td>Smallpdf.com</td><td>Free limited / Paid</td><td>चाहिन्छ</td><td>Good</td><td>Moderate</td><td>Occasional use</td></tr>
+</table>
+<h4>नेपालका विभिन्न Use Cases अनुसार सिफारिस:</h4>
+<table>
+  <tr><th>User</th><th>Recommended Tool</th><th>कारण</th></tr>
+  <tr><td>लोक सेवा परीक्षार्थी</td><td>ToolsArena PDF Editor</td><td>फ्री, साइनअप छैन, browser मा काम गर्छ</td></tr>
+  <tr><td>TU/KU विद्यार्थी</td><td>ToolsArena PDF Editor</td><td>Transcript annotation, assignment PDF editing</td></tr>
+  <tr><td>NGO/INGO Staff</td><td>ToolsArena वा Foxit</td><td>Project documents, donor reports editing</td></tr>
+  <tr><td>CA/Lawyer</td><td>Adobe Acrobat Pro</td><td>Legal documents, certified signatures चाहिन्छ</td></tr>
+  <tr><td>Freelancer</td><td>ToolsArena PDF Editor</td><td>Client documents, proposals, contracts edit</td></tr>
+  <tr><td>सरकारी कर्मचारी</td><td>LibreOffice Draw</td><td>Offline, secure, government computers मा suitable</td></tr>
+</table>
+<h4>Mobile मा PDF एडिट गर्ने:</h4>
+<p>नेपालमा smartphone users धेरै छन् तर laptop/desktop कम। Mobile बाट PDF एडिट गर्ने option:</p>
+<ul>
+  <li><strong>ToolsArena (Mobile Browser):</strong> Chrome वा Firefox mobile browser मा ToolsArena खोल्नुहोस् — mobile-responsive interface छ।</li>
+  <li><strong>Adobe Acrobat Mobile App:</strong> Basic editing फ्री, advanced features paid।</li>
+  <li><strong>WPS Office (Android/iOS):</strong> PDF editing features सहित फ्री app — नेपालमा popular।</li>
+  <li><strong>Microsoft Office Lens:</strong> Scan र basic PDF edit — Office 365 चाहिन्छ।</li>
+</ul>
+<div class="callout-info">ℹ️ <strong>Data सुरक्षा:</strong> Sensitive कागजात (नागरिकता, पासपोर्ट copy, बैंक statement) edit गर्दा trusted platforms मात्र प्रयोग गर्नुहोस्। ToolsArena ले files process गरेपछि server मा store गर्दैन।</div>`,
+      },
+      {
+        id: 'pdf-editor-vs-tools',
+        title: 'PDF एडिटर vs अन्य PDF उपकरणहरू',
+        content: `<p>PDF एडिटर र अन्य PDF tools बीचको फरक नबुझ्दा धेरैले गलत उपकरण प्रयोग गर्छन्। ToolsArena मा PDF सम्बन्धी विभिन्न tools छन् — तिनको सही प्रयोग जान्नु महत्वपूर्ण छ।</p>
+<h4>PDF Tools को तुलनात्मक विश्लेषण:</h4>
+<table>
+  <tr><th>Tool</th><th>काम</th><th>कहिले प्रयोग गर्ने</th><th>Output</th></tr>
+  <tr><td><strong>PDF Editor</strong></td><td>PDF को सामग्री परिमार्जन गर्ने</td><td>टेक्स्ट थप्न, form भर्न, annotation गर्न</td><td>Edited PDF</td></tr>
+  <tr><td>PDF Merge</td><td>धेरै PDF एउटामा जोड्ने</td><td>Multiple certificates एउटा file मा राख्न</td><td>Combined PDF</td></tr>
+  <tr><td>PDF Compressor</td><td>PDF को size घटाउने</td><td>Email attachment, upload limit पूरा नगर्न</td><td>Smaller PDF</td></tr>
+  <tr><td>PDF to Word</td><td>PDF लाई Word (.docx) मा बदल्ने</td><td>Full document rewrite चाहिँदा</td><td>.docx file</td></tr>
+  <tr><td>Word to PDF</td><td>Word document लाई PDF बनाउने</td><td>Final document submit गर्न</td><td>PDF file</td></tr>
+  <tr><td>PDF Splitter</td><td>PDF को pages अलग गर्ने</td><td>Specific pages extract गर्न</td><td>Multiple PDFs</td></tr>
+  <tr><td>PDF Protector</td><td>PDF मा password राख्ने</td><td>Confidential documents secure गर्न</td><td>Password-protected PDF</td></tr>
+</table>
+<h4>कुन situation मा कुन tool चाहिन्छ?</h4>
+<h5>Lok Sewa आवेदन फारम:</h5>
+<ul>
+  <li>फारम blank PDF मा छ र type गर्नुछ → <strong>PDF Editor</strong> प्रयोग गर्नुहोस्।</li>
+  <li>भरिएको फारम र supporting documents एउटामा राख्नुछ → <strong>PDF Merge</strong> प्रयोग गर्नुहोस्।</li>
+  <li>File size 2MB limit भन्दा ठूलो छ → <strong>PDF Compressor</strong> प्रयोग गर्नुहोस्।</li>
+</ul>
+<h5>TU/KU Academic Documents:</h5>
+<ul>
+  <li>Transcript मा annotation वा explanation थप्नुछ → <strong>PDF Editor</strong>।</li>
+  <li>Transcript + Degree + Character Certificate एउटा file मा → <strong>PDF Merge</strong>।</li>
+  <li>Scanned documents को size घटाउनु छ → <strong>PDF Compressor</strong>।</li>
+</ul>
+<h5>Business Documents:</h5>
+<ul>
+  <li>Contract PDF मा terms update गर्नुछ → <strong>PDF Editor</strong>।</li>
+  <li>Contract को text Word मा edit गरेर पुनः submit → <strong>PDF to Word → Edit → Word to PDF</strong>।</li>
+  <li>Invoice PDF email गर्नुछ, size ठूलो छ → <strong>PDF Compressor</strong>।</li>
+</ul>
+<div class="callout-tip">💡 <strong>Smart Workflow:</strong> ठूलो PDF Edit → Compress → Merge — यो तीन-चरणको workflow ले file size optimal राख्छ र documents organized हुन्छ।</div>
+<h4>PDF Editor र PDF to Word बीच छान्ने:</h4>
+<p>यो सबैभन्दा common confusion हो। Simple rule: PDF को <strong>format र layout</strong> जस्तैको जस्तै राख्दै minor changes गर्नुछ भने <strong>PDF Editor</strong> राम्रो। पूरै document restructure गर्नुछ भने <strong>PDF to Word → Edit → Word to PDF</strong> better option हो।</p>`,
+      },
+      {
+        id: 'vidyarthi-professional-tips',
+        title: 'विद्यार्थी र प्रोफेशनलहरूका लागि PDF एडिटिङ सुझाव',
+        content: `<p>नेपालका विभिन्न users का अलग-अलग PDF editing needs छन्। तल विद्यार्थी, सरकारी/निजी जागिरे, freelancer, र NGO/INGO staff का लागि specific सुझावहरू दिइएको छ।</p>
+<h4>विद्यार्थीहरूका लागि (SEE/NEB/TU/KU):</h4>
+<ul>
+  <li><strong>Assignment PDF:</strong> Word document मा assignment गरेर Word to PDF convert गर्नुहोस् — PDF Editor बाट directly type गर्नु भन्दा यो बढी efficient छ।</li>
+  <li><strong>Transcript Annotation:</strong> TU/KU transcript मा grade explanation वा translation note थप्न PDF Editor प्रयोग गर्नुहोस्।</li>
+  <li><strong>Scholarship Application:</strong> Multiple documents (transcript, character certificate, bank statement) एउटा PDF मा merge गर्नुहोस् — maximum file size limit हेर्नुहोस्।</li>
+  <li><strong>Thesis Submission:</strong> Final thesis PDF मा supervisor feedback annotation हेर्न र respond गर्न PDF Editor उपयोगी।</li>
+  <li><strong>IOE/IOM Entrance Form:</strong> Scanned form PDF मा details type गरेर भर्न PDF Editor प्रयोग गर्नुहोस्।</li>
+</ul>
+<h4>लोक सेवा परीक्षार्थीहरूका लागि:</h4>
+<ul>
+  <li><strong>Application Form:</strong> PSC (Lok Sewa) का online forms PDF मा download गर्न सकिन्छ — PDF Editor ले type गरेर fill गर्नुहोस्, हस्तलिखित भर्दा गल्ती हुन सक्छ।</li>
+  <li><strong>Age Verification Documents:</strong> Citizenship + Birth Certificate एउटा PDF मा merge गर्नुहोस्।</li>
+  <li><strong>Experience Certificate:</strong> Job experience certificates combine गर्दा page order मिलाउनुहोस् — PDF Merge tool मा drag-drop ले reorder हुन्छ।</li>
+  <li><strong>Educational Certificates:</strong> SLC/SEE, +2, Bachelor degree certificates एउटा organized PDF मा — recruitment office मा submit गर्न सजिलो।</li>
+</ul>
+<h4>NGO/INGO Professionals का लागि:</h4>
+<ul>
+  <li><strong>Project Proposal:</strong> Budget table, activity plan, logical framework एउटै PDF मा organized गर्नुहोस्। PDF Editor ले last-minute corrections गर्न सकिन्छ।</li>
+  <li><strong>MOU र Agreement:</strong> Contract PDF मा highlighted sections र comments थप्नुहोस् — review process efficient हुन्छ।</li>
+  <li><strong>Donor Report:</strong> Field photos, data tables र narrative एउटा professional PDF मा। Images insert गर्न PDF Editor को image tool प्रयोग गर्नुहोस्।</li>
+  <li><strong>Training Materials:</strong> Workshop handout PDF मा participant-specific information add गर्न सकिन्छ।</li>
+</ul>
+<h4>Freelancer र Entrepreneurs का लागि:</h4>
+<ul>
+  <li><strong>Client Proposal:</strong> Template PDF proposal मा client-specific details, pricing, र timeline fill गर्न PDF Editor प्रयोग गर्नुहोस्।</li>
+  <li><strong>Contract Signing:</strong> Client ले पठाएको contract PDF मा digital signature थप्नुहोस् र return गर्नुहोस्।</li>
+  <li><strong>Portfolio PDF:</strong> Work samples PDF मा descriptive captions र contact information थप्नुहोस्।</li>
+  <li><strong>Invoice Correction:</strong> Sent invoice मा minor correction गर्नुपर्दा — तर better option नयाँ revised invoice बनाउनु हो।</li>
+</ul>
+<div class="callout-tip">💡 <strong>Pro Tip:</strong> Government forms धेरैजसो non-fillable PDF मा आउँछन् — PDF Editor को text overlay tool ले field position मिलाएर type गर्न सकिन्छ। Print गर्दा type गरिएको text सँगै print हुन्छ।</div>`,
+      },
+      {
+        id: 'samasya-samadhan',
+        title: 'PDF एडिटिङका सामान्य समस्या र समाधान',
+        content: `<p>PDF एडिट गर्दा धेरैले केही सामान्य समस्याहरूमा अड्किन्छन्। तल नेपाली users ले सामान्यतः भोग्ने समस्याहरू र तिनका व्यावहारिक समाधानहरू दिइएको छ।</p>
+<h4>सामान्य समस्याहरू र समाधान:</h4>
+<table>
+  <tr><th>समस्या</th><th>कारण</th><th>समाधान</th></tr>
+  <tr><td>PDF upload भएन</td><td>File size 100MB भन्दा ठूलो</td><td>PDF Compressor बाट पहिले size घटाउनुहोस्</td></tr>
+  <tr><td>Text type हुँदैन</td><td>PDF password-protected छ</td><td>PDF Unlocker tool प्रयोग गरेर password हटाउनुहोस्</td></tr>
+  <tr><td>Font मेल खाएन</td><td>Original font available छैन</td><td>Available fonts मध्ये closest match छान्नुहोस्; Arial वा Times New Roman standard</td></tr>
+  <tr><td>Nepali text देखिएन</td><td>Nepali Unicode font support नभएको</td><td>Preeti को सट्टा Unicode (Noto Sans Devanagari) font प्रयोग गर्नुहोस्</td></tr>
+  <tr><td>Image blurry भयो</td><td>Low resolution image insert गरियो</td><td>Minimum 150 DPI resolution को image प्रयोग गर्नुहोस्</td></tr>
+  <tr><td>Download भएन</td><td>Browser popup blocked</td><td>Browser settings मा popup allow गर्नुहोस् वा अर्को browser प्रयोस गर्नुहोस्</td></tr>
+  <tr><td>Edit disappear भयो</td><td>Page refresh वा browser crash</td><td>Edit गरेपछि तुरुन्त download गर्नुहोस्; auto-save feature छैन</td></tr>
+  <tr><td>Scanned PDF edit हुँदैन</td><td>Image-based PDF, text layer छैन</td><td>OCR tool प्रयोग गरेर text layer थप्नुहोस् वा text overlay tool प्रयोग गर्नुहोस्</td></tr>
+</table>
+<h4>Scanned PDF को समस्या:</h4>
+<p>नेपालमा धेरै official documents (नागरिकता, लालपुर्जा, पुराना certificates) scanner बाट PDF बनाइएका हुन्छन् — यी image-based PDF हुन् जसमा text directly edit हुँदैन। यसको दुई समाधान छन्:</p>
+<ul>
+  <li><strong>Text Overlay:</strong> PDF Editor को text tool ले original text माथि नै नयाँ text box राख्नुहोस् — printed look मिल्छ।</li>
+  <li><strong>OCR Convert:</strong> OCR (Optical Character Recognition) tool ले image को text लाई editable text मा convert गर्छ — OCR accuracy scanned document quality मा निर्भर हुन्छ।</li>
+</ul>
+<h4>Password-Protected PDF को समस्या:</h4>
+<p>IRD, सरकारी निकाय, र banks ले पठाएका कतिपय PDF password-protected हुन्छन्। यस्तो PDF edit गर्न:</p>
+<ul>
+  <li>सम्बन्धित office/bank बाट password माग्नुहोस्।</li>
+  <li>यदि password थाहा छ भने PDF Unlocker tool मा password दिएर unlock गर्नुहोस्।</li>
+  <li>Permission password भएको PDF (print/edit restrict) — owner permission बिना edit गर्न नमिल्ने।</li>
+</ul>
+<h4>Nepali Unicode Text को समस्या:</h4>
+<p>नेपाली text type गर्दा garbled characters देखिए:</p>
+<ul>
+  <li>Noto Sans Devanagari वा Mangal font select गर्नुहोस्।</li>
+  <li>Google Input Tools (Chrome extension) बाट Devanagari type गर्नुहोस्।</li>
+  <li>Preeti/Kantipur encoding PDF मा नेपाली text add गर्न Unicode font नै use गर्नुहोस् — पुराना Preeti font encoding आधुनिक browsers मा display हुँदैन।</li>
+</ul>
+<div class="callout-warning">⚠️ <strong>महत्वपूर्ण:</strong> Legal documents (court orders, property deeds, government certificates) मा unauthorized editing गर्नु illegal हुन सक्छ। प्रयोजन educational र legitimate administrative use मात्रका लागि हो।</div>`,
+      },
+      {
+        id: 'pdf-checklist',
+        title: 'PDF एडिटर चेकलिस्ट: सेभ गर्नुअघि',
+        content: `<p>PDF एडिट गरेपछि download गर्नुअघि यो checklist जाँच्नुहोस् — एउटा साना गल्तीले document reject हुन सक्छ वा unprofessional देखिन सक्छ।</p>
+<h4>सामग्री जाँच:</h4>
+<ul>
+  <li>☐ सबै text fields सही र complete भरिएका छन्।</li>
+  <li>☐ Spelling र grammar जाँचिएको छ (Nepali र English दुवै)।</li>
+  <li>☐ Dates सही format मा छन् (AD/BS अनुसार requirement)।</li>
+  <li>☐ नाम, ठेगाना र contact details accurate छन्।</li>
+  <li>☐ Required fields कुनै छुटेको छैन।</li>
+</ul>
+<h4>Formatting जाँच:</h4>
+<ul>
+  <li>☐ Font consistent छ — एउटै document मा धेरै fonts प्रयोग नगर्नुहोस्।</li>
+  <li>☐ Text size appropriate छ — too small वा too large छैन।</li>
+  <li>☐ Text alignment सही छ — form fields मा text properly aligned छ।</li>
+  <li>☐ Added text original document को style सँग match हुन्छ।</li>
+  <li>☐ Images properly positioned छन् र original content cover गरेका छैनन्।</li>
+</ul>
+<h4>Technical जाँच:</h4>
+<ul>
+  <li>☐ PDF सबै pages include भएका छन्।</li>
+  <li>☐ File size submission limit भन्दा कम छ।</li>
+  <li>☐ Downloaded PDF खोलेर preview गरिएको छ।</li>
+  <li>☐ Print preview मा सबै content visible छ।</li>
+  <li>☐ Sensitive personal information (PIN, password) PDF मा accidentally include भएको छैन।</li>
+</ul>
+<h4>नेपाली Document Specific जाँच:</h4>
+<table>
+  <tr><th>Document Type</th><th>विशेष जाँच</th></tr>
+  <tr><td>Lok Sewa Application</td><td>Post name, advertisement number, roll number सही छ?</td></tr>
+  <tr><td>TU/KU Document</td><td>Student ID, program name, academic year correct छ?</td></tr>
+  <tr><td>Visa Application</td><td>Passport number, travel dates, destination country accurate?</td></tr>
+  <tr><td>NGO Proposal</td><td>Organization name, registration number, project dates?</td></tr>
+  <tr><td>Business Contract</td><td>Party names, dates, amount, terms correctly filled?</td></tr>
+</table>
+<h4>Final Steps:</h4>
+<ul>
+  <li><strong>Download र Preview:</strong> Downloaded PDF अर्को PDF viewer (Adobe Reader वा browser) मा खोलेर final check गर्नुहोस्।</li>
+  <li><strong>Print Test:</strong> Important documents print गरेर physical copy जाँच्नुहोस् — screen र print मा text position फरक हुन सक्छ।</li>
+  <li>
+    <strong>Backup:</strong> Edited PDF को copy आफ्नो email मा पठाउनुहोस् वा Google Drive मा save गर्नुहोस् — browser close भएपछि ToolsArena server बाट file delete हुन्छ।
+  </li>
+</ul>
+<div class="callout-tip">💡 <strong>Submission Tip:</strong> Online portal मा PDF submit गर्नुअघि file size, format (PDF/A vs regular PDF), र page limit जाँच्नुहोस्। Lok Sewa Online Portal ले maximum 2MB PDF accept गर्छ — ठूलो भए PDF Compressor प्रयोग गर्नुहोस्।</div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'PDF फाइल अपलोड गर्नुहोस्',
+        description: 'ToolsArena PDF Editor मा जानुहोस् र "PDF अपलोड गर्नुहोस्" बटन थिच्नुहोस्। Browser, Google Drive वा Dropbox बाट PDF file select गर्नुहोस्। 100MB सम्मको file support गर्छ।',
+      },
+      {
+        title: 'एडिटिङ टूल छान्नुहोस्',
+        description: 'Top toolbar बाट आवश्यक tool छान्नुहोस् — Text Tool (T) ले नयाँ टेक्स्ट थप्न, Highlight Tool ले text mark गर्न, Image Tool ले photo insert गर्न, Draw Tool ले signature draw गर्न।',
+      },
+      {
+        title: 'PDF परिमार्जन गर्नुहोस्',
+        description: 'PDF को जुनसुकै ठाउँमा click गरेर edit गर्न थाल्नुहोस्। Text box थप्नुहोस्, font family र size छान्नुहोस्, रङ set गर्नुहोस्। Lok Sewa फारम, TU transcript, भिसा फारम — जुनसुकै PDF एडिट गर्न सकिन्छ।',
+      },
+      {
+        title: 'परिवर्तन Review गर्नुहोस्',
+        description: 'Edit गरेपछि सबै pages preview मा हेर्नुहोस्। Text alignment, font consistency, र content accuracy जाँच्नुहोस्। Page navigation बाट सबै pages check गर्नुहोस्।',
+      },
+      {
+        title: 'वाटरमार्क बिना Download गर्नुहोस्',
+        description: '"Download PDF" बटन थिच्नुहोस् — edited PDF तुरुन्त download हुन्छ, वाटरमार्क बिना र साइनअप नचाहिने। Downloaded file Google Drive मा backup राख्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'के ToolsArena PDF Editor साँच्चै फ्री छ? Hidden charges छन्?',
+        answer: 'हो, ToolsArena PDF Editor पूर्णतः निःशुल्क छ। कुनै hidden charges, subscription fee, वा premium tier छैन। PDF upload देखि download सम्म सबै features free मा available छन्। साइनअप वा credit card पनि चाहिँदैन।',
+      },
+      {
+        question: 'Lok Sewa फारम PDF मा type गर्न सकिन्छ?',
+        answer: 'हो। Lok Sewa आयोगको blank PDF application form download गर्नुहोस् र ToolsArena PDF Editor मा upload गर्नुहोस्। Text Tool बाट form fields मा position मिलाएर type गर्नुहोस्। यसले हस्तलिखित form भन्दा cleaner र professional result दिन्छ।',
+      },
+      {
+        question: 'PDF मा नेपाली भाषामा टेक्स्ट थप्न सकिन्छ?',
+        answer: 'हो। Noto Sans Devanagari font select गरेर नेपाली Unicode text type गर्न सकिन्छ। Google Input Tools वा नेपाली keyboard layout प्रयोग गर्नुहोस्। Preeti/Kantipur encoding भने support गर्दैन — Unicode मात्र।',
+      },
+      {
+        question: 'Scanned PDF (image-based) edit हुन्छ?',
+        answer: 'Scanned PDF मा existing text directly edit हुँदैन किनभने text layer हुँदैन। तर Text Overlay method — existing content माथि नयाँ text box राखेर — काम गर्छ। Full edit चाहिएमा OCR tool ले text layer थपेपछि edit गर्न सकिन्छ।',
+      },
+      {
+        question: 'Password-protected PDF edit गर्न मिल्छ?',
+        answer: 'Password-protected PDF directly edit हुँदैन। पहिले PDF Unlocker tool बाट password हटाउनुहोस् (password थाहा हुनुपर्छ), त्यसपछि PDF Editor मा edit गर्न सकिन्छ। Password थाहा नभई unlock गर्न मिल्दैन।',
+      },
+      {
+        question: 'Edited PDF download भएपछि ToolsArena server मा रहन्छ?',
+        answer: 'छैन। Privacy को लागि ToolsArena ले PDF process गरेपछि server बाट automatically delete गर्छ। तपाईंको sensitive documents (नागरिकता, पासपोर्ट, transcript) permanently store हुँदैन। Download गरेपछि आफैले secure backup राख्नुहोस्।',
+      },
+      {
+        question: 'Mobile phone बाट PDF edit गर्न सकिन्छ?',
+        answer: 'हो। Chrome वा Firefox mobile browser मा ToolsArena खोल्नुहोस् — mobile-responsive interface छ। Phone को file manager बाट PDF upload गर्नुहोस्। Touchscreen ले text box place गर्न र typing गर्न मिल्छ। ठूलो editing भने desktop मा बढी सजिलो हुन्छ।',
+      },
+      {
+        question: 'TU/KU transcript मा annotation थप्दा original document valid रहन्छ?',
+        answer: 'Original transcript PDF लाई modify गरे officially valid रहँदैन — institution issued document alter गर्नु acceptable हुँदैन। Annotation purpose को लागि copy मा काम गर्नुहोस् र original unedited copy आफैसँग राख्नुहोस्। Study purpose वा personal reference का लागि annotation गर्न सकिन्छ।',
+      },
+    ],
+    relatedGuides: ['pdf-merge-guide', 'pdf-to-word-guide', 'pdf-compressor-guide'],
+    toolCTA: {
+      heading: 'अहिले नै फ्री PDF एडिटर प्रयोग गर्नुहोस्!',
+      description: 'Lok Sewa फारम, TU transcript, भिसा आवेदन — जुनसुकै PDF फ्रीमा एडिट गर्नुहोस्। वाटरमार्क बिना, साइनअप नचाहिने — आजै सुरु गर्नुहोस्।',
+      buttonText: 'PDF एडिटर खोल्नुहोस् →',
+    },
+  },
+
 ];
