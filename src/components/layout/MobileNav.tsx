@@ -26,11 +26,14 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
       <div className="absolute inset-0 bg-black/50" onClick={onClose} aria-hidden="true" />
       <div className="absolute left-0 top-0 bottom-0 w-72 bg-white dark:bg-slate-900 shadow-xl flex flex-col animate-slide-in">
         <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-800">
-          <Link href="/" onClick={onClose} className="flex items-center gap-2 font-heading font-bold text-xl text-primary-800 dark:text-primary-400">
-            <span className="w-8 h-8 bg-gradient-to-br from-blue-800 to-blue-500 rounded-lg flex items-center justify-center">
-              <Zap className="w-5 h-5 text-amber-400" fill="currentColor" />
+          <Link href="/" onClick={onClose} className="flex items-center gap-2.5">
+            <span className="w-9 h-9 bg-gradient-to-br from-amber-400 via-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-md shadow-orange-500/20">
+              <Zap className="w-5 h-5 text-white drop-shadow-sm" fill="currentColor" strokeWidth={1} />
             </span>
-            ToolsArena
+            <span className="flex items-baseline gap-0.5 font-heading font-extrabold text-xl tracking-tight">
+              <span className="text-slate-900 dark:text-white">Tools</span>
+              <span className="text-orange-500 dark:text-orange-400">Arena</span>
+            </span>
           </Link>
           <button onClick={onClose} className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Close menu">
             <X className="w-5 h-5 text-slate-600 dark:text-slate-400" />

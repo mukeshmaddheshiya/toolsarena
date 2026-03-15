@@ -32,11 +32,14 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center h-16 gap-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 shrink-0 font-heading font-bold text-xl text-primary-800 dark:text-primary-400">
-              <span className="w-8 h-8 bg-gradient-to-br from-blue-800 to-blue-500 rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-amber-400" fill="currentColor" />
+            <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
+              <span className="relative w-9 h-9 bg-gradient-to-br from-amber-400 via-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-md shadow-orange-500/20 group-hover:shadow-orange-500/40 transition-shadow">
+                <Zap className="w-5 h-5 text-white drop-shadow-sm" fill="currentColor" strokeWidth={1} />
               </span>
-              <span className="hidden sm:block">ToolsArena</span>
+              <span className="hidden sm:flex items-baseline gap-0.5 font-heading font-extrabold text-xl tracking-tight">
+                <span className="text-slate-900 dark:text-white">Tools</span>
+                <span className="text-orange-500 dark:text-orange-400">Arena</span>
+              </span>
             </Link>
 
             {/* Desktop nav */}

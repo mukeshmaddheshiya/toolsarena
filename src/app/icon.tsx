@@ -8,26 +8,24 @@ export default function Icon() {
     (
       <div
         style={{
-          background: 'linear-gradient(135deg, #1e40af, #3b82f6)',
+          background: 'linear-gradient(135deg, #f59e0b, #f97316, #ea580c)',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          borderRadius: '20px',
+          borderRadius: '22px',
         }}
       >
         <svg
-          width="60"
-          height="72"
+          width="58"
+          height="58"
           viewBox="0 0 24 24"
           fill="none"
         >
           <path
             d="M13 2L4 14h7l-2 8 9-12h-7l2-8z"
-            fill="#fbbf24"
-            stroke="#f59e0b"
-            strokeWidth="0.5"
+            fill="#ffffff"
           />
         </svg>
       </div>
