@@ -6976,6 +6976,375 @@ $$</code></pre>
     },
   },
 
+  // ── RESUME BUILDER GUIDE ──────────────────────────────────────
+  {
+    slug: 'resume-builder-guide',
+    toolSlug: 'resume-builder',
+    category: 'utility-tools',
+    title: 'Free Resume Builder Guide: Create a Professional Resume Online (2026)',
+    subtitle: 'Step-by-step guide to building an ATS-friendly resume that gets you interviews — with free templates, expert tips, and real examples for freshers and experienced professionals.',
+    metaTitle: 'Free Resume Builder Online: Create Professional Resume (2026)',
+    metaDescription: 'Build a professional resume for free with our online resume builder. ATS-friendly templates, expert tips for freshers & experienced. No signup, instant PDF download.',
+    targetKeyword: 'free resume builder',
+    secondaryKeywords: [
+      'resume builder online free',
+      'resume maker',
+      'CV builder free',
+      'free resume builder for freshers',
+      'ATS resume builder',
+      'professional resume maker online',
+      'resume builder no signup',
+      'free resume download PDF',
+      'online CV maker',
+      'resume builder India',
+      'how to make resume online',
+      'best free resume builder 2026',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '12 min read',
+    tags: ['Resume', 'Career', 'Jobs', 'Free Tools'],
+    intro: `<p>Your resume is the single most important document in your career. Recruiters spend an average of just <strong>6 seconds</strong> scanning a resume before deciding whether to read further — and in India's hyper-competitive job market, where thousands of candidates apply for every role on Naukri, LinkedIn, or Internshala, a poorly formatted or keyword-starved resume gets discarded before a human ever sees it. Whether you are a fresh graduate preparing for campus placements or an experienced professional targeting a senior role, your resume must be both visually impressive and machine-readable to pass Applicant Tracking Systems (ATS).</p>
+<p>ToolsArena's <strong>free resume builder</strong> solves both problems at once. With three professionally designed templates (Modern, Classic, and Minimal), eight colour themes, and one-click PDF export, you can create an ATS-optimised resume in under 15 minutes — completely free, with no account required. This comprehensive guide walks you through every step: from understanding what ATS software looks for, to crafting a compelling summary, to choosing the right template for your industry. By the end, you will have a resume that stands out in the pile and gets you the interview.</p>`,
+    sections: [
+      {
+        id: 'what-is-a-resume-builder',
+        title: 'What Is a Resume Builder and Why You Need One',
+        content: `<p>A <strong>resume builder</strong> is an online tool that provides pre-structured templates, guided input fields, and automated formatting so you can create a professional resume without needing design skills or expensive software like Microsoft Word or Adobe InDesign. Instead of wrestling with margins and font sizes, you fill in your details and the builder handles the layout — ensuring consistent spacing, clear section hierarchy, and a polished final output.</p>
+<h3>Why formatting matters more than you think</h3>
+<p>Most mid-to-large companies — and nearly all IT firms in India, including TCS, Infosys, Wipro, HCL, and startups using Lever or Greenhouse — use <strong>Applicant Tracking Systems (ATS)</strong> to screen resumes before a human reads them. An ATS parses your resume into a structured database, extracting your name, contact details, work history, skills, and education. If your resume uses complex tables, text boxes, headers/footers, or non-standard fonts, the ATS may fail to parse it correctly — and your application is automatically rejected, regardless of how qualified you are.</p>
+<div class="callout-info"><strong>ℹ️ Did You Know</strong><p>According to Jobscan, over 98% of Fortune 500 companies use ATS software. In India, major job portals like Naukri.com and LinkedIn have their own parsing engines that rank your profile based on keyword matches — making ATS optimisation essential even for portal-based applications.</p></div>
+<h3>Resume builder vs. DIY in Word vs. Canva — comparison</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>ToolsArena (Free)</th><th>Canva (Free tier)</th><th>Zety</th><th>NovoResume</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cost</td><td>100% Free</td><td>Free / Paid</td><td>Paid ($2.70/week)</td><td>Paid ($16/month)</td></tr>
+    <tr><td>No signup required</td><td>✅ Yes</td><td>❌ Required</td><td>❌ Required</td><td>❌ Required</td></tr>
+    <tr><td>ATS-safe templates</td><td>✅ All templates</td><td>⚠️ Some designs fail ATS</td><td>✅ Yes</td><td>✅ Yes</td></tr>
+    <tr><td>PDF download</td><td>✅ Instant, free</td><td>✅ Free tier limited</td><td>❌ Paid only</td><td>❌ Paid only</td></tr>
+    <tr><td>Templates available</td><td>3 (Modern, Classic, Minimal)</td><td>100+</td><td>18</td><td>16</td></tr>
+    <tr><td>India-specific guidance</td><td>✅ Yes</td><td>❌ No</td><td>❌ No</td><td>❌ No</td></tr>
+    <tr><td>Works offline / private</td><td>✅ Browser-based</td><td>❌ Cloud-stored</td><td>❌ Cloud-stored</td><td>❌ Cloud-stored</td></tr>
+  </tbody>
+</table>
+<p>The core advantage of ToolsArena's resume builder is that it produces clean, single-column HTML output that every ATS can parse perfectly — while still looking modern and professional to human recruiters. Your data is never uploaded to a server, so your personal information stays private.</p>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>If you are applying to design roles or creative agencies where the hiring manager (not an ATS) is the first reader, a visually rich Canva template can work. For all other roles — especially IT, finance, consulting, and government — use an ATS-safe builder like ToolsArena.</p></div>`,
+      },
+      {
+        id: 'how-to-write-a-resume',
+        title: 'How to Write a Resume That Gets Interviews',
+        content: `<p>Writing a resume that consistently generates interview calls requires understanding both what recruiters want and how ATS systems score your application. The two goals are more aligned than most people realise — a well-structured, keyword-rich resume is both machine-readable and human-friendly.</p>
+<h3>The standard resume structure</h3>
+<p>For the Indian job market in 2026, the optimal resume structure is:</p>
+<ol>
+  <li><strong>Header</strong> — Name, phone, email, LinkedIn URL, city (not full address)</li>
+  <li><strong>Professional Summary</strong> — 3–4 lines summarising your profile, key skills, and career objective</li>
+  <li><strong>Work Experience</strong> — Most recent job first (reverse chronological order)</li>
+  <li><strong>Education</strong> — Degree, college, year, percentage/CGPA</li>
+  <li><strong>Skills</strong> — Technical skills, tools, frameworks (as a clean list, not a progress bar)</li>
+  <li><strong>Projects</strong> — Essential for freshers; optional but valuable for experienced professionals</li>
+  <li><strong>Certifications</strong> — Coursera, NPTEL, AWS, Google certifications carry weight</li>
+  <li><strong>Languages</strong> — Include if applying to multilingual roles or MNCs</li>
+</ol>
+<h3>The 6-second scan rule</h3>
+<p>Eye-tracking studies by The Ladders found that recruiters spend an average of 6 seconds on initial resume screening. In those 6 seconds, they look at: your name, current/most recent job title, current/most recent employer, start and end dates of current job, previous job title, and education. Everything else is secondary during the first pass.</p>
+<p>This means your job title, company name, and the top third of your resume carry disproportionate weight. A clear, bold name at the top, a concise summary with your key title ("Full Stack Developer | 3 Years Experience"), and your most recent role immediately visible will dramatically improve your first-impression score.</p>
+<h3>Tips specific to the India job market</h3>
+<ul>
+  <li><strong>Include your CGPA</strong> if it is above 7.0/10 or 70%. Many Indian companies, especially PSUs and service-sector firms, use CGPA as a filter.</li>
+  <li><strong>Add your 10th and 12th board results</strong> if you are a fresher. Companies like TCS and Infosys still use 60% in 10/12 as eligibility criteria for freshers.</li>
+  <li><strong>List your Naukri profile URL</strong> if it is well-maintained — recruiters in India often cross-check Naukri profiles.</li>
+  <li><strong>Tailor for each job</strong> — use keywords from the job description. A resume for a "Python Developer" role at a startup should emphasise different skills than one for an "Associate Software Engineer" at a service company.</li>
+  <li><strong>Avoid a photograph</strong> unless the job posting specifically requests one. Most Indian IT and MNC roles do not require photos, and including one can trigger unconscious bias.</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ Warning</strong><p>Never use a functional resume format (which groups skills rather than listing jobs chronologically) for the Indian job market. Recruiters and ATS systems in India strongly prefer reverse-chronological format. A functional resume raises red flags about employment gaps.</p></div>
+<h3>What recruiters look for in 2026</h3>
+<p>Beyond structure and keywords, modern recruiters in India are specifically looking for: quantified achievements (numbers, percentages, revenue impact), evidence of continuous learning (recent certifications, online courses), project-specific outcomes (not just responsibilities), and clean, uncluttered formatting with generous white space. The days of a "busy" resume packed with every possible detail are over — clarity and impact are the new standards.</p>`,
+      },
+      {
+        id: 'resume-sections-explained',
+        title: 'Resume Sections Explained: What to Include and What to Skip',
+        content: `<p>Every section of your resume serves a specific purpose. Knowing what to include — and what to leave out — is as important as the content itself. The wrong sections waste precious space and dilute the impact of your strongest credentials.</p>
+<h3>Header: your professional identity</h3>
+<p>Include: Full name (large, bold), phone number, professional email address (firstname.lastname@gmail.com), LinkedIn profile URL, GitHub URL (if in tech), city and state. Do NOT include: full street address, date of birth, marital status, father's name, religion, or caste. These are irrelevant to your professional qualifications and take up space that should be used for your skills.</p>
+<h3>Professional summary vs. objective statement</h3>
+<p>A <strong>professional summary</strong> is a 3–4 line paragraph that highlights your experience, key skills, and value proposition. An <strong>objective statement</strong> says what you want from the job. Summaries are far more effective because they focus on what you offer, not what you want. Use an objective statement only if you are a complete fresher with no internship experience — in that case, briefly state your career goal and top skills.</p>
+<h3>Work experience: the most critical section</h3>
+<p>For each role, include: job title, company name, location (city), employment dates (Month Year – Month Year), and 3–5 bullet points describing your responsibilities and achievements. Start every bullet with an action verb (Developed, Designed, Led, Reduced, Increased, Automated). Quantify wherever possible: "Reduced API response time by 40% through query optimisation" is ten times more impactful than "Worked on database optimisation."</p>
+<h3>Education: what to include</h3>
+<p>Always list your highest degree first. Include: degree name, specialisation, institution name, city, year of graduation, and CGPA or percentage. For freshers in India, also include 12th board (PCM/Commerce/Arts, Board name, year, percentage) and 10th board if above 80%.</p>
+<h3>Skills: format matters</h3>
+<p>List skills as a clean, comma-separated or bulleted list grouped by category. Do NOT use visual progress bars or star ratings for skills — ATS systems cannot read them, and they carry no meaningful information (what does "4 out of 5 stars in Python" actually mean?). Instead: <em>Programming Languages: Python, Java, JavaScript | Frameworks: Django, React, Node.js | Databases: MySQL, MongoDB | Tools: Git, Docker, JIRA</em></p>
+<h3>Fresher vs. experienced — what to include</h3>
+<table>
+  <thead>
+    <tr><th>Section</th><th>Fresher (0–1 year)</th><th>Experienced (2+ years)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Professional Summary</td><td>Objective statement (2–3 lines)</td><td>Summary with years of experience and key achievements</td></tr>
+    <tr><td>Work Experience</td><td>Internships, part-time work</td><td>Full-time roles (primary section)</td></tr>
+    <tr><td>Projects</td><td>Essential — 3–5 projects</td><td>Optional — include only notable ones</td></tr>
+    <tr><td>Education</td><td>Prominent — include 10th, 12th, degree</td><td>Brief — degree only (no 10th/12th)</td></tr>
+    <tr><td>CGPA / Percentage</td><td>Include if above 7.0 CGPA</td><td>Only include if specifically asked</td></tr>
+    <tr><td>Certifications</td><td>Include all relevant ones</td><td>Include only current/reputable ones</td></tr>
+    <tr><td>Extra-curriculars</td><td>Include leadership roles, hackathons</td><td>Omit unless highly relevant</td></tr>
+    <tr><td>Languages</td><td>Include</td><td>Include if multilingual role</td></tr>
+    <tr><td>References</td><td>Not required</td><td>Not required ("Available on request" is outdated)</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Never include "Hobbies" like "reading, music, travelling" on a professional resume. These add no value and waste space. The only exception is if your hobby directly relates to the job — e.g., "Open source contributor" for a developer role, or "Travel blogger" for a content marketing role.</p></div>`,
+      },
+      {
+        id: 'ats-friendly-resume-tips',
+        title: 'ATS-Friendly Resume Tips: Beat the Applicant Tracking System',
+        content: `<p>An <strong>Applicant Tracking System (ATS)</strong> is software used by employers to collect, sort, scan, and rank job applications. Think of it as a digital gatekeeper: before a human recruiter ever sees your resume, the ATS has already scored it on keyword match, formatting parseability, and section completeness. If your resume scores below a threshold (often 70–80%), it is automatically filtered out.</p>
+<h3>How ATS parsing works</h3>
+<p>The ATS reads your resume from top to bottom, left to right, just like a human — but it is looking for specific data fields. It tries to identify: your name and contact info (in the header), job titles (to match against the role), company names and dates (to calculate experience), education credentials, and skill keywords (to match against the job description). Any formatting element that confuses this linear parsing — multi-column layouts, text boxes, tables used for layout, header/footer sections, images — can cause misparse or data loss.</p>
+<h3>ATS formatting rules</h3>
+<ul>
+  <li><strong>Use a single-column layout.</strong> Two-column resumes are visually appealing but ATS systems often read columns left-to-right across the page, jumbling your content.</li>
+  <li><strong>Use standard section headings.</strong> "Work Experience," "Education," "Skills" are universally recognised. Avoid creative names like "My Journey" or "What I Know."</li>
+  <li><strong>Use standard fonts.</strong> Arial, Calibri, Georgia, Times New Roman, Helvetica. Avoid decorative fonts.</li>
+  <li><strong>Submit as PDF.</strong> PDF preserves formatting across systems. If the job posting specifies .docx, use Word format — never .pages or .odt.</li>
+  <li><strong>Avoid headers and footers.</strong> Many ATS systems skip content in header/footer areas entirely — your phone number could disappear.</li>
+  <li><strong>No text boxes or SmartArt.</strong> These are invisible to ATS parsers.</li>
+  <li><strong>Use bullet points, not tables.</strong> For listing job responsibilities, use bullet points instead of table cells.</li>
+</ul>
+<h3>Keyword optimisation strategy</h3>
+<p>The most critical ATS optimisation is <strong>keyword matching</strong>. Every job description contains the exact keywords the ATS is programmed to search for. Your goal is to naturally include those keywords in your resume. Here is the process:</p>
+<ol>
+  <li>Copy the job description into a text editor.</li>
+  <li>Identify the most frequently repeated skills, tools, and phrases (e.g., "React.js," "Agile methodology," "cross-functional collaboration").</li>
+  <li>Check your resume — do you use those exact terms? If you call it "ReactJS" but the JD says "React.js," update your resume to match.</li>
+  <li>Add missing keywords naturally into your summary, skills section, or bullet points — only if you genuinely have those skills.</li>
+</ol>
+<div class="callout-warning"><strong>⚠️ Warning</strong><p>Never "keyword stuff" by hiding white text on a white background or pasting the job description in tiny font. Modern ATS systems and recruiters can detect this, and it will immediately disqualify you. Only include keywords for skills you genuinely possess — you will need to demonstrate them in the interview.</p></div>
+<h3>Common ATS mistakes to avoid</h3>
+<table>
+  <thead>
+    <tr><th>Mistake</th><th>Why It Fails ATS</th><th>Fix</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sending a photo/headshot resume</td><td>Images block text parsing</td><td>Remove photo; use text-only header</td></tr>
+    <tr><td>Using a two-column layout</td><td>Columns merge into garbled text</td><td>Switch to single-column template</td></tr>
+    <tr><td>Skill progress bars</td><td>ATS reads "●●●●○" as symbols, not skill level</td><td>List skills as plain text</td></tr>
+    <tr><td>Spelling out "&amp;" instead of "and"</td><td>Keyword mismatch if JD uses "and"</td><td>Use the exact phrasing from the JD</td></tr>
+    <tr><td>Abbreviations only (e.g., "ML")</td><td>ATS may search "Machine Learning"</td><td>Write "Machine Learning (ML)" on first use</td></tr>
+    <tr><td>Missing contact info in body</td><td>Header-only contact info gets skipped</td><td>Include email/phone in the document body</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>Use Jobscan.co or ToolsArena's ATS Resume Checker to score your resume against a specific job description before applying. A score above 80% significantly improves your chance of passing the automated filter.</p></div>`,
+      },
+      {
+        id: 'resume-templates',
+        title: 'Resume Templates: Modern, Classic, and Minimal — Which to Choose',
+        content: `<p>Choosing the right resume template is not just about aesthetics — it is a strategic decision based on your industry, experience level, and the company culture you are targeting. ToolsArena offers three carefully designed, ATS-safe templates, each optimised for different professional contexts.</p>
+<h3>Modern template</h3>
+<p>The <strong>Modern template</strong> features a clean header with a subtle colour accent, clear section dividers, and a contemporary sans-serif font. It strikes the perfect balance between visual appeal and ATS compatibility. The Modern template is ideal for: tech roles (software engineering, product management, data science), startup environments, digital marketing, e-commerce, and any role where a forward-thinking, innovative image is an asset.</p>
+<h3>Classic template</h3>
+<p>The <strong>Classic template</strong> uses a traditional serif-influenced design with clean typography, formal section spacing, and a professional black-and-white layout. This template communicates seriousness, stability, and professionalism. It is the gold standard for: banking and finance, law, consulting (McKinsey, BCG, Deloitte), government and PSU roles, academic positions, and senior management roles (VP, Director, C-suite).</p>
+<h3>Minimal template</h3>
+<p>The <strong>Minimal template</strong> prioritises white space, simple typography, and maximum readability. There are no decorative elements — just clean, well-spaced content. This template works best for: design and UX roles (where your portfolio speaks louder than your resume), academic research, freelance professionals, and anyone who wants an exceptionally clean, modern look that passes ATS with a perfect score.</p>
+<h3>Template recommendations by industry</h3>
+<table>
+  <thead>
+    <tr><th>Industry / Role</th><th>Recommended Template</th><th>Colour Theme</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Software Engineering / IT</td><td>Modern</td><td>Blue or Dark Navy</td></tr>
+    <tr><td>Data Science / AI / ML</td><td>Modern or Minimal</td><td>Teal or Purple</td></tr>
+    <tr><td>Banking / Finance / CA</td><td>Classic</td><td>Black or Dark Navy</td></tr>
+    <tr><td>Consulting (Big 4, MBB)</td><td>Classic</td><td>Black or Dark Grey</td></tr>
+    <tr><td>Marketing / Content / PR</td><td>Modern</td><td>Green or Orange</td></tr>
+    <tr><td>Design / UX / Creative</td><td>Minimal</td><td>Black or Custom accent</td></tr>
+    <tr><td>Government / PSU / UPSC</td><td>Classic</td><td>Black only</td></tr>
+    <tr><td>Fresher / Campus Placement</td><td>Modern or Classic</td><td>Blue</td></tr>
+    <tr><td>Healthcare / Pharma</td><td>Classic</td><td>Green or Blue</td></tr>
+    <tr><td>Sales / Business Development</td><td>Modern</td><td>Orange or Green</td></tr>
+  </tbody>
+</table>
+<div class="callout-info"><strong>ℹ️ Did You Know</strong><p>Research by TheLadders found that recruiters spend 80% of their initial 6-second scan on just five areas: name, current title, current employer, previous title, previous employer, and education. Template choice influences how quickly a recruiter can locate this information — a clean template with strong visual hierarchy can measurably improve your callback rate.</p></div>
+<h3>Colour psychology in resumes</h3>
+<p>Colour is a subtle but powerful signal. <strong>Blue</strong> communicates trust, reliability, and professionalism — ideal for IT, finance, and consulting. <strong>Green</strong> suggests growth, health, and sustainability — great for environmental, healthcare, and growth-stage startup roles. <strong>Orange</strong> signals energy and creativity — suitable for marketing and sales. <strong>Black/Grey</strong> conveys sophistication and authority — best for senior roles and conservative industries. ToolsArena lets you switch between 8 colour themes with a single click, so you can match your resume to the company's brand if needed.</p>`,
+      },
+      {
+        id: 'resume-for-freshers',
+        title: 'Resume Writing Tips for Freshers (No Experience)',
+        content: `<p>Writing your first resume with little or no full-time work experience is one of the most common challenges for students and recent graduates in India. The good news: every experienced professional once had zero experience on their resume. The key is to strategically present what you <em>do</em> have — projects, internships, skills, academic achievements, and extracurricular activities — in a way that demonstrates your potential and work readiness.</p>
+<h3>What to lead with as a fresher</h3>
+<p>As a fresher, your resume structure should be slightly different from the standard format. Place your <strong>Education</strong> section immediately after your objective statement (before work experience), because your academic credentials are your primary qualification. Then list your projects prominently — they are your "work experience" equivalent. Only then list any internships, part-time work, or volunteer experience.</p>
+<h3>How to write about academic projects</h3>
+<p>Projects are the most underutilised section on fresher resumes in India. Every engineering or commerce graduate has completed final year projects, mini projects, or lab assignments — but few present them compellingly. For each project, include:</p>
+<ul>
+  <li><strong>Project title</strong> — clear and descriptive</li>
+  <li><strong>Technologies used</strong> — list every relevant technology (Python, TensorFlow, Flask, MySQL, etc.)</li>
+  <li><strong>What you built</strong> — one line description of what the project does</li>
+  <li><strong>Your contribution</strong> — specifically what you designed/developed/tested</li>
+  <li><strong>Outcome/impact</strong> — achieved X% accuracy, handled Y users, reduced processing time by Z%</li>
+  <li><strong>GitHub link</strong> — if the code is public, include it. A live GitHub profile is worth more than a certificate.</li>
+</ul>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>If you do not have a GitHub profile with your projects, create one before your campus placements. Recruiters at top IT companies actively check GitHub profiles during technical screening. Even 2–3 well-documented repositories can significantly strengthen your fresher resume.</p></div>
+<h3>Campus placement strategy for India</h3>
+<p>Campus placements in India follow a specific process that your resume must be optimised for:</p>
+<ul>
+  <li><strong>CGPA threshold:</strong> Most companies set a minimum CGPA (typically 6.5–7.5 out of 10). Ensure your CGPA is prominently displayed if you meet the threshold.</li>
+  <li><strong>Consistent academic performance:</strong> Companies like TCS, Infosys, and Wipro specifically require no backlogs/active arrears. Mention this clearly if relevant: "No backlogs throughout the course."</li>
+  <li><strong>Hackathon and competition results:</strong> Mention Smart India Hackathon participation, ICPC participation, or any coding competition rankings. Even participation in Google Kickstart or CodeChef rounds demonstrates initiative.</li>
+  <li><strong>NPTEL and Swayam certifications:</strong> These government-recognised online certifications are valued by Indian recruiters, especially for government sector and PSU placements.</li>
+  <li><strong>Club and committee leadership:</strong> Being Head of the Coding Club or Event Coordinator of the college fest demonstrates leadership and teamwork — qualities that all companies explicitly look for.</li>
+</ul>
+<h3>Internship experience: how to present it</h3>
+<p>If you completed an internship (even a short 1–2 month internship), present it as a formal work experience entry with the same structure as a full-time job. Use strong action verbs: "Developed a REST API using Node.js that reduced data retrieval time by 30%." If the internship was unpaid or informal, you can still include it — what matters is the skill and contribution, not the compensation.</p>
+<div class="callout-info"><strong>ℹ️ Did You Know</strong><p>According to NASSCOM, over 60% of India's engineering graduates are not directly employable due to skill gaps. A resume that demonstrates hands-on project experience and self-learning (through Coursera, Udemy, or NPTEL) immediately differentiates you from the majority of applicants.</p></div>
+<h3>One page vs. two pages for freshers</h3>
+<p>For freshers, your resume <strong>must be exactly one page</strong>. There are no exceptions. A two-page fresher resume signals poor editing skills and an inability to prioritise information. Use ToolsArena's resume builder, which automatically formats your content to fit one page cleanly — adjust font size between 10–12pt and margins between 0.5"–0.75" if you need to fit more content.</p>`,
+      },
+      {
+        id: 'common-resume-mistakes',
+        title: 'Common Resume Mistakes That Get You Rejected',
+        content: `<p>Even highly qualified candidates get rejected because of preventable resume mistakes. After analysing thousands of resumes reviewed by Indian and global recruiters, here are the top 10 mistakes — and exactly how to fix each one.</p>
+<h3>Mistake 1: Generic objective statement</h3>
+<p><strong>Example of what NOT to write:</strong> "To work in a dynamic organisation where I can use my skills and grow professionally." This tells the recruiter nothing. <strong>Fix:</strong> Write a specific, skill-forward statement: "Computer Science graduate with expertise in Python and machine learning, seeking a Data Analyst role at a data-driven organisation to build predictive models that drive business decisions."</p>
+<h3>Mistake 2: Listing responsibilities instead of achievements</h3>
+<p><strong>Wrong:</strong> "Responsible for managing social media accounts." <strong>Right:</strong> "Grew Instagram following from 2,000 to 18,000 in 6 months through data-driven content strategy, increasing engagement rate by 340%." Achievements with numbers are always more impactful than responsibility lists.</p>
+<h3>Mistake 3: Using the same resume for every job</h3>
+<p>A generic resume that is sent to 50 different companies will underperform every time. Tailor your summary and skills section to match each job description. This takes 10 minutes per application and can double your callback rate.</p>
+<h3>Mistake 4: Typos and grammatical errors</h3>
+<p>A survey by CareerBuilder found that 58% of recruiters will immediately reject a resume with typos. Proofread your resume three times. Then use Grammarly or ToolsArena's grammar checker. Then have a friend read it. Still found a typo? Recruiters notice these as signals of carelessness.</p>
+<h3>Mistake 5: Unprofessional email address</h3>
+<p><strong>Wrong:</strong> rockstar_mukesh_2002@gmail.com <strong>Right:</strong> mukesh.sharma@gmail.com or mukeshsharma@gmail.com. Create a professional email if needed — it takes 2 minutes and immediately improves your first impression.</p>
+<h3>Mistake 6: Including a photo (for most roles)</h3>
+<p>In India, including a photo is common but increasingly discouraged by global MNCs and startups, as it can introduce unconscious bias. Unless the job posting explicitly requests a photo, leave it out. The exception is roles where appearance matters professionally: hotel management, air hostess, customer-facing retail management.</p>
+<h3>Mistake 7: Resume longer than 2 pages</h3>
+<p>Unless you have 10+ years of experience or are in academia, your resume should be 1–2 pages maximum. A recruiter receiving 200 applications will not read page 3 of your resume. Cut ruthlessly: remove jobs older than 10–12 years, remove irrelevant experience, remove filler content.</p>
+<h3>Mistake 8: Missing keywords from the job description</h3>
+<p>If the job description mentions "Agile methodology" and your resume says "used Scrum processes," the ATS will not match them. Always mirror the exact language of the job description for core requirements.</p>
+<h3>Mistake 9: Inconsistent formatting</h3>
+<p>Using different date formats (Jan 2023 vs. January 2023 vs. 01/2023), inconsistent bullet styles, and varying font sizes within sections signal lack of attention to detail. Use a resume builder like ToolsArena to ensure 100% formatting consistency.</p>
+<h3>Mistake 10: Fake or exaggerated credentials</h3>
+<p>Never exaggerate your CGPA, fake a certification, or claim skills you do not have. Indian IT companies (especially TCS, Infosys, Wipro, Accenture) conduct thorough background verification. Discrepancies lead to immediate rejection or termination even after joining. A skills gap is recoverable; a trust violation is not.</p>
+<div class="callout-warning"><strong>⚠️ Warning</strong><p>Background verification (BGV) is standard practice in Indian IT and BFSI sectors. Education, employment dates, and salary claims are all verified. Even a minor discrepancy — like claiming "2.5 years" when it was "2 years 2 months" — can lead to offer withdrawal.</p></div>`,
+      },
+      {
+        id: 'resume-checklist',
+        title: 'Resume Checklist: Final Review Before You Apply',
+        content: `<p>Before you click "Apply" on any job — whether on Naukri, LinkedIn, Internshala, or a company's careers page — run through this complete checklist. Experienced hiring managers use similar checklists internally; use it to see your resume through their eyes.</p>
+<h3>Content checklist</h3>
+<table>
+  <thead>
+    <tr><th>Item</th><th>Check</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Full name is prominent at the top</td><td>☐</td></tr>
+    <tr><td>Phone number is current and correct</td><td>☐</td></tr>
+    <tr><td>Email is professional (firstname.lastname@gmail.com)</td><td>☐</td></tr>
+    <tr><td>LinkedIn URL is included and profile is updated</td><td>☐</td></tr>
+    <tr><td>City and state included (no full street address)</td><td>☐</td></tr>
+    <tr><td>Professional summary is tailored to this specific role</td><td>☐</td></tr>
+    <tr><td>Each bullet point starts with a strong action verb</td><td>☐</td></tr>
+    <tr><td>At least 50% of bullets include quantified achievements</td><td>☐</td></tr>
+    <tr><td>No more than 5 bullet points per job role</td><td>☐</td></tr>
+    <tr><td>All employment dates are accurate and formatted consistently</td><td>☐</td></tr>
+    <tr><td>Education section includes degree, institution, year, and CGPA</td><td>☐</td></tr>
+    <tr><td>Skills section matches keywords from job description</td><td>☐</td></tr>
+    <tr><td>No fake certifications or exaggerated skills</td><td>☐</td></tr>
+    <tr><td>Projects include tech stack and measurable outcomes</td><td>☐</td></tr>
+  </tbody>
+</table>
+<h3>ATS and formatting checklist</h3>
+<table>
+  <thead>
+    <tr><th>Item</th><th>Check</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Single-column layout (no multi-column sections)</td><td>☐</td></tr>
+    <tr><td>Standard section headings used</td><td>☐</td></tr>
+    <tr><td>No text boxes, tables used for layout, or SmartArt</td><td>☐</td></tr>
+    <tr><td>No skill progress bars or star ratings</td><td>☐</td></tr>
+    <tr><td>Font is standard (Arial, Calibri, Georgia)</td><td>☐</td></tr>
+    <tr><td>Font size is 10–12pt for body, 14–16pt for name</td><td>☐</td></tr>
+    <tr><td>File saved as PDF (unless .docx specifically required)</td><td>☐</td></tr>
+    <tr><td>File name is professional: Firstname_Lastname_Resume.pdf</td><td>☐</td></tr>
+    <tr><td>Total length is 1 page (fresher) or 1–2 pages (experienced)</td><td>☐</td></tr>
+    <tr><td>No spelling errors or typos (proofread 3x + Grammarly check)</td><td>☐</td></tr>
+    <tr><td>No contact info placed only in header/footer</td><td>☐</td></tr>
+  </tbody>
+</table>
+<h3>India-specific submission tips</h3>
+<ul>
+  <li><strong>Naukri.com:</strong> Upload your PDF resume AND fill in the profile form manually. Naukri's search algorithm ranks profiles based on both uploaded resume content and manually entered fields. Keeping your Naukri profile updated (at least every 3 months) signals you are "actively looking" and boosts your visibility to recruiters.</li>
+  <li><strong>LinkedIn:</strong> Ensure your LinkedIn "About" section mirrors your resume summary. Use LinkedIn's "Open to Work" feature (visible to recruiters only) to increase inbound opportunities. LinkedIn profiles with a professional photo receive 21x more profile views — use a formal headshot here even if you remove it from your resume.</li>
+  <li><strong>Campus placements:</strong> Submit your resume to your placement cell at least 2 weeks before the first drive. Many colleges have resume review sessions — take advantage of them. Ensure your resume follows your college's specific formatting guidelines if provided.</li>
+  <li><strong>Email applications:</strong> When emailing your resume directly, name your file: FirstName_LastName_Resume_2026.pdf. In the email body, include a 3-line introduction with your key qualifications and the role you are applying for — do not make the recruiter open the attachment to understand who you are.</li>
+</ul>
+<div class="callout-tip"><strong>💡 Pro Tip</strong><p>After submitting your resume, follow up with a brief, professional email or LinkedIn message after 5–7 business days if you have not heard back. Studies show that a single polite follow-up increases your response rate by up to 22%. Keep it short: "Hi [Name], I applied for the [Role] position on [Date] and wanted to confirm my application was received. I am very interested in this opportunity and happy to provide any additional information."</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Open ToolsArena Resume Builder',
+        description: 'Navigate to ToolsArena and open the free Resume Builder tool. No account creation, no signup, no credit card required. The builder opens instantly in your browser and your data never leaves your device.',
+      },
+      {
+        title: 'Choose a Template: Modern, Classic, or Minimal',
+        description: 'Select the template that best fits your industry and experience level. Modern is ideal for tech and startups, Classic for finance and consulting, Minimal for design and academic roles. You can switch templates at any time without losing your content.',
+      },
+      {
+        title: 'Fill in Your Details Section by Section',
+        description: 'The builder guides you through each section in order: Personal Info, Professional Summary, Work Experience, Education, Skills, Projects, Certifications, and Languages. Each field has helpful placeholder text and tips. Add, remove, or reorder sections as needed.',
+      },
+      {
+        title: 'Preview and Customise Colours',
+        description: 'Click "Preview" to see your resume exactly as it will appear when downloaded. Use the colour picker to choose from 8 professional colour themes. Adjust font size and section order if needed. The preview updates in real time.',
+      },
+      {
+        title: 'Download as PDF — Free, No Signup Required',
+        description: 'Click "Download PDF" to instantly download your professionally formatted resume. The PDF is ATS-safe, print-ready, and optimised for digital submission on Naukri, LinkedIn, company career portals, and email applications. Completely free, every time.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is ToolsArena resume builder really free?',
+        answer: 'Yes, 100% free — permanently. There are no hidden fees, no "premium" download tier, and no subscription required. You can create, customise, and download your resume as a PDF as many times as you need, completely free. ToolsArena is funded by advertising, not by charging users for basic tools.',
+      },
+      {
+        question: 'Which resume format is best for freshers?',
+        answer: 'For freshers in India, the reverse-chronological format with a modified section order is best: start with a brief objective statement, then Education (your strongest credential), then Projects (your experience equivalent), then any Internships, then Skills and Certifications. Keep it to exactly one page. Avoid functional or skills-based formats — Indian recruiters and ATS systems strongly prefer chronological layouts.',
+      },
+      {
+        question: 'How do I make my resume ATS-friendly?',
+        answer: 'The key ATS optimisation rules are: (1) Use a single-column layout — no multi-column designs. (2) Use standard section headings: "Work Experience," "Education," "Skills." (3) Include keywords from the job description verbatim in your skills and experience sections. (4) Avoid text boxes, tables used for layout, images, and skill progress bars. (5) Submit as PDF. ToolsArena\'s resume builder generates ATS-safe output by default for all three templates.',
+      },
+      {
+        question: 'What should I include in my resume summary?',
+        answer: 'Your resume summary (or objective for freshers) should be 3–4 lines covering: your professional identity (job title + years of experience), your top 2–3 skills or areas of expertise, a notable achievement or credential, and what value you bring to the employer. Example for experienced: "Senior Software Engineer with 5 years of experience in Python and cloud architecture (AWS, GCP). Led the migration of a monolithic system to microservices, reducing infrastructure costs by 35%. Passionate about scalable system design and mentoring junior developers." Keep it specific, quantified, and employer-focused.',
+      },
+      {
+        question: 'How long should a resume be?',
+        answer: 'Freshers (0–2 years experience): strictly 1 page. Mid-level professionals (2–8 years): 1–2 pages. Senior professionals (8+ years) or those in academia/research: up to 3 pages. In India, many candidates exceed these limits — staying within them immediately signals professionalism. A hiring manager receiving 300 applications will not read beyond page 2 of any resume. Cut ruthlessly: remove old jobs beyond 10 years, remove generic skills (like "MS Word"), and remove filler phrases.',
+      },
+      {
+        question: 'Can I download my resume as PDF?',
+        answer: 'Yes. ToolsArena\'s resume builder includes a free, instant PDF download for all templates and all colour themes. There is no paywall for the PDF export — it is completely free. The PDF is generated in your browser using print-optimised CSS, ensuring it looks exactly as it appears in the preview. The output is a searchable PDF (not a scanned image), which means it is ATS-parseable and recruiter-friendly.',
+      },
+      {
+        question: 'What is the best resume template for India?',
+        answer: 'For IT and software roles (the largest employment sector in India), the Modern template in a blue colour scheme is the most widely accepted and recruiter-preferred format. For government jobs, PSUs, and banking (IBPS, SBI), the Classic template in black is standard. For campus placements at IITs, NITs, and other engineering colleges, both Modern and Classic templates work well. ToolsArena\'s templates are all tested for Naukri and LinkedIn compatibility.',
+      },
+      {
+        question: 'How do I add projects to my resume?',
+        answer: 'In ToolsArena\'s resume builder, the Projects section is a dedicated input with fields for: Project Title, Technologies Used, Description, and a live Link (e.g., GitHub URL). For each project, describe what you built in one sentence, list the technologies, quantify the outcome if possible (e.g., "98% prediction accuracy," "500+ daily active users"), and add your GitHub/deployment link. Projects are especially important for freshers — treat each project like a mini job entry, describing your specific contribution rather than just what the project does.',
+      },
+    ],
+    relatedGuides: ['ats-resume-checker-guide', 'word-counter-guide', 'salary-calculator-guide'],
+    toolCTA: {
+      heading: 'Build Your Professional Resume — Free',
+      description: 'Create an ATS-friendly resume in minutes with ToolsArena. 3 templates, 8 colours, instant PDF download. No signup required.',
+      buttonText: 'Open Resume Builder',
+    },
+  },
+
 ];
 
 export function getGuideBySlug(slug: string, locale: string = 'en'): Guide | undefined {

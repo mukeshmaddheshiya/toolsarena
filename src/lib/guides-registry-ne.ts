@@ -3016,4 +3016,331 @@ button {
     },
   },
 
+  // ── RESUME BUILDER ────────────────────────────────────────────
+  {
+    slug: 'resume-builder-guide',
+    toolSlug: 'resume-builder',
+    category: 'utility-tools',
+    title: 'फ्री रिज्युमे बिल्डर गाइड: प्रोफेशनल रिज्युमे अनलाइन बनाउनुहोस् (2026)',
+    subtitle: 'ATS-फ्रेन्डली रिज्युमे बनाउने स्टेप-बाइ-स्टेप गाइड — फ्री टेम्प्लेट, विशेषज्ञ सुझाव र फ्रेशर्स तथा अनुभवी प्रोफेशनलहरूका लागि उदाहरणहरू।',
+    metaTitle: 'फ्री रिज्युमे बिल्डर अनलाइन: प्रोफेशनल रिज्युमे बनाउनुहोस् (2026)',
+    metaDescription: 'ToolsArena को फ्री रिज्युमे बिल्डरबाट प्रोफेशनल रिज्युमे बनाउनुहोस्। ATS-फ्रेन्डली टेम्प्लेट, फ्रेशर्स र अनुभवीका लागि सुझाव। साइनअप नचाहिने, तुरुन्त PDF डाउनलोड।',
+    targetKeyword: 'फ्री रिज्युमे बिल्डर',
+    secondaryKeywords: [
+      'रिज्युमे कसरी बनाउने',
+      'अनलाइन रिज्युमे मेकर',
+      'CV बिल्डर फ्री',
+      'फ्रेशर्सका लागि रिज्युमे',
+      'ATS रिज्युमे बिल्डर',
+      'प्रोफेशनल रिज्युमे मेकर',
+      'रिज्युमे डाउनलोड PDF',
+      'नेपालमा रिज्युमे फर्म्याट',
+      'जागिरका लागि रिज्युमे',
+      'बेस्ट रिज्युमे टेम्प्लेट',
+      'रिज्युमे बनाउने तरिका',
+      'नेपाली रिज्युमे गाइड',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '12 मिनेट पढाइ',
+    tags: ['रिज्युमे', 'क्यारियर', 'जागिर', 'फ्री उपकरण'],
+    intro: `<p>नेपालमा जागिर खोज्नेहरूको संख्या हरेक वर्ष बढ्दो छ — MeroJob, JobsNepal, र Kumarijob मा हजारौं आवेदन पर्छन्। तर <strong>राम्रो रिज्युमे</strong> नभएसम्म इन्टरभ्यूको अवसर पाउनु कठिन छ। रिज्युमे नै तपाईंको पहिलो परिचय हो — HR ले ६–१० सेकेन्डमा निर्णय गर्छन् कि यो उम्मेदवार इन्टरभ्यूका लागि उपयुक्त छ कि छैन।</p><p>ToolsArena को <strong>फ्री रिज्युमे बिल्डर</strong> ले तपाईंलाई मिनेटभित्र प्रोफेशनल, ATS-फ्रेन्डली रिज्युमे बनाउन मद्दत गर्छ — कुनै डिजाइन ज्ञान नचाहिने, कुनै साइनअप नचाहिने, र PDF डाउनलोड एकदम फ्री।</p>`,
+    sections: [
+      {
+        id: 'resume-builder-ke-ho',
+        title: 'रिज्युमे बिल्डर के हो र किन चाहिन्छ',
+        content: `<p>रिज्युमे बिल्डर एउटा अनलाइन उपकरण हो जसले तपाईंलाई प्रोफेशनल ढाँचामा रिज्युमे बनाउन सघाउँछ। MS Word मा रिज्युमे बनाउँदा ढाँचा बिग्रिन्छ, formatting झन्झटिलो हुन्छ — रिज्युमे बिल्डरले यी सबै समस्या हटाउँछ।</p>
+<p><strong>नेपालको जागिर बजारमा रिज्युमेको महत्व:</strong></p>
+<ul>
+  <li><strong>MeroJob र JobsNepal:</strong> प्रत्येक पोस्टमा सयौं आवेदन आउँछन् — राम्रो रिज्युमेले तपाईंलाई छुट्टिन मद्दत गर्छ।</li>
+  <li><strong>Lok Sewa Aayog:</strong> लोक सेवा आयोगको आवेदनमा पनि संरचित CV चाहिन्छ — interviews मा राम्रो प्रभाव पार्छ।</li>
+  <li><strong>खाडी रोजगारी:</strong> Gulf, Malaysia, Japan, Korea जान्नेहरूलाई पनि CV चाहिन्छ — विदेशी नियोक्ताहरूका लागि English resume जरुरी।</li>
+  <li><strong>NGO/INGO जागिर:</strong> UNDP, Save the Children, World Vision जस्ता संस्थाले professional CV खोज्छन्।</li>
+  <li><strong>IT कम्पनी:</strong> Kathmandu Valley का IT firms — Leapfrog, Deerwalk, CloudFactory — मा ATS system हुन्छ, त्यसैले ATS-friendly resume जरुरी।</li>
+</ul>
+<div class="callout-info">📋 <strong>तथ्य:</strong> नेपालमा MeroJob मा एउटा राम्रो पोजिसनमा ४०० भन्दा बढी आवेदन आउँछन्। HR ले प्रत्येक रिज्युमेमा औसत ७ सेकेन्ड मात्र खर्च गर्छन् — त्यसैले पहिलो impression नै सबैभन्दा महत्वपूर्ण छ।</div>
+<p>ToolsArena को रिज्युमे बिल्डर प्रयोग गर्नुका फाइदाहरू:</p>
+<ul>
+  <li>✅ १०० % फ्री — कुनै hidden charges छैन</li>
+  <li>✅ साइनअप वा login नचाहिने</li>
+  <li>✅ ATS-friendly format — HR software ले सजिलै पढ्न सक्छ</li>
+  <li>✅ Modern, Classic र Minimal टेम्प्लेट उपलब्ध</li>
+  <li>✅ तुरुन्त PDF डाउनलोड</li>
+  <li>✅ Mobile र desktop दुवैमा काम गर्छ</li>
+</ul>`,
+      },
+      {
+        id: 'interview-dilaaune-resume',
+        title: 'इन्टरभ्यू दिलाउने रिज्युमे कसरी लेख्ने',
+        content: `<p>एउटा राम्रो रिज्युमेले तपाईंको सीप, अनुभव र उपलब्धि यस्तो तरिकाले प्रस्तुत गर्छ कि HR ले तुरुन्त इन्टरभ्यूमा बोलाउन चाहोस्। यहाँ विशेषज्ञ सुझावहरू छन्:</p>
+<h4>१. Job Description ध्यानपूर्वक पढ्नुहोस्</h4>
+<p>MeroJob वा JobsNepal मा job post पढ्नुहोस् र त्यसमा उल्लेखित <strong>keywords</strong> आफ्नो रिज्युमेमा समावेश गर्नुहोस्। उदाहरणको लागि — "MS Excel प्रवीणता चाहिन्छ" भन्छ भने, Skills section मा "MS Excel (Advanced)" राख्नुहोस्।</p>
+<h4>२. Quantifiable Achievements राख्नुहोस्</h4>
+<p>अनुभव लेख्दा नम्बर र प्रतिशत प्रयोग गर्नुहोस्:</p>
+<table>
+  <tr><th>कमजोर लेखाइ</th><th>बलियो लेखाइ</th></tr>
+  <tr><td>Sales बढाएँ</td><td>मासिक sales २५% ले बढाएँ (रु. ५ लाखबाट ६.२५ लाख)</td></tr>
+  <tr><td>Team manage गरेँ</td><td>८ जनाको team lead गरी project ३ हप्ता अगाडि सम्पन्न गरेँ</td></tr>
+  <tr><td>Social media हेरेँ</td><td>Facebook page followers ५,००० बाट ३०,००० पुर्याएँ</td></tr>
+  <tr><td>Training दिएँ</td><td>नयाँ ५ कर्मचारीलाई onboarding training दिएँ</td></tr>
+</table>
+<h4>३. Action Verbs प्रयोग गर्नुहोस्</h4>
+<p>प्रत्येक bullet point Action Verb बाट सुरु गर्नुहोस्: <em>Managed, Developed, Increased, Reduced, Implemented, Coordinated, Designed, Analyzed, Led, Created</em></p>
+<h4>४. एक पेजमा राख्नुहोस् (फ्रेशर्सका लागि)</h4>
+<p>०–३ वर्षको अनुभव भएकाहरूका लागि एक पेजको रिज्युमे ideal हो। ३–५ वर्षभन्दा बढी अनुभव भए दुई पेज ठीक छ।</p>
+<div class="callout-tip">💡 <strong>नेपाल-specific Tip:</strong> बैंकिङ क्षेत्रमा (Nepal Bank, Rastriya Banijya Bank, NMB, Global IME) आवेदन गर्दा Academic Qualifications section लाई माथि राख्नुहोस् किनकि नेपाली बैंकहरूले educational background लाई बढी महत्व दिन्छन्।</div>`,
+      },
+      {
+        id: 'resume-ma-ke-rakhe',
+        title: 'रिज्युमेमा के समावेश गर्ने — सबै सेक्शनको जानकारी',
+        content: `<p>एउटा सम्पूर्ण रिज्युमेमा निम्न sections हुनुपर्छ:</p>
+<h4>१. Contact Information (सम्पर्क जानकारी)</h4>
+<ul>
+  <li>पूरा नाम (ठूलो अक्षरमा)</li>
+  <li>Phone Number (Nepal: +977-9800000000)</li>
+  <li>Professional Email (Gmail — name@gmail.com)</li>
+  <li>LinkedIn Profile (भएमा)</li>
+  <li>City/District (सहर मात्र — पूरा ठेगाना नचाहिने)</li>
+</ul>
+<div class="callout-warning">⚠️ <strong>ध्यान:</strong> Date of Birth, Religion, Caste, Marital Status — नेपाली रिज्युमेमा यी जानकारी दिनु आवश्यक छैन जबसम्म explicitly नमागिएसम्म। Modern HR practices मा यी discriminatory मानिन्छन्।</div>
+<h4>२. Professional Summary (२–३ वाक्य)</h4>
+<p>तपाईं को हुनुहुन्छ, के गर्न सक्नुहुन्छ, र employer लाई के benefit दिन सक्नुहुन्छ — यो ३ वाक्यमा लेख्नुहोस्।</p>
+<h4>३. Work Experience (कार्य अनुभव)</h4>
+<p>सबैभन्दा नयाँ जागिर पहिले (reverse chronological order)। प्रत्येक job को लागि: Company Name, Job Title, Duration, र ३–५ bullet points।</p>
+<h4>४. Education (शैक्षिक योग्यता)</h4>
+<table>
+  <tr><th>Degree</th><th>University/Board</th><th>Year</th><th>GPA/%</th></tr>
+  <tr><td>BBA/BBS/BE/MBBS</td><td>TU / KU / PU / Purbanchal</td><td>2023</td><td>3.5 / 75%</td></tr>
+  <tr><td>+2 Science/Management</td><td>NEB</td><td>2019</td><td>3.4 GPA</td></tr>
+  <tr><td>SLC/SEE</td><td>NEB/SLC Board</td><td>2017</td><td>A+</td></tr>
+</table>
+<h4>५. Skills (सीपहरू)</h4>
+<p>Technical Skills र Soft Skills छुट्टाछुट्टै लेख्नुहोस्। Proficiency level पनि उल्लेख गर्नुहोस्।</p>
+<h4>६. Certifications र Training</h4>
+<p>CTEVT certificates, professional training, online courses (Coursera, edX) — सबै उल्लेख गर्नुहोस्।</p>
+<h4>७. Languages (भाषाहरू)</h4>
+<p>नेपाली (मातृभाषा), English (Intermediate/Advanced), Hindi (Conversational) — level सहित लेख्नुहोस्।</p>
+<h4>८. References</h4>
+<p>"References available upon request" लेख्नु पर्याप्त छ — वा दुई जना professional references दिनुहोस्।</p>`,
+      },
+      {
+        id: 'ats-friendly-resume',
+        title: 'ATS-फ्रेन्डली रिज्युमे सुझावहरू',
+        content: `<p><strong>ATS (Applicant Tracking System)</strong> एउटा software हो जसले रिज्युमे स्वचालित रूपमा scan गर्छ। Leapfrog, Deerwalk, CloudFactory, र नेपालका ठूला NGO/INGOहरूले ATS प्रयोग गर्छन्। ATS ले रिज्युमे "pass" नगरेमा HR ले देख्दैन।</p>
+<h4>ATS-Friendly Resume बनाउने नियमहरू:</h4>
+<table>
+  <tr><th>गर्नुपर्ने</th><th>नगर्नुपर्ने</th></tr>
+  <tr><td>Standard fonts (Arial, Calibri, Times New Roman)</td><td>Fancy/decorative fonts</td></tr>
+  <tr><td>Simple bullet points (•)</td><td>Tables, text boxes, columns</td></tr>
+  <tr><td>PDF वा Word format</td><td>Image-based resume (JPEG, PNG)</td></tr>
+  <tr><td>Job description का keywords प्रयोग</td><td>Keywords stuffing (अत्यधिक keyword)</td></tr>
+  <tr><td>Standard section headings</td><td>Creative headings ("My Journey", "About Me")</td></tr>
+  <tr><td>Text-based content</td><td>Header/Footer मा contact info</td></tr>
+  <tr><td>Simple, clean layout</td><td>Graphics, icons, photos (ATS ले पढ्न सक्दैन)</td></tr>
+</table>
+<div class="callout-info">📌 <strong>नेपाल IT Sector Note:</strong> Kathmandu Valley का IT companies — जस्तै Leapfrog Technology, Deerwalk Services, InfoDevelopers — मा ATS बढी प्रयोग हुन्छ। यी कम्पनीहरूमा आवेदन गर्दा ATS score जरुर जाँच्नुहोस्।</div>
+<h4>ATS Score बढाउने Keywords (नेपाली Context):</h4>
+<ul>
+  <li><strong>Banking:</strong> Credit Analysis, Loan Processing, NRB Regulations, Treasury Management, KYC/AML</li>
+  <li><strong>IT:</strong> React.js, Node.js, Python, AWS, Agile, Scrum, REST API</li>
+  <li><strong>NGO/INGO:</strong> Project Management, M&E, Donor Reporting, Capacity Building, GESI</li>
+  <li><strong>HR:</strong> Recruitment, Payroll Processing, Labor Law Nepal, Employee Relations</li>
+  <li><strong>Accounting:</strong> Tally ERP, VAT Filing, IRD Compliance, Financial Reporting</li>
+</ul>
+<p>ToolsArena को ATS Resume Checker बाट आफ्नो resume को ATS score तुरुन्त जाँच्नुहोस्।</p>`,
+      },
+      {
+        id: 'resume-template-kun-chhanne',
+        title: 'रिज्युमे टेम्प्लेट: Modern, Classic, Minimal — कुन छान्ने',
+        content: `<p>रिज्युमेको design उत्तिकै महत्वपूर्ण छ जति content। गलत template छान्दा राम्रो योग्यता भएको उम्मेदवारले पनि reject हुन सक्छ।</p>
+<table>
+  <tr><th>Template Style</th><th>उपयुक्त क्षेत्र</th><th>विशेषता</th><th>सुझाव</th></tr>
+  <tr><td><strong>Modern</strong></td><td>IT, Marketing, Design, Startups</td><td>दुई-column layout, accent colors, icons</td><td>Leapfrog, Young Innovations, Cotiviti मा ideal</td></tr>
+  <tr><td><strong>Classic</strong></td><td>Banking, Government, NGO/INGO, Teaching</td><td>एक-column, formal, conservative</td><td>NRB, Nepal Bank, Lok Sewa, UNDP मा ideal</td></tr>
+  <tr><td><strong>Minimal</strong></td><td>Consulting, Finance, Legal, Academic</td><td>सफा ढाँचा, अत्यधिक whitespace, सूक्ष्म design</td><td>Big 4 firms, Law firms, PU/TU faculties मा ideal</td></tr>
+</table>
+<h4>नेपालका विभिन्न क्षेत्रका लागि सुझाव:</h4>
+<ul>
+  <li><strong>Lok Sewa Aayog:</strong> Classic template — formal र conservative ढाँचा, कालो-सेतो print मा पनि राम्रो देखिन्छ।</li>
+  <li><strong>Gulf/Foreign Employment:</strong> Classic वा Minimal — सफा र readable। Arabic countries मा photo राख्नु generally acceptable छ।</li>
+  <li><strong>IT Companies (Kathmandu):</strong> Modern template — skills section प्रमुख, GitHub/Portfolio link सामेल गर्नुहोस्।</li>
+  <li><strong>NGO/INGO Jobs:</strong> Classic वा Minimal — achievements र impact numbers highlight गर्नुहोस्।</li>
+  <li><strong>Banking Sector:</strong> Classic — educational qualifications र certifications माथि राख्नुहोस्।</li>
+  <li><strong>TU/KU/PU Freshers:</strong> Modern वा Minimal — projects र internships section prominent बनाउनुहोस्।</li>
+</ul>
+<div class="callout-tip">💡 <strong>Pro Tip:</strong> एकैपटक दुई version बनाउनुहोस् — एउटा ATS-friendly (simple format) र अर्को visually appealing (modern design)। ATS भएका companies मा simple version पठाउनुहोस्, direct HR contact मा visually appealing version।</div>`,
+      },
+      {
+        id: 'freshers-resume-tips',
+        title: 'फ्रेशर्सका लागि रिज्युमे लेख्ने सुझाव',
+        content: `<p>TU, KU, PU, Purbanchal University बाट भर्खर graduate भएकाहरूका लागि रिज्युमे बनाउनु challenging हुन सक्छ — किनकि work experience कम हुन्छ। तर यी सुझावहरू पालना गरेर राम्रो रिज्युमे बनाउन सकिन्छ।</p>
+<h4>फ्रेशर्सका लागि Resume Structure:</h4>
+<ol>
+  <li><strong>Contact Information</strong></li>
+  <li><strong>Professional Summary</strong> — तपाईंको career goal र key strengths</li>
+  <li><strong>Education</strong> — degree, university, GPA, relevant coursework</li>
+  <li><strong>Projects / Internship</strong> — Final year project, internship details</li>
+  <li><strong>Skills</strong> — Technical र soft skills</li>
+  <li><strong>Certifications</strong> — CTEVT, online courses</li>
+  <li><strong>Activities / Volunteer Work</strong></li>
+</ol>
+<h4>फ्रेशर्सका लागि Projects Section कसरी लेख्ने:</h4>
+<div class="callout-info">📌 <strong>Example (IT Fresher):</strong><br>
+<strong>Final Year Project: Online Exam System</strong><br>
+• PHP, MySQL र Bootstrap प्रयोग गरी web-based exam system develop गरेँ<br>
+• ५०० भन्दा बढी students handle गर्न सक्ने scalable architecture design गरेँ<br>
+• GitHub: github.com/username/exam-system</div>
+<h4>Internship नभएको भए के गर्ने?</h4>
+<ul>
+  <li><strong>Freelance Projects:</strong> Hamrofreelancer.com मा गरेका काम उल्लेख गर्नुहोस्।</li>
+  <li><strong>College Projects:</strong> Academic projects लाई professionally describe गर्नुहोस्।</li>
+  <li><strong>Volunteer Work:</strong> NGO, community work, event management — सबै relevant छन्।</li>
+  <li><strong>Online Certifications:</strong> Google, Coursera, LinkedIn Learning का certificates।</li>
+  <li><strong>Part-time Work:</strong> Tutor, content writer — जे गरेको भए पनि उल्लेख गर्नुहोस्।</li>
+</ul>
+<h4>नेपाली Freshers को Common Questions:</h4>
+<table>
+  <tr><th>प्रश्न</th><th>उत्तर</th></tr>
+  <tr><td>Photo राख्ने कि नराख्ने?</td><td>नेपालमा photo राख्नु generally acceptable छ, तर compulsory छैन। Gulf jobs मा photo चाहिन्छ।</td></tr>
+  <tr><td>GPA कम छ — राख्ने कि नराख्ने?</td><td>३.० भन्दा कम भए नराख्नु। Skills र projects highlight गर्नुहोस्।</td></tr>
+  <tr><td>Fresher objective राख्ने?</td><td>Objective भन्दा Professional Summary राख्नुहोस् — बढी effective हुन्छ।</td></tr>
+</table>`,
+      },
+      {
+        id: 'resume-common-mistakes',
+        title: 'रिज्युमेका सामान्य गल्तीहरू जसले रिजेक्शन गराउँछ',
+        content: `<p>नेपालमा रिज्युमे review गर्ने HR professionals का अनुसार, धेरैजसो आवेदन यी गल्तीहरूका कारण रिजेक्ट हुन्छन्:</p>
+<h4>शीर्ष १० रिज्युमे गल्तीहरू:</h4>
+<table>
+  <tr><th>#</th><th>गल्ती</th><th>कसरी सुधार्ने</th></tr>
+  <tr><td>1</td><td>Spelling र Grammar गल्तीहरू</td><td>Grammarly वा spell-check प्रयोग गर्नुहोस्</td></tr>
+  <tr><td>2</td><td>Generic Objective Statement</td><td>"Seeking a challenging position..." — यस्तो नलेख्नुहोस्। Specific goal लेख्नुहोस्।</td></tr>
+  <tr><td>3</td><td>Personal Information अत्यधिक</td><td>DOB, religion, nationality — नराख्नुहोस् जबसम्म नमागिएसम्म</td></tr>
+  <tr><td>4</td><td>Job Description सँग match नगर्ने resume</td><td>प्रत्येक job application को लागि resume customize गर्नुहोस्</td></tr>
+  <tr><td>5</td><td>Unprofessional Email Address</td><td>coolboy123@gmail.com → firstname.lastname@gmail.com</td></tr>
+  <tr><td>6</td><td>झूटा वा बढाएर लेखिएको अनुभव</td><td>सत्य मात्र लेख्नुहोस् — background check हुन्छ</td></tr>
+  <tr><td>7</td><td>Irrelevant Information</td><td>Hobbies जस्तै "Watching movies" — नराख्नुहोस्</td></tr>
+  <tr><td>8</td><td>Poor Formatting/Design</td><td>Consistent fonts, spacing र alignment राख्नुहोस्</td></tr>
+  <tr><td>9</td><td>References directly on resume</td><td>"References available upon request" लेख्नु पर्याप्त छ</td></tr>
+  <tr><td>10</td><td>गलत Contact Information</td><td>Phone, email verify गर्नुहोस् — submit अगाडि</td></tr>
+</table>
+<div class="callout-warning">⚠️ <strong>नेपाल-specific Warning:</strong> नेपालका केही job seekers रिज्युमेमा "Lok Sewa Tayari" वा "INGO Job Hunting" भन्ने लेख्छन् — यो गर्नुहुँदैन। Employer लाई लाग्छ तपाईं committed हुनुहुन्न।</div>
+<h4>Gulf Employment का लागि विशेष ध्यान:</h4>
+<p>Saudi Arabia, Qatar, UAE, Kuwait, Bahrain, Malaysia जान्नेहरूका लागि:</p>
+<ul>
+  <li>✅ Passport Number र Expiry Date उल्लेख गर्नुहोस्</li>
+  <li>✅ Medical fitness certificate mention गर्नुहोस्</li>
+  <li>✅ CTEVT वा technical certificates अनिवार्य</li>
+  <li>✅ English resume — Arabic translation company गर्छ</li>
+  <li>✅ Manpower agency मार्फत जाँदा agency-specific format follow गर्नुहोस्</li>
+</ul>`,
+      },
+      {
+        id: 'resume-checklist',
+        title: 'रिज्युमे चेकलिस्ट: अप्लाई गर्नुअघि अन्तिम समीक्षा',
+        content: `<p>MeroJob, JobsNepal, वा Kumarijob मा apply गर्नुअघि यो checklist पूरा गर्नुहोस्:</p>
+<h4>✅ Content Checklist:</h4>
+<ul>
+  <li>☐ Contact information सही र up-to-date छ</li>
+  <li>☐ Professional Summary specific र compelling छ</li>
+  <li>☐ Work experience reverse chronological order मा छ</li>
+  <li>☐ प्रत्येक job role मा quantifiable achievements छन्</li>
+  <li>☐ Education section मा GPA/percentage छ</li>
+  <li>☐ Skills section मा job description का keywords छन्</li>
+  <li>☐ Certifications र trainings up-to-date छन्</li>
+  <li>☐ References section present छ</li>
+</ul>
+<h4>✅ Format Checklist:</h4>
+<ul>
+  <li>☐ Font consistent छ (Arial 10–12pt वा Calibri 11pt)</li>
+  <li>☐ Margins balanced छन् (0.75"–1")</li>
+  <li>☐ Bullet points consistent छन्</li>
+  <li>☐ Bold/italic सही ठाउँमा मात्र प्रयोग गरिएको छ</li>
+  <li>☐ Page length appropriate छ (१–२ pages)</li>
+  <li>☐ PDF format मा save गरिएको छ</li>
+  <li>☐ File name professional छ: "Firstname_Lastname_Resume.pdf"</li>
+</ul>
+<h4>✅ ATS Checklist:</h4>
+<ul>
+  <li>☐ Text-based format छ (image वा table-heavy छैन)</li>
+  <li>☐ Standard section headings प्रयोग गरिएको छ</li>
+  <li>☐ Job description का keywords समावेश छन्</li>
+  <li>☐ Contact info header/footer मा छैन</li>
+  <li>☐ Special characters वा symbols minimal छन्</li>
+</ul>
+<div class="callout-tip">💡 <strong>अन्तिम सुझाव:</strong> Resume submit गर्नुअघि कसैलाई पढाउनुहोस् — साथी, family member, वा mentor। बाहिरी नजरले spelling mistakes र unclear sentences सजिलै देख्छ।</div>
+<h4>Job Portals अनुसार Apply गर्ने Tips:</h4>
+<table>
+  <tr><th>Job Portal</th><th>Tips</th></tr>
+  <tr><td>MeroJob</td><td>Profile complete राख्नुहोस्, resume upload गर्नुहोस्, job alerts set गर्नुहोस्</td></tr>
+  <tr><td>JobsNepal</td><td>Skills tags थप्नुहोस्, "Actively Looking" status on राख्नुहोस्</td></tr>
+  <tr><td>Kumarijob</td><td>Government job listings बढी छन् — Lok Sewa related positions monitor गर्नुहोस्</td></tr>
+  <tr><td>LinkedIn</td><td>Resume content LinkedIn profile सँग match राख्नुहोस्, Open to Work enable गर्नुहोस्</td></tr>
+  <tr><td>Hamrobazar</td><td>Professional resume PDF share गर्नुहोस् जब directly contact गर्नुहुन्छ</td></tr>
+</table>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'ToolsArena रिज्युमे बिल्डर खोल्नुहोस्',
+        description: 'toolsarena.com/tools/resume-builder मा जानुहोस् — कुनै साइनअप वा login नचाहिने। Browser मा तुरुन्त खुल्छ।',
+      },
+      {
+        title: 'टेम्प्लेट छान्नुहोस्',
+        description: 'Modern, Classic र Minimal — तीनवटा टेम्प्लेटमध्ये आफ्नो job target अनुसार छान्नुहोस्। IT job को लागि Modern, Banking/Government को लागि Classic ideal हो।',
+      },
+      {
+        title: 'आफ्नो जानकारी भर्नुहोस्',
+        description: 'Contact info, Professional Summary, Work Experience, Education, Skills, र Certifications — प्रत्येक section मा आफ्नो जानकारी भर्नुहोस्। Built-in prompts ले के लेख्ने भनेर guide गर्छ।',
+      },
+      {
+        title: 'प्रिभ्यू गर्नुहोस् र कलर कस्टमाइज गर्नुहोस्',
+        description: 'Real-time preview मा resume कस्तो देखिन्छ हेर्नुहोस्। Accent color बदल्न सकिन्छ — professional blue, forest green वा elegant maroon मध्ये छान्नुहोस्।',
+      },
+      {
+        title: 'PDF डाउनलोड गर्नुहोस् — फ्री',
+        description: '"Download PDF" button थिच्नुहोस् — तुरुन्त professional resume PDF download हुन्छ। MeroJob, JobsNepal, email — जहाँ पनि directly upload गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'ToolsArena को रिज्युमे बिल्डर साँच्चै फ्री हो?',
+        answer: 'हो, १०० % फ्री छ। कुनै hidden charges, subscription fees, वा credit card नचाहिने। साइनअप पनि नचाहिने — सिधै tool खोल्नुहोस् र PDF download गर्नुहोस्।',
+      },
+      {
+        question: 'नेपाली जागिरका लागि रिज्युमे अंग्रेजीमा लेख्ने कि नेपालीमा?',
+        answer: 'अधिकांश Private sector, IT companies, NGO/INGO, र बहुराष्ट्रीय कम्पनीहरूमा English resume पठाउनुहोस्। Lok Sewa Aayog, सरकारी कार्यालय, र केही local companies मा नेपाली resume acceptable छ। Gulf employment मा English resume नै मान्य छ।',
+      },
+      {
+        question: 'रिज्युमे कति पेजको हुनुपर्छ?',
+        answer: '०–३ वर्षको अनुभव भएकाहरूका लागि एक पेज। ३–१० वर्षको अनुभव भएकाहरूका लागि दुई पेज पर्याप्त छ। १०+ वर्षको senior professionals मा तीन पेज acceptable छ। नेपालमा recruiters छोटो resume नै prefer गर्छन्।',
+      },
+      {
+        question: 'फोटो राख्ने कि नराख्ने?',
+        answer: 'नेपालमा photo राख्नु generally acceptable मानिन्छ, तर अनिवार्य छैन। Gulf employment (Saudi, Qatar, UAE) को लागि photo अक्सर required हुन्छ। IT companies र international NGOs मा photo नराख्नु नै better practice हो।',
+      },
+      {
+        question: 'Lok Sewa Aayog को लागि छुट्टै resume चाहिन्छ?',
+        answer: 'Lok Sewa को formal application form (निवेदन) अलग हुन्छ, तर interview मा CV माग्छन्। Lok Sewa interview को लागि Classic template मा formal, conservative resume तयार गर्नुहोस् जसमा Education, Training, र Government-relevant experience highlight भएको होस्।',
+      },
+      {
+        question: 'Gulf जान resume कसरी बनाउने?',
+        answer: 'Gulf employment को लागि: Passport details (number, expiry), Medical fitness, CTEVT technical certificates, र relevant work experience highlight गर्नुहोस्। Photo राख्नु acceptable छ। Classic template प्रयोग गर्नुहोस् र सबै content English मा राख्नुहोस्। Manpower agency मार्फत जाँदा agency को format follow गर्नुहोस्।',
+      },
+      {
+        question: 'ATS के हो र मेरो resume ATS-friendly छ कि छैन कसरी थाहा हुन्छ?',
+        answer: 'ATS (Applicant Tracking System) software ले resume automatically scan गर्छ र keywords match गर्छ। ToolsArena को ATS Resume Checker मा आफ्नो resume र job description paste गर्नुहोस् — तुरुन्त score र suggestions पाउनुहुन्छ। Simple format, standard fonts, र job-specific keywords ले ATS score बढाउँछ।',
+      },
+      {
+        question: 'Work experience छैन — fresher को लागि resume कसरी बनाउने?',
+        answer: 'अनुभव नभएकाहरूले Education, Projects, Internship, Certifications र Skills section लाई prominent बनाउनुहोस्। Final year project, college assignments, volunteer work, freelance projects — सबै उल्लेख गर्न सकिन्छ। TU/KU/PU Final Year Project लाई professional तरिकाले describe गर्नुहोस् — technology used, problem solved, र impact mention गर्नुहोस्।',
+      },
+    ],
+    relatedGuides: ['ats-resume-checker-guide', 'word-counter-guide', 'salary-calculator-guide'],
+    toolCTA: {
+      heading: 'अहिले नै प्रोफेशनल रिज्युमे बनाउनुहोस् — फ्री',
+      description: 'MeroJob, JobsNepal, Gulf Job — जहाँ पनि apply गर्नका लागि ATS-friendly resume मिनेटभित्र तयार। साइनअप नचाहिने, तुरुन्त PDF डाउनलोड।',
+      buttonText: 'रिज्युमे बिल्डर खोल्नुहोस् →',
+    },
+  },
+
 ];

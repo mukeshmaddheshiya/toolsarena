@@ -5940,4 +5940,347 @@ tags: [hindi, tutorial]
     },
   },
 
+  // ── RESUME BUILDER ────────────────────────────────────────────────────
+  {
+    slug: 'resume-builder-guide',
+    toolSlug: 'resume-builder',
+    category: 'utility-tools',
+    title: 'फ्री रिज्यूमे बिल्डर गाइड: प्रोफेशनल रिज्यूमे ऑनलाइन बनाएं (2026)',
+    subtitle: 'ATS-फ्रेंडली रिज्यूमे बनाने की स्टेप-बाय-स्टेप गाइड — फ्री टेम्पलेट, एक्सपर्ट टिप्स और फ्रेशर्स व अनुभवी प्रोफेशनल्स के लिए उदाहरण।',
+    metaTitle: 'फ्री रिज्यूमे बिल्डर ऑनलाइन: प्रोफेशनल रिज्यूमे बनाएं (2026)',
+    metaDescription: 'ToolsArena के फ्री रिज्यूमे बिल्डर से प्रोफेशनल रिज्यूमे बनाएं। ATS-फ्रेंडली टेम्पलेट, फ्रेशर्स और अनुभवी के लिए टिप्स। कोई साइनअप नहीं, तुरंत PDF डाउनलोड।',
+    targetKeyword: 'फ्री रिज्यूमे बिल्डर',
+    secondaryKeywords: [
+      'रिज्यूमे कैसे बनाएं',
+      'ऑनलाइन रिज्यूमे मेकर',
+      'CV बिल्डर फ्री',
+      'फ्रेशर्स के लिए रिज्यूमे',
+      'ATS रिज्यूमे बिल्डर',
+      'प्रोफेशनल रिज्यूमे मेकर',
+      'रिज्यूमे डाउनलोड PDF',
+      'बिना साइनअप रिज्यूमे बनाएं',
+      'नौकरी के लिए रिज्यूमे',
+      'भारत में रिज्यूमे फॉर्मेट',
+      'बेस्ट रिज्यूमे टेम्पलेट',
+      'रिज्यूमे बनाने का तरीका',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '12 मिनट पढ़ना',
+    tags: ['रिज्यूमे', 'करियर', 'नौकरी', 'फ्री टूल्स'],
+    intro: `<p>भारत में हर साल करोड़ों युवा नौकरी की तलाश में Naukri.com, LinkedIn और campus placements पर अपना रिज्यूमे भेजते हैं। लेकिन एक बड़ी सच्चाई यह है कि <strong>75% रिज्यूमे Applicant Tracking System (ATS)</strong> में फ़िल्टर होकर HR तक पहुंचते ही नहीं।</p>
+<p>एक अच्छा रिज्यूमे सिर्फ आपकी जानकारी नहीं दिखाता — यह आपकी पहली छाप बनाता है। ToolsArena का <strong>फ्री रिज्यूमे बिल्डर</strong> आपको बिना किसी साइनअप के, मिनटों में प्रोफेशनल ATS-फ्रेंडली रिज्यूमे बनाने की सुविधा देता है। चाहे आप BTech फ्रेशर हों, MBA ग्रैजुएट हों, या 5 साल के अनुभव वाले IT प्रोफेशनल — यह गाइड आपके लिए है।</p>`,
+    sections: [
+      {
+        id: 'resume-builder-kya-hai',
+        title: 'रिज्यूमे बिल्डर क्या है और इसकी ज़रूरत क्यों है',
+        content: `<p>रिज्यूमे बिल्डर एक ऑनलाइन टूल है जो आपको एक structured form में जानकारी भरने और उसे एक प्रोफेशनल PDF रिज्यूमे में बदलने में मदद करता है। Microsoft Word में रिज्यूमे बनाने की तुलना में यह कहीं ज़्यादा आसान, तेज़ और ATS-फ्रेंडली है।</p>
+<h3>क्यों ज़रूरी है रिज्यूमे बिल्डर?</h3>
+<ul>
+  <li><strong>समय की बचत:</strong> Word में formatting के पीछे घंटों बर्बाद करने की जगह, 15–20 मिनट में रिज्यूमे तैयार।</li>
+  <li><strong>ATS compatibility:</strong> खराब formatting की वजह से अच्छे candidates भी ATS में fail हो जाते हैं। बिल्डर clean structure देता है।</li>
+  <li><strong>प्रोफेशनल टेम्पलेट:</strong> Hiring managers को आकर्षित करने वाले डिज़ाइन, बिना किसी graphic design skill के।</li>
+  <li><strong>गलतियाँ कम:</strong> Pre-built sections ensure करते हैं कि आप कोई ज़रूरी जानकारी न भूलें।</li>
+</ul>
+<h3>भारत में रिज्यूमे का महत्व</h3>
+<p>Naukri.com पर हर दिन 1 लाख से ज़्यादा नई जॉब पोस्टिंग होती हैं। एक job opening पर औसतन 250+ applications आती हैं। ऐसे में एक clean, ATS-friendly और impact दिखाने वाला रिज्यूमे आपको भीड़ से अलग करता है।</p>
+<div class="callout-info">💡 <strong>जानें:</strong> बड़ी कंपनियाँ जैसे TCS, Infosys, Wipro, और HCL अपने hiring process में ATS software use करती हैं। अगर आपका रिज्यूमे ATS-friendly नहीं है, तो HR उसे कभी नहीं देखेगा।</div>
+<h3>ToolsArena रिज्यूमे बिल्डर की खासियतें</h3>
+<ul>
+  <li>बिल्कुल फ्री — कोई hidden charge नहीं</li>
+  <li>कोई साइनअप या account ज़रूरी नहीं</li>
+  <li>Modern, Classic, और Minimal टेम्पलेट</li>
+  <li>Real-time preview — बदलाव तुरंत दिखें</li>
+  <li>High-quality PDF डाउनलोड</li>
+  <li>ATS-optimized clean formatting</li>
+</ul>`,
+      },
+      {
+        id: 'interview-dilane-wala-resume',
+        title: 'इंटरव्यू दिलाने वाला रिज्यूमे कैसे लिखें',
+        content: `<p>एक अच्छा रिज्यूमे सिर्फ information dump नहीं होता — यह आपकी professional story होती है। HR को पहले 6–7 सेकंड में ही समझ आ जाना चाहिए कि आप इस job के लिए क्यों perfect हैं।</p>
+<h3>Strong Summary/Objective लिखें</h3>
+<p>रिज्यूमे का सबसे ऊपर का हिस्सा (Professional Summary या Career Objective) सबसे पहले पढ़ा जाता है। यह 2–3 lines में आपका experience, skills, और goal बताना चाहिए।</p>
+<div class="callout-success">✅ <strong>अच्छा उदाहरण (Fresher):</strong> "BTech Computer Science graduate (2025, CGPA 8.2) with hands-on experience in Python, React.js और MySQL। Full-stack development में करियर बनाने का लक्ष्य। 2 internships और 3 personal projects complete किए हैं।"</div>
+<div class="callout-warning">❌ <strong>खराब उदाहरण:</strong> "मैं एक hardworking और dedicated fresher हूं जो एक अच्छी company में काम करना चाहता हूं जहां मुझे grow करने का मौका मिले।"</div>
+<h3>Achievements को Numbers से Prove करें</h3>
+<p>Vague statements की जगह quantifiable achievements लिखें। HR को numbers पर भरोसा होता है।</p>
+<table>
+  <thead>
+    <tr><th>Weak Statement</th><th>Strong Statement</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sales team की मदद की</td><td>Sales team को support देकर quarterly revenue 18% बढ़ाया</td></tr>
+    <tr><td>Website develop की</td><td>E-commerce website develop की जिसे पहले month में 5,000+ visitors मिले</td></tr>
+    <tr><td>Students को पढ़ाया</td><td>40 students को Python coaching दी, 85% pass rate achieve किया</td></tr>
+    <tr><td>Code optimize किया</td><td>Database query optimization से page load time 40% कम किया</td></tr>
+  </tbody>
+</table>
+<h3>Job Description से Keywords Match करें</h3>
+<p>हर application के लिए अपना रिज्यूमे थोड़ा customize करें। Job description में जो keywords हों (जैसे "React.js", "Agile", "data analysis"), वो अपने रिज्यूमे में naturally include करें। इससे ATS score बेहतर होगा।</p>
+<h3>Action Verbs से शुरू करें</h3>
+<p>हर bullet point एक strong action verb से शुरू करें: Developed, Designed, Managed, Led, Implemented, Reduced, Increased, Collaborated, Delivered, Optimized।</p>`,
+      },
+      {
+        id: 'resume-sections-ki-jankari',
+        title: 'रिज्यूमे में क्या शामिल करें — सभी सेक्शन की जानकारी',
+        content: `<p>एक complete रिज्यूमे में कुछ mandatory और कुछ optional sections होते हैं। भारतीय job market के हिसाब से यहाँ पूरी जानकारी दी गई है।</p>
+<h3>Mandatory Sections (ज़रूरी)</h3>
+<table>
+  <thead>
+    <tr><th>Section</th><th>क्या लिखें</th><th>Tips</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Contact Information</strong></td><td>नाम, फोन, email, LinkedIn URL, शहर</td><td>Personal address की जगह सिर्फ City, State लिखें</td></tr>
+    <tr><td><strong>Professional Summary</strong></td><td>2–3 lines में experience, skills, goal</td><td>हर job के लिए customize करें</td></tr>
+    <tr><td><strong>Work Experience</strong></td><td>Job title, company, dates, achievements</td><td>Reverse chronological order (latest first)</td></tr>
+    <tr><td><strong>Education</strong></td><td>Degree, college, CGPA/percentage, year</td><td>Fresher के लिए education पहले रखें</td></tr>
+    <tr><td><strong>Skills</strong></td><td>Technical skills, soft skills, tools</td><td>Job-relevant skills highlight करें</td></tr>
+  </tbody>
+</table>
+<h3>Optional लेकिन Recommended Sections</h3>
+<ul>
+  <li><strong>Projects:</strong> Fresher के लिए बहुत important। GitHub link ज़रूर add करें।</li>
+  <li><strong>Certifications:</strong> Google, Microsoft, AWS, NPTEL certificates mention करें।</li>
+  <li><strong>Internships:</strong> अगर work experience नहीं है, तो internships को ज़्यादा detail में लिखें।</li>
+  <li><strong>Achievements/Awards:</strong> Hackathons, competitions, scholarships।</li>
+  <li><strong>Languages:</strong> Hindi, English के अलावा regional languages — कुछ roles में useful।</li>
+  <li><strong>Volunteer Work:</strong> NGO, college events, NSS — character दिखाता है।</li>
+</ul>
+<h3>भारत में क्या न लिखें</h3>
+<div class="callout-warning">⚠️ <strong>Avoid करें:</strong> Date of Birth, Father's Name, Marital Status, और Religion जैसी personal जानकारी अब रिज्यूमे में लिखना ज़रूरी नहीं। Modern HR practices में इन्हें avoid किया जाता है। Photo भी generally ज़रूरी नहीं, जब तक specifically माँगी न जाए।</div>
+<h3>रिज्यूमे की आदर्श लंबाई</h3>
+<ul>
+  <li><strong>Fresher (0–2 साल):</strong> 1 page — HR को 1 page prefer होता है</li>
+  <li><strong>Mid-level (2–7 साल):</strong> 1–2 pages</li>
+  <li><strong>Senior (7+ साल):</strong> Maximum 2 pages — फिर भी relevance बनाए रखें</li>
+</ul>`,
+      },
+      {
+        id: 'ats-friendly-resume-tips',
+        title: 'ATS-फ्रेंडली रिज्यूमे टिप्स',
+        content: `<p>ATS (Applicant Tracking System) एक software है जो companies बड़े पैमाने पर applications screen करने के लिए use करती हैं। TCS, Infosys, Wipro, Amazon, Flipkart जैसी कंपनियाँ ATS की मदद से हज़ारों resumes में से suitable candidates filter करती हैं।</p>
+<h3>ATS कैसे काम करता है?</h3>
+<p>ATS आपके रिज्यूमे को scan करता है और job description के keywords से match करता है। जितने ज़्यादा relevant keywords match होंगे, आपका ATS score उतना बेहतर होगा और आपका resume HR तक पहुंचने की संभावना बढ़ेगी।</p>
+<h3>ATS के लिए Do's</h3>
+<ul>
+  <li><strong>Standard section headings use करें:</strong> "Work Experience", "Education", "Skills" — fancy names जैसे "My Journey" या "What I've Done" avoid करें।</li>
+  <li><strong>Simple fonts:</strong> Arial, Calibri, Times New Roman — decorative fonts ATS को confuse करते हैं।</li>
+  <li><strong>Plain text formatting:</strong> Tables और columns से बचें — कुछ ATS इन्हें properly parse नहीं कर पाते।</li>
+  <li><strong>Keywords include करें:</strong> Job description के exact phrases use करें।</li>
+  <li><strong>.pdf या .docx format:</strong> Most ATS दोनों support करते हैं, लेकिन PDF safer है।</li>
+  <li><strong>Date format consistent रखें:</strong> Jan 2023 – Mar 2024 या 01/2023 – 03/2024।</li>
+</ul>
+<h3>ATS के लिए Don'ts</h3>
+<ul>
+  <li>Header या Footer में important info मत रखें — ATS ignore कर सकता है।</li>
+  <li>Images, icons, या graphics से contact info मत बनाएं।</li>
+  <li>Text boxes avoid करें।</li>
+  <li>Fancy bullet points (custom symbols) की जगह standard bullets use करें।</li>
+</ul>
+<div class="callout-info">💡 <strong>Pro Tip:</strong> अपने रिज्यूमे का ATS score check करने के लिए ToolsArena का ATS Resume Checker use करें। यह बताता है कि आपका रिज्यूमे किन keywords miss कर रहा है।</div>
+<h3>Keywords कहाँ से लें?</h3>
+<p>Job description को ध्यान से पढ़ें। Technical skills (Python, Java, Excel), soft skills (leadership, communication), और industry terms (Agile, Six Sigma, digital marketing) — सभी को अपने रिज्यूमे में naturally fit करें। Keyword stuffing न करें — meaning बनाए रखें।</p>`,
+      },
+      {
+        id: 'resume-templates-kaunsa-chunen',
+        title: 'रिज्यूमे टेम्पलेट: Modern, Classic, Minimal — कौन सा चुनें',
+        content: `<p>रिज्यूमे का टेम्पलेट सिर्फ दिखावे की बात नहीं — यह industry, role, और company culture के हिसाब से choose करना चाहिए। ToolsArena तीन मुख्य टेम्पलेट styles offer करता है।</p>
+<h3>टेम्पलेट तुलना</h3>
+<table>
+  <thead>
+    <tr><th>टेम्पलेट</th><th>Design</th><th>Best For</th><th>Industries</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Modern</strong></td><td>Colors, sidebar, icons के साथ</td><td>Design, Marketing, Startups</td><td>IT, Digital Marketing, Media</td></tr>
+    <tr><td><strong>Classic</strong></td><td>Traditional, black &amp; white, formal</td><td>Government, Finance, Law</td><td>Banking, PSU, Legal, Academia</td></tr>
+    <tr><td><strong>Minimal</strong></td><td>Clean, lots of white space</td><td>Tech, Consulting, MNCs</td><td>Software, Consulting, Research</td></tr>
+  </tbody>
+</table>
+<h3>Industry के हिसाब से सलाह</h3>
+<ul>
+  <li><strong>IT/Software (TCS, Infosys, Wipro, Startups):</strong> Minimal या Modern। Clean layout, technical skills prominent।</li>
+  <li><strong>Government Jobs (UPSC, SSC, PSU):</strong> Classic। Formal tone, education और achievements focus।</li>
+  <li><strong>Banking/Finance (IBPS, SBI, Private Banks):</strong> Classic या Minimal। Conservative design।</li>
+  <li><strong>Marketing/Creative:</strong> Modern। Subtle color, personality दिखाएं।</li>
+  <li><strong>MBA Campus Placement:</strong> Modern या Minimal। Leadership और impact numbers ज़रूरी।</li>
+</ul>
+<h3>Color का सही use</h3>
+<p>अगर Modern टेम्पलेट use कर रहे हैं, तो color conservative रखें। Dark blue, dark green, या charcoal gray professional और ATS-friendly दोनों हैं। Bright red, neon yellow जैसे colors avoid करें — unprofessional लगते हैं।</p>
+<div class="callout-success">✅ <strong>Safe Color Choices:</strong> Navy Blue (#003366), Dark Teal (#00695C), Charcoal (#424242), Forest Green (#2E7D32) — ये सभी professional और ATS-compatible हैं।</div>
+<h3>Font Size और Spacing</h3>
+<ul>
+  <li>Name: 18–22pt</li>
+  <li>Section headings: 12–14pt, bold</li>
+  <li>Body text: 10–12pt</li>
+  <li>Line spacing: 1.15–1.5 (readable but compact)</li>
+  <li>Margins: 0.5–1 inch</li>
+</ul>`,
+      },
+      {
+        id: 'freshers-ke-liye-resume-tips',
+        title: 'फ्रेशर्स के लिए रिज्यूमे राइटिंग टिप्स',
+        content: `<p>अगर आपका कोई work experience नहीं है तो रिज्यूमे कैसे बनाएं? यह सबसे common सवाल है जो BTech, BCA, BBA, और MBA fresher पूछते हैं। अच्छी खबर यह है कि experience न होने पर भी एक strong रिज्यूमे बनाया जा सकता है।</p>
+<h3>Fresher Resume का Structure</h3>
+<ol>
+  <li><strong>Contact Info</strong></li>
+  <li><strong>Career Objective</strong> (2–3 lines)</li>
+  <li><strong>Education</strong> (पहले — यही आपकी biggest asset है)</li>
+  <li><strong>Skills</strong> (Technical + Soft)</li>
+  <li><strong>Projects</strong> (यह सबसे important section है)</li>
+  <li><strong>Internships</strong> (अगर हैं)</li>
+  <li><strong>Certifications</strong></li>
+  <li><strong>Achievements &amp; Extra-Curriculars</strong></li>
+</ol>
+<h3>Projects Section को Strong बनाएं</h3>
+<p>Fresher के लिए Projects सबसे महत्वपूर्ण section है। हर project के लिए:</p>
+<ul>
+  <li><strong>Project name</strong> लिखें</li>
+  <li><strong>Technology stack</strong> mention करें (Python, MySQL, HTML/CSS etc.)</li>
+  <li><strong>1–2 lines</strong> में क्या बनाया और क्यों, explain करें</li>
+  <li><strong>GitHub link</strong> ज़रूर add करें — credibility बढ़ता है</li>
+  <li><strong>Impact या results</strong> अगर हों (users, performance improvement)</li>
+</ul>
+<div class="callout-info">💡 <strong>BTech/BCA के लिए:</strong> College labs में बनाए projects भी mention करें। College project + 1-2 personal side projects = strong portfolio।</div>
+<h3>Internship Experience को Maximize करें</h3>
+<p>1–2 महीने की internship भी valuable है। Job title, company, dates, और 2–3 bullet points में achievements लिखें। "बस observe किया" मत लिखें — जो भी सीखा और contribute किया, उसे quantify करें।</p>
+<h3>Campus Placement के लिए Special Tips</h3>
+<ul>
+  <li>CGPA 7.0+ है तो ज़रूर mention करें। नीचे है तो percentage calculate करके देखें कि कौन सा बेहतर दिखता है।</li>
+  <li>College के coding clubs, hackathons, और tech fests mention करें।</li>
+  <li>NPTEL, Coursera, या Udemy certifications credibility बढ़ाते हैं।</li>
+  <li>LinkedIn profile optimize करें — Naukri profile भी setup करें।</li>
+</ul>
+<h3>MBA Fresher के लिए</h3>
+<p>MBA students के लिए leadership और teamwork ज़्यादा important है। Case competitions, internship impact, और club leadership roles highlight करें।</p>`,
+      },
+      {
+        id: 'resume-ki-aam-galtiyan',
+        title: 'रिज्यूमे की आम गलतियाँ जो रिजेक्शन का कारण बनती हैं',
+        content: `<p>हज़ारों रिज्यूमे review करने वाले HR professionals ने कुछ common mistakes identify की हैं जो candidates को automatically reject करवाती हैं। इन्हें जानें और avoid करें।</p>
+<h3>Top 10 Resume Mistakes</h3>
+<table>
+  <thead>
+    <tr><th>#</th><th>गलती</th><th>क्यों बुरी है</th><th>Solution</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Spelling और Grammar errors</td><td>Attention to detail की कमी दिखाता है</td><td>Grammarly या किसी को proofread करवाएं</td></tr>
+    <tr><td>2</td><td>Generic Objective ("seeking growth")</td><td>HR को boring लगता है, irrelevant</td><td>Specific, tailored summary लिखें</td></tr>
+    <tr><td>3</td><td>Photo लगाना (जब माँगी न जाए)</td><td>Bias create कर सकता है, ATS issue</td><td>Photo avoid करें जब तक required न हो</td></tr>
+    <tr><td>4</td><td>Inconsistent formatting</td><td>Unprofessional दिखता है</td><td>एक uniform font, size, और style use करें</td></tr>
+    <tr><td>5</td><td>Outdated contact info</td><td>HR reach नहीं कर पाता</td><td>Current email और phone verify करें</td></tr>
+    <tr><td>6</td><td>Job duties, achievements नहीं</td><td>"Managed team" vs "Led team of 8, 20% productivity gain"</td><td>हर point में impact और numbers डालें</td></tr>
+    <tr><td>7</td><td>Resume 3-4 pages का</td><td>HR के पास time नहीं</td><td>Fresher: 1 page, Senior: max 2 page</td></tr>
+    <tr><td>8</td><td>Unprofessional email address</td><td>coolboy123@gmail.com — credibility खत्म</td><td>firstname.lastname@gmail.com use करें</td></tr>
+    <tr><td>9</td><td>झूठी information</td><td>Background check में पकड़े जाओगे</td><td>सिर्फ सच लिखें — frame better करें</td></tr>
+    <tr><td>10</td><td>ATS-unfriendly design</td><td>HR तक पहुंचता ही नहीं</td><td>ToolsArena जैसे ATS-friendly builder use करें</td></tr>
+  </tbody>
+</table>
+<h3>LinkedIn Profile का mismatch</h3>
+<p>बहुत से candidates रिज्यूमे और LinkedIn में अलग-अलग dates या job titles लिखते हैं। HR दोनों check करते हैं। Consistency ज़रूरी है।</p>
+<div class="callout-warning">⚠️ <strong>Important:</strong> Naukri.com profile भी रिज्यूमे के साथ consistent रखें। Many recruiters Naukri पर actively search करते हैं — outdated Naukri profile एक बड़ी गलती है।</div>`,
+      },
+      {
+        id: 'resume-checklist',
+        title: 'रिज्यूमे चेकलिस्ट: अप्लाई करने से पहले फाइनल रिव्यू',
+        content: `<p>रिज्यूमे submit करने से पहले यह checklist ज़रूर complete करें। यह 5 मिनट की review आपकी application को reject होने से बचा सकती है।</p>
+<h3>Content Checklist</h3>
+<ul>
+  <li>☐ नाम और contact info सही और current है</li>
+  <li>☐ Professional email address है (firstname.lastname format)</li>
+  <li>☐ LinkedIn URL है और updated है</li>
+  <li>☐ Professional Summary/Objective specific और tailored है</li>
+  <li>☐ Work experience में dates accurate हैं (Month Year format)</li>
+  <li>☐ हर role में achievements/impact mentioned है (numbers के साथ)</li>
+  <li>☐ Education section में degree, college, CGPA/%, year है</li>
+  <li>☐ Skills section में job-relevant technical skills हैं</li>
+  <li>☐ Projects में technology stack और GitHub link है</li>
+  <li>☐ Certifications up-to-date हैं</li>
+</ul>
+<h3>Formatting Checklist</h3>
+<ul>
+  <li>☐ Font consistent है पूरे document में</li>
+  <li>☐ Font size readable है (10–12pt body, 14pt+ headings)</li>
+  <li>☐ Bullet points aligned और consistent हैं</li>
+  <li>☐ Margins balanced हैं (0.5–1 inch)</li>
+  <li>☐ Fresher: 1 page में fit है / Experienced: 2 pages से ज़्यादा नहीं</li>
+  <li>☐ No spelling या grammar errors (Grammarly से check करें)</li>
+  <li>☐ PDF format में save किया है</li>
+</ul>
+<h3>ATS Checklist</h3>
+<ul>
+  <li>☐ Standard section headings use किए हैं</li>
+  <li>☐ Job description के keywords include किए हैं</li>
+  <li>☐ Tables और text boxes minimize किए हैं</li>
+  <li>☐ Header/footer में critical info नहीं है</li>
+  <li>☐ File name professional है: "Rahul_Sharma_Resume.pdf"</li>
+</ul>
+<div class="callout-success">✅ <strong>Final Tip:</strong> एक trusted friend या mentor को रिज्यूमे review करने दें। Fresh eyes से spelling errors और unclear sentences जल्दी पकड़ में आते हैं। नौकरी मिलने के बाद रिज्यूमे update करते रहें — हर 6 महीने में एक बार।</div>
+<h3>रिज्यूमे submit करने के बाद</h3>
+<p>Naukri.com, LinkedIn, और company career page पर apply करने के बाद application track करें। Follow-up email 5–7 business days बाद भेज सकते हैं — politely। Interview call आने पर रिज्यूमे की hard copy ज़रूर लेकर जाएं।</p>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'ToolsArena रिज्यूमे बिल्डर खोलें',
+        description: 'ToolsArena.com पर जाएं और Resume Builder tool खोलें। कोई account बनाने की ज़रूरत नहीं — सीधे use करना शुरू करें।',
+      },
+      {
+        title: 'टेम्पलेट चुनें',
+        description: 'Modern, Classic, और Minimal में से अपनी industry और role के हिसाब से टेम्पलेट select करें। IT/startup के लिए Minimal, government के लिए Classic।',
+      },
+      {
+        title: 'अपनी जानकारी भरें',
+        description: 'Personal info, education, work experience, skills, projects और certifications step-by-step fill करें। हर section के लिए guidance prompts दिए गए हैं।',
+      },
+      {
+        title: 'प्रीव्यू करें और कलर कस्टमाइज़ करें',
+        description: 'Real-time preview में देखें कि आपका रिज्यूमे कैसा दिख रहा है। Color theme adjust करें — professional dark blue या minimal black recommended है।',
+      },
+      {
+        title: 'PDF डाउनलोड करें — फ्री',
+        description: 'Download PDF button click करें। High-quality, ATS-friendly PDF तुरंत download होगी। Naukri.com, LinkedIn, और email applications में directly use करें।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'क्या ToolsArena का रिज्यूमे बिल्डर पूरी तरह फ्री है?',
+        answer: 'हाँ, बिल्कुल फ्री है। कोई subscription, hidden charge, या watermark नहीं। बिना account बनाए भी रिज्यूमे बना सकते हैं और PDF download कर सकते हैं।',
+      },
+      {
+        question: 'फ्रेशर का रिज्यूमे कितना लंबा होना चाहिए?',
+        answer: '1 page — strictly। HR को hundreds of resumes review करने होते हैं। Fresher का 2-page रिज्यूमे unprofessional लगता है। सबसे relevant जानकारी concisely present करें।',
+      },
+      {
+        question: 'क्या यह रिज्यूमे ATS-friendly है?',
+        answer: 'हाँ। ToolsArena के templates clean, standard formatting के साथ build किए गए हैं जो major ATS systems (Taleo, Workday, Greenhouse) के साथ compatible हैं।',
+      },
+      {
+        question: 'Naukri.com के लिए अलग रिज्यूमे बनाना होगा?',
+        answer: 'Naukri का अपना profile होता है, लेकिन रिज्यूमे PDF भी upload कर सकते हैं। ToolsArena से बना PDF directly Naukri पर upload करें। Naukri profile को भी same information से update रखें।',
+      },
+      {
+        question: 'Photo लगाएं या नहीं?',
+        answer: 'Generally नहीं — modern Indian corporate hiring में photo की requirement कम हो रही है। ATS में photo parse नहीं होती। Photo सिर्फ तब लगाएं जब job description में specifically mention हो।',
+      },
+      {
+        question: 'BTech fresher का CGPA 6.5 है, रिज्यूमे में क्या लिखें?',
+        answer: 'अगर CGPA 7+ नहीं है, तो percentage calculate करें। कभी-कभी percentage बेहतर दिखती है। Projects, certifications, और internships को strong बनाएं ताकि CGPA की कमी compensate हो।',
+      },
+      {
+        question: 'हर job के लिए अलग रिज्यूमे बनाना होगा?',
+        answer: 'पूरी तरह अलग नहीं, लेकिन Professional Summary और Skills section को job description के हिसाब से customize करें। Keywords match करने से ATS score बेहतर होता है और callback chances बढ़ते हैं।',
+      },
+      {
+        question: 'रिज्यूमे में LinkedIn URL देना ज़रूरी है?',
+        answer: 'Highly recommended है, खासकर IT और corporate jobs के लिए। LinkedIn profile आपका extended रिज्यूमे है — recommendations, projects, और endorsements HR को impress कर सकती हैं। Profile updated और professional होनी चाहिए।',
+      },
+    ],
+    relatedGuides: ['ats-resume-checker-guide', 'word-counter-guide', 'salary-calculator-guide'],
+    toolCTA: {
+      heading: 'अभी अपना प्रोफेशनल रिज्यूमे बनाएं — बिल्कुल फ्री',
+      description: 'कोई साइनअप नहीं, कोई watermark नहीं। ATS-friendly टेम्पलेट चुनें, जानकारी भरें, और PDF डाउनलोड करें।',
+      buttonText: 'रिज्यूमे बिल्डर खोलें →',
+    },
+  },
+
 ];
