@@ -9426,6 +9426,84 @@ tools.push({
   estimatedTime: '10-30 seconds',
 });
 
+tools.push({
+  slug: 'excel-to-pdf',
+  name: 'Excel to PDF Converter',
+  shortDescription: 'Convert Excel spreadsheets (.xlsx, .xls, .csv) to PDF files instantly — free, offline, no upload.',
+  longDescription: `<p>Convert your <strong>Excel spreadsheets to PDF</strong> format directly in your browser — no file upload to any server, completely private and free.</p><h2>Why Convert Excel to PDF?</h2><p>PDF format preserves your spreadsheet layout across all devices and operating systems. Share financial reports, invoices, data tables, and business documents as professional PDFs that anyone can open without Excel installed.</p><h2>Features</h2><ul><li>Supports .xlsx, .xls, and .csv files</li><li>Multiple sheet support — select and convert any sheet</li><li>Preview before converting</li><li>100% client-side — your data never leaves your browser</li><li>Free, no signup, no watermark</li></ul>`,
+  category: 'pdf-tools',
+  targetKeyword: 'excel to pdf converter',
+  secondaryKeywords: ['convert excel to pdf', 'xlsx to pdf', 'spreadsheet to pdf', 'excel to pdf free online', 'csv to pdf'],
+  metaTitle: 'Excel to PDF Converter — Free Online, No Upload',
+  metaDescription: 'Convert Excel (.xlsx, .xls, .csv) to PDF instantly in your browser. Free, no upload, no signup. Preview and download professional PDFs.',
+  faqs: [
+    { question: 'Is my Excel file uploaded to a server?', answer: 'No. Everything happens in your browser. Your file never leaves your device.' },
+    { question: 'Can I convert .csv files too?', answer: 'Yes. This tool supports .xlsx, .xls, and .csv file formats.' },
+    { question: 'Does it preserve formatting?', answer: 'The tool renders your data in a clean table format in the PDF. Complex Excel formatting like charts and conditional formatting may not be preserved.' },
+  ],
+  howToSteps: [
+    'Upload your Excel file (.xlsx, .xls, or .csv)',
+    'Preview the spreadsheet and select a sheet if needed',
+    'Click Convert to PDF and download the result',
+  ],
+  relatedToolSlugs: ['pdf-to-excel', 'csv-to-json', 'word-to-pdf'],
+  icon: 'FileSpreadsheet',
+  isNew: true,
+  isPopular: false,
+});
+
+tools.push({
+  slug: 'html-to-pdf',
+  name: 'HTML to PDF Converter',
+  shortDescription: 'Convert HTML code or web pages to PDF documents — free, instant, no server upload.',
+  longDescription: `<p>Convert <strong>HTML to PDF</strong> directly in your browser. Paste your HTML code or upload an .html file, preview the rendered output, and download a clean PDF — all without any server upload.</p><h2>Why Convert HTML to PDF?</h2><p>Developers, designers, and content creators frequently need to save HTML content as PDF for documentation, invoices, reports, or archiving. This tool renders your HTML faithfully and converts it to a downloadable PDF.</p><h2>Features</h2><ul><li>Paste HTML code or upload .html files</li><li>Live preview of rendered HTML</li><li>Page size options (A4, Letter, Legal)</li><li>Portrait and landscape orientation</li><li>100% client-side — your code stays private</li><li>Free, no signup, no watermark</li></ul>`,
+  category: 'pdf-tools',
+  targetKeyword: 'html to pdf converter',
+  secondaryKeywords: ['convert html to pdf', 'html to pdf online', 'html to pdf free', 'save html as pdf', 'webpage to pdf'],
+  metaTitle: 'HTML to PDF Converter — Free Online, No Upload',
+  metaDescription: 'Convert HTML code to PDF instantly. Paste HTML or upload a file, preview, and download as PDF. Free, no server upload, works offline.',
+  faqs: [
+    { question: 'Does it support CSS styling?', answer: 'Yes. Inline styles and embedded <style> blocks are fully rendered. External stylesheets (linked via URL) may not load due to browser security restrictions.' },
+    { question: 'Is my HTML code sent to a server?', answer: 'No. Everything is processed in your browser. Your HTML code never leaves your device.' },
+    { question: 'Can I convert a live website to PDF?', answer: 'This tool works with HTML code, not URLs. To convert a live page, right-click the page, select "View Page Source", copy the HTML, and paste it here.' },
+  ],
+  howToSteps: [
+    'Paste your HTML code or upload an .html file',
+    'Preview the rendered output in the preview pane',
+    'Select page size and orientation, then click Convert to PDF',
+  ],
+  relatedToolSlugs: ['html-to-markdown', 'word-to-pdf', 'markdown-to-html'],
+  icon: 'Code',
+  isNew: true,
+  isPopular: false,
+});
+
+tools.push({
+  slug: 'mp4-to-mp3',
+  name: 'MP4 to Audio Converter',
+  shortDescription: 'Extract audio from MP4, WebM, and other video files — free, offline, no upload to server.',
+  longDescription: `<p>Extract <strong>audio from video files</strong> directly in your browser. Upload an MP4, WebM, or MOV file and download the audio track — completely offline, no file upload to any server.</p><h2>Why Extract Audio from Video?</h2><p>Convert video lectures to audio for listening on the go, extract music from music videos, pull audio from screen recordings for podcasts, or save audio from any video format. All processing happens in your browser for complete privacy.</p><h2>Features</h2><ul><li>Supports MP4, WebM, MOV, and other video formats</li><li>Preview audio before downloading</li><li>High-quality WAV audio output</li><li>100% client-side — your video never leaves your device</li><li>Free, no signup, no watermark, no file size limits</li></ul>`,
+  category: 'converters',
+  targetKeyword: 'mp4 to mp3 converter',
+  secondaryKeywords: ['extract audio from video', 'video to audio converter', 'mp4 to audio online', 'convert video to mp3 free', 'extract sound from video'],
+  metaTitle: 'MP4 to Audio Converter — Extract Audio from Video Free',
+  metaDescription: 'Extract audio from MP4, WebM, MOV videos instantly. Free online converter — no upload, works offline. Download high-quality audio from any video.',
+  faqs: [
+    { question: 'Is my video uploaded to a server?', answer: 'No. All processing happens locally in your browser. Your video file never leaves your device.' },
+    { question: 'What audio format is the output?', answer: 'The audio is extracted as high-quality WAV format. WAV is uncompressed and compatible with all devices and audio editors.' },
+    { question: 'Is there a file size limit?', answer: 'There is no hard limit, but very large videos (over 500MB) may be slow to process depending on your device.' },
+  ],
+  howToSteps: [
+    'Upload your video file (MP4, WebM, MOV)',
+    'Wait for the audio extraction to complete',
+    'Preview the audio and click Download to save',
+  ],
+  relatedToolSlugs: ['text-to-speech', 'speech-to-text', 'audio-trimmer'],
+  icon: 'Music',
+  isNew: true,
+  isPopular: false,
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {

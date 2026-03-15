@@ -28,6 +28,7 @@
     "file-saver": "^2.0.5",
     "framer-motion": "^12.34.3",
     "html2canvas-pro": "^2.0.2",
+    "jspdf": "^4.2.0",
     "jszip": "^3.10.1",
     "lucide-react": "^0.575.0",
     "mammoth": "^1.12.0",
@@ -46,6 +47,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/file-saver": "^2.0.7",
+    "@types/jspdf": "^1.3.3",
     "@types/node": "^20",
     "@types/qrcode": "^1.5.6",
     "@types/react": "^19",
