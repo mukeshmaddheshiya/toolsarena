@@ -4779,7 +4779,7 @@ button {
       {
         id: 'crop-kaise-kare',
         title: 'ToolsArena से Image Crop कैसे करें?',
-        content: `<ol><li><strong>Image upload करें:</strong> Drag & drop या browse — JPG, PNG, WebP support</li><li><strong>Crop area select करें:</strong> Corners drag करके area choose करें</li><li><strong>Aspect ratio चुनें:</strong> 1:1, 16:9, 4:3, 9:16 presets या custom dimensions</li><li><strong>Position adjust करें:</strong> Crop box को image पर drag करके सही जगह रखें</li><li><strong>Download करें:</strong> Crop & Download — instant save</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Pro Tip:</strong> सब कुछ browser में होता है — आपकी photo किसी server पर upload नहीं होती। Privacy 100% safe!</div>`,
+        content: `<ol><li><strong>Image upload करें:</strong> Drag & drop या browse — JPG, PNG, WebP support</li><li><strong>Crop area select करें:</strong> Corners drag करके area choose करें</li><li><strong>Aspect ratio चुनें:</strong> 1:1, 16:9, 4:3, 9:16 presets या custom dimensions</li><li><strong>Position adjust करें:</strong> Crop box को image पर drag करके सही जगह रखें</li><li><strong>Download करें:</strong> Crop & Download — instant save</li></ol><div class="callout-tip">🎯 <strong>Pro Tip:</strong> सब कुछ browser में होता है — आपकी photo किसी server पर upload नहीं होती। Privacy 100% safe!</div>`,
       },
       {
         id: 'composition-tips',
@@ -4789,7 +4789,7 @@ button {
       {
         id: 'website-seo-crop',
         title: 'Website और SEO के लिए Image Crop Tips',
-        content: `<ul><li><strong>OG images:</strong> Social sharing preview के लिए हमेशा 1200×630 crop करें</li><li><strong>Product photos:</strong> E-commerce (Flipkart, Amazon) के लिए 1:1 square crop — consistent grid look</li><li><strong>Blog thumbnails:</strong> 16:9 (1280×720) blog post cards के लिए best</li><li><strong>Crop + Compress:</strong> Crop करने के बाद compress भी करें — fast loading = better SEO ranking</li></ul><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>SEO Impact:</strong> Google Core Web Vitals oversized images को penalise करता है। Crop + compress = faster pages = better rankings।</div>`,
+        content: `<ul><li><strong>OG images:</strong> Social sharing preview के लिए हमेशा 1200×630 crop करें</li><li><strong>Product photos:</strong> E-commerce (Flipkart, Amazon) के लिए 1:1 square crop — consistent grid look</li><li><strong>Blog thumbnails:</strong> 16:9 (1280×720) blog post cards के लिए best</li><li><strong>Crop + Compress:</strong> Crop करने के बाद compress भी करें — fast loading = better SEO ranking</li></ul><div class="callout-info">💡 <strong>SEO Impact:</strong> Google Core Web Vitals oversized images को penalise करता है। Crop + compress = faster pages = better rankings।</div>`,
       },
     ],
     howToSteps: [
@@ -4834,7 +4834,7 @@ button {
       {
         id: 'methods-compared',
         title: 'Excel to PDF: कौन सा Method Best है?',
-        content: `<table><tr><th>Method</th><th>Cost</th><th>Privacy</th><th>Quality</th></tr><tr><td>ToolsArena (Browser)</td><td>✅ Free</td><td>✅ 100% local</td><td>Clean table format</td></tr><tr><td>Microsoft Excel</td><td>❌ Paid</td><td>✅ Local</td><td>Full formatting</td></tr><tr><td>Google Sheets</td><td>✅ Free</td><td>⚠️ Cloud upload</td><td>Good</td></tr><tr><td>Online converters</td><td>⚠️ Freemium</td><td>❌ File upload</td><td>Varies</td></tr></table><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Privacy advantage:</strong> ToolsArena में आपकी file browser में ही process होती है — किसी server पर नहीं जाती।</div>`,
+        content: `<table><tr><th>Method</th><th>Cost</th><th>Privacy</th><th>Quality</th></tr><tr><td>ToolsArena (Browser)</td><td>✅ Free</td><td>✅ 100% local</td><td>Clean table format</td></tr><tr><td>Microsoft Excel</td><td>❌ Paid</td><td>✅ Local</td><td>Full formatting</td></tr><tr><td>Google Sheets</td><td>✅ Free</td><td>⚠️ Cloud upload</td><td>Good</td></tr><tr><td>Online converters</td><td>⚠️ Freemium</td><td>❌ File upload</td><td>Varies</td></tr></table><div class="callout-info">💡 <strong>Privacy advantage:</strong> ToolsArena में आपकी file browser में ही process होती है — किसी server पर नहीं जाती।</div>`,
       },
       {
         id: 'step-by-step',
@@ -4894,7 +4894,7 @@ button {
       {
         id: 'step-by-step',
         title: 'HTML को PDF में Convert कैसे करें (Step-by-Step)',
-        content: `<ol><li><strong>Tool खोलें:</strong> ToolsArena HTML to PDF converter पर जाएं</li><li><strong>HTML enter करें:</strong> Code paste करें textarea में, या .html file upload करें</li><li><strong>Preview देखें:</strong> Live preview pane में rendered HTML check करें</li><li><strong>Settings:</strong> Page size (A4, Letter, Legal) और orientation (Portrait/Landscape) चुनें</li><li><strong>Convert:</strong> "Print to PDF" या "Download PDF" use करें</li><li><strong>Save:</strong> PDF download करें</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Tip:</strong> Best results के लिए inline CSS use करें। External stylesheet URLs browser security restrictions से load नहीं हो सकतीं।</div>`,
+        content: `<ol><li><strong>Tool खोलें:</strong> ToolsArena HTML to PDF converter पर जाएं</li><li><strong>HTML enter करें:</strong> Code paste करें textarea में, या .html file upload करें</li><li><strong>Preview देखें:</strong> Live preview pane में rendered HTML check करें</li><li><strong>Settings:</strong> Page size (A4, Letter, Legal) और orientation (Portrait/Landscape) चुनें</li><li><strong>Convert:</strong> "Print to PDF" या "Download PDF" use करें</li><li><strong>Save:</strong> PDF download करें</li></ol><div class="callout-tip">💡 <strong>Tip:</strong> Best results के लिए inline CSS use करें। External stylesheet URLs browser security restrictions से load नहीं हो सकतीं।</div>`,
       },
       {
         id: 'better-pdf-tips',
@@ -4954,7 +4954,7 @@ button {
       {
         id: 'scale-choose',
         title: 'सही Scale कैसे चुनें (1x, 2x, 3x, 4x)',
-        content: `<table><tr><th>Scale</th><th>100×100 SVG का Result</th><th>Best For</th></tr><tr><td>1x</td><td>100 × 100 px</td><td>Web — original size</td></tr><tr><td>2x</td><td>200 × 200 px</td><td>Retina screens — most common</td></tr><tr><td>3x</td><td>300 × 300 px</td><td>High-res mobile (iPhone Pro)</td></tr><tr><td>4x</td><td>400 × 400 px</td><td>Print, large displays</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Recommendation:</strong> ज्यादातर cases में 2x use करें — standard और retina दोनों screens cover होते हैं।</div>`,
+        content: `<table><tr><th>Scale</th><th>100×100 SVG का Result</th><th>Best For</th></tr><tr><td>1x</td><td>100 × 100 px</td><td>Web — original size</td></tr><tr><td>2x</td><td>200 × 200 px</td><td>Retina screens — most common</td></tr><tr><td>3x</td><td>300 × 300 px</td><td>High-res mobile (iPhone Pro)</td></tr><tr><td>4x</td><td>400 × 400 px</td><td>Print, large displays</td></tr></table><div class="callout-tip">💡 <strong>Recommendation:</strong> ज्यादातर cases में 2x use करें — standard और retina दोनों screens cover होते हैं।</div>`,
       },
       {
         id: 'step-by-step',
@@ -5004,7 +5004,7 @@ button {
       {
         id: 'audio-formats',
         title: 'Audio Formats समझें',
-        content: `<table><tr><th>Format</th><th>Type</th><th>Quality</th><th>File Size</th></tr><tr><td>WAV</td><td>Uncompressed</td><td>★★★★★ Lossless</td><td>Large (~10MB/min)</td></tr><tr><td>MP3</td><td>Lossy compressed</td><td>★★★★ Good</td><td>Small (~1MB/min)</td></tr><tr><td>AAC</td><td>Lossy compressed</td><td>★★★★ MP3 से better</td><td>Small</td></tr><tr><td>FLAC</td><td>Lossless compressed</td><td>★★★★★ Lossless</td><td>Medium (~5MB/min)</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>ToolsArena WAV format output करता है</strong> — lossless quality, universally compatible। बाद में WAV को MP3 में VLC या Audacity से convert कर सकते हैं।</div>`,
+        content: `<table><tr><th>Format</th><th>Type</th><th>Quality</th><th>File Size</th></tr><tr><td>WAV</td><td>Uncompressed</td><td>★★★★★ Lossless</td><td>Large (~10MB/min)</td></tr><tr><td>MP3</td><td>Lossy compressed</td><td>★★★★ Good</td><td>Small (~1MB/min)</td></tr><tr><td>AAC</td><td>Lossy compressed</td><td>★★★★ MP3 से better</td><td>Small</td></tr><tr><td>FLAC</td><td>Lossless compressed</td><td>★★★★★ Lossless</td><td>Medium (~5MB/min)</td></tr></table><div class="callout-tip">💡 <strong>ToolsArena WAV format output करता है</strong> — lossless quality, universally compatible। बाद में WAV को MP3 में VLC या Audacity से convert कर सकते हैं।</div>`,
       },
       {
         id: 'step-by-step',
@@ -5019,7 +5019,7 @@ button {
       {
         id: 'tips-use-cases',
         title: 'Tips और Use Cases',
-        content: `<ul><li><strong>Large files:</strong> 500MB+ videos पुराने devices पर slow process हो सकती हैं — पहले video trim करें</li><li><strong>Supported formats:</strong> MP4, WebM, MOV, AVI, MKV, M4V सब support होते हैं</li><li><strong>Quality:</strong> WAV output original video audio quality preserve करता है — कोई quality loss नहीं</li><li><strong>Students:</strong> Lecture recordings download करें → audio extract करें → commute में सुनें</li><li><strong>Podcasters:</strong> Video podcast record करें → यहाँ audio extract करें → Audacity में edit करें</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Copyright:</strong> सिर्फ उन videos का audio extract करें जो आपके own हैं या जिनकी permission है। Copyright respect करें।</div>`,
+        content: `<ul><li><strong>Large files:</strong> 500MB+ videos पुराने devices पर slow process हो सकती हैं — पहले video trim करें</li><li><strong>Supported formats:</strong> MP4, WebM, MOV, AVI, MKV, M4V सब support होते हैं</li><li><strong>Quality:</strong> WAV output original video audio quality preserve करता है — कोई quality loss नहीं</li><li><strong>Students:</strong> Lecture recordings download करें → audio extract करें → commute में सुनें</li><li><strong>Podcasters:</strong> Video podcast record करें → यहाँ audio extract करें → Audacity में edit करें</li></ul><div class="callout-warning">⚠️ <strong>Copyright:</strong> सिर्फ उन videos का audio extract करें जो आपके own हैं या जिनकी permission है। Copyright respect करें।</div>`,
       },
     ],
     howToSteps: [

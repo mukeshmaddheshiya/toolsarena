@@ -94,8 +94,9 @@ export function ExcelToPdfTool() {
 
     try {
       const { default: jsPDF } = await import('jspdf');
-      // @ts-ignore - jspdf-autotable augments jsPDF prototype
-      await import('jspdf-autotable');
+      // @ts-ignore - apply autotable plugin to jsPDF
+      const { applyPlugin } = await import('jspdf-autotable');
+      applyPlugin(jsPDF);
 
       const sheet = parsedFile.sheets[activeSheet];
       const isLandscape = orientation === 'landscape';

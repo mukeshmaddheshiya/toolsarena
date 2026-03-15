@@ -2145,7 +2145,7 @@ button {
       {
         id: 'tts-ke-ho',
         title: 'Text to Speech (TTS) के हो?',
-        content: `<p>Text to Speech (TTS) एक AI technology हो जसले लिखित text पढेर natural-sounding आवाज produce गर्छ। Modern TTS ले:</p><ul><li><strong>Neural voices:</strong> Real मानिस जस्तो natural आवाज</li><li><strong>Multi-language:</strong> नेपाली, अंग्रेजी, हिन्दी, र 50+ भाषा support</li><li><strong>Speed control:</strong> बिस्तारै वा छिटो — तपाईंको preference अनुसार</li><li><strong>Free access:</strong> कुनै signup वा payment बिना use गर्न सकिन्छ</li></ul><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>के थाहा छ?</strong> Nepal मा 2.4% जनसंख्या दृष्टिविहीन छ — TTS tools ले digital content accessible बनाउँछ।</div>`,
+        content: `<p>Text to Speech (TTS) एक AI technology हो जसले लिखित text पढेर natural-sounding आवाज produce गर्छ। Modern TTS ले:</p><ul><li><strong>Neural voices:</strong> Real मानिस जस्तो natural आवाज</li><li><strong>Multi-language:</strong> नेपाली, अंग्रेजी, हिन्दी, र 50+ भाषा support</li><li><strong>Speed control:</strong> बिस्तारै वा छिटो — तपाईंको preference अनुसार</li><li><strong>Free access:</strong> कुनै signup वा payment बिना use गर्न सकिन्छ</li></ul><div class="callout-info">💡 <strong>के थाहा छ?</strong> Nepal मा 2.4% जनसंख्या दृष्टिविहीन छ — TTS tools ले digital content accessible बनाउँछ।</div>`,
       },
       {
         id: 'nepal-ma-tts-use',
@@ -2155,7 +2155,7 @@ button {
       {
         id: 'tts-kasari-use-garne',
         title: 'Text to Speech कसरी प्रयोग गर्ने?',
-        content: `<ol><li><strong>Text paste गर्नुहोस्:</strong> आफ्नो लेख, notes वा कुनै पनि text copy-paste गर्नुहोस्</li><li><strong>भाषा छान्नुहोस्:</strong> Nepali, English, Hindi वा अरू 50+ भाषा</li><li><strong>Voice select गर्नुहोस्:</strong> Male, Female वा विभिन्न AI voices</li><li><strong>Speed adjust गर्नुहोस्:</strong> 0.5x (बिस्तारै) देखि 2x (छिटो) सम्म</li><li><strong>Play वा Download:</strong> तुरुन्त सुन्नुहोस् वा MP3 download गर्नुहोस्</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Pro Tip:</strong> Lok Sewa तयारी गर्दै हुनुहुन्छ? Current affairs notes TTS मा convert गरेर commute मा सुन्नुहोस् — time बचत हुन्छ!</div>`,
+        content: `<ol><li><strong>Text paste गर्नुहोस्:</strong> आफ्नो लेख, notes वा कुनै पनि text copy-paste गर्नुहोस्</li><li><strong>भाषा छान्नुहोस्:</strong> Nepali, English, Hindi वा अरू 50+ भाषा</li><li><strong>Voice select गर्नुहोस्:</strong> Male, Female वा विभिन्न AI voices</li><li><strong>Speed adjust गर्नुहोस्:</strong> 0.5x (बिस्तारै) देखि 2x (छिटो) सम्म</li><li><strong>Play वा Download:</strong> तुरुन्त सुन्नुहोस् वा MP3 download गर्नुहोस्</li></ol><div class="callout-tip">🎯 <strong>Pro Tip:</strong> Lok Sewa तयारी गर्दै हुनुहुन्छ? Current affairs notes TTS मा convert गरेर commute मा सुन्नुहोस् — time बचत हुन्छ!</div>`,
       },
       {
         id: 'tts-vs-alternatives',
@@ -2165,7 +2165,7 @@ button {
       {
         id: 'tts-tips-nepal',
         title: 'Nepal का लागि TTS Tips',
-        content: `<ul><li><strong>Slow internet?</strong> Text छोटो-छोटो paragraph मा divide गर्नुहोस् — loading fast हुन्छ</li><li><strong>Mixed language?</strong> Nepali-English mix text पनि naturally पढ्छ</li><li><strong>Offline सुन्ने?</strong> MP3 download गरेर phone मा save गर्नुहोस्</li><li><strong>Study technique:</strong> Notes type गर्नुहोस् → TTS मा सुन्नुहोस् → retention 40% बढ्छ (dual coding theory)</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>ध्यान दिनुहोस्:</strong> TTS audio लाई commercial use गर्नु अघि copyright policy जाँच गर्नुहोस्।</div>`,
+        content: `<ul><li><strong>Slow internet?</strong> Text छोटो-छोटो paragraph मा divide गर्नुहोस् — loading fast हुन्छ</li><li><strong>Mixed language?</strong> Nepali-English mix text पनि naturally पढ्छ</li><li><strong>Offline सुन्ने?</strong> MP3 download गरेर phone मा save गर्नुहोस्</li><li><strong>Study technique:</strong> Notes type गर्नुहोस् → TTS मा सुन्नुहोस् → retention 40% बढ्छ (dual coding theory)</li></ul><div class="callout-warning">⚠️ <strong>ध्यान दिनुहोस्:</strong> TTS audio लाई commercial use गर्नु अघि copyright policy जाँच गर्नुहोस्।</div>`,
       },
     ],
     howToSteps: [
@@ -2207,7 +2207,7 @@ button {
       {
         id: 'image-compress-kina',
         title: 'Image Compress किन गर्नुपर्छ?',
-        content: `<ul><li><strong>Government Forms:</strong> Nepal को passport, NID, driving license form मा photo size limit हुन्छ (50KB–200KB)</li><li><strong>Daraz/Online Shopping:</strong> Product photo 1MB भन्दा कम चाहिन्छ — compress नगरे upload हुँदैन</li><li><strong>Website Speed:</strong> Heavy images ले website slow बनाउँछ — Nepal को internet speed मा यो major issue हो</li><li><strong>WhatsApp/Email:</strong> Large photo send गर्दा data खर्च हुन्छ — compress गरेर data बचत</li><li><strong>Storage:</strong> Phone storage full? Compress गरेर space बचाउनुहोस्</li></ul><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>तथ्य:</strong> Nepal मा average mobile internet speed 20 Mbps — 5MB को image load हुन 2 second लाग्छ। Compress गरेर 0.3 second मा load हुन्छ!</div>`,
+        content: `<ul><li><strong>Government Forms:</strong> Nepal को passport, NID, driving license form मा photo size limit हुन्छ (50KB–200KB)</li><li><strong>Daraz/Online Shopping:</strong> Product photo 1MB भन्दा कम चाहिन्छ — compress नगरे upload हुँदैन</li><li><strong>Website Speed:</strong> Heavy images ले website slow बनाउँछ — Nepal को internet speed मा यो major issue हो</li><li><strong>WhatsApp/Email:</strong> Large photo send गर्दा data खर्च हुन्छ — compress गरेर data बचत</li><li><strong>Storage:</strong> Phone storage full? Compress गरेर space बचाउनुहोस्</li></ul><div class="callout-info">💡 <strong>तथ्य:</strong> Nepal मा average mobile internet speed 20 Mbps — 5MB को image load हुन 2 second लाग्छ। Compress गरेर 0.3 second मा load हुन्छ!</div>`,
       },
       {
         id: 'nepal-photo-size-requirements',
@@ -2222,12 +2222,12 @@ button {
       {
         id: 'compression-types',
         title: 'Lossy vs Lossless Compression बुझ्नुहोस्',
-        content: `<table><tr><th>Feature</th><th>Lossy Compression</th><th>Lossless Compression</th></tr><tr><td>Size reduction</td><td>60–80% सम्म</td><td>20–40% सम्म</td></tr><tr><td>Quality</td><td>थोरै घट्छ (देखिँदैन)</td><td>बिल्कुलै नघट्ने</td></tr><tr><td>Best for</td><td>Website, social media, Daraz</td><td>Professional photography, print</td></tr><tr><td>Formats</td><td>JPG, WebP</td><td>PNG, WebP lossless</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>सिफारिस:</strong> Website र Daraz का लागि Lossy (70% quality) use गर्नुहोस् — size धेरै घट्छ तर quality difference आँखाले थाहा पाउँदैन।</div>`,
+        content: `<table><tr><th>Feature</th><th>Lossy Compression</th><th>Lossless Compression</th></tr><tr><td>Size reduction</td><td>60–80% सम्म</td><td>20–40% सम्म</td></tr><tr><td>Quality</td><td>थोरै घट्छ (देखिँदैन)</td><td>बिल्कुलै नघट्ने</td></tr><tr><td>Best for</td><td>Website, social media, Daraz</td><td>Professional photography, print</td></tr><tr><td>Formats</td><td>JPG, WebP</td><td>PNG, WebP lossless</td></tr></table><div class="callout-tip">🎯 <strong>सिफारिस:</strong> Website र Daraz का लागि Lossy (70% quality) use गर्नुहोस् — size धेरै घट्छ तर quality difference आँखाले थाहा पाउँदैन।</div>`,
       },
       {
         id: 'image-format-nepal',
         title: 'कुन Image Format कहिले प्रयोग गर्ने?',
-        content: `<ul><li><strong>JPG:</strong> Photo, Daraz product image, social media — सबैभन्दा universal</li><li><strong>PNG:</strong> Logo, screenshot, transparent background चाहिने — quality best तर size ठूलो</li><li><strong>WebP:</strong> Website images — JPG भन्दा 30% सानो, modern browser सबैले support गर्छ</li><li><strong>SVG:</strong> Icons, illustrations — infinite zoom, tiny size</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>ध्यान:</strong> Nepal government forms मा JPG/JPEG मात्र accept हुन्छ — PNG वा WebP submit नगर्नुहोस्।</div>`,
+        content: `<ul><li><strong>JPG:</strong> Photo, Daraz product image, social media — सबैभन्दा universal</li><li><strong>PNG:</strong> Logo, screenshot, transparent background चाहिने — quality best तर size ठूलो</li><li><strong>WebP:</strong> Website images — JPG भन्दा 30% सानो, modern browser सबैले support गर्छ</li><li><strong>SVG:</strong> Icons, illustrations — infinite zoom, tiny size</li></ul><div class="callout-warning">⚠️ <strong>ध्यान:</strong> Nepal government forms मा JPG/JPEG मात्र accept हुन्छ — PNG वा WebP submit नगर्नुहोस्।</div>`,
       },
     ],
     howToSteps: [
@@ -2269,7 +2269,7 @@ button {
       {
         id: 'stt-ke-ho',
         title: 'Speech to Text के हो र कसरी काम गर्छ?',
-        content: `<p>Speech to Text (STT) AI-powered technology हो जसले:</p><ol><li><strong>Audio capture:</strong> Microphone बाट तपाईंको आवाज record गर्छ</li><li><strong>Processing:</strong> AI model ले sound waves analyze गर्छ</li><li><strong>Recognition:</strong> शब्दहरू identify गर्छ (even accent र background noise handle गर्छ)</li><li><strong>Output:</strong> Accurate text produce गर्छ — real-time मा</li></ol><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>तथ्य:</strong> Modern STT को accuracy 95%+ छ — human transcriber जत्तिकै accurate!</div>`,
+        content: `<p>Speech to Text (STT) AI-powered technology हो जसले:</p><ol><li><strong>Audio capture:</strong> Microphone बाट तपाईंको आवाज record गर्छ</li><li><strong>Processing:</strong> AI model ले sound waves analyze गर्छ</li><li><strong>Recognition:</strong> शब्दहरू identify गर्छ (even accent र background noise handle गर्छ)</li><li><strong>Output:</strong> Accurate text produce गर्छ — real-time मा</li></ol><div class="callout-info">💡 <strong>तथ्य:</strong> Modern STT को accuracy 95%+ छ — human transcriber जत्तिकै accurate!</div>`,
       },
       {
         id: 'stt-nepal-use-cases',
@@ -2279,7 +2279,7 @@ button {
       {
         id: 'stt-kasari-use',
         title: 'Speech to Text कसरी प्रयोग गर्ने?',
-        content: `<ol><li><strong>ToolsArena STT खोल्नुहोस्:</strong> toolsarena.in/tools/speech-to-text</li><li><strong>Microphone permission दिनुहोस्:</strong> Browser ले mic access माग्छ — Allow click गर्नुहोस्</li><li><strong>भाषा छान्नुहोस्:</strong> नेपाली, अंग्रेजी, हिन्दी वा अरू</li><li><strong>बोल्न सुरु गर्नुहोस्:</strong> स्पष्ट र normal speed मा बोल्नुहोस्</li><li><strong>Text edit गर्नुहोस्:</strong> AI ले लेखेको text review र edit गर्नुहोस्</li><li><strong>Copy वा Download:</strong> Final text copy गर्नुहोस् वा file save गर्नुहोस्</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Pro Tip:</strong> Quiet room मा बोल्नुहोस् — background noise कम हुँदा accuracy बढ्छ।</div>`,
+        content: `<ol><li><strong>ToolsArena STT खोल्नुहोस्:</strong> toolsarena.in/tools/speech-to-text</li><li><strong>Microphone permission दिनुहोस्:</strong> Browser ले mic access माग्छ — Allow click गर्नुहोस्</li><li><strong>भाषा छान्नुहोस्:</strong> नेपाली, अंग्रेजी, हिन्दी वा अरू</li><li><strong>बोल्न सुरु गर्नुहोस्:</strong> स्पष्ट र normal speed मा बोल्नुहोस्</li><li><strong>Text edit गर्नुहोस्:</strong> AI ले लेखेको text review र edit गर्नुहोस्</li><li><strong>Copy वा Download:</strong> Final text copy गर्नुहोस् वा file save गर्नुहोस्</li></ol><div class="callout-tip">🎯 <strong>Pro Tip:</strong> Quiet room मा बोल्नुहोस् — background noise कम हुँदा accuracy बढ्छ।</div>`,
       },
       {
         id: 'stt-accuracy-tips',
@@ -2331,7 +2331,7 @@ button {
       {
         id: 'percentage-ke-ho',
         title: 'Percentage (प्रतिशत) के हो?',
-        content: `<p>Percentage भनेको "प्रति सय" हो — 100 मध्ये कति भन्ने अर्थ।</p><ul><li><strong>50%</strong> = 100 मध्ये 50 = आधा</li><li><strong>25%</strong> = 100 मध्ये 25 = चौथाई</li><li><strong>100%</strong> = पूरा (सबै)</li></ul><p><strong>Formula:</strong> Percentage = (Part ÷ Total) × 100</p><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>उदाहरण:</strong> SEE मा 500 मध्ये 420 marks → (420 ÷ 500) × 100 = <strong>84%</strong></div>`,
+        content: `<p>Percentage भनेको "प्रति सय" हो — 100 मध्ये कति भन्ने अर्थ।</p><ul><li><strong>50%</strong> = 100 मध्ये 50 = आधा</li><li><strong>25%</strong> = 100 मध्ये 25 = चौथाई</li><li><strong>100%</strong> = पूरा (सबै)</li></ul><p><strong>Formula:</strong> Percentage = (Part ÷ Total) × 100</p><div class="callout-info">💡 <strong>उदाहरण:</strong> SEE मा 500 मध्ये 420 marks → (420 ÷ 500) × 100 = <strong>84%</strong></div>`,
       },
       {
         id: 'see-neb-percentage',
@@ -2346,7 +2346,7 @@ button {
       {
         id: 'nepal-daily-percentage',
         title: 'Nepal मा दैनिक जीवनमा Percentage',
-        content: `<ul><li><strong>Daraz Sale:</strong> "50% off" मा Rs.3000 को जुत्ता → Rs.1500 मा (3000 × 50/100 = 1500 छुट)</li><li><strong>Bank Loan:</strong> Rs.10,00,000 home loan @ 12% annual → Rs.1,20,000/year interest</li><li><strong>VAT (Nepal):</strong> 13% VAT — Rs.1000 को खाना → Rs.1130 (1000 + 130 VAT)</li><li><strong>Tip:</strong> Restaurant मा 10% tip — Rs.2000 bill → Rs.200 tip</li><li><strong>Salary Increment:</strong> Rs.30,000 salary मा 15% increment → Rs.4,500 बढी = Rs.34,500</li></ul><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Quick Trick:</strong> 10% निकाल्न decimal point एक ठाउँ सार्नुहोस् (Rs.2500 को 10% = Rs.250)। 5% = 10% को आधा।</div>`,
+        content: `<ul><li><strong>Daraz Sale:</strong> "50% off" मा Rs.3000 को जुत्ता → Rs.1500 मा (3000 × 50/100 = 1500 छुट)</li><li><strong>Bank Loan:</strong> Rs.10,00,000 home loan @ 12% annual → Rs.1,20,000/year interest</li><li><strong>VAT (Nepal):</strong> 13% VAT — Rs.1000 को खाना → Rs.1130 (1000 + 130 VAT)</li><li><strong>Tip:</strong> Restaurant मा 10% tip — Rs.2000 bill → Rs.200 tip</li><li><strong>Salary Increment:</strong> Rs.30,000 salary मा 15% increment → Rs.4,500 बढी = Rs.34,500</li></ul><div class="callout-tip">🎯 <strong>Quick Trick:</strong> 10% निकाल्न decimal point एक ठाउँ सार्नुहोस् (Rs.2500 को 10% = Rs.250)। 5% = 10% को आधा।</div>`,
       },
       {
         id: 'percentage-mistakes',
@@ -2393,7 +2393,7 @@ button {
       {
         id: 'ats-ke-ho',
         title: 'ATS (Applicant Tracking System) के हो?',
-        content: `<p>ATS एक software हो जुन companies ले job applications filter गर्न use गर्छन्:</p><ol><li><strong>Resume upload:</strong> तपाईंले online apply गर्नुभयो</li><li><strong>ATS scan:</strong> Software ले resume पढ्छ — keywords, format, sections check गर्छ</li><li><strong>Score:</strong> Resume लाई relevancy score दिन्छ (0–100%)</li><li><strong>Filter:</strong> Low score = rejected। High score = HR को inbox मा जान्छ</li></ol><div style="background:#fef2f2;border-left:4px solid #ef4444;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Important:</strong> Nepal का ठूला companies (Ncell, Nabil Bank, Unilever Nepal) र सबै international companies ATS use गर्छन्। Gulf (Dubai, Qatar, Saudi) मा पनि ATS mandatory छ।</div>`,
+        content: `<p>ATS एक software हो जुन companies ले job applications filter गर्न use गर्छन्:</p><ol><li><strong>Resume upload:</strong> तपाईंले online apply गर्नुभयो</li><li><strong>ATS scan:</strong> Software ले resume पढ्छ — keywords, format, sections check गर्छ</li><li><strong>Score:</strong> Resume लाई relevancy score दिन्छ (0–100%)</li><li><strong>Filter:</strong> Low score = rejected। High score = HR को inbox मा जान्छ</li></ol><div class="callout-danger">⚠️ <strong>Important:</strong> Nepal का ठूला companies (Ncell, Nabil Bank, Unilever Nepal) र सबै international companies ATS use गर्छन्। Gulf (Dubai, Qatar, Saudi) मा पनि ATS mandatory छ।</div>`,
       },
       {
         id: 'ats-fail-kina',
@@ -2403,7 +2403,7 @@ button {
       {
         id: 'ats-friendly-resume',
         title: 'ATS-Friendly Resume कसरी बनाउने?',
-        content: `<h4>Must-Have Sections (यो order मा):</h4><ol><li><strong>Contact Information:</strong> Name, Phone, Email, LinkedIn, Location</li><li><strong>Professional Summary:</strong> 2-3 lines — experience + top skills + target role</li><li><strong>Work Experience:</strong> Company, Title, Dates, Bullet points with achievements</li><li><strong>Education:</strong> Degree, Institution, Year (Nepal: SLC/SEE, +2/NEB, Bachelor, Master)</li><li><strong>Skills:</strong> Technical + soft skills — JD बाट keywords match गर्नुहोस्</li><li><strong>Certifications:</strong> (Optional) Relevant certifications</li></ol><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Golden Rule:</strong> प्रत्येक job को लागि resume customize गर्नुहोस् — एउटै resume सबैतिर नपठाउनुहोस्। Job Description पढ्नुहोस् र keywords match गर्नुहोस्।</div>`,
+        content: `<h4>Must-Have Sections (यो order मा):</h4><ol><li><strong>Contact Information:</strong> Name, Phone, Email, LinkedIn, Location</li><li><strong>Professional Summary:</strong> 2-3 lines — experience + top skills + target role</li><li><strong>Work Experience:</strong> Company, Title, Dates, Bullet points with achievements</li><li><strong>Education:</strong> Degree, Institution, Year (Nepal: SLC/SEE, +2/NEB, Bachelor, Master)</li><li><strong>Skills:</strong> Technical + soft skills — JD बाट keywords match गर्नुहोस्</li><li><strong>Certifications:</strong> (Optional) Relevant certifications</li></ol><div class="callout-info">💡 <strong>Golden Rule:</strong> प्रत्येक job को लागि resume customize गर्नुहोस् — एउटै resume सबैतिर नपठाउनुहोस्। Job Description पढ्नुहोस् र keywords match गर्नुहोस्।</div>`,
       },
       {
         id: 'resume-nepal-vs-foreign',
@@ -2413,12 +2413,12 @@ button {
       {
         id: 'ats-checker-kasari',
         title: 'ToolsArena ATS Checker कसरी Use गर्ने?',
-        content: `<ol><li><strong>Resume upload गर्नुहोस्:</strong> PDF वा DOCX format मा</li><li><strong>Job description paste गर्नुहोस्:</strong> (Optional) Target job को JD paste गर्नुहोस् — keyword matching check</li><li><strong>Score हेर्नुहोस्:</strong> Overall ATS score (0-100%) + section-wise breakdown</li><li><strong>Suggestions follow गर्नुहोस्:</strong><ul><li>Missing keywords</li><li>Format issues</li><li>Section improvements</li><li>Content optimization tips</li></ul></li><li><strong>Fix र re-check:</strong> सुधार गरेर फेरि check गर्नुहोस् — 80%+ aim गर्नुहोस्</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Target Score:</strong> 80%+ = Strong। 60-79% = Needs improvement। 60% भन्दा कम = Major revision चाहिन्छ।</div>`,
+        content: `<ol><li><strong>Resume upload गर्नुहोस्:</strong> PDF वा DOCX format मा</li><li><strong>Job description paste गर्नुहोस्:</strong> (Optional) Target job को JD paste गर्नुहोस् — keyword matching check</li><li><strong>Score हेर्नुहोस्:</strong> Overall ATS score (0-100%) + section-wise breakdown</li><li><strong>Suggestions follow गर्नुहोस्:</strong><ul><li>Missing keywords</li><li>Format issues</li><li>Section improvements</li><li>Content optimization tips</li></ul></li><li><strong>Fix र re-check:</strong> सुधार गरेर फेरि check गर्नुहोस् — 80%+ aim गर्नुहोस्</li></ol><div class="callout-tip">🎯 <strong>Target Score:</strong> 80%+ = Strong। 60-79% = Needs improvement। 60% भन्दा कम = Major revision चाहिन्छ।</div>`,
       },
       {
         id: 'keywords-tips',
         title: 'ATS Keywords Strategy (Nepal Jobs)',
-        content: `<p>Nepal र international job market मा common keywords:</p><ul><li><strong>IT/Software:</strong> Python, JavaScript, React, Node.js, AWS, Agile, Scrum</li><li><strong>Banking/Finance:</strong> Financial Analysis, Risk Management, Compliance, NRB regulations</li><li><strong>NGO/INGO:</strong> Project Management, M&E, Stakeholder Engagement, Report Writing</li><li><strong>Gulf (Construction):</strong> AutoCAD, Project Planning, Safety Management, QA/QC</li><li><strong>Australia (Skilled):</strong> Registration number, skill assessment body, IELTS score</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Warning:</strong> Keywords stuff नगर्नुहोस्! Natural sentence मा keywords use गर्नुहोस्। ATS र HR दुवैले पढ्छ।</div>`,
+        content: `<p>Nepal र international job market मा common keywords:</p><ul><li><strong>IT/Software:</strong> Python, JavaScript, React, Node.js, AWS, Agile, Scrum</li><li><strong>Banking/Finance:</strong> Financial Analysis, Risk Management, Compliance, NRB regulations</li><li><strong>NGO/INGO:</strong> Project Management, M&E, Stakeholder Engagement, Report Writing</li><li><strong>Gulf (Construction):</strong> AutoCAD, Project Planning, Safety Management, QA/QC</li><li><strong>Australia (Skilled):</strong> Registration number, skill assessment body, IELTS score</li></ul><div class="callout-warning">⚠️ <strong>Warning:</strong> Keywords stuff नगर्नुहोस्! Natural sentence मा keywords use गर्नुहोस्। ATS र HR दुवैले पढ्छ।</div>`,
       },
     ],
     howToSteps: [
@@ -2471,7 +2471,7 @@ button {
       {
         id: 'crop-kasari-garne',
         title: 'ToolsArena बाट Image Crop कसरी गर्ने?',
-        content: `<ol><li><strong>Image upload गर्नुहोस्:</strong> Drag & drop वा browse — JPG, PNG, WebP support</li><li><strong>Crop area select गर्नुहोस्:</strong> Corners drag गरेर area choose गर्नुहोस्</li><li><strong>Aspect ratio छान्नुहोस्:</strong> 1:1, 16:9, 4:3, 9:16 presets वा custom dimensions</li><li><strong>Position adjust गर्नुहोस्:</strong> Crop box drag गरेर सही ठाउँमा राख्नुहोस्</li><li><strong>Download:</strong> Crop & Download — instant save</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Pro Tip:</strong> सबै browser मा हुन्छ — तपाईंको photo कुनै server मा upload हुँदैन। Privacy 100% safe!</div>`,
+        content: `<ol><li><strong>Image upload गर्नुहोस्:</strong> Drag & drop वा browse — JPG, PNG, WebP support</li><li><strong>Crop area select गर्नुहोस्:</strong> Corners drag गरेर area choose गर्नुहोस्</li><li><strong>Aspect ratio छान्नुहोस्:</strong> 1:1, 16:9, 4:3, 9:16 presets वा custom dimensions</li><li><strong>Position adjust गर्नुहोस्:</strong> Crop box drag गरेर सही ठाउँमा राख्नुहोस्</li><li><strong>Download:</strong> Crop & Download — instant save</li></ol><div class="callout-tip">🎯 <strong>Pro Tip:</strong> सबै browser मा हुन्छ — तपाईंको photo कुनै server मा upload हुँदैन। Privacy 100% safe!</div>`,
       },
       {
         id: 'composition-tips',
@@ -2576,7 +2576,7 @@ button {
       {
         id: 'step-by-step',
         title: 'HTML लाई PDF मा Convert कसरी गर्ने? (Step-by-Step)',
-        content: `<ol><li><strong>Tool खोल्नुहोस्:</strong> ToolsArena HTML to PDF converter मा जानुहोस्</li><li><strong>HTML enter गर्नुहोस्:</strong> Code paste गर्नुहोस् textarea मा, वा .html file upload गर्नुहोस्</li><li><strong>Preview:</strong> Live preview pane मा rendered HTML check गर्नुहोस्</li><li><strong>Settings:</strong> Page size (A4, Letter, Legal) र orientation छान्नुहोस्</li><li><strong>Convert:</strong> "Print to PDF" वा "Download PDF" use गर्नुहोस्</li><li><strong>Save:</strong> PDF download गर्नुहोस्</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Tip:</strong> Best results का लागि inline CSS use गर्नुहोस्। External stylesheet URLs browser security restrictions ले load नहुन सक्छन्।</div>`,
+        content: `<ol><li><strong>Tool खोल्नुहोस्:</strong> ToolsArena HTML to PDF converter मा जानुहोस्</li><li><strong>HTML enter गर्नुहोस्:</strong> Code paste गर्नुहोस् textarea मा, वा .html file upload गर्नुहोस्</li><li><strong>Preview:</strong> Live preview pane मा rendered HTML check गर्नुहोस्</li><li><strong>Settings:</strong> Page size (A4, Letter, Legal) र orientation छान्नुहोस्</li><li><strong>Convert:</strong> "Print to PDF" वा "Download PDF" use गर्नुहोस्</li><li><strong>Save:</strong> PDF download गर्नुहोस्</li></ol><div class="callout-tip">💡 <strong>Tip:</strong> Best results का लागि inline CSS use गर्नुहोस्। External stylesheet URLs browser security restrictions ले load नहुन सक्छन्।</div>`,
       },
       {
         id: 'html-tips',
@@ -2631,7 +2631,7 @@ button {
       {
         id: 'scale-choose',
         title: 'सही Scale कसरी छान्ने (1x, 2x, 3x, 4x)',
-        content: `<table><tr><th>Scale</th><th>100×100 SVG को Result</th><th>Best For</th></tr><tr><td>1x</td><td>100 × 100 px</td><td>Web — original size</td></tr><tr><td>2x</td><td>200 × 200 px</td><td>Retina screens — most common</td></tr><tr><td>3x</td><td>300 × 300 px</td><td>High-res mobile</td></tr><tr><td>4x</td><td>400 × 400 px</td><td>Print, large displays</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Recommendation:</strong> धेरैजसो cases मा 2x use गर्नुहोस् — standard र retina दुवै screens cover हुन्छ।</div>`,
+        content: `<table><tr><th>Scale</th><th>100×100 SVG को Result</th><th>Best For</th></tr><tr><td>1x</td><td>100 × 100 px</td><td>Web — original size</td></tr><tr><td>2x</td><td>200 × 200 px</td><td>Retina screens — most common</td></tr><tr><td>3x</td><td>300 × 300 px</td><td>High-res mobile</td></tr><tr><td>4x</td><td>400 × 400 px</td><td>Print, large displays</td></tr></table><div class="callout-tip">💡 <strong>Recommendation:</strong> धेरैजसो cases मा 2x use गर्नुहोस् — standard र retina दुवै screens cover हुन्छ।</div>`,
       },
       {
         id: 'step-by-step',
@@ -2681,7 +2681,7 @@ button {
       {
         id: 'audio-formats',
         title: 'Audio Formats बुझ्नुहोस्',
-        content: `<table><tr><th>Format</th><th>Type</th><th>Quality</th><th>File Size</th></tr><tr><td>WAV</td><td>Uncompressed</td><td>★★★★★ Lossless</td><td>ठूलो (~10MB/min)</td></tr><tr><td>MP3</td><td>Lossy compressed</td><td>★★★★ राम्रो</td><td>सानो (~1MB/min)</td></tr><tr><td>AAC</td><td>Lossy compressed</td><td>★★★★ MP3 भन्दा राम्रो</td><td>सानो</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>ToolsArena ले WAV format output गर्छ</strong> — lossless quality, universally compatible। WAV लाई MP3 मा VLC वा Audacity बाट convert गर्न सकिन्छ।</div>`,
+        content: `<table><tr><th>Format</th><th>Type</th><th>Quality</th><th>File Size</th></tr><tr><td>WAV</td><td>Uncompressed</td><td>★★★★★ Lossless</td><td>ठूलो (~10MB/min)</td></tr><tr><td>MP3</td><td>Lossy compressed</td><td>★★★★ राम्रो</td><td>सानो (~1MB/min)</td></tr><tr><td>AAC</td><td>Lossy compressed</td><td>★★★★ MP3 भन्दा राम्रो</td><td>सानो</td></tr></table><div class="callout-tip">💡 <strong>ToolsArena ले WAV format output गर्छ</strong> — lossless quality, universally compatible। WAV लाई MP3 मा VLC वा Audacity बाट convert गर्न सकिन्छ।</div>`,
       },
       {
         id: 'step-by-step',
@@ -2691,7 +2691,7 @@ button {
       {
         id: 'tips-nepal',
         title: 'Tips र Nepal का लागि Use Cases',
-        content: `<ul><li><strong>Supported formats:</strong> MP4, WebM, MOV, AVI, MKV, M4V सबै support</li><li><strong>Quality:</strong> WAV output ले original video audio quality preserve गर्छ</li><li><strong>विद्यार्थी:</strong> Lecture recordings download गर्नुहोस् → audio extract → commute मा सुन्नुहोस्</li><li><strong>Content Creators:</strong> Video podcast record → audio extract → Audacity मा edit</li><li><strong>Nepal internet:</strong> Video streaming गाह्रो? Audio download गर्नुहोस् — data बचत हुन्छ</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Copyright:</strong> आफ्ना own videos वा permission भएका videos को मात्र audio extract गर्नुहोस्। Copyright respect गर्नुहोस्।</div>`,
+        content: `<ul><li><strong>Supported formats:</strong> MP4, WebM, MOV, AVI, MKV, M4V सबै support</li><li><strong>Quality:</strong> WAV output ले original video audio quality preserve गर्छ</li><li><strong>विद्यार्थी:</strong> Lecture recordings download गर्नुहोस् → audio extract → commute मा सुन्नुहोस्</li><li><strong>Content Creators:</strong> Video podcast record → audio extract → Audacity मा edit</li><li><strong>Nepal internet:</strong> Video streaming गाह्रो? Audio download गर्नुहोस् — data बचत हुन्छ</li></ul><div class="callout-warning">⚠️ <strong>Copyright:</strong> आफ्ना own videos वा permission भएका videos को मात्र audio extract गर्नुहोस्। Copyright respect गर्नुहोस्।</div>`,
       },
     ],
     howToSteps: [
