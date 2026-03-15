@@ -4750,4 +4750,295 @@ button {
     },
   },
 
+  // ── CROP IMAGE GUIDE (Hindi) ──────────────────────────────────────
+  {
+    slug: 'crop-image-guide',
+    toolSlug: 'image-cropper',
+    category: 'image-tools',
+    title: 'Image Crop कैसे करें — फ्री ऑनलाइन गाइड (2026)',
+    subtitle: 'फोटो को किसी भी साइज, aspect ratio या shape में crop करें — Instagram, passport, thumbnail सबके लिए।',
+    metaTitle: 'Image Crop कैसे करें — फ्री ऑनलाइन टूल गाइड',
+    metaDescription: 'फोटो crop करना सीखें — Instagram post, passport photo, YouTube thumbnail सबके लिए सही size। फ्री ऑनलाइन, कोई signup नहीं।',
+    targetKeyword: 'image crop kaise kare',
+    secondaryKeywords: ['image crop online', 'फोटो crop करें', 'photo crop tool', 'Instagram photo crop size', 'passport photo crop', 'image cropper free', 'photo resize and crop', 'crop image online free'],
+    lastUpdated: '2026-03-15',
+    readingTime: '७ मिनट पढ़ें',
+    tags: ['Image', 'Crop', 'Photo Editing', 'Social Media'],
+    intro: `<p><strong>Image crop</strong> करना सबसे common photo editing task है — चाहे <strong>Instagram post</strong> के लिए square crop करना हो, <strong>passport photo</strong> बनाना हो, या <strong>YouTube thumbnail</strong> तैयार करना हो। लेकिन सही aspect ratio और pixel dimensions पता होना जरूरी है।</p><p>इस guide में हर platform के exact crop sizes, composition tips, और ToolsArena के free Image Cropper से instant crop करने का तरीका बताया गया है।</p>`,
+    sections: [
+      {
+        id: 'crop-kyu-zaroori',
+        title: 'Image Crop करना क्यों जरूरी है?',
+        content: `<ul><li><strong>Platform compliance:</strong> Instagram, Facebook, LinkedIn सबके अलग-अलग aspect ratios हैं</li><li><strong>Professional look:</strong> Passport, ID card, headshot — strict dimensions follow करने होते हैं</li><li><strong>Better composition:</strong> Rule of thirds follow करके crop करने से photo ज्यादा attractive लगती है</li><li><strong>Faster loading:</strong> Cropped images छोटी होती हैं — website पर fast load होती हैं</li><li><strong>More engagement:</strong> सही size की images पर 38% ज्यादा engagement मिलता है (HubSpot, 2025)</li></ul>`,
+      },
+      {
+        id: 'platform-crop-sizes',
+        title: 'हर Platform के लिए Exact Crop Sizes (2026)',
+        content: `<table><tr><th>Platform / Use</th><th>Aspect Ratio</th><th>Recommended Pixels</th></tr><tr><td>Instagram Post (Square)</td><td>1:1</td><td>1080 × 1080</td></tr><tr><td>Instagram Story / Reel</td><td>9:16</td><td>1080 × 1920</td></tr><tr><td>Facebook Post</td><td>1.91:1</td><td>1200 × 630</td></tr><tr><td>YouTube Thumbnail</td><td>16:9</td><td>1280 × 720</td></tr><tr><td>LinkedIn Post</td><td>1.91:1</td><td>1200 × 627</td></tr><tr><td>Twitter/X Post</td><td>16:9</td><td>1600 × 900</td></tr><tr><td>Passport Photo (India)</td><td>~1:1.3</td><td>3.5cm × 4.5cm</td></tr><tr><td>Aadhaar Card Photo</td><td>~1:1.3</td><td>3.5cm × 4.5cm</td></tr><tr><td>Website OG Image</td><td>1.91:1</td><td>1200 × 630</td></tr></table>`,
+      },
+      {
+        id: 'crop-kaise-kare',
+        title: 'ToolsArena से Image Crop कैसे करें?',
+        content: `<ol><li><strong>Image upload करें:</strong> Drag & drop या browse — JPG, PNG, WebP support</li><li><strong>Crop area select करें:</strong> Corners drag करके area choose करें</li><li><strong>Aspect ratio चुनें:</strong> 1:1, 16:9, 4:3, 9:16 presets या custom dimensions</li><li><strong>Position adjust करें:</strong> Crop box को image पर drag करके सही जगह रखें</li><li><strong>Download करें:</strong> Crop & Download — instant save</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>Pro Tip:</strong> सब कुछ browser में होता है — आपकी photo किसी server पर upload नहीं होती। Privacy 100% safe!</div>`,
+      },
+      {
+        id: 'composition-tips',
+        title: 'Better Crop के लिए Composition Tips',
+        content: `<ul><li><strong>Rule of Thirds:</strong> Subject को center में नहीं, imaginary 3×3 grid की lines पर रखें</li><li><strong>Headroom:</strong> Portrait photo में head के ऊपर थोड़ा space रखें</li><li><strong>Leading Space:</strong> अगर person किसी direction में देख रहा है, उस side में ज्यादा space रखें</li><li><strong>Distractions हटाएं:</strong> Background clutter, unwanted people, empty space crop करें</li></ul>`,
+      },
+      {
+        id: 'website-seo-crop',
+        title: 'Website और SEO के लिए Image Crop Tips',
+        content: `<ul><li><strong>OG images:</strong> Social sharing preview के लिए हमेशा 1200×630 crop करें</li><li><strong>Product photos:</strong> E-commerce (Flipkart, Amazon) के लिए 1:1 square crop — consistent grid look</li><li><strong>Blog thumbnails:</strong> 16:9 (1280×720) blog post cards के लिए best</li><li><strong>Crop + Compress:</strong> Crop करने के बाद compress भी करें — fast loading = better SEO ranking</li></ul><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>SEO Impact:</strong> Google Core Web Vitals oversized images को penalise करता है। Crop + compress = faster pages = better rankings।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Image upload करें', description: 'ToolsArena Image Cropper खोलें और photo upload करें।' },
+      { title: 'Crop area और aspect ratio चुनें', description: '1:1, 16:9, 4:3 या custom dimensions select करें।' },
+      { title: 'Crop और Download करें', description: 'Crop & Download button click करें — instant save।' },
+    ],
+    faqs: [
+      { question: 'क्या specific pixel size में crop कर सकते हैं?', answer: 'हाँ। Custom aspect ratio select करके exact width × height pixels enter करें।' },
+      { question: 'क्या crop करने से quality कम होती है?', answer: 'नहीं। Crop करने से quality नहीं घटती — सिर्फ बाहर के pixels remove होते हैं।' },
+      { question: 'क्या photo server पर upload होती है?', answer: 'नहीं। सब कुछ browser में होता है। आपकी photo कभी server पर नहीं जाती।' },
+    ],
+    relatedGuides: ['compress-image-guide', 'text-to-speech-guide', 'percentage-how-to-guide'],
+    toolCTA: {
+      heading: 'Image अभी Crop करें — Free और Instant',
+      description: 'Upload, crop, download — कोई signup नहीं।',
+      buttonText: 'Image Cropper खोलें →',
+    },
+  },
+
+  // ── EXCEL TO PDF GUIDE (Hindi) ────────────────────────────────────
+  {
+    slug: 'excel-to-pdf-guide',
+    toolSlug: 'excel-to-pdf',
+    category: 'pdf-tools',
+    title: 'Excel को PDF में Convert कैसे करें — फ्री गाइड (2026)',
+    subtitle: 'Spreadsheets (.xlsx, .xls, .csv) को professional PDF documents में बदलें — free, instant, कोई upload नहीं।',
+    metaTitle: 'Excel को PDF में Convert करें — फ्री ऑनलाइन',
+    metaDescription: 'Excel को PDF में free convert करें। .xlsx, .xls, .csv support। कोई upload नहीं, कोई signup नहीं — browser में instant conversion।',
+    targetKeyword: 'excel to pdf kaise kare',
+    secondaryKeywords: ['excel to pdf converter', 'excel se pdf kaise banaye', 'xlsx to pdf', 'spreadsheet to pdf', 'excel to pdf free hindi', 'csv to pdf converter', 'excel to pdf online'],
+    lastUpdated: '2026-03-15',
+    readingTime: '६ मिनट पढ़ें',
+    tags: ['PDF', 'Excel', 'Converter', 'Spreadsheet'],
+    intro: `<p>Office में report share करनी है लेकिन सामने वाले के पास Excel नहीं है? Financial data non-editable format में भेजना है? <strong>Excel को PDF में convert</strong> करना सबसे आसान solution है — और इसके लिए Microsoft Office या Adobe की जरूरत नहीं।</p><p>ToolsArena का free converter .xlsx, .xls, और .csv files को professional PDFs में बदलता है — सब कुछ browser में, कोई file upload नहीं।</p>`,
+    sections: [
+      {
+        id: 'excel-pdf-kyu',
+        title: 'Excel को PDF में क्यों Convert करें?',
+        content: `<ul><li><strong>Universal compatibility:</strong> PDF हर device पर open होता है — Excel installed होना जरूरी नहीं</li><li><strong>Layout preserve:</strong> Print करने पर columns shift नहीं होते — PDF हमेशा same दिखता है</li><li><strong>Editing prevent:</strong> Financial reports, invoices — गलती से edit होने का risk नहीं</li><li><strong>Professional sharing:</strong> Client को data PDF में भेजना standard business practice है</li><li><strong>Government submissions:</strong> Tax filings, regulatory reports — PDF format mandatory होता है</li></ul>`,
+      },
+      {
+        id: 'methods-compared',
+        title: 'Excel to PDF: कौन सा Method Best है?',
+        content: `<table><tr><th>Method</th><th>Cost</th><th>Privacy</th><th>Quality</th></tr><tr><td>ToolsArena (Browser)</td><td>✅ Free</td><td>✅ 100% local</td><td>Clean table format</td></tr><tr><td>Microsoft Excel</td><td>❌ Paid</td><td>✅ Local</td><td>Full formatting</td></tr><tr><td>Google Sheets</td><td>✅ Free</td><td>⚠️ Cloud upload</td><td>Good</td></tr><tr><td>Online converters</td><td>⚠️ Freemium</td><td>❌ File upload</td><td>Varies</td></tr></table><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Privacy advantage:</strong> ToolsArena में आपकी file browser में ही process होती है — किसी server पर नहीं जाती।</div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'Excel को PDF में Convert कैसे करें (Step-by-Step)',
+        content: `<ol><li><strong>Tool खोलें:</strong> ToolsArena Excel to PDF converter पर जाएं</li><li><strong>File upload करें:</strong> .xlsx, .xls, या .csv file drag & drop करें</li><li><strong>Preview देखें:</strong> सभी sheets देखें, जो convert करनी है वो select करें</li><li><strong>Settings चुनें:</strong> Orientation (portrait/landscape) और font size set करें</li><li><strong>Convert करें:</strong> "Convert to PDF" click करें — instant PDF generate</li><li><strong>Download करें:</strong> PDF save करें</li></ol>`,
+      },
+      {
+        id: 'better-pdf-tips',
+        title: 'Better PDF के लिए Tips',
+        content: `<ul><li><strong>Wide spreadsheets:</strong> बहुत columns हों तो Landscape orientation use करें</li><li><strong>Data-heavy sheets:</strong> Font size 8pt या 6pt करें — ज्यादा data fit होगा</li><li><strong>Clean data:</strong> Convert करने से पहले empty rows/columns delete करें</li><li><strong>Header row:</strong> पहली row automatically table header बनती है — column names वहाँ रखें</li></ul>`,
+      },
+      {
+        id: 'common-uses',
+        title: 'Common Use Cases',
+        content: `<ul><li><strong>Financial reports:</strong> Monthly/quarterly reports PDF में stakeholders को भेजें</li><li><strong>Invoices:</strong> Excel में invoice बनाएं, PDF में export करके client को send करें</li><li><strong>Salary slips:</strong> HR department — employee pay statements PDF में generate करें</li><li><strong>Student data:</strong> Teachers — grade sheets या attendance records PDF में convert करें</li><li><strong>GST returns:</strong> Tax filings के लिए Excel data PDF format में submit करें</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Excel file upload करें', description: '.xlsx, .xls, या .csv file drag & drop करें।' },
+      { title: 'Preview और sheet select करें', description: 'Data review करें और sheet choose करें।' },
+      { title: 'Convert और Download करें', description: 'Convert to PDF click करें और PDF save करें।' },
+    ],
+    faqs: [
+      { question: 'क्या .csv files support होती हैं?', answer: 'हाँ। .xlsx, .xls, और .csv तीनों formats support होते हैं।' },
+      { question: 'क्या data server पर जाता है?', answer: 'नहीं। सब कुछ browser में JavaScript से process होता है। आपकी file कभी server पर नहीं जाती।' },
+      { question: 'क्या Excel formatting preserve होती है?', answer: 'Tool clean professional table layout बनाता है। Complex formatting (charts, conditional formatting) exactly preserve नहीं होती।' },
+    ],
+    relatedGuides: ['compress-image-guide', 'text-to-speech-guide', 'percentage-how-to-guide'],
+    toolCTA: {
+      heading: 'Excel को PDF में Convert करें — Free और Instant',
+      description: 'Spreadsheet upload करें, professional PDF पाएं।',
+      buttonText: 'Excel to PDF Converter खोलें →',
+    },
+  },
+
+  // ── HTML TO PDF GUIDE (Hindi) ─────────────────────────────────────
+  {
+    slug: 'html-to-pdf-guide',
+    toolSlug: 'html-to-pdf',
+    category: 'pdf-tools',
+    title: 'HTML को PDF में Convert कैसे करें — फ्री गाइड (2026)',
+    subtitle: 'HTML code या web pages को PDF documents में बदलें — developers, designers और content creators के लिए।',
+    metaTitle: 'HTML को PDF में Convert करें — फ्री ऑनलाइन',
+    metaDescription: 'HTML को PDF में free convert करें। HTML code paste करें या .html file upload करें, preview देखें, PDF download करें। कोई server upload नहीं।',
+    targetKeyword: 'html to pdf kaise kare',
+    secondaryKeywords: ['html to pdf converter', 'html se pdf kaise banaye', 'html to pdf online', 'html to pdf free', 'webpage to pdf', 'html to pdf javascript', 'save html as pdf'],
+    lastUpdated: '2026-03-15',
+    readingTime: '७ मिनट पढ़ें',
+    tags: ['PDF', 'HTML', 'Developer', 'Converter'],
+    intro: `<p>Developers, designers, और content creators को अक्सर <strong>HTML को PDF में convert</strong> करना पड़ता है — documentation, invoices, reports, या web content archive करने के लिए। Browser का "Print to PDF" ugly results देता है — headers, footers, और broken layouts के साथ।</p><p>ToolsArena का purpose-built HTML to PDF converter आपके HTML को faithfully render करता है और clean PDF produce करता है — सब browser में, कोई server upload नहीं।</p>`,
+    sections: [
+      {
+        id: 'html-pdf-kyu',
+        title: 'HTML को PDF में क्यों Convert करें?',
+        content: `<ul><li><strong>Documentation:</strong> API docs, README files, style guides — PDF में distribute करें</li><li><strong>Invoices:</strong> HTML invoice templates से PDF invoices generate करें</li><li><strong>Reports:</strong> Dashboard HTML को PDF में stakeholders को present करें</li><li><strong>Contracts:</strong> HTML forms को permanent PDF records के रूप में save करें</li><li><strong>Archiving:</strong> Web page content को unchangeable PDF snapshots में preserve करें</li></ul>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'HTML को PDF में Convert कैसे करें (Step-by-Step)',
+        content: `<ol><li><strong>Tool खोलें:</strong> ToolsArena HTML to PDF converter पर जाएं</li><li><strong>HTML enter करें:</strong> Code paste करें textarea में, या .html file upload करें</li><li><strong>Preview देखें:</strong> Live preview pane में rendered HTML check करें</li><li><strong>Settings:</strong> Page size (A4, Letter, Legal) और orientation (Portrait/Landscape) चुनें</li><li><strong>Convert:</strong> "Print to PDF" या "Download PDF" use करें</li><li><strong>Save:</strong> PDF download करें</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Tip:</strong> Best results के लिए inline CSS use करें। External stylesheet URLs browser security restrictions से load नहीं हो सकतीं।</div>`,
+      },
+      {
+        id: 'better-pdf-tips',
+        title: 'Better PDF Output के लिए HTML Tips',
+        content: `<ul><li><strong>Inline styles use करें:</strong> External CSS link करने के बजाय HTML में directly CSS embed करें</li><li><strong>Page breaks:</strong> <code>page-break-before: always</code> CSS use करके pagination control करें</li><li><strong>Print media query:</strong> <code>@media print { }</code> styles specifically PDF/print output के लिए add करें</li><li><strong>Images:</strong> Base64-encoded images या absolute URLs use करें — relative paths work नहीं करेंगे</li><li><strong>Simple पहले:</strong> Basic HTML से start करें, फिर complexity add करें — rendering issues isolate करने में मदद मिलेगी</li></ul>`,
+      },
+      {
+        id: 'developer-options',
+        title: 'Developers के लिए: Automation Options',
+        content: `<ul><li><strong>Client-side (JavaScript):</strong> <code>html2canvas</code> + <code>jspdf</code> या <code>html2pdf.js</code></li><li><strong>Server-side (Node.js):</strong> <code>puppeteer</code> — headless browser से <code>page.pdf()</code></li><li><strong>Python:</strong> <code>pdfkit</code> (wkhtmltopdf wrapper) या <code>weasyprint</code></li><li><strong>PHP:</strong> <code>dompdf</code> या <code>mPDF</code></li></ul><p>ToolsArena खुद html2canvas + jsPDF approach use करता है — पूरी तरह client-side।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'HTML paste या file upload करें', description: 'HTML code enter करें या .html file upload करें।' },
+      { title: 'Preview check करें', description: 'Live preview में rendered output verify करें।' },
+      { title: 'Convert और Download करें', description: 'Page size, orientation select करें और PDF download करें।' },
+    ],
+    faqs: [
+      { question: 'क्या CSS support होती है?', answer: 'हाँ। Inline styles और embedded <style> blocks पूरी तरह render होते हैं। External stylesheets browser CORS restrictions से load नहीं हो सकतीं।' },
+      { question: 'क्या live website को PDF में convert कर सकते हैं?', answer: 'यह tool HTML code से काम करता है, URLs से नहीं। Live page के लिए "View Page Source" से HTML copy करें और paste करें।' },
+      { question: 'क्या HTML code server पर जाता है?', answer: 'नहीं। सब rendering और PDF generation browser में होता है। आपका code private रहता है।' },
+    ],
+    relatedGuides: ['excel-to-pdf-guide', 'compress-image-guide', 'text-to-speech-guide'],
+    toolCTA: {
+      heading: 'HTML को PDF में Convert करें — Free और Instant',
+      description: 'HTML paste करें, preview देखें, clean PDF download करें।',
+      buttonText: 'HTML to PDF Converter खोलें →',
+    },
+  },
+
+  // ── SVG TO PNG GUIDE (Hindi) ──────────────────────────────────────
+  {
+    slug: 'svg-to-png-guide',
+    toolSlug: 'svg-to-png',
+    category: 'image-tools',
+    title: 'SVG को PNG में Convert कैसे करें — फ्री गाइड (2026)',
+    subtitle: 'Vector SVG files को high-resolution PNG images में बदलें — design, development और social media के लिए।',
+    metaTitle: 'SVG को PNG में Convert करें — फ्री ऑनलाइन',
+    metaDescription: 'SVG को PNG में free convert करें। Scale 1x–4x, transparent या colored background। कोई upload नहीं। Designers और developers के लिए guide।',
+    targetKeyword: 'svg to png kaise kare',
+    secondaryKeywords: ['svg to png converter', 'svg se png kaise banaye', 'svg to png online free', 'svg to png high resolution', 'vector to raster', 'svg to image converter', 'convert svg to png transparent'],
+    lastUpdated: '2026-03-15',
+    readingTime: '६ मिनट पढ़ें',
+    tags: ['SVG', 'PNG', 'Image', 'Design'],
+    intro: `<p><strong>SVG (Scalable Vector Graphics)</strong> logos, icons, और illustrations के लिए perfect है — किसी भी size में scale होता है बिना quality loss के। लेकिन social media, email, और documents में SVG support नहीं होता। आपको <strong>PNG</strong> चाहिए।</p><p>इस guide में बताया गया है कि SVG को PNG में कब और क्यों convert करें, सही resolution कैसे चुनें, और ToolsArena के free converter से instantly कैसे करें।</p>`,
+    sections: [
+      {
+        id: 'svg-vs-png',
+        title: 'SVG vs PNG — कब कौन सा Use करें?',
+        content: `<table><tr><th>Feature</th><th>SVG</th><th>PNG</th></tr><tr><td>Type</td><td>Vector (math-based)</td><td>Raster (pixel-based)</td></tr><tr><td>Scaling</td><td>Infinite — quality loss नहीं</td><td>Fixed — enlarge करने पर pixelate</td></tr><tr><td>Social Media</td><td>❌ Support नहीं</td><td>✅ Full support</td></tr><tr><td>Email</td><td>❌ Block होता है</td><td>✅ Universal support</td></tr><tr><td>Best For</td><td>Web icons, logos</td><td>Photos, social media, docs</td></tr></table>`,
+      },
+      {
+        id: 'kab-convert-kare',
+        title: 'SVG को PNG में कब Convert करना चाहिए?',
+        content: `<ul><li><strong>Social media:</strong> Instagram, Facebook, Twitter SVG accept नहीं करते</li><li><strong>Email:</strong> Gmail, Outlook SVG security reasons से block करते हैं</li><li><strong>Documents:</strong> Word, PowerPoint PNG better handle करते हैं</li><li><strong>App icons:</strong> Apple App Store — PNG mandatory है</li><li><strong>Print:</strong> कुछ print services SVG accept नहीं करतीं — high-res PNG everywhere काम करता है</li></ul>`,
+      },
+      {
+        id: 'scale-choose',
+        title: 'सही Scale कैसे चुनें (1x, 2x, 3x, 4x)',
+        content: `<table><tr><th>Scale</th><th>100×100 SVG का Result</th><th>Best For</th></tr><tr><td>1x</td><td>100 × 100 px</td><td>Web — original size</td></tr><tr><td>2x</td><td>200 × 200 px</td><td>Retina screens — most common</td></tr><tr><td>3x</td><td>300 × 300 px</td><td>High-res mobile (iPhone Pro)</td></tr><tr><td>4x</td><td>400 × 400 px</td><td>Print, large displays</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Recommendation:</strong> ज्यादातर cases में 2x use करें — standard और retina दोनों screens cover होते हैं।</div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'SVG को PNG में Convert कैसे करें (Step-by-Step)',
+        content: `<ol><li><strong>SVG upload करें:</strong> Drag & drop या SVG code paste करें</li><li><strong>Scale चुनें:</strong> 1x, 2x, 3x, या 4x</li><li><strong>Background:</strong> Transparent रखें या custom color set करें</li><li><strong>Convert:</strong> "Convert to PNG" click करें — instant rendering</li><li><strong>Preview और Download:</strong> SVG और PNG side-by-side देखें, download करें</li></ol><p>आपकी SVG file browser से बाहर नहीं जाती — zero server uploads।</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'SVG upload या code paste करें', description: 'SVG file drag & drop करें या raw SVG code paste करें।' },
+      { title: 'Scale और background चुनें', description: '1x–4x scale और transparent या colored background select करें।' },
+      { title: 'Convert और Download करें', description: 'Convert to PNG click करें और high-res PNG download करें।' },
+    ],
+    faqs: [
+      { question: 'क्या SVG code paste कर सकते हैं?', answer: 'हाँ। Raw SVG code (<svg> से शुरू) directly tool में paste कर सकते हैं।' },
+      { question: 'Transparent background PNG मिलेगा?', answer: 'हाँ। "Transparent background" option check करें convert करने से पहले।' },
+      { question: 'Animated SVGs support होते हैं?', answer: 'Converter static snapshot capture करता है। Animations initial state में render होते हैं।' },
+    ],
+    relatedGuides: ['crop-image-guide', 'compress-image-guide', 'text-to-speech-guide'],
+    toolCTA: {
+      heading: 'SVG को PNG में Convert करें — Free और Instant',
+      description: 'SVG upload करें, scale चुनें, high-res PNG download करें।',
+      buttonText: 'SVG to PNG Converter खोलें →',
+    },
+  },
+
+  // ── MP4 TO MP3 GUIDE (Hindi) ──────────────────────────────────────
+  {
+    slug: 'mp4-to-mp3-guide',
+    toolSlug: 'mp4-to-mp3',
+    category: 'converters',
+    title: 'Video से Audio कैसे निकालें — MP4 to MP3 गाइड (2026)',
+    subtitle: 'किसी भी video file से audio extract करें — podcasts, music, lectures, offline listening के लिए।',
+    metaTitle: 'Video से Audio निकालें — MP4 to MP3 Free',
+    metaDescription: 'MP4, WebM, MOV videos से audio free extract करें। कोई upload नहीं, कोई install नहीं — browser में काम करता है। Video lectures, music videos से audio निकालें।',
+    targetKeyword: 'video se audio kaise nikale',
+    secondaryKeywords: ['mp4 to mp3 converter', 'video to audio converter', 'video se audio kaise nikale', 'mp4 to mp3 free online', 'extract audio from video', 'video to mp3 hindi', 'video ka audio download'],
+    lastUpdated: '2026-03-15',
+    readingTime: '७ मिनट पढ़ें',
+    tags: ['Video', 'Audio', 'Converter', 'MP3'],
+    intro: `<p>YouTube lecture commute में सुनना चाहते हैं? Music video का audio track चाहिए? <strong>Video से audio extract</strong> करना सबसे common file conversion tasks में से एक है — और इसके लिए कोई software install करने या sketchy websites पर files upload करने की जरूरत नहीं।</p><p>ToolsArena का free browser-based converter Web Audio API use करता है — 100% private, कोई server upload नहीं।</p>`,
+    sections: [
+      {
+        id: 'audio-extract-kyu',
+        title: 'Video से Audio क्यों Extract करें?',
+        content: `<ul><li><strong>Lectures:</strong> Video lectures को audio में convert करें — commute या workout में सुनें</li><li><strong>Music:</strong> Music videos से audio track extract करें offline listening के लिए</li><li><strong>Podcasts:</strong> Video interviews या webinars को audio-only podcasts बनाएं</li><li><strong>Storage बचाएं:</strong> Audio files video से 10–50x छोटी होती हैं</li><li><strong>Ringtones:</strong> Video clip से audio extract करके phone ringtone बनाएं</li></ul>`,
+      },
+      {
+        id: 'audio-formats',
+        title: 'Audio Formats समझें',
+        content: `<table><tr><th>Format</th><th>Type</th><th>Quality</th><th>File Size</th></tr><tr><td>WAV</td><td>Uncompressed</td><td>★★★★★ Lossless</td><td>Large (~10MB/min)</td></tr><tr><td>MP3</td><td>Lossy compressed</td><td>★★★★ Good</td><td>Small (~1MB/min)</td></tr><tr><td>AAC</td><td>Lossy compressed</td><td>★★★★ MP3 से better</td><td>Small</td></tr><tr><td>FLAC</td><td>Lossless compressed</td><td>★★★★★ Lossless</td><td>Medium (~5MB/min)</td></tr></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>ToolsArena WAV format output करता है</strong> — lossless quality, universally compatible। बाद में WAV को MP3 में VLC या Audacity से convert कर सकते हैं।</div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'Video से Audio Extract कैसे करें (Step-by-Step)',
+        content: `<ol><li><strong>Tool खोलें:</strong> ToolsArena MP4 to Audio converter पर जाएं</li><li><strong>Video upload करें:</strong> MP4, WebM, MOV, AVI file drag & drop करें</li><li><strong>Processing:</strong> Tool audio track decode करता है (progress bar दिखता है)</li><li><strong>Preview:</strong> Built-in player में extracted audio सुनें</li><li><strong>Download:</strong> WAV file save करें</li></ol><p>सब कुछ browser में Web Audio API से होता है — video कभी किसी server पर upload नहीं होता।</p>`,
+      },
+      {
+        id: 'methods-compared',
+        title: 'Video to Audio: कौन सा Method Best है?',
+        content: `<table><tr><th>Method</th><th>Cost</th><th>Privacy</th><th>Install?</th></tr><tr><td>ToolsArena (Browser)</td><td>✅ Free</td><td>✅ 100% local</td><td>❌ नहीं</td></tr><tr><td>VLC Player</td><td>✅ Free</td><td>✅ Local</td><td>✅ हाँ</td></tr><tr><td>FFmpeg</td><td>✅ Free</td><td>✅ Local</td><td>✅ हाँ (CLI)</td></tr><tr><td>Online converters</td><td>⚠️ Freemium</td><td>❌ Upload</td><td>❌ नहीं</td></tr></table>`,
+      },
+      {
+        id: 'tips-use-cases',
+        title: 'Tips और Use Cases',
+        content: `<ul><li><strong>Large files:</strong> 500MB+ videos पुराने devices पर slow process हो सकती हैं — पहले video trim करें</li><li><strong>Supported formats:</strong> MP4, WebM, MOV, AVI, MKV, M4V सब support होते हैं</li><li><strong>Quality:</strong> WAV output original video audio quality preserve करता है — कोई quality loss नहीं</li><li><strong>Students:</strong> Lecture recordings download करें → audio extract करें → commute में सुनें</li><li><strong>Podcasters:</strong> Video podcast record करें → यहाँ audio extract करें → Audacity में edit करें</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Copyright:</strong> सिर्फ उन videos का audio extract करें जो आपके own हैं या जिनकी permission है। Copyright respect करें।</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Video file upload करें', description: 'MP4, WebM, MOV या कोई भी video file drag & drop करें।' },
+      { title: 'Audio extraction wait करें', description: 'Tool video process करता है और audio track extract करता है।' },
+      { title: 'Preview और Download करें', description: 'Audio सुनें, फिर WAV file download करें।' },
+    ],
+    faqs: [
+      { question: 'क्या video server पर upload होता है?', answer: 'नहीं। सारा conversion browser में Web Audio API से होता है। Video कभी server पर नहीं जाता।' },
+      { question: 'Output format क्या होता है?', answer: 'WAV (uncompressed, lossless)। WAV files MP3 से बड़ी होती हैं लेकिन full audio quality preserve करती हैं।' },
+      { question: 'File size limit है?', answer: 'कोई hard limit नहीं। Processing speed आपके device पर depend करती है — 200MB से कम videos seconds में convert हो जाते हैं।' },
+      { question: 'MP3 में क्यों नहीं?', answer: 'MP3 encoding patent-licensed codecs require करती है। WAV lossless और universally compatible है। MP3 चाहिए तो VLC या Audacity से WAV को MP3 में convert करें।' },
+    ],
+    relatedGuides: ['text-to-speech-guide', 'speech-to-text-guide', 'compress-image-guide'],
+    toolCTA: {
+      heading: 'Video से Audio निकालें — Free और Instant',
+      description: 'कोई भी video upload करें, high-quality audio पाएं।',
+      buttonText: 'MP4 to Audio Converter खोलें →',
+    },
+  },
+
 ];

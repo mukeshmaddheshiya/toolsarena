@@ -5650,6 +5650,312 @@ GST Amount = Inclusive Price - Base Price</code></pre>
     },
   },
 
+  // ── CROP IMAGE GUIDE ───────────────────────────────────────────
+  {
+    slug: 'crop-image-guide',
+    toolSlug: 'image-cropper',
+    category: 'image-tools',
+    title: 'How to Crop an Image Online — Free Guide (2026)',
+    subtitle: 'Crop photos to any size, aspect ratio, or shape — for social media, passports, thumbnails, and more.',
+    metaTitle: 'How to Crop an Image Online Free — Complete Guide',
+    metaDescription: 'Learn how to crop images online for free. Crop photos for Instagram, passports, YouTube thumbnails, and more. No signup, no download needed.',
+    targetKeyword: 'how to crop image online free',
+    secondaryKeywords: ['crop image online', 'image cropper free', 'crop photo for Instagram', 'crop picture online', 'resize and crop image', 'passport photo crop', 'crop image to circle', 'thumbnail crop tool'],
+    lastUpdated: '2026-03-15',
+    readingTime: '7 min read',
+    tags: ['Image Editing', 'Cropping', 'Social Media', 'Design'],
+    intro: `<p>Cropping is the single most common image editing task — whether you're preparing a <strong>passport photo</strong>, fitting an image into an <strong>Instagram post</strong>, or creating a <strong>YouTube thumbnail</strong>. Yet many people still struggle with aspect ratios, pixel dimensions, and which tool to use.</p><p>This guide covers everything: the right crop sizes for every platform, techniques for better composition, and how to crop images instantly with ToolsArena's free online cropper.</p>`,
+    sections: [
+      {
+        id: 'why-crop-matters',
+        title: 'Why Cropping Matters More Than You Think',
+        content: `<p>Cropping isn't just about cutting edges — it directly impacts:</p><ul><li><strong>Composition:</strong> The rule of thirds, leading lines, and focal points all depend on your crop</li><li><strong>Platform compliance:</strong> Instagram, Facebook, LinkedIn, and YouTube each require different aspect ratios</li><li><strong>File size:</strong> A well-cropped image is smaller and loads faster on websites</li><li><strong>Professional appearance:</strong> Passport photos, ID cards, and headshots have strict dimension requirements</li><li><strong>User engagement:</strong> Social media posts with properly cropped images get 38% more engagement (HubSpot, 2025)</li></ul>`,
+      },
+      {
+        id: 'crop-sizes-platforms',
+        title: 'Exact Crop Sizes for Every Platform (2026)',
+        content: `<table><thead><tr><th>Platform / Use</th><th>Aspect Ratio</th><th>Recommended Pixels</th></tr></thead><tbody><tr><td>Instagram Post (Square)</td><td>1:1</td><td>1080 × 1080</td></tr><tr><td>Instagram Story / Reel</td><td>9:16</td><td>1080 × 1920</td></tr><tr><td>Instagram Landscape</td><td>1.91:1</td><td>1080 × 566</td></tr><tr><td>Facebook Post</td><td>1.91:1</td><td>1200 × 630</td></tr><tr><td>Facebook Cover</td><td>2.7:1</td><td>820 × 312</td></tr><tr><td>YouTube Thumbnail</td><td>16:9</td><td>1280 × 720</td></tr><tr><td>LinkedIn Post</td><td>1.91:1</td><td>1200 × 627</td></tr><tr><td>LinkedIn Banner</td><td>4:1</td><td>1584 × 396</td></tr><tr><td>Twitter/X Post</td><td>16:9</td><td>1600 × 900</td></tr><tr><td>Passport Photo (US)</td><td>1:1</td><td>2" × 2" (600 × 600 px)</td></tr><tr><td>Passport Photo (India)</td><td>~1:1.3</td><td>3.5cm × 4.5cm</td></tr><tr><td>Website OG Image</td><td>1.91:1</td><td>1200 × 630</td></tr></tbody></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Pro Tip:</strong> When in doubt, crop to 1080px wide — it works well for most social platforms and keeps file sizes manageable.</div>`,
+      },
+      {
+        id: 'composition-techniques',
+        title: 'Cropping for Better Composition',
+        content: `<p>Professional photographers use these cropping techniques:</p><ul><li><strong>Rule of Thirds:</strong> Place the subject at the intersection of imaginary 3×3 grid lines — not dead center</li><li><strong>Headroom:</strong> For portraits, leave a small space above the head — too much or too little looks awkward</li><li><strong>Leading Space:</strong> If the subject is looking or moving in a direction, leave space in that direction</li><li><strong>Remove Distractions:</strong> Crop out background clutter, unwanted people, or empty space that doesn't add value</li><li><strong>Straighten the Horizon:</strong> Rotate slightly before cropping to ensure horizons are perfectly level</li></ul>`,
+      },
+      {
+        id: 'how-to-crop-toolsarena',
+        title: 'How to Crop Images with ToolsArena (Step-by-Step)',
+        content: `<ol><li><strong>Upload your image:</strong> Drag & drop or click to browse — supports JPG, PNG, WebP, GIF</li><li><strong>Select crop area:</strong> Drag the corners of the crop box to select the area you want to keep</li><li><strong>Choose aspect ratio:</strong> Pick from presets (1:1, 16:9, 4:3, 9:16) or enter custom dimensions</li><li><strong>Fine-tune:</strong> Drag the crop area to reposition it over the image</li><li><strong>Download:</strong> Click Crop & Download — your cropped image saves instantly</li></ol><p>Everything happens in your browser — your image is never uploaded to any server.</p>`,
+      },
+      {
+        id: 'crop-tips-seo',
+        title: 'Image Cropping Tips for Websites & SEO',
+        content: `<ul><li><strong>OG images:</strong> Always crop to 1200×630 for social sharing previews — this is the Open Graph standard</li><li><strong>Hero images:</strong> Crop to 16:9 or wider for full-width website hero sections</li><li><strong>Product photos:</strong> Use 1:1 square crops for e-commerce product grids — consistent sizing looks professional</li><li><strong>Blog thumbnails:</strong> 16:9 (1280×720) works best for blog post cards and RSS feeds</li><li><strong>Compress after cropping:</strong> Cropping reduces file size, but always compress further for web performance</li></ul><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">🎯 <strong>SEO Impact:</strong> Google's Core Web Vitals penalise pages with oversized images. Crop + compress = faster pages = better rankings.</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Upload your image', description: 'Open ToolsArena Image Cropper and upload your photo.' },
+      { title: 'Select crop area and aspect ratio', description: 'Choose 1:1, 16:9, 4:3, or custom dimensions.' },
+      { title: 'Crop and download', description: 'Click Crop & Download to save the cropped image.' },
+    ],
+    faqs: [
+      { question: 'Can I crop an image to a specific pixel size?', answer: 'Yes. Select "Custom" aspect ratio and enter the exact width and height in pixels. The crop area will lock to those dimensions.' },
+      { question: 'Does cropping reduce image quality?', answer: 'Cropping itself does not reduce quality — it simply removes pixels outside the crop area. The remaining area stays at original quality.' },
+      { question: 'What image formats are supported?', answer: 'JPG, PNG, WebP, and GIF are all supported. The output format matches your input format.' },
+      { question: 'Is my image uploaded to a server?', answer: 'No. All cropping happens in your browser. Your image never leaves your device.' },
+    ],
+    relatedGuides: ['compress-image-guide', 'text-to-speech-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Crop Your Image Now — Free & Instant',
+      description: 'Upload, crop to any size, and download. No signup, no watermark.',
+      buttonText: 'Open Image Cropper →',
+    },
+  },
+
+  // ── EXCEL TO PDF GUIDE ────────────────────────────────────────────
+  {
+    slug: 'excel-to-pdf-guide',
+    toolSlug: 'excel-to-pdf',
+    category: 'pdf-tools',
+    title: 'How to Convert Excel to PDF — Free Guide (2026)',
+    subtitle: 'Convert spreadsheets (.xlsx, .xls, .csv) to professional PDF documents — free, instant, no upload.',
+    metaTitle: 'How to Convert Excel to PDF Free — Complete Guide',
+    metaDescription: 'Convert Excel spreadsheets to PDF for free. Supports .xlsx, .xls, .csv. No upload, no signup — works offline in your browser. Step-by-step guide.',
+    targetKeyword: 'how to convert excel to pdf',
+    secondaryKeywords: ['excel to pdf converter', 'convert xlsx to pdf', 'spreadsheet to pdf', 'excel to pdf free online', 'csv to pdf converter', 'export excel as pdf', 'excel to pdf without losing formatting'],
+    lastUpdated: '2026-03-15',
+    readingTime: '6 min read',
+    tags: ['PDF', 'Excel', 'Converter', 'Spreadsheet'],
+    intro: `<p>Need to share a spreadsheet with someone who doesn't have Excel? Need to submit financial data in a non-editable format? <strong>Converting Excel to PDF</strong> is the answer — and you don't need Microsoft Office or Adobe to do it.</p><p>This guide shows you how to convert .xlsx, .xls, and .csv files to professional PDFs using ToolsArena's free online converter — everything happens in your browser, no file upload required.</p>`,
+    sections: [
+      {
+        id: 'why-excel-to-pdf',
+        title: 'Why Convert Excel to PDF?',
+        content: `<ul><li><strong>Universal compatibility:</strong> Anyone can open a PDF — no Excel required</li><li><strong>Preserve layout:</strong> PDFs look the same on every device and printer</li><li><strong>Prevent editing:</strong> Share financial reports, invoices, or data without risk of accidental changes</li><li><strong>Professional sharing:</strong> PDFs are the standard for business documents, reports, and submissions</li><li><strong>Smaller file size:</strong> PDFs are often smaller than Excel files with formatting</li><li><strong>Print-ready:</strong> PDFs maintain exact print layout — no shifted columns or cut-off rows</li></ul>`,
+      },
+      {
+        id: 'methods-compared',
+        title: 'Excel to PDF: Methods Compared',
+        content: `<table><thead><tr><th>Method</th><th>Cost</th><th>Privacy</th><th>Quality</th><th>Limitations</th></tr></thead><tbody><tr><td>ToolsArena (browser)</td><td>Free</td><td>✅ 100% local</td><td>Clean table format</td><td>No charts/images</td></tr><tr><td>Microsoft Excel</td><td>Paid ($)</td><td>✅ Local</td><td>Full formatting</td><td>Requires license</td></tr><tr><td>Google Sheets</td><td>Free</td><td>⚠️ Cloud upload</td><td>Good</td><td>Needs Google account</td></tr><tr><td>Online converters</td><td>Freemium</td><td>❌ File uploaded</td><td>Varies</td><td>File size limits, watermarks</td></tr><tr><td>LibreOffice</td><td>Free</td><td>✅ Local</td><td>Good</td><td>Requires installation</td></tr></tbody></table><div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Privacy advantage:</strong> ToolsArena processes your file entirely in the browser. Your spreadsheet data never touches any server.</div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'How to Convert Excel to PDF (Step-by-Step)',
+        content: `<ol><li><strong>Open the converter:</strong> Go to ToolsArena Excel to PDF tool</li><li><strong>Upload your file:</strong> Drag & drop your .xlsx, .xls, or .csv file</li><li><strong>Preview:</strong> See all sheets, select the one you want to convert</li><li><strong>Configure:</strong> Choose orientation (portrait/landscape) and font size</li><li><strong>Convert:</strong> Click "Convert to PDF" — your PDF generates instantly</li><li><strong>Download:</strong> Save the PDF to your device</li></ol>`,
+      },
+      {
+        id: 'tips-better-pdf',
+        title: 'Tips for Better Excel-to-PDF Output',
+        content: `<ul><li><strong>Use landscape</strong> for wide spreadsheets with many columns — prevents column wrapping</li><li><strong>Reduce font size</strong> (8pt or 6pt) for data-heavy sheets — fits more columns per page</li><li><strong>Clean your data first:</strong> Remove empty rows/columns before converting for a cleaner PDF</li><li><strong>Freeze header rows:</strong> The converter automatically uses the first row as table headers</li><li><strong>Split large files:</strong> If you have 50+ columns, consider splitting into multiple sheets</li></ul>`,
+      },
+      {
+        id: 'common-use-cases',
+        title: 'Common Use Cases',
+        content: `<ul><li><strong>Financial reports:</strong> Convert monthly/quarterly reports to PDF for stakeholder distribution</li><li><strong>Invoices:</strong> Create invoices in Excel, export as PDF to send to clients</li><li><strong>Student data:</strong> Teachers converting grade sheets or attendance records</li><li><strong>Import/export records:</strong> Business compliance — submit shipping data as PDF</li><li><strong>Salary slips:</strong> HR departments generating employee pay statements</li><li><strong>Government submissions:</strong> Tax filings, regulatory reports require PDF format</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Upload your Excel file', description: 'Drag & drop .xlsx, .xls, or .csv into the converter.' },
+      { title: 'Preview and select sheet', description: 'Review the data and select which sheet to convert.' },
+      { title: 'Convert and download PDF', description: 'Click Convert to PDF and save the result.' },
+    ],
+    faqs: [
+      { question: 'Does it support .csv files?', answer: 'Yes. The converter supports .xlsx, .xls, and .csv file formats.' },
+      { question: 'Is my spreadsheet data uploaded to a server?', answer: 'No. All processing happens in your browser using JavaScript. Your file never leaves your device.' },
+      { question: 'Can I convert multiple sheets at once?', answer: 'You can select and convert one sheet at a time. For multiple sheets, convert each separately.' },
+      { question: 'Does it preserve Excel formatting like colors and borders?', answer: 'The tool creates a clean, professional table layout in the PDF. Complex Excel formatting (conditional formatting, merged cells, charts) may not be preserved exactly.' },
+    ],
+    relatedGuides: ['compress-image-guide', 'text-to-speech-guide', 'percentage-how-to-guide'],
+    toolCTA: {
+      heading: 'Convert Excel to PDF — Free & Instant',
+      description: 'Upload your spreadsheet and get a professional PDF in seconds.',
+      buttonText: 'Open Excel to PDF Converter →',
+    },
+  },
+
+  // ── HTML TO PDF GUIDE ─────────────────────────────────────────────
+  {
+    slug: 'html-to-pdf-guide',
+    toolSlug: 'html-to-pdf',
+    category: 'pdf-tools',
+    title: 'How to Convert HTML to PDF — Free Guide (2026)',
+    subtitle: 'Convert HTML code or web pages to PDF documents — for developers, designers, and content creators.',
+    metaTitle: 'How to Convert HTML to PDF Free — Developer Guide',
+    metaDescription: 'Convert HTML to PDF for free. Paste HTML code or upload .html files, preview rendered output, download as PDF. No server upload. Developer-friendly guide.',
+    targetKeyword: 'how to convert html to pdf',
+    secondaryKeywords: ['html to pdf converter', 'convert html to pdf online', 'html to pdf free', 'save webpage as pdf', 'html to pdf javascript', 'print html to pdf', 'html2pdf online', 'web page to pdf converter'],
+    lastUpdated: '2026-03-15',
+    readingTime: '7 min read',
+    tags: ['PDF', 'HTML', 'Developer', 'Converter'],
+    intro: `<p>Developers, designers, and content creators frequently need to convert <strong>HTML to PDF</strong> — for documentation, invoices, reports, contracts, and archiving web content. While browsers have built-in "Print to PDF", it often produces ugly results with headers, footers, and broken layouts.</p><p>This guide covers all the ways to convert HTML to PDF — from quick browser methods to ToolsArena's purpose-built converter that renders your HTML faithfully and produces clean PDFs.</p>`,
+    sections: [
+      {
+        id: 'why-html-to-pdf',
+        title: 'Why Convert HTML to PDF?',
+        content: `<ul><li><strong>Documentation:</strong> Convert README files, API docs, or style guides to distributable PDFs</li><li><strong>Invoices & receipts:</strong> Generate PDF invoices from HTML invoice templates</li><li><strong>Reports:</strong> Convert dashboard HTML to PDF for stakeholder presentations</li><li><strong>Contracts:</strong> Save signed HTML forms as permanent PDF records</li><li><strong>Archiving:</strong> Preserve web page content as unchangeable PDF snapshots</li><li><strong>Print consistency:</strong> HTML renders differently across browsers — PDF looks the same everywhere</li></ul>`,
+      },
+      {
+        id: 'methods-compared',
+        title: 'HTML to PDF: All Methods Compared',
+        content: `<table><thead><tr><th>Method</th><th>Best For</th><th>Pros</th><th>Cons</th></tr></thead><tbody><tr><td>ToolsArena Converter</td><td>Quick conversion</td><td>Free, instant, no install</td><td>No external CSS loading</td></tr><tr><td>Browser Print (Ctrl+P)</td><td>Saving any webpage</td><td>Built-in, free</td><td>Adds headers/footers, poor layout</td></tr><tr><td>wkhtmltopdf</td><td>Server-side automation</td><td>Full CSS/JS support</td><td>Requires installation</td></tr><tr><td>Puppeteer/Playwright</td><td>Developers automating</td><td>Full browser rendering</td><td>Complex setup, Node.js required</td></tr><tr><td>Prince XML</td><td>Publishing/print</td><td>Best CSS support</td><td>Expensive commercial license</td></tr></tbody></table>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'How to Convert HTML to PDF with ToolsArena',
+        content: `<ol><li><strong>Open the converter:</strong> Go to ToolsArena HTML to PDF tool</li><li><strong>Enter your HTML:</strong> Either paste HTML code in the editor, or upload an .html file</li><li><strong>Preview:</strong> See the rendered HTML in the live preview pane</li><li><strong>Configure:</strong> Select page size (A4, Letter, Legal) and orientation (Portrait/Landscape)</li><li><strong>Convert:</strong> Use "Print to PDF" for browser-native output, or "Download PDF" for image-based conversion</li><li><strong>Save:</strong> Download your PDF</li></ol><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Tip:</strong> Include inline CSS in your HTML for best results. External stylesheet URLs may not load due to browser security restrictions.</div>`,
+      },
+      {
+        id: 'html-tips-better-pdf',
+        title: 'HTML Tips for Better PDF Output',
+        content: `<ul><li><strong>Use inline styles:</strong> Embed CSS directly in the HTML rather than linking external stylesheets</li><li><strong>Set page breaks:</strong> Use <code>page-break-before: always</code> or <code>page-break-after: always</code> in CSS to control pagination</li><li><strong>Use print media query:</strong> Add <code>@media print { }</code> styles specifically for PDF/print output</li><li><strong>Avoid fixed positioning:</strong> <code>position: fixed</code> elements may overlap in PDFs</li><li><strong>Test with simple HTML first:</strong> Start with basic HTML, then add complexity to isolate rendering issues</li><li><strong>Image paths:</strong> Use Base64-encoded images or absolute URLs — relative paths won't work in pasted HTML</li></ul>`,
+      },
+      {
+        id: 'developer-automation',
+        title: 'For Developers: Automating HTML to PDF',
+        content: `<p>If you need to automate HTML-to-PDF conversion in your application:</p><ul><li><strong>Client-side (JavaScript):</strong> Libraries like <code>html2canvas</code> + <code>jspdf</code> or <code>html2pdf.js</code> render HTML to canvas then to PDF</li><li><strong>Server-side (Node.js):</strong> <code>puppeteer</code> launches a headless browser, renders HTML, and exports PDF with <code>page.pdf()</code></li><li><strong>Python:</strong> <code>pdfkit</code> (wkhtmltopdf wrapper) or <code>weasyprint</code> for CSS-heavy documents</li><li><strong>PHP:</strong> <code>dompdf</code> or <code>mPDF</code> for server-side HTML-to-PDF conversion</li></ul><p>ToolsArena itself uses the html2canvas + jsPDF approach — entirely client-side, no server needed.</p>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Paste HTML or upload a file', description: 'Enter your HTML code or upload an .html file.' },
+      { title: 'Preview the rendered output', description: 'Check the live preview to ensure correct rendering.' },
+      { title: 'Convert and download PDF', description: 'Select page size, orientation, and download your PDF.' },
+    ],
+    faqs: [
+      { question: 'Does it support CSS?', answer: 'Yes. Inline styles and embedded <style> blocks render fully. External stylesheets linked via URL may not load due to browser CORS restrictions.' },
+      { question: 'Can I convert a live website to PDF?', answer: 'This tool works with HTML code, not URLs. To convert a live page, use "View Page Source" in your browser, copy the HTML, and paste it in the tool.' },
+      { question: 'Is my HTML code sent to a server?', answer: 'No. All rendering and PDF generation happens in your browser. Your code stays on your device.' },
+      { question: 'What is the difference between Print to PDF and Download PDF?', answer: 'Print to PDF uses your browser native print dialog — better for text-heavy content. Download PDF renders HTML to an image then converts to PDF — better for preserving visual layout.' },
+    ],
+    relatedGuides: ['excel-to-pdf-guide', 'compress-image-guide', 'text-to-speech-guide'],
+    toolCTA: {
+      heading: 'Convert HTML to PDF — Free & Instant',
+      description: 'Paste your HTML, preview, and download a clean PDF.',
+      buttonText: 'Open HTML to PDF Converter →',
+    },
+  },
+
+  // ── SVG TO PNG GUIDE ──────────────────────────────────────────────
+  {
+    slug: 'svg-to-png-guide',
+    toolSlug: 'svg-to-png',
+    category: 'image-tools',
+    title: 'How to Convert SVG to PNG — Free Guide (2026)',
+    subtitle: 'Convert vector SVG files to high-resolution PNG images — for design, development, and social media.',
+    metaTitle: 'How to Convert SVG to PNG Free — Complete Guide',
+    metaDescription: 'Convert SVG to PNG online for free. Choose scale (1x–4x), transparent or colored background. No upload, works offline. Step-by-step guide for designers & developers.',
+    targetKeyword: 'how to convert svg to png',
+    secondaryKeywords: ['svg to png converter', 'convert svg to png online', 'svg to png free', 'svg to png high resolution', 'vector to raster converter', 'svg to image', 'export svg as png', 'svg to png transparent background'],
+    lastUpdated: '2026-03-15',
+    readingTime: '6 min read',
+    tags: ['SVG', 'PNG', 'Image', 'Design'],
+    intro: `<p><strong>SVG (Scalable Vector Graphics)</strong> is perfect for logos, icons, and illustrations — it scales to any size without losing quality. But many platforms (social media, email, documents) don't support SVG. You need PNG.</p><p>This guide explains when and why to convert SVG to PNG, how to choose the right resolution, and how to do it instantly with ToolsArena's free converter — no upload, no install, no signup.</p>`,
+    sections: [
+      {
+        id: 'svg-vs-png',
+        title: 'SVG vs PNG — When to Use Which?',
+        content: `<table><thead><tr><th>Feature</th><th>SVG</th><th>PNG</th></tr></thead><tbody><tr><td>Type</td><td>Vector (math-based)</td><td>Raster (pixel-based)</td></tr><tr><td>Scaling</td><td>Infinite — no quality loss</td><td>Fixed resolution — pixelates when enlarged</td></tr><tr><td>File size</td><td>Small for simple graphics</td><td>Larger, depends on dimensions</td></tr><tr><td>Transparency</td><td>✅ Supported</td><td>✅ Supported</td></tr><tr><td>Browser support</td><td>All modern browsers</td><td>Universal</td></tr><tr><td>Social media</td><td>❌ Not supported</td><td>✅ Fully supported</td></tr><tr><td>Email</td><td>❌ Most clients block SVG</td><td>✅ Universal support</td></tr><tr><td>Best for</td><td>Web icons, logos, illustrations</td><td>Photos, social media, documents</td></tr></tbody></table>`,
+      },
+      {
+        id: 'when-to-convert',
+        title: 'When Do You Need to Convert SVG to PNG?',
+        content: `<ul><li><strong>Social media:</strong> Instagram, Facebook, Twitter, LinkedIn don't accept SVG uploads</li><li><strong>Email:</strong> Gmail, Outlook, and most email clients block SVG for security reasons</li><li><strong>Documents:</strong> Word, PowerPoint, and Google Docs handle PNG better than SVG</li><li><strong>Favicons:</strong> While SVG favicons exist, PNG fallbacks are still needed for older browsers</li><li><strong>App stores:</strong> App icons must be PNG (Apple requires specific sizes)</li><li><strong>Print:</strong> Some print services don't accept SVG — high-resolution PNG works everywhere</li></ul>`,
+      },
+      {
+        id: 'choosing-scale',
+        title: 'Choosing the Right Scale (1x, 2x, 3x, 4x)',
+        content: `<table><thead><tr><th>Scale</th><th>Result for 100×100 SVG</th><th>Best For</th></tr></thead><tbody><tr><td>1x</td><td>100 × 100 px</td><td>Web use at original size</td></tr><tr><td>2x</td><td>200 × 200 px</td><td>Retina/HiDPI screens, most common</td></tr><tr><td>3x</td><td>300 × 300 px</td><td>High-res mobile screens (iPhone Pro)</td></tr><tr><td>4x</td><td>400 × 400 px</td><td>Print, large displays, future-proofing</td></tr></tbody></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>Recommendation:</strong> Use 2x for most purposes — it covers standard and retina screens without excessive file size.</div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'How to Convert SVG to PNG with ToolsArena',
+        content: `<ol><li><strong>Upload your SVG:</strong> Drag & drop an SVG file, or paste SVG code directly</li><li><strong>Choose scale:</strong> 1x, 2x, 3x, or 4x — higher = more pixels</li><li><strong>Background:</strong> Keep transparent, or set a custom background color</li><li><strong>Convert:</strong> Click "Convert to PNG" — rendering happens instantly</li><li><strong>Preview & download:</strong> See both SVG and PNG side-by-side, then download</li></ol><p>Your SVG file never leaves your browser — zero server uploads.</p>`,
+      },
+      {
+        id: 'advanced-tips',
+        title: 'Advanced SVG-to-PNG Tips',
+        content: `<ul><li><strong>Set explicit viewBox:</strong> SVGs without a <code>viewBox</code> attribute may render at unexpected sizes. Add <code>viewBox="0 0 width height"</code> for predictable results</li><li><strong>Embed fonts:</strong> If your SVG uses custom fonts, convert them to paths (in Illustrator: Type → Create Outlines) before converting to PNG</li><li><strong>Transparent vs white:</strong> For logos going on colored backgrounds, use transparent PNG. For documents and social media, white background is safer</li><li><strong>Check the output:</strong> Always preview the PNG — some SVG filters and effects may not render in the canvas-based converter</li></ul>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Upload SVG or paste code', description: 'Drag & drop an SVG file or paste SVG code.' },
+      { title: 'Choose scale and background', description: 'Select 1x–4x scale and transparent or colored background.' },
+      { title: 'Convert and download PNG', description: 'Click Convert to PNG and download the result.' },
+    ],
+    faqs: [
+      { question: 'Can I paste SVG code instead of uploading a file?', answer: 'Yes. You can paste raw SVG code (starting with <svg) directly into the tool.' },
+      { question: 'What is the maximum SVG size supported?', answer: 'There is no hard limit. The conversion uses your browser canvas, so very complex SVGs with thousands of elements may be slow on older devices.' },
+      { question: 'Does it support animated SVGs?', answer: 'The converter captures a static snapshot. CSS and SMIL animations will render at their initial state.' },
+      { question: 'Can I get PNG with transparent background?', answer: 'Yes. Check the "Transparent background" option before converting.' },
+    ],
+    relatedGuides: ['crop-image-guide', 'compress-image-guide', 'text-to-speech-guide'],
+    toolCTA: {
+      heading: 'Convert SVG to PNG — Free & Instant',
+      description: 'Upload SVG, choose scale, download high-res PNG.',
+      buttonText: 'Open SVG to PNG Converter →',
+    },
+  },
+
+  // ── MP4 TO MP3 GUIDE ──────────────────────────────────────────────
+  {
+    slug: 'mp4-to-mp3-guide',
+    toolSlug: 'mp4-to-mp3',
+    category: 'converters',
+    title: 'How to Convert MP4 to Audio — Free Guide (2026)',
+    subtitle: 'Extract audio from any video file — for podcasts, music, lectures, and offline listening.',
+    metaTitle: 'How to Convert Video to Audio Free — MP4 to MP3 Guide',
+    metaDescription: 'Extract audio from MP4, WebM, MOV videos for free. No upload, no install — works in your browser. Convert video lectures, music videos, and more to audio files.',
+    targetKeyword: 'how to convert video to mp3',
+    secondaryKeywords: ['mp4 to mp3 converter', 'extract audio from video', 'video to audio converter', 'mp4 to mp3 free online', 'convert video to audio', 'mp4 to wav converter', 'extract sound from video', 'video to mp3 no upload'],
+    lastUpdated: '2026-03-15',
+    readingTime: '7 min read',
+    tags: ['Video', 'Audio', 'Converter', 'MP3'],
+    intro: `<p>Want to listen to a YouTube lecture during your commute? Need the audio track from a music video? Converting <strong>video to audio</strong> is one of the most common file conversion tasks — and you don't need to install any software or upload files to sketchy websites.</p><p>This guide covers everything about extracting audio from video files, and how to do it instantly with ToolsArena's free browser-based converter — 100% private, no upload to any server.</p>`,
+    sections: [
+      {
+        id: 'why-extract-audio',
+        title: 'Why Extract Audio from Video?',
+        content: `<ul><li><strong>Podcasts from video:</strong> Convert video interviews or webinars to audio-only podcasts</li><li><strong>Music:</strong> Extract audio tracks from music videos for offline listening</li><li><strong>Lectures & courses:</strong> Convert video lectures to audio for listening during commute or workout</li><li><strong>Ringtones:</strong> Extract a specific audio clip from a video for phone ringtones</li><li><strong>Storage:</strong> Audio files are 10–50x smaller than video — save massive storage space</li><li><strong>Accessibility:</strong> Create audio versions of video content for visually impaired users</li></ul>`,
+      },
+      {
+        id: 'formats-explained',
+        title: 'Audio Formats Explained',
+        content: `<table><thead><tr><th>Format</th><th>Type</th><th>Quality</th><th>File Size</th><th>Compatibility</th></tr></thead><tbody><tr><td>WAV</td><td>Uncompressed</td><td>★★★★★ Lossless</td><td>Large (~10MB/min)</td><td>Universal</td></tr><tr><td>MP3</td><td>Lossy compressed</td><td>★★★★ Good</td><td>Small (~1MB/min)</td><td>Universal</td></tr><tr><td>AAC</td><td>Lossy compressed</td><td>★★★★ Better than MP3</td><td>Small</td><td>Apple, most devices</td></tr><tr><td>OGG</td><td>Lossy compressed</td><td>★★★★ Good</td><td>Small</td><td>Linux, web, Spotify</td></tr><tr><td>FLAC</td><td>Lossless compressed</td><td>★★★★★ Lossless</td><td>Medium (~5MB/min)</td><td>Audiophile devices</td></tr></tbody></table><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:12px;margin:16px 0;border-radius:8px;">💡 <strong>ToolsArena outputs WAV format</strong> — lossless quality, universally compatible. You can convert WAV to MP3 later if you need a smaller file.</div>`,
+      },
+      {
+        id: 'step-by-step',
+        title: 'How to Extract Audio from Video (Step-by-Step)',
+        content: `<ol><li><strong>Open the converter:</strong> Go to ToolsArena MP4 to Audio tool</li><li><strong>Upload your video:</strong> Drag & drop an MP4, WebM, MOV, or other video file</li><li><strong>Wait for processing:</strong> The tool decodes the audio track (progress bar shown)</li><li><strong>Preview:</strong> Listen to the extracted audio in the built-in player</li><li><strong>Download:</strong> Save the audio file (WAV format) to your device</li></ol><p>Everything happens in your browser using the Web Audio API — your video is never uploaded anywhere.</p>`,
+      },
+      {
+        id: 'methods-compared',
+        title: 'Video to Audio: Methods Compared',
+        content: `<table><thead><tr><th>Method</th><th>Cost</th><th>Privacy</th><th>Install Needed?</th><th>Speed</th></tr></thead><tbody><tr><td>ToolsArena (browser)</td><td>Free</td><td>✅ 100% local</td><td>No</td><td>Fast</td></tr><tr><td>VLC Media Player</td><td>Free</td><td>✅ Local</td><td>Yes</td><td>Medium</td></tr><tr><td>FFmpeg (command line)</td><td>Free</td><td>✅ Local</td><td>Yes</td><td>Fastest</td></tr><tr><td>Audacity</td><td>Free</td><td>✅ Local</td><td>Yes</td><td>Medium</td></tr><tr><td>Online converters</td><td>Freemium</td><td>❌ Upload required</td><td>No</td><td>Slow (upload + download)</td></tr></tbody></table>`,
+      },
+      {
+        id: 'tips-and-use-cases',
+        title: 'Tips & Common Use Cases',
+        content: `<ul><li><strong>Large files:</strong> Videos over 500MB may be slow to process on older devices — consider trimming the video first</li><li><strong>Multiple formats:</strong> The tool accepts MP4, WebM, MOV, AVI, MKV, and M4V</li><li><strong>Quality:</strong> WAV output preserves the original audio quality from the video — no quality loss</li><li><strong>For podcasters:</strong> Record your video podcast, extract audio here, then edit in Audacity or GarageBand</li><li><strong>For students:</strong> Download lecture recordings, extract audio, listen offline during commute</li><li><strong>For musicians:</strong> Extract backing tracks from video performances for practice</li></ul><div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px;margin:16px 0;border-radius:8px;">⚠️ <strong>Copyright:</strong> Only extract audio from videos you own or have permission to use. Respect copyright and content creator rights.</div>`,
+      },
+    ],
+    howToSteps: [
+      { title: 'Upload your video file', description: 'Drag & drop an MP4, WebM, MOV, or other video file.' },
+      { title: 'Wait for audio extraction', description: 'The tool processes the video and extracts the audio track.' },
+      { title: 'Preview and download', description: 'Listen to the audio preview, then download as WAV.' },
+    ],
+    faqs: [
+      { question: 'Is my video uploaded to a server?', answer: 'No. The entire conversion happens in your browser using the Web Audio API. Your video never leaves your device.' },
+      { question: 'What audio format is the output?', answer: 'The output is WAV (uncompressed, lossless). WAV files are larger than MP3 but preserve full audio quality.' },
+      { question: 'Can I convert YouTube videos?', answer: 'You need to have the video file on your device. This tool does not accept URLs — it works with local video files only.' },
+      { question: 'Is there a file size limit?', answer: 'No hard limit. Processing speed depends on your device — videos under 200MB convert in seconds, larger files may take longer.' },
+      { question: 'Why WAV instead of MP3?', answer: 'Encoding MP3 requires patent-licensed codecs. WAV is lossless and universally compatible. You can convert WAV to MP3 using VLC or Audacity if needed.' },
+    ],
+    relatedGuides: ['text-to-speech-guide', 'speech-to-text-guide', 'compress-image-guide'],
+    toolCTA: {
+      heading: 'Extract Audio from Video — Free & Instant',
+      description: 'Upload any video, get high-quality audio. No upload, no install.',
+      buttonText: 'Open MP4 to Audio Converter →',
+    },
+  },
+
 ];
 
 export function getGuideBySlug(slug: string, locale: string = 'en'): Guide | undefined {
