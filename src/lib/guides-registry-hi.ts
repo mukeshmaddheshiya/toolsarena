@@ -7042,4 +7042,1889 @@ tags: [hindi, tutorial]
     },
   },
 
+  // ── PDF TO IMAGE ──────────────────────────────────────────────────
+  {
+    slug: 'pdf-to-image-guide',
+    toolSlug: 'pdf-to-image',
+    category: 'pdf-tools',
+    title: 'फ्री PDF से इमेज कन्वर्टर गाइड: PDF को JPG/PNG में बदलें (2026)',
+    subtitle: 'PDF के हर पेज को high-quality JPG या PNG में कन्वर्ट करें — प्रेजेंटेशन, सोशल मीडिया और प्रिंटिंग के लिए। बिना किसी सॉफ्टवेयर के, 100% फ्री।',
+    metaTitle: 'PDF को JPG में बदलें — फ्री ऑनलाइन PDF to Image कन्वर्टर',
+    metaDescription: 'PDF को JPG या PNG में फ्री में कन्वर्ट करें। हर पेज अलग इमेज में, हाई क्वालिटी, बिना वॉटरमार्क। Aadhaar, marksheet, certificates के लिए परफेक्ट।',
+    targetKeyword: 'PDF को JPG में बदलें',
+    secondaryKeywords: [
+      'pdf to image converter online free', 'PDF से JPG कैसे बनाएं', 'pdf to png hindi',
+      'pdf page to image', 'PDF को PNG में बदलें', 'pdf screenshot कैसे लें',
+      'pdf to jpg without watermark', 'pdf image extract', 'online pdf converter india',
+      'pdf to photo converter', 'pdf page save as image', 'pdf ko image mein kaise badle',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '8 मिनट पढ़ें',
+    tags: ['PDF', 'Image', 'Converter', 'JPG'],
+    intro: `<p><strong>PDF को JPG में बदलना</strong> आज एक बहुत आम ज़रूरत है। चाहे आपको Aadhaar card की इमेज किसी form में upload करनी हो, marksheet का screenshot WhatsApp पर share करना हो, या presentation के लिए PDF slide को image में convert करना हो — ToolsArena का फ्री PDF to Image कन्वर्टर यह काम सेकंडों में करता है।</p>
+<p>इस गाइड में हम जानेंगे कि PDF को JPG/PNG में कन्वर्ट करना कब ज़रूरी होता है, quality settings कैसे choose करें, और किन-किन situations में यह tool भारतीयों के लिए सबसे ज़्यादा उपयोगी है।</p>`,
+    sections: [
+      {
+        id: 'pdf-to-image-kyon-zaroori',
+        title: 'PDF को Image में क्यों बदलें?',
+        content: `<p>PDF format बहुत versatile है, लेकिन कई situations में image format ज़्यादा practical होता है। यहाँ कुछ common scenarios हैं जब PDF को JPG/PNG में कन्वर्ट करना ज़रूरी होता है:</p>
+<h3>सोशल मीडिया और WhatsApp शेयरिंग</h3>
+<p>WhatsApp, Instagram, और Facebook पर PDF directly preview नहीं होती — receiver को download करना पड़ता है। लेकिन JPG image तुरंत दिखती है और आसानी से share होती है। अगर आप अपना certificate, result, या कोई document share करना चाहते हैं, उसे पहले image में convert करें।</p>
+<h3>सरकारी फॉर्म और ऑनलाइन पोर्टल</h3>
+<p>कई government portals जैसे DigiLocker, UMANG, NHM recruitment पोर्टल, और university admission forms में document JPG/PNG format में ही upload करना होता है। PDF accept नहीं होती। ऐसे में PDF to Image conversion बहुत काम आता है।</p>
+<h3>Presentation और Reports</h3>
+<p>PowerPoint या Google Slides में PDF directly insert नहीं होती। PDF को image में convert करके आसानी से slides में embed किया जा सकता है। इससे presentation professional दिखती है और file size भी control में रहती है।</p>
+<h3>प्रिंटिंग और Editing</h3>
+<p>कुछ print shops और photo studios PDF की जगह JPG format prefer करते हैं। इसके अलावा, अगर आप किसी PDF page पर annotation या editing करना चाहते हैं तो उसे image में convert करके photo editing app में open किया जा सकता है।</p>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Aadhaar card, PAN card और marksheets को image में convert करके रखें — government forms में instant upload के लिए काम आएगा।</p></div>`,
+      },
+      {
+        id: 'jpg-vs-png-kya-choose-karein',
+        title: 'JPG vs PNG — कौन सा Format चुनें?',
+        content: `<p>PDF को image में convert करते समय सबसे पहला सवाल आता है — JPG लें या PNG? दोनों के अपने-अपने फायदे हैं:</p>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>JPG</th><th>PNG</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>File Size</td><td>छोटी (compress होती है)</td><td>बड़ी (lossless)</td></tr>
+    <tr><td>Quality</td><td>Lossy (थोड़ी quality कम)</td><td>Lossless (पूरी quality)</td></tr>
+    <tr><td>Background</td><td>White background</td><td>Transparent background support</td></tr>
+    <tr><td>Best For</td><td>Photos, scanned documents</td><td>Text, logos, diagrams</td></tr>
+    <tr><td>WhatsApp/Email</td><td>परफेक्ट — छोटी size</td><td>ठीक है पर बड़ी file</td></tr>
+    <tr><td>Government Upload</td><td>ज़्यादातर portals accept</td><td>कुछ portals support नहीं</td></tr>
+  </tbody>
+</table>
+<h3>किसके लिए क्या चुनें?</h3>
+<ul>
+  <li><strong>Aadhaar/PAN upload:</strong> JPG — size limit के कारण JPG बेहतर</li>
+  <li><strong>Marksheet/Certificate:</strong> PNG — text की clarity ज़्यादा ज़रूरी है</li>
+  <li><strong>Social Media:</strong> JPG — faster loading, छोटी file</li>
+  <li><strong>Presentation में use:</strong> PNG — transparent background के साथ better दिखती है</li>
+  <li><strong>Print के लिए:</strong> PNG — higher quality print होगी</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>सरकारी portals पर document upload करते समय size limit ध्यान रखें — आमतौर पर 100KB से 500KB की limit होती है। बड़ी PNG file reject हो सकती है।</p></div>`,
+      },
+      {
+        id: 'resolution-quality-settings',
+        title: 'Resolution और Quality Settings की पूरी जानकारी',
+        content: `<p>PDF to Image conversion में resolution (DPI) सबसे important setting है। DPI का मतलब है Dots Per Inch — यह image की sharpness decide करता है।</p>
+<table>
+  <thead>
+    <tr><th>DPI</th><th>Quality</th><th>File Size</th><th>Best Use</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>72 DPI</td><td>Screen quality</td><td>बहुत छोटी</td><td>Web/Email preview</td></tr>
+    <tr><td>150 DPI</td><td>Medium quality</td><td>Medium</td><td>WhatsApp, Social media</td></tr>
+    <tr><td>300 DPI</td><td>Print quality</td><td>बड़ी</td><td>Documents, certificates</td></tr>
+    <tr><td>600 DPI</td><td>Professional print</td><td>बहुत बड़ी</td><td>High-res graphics print</td></tr>
+  </tbody>
+</table>
+<h3>भारतीय उपयोग के लिए recommended settings</h3>
+<ul>
+  <li><strong>UPSC/SSC certificate scan:</strong> 300 DPI, JPG — clear text, manageable size</li>
+  <li><strong>University marksheet:</strong> 300 DPI, PNG — maximum clarity</li>
+  <li><strong>Aadhaar/PAN card:</strong> 150 DPI, JPG — portal size limits के अनुसार</li>
+  <li><strong>Presentation slide:</strong> 150 DPI, PNG — screen पर perfect दिखेगी</li>
+  <li><strong>WhatsApp share:</strong> 150 DPI, JPG — fast send और clear preview</li>
+</ul>
+<p>ToolsArena का PDF to Image converter automatically optimal settings use करता है, लेकिन आप manually DPI और format भी choose कर सकते हैं।</p>`,
+      },
+      {
+        id: 'multi-page-pdf-convert',
+        title: 'Multi-Page PDF से सभी Pages एक साथ Convert करें',
+        content: `<p>अगर आपके पास 10-20 pages की PDF है और हर page को अलग image में convert करना है, तो ToolsArena का batch conversion feature काम आता है।</p>
+<h3>Multi-page conversion के फायदे</h3>
+<ul>
+  <li>हर page automatically numbered images में save होती है (page-1.jpg, page-2.jpg...)</li>
+  <li>ZIP file में सभी images एक साथ download होती हैं</li>
+  <li>Specific pages select करने का option भी available है</li>
+  <li>बड़ी PDFs (50+ pages) भी handle होती हैं</li>
+</ul>
+<h3>Practical Examples</h3>
+<p><strong>बैंक statement की PDF:</strong> हर month का statement एक अलग image में convert करें और folder में organize करें।</p>
+<p><strong>Study material की PDF:</strong> Important chapters को image में convert करके phone gallery में save करें — offline revise करना आसान होगा।</p>
+<p><strong>Legal documents:</strong> Court papers या property documents की PDF को images में convert करके advocate को WhatsApp पर share करें।</p>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Multi-page PDF convert करते समय "Select Pages" option use करें — सिर्फ वही pages convert होंगी जो आपको चाहिए, जिससे time और storage दोनों बचेगी।</p></div>`,
+      },
+      {
+        id: 'aadhaar-pan-image-conversion',
+        title: 'Aadhaar, PAN और Government Documents को Image में Convert करें',
+        content: `<p>भारत में government documents जैसे Aadhaar card, PAN card, driving license, और marksheets अक्सर PDF format में होते हैं। इन्हें image में convert करना एक common need है।</p>
+<h3>Common Government Document Scenarios</h3>
+<table>
+  <thead>
+    <tr><th>Document</th><th>जहाँ Upload करें</th><th>Required Format</th><th>Size Limit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Aadhaar Card</td><td>IRCTC, bank KYC</td><td>JPG/PNG</td><td>100–500 KB</td></tr>
+    <tr><td>PAN Card</td><td>ITR filing, bank account</td><td>JPG/PNG</td><td>100–500 KB</td></tr>
+    <tr><td>10th Marksheet</td><td>College admission forms</td><td>JPG/PNG/PDF</td><td>1–2 MB</td></tr>
+    <tr><td>Driving License</td><td>Job applications</td><td>JPG/PNG</td><td>200 KB–1 MB</td></tr>
+    <tr><td>Caste Certificate</td><td>Government scheme portals</td><td>JPG/PDF</td><td>500 KB–1 MB</td></tr>
+  </tbody>
+</table>
+<h3>Privacy और Security Tips</h3>
+<p>Aadhaar card convert करते समय ध्यान रखें:</p>
+<ul>
+  <li>ToolsArena पूरी तरह browser-based है — file server पर upload नहीं होती</li>
+  <li>Sensitive documents के लिए हमेशा Masked Aadhaar use करें (UIDAI portal से download)</li>
+  <li>Convert की हुई image को किसी unknown app या website पर share न करें</li>
+  <li>Work हो जाने के बाद browser tab बंद करें — data automatically clear हो जाता है</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Aadhaar या PAN card की image को किसी भी third-party cloud service पर upload करते समय सावधान रहें। हमेशा trusted और browser-based tools use करें जो data store न करें।</p></div>`,
+      },
+      {
+        id: 'pdf-to-image-alternatives',
+        title: 'PDF to Image के अन्य तरीके',
+        content: `<p>ToolsArena के अलावा PDF को image में convert करने के कुछ और तरीके हैं — हर तरीके के अपने pros और cons हैं।</p>
+<table>
+  <thead>
+    <tr><th>तरीका</th><th>फायदे</th><th>नुकसान</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ToolsArena (Online)</td><td>फ्री, browser-based, safe</td><td>Internet चाहिए</td></tr>
+    <tr><td>Adobe Acrobat</td><td>Professional quality</td><td>Paid software, महंगा</td></tr>
+    <tr><td>Screenshot (Snipping Tool)</td><td>कोई software नहीं चाहिए</td><td>Low resolution</td></tr>
+    <tr><td>Google Drive</td><td>Free, Google account से</td><td>Privacy concern</td></tr>
+    <tr><td>Microsoft Word</td><td>PDF को Word में खोलें → image copy करें</td><td>Formatting बिगड़ सकती है</td></tr>
+    <tr><td>Mobile Screenshot</td><td>सबसे आसान</td><td>बहुत low quality</td></tr>
+  </tbody>
+</table>
+<h3>Mobile पर PDF to Image</h3>
+<p>Android पर Chrome browser में ToolsArena खोलें और यही online converter use करें — यह mobile पर भी perfectly काम करता है। iOS पर Safari में भी fully functional है।</p>`,
+      },
+      {
+        id: 'pdf-to-image-best-practices',
+        title: 'PDF to Image Conversion के Best Practices',
+        content: `<p>बेहतरीन results के लिए इन best practices को follow करें:</p>
+<h3>Conversion से पहले</h3>
+<ul>
+  <li>PDF को password protect नहीं होना चाहिए — पहले password remove करें</li>
+  <li>Source PDF की quality अच्छी होनी चाहिए — blurry PDF से blurry image बनेगी</li>
+  <li>जानें कि converted image कहाँ use होगी — उसके हिसाब से DPI choose करें</li>
+</ul>
+<h3>Conversion के दौरान</h3>
+<ul>
+  <li>Multi-page PDF हो तो specify करें कि कौन-कौन से pages चाहिए</li>
+  <li>Output format (JPG/PNG) अपनी ज़रूरत के हिसाब से चुनें</li>
+  <li>Large PDF (50MB+) के लिए stable internet connection ज़रूरी है</li>
+</ul>
+<h3>Conversion के बाद</h3>
+<ul>
+  <li>Image खोलकर quality check करें — text readable होना चाहिए</li>
+  <li>File size check करें — portal की limit से कम होनी चाहिए</li>
+  <li>ज़रूरत हो तो ToolsArena के Image Compressor से size कम करें</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Converted images को descriptive names दें जैसे "aadhaar-front-2026.jpg" या "10th-marksheet-cbse.png" — बाद में ढूंढना आसान होगा।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'PDF to Image टूल खोलें',
+        description: 'ToolsArena.in पर जाएं और "PDF to Image" टूल select करें। कोई account नहीं बनाना, कोई software download नहीं करना — सब browser में होता है।',
+      },
+      {
+        title: 'PDF File Upload करें',
+        description: '"Upload PDF" button click करें या PDF file को drag & drop करें। Password-protected PDFs के लिए पहले password enter करें।',
+      },
+      {
+        title: 'Format और Quality चुनें',
+        description: 'JPG या PNG में से output format select करें। DPI setting choose करें — सामान्य use के लिए 150 DPI, print quality के लिए 300 DPI।',
+      },
+      {
+        title: 'Pages Select करें',
+        description: 'सभी pages convert करने के लिए "All Pages" रखें, या specific page numbers enter करें जैसे "1, 3, 5-8"। फिर "Convert" button दबाएं।',
+      },
+      {
+        title: 'Images Download करें',
+        description: 'Conversion complete होने पर images preview दिखेगा। Single image directly download करें या सभी pages के लिए "Download All as ZIP" button click करें।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'क्या PDF to Image conversion फ्री है?',
+        answer: 'हाँ, ToolsArena का PDF to Image converter 100% फ्री है। कोई subscription, watermark, या hidden charges नहीं। बिना account बनाए directly use करें।',
+      },
+      {
+        question: 'PDF की quality image में maintain होती है?',
+        answer: 'हाँ, ToolsArena high-quality rendering use करता है। 300 DPI पर convert करने पर print-quality image मिलती है जिसमें text और graphics clearly visible होते हैं। Original PDF की quality जितनी अच्छी होगी, image उतनी ही sharp होगी।',
+      },
+      {
+        question: 'Multi-page PDF के सभी pages convert हो सकते हैं?',
+        answer: 'हाँ, multi-page PDF के सभी pages एक साथ convert होते हैं। हर page अलग image file बनती है और सभी images ZIP file में download होती हैं। आप specific pages भी select कर सकते हैं।',
+      },
+      {
+        question: 'Aadhaar card PDF को image में convert करना safe है?',
+        answer: 'ToolsArena browser-based tool है — आपकी PDF file किसी server पर upload नहीं होती। सारी processing आपके browser में होती है। इसलिए Aadhaar, PAN जैसे sensitive documents के लिए यह safe option है।',
+      },
+      {
+        question: 'Mobile पर PDF to Image काम करता है?',
+        answer: 'हाँ, ToolsArena mobile browsers (Chrome, Firefox, Safari) पर fully काम करता है। Android और iPhone दोनों पर PDF upload करके images download कर सकते हैं।',
+      },
+      {
+        question: 'JPG और PNG में क्या फर्क है?',
+        answer: 'JPG compressed format है — file size छोटी होती है लेकिन थोड़ी quality कम। PNG lossless है — perfect quality लेकिन बड़ी file। WhatsApp और portal uploads के लिए JPG बेहतर, print और professional use के लिए PNG बेहतर।',
+      },
+      {
+        question: 'Scanned PDF की image clear क्यों नहीं आती?',
+        answer: 'Scanned PDF में पहले से low-resolution image embedded होती है। अगर scan 200 DPI से कम पर हुआ है तो converted image भी blurry होगी। इसका solution है original document को high-resolution पर re-scan करें।',
+      },
+      {
+        question: 'Image file size बहुत बड़ी आ रही है — क्या करें?',
+        answer: 'DPI कम करें (300 की जगह 150 use करें) या PNG की जगह JPG format use करें। Conversion के बाद ToolsArena के Image Compressor tool से file size 60-70% तक कम की जा सकती है बिना visible quality loss के।',
+      },
+    ],
+    relatedGuides: ['pdf-editor-guide', 'pdf-merge-guide', 'image-compressor-guide'],
+    toolCTA: {
+      heading: 'अभी PDF को Image में बदलें — 100% फ्री',
+      description: 'ToolsArena का PDF to Image converter browser में काम करता है। JPG या PNG choose करें, quality select करें, और सभी pages एक साथ download करें — बिना watermark, बिना signup।',
+      buttonText: 'PDF to Image टूल खोलें →',
+    },
+  },
+
+  // ── IMAGE TO PDF ──────────────────────────────────────────────────
+  {
+    slug: 'image-to-pdf-guide',
+    toolSlug: 'image-to-pdf',
+    category: 'pdf-tools',
+    title: 'फ्री इमेज से PDF कन्वर्टर गाइड: JPG/PNG को PDF में बदलें (2026)',
+    subtitle: 'अपनी photos, screenshots और scanned documents को professional PDF में बदलें — Aadhaar, marksheet, university submissions के लिए। फ्री, fast, और secure।',
+    metaTitle: 'इमेज को PDF में बदलें — फ्री JPG to PDF कन्वर्टर ऑनलाइन',
+    metaDescription: 'JPG, PNG इमेज को PDF में फ्री में कन्वर्ट करें। Multiple images एक PDF में merge करें। Aadhaar, PAN, marksheet submission के लिए परफेक्ट। बिना watermark।',
+    targetKeyword: 'इमेज को PDF में बदलें',
+    secondaryKeywords: [
+      'image to pdf converter online free', 'jpg to pdf hindi', 'PNG को PDF में बदलें',
+      'multiple images to pdf', 'photo to pdf kaise banaye', 'scan to pdf online',
+      'image pdf converter india', 'aadhaar pdf kaise banaye', 'jpg to pdf without watermark',
+      'combine images into pdf', 'photo to document converter', 'image se pdf banana',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '9 मिनट पढ़ें',
+    tags: ['PDF', 'Image', 'JPG', 'Converter'],
+    intro: `<p><strong>इमेज को PDF में बदलना</strong> आज हर भारतीय की ज़रूरत है। चाहे university admission form में documents submit करने हों, government portal पर Aadhaar और PAN upload करने हों, या job application के साथ certificates attach करने हों — PDF format सबसे widely accepted है।</p>
+<p>ToolsArena का फ्री Image to PDF converter आपकी JPG, PNG, WebP images को seconds में professional PDF में बदल देता है। Multiple images को एक single PDF में merge भी कर सकते हैं — बिना किसी software के, बिना signup के।</p>`,
+    sections: [
+      {
+        id: 'image-to-pdf-kyon-zaroori',
+        title: 'Image को PDF में क्यों बदलें? — भारतीय संदर्भ',
+        content: `<p>भारत में documents submission के लिए PDF format सबसे ज़्यादा demand में है। यहाँ देखें कि image to PDF conversion कब-कब ज़रूरी होता है:</p>
+<h3>शिक्षा और University Admissions</h3>
+<p>DU, JNU, IIT, NIT जैसे top universities के admission portals पर documents JPG में scan करके PDF में convert करके upload करने होते हैं। CUET, JEE, NEET जैसी entrance exams के registration forms में भी यही process follow होता है।</p>
+<h3>सरकारी नौकरी Applications</h3>
+<p>SSC, UPSC, Railway, Bank PO की applications में candidate की photo, signature, और documents को PDF format में upload करना होता है। Mobile से click की गई photos को पहले image to PDF convert करना ज़रूरी होता है।</p>
+<h3>KYC और Bank Documents</h3>
+<p>नया bank account खोलने, loan apply करने, या demat account के लिए KYC documents PDF format में submit करने होते हैं। Aadhaar और PAN की scanned copies को PDF में convert करके email या portal पर submit करें।</p>
+<h3>Professional और Business Use</h3>
+<p>Business invoices, contracts, और reports अक्सर multiple images से बने होते हैं। Image to PDF conversion से इन्हें एक professional document में compile किया जा सकता है।</p>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Multiple documents (Aadhaar + PAN + Marksheet) को एक single PDF में merge करें — employers और portals को submission आसान और organized लगती है।</p></div>`,
+      },
+      {
+        id: 'multiple-images-ek-pdf',
+        title: 'Multiple Images को एक PDF में कैसे Merge करें',
+        content: `<p>Image to PDF conversion का सबसे powerful feature है multiple images को एक PDF में combine करना। यह especially useful है जब:</p>
+<ul>
+  <li>Front और back दोनों sides scan करनी हों (Aadhaar front + back)</li>
+  <li>Multiple certificates या marksheets एक file में submit करने हों</li>
+  <li>Photo essay या portfolio बनाना हो</li>
+  <li>Property documents के multiple pages एक PDF में चाहिए हों</li>
+</ul>
+<h3>Images को सही Order में Arrange करें</h3>
+<p>Multiple images upload करने के बाद drag & drop से उन्हें correct order में arrange करें। यह इसलिए ज़रूरी है क्योंकि PDF में pages उसी order में आते हैं जिस order में images uploaded हैं।</p>
+<h3>Page Size और Orientation</h3>
+<table>
+  <thead>
+    <tr><th>Setting</th><th>Use Case</th><th>Recommendation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>A4 Portrait</td><td>Documents, certificates</td><td>Standard choice</td></tr>
+    <tr><td>A4 Landscape</td><td>Panoramic photos, wide charts</td><td>Wide content के लिए</td></tr>
+    <tr><td>Original Size</td><td>Photos maintain करना</td><td>Photo albums के लिए</td></tr>
+    <tr><td>Fit to Page</td><td>Mixed size images</td><td>Uniform look के लिए</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Government documents submit करते समय ensure करें कि PDF का total size portal की limit से कम हो। आमतौर पर limit 2-5 MB होती है। ज़रूरत हो तो PDF Compressor use करें।</p></div>`,
+      },
+      {
+        id: 'scan-quality-tips',
+        title: 'Mobile से Perfect Document Scan करने के Tips',
+        content: `<p>India में ज़्यादातर लोग flatbed scanner की जगह mobile camera से documents scan करते हैं। Mobile scan से professional-quality PDF बनाने के लिए ये tips follow करें:</p>
+<h3>सही Lighting और Position</h3>
+<ul>
+  <li>Document को flat surface पर रखें — किताब या table पर</li>
+  <li>Natural light में scan करें — window के पास, लेकिन direct sunlight नहीं</li>
+  <li>Flash बंद रखें — इससे glare और shadows आते हैं</li>
+  <li>Camera document के बिल्कुल ऊपर और level में रखें</li>
+  <li>Document के corners clearly frame में आने चाहिए</li>
+</ul>
+<h3>Recommended Scanning Apps</h3>
+<table>
+  <thead>
+    <tr><th>App</th><th>Platform</th><th>Best Feature</th><th>Cost</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Microsoft Lens</td><td>Android/iOS</td><td>Auto crop और enhance</td><td>Free</td></tr>
+    <tr><td>Adobe Scan</td><td>Android/iOS</td><td>OCR और cloud save</td><td>Free basic</td></tr>
+    <tr><td>CamScanner</td><td>Android/iOS</td><td>Multi-page documents</td><td>Free with ads</td></tr>
+    <tr><td>Google Drive</td><td>Android</td><td>Built-in scanner</td><td>Free</td></tr>
+  </tbody>
+</table>
+<p>Scan करने के बाद image को ToolsArena के Image to PDF converter में upload करें — best quality PDF मिलेगी।</p>`,
+      },
+      {
+        id: 'aadhaar-pan-pdf-submission',
+        title: 'Aadhaar और PAN की PDF कैसे बनाएं',
+        content: `<p>Aadhaar और PAN card की PDF submission एक very common need है। यहाँ step-by-step process है:</p>
+<h3>Option 1: DigiLocker से Direct PDF Download</h3>
+<p>DigiLocker (digilocker.gov.in) या UIDAI (uidai.gov.in) से Aadhaar की official e-PDF directly download करें। यह most accepted format है।</p>
+<h3>Option 2: Physical Card को Scan करके PDF बनाएं</h3>
+<ol>
+  <li>Aadhaar card को अच्छी lighting में mobile से scan करें (front और back दोनों)</li>
+  <li>ToolsArena Image to PDF में दोनों images upload करें</li>
+  <li>Front page first, back page second रखें</li>
+  <li>A4 size में PDF generate करें</li>
+  <li>PDF download करें और portal पर upload करें</li>
+</ol>
+<h3>Portal-wise Document Requirements</h3>
+<table>
+  <thead>
+    <tr><th>Portal</th><th>Format</th><th>Max Size</th><th>Special Requirement</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>IRCTC</td><td>JPG/PDF</td><td>500 KB</td><td>Clear photo only</td></tr>
+    <tr><td>SSC Online</td><td>JPG</td><td>50 KB (photo)</td><td>White background</td></tr>
+    <tr><td>UPSC DAF</td><td>JPG/PDF</td><td>1 MB</td><td>Self-attested copy</td></tr>
+    <tr><td>University Portals</td><td>PDF</td><td>2–5 MB</td><td>Merged documents</td></tr>
+    <tr><td>Bank KYC</td><td>PDF/JPG</td><td>1–2 MB</td><td>Self-signed copy</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Masked Aadhaar (last 8 digits hidden) use करें जब full Aadhaar number share करना ज़रूरी न हो। यह UIDAI portal से download होती है।</p></div>`,
+      },
+      {
+        id: 'pdf-quality-file-size-balance',
+        title: 'PDF Quality और File Size का Balance',
+        content: `<p>Image to PDF conversion में quality और file size के बीच balance बनाना ज़रूरी है। बहुत high quality PDF का size बड़ा होगा जो portals पर upload नहीं होगी, और बहुत low quality PDF में text पढ़ने में दिक्कत होगी।</p>
+<h3>Recommended Quality Settings</h3>
+<table>
+  <thead>
+    <tr><th>Document Type</th><th>Quality</th><th>Expected Size</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Identity Documents</td><td>Medium-High (80%)</td><td>200–500 KB</td></tr>
+    <tr><td>Marksheets/Certificates</td><td>High (90%)</td><td>500 KB–1 MB</td></tr>
+    <tr><td>Passport Photos</td><td>High (90%)</td><td>100–300 KB</td></tr>
+    <tr><td>Photo Albums</td><td>Medium (70%)</td><td>1–5 MB per page</td></tr>
+    <tr><td>Business Documents</td><td>Medium (75%)</td><td>300–800 KB</td></tr>
+  </tbody>
+</table>
+<p>अगर converted PDF बहुत बड़ी है, तो ToolsArena का PDF Compressor tool use करें। यह PDF size को 60-80% तक कम कर सकता है बिना visible quality loss के।</p>`,
+      },
+      {
+        id: 'image-to-pdf-troubleshooting',
+        title: 'Common Problems और Solutions',
+        content: `<p>Image to PDF conversion में कभी-कभी issues आते हैं। यहाँ common problems और उनके solutions हैं:</p>
+<h3>Problem 1: PDF में Image Blurry आ रही है</h3>
+<p><strong>Cause:</strong> Original image की resolution कम है।</p>
+<p><strong>Solution:</strong> Higher resolution में image recapture करें। Mobile camera settings में "High" quality select करें।</p>
+<h3>Problem 2: PDF बहुत बड़ी है</h3>
+<p><strong>Cause:</strong> High resolution images use की गई हैं।</p>
+<p><strong>Solution:</strong> ToolsArena Image Compressor से पहले images compress करें, फिर PDF बनाएं।</p>
+<h3>Problem 3: Image Rotated है PDF में</h3>
+<p><strong>Cause:</strong> Mobile photo orientation automatically set नहीं हुई।</p>
+<p><strong>Solution:</strong> Upload के बाद rotate button से image सीधी करें।</p>
+<h3>Problem 4: PDF Page खाली दिख रहा है</h3>
+<p><strong>Cause:</strong> Image transparent background के साथ PNG है।</p>
+<p><strong>Solution:</strong> PNG को JPG में convert करें पहले, फिर PDF बनाएं।</p>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Government portals पर submit करने से पहले always downloaded PDF को open करके verify करें। कभी-कभी conversion में minor issues आ सकते हैं जो re-conversion से fix हो जाते हैं।</p></div>`,
+      },
+      {
+        id: 'image-to-pdf-security',
+        title: 'Security और Privacy — आपके Documents Safe हैं',
+        content: `<p>जब Aadhaar, PAN, bank statements जैसे sensitive documents को PDF में convert करते हैं, तो privacy सबसे बड़ी concern होती है।</p>
+<h3>ToolsArena की Security Guarantee</h3>
+<ul>
+  <li><strong>Browser-based processing:</strong> सारी conversion आपके browser में होती है — कोई server involved नहीं</li>
+  <li><strong>No data storage:</strong> Files automatically delete होती हैं जब आप tab बंद करते हैं</li>
+  <li><strong>No account required:</strong> Email या personal information नहीं माँगी जाती</li>
+  <li><strong>HTTPS encryption:</strong> Data transfer पूरी तरह encrypted है</li>
+  <li><strong>No watermark:</strong> Converted PDF में कोई ToolsArena logo नहीं होता</li>
+</ul>
+<h3>Safe Document Handling Tips</h3>
+<ul>
+  <li>Public computers पर sensitive documents process न करें</li>
+  <li>Shared WiFi पर sensitive documents upload करने से बचें</li>
+  <li>Downloaded PDF को cloud storage (Google Drive) में share करते समय link sharing बंद रखें</li>
+  <li>WhatsApp पर sensitive PDFs share करते समय "View Once" feature use करें</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Frequently used documents (Aadhaar PDF, PAN PDF) को अपने phone में secure folder में save करें — बार-बार convert करने की ज़रूरत नहीं पड़ेगी।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Image to PDF टूल खोलें',
+        description: 'ToolsArena.in पर जाएं और "Image to PDF" tool select करें। Chrome, Firefox, Safari सभी browsers में काम करता है। Mobile पर भी fully functional है।',
+      },
+      {
+        title: 'Images Upload करें',
+        description: '"Upload Images" button click करें। JPG, PNG, WebP format की images select करें। Multiple images एक साथ select करके upload करें।',
+      },
+      {
+        title: 'Images Arrange और Edit करें',
+        description: 'Drag & drop से images को correct order में arrange करें। किसी image को rotate करना हो तो rotate button use करें। अनचाही image को remove भी कर सकते हैं।',
+      },
+      {
+        title: 'PDF Settings Choose करें',
+        description: 'Page size (A4/Letter) और orientation (Portrait/Landscape) select करें। Margin setting भी adjust कर सकते हैं। "Convert to PDF" button click करें।',
+      },
+      {
+        title: 'PDF Download करें',
+        description: 'Conversion complete होने पर PDF preview दिखेगा। "Download PDF" button click करें। File automatically आपके device में save हो जाएगी — बिना watermark, बिना signup।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'क्या Image to PDF conversion बिल्कुल फ्री है?',
+        answer: 'हाँ, ToolsArena का Image to PDF converter 100% फ्री है। कोई subscription, hidden charges, या watermark नहीं। Unlimited conversions कर सकते हैं बिना account बनाए।',
+      },
+      {
+        question: 'कितनी images एक PDF में merge कर सकते हैं?',
+        answer: 'ToolsArena में आप multiple images एक PDF में merge कर सकते हैं। Practically 20-30 images तक easily handle होती हैं। बहुत large files के लिए batches में process करें।',
+      },
+      {
+        question: 'Mobile camera से ली गई photo का PDF बना सकते हैं?',
+        answer: 'हाँ, mobile camera की JPG photos directly upload करके PDF बना सकते हैं। Best results के लिए अच्छी lighting में clear photo लें। Blurry या dark photos से PDF quality अच्छी नहीं आती।',
+      },
+      {
+        question: 'Aadhaar card की PDF बनाने के लिए कौन सा method best है?',
+        answer: 'UIDAI की official website (uidai.gov.in) या DigiLocker से e-Aadhaar PDF directly download करना सबसे best तरीका है। यह government-issued document है और सभी portals accept करते हैं। Physical card scan करके भी PDF बना सकते हैं।',
+      },
+      {
+        question: 'PDF की file size कैसे कम करें?',
+        answer: 'PDF बनाने से पहले ToolsArena Image Compressor से images compress करें। या PDF बन जाने के बाद ToolsArena PDF Compressor use करें। दोनों tools फ्री हैं।',
+      },
+      {
+        question: 'क्या PDF में password add कर सकते हैं?',
+        answer: 'ToolsArena के Image to PDF tool में basic conversion होती है। Password protection के लिए बाद में ToolsArena का PDF Password Protect tool use करें। Sensitive documents के लिए password ज़रूर add करें।',
+      },
+      {
+        question: 'Images का order PDF में गलत हो गया — क्या करें?',
+        answer: 'Upload के बाद conversion से पहले images को drag & drop से reorder कर सकते हैं। गलत PDF बन गई हो तो images को correct order में फिर से arrange करें और दोबारा convert करें।',
+      },
+      {
+        question: 'WebP format की image भी PDF में convert होती है?',
+        answer: 'हाँ, ToolsArena WebP, JPG, PNG, और JPEG सभी common image formats support करता है। WhatsApp से download की गई WebP images भी directly PDF में convert कर सकते हैं।',
+      },
+    ],
+    relatedGuides: ['jpg-to-pdf-guide', 'image-compressor-guide', 'pdf-merge-guide'],
+    toolCTA: {
+      heading: 'अभी Images को PDF में बदलें — 100% फ्री',
+      description: 'ToolsArena का Image to PDF converter JPG, PNG, WebP को seconds में PDF में बदलता है। Multiple images merge करें, order set करें, और बिना watermark PDF download करें।',
+      buttonText: 'Image to PDF टूल खोलें →',
+    },
+  },
+
+  // ── PASSPORT PHOTO MAKER ─────────────────────────────────────────
+  {
+    slug: 'passport-photo-maker-guide',
+    toolSlug: 'passport-photo-maker',
+    category: 'image-tools',
+    title: 'फ्री पासपोर्ट फोटो मेकर गाइड: पासपोर्ट साइज फोटो ऑनलाइन बनाएं (2026)',
+    subtitle: 'Indian passport, Aadhaar, PAN card, visa और government forms के लिए perfect passport size photo घर पर बनाएं — photo studio जाने की ज़रूरत नहीं।',
+    metaTitle: 'पासपोर्ट साइज फोटो ऑनलाइन — फ्री Passport Photo Maker',
+    metaDescription: 'पासपोर्ट साइज फोटो ऑनलाइन बनाएं। Indian passport, Aadhaar, PAN, visa specifications के अनुसार perfect photo। White background, correct size, बिना watermark।',
+    targetKeyword: 'पासपोर्ट साइज फोटो ऑनलाइन',
+    secondaryKeywords: [
+      'passport photo maker online free', 'passport size photo kaise banaye', 'पासपोर्ट फोटो साइज',
+      'aadhaar card photo size', 'pan card photo specifications', 'visa photo india',
+      'government form photo size', 'photo resize online', 'white background photo online',
+      'passport photo background remove', 'id photo maker india', 'photo studio alternative online',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '9 मिनट पढ़ें',
+    tags: ['Passport', 'Photo', 'ID Card', 'Government'],
+    intro: `<p><strong>पासपोर्ट साइज फोटो</strong> की ज़रूरत हर भारतीय को पड़ती है — passport renewal से लेकर driving license, PAN card, Aadhaar update, SSC/UPSC application, bank account opening, और school admission तक। हर बार photo studio जाना न सिर्फ time-consuming है बल्कि महंगा भी पड़ता है।</p>
+<p>ToolsArena का फ्री Passport Photo Maker आपकी regular photo को government-standard passport size photo में बदल देता है — सही size, white background, और perfect specifications के साथ। घर पर बनाएं, print करें, और काम चलाएं।</p>`,
+    sections: [
+      {
+        id: 'indian-passport-photo-specs',
+        title: 'Indian Passport Photo Specifications 2026',
+        content: `<p>Indian passport के लिए Ministry of External Affairs (MEA) के strict guidelines हैं। गलत size या quality की photo होने पर application reject हो सकती है।</p>
+<h3>Indian Passport Photo Requirements</h3>
+<table>
+  <thead>
+    <tr><th>Specification</th><th>Requirement</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Size</td><td>51 mm × 51 mm (2 inch × 2 inch)</td></tr>
+    <tr><td>Background</td><td>Plain white (कोई pattern नहीं)</td></tr>
+    <tr><td>Face Coverage</td><td>70–80% of photo height</td></tr>
+    <tr><td>Expression</td><td>Neutral expression, मुँह बंद</td></tr>
+    <tr><td>Eyes</td><td>Open, directly camera की तरफ</td></tr>
+    <tr><td>Glasses</td><td>Not allowed (2018 से)</td></tr>
+    <tr><td>Head Covering</td><td>सिर्फ religious reasons पर allowed</td></tr>
+    <tr><td>Photo Age</td><td>6 महीने से पुरानी नहीं</td></tr>
+    <tr><td>Print Quality</td><td>Matte या glossy दोनों accepted</td></tr>
+    <tr><td>File Size (Online)</td><td>10 KB – 1.5 MB</td></tr>
+    <tr><td>File Format</td><td>JPEG</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Passport application में sunglasses, tinted glasses, या prescription glasses वाली photo submit न करें। 2018 से MEA ने glasses पर strict restriction लगाई है।</p></div>`,
+      },
+      {
+        id: 'different-id-photo-sizes',
+        title: 'अलग-अलग Government IDs के Photo Specifications',
+        content: `<p>भारत में अलग-अलग documents के लिए photo size और specifications अलग-अलग होती हैं। यह comprehensive table आपकी मदद करेगी:</p>
+<table>
+  <thead>
+    <tr><th>Document</th><th>Size</th><th>Background</th><th>Special Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Indian Passport</td><td>51×51 mm</td><td>White</td><td>No glasses, neutral face</td></tr>
+    <tr><td>Aadhaar Card Update</td><td>35×45 mm</td><td>White/Light</td><td>UIDAI center में लाइव photo</td></tr>
+    <tr><td>PAN Card</td><td>25×35 mm</td><td>White</td><td>Colour photo mandatory</td></tr>
+    <tr><td>Driving License</td><td>35×35 mm</td><td>White</td><td>State-wise vary कर सकती है</td></tr>
+    <tr><td>Voter ID</td><td>25×35 mm</td><td>Light</td><td>BLO के पास submit</td></tr>
+    <tr><td>US Visa</td><td>51×51 mm</td><td>White</td><td>6 months से नई होनी चाहिए</td></tr>
+    <tr><td>UK Visa</td><td>35×45 mm</td><td>Cream/White</td><td>Head coverage 29–34 mm</td></tr>
+    <tr><td>SSC Application</td><td>20×25 mm</td><td>White</td><td>10–20 KB JPEG</td></tr>
+    <tr><td>UPSC Application</td><td>35×45 mm</td><td>White/Light</td><td>Self-signed on front</td></tr>
+    <tr><td>Bank Account</td><td>25×35 mm</td><td>White</td><td>Recent photo</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>ToolsArena Passport Photo Maker में preset templates हैं — Indian Passport, PAN, Aadhaar, US Visa, UK Visa सभी के लिए। Preset select करने पर automatically correct size set हो जाती है।</p></div>`,
+      },
+      {
+        id: 'perfect-photo-kaise-lein',
+        title: 'घर पर Perfect Passport Photo कैसे लें',
+        content: `<p>Professional photo studio जाए बिना घर पर perfect passport photo लेना possible है। इन tips को follow करें:</p>
+<h3>Camera Setup</h3>
+<ul>
+  <li>Smartphone use करें — आजकल के 12MP+ cameras professional quality देते हैं</li>
+  <li>Rear camera use करें, selfie camera नहीं — rear camera की quality बेहतर होती है</li>
+  <li>Camera को eye level पर रखें — ऊपर या नीचे से नहीं</li>
+  <li>Portrait mode बंद करें — background blur होने से rejection हो सकती है</li>
+  <li>Minimum 2 feet की distance रखें subject से</li>
+</ul>
+<h3>Background Setup</h3>
+<ul>
+  <li>Plain white wall के सामने बैठें</li>
+  <li>White dupatta या bedsheet background की तरह use करें</li>
+  <li>Shadow background पर न पड़े — subject को wall से थोड़ा आगे रखें</li>
+  <li>अगर background plain नहीं है तो ToolsArena automatic background removal use करें</li>
+</ul>
+<h3>Lighting</h3>
+<ul>
+  <li>Natural diffused light best है — window के सामने बैठें</li>
+  <li>Flash से harsh shadows आते हैं — avoid करें</li>
+  <li>Ring light available हो तो use करें — professional result मिलेगा</li>
+  <li>Facial shadows eliminate करने के लिए दो sides से light आनी चाहिए</li>
+</ul>`,
+      },
+      {
+        id: 'background-removal-tool',
+        title: 'Automatic Background Removal और White Background Add करें',
+        content: `<p>अगर आपकी photo में plain white background नहीं है, तो ToolsArena का automatic AI background removal feature use करें।</p>
+<h3>Background Removal कैसे काम करता है?</h3>
+<p>AI algorithm automatically face और body को detect करता है, background को remove करता है, और clean white background add करता है। यह process seconds में होती है।</p>
+<h3>किन Photos में Background Removal Better काम करती है?</h3>
+<ul>
+  <li>Subject और background में clear contrast हो</li>
+  <li>Hair clearly defined हों (messy या फैले हुए बाल challenging होते हैं)</li>
+  <li>Solid color के कपड़े पहने हों — patterned कपड़ों में edges detection difficult होती है</li>
+  <li>Good lighting में ली गई photo</li>
+</ul>
+<h3>Manual Touch-up Options</h3>
+<p>Automatic removal के बाद कुछ areas clean नहीं होते — ToolsArena में manual brush tool से touch-up कर सकते हैं:</p>
+<ul>
+  <li>Erase brush: remaining background को manually remove करें</li>
+  <li>Restore brush: accidentally removed areas वापस लाएं</li>
+  <li>Edge refinement: बालों और fine details के edges smooth करें</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Background removal के बाद white background add करने से पहले photo को crop करें ताकि face properly centered और correct proportion में हो।</p></div>`,
+      },
+      {
+        id: 'photo-print-kaise-karein',
+        title: 'Passport Photo Print कैसे करें',
+        content: `<p>Photo ready हो जाने के बाद उसे print करना भी important step है। भारत में ये options available हैं:</p>
+<h3>Home Printer से Print</h3>
+<ul>
+  <li>Photo paper (glossy 6R) use करें — normal paper पर photo quality अच्छी नहीं आती</li>
+  <li>6×4 inch (15×10 cm) sheet पर 4-6 passport photos arrange करें</li>
+  <li>Printer color profile को "Photo" mode पर set करें</li>
+  <li>Print resolution 300 DPI या अधिक रखें</li>
+</ul>
+<h3>Photo Studio से Print</h3>
+<p>ToolsArena से photo ready करके nearby photo studio में USB या mobile से print करवाएं। Studio वाले 4×6 sheet पर 4-8 photos print करते हैं — ₹20-50 में।</p>
+<h3>Online Print Services</h3>
+<table>
+  <thead>
+    <tr><th>Service</th><th>Price (4×6 sheet)</th><th>Delivery</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Snapfish</td><td>₹8-15/print</td><td>3-5 days</td></tr>
+    <tr><td>Canvera</td><td>₹10-20/print</td><td>2-3 days</td></tr>
+    <tr><td>HP Sprocket</td><td>₹25-35/print</td><td>Instant (mobile printer)</td></tr>
+    <tr><td>Local Chemist/Photo Shop</td><td>₹20-40/sheet</td><td>Instant</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Passport applications के लिए printed photos को accept किया जाता है — inkjet print quality से better है laser print या professional photo print। Home inkjet printer से avoid करें अगर possible हो।</p></div>`,
+      },
+      {
+        id: 'visa-photo-requirements',
+        title: 'अलग-अलग देशों के Visa Photo Requirements',
+        content: `<p>India से abroad जाने के लिए visa apply करते समय photo specifications बहुत strict होती हैं। गलत photo होने पर visa reject हो सकता है।</p>
+<table>
+  <thead>
+    <tr><th>Country/Visa</th><th>Size</th><th>Background</th><th>Special Requirements</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>USA (B1/B2, F1)</td><td>51×51 mm</td><td>White/Off-white</td><td>Neutral expression, no glasses</td></tr>
+    <tr><td>UK Visa</td><td>35×45 mm</td><td>Cream/Light grey</td><td>Head 29–34 mm height</td></tr>
+    <tr><td>Schengen (Europe)</td><td>35×45 mm</td><td>White/Light grey</td><td>6 months से नई</td></tr>
+    <tr><td>Canada</td><td>50×70 mm</td><td>White</td><td>Full face visible</td></tr>
+    <tr><td>Australia</td><td>35×45 mm</td><td>White/Off-white</td><td>Matte finish preferred</td></tr>
+    <tr><td>Dubai/UAE</td><td>43×55 mm</td><td>White</td><td>Ears visible होनी चाहिए</td></tr>
+  </tbody>
+</table>
+<p>ToolsArena में इन सभी countries के visa photo presets available हैं। Country select करने पर automatically correct dimensions set हो जाते हैं।</p>`,
+      },
+      {
+        id: 'passport-photo-common-mistakes',
+        title: 'Common Mistakes जो Passport Photo Reject कराती हैं',
+        content: `<p>Passport application में photo rejection बहुत frustrating होता है। यहाँ common mistakes हैं जो avoid करनी चाहिए:</p>
+<h3>Photo से Related Mistakes</h3>
+<ul>
+  <li><strong>Glasses पहने होना</strong> — 2018 से strictly banned</li>
+  <li><strong>Smiling या open mouth</strong> — neutral expression mandatory</li>
+  <li><strong>Shadow on face or background</strong> — even lighting होनी चाहिए</li>
+  <li><strong>Blurry या out of focus photo</strong> — sharp और clear होनी चाहिए</li>
+  <li><strong>Old photo</strong> — 6 महीने से पुरानी photo reject होती है</li>
+  <li><strong>Edited/Photoshopped face</strong> — face features altered नहीं होने चाहिए</li>
+</ul>
+<h3>Technical Mistakes</h3>
+<ul>
+  <li><strong>Wrong size</strong> — exactly 51×51 mm होनी चाहिए</li>
+  <li><strong>Non-white background</strong> — light grey या off-white भी sometimes reject होती है</li>
+  <li><strong>Digital photo too large/small</strong> — 10 KB – 1.5 MB range में होनी चाहिए</li>
+  <li><strong>Wrong format</strong> — JPEG/JPG only, PNG accept नहीं</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Passport Seva portal पर submit करने से पहले अपनी photo को "Photo Preview" option से check करें। Portal automatically बताता है कि photo requirements को meet करती है या नहीं।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Passport Photo Maker खोलें',
+        description: 'ToolsArena.in पर जाएं और "Passport Photo Maker" tool select करें। Browser-based tool है — कोई app download नहीं करनी।',
+      },
+      {
+        title: 'अपनी Photo Upload करें',
+        description: 'अपनी recent photo upload करें। Best result के लिए plain background, good lighting, और neutral expression वाली photo use करें। JPG या PNG दोनों accepted हैं।',
+      },
+      {
+        title: 'Document Type Select करें',
+        description: 'Dropdown से document type select करें — Indian Passport, PAN Card, Aadhaar, US Visa, UK Visa आदि। Automatically correct size और specifications apply होंगी।',
+      },
+      {
+        title: 'Background Remove और Adjust करें',
+        description: '"Remove Background" button click करें। AI automatically white background add कर देगा। Face को crop tool से properly center करें — face को photo height का 70-80% occupy करना चाहिए।',
+      },
+      {
+        title: 'Download और Print करें',
+        description: '"Download" button click करके high-resolution photo save करें। Print layout option से 4×6 sheet पर multiple copies arrange करें। Local photo studio पर print करवाएं।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Passport photo घर पर बनाना legal है?',
+        answer: 'हाँ, घर पर passport photo बनाना और use करना पूरी तरह legal है, जब तक photo specifications (size, background, expression) सही हों। MEA सिर्फ photo की quality और specifications देखता है, यह नहीं कि photo कहाँ बनाई गई।',
+      },
+      {
+        question: 'क्या mobile selfie से passport photo बना सकते हैं?',
+        answer: 'Technically हाँ, लेकिन selfie camera rear camera से कम quality का होता है। अगर selfie use करना है तो plain white background के सामने, good lighting में, और camera eye level पर रखकर लें। Portrait mode बंद करें।',
+      },
+      {
+        question: 'Online passport application के लिए photo specifications क्या हैं?',
+        answer: 'Passport Seva online portal के लिए: JPEG format, 10 KB–1.5 MB size, minimum 200×200 pixels, maximum 1000×1000 pixels, white background, neutral expression। Face को photo का 70-80% cover करना चाहिए।',
+      },
+      {
+        question: 'क्या colored background passport photo के लिए valid है?',
+        answer: 'नहीं। Indian passport के लिए strictly white background mandatory है। Light grey, cream, या any other color background वाली photos reject होती हैं। ToolsArena का background removal tool white background automatically add करता है।',
+      },
+      {
+        question: 'बच्चों के passport की photo कैसे बनाएं?',
+        answer: 'बच्चों के passport photo में भी वही specifications apply होती हैं — white background, open eyes, neutral expression। Infants के लिए आँखें बंद accept होती हैं। बच्चे को white surface पर लिटाकर ऊपर से photo लें, या किसी white wall के सामने hold करें।',
+      },
+      {
+        question: 'Aadhaar photo update के लिए कौन सी photo चाहिए?',
+        answer: 'Aadhaar photo update UIDAI center पर in-person होता है — वे वहाँ live photo लेते हैं। Online Aadhaar में photo change नहीं होती। हाँ, अगर Aadhaar card पर photo upload करनी है किसी portal में, तो recent 35×45 mm white background photo use करें।',
+      },
+      {
+        question: 'Passport photo कितने दिन valid रहती है?',
+        answer: '6 महीने से अधिक पुरानी photo generally accept नहीं होती। Passport application, visa applications, और government forms के लिए recent photo (6 months के अंदर ली गई) ही submit करें।',
+      },
+      {
+        question: 'क्या ToolsArena की photo printed format में acceptable है?',
+        answer: 'हाँ, ToolsArena से download की गई photo को photo studio में print करवाएं — यह पूरी तरह acceptable होती है। Photo की specifications (size, background, resolution) सही हों तो कोई भी professionally printed photo accepted है।',
+      },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'compress-image-guide'],
+    toolCTA: {
+      heading: 'अभी Passport Size Photo बनाएं — बिल्कुल Free',
+      description: 'ToolsArena का फ्री Passport Photo Maker Indian passport, PAN, Aadhaar, visa सभी के लिए perfect photo बनाता है। White background, correct size, high quality — photo studio की ज़रूरत नहीं।',
+      buttonText: 'Passport Photo Maker खोलें →',
+    },
+  },
+
+  // ── RENT AGREEMENT GENERATOR ─────────────────────────────────────
+  {
+    slug: 'rent-agreement-generator-guide',
+    toolSlug: 'rent-agreement-generator',
+    category: 'utility-tools',
+    title: 'फ्री रेंट एग्रीमेंट जनरेटर गाइड: किराया अनुबंध ऑनलाइन बनाएं (2026)',
+    subtitle: 'भारत में किराया अनुबंध (Rent Agreement) कैसे बनाएं — 11-month agreement, stamp duty, police verification, और legal clauses की पूरी जानकारी हिंदी में।',
+    metaTitle: 'रेंट एग्रीमेंट फॉर्मेट हिंदी — फ्री किराया अनुबंध जनरेटर',
+    metaDescription: 'हिंदी में रेंट एग्रीमेंट फॉर्मेट। 11-month agreement, stamp duty by state, police verification process। फ्री online rent agreement generator से PDF download करें।',
+    targetKeyword: 'रेंट एग्रीमेंट फॉर्मेट हिंदी',
+    secondaryKeywords: [
+      'rent agreement format hindi', 'किराया अनुबंध कैसे बनाएं', 'online rent agreement india',
+      '11 month rent agreement', 'stamp duty rent agreement', 'rental agreement pdf download',
+      'leave and license agreement hindi', 'police verification form rent', 'rent agreement clauses india',
+      'tenant agreement format', 'मकान किराया अनुबंध', 'किराया कानून भारत',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '10 मिनट पढ़ें',
+    tags: ['Legal', 'Rent', 'Agreement', 'Property'],
+    intro: `<p>भारत में <strong>रेंट एग्रीमेंट</strong> (किराया अनुबंध) बनाना मकान मालिक और किराएदार दोनों के लिए legally ज़रूरी है। सही agreement न होने पर disputes, eviction problems, और legal complications हो सकती हैं।</p>
+<p>इस गाइड में हम जानेंगे कि भारत में rent agreement कैसे बनाया जाता है, 11-month agreement क्यों popular है, state-wise stamp duty क्या है, और ToolsArena का फ्री Rent Agreement Generator आपके लिए legally sound agreement कैसे बनाता है।</p>`,
+    sections: [
+      {
+        id: 'rent-agreement-kyon-zaroori',
+        title: 'Rent Agreement क्यों ज़रूरी है?',
+        content: `<p>बिना written rent agreement के रहना दोनों parties के लिए risky है। यहाँ देखें क्यों:</p>
+<h3>मकान मालिक के लिए</h3>
+<ul>
+  <li>Legal proof कि property किराए पर दी है</li>
+  <li>किराएदार को evict करने का legal basis</li>
+  <li>Rent amount और due date का documented proof</li>
+  <li>Property damage के case में compensation claim</li>
+  <li>Police verification और tenant record maintenance</li>
+</ul>
+<h3>किराएदार के लिए</h3>
+<ul>
+  <li>Address proof — bank account, Aadhaar update, job applications के लिए</li>
+  <li>Arbitrary rent increase से protection</li>
+  <li>Security deposit refund का legal basis</li>
+  <li>Sudden eviction से protection</li>
+  <li>Ration card और other government services के लिए residence proof</li>
+</ul>
+<h3>Documents जहाँ Rent Agreement ज़रूरी है</h3>
+<table>
+  <thead>
+    <tr><th>Use</th><th>Requirement</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Aadhaar Address Update</td><td>Registered rent agreement</td></tr>
+    <tr><td>Bank Account Opening</td><td>Notarized rent agreement</td></tr>
+    <tr><td>Driving License</td><td>Rent agreement as address proof</td></tr>
+    <tr><td>GST Registration</td><td>NOC + Rent agreement</td></tr>
+    <tr><td>Loan Application</td><td>Current address proof</td></tr>
+    <tr><td>School Admission</td><td>Residence proof</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Verbal agreements legally valid नहीं होते। Dispute होने पर court में proof नहीं दे सकते। हमेशा written, stamped, और signed rent agreement बनाएं।</p></div>`,
+      },
+      {
+        id: '11-month-agreement-kyon',
+        title: '11 Month Rent Agreement क्यों? — पूरी सच्चाई',
+        content: `<p>भारत में ज़्यादातर rent agreements 11 months के लिए बनाए जाते हैं। यह सुनने में अजीब लगता है — 1 साल की जगह 11 महीने क्यों? इसके पीछे एक important legal reason है।</p>
+<h3>Registration Act, 1908 — Section 17</h3>
+<p>Registration Act के Section 17 के अनुसार, 12 महीने या उससे अधिक के किसी भी lease/rent agreement को compulsorily registered करना होता है sub-registrar office में। इसके लिए stamp duty pay करनी होती है।</p>
+<h3>11 Month Agreement के फायदे</h3>
+<ul>
+  <li>Mandatory registration से बचाव — sub-registrar office जाने की ज़रूरत नहीं</li>
+  <li>Stamp duty बचती है</li>
+  <li>Notarization से काम चल जाता है (बहुत सस्ता)</li>
+  <li>Renewal आसान — फिर 11 months का नया agreement</li>
+</ul>
+<h3>क्या 11 Month Agreement Valid है?</h3>
+<p>हाँ, 11 month notarized agreement legally valid है। लेकिन Aadhaar address update के लिए registered agreement ज़रूरी है। अगर registered document चाहिए तो stamp duty pay करके registration करवाएं।</p>
+<table>
+  <thead>
+    <tr><th>Agreement Type</th><th>Duration</th><th>Registration</th><th>Cost</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>11 Month Notarized</td><td>11 months</td><td>Optional</td><td>₹500–₹1,500</td></tr>
+    <tr><td>Registered Leave & License</td><td>Any duration</td><td>Mandatory if 12+ months</td><td>Stamp duty + ₹1,000–₹5,000</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'stamp-duty-by-state',
+        title: 'State-wise Stamp Duty on Rent Agreement',
+        content: `<p>Rent agreement पर stamp duty state-to-state अलग होती है। यहाँ major states की stamp duty है:</p>
+<table>
+  <thead>
+    <tr><th>State</th><th>Stamp Duty (11 months)</th><th>Registration Fee</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Maharashtra</td><td>0.25% of annual rent</td><td>₹1,000</td><td>Leave & License mandatory</td></tr>
+    <tr><td>Delhi</td><td>2% of annual rent</td><td>₹1,100</td><td>Online registration available</td></tr>
+    <tr><td>Karnataka</td><td>0.5% of annual rent</td><td>₹500–₹2,000</td><td>Bangalore में high demand</td></tr>
+    <tr><td>Tamil Nadu</td><td>1% of annual rent</td><td>₹1,000</td><td>E-registration available</td></tr>
+    <tr><td>Uttar Pradesh</td><td>2% of annual rent</td><td>₹1,000</td><td>—</td></tr>
+    <tr><td>Gujarat</td><td>1.5% of annual rent</td><td>₹500–₹1,000</td><td>—</td></tr>
+    <tr><td>Rajasthan</td><td>1% of annual rent</td><td>₹500–₹1,000</td><td>—</td></tr>
+    <tr><td>West Bengal</td><td>0.5–1% of annual rent</td><td>₹500–₹1,000</td><td>—</td></tr>
+  </tbody>
+</table>
+<p><strong>नोट:</strong> Online e-stamping से घर बैठे stamp paper खरीद सकते हैं। Stock Holding Corporation of India (SHCIL) की website पर e-stamp खरीदें।</p>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Maharashtra में Online Leave & License registration available है — Sub-Registrar office जाने की ज़रूरत नहीं। ₹1,000 की registration fee online pay करें।</p></div>`,
+      },
+      {
+        id: 'rent-agreement-essential-clauses',
+        title: 'Rent Agreement में ज़रूरी Clauses',
+        content: `<p>एक legally sound rent agreement में ये clauses होने चाहिए:</p>
+<h3>Basic Information</h3>
+<ul>
+  <li>मकान मालिक और किराएदार का पूरा नाम, पिता का नाम, address, Aadhaar number</li>
+  <li>Property का complete address और description</li>
+  <li>Agreement शुरू होने और खत्म होने की date</li>
+</ul>
+<h3>Financial Terms</h3>
+<ul>
+  <li>Monthly rent amount</li>
+  <li>Security deposit amount (generally 1-3 months rent)</li>
+  <li>Rent payment due date (1st या 5th of every month)</li>
+  <li>Late payment penalty clause</li>
+  <li>Annual rent increase percentage (typically 5-10%)</li>
+</ul>
+<h3>Usage Terms</h3>
+<ul>
+  <li>Permitted use (residential / commercial)</li>
+  <li>Number of occupants</li>
+  <li>Pets allowed या नहीं</li>
+  <li>Sub-letting allowed या नहीं</li>
+  <li>Maintenance responsibility (मकान मालिक vs किराएदार)</li>
+</ul>
+<h3>Termination Clause</h3>
+<ul>
+  <li>Notice period (आमतौर पर 1 महीना)</li>
+  <li>Early termination conditions</li>
+  <li>Security deposit refund terms और timeframe</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Blank spaces वाला agreement sign न करें और न करवाएं। हर page पर दोनों parties के initials होने चाहिए। Agreement की 2 copies बनाएं — एक मकान मालिक के पास, एक किराएदार के पास।</p></div>`,
+      },
+      {
+        id: 'police-verification-process',
+        title: 'Police Verification — Process और Importance',
+        content: `<p>कई states में नया किराएदार लेने पर police verification mandatory है। यह safety के लिए ज़रूरी है।</p>
+<h3>Police Verification कब ज़रूरी है?</h3>
+<ul>
+  <li>Delhi, Maharashtra, Bangalore, Hyderabad में mandatory</li>
+  <li>New agreement execute करने के 24-48 hours के अंदर report करना होता है</li>
+  <li>Non-compliance पर मकान मालिक को penalty लग सकती है</li>
+</ul>
+<h3>Online Police Verification Process (Delhi Example)</h3>
+<ol>
+  <li>Delhi Police Tenant Verification portal (delhipolice.gov.in) पर जाएं</li>
+  <li>Landlord का account create करें</li>
+  <li>Tenant details और documents upload करें</li>
+  <li>Verification form submit करें</li>
+  <li>Police 7-15 days में verification complete करती है</li>
+</ol>
+<h3>Required Documents for Police Verification</h3>
+<ul>
+  <li>Tenant का Aadhaar card copy</li>
+  <li>Tenant की recent passport size photo</li>
+  <li>Rent agreement copy</li>
+  <li>Tenant का permanent address proof</li>
+  <li>Property ownership documents (मकान मालिक के)</li>
+</ul>`,
+      },
+      {
+        id: 'digital-rent-agreement',
+        title: 'Digital Rent Agreement — Online बनाएं और Sign करें',
+        content: `<p>2024 से India में digital rent agreements officially valid हैं। Information Technology Act, 2000 के तहत electronic documents legal validity रखते हैं।</p>
+<h3>ToolsArena Rent Agreement Generator के Features</h3>
+<ul>
+  <li>Pre-filled templates जो Indian law के अनुसार हैं</li>
+  <li>All state stamp duty rates pre-loaded</li>
+  <li>Automatic calculation of stamp duty</li>
+  <li>Hindi और English दोनों में agreement generate</li>
+  <li>PDF download — print करके sign करें</li>
+  <li>Customizable clauses — अपनी terms add करें</li>
+</ul>
+<h3>Digital vs Physical Agreement</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Digital Agreement</th><th>Physical Agreement</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Speed</td><td>Minutes में ready</td><td>1-2 days (stamp paper)</td></tr>
+    <tr><td>Cost</td><td>Free (ToolsArena)</td><td>Stamp paper + notary fee</td></tr>
+    <tr><td>Legal Validity</td><td>IT Act के तहत valid</td><td>Fully legally recognized</td></tr>
+    <tr><td>Aadhaar Update</td><td>Registered e-agreement needed</td><td>Registered agreement needed</td></tr>
+    <tr><td>Court Evidence</td><td>Accepted with e-signature</td><td>Direct evidence</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>ToolsArena से agreement generate करें, print करें, stamp paper पर चिपकाएं या stamp lगाएं, दोनों parties sign करें, और notarize करवाएं — यह सबसे cost-effective और legally valid तरीका है।</p></div>`,
+      },
+      {
+        id: 'security-deposit-rules',
+        title: 'Security Deposit के नियम और Refund Process',
+        content: `<p>Security deposit को लेकर भारत में बहुत disputes होते हैं। यहाँ legal framework और best practices हैं:</p>
+<h3>Security Deposit Limits (State-wise)</h3>
+<table>
+  <thead>
+    <tr><th>State</th><th>Maximum Limit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Maharashtra</td><td>3 months rent</td></tr>
+    <tr><td>Delhi</td><td>2 months rent (proposed)</td></tr>
+    <tr><td>Karnataka</td><td>10 months rent (Bangalore में norm)</td></tr>
+    <tr><td>Tamil Nadu</td><td>Regulated under Tamil Nadu Rent Control</td></tr>
+    <tr><td>Model Tenancy Act (2021)</td><td>2 months rent (residential)</td></tr>
+  </tbody>
+</table>
+<h3>Security Deposit Refund Best Practices</h3>
+<ul>
+  <li>Agreement में clearly लिखें — "security deposit vacating के X days के अंदर refund होगा"</li>
+  <li>Move-in और move-out के समय property condition की photos लें</li>
+  <li>Deductions की itemized list demand करें</li>
+  <li>Bank transfer से deposit लें/दें — cash transaction avoid करें</li>
+  <li>Receipt ज़रूर लें deposit के लिए</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>अगर मकान मालिक unreasonably security deposit withhold करे, तो Rent Court में या Consumer Forum में complaint कर सकते हैं। India के Model Tenancy Act 2021 के तहत यह legal right है।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Rent Agreement Generator खोलें',
+        description: 'ToolsArena.in पर जाएं और "Rent Agreement Generator" tool open करें। Pre-built Indian law-compliant templates available हैं।',
+      },
+      {
+        title: 'Property और Party Details भरें',
+        description: 'मकान मालिक का नाम, किराएदार का नाम, property address, Aadhaar numbers, और contact details fill करें। सभी details accurately भरें — गलत details से document invalid हो सकता है।',
+      },
+      {
+        title: 'Financial Terms Set करें',
+        description: 'Monthly rent amount, security deposit, rent due date, annual increment percentage, और late payment penalty fill करें। Agreement duration (11 months recommended) select करें।',
+      },
+      {
+        title: 'Clauses Customize करें',
+        description: 'Default clauses review करें और ज़रूरत के हिसाब से modify करें। Pets, sub-letting, maintenance responsibilities, और termination notice period set करें।',
+      },
+      {
+        title: 'PDF Generate और Print करें',
+        description: '"Generate Agreement" button click करें। Complete rent agreement PDF download होगी। 2 copies print करें — stamp paper पर या stamp लगाकर — दोनों parties sign करें और notarize करवाएं।',
+      },
+    ],
+    faqs: [
+      {
+        question: '11 month rent agreement registered करवाना ज़रूरी है?',
+        answer: 'नहीं, 11 month agreement के लिए mandatory registration नहीं है। Registration Act Section 17 के अनुसार 12 months से कम duration के agreements का registration optional है। Notarization (₹500-1500) से काम चल जाता है। लेकिन Aadhaar address update के लिए registered agreement ज़रूरी है।',
+      },
+      {
+        question: 'Rent agreement address proof के रूप में accepted होता है?',
+        answer: 'हाँ, notarized rent agreement को ज़्यादातर banks, government offices, और schools address proof के रूप में accept करते हैं। लेकिन Aadhaar update और कुछ government services के लिए registered agreement ज़रूरी होती है।',
+      },
+      {
+        question: 'Rent agreement Hindi में बना सकते हैं?',
+        answer: 'हाँ, Hindi में rent agreement बनाना पूरी तरह legal है और courts में valid है। ToolsArena का rent agreement generator Hindi और English दोनों में agreements generate करता है। हिंदी भाषी states में Hindi agreement ज़्यादा practical होता है।',
+      },
+      {
+        question: 'Security deposit पर interest मिलता है क्या?',
+        answer: 'कुछ states में security deposit पर interest देना mandatory है। Maharashtra Rent Control Act के तहत security deposit पर 15% simple interest calculate होता है। Agreement में interest clause clearly mention करें।',
+      },
+      {
+        question: 'Landlord बिना notice के किराया बढ़ा सकता है?',
+        answer: 'नहीं, agreement में mentioned terms से अधिक rent increase legally valid नहीं है। Agreement में rent increment clause (जैसे 10% annually) होना चाहिए। बिना written agreement या clause के arbitrary rent increase challenge किया जा सकता है।',
+      },
+      {
+        question: 'Tenant को खाली करने के लिए कितना notice देना होगा?',
+        answer: 'Agreement में mentioned notice period follow करना होगा — आमतौर पर 1 month। Model Tenancy Act 2021 के तहत minimum 15 days notice mandatory है। Lease expiry पर tenant को automatically खाली करना होगा, लेकिन hardship cases में court से relief मिल सकती है।',
+      },
+      {
+        question: 'क्या PG (Paying Guest) के लिए भी rent agreement बनाना चाहिए?',
+        answer: 'हाँ, PG accommodation के लिए भी written agreement बनाना highly recommended है। इसमें PG rules (visitor policy, curfew time, meal facilities), monthly charges, security deposit, और notice period clearly mention करें।',
+      },
+      {
+        question: 'Online generated rent agreement legally valid है?',
+        answer: 'हाँ, online generated agreement को print करके sign और notarize करने के बाद legally valid है। IT Act 2000 के तहत digital documents valid हैं। ToolsArena का template Indian law के अनुसार है — essential clauses सब included हैं।',
+      },
+    ],
+    relatedGuides: ['invoice-generator-guide', 'resume-builder-guide', 'salary-calculator-guide'],
+    toolCTA: {
+      heading: 'अभी Rent Agreement बनाएं — फ्री और Legal',
+      description: 'ToolsArena का Rent Agreement Generator Indian law के अनुसार professionally drafted agreement बनाता है। 11-month format, Hindi/English दोनों, all clauses included — बस details भरें और PDF download करें।',
+      buttonText: 'Rent Agreement Generator खोलें →',
+    },
+  },
+
+  // ── MARRIAGE BIODATA MAKER ───────────────────────────────────────
+  {
+    slug: 'marriage-biodata-maker-guide',
+    toolSlug: 'marriage-biodata-maker',
+    category: 'utility-tools',
+    title: 'फ्री शादी बायोडाटा मेकर गाइड: शादी के लिए बायोडाटा बनाएं (2026)',
+    subtitle: 'हिंदू, मुस्लिम, सिख, ईसाई — सभी के लिए professional marriage biodata format। Kundli details, family background, और photo के साथ perfect बायोडाटा बनाएं।',
+    metaTitle: 'शादी का बायोडाटा फॉर्मेट — फ्री Marriage Biodata Maker',
+    metaDescription: 'शादी के लिए बायोडाटा बनाएं। हिंदू, मुस्लिम, सिख सभी के लिए templates। Kundli, family details, photo सब एक जगह। फ्री PDF download।',
+    targetKeyword: 'शादी का बायोडाटा फॉर्मेट',
+    secondaryKeywords: [
+      'marriage biodata format hindi', 'शादी के लिए बायोडाटा', 'vivah biodata format',
+      'biodata for marriage pdf', 'hindu biodata format', 'muslim biodata nikah',
+      'shaadi.com biodata', 'kundli matching biodata', 'wedding biodata in hindi',
+      'शादी का बायोडाटा कैसे बनाएं', 'matrimonial biodata sample', 'biodata maker online free',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '9 मिनट पढ़ें',
+    tags: ['Marriage', 'Biodata', 'Matrimonial', 'Wedding'],
+    intro: `<p>भारत में <strong>शादी का बायोडाटा</strong> (Marriage Biodata) एक बहुत important document है। यह सिर्फ एक form नहीं — यह आपकी पहली impression है जो potential match और उनके परिवार देखते हैं। एक well-made biodata से अच्छे matches मिलने की संभावना बढ़ जाती है।</p>
+<p>ToolsArena का Marriage Biodata Maker सभी धर्मों और communities के लिए professional templates provide करता है। Hindi और English दोनों में, photo के साथ, kundli details सहित — perfect biodata बनाएं और PDF download करें।</p>`,
+    sections: [
+      {
+        id: 'marriage-biodata-kya-hota-hai',
+        title: 'Marriage Biodata क्या होता है और क्यों ज़रूरी है?',
+        content: `<p>Marriage biodata एक structured document है जिसमें व्यक्ति की personal, family, educational, professional, और religious information होती है। यह matrimonial matching में पहला और सबसे important step है।</p>
+<h3>Biodata vs Resume में फर्क</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Marriage Biodata</th><th>Professional Resume</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Purpose</td><td>Life partner ढूंढना</td><td>Job ढूंढना</td></tr>
+    <tr><td>Photo</td><td>Full face + family photo</td><td>Passport size photo</td></tr>
+    <tr><td>Family Details</td><td>विस्तृत family background</td><td>नहीं</td></tr>
+    <tr><td>Religion/Caste</td><td>Important section</td><td>Irrelevant</td></tr>
+    <tr><td>Horoscope/Kundli</td><td>Hindu biodata में ज़रूरी</td><td>नहीं</td></tr>
+    <tr><td>Expectations</td><td>Partner से expectations</td><td>नहीं</td></tr>
+    <tr><td>Tone</td><td>Personal और warm</td><td>Professional और formal</td></tr>
+  </tbody>
+</table>
+<h3>Biodata की ज़रूरत कहाँ पड़ती है?</h3>
+<ul>
+  <li>Family-arranged marriages में parents द्वारा exchange</li>
+  <li>Shaadi.com, Jeevansathi, Matrimony.com जैसे portals पर</li>
+  <li>Community events और swayamvar programs में</li>
+  <li>Relatives और pandits द्वारा match करवाने पर</li>
+  <li>Temple और gurudwara marriage bureaus में</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Biodata में dishonestly information देना avoid करें। Incorrect details से relationship की नींव कमज़ोर होती है। Accurate information से suitable matches ज़्यादा मिलते हैं।</p></div>`,
+      },
+      {
+        id: 'biodata-essential-sections',
+        title: 'Marriage Biodata के ज़रूरी Sections',
+        content: `<p>एक complete marriage biodata में ये sections होने चाहिए:</p>
+<h3>1. Personal Details</h3>
+<ul>
+  <li>पूरा नाम (हिंदी और English में)</li>
+  <li>जन्म तिथि, जन्म समय, और जन्म स्थान (kundli के लिए ज़रूरी)</li>
+  <li>वर्तमान उम्र</li>
+  <li>Height और complexion</li>
+  <li>Blood group</li>
+  <li>Mother tongue</li>
+</ul>
+<h3>2. Religious/Community Details</h3>
+<ul>
+  <li>Religion और caste/sub-caste</li>
+  <li>Gotra (Hindu biodata में essential)</li>
+  <li>Nakshatra और Rashi</li>
+  <li>Mangalik status (हिंदू biodata में)</li>
+</ul>
+<h3>3. Education और Career</h3>
+<ul>
+  <li>Highest qualification</li>
+  <li>College/University</li>
+  <li>Occupation और employer</li>
+  <li>Annual income (approximate)</li>
+  <li>Work location</li>
+</ul>
+<h3>4. Family Details</h3>
+<ul>
+  <li>Father का नाम, occupation, और native place</li>
+  <li>Mother का नाम और occupation</li>
+  <li>Siblings — भाई-बहन की संख्या, वैवाहिक स्थिति</li>
+  <li>Family type (joint/nuclear)</li>
+  <li>Family's economic status</li>
+</ul>
+<h3>5. Partner Expectations</h3>
+<ul>
+  <li>Age range preference</li>
+  <li>Education preference</li>
+  <li>Location preference</li>
+  <li>कोई specific requirements</li>
+</ul>`,
+      },
+      {
+        id: 'hindu-muslim-sikh-biodata',
+        title: 'धर्म-अनुसार Biodata Format — Hindu, Muslim, Sikh',
+        content: `<p>अलग-अलग धर्मों में marriage biodata की requirements थोड़ी अलग होती हैं:</p>
+<h3>Hindu Marriage Biodata</h3>
+<p>Hindu biodata में ये extra sections होते हैं:</p>
+<ul>
+  <li><strong>Gotra:</strong> same gotra में शादी नहीं होती (कई communities में)</li>
+  <li><strong>Nakshatra और Rashi:</strong> kundli matching के लिए ज़रूरी</li>
+  <li><strong>Mangalik Status:</strong> Mangalik match के लिए noted</li>
+  <li><strong>Kuldevi/Kuldevata:</strong> कुछ communities में important</li>
+  <li><strong>Caste और Sub-caste:</strong> Brahmin, Kshatriya, Vaishya; sub-caste specify करें</li>
+</ul>
+<h3>Muslim Marriage Biodata (Rishta)</h3>
+<ul>
+  <li><strong>Sect:</strong> Sunni/Shia/Deobandi/Barelvi</li>
+  <li><strong>Maslak:</strong> Religious school of thought</li>
+  <li><strong>Namaz/Prayer habits:</strong> mention करना common है</li>
+  <li><strong>Mehr amount:</strong> कुछ biodata में mentioned</li>
+  <li><strong>Native place:</strong> UP, Bihar, Hyderabad communities important मानती हैं</li>
+</ul>
+<h3>Sikh Marriage Biodata</h3>
+<ul>
+  <li><strong>Amritdhari/Sahajdhari:</strong> mention ज़रूरी</li>
+  <li><strong>Gotra (Tribe):</strong> Sikh community में भी gotra होता है</li>
+  <li><strong>Native District:</strong> Punjab, Haryana, Delhi</li>
+  <li><strong>Anand Karaj preference:</strong> Gurdwara wedding</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>ToolsArena में Hindu, Muslim, Sikh, Christian सभी के लिए separate templates हैं। Template select करने पर relevant fields automatically show होते हैं।</p></div>`,
+      },
+      {
+        id: 'biodata-photo-tips',
+        title: 'Biodata के लिए Perfect Photo कैसे चुनें',
+        content: `<p>Marriage biodata में photo सबसे पहले देखी जाती है। सही photo पहली impression बनाती है।</p>
+<h3>Photo Selection Tips</h3>
+<ul>
+  <li>Recent photo use करें — 6 months से पुरानी नहीं</li>
+  <li>Clear, sharp, और well-lit photo choose करें</li>
+  <li>Plain या simple background prefer करें</li>
+  <li>Formal या semi-formal attire पहनें</li>
+  <li>Natural smile — forced smile से natural expression बेहतर</li>
+  <li>Group photo avoid करें — आप clearly main focus में हों</li>
+</ul>
+<h3>Photo Specifications</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Recommended</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Orientation</td><td>Portrait (vertical)</td></tr>
+    <tr><td>Size in Biodata</td><td>3.5×4.5 cm या 4×5 cm</td></tr>
+    <tr><td>Background</td><td>Plain white, cream, या light colored</td></tr>
+    <tr><td>Expression</td><td>Natural, pleasant smile</td></tr>
+    <tr><td>Attire</td><td>Traditional या formal</td></tr>
+    <tr><td>Image Resolution</td><td>300 DPI minimum</td></tr>
+  </tbody>
+</table>
+<h3>Family Photo</h3>
+<p>कुछ biodatas में family photo भी include करते हैं। Family photo में सभी members clearly visible हों, occasion formal हो (Diwali, wedding, pooja), और photo clean और organized लगे।</p>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Heavily filtered या edited photo avoid करें। Real appearance से बहुत अलग दिखने पर real-life meeting में awkward situation हो सकती है।</p></div>`,
+      },
+      {
+        id: 'online-matrimonial-biodata',
+        title: 'Online Matrimonial Sites के लिए Biodata Optimize करें',
+        content: `<p>Shaadi.com, Jeevansathi.com, Matrimony.com जैसी sites पर biodata upload करते समय इन tips को follow करें:</p>
+<h3>Popular Matrimonial Sites in India</h3>
+<table>
+  <thead>
+    <tr><th>Site</th><th>Speciality</th><th>Monthly Users</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Shaadi.com</td><td>All religions, pan-India</td><td>3.5 crore+</td></tr>
+    <tr><td>Jeevansathi.com</td><td>Hindi belt focus</td><td>1 crore+</td></tr>
+    <tr><td>BharatMatrimony</td><td>South India strong</td><td>2 crore+</td></tr>
+    <tr><td>Muslim Matrimony</td><td>Muslim community</td><td>50 lakh+</td></tr>
+    <tr><td>SikhMatrimony</td><td>Sikh community</td><td>20 lakh+</td></tr>
+    <tr><td>Anand Matrimony</td><td>Regional communities</td><td>Varies</td></tr>
+  </tbody>
+</table>
+<h3>Online Profile Tips</h3>
+<ul>
+  <li>Headline attractive बनाएं: "Software Engineer, Pune | Family-Oriented" जैसा</li>
+  <li>Multiple clear photos upload करें — profile photo + 2-3 casual photos</li>
+  <li>About Me section में personality झलकनी चाहिए, सिर्फ facts नहीं</li>
+  <li>Partner preferences realistic रखें — too specific होने पर matches कम मिलते हैं</li>
+  <li>Contact details family members को show करें — direct number share न करें initially</li>
+</ul>`,
+      },
+      {
+        id: 'kundli-horoscope-matching',
+        title: 'Kundli Matching और Biodata — Hindu Tradition',
+        content: `<p>Hindu marriages में kundli (horoscope) matching एक important step है। Biodata में kundli details सही होना ज़रूरी है।</p>
+<h3>Kundli Details जो Biodata में Include करें</h3>
+<ul>
+  <li><strong>जन्म तिथि (DOB):</strong> Day, Month, Year — exact</li>
+  <li><strong>जन्म समय (TOB):</strong> घंटे, मिनट, सेकंड — जितना accurate उतना better</li>
+  <li><strong>जन्म स्थान (POB):</strong> City और State</li>
+  <li><strong>Rashi:</strong> Moon sign (e.g., Mesh, Vrishabh)</li>
+  <li><strong>Nakshatra:</strong> Birth star (e.g., Ashwini, Rohini)</li>
+  <li><strong>Mangalik:</strong> Yes/No — अगर Yes तो partial या full Mangalik specify करें</li>
+</ul>
+<h3>36 Gunas Matching</h3>
+<p>Hindu kundli matching में 36 gunas होते हैं। 18+ gunas match होने पर marriage considered है:</p>
+<ul>
+  <li>18 से कम: Not recommended</li>
+  <li>18–24: Average match</li>
+  <li>24–32: Good match</li>
+  <li>32–36: Excellent match</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>अगर exact birth time नहीं पता तो "Birth time unknown" mention करें — pandit kundli approximate बना सकते हैं। Guess time देने से गलत kundli बनेगी।</p></div>`,
+      },
+      {
+        id: 'biodata-design-tips',
+        title: 'Biodata Design और Presentation Tips',
+        content: `<p>Content के अलावा biodata की visual presentation भी matter करती है। एक well-designed biodata professional impression देता है।</p>
+<h3>Design Dos और Don'ts</h3>
+<table>
+  <thead>
+    <tr><th>DO</th><th>DON'T</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Clean, readable font use करें</td><td>Multiple fonts mix न करें</td></tr>
+    <tr><td>White या light background रखें</td><td>Dark या busy background avoid करें</td></tr>
+    <tr><td>Proper spacing और margins</td><td>Text cramped न करें</td></tr>
+    <tr><td>Professional color scheme</td><td>Too many bright colors avoid करें</td></tr>
+    <tr><td>Clear section headings</td><td>Cluttered layout से बचें</td></tr>
+    <tr><td>High-quality photo</td><td>Blurry या small photo नहीं</td></tr>
+  </tbody>
+</table>
+<h3>ToolsArena के Design Templates</h3>
+<p>ToolsArena के Marriage Biodata Maker में professionally designed templates हैं:</p>
+<ul>
+  <li><strong>Traditional:</strong> Classical Indian design, floral borders</li>
+  <li><strong>Modern:</strong> Clean, minimalist design</li>
+  <li><strong>Religious:</strong> Temple/Om/mosque motifs के साथ</li>
+  <li><strong>Photo-focus:</strong> Large photo prominent design</li>
+</ul>
+<p>Templates पूरी तरह customizable हैं — colors, fonts, और layout अपनी पसंद के अनुसार change करें।</p>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Marriage Biodata Maker खोलें',
+        description: 'ToolsArena.in पर जाएं और "Marriage Biodata Maker" tool select करें। अपना religion/community select करें — Hindu, Muslim, Sikh, या Christian templates available हैं।',
+      },
+      {
+        title: 'Personal और Family Details भरें',
+        description: 'नाम, जन्म तिथि, जन्म समय, जन्म स्थान, education, और profession fill करें। Family details में parents और siblings की information add करें।',
+      },
+      {
+        title: 'Religious और Kundli Details Add करें',
+        description: 'Hindu biodata के लिए Rashi, Nakshatra, Gotra, और Mangalik status fill करें। Muslim biodata में sect और religious practice details add करें।',
+      },
+      {
+        title: 'Photo Upload करें',
+        description: 'Recent, clear photo upload करें। ToolsArena automatically correct size में crop कर देगा। Multiple photos add करने का option भी है।',
+      },
+      {
+        title: 'Template Choose करें और PDF Download करें',
+        description: 'Design template select करें, preview check करें, और "Download PDF" button click करें। WhatsApp पर share करने के लिए high-quality image भी export होती है।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Marriage biodata कितने pages का होना चाहिए?',
+        answer: 'एक effective marriage biodata 1-2 pages का होना चाहिए। 1 page ideal है — concise और easy to read। 2 pages तब acceptable है जब detailed family information और multiple photos include करनी हों। इससे लंबा biodata generally नहीं पढ़ा जाता।',
+      },
+      {
+        question: 'Biodata में salary mention करना ज़रूरी है?',
+        answer: 'Exact salary mention करना mandatory नहीं है, लेकिन approximate income range (जैसे "5-7 लाख प्रतिवर्ष") देना helpful होता है। बहुत से families financial compatibility को important मानती हैं। "Decent income" जैसे vague terms से बेहतर है specific range देना।',
+      },
+      {
+        question: 'Mangalik होने पर क्या biodata में mention करें?',
+        answer: 'हाँ, Hindu biodata में Mangalik status clearly mention करें। "Mangalik (partial)" या "Mangalik (full)" specify करें। Pandit se confirm करें। Mangalik match Mangalik से करना traditionally recommended है, इसलिए clearly mention से suitable matches मिलते हैं।',
+      },
+      {
+        question: 'Online matrimonial site और physical biodata में क्या फर्क है?',
+        answer: 'Online profile पर multiple photos, preferences filter, और direct messaging होती है। Physical biodata PDF/print format में होती है जो families exchange करती हैं। दोनों में same information हो लेकिन physical biodata ज़्यादा formal और detailed हो सकती है।',
+      },
+      {
+        question: 'क्या biodata में WhatsApp number देना safe है?',
+        answer: 'Initially family के WhatsApp number या parents का number देना safer है। अपना personal number biodata circulation में देने से unknown लोगों से unwanted contact आ सकता है। जब match genuine लगे तब direct contact share करें।',
+      },
+      {
+        question: 'Hindi biodata या English biodata — कौन सा better है?',
+        answer: 'यह target audience पर depend करता है। Hindi-speaking families और small cities के लिए Hindi biodata relatable है। Urban educated families और NRI matches के लिए English या bilingual biodata better है। ToolsArena से दोनों version आसानी से बनाए जा सकते हैं।',
+      },
+      {
+        question: 'Divorced या widowed person का biodata कैसे बनाएं?',
+        answer: 'Marital status clearly mention करें — "Divorced" या "Widowed"। Previous marriage details (children हैं या नहीं, कितने) स्पष्ट रूप से लिखें। Honesty best approach है — छुपाने से बाद में bigger problems आती हैं। Many understanding families हैं जो second marriages में believe करती हैं।',
+      },
+      {
+        question: 'Biodata को WhatsApp पर कैसे share करें?',
+        answer: 'ToolsArena से PDF download करें और WhatsApp पर document के रूप में share करें। Image format में share भी कर सकते हैं। Large PDF (5MB+) WhatsApp पर slow load हो सकती है — इसके लिए ToolsArena PDF Compressor से size कम करें।',
+      },
+    ],
+    relatedGuides: ['resume-builder-guide', 'invoice-generator-guide', 'image-compressor-guide'],
+    toolCTA: {
+      heading: 'अभी Marriage Biodata बनाएं — फ्री और Professional',
+      description: 'ToolsArena का Marriage Biodata Maker सभी religions के लिए beautiful templates provide करता है। Photo, kundli details, family info सब एक जगह। PDF और image format में download करें।',
+      buttonText: 'Marriage Biodata Maker खोलें →',
+    },
+  },
+
+  // ── TYPING SPEED TEST ─────────────────────────────────────────────
+  {
+    slug: 'typing-speed-test-guide',
+    toolSlug: 'typing-speed-test',
+    category: 'utility-tools',
+    title: 'फ्री टाइपिंग स्पीड टेस्ट गाइड: ऑनलाइन WPM चेक करें (2026)',
+    subtitle: 'SSC CGL, IBPS Clerk, Court Stenographer और Railway exams के लिए typing speed improve करें। WPM, accuracy, और Hindi/English दोनों में typing test।',
+    metaTitle: 'टाइपिंग टेस्ट ऑनलाइन — WPM Speed Check करें फ्री',
+    metaDescription: 'ऑनलाइन टाइपिंग स्पीड टेस्ट करें। SSC CGL/CHSL, IBPS Clerk, court stenographer typing requirements जानें। Hindi Mangal/Kruti Dev और English दोनों में practice।',
+    targetKeyword: 'टाइपिंग टेस्ट ऑनलाइन',
+    secondaryKeywords: [
+      'typing speed test hindi', 'wpm typing test online', 'SSC typing test',
+      'IBPS clerk typing test', 'hindi typing mangal font', 'kruti dev typing test',
+      'court stenographer typing speed', 'railway typing test', 'typing practice online',
+      'type faster hindi english', 'words per minute test', 'keyboard typing speed improve',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '9 मिनट पढ़ें',
+    tags: ['Typing', 'SSC', 'WPM', 'Government Exam'],
+    intro: `<p><strong>टाइपिंग स्पीड</strong> आज एक essential skill है — सरकारी नौकरी से लेकर private sector jobs तक, हर जगह fast और accurate typing की demand है। भारत में SSC, IBPS, Railway, और court exams में typing speed test compulsory होता है।</p>
+<p>ToolsArena का फ्री Typing Speed Test tool आपकी WPM (Words Per Minute) और accuracy measure करता है — English और Hindi दोनों में। Regular practice से exam में required speed achieve करें।</p>`,
+    sections: [
+      {
+        id: 'govt-exam-typing-requirements',
+        title: 'सरकारी परीक्षाओं में Typing Speed Requirements',
+        content: `<p>भारत में विभिन्न सरकारी exams में typing speed की अलग-अलग requirements होती हैं। यहाँ comprehensive list है:</p>
+<table>
+  <thead>
+    <tr><th>Exam/Post</th><th>Language</th><th>Required Speed</th><th>Accuracy</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SSC CGL (LDC)</td><td>English</td><td>35 WPM (10,500 KPH)</td><td>No negative marking</td></tr>
+    <tr><td>SSC CHSL (DEO)</td><td>English</td><td>35 WPM</td><td>Errors factor करते हैं</td></tr>
+    <tr><td>SSC CHSL (DEO)</td><td>Hindi</td><td>30 WPM (9,000 KPH)</td><td>Mangal font</td></tr>
+    <tr><td>IBPS Clerk</td><td>English</td><td>24 WPM (minimum)</td><td>—</td></tr>
+    <tr><td>SBI Clerk</td><td>English</td><td>30 WPM</td><td>—</td></tr>
+    <tr><td>Court Stenographer (Grade C)</td><td>English</td><td>100 WPM (shorthand)</td><td>95% accuracy</td></tr>
+    <tr><td>Court Stenographer (Grade D)</td><td>Hindi</td><td>80 WPM (shorthand)</td><td>95% accuracy</td></tr>
+    <tr><td>Railway Clerk</td><td>English/Hindi</td><td>30 WPM</td><td>—</td></tr>
+    <tr><td>Delhi Police (MTS)</td><td>Hindi</td><td>25 WPM</td><td>Mangal font</td></tr>
+    <tr><td>State PSC (Assistant)</td><td>Hindi/Regional</td><td>25–35 WPM</td><td>State-wise varies</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>SSC typing tests में KPH (Keystrokes Per Hour) measure होता है, WPM नहीं। 1 WPM ≈ 5 keystrokes। 10,500 KPH = approximately 35 WPM। अपनी तैयारी KPH basis पर भी करें।</p></div>`,
+      },
+      {
+        id: 'wpm-kph-kya-hai',
+        title: 'WPM और KPH क्या होता है?',
+        content: `<p>Typing speed को WPM (Words Per Minute) और KPH (Keystrokes Per Hour) दोनों में measure किया जाता है।</p>
+<h3>WPM (Words Per Minute)</h3>
+<p>एक minute में कितने words type किए — standard measurement। International standard के अनुसार एक "word" = 5 characters (spaces सहित)।</p>
+<ul>
+  <li><strong>Beginner:</strong> 20–30 WPM</li>
+  <li><strong>Average:</strong> 40–60 WPM</li>
+  <li><strong>Fast typist:</strong> 70–90 WPM</li>
+  <li><strong>Professional:</strong> 100+ WPM</li>
+  <li><strong>World record:</strong> 212 WPM</li>
+</ul>
+<h3>KPH (Keystrokes Per Hour)</h3>
+<p>एक hour में total key presses — Indian government exams में यह metric ज़्यादा use होता है।</p>
+<ul>
+  <li>30 WPM ≈ 9,000 KPH</li>
+  <li>35 WPM ≈ 10,500 KPH</li>
+  <li>40 WPM ≈ 12,000 KPH</li>
+</ul>
+<h3>Accuracy</h3>
+<p>Speed के साथ accuracy भी equally important है। 95% accuracy standard है। 100 words में 5 से ज़्यादा errors होने पर disqualification हो सकता है।</p>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>पहले accuracy focus करें, speed naturally बढ़ेगी। Error-prone typing को जल्दी-जल्दी करने से exam में fail हो सकते हैं।</p></div>`,
+      },
+      {
+        id: 'hindi-typing-mangal-kruti',
+        title: 'Hindi Typing — Mangal vs Kruti Dev Font',
+        content: `<p>Government exams में Hindi typing के लिए specific fonts mandatory होते हैं। इन्हें समझना बहुत ज़रूरी है।</p>
+<h3>Mangal Font (Unicode)</h3>
+<ul>
+  <li>Government exams में officially prescribed font</li>
+  <li>Inscript keyboard layout use होता है</li>
+  <li>Windows में pre-installed होता है</li>
+  <li>SSC, UPSC, Railway सभी Mangal font use करते हैं</li>
+  <li>Future-proof — Unicode standard है</li>
+</ul>
+<h3>Kruti Dev Font (Legacy)</h3>
+<ul>
+  <li>पुराना font — ANSI encoding</li>
+  <li>कुछ state government offices अभी भी use करते हैं</li>
+  <li>Remington Gail keyboard layout popular है</li>
+  <li>Internet पर share करने में problems</li>
+  <li>धीरे-धीरे phase out हो रहा है</li>
+</ul>
+<h3>Keyboard Layouts for Hindi Typing</h3>
+<table>
+  <thead>
+    <tr><th>Layout</th><th>Font</th><th>Exam</th><th>Difficulty</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Inscript</td><td>Mangal (Unicode)</td><td>SSC, Railway, UPSC</td><td>Medium</td></tr>
+    <tr><td>Remington (Gail)</td><td>Kruti Dev</td><td>State exams, courts</td><td>Medium-Hard</td></tr>
+    <tr><td>Phonetic</td><td>Any Unicode</td><td>General use</td><td>Easy (but slow)</td></tr>
+  </tbody>
+</table>
+<p>ToolsArena का typing test दोनों layouts support करता है — exam-specific practice के लिए।</p>`,
+      },
+      {
+        id: 'typing-speed-improve-tips',
+        title: 'Typing Speed Improve करने के Proven Tips',
+        content: `<p>Typing speed systematically improve की जा सकती है। इन proven techniques को follow करें:</p>
+<h3>Correct Posture और Ergonomics</h3>
+<ul>
+  <li>Chair और desk height adjust करें — arms parallel to ground</li>
+  <li>Monitor आँखों से 45-75 cm दूर हो</li>
+  <li>Wrists straight रखें — bent wrists से carpal tunnel syndrome हो सकता है</li>
+  <li>Touch typing सीखें — keyboard देखे बिना type करना</li>
+</ul>
+<h3>Touch Typing सीखने का Method</h3>
+<ol>
+  <li>Home row (ASDF, JKL;) से शुरू करें</li>
+  <li>दोनों हाथों की fingers को home position पर रखें</li>
+  <li>हर finger का specific key area होता है — stick करें</li>
+  <li>पहले accuracy, फिर speed</li>
+  <li>Daily 30 minutes practice minimum</li>
+</ol>
+<h3>Free Typing Practice Resources</h3>
+<ul>
+  <li><strong>ToolsArena Typing Test:</strong> Daily practice और progress tracking</li>
+  <li><strong>Typing.com:</strong> Structured lessons</li>
+  <li><strong>Keybr.com:</strong> Adaptive learning</li>
+  <li><strong>TypeRacer:</strong> Competitive practice</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Typing practice के लिए exam-similar text use करें। SSC exam में government documents का text आता है। ToolsArena के practice mode में exam-style passages available हैं।</p></div>`,
+      },
+      {
+        id: 'typing-test-exam-strategy',
+        title: 'Typing Exam Strategy और Common Mistakes',
+        content: `<p>Typing exam में केवल speed नहीं, strategy भी matter करती है।</p>
+<h3>Exam Day Strategy</h3>
+<ul>
+  <li>Test शुरू होने से पहले passage एक बार पढ़ें</li>
+  <li>Backspace से errors correct करने में time waste होता है — आगे बढ़ते रहें</li>
+  <li>Rhythm maintain करें — एक जगह अटकने पर skip करें</li>
+  <li>End में time मिले तो corrections करें</li>
+  <li>Capital letters और punctuation पर ध्यान दें — errors count होते हैं</li>
+</ul>
+<h3>Common Mistakes जो Avoid करें</h3>
+<table>
+  <thead>
+    <tr><th>Mistake</th><th>Impact</th><th>Solution</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Keyboard देखते हुए type करना</td><td>Speed कम रहती है</td><td>Touch typing practice</td></tr>
+    <tr><td>एक finger से type करना</td><td>Max 30-35 WPM ceiling</td><td>Proper finger placement</td></tr>
+    <tr><td>Errors पर बहुत समय देना</td><td>Overall words कम</td><td>Flow maintain करें</td></tr>
+    <tr><td>Tense होना</td><td>Accuracy गिरती है</td><td>Deep breaths, practice</td></tr>
+    <tr><td>Wrong keyboard layout</td><td>Exam में fail</td><td>Exam-specific layout practice</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'wpm-track-progress',
+        title: 'Progress Track करें और Weaknesses Identify करें',
+        content: `<p>Improvement के लिए consistent tracking ज़रूरी है। ToolsArena का typing test detailed analytics देता है।</p>
+<h3>Metrics to Track</h3>
+<ul>
+  <li><strong>Average WPM:</strong> Weekly average track करें</li>
+  <li><strong>Peak WPM:</strong> Best performance</li>
+  <li><strong>Accuracy %:</strong> Should be above 95%</li>
+  <li><strong>Most Errored Keys:</strong> कौन से keys पर ज़्यादा mistakes होती हैं</li>
+  <li><strong>Consistency:</strong> क्या speed consistent है या fluctuates</li>
+</ul>
+<h3>30-Day Typing Improvement Plan</h3>
+<table>
+  <thead>
+    <tr><th>Week</th><th>Focus</th><th>Daily Practice</th><th>Target WPM</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Week 1</td><td>Touch typing basics</td><td>30 min lessons</td><td>20–25 WPM</td></tr>
+    <tr><td>Week 2</td><td>All keys comfortable</td><td>45 min mixed</td><td>25–30 WPM</td></tr>
+    <tr><td>Week 3</td><td>Speed drills</td><td>30 min speed tests</td><td>30–35 WPM</td></tr>
+    <tr><td>Week 4</td><td>Exam simulation</td><td>Full length tests</td><td>35–40 WPM</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Typing improve करने का सबसे fast तरीका है consistent daily practice — 30 minutes रोज़ 30 दिन में बड़ा difference देखेंगे। Weekly tests लेकर progress measure करते रहें।</p></div>`,
+      },
+      {
+        id: 'stenography-vs-typing',
+        title: 'Stenography vs Regular Typing — क्या फर्क है?',
+        content: `<p>Court Stenographer और PA exams में stenography की ज़रूरत होती है। यह regular typing से अलग skill है।</p>
+<h3>Shorthand Stenography</h3>
+<ul>
+  <li>Spoken words को shorthand symbols में लिखा जाता है</li>
+  <li>फिर shorthand को computer पर type करके transcribe करते हैं</li>
+  <li>Speed: 80–100+ WPM (dictation की speed)</li>
+  <li>Systems: Pitman Shorthand (English), Hindi Shorthand</li>
+</ul>
+<h3>Stenography Exam Requirements</h3>
+<table>
+  <thead>
+    <tr><th>Post</th><th>Dictation Speed</th><th>Transcription Time</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SSC Steno Grade C (English)</td><td>100 WPM</td><td>40 minutes (3000 words)</td></tr>
+    <tr><td>SSC Steno Grade D (Hindi)</td><td>80 WPM</td><td>55 minutes (3200 words)</td></tr>
+    <tr><td>Court Steno</td><td>80–100 WPM</td><td>Varies by court</td></tr>
+  </tbody>
+</table>
+<p>Regular typing test से stenography exam की preparation नहीं होती — अलग coaching लेनी पड़ती है। ToolsArena का Typing Speed Test regular typing practice के लिए है।</p>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Typing Speed Test खोलें',
+        description: 'ToolsArena.in पर जाएं और "Typing Speed Test" tool select करें। English या Hindi typing test choose करें।',
+      },
+      {
+        title: 'Test Duration Select करें',
+        description: '1 minute, 3 minute, या 5 minute test select करें। SSC exam की तरह practice के लिए 5-10 minute test best है।',
+      },
+      {
+        title: 'Typing शुरू करें',
+        description: 'Text box में पहला key press करने पर timer शुरू हो जाता है। Displayed passage को accurately type करें। Backspace से corrections कर सकते हैं।',
+      },
+      {
+        title: 'Results और Analytics देखें',
+        description: 'Test complete होने पर WPM, KPH, accuracy percentage, और error analysis दिखता है। Weak areas identify करें।',
+      },
+      {
+        title: 'Regular Practice और Progress Track करें',
+        description: 'Daily practice करें और weekly results compare करें। Progress chart से improvement clearly दिखता है। Exam date से पहले exam-standard passages पर focus करें।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'SSC CGL के लिए कितनी typing speed चाहिए?',
+        answer: 'SSC CGL (Tax Assistant/DEO) के लिए English में 35 WPM (10,500 KPH) और Hindi में 30 WPM (9,000 KPH) की requirement है। यह requirement SSC Tier-III Skill Test में check होती है।',
+      },
+      {
+        question: 'IBPS Clerk typing test में क्या आता है?',
+        answer: 'IBPS Clerk के लिए English typing minimum 20 WPM required है। Test में English passage दी जाती है जिसे computer पर type करना होता है। Accuracy और speed दोनों evaluate होते हैं।',
+      },
+      {
+        question: 'Hindi typing के लिए कौन सा keyboard layout सीखना चाहिए?',
+        answer: 'SSC, Railway और central government jobs के लिए Inscript layout (Mangal font) सीखें। State government और court jobs के लिए Remington (Gail) layout (Kruti Dev font) के requirements check करें। Exam notification में clearly mention होता है।',
+      },
+      {
+        question: 'Mobile से typing speed test दे सकते हैं?',
+        answer: 'Typing speed test mobile पर physically possible है लेकिन meaningless है — mobile typing speed और computer typing speed अलग होती है। Actual exam computer keyboard पर होती है। Desktop/laptop पर ही practice करें।',
+      },
+      {
+        question: '30 WPM speed को 40 WPM तक कैसे बढ़ाएं?',
+        answer: 'Daily 30-45 minutes dedicated practice करें। Touch typing technique use करें। Error-prone keys को specifically practice करें। Weekly speed tests लेकर progress track करें। एक-दो महीने consistent practice से 30 WPM से 40+ WPM तक पहुंचा जा सकता है।',
+      },
+      {
+        question: 'Typing test में nervousness से speed कम हो जाती है — क्या करें?',
+        answer: 'Exam जैसी conditions में daily practice करें — timer on, proper setup। जितना ज़्यादा practice करेंगे, nervousness उतनी कम होगी। Test से पहले deep breathing करें। और याद रखें — accuracy over speed। Controlled typing से better results मिलते हैं।',
+      },
+      {
+        question: 'WPM और KPH में कैसे convert करें?',
+        answer: 'Simple formula: WPM × 300 = KPH (approximately)। या: KPH ÷ 300 = WPM। SSC में एक "word" = 5 characters माना जाता है। 35 WPM = 35×5×60 = 10,500 KPH।',
+      },
+      {
+        question: 'Typing test में special characters और numbers count होते हैं?',
+        answer: 'हाँ, सभी keystrokes count होते हैं — letters, spaces, numbers, और punctuation सब। इसीलिए capital letters (Shift key) और punctuation marks practice करना ज़रूरी है। Government exam passages में dates, numbers, और abbreviations आते हैं।',
+      },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'resume-builder-guide'],
+    toolCTA: {
+      heading: 'अभी Typing Speed Test दें — फ्री WPM Check',
+      description: 'ToolsArena का फ्री Typing Speed Test Hindi और English दोनों में। WPM, KPH, और accuracy instantly जानें। SSC, IBPS, Railway exam preparation के लिए daily practice करें।',
+      buttonText: 'Typing Speed Test खोलें →',
+    },
+  },
+
+  // ── MEME GENERATOR ───────────────────────────────────────────────
+  {
+    slug: 'meme-generator-guide',
+    toolSlug: 'meme-generator',
+    category: 'image-tools',
+    title: 'फ्री मीम जनरेटर गाइड: ऑनलाइन मीम बनाएं (2026)',
+    subtitle: 'Bollywood, Cricket, और Indian culture के मीम बनाएं — WhatsApp, Instagram, और Twitter के लिए। फ्री, fast, और बिना watermark।',
+    metaTitle: 'मीम बनाने का तरीका — फ्री Online Meme Generator',
+    metaDescription: 'ऑनलाइन मीम बनाएं। Bollywood, IPL cricket, Indian movie dialogues से viral memes। WhatsApp और Instagram के लिए perfect size। फ्री, बिना watermark।',
+    targetKeyword: 'मीम बनाने का तरीका',
+    secondaryKeywords: [
+      'meme generator online free', 'bollywood meme maker', 'hindi meme banana',
+      'whatsapp meme kaise banaye', 'instagram meme maker', 'cricket meme india',
+      'funny meme hindi text', 'indian meme templates', 'viral meme creator',
+      'meme text generator', 'desi meme maker online', 'meme banane ka app',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '8 मिनट पढ़ें',
+    tags: ['Meme', 'Bollywood', 'Social Media', 'Humor'],
+    intro: `<p>भारत में <strong>मीम culture</strong> पिछले कुछ सालों में explosion हो चुका है। WhatsApp groups, Instagram Reels, और Twitter पर Indian memes हर रोज़ लाखों लोगों को हँसाते हैं। Bollywood dialogues, cricket moments, और desi humor से बने मीम पूरे देश में viral होते हैं।</p>
+<p>ToolsArena का फ्री Meme Generator आपको professional-quality मीम बनाने में मदद करता है — बिना किसी design skill के। अपनी पसंदीदा image choose करें, Hindi या English text add करें, और seconds में viral-ready मीम तैयार करें।</p>`,
+    sections: [
+      {
+        id: 'indian-meme-culture',
+        title: 'भारतीय Meme Culture — Bollywood से Cricket तक',
+        content: `<p>India में meme culture की अपनी एक unique identity है। यहाँ कुछ most popular Indian meme categories हैं:</p>
+<h3>Bollywood Memes</h3>
+<p>Bollywood India का सबसे बड़ा meme source है। Iconic dialogues और scenes जो सबसे ज़्यादा memes में use होते हैं:</p>
+<ul>
+  <li><strong>Sholay:</strong> "Kitne aadmi the?" — हर situation में use होता है</li>
+  <li><strong>Kabhi Khushi Kabhie Gham:</strong> Kareena का "आ गए हो?" — relatable reactions</li>
+  <li><strong>Mughal-e-Azam:</strong> Classic expressions</li>
+  <li><strong>3 Idiots:</strong> "All iz well" — exam और stress situations</li>
+  <li><strong>Baahubali:</strong> "Kattappa ne Baahubali ko kyon maara" — suspense memes</li>
+</ul>
+<h3>Cricket Memes</h3>
+<p>IPL और India vs Pakistan matches के दौरान Twitter और Instagram पर meme flood आ जाता है। Cricket memes में:</p>
+<ul>
+  <li>Match जीतने पर celebration memes</li>
+  <li>India-Pakistan rivalry memes</li>
+  <li>Dhoni's calm face reactions</li>
+  <li>Virat Kohli's celebrations</li>
+  <li>Commentary reactions</li>
+</ul>
+<h3>Desi और Relatable Memes</h3>
+<ul>
+  <li>Indian parents और studies memes</li>
+  <li>Monday morning office memes</li>
+  <li>Indian jugaad और innovations</li>
+  <li>बिजली/पानी/internet problems</li>
+  <li>Inflation और mehengai memes</li>
+</ul>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Trending topics पर बने memes ज़्यादा viral होते हैं। Current news, IPL season, festivals — इन occasions पर timely memes बनाएं।</p></div>`,
+      },
+      {
+        id: 'meme-format-types',
+        title: 'Popular Meme Formats जो India में Viral होते हैं',
+        content: `<p>Different meme formats अलग-अलग situations के लिए suitable होते हैं। यहाँ India में most popular formats हैं:</p>
+<table>
+  <thead>
+    <tr><th>Meme Format</th><th>Use Case</th><th>Difficulty</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Top-Bottom Text (Classic)</td><td>Contrast situations</td><td>Easy</td></tr>
+    <tr><td>Drake Approves/Disapproves</td><td>Preferences compare करना</td><td>Easy</td></tr>
+    <tr><td>Distracted Boyfriend</td><td>New vs old comparison</td><td>Easy</td></tr>
+    <tr><td>Expanding Brain</td><td>Progressive escalation</td><td>Medium</td></tr>
+    <tr><td>This is Fine (Dog)</td><td>Denial of problems</td><td>Easy</td></tr>
+    <tr><td>Bollywood Scene Edit</td><td>Indian humor</td><td>Medium</td></tr>
+    <tr><td>WhatsApp Forward Style</td><td>Indian uncle/aunty humor</td><td>Easy</td></tr>
+    <tr><td>Reel/Short Video Meme</td><td>Moving content</td><td>Hard</td></tr>
+  </tbody>
+</table>
+<h3>Hindi vs English Text in Memes</h3>
+<p>Indian memes में Hinglish (Hindi + English) सबसे ज़्यादा effective होती है। Pure Hindi memes Hindi belt में popular हैं, जबकि Hinglish memes pan-India viral होते हैं।</p>
+<ul>
+  <li><strong>Pure Hindi:</strong> UP, Bihar, MP, Rajasthan audience के लिए</li>
+  <li><strong>Hinglish:</strong> Pan-India viral potential</li>
+  <li><strong>Pure English:</strong> Urban youth और Twitter पर</li>
+</ul>`,
+      },
+      {
+        id: 'meme-text-design-tips',
+        title: 'Perfect Meme Text और Design Tips',
+        content: `<p>एक good meme = funny idea + good execution। यहाँ design tips हैं जो आपके memes को professional बनाएंगे:</p>
+<h3>Text Tips</h3>
+<ul>
+  <li><strong>Font:</strong> Impact font classic है — bold, uppercase, white with black outline</li>
+  <li><strong>Size:</strong> Text image height का 15-20% होना चाहिए — too small नहीं, too large नहीं</li>
+  <li><strong>Contrast:</strong> Background से clearly readable होना चाहिए</li>
+  <li><strong>Length:</strong> Shorter is better — 5-10 words maximum per line</li>
+  <li><strong>Humor:</strong> Setup (top text) + Punchline (bottom text) formula work करता है</li>
+</ul>
+<h3>Image Quality Tips</h3>
+<ul>
+  <li>High resolution image use करें — pixelated memes unprofessional लगते हैं</li>
+  <li>Subject clearly visible हो</li>
+  <li>Background distracting नहीं होना चाहिए</li>
+  <li>Image का expression/body language text के साथ match करे</li>
+</ul>
+<h3>Platform-wise Meme Size</h3>
+<table>
+  <thead>
+    <tr><th>Platform</th><th>Recommended Size</th><th>Format</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>WhatsApp</td><td>1080×1080 px (Square)</td><td>JPG</td></tr>
+    <tr><td>Instagram Post</td><td>1080×1080 px</td><td>JPG/PNG</td></tr>
+    <tr><td>Instagram Story</td><td>1080×1920 px</td><td>JPG/PNG</td></tr>
+    <tr><td>Twitter/X</td><td>1200×675 px</td><td>JPG/PNG</td></tr>
+    <tr><td>Facebook</td><td>1200×630 px</td><td>JPG</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>ToolsArena Meme Generator में platform-wise preset sizes हैं। WhatsApp के लिए square, Instagram Story के लिए vertical automatically set हो जाता है।</p></div>`,
+      },
+      {
+        id: 'bollywood-meme-ideas',
+        title: 'Bollywood Meme Ideas — Popular Templates',
+        content: `<p>Bollywood India का unlimited meme source है। यहाँ कुछ evergreen Bollywood meme templates और उनके use cases हैं:</p>
+<h3>Top Bollywood Meme Templates</h3>
+<ul>
+  <li><strong>Baburao Ganpatrao Apte (Hera Pheri):</strong> Confusion और unexpected situations</li>
+  <li><strong>Gabbar Singh (Sholay):</strong> Asking questions, demands</li>
+  <li><strong>Circuit (Munna Bhai):</strong> Loyal sidekick humor</li>
+  <li><strong>Mogambo (Mr. India):</strong> Evil laughter, villain moments</li>
+  <li><strong>Amitabh Bachchan pointing:</strong> Calling someone out</li>
+  <li><strong>Pushpa (Pushpa):</strong> "Main jhukega nahi" — attitude memes</li>
+  <li><strong>Rancho (3 Idiots):</strong> Smart solution moments</li>
+</ul>
+<h3>Festival और Season Memes</h3>
+<p>India में festivals और seasons पर specific meme waves आती हैं:</p>
+<ul>
+  <li><strong>Diwali:</strong> Patakhe ban/phod memes, bonus memes</li>
+  <li><strong>Holi:</strong> रंग लगाने के memes</li>
+  <li><strong>IPL Season:</strong> Team rivalry memes</li>
+  <li><strong>Exam Season:</strong> Board exam pressure memes</li>
+  <li><strong>Budget Day:</strong> Tax और mehengai memes</li>
+  <li><strong>Monsoon:</strong> Mumbai flooding memes</li>
+</ul>`,
+      },
+      {
+        id: 'whatsapp-instagram-meme-sharing',
+        title: 'WhatsApp और Instagram पर Memes Share करने के Tips',
+        content: `<p>मीम बनाने के बाद उसे सही तरीके से share करना भी important है।</p>
+<h3>WhatsApp Meme Tips</h3>
+<ul>
+  <li>Group appropriate memes share करें — family group vs friends group</li>
+  <li>Too many memes spam मत करें — 2-3 per day maximum</li>
+  <li>Original memes को credit दें (अगर किसी और का है)</li>
+  <li>High resolution image share करें — compressed quality poor लगती है</li>
+  <li>Sticker format में convert करके WhatsApp stickers बनाएं</li>
+</ul>
+<h3>Instagram Meme Pages</h3>
+<p>India में कुछ biggest meme pages:</p>
+<table>
+  <thead>
+    <tr><th>Page Type</th><th>Followers (approx)</th><th>Niche</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bollywood Memes</td><td>5-20 lakh</td><td>Movie dialogues/scenes</td></tr>
+    <tr><td>Cricket Memes India</td><td>10-50 lakh</td><td>IPL, India matches</td></tr>
+    <tr><td>Desi Humor</td><td>5-30 lakh</td><td>Indian lifestyle humor</td></tr>
+    <tr><td>College Life Memes</td><td>5-15 lakh</td><td>Student problems</td></tr>
+  </tbody>
+</table>
+<h3>Viral Meme के Elements</h3>
+<ul>
+  <li><strong>Relatability:</strong> हर कोई situation से relate कर पाए</li>
+  <li><strong>Timing:</strong> Trending topic पर timely meme</li>
+  <li><strong>Originality:</strong> Same template का नया और unexpected use</li>
+  <li><strong>Simplicity:</strong> Simple message जो instantly समझ आए</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ चेतावनी</strong><p>Offensive, casteist, sexist, या religious sentiments को hurt करने वाले memes बनाने से बचें। Social media पर ऐसे content के लिए IT Act के तहत legal action हो सकता है।</p></div>`,
+      },
+      {
+        id: 'meme-copyright-legal',
+        title: 'Meme Copyright और Legal Considerations',
+        content: `<p>मीम बनाते समय copyright laws का ध्यान रखना ज़रूरी है, खासकर अगर आप meme page चलाते हैं।</p>
+<h3>Copyright Basics for Memes</h3>
+<ul>
+  <li>Movie screenshots technically copyright-protected हैं</li>
+  <li>Non-commercial personal use में generally tolerated है</li>
+  <li>Commercial use (selling, paid promotion) में clearance ज़रूरी है</li>
+  <li>Fair use/commentary purpose में protection मिलती है</li>
+</ul>
+<h3>Safe Meme Sources</h3>
+<ul>
+  <li><strong>Own photos:</strong> सबसे safe — आप copyright holder हैं</li>
+  <li><strong>Public domain images:</strong> Wikipedia Commons</li>
+  <li><strong>CC0 licensed images:</strong> Unsplash, Pexels</li>
+  <li><strong>AI-generated images:</strong> Mostly copyright-free</li>
+  <li><strong>Popular meme templates:</strong> Generally accepted for meme use</li>
+</ul>
+<h3>क्या Avoid करें</h3>
+<ul>
+  <li>Public figures को defame करने वाले memes — defamation law</li>
+  <li>Religion, caste, community को target करने वाले memes — IPC Section 295A</li>
+  <li>Political parties के official logos का unauthorized use</li>
+  <li>Private individuals की photos बिना permission — privacy violation</li>
+</ul>`,
+      },
+      {
+        id: 'meme-generator-features',
+        title: 'ToolsArena Meme Generator के Advanced Features',
+        content: `<p>ToolsArena का Meme Generator basic memes से अधिक बहुत कुछ offer करता है।</p>
+<h3>Key Features</h3>
+<ul>
+  <li><strong>500+ Templates:</strong> Bollywood, cricket, desi classics — popular Indian templates included</li>
+  <li><strong>Custom Image Upload:</strong> अपनी खुद की image use करें</li>
+  <li><strong>Hindi Text Support:</strong> Devanagari में type करें directly</li>
+  <li><strong>Multiple Text Boxes:</strong> Top, bottom, middle — कहीं भी text add करें</li>
+  <li><strong>Font Customization:</strong> Impact, Arial, Devanagari fonts available</li>
+  <li><strong>Sticker और Emoji Add:</strong> Built-in sticker library</li>
+  <li><strong>No Watermark:</strong> बिना ToolsArena logo के download</li>
+  <li><strong>Direct Share:</strong> WhatsApp और Instagram पर direct sharing</li>
+</ul>
+<h3>Advanced Editing Options</h3>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Text Outline</td><td>Black outline से readability बढ़ेगी</td></tr>
+    <tr><td>Text Shadow</td><td>Depth और dramatic effect</td></tr>
+    <tr><td>Image Filters</td><td>Vintage, B&W, Contrast adjust</td></tr>
+    <tr><td>Crop और Resize</td><td>Platform-specific sizes</td></tr>
+    <tr><td>Blur Background</td><td>Subject को highlight करें</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>💡 प्रो टिप</strong><p>Popular templates explore करते समय "Trending" category check करें — current viral meme formats और Indian context templates पहले मिलेंगे।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Meme Generator खोलें और Template Choose करें',
+        description: 'ToolsArena.in पर "Meme Generator" tool open करें। 500+ templates में से choose करें या अपनी खुद की image upload करें। Bollywood, cricket, या desi templates की category browse करें।',
+      },
+      {
+        title: 'Text Add करें',
+        description: 'Top text box में setup/first line type करें। Bottom text box में punchline/second line type करें। Hindi typing के लिए Devanagari keyboard या Google Input Tools use करें।',
+      },
+      {
+        title: 'Font और Style Customize करें',
+        description: 'Font size adjust करें — readable होना चाहिए। Black outline enable करें ताकि dark और light दोनों backgrounds पर text visible रहे। Color, shadow, और alignment customize करें।',
+      },
+      {
+        title: 'Platform Size Select करें',
+        description: 'WhatsApp के लिए square, Instagram Story के लिए vertical, Twitter के लिए landscape preset select करें। Meme preview check करें — text clipped नहीं होना चाहिए।',
+      },
+      {
+        title: 'Download और Share करें',
+        description: '"Download" button click करें — high resolution image बिना watermark के download होगी। Direct WhatsApp share button से instantly group में share करें।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'क्या ToolsArena Meme Generator बिल्कुल फ्री है?',
+        answer: 'हाँ, ToolsArena का Meme Generator 100% फ्री है। Unlimited memes बना सकते हैं, बिना watermark download कर सकते हैं, बिना account बनाए। कोई hidden charges नहीं।',
+      },
+      {
+        question: 'Hindi में meme कैसे बनाएं?',
+        answer: 'ToolsArena Meme Generator में Hindi text directly type करने का option है। अगर Devanagari keyboard available नहीं है तो Google Input Tools (Chrome extension) install करें। Hinglish memes के लिए English keyboard से Roman Hindi type करें।',
+      },
+      {
+        question: 'मीम बनाने के लिए Bollywood photos copyright-free हैं?',
+        answer: 'Technically नहीं — Bollywood movie screenshots copyright-protected हैं। लेकिन personal, non-commercial meme use में generally tolerated है। Popular meme templates को legally meme format में use करना widely accepted practice माना जाता है।',
+      },
+      {
+        question: 'WhatsApp sticker के रूप में meme कैसे use करें?',
+        answer: 'Meme download करके WhatsApp Sticker Maker app (Sticker Maker Studio) में import करें। 512×512 px square format में image होनी चाहिए। App में sticker pack create करके WhatsApp में add करें।',
+      },
+      {
+        question: 'Instagram Reels के लिए meme कैसे बनाएं?',
+        answer: 'ToolsArena से 1080×1920 px vertical format में image download करें। फिर इसे video editing app (CapCut, InShot) में import करें, background music add करें, और Reel बनाएं। Static meme image को 3-5 seconds का Reel बनाया जा सकता है।',
+      },
+      {
+        question: 'क्या offensive मीम बनाने पर legal trouble हो सकता है?',
+        answer: 'हाँ। Religious sentiments को hurt करने वाले memes पर IPC Section 295A, 153A के तहत case हो सकता है। किसी individual को defame करने वाले memes पर defamation case। Sexual harassment memes पर POCSO और IT Act provisions। सोच-समझकर create करें।',
+      },
+      {
+        question: 'मीम में अपनी face photo use करना safe है?',
+        answer: 'अपनी photo use करना safe है लेकिन ध्यान रखें — meme viral होने पर permanently internet पर रह सकती है। किसी और की photo बिना permission use करना privacy violation है। Public figures की photos commentary/satire के लिए acceptable है।',
+      },
+      {
+        question: 'Viral meme कैसे बनाएं?',
+        answer: 'Viral meme formula: Current trending topic + Relatable Indian emotion + Simple clear punchline। Timing important है — breaking news या viral moment पर meme बनाएं। साथ ही original angle ढूंढें — same पुराने templates से ज़्यादा viral नहीं होता।',
+      },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'social-media-image-resizer-guide'],
+    toolCTA: {
+      heading: 'अभी मीम बनाएं — फ्री, Fast, और Viral-Ready',
+      description: 'ToolsArena का Meme Generator 500+ Indian templates के साथ। Bollywood, cricket, desi humor — Hindi और Hinglish text support। बिना watermark download करें, WhatsApp पर instantly share करें।',
+      buttonText: 'Meme Generator खोलें →',
+    },
+  },
+
 ];

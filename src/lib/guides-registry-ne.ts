@@ -4051,4 +4051,1853 @@ button {
     },
   },
 
+  // ── PDF TO IMAGE ────────────────────────────────────────────────
+  {
+    slug: 'pdf-to-image-guide',
+    toolSlug: 'pdf-to-image',
+    category: 'pdf-tools',
+    title: 'फ्री PDF बाट इमेज कन्भर्टर गाइड: PDF लाई JPG/PNG मा बदल्नुहोस् (2026)',
+    subtitle: 'TU/KU ट्रान्सक्रिप्ट, लोक सेवा कागजात र अन्य PDF फाइललाई JPG वा PNG इमेजमा सजिलै बदल्नुहोस्।',
+    metaTitle: 'PDF लाई JPG मा बदल्ने - फ्री अनलाइन PDF to Image कन्भर्टर',
+    metaDescription: 'PDF फाइललाई JPG वा PNG इमेजमा निःशुल्क बदल्नुहोस्। TU/KU ट्रान्सक्रिप्ट, लोक सेवा आवेदन र नागरिकता कागजातका लागि उपयुक्त। कुनै साइनअप चाहिँदैन।',
+    targetKeyword: 'PDF लाई JPG मा बदल्ने',
+    secondaryKeywords: [
+      'PDF to image nepali',
+      'PDF बाट फोटो बनाउने',
+      'TU transcript image',
+      'PDF JPG convert online',
+      'PDF PNG convert free',
+      'लोक सेवा PDF image',
+      'pdf to jpg nepal',
+      'नागरिकता PDF image',
+      'PDF screenshot online',
+      'pdf convert image free nepal',
+      'KU transcript JPG',
+      'PDF page to photo',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '७ मिनेट पढ्ने',
+    tags: ['PDF', 'इमेज', 'JPG', 'PNG', 'कन्भर्टर'],
+    intro: `<p>नेपालमा सरकारी कार्यालय, विश्वविद्यालय र अनलाइन पोर्टलहरूले प्रायः <strong>PDF फाइललाई JPG वा PNG इमेज</strong>मा पठाउन आग्रह गर्छन्। Tribhuvan University को transcript, Lok Sewa Aayog को admission letter, वा नागरिकता scan — यी सबैलाई image format मा बदल्न आवश्यक पर्छ।</p>
+<p>हाम्रो <strong>फ्री PDF to Image कन्भर्टर</strong>ले कुनै पनि PDF को प्रत्येक page लाई high-quality JPG वा PNG मा सेकेन्डमा बदल्छ। कुनै software install गर्नु पर्दैन, registration आवश्यक छैन।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>TU वा KU को transcript PDF लाई image मा बदलेर WhatsApp वा email मा पठाउन सजिलो हुन्छ — receiver लाई PDF reader नभए पनि image खुल्छ।</p></div>`,
+    sections: [
+      {
+        id: 'pdf-image-kina',
+        title: 'PDF लाई Image मा किन बदल्ने? नेपाली सन्दर्भ',
+        content: `<p>नेपालमा विभिन्न अवस्थामा PDF लाई image format मा बदल्नु आवश्यक हुन्छ। यो आवश्यकता दैनिक जीवनमा धेरैले सामना गर्छन्।</p>
+<h4>मुख्य कारणहरू:</h4>
+<ul>
+  <li><strong>विश्वविद्यालय आवेदन:</strong> TU, KU, PU का admission portal मा document upload गर्दा JPG format मात्र accept हुन्छ।</li>
+  <li><strong>लोक सेवा आयोग:</strong> Online application मा photo र document JPG मा submit गर्नुपर्छ।</li>
+  <li><strong>WhatsApp/Viber share:</strong> PDF खोल्न PDF reader चाहिन्छ तर image सबैको phone मा खुल्छ।</li>
+  <li><strong>Social media post:</strong> Facebook, Instagram मा PDF share हुँदैन — image मा बदलेर post गर्न सकिन्छ।</li>
+  <li><strong>Email attachment limit:</strong> PDF ठूलो भए images मा बदलेर compress गरेर पठाउन सकिन्छ।</li>
+  <li><strong>प्रिन्ट र फोटोकपी:</strong> केही shops मा PDF print नहुने — image format मा दिँदा सजिलो।</li>
+  <li><strong>Digital signature:</strong> PDF page लाई image मा बदलेर drawing app मा signature थप्न सकिन्छ।</li>
+</ul>
+<h4>नेपालको वास्तविक परिस्थिति:</h4>
+<table>
+  <tr><th>अवस्था</th><th>PDF to Image आवश्यकता</th></tr>
+  <tr><td>TU Entrance Form</td><td>Marksheet JPG मा upload गर्नु पर्छ</td></tr>
+  <tr><td>Lok Sewa Online Apply</td><td>Citizenship photo JPG चाहिन्छ</td></tr>
+  <tr><td>Bank Account Opening (Online)</td><td>Document scans JPG/PNG मा</td></tr>
+  <tr><td>Scholarship Application</td><td>Marksheet, certificate JPG format</td></tr>
+  <tr><td>Visa Application</td><td>Supporting documents image format</td></tr>
+  <tr><td>NGO/INGO Project Report</td><td>PDF page screenshot image मा</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>नागरिकता, पासपोर्ट जस्ता संवेदनशील कागजात online convert गर्दा trusted platform मात्र प्रयोग गर्नुहोस्। ToolsArena ले फाइल process गरेपछि server मा store गर्दैन।</p></div>`,
+      },
+      {
+        id: 'pdf-image-quality',
+        title: 'JPG vs PNG: कुन Image Format छान्ने?',
+        content: `<p>PDF लाई image मा बदल्दा JPG र PNG मध्ये कुन format छान्ने भन्ने प्रश्न धेरैलाई हुन्छ। नेपाली सन्दर्भमा यसको सही जवाफ जान्नुहोस्।</p>
+<table>
+  <tr><th>पक्ष</th><th>JPG</th><th>PNG</th></tr>
+  <tr><td>File Size</td><td>सानो (compress हुन्छ)</td><td>ठूलो (lossless)</td></tr>
+  <tr><td>Image Quality</td><td>थोरै गुणस्तर घट्छ</td><td>सम्पूर्ण गुणस्तर</td></tr>
+  <tr><td>Transparency</td><td>छैन</td><td>छ</td></tr>
+  <tr><td>Sharing</td><td>सजिलो (सानो size)</td><td>ढिलो (ठूलो size)</td></tr>
+  <tr><td>Printing</td><td>राम्रो</td><td>उत्कृष्ट</td></tr>
+  <tr><td>Lok Sewa Upload</td><td>✓ Accept हुन्छ</td><td>कहिलेकाहीँ</td></tr>
+  <tr><td>WhatsApp Share</td><td>✓ उत्तम</td><td>ठिकै</td></tr>
+</table>
+<h4>कहिले कुन छान्ने:</h4>
+<ul>
+  <li><strong>सरकारी portal upload:</strong> JPG (50–200 KB) — सबैभन्दा widely accepted</li>
+  <li><strong>Archive राख्न:</strong> PNG — full quality preserve हुन्छ</li>
+  <li><strong>Print गर्न:</strong> PNG 300 DPI — sharp print आउँछ</li>
+  <li><strong>WhatsApp/Viber:</strong> JPG — छिटो पठाइन्छ</li>
+  <li><strong>Website upload:</strong> JPG वा WebP — page load छिटो</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Lok Sewa र TU portal का लागि JPG 150 DPI छान्नुहोस् — file size 100–300 KB को range मा हुन्छ र clearly readable हुन्छ।</p></div>`,
+      },
+      {
+        id: 'dpi-resolution',
+        title: 'DPI र Resolution: कति चाहिन्छ?',
+        content: `<p>PDF to image convert गर्दा DPI (Dots Per Inch) setting सबैभन्दा महत्वपूर्ण हुन्छ। DPI जति बढी, image उति sharp तर file size पनि ठूलो।</p>
+<table>
+  <tr><th>DPI</th><th>उपयोग</th><th>File Size (A4)</th><th>Quality</th></tr>
+  <tr><td>72 DPI</td><td>Screen हेर्न मात्र</td><td>~200 KB</td><td>Web quality</td></tr>
+  <tr><td>150 DPI</td><td>Online upload, email</td><td>~500 KB</td><td>Good</td></tr>
+  <tr><td>200 DPI</td><td>Lok Sewa, TU portal</td><td>~800 KB</td><td>Very good</td></tr>
+  <tr><td>300 DPI</td><td>Professional print</td><td>~2 MB</td><td>Excellent</td></tr>
+  <tr><td>600 DPI</td><td>High-end print/archive</td><td>~8 MB</td><td>Maximum</td></tr>
+</table>
+<h4>नेपाली portal अनुसार सिफारिस:</h4>
+<ul>
+  <li><strong>Lok Sewa Aayog portal:</strong> 150 DPI JPG, 50 KB भन्दा कम हुनुपर्छ</li>
+  <li><strong>TU/KU admission portal:</strong> 200 DPI JPG, 100–500 KB acceptable</li>
+  <li><strong>Online Banking KYC:</strong> 200 DPI JPG, 500 KB भन्दा कम</li>
+  <li><strong>Embassy/Visa application:</strong> 300 DPI JPG — clear reading आवश्यक</li>
+  <li><strong>WhatsApp sharing:</strong> 72–150 DPI — screen मा हेर्न पर्याप्त</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>DPI बढाउँदा automatically file size पनि बढ्छ। Lok Sewa portal मा upload limit 50 KB छ — 300 DPI convert गरेर Image Compressor मा compress गर्नु होला।</p></div>`,
+      },
+      {
+        id: 'pdf-image-steps',
+        title: 'PDF बाट Image बनाउने: स्टेप-बाइ-स्टेप',
+        content: `<p>ToolsArena को PDF to Image tool प्रयोग गर्न अत्यन्त सरल छ। तलका चरणहरू पालना गरेर मिनेटभित्र आफ्नो PDF लाई image मा बदल्नुहोस्।</p>
+<h4>चरण १: PDF अपलोड गर्नुहोस्</h4>
+<p>ToolsArena को PDF to Image page मा जानुहोस्। "PDF फाइल अपलोड गर्नुहोस्" बटन थिचेर आफ्नो computer वा mobile बाट PDF छान्नुहोस्। Drag and drop पनि काम गर्छ।</p>
+<h4>चरण २: Settings छान्नुहोस्</h4>
+<ul>
+  <li><strong>Format:</strong> JPG (सानो size) वा PNG (high quality) छान्नुहोस्</li>
+  <li><strong>DPI:</strong> 150 (online upload) वा 300 (print) छान्नुहोस्</li>
+  <li><strong>Pages:</strong> सबै pages वा specific pages (जस्तै: 1-3) छान्नुहोस्</li>
+</ul>
+<h4>चरण ३: Convert गर्नुहोस्</h4>
+<p>"Convert to Image" बटन थिच्नुहोस्। PDF को प्रत्येक page automatically छुट्टाछुट्टै image बन्छ।</p>
+<h4>चरण ४: Preview हेर्नुहोस्</h4>
+<p>Convert भएका images को preview हेर्नुहोस्। Quality ठिक छ कि छैन जाँच्नुहोस्।</p>
+<h4>चरण ५: Download गर्नुहोस्</h4>
+<p>Individual image download गर्नुहोस् वा सबै images एउटा ZIP file मा download गर्नुहोस्।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Multi-page PDF (जस्तै TU transcript) को सबै pages एकैपटक ZIP मा download गर्न सकिन्छ — त्यसपछि आवश्यक page मात्र छान्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'transcript-document-use',
+        title: 'TU/KU Transcript र सरकारी कागजात: व्यावहारिक गाइड',
+        content: `<p>नेपालका विद्यार्थी र जागिरे वर्गका लागि PDF to image conversion सबैभन्दा बढी काम लाग्ने अवस्थाहरू:</p>
+<h4>Tribhuvan University (TU) का कागजातहरू:</h4>
+<ul>
+  <li><strong>Transcript/Mark Sheet:</strong> PDF मा आउँछ — job application र further studies को लागि JPG मा convert गर्नुहोस्</li>
+  <li><strong>Provisional Certificate:</strong> Admission form मा image upload गर्नु पर्छ</li>
+  <li><strong>Migration Certificate:</strong> Other university मा जाँदा image format मा submit</li>
+  <li><strong>Admission Letter:</strong> Hostel application, bank account opening मा image format उपयोगी</li>
+</ul>
+<h4>Kathmandu University (KU) का कागजातहरू:</h4>
+<ul>
+  <li>KU को online portal मा documents JPG format मा upload हुन्छन्</li>
+  <li>Scholarship application: transcript image format मा submit</li>
+  <li>Research proposal मा supporting documents image मा attach गर्न सकिन्छ</li>
+</ul>
+<h4>Lok Sewa Aayog कागजातहरू:</h4>
+<table>
+  <tr><th>कागजात</th><th>Convert गर्नु पर्ने कारण</th></tr>
+  <tr><td>Admit Card</td><td>Photo print गर्न image format चाहिन्छ</td></tr>
+  <tr><td>Result Notice</td><td>Share गर्न image सजिलो</td></tr>
+  <tr><td>Appointment Letter</td><td>HR department मा image submit</td></tr>
+  <tr><td>Training Certificate</td><td>Portfolio मा image format राख्न</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>सरकारी कागजातको original PDF सधैँ backup राख्नुहोस्। Image convert गरेर प्रयोग गर्नुहोस् — original PDF delete नगर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'mobile-pdf-image',
+        title: 'Mobile बाट PDF लाई Image मा बदल्ने तरिका',
+        content: `<p>नेपालमा धेरैजसो काम smartphone बाट हुन्छ। Mobile browser बाट PDF to image conversion कसरी गर्ने जान्नुहोस्।</p>
+<h4>Android Phone मा:</h4>
+<ul>
+  <li>Chrome browser खोल्नुहोस् र toolsarena.in मा जानुहोस्</li>
+  <li>PDF to Image tool खोल्नुहोस्</li>
+  <li>"Files" app बाट PDF छान्नुहोस् (Download folder, WhatsApp folder, आदि)</li>
+  <li>Convert गरेर Gallery मा save गर्नुहोस्</li>
+</ul>
+<h4>iPhone मा:</h4>
+<ul>
+  <li>Safari browser मा toolsarena.in खोल्नुहोस्</li>
+  <li>Files app बाट PDF select गर्नुहोस्</li>
+  <li>Converted images Photos app मा save हुन्छ</li>
+</ul>
+<h4>Common Problems र Solutions:</h4>
+<table>
+  <tr><th>समस्या</th><th>समाधान</th></tr>
+  <tr><td>PDF upload नहुने</td><td>File size 50 MB भन्दा कम छ कि जाँच्नुहोस्</td></tr>
+  <tr><td>Image blur आउने</td><td>DPI बढाउनुहोस् (150 → 300)</td></tr>
+  <tr><td>Download नहुने</td><td>Browser pop-up blocker disable गर्नुहोस्</td></tr>
+  <tr><td>Nepali text garbled</td><td>PNG format प्रयोग गर्नुहोस् — better text rendering</td></tr>
+  <tr><td>File too large</td><td>Convert पछि Image Compressor मा compress गर्नुहोस्</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Mobile मा convert गर्दा NTC/Ncell data खर्च हुन्छ। ठूलो PDF (10+ pages) WiFi मा convert गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'batch-conversion',
+        title: 'धेरै PDF Pages एकैपटक Convert गर्ने',
+        content: `<p>Multi-page PDF (जस्तै TU 4-year transcript, 10-page Lok Sewa result book) लाई efficiently convert गर्ने तरिका जान्नुहोस्।</p>
+<h4>Batch Conversion का फाइदाहरू:</h4>
+<ul>
+  <li>एकैपटक सबै pages convert हुन्छन् — बारम्बार upload गर्नु पर्दैन</li>
+  <li>Pages automatically numbered हुन्छन् (page_1.jpg, page_2.jpg)</li>
+  <li>ZIP file मा download गर्न सकिन्छ</li>
+  <li>Specific page range छान्न सकिन्छ (जस्तै: page 2-5 मात्र)</li>
+</ul>
+<h4>Use Cases:</h4>
+<table>
+  <tr><th>Document</th><th>Pages</th><th>Best Strategy</th></tr>
+  <tr><td>TU 4-year Transcript</td><td>4-8 pages</td><td>All pages ZIP download</td></tr>
+  <tr><td>Lok Sewa Study Material</td><td>20-50 pages</td><td>Chapter by chapter convert</td></tr>
+  <tr><td>Bank Statement</td><td>2-5 pages</td><td>All pages, JPG 150 DPI</td></tr>
+  <tr><td>Passport Copy (all pages)</td><td>5-10 pages</td><td>Required pages मात्र</td></tr>
+  <tr><td>Property Document</td><td>10-20 pages</td><td>PNG 300 DPI for clarity</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>ZIP file download गरेपछि Windows मा right-click → "Extract All" गर्नुहोस्। Mobile मा ZArchiver app बाट extract गर्न सकिन्छ।</p></div>`,
+      },
+      {
+        id: 'pdf-image-alternative',
+        title: 'PDF to Image का विकल्पहरू र तुलना',
+        content: `<p>ToolsArena बाहेक अन्य tools पनि उपलब्ध छन् — तर नेपाली सन्दर्भमा कुन सबैभन्दा उपयुक्त छ जान्नुहोस्।</p>
+<table>
+  <tr><th>Tool</th><th>मूल्य</th><th>Speed</th><th>Privacy</th><th>Nepali Support</th></tr>
+  <tr><td><strong>ToolsArena</strong></td><td>फ्री</td><td>छिटो</td><td>Files delete हुन्छ</td><td>✓ राम्रो</td></tr>
+  <tr><td>Adobe Acrobat</td><td>रु. 2,700/महिना</td><td>छिटो</td><td>Adobe servers</td><td>✓</td></tr>
+  <tr><td>Smallpdf</td><td>Limited free</td><td>मध्यम</td><td>EU servers</td><td>✓</td></tr>
+  <tr><td>ILovePDF</td><td>Limited free</td><td>मध्यम</td><td>Spain servers</td><td>✓</td></tr>
+  <tr><td>PDF2Go</td><td>Limited free</td><td>ढिलो</td><td>Germany servers</td><td>✓</td></tr>
+  <tr><td>Offline (Python)</td><td>फ्री</td><td>छिटो</td><td>Local</td><td>Technical knowledge चाहिन्छ</td></tr>
+</table>
+<h4>नेपाली internet speed मा:</h4>
+<p>NTC/Ncell को average speed 10-20 Mbps मा ToolsArena ले 5 MB PDF लाई लगभग 30-60 seconds मा convert गर्छ। Smallpdf वा ILovePDF मा ads र extra steps हुन्छन् — ToolsArena direct र clean छ।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Cybercafé मा काम गर्दा conversion पछि logout नगरे पनि हुन्छ — ToolsArena मा login नै छैन। तर download गरेपछि file delete गर्नुहोस्।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'PDF अपलोड गर्नुहोस्',
+        description: 'ToolsArena को PDF to Image tool मा जानुहोस् र आफ्नो PDF file drag & drop वा browse गरेर upload गर्नुहोस्।',
+      },
+      {
+        title: 'Format र DPI छान्नुहोस्',
+        description: 'JPG (सानो size, online upload) वा PNG (high quality, archive) छान्नुहोस्। Online portal का लागि 150 DPI, print का लागि 300 DPI राख्नुहोस्।',
+      },
+      {
+        title: 'Pages छान्नुहोस्',
+        description: 'सबै pages convert गर्न "All Pages" छान्नुहोस् वा specific pages (जस्तै 1, 3-5) मात्र convert गर्नुहोस्।',
+      },
+      {
+        title: 'Convert बटन थिच्नुहोस्',
+        description: '"Convert to Image" बटन थिचेर प्रतीक्षा गर्नुहोस्। PDF को size अनुसार 10-60 seconds लाग्छ।',
+      },
+      {
+        title: 'Download गर्नुहोस्',
+        description: 'Individual images download गर्नुहोस् वा "Download All (ZIP)" बाट सबै एकैपटक लिनुहोस्। ZIP extract गरेर आवश्यक image प्रयोग गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'PDF को कति pages image मा बदल्न सकिन्छ?',
+        answer: 'ToolsArena को PDF to Image tool ले 100 pages सम्मको PDF एकैपटक convert गर्न सक्छ। ठूलो PDF भए chapter by chapter convert गर्नुहोस्।',
+      },
+      {
+        question: 'TU transcript JPG मा बदल्न कति DPI राख्ने?',
+        answer: 'TU transcript online portal upload का लागि 200 DPI JPG उत्तम हो। File size लगभग 300-500 KB हुन्छ जुन most portals ले accept गर्छन्।',
+      },
+      {
+        question: 'Lok Sewa portal मा PDF convert गरेको image upload हुन्छ?',
+        answer: 'हो। JPG format मा 150 DPI convert गर्नुहोस् र Image Compressor बाट 50 KB भन्दा कम बनाउनुहोस् — Lok Sewa portal को requirement पूरा हुन्छ।',
+      },
+      {
+        question: 'Nepali text भएको PDF image मा बदल्दा font टुटिन्छ?',
+        answer: 'PDF to Image conversion मा text font रूपमा render हुन्छ — image मा देवनागरी text clearly देखिन्छ। PNG format मा convert गर्दा JPG भन्दा sharper हुन्छ।',
+      },
+      {
+        question: 'Password protected PDF convert हुन्छ?',
+        answer: 'Password protected PDF directly convert हुँदैन। पहिले PDF Unlocker tool बाट password हटाउनुहोस् (password थाहा हुनुपर्छ), त्यसपछि convert गर्नुहोस्।',
+      },
+      {
+        question: 'Convert गरेको image को quality कस्तो हुन्छ?',
+        answer: '300 DPI PNG मा convert गर्दा original PDF जत्तिकै sharp quality हुन्छ। Screen हेर्न मात्र भए 150 DPI JPG पर्याप्त हुन्छ।',
+      },
+      {
+        question: 'Mobile बाट PDF to Image convert गर्न सकिन्छ?',
+        answer: 'हो। Android वा iPhone को Chrome/Safari browser मा toolsarena.in खोलेर सजिलै convert गर्न सकिन्छ। कुनै app install गर्नु पर्दैन।',
+      },
+      {
+        question: 'Convert गरेको image ToolsArena server मा रहन्छ?',
+        answer: 'रहँदैन। ToolsArena ले privacy को लागि uploaded PDF र converted images process गरेपछि server बाट automatically delete गर्छ।',
+      },
+    ],
+    relatedGuides: ['pdf-editor-guide', 'pdf-merge-guide', 'image-compressor-guide'],
+    toolCTA: {
+      heading: 'अहिले नै PDF लाई Image मा बदल्नुहोस् — फ्री!',
+      description: 'TU transcript, Lok Sewa कागजात, नागरिकता scan — जुनसुकै PDF लाई JPG/PNG मा सेकेन्डमा बदल्नुहोस्।',
+      buttonText: 'PDF to Image खोल्नुहोस् →',
+    },
+  },
+
+  // ── IMAGE TO PDF ─────────────────────────────────────────────────
+  {
+    slug: 'image-to-pdf-guide',
+    toolSlug: 'image-to-pdf',
+    category: 'pdf-tools',
+    title: 'फ्री इमेज बाट PDF कन्भर्टर गाइड: JPG/PNG लाई PDF मा बदल्नुहोस् (2026)',
+    subtitle: 'नागरिकता scan, SLC/SEE मार्कशिट र लोक सेवा आवेदनका लागि JPG/PNG इमेजहरूलाई एउटा PDF मा बदल्नुहोस्।',
+    metaTitle: 'इमेज लाई PDF मा बदल्ने - फ्री JPG to PDF कन्भर्टर नेपाल',
+    metaDescription: 'JPG, PNG इमेजहरूलाई PDF मा निःशुल्क बदल्नुहोस्। नागरिकता scan, SLC marksheet, Lok Sewa आवेदन कागजातका लागि। Multiple images एउटा PDF मा। कुनै साइनअप छैन।',
+    targetKeyword: 'इमेज लाई PDF मा बदल्ने',
+    secondaryKeywords: [
+      'JPG to PDF nepali',
+      'image to pdf nepal',
+      'नागरिकता scan PDF',
+      'SLC marksheet PDF',
+      'Lok Sewa document PDF',
+      'multiple images one PDF',
+      'photo to PDF nepal',
+      'jpg pdf convert free',
+      'png to pdf online',
+      'citizenship scan PDF nepal',
+      'SEE marksheet PDF',
+      'document scan PDF',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '७ मिनेट पढ्ने',
+    tags: ['इमेज', 'PDF', 'JPG', 'कन्भर्टर', 'नागरिकता'],
+    intro: `<p>नेपालमा सरकारी, बैंक र विश्वविद्यालय आवेदनहरूमा multiple documents एउटै <strong>PDF file</strong>मा submit गर्नु पर्छ। नागरिकता को photo, SLC/SEE marksheet scan, passport size photo — यी सबै JPG images लाई एउटा PDF मा combine गर्न <strong>Image to PDF converter</strong> आवश्यक छ।</p>
+<p>हाम्रो <strong>फ्री Image to PDF tool</strong>ले JPG, PNG, WebP जस्ता images लाई तुरुन्त high-quality PDF मा बदल्छ। एकैपटक multiple images एउटा PDF मा मिलाउन सकिन्छ — page order आफैले छान्न पाइन्छ।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Lok Sewa online application मा नागरिकता (front + back) र photo एउटै PDF मा submit गर्नुपर्छ — Image to PDF tool बाट सजिलै बनाउनुहोस्।</p></div>`,
+    sections: [
+      {
+        id: 'image-pdf-kina',
+        title: 'Image लाई PDF मा किन बदल्ने? नेपाली आवश्यकता',
+        content: `<p>नेपालका विभिन्न सेवा र आवेदनहरूमा PDF format अनिवार्य छ। Photos र scanned images लाई PDF मा बदल्नु पर्ने अवस्थाहरू जान्नुहोस्।</p>
+<h4>मुख्य आवश्यकताहरू:</h4>
+<ul>
+  <li><strong>Lok Sewa Online Apply:</strong> Citizenship front, citizenship back र photo एउटा PDF मा</li>
+  <li><strong>बैंक Account Opening:</strong> KYC documents (नागरिकता, photo) PDF मा submit</li>
+  <li><strong>विश्वविद्यालय Admission:</strong> SLC/SEE marksheet, character certificate images → PDF</li>
+  <li><strong>Online Visa Application:</strong> Supporting documents एउटा PDF file मा</li>
+  <li><strong>Insurance Claim:</strong> Medical bills, receipts photos → PDF document</li>
+  <li><strong>Job Application:</strong> CV, certificates, marksheets एउटा PDF मा combine</li>
+  <li><strong>Property Registration:</strong> Land documents photos → PDF archive</li>
+</ul>
+<h4>नेपाली portal requirements:</h4>
+<table>
+  <tr><th>सेवा/Portal</th><th>Document Format</th><th>Size Limit</th></tr>
+  <tr><td>Lok Sewa Aayog</td><td>PDF</td><td>2 MB</td></tr>
+  <tr><td>NRB (Banking)</td><td>PDF/JPG</td><td>5 MB</td></tr>
+  <tr><td>TU Admission</td><td>PDF/JPG</td><td>500 KB–2 MB</td></tr>
+  <tr><td>Department of Immigration</td><td>PDF</td><td>2 MB</td></tr>
+  <tr><td>CTEVT</td><td>PDF</td><td>1 MB</td></tr>
+  <tr><td>Scholarship Portal</td><td>PDF</td><td>3 MB</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>नागरिकता र पासपोर्टको scan PDF बनाउँदा trusted website मात्र प्रयोग गर्नुहोस्। ToolsArena ले files server मा permanently store गर्दैन।</p></div>`,
+      },
+      {
+        id: 'scan-quality',
+        title: 'Mobile Scan गरेको Image PDF मा राम्रो हुन्छ?',
+        content: `<p>नेपालमा घरमा scanner नभएकाहरू mobile camera बाट documents scan गर्छन्। यस्तो scan बाट राम्रो PDF बनाउने तरिका जान्नुहोस्।</p>
+<h4>Mobile Scan का Best Practices:</h4>
+<ul>
+  <li><strong>राम्रो उज्यालोमा:</strong> Window छेउमा natural light मा scan गर्नुहोस् — flash avoid गर्नुहोस्</li>
+  <li><strong>Straight angle:</strong> Document ठिक माथिबाट photo खिच्नुहोस् — tilt नगर्नुहोस्</li>
+  <li><strong>High resolution:</strong> Phone camera को highest resolution settings प्रयोग गर्नुहोस्</li>
+  <li><strong>CamScanner/Adobe Scan:</strong> Document scanning app ले automatically crop र enhance गर्छ</li>
+  <li><strong>Clean background:</strong> सेतो वा plain background मा document राख्नुहोस्</li>
+</ul>
+<h4>Scan Quality तुलना:</h4>
+<table>
+  <tr><th>Method</th><th>Quality</th><th>Cost</th><th>Convenience</th></tr>
+  <tr><td>Flatbed Scanner</td><td>उत्कृष्ट</td><td>रु. 5,000+</td><td>Office/Cyber café</td></tr>
+  <tr><td>Mobile + Scan App</td><td>राम्रो</td><td>फ्री</td><td>घरमै सकिन्छ</td></tr>
+  <tr><td>Mobile Camera (direct)</td><td>ठिकै</td><td>फ्री</td><td>घरमै सकिन्छ</td></tr>
+  <tr><td>Cyber café Scanner</td><td>राम्रो</td><td>रु. 10–20/page</td><td>नजिकै</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Microsoft Lens app (Android/iPhone) ले mobile camera बाट professional-quality document scan गर्छ — फ्री र नेपालमा राम्ररी काम गर्छ।</p></div>`,
+      },
+      {
+        id: 'multiple-images-pdf',
+        title: 'Multiple Images एउटा PDF मा: Combine गर्ने तरिका',
+        content: `<p>सबैभन्दा उपयोगी feature हो multiple images लाई एउटै PDF मा combine गर्नु। Citizenship front, citizenship back, photo, marksheet — सबै एउटा file मा राख्न सकिन्छ।</p>
+<h4>Step-by-Step Process:</h4>
+<ol>
+  <li>ToolsArena Image to PDF tool खोल्नुहोस्</li>
+  <li>"Multiple Files Upload" छान्नुहोस्</li>
+  <li>Ctrl+Click (PC) वा multi-select (Mobile) गरेर सबै images एकैपटक upload गर्नुहोस्</li>
+  <li>Drag-drop गरेर page order मिलाउनुहोस्</li>
+  <li>Paper size (A4) र orientation (Portrait/Landscape) छान्नुहोस्</li>
+  <li>"Convert to PDF" बटन थिच्नुहोस्</li>
+  <li>PDF download गर्नुहोस्</li>
+</ol>
+<h4>Page Order Tips:</h4>
+<table>
+  <tr><th>Situation</th><th>Recommended Order</th></tr>
+  <tr><td>Lok Sewa Application</td><td>1. Photo, 2. Citizenship front, 3. Citizenship back</td></tr>
+  <tr><td>Bank KYC</td><td>1. Citizenship front, 2. Citizenship back, 3. Photo</td></tr>
+  <tr><td>University Admission</td><td>1. Photo, 2. SLC marksheet, 3. Character cert</td></tr>
+  <tr><td>Job Application</td><td>1. CV, 2. Certificates, 3. Marksheets, 4. Photo</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Images upload गरेपछि thumbnail drag-drop गरेर order मिलाउन सकिन्छ — submit गर्नुअघि preview check गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'pdf-size-optimization',
+        title: 'Image to PDF: File Size कसरी घटाउने?',
+        content: `<p>High-resolution images बाट बनेको PDF धेरै ठूलो हुन सक्छ जसले upload मा समस्या गर्छ। Nepal को portal size limits भित्र राख्ने उपाय:</p>
+<h4>Size Optimization Strategies:</h4>
+<ul>
+  <li><strong>Image compress गरेर PDF बनाउनुहोस्:</strong> पहिले Image Compressor मा compress गर्नुहोस्, त्यसपछि PDF बनाउनुहोस्</li>
+  <li><strong>Image quality setting:</strong> Tool मा "Medium Quality" छान्नुहोस् — visual quality ठिकै रहन्छ</li>
+  <li><strong>Page size:</strong> A4 standard size राख्नुहोस् — image stretch हुँदैन</li>
+  <li><strong>Grayscale:</strong> Color scan आवश्यक नभए grayscale मा convert गर्नुहोस् — 50% size कम हुन्छ</li>
+</ul>
+<h4>Target File Sizes:</h4>
+<table>
+  <tr><th>Portal/Use</th><th>Max Size</th><th>Recommended Setting</th></tr>
+  <tr><td>Lok Sewa Aayog</td><td>2 MB</td><td>Medium quality, grayscale</td></tr>
+  <tr><td>TU Admission</td><td>2 MB</td><td>Medium quality, color</td></tr>
+  <tr><td>Bank KYC (Online)</td><td>5 MB</td><td>High quality, color</td></tr>
+  <tr><td>Email Attachment</td><td>10 MB</td><td>High quality</td></tr>
+  <tr><td>Scholarship Portal</td><td>3 MB</td><td>Medium-High quality</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Size कम गर्दा text illegible नहोस् भनेर check गर्नुहोस् — particularly नागरिकता नम्बर, मिति clearly readable हुनुपर्छ।</p></div>`,
+      },
+      {
+        id: 'citizenship-scan-pdf',
+        title: 'नागरिकता Scan PDF बनाउने: विस्तृत गाइड',
+        content: `<p>नेपालमा नागरिकताको scan PDF सबैभन्दा बढी आवश्यक हुने document हो। सही तरिकाले बनाउने जान्नुहोस्।</p>
+<h4>नागरिकता PDF बनाउने चरणहरू:</h4>
+<ol>
+  <li><strong>Scan गर्नुहोस्:</strong> नागरिकताको front र back दुवै छुट्टाछुट्टै high-res photo खिच्नुहोस्</li>
+  <li><strong>Crop गर्नुहोस्:</strong> Crop Image tool बाट unnecessary background हटाउनुहोस्</li>
+  <li><strong>Compress गर्नुहोस्:</strong> Each image 200 KB भन्दा कम बनाउनुहोस्</li>
+  <li><strong>PDF बनाउनुहोस्:</strong> Image to PDF tool मा front र back upload गरेर PDF बनाउनुहोस्</li>
+  <li><strong>Size check गर्नुहोस्:</strong> Final PDF 500 KB–1 MB को range मा हुनुपर्छ</li>
+</ol>
+<h4>Common Mistakes:</h4>
+<table>
+  <tr><th>गल्ती</th><th>सुधार</th></tr>
+  <tr><td>Blurry photo</td><td>Good lighting मा steady hand बाट खिच्नुहोस्</td></tr>
+  <tr><td>Only front page</td><td>Front र back दुवै pages add गर्नुहोस्</td></tr>
+  <tr><td>File too large</td><td>Images compress गरेर PDF बनाउनुहोस्</td></tr>
+  <tr><td>Wrong orientation</td><td>Portrait orientation राख्नुहोस्</td></tr>
+  <tr><td>Text cut off</td><td>Full document frame मा आउने गरी खिच्नुहोस्</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>एउटा master PDF बनाएर cloud (Google Drive, pCloud) मा save गर्नुहोस् — पटक-पटक बनाउनु पर्दैन।</p></div>`,
+      },
+      {
+        id: 'slc-marksheet-pdf',
+        title: 'SLC/SEE Marksheet र Academic Documents PDF',
+        content: `<p>विद्यार्थीहरूले बारम्बार SLC/SEE marksheet, character certificate र अन्य academic documents PDF मा बनाउनु पर्छ।</p>
+<h4>Academic Documents PDF Checklist:</h4>
+<ul>
+  <li>SLC/SEE Marksheet (Grade 10)</li>
+  <li>NEB Transcript (Grade 11/12)</li>
+  <li>Character Certificate</li>
+  <li>Migration Certificate (if applicable)</li>
+  <li>Provisional Certificate</li>
+  <li>Degree Certificate</li>
+  <li>TU/KU Transcript</li>
+</ul>
+<h4>Application अनुसार Documents Order:</h4>
+<table>
+  <tr><th>Application Type</th><th>Document Order in PDF</th></tr>
+  <tr><td>Masters Admission (TU)</td><td>Degree cert → TU Transcript → Citizenship</td></tr>
+  <tr><td>Bachelor Admission</td><td>SLC cert → NEB transcript → Citizenship</td></tr>
+  <tr><td>Scholarship Application</td><td>Latest transcript → Previous certs → Recommendation</td></tr>
+  <tr><td>Government Job</td><td>Citizenship → Academic certs → Experience letter</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Original marksheet वा certificate क्षतिग्रस्त नगर्नुहोस् — scan गर्दा gentle handle गर्नुहोस्। Document authentication को लागि original नै चाहिन्छ।</p></div>`,
+      },
+      {
+        id: 'image-pdf-tools',
+        title: 'Image to PDF Tools को तुलना',
+        content: `<p>नेपाली users का लागि best Image to PDF tool छान्ने guidance:</p>
+<table>
+  <tr><th>Tool</th><th>Free Limit</th><th>Multiple Images</th><th>Privacy</th><th>Mobile Friendly</th></tr>
+  <tr><td><strong>ToolsArena</strong></td><td>Unlimited</td><td>✓</td><td>Files delete हुन्छ</td><td>✓</td></tr>
+  <tr><td>ILovePDF</td><td>Limited</td><td>✓</td><td>EU servers</td><td>✓</td></tr>
+  <tr><td>Smallpdf</td><td>2/day free</td><td>✓</td><td>EU servers</td><td>✓</td></tr>
+  <tr><td>JPG2PDF.com</td><td>Unlimited</td><td>Limited</td><td>Unknown</td><td>Partial</td></tr>
+  <tr><td>Adobe Acrobat</td><td>Paid</td><td>✓</td><td>Adobe servers</td><td>App चाहिन्छ</td></tr>
+</table>
+<h4>नेपालका लागि ToolsArena किन?</h4>
+<ul>
+  <li>कुनै registration वा login चाहिँदैन</li>
+  <li>Unlimited conversions — daily limit छैन</li>
+  <li>Files automatically delete हुन्छ — privacy safe</li>
+  <li>NTC/Ncell internet मा पनि राम्रो performance</li>
+  <li>Mobile browser मा पूर्ण support</li>
+  <li>Nepali UI context मा designed</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Cybercafé मा काम गर्दा आफ्नो documents बनाएपछि download गर्नुहोस् र browser history clear गर्नुहोस्।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Images अपलोड गर्नुहोस्',
+        description: 'ToolsArena को Image to PDF tool मा JPG, PNG वा WebP images upload गर्नुहोस्। Multiple images एकैपटक Ctrl+Click गरेर छान्न सकिन्छ।',
+      },
+      {
+        title: 'Page Order मिलाउनुहोस्',
+        description: 'Upload भएका images लाई drag-drop गरेर desired order मा मिलाउनुहोस्। Citizenship front पहिले, back पछि राख्नुहोस्।',
+      },
+      {
+        title: 'Settings छान्नुहोस्',
+        description: 'Page size (A4), orientation (Portrait/Landscape) र image quality (Medium/High) छान्नुहोस्। File size limit अनुसार quality adjust गर्नुहोस्।',
+      },
+      {
+        title: 'Convert बटन थिच्नुहोस्',
+        description: '"Convert to PDF" बटन थिचेर PDF बन्न दिनुहोस्। Images को संख्या अनुसार 10-30 seconds लाग्न सक्छ।',
+      },
+      {
+        title: 'PDF Download गर्नुहोस्',
+        description: 'Preview check गरेर "Download PDF" बटन थिच्नुहोस्। Size portal limit भित्र छ कि जाँच्नुहोस् — ठूलो भए PDF Compressor प्रयोग गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'कति images एउटा PDF मा राख्न सकिन्छ?',
+        answer: 'ToolsArena को Image to PDF tool ले 50 images सम्म एउटा PDF मा राख्न सक्छ। सामान्यतया Lok Sewa आवेदनमा 3-5 pages को PDF पर्याप्त हुन्छ।',
+      },
+      {
+        question: 'नागरिकताको front र back एउटै PDF मा राख्न मिल्छ?',
+        answer: 'हो, बिल्कुल मिल्छ। Citizenship front र back दुवैको photo लिएर Image to PDF tool मा upload गर्नुहोस् — एउटा 2-page PDF बन्छ।',
+      },
+      {
+        question: 'SLC marksheet को scan quality कस्तो हुनुपर्छ?',
+        answer: 'SLC marksheet scan गर्दा सबै numbers, grades र college name clearly readable हुनुपर्छ। Mobile scan app (Microsoft Lens वा CamScanner) ले good quality scan दिन्छ।',
+      },
+      {
+        question: 'Image to PDF convert गरेको file size कसरी घटाउने?',
+        answer: 'पहिले Image Compressor बाट photos compress गर्नुहोस्, त्यसपछि PDF बनाउनुहोस्। वा PDF बनाएपछि PDF Compressor tool मा compress गर्नुहोस्।',
+      },
+      {
+        question: 'JPG र PNG दुवै एउटा PDF मा राख्न सकिन्छ?',
+        answer: 'हो। JPG, PNG, WebP — विभिन्न format का images एकैपटक upload गरेर एउटा PDF मा combine गर्न सकिन्छ।',
+      },
+      {
+        question: 'Lok Sewa portal मा PDF upload भएन — के गर्ने?',
+        answer: 'File size 2 MB भन्दा बढी छ भने PDF Compressor मा compress गर्नुहोस्। Format PDF/A हुनुपर्छ भने tool मा PDF/A option छान्नुहोस्।',
+      },
+      {
+        question: 'Mobile बाट Image to PDF बनाउन सकिन्छ?',
+        answer: 'हो, Chrome वा Firefox mobile browser मा toolsarena.in खोल्नुहोस्। Phone gallery बाट images select गरेर directly PDF बनाउन सकिन्छ।',
+      },
+      {
+        question: 'Image to PDF मा Nepali text scan correctly देखिन्छ?',
+        answer: 'हो। Image to PDF conversion मा text image format मा रहन्छ — देवनागरी font issue हुँदैन। Text searchable बनाउन OCR tool चाहिन्छ।',
+      },
+    ],
+    relatedGuides: ['jpg-to-pdf-guide', 'image-compressor-guide', 'pdf-merge-guide'],
+    toolCTA: {
+      heading: 'अहिले नै Images लाई PDF मा बदल्नुहोस् — फ्री!',
+      description: 'नागरिकता scan, SLC marksheet, Lok Sewa कागजात — सबै images एउटा PDF मा सेकेन्डमा बदल्नुहोस्।',
+      buttonText: 'Image to PDF खोल्नुहोस् →',
+    },
+  },
+
+  // ── PASSPORT PHOTO MAKER ─────────────────────────────────────────
+  {
+    slug: 'passport-photo-maker-guide',
+    toolSlug: 'passport-photo-maker',
+    category: 'image-tools',
+    title: 'फ्री पासपोर्ट फोटो मेकर गाइड: पासपोर्ट साइज फोटो अनलाइन बनाउनुहोस् (2026)',
+    subtitle: 'नेपाल MRP पासपोर्ट, नागरिकता, ड्राइभिङ लाइसेन्स, लोक सेवा एड्मिट कार्ड र गल्फ भिसाका लागि पासपोर्ट साइज फोटो घरमै बनाउनुहोस्।',
+    metaTitle: 'पासपोर्ट साइज फोटो अनलाइन - फ्री Nepal Passport Photo Maker',
+    metaDescription: 'नेपाल MRP पासपोर्ट, नागरिकता, ड्राइभिङ लाइसेन्स र लोक सेवाका लागि मानक पासपोर्ट साइज फोटो अनलाइन बनाउनुहोस्। सेतो background, सही size। निःशुल्क।',
+    targetKeyword: 'पासपोर्ट साइज फोटो अनलाइन',
+    secondaryKeywords: [
+      'passport photo nepal online',
+      'पासपोर्ट फोटो साइज',
+      'नेपाल MRP passport photo',
+      'नागरिकता फोटो साइज',
+      'driving license photo nepal',
+      'Lok Sewa photo size',
+      'Gulf visa photo nepal',
+      'passport photo maker free',
+      'white background photo online',
+      'passport size photo editor',
+      'photo resize nepal',
+      'visa photo maker nepal',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['पासपोर्ट', 'फोटो', 'नागरिकता', 'भिसा', 'लोक सेवा'],
+    intro: `<p>नेपालमा पासपोर्ट, नागरिकता, ड्राइभिङ लाइसेन्स, Lok Sewa आवेदन र Gulf देशका लागि भिसा — सबैमा <strong>पासपोर्ट साइज फोटो</strong> आवश्यक हुन्छ। Photo studio जाने खर्च र समय बचाउन हाम्रो <strong>फ्री Passport Photo Maker</strong> प्रयोग गर्नुहोस्।</p>
+<p>हाम्रो tool ले आफ्नो selfie वा portrait photo लाई automatically <strong>सेतो background</strong> थपेर, सही size मा crop गरेर, print-ready passport photo बनाउँछ — मिनेटमै, कुनै खर्च बिना।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Gulf (Saudi Arabia, Qatar, UAE, Kuwait) जाने कामदारहरूले labour visa आवेदन गर्दा specific photo size चाहिन्छ — हाम्रो tool मा country-specific size preset छ।</p></div>`,
+    sections: [
+      {
+        id: 'nepal-passport-photo-size',
+        title: 'नेपालका विभिन्न कागजातको Photo Size Requirements',
+        content: `<p>नेपालमा विभिन्न सरकारी कागजातका लागि photo size अलग-अलग हुन्छ। गलत size को photo लिएर गयो भने reject हुन्छ — समय र पैसा खर्च हुन्छ।</p>
+<h4>नेपाली कागजातको Photo Size तालिका:</h4>
+<table>
+  <tr><th>कागजात</th><th>Size</th><th>Background</th><th>DPI</th></tr>
+  <tr><td>नेपाल MRP Passport</td><td>35×45 mm</td><td>सेतो</td><td>600 DPI</td></tr>
+  <tr><td>नागरिकता (Citizenship)</td><td>3×4 cm वा 35×45 mm</td><td>सेतो वा plain</td><td>300 DPI</td></tr>
+  <tr><td>Driving License</td><td>35×45 mm</td><td>सेतो</td><td>300 DPI</td></tr>
+  <tr><td>Lok Sewa Admit Card</td><td>3.5×4.5 cm</td><td>सेतो</td><td>200 DPI</td></tr>
+  <tr><td>Voter ID</td><td>35×45 mm</td><td>सेतो</td><td>300 DPI</td></tr>
+  <tr><td>School/College Admission</td><td>3×4 cm</td><td>Plain color</td><td>200 DPI</td></tr>
+  <tr><td>PAN Card</td><td>35×45 mm</td><td>सेतो</td><td>300 DPI</td></tr>
+</table>
+<h4>Gulf देशका Visa Photo Requirements:</h4>
+<table>
+  <tr><th>देश</th><th>Size</th><th>Background</th><th>विशेष नियम</th></tr>
+  <tr><td>Saudi Arabia</td><td>4×6 cm</td><td>सेतो</td><td>Full face, no glasses</td></tr>
+  <tr><td>Qatar</td><td>3.5×4.5 cm</td><td>सेतो</td><td>6 months validity passport</td></tr>
+  <tr><td>UAE (Dubai)</td><td>3.5×4.5 cm</td><td>सेतो</td><td>60% face coverage</td></tr>
+  <tr><td>Kuwait</td><td>4×6 cm</td><td>सेतो</td><td>Recent photo</td></tr>
+  <tr><td>Malaysia</td><td>3.5×4.5 cm</td><td>सेतो</td><td>—</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Gulf visa apply गर्दा photo specification embassy को official website मा verify गर्नुहोस् — requirements बदलिन सक्छ।</p></div>`,
+      },
+      {
+        id: 'good-passport-photo',
+        title: 'राम्रो Passport Photo लिने तरिका',
+        content: `<p>Photo studio नगई घरमै professional passport photo लिन सकिन्छ। तलका guidelines पालना गर्नुहोस्।</p>
+<h4>Photo लिने Best Practices:</h4>
+<ul>
+  <li><strong>उज्यालो:</strong> Natural light window सामने बस्नुहोस् — flash avoid गर्नुहोस् (shadow पर्छ)</li>
+  <li><strong>Background:</strong> Plain सेतो wall वा door अगाडि बस्नुहोस्</li>
+  <li><strong>Expression:</strong> Neutral expression, मुख बन्द, teeth नदेखिने</li>
+  <li><strong>Eyes:</strong> Camera तर्फ सिधा हेर्नुहोस्, आँखा पूर्ण खुला</li>
+  <li><strong>Glasses:</strong> Photo मा glasses नलगाउनुहोस् (most countries require no glasses)</li>
+  <li><strong>Hair:</strong> Face पूर्ण देखिने गरी — hair ले face cover नगर्नुहोस्</li>
+  <li><strong>Dress:</strong> सेतो शर्ट नलगाउनुहोस् (background सँग blend हुन्छ)</li>
+</ul>
+<h4>Phone Camera Settings:</h4>
+<ul>
+  <li>Portrait mode ON गर्नुहोस् (background blur हटाउन पछि tool ले गर्छ)</li>
+  <li>Highest resolution मा खिच्नुहोस्</li>
+  <li>Selfie camera भन्दा rear camera राम्रो</li>
+  <li>Someone else ले खिचिदिए झनै राम्रो</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>सेतो A4 paper wall मा टाँसेर background बनाउनुहोस् — professional studio जस्तो photo आउँछ।</p></div>`,
+      },
+      {
+        id: 'background-removal',
+        title: 'Photo को Background सेतो बनाउने तरिका',
+        content: `<p>Passport photo मा सेतो background अनिवार्य छ। हाम्रो tool AI technology प्रयोग गरेर automatically background remove गर्छ।</p>
+<h4>Background Removal Process:</h4>
+<ol>
+  <li>आफ्नो photo upload गर्नुहोस्</li>
+  <li>Tool ले AI बाट automatically background detect गर्छ</li>
+  <li>Background remove भएर सेतो (वा छानेको color) background आउँछ</li>
+  <li>Face area manually adjust गर्न सकिन्छ</li>
+  <li>Final photo download गर्नुहोस्</li>
+</ol>
+<h4>Background Colors:</h4>
+<table>
+  <tr><th>Background</th><th>Country/Use</th></tr>
+  <tr><td>सेतो (White)</td><td>Nepal, India, Gulf countries</td></tr>
+  <tr><td>Light Blue</td><td>US Visa, Canada</td></tr>
+  <tr><td>Light Grey</td><td>UK, Australia</td></tr>
+  <tr><td>Plain (any light)</td><td>Nepal Citizenship, School forms</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Background remove गर्दा hair area sometimes imperfect हुन्छ — Eraser/Restore tool बाट manually fix गर्न सकिन्छ।</p></div>`,
+      },
+      {
+        id: 'print-passport-photo',
+        title: 'Passport Photo Print गर्ने: नेपाली सन्दर्भ',
+        content: `<p>Digital passport photo बनाएपछि print गर्न आवश्यक पर्छ। नेपालमा कहाँ र कसरी print गर्ने जान्नुहोस्।</p>
+<h4>Print Options नेपालमा:</h4>
+<ul>
+  <li><strong>Photo Print Shop:</strong> Kathmandu, Pokhara, Biratnagar — 4×6 inch photo paper मा print। रु. 30-50 प्रति print।</li>
+  <li><strong>Cyber Café:</strong> Digital file नै पठाउनुहोस् — print गरिदिन्छन्</li>
+  <li><strong>HP/Canon Printer घरमा:</strong> Photo paper मा आफैँ print गर्नुहोस्</li>
+  <li><strong>Kodak Express Centers:</strong> Professional quality print — ठूला शहरमा उपलब्ध</li>
+</ul>
+<h4>Print Layout (Sheet मा धेरै Photos):</h4>
+<p>एउटा 4×6 inch print मा 6-8 passport photos fit हुन्छन्। Tool ले automatically layout बनाउँछ:</p>
+<table>
+  <tr><th>Print Size</th><th>Photos Count</th><th>Photo Size</th></tr>
+  <tr><td>4×6 inch (10×15 cm)</td><td>6 photos</td><td>35×45 mm each</td></tr>
+  <tr><td>5×7 inch (13×18 cm)</td><td>8 photos</td><td>35×45 mm each</td></tr>
+  <tr><td>A4 (21×29.7 cm)</td><td>16-20 photos</td><td>35×45 mm each</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>A4 sheet मा 16-20 photos print गर्दा प्रति photo cost रु. 3-5 मात्र पर्छ — अलग-अलग print भन्दा धेरै सस्तो।</p></div>`,
+      },
+      {
+        id: 'lok-sewa-photo',
+        title: 'Lok Sewa Admit Card र सरकारी परीक्षाका लागि Photo',
+        content: `<p>Lok Sewa Aayog र अन्य सरकारी परीक्षाका लागि online application मा photo upload गर्नु पर्छ। Specific requirements छन्।</p>
+<h4>Lok Sewa Photo Requirements:</h4>
+<ul>
+  <li>Size: 3.5×4.5 cm (35×45 mm)</li>
+  <li>Background: सेतो</li>
+  <li>Format: JPG</li>
+  <li>File Size: 50 KB भन्दा कम</li>
+  <li>Recent photo (6 months भित्रको)</li>
+  <li>Formal dress</li>
+  <li>Glasses avoid गर्नुहोस्</li>
+</ul>
+<h4>Upload गर्ने Steps:</h4>
+<ol>
+  <li>हाम्रो Passport Photo Maker मा photo बनाउनुहोस्</li>
+  <li>JPG format मा download गर्नुहोस्</li>
+  <li>Image Compressor मा 50 KB भन्दा कम बनाउनुहोस्</li>
+  <li>Lok Sewa portal मा upload गर्नुहोस्</li>
+</ol>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Lok Sewa admit card मा photo match गर्नुपर्छ — परीक्षा हलमा identity verification हुन्छ। हालैको photo मात्र प्रयोग गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'gulf-visa-photo',
+        title: 'Gulf Labour Visa Photo: नेपाली कामदारका लागि',
+        content: `<p>नेपालबाट Gulf देश (Saudi Arabia, Qatar, UAE, Kuwait, Oman) मा काम गर्न जाने लाखौँ नेपालीहरूलाई labour visa का लागि specific photo चाहिन्छ।</p>
+<h4>Gulf Visa Photo General Requirements:</h4>
+<ul>
+  <li>Size: 4×6 cm (Saudi, Kuwait) वा 3.5×4.5 cm (Qatar, UAE)</li>
+  <li>Background: Plain सेतो</li>
+  <li>Full face visible, 70-80% face coverage</li>
+  <li>No glasses, no hat/cap</li>
+  <li>Neutral expression</li>
+  <li>Recent photo (3 months भित्रको)</li>
+  <li>Color photo</li>
+</ul>
+<h4>Agency vs Online Photo:</h4>
+<table>
+  <tr><th>तरिका</th><th>खर्च</th><th>समय</th><th>Quality</th></tr>
+  <tr><td>Photo Studio</td><td>रु. 50-150</td><td>30-60 min</td><td>Professional</td></tr>
+  <tr><td>Manpower Agency</td><td>रु. 100-200</td><td>Office hours मा</td><td>Good</td></tr>
+  <tr><td>ToolsArena Online</td><td>फ्री</td><td>5 minutes</td><td>Professional</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Gulf जाने कामदारहरूले Manpower agency मा जाँदा extra photo लिएर जानुहोस् — processing मा multiple copies चाहिन्छ।</p></div>`,
+      },
+      {
+        id: 'digital-photo-tips',
+        title: 'Digital Passport Photo: सावधानीहरू र Tips',
+        content: `<p>Online passport photo maker बाट बनाएको photo accept हुन्छ कि हुँदैन भन्ने चिन्ता धेरैलाई हुन्छ। वास्तविकता जान्नुहोस्।</p>
+<h4>Online Photo Accept हुन्छ कि हुँदैन?</h4>
+<p>हो, accept हुन्छ — यदि size, background र quality requirements पूरा गरेको छ भने। Nepal Immigration Department र Lok Sewa Aayog ले digitally generated photos accept गर्छन्।</p>
+<h4>Rejection हुने Common कारणहरू:</h4>
+<table>
+  <tr><th>Rejection Reason</th><th>Solution</th></tr>
+  <tr><td>Wrong size</td><td>Exact mm size use गर्नुहोस्</td></tr>
+  <tr><td>Non-white background</td><td>Pure white background ensure गर्नुहोस्</td></tr>
+  <tr><td>Face too small/large</td><td>70-80% face coverage राख्नुहोस्</td></tr>
+  <tr><td>Photo too dark/bright</td><td>Good lighting मा photo लिनुहोस्</td></tr>
+  <tr><td>Glasses in photo</td><td>Glasses remove गरेर photo लिनुहोस्</td></tr>
+  <tr><td>Old photo</td><td>Recent 6-month भित्रको photo use गर्नुहोस्</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Passport application को लागि photo requirement Department of Passport (Narayanhiti) को official website मा verify गर्नुहोस् — specifications update हुन सक्छ।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Photo Upload गर्नुहोस्',
+        description: 'ToolsArena Passport Photo Maker मा आफ्नो selfie वा portrait photo upload गर्नुहोस्। JPG, PNG format accept हुन्छ।',
+      },
+      {
+        title: 'Document Type छान्नुहोस्',
+        description: 'Nepal Passport, Citizenship, Driving License, Lok Sewa, Saudi Visa, Qatar Visa — आवश्यक document type छान्नुहोस्। Size automatically set हुन्छ।',
+      },
+      {
+        title: 'Background Remove गर्नुहोस्',
+        description: 'AI ले automatically background remove गरेर सेतो background थप्छ। Manual adjustment tool बाट fine-tune गर्न सकिन्छ।',
+      },
+      {
+        title: 'Face Crop र Adjust गर्नुहोस्',
+        description: 'Face position adjust गर्नुहोस् — guidelines अनुसार face 70-80% frame cover गर्नुपर्छ। Brightness र contrast adjust गर्नुहोस्।',
+      },
+      {
+        title: 'Download वा Print Layout बनाउनुहोस्',
+        description: 'Single photo download गर्नुहोस् वा "Print Sheet" बाट A4/4×6 sheet मा multiple photos राखेर print-ready file बनाउनुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'नेपाल MRP Passport को photo size कति हो?',
+        answer: 'नेपाल MRP Passport का लागि 35×45 mm (3.5×4.5 cm) सेतो background JPG photo चाहिन्छ। File size 100 KB भन्दा कम हुनुपर्छ।',
+      },
+      {
+        question: 'Online बनाएको passport photo accept हुन्छ?',
+        answer: 'हो, Nepal Immigration र Lok Sewa Aayog ले digital passport photos accept गर्छन् — यदि size, background र quality requirements पूरा भएको छ भने।',
+      },
+      {
+        question: 'Gulf visa को photo size कति?',
+        answer: 'Saudi Arabia र Kuwait का लागि 4×6 cm, Qatar र UAE का लागि 3.5×4.5 cm सेतो background photo चाहिन्छ। Specific embassy requirements verify गर्नुहोस्।',
+      },
+      {
+        question: 'Lok Sewa admit card photo size?',
+        answer: 'Lok Sewa Aayog online portal मा 3.5×4.5 cm, सेतो background, JPG format, 50 KB भन्दा कम photo upload गर्नुपर्छ।',
+      },
+      {
+        question: 'Photo को background कसरी सेतो बन्छ?',
+        answer: 'हाम्रो tool ले AI background removal technology प्रयोग गरेर automatically background सेतो बनाउँछ। Outdoor photo भए पनि काम गर्छ।',
+      },
+      {
+        question: 'Glasses लगाएको photo passport मा हुन्छ?',
+        answer: 'हुँदैन। Nepal passport, Gulf visa र अधिकांश official documents मा glasses-free photo requirement छ। Glasses बिना photo लिनुहोस्।',
+      },
+      {
+        question: 'एउटा A4 sheet मा कति passport photos आउँछन्?',
+        answer: 'A4 sheet मा 35×45 mm size का 16-20 photos fit हुन्छन्। हाम्रो tool ले print-ready layout automatically बनाउँछ।',
+      },
+      {
+        question: 'Mobile selfie बाट passport photo बनाउन मिल्छ?',
+        answer: 'हो। अगाडिको camera भन्दा पछाडिको camera ले better quality photo दिन्छ। Plain light background मा राम्रो उज्यालोमा खिच्नुहोस्।',
+      },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'compress-image-guide'],
+    toolCTA: {
+      heading: 'अहिले नै Passport Size Photo बनाउनुहोस् — फ्री!',
+      description: 'Nepal Passport, Citizenship, Lok Sewa, Gulf Visa — सबैका लागि professional passport photo मिनेटमा बनाउनुहोस्।',
+      buttonText: 'Passport Photo Maker खोल्नुहोस् →',
+    },
+  },
+
+  // ── RENT AGREEMENT GENERATOR ─────────────────────────────────────
+  {
+    slug: 'rent-agreement-generator-guide',
+    toolSlug: 'rent-agreement-generator',
+    category: 'utility-tools',
+    title: 'फ्री भाडा सम्झौता जनरेटर गाइड: भाडा करारनामा अनलाइन बनाउनुहोस् (2026)',
+    subtitle: 'नेपालको भाडा ऐन अनुसार कानुनी रूपमा मान्य भाडा सम्झौता अनलाइन बनाउनुहोस् — Ward Office दर्ताका लागि तयार।',
+    metaTitle: 'भाडा सम्झौता फर्म्याट नेपाल - फ्री Rent Agreement Generator',
+    metaDescription: 'नेपाल भाडा ऐन अनुसार कानुनी भाडा सम्झौता अनलाइन बनाउनुहोस्। Ward office दर्ताका लागि तयार। Kathmandu भाडा बजार, security deposit, मासिक भाडा सबै cover। निःशुल्क।',
+    targetKeyword: 'भाडा सम्झौता फर्म्याट नेपाल',
+    secondaryKeywords: [
+      'rent agreement nepal',
+      'भाडा करारनामा नेपाल',
+      'bhada samjhauta form',
+      'ward office rent registration',
+      'kathmandu rent agreement',
+      'rental agreement nepali',
+      'bhada kararnama format',
+      'tenant landlord agreement nepal',
+      'house rent agreement nepal',
+      'भाडा सम्झौता नमुना',
+      'security deposit nepal',
+      'monthly rent agreement',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '९ मिनेट पढ्ने',
+    tags: ['भाडा', 'सम्झौता', 'कानुन', 'नेपाल', 'Ward Office'],
+    intro: `<p>नेपालमा घर वा कोठा भाडामा लिँदा/दिँदा <strong>भाडा सम्झौता</strong> (Rent Agreement) बनाउनु कानुनी दायित्व हो र भविष्यमा विवाद हुँदा सुरक्षाकवच पनि। काठमाण्डू, पोखरा, चितवन जस्ता शहरी क्षेत्रमा बिना सम्झौता भाडाको घर÷कोठा लिनु जोखिमपूर्ण छ।</p>
+<p>हाम्रो <strong>फ्री Rent Agreement Generator</strong>ले नेपाल भाडा ऐन २०७५ अनुसार कानुनी रूपमा मान्य सम्झौता बनाउँछ — Ward Office दर्ताका लागि तयार।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Ward Office मा भाडा सम्झौता दर्ता गराउनुहोस् — दर्ता गरेपछि मात्र income tax purposes र bank loan का लागि valid हुन्छ।</p></div>`,
+    sections: [
+      {
+        id: 'nepal-rent-law',
+        title: 'नेपालको भाडा ऐन: मुख्य प्रावधानहरू',
+        content: `<p>नेपालमा <strong>घर भाडामा सम्बन्धी ऐन २०७५</strong> ले घरधनी र भाडावालाका अधिकार र दायित्व तोकेको छ। यो ऐन जान्नु घरधनी र भाडावाला दुवैका लागि महत्वपूर्ण छ।</p>
+<h4>मुख्य प्रावधानहरू:</h4>
+<ul>
+  <li><strong>लिखित सम्झौता:</strong> भाडा सम्झौता लिखित हुनुपर्छ — मौखिक सम्झौता कानुनी रूपमा कमजोर छ</li>
+  <li><strong>Ward Office दर्ता:</strong> भाडा सम्झौता सम्बन्धित Ward Office मा दर्ता गराउनु पर्छ</li>
+  <li><strong>भाडा बृद्धि सूचना:</strong> भाडा बढाउन कम्तीमा ३ महिना अगाडि लिखित सूचना दिनुपर्छ</li>
+  <li><strong>घर खाली गर्ने सूचना:</strong> ३५ दिनको अग्रिम सूचना दिनुपर्छ</li>
+  <li><strong>Security Deposit:</strong> सामान्यतया 2-3 महिनाको भाडा बराबर</li>
+  <li><strong>Repair दायित्व:</strong> साधारण मर्मत भाडावालाको, ठूलो संरचनागत मर्मत घरधनीको</li>
+</ul>
+<h4>ऐन उल्लंघनमा दण्ड:</h4>
+<table>
+  <tr><th>उल्लंघन</th><th>दण्ड</th></tr>
+  <tr><td>बिना सूचना घर खाली गराउने</td><td>क्षतिपूर्ति तिर्नुपर्छ</td></tr>
+  <tr><td>बिना लिखित सम्झौता भाडा लिने</td><td>कानुनी कारबाही</td></tr>
+  <tr><td>Security deposit नफिर्ताउने</td><td>ब्याज सहित फिर्ता गर्नुपर्छ</td></tr>
+  <tr><td>जबरजस्ती घर खाली गराउने</td><td>दण्ड र क्षतिपूर्ति</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>कानुनी विवाद परेमा वकिलको सल्लाह लिनुहोस् — यो गाइड general information मात्र हो, legal advice होइन।</p></div>`,
+      },
+      {
+        id: 'rent-agreement-contents',
+        title: 'भाडा सम्झौतामा के-के उल्लेख गर्ने?',
+        content: `<p>एक मान्य भाडा सम्झौतामा निम्न विषयहरू अनिवार्य रूपमा उल्लेख हुनुपर्छ:</p>
+<h4>अनिवार्य विवरणहरू:</h4>
+<ul>
+  <li><strong>पक्षहरूको परिचय:</strong> घरधनी र भाडावालाको पूरा नाम, नागरिकता नम्बर, ठेगाना</li>
+  <li><strong>सम्पत्तिको विवरण:</strong> घर/कोठाको ठेगाना, किल्ला नम्बर (if applicable), floor, rooms</li>
+  <li><strong>भाडाको रकम:</strong> मासिक भाडा (अंक र अक्षरमा), भुक्तानी मिति</li>
+  <li><strong>Security Deposit:</strong> रकम र फिर्ताको शर्त</li>
+  <li><strong>सम्झौता अवधि:</strong> सुरु मिति र अन्त्य मिति</li>
+  <li><strong>Utilities:</strong> बिजुली, पानी, इन्टरनेट को को तिर्छ</li>
+  <li><strong>Notice Period:</strong> कति अगाडि सूचना दिनुपर्छ</li>
+  <li><strong>Renewal Terms:</strong> सम्झौता नवीकरणको शर्त</li>
+</ul>
+<h4>Sample Agreement Structure:</h4>
+<table>
+  <tr><th>Section</th><th>Content</th></tr>
+  <tr><td>पहिलो खण्ड</td><td>पक्षहरूको परिचय</td></tr>
+  <tr><td>दोस्रो खण्ड</td><td>सम्पत्तिको विवरण</td></tr>
+  <tr><td>तेस्रो खण्ड</td><td>भाडा र Security Deposit</td></tr>
+  <tr><td>चौथो खण्ड</td><td>भाडावालाका दायित्व</td></tr>
+  <tr><td>पाँचौँ खण्ड</td><td>घरधनीका दायित्व</td></tr>
+  <tr><td>छैठौँ खण्ड</td><td>सम्झौता तोड्नेको शर्त</td></tr>
+  <tr><td>सातौँ खण्ड</td><td>गवाह र हस्ताक्षर</td></tr>
+</table>`,
+      },
+      {
+        id: 'security-deposit-nepal',
+        title: 'Security Deposit: नेपालको नियम र व्यवहार',
+        content: `<p>Security deposit (ग्यारेन्टी रकम) भाडा सम्झौताको एक महत्वपूर्ण भाग हो। नेपालमा यसका नियम र व्यवहार जान्नुहोस्।</p>
+<h4>Security Deposit को नियम:</h4>
+<ul>
+  <li>कानुनी रूपमा 2-3 महिनाको भाडा बराबर deposit लिन मिल्छ</li>
+  <li>Deposit सम्झौतामा लिखित रूपमा उल्लेख गर्नुपर्छ</li>
+  <li>घर खाली गर्दा उचित कारण बिना deposit रोक्न मिल्दैन</li>
+  <li>Deduction भए itemized receipt दिनुपर्छ</li>
+</ul>
+<h4>काठमाण्डूको Rental Market (2026):</h4>
+<table>
+  <tr><th>Area</th><th>1 BHK Monthly</th><th>Security Deposit</th></tr>
+  <tr><td>Thamel</td><td>रु. 25,000–40,000</td><td>रु. 50,000–1,20,000</td></tr>
+  <tr><td>Lazimpat/Sanepa</td><td>रु. 30,000–60,000</td><td>रु. 60,000–1,80,000</td></tr>
+  <tr><td>Baneshwor</td><td>रु. 18,000–30,000</td><td>रु. 36,000–90,000</td></tr>
+  <tr><td>Koteshwor</td><td>रु. 15,000–25,000</td><td>रु. 30,000–75,000</td></tr>
+  <tr><td>Kirtipur</td><td>रु. 10,000–18,000</td><td>रु. 20,000–54,000</td></tr>
+  <tr><td>Bhaktapur</td><td>रु. 8,000–15,000</td><td>रु. 16,000–45,000</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Security deposit cash मा दिनुभन्दा bank transfer गर्नुहोस् र receipt लिनुहोस् — record राख्नु जरुरी छ।</p></div>`,
+      },
+      {
+        id: 'ward-office-registration',
+        title: 'Ward Office मा भाडा सम्झौता दर्ता',
+        content: `<p>नेपालमा भाडा सम्झौता Ward Office (वडा कार्यालय) मा दर्ता गर्नु कानुनी आवश्यकता हो। दर्ता प्रक्रिया जान्नुहोस्।</p>
+<h4>दर्ताका लागि आवश्यक कागजातहरू:</h4>
+<ul>
+  <li>भाडा सम्झौताको 2 copies (दुवै पक्षले sign गरेको)</li>
+  <li>घरधनीको नागरिकताको प्रतिलिपि</li>
+  <li>भाडावालाको नागरिकताको प्रतिलिपि</li>
+  <li>घरको लालपुर्जा (Land ownership certificate)</li>
+  <li>2 copies passport size photo (दुवैको)</li>
+  <li>Tax clearance (if required)</li>
+</ul>
+<h4>दर्ता प्रक्रिया:</h4>
+<ol>
+  <li>सम्बन्धित Ward Office मा जानुहोस्</li>
+  <li>भाडा सम्झौता दर्ता फारम भर्नुहोस्</li>
+  <li>आवश्यक कागजात पेश गर्नुहोस्</li>
+  <li>दर्ता शुल्क तिर्नुहोस् (रु. 100-500 सम्म)</li>
+  <li>Registered सम्झौताको certified copy प्राप्त गर्नुहोस्</li>
+</ol>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Online Banking, loan application र income tax return को लागि Ward Office registered भाडा सम्झौता आवश्यक पर्छ — अनिवार्य रूपमा दर्ता गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'tenant-rights',
+        title: 'भाडावालाका अधिकारहरू: नेपाल',
+        content: `<p>नेपालको घर भाडा ऐन २०७५ ले भाडावालाका निम्न अधिकार सुरक्षित गरेको छ।</p>
+<h4>मुख्य अधिकारहरू:</h4>
+<ul>
+  <li><strong>अनावश्यक विस्थापनबाट सुरक्षा:</strong> सम्झौताको अवधिभर घरधनीले बिना कारण हटाउन पाउँदैन</li>
+  <li><strong>Privacy अधिकार:</strong> घरधनीले पूर्व सूचना बिना घरभित्र पस्न पाउँदैन</li>
+  <li><strong>Deposit फिर्ता:</strong> उचित कारण बिना Deposit रोक्न मिल्दैन</li>
+  <li><strong>Receipts:</strong> भाडा भुक्तानीको receipt माग्ने अधिकार</li>
+  <li><strong>Basic सुविधा:</strong> पानी, बिजुली, नढक्नुपर्ने ढोकाको अधिकार</li>
+  <li><strong>Renewal:</strong> सम्झौता अवधि सकिएपछि renewal को प्राथमिकता</li>
+</ul>
+<h4>विवाद परेमा कहाँ जाने:</h4>
+<table>
+  <tr><th>विवादको प्रकार</th><th>जाने ठाउँ</th></tr>
+  <tr><td>Deposit नफिर्ताउने</td><td>Ward Office वा District Court</td></tr>
+  <tr><td>बिना सूचना निकाल्ने</td><td>District Court</td></tr>
+  <tr><td>Basic services काट्ने</td><td>Ward Office / Municipality</td></tr>
+  <tr><td>Harassment</td><td>Nepal Police / Ward Office</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>सबै communication (SMS, email, मौखिक कुरा पनि witness को सामने) को record राख्नुहोस् — विवादमा evidence आवश्यक पर्छ।</p></div>`,
+      },
+      {
+        id: 'agreement-clauses',
+        title: 'Important Clauses: भाडा सम्झौतामा थप्नुपर्ने शर्तहरू',
+        content: `<p>सामान्य भाडा सम्झौता भन्दा बढी सुरक्षाका लागि निम्न clauses थप्नुहोस्।</p>
+<h4>Recommended Additional Clauses:</h4>
+<ul>
+  <li><strong>Subletting clause:</strong> भाडावालाले अन्य व्यक्तिलाई sub-let गर्न पाउँछ/पाउँदैन भन्ने स्पष्ट उल्लेख</li>
+  <li><strong>Pets policy:</strong> पाल्तु जनावर राख्न मिल्छ/मिल्दैन</li>
+  <li><strong>Maintenance responsibility:</strong> कुन किसिमको repair को जिम्मेवारी कसको</li>
+  <li><strong>Renovation permission:</strong> भाडावालाले घरमा कुनै परिवर्तन गर्न पाउँछ/पाउँदैन</li>
+  <li><strong>Business use:</strong> घर business प्रयोजनका लागि प्रयोग गर्न पाउँछ/पाउँदैन</li>
+  <li><strong>Guest policy:</strong> लामो समयका लागि अतिरिक्त व्यक्ति बस्न मिल्छ/मिल्दैन</li>
+</ul>
+<h4>Utilities Division Template:</h4>
+<table>
+  <tr><th>Utility</th><th>Common Practice Nepal</th></tr>
+  <tr><td>Electricity</td><td>भाडावाले तिर्छ (meter reading अनुसार)</td></tr>
+  <tr><td>Water (KUKL)</td><td>घरधनीले तिर्छ वा share</td></tr>
+  <tr><td>Internet</td><td>भाडावाले तिर्छ (optional)</td></tr>
+  <tr><td>Garbage Collection</td><td>Municipality fee: दुवैको सहमतिमा</td></tr>
+  <tr><td>Building Maintenance</td><td>घरधनीको दायित्व</td></tr>
+</table>`,
+      },
+      {
+        id: 'rent-agreement-renewal',
+        title: 'भाडा सम्झौता नवीकरण र समाप्ति',
+        content: `<p>भाडा सम्झौताको अवधि सकिँदा नवीकरण वा समाप्तिको प्रक्रिया जान्नुहोस्।</p>
+<h4>Renewal Process:</h4>
+<ul>
+  <li>Expiry भन्दा 1-2 महिना अगाडि दुवै पक्षले सम्झौता review गर्नुहोस्</li>
+  <li>भाडा adjustment छ भने negotiate गर्नुहोस्</li>
+  <li>नयाँ terms agree भए नयाँ सम्झौता बनाउनुहोस्</li>
+  <li>Ward Office मा नयाँ सम्झौता दर्ता गराउनुहोस्</li>
+</ul>
+<h4>Agreement Termination Checklist:</h4>
+<table>
+  <tr><th>काम</th><th>घरधनी</th><th>भाडावाला</th></tr>
+  <tr><td>35-दिनको Notice दिने</td><td>✓</td><td>✓</td></tr>
+  <tr><td>Damages assess गर्ने</td><td>✓</td><td>—</td></tr>
+  <tr><td>Deposit फिर्ता गर्ने</td><td>✓ (30 दिनभित्र)</td><td>—</td></tr>
+  <tr><td>Utility bills clear गर्ने</td><td>—</td><td>✓</td></tr>
+  <tr><td>Keys फिर्ता गर्ने</td><td>—</td><td>✓</td></tr>
+  <tr><td>Exit inspection गर्ने</td><td>✓</td><td>✓</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>घर खाली गर्दा Exit inspection को documentation (photos, written record) राख्नुहोस् — deposit deduction को विवादमा evidence हुन्छ।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Parties को जानकारी भर्नुहोस्',
+        description: 'घरधनी र भाडावाला दुवैको पूरा नाम, नागरिकता नम्बर, ठेगाना भर्नुहोस्। सही जानकारी भर्नु कानुनी मान्यताको लागि अनिवार्य छ।',
+      },
+      {
+        title: 'Property विवरण थप्नुहोस्',
+        description: 'भाडामा लिने/दिने घर/कोठाको पूरा ठेगाना, Floor, Rooms, Ward number, City भर्नुहोस्।',
+      },
+      {
+        title: 'भाडा र Deposit तोक्नुहोस्',
+        description: 'मासिक भाडाको रकम, भुक्तानी मिति (हरेक महिनाको कति गते), Security deposit रकम र Utilities को व्यवस्था भर्नुहोस्।',
+      },
+      {
+        title: 'Terms र Conditions थप्नुहोस्',
+        description: 'सम्झौताको अवधि, Notice period, Renewal terms र अन्य special conditions थप्नुहोस्। More protection का लागि additional clauses थप्न सकिन्छ।',
+      },
+      {
+        title: 'Print, Sign र Ward Office दर्ता',
+        description: 'Agreement PDF download गरेर print गर्नुहोस्। दुवै पक्षले sign गर्नुहोस् र 2 witnesses को signature लिनुहोस्। Ward Office मा दर्ता गराउनुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'भाडा सम्झौता Ward Office मा दर्ता गर्नु अनिवार्य छ?',
+        answer: 'हो, नेपाल कानुन अनुसार भाडा सम्झौता Ward Office मा दर्ता गराउनु अनिवार्य छ। दर्ता नगराएमा कानुनी विवादमा document weak हुन्छ।',
+      },
+      {
+        question: 'Security deposit कति राख्न मिल्छ?',
+        answer: 'नेपालमा सामान्यतया 2-3 महिनाको भाडा बराबर security deposit लिने चलन छ। घर खाली गर्दा 30 दिनभित्र deposit फिर्ता गर्नुपर्छ।',
+      },
+      {
+        question: 'भाडा बढाउन कति समय अगाडि सूचना दिनुपर्छ?',
+        answer: 'नेपाल कानुन अनुसार भाडा बढाउन कम्तीमा 3 महिना (90 दिन) अगाडि लिखित सूचना दिनुपर्छ।',
+      },
+      {
+        question: 'Online बनाएको भाडा सम्झौता कानुनी रूपमा valid हुन्छ?',
+        answer: 'हो, यदि सम्झौतामा सबै आवश्यक जानकारी छ, दुवै पक्षको signature छ, र Ward Office मा दर्ता गरिएको छ भने online generated agreement legally valid हुन्छ।',
+      },
+      {
+        question: 'Landlord बिना सूचना घर खाली गर्न भन्यो भने के गर्ने?',
+        answer: 'सम्झौता अवधिभर बिना कारण र बिना 35-दिनको सूचना घर खाली गराउन मिल्दैन। Ward Office वा District Court मा complaint दर्ता गर्न सकिन्छ।',
+      },
+      {
+        question: 'Nepali र English दुवैमा सम्झौता बनाउन मिल्छ?',
+        answer: 'हो, नेपाली (Devanagari) मा बनाउनु उत्तम छ किनकि Ward Office र अदालतमा नेपाली document राम्रो हुन्छ। English अनुवाद सँगै राख्न सकिन्छ।',
+      },
+      {
+        question: 'घरधनीले deposit नफिर्ताएमा के गर्ने?',
+        answer: 'पहिले लिखित माग गर्नुहोस्। 30 दिनभित्र नफिर्ताएमा Ward Office मा शिकायत दर्ता गर्नुहोस् वा District Court मा मुद्दा हाल्न सकिन्छ।',
+      },
+      {
+        question: 'भाडा सम्झौतामा Witness को sign अनिवार्य छ?',
+        answer: 'कानुनी रूपमा 2 witnesses को signature भएमा सम्झौता बलियो हुन्छ। Ward Office दर्ताका लागि witnesses को sign recommended छ।',
+      },
+    ],
+    relatedGuides: ['invoice-generator-guide', 'resume-builder-guide', 'salary-calculator-guide'],
+    toolCTA: {
+      heading: 'अहिले नै भाडा सम्झौता बनाउनुहोस् — फ्री!',
+      description: 'नेपाल कानुन अनुसार कानुनी भाडा सम्झौता मिनेटमा बनाउनुहोस् — Ward Office दर्ताका लागि तयार।',
+      buttonText: 'Rent Agreement Generator खोल्नुहोस् →',
+    },
+  },
+
+  // ── MARRIAGE BIODATA MAKER ───────────────────────────────────────
+  {
+    slug: 'marriage-biodata-maker-guide',
+    toolSlug: 'marriage-biodata-maker',
+    category: 'utility-tools',
+    title: 'फ्री विवाह बायोडाटा मेकर गाइड: विवाहका लागि बायोडाटा बनाउनुहोस् (2026)',
+    subtitle: 'नेपाली विवाह संस्कृति अनुसार professional विवाह बायोडाटा अनलाइन बनाउनुहोस् — जात÷जाति, कुण्डली र परिवार विवरण सहित।',
+    metaTitle: 'विवाह बायोडाटा फर्म्याट नेपाल - फ्री Marriage Biodata Maker',
+    metaDescription: 'नेपाली विवाहका लागि professional बायोडाटा अनलाइन बनाउनुहोस्। जात/जाति, कुण्डली, शिक्षा, पेशा, परिवार विवरण सहित। नेपाली विवाह संस्कृति अनुसार designed। निःशुल्क।',
+    targetKeyword: 'विवाह बायोडाटा फर्म्याट नेपाल',
+    secondaryKeywords: [
+      'marriage biodata nepal',
+      'विवाह बायोडाटा नेपाल',
+      'vivah biodata format nepali',
+      'nepali marriage biodata',
+      'kundali biodata nepal',
+      'arranged marriage biodata',
+      'biodata for marriage nepali',
+      'hamro patro kundali',
+      'nepali biodata template',
+      'marriage profile nepal',
+      'जन्मकुण्डली विवाह',
+      'caste marriage nepal',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['विवाह', 'बायोडाटा', 'कुण्डली', 'नेपाल', 'परिवार'],
+    intro: `<p>नेपालमा <strong>विवाह बायोडाटा</strong> arranged marriage को पहिलो कदम हो। परिवार मिलाउन, तीज र विवाह सामग्री बारे छलफल गर्न, र वर/वधूको प्रारम्भिक परिचयका लागि राम्रो बायोडाटा आवश्यक छ।</p>
+<p>हाम्रो <strong>फ्री Marriage Biodata Maker</strong>ले नेपाली विवाह परम्परा अनुसार — जात/जाति, कुण्डली (राशि, नक्षत्र), शिक्षा, पेशा र परिवार विवरण सहित — सुन्दर र professional बायोडाटा बनाउँछ।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Hamro Patro app बाट आफ्नो जन्म मिति अनुसार राशि र नक्षत्र निकाल्नुहोस् — बायोडाटामा राख्न सजिलो हुन्छ।</p></div>`,
+    sections: [
+      {
+        id: 'nepal-marriage-culture',
+        title: 'नेपाली विवाह संस्कृति र बायोडाटाको भूमिका',
+        content: `<p>नेपालमा विवाह एक पारिवारिक र सामाजिक घटना हो। Arranged marriage मा दुवै परिवारको सहमति र समझदारी आवश्यक हुन्छ। बायोडाटाले पहिलो छाप निर्माण गर्छ।</p>
+<h4>नेपाली विवाहमा बायोडाटाको महत्व:</h4>
+<ul>
+  <li><strong>पारिवारिक परिचय:</strong> वर/वधूको मात्र नभई पूरा परिवारको पृष्ठभूमि बुझ्न</li>
+  <li><strong>कुण्डली मिलान:</strong> ज्योतिष अनुसार राशि, नक्षत्र, गोत्र मिलाउन</li>
+  <li><strong>जात/जाति विचार:</strong> परम्परागत रूपमा धेरै समुदायमा जात÷जाति मिलाउने चलन</li>
+  <li><strong>सामाजिक स्तर:</strong> शिक्षा, पेशा, आम्दानी बारे प्रारम्भिक जानकारी</li>
+  <li><strong>Matrimonial Sites:</strong> HamroPatro, Matrimony Nepal जस्ता online platforms मा profile</li>
+</ul>
+<h4>नेपालका विभिन्न समुदायमा विवाह परम्परा:</h4>
+<table>
+  <tr><th>समुदाय</th><th>मुख्य विचार</th><th>बायोडाटामा थप्ने</th></tr>
+  <tr><td>Brahmin/Chhetri</td><td>गोत्र, कुण्डली मिलान</td><td>गोत्र, Pravara, Rashi</td></tr>
+  <tr><td>Newar</td><td>Guthi, clan</td><td>Guthi membership, clan name</td></tr>
+  <tr><td>Tamang/Gurung</td><td>Clan/थर</td><td>Clan, village origin</td></tr>
+  <tr><td>Tharu</td><td>Village origin</td><td>District, village</td></tr>
+  <tr><td>Muslim</td><td>Religious compatibility</td><td>Sect, religious practice</td></tr>
+  <tr><td>Christian</td><td>Church denomination</td><td>Church, baptism info</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Modern Nepal मा inter-caste marriage बढ्दो छ। बायोडाटामा personal values र compatibility पनि highlight गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'biodata-contents',
+        title: 'नेपाली विवाह बायोडाटामा के-के राख्ने?',
+        content: `<p>राम्रो विवाह बायोडाटामा निम्न sections हुनुपर्छ। हरेक section को सही जानकारी भर्नाले राम्रो match हुने सम्भावना बढ्छ।</p>
+<h4>Standard Sections:</h4>
+<table>
+  <tr><th>Section</th><th>Details</th></tr>
+  <tr><td>व्यक्तिगत विवरण</td><td>नाम, जन्म मिति (BS/AD), उमेर, उचाई, रंग</td></tr>
+  <tr><td>धार्मिक/जातीय</td><td>धर्म, जात/जाति, गोत्र, थर</td></tr>
+  <tr><td>ज्योतिष विवरण</td><td>राशि, नक्षत्र, चरण, गण, नाडी</td></tr>
+  <tr><td>शिक्षा</td><td>उच्चतम शिक्षा, विषय, विश्वविद्यालय</td></tr>
+  <tr><td>पेशा र आम्दानी</td><td>हालको जागिर/व्यवसाय, मासिक आम्दानी</td></tr>
+  <tr><td>व्यक्तित्व</td><td>शौक, रुचि, मूल्यमान्यता</td></tr>
+  <tr><td>परिवार विवरण</td><td>बाबुआमाको नाम/पेशा, भाइबहिनी</td></tr>
+  <tr><td>ठेगाना</td><td>स्थायी ठेगाना, हालको बसोबास</td></tr>
+  <tr><td>Contact</td><td>फोन, email (optional)</td></tr>
+  <tr><td>Photo</td><td>हालिको formal photo</td></tr>
+</table>
+<h4>Optional Sections:</h4>
+<ul>
+  <li>विदेशमा बसेको भए country र visa status</li>
+  <li>Property/सम्पत्ति विवरण</li>
+  <li>Partner Preference (उमेर, शिक्षा, जात आदि)</li>
+</ul>`,
+      },
+      {
+        id: 'kundali-biodata',
+        title: 'कुण्डली विवरण बायोडाटामा: Hamro Patro प्रयोग',
+        content: `<p>नेपालमा हिन्दू परम्परामा विवाह मिलाउँदा कुण्डली मिलान गरिन्छ। Hamro Patro app बाट आफ्नो ज्योतिष विवरण निकाल्न सकिन्छ।</p>
+<h4>Hamro Patro बाट कुण्डली निकाल्ने:</h4>
+<ol>
+  <li>Hamro Patro app (वा hamropatro.com) खोल्नुहोस्</li>
+  <li>"Kundali / कुण्डली" section मा जानुहोस्</li>
+  <li>जन्म मिति (BS), समय र ठाउँ दर्ता गर्नुहोस्</li>
+  <li>राशि, नक्षत्र, चरण, गण, नाडी, Lagna देखिन्छ</li>
+</ol>
+<h4>कुण्डली मिलानका 36 Gunas:</h4>
+<table>
+  <tr><th>Guna Category</th><th>Points</th><th>Importance</th></tr>
+  <tr><td>Varna</td><td>1</td><td>Social compatibility</td></tr>
+  <tr><td>Vashya</td><td>2</td><td>Mutual attraction</td></tr>
+  <tr><td>Tara</td><td>3</td><td>Health, longevity</td></tr>
+  <tr><td>Yoni</td><td>4</td><td>Physical compatibility</td></tr>
+  <tr><td>Graha Maitri</td><td>5</td><td>Mental compatibility</td></tr>
+  <tr><td>Gana</td><td>6</td><td>Temperament</td></tr>
+  <tr><td>Bhakoot</td><td>7</td><td>Family welfare</td></tr>
+  <tr><td>Nadi</td><td>8</td><td>Health of children</td></tr>
+</table>
+<p><strong>18+ points:</strong> Compatible, <strong>24+ points:</strong> Good match, <strong>30+ points:</strong> Excellent match</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Kundali mismatch भए पनि आफ्नो पुरोहितसँग सल्लाह लिनुहोस् — केही dosha हरूको उपाय हुन्छ।</p></div>`,
+      },
+      {
+        id: 'photo-biodata',
+        title: 'विवाह बायोडाटाको लागि Photo Guidelines',
+        content: `<p>विवाह बायोडाटामा photo पहिलो impression को लागि सबैभन्दा महत्वपूर्ण element हो।</p>
+<h4>Photo Requirements:</h4>
+<ul>
+  <li><strong>Recent:</strong> हालिको 6 महिनाभित्रको photo</li>
+  <li><strong>Clear face:</strong> Face पूर्ण देखिने, eyes open</li>
+  <li><strong>Formal dress:</strong> साङ्गीतिक अवसरको होइन, formal/semi-formal dress</li>
+  <li><strong>Background:</strong> Plain background — studio photo ideal</li>
+  <li><strong>Expression:</strong> Warm, friendly smile</li>
+  <li><strong>Resolution:</strong> High resolution — print मा पनि clear देखियोस्</li>
+</ul>
+<h4>Photo Types for Biodata:</h4>
+<table>
+  <tr><th>Photo Type</th><th>Best For</th><th>तरिका</th></tr>
+  <tr><td>Formal Portrait</td><td>Traditional family</td><td>Studio photo</td></tr>
+  <tr><td>Semi-formal</td><td>Modern family</td><td>Good mobile photo</td></tr>
+  <tr><td>Full body</td><td>Additional info</td><td>Outdoor/studio</td></tr>
+  <tr><td>Traditional dress</td><td>Cultural match priority</td><td>Festival occasion</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Heavily filtered वा edited photo नराख्नुहोस् — पहिलो meeting मा awkward हुन सक्छ। Natural photo राख्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'online-matrimony-nepal',
+        title: 'Online Matrimony Sites नेपालमा',
+        content: `<p>नेपालमा online matrimony sites को प्रयोग बढ्दो छ। HamroPatro, Matrimony.com Nepal, र Facebook groups मा विवाह बायोडाटा share हुन्छ।</p>
+<h4>नेपालका प्रमुख Matrimony Platforms:</h4>
+<table>
+  <tr><th>Platform</th><th>Type</th><th>Cost</th><th>Features</th></tr>
+  <tr><td>HamroPatro Vivah</td><td>Nepali focused</td><td>Limited free</td><td>Kundali, caste filter</td></tr>
+  <tr><td>Matrimony.com Nepal</td><td>India + Nepal</td><td>Paid premium</td><td>Large database</td></tr>
+  <tr><td>Shaadi.com (Nepal)</td><td>South Asia</td><td>Paid premium</td><td>Wide reach</td></tr>
+  <tr><td>Facebook Groups</td><td>Community-based</td><td>फ्री</td><td>Caste-specific groups</td></tr>
+  <tr><td>Local Newspaper</td><td>Traditional</td><td>Paid</td><td>Older generation reach</td></tr>
+</table>
+<h4>Digital Biodata Sharing Tips:</h4>
+<ul>
+  <li>WhatsApp/Viber मा PDF biodata share गर्नुहोस्</li>
+  <li>Personal contact information careful गरेर share गर्नुहोस्</li>
+  <li>Phone number भन्दा family member को number दिनुहोस् initially</li>
+  <li>Biodata मा home address नराख्नुहोस् — privacy important छ</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>PDF biodata बनाउनुहोस् र WhatsApp मा share गर्नुहोस् — image भन्दा PDF मा professional look र full information हुन्छ।</p></div>`,
+      },
+      {
+        id: 'biodata-design',
+        title: 'Biodata Design र Format: नेपाली Style',
+        content: `<p>विवाह बायोडाटाको design र layout पनि महत्वपूर्ण छ। Traditional र modern — दुवै style को option हुन्छ।</p>
+<h4>Biodata Design Options:</h4>
+<ul>
+  <li><strong>Traditional Nepali:</strong> देवनागरी font, cultural motifs (पाटी, पौभा design), saffron/red color scheme</li>
+  <li><strong>Modern Minimal:</strong> Clean layout, professional look, bilingual (Nepali + English)</li>
+  <li><strong>Religious:</strong> OM symbol, deity image, religious color (saffron, gold)</li>
+</ul>
+<h4>Color Psychology for Biodata:</h4>
+<table>
+  <tr><th>Color</th><th>Meaning</th><th>Best For</th></tr>
+  <tr><td>Red/Maroon</td><td>Traditional, auspicious</td><td>Hindu Brahmin/Chhetri</td></tr>
+  <tr><td>Saffron/Orange</td><td>Religious, pure</td><td>Traditional families</td></tr>
+  <tr><td>Blue/Navy</td><td>Professional, trustworthy</td><td>Modern families</td></tr>
+  <tr><td>Green</td><td>Nature, harmony</td><td>General use</td></tr>
+  <tr><td>Purple</td><td>Creative, unique</td><td>Modern/urban</td></tr>
+</table>
+<h4>Font Choices:</h4>
+<ul>
+  <li><strong>Devanagari:</strong> Mangal, Noto Sans Devanagari (readable, formal)</li>
+  <li><strong>English:</strong> Times New Roman (traditional), Calibri (modern)</li>
+  <li>Font size: Title 16-18pt, Body 11-12pt, Labels 10pt</li>
+</ul>`,
+      },
+      {
+        id: 'biodata-do-dont',
+        title: 'Biodata: के राख्ने र के नराख्ने',
+        content: `<p>विवाह बायोडाटा बनाउँदा कुन जानकारी राख्ने र कुन नराख्ने भन्ने सोच्नु महत्वपूर्ण छ।</p>
+<h4>राख्नुपर्ने जानकारी (DO):</h4>
+<ul>
+  <li>पूरा नाम र उमेर</li>
+  <li>शिक्षा र पेशाको सही विवरण</li>
+  <li>परिवारको विवरण (बाबुआमाको नाम र पेशा)</li>
+  <li>हाल बसोबासको शहर (full address नभई)</li>
+  <li>हालिको clear photo</li>
+  <li>Contact: Family member को phone number</li>
+</ul>
+<h4>नराख्नुपर्ने जानकारी (DON'T):</h4>
+<ul>
+  <li>पूरा घर ठेगाना — privacy risk</li>
+  <li>आफ्नो personal mobile number (initially)</li>
+  <li>Bank account, salary details</li>
+  <li>Past relationship details</li>
+  <li>Heavy filter लगाएको photo</li>
+  <li>Negative statements वा comparisons</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Online share गरेको biodata कसले पनि देख्न सक्छ — personal र financial information careful गरेर share गर्नुहोस्। Scam marriages बारे सचेत रहनुहोस्।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Template छान्नुहोस्',
+        description: 'Traditional Nepali, Modern, वा Religious — आफ्नो परिवार र community को preference अनुसार biodata template छान्नुहोस्।',
+      },
+      {
+        title: 'व्यक्तिगत जानकारी भर्नुहोस्',
+        description: 'नाम, जन्म मिति (BS र AD दुवै), उमेर, उचाई, धर्म, जात/जाति, गोत्र, शिक्षा र पेशाको विवरण भर्नुहोस्।',
+      },
+      {
+        title: 'कुण्डली विवरण थप्नुहोस्',
+        description: 'Hamro Patro app बाट राशि, नक्षत्र, चरण, गण, नाडी निकालेर biodata मा राख्नुहोस्। यो परम्परागत परिवारका लागि महत्वपूर्ण छ।',
+      },
+      {
+        title: 'Photo Upload र परिवार विवरण',
+        description: 'हालिको formal photo upload गर्नुहोस्। बाबुआमाको नाम, पेशा र भाइबहिनीको विवरण थप्नुहोस्।',
+      },
+      {
+        title: 'Preview र PDF Download',
+        description: 'Biodata preview हेर्नुहोस्, कुनै correction छ भने गर्नुहोस्। PDF download गरेर family members लाई share गर्नुहोस् र matrimony sites मा upload गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'विवाह बायोडाटामा गोत्र किन राख्ने?',
+        answer: 'हिन्दू परम्परामा एउटै गोत्रका भाइबहिनी जस्तो मानिन्छ — एउटै गोत्रमा विवाह गर्न मिल्दैन। पहिल्यै गोत्र जान्दा match process सहज हुन्छ।',
+      },
+      {
+        question: 'Kundali mismatch भए विवाह हुँदैन?',
+        answer: 'कुण्डली match score कम भए पनि पुरोहितले उपाय सुझाउन सक्छन् — विशेष pooja, रत्न आदि। अन्तिम निर्णय परिवारको हो।',
+      },
+      {
+        question: 'Online बनाएको biodata print गर्न सकिन्छ?',
+        answer: 'हो। ToolsArena बाट बनाएको biodata PDF download गरेर A4 paper मा print गर्न सकिन्छ। Photo quality print का लागि 300 DPI राख्नुहोस्।',
+      },
+      {
+        question: 'नेपाली र English दुवैमा biodata बनाउन मिल्छ?',
+        answer: 'हो। Bilingual biodata (नेपाली + English) बनाउन सकिन्छ — विदेशमा रहेका या modern families का लागि उपयोगी।',
+      },
+      {
+        question: 'HamroPatro मा कसरी biodata upload गर्ने?',
+        answer: 'HamroPatro Vivah section मा account बनाएर profile fill गर्नुहोस् वा PDF biodata अपलोड गर्न सकिन्छ। Photo र basic details पनि add गर्नुहोस्।',
+      },
+      {
+        question: 'Biodata मा salary उल्लेख गर्नु पर्छ?',
+        answer: 'Optional छ। Approximate range दिन सकिन्छ (जस्तै ५०,०००+ प्रति महिना) तर exact salary नराख्नुहोस् — initial contact पछि family meeting मा discuss गर्न सकिन्छ।',
+      },
+      {
+        question: 'Inter-caste विवाहका लागि biodata कसरी बनाउने?',
+        answer: 'Inter-caste match का लागि caste/gotra field मा आफ्नो जाति लेख्नुहोस् तर "Inter-caste open" उल्लेख गर्नुहोस्। Partner preference section मा स्पष्ट गर्नुहोस्।',
+      },
+      {
+        question: 'Biodata को PDF size कति हुनुपर्छ WhatsApp share गर्न?',
+        answer: 'WhatsApp मा PDF share गर्न 2-5 MB उपयुक्त हुन्छ। ठूलो भए PDF Compressor बाट compress गर्नुहोस्। Photo quality खराब नहोस् भनेर 300 KB भन्दा कम नझार्नुहोस्।',
+      },
+    ],
+    relatedGuides: ['resume-builder-guide', 'invoice-generator-guide', 'image-compressor-guide'],
+    toolCTA: {
+      heading: 'अहिले नै विवाह बायोडाटा बनाउनुहोस् — फ्री!',
+      description: 'नेपाली विवाह संस्कृति अनुसार professional बायोडाटा मिनेटमा बनाउनुहोस् — कुण्डली, जात/जाति र परिवार विवरण सहित।',
+      buttonText: 'Marriage Biodata Maker खोल्नुहोस् →',
+    },
+  },
+
+  // ── TYPING SPEED TEST ────────────────────────────────────────────
+  {
+    slug: 'typing-speed-test-guide',
+    toolSlug: 'typing-speed-test',
+    category: 'utility-tools',
+    title: 'फ्री टाइपिङ स्पिड टेस्ट गाइड: अनलाइन WPM चेक गर्नुहोस् (2026)',
+    subtitle: 'लोक सेवा आयोग Computer Operator परीक्षा, नेपाल राष्ट्र बैंक र सरकारी जागिरको टाइपिङ टेस्ट — WPM र accuracy सुधार गर्नुहोस्।',
+    metaTitle: 'टाइपिङ टेस्ट अनलाइन - WPM चेक Nepal Lok Sewa Typing Test',
+    metaDescription: 'अनलाइन टाइपिङ स्पिड टेस्ट गर्नुहोस्। WPM, accuracy जाँच्नुहोस्। Lok Sewa Computer Operator, NRB typing requirement, Preeti/Kantipur font। निःशुल्क।',
+    targetKeyword: 'टाइपिङ टेस्ट अनलाइन',
+    secondaryKeywords: [
+      'typing test nepal',
+      'lok sewa typing test',
+      'WPM test nepali',
+      'computer operator exam typing',
+      'preeti font typing test',
+      'kantipur font typing',
+      'NRB typing requirement',
+      'government job typing test nepal',
+      'typing speed test free',
+      'typing practice nepali',
+      'WPM meaning nepali',
+      'keyboard typing practice nepal',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['टाइपिङ', 'WPM', 'लोक सेवा', 'Computer Operator', 'परीक्षा'],
+    intro: `<p>नेपालमा <strong>Lok Sewa Aayog</strong> को Computer Operator, Data Entry र Administrative posts का लागि <strong>टाइपिङ टेस्ट</strong> अनिवार्य छ। Nepal Rastra Bank, Nepal Telecom र अन्य सरकारी संस्थाहरूमा पनि minimum typing speed requirement हुन्छ।</p>
+<p>हाम्रो <strong>फ्री अनलाइन Typing Speed Test</strong>ले तपाईंको WPM (Words Per Minute) र accuracy तुरुन्त मापन गर्छ — नेपाली Preeti/Kantipur font र English दुवैमा।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Lok Sewa Computer Operator को टाइपिङ परीक्षामा minimum 35 WPM चाहिन्छ। दैनिक 30 मिनेट practice गरेर 2-3 हप्तामा यो लक्ष्य पूरा गर्न सकिन्छ।</p></div>`,
+    sections: [
+      {
+        id: 'wpm-meaning',
+        title: 'WPM भनेको के हो? Typing Speed कसरी मापिन्छ?',
+        content: `<p>WPM (Words Per Minute) टाइपिङ speed मापनको standard unit हो। एउटा "word" = 5 characters (spaces सहित) मानिन्छ।</p>
+<h4>WPM Formula:</h4>
+<blockquote><strong>WPM = (Total Characters Typed ÷ 5) ÷ Minutes</strong><br/>Adjusted WPM = WPM − (Errors × Penalty)</blockquote>
+<h4>WPM Standards:</h4>
+<table>
+  <tr><th>Level</th><th>WPM</th><th>Description</th></tr>
+  <tr><td>Beginner</td><td>10–20</td><td>नयाँ सिक्नेहरू</td></tr>
+  <tr><td>Average</td><td>20–40</td><td>सामान्य computer user</td></tr>
+  <tr><td>Good</td><td>40–60</td><td>Office work suitable</td></tr>
+  <tr><td>Professional</td><td>60–80</td><td>Data entry professional</td></tr>
+  <tr><td>Advanced</td><td>80–100+</td><td>Typist, secretary level</td></tr>
+</table>
+<h4>Accuracy को महत्व:</h4>
+<p>Speed भन्दा accuracy पनि महत्वपूर्ण छ। 95%+ accuracy भएन भने speed बेकार हुन्छ। Lok Sewa परीक्षामा गलत typing मा penalty हुन्छ।</p>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Speed को पछि लागेर accuracy sacrifice नगर्नुहोस् — गलती सुधार्न time खर्च हुन्छ जसले net WPM घट्छ।</p></div>`,
+      },
+      {
+        id: 'lok-sewa-typing',
+        title: 'Lok Sewa Aayog: टाइपिङ परीक्षाको पूरा जानकारी',
+        content: `<p>Lok Sewa Aayog को विभिन्न पदका लागि टाइपिङ परीक्षाको विस्तृत जानकारी:</p>
+<h4>पद अनुसार Typing Requirements:</h4>
+<table>
+  <tr><th>पद</th><th>English WPM</th><th>Nepali WPM</th><th>Accuracy</th></tr>
+  <tr><td>Computer Operator (Kharidar)</td><td>35</td><td>25</td><td>95%+</td></tr>
+  <tr><td>Computer Operator (Grade II)</td><td>40</td><td>30</td><td>95%+</td></tr>
+  <tr><td>Data Entry Supervisor</td><td>45</td><td>35</td><td>96%+</td></tr>
+  <tr><td>Assistant Computer Operator</td><td>30</td><td>20</td><td>94%+</td></tr>
+  <tr><td>IT Officer</td><td>40</td><td>30</td><td>95%+</td></tr>
+</table>
+<h4>Lok Sewa Typing परीक्षाको Format:</h4>
+<ul>
+  <li>Duration: 10 minutes (5 English + 5 Nepali)</li>
+  <li>Passage: Prescribed text typing गर्नुपर्छ</li>
+  <li>Keyboard: Standard QWERTY</li>
+  <li>Nepali font: Preeti वा Kantipur (exam hall मा specify हुन्छ)</li>
+  <li>Pass/Fail based on WPM threshold</li>
+</ul>
+<h4>Exam Preparation Timeline:</h4>
+<table>
+  <tr><th>Current WPM</th><th>Target WPM</th><th>Preparation Time</th></tr>
+  <tr><td>10–15</td><td>35+</td><td>3–4 महिना</td></tr>
+  <tr><td>15–25</td><td>35+</td><td>1–2 महिना</td></tr>
+  <tr><td>25–30</td><td>35+</td><td>2–3 हप्ता</td></tr>
+  <tr><td>30+</td><td>35+</td><td>Polish + 1 हप्ता</td></tr>
+</table>`,
+      },
+      {
+        id: 'nepali-typing-fonts',
+        title: 'Preeti र Kantipur Font Typing: नेपाली Keyboard',
+        content: `<p>नेपाली टाइपिङका लागि Preeti र Kantipur font सबैभन्दा धेरै प्रयोग हुन्छन् — Lok Sewa परीक्षामा यिनैका लागि तयार हुनु पर्छ।</p>
+<h4>Preeti vs Kantipur Font:</h4>
+<table>
+  <tr><th>Feature</th><th>Preeti</th><th>Kantipur</th></tr>
+  <tr><td>Keyboard Layout</td><td>Typewriter-based</td><td>Typewriter-based</td></tr>
+  <tr><td>Government Use</td><td>धेरै प्रयोग</td><td>सामान्य</td></tr>
+  <tr><td>Lok Sewa</td><td>Most common</td><td>पनि use हुन्छ</td></tr>
+  <tr><td>Learning Curve</td><td>Medium</td><td>Medium</td></tr>
+  <tr><td>Unicode</td><td>Legacy font</td><td>Legacy font</td></tr>
+</table>
+<h4>Preeti Font मा मुख्य Keys:</h4>
+<ul>
+  <li><strong>क = k, ख = K, ग = g, घ = G</strong></li>
+  <li><strong>च = r, छ = R, ज = h, झ = H</strong></li>
+  <li><strong>Shift keys:</strong> Capital letters मा अलग characters</li>
+  <li><strong>Halant (्):</strong> S key बाट</li>
+  <li><strong>Matra aa (ा):</strong> f key बाट</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Preeti font keyboard chart print गरेर computer छेउमा राख्नुहोस् — daily practice गर्दा 2-3 हप्तामा memorize हुन्छ।</p></div>`,
+      },
+      {
+        id: 'nrb-typing',
+        title: 'Nepal Rastra Bank र अन्य संस्थाको Typing Requirement',
+        content: `<p>Lok Sewa बाहेक Nepal Rastra Bank, Nepal Telecom, र अन्य सरकारी र private संस्थाहरूमा पनि टाइपिङ requirement हुन्छ।</p>
+<h4>विभिन्न संस्थाको Typing Requirements:</h4>
+<table>
+  <tr><th>संस्था</th><th>पद</th><th>WPM Required</th></tr>
+  <tr><td>Nepal Rastra Bank</td><td>Assistant</td><td>40 English, 30 Nepali</td></tr>
+  <tr><td>Nepal Telecom</td><td>Telecom Technician</td><td>30+ English</td></tr>
+  <tr><td>Nepal Airlines</td><td>Ground Staff</td><td>35+ English</td></tr>
+  <tr><td>Commercial Banks</td><td>Data Entry</td><td>40+ English</td></tr>
+  <tr><td>Insurance Companies</td><td>Office Staff</td><td>35+ English</td></tr>
+  <tr><td>BPO/Call Centers</td><td>Agent</td><td>40–50+ English</td></tr>
+</table>
+<h4>Private Sector Typing Jobs Nepal:</h4>
+<ul>
+  <li>Data Entry Operator: रु. 15,000–25,000/महिना, 40+ WPM</li>
+  <li>Transcriptionist: रु. 20,000–35,000/महिना, 60+ WPM</li>
+  <li>Medical Transcriptionist: रु. 30,000–50,000/महिना, 65+ WPM</li>
+  <li>Freelance Typing (Upwork/Fiverr): USD 5–15/hour</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Typing speed 60+ WPM पुग्यो भने international freelancing platforms मा typing jobs पाउन सकिन्छ — घरबाटै काम गर्न सकिन्छ।</p></div>`,
+      },
+      {
+        id: 'typing-improvement',
+        title: 'टाइपिङ Speed सुधार्ने: Proven Techniques',
+        content: `<p>Typing speed systematically सुधार्ने science-backed techniques जान्नुहोस्।</p>
+<h4>Touch Typing सिक्नुहोस्:</h4>
+<p>Touch typing भनेको keyboard नहेरी टाइप गर्ने skill हो। यो सिकेपछि speed naturally बढ्छ।</p>
+<ul>
+  <li><strong>Home Row:</strong> ASDF JKL; — यहीँबाट सबै fingers start</li>
+  <li><strong>Finger placement:</strong> प्रत्येक finger को specific keys assign छन्</li>
+  <li><strong>No looking:</strong> Screen हेर्नुहोस्, keyboard नहेर्नुहोस्</li>
+</ul>
+<h4>Daily Practice Schedule:</h4>
+<table>
+  <tr><th>Week</th><th>Focus</th><th>Daily Practice</th></tr>
+  <tr><td>Week 1</td><td>Home row keys मात्र</td><td>20 minutes</td></tr>
+  <tr><td>Week 2</td><td>Top row add गर्नुहोस्</td><td>25 minutes</td></tr>
+  <tr><td>Week 3</td><td>Bottom row complete</td><td>30 minutes</td></tr>
+  <tr><td>Week 4+</td><td>Numbers + Punctuation</td><td>30 minutes</td></tr>
+</table>
+<h4>Common Mistakes र Solutions:</h4>
+<table>
+  <tr><th>Mistake</th><th>Solution</th></tr>
+  <tr><td>Keyboard हेर्दै टाइप गर्ने</td><td>Keyboard cover गर्नुहोस् — force touch typing</td></tr>
+  <tr><td>Speed मात्र focus</td><td>Accuracy first, speed naturally follows</td></tr>
+  <tr><td>Inconsistent practice</td><td>Daily 20-30 min — skip नगर्नुहोस्</td></tr>
+  <tr><td>Wrong posture</td><td>Back straight, wrists neutral, screen at eye level</td></tr>
+</table>`,
+      },
+      {
+        id: 'typing-tools',
+        title: 'Typing Practice Tools: नेपाली र English',
+        content: `<p>नेपाल बाट accessible best typing practice tools:</p>
+<h4>English Typing Practice:</h4>
+<table>
+  <tr><th>Tool</th><th>Best For</th><th>Cost</th></tr>
+  <tr><td><strong>ToolsArena Typing Test</strong></td><td>WPM test, quick check</td><td>फ्री</td></tr>
+  <tr><td>Keybr.com</td><td>Touch typing learning</td><td>फ्री</td></tr>
+  <tr><td>Typing.com</td><td>Structured course</td><td>फ्री</td></tr>
+  <tr><td>TypeRacer</td><td>Competitive practice</td><td>फ्री</td></tr>
+  <tr><td>Nitro Type</td><td>Fun typing games</td><td>फ्री</td></tr>
+</table>
+<h4>Nepali Typing Practice:</h4>
+<ul>
+  <li><strong>Mero Typing (mero-typing.com):</strong> Preeti font practice — Lok Sewa specific</li>
+  <li><strong>Type in Nepali:</strong> Romanized to Unicode conversion</li>
+  <li><strong>MS Word Preeti practice:</strong> खुद document type गरेर practice</li>
+  <li><strong>Hamro Keyboard app:</strong> Mobile मा Nepali typing practice</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Lok Sewa परीक्षा 3 महिना अगाडिदेखि daily typing practice सुरु गर्नुहोस् — exam room को pressure मा पनि fingers automatically move गर्छन्।</p></div>`,
+      },
+      {
+        id: 'ergonomics-typing',
+        title: 'Ergonomics: सही Posture र Typing Health',
+        content: `<p>गलत posture मा लामो typing गर्दा हात, काँध र घाँटीमा दुखाइ हुन्छ। सही तरिका जान्नुहोस्।</p>
+<h4>Correct Typing Posture:</h4>
+<ul>
+  <li><strong>Chair height:</strong> Thighs floor parallel, feet flat</li>
+  <li><strong>Monitor:</strong> Eye level मा वा थोरै तल</li>
+  <li><strong>Keyboard:</strong> Elbow angle 90-110°</li>
+  <li><strong>Wrists:</strong> Neutral — floating position, wrist rest avoid during typing</li>
+  <li><strong>Screen distance:</strong> 50-70 cm (arm length)</li>
+</ul>
+<h4>Break Schedule:</h4>
+<table>
+  <tr><th>Rule</th><th>Activity</th></tr>
+  <tr><td>हरेक 20 min</td><td>20 sec screen बाट दूर हेर्नुहोस्</td></tr>
+  <tr><td>हरेक 45 min</td><td>5 min break, हात stretch</td></tr>
+  <tr><td>हरेक 2 hours</td><td>15 min break, हिँड्नुहोस्</td></tr>
+</table>
+<h4>Common Typing Injuries र Prevention:</h4>
+<ul>
+  <li><strong>Carpal Tunnel:</strong> Wrist exercises daily गर्नुहोस्</li>
+  <li><strong>Eye Strain:</strong> 20-20-20 rule पालना गर्नुहोस्</li>
+  <li><strong>Back Pain:</strong> Lumbar support राख्नुहोस्</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>हात वा कलाईमा दुखाइ महसुस भए तुरुन्त break लिनुहोस् र डाक्टरसँग सल्लाह गर्नुहोस्।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Language र Test Type छान्नुहोस्',
+        description: 'English वा Nepali (Preeti/Kantipur font) टाइपिङ test छान्नुहोस्। Test duration: 1 minute, 3 minutes, वा 5 minutes छान्न सकिन्छ।',
+      },
+      {
+        title: 'Test सुरु गर्नुहोस्',
+        description: 'Typing area click गरेर test सुरु गर्नुहोस्। Screen मा देखिएको text जति सक्दो सही र छिटो टाइप गर्नुहोस्।',
+      },
+      {
+        title: 'Text टाइप गर्नुहोस्',
+        description: 'Screen मा देखिएको passage टाइप गर्नुहोस्। Backspace बाट correction गर्न सकिन्छ — तर time खर्च हुन्छ। Accuracy मा focus राख्नुहोस्।',
+      },
+      {
+        title: 'WPM र Accuracy हेर्नुहोस्',
+        description: 'Test सकिएपछि WPM, accuracy percentage, correct words र errors को detailed report हेर्नुहोस्।',
+      },
+      {
+        title: 'Improvement Area पहिचान गरेर Practice',
+        description: 'Weak areas (common errors, slow keys) पहिचान गर्नुहोस्। Daily practice plan बनाउनुहोस् र Lok Sewa target WPM achieve गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Lok Sewa Computer Operator मा कति WPM चाहिन्छ?',
+        answer: 'Lok Sewa Aayog को Computer Operator (Kharidar level) मा English 35 WPM र Nepali 25 WPM minimum चाहिन्छ। Higher grades मा 40+ WPM आवश्यक हुन्छ।',
+      },
+      {
+        question: 'Nepali Preeti font typing कसरी सिक्ने?',
+        answer: 'Preeti font keyboard chart print गर्नुहोस् र daily 30 min practice गर्नुहोस्। Mero-typing.com मा Preeti specific practice material उपलब्ध छ। 1-2 महिनामा basic proficiency आउँछ।',
+      },
+      {
+        question: 'WPM 35 पुग्न कति समय लाग्छ?',
+        answer: 'हाल 10-15 WPM छ भने daily 30 min practice गरे 3-4 महिनामा 35 WPM पुग्न सकिन्छ। 20+ WPM बाट start गरे 1-2 महिना लाग्छ।',
+      },
+      {
+        question: 'Typing speed test मा accuracy कति हुनुपर्छ?',
+        answer: 'Professional level का लागि 95%+ accuracy आवश्यक छ। Lok Sewa परीक्षामा errors मा penalty हुन्छ — speed भन्दा accuracy बढी महत्वपूर्ण छ।',
+      },
+      {
+        question: 'Touch typing कसरी सिक्ने?',
+        answer: 'Typing.com वा Keybr.com मा structured course छ। Home row (ASDF JKL;) बाट सुरु गर्नुहोस्। Keyboard नहेरी टाइप गर्ने habit बनाउनुहोस् — सुरुमा slow हुन्छ तर eventually faster हुन्छ।',
+      },
+      {
+        question: 'NRB को typing test मा कति WPM चाहिन्छ?',
+        answer: 'Nepal Rastra Bank को assistant level posts मा English 40 WPM र Nepali 30 WPM minimum typing speed requirement छ।',
+      },
+      {
+        question: 'Mobile मा typing test दिन सकिन्छ?',
+        answer: 'Mobile browser मा typing test open हुन्छ तर keyboard practice को लागि desktop/laptop नै उपयुक्त छ। Lok Sewa परीक्षा desktop keyboard मा हुन्छ — desktop मै practice गर्नुहोस्।',
+      },
+      {
+        question: 'Freelancing मा typing job गर्न कति WPM चाहिन्छ?',
+        answer: 'Data entry freelancing का लागि 40+ WPM, transcription को लागि 60+ WPM, र medical transcription को लागि 65+ WPM चाहिन्छ। Higher WPM = Higher pay rate।',
+      },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'resume-builder-guide'],
+    toolCTA: {
+      heading: 'अहिले नै Typing Speed Test गर्नुहोस् — फ्री!',
+      description: 'Lok Sewa Computer Operator परीक्षाको तयारी गर्नुहोस् — WPM र accuracy check गर्नुहोस्।',
+      buttonText: 'Typing Speed Test खोल्नुहोस् →',
+    },
+  },
+
+  // ── MEME GENERATOR ───────────────────────────────────────────────
+  {
+    slug: 'meme-generator-guide',
+    toolSlug: 'meme-generator',
+    category: 'image-tools',
+    title: 'फ्री मिम जनरेटर गाइड: अनलाइन मिम बनाउनुहोस् (2026)',
+    subtitle: 'नेपाली मिम संस्कृति अनुसार Facebook, TikTok र WhatsApp का लागि funny मिम अनलाइन बनाउनुहोस् — Dashain/Tihar special मिम सहित।',
+    metaTitle: 'मिम बनाउने तरिका - फ्री Online Meme Generator Nepal',
+    metaDescription: 'नेपाली Facebook, TikTok र WhatsApp का लागि funny मिम अनलाइन बनाउनुहोस्। Nepali meme templates, Dashain/Tihar memes। Meme Nepal page style। निःशुल्क meme creator।',
+    targetKeyword: 'मिम बनाउने तरिका',
+    secondaryKeywords: [
+      'nepali meme generator',
+      'meme banauney tarika',
+      'मिम बनाउने',
+      'Nepal meme maker',
+      'nepali funny meme',
+      'facebook meme nepal',
+      'tiktok meme nepal',
+      'dashain meme nepali',
+      'tihar meme nepal',
+      'meme nepal page',
+      'free meme creator',
+      'online meme maker nepali',
+    ],
+    lastUpdated: '2026-03-15',
+    readingTime: '७ मिनेट पढ्ने',
+    tags: ['मिम', 'Facebook', 'TikTok', 'नेपाली', 'Dashain'],
+    intro: `<p>नेपालमा <strong>Meme culture</strong> धेरै तेज गतिमा बढ्दो छ। "Meme Nepal", "Nepali Meme Hub" जस्ता Facebook pages लाई लाखौँ followers छन्। राजनीतिक व्यंग्य, Dashain/Tihar humor, र दैनिक जीवनका funny observations — सबै नेपाली memes मा देख्न पाइन्छ।</p>
+<p>हाम्रो <strong>फ्री Meme Generator</strong>ले popular meme templates बाट आफ्नै Nepali text थपेर funny memes मिनेटमा बनाउन सहयोग गर्छ — watermark बिना, registration बिना।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Dashain र Tihar मा Nepali meme pages मा engagement सबैभन्दा बढी हुन्छ — festival specific memes viral हुन सक्छन्।</p></div>`,
+    sections: [
+      {
+        id: 'nepali-meme-culture',
+        title: 'नेपाली मिम संस्कृति: Facebook देखि TikTok सम्म',
+        content: `<p>नेपालमा social media को बिस्तारसँगै meme culture पनि तीव्र गतिमा बढेको छ। नेपाली memes को आफ्नै unique style र context छ।</p>
+<h4>नेपाली Meme का प्रमुख Themes:</h4>
+<ul>
+  <li><strong>राजनीतिक व्यंग्य:</strong> नेपाली politicians, parliament sessions र policies मा humor</li>
+  <li><strong>Dashain/Tihar:</strong> देउसी-भैलो, टीका, खसी काट्ने — festival memes बेस्ट viral</li>
+  <li><strong>School/College life:</strong> TU exam, Lok Sewa preparation, hostel life</li>
+  <li><strong>Load shedding/Infrastructure:</strong> नेपालका दैनिक समस्याहरूमा humor</li>
+  <li><strong>NTC/Ncell internet:</strong> Slow internet, data price — relatable content</li>
+  <li><strong>Nepali parents:</strong> "Doctor बन्नुस्" pressure, marriage pressure</li>
+  <li><strong>Remittance culture:</strong> Gulf, Malaysia, Korea जाने दाजुभाइ</li>
+</ul>
+<h4>Popular Nepali Meme Pages (2026):</h4>
+<table>
+  <tr><th>Page</th><th>Platform</th><th>Style</th></tr>
+  <tr><td>Meme Nepal</td><td>Facebook</td><td>Political + Social</td></tr>
+  <tr><td>Nepali Meme Hub</td><td>Facebook</td><td>General humor</td></tr>
+  <tr><td>TikTok Nepal Memes</td><td>TikTok</td><td>Video memes</td></tr>
+  <tr><td>Reddit r/Nepal</td><td>Reddit</td><td>English + Nepali</td></tr>
+  <tr><td>Instagram Nepali Memes</td><td>Instagram</td><td>Visual memes</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>राजनीतिक र धार्मिक memes बनाउँदा सावधान रहनुहोस् — नेपालमा online defamation को कानुन छ। Cybercrime को case पर्न सक्छ।</p></div>`,
+      },
+      {
+        id: 'meme-types',
+        title: 'मिमका प्रकारहरू र Templates',
+        content: `<p>Memes को formats र types जान्नुहोस् — कुन occasion मा कुन meme format काम गर्छ।</p>
+<h4>Popular Meme Formats:</h4>
+<table>
+  <tr><th>Format</th><th>Description</th><th>Nepali Use</th></tr>
+  <tr><td>Top/Bottom Text</td><td>Image माथि र तल text</td><td>Classic Nepali memes</td></tr>
+  <tr><td>Drake Pointing</td><td>Approve/Disapprove format</td><td>Lok Sewa vs job comparison</td></tr>
+  <tr><td>Distracted Boyfriend</td><td>Attention shift format</td><td>दैनिक distraction memes</td></tr>
+  <tr><td>Two Buttons</td><td>Hard choice format</td><td>Exam vs chilling</td></tr>
+  <tr><td>Expanding Brain</td><td>Escalating ideas</td><td>Smart-sounding solutions</td></tr>
+  <tr><td>Nepali-specific</td><td>Local faces/contexts</td><td>Politician, celebrity memes</td></tr>
+  <tr><td>Text-only Meme</td><td>Funny text screenshot</td><td>WhatsApp/Viber share</td></tr>
+</table>
+<h4>Meme Image Sizes (Platform Optimized):</h4>
+<table>
+  <tr><th>Platform</th><th>Recommended Size</th><th>Format</th></tr>
+  <tr><td>Facebook</td><td>1200×630 px</td><td>JPG/PNG</td></tr>
+  <tr><td>Instagram</td><td>1080×1080 px (square)</td><td>JPG/PNG</td></tr>
+  <tr><td>TikTok (thumbnail)</td><td>1080×1920 px</td><td>PNG</td></tr>
+  <tr><td>WhatsApp</td><td>800×800 px</td><td>JPG</td></tr>
+  <tr><td>Twitter/X</td><td>1024×512 px</td><td>PNG</td></tr>
+</table>`,
+      },
+      {
+        id: 'dashain-tihar-memes',
+        title: 'Dashain/Tihar मिम: Festival Season Special',
+        content: `<p>नेपालमा Dashain र Tihar को season मा memes सबैभन्दा बढी share हुन्छन्। Festival specific memes viral हुने सम्भावना सबैभन्दा बढी छ।</p>
+<h4>Dashain Meme Ideas:</h4>
+<ul>
+  <li><strong>जागिर प्रश्न:</strong> काका/मामाको "के गर्दैछौ?" प्रश्न — classic Dashain meme</li>
+  <li><strong>Tika ceremony:</strong> लामो queue, grand-parents को blessing</li>
+  <li><strong>Khasi ko price:</strong> मासुको महंगो मूल्य — relatable</li>
+  <li><strong>New clothes:</strong> "Dashain mा नयाँ लुगा किन्नु पर्छ" pressure</li>
+  <li><strong>Deusi-Bhailo:</strong> रात भरि गाउने टोली — fun memes</li>
+</ul>
+<h4>Tihar Meme Ideas:</h4>
+<ul>
+  <li><strong>Selroti र Kwati:</strong> घरमा बन्ने traditional food</li>
+  <li><strong>Diwali lights:</strong> घर सजाउने LED vs traditional बत्ती</li>
+  <li><strong>Bhai Tika:</strong> दिदीबहिनीको love-hate relationship memes</li>
+  <li><strong>Lakshmi Puja:</strong> नयाँ TV, phone किन्ने tradition</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Festival season मा 2 हप्ता अगाडिदेखि memes बनाउन थाल्नुहोस् — early memes बढी share हुन्छन्।</p></div>`,
+      },
+      {
+        id: 'meme-text-tips',
+        title: 'Viral मिमका लागि Text Writing Tips',
+        content: `<p>Funny र viral meme बनाउन image भन्दा text (caption) सबैभन्दा महत्वपूर्ण हुन्छ। नेपाली context मा effective meme text कसरी लेख्ने जान्नुहोस्।</p>
+<h4>Viral Meme Text Formula:</h4>
+<ul>
+  <li><strong>Relatability:</strong> "यो त हाम्रो घरमा पनि हुन्छ" feeling दिनुहोस्</li>
+  <li><strong>Setup + Punchline:</strong> माथि setup, तल unexpected punchline</li>
+  <li><strong>Short र Punchy:</strong> 5-10 words ideal — लामो text read गर्दैनन्</li>
+  <li><strong>Nepali slang:</strong> "सिदा" "खत्तम" "मस्त" जस्ता colloquial words</li>
+  <li><strong>Current events:</strong> हालको news र trends reference गर्नुहोस्</li>
+</ul>
+<h4>नेपाली Meme Language Style:</h4>
+<table>
+  <tr><th>Style</th><th>Example</th><th>When to Use</th></tr>
+  <tr><td>Pure Nepali</td><td>"सिदा छ यार"</td><td>Traditional humor</td></tr>
+  <tr><td>Nepali-English mix</td><td>"Literally yestai ho ni"</td><td>Youth-focused</td></tr>
+  <tr><td>Dialect</td><td>Newari, Tharu references</td><td>Community-specific</td></tr>
+  <tr><td>Political satire</td><td>Leaders को quotes twist</td><td>Current affairs</td></tr>
+</table>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Personal attack वा किसी व्यक्तिको चरित्र हत्या गर्ने meme नबनाउनुहोस् — legal consequences हुन सक्छ।</p></div>`,
+      },
+      {
+        id: 'meme-sharing-strategy',
+        title: 'मिम Share गर्ने Strategy: Nepal Social Media',
+        content: `<p>राम्रो meme बनाएर पनि सही time र platform मा share नगरे viral हुँदैन। नेपाली social media trends जान्नुहोस्।</p>
+<h4>Nepal Social Media Peak Times:</h4>
+<table>
+  <tr><th>Platform</th><th>Best Time (NPT)</th><th>Best Day</th></tr>
+  <tr><td>Facebook</td><td>बिहान ७-९, साँझ ७-१०</td><td>Friday, Saturday</td></tr>
+  <tr><td>Instagram</td><td>दिउँसो १२-२, साँझ ७-९</td><td>Wednesday, Friday</td></tr>
+  <tr><td>TikTok</td><td>राति ८-११</td><td>Friday, Saturday</td></tr>
+  <tr><td>WhatsApp</td><td>कुनै पनि</td><td>Festival days</td></tr>
+  <tr><td>Reddit r/Nepal</td><td>दिउँसो</td><td>Weekdays</td></tr>
+</table>
+<h4>Meme Viral हुने Factors:</h4>
+<ul>
+  <li><strong>Timing:</strong> Current trend वा news मा based meme तुरुन्त post गर्नुहोस्</li>
+  <li><strong>First mover:</strong> Trend सुरु भएको 24 घण्टाभित्र post गर्दा बढी reach</li>
+  <li><strong>Multiple platforms:</strong> Facebook + Instagram + TikTok सबैमा share गर्नुहोस्</li>
+  <li><strong>Hashtags:</strong> #NepalMeme #नेपालीमिम जस्ता hashtags use गर्नुहोस्</li>
+  <li><strong>Groups:</strong> Relevant Facebook groups मा share गर्नुहोस्</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Meme page बनाउने योजना छ भने consistent posting schedule राख्नुहोस् — daily 1-2 quality memes, बिहान र साँझ post गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'meme-copyright',
+        title: 'मिम Copyright र Legal Issues: नेपाल',
+        content: `<p>Memes बनाउँदा copyright र legal issues बारे सचेत रहनुहोस् — नेपालमा पनि digital copyright laws लागू हुन्छन्।</p>
+<h4>Copyright-Safe Meme Sources:</h4>
+<ul>
+  <li><strong>Classic meme templates:</strong> Drake, Distracted Boyfriend जस्ता widely-used templates — generally acceptable</li>
+  <li><strong>Public domain images:</strong> Copyright-free images</li>
+  <li><strong>Your own photos:</strong> सबैभन्दा safe — आफ्नै photos use गर्नुहोस्</li>
+  <li><strong>Creative Commons:</strong> CC licensed images Unsplash, Pixabay बाट</li>
+</ul>
+<h4>Avoid गर्नुपर्ने:</h4>
+<table>
+  <tr><th>Issue</th><th>Risk</th></tr>
+  <tr><td>Movie/TV स्क्रिनशट</td><td>Copyright infringement</td></tr>
+  <tr><td>किसीको private photo</td><td>Privacy violation, legal case</td></tr>
+  <tr><td>Defamatory content</td><td>Cyber crime act Nepal</td></tr>
+  <tr><td>Religious insult</td><td>Religious tolerance laws</td></tr>
+  <tr><td>Racial/ethnic hate</td><td>Discrimination laws</td></tr>
+</table>
+<h4>Nepal Cyber Crime Act मा Memes:</h4>
+<p>नेपालको Electronic Transaction Act र Cyber Crime laws ले defamatory, obscene वा hateful online content मा action लिन सक्छ। Meme बनाउँदा humor र harassment को boundary clear राख्नुहोस्।</p>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Politicians र celebrities को memes widely shared भए पनि personal attack वा false information spread गर्ने memes legal risk मा पर्छन्।</p></div>`,
+      },
+      {
+        id: 'meme-generator-tool',
+        title: 'ToolsArena Meme Generator: Features र Guide',
+        content: `<p>ToolsArena को Meme Generator tool मा उपलब्ध features र कसरी प्रयोग गर्ने जान्नुहोस्।</p>
+<h4>Key Features:</h4>
+<ul>
+  <li><strong>500+ Templates:</strong> Popular meme templates — Drake, Distracted Boyfriend, Two Buttons, र Nepali-specific templates</li>
+  <li><strong>Custom Image Upload:</strong> आफ्नै photo upload गरेर meme बनाउनुहोस्</li>
+  <li><strong>Nepali Text Support:</strong> देवनागरी font मा text टाइप गर्न सकिन्छ</li>
+  <li><strong>Font Customization:</strong> Font size, color, bold/italic choose गर्नुहोस्</li>
+  <li><strong>Stickers:</strong> Emoji र sticker add गर्न सकिन्छ</li>
+  <li><strong>Watermark-free:</strong> Download गरेको image मा कुनै watermark छैन</li>
+</ul>
+<h4>Popular Meme Tools तुलना:</h4>
+<table>
+  <tr><th>Tool</th><th>Free</th><th>Nepali Text</th><th>Watermark</th><th>Templates</th></tr>
+  <tr><td><strong>ToolsArena</strong></td><td>✓</td><td>✓</td><td>छैन</td><td>500+</td></tr>
+  <tr><td>Imgflip</td><td>Limited</td><td>Limited</td><td>Free मा छ</td><td>1000+</td></tr>
+  <tr><td>Kapwing</td><td>Limited</td><td>✓</td><td>Free मा छ</td><td>200+</td></tr>
+  <tr><td>Adobe Express</td><td>Limited</td><td>✓</td><td>Paid मा छैन</td><td>100+</td></tr>
+  <tr><td>Canva</td><td>Limited</td><td>✓</td><td>Paid मा छैन</td><td>50+</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>नेपाली text support र watermark-free download को लागि ToolsArena सबैभन्दा उपयुक्त छ — NTC internet मा पनि fast load हुन्छ।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'Template छान्नुहोस् वा Image Upload गर्नुहोस्',
+        description: 'ToolsArena Meme Generator मा 500+ popular templates बाट छान्नुहोस् — वा "Upload Image" बाट आफ्नै photo use गर्नुहोस्।',
+      },
+      {
+        title: 'Text थप्नुहोस्',
+        description: 'Top text र Bottom text box मा नेपाली वा English मा funny caption टाइप गर्नुहोस्। Font size, color र style customize गर्नुहोस्।',
+      },
+      {
+        title: 'Customize गर्नुहोस्',
+        description: 'Text position drag गरेर मिलाउनुहोस्। Stickers, emojis थप्नुहोस्। Background color वा filter adjust गर्न सकिन्छ।',
+      },
+      {
+        title: 'Preview हेर्नुहोस्',
+        description: 'Meme को final look preview गर्नुहोस्। Text readable छ कि जाँच्नुहोस् — mobile screen मा पनि clearly देखिनुपर्छ।',
+      },
+      {
+        title: 'Download र Share गर्नुहोस्',
+        description: '"Download" बटन थिचेर PNG वा JPG मा save गर्नुहोस् — watermark छैन। Facebook, Instagram, TikTok, WhatsApp — जहाँ चाहे share गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'नेपाली (Devanagari) text मिम मा राख्न सकिन्छ?',
+        answer: 'हो। ToolsArena Meme Generator मा Devanagari text पूर्ण support छ। नेपाली font मा funny captions टाइप गरेर viral Nepali memes बनाउन सकिन्छ।',
+      },
+      {
+        question: 'Meme download गर्दा watermark आउँछ?',
+        answer: 'आउँदैन। ToolsArena Meme Generator बाट download गरेको meme मा कुनै watermark हुँदैन — पूर्णतः free र clean image।',
+      },
+      {
+        question: 'Dashain Tihar festival मिम कहिले बनाउने?',
+        answer: 'Festival 2-3 हप्ता अगाडिबाट memes trending हुन थाल्छ। Dashain (Ashoj) र Tihar (Kartik) मा 2-3 हप्ता अगाडि memes ready गर्नुहोस्।',
+      },
+      {
+        question: 'Political meme बनाउन legal छ?',
+        answer: 'Political satire मा humor गर्न मिल्छ तर false information फैलाउने, defamatory वा personal attack गर्ने memes Nepal Electronic Transaction Act अन्तर्गत कानुनी कारबाही हुन सक्छ।',
+      },
+      {
+        question: 'Mobile बाट meme बनाउन सकिन्छ?',
+        answer: 'हो। Chrome वा Safari mobile browser मा toolsarena.in खोलेर Meme Generator access गर्न सकिन्छ। Touchscreen बाट text add र download गर्न सजिलो छ।',
+      },
+      {
+        question: 'आफ्नै photo बाट meme बनाउन मिल्छ?',
+        answer: 'हो। "Upload Image" option बाट आफ्नो photo upload गरेर custom meme बनाउन सकिन्छ। Selfie, group photo — जुनसुकै image use गर्न सकिन्छ।',
+      },
+      {
+        question: 'Meme को सही size Facebook को लागि कति हो?',
+        answer: 'Facebook post का लागि 1200×630 px (landscape) वा 1080×1080 px (square) उत्तम हुन्छ। Meme Generator मा platform-specific size preset छ।',
+      },
+      {
+        question: 'TikTok मा meme कसरी viral हुन्छ?',
+        answer: 'TikTok Nepal मा trending audio मा relatable nepali situation को meme राख्दा viral हुने सम्भावना बढी छ। Hashtag #nepalimeme #nepali use गर्नुहोस् र evening (७-११ PM) मा post गर्नुहोस्।',
+      },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'crop-image-guide'],
+    toolCTA: {
+      heading: 'अहिले नै Meme बनाउनुहोस् — फ्री!',
+      description: 'नेपाली text support, 500+ templates, watermark-free — Dashain, Tihar र दैनिक life का funny memes मिनेटमा बनाउनुहोस्।',
+      buttonText: 'Meme Generator खोल्नुहोस् →',
+    },
+  },
+
 ];
