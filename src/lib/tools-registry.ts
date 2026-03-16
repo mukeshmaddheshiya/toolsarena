@@ -9765,22 +9765,24 @@ tools.push({
 // ── HEIC to JPG Converter ──
 tools.push({
   slug: 'heic-to-jpg',
-  name: 'HEIC to JPG Converter',
-  shortDescription: 'Convert iPhone HEIC photos to JPG, PNG, or WebP free — batch upload, no upload to server, no limits.',
-  longDescription: `<p>Convert HEIC to JPG online for free with our instant browser-based converter. Upload iPhone or iPad HEIC/HEIF photos and convert them to JPG, PNG, or WebP format in seconds. Batch conversion supported — process dozens of photos at once. Your files never leave your device.</p>
-<h2>Best Free HEIC to JPG Converter — No Limits</h2>
-<p>Every iPhone user knows the frustration: you transfer photos to Windows or upload them to a website, and they won't open because they're in HEIC format. Other converters like CloudConvert limit you to 10 files per day, or heictojpg.com restricts batch sizes. Our converter has zero limits — convert as many files as you want, as often as you want, completely free.</p>
-<h2>Convert HEIC to JPG, PNG, or WebP</h2>
-<p>Choose your output format: JPG for universal compatibility and smallest size, PNG for lossless quality with transparency support, or WebP for the best compression with modern browser support. Adjust quality from 10% to 100% to find the perfect balance between file size and image quality.</p>
+  name: 'HEIC to JPG Converter Free',
+  shortDescription: 'Convert HEIC to JPG online free — batch upload iPhone photos, no limits, no signup. Works on Windows, Mac, Android.',
+  longDescription: `<p>Convert HEIC to JPG online for free — the fastest way to turn iPhone HEIC photos into JPG, PNG, or WebP. Batch upload dozens of HEIC files at once, adjust quality, and download instantly. No file limits, no daily caps, no signup required. Works on Windows, Mac, Chromebook, and Android.</p>
+<h2>Best Free HEIC to JPG Converter Online — No Limits</h2>
+<p>Every iPhone user hits this problem: you transfer photos to a Windows PC or try to upload them to a website, and they won't open because they're in HEIC format. CloudConvert limits you to 10 files per day. heictojpg.com restricts batch sizes. Convertio adds watermarks on free tier. Our HEIC to JPG converter has <strong>zero limits</strong> — convert as many HEIC files as you want, completely free, forever.</p>
+<h2>Convert HEIC to JPG on Windows, Mac & Android</h2>
+<p>Windows doesn't natively support HEIC files without installing paid codecs. Our online converter works in any browser — Chrome, Firefox, Edge, Safari — on any device. No software to install, no codec to buy. Just drag your HEIC files in and get JPG, PNG, or WebP output instantly.</p>
+<h2>Bulk HEIC to JPG — Batch Convert Multiple Photos</h2>
+<p>Need to convert an entire photo album? Select multiple HEIC/HEIF files at once and convert them all in one batch. Each photo is processed individually with its own preview, file size comparison, and download button. Or use "Download All" to grab everything at once.</p>
+<h2>HEIC to JPG, HEIC to PNG, or HEIC to WebP</h2>
+<p>Choose your output format: JPG (JPEG) for universal compatibility and sharing — works everywhere. PNG for lossless quality with transparency support — perfect for editing. WebP for the smallest file size with excellent quality — ideal for websites. Adjust quality from 10% to 100% to control file size.</p>
 <h2>How HEIC to JPG Conversion Works</h2>
-<p>HEIC (High Efficiency Image Container) is Apple's default photo format since iOS 11. It produces smaller files than JPG but isn't universally supported. Our tool decodes HEIC files entirely in your browser using WebAssembly technology, then re-encodes them in your chosen format. No server upload needed — complete privacy guaranteed.</p>
-<h2>Perfect For</h2>
-<p>Uploading iPhone photos to websites that don't accept HEIC, sharing photos with Windows/Android users, printing photos at photo labs that require JPG, using photos in documents or presentations, and batch-converting entire photo libraries.</p>`,
+<p>HEIC (High Efficiency Image Container) is Apple's default photo format since iOS 11. It's great for saving iPhone storage but isn't supported by most Windows apps, websites, and print services. Our tool decodes HEIC files entirely in your browser using WebAssembly — your photos <strong>never leave your device</strong>. Complete privacy, instant speed, no server upload.</p>`,
   category: 'image-tools',
   targetKeyword: 'heic to jpg',
-  secondaryKeywords: ['heic to jpg converter', 'heic to jpg online', 'convert heic to jpg', 'heic to png', 'heic converter', 'heif to jpg', 'iphone photo converter', 'heic to jpg free', 'heic to jpg online free no limit', 'heic to webp', 'batch heic converter'],
-  metaTitle: 'HEIC to JPG Converter — Free Online, No Limits, Batch Upload',
-  metaDescription: 'Convert HEIC to JPG, PNG, or WebP free online. Batch upload iPhone photos, adjust quality. No file limits, no signup, no server upload.',
+  secondaryKeywords: ['heic to jpg converter', 'heic to jpg online', 'convert heic to jpg', 'heic to jpg free', 'heic to jpeg', 'heic to jpg windows', 'heic to png', 'heic converter', 'heif to jpg', 'iphone photo converter', 'heic to jpg online free no limit', 'heic to webp', 'batch heic converter', 'heic to jpg bulk', 'open heic file', 'heic file to jpg', 'apple photo converter', 'convert heic to jpg on windows'],
+  metaTitle: 'HEIC to JPG Converter — Free Online, No Limits, No Signup',
+  metaDescription: 'Convert HEIC to JPG free online — batch upload iPhone photos, no limits, no signup. Also converts to PNG & WebP. Works on Windows, Mac, Android.',
   faqs: [
     { question: 'What is a HEIC file?', answer: 'HEIC (High Efficiency Image Container) is Apple\'s default photo format on iPhones and iPads since iOS 11. It produces high-quality images at about half the file size of JPG, but many apps and websites don\'t support it yet.' },
     { question: 'Are my photos uploaded to a server?', answer: 'No. All conversion happens locally in your browser using WebAssembly technology. Your photos never leave your device — complete privacy is guaranteed.' },
@@ -9788,6 +9790,8 @@ tools.push({
     { question: 'Which output format should I choose?', answer: 'JPG is best for universal compatibility and sharing. PNG is best when you need lossless quality or transparency. WebP offers the smallest file size with excellent quality but older browsers may not support it.' },
     { question: 'Can I convert HEIF files too?', answer: 'Yes. HEIF and HEIC are essentially the same format. Our tool handles both .heic and .heif file extensions.' },
     { question: 'Why are my iPhone photos in HEIC format?', answer: 'Apple uses HEIC by default because it produces smaller files with equal quality compared to JPG, saving storage space on your device. You can change this in Settings > Camera > Formats > Most Compatible to switch to JPG.' },
+    { question: 'How do I convert HEIC to JPG on Windows?', answer: 'Open this tool in any browser on your Windows PC (Chrome, Edge, or Firefox). Drag and drop your HEIC files into the upload area. They will be converted to JPG instantly — no software installation or codec purchase needed.' },
+    { question: 'Can I convert HEIC files in bulk?', answer: 'Yes! Select multiple HEIC files at once when uploading. All files are converted in batch with individual previews, file size comparisons, and download buttons. Use "Download All" to save everything at once.' },
   ],
   howToSteps: [
     'Choose your output format (JPG, PNG, or WebP) and quality level',
