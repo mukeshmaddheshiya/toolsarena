@@ -109,12 +109,12 @@ function generateId(): string {
 export function MovToMp4Tool() {
   /* ── Single file mode state ── */
   const [videoInfo, setVideoInfo] = useState<VideoInfo | null>(null);
-  const [preset, setPreset] = useState<QualityPreset>('high');
+  const [preset, setPreset] = useState<QualityPreset>('original');
   const [resolution, setResolution] = useState<Resolution>('original');
   const [customBitrate, setCustomBitrate] = useState(2_000_000);
   const [outputFormat, setOutputFormat] = useState<OutputFormat>('mp4');
   const [muteAudio, setMuteAudio] = useState(false);
-  const [convertSpeed, setConvertSpeed] = useState<ConvertSpeed>(8);
+  const [convertSpeed, setConvertSpeed] = useState<ConvertSpeed>(1);
 
   /* ── Trim state ── */
   const [trimEnabled, setTrimEnabled] = useState(false);
@@ -194,6 +194,7 @@ export function MovToMp4Tool() {
   const handleVideoLoaded = useCallback(() => {
     const video = videoRef.current;
     if (!video || !videoInfo) return;
+    video.volume = 0; // Mute preview without setting .muted (which blocks MediaElementSource)
     setVideoInfo(prev => prev ? {
       ...prev,
       width: video.videoWidth,
@@ -268,7 +269,9 @@ export function MovToMp4Tool() {
         video.addEventListener('seeked', onSeeked);
       });
 
-      video.muted = true;
+      // Use volume=0 instead of muted so MediaElementSource still captures audio
+      video.muted = false;
+      video.volume = 0;
       video.playbackRate = convertSpeed;
       await video.play();
       mediaRecorder.start(100);
@@ -424,8 +427,8 @@ export function MovToMp4Tool() {
       const video = document.createElement('video');
       const canvas = document.createElement('canvas');
       video.src = item.url;
-      video.muted = true;
       video.playsInline = true;
+      video.volume = 0;
 
       video.onloadedmetadata = async () => {
         try {
@@ -603,7 +606,6 @@ export function MovToMp4Tool() {
                   onEnded={() => setIsPlaying(false)}
                   className="w-full max-h-[350px] object-contain"
                   playsInline
-                  muted
                 />
                 <button
                   onClick={() => {
