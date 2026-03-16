@@ -28,7 +28,10 @@ function getLocaleUrl(locale: string, path: string): string {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
-  const lastUpdated = new Date();
+
+  // Use a fixed deploy date — update this when you deploy new content
+  const DEPLOY_DATE = '2026-03-16';
+  const staticDate = new Date('2026-02-01');
 
   // Static pages — all locales
   const staticPages = ['', '/about', '/privacy-policy', '/terms', '/contact'];
@@ -37,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: getLocaleUrl(locale, path),
-        lastModified: lastUpdated,
+        lastModified: page === '' ? new Date(DEPLOY_DATE) : staticDate,
         changeFrequency: page === '' ? 'daily' : 'monthly',
         priority: page === '' ? 1.0 : 0.4,
         alternates: getAlternates(path),
@@ -51,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: getLocaleUrl(locale, path),
-        lastModified: lastUpdated,
+        lastModified: new Date(DEPLOY_DATE),
         changeFrequency: 'weekly',
         priority: 0.7,
         alternates: getAlternates(path),
@@ -65,7 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: getLocaleUrl(locale, path),
-        lastModified: lastUpdated,
+        lastModified: new Date(DEPLOY_DATE),
         changeFrequency: 'monthly',
         priority: 0.8,
         alternates: getAlternates(path),
@@ -78,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const locale of locales) {
     entries.push({
       url: getLocaleUrl(locale, guidesPath),
-      lastModified: lastUpdated,
+      lastModified: new Date(DEPLOY_DATE),
       changeFrequency: 'weekly',
       priority: 0.8,
       alternates: getAlternates(guidesPath),
