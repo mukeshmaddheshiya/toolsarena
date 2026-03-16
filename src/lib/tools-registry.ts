@@ -9806,6 +9806,49 @@ tools.push({
   isPopular: true,
 });
 
+// ── Image Upscaler ──
+tools.push({
+  slug: 'image-upscaler',
+  name: 'Image Upscaler Free',
+  shortDescription: 'Upscale and enlarge images 2x, 4x, 8x with AI-enhanced sharpening — free, no watermark, no signup.',
+  longDescription: `<p>Upscale images online for free with our browser-based image upscaler. Enlarge any photo or image to 2x, 4x, or 8x its original resolution using bicubic interpolation with intelligent sharpening and noise reduction. No watermark, no signup, no file limits — completely free.</p>
+<h2>Best Free Image Upscaler Online — No Watermark</h2>
+<p>Competitors like Let's Enhance charge $12/month, Upscale.media uses credits, and Topaz costs $200. Our image upscaler is 100% free with no watermarks on output. Enlarge your images to print-quality resolution without paying a cent. Everything processes locally in your browser — your images never leave your device.</p>
+<h2>Enhance Image Quality While Upscaling</h2>
+<p>Simple image resizing creates blurry, pixelated results. Our upscaler uses bicubic interpolation combined with an unsharp mask sharpening algorithm to produce crisp, detailed enlarged images. Adjust the sharpen slider to control edge enhancement, and use denoise to smooth out artifacts from low-quality source images.</p>
+<h2>Upscale Images for Print, Social Media & Websites</h2>
+<p>Need a higher resolution photo for printing? Want to enlarge a small thumbnail for a presentation? Our image upscaler handles it all: upscale product photos for e-commerce, enlarge social media images, increase resolution for posters and banners, and enhance low-res screenshots. Supports JPG, PNG, and WebP input with PNG output for maximum quality.</p>
+<h2>Side-by-Side Comparison Slider</h2>
+<p>After upscaling, use our interactive comparison slider to see the difference between the original and upscaled image side by side. Drag the slider left and right to compare quality at any point in the image. See exactly how much detail was recovered by the upscaling process.</p>`,
+  category: 'image-tools',
+  targetKeyword: 'image upscaler',
+  secondaryKeywords: ['image upscaler free', 'upscale image online', 'enlarge image', 'increase image resolution', 'image enlarger', 'photo upscaler', 'upscale image 2x', 'upscale image 4x', 'image upscaler no watermark', 'enhance image quality', 'increase photo resolution online', 'make image bigger', 'upscale image free online', 'photo enlarger', 'image resolution enhancer'],
+  metaTitle: 'Image Upscaler — Enlarge Images 2x 4x 8x Free, No Watermark',
+  metaDescription: 'Upscale images online free — enlarge 2x, 4x, 8x with sharpening & denoise. No watermark, no signup. Side-by-side comparison. Works in browser.',
+  faqs: [
+    { question: 'How does image upscaling work?', answer: 'Our tool uses bicubic interpolation to intelligently calculate new pixels when enlarging an image, combined with unsharp mask sharpening to enhance edges and details. This produces much better results than simple nearest-neighbor or bilinear resizing.' },
+    { question: 'Is there a watermark on the output?', answer: 'No. Unlike competitors that charge monthly fees or add watermarks, our upscaler produces clean output with absolutely no watermarks, ever.' },
+    { question: 'What scale factors are available?', answer: 'You can upscale 2x (double resolution), 4x (quadruple), or 8x (octuple). For example, a 500×500 image becomes 1000×1000 at 2x, 2000×2000 at 4x, or 4000×4000 at 8x.' },
+    { question: 'Is my image uploaded to a server?', answer: 'No. All processing happens locally in your browser. Your images never leave your device — complete privacy is guaranteed.' },
+    { question: 'What image formats are supported?', answer: 'Upload JPG, PNG, or WebP images. The upscaled result is always saved as PNG for maximum quality preservation.' },
+    { question: 'What does the sharpen slider do?', answer: 'The sharpen slider controls edge enhancement intensity. Higher values make edges and details crisper but may introduce artifacts. Start at 50% and adjust to taste.' },
+    { question: 'What does the denoise slider do?', answer: 'Denoise smooths out noise and compression artifacts from the source image before sharpening. Useful for low-quality JPEGs or screenshots. Keep at 0% for already-clean images.' },
+    { question: 'Is there a size limit?', answer: 'The input image can be up to 20MB. For best results and speed, we recommend images under 2000×2000 pixels. Very large images with 8x upscale may be limited by browser memory.' },
+  ],
+  howToSteps: [
+    'Upload your image (JPG, PNG, or WebP)',
+    'Choose scale factor: 2x, 4x, or 8x',
+    'Adjust sharpen and denoise sliders to fine-tune quality',
+    'Click "Upscale" and wait for processing',
+    'Compare original vs upscaled using the comparison slider',
+    'Download the upscaled PNG image',
+  ],
+  relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-cropper', 'image-background-remover', 'compress-image-to-kb', 'heic-to-jpg'],
+  icon: 'Maximize2',
+  isNew: true,
+  isPopular: true,
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
