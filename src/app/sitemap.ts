@@ -19,64 +19,83 @@ function getAlternates(path: string) {
   return { languages };
 }
 
+function getLocaleUrl(locale: string, path: string): string {
+  if (locale === defaultLocale) {
+    return `${BASE_URL}${path}`;
+  }
+  return `${BASE_URL}/${locale}${path}`;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
   const lastUpdated = new Date();
 
-  // Static pages
+  // Static pages — all locales
   const staticPages = ['', '/about', '/privacy-policy', '/terms', '/contact'];
   for (const page of staticPages) {
-    entries.push({
-      url: `${BASE_URL}${page || '/'}`,
-      lastModified: lastUpdated,
-      changeFrequency: page === '' ? 'daily' : 'monthly',
-      priority: page === '' ? 1.0 : 0.4,
-      alternates: getAlternates(page || '/'),
-    });
+    const path = page || '/';
+    for (const locale of locales) {
+      entries.push({
+        url: getLocaleUrl(locale, path),
+        lastModified: lastUpdated,
+        changeFrequency: page === '' ? 'daily' : 'monthly',
+        priority: page === '' ? 1.0 : 0.4,
+        alternates: getAlternates(path),
+      });
+    }
   }
 
-  // Category pages
+  // Category pages — all locales
   for (const cat of CATEGORIES) {
     const path = `/category/${cat}`;
-    entries.push({
-      url: `${BASE_URL}${path}`,
-      lastModified: lastUpdated,
-      changeFrequency: 'weekly',
-      priority: 0.7,
-      alternates: getAlternates(path),
-    });
+    for (const locale of locales) {
+      entries.push({
+        url: getLocaleUrl(locale, path),
+        lastModified: lastUpdated,
+        changeFrequency: 'weekly',
+        priority: 0.7,
+        alternates: getAlternates(path),
+      });
+    }
   }
 
-  // Tool pages
+  // Tool pages — all locales
   for (const tool of tools) {
     const path = `/tools/${tool.slug}`;
-    entries.push({
-      url: `${BASE_URL}${path}`,
-      lastModified: lastUpdated,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-      alternates: getAlternates(path),
-    });
+    for (const locale of locales) {
+      entries.push({
+        url: getLocaleUrl(locale, path),
+        lastModified: lastUpdated,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: getAlternates(path),
+      });
+    }
   }
 
-  // Guide pages
-  entries.push({
-    url: `${BASE_URL}/guides`,
-    lastModified: lastUpdated,
-    changeFrequency: 'weekly',
-    priority: 0.8,
-    alternates: getAlternates('/guides'),
-  });
+  // Guide pages — all locales
+  const guidesPath = '/guides';
+  for (const locale of locales) {
+    entries.push({
+      url: getLocaleUrl(locale, guidesPath),
+      lastModified: lastUpdated,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+      alternates: getAlternates(guidesPath),
+    });
+  }
 
   for (const guide of getAllGuides()) {
     const path = `/guides/${guide.slug}`;
-    entries.push({
-      url: `${BASE_URL}${path}`,
-      lastModified: new Date(guide.lastUpdated),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-      alternates: getAlternates(path),
-    });
+    for (const locale of locales) {
+      entries.push({
+        url: getLocaleUrl(locale, path),
+        lastModified: new Date(guide.lastUpdated),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+        alternates: getAlternates(path),
+      });
+    }
   }
 
   return entries;
