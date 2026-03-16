@@ -9533,6 +9533,235 @@ tools.push({
   isPopular: false,
 });
 
+// ── Video to GIF Converter ──
+tools.push({
+  slug: 'video-to-gif',
+  name: 'Video to GIF Converter',
+  shortDescription: 'Convert any video to GIF online free — trim timeline, set FPS, resize. No upload, no watermark.',
+  longDescription: `<p>Convert video to GIF online for free with our powerful browser-based tool. Upload any MP4, WebM, MOV, or AVI video and turn it into a high-quality animated GIF in seconds. No server upload needed — your video to GIF conversion happens 100% in your browser with zero watermarks.</p>
+<h2>Best Free Video to GIF Converter Online</h2>
+<p>Our video to GIF maker gives you full control: trim the exact clip with a visual timeline, choose frame rate from 5 to 25 FPS, set output width up to 800px, and preview before downloading. Unlike ezgif or other online converters, we never upload your files — everything stays private on your device.</p>
+<h2>Convert MP4 to GIF, WebM to GIF, MOV to GIF</h2>
+<p>Support for all major video formats including MP4 to GIF, WebM to GIF, and MOV to GIF conversion. Perfect for creating reaction GIFs, memes, tutorial clips, product demos, social media content, and funny moments. The output uses standard GIF89a format with LZW compression — compatible with every platform including Twitter, Reddit, Discord, and WhatsApp.</p>
+<h2>How Video to GIF Conversion Works</h2>
+<p>Our tool extracts individual frames from your video at the FPS you choose, quantizes colors to fit the 256-color GIF palette, and encodes everything into an animated GIF with proper frame timing. Lower FPS and smaller width = smaller file size. Higher FPS and larger width = smoother, more detailed GIF.</p>`,
+  category: 'converters',
+  targetKeyword: 'video to gif',
+  secondaryKeywords: ['video to gif converter', 'mp4 to gif', 'convert video to gif online free', 'video to gif maker free', 'mov to gif', 'webm to gif', 'make gif from video', 'video to gif no watermark', 'convert mp4 to gif online'],
+  metaTitle: 'Video to GIF Converter — Free Online, No Watermark',
+  metaDescription: 'Convert video to GIF online free — MP4, WebM, MOV to GIF. Trim timeline, set FPS, resize. No upload, no watermark, no signup required.',
+  faqs: [
+    { question: 'Does my video get uploaded to a server?', answer: 'No. Everything is processed locally in your browser. Your video never leaves your device, ensuring complete privacy.' },
+    { question: 'What video formats are supported?', answer: 'MP4, WebM, MOV, and AVI. Any format your browser can play will work with our converter.' },
+    { question: 'How do I make the GIF file size smaller?', answer: 'Reduce the output width, lower the FPS (5-8 is usually enough), and trim to a shorter clip. These three settings have the biggest impact on file size.' },
+    { question: 'Is there a video length limit?', answer: 'No hard limit, but longer videos with high FPS will take more time and produce larger GIFs. We recommend keeping GIFs under 10 seconds for best results.' },
+  ],
+  howToSteps: [
+    'Upload your video file (MP4, WebM, MOV, or AVI)',
+    'Set the start and end time to trim the portion you want',
+    'Adjust FPS, output width, and quality settings',
+    'Click "Convert to GIF" and wait for processing',
+    'Preview your GIF and download it',
+  ],
+  relatedToolSlugs: ['gif-maker', 'video-compressor', 'mp4-to-mp3', 'image-compressor', 'image-resizer'],
+  icon: 'Film',
+  isNew: true,
+  isPopular: true,
+});
+
+// ── GIF Maker ──
+tools.push({
+  slug: 'gif-maker',
+  name: 'GIF Maker',
+  shortDescription: 'Make a GIF from images online free — drag to reorder, set speed, no watermark. Best GIF maker.',
+  longDescription: `<p>Make a GIF from photos and images with our free online GIF maker. Upload multiple JPEG, PNG, or WebP images, drag to reorder frames, set custom animation speed, and create a perfect animated GIF — no watermark, no signup, 100% free.</p>
+<h2>Best Free GIF Maker Online — No Watermark</h2>
+<p>Our GIF maker is the easiest way to create animated GIFs from images. Unlike other GIF generators that add watermarks or require paid plans, our tool is completely free with no limitations. Drag-and-drop reordering, frame delay control from 100ms to 2 seconds, output width up to 800px, and loop count settings give you full creative control.</p>
+<h2>Create GIF from Photos — Image to GIF Converter</h2>
+<p>Turn any collection of photos into a GIF animation. Perfect for creating memes, product slideshows, step-by-step tutorials, social media stories, before/after comparisons, and fun flipbook-style animations. Our photo to GIF converter processes everything in your browser — your images never leave your device.</p>
+<h2>GIF Generator Features</h2>
+<p>Upload unlimited images, drag to arrange frame order, preview your animation in real-time before generating, set global frame delay, choose infinite or counted loops, and download your GIF instantly. Works on desktop and mobile — no app installation needed.</p>`,
+  category: 'image-tools',
+  targetKeyword: 'gif maker',
+  secondaryKeywords: ['gif maker online', 'make a gif', 'create gif from images', 'image to gif', 'animated gif maker free', 'gif creator', 'gif generator', 'photo to gif', 'gif maker from photos', 'gif maker no watermark', 'create animated gif'],
+  metaTitle: 'GIF Maker — Create Animated GIFs Free Online, No Watermark',
+  metaDescription: 'Make a GIF from images free online. Drag to reorder, set speed & loops, no watermark. Best GIF maker — works offline, no signup needed.',
+  faqs: [
+    { question: 'How many images can I use?', answer: 'There is no fixed limit. You can upload as many images as you need. For best performance, we recommend keeping it under 50 frames.' },
+    { question: 'Can I reorder the frames?', answer: 'Yes! Simply drag and drop frames to rearrange them in any order before generating your GIF.' },
+    { question: 'What image formats are supported?', answer: 'JPEG, PNG, and WebP images are all supported. Each image can be up to 20MB in size.' },
+    { question: 'Can I control the animation speed?', answer: 'Yes. Use the frame delay slider to set timing from 100ms (fast) to 2000ms (slow). This applies uniformly to all frames.' },
+  ],
+  howToSteps: [
+    'Upload multiple images (JPEG, PNG, or WebP)',
+    'Drag to reorder frames as needed',
+    'Set frame delay, output width, and loop count',
+    'Preview the animation and click "Create GIF"',
+    'Download your animated GIF',
+  ],
+  relatedToolSlugs: ['video-to-gif', 'image-compressor', 'image-resizer', 'photo-collage-maker', 'meme-generator'],
+  icon: 'Images',
+  isNew: true,
+  isPopular: true,
+});
+
+// ── Video Compressor ──
+tools.push({
+  slug: 'video-compressor',
+  name: 'Video Compressor Online',
+  shortDescription: 'Compress video online free — reduce file size up to 90% for WhatsApp, email, social media. No upload.',
+  longDescription: `<p>Compress video online for free with our browser-based video compressor. Reduce video file size by up to 90% without noticeable quality loss — perfect for sending via WhatsApp, email, or uploading to social media with size limits. No server upload required — your video stays on your device.</p>
+<h2>Best Free Online Video Compressor</h2>
+<p>Our video compressor lets you shrink video files instantly in your browser. Choose from quality presets (Low at 500Kbps, Medium at 1Mbps, High at 2Mbps) or set a custom bitrate. Select target resolution from 360p to 1080p. See the estimated output size before compressing so you know exactly what to expect.</p>
+<h2>Compress Video for WhatsApp, Email & Social Media</h2>
+<p>WhatsApp limits video to 16MB. Email attachments cap at 25MB. Instagram and TikTok have upload limits too. Our video size reducer helps you compress MP4 and other video files to fit within these limits. Reduce video size in MB with precise control over bitrate and resolution — no quality compromise needed.</p>
+<h2>How Video Compression Works</h2>
+<p>The tool re-encodes your video at a lower bitrate and resolution using the browser's MediaRecorder API. The result is a smaller WebM file that plays everywhere. Unlike server-based compressors, everything happens locally — unlimited file size, no waiting in queues, complete privacy.</p>`,
+  category: 'converters',
+  targetKeyword: 'compress video online',
+  secondaryKeywords: ['video compressor', 'reduce video file size', 'compress video free', 'compress video for whatsapp', 'compress video for email', 'shrink video online', 'video size reducer', 'reduce video size mb', 'compress mp4', 'compress video online free', 'video compressor online free'],
+  metaTitle: 'Video Compressor — Compress Video Online Free for WhatsApp & Email',
+  metaDescription: 'Compress video online free — reduce file size up to 90% for WhatsApp, email, social media. No upload, no signup. Works in your browser.',
+  faqs: [
+    { question: 'Is my video uploaded to a server?', answer: 'No. All compression happens locally in your browser. Your video stays on your device at all times.' },
+    { question: 'What output format do I get?', answer: 'The compressed video is saved as WebM format, which is supported by all modern browsers and most video players.' },
+    { question: 'How much can I reduce the file size?', answer: 'Depending on your settings, you can typically reduce file size by 50-90%. Lower bitrate and resolution settings give the most compression.' },
+    { question: 'Why does compression take as long as the video?', answer: 'The tool needs to play through the entire video to re-encode it. This is a trade-off of client-side processing — no server needed, but it takes real-time.' },
+  ],
+  howToSteps: [
+    'Upload your video (MP4, WebM, or MOV)',
+    'Choose a quality preset (Low, Medium, High, or Custom)',
+    'Select target resolution (360p to 1080p)',
+    'Click "Compress Video" and wait for processing',
+    'Compare sizes and download the compressed video',
+  ],
+  relatedToolSlugs: ['video-to-gif', 'mp4-to-mp3', 'image-compressor', 'pdf-compress', 'audio-cutter'],
+  icon: 'Minimize2',
+  isNew: true,
+  isPopular: true,
+});
+
+// ── Audio Cutter ──
+tools.push({
+  slug: 'audio-cutter',
+  name: 'MP3 Cutter Online',
+  shortDescription: 'Cut MP3 & audio files online free — waveform editor, ringtone maker, fade effects. No upload needed.',
+  longDescription: `<p>Cut MP3 files online for free with our visual audio cutter. Upload any MP3, WAV, OGG, M4A, FLAC, or AAC audio file, see the waveform, drag to select the portion you want, and download the trimmed audio instantly. Works as an MP3 cutter, ringtone maker, and audio trimmer — all in one free tool.</p>
+<h2>Best Free MP3 Cutter & Audio Trimmer Online</h2>
+<p>Our online MP3 cutter features a beautiful interactive waveform editor where you can see your audio and select exact cut points by dragging handles. Zoom in for precision, type exact timestamps in MM:SS.ms format, and preview the selection before cutting. No software to install, no server uploads — works entirely in your browser.</p>
+<h2>Online Ringtone Maker — Cut Songs for Ringtones</h2>
+<p>Create custom ringtones by cutting your favorite songs to the perfect length. Upload any audio file, select the best 20-30 second portion using the waveform, add fade in/out effects for smooth transitions, and download as WAV. The ideal ringtone cutter for iPhone and Android — no app needed.</p>
+<h2>Audio Cutter Features</h2>
+<p>Visual waveform display with zoom up to 8x, draggable selection handles, precise time inputs, play selection preview, full audio playback, fade in/out effects (0-3 seconds), audio info display (duration, sample rate, channels, file size), and instant WAV export. Perfect for trimming podcasts, cutting music samples, removing silence, and editing audio clips.</p>`,
+  category: 'converters',
+  targetKeyword: 'mp3 cutter online',
+  secondaryKeywords: ['audio cutter', 'audio trimmer online', 'cut mp3 online', 'mp3 cutter free', 'trim audio file', 'ringtone maker online', 'ringtone cutter', 'mp3 trimmer', 'cut song online', 'audio editor online free', 'crop audio', 'cut audio online'],
+  metaTitle: 'MP3 Cutter Online — Cut Audio & Make Ringtones Free',
+  metaDescription: 'Cut MP3 & audio files online free with waveform editor. Trim songs, make ringtones, add fade effects. No upload, no signup — works in browser.',
+  faqs: [
+    { question: 'What audio formats are supported?', answer: 'MP3, WAV, OGG, M4A, FLAC, and AAC. Any format your browser can decode will work.' },
+    { question: 'What format is the output?', answer: 'The trimmed audio is exported as WAV (uncompressed, high quality). WAV files are widely supported and can be converted to MP3 using other tools if needed.' },
+    { question: 'Can I preview just the selected portion?', answer: 'Yes! Click the Play button to hear only the selected region before exporting. You can also play the full audio for context.' },
+    { question: 'How do the fade effects work?', answer: 'Fade In gradually increases volume from silence at the start of your selection. Fade Out gradually decreases volume to silence at the end. Set duration from 0 to 3 seconds.' },
+  ],
+  howToSteps: [
+    'Upload your audio file (MP3, WAV, OGG, M4A, etc.)',
+    'Drag the handles on the waveform to select the portion to keep',
+    'Fine-tune with exact time inputs and zoom controls',
+    'Optionally add fade in/out effects',
+    'Click "Cut & Export" and download your trimmed audio',
+  ],
+  relatedToolSlugs: ['mp4-to-mp3', 'text-to-speech', 'speech-to-text', 'video-compressor', 'video-to-gif'],
+  icon: 'Scissors',
+  isNew: true,
+  isPopular: true,
+});
+
+// ── Emoji Picker ──
+tools.push({
+  slug: 'emoji-picker',
+  name: 'Emoji Copy and Paste',
+  shortDescription: 'Copy and paste emojis — 500+ emojis, search by name, click to copy. Smileys, hearts, flags & more.',
+  longDescription: `<p>Copy and paste emojis instantly with our free emoji picker. Browse over 500 emojis organized into 9 categories — Smileys & Emotion, Gestures & People, Hearts & Love, Animals & Nature, Food & Drink, Travel & Places, Objects, Symbols, and Flags. Click any emoji to copy it to your clipboard.</p>
+<h2>Emoji Copy and Paste — Click to Copy</h2>
+<p>The fastest way to get emojis for Instagram, WhatsApp, Twitter, Facebook, TikTok, and any other platform. Simply click an emoji and it's copied — paste it anywhere. No app needed, works on all devices including iPhone, Android, Windows, and Mac.</p>
+<h2>Search Emojis by Name</h2>
+<p>Looking for a specific emoji? Type keywords like "heart", "fire", "laugh", "sad", "cat", or "flag" in the search bar. Results appear instantly as you type. Find heart emojis (❤️💕💖💗), smiley faces (😀😊😂🥰), hand gestures (👍👏✌️🤞), and every other emoji you need.</p>
+<h2>Emoji Keyboard & Compose Area</h2>
+<p>Use our compose area to build emoji combinations for captions, bios, and messages. Click emojis to add them to your compose box, then copy everything at once. Recently used emojis are saved automatically — your last 30 favorites always appear at the top for quick access. Adjustable emoji sizes (S, M, L) for comfortable browsing.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'emoji copy paste',
+  secondaryKeywords: ['emoji copy and paste', 'emoji picker', 'emoji keyboard online', 'copy emoji', 'emoji list copy', 'emoji search', 'smiley face copy paste', 'heart emoji copy paste', 'emoji symbols copy', 'emoji for instagram', 'emoji text copy'],
+  metaTitle: 'Emoji Copy and Paste — 500+ Emojis, Click to Copy Free',
+  metaDescription: 'Copy and paste 500+ emojis free. Search by name, browse smileys, hearts, flags & more. Click to copy for Instagram, WhatsApp, Twitter.',
+  faqs: [
+    { question: 'How do I copy an emoji?', answer: 'Simply click on any emoji and it will be copied to your clipboard instantly. You will see a green checkmark confirmation.' },
+    { question: 'Does it remember my recently used emojis?', answer: 'Yes! Your last 30 used emojis are saved in your browser and appear in the "Recently Used" section at the top.' },
+    { question: 'Can I copy multiple emojis at once?', answer: 'Yes. Each emoji you click is added to the Compose area at the bottom. You can then copy the entire composed text using the copy button.' },
+    { question: 'How do I search for a specific emoji?', answer: 'Type a keyword in the search bar — like "happy", "cat", "fire", or "flag". The results update instantly as you type.' },
+  ],
+  howToSteps: [
+    'Browse emojis by category or use the search bar',
+    'Click any emoji to copy it to your clipboard',
+    'Use the compose area to combine multiple emojis',
+    'Copy the composed text using the copy button',
+  ],
+  relatedToolSlugs: ['fancy-text-generator', 'hashtag-generator', 'social-media-bio-generator', 'unicode-text-converter', 'character-counter'],
+  icon: 'SmilePlus',
+  isNew: true,
+  isPopular: true,
+});
+
+// ── MOV to MP4 Converter ──
+tools.push({
+  slug: 'mov-to-mp4',
+  name: 'MOV to MP4 Converter',
+  shortDescription: 'Convert MOV to MP4 online free — trim, batch convert, no upload, no watermark. Works on iPhone, Android, Windows & Mac.',
+  longDescription: `<p>Convert MOV to MP4 online for free with our browser-based video converter. Transform Apple QuickTime MOV files into universally compatible MP4 format instantly — no server upload, no watermark, no signup required. Your video never leaves your device.</p>
+<h2>Best Free MOV to MP4 Converter Online</h2>
+<p>MOV files from iPhones, iPads, and Mac cameras often don't play on Windows, Android, or older devices. Our MOV to MP4 converter solves this compatibility issue instantly. Simply upload your MOV file, choose quality settings, and download the converted MP4. Works with videos of any length — no file size limits, no waiting in queues.</p>
+<h2>Convert iPhone Videos to MP4 Instantly</h2>
+<p>iPhone records video in MOV format by default. When you need to share these videos on WhatsApp, upload to YouTube, embed in presentations, or send via email — MP4 is the universal format that works everywhere. Our converter preserves video quality while converting to MP4 with adjustable bitrate from 500 Kbps to 8 Mbps and resolution options from 360p to 1080p.</p>
+<h2>Trim & Convert in One Step</h2>
+<p>No need to use a separate video trimmer. Enable the built-in trim feature to select a specific portion of your MOV video before converting. Use the visual timeline, drag the start/end sliders, or type exact timestamps. Only the selected clip gets converted — saving time and producing a smaller output file.</p>
+<h2>Batch Convert Multiple MOV Files</h2>
+<p>Need to convert many files at once? Switch to Batch Mode to queue up multiple MOV, AVI, MKV, or WebM files and convert them all with the same settings. Track progress for each file, download individually or all at once. Perfect for photographers, videographers, and content creators handling bulk video files.</p>
+<h2>Lightning-Fast Conversion Speed</h2>
+<p>Choose from 1x to 16x conversion speed. At 8x speed (default), a 5-minute video converts in under 40 seconds. The tool uses accelerated playback with the browser's MediaRecorder API — no server needed, no waiting in upload queues. Cancel anytime and re-convert with different settings without re-uploading.</p>
+<h2>How MOV to MP4 Conversion Works</h2>
+<p>The tool uses your browser's built-in media capabilities to decode the MOV file and re-encode it into a widely compatible format. Choose from quality presets (Low, Medium, High, Original) or set a custom bitrate. Optionally change resolution, strip the audio track, or trim the clip. Everything processes locally on your device — complete privacy guaranteed.</p>
+<h2>Supported Formats</h2>
+<p>While designed for MOV to MP4 conversion, our tool also accepts AVI, MKV, WebM, and M4V files. Convert any video format to MP4 or WebM with full control over quality, resolution, and audio settings. View detailed file metadata including resolution, bitrate, aspect ratio, and file size before converting.</p>`,
+  category: 'converters',
+  targetKeyword: 'mov to mp4 converter',
+  secondaryKeywords: ['convert mov to mp4', 'mov to mp4 online', 'mov to mp4 free', 'iphone video to mp4', 'quicktime to mp4', 'mov converter', 'convert mov to mp4 online free', 'mov to mp4 no watermark', 'apple mov to mp4', 'video converter online', 'mov to mp4 converter for windows', 'how to convert mov to mp4', 'mov to mp4 batch converter', 'trim and convert mov to mp4', 'mov to mp4 without losing quality'],
+  metaTitle: 'MOV to MP4 Converter — Convert MOV to MP4 Online Free',
+  metaDescription: 'Convert MOV to MP4 online free — trim, batch convert, no upload, no watermark. Convert iPhone MOV videos to MP4 instantly in your browser.',
+  faqs: [
+    { question: 'Is this MOV to MP4 converter free?', answer: 'Yes, completely free with no limits, no watermarks, and no signup required. Convert unlimited MOV files to MP4 in single or batch mode.' },
+    { question: 'Does my video get uploaded to a server?', answer: 'No. Everything happens locally in your browser using the MediaRecorder API. Your video never leaves your device, ensuring complete privacy and security.' },
+    { question: 'Can I convert iPhone videos to MP4?', answer: 'Yes! iPhones record in MOV (QuickTime) format by default. Simply upload your iPhone video and convert it to MP4 for universal compatibility on Windows, Android, and all other devices.' },
+    { question: 'What is the maximum file size I can convert?', answer: 'You can convert videos up to 500MB each. Since processing happens in your browser, larger files may take longer depending on your device. Use 8x or 16x conversion speed for faster results.' },
+    { question: 'Will the conversion reduce video quality?', answer: 'You control the quality. Choose "Original" preset to match source quality, or select High (3 Mbps), Medium (1.5 Mbps), or Low (500 Kbps) presets. You can also set a custom bitrate up to 8 Mbps.' },
+    { question: 'Can I trim the video before converting?', answer: 'Yes! Enable the "Trim Video" option to select a start and end time using sliders or exact timestamps. Only the selected clip gets converted — great for cutting intros, outros, or extracting highlights.' },
+    { question: 'How do I convert multiple MOV files at once?', answer: 'Switch to "Batch Convert" mode at the top. Drop multiple files, configure shared settings (format, quality, resolution, speed), and click "Convert All". Track progress for each file and download all converted files at once.' },
+    { question: 'How long does the conversion take?', answer: 'Conversion speed depends on the speed setting (1x-16x) and your device. At the default 8x speed, a 5-minute video converts in about 38 seconds. The tool shows estimated time and live progress.' },
+    { question: 'What other formats can I convert?', answer: 'Besides MOV, you can convert AVI, MKV, WebM, M4V, and MP4 files. Output to MP4 (best compatibility) or WebM (smaller size). Works as a universal video converter.' },
+    { question: 'Can I cancel a conversion in progress?', answer: 'Yes. Click the "Cancel" button during conversion to stop immediately. Your original file is untouched — you can change settings and re-convert without uploading again.' },
+  ],
+  howToSteps: [
+    'Upload your MOV file by clicking or dragging it into the upload area (or switch to Batch Mode for multiple files)',
+    'Choose output format (MP4 or WebM), quality preset, resolution, and conversion speed',
+    'Optionally enable trim to select a specific clip, or remove audio for a smaller file',
+    'Click "Convert" and wait for the conversion — cancel anytime if needed',
+    'Preview the converted video, compare file sizes, and download your file',
+  ],
+  relatedToolSlugs: ['video-compressor', 'video-to-gif', 'mp4-to-mp3', 'gif-maker', 'audio-cutter'],
+  icon: 'Film',
+  isNew: true,
+  isPopular: true,
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
