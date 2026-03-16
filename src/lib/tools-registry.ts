@@ -5292,7 +5292,7 @@ export const tools: Tool[] = [
 <p>All calculations run instantly in your browser — no data stored, no signup required.</p>`,
     category: 'calculators',
     targetKeyword: 'PPF calculator',
-    secondaryKeywords: ['PPF calculator India', 'PPF interest calculator', 'PPF maturity calculator', 'public provident fund calculator', 'PPF returns calculator', 'PPF calculator with yearly breakdown', 'PPF calculator online', 'PPF calculator 2025', 'PPF maturity amount calculator', 'PPF account calculator India'],
+    secondaryKeywords: ['PPF calculator India', 'PPF interest calculator', 'PPF maturity calculator', 'public provident fund calculator', 'PPF returns calculator', 'PPF calculator with yearly breakdown', 'PPF calculator online', 'PPF calculator 2026', 'PPF maturity amount calculator', 'PPF account calculator India'],
     metaTitle: 'PPF Calculator India - PPF Maturity & Interest Calculator Free',
     metaDescription: 'Calculate PPF maturity amount with year-by-year breakdown at 7.1% rate. See total interest earned & tax savings. Free PPF calculator India — instant results.',
     faqs: [
@@ -7011,7 +7011,7 @@ tools.push({
   longDescription: 'India\'s most comprehensive TDS (Tax Deducted at Source) Calculator covering all major TDS sections. Calculate TDS on Salary (Section 192) with full Old vs New Tax Regime comparison, TDS on Rent (Section 194-IB), Professional/Technical Fees (Section 194J), Interest Income (Section 194A), and Property Sale (Section 194-IA). For salary TDS, enter your annual CTC along with deductions under Section 80C, 80D, HRA exemption, NPS (80CCD), and home loan interest (Section 24b). The calculator shows a side-by-side comparison of Old and New Tax Regime with taxable income, tax, cess, monthly/annual TDS, and recommends which regime saves you more. Updated with Budget 2025 changes for FY 2025-26: New Regime slabs (0-4L Nil, 4-8L 5%, 8-12L 10%, 12-16L 15%, 16-20L 20%, 20-24L 25%, above 24L 30%), Rs.75,000 standard deduction, and Section 87A rebate up to Rs.60,000 for income up to 12 Lakh. All calculations are instant, run entirely in your browser, and support FY 2024-25, 2025-26, and 2026-27.',
   category: 'calculators',
   targetKeyword: 'TDS calculator',
-  secondaryKeywords: ['TDS calculator India', 'TDS on salary calculator', 'TDS on rent calculator', 'TDS calculator FY 2025-26', 'Section 194 TDS calculator', 'TDS on property sale', 'TDS on professional fees', 'old vs new regime TDS', 'income tax TDS calculator India', 'TDS calculator online', 'TDS rate calculator 2025'],
+  secondaryKeywords: ['TDS calculator India', 'TDS on salary calculator', 'TDS on rent calculator', 'TDS calculator FY 2025-26', 'Section 194 TDS calculator', 'TDS on property sale', 'TDS on professional fees', 'old vs new regime TDS', 'income tax TDS calculator India', 'TDS calculator online', 'TDS rate calculator 2026'],
   metaTitle: 'TDS Calculator India - Salary, Rent & Professional Fees | FY 2025-26',
   metaDescription: 'Calculate TDS on salary, rent, professional fees, interest & property. Old vs New regime comparison for FY 2025-26. Free TDS calculator India — instant results.',
   faqs: [
@@ -7416,7 +7416,7 @@ tools.push({
 <p>All calculations happen entirely in your browser — no data sent to any server.</p>`,
   category: 'calculators',
   targetKeyword: 'income tax calculator India',
-  secondaryKeywords: ['income tax calculator 2025-26', 'tax calculator India', 'income tax old vs new regime', 'income tax slab calculator', 'tax calculator FY 2025-26', 'income tax calculator online', 'old regime tax calculator', 'new regime tax calculator', 'income tax deductions calculator', 'salary tax calculator India', 'income tax calculator online India', 'new tax regime calculator 2025', 'income tax calculator with deductions'],
+  secondaryKeywords: ['income tax calculator 2025-26', 'tax calculator India', 'income tax old vs new regime', 'income tax slab calculator', 'tax calculator FY 2025-26', 'income tax calculator online', 'old regime tax calculator', 'new regime tax calculator', 'income tax deductions calculator', 'salary tax calculator India', 'income tax calculator online India', 'new tax regime calculator 2026', 'income tax calculator with deductions'],
   metaTitle: 'Income Tax Calculator India FY 2025-26 - Old vs New Regime Free',
   metaDescription: 'Calculate income tax for FY 2024-27 with all deductions — 80C, 80D, HRA, NPS. Old vs New regime comparison with slab breakdown. Free income tax calculator India.',
   faqs: [

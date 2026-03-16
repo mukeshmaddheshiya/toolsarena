@@ -4769,7 +4769,7 @@ button {
       {
         id: 'crop-kyu-zaroori',
         title: 'Image Crop करना क्यों जरूरी है?',
-        content: `<ul><li><strong>Platform compliance:</strong> Instagram, Facebook, LinkedIn सबके अलग-अलग aspect ratios हैं</li><li><strong>Professional look:</strong> Passport, ID card, headshot — strict dimensions follow करने होते हैं</li><li><strong>Better composition:</strong> Rule of thirds follow करके crop करने से photo ज्यादा attractive लगती है</li><li><strong>Faster loading:</strong> Cropped images छोटी होती हैं — website पर fast load होती हैं</li><li><strong>More engagement:</strong> सही size की images पर 38% ज्यादा engagement मिलता है (HubSpot, 2025)</li></ul>`,
+        content: `<ul><li><strong>Platform compliance:</strong> Instagram, Facebook, LinkedIn सबके अलग-अलग aspect ratios हैं</li><li><strong>Professional look:</strong> Passport, ID card, headshot — strict dimensions follow करने होते हैं</li><li><strong>Better composition:</strong> Rule of thirds follow करके crop करने से photo ज्यादा attractive लगती है</li><li><strong>Faster loading:</strong> Cropped images छोटी होती हैं — website पर fast load होती हैं</li><li><strong>More engagement:</strong> सही size की images पर 38% ज्यादा engagement मिलता है (HubSpot, 2026)</li></ul>`,
       },
       {
         id: 'platform-crop-sizes',
@@ -6000,7 +6000,7 @@ tags: [hindi, tutorial]
         content: `<p>एक अच्छा रिज्यूमे सिर्फ information dump नहीं होता — यह आपकी professional story होती है। HR को पहले 6–7 सेकंड में ही समझ आ जाना चाहिए कि आप इस job के लिए क्यों perfect हैं।</p>
 <h3>Strong Summary/Objective लिखें</h3>
 <p>रिज्यूमे का सबसे ऊपर का हिस्सा (Professional Summary या Career Objective) सबसे पहले पढ़ा जाता है। यह 2–3 lines में आपका experience, skills, और goal बताना चाहिए।</p>
-<div class="callout-success">✅ <strong>अच्छा उदाहरण (Fresher):</strong> "BTech Computer Science graduate (2025, CGPA 8.2) with hands-on experience in Python, React.js और MySQL। Full-stack development में करियर बनाने का लक्ष्य। 2 internships और 3 personal projects complete किए हैं।"</div>
+<div class="callout-success">✅ <strong>अच्छा उदाहरण (Fresher):</strong> "BTech Computer Science graduate (2026, CGPA 8.2) with hands-on experience in Python, React.js और MySQL। Full-stack development में करियर बनाने का लक्ष्य। 2 internships और 3 personal projects complete किए हैं।"</div>
 <div class="callout-warning">❌ <strong>खराब उदाहरण:</strong> "मैं एक hardworking और dedicated fresher हूं जो एक अच्छी company में काम करना चाहता हूं जहां मुझे grow करने का मौका मिले।"</div>
 <h3>Achievements को Numbers से Prove करें</h3>
 <p>Vague statements की जगह quantifiable achievements लिखें। HR को numbers पर भरोसा होता है।</p>

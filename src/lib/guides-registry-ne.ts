@@ -2461,7 +2461,7 @@ button {
       {
         id: 'crop-kina-important',
         title: 'Image Crop किन महत्वपूर्ण छ?',
-        content: `<ul><li><strong>Platform compliance:</strong> Instagram, Facebook, LinkedIn — सबैको अलग-अलग aspect ratios</li><li><strong>Professional look:</strong> Passport, NID, headshot — strict dimensions follow गर्नुपर्छ</li><li><strong>Better composition:</strong> Rule of thirds follow गरेर crop गर्दा photo attractive देखिन्छ</li><li><strong>Faster loading:</strong> Cropped images सानो हुन्छन् — website मा fast load हुन्छ</li><li><strong>Engagement:</strong> सही size को images मा 38% बढी engagement (HubSpot, 2025)</li></ul>`,
+        content: `<ul><li><strong>Platform compliance:</strong> Instagram, Facebook, LinkedIn — सबैको अलग-अलग aspect ratios</li><li><strong>Professional look:</strong> Passport, NID, headshot — strict dimensions follow गर्नुपर्छ</li><li><strong>Better composition:</strong> Rule of thirds follow गरेर crop गर्दा photo attractive देखिन्छ</li><li><strong>Faster loading:</strong> Cropped images सानो हुन्छन् — website मा fast load हुन्छ</li><li><strong>Engagement:</strong> सही size को images मा 38% बढी engagement (HubSpot, 2026)</li></ul>`,
       },
       {
         id: 'platform-sizes',
