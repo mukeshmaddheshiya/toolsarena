@@ -12,7 +12,12 @@ import { ZoomIn, RotateCcw, Loader2, Sparkles, SlidersHorizontal, Eye, EyeOff, A
 
 type UpscaleMethod = 'bicubic' | 'lanczos';
 
-function upscaleImage(
+/* Yield to browser so UI/progress can update */
+function yieldUI(): Promise<void> {
+  return new Promise(r => setTimeout(r, 0));
+}
+
+async function upscaleImage(
   source: ImageData,
   scale: number,
   sharpen: number,
@@ -20,7 +25,7 @@ function upscaleImage(
   method: UpscaleMethod,
   colorEnhance: number,
   onProgress?: (pct: number) => void,
-): ImageData {
+): Promise<ImageData> {
   const srcW = source.width;
   const srcH = source.height;
   const dstW = Math.round(srcW * scale);
@@ -56,125 +61,134 @@ function upscaleImage(
   }
 
   const kernelFn = method === 'lanczos' ? lanczos3 : cubic;
+  const startK = method === 'lanczos' ? -2 : -1;
+  const endK = method === 'lanczos' ? 3 : 2;
 
-  // Step 1: Interpolation upscale
+  // ── Step 1: Interpolation upscale (chunked async) ──
   const upscaled = new Uint8ClampedArray(dstW * dstH * 4);
+  const CHUNK = 32; // rows per chunk — yield every 32 rows
 
-  for (let dy = 0; dy < dstH; dy++) {
-    if (onProgress && dy % 50 === 0) onProgress(10 + (dy / dstH) * 40);
-    const srcY = dy / scale;
-    const iy = Math.floor(srcY);
-    const fy = srcY - iy;
+  for (let dyStart = 0; dyStart < dstH; dyStart += CHUNK) {
+    const dyEnd = Math.min(dyStart + CHUNK, dstH);
 
-    for (let dx = 0; dx < dstW; dx++) {
-      const srcX = dx / scale;
-      const ix = Math.floor(srcX);
-      const fx = srcX - ix;
+    for (let dy = dyStart; dy < dyEnd; dy++) {
+      const srcY = dy / scale;
+      const iy = Math.floor(srcY);
+      const fy = srcY - iy;
 
-      for (let ch = 0; ch < 4; ch++) {
-        let sum = 0;
-        let weightSum = 0;
-        const startM = method === 'lanczos' ? -2 : -1;
-        const endM = method === 'lanczos' ? 3 : 2;
+      for (let dx = 0; dx < dstW; dx++) {
+        const srcX = dx / scale;
+        const ix = Math.floor(srcX);
+        const fx = srcX - ix;
 
-        for (let m = startM; m <= endM; m++) {
-          const wy = kernelFn(m - fy);
-          for (let n = startM; n <= endM; n++) {
-            const w = wy * kernelFn(n - fx);
-            sum += getPixel(ix + n, iy + m, ch) * w;
-            weightSum += w;
+        for (let ch = 0; ch < 4; ch++) {
+          let sum = 0;
+          let weightSum = 0;
+
+          for (let m = startK; m <= endK; m++) {
+            const wy = kernelFn(m - fy);
+            for (let n = startK; n <= endK; n++) {
+              const w = wy * kernelFn(n - fx);
+              sum += getPixel(ix + n, iy + m, ch) * w;
+              weightSum += w;
+            }
           }
-        }
 
-        upscaled[(dy * dstW + dx) * 4 + ch] = clamp(Math.round(sum / weightSum), 0, 255);
+          upscaled[(dy * dstW + dx) * 4 + ch] = clamp(Math.round(sum / weightSum), 0, 255);
+        }
       }
     }
+
+    // Yield to UI + update progress
+    const pct = Math.round(10 + (dyEnd / dstH) * 45);
+    onProgress?.(pct);
+    await yieldUI();
   }
 
-  onProgress?.(55);
-
-  // Step 2: Denoise (bilateral-inspired: box blur blended)
+  // ── Step 2: Denoise (chunked async) ──
   let processed = upscaled;
   if (denoise > 0) {
     const denoised = new Uint8ClampedArray(dstW * dstH * 4);
     const radius = Math.ceil(denoise * 2);
     const kernelSize = (2 * radius + 1) ** 2;
 
-    for (let y = 0; y < dstH; y++) {
-      for (let x = 0; x < dstW; x++) {
-        for (let ch = 0; ch < 3; ch++) {
-          let sum = 0;
-          for (let ky = -radius; ky <= radius; ky++) {
-            for (let kx = -radius; kx <= radius; kx++) {
-              sum += processed[(clamp(y + ky, 0, dstH - 1) * dstW + clamp(x + kx, 0, dstW - 1)) * 4 + ch];
+    for (let yStart = 0; yStart < dstH; yStart += CHUNK) {
+      const yEnd = Math.min(yStart + CHUNK, dstH);
+      for (let y = yStart; y < yEnd; y++) {
+        for (let x = 0; x < dstW; x++) {
+          for (let ch = 0; ch < 3; ch++) {
+            let sum = 0;
+            for (let ky = -radius; ky <= radius; ky++) {
+              for (let kx = -radius; kx <= radius; kx++) {
+                sum += processed[(clamp(y + ky, 0, dstH - 1) * dstW + clamp(x + kx, 0, dstW - 1)) * 4 + ch];
+              }
             }
+            const denoiseVal = sum / kernelSize;
+            const origVal = processed[(y * dstW + x) * 4 + ch];
+            denoised[(y * dstW + x) * 4 + ch] = Math.round(origVal * (1 - denoise) + denoiseVal * denoise);
           }
-          const denoiseVal = sum / kernelSize;
-          const origVal = processed[(y * dstW + x) * 4 + ch];
-          denoised[(y * dstW + x) * 4 + ch] = Math.round(origVal * (1 - denoise) + denoiseVal * denoise);
+          denoised[(y * dstW + x) * 4 + 3] = processed[(y * dstW + x) * 4 + 3];
         }
-        denoised[(y * dstW + x) * 4 + 3] = processed[(y * dstW + x) * 4 + 3];
       }
+      onProgress?.(55 + Math.round((yEnd / dstH) * 10));
+      await yieldUI();
     }
     processed = denoised;
   }
 
-  onProgress?.(70);
+  onProgress?.(68);
 
-  // Step 3: Unsharp Mask (3x3 laplacian)
+  // ── Step 3: Unsharp Mask sharpening (chunked async) ──
   if (sharpen > 0) {
     const sharpened = new Uint8ClampedArray(dstW * dstH * 4);
     const strength = sharpen * 2.5;
 
-    for (let y = 0; y < dstH; y++) {
-      for (let x = 0; x < dstW; x++) {
-        for (let ch = 0; ch < 3; ch++) {
-          const idx = (y * dstW + x) * 4 + ch;
-          const center = processed[idx];
-          let neighbors = 0;
-          let count = 0;
-          for (let ky = -1; ky <= 1; ky++) {
-            for (let kx = -1; kx <= 1; kx++) {
-              if (kx === 0 && ky === 0) continue;
-              neighbors += processed[(clamp(y + ky, 0, dstH - 1) * dstW + clamp(x + kx, 0, dstW - 1)) * 4 + ch];
-              count++;
+    for (let yStart = 0; yStart < dstH; yStart += CHUNK) {
+      const yEnd = Math.min(yStart + CHUNK, dstH);
+      for (let y = yStart; y < yEnd; y++) {
+        for (let x = 0; x < dstW; x++) {
+          for (let ch = 0; ch < 3; ch++) {
+            const idx = (y * dstW + x) * 4 + ch;
+            const center = processed[idx];
+            let neighbors = 0;
+            let count = 0;
+            for (let ky = -1; ky <= 1; ky++) {
+              for (let kx = -1; kx <= 1; kx++) {
+                if (kx === 0 && ky === 0) continue;
+                neighbors += processed[(clamp(y + ky, 0, dstH - 1) * dstW + clamp(x + kx, 0, dstW - 1)) * 4 + ch];
+                count++;
+              }
             }
+            const edge = center - neighbors / count;
+            sharpened[idx] = clamp(Math.round(center + edge * strength), 0, 255);
           }
-          const edge = center - neighbors / count;
-          sharpened[idx] = clamp(Math.round(center + edge * strength), 0, 255);
+          sharpened[(y * dstW + x) * 4 + 3] = processed[(y * dstW + x) * 4 + 3];
         }
-        sharpened[(y * dstW + x) * 4 + 3] = processed[(y * dstW + x) * 4 + 3];
       }
+      onProgress?.(70 + Math.round((yEnd / dstH) * 15));
+      await yieldUI();
     }
     processed = sharpened;
   }
 
-  onProgress?.(85);
+  onProgress?.(87);
 
-  // Step 4: Color enhancement (saturation + contrast boost)
+  // ── Step 4: Color enhancement (fast, single pass) ──
   if (colorEnhance > 0) {
     const enhanced = new Uint8ClampedArray(processed.length);
-    const sat = 1 + colorEnhance * 0.4;    // up to 1.4x saturation
-    const cont = 1 + colorEnhance * 0.15;  // up to 1.15x contrast
+    const sat = 1 + colorEnhance * 0.4;
+    const cont = 1 + colorEnhance * 0.15;
 
     for (let i = 0; i < processed.length; i += 4) {
       let r = processed[i], g = processed[i + 1], b = processed[i + 2];
-
-      // Saturation via luminance
       const lum = 0.299 * r + 0.587 * g + 0.114 * b;
       r = clamp(Math.round(lum + (r - lum) * sat), 0, 255);
       g = clamp(Math.round(lum + (g - lum) * sat), 0, 255);
       b = clamp(Math.round(lum + (b - lum) * sat), 0, 255);
-
-      // Contrast
       r = clamp(Math.round(((r / 255 - 0.5) * cont + 0.5) * 255), 0, 255);
       g = clamp(Math.round(((g / 255 - 0.5) * cont + 0.5) * 255), 0, 255);
       b = clamp(Math.round(((b / 255 - 0.5) * cont + 0.5) * 255), 0, 255);
-
-      enhanced[i] = r;
-      enhanced[i + 1] = g;
-      enhanced[i + 2] = b;
-      enhanced[i + 3] = processed[i + 3];
+      enhanced[i] = r; enhanced[i + 1] = g; enhanced[i + 2] = b; enhanced[i + 3] = processed[i + 3];
     }
     processed = enhanced;
   }
@@ -307,7 +321,7 @@ export function ImageUpscalerTool() {
       // Yield to UI
       await new Promise(r => setTimeout(r, 50));
 
-      const result = upscaleImage(sourceData, scale, sharpen, denoise, method, colorEnhance, (pct) => setProgress(pct));
+      const result = await upscaleImage(sourceData, scale, sharpen, denoise, method, colorEnhance, (pct) => setProgress(pct));
 
       // Draw result
       const outCanvas = canvasRef.current;
