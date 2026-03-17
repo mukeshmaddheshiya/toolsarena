@@ -315,6 +315,7 @@ export function ImageUpscalerTool() {
       if (outW * outH > hardLimit) {
         setError(`Output would be ${outW}×${outH} (${formatMegapixels(outW, outH)}) — too large for browser memory. Try a smaller scale or resize the image first.`);
         setState('loaded');
+        setTimeout(() => toolRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
         return;
       }
 
@@ -352,6 +353,7 @@ export function ImageUpscalerTool() {
     } catch (e) {
       setError(`Upscaling failed: ${(e as Error).message}`);
       setState('loaded');
+      setTimeout(() => toolRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
     }
   }, [imageUrl, scale, sharpen, denoise, method, colorEnhance, outputFormat, jpegQuality, resultUrl]);
 
