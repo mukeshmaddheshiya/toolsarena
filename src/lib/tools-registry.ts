@@ -4279,40 +4279,41 @@ export const tools: Tool[] = [
   {
     slug: 'youtube-money-calculator',
     name: 'YouTube Money Calculator',
-    shortDescription: 'Estimate YouTube earnings from views, subscribers, and CPM. Free & instant.',
-    longDescription: `<p>Estimate how much money a YouTube channel or video earns with our free <strong>YouTube Money Calculator</strong>. Enter daily views, total views, or subscribers to get instant earnings estimates based on real CPM data for different countries and niches.</p>
-<h2>Key Features</h2>
-<ul>
-<li><strong>CPM Slider</strong>: Customize CPM from $0.25 (developing markets) to $15+ (finance/tech in US) to match your niche.</li>
-<li><strong>Country Selection</strong>: Choose your primary audience country for region-specific revenue estimates.</li>
-<li><strong>Daily/Monthly/Yearly Breakdown</strong>: See projected earnings across all time horizons.</li>
-<li><strong>Subscriber Milestones</strong>: Projected earnings at 1K, 10K, 100K, and 1M subscribers.</li>
-<li><strong>Visual Chart</strong>: Earnings breakdown chart and CPM comparison by country and niche.</li>
-</ul>
-<h2>Who Is This For?</h2>
-<p>Perfect for aspiring YouTubers planning their content strategy, existing creators benchmarking their earnings, and anyone curious about how much YouTubers actually make.</p>
-<h2>Privacy & Security</h2>
-<p>All calculations run instantly in your browser — no signup required, no data stored.</p>`,
+    shortDescription: 'Calculate YouTube earnings from AdSense, Shorts & sponsorships. 30 countries, 16 niches, video length impact.',
+    longDescription: `<p>Calculate how much money YouTube pays with our free YouTube Money Calculator — the most comprehensive YouTube earnings estimator online. Estimate AdSense revenue, YouTube Shorts income, sponsorship deals, and total creator income with data for 30 countries and 16 niches.</p>
+<h2>Most Advanced YouTube Earnings Calculator</h2>
+<p>Our calculator goes beyond basic CPM math. Four dedicated tabs cover every income stream: <strong>AdSense</strong> (long-form ad revenue with video length multipliers), <strong>YouTube Shorts</strong> (Shorts fund RPM estimates), <strong>Sponsorships</strong> (brand deal rates by subscriber count), and <strong>Total Income</strong> (combined breakdown with merch/affiliate estimates). No other calculator covers all four.</p>
+<h2>CPM Data for 30 Countries</h2>
+<p>Select from 30 countries with real CPM ranges: US ($2-12), UK ($3-10), Switzerland ($4-14), India ($0.30-2.50), Nepal ($0.20-1.50), and more. Earnings are shown in both USD and local currency (INR, NPR, EUR, GBP, JPY, etc.) for every country.</p>
+<h2>Video Length Impact on Earnings</h2>
+<p>This is the feature no other calculator has: video length directly affects ad revenue. Shorts (<60s) earn via Shorts Fund only. Videos under 8 minutes get pre-roll ads only. Videos 8-20 minutes enable mid-roll ads (1.8x revenue). Videos 20+ minutes allow multiple mid-rolls (2.5x revenue).</p>
+<h2>Ad Blocker Impact Calculator</h2>
+<p>Approximately 30% of viewers globally use ad blockers — more for tech audiences (40-50%). Our advanced settings let you factor in ad blocker percentage to get a more realistic earnings estimate.</p>
+<h2>RPM vs CPM Explained</h2>
+<p>CPM is what advertisers pay per 1,000 impressions. RPM (Revenue Per Mille) is what YOU earn per 1,000 views after YouTube's 45% cut, monetization rate, and ad blockers. Our calculator shows both — giving you the real picture of your take-home earnings.</p>`,
     category: 'utility-tools',
     targetKeyword: 'YouTube money calculator',
-    secondaryKeywords: ['youtube earnings calculator', 'how much do youtubers make', 'youtube revenue calculator', 'youtube income calculator', 'youtube CPM calculator', 'youtube money estimator', 'youtube pay calculator', 'how much youtube pays'],
-    metaTitle: 'YouTube Money Calculator - Estimate Channel Earnings Free',
-    metaDescription: 'Calculate YouTube earnings from views and subscribers. Estimate daily, monthly & yearly revenue with CPM data by country. Free calculator — no signup needed.',
+    secondaryKeywords: ['youtube earnings calculator', 'how much do youtubers make', 'youtube revenue calculator', 'youtube income calculator', 'youtube CPM calculator', 'youtube money estimator', 'youtube pay calculator', 'how much youtube pays', 'youtube shorts earnings', 'youtube sponsorship calculator', 'youtube RPM calculator', 'youtube earnings per 1000 views', 'how much youtube pays in india', 'youtube income in rupees'],
+    metaTitle: 'YouTube Money Calculator — AdSense + Shorts + Sponsorship Earnings',
+    metaDescription: 'Calculate YouTube earnings free — AdSense, Shorts, sponsorships. 30 countries, 16 niches, video length impact, ad blocker calculator. Most advanced tool online.',
     faqs: [
-      { question: 'How accurate is this YouTube earnings calculator?', answer: 'The calculator provides estimates based on industry-average CPM ranges. Actual earnings vary based on niche, audience location, ad engagement, video length, and seasonality. Use it as a benchmark, not an exact figure.' },
-      { question: 'What is CPM and how does it affect earnings?', answer: 'CPM (Cost Per Mille) is the amount advertisers pay per 1,000 ad impressions. Higher CPM niches like finance ($12-15), tech ($8-12), and health ($6-10) pay more than entertainment ($2-4) or gaming ($3-5). US/UK audiences have higher CPMs than India or Southeast Asia.' },
-      { question: 'How much does YouTube pay per 1,000 views?', answer: 'YouTube typically pays $1-5 per 1,000 views on average, but this varies widely. After YouTube takes its 45% cut, creators earn 55% of ad revenue. High-CPM niches in the US can earn $8-15 per 1,000 views.' },
-      { question: 'Do all views generate revenue?', answer: 'No. Only monetized views (with ads) generate revenue. Typically 40-60% of total views are monetized. Viewers using ad blockers, viewers in low-ad regions, and some video types reduce monetized view percentage.' },
-      { question: 'How many subscribers do I need to start earning?', answer: 'You need at least 1,000 subscribers and 4,000 watch hours in the past 12 months to join the YouTube Partner Program. Alternatively, 1,000 subscribers with 10 million Shorts views in 90 days also qualifies.' },
+      { question: 'How accurate is this YouTube earnings calculator?', answer: 'The calculator provides estimates based on industry-average CPM ranges for 30 countries and 16 niches. Actual earnings vary based on audience engagement, video length, seasonality, and ad inventory. Use it as a realistic benchmark — all YouTube calculators online use similar methodology.' },
+      { question: 'What is CPM and how does it affect earnings?', answer: 'CPM (Cost Per Mille) is the amount advertisers pay per 1,000 ad impressions. Higher CPM niches like finance ($8-15), tech ($6-12), and health ($4-10) pay significantly more than entertainment ($1-4) or music ($1-3). US/UK audiences have CPMs 5-10x higher than India or Southeast Asia.' },
+      { question: 'What is RPM and how is it different from CPM?', answer: 'RPM (Revenue Per Mille) is what you actually earn per 1,000 views — after YouTube takes its 45% cut, after factoring in monetization rate and ad blockers. RPM is always lower than CPM. Our calculator shows both so you see the real picture.' },
+      { question: 'How much do YouTube Shorts pay?', answer: 'YouTube Shorts pay approximately $0.03-0.06 per 1,000 views (RPM) — roughly 10-20x less than long-form videos. Shorts are better for growing subscribers than for direct ad revenue. Shorts now use ad revenue sharing (45% to creator) instead of the old Shorts Fund.' },
+      { question: 'How does video length affect earnings?', answer: 'Videos over 8 minutes can include mid-roll ads, nearly doubling revenue (1.8x). Videos over 20 minutes can have multiple mid-rolls (2.5x). Videos under 8 minutes only get pre-roll ads. YouTube Shorts (<60s) pay through the Shorts Fund at much lower rates.' },
+      { question: 'How much do sponsors pay YouTubers?', answer: 'Sponsorship rates vary: micro-influencers (10K-50K subs) earn $200-$1,000 per deal, mid-tier (50K-200K) earn $1,000-$5,000, established (200K-1M) earn $5,000-$20,000, and major creators (1M+) earn $20,000-$100,000+ per sponsorship.' },
+      { question: 'How many subscribers do I need to start earning?', answer: 'You need 1,000 subscribers and 4,000 watch hours in the past 12 months to join the YouTube Partner Program (YPP). Alternatively, 1,000 subscribers with 10 million Shorts views in 90 days also qualifies for Shorts monetization.' },
+      { question: 'How much does YouTube pay in India per 1,000 views?', answer: 'YouTube CPM in India ranges from $0.30-$2.50 (average ~$1.00). After YouTube\'s 45% cut and monetization rate, creators typically earn $0.15-$0.80 per 1,000 views (₹12-₹67). Finance and tech niches earn higher, while entertainment and vlogs earn lower.' },
     ],
     howToSteps: [
-      'Enter your daily video views or total channel views.',
-      'Adjust the CPM slider to match your niche and audience region.',
-      'Select your primary audience country for region-specific estimates.',
-      'View your estimated daily, monthly, and yearly earnings instantly.',
-      'Explore the earnings breakdown by subscriber milestones for growth planning.',
+      'Use the AdSense tab: enter daily views, adjust CPM, select your country, and choose video length.',
+      'Switch to the Shorts tab to estimate YouTube Shorts earnings based on daily Shorts views.',
+      'Use the Sponsorship tab to estimate brand deal income based on your subscriber count.',
+      'Check the Total Income tab to see combined earnings from all sources.',
+      'Explore CPM by Niche and Milestone Earnings sections for growth planning.',
     ],
-    relatedToolSlugs: ['youtube-thumbnail-downloader', 'invoice-generator', 'salary-calculator', 'compound-interest-calculator'],
+    relatedToolSlugs: ['youtube-thumbnail-downloader', 'youtube-embed-generator', 'youtube-timestamp-generator', 'youtube-hashtag-generator', 'youtube-title-generator'],
     icon: 'DollarSign',
     isPopular: true,
     isNew: true,
