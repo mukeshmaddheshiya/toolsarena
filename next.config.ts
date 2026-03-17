@@ -6,6 +6,24 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
+  // Transformers.js: exclude onnxruntime-node from client bundles
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        os: false,
+      };
+    }
+    // Ignore onnxruntime-node (we use onnxruntime-web in browser)
+    config.externals = config.externals || [];
+    if (Array.isArray(config.externals)) {
+      config.externals.push('onnxruntime-node');
+    }
+    return config;
+  },
+
   // Image optimization
   images: {
     formats: ['image/avif', 'image/webp'],
