@@ -235,6 +235,7 @@ export function ImageUpscalerTool() {
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const compareRef = useRef<HTMLDivElement>(null);
+  const toolRef = useRef<HTMLDivElement>(null);
   const isDraggingRef = useRef(false);
 
   const handleFiles = useCallback((files: File[]) => {
@@ -267,6 +268,9 @@ export function ImageUpscalerTool() {
 
   const processImage = useCallback(async () => {
     if (!imageUrl || !canvasRef.current) return;
+
+    // Keep scroll position at the tool area, not pushed down
+    toolRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     setState('processing');
     setProgress(5);
@@ -329,6 +333,8 @@ export function ImageUpscalerTool() {
       setState('done');
       setComparePosition(50);
       setProcessingTime(Math.round(performance.now() - startTime));
+      // Scroll back to tool so user sees result without scrolling
+      setTimeout(() => toolRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
     } catch (e) {
       setError(`Upscaling failed: ${(e as Error).message}`);
       setState('loaded');
@@ -393,7 +399,7 @@ export function ImageUpscalerTool() {
   const valueClass = 'text-sm font-bold text-primary-700 dark:text-primary-400';
 
   return (
-    <div className="space-y-5">
+    <div ref={toolRef} className="space-y-5">
       <canvas ref={canvasRef} className="hidden" />
 
       {/* Upload */}
