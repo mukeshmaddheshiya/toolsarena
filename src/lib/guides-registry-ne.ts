@@ -5900,4 +5900,967 @@ button {
     },
   },
 
-];
+  // ── SCREEN RECORDER ────────────────────────────────────────────
+  {
+    slug: 'screen-recorder-guide',
+    toolSlug: 'screen-recorder',
+    category: 'utility-tools',
+    title: 'Screen Record कसरी गर्ने: Free Online Screen Recorder Guide (2026)',
+    subtitle: 'Windows, Mac र Mobile मा screen record गर्ने सम्पूर्ण गाइड — audio सहित, free, कुनै software install नचाहिने।',
+    metaTitle: 'Screen Record कसरी गर्ने - Free Online Recorder',
+    metaDescription: 'Windows, Mac र Mobile मा free screen record गर्नुहोस्। Audio सहित recording, best settings, common problems solve। ToolsArena free screen recorder।',
+    targetKeyword: 'screen record kasari garne',
+    secondaryKeywords: [
+      'screen recording kasari garne',
+      'laptop ma screen record',
+      'mobile ma screen record',
+      'windows 11 screen record',
+      'screen recorder free',
+      'online screen recorder',
+    ],
+    lastUpdated: '2026-03-16',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['Screen Recording', 'Video', 'Productivity', 'Free Tools'],
+    intro: `<p>Presentation record गर्नुपर्‍यो? Online class capture गर्नुपर्‍यो? Bug report को लागि screen recording चाहिन्छ? <strong>Screen recording</strong> आजकल हरेक student, professional र content creator को आवश्यकता हो।</p>
+<p>ToolsArena को <strong>Free Online Screen Recorder</strong> ले कुनै पनि software install नगरी browser बाटै screen record गर्न दिन्छ — audio सहित, HD quality मा।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Screen recording सुरु गर्नुअघि unnecessary tabs र notifications बन्द गर्नुहोस् — clean recording हुन्छ र file size पनि सानो हुन्छ।</p></div>`,
+    sections: [
+      {
+        id: 'screen-recording-ke-ho',
+        title: 'Screen Recording के हो र किन चाहिन्छ?',
+        content: `<p><strong>Screen recording</strong> भनेको तपाईंको computer वा mobile को screen मा भइरहेको कुरा video मा capture गर्ने प्रक्रिया हो। यसलाई screencast पनि भनिन्छ।</p>
+<h4>Screen Recording कहाँ-कहाँ चाहिन्छ?</h4>
+<ul>
+  <li><strong>Online Classes:</strong> Zoom, Google Meet को class record गरेर पछि revision गर्न</li>
+  <li><strong>Tutorials:</strong> YouTube tutorials, software demos बनाउन</li>
+  <li><strong>Bug Reports:</strong> Software मा problem देखाएर developer लाई पठाउन</li>
+  <li><strong>Presentations:</strong> PowerPoint/Google Slides presentation record गर्न</li>
+  <li><strong>Gaming:</strong> Gameplay record गरेर YouTube/TikTok मा share गर्न</li>
+  <li><strong>Freelancing:</strong> Upwork/Fiverr मा client को लागि work demo बनाउन</li>
+</ul>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>नेपालमा online education बढ्दै गएपछि screen recording को demand पनि बढेको छ — teachers, students र coaching centers सबैले screen record गर्छन्।</p></div>`,
+      },
+      {
+        id: 'windows-mac-mobile',
+        title: 'Windows, Mac र Mobile मा Screen Record कसरी गर्ने?',
+        content: `<h4>Windows 11/10 मा Screen Record:</h4>
+<ul>
+  <li><strong>ToolsArena (Browser):</strong> toolsarena.in मा Screen Recorder खोल्नुहोस् → "Start Recording" click → screen/window/tab select → record</li>
+  <li><strong>Xbox Game Bar:</strong> Win + G → Record button (built-in, तर limited features)</li>
+  <li><strong>Snipping Tool (Win 11):</strong> नयाँ Windows 11 मा video recording feature छ</li>
+</ul>
+<h4>Mac मा Screen Record:</h4>
+<ul>
+  <li><strong>ToolsArena (Browser):</strong> Safari/Chrome मा toolsarena.in खोलेर record</li>
+  <li><strong>QuickTime Player:</strong> File → New Screen Recording (built-in)</li>
+  <li><strong>Cmd + Shift + 5:</strong> macOS built-in screenshot/recording bar</li>
+</ul>
+<h4>Mobile मा Screen Record:</h4>
+<table>
+  <tr><th>Platform</th><th>Method</th><th>Steps</th></tr>
+  <tr><td>Android 11+</td><td>Built-in</td><td>Notification bar → Screen Record</td></tr>
+  <tr><td>iPhone (iOS 15+)</td><td>Built-in</td><td>Control Center → Screen Recording</td></tr>
+  <tr><td>Samsung</td><td>Built-in</td><td>Quick Panel → Screen Recorder</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Browser-based ToolsArena Screen Recorder सबैभन्दा सजिलो छ — कुनै install नचाहिने, कुनै sign-up नचाहिने। Chrome/Edge मा best काम गर्छ।</p></div>`,
+      },
+      {
+        id: 'audio-sahit-record',
+        title: 'Audio सहित Screen Record कसरी गर्ने?',
+        content: `<p>Screen recording मा audio capture गर्नु tutorial र presentation का लागि essential छ। दुई प्रकारको audio हुन्छ:</p>
+<h4>Audio Types:</h4>
+<table>
+  <tr><th>Audio Type</th><th>के हो?</th><th>कहिले चाहिन्छ?</th></tr>
+  <tr><td><strong>Microphone Audio</strong></td><td>तपाईंको आवाज</td><td>Tutorials, presentations, voiceover</td></tr>
+  <tr><td><strong>System Audio</strong></td><td>Computer बाट आउने sound</td><td>Video calls, music, app sounds</td></tr>
+  <tr><td><strong>Both</strong></td><td>दुवै एकैपटक</td><td>Online class recording</td></tr>
+</table>
+<h4>ToolsArena मा Audio Settings:</h4>
+<ol>
+  <li>Screen Recorder tool खोल्नुहोस्</li>
+  <li>"Audio" option मा Microphone ON गर्नुहोस्</li>
+  <li>System audio पनि capture गर्न "Share tab audio" check गर्नुहोस्</li>
+  <li>Recording start गर्नुहोस्</li>
+</ol>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Recording अघि microphone test गर्नुहोस् — silent recording पछि fix गर्न सकिँदैन। Browser ले microphone permission माग्छ — Allow गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'best-settings',
+        title: 'Screen Recording का Best Settings',
+        content: `<h4>Resolution र Quality Settings:</h4>
+<table>
+  <tr><th>Purpose</th><th>Resolution</th><th>FPS</th><th>File Size (per min)</th></tr>
+  <tr><td>YouTube Tutorial</td><td>1920×1080 (Full HD)</td><td>30 fps</td><td>~50-80 MB</td></tr>
+  <tr><td>Quick Demo</td><td>1280×720 (HD)</td><td>24 fps</td><td>~25-40 MB</td></tr>
+  <tr><td>Presentation</td><td>1920×1080</td><td>15 fps</td><td>~20-30 MB</td></tr>
+  <tr><td>Gaming</td><td>1920×1080</td><td>60 fps</td><td>~100-150 MB</td></tr>
+</table>
+<h4>Recording Tips:</h4>
+<ul>
+  <li><strong>Clean Desktop:</strong> Desktop icons हटाउनुहोस्, wallpaper simple राख्नुहोस्</li>
+  <li><strong>Close Notifications:</strong> Do Not Disturb mode ON गर्नुहोस्</li>
+  <li><strong>Close Unnecessary Apps:</strong> RAM free राख्नुहोस् — smooth recording हुन्छ</li>
+  <li><strong>Cursor Highlight:</strong> Mouse cursor emphasis ON गर्नुहोस् — viewers ले follow गर्न सजिलो</li>
+  <li><strong>Script तयार गर्नुहोस्:</strong> Recording अघि के बोल्ने plan गर्नुहोस्</li>
+</ul>
+<div class="callout-info"><strong>ℹ️ Nepal Internet Context</strong><p>नेपालको internet speed मा 720p recording upload गर्न manageable हुन्छ। 1080p YouTube मा upload गर्दा NTC/Ncell data मा time लाग्छ — WiFi recommend।</p></div>`,
+      },
+      {
+        id: 'common-problems',
+        title: 'Screen Recording का Common Problems र Solutions',
+        content: `<h4>Common Issues र Fix:</h4>
+<table>
+  <tr><th>Problem</th><th>Cause</th><th>Solution</th></tr>
+  <tr><td>Audio record भएन</td><td>Permission denied</td><td>Browser settings → Microphone allow गर्नुहोस्</td></tr>
+  <tr><td>Black screen recording</td><td>DRM protected content</td><td>Netflix/Prime Video record हुँदैन — यो normal हो</td></tr>
+  <tr><td>Laggy recording</td><td>Low RAM/CPU</td><td>Background apps बन्द गर्नुहोस्, resolution घटाउनुहोस्</td></tr>
+  <tr><td>File size धेरै ठूलो</td><td>High resolution + long duration</td><td>Resolution 720p मा राख्नुहोस् वा Video Compressor use गर्नुहोस्</td></tr>
+  <tr><td>Recording suddenly stop</td><td>Storage full</td><td>Disk space check गर्नुहोस् (minimum 1GB free)</td></tr>
+</table>
+<h4>Recording पछि के गर्ने?</h4>
+<ul>
+  <li><strong>File size ठूलो छ?</strong> ToolsArena Video Compressor बाट compress गर्नुहोस्</li>
+  <li><strong>GIF बनाउनु छ?</strong> ToolsArena Video to GIF converter use गर्नुहोस्</li>
+  <li><strong>MOV format मा छ?</strong> MOV to MP4 converter बाट MP4 मा convert गर्नुहोस्</li>
+  <li><strong>Trim गर्नुपर्छ?</strong> Browser-based video editor बाट trim गर्नुहोस्</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Recording सकिएपछि तुरुन्त file rename गर्नुहोस् — "recording-2026-03-16-presentation.webm" जस्तो descriptive नाम दिनुहोस्।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'ToolsArena Screen Recorder खोल्नुहोस्',
+        description: 'Browser मा toolsarena.in/tools/screen-recorder खोल्नुहोस्। कुनै sign-up वा install चाहिँदैन।',
+      },
+      {
+        title: 'Audio Settings छान्नुहोस्',
+        description: 'Microphone ON/OFF गर्नुहोस्। System audio capture गर्न tab audio share गर्नुहोस्।',
+      },
+      {
+        title: '"Start Recording" click गर्नुहोस्',
+        description: 'Screen, window वा specific tab — जुन record गर्ने हो त्यो select गर्नुहोस्।',
+      },
+      {
+        title: 'Recording गर्नुहोस्',
+        description: 'Screen मा जे गर्नुहुन्छ सबै record हुन्छ। Audio सहित commentary दिन सकिन्छ।',
+      },
+      {
+        title: 'Stop र Download गर्नुहोस्',
+        description: '"Stop Recording" click गर्नुहोस् → Preview हेर्नुहोस् → WebM/MP4 file download गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Screen record गर्न कुनै software install गर्नुपर्छ?',
+        answer: 'पर्दैन। ToolsArena को online screen recorder browser मा नै काम गर्छ — Chrome, Edge, Firefox सबैमा। कुनै download वा install चाहिँदैन।',
+      },
+      {
+        question: 'Audio सहित screen record गर्न सकिन्छ?',
+        answer: 'हो। Microphone audio (तपाईंको आवाज) र system audio (computer को sound) दुवै capture गर्न सकिन्छ। Recording start गर्दा audio option select गर्नुहोस्।',
+      },
+      {
+        question: 'Mobile मा screen record कसरी गर्ने?',
+        answer: 'Android 11+ र iPhone (iOS 15+) मा built-in screen recorder छ। Notification bar/Control Center बाट Screen Record option select गर्नुहोस्।',
+      },
+      {
+        question: 'Recording को file size कति हुन्छ?',
+        answer: '1080p 30fps recording मा approximately 50-80 MB per minute हुन्छ। 720p मा 25-40 MB per minute। File size ठूलो भए ToolsArena Video Compressor use गर्नुहोस्।',
+      },
+      {
+        question: 'Screen recording कति लामो गर्न सकिन्छ?',
+        answer: 'Browser-based recorder मा कुनै hard time limit छैन — तर disk space र RAM ले determine गर्छ। 1 hour भन्दा लामो recording गर्दा 4GB+ free space राख्नुहोस्।',
+      },
+      {
+        question: 'Netflix/YouTube video record गर्न सकिन्छ?',
+        answer: 'DRM-protected content (Netflix, Prime Video) record गर्दा black screen आउँछ — यो copyright protection हो। YouTube videos record गर्न सकिन्छ तर copyright rules follow गर्नुहोस्।',
+      },
+      {
+        question: 'Windows 11 मा built-in screen recorder छ?',
+        answer: 'छ। Xbox Game Bar (Win+G) र Snipping Tool दुवैमा screen recording feature छ। तर features limited छन् — ToolsArena को online recorder मा बढी options छन्।',
+      },
+      {
+        question: 'Recording गरेपछि file format के हुन्छ?',
+        answer: 'Browser-based recorder ले WebM format मा save गर्छ। MP4 चाहिए भने ToolsArena को converter use गर्नुहोस् वा recording settings मा MP4 select गर्नुहोस्।',
+      },
+    ],
+    relatedGuides: ['video-compressor-guide', 'mov-to-mp4-guide', 'video-to-gif-guide'],
+    toolCTA: {
+      heading: 'अहिले नै Screen Record गर्नुहोस् — फ्री!',
+      description: 'कुनै install नचाहिने, browser बाटै HD screen recording — audio सहित।',
+      buttonText: 'Screen Recorder खोल्नुहोस् →',
+    },
+  },
+
+  // ── VIDEO COMPRESSOR ──────────────────────────────────────────────
+  {
+    slug: 'video-compressor-guide',
+    toolSlug: 'video-compressor',
+    category: 'converters',
+    title: 'Video Compress कसरी गर्ने: WhatsApp, Email को लागि Guide (2026)',
+    subtitle: 'WhatsApp, Email र Social Media का लागि video size घटाउनुहोस् — quality maintain गर्दै free मा compress गर्नुहोस्।',
+    metaTitle: 'Video Compress गर्ने तरिका - WhatsApp, Email Free',
+    metaDescription: 'Video file size घटाउनुहोस् — WhatsApp 16MB limit, Email 25MB limit भित्र। Free online video compressor, quality maintain, कुनै install नचाहिने।',
+    targetKeyword: 'video compress kasari garne',
+    secondaryKeywords: [
+      'video ko size kasari ghatauney',
+      'whatsapp video compress',
+      'video compress online free',
+      'video size reduce kasari garne',
+    ],
+    lastUpdated: '2026-03-16',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['Video', 'Compression', 'WhatsApp', 'Free Tools'],
+    intro: `<p>WhatsApp मा video पठाउन खोज्दा "file too large" भन्छ? Email मा attachment limit cross हुन्छ? <strong>Video compression</strong> सबैभन्दा common digital problem हो — र यसको solution सजिलो छ।</p>
+<p>ToolsArena को <strong>Free Video Compressor</strong> ले quality maintain गर्दै video file size drastically घटाउँछ — browser मा नै, कुनै upload नचाहिने।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>WhatsApp मा video पठाउन file size 16MB भन्दा कम हुनुपर्छ। 1 minute को 1080p video ~130MB हुन्छ — compress नगरी पठाउन सकिँदैन।</p></div>`,
+    sections: [
+      {
+        id: 'video-compression-ke-ho',
+        title: 'Video Compression के हो र किन चाहिन्छ?',
+        content: `<p><strong>Video compression</strong> भनेको video file को size घटाउने process हो — visual quality यथासम्भव maintain गर्दै। Compression ले unnecessary data हटाउँछ।</p>
+<h4>Video Compress किन गर्ने?</h4>
+<ul>
+  <li><strong>WhatsApp:</strong> Video share गर्न 16MB limit छ</li>
+  <li><strong>Email:</strong> Gmail/Outlook मा 25MB attachment limit</li>
+  <li><strong>Storage:</strong> Phone storage बचत गर्न</li>
+  <li><strong>Upload Speed:</strong> नेपालको internet मा ठूलो file upload गर्न धेरै समय लाग्छ</li>
+  <li><strong>Social Media:</strong> Instagram, Facebook, TikTok मा upload limit छन्</li>
+</ul>
+<h4>Compression Types:</h4>
+<table>
+  <tr><th>Type</th><th>Description</th><th>Use Case</th></tr>
+  <tr><td><strong>Lossy</strong></td><td>Quality थोरै घट्छ, size धेरै घट्छ</td><td>WhatsApp, social media</td></tr>
+  <tr><td><strong>Lossless</strong></td><td>Quality उस्तै, size कम घट्छ</td><td>Professional video editing</td></tr>
+</table>`,
+      },
+      {
+        id: 'whatsapp-compress',
+        title: 'WhatsApp को लागि Video Compress कसरी गर्ने?',
+        content: `<p>WhatsApp मा video पठाउँदा <strong>16MB</strong> file size limit छ। ठूलो video compress गर्ने steps:</p>
+<ol>
+  <li>ToolsArena Video Compressor खोल्नुहोस्</li>
+  <li>Video file upload गर्नुहोस्</li>
+  <li>Target size "16MB" वा "Medium Quality" select गर्नुहोस्</li>
+  <li>Compress button click गर्नुहोस्</li>
+  <li>Compressed video download गरेर WhatsApp मा send गर्नुहोस्</li>
+</ol>
+<h4>WhatsApp Video Tips:</h4>
+<ul>
+  <li>720p resolution WhatsApp का लागि पर्याप्त छ — 1080p compress गर्दा quality difference barely noticeable</li>
+  <li>1 minute video लाई ~8-12MB मा compress गर्न सकिन्छ</li>
+  <li>WhatsApp Status का लागि 30 sec, 16MB max</li>
+</ul>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>WhatsApp ले automatically पनि video compress गर्छ — तर quality धेरै घट्छ। पहिले ToolsArena बाट optimally compress गरेर पठाउँदा better quality maintain हुन्छ।</p></div>`,
+      },
+      {
+        id: 'platform-limits',
+        title: 'Platform अनुसार Video Size Limits',
+        content: `<table>
+  <tr><th>Platform</th><th>Max File Size</th><th>Max Duration</th><th>Recommended Resolution</th></tr>
+  <tr><td>WhatsApp</td><td>16 MB</td><td>3 min (approx)</td><td>720p</td></tr>
+  <tr><td>Gmail</td><td>25 MB</td><td>—</td><td>720p</td></tr>
+  <tr><td>Instagram Post</td><td>650 MB</td><td>60 sec</td><td>1080×1080</td></tr>
+  <tr><td>Instagram Reel</td><td>650 MB</td><td>90 sec</td><td>1080×1920</td></tr>
+  <tr><td>TikTok</td><td>287 MB</td><td>10 min</td><td>1080×1920</td></tr>
+  <tr><td>Facebook</td><td>4 GB</td><td>240 min</td><td>1080p</td></tr>
+  <tr><td>YouTube</td><td>256 GB</td><td>12 hours</td><td>1080p–4K</td></tr>
+  <tr><td>Twitter / X</td><td>512 MB</td><td>140 sec</td><td>1080p</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Instagram Reel 1080×1920 (9:16 vertical) मा upload गर्नुहोस् — horizontal video crop हुन्छ र quality घट्छ।</p></div>`,
+      },
+      {
+        id: 'quality-vs-size',
+        title: 'Quality vs File Size: कुन Setting कहिले?',
+        content: `<h4>Compression Quality Levels:</h4>
+<table>
+  <tr><th>Quality Level</th><th>Size Reduction</th><th>Visual Quality</th><th>Best For</th></tr>
+  <tr><td>High (Light Compress)</td><td>30-40%</td><td>★★★★★ Almost same</td><td>YouTube, Portfolio</td></tr>
+  <tr><td>Medium</td><td>50-70%</td><td>★★★★ राम्रो</td><td>Social Media, Email</td></tr>
+  <tr><td>Low (Max Compress)</td><td>80-90%</td><td>★★★ Acceptable</td><td>WhatsApp, Quick share</td></tr>
+</table>
+<h4>Resolution Guide:</h4>
+<ul>
+  <li><strong>4K (3840×2160):</strong> Professional video production मात्र</li>
+  <li><strong>1080p (1920×1080):</strong> YouTube, standard quality</li>
+  <li><strong>720p (1280×720):</strong> Social media, WhatsApp — best balance</li>
+  <li><strong>480p (854×480):</strong> Maximum compression चाहिँदा</li>
+</ul>
+<h4>Bitrate vs Quality:</h4>
+<p>Bitrate जति बढी, quality राम्रो तर file size ठूलो। Standard recommendations:</p>
+<ul>
+  <li>1080p video: 5-8 Mbps (YouTube quality)</li>
+  <li>720p video: 2.5-5 Mbps (social media)</li>
+  <li>480p video: 1-2.5 Mbps (messaging apps)</li>
+</ul>`,
+      },
+      {
+        id: 'nepal-context',
+        title: 'Nepal मा Video Compression: Internet र Storage Tips',
+        content: `<p>नेपालको internet context मा video compression अझ बढी महत्वपूर्ण छ:</p>
+<h4>Nepal Internet Speed vs Video Upload:</h4>
+<table>
+  <tr><th>ISP</th><th>Avg Upload Speed</th><th>100MB Video Upload Time</th></tr>
+  <tr><td>Worldlink (Fiber)</td><td>5-10 Mbps</td><td>1-2 min</td></tr>
+  <tr><td>Vianet (Fiber)</td><td>5-10 Mbps</td><td>1-2 min</td></tr>
+  <tr><td>NTC 4G</td><td>2-5 Mbps</td><td>3-7 min</td></tr>
+  <tr><td>Ncell 4G</td><td>2-4 Mbps</td><td>4-8 min</td></tr>
+  <tr><td>NTC 3G</td><td>0.5-1 Mbps</td><td>15-30 min</td></tr>
+</table>
+<h4>Data Cost Savings:</h4>
+<ul>
+  <li>NTC data pack: 1GB = ~Rs. 100 — एउटा uncompressed 1080p video (5 min) ~400MB खान्छ</li>
+  <li>Compress गरेर 720p medium quality मा ~80MB मा ल्याउन सकिन्छ — 5x data बचत</li>
+  <li>Ncell Night Pack मा ठूला video upload गर्नुहोस्</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>WiFi मा video upload गर्नुहोस् — mobile data मा ठूलो video upload गर्दा data सकिन्छ र connection unstable भए corrupt पनि हुन्छ।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'ToolsArena Video Compressor खोल्नुहोस्',
+        description: 'Browser मा toolsarena.in/tools/video-compressor खोल्नुहोस्। कुनै sign-up वा install चाहिँदैन।',
+      },
+      {
+        title: 'Video file upload गर्नुहोस्',
+        description: 'MP4, MOV, WebM, AVI — जुनसुकै video file drag & drop वा browse गरेर upload गर्नुहोस्।',
+      },
+      {
+        title: 'Compression settings छान्नुहोस्',
+        description: 'Quality level (High/Medium/Low) वा target file size select गर्नुहोस्। WhatsApp का लागि Medium recommended।',
+      },
+      {
+        title: '"Compress" button click गर्नुहोस्',
+        description: 'Tool ले video process गर्छ। File size अनुसार केही seconds देखि minutes लाग्न सक्छ।',
+      },
+      {
+        title: 'Preview र Download गर्नुहोस्',
+        description: 'Compressed video preview हेर्नुहोस्। Quality acceptable छ भने download गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Video compress गर्दा quality धेरै घट्छ?',
+        answer: 'Medium compression मा visible quality difference barely noticeable हुन्छ। WhatsApp/social media का लागि 720p medium compression best balance हो — file size 50-70% घट्छ, quality acceptable रहन्छ।',
+      },
+      {
+        question: 'WhatsApp मा कति MB सम्मको video पठाउन सकिन्छ?',
+        answer: 'WhatsApp को file size limit 16MB छ। 1 minute 1080p video ~130MB हुन्छ — compress गरेर 8-12MB मा ल्याउन सकिन्छ।',
+      },
+      {
+        question: 'Video server मा upload हुन्छ?',
+        answer: 'ToolsArena को Video Compressor browser मा नै process गर्छ — video कहिल्यै server मा upload हुँदैन। 100% private।',
+      },
+      {
+        question: 'कुन video formats support छन्?',
+        answer: 'MP4, MOV, WebM, AVI, MKV, M4V — सबै common video formats support छन्। Output MP4 मा हुन्छ जुन सबै device मा play हुन्छ।',
+      },
+      {
+        question: 'Mobile मा video compress गर्न सकिन्छ?',
+        answer: 'हो। Mobile browser मा toolsarena.in खोलेर video compress गर्न सकिन्छ। Chrome/Safari दुवैमा काम गर्छ।',
+      },
+      {
+        question: '4K video compress गर्न सकिन्छ?',
+        answer: 'हो। 4K video 1080p वा 720p मा downscale गरेर compress गर्न सकिन्छ। Social media का लागि 1080p पर्याप्त छ — 4K unnecessary ठूलो हुन्छ।',
+      },
+      {
+        question: 'Batch compression (एकैपटक धेरै video) गर्न सकिन्छ?',
+        answer: 'हाल एक-एक video compress गर्नुपर्छ। धेरै videos छन् भने एक-एक गरेर compress गर्नुहोस् — प्रत्येक seconds मा हुन्छ।',
+      },
+      {
+        question: 'Email मा video कसरी पठाउने?',
+        answer: 'Gmail/Outlook मा 25MB limit छ। Video 25MB भन्दा कम compress गरेर attach गर्नुहोस्। ठूलो भए Google Drive link share गर्नुहोस्।',
+      },
+    ],
+    relatedGuides: ['screen-recorder-guide', 'mov-to-mp4-guide', 'video-to-gif-guide'],
+    toolCTA: {
+      heading: 'Video Compress गर्नुहोस् — Free र Instant!',
+      description: 'WhatsApp, Email, Social Media का लागि video size घटाउनुहोस् — quality maintain गर्दै।',
+      buttonText: 'Video Compressor खोल्नुहोस् →',
+    },
+  },
+
+  // ── VIDEO TO GIF ──────────────────────────────────────────────────
+  {
+    slug: 'video-to-gif-guide',
+    toolSlug: 'video-to-gif',
+    category: 'converters',
+    title: 'Video बाट GIF कसरी बनाउने: Free Online Guide (2026)',
+    subtitle: 'कुनै पनि video बाट animated GIF बनाउनुहोस् — WhatsApp, Facebook, Twitter का लागि free मा।',
+    metaTitle: 'Video बाट GIF बनाउने तरिका - Free Online Guide',
+    metaDescription: 'Video बाट GIF free मा बनाउनुहोस्। MP4 to GIF, WhatsApp sticker, social media reaction GIF। Online converter, कुनै install नचाहिने।',
+    targetKeyword: 'video bata gif kasari banauney',
+    secondaryKeywords: [
+      'video to gif converter',
+      'gif kasari banauney',
+      'mp4 to gif',
+      'whatsapp gif',
+      'gif maker online free',
+    ],
+    lastUpdated: '2026-03-16',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['GIF', 'Video', 'Social Media', 'Free Tools'],
+    intro: `<p>Social media मा <strong>GIF</strong> हरू सबैतिर छन् — reaction GIFs, memes, tutorials। Video बाट आफ्नै custom GIF बनाउन चाहनुहुन्छ? अब सजिलो छ!</p>
+<p>ToolsArena को <strong>Free Video to GIF Converter</strong> ले कुनै पनि video clip बाट seconds मा animated GIF बनाउँछ — browser मा नै, कुनै software install नचाहिने।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>GIF file size सानो राख्न duration 3-5 seconds र resolution 480px width recommend गरिन्छ — social media मा fast load हुन्छ।</p></div>`,
+    sections: [
+      {
+        id: 'gif-ke-ho',
+        title: 'GIF के हो र किन Popular छ?',
+        content: `<p><strong>GIF (Graphics Interchange Format)</strong> animated image format हो — short looping animation बिना sound। 1987 मा बनेको यो format आज social media को backbone हो।</p>
+<h4>GIF किन Popular?</h4>
+<ul>
+  <li><strong>Auto-play:</strong> Video जस्तो play button चाहिँदैन — automatic loop हुन्छ</li>
+  <li><strong>Lightweight:</strong> Video भन्दा सानो file size</li>
+  <li><strong>Universal:</strong> सबै platform, browser र device मा काम गर्छ</li>
+  <li><strong>Reactions:</strong> Text भन्दा expressive — emotion convey गर्छ</li>
+  <li><strong>Memes:</strong> Viral content बनाउन perfect format</li>
+</ul>
+<h4>GIF vs Video vs Image:</h4>
+<table>
+  <tr><th>Feature</th><th>GIF</th><th>Video</th><th>Image</th></tr>
+  <tr><td>Animation</td><td>✅ Loop</td><td>✅ Full</td><td>❌</td></tr>
+  <tr><td>Sound</td><td>❌</td><td>✅</td><td>❌</td></tr>
+  <tr><td>Auto-play</td><td>✅</td><td>❌ (most platforms)</td><td>—</td></tr>
+  <tr><td>File Size</td><td>Medium</td><td>Large</td><td>Small</td></tr>
+</table>`,
+      },
+      {
+        id: 'video-to-gif-steps',
+        title: 'Video बाट GIF कसरी बनाउने? (Step-by-Step)',
+        content: `<ol>
+  <li><strong>ToolsArena GIF Converter खोल्नुहोस्:</strong> toolsarena.in/tools/video-to-gif मा जानुहोस्</li>
+  <li><strong>Video Upload गर्नुहोस्:</strong> MP4, WebM, MOV — जुनसुकै video file upload गर्नुहोस्</li>
+  <li><strong>Start/End Time Select:</strong> GIF बनाउने portion select गर्नुहोस् (trim)</li>
+  <li><strong>Settings Adjust:</strong> Width, FPS, quality adjust गर्नुहोस्</li>
+  <li><strong>Convert:</strong> "Create GIF" click गर्नुहोस्</li>
+  <li><strong>Download:</strong> GIF preview हेर्नुहोस् र download गर्नुहोस्</li>
+</ol>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>सबै processing browser मा हुन्छ — video कहिल्यै server upload हुँदैन। Privacy 100% सुरक्षित।</p></div>`,
+      },
+      {
+        id: 'platform-settings',
+        title: 'Platform अनुसार GIF Settings',
+        content: `<h4>Social Media GIF Size Guidelines:</h4>
+<table>
+  <tr><th>Platform</th><th>Max GIF Size</th><th>Recommended Size</th><th>Aspect Ratio</th></tr>
+  <tr><td>WhatsApp</td><td>16 MB</td><td>&lt;5 MB</td><td>Any</td></tr>
+  <tr><td>Facebook</td><td>8 MB</td><td>&lt;3 MB</td><td>Any</td></tr>
+  <tr><td>Twitter / X</td><td>15 MB</td><td>&lt;5 MB</td><td>16:9</td></tr>
+  <tr><td>Instagram (DM)</td><td>—</td><td>&lt;3 MB</td><td>1:1 or 9:16</td></tr>
+  <tr><td>Slack</td><td>—</td><td>&lt;5 MB</td><td>Any</td></tr>
+  <tr><td>Discord</td><td>8 MB (free)</td><td>&lt;5 MB</td><td>Any</td></tr>
+</table>
+<h4>Best Settings for Small GIFs:</h4>
+<ul>
+  <li><strong>Width:</strong> 320-480px (mobile friendly)</li>
+  <li><strong>FPS:</strong> 10-15 fps (smooth enough, file size manageable)</li>
+  <li><strong>Duration:</strong> 2-5 seconds (short = smaller file)</li>
+  <li><strong>Colors:</strong> 128 colors (default 256 बाट घटाउँदा size 30% कम हुन्छ)</li>
+</ul>`,
+      },
+      {
+        id: 'optimization-tips',
+        title: 'GIF Optimization: File Size घटाउने Tips',
+        content: `<h4>GIF File Size Control:</h4>
+<table>
+  <tr><th>Setting</th><th>Change</th><th>Size Impact</th></tr>
+  <tr><td>Duration</td><td>10s → 3s</td><td>~70% reduction</td></tr>
+  <tr><td>Width</td><td>640px → 320px</td><td>~75% reduction</td></tr>
+  <tr><td>FPS</td><td>30 → 10</td><td>~66% reduction</td></tr>
+  <tr><td>Colors</td><td>256 → 128</td><td>~30% reduction</td></tr>
+</table>
+<h4>Pro Tips:</h4>
+<ul>
+  <li><strong>Short is better:</strong> 2-5 second GIFs सबैभन्दा effective हुन्छन् — attention span कम छ</li>
+  <li><strong>Simple background:</strong> Busy background भएको video GIF मा ठूलो file बन्छ</li>
+  <li><strong>Less motion:</strong> Camera movement कम भएको clip choose गर्नुहोस्</li>
+  <li><strong>Crop first:</strong> Video trim गरेर relevant portion मात्र GIF बनाउनुहोस्</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>WhatsApp मा GIF पठाउँदा 480px width, 10fps, 3-4 seconds optimal हुन्छ — ~1-2MB मा राम्रो quality।</p></div>`,
+      },
+      {
+        id: 'gif-use-cases',
+        title: 'GIF Use Cases: कहाँ-कहाँ प्रयोग गर्ने?',
+        content: `<h4>Popular GIF Use Cases:</h4>
+<ul>
+  <li><strong>Social Media Reactions:</strong> Happy, sad, surprised — emotion express गर्न</li>
+  <li><strong>Memes:</strong> Funny moments GIF मा capture गरेर viral बनाउन</li>
+  <li><strong>Tutorials:</strong> Software tutorial को short steps GIF मा देखाउन</li>
+  <li><strong>Product Demos:</strong> E-commerce product features highlight गर्न</li>
+  <li><strong>Email Marketing:</strong> Email मा animated content add गर्न</li>
+  <li><strong>WhatsApp Stickers:</strong> Personal stickers बनाउन</li>
+</ul>
+<h4>नेपाली Context:</h4>
+<ul>
+  <li>Dashain/Tihar wishes animated GIF मा पठाउनुहोस्</li>
+  <li>Nepali movie/series को funny moments GIF बनाउनुहोस्</li>
+  <li>Cricket (Nepal national team) को celebration moments</li>
+  <li>TikTok Nepal को viral moments GIF share</li>
+</ul>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>GIF बनाउँदा copyright respect गर्नुहोस् — आफ्नो original video बाट GIF बनाउनु best practice हो। Public domain content पनि use गर्न सकिन्छ।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'ToolsArena Video to GIF Converter खोल्नुहोस्',
+        description: 'Browser मा toolsarena.in/tools/video-to-gif खोल्नुहोस्। कुनै sign-up वा install चाहिँदैन।',
+      },
+      {
+        title: 'Video file upload गर्नुहोस्',
+        description: 'MP4, WebM, MOV — जुनसुकै video file drag & drop वा browse गरेर upload गर्नुहोस्।',
+      },
+      {
+        title: 'GIF portion select गर्नुहोस्',
+        description: 'Start time र end time slider बाट GIF बनाउने portion छान्नुहोस्। 3-5 seconds recommended।',
+      },
+      {
+        title: 'Settings adjust गर्नुहोस्',
+        description: 'Width (320-640px), FPS (10-15), quality level adjust गर्नुहोस्। Platform अनुसार optimize गर्नुहोस्।',
+      },
+      {
+        title: 'GIF बनाउनुहोस् र Download गर्नुहोस्',
+        description: '"Create GIF" click गर्नुहोस् → Preview हेर्नुहोस् → GIF file download गर्नुहोस्।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Video बाट GIF बनाउन कुनै software चाहिन्छ?',
+        answer: 'चाहिँदैन। ToolsArena को online converter browser मा नै काम गर्छ — Chrome, Edge, Firefox, Safari सबैमा। कुनै download नचाहिने।',
+      },
+      {
+        question: 'GIF को file size कसरी सानो राख्ने?',
+        answer: 'Duration छोटो राख्नुहोस् (3-5 sec), width 320-480px, FPS 10-15 मा राख्नुहोस्। यी settings ले file size significantly घटाउँछन्।',
+      },
+      {
+        question: 'WhatsApp मा GIF पठाउन सकिन्छ?',
+        answer: 'हो। WhatsApp मा GIF file attach गरेर पठाउन सकिन्छ। 5MB भन्दा कम size recommend — ToolsArena बाट optimize गर्नुहोस्।',
+      },
+      {
+        question: 'कति लामो video बाट GIF बनाउन सकिन्छ?',
+        answer: 'कुनै hard limit छैन, तर 2-10 seconds recommended। लामो GIF = ठूलो file size। Social media मा short GIFs बढी effective हुन्छन्।',
+      },
+      {
+        question: 'GIF मा sound हुन्छ?',
+        answer: 'होइन। GIF format मा audio support छैन — यो silent animation format हो। Sound चाहिए भने video format नै use गर्नुहोस्।',
+      },
+      {
+        question: 'Mobile मा GIF बनाउन सकिन्छ?',
+        answer: 'हो। Mobile browser मा toolsarena.in खोलेर video to GIF convert गर्न सकिन्छ। Chrome/Safari दुवैमा support छ।',
+      },
+      {
+        question: 'GIF quality कसरी बढाउने?',
+        answer: 'Width बढाउनुहोस् (640px+), FPS बढाउनुहोस् (15-20), र colors 256 मा राख्नुहोस्। तर यसले file size पनि बढाउँछ।',
+      },
+      {
+        question: 'Instagram मा GIF post गर्न सकिन्छ?',
+        answer: 'Instagram मा directly GIF upload गर्न मिल्दैन — GIF लाई video मा convert गर्नुपर्छ। DM मा भने GIPHY integration बाट GIF पठाउन सकिन्छ।',
+      },
+    ],
+    relatedGuides: ['video-compressor-guide', 'screen-recorder-guide', 'image-compressor-guide'],
+    toolCTA: {
+      heading: 'Video बाट GIF बनाउनुहोस् — Free!',
+      description: 'कुनै पनि video clip बाट animated GIF seconds मा बनाउनुहोस्।',
+      buttonText: 'Video to GIF Converter खोल्नुहोस् →',
+    },
+  },
+
+  // ── INTERNET SPEED TEST ───────────────────────────────────────────
+  {
+    slug: 'internet-speed-test-guide',
+    toolSlug: 'internet-speed-test',
+    category: 'utility-tools',
+    title: 'Internet Speed Test: NTC, Ncell Speed Check कसरी गर्ने (2026)',
+    subtitle: 'NTC, Ncell, Worldlink, Vianet — तपाईंको internet speed सही तरिकाले test गर्नुहोस् र slow internet fix गर्नुहोस्।',
+    metaTitle: 'Internet Speed Test Nepal - NTC Ncell WiFi Check',
+    metaDescription: 'NTC, Ncell, Worldlink, Vianet internet speed test गर्नुहोस्। Download/upload speed, ping check। Nepal ISP comparison, slow internet fix tips। Free speed test।',
+    targetKeyword: 'internet speed kasari check garne',
+    secondaryKeywords: [
+      'ntc speed test',
+      'ncell speed test',
+      'worldlink speed test',
+      'wifi speed check nepal',
+      'broadband speed test nepal',
+      'internet speed badhauney',
+    ],
+    lastUpdated: '2026-03-16',
+    readingTime: '९ मिनेट पढ्ने',
+    tags: ['Internet', 'Speed Test', 'WiFi', 'Nepal'],
+    intro: `<p>नेपालमा internet speed एक ठाउँ देखि अर्को ठाउँमा धेरै फरक हुन्छ। NTC 4G मा buffering हुन्छ? Worldlink fiber को speed plan अनुसार आउँदैन? <strong>Internet speed test</strong> गरेर वास्तविक speed पत्ता लगाउनुहोस्।</p>
+<p>ToolsArena को <strong>Free Internet Speed Test</strong> ले download speed, upload speed र ping (latency) तुरुन्त measure गर्छ — NTC, Ncell, Worldlink, Vianet जुनसुकै ISP।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Speed test गर्नुअघि अन्य device बाट WiFi disconnect गर्नुहोस् र background downloads बन्द गर्नुहोस् — accurate result आउँछ।</p></div>`,
+    sections: [
+      {
+        id: 'speed-test-ke-measure',
+        title: 'Speed Test ले के-के Measure गर्छ?',
+        content: `<p>Internet speed test ले तीन मुख्य metrics measure गर्छ:</p>
+<table>
+  <tr><th>Metric</th><th>के हो?</th><th>किन महत्वपूर्ण?</th><th>Unit</th></tr>
+  <tr><td><strong>Download Speed</strong></td><td>Internet बाट data आउने speed</td><td>Video streaming, browsing, download</td><td>Mbps</td></tr>
+  <tr><td><strong>Upload Speed</strong></td><td>तपाईंबाट internet मा data जाने speed</td><td>Video calls, file upload, cloud backup</td><td>Mbps</td></tr>
+  <tr><td><strong>Ping (Latency)</strong></td><td>Data जान-आउन लाग्ने time</td><td>Gaming, video calls, real-time apps</td><td>ms</td></tr>
+</table>
+<h4>Mbps भनेको के हो?</h4>
+<p><strong>Mbps = Megabits per second</strong> — 1 Mbps मा 1 second मा 1 megabit data transfer हुन्छ। 8 Mbps = 1 MB/second file download speed।</p>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>ISP ले "100 Mbps" भन्दा megaBITS हो, megaBYTES होइन। 100 Mbps = ~12.5 MB/s actual download speed। यो confusion धेरैलाई हुन्छ।</p></div>`,
+      },
+      {
+        id: 'accurate-test',
+        title: 'Accurate Speed Test कसरी गर्ने?',
+        content: `<p>Speed test को result सही आउन यी steps follow गर्नुहोस्:</p>
+<h4>Test अघि:</h4>
+<ol>
+  <li><strong>अन्य devices disconnect:</strong> WiFi मा अरू phone/laptop हटाउनुहोस्</li>
+  <li><strong>Background apps बन्द:</strong> Download, streaming, cloud sync बन्द गर्नुहोस्</li>
+  <li><strong>VPN disconnect:</strong> VPN ले speed slow देखाउँछ</li>
+  <li><strong>Ethernet cable (सम्भव भए):</strong> WiFi भन्दा wired connection मा accurate result</li>
+  <li><strong>Router नजिक:</strong> WiFi test गर्दा router नजिकै बस्नुहोस्</li>
+</ol>
+<h4>Test Process:</h4>
+<ol>
+  <li>ToolsArena Speed Test खोल्नुहोस्</li>
+  <li>"Start Test" click गर्नुहोस्</li>
+  <li>Download speed test हुन्छ (~10 sec)</li>
+  <li>Upload speed test हुन्छ (~10 sec)</li>
+  <li>Ping measure हुन्छ</li>
+  <li>Result display हुन्छ</li>
+</ol>
+<h4>Best Practices:</h4>
+<ul>
+  <li>दिनको different time मा test गर्नुहोस् (morning, afternoon, evening)</li>
+  <li>3 पटक test गरेर average लिनुहोस्</li>
+  <li>Mobile data test गर्दा different locations मा try गर्नुहोस्</li>
+</ul>`,
+      },
+      {
+        id: 'kati-speed-chahincha',
+        title: 'कति Internet Speed चाहिन्छ? (Activity अनुसार)',
+        content: `<table>
+  <tr><th>Activity</th><th>Minimum Speed</th><th>Recommended Speed</th></tr>
+  <tr><td>WhatsApp messaging</td><td>0.5 Mbps</td><td>1 Mbps</td></tr>
+  <tr><td>Web browsing, Facebook</td><td>1 Mbps</td><td>3 Mbps</td></tr>
+  <tr><td>YouTube 720p</td><td>2.5 Mbps</td><td>5 Mbps</td></tr>
+  <tr><td>YouTube 1080p</td><td>5 Mbps</td><td>8 Mbps</td></tr>
+  <tr><td>Netflix HD</td><td>5 Mbps</td><td>10 Mbps</td></tr>
+  <tr><td>Video Call (Zoom/Meet)</td><td>1.5 Mbps up/down</td><td>3 Mbps up/down</td></tr>
+  <tr><td>Online Gaming</td><td>3 Mbps + &lt;50ms ping</td><td>10 Mbps + &lt;30ms ping</td></tr>
+  <tr><td>Work from Home</td><td>10 Mbps</td><td>25 Mbps</td></tr>
+  <tr><td>4K Streaming</td><td>25 Mbps</td><td>50 Mbps</td></tr>
+  <tr><td>Large file download</td><td>10 Mbps</td><td>50+ Mbps</td></tr>
+</table>
+<h4>घरमा कति Device छन्?</h4>
+<ul>
+  <li><strong>1-2 devices:</strong> 15-25 Mbps plan पर्याप्त</li>
+  <li><strong>3-5 devices:</strong> 30-50 Mbps plan</li>
+  <li><strong>5+ devices:</strong> 60-100 Mbps plan</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Worldlink/Vianet को 30 Mbps plan नेपालको average परिवार (4-5 devices) का लागि sufficient छ — heavy streaming वा gaming गर्नुहुन्छ भने 60+ Mbps लिनुहोस्।</p></div>`,
+      },
+      {
+        id: 'nepal-isp-comparison',
+        title: 'Nepal ISP Comparison: NTC, Ncell, Worldlink, Vianet, ClassicTech',
+        content: `<h4>Mobile Data (4G) Speed:</h4>
+<table>
+  <tr><th>ISP</th><th>Avg Download</th><th>Avg Upload</th><th>Avg Ping</th><th>Coverage</th></tr>
+  <tr><td><strong>NTC 4G</strong></td><td>8-15 Mbps</td><td>2-5 Mbps</td><td>30-60 ms</td><td>77 जिल्ला</td></tr>
+  <tr><td><strong>Ncell 4G</strong></td><td>10-20 Mbps</td><td>3-6 Mbps</td><td>25-50 ms</td><td>Major cities</td></tr>
+  <tr><td><strong>Smart Cell</strong></td><td>5-10 Mbps</td><td>1-3 Mbps</td><td>40-80 ms</td><td>Limited</td></tr>
+</table>
+<h4>Fiber/Broadband Speed:</h4>
+<table>
+  <tr><th>ISP</th><th>Plans Available</th><th>Avg Real Speed</th><th>Monthly Price</th></tr>
+  <tr><td><strong>Worldlink</strong></td><td>25-200 Mbps</td><td>Plan को 70-90%</td><td>Rs. 800-3000</td></tr>
+  <tr><td><strong>Vianet</strong></td><td>25-150 Mbps</td><td>Plan को 75-90%</td><td>Rs. 900-3500</td></tr>
+  <tr><td><strong>ClassicTech</strong></td><td>20-100 Mbps</td><td>Plan को 65-85%</td><td>Rs. 700-2500</td></tr>
+  <tr><td><strong>Subisu</strong></td><td>20-100 Mbps</td><td>Plan को 60-80%</td><td>Rs. 800-2800</td></tr>
+  <tr><td><strong>NTC FTTH</strong></td><td>30-200 Mbps</td><td>Plan को 70-85%</td><td>Rs. 700-2500</td></tr>
+</table>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>Nepal मा ISP ले "up to" speed advertise गर्छन् — actual speed 60-90% हुन सक्छ। Peak hours (7-11 PM) मा speed सबैभन्दा कम हुन्छ।</p></div>`,
+      },
+      {
+        id: 'slow-internet-fix',
+        title: 'Slow Internet Fix: Speed कसरी बढाउने?',
+        content: `<h4>Quick Fixes:</h4>
+<table>
+  <tr><th>Problem</th><th>Solution</th><th>Expected Improvement</th></tr>
+  <tr><td>WiFi slow</td><td>Router restart गर्नुहोस्</td><td>10-30% speed increase</td></tr>
+  <tr><td>Signal weak</td><td>Router central location मा राख्नुहोस्</td><td>20-50% improvement</td></tr>
+  <tr><td>Too many devices</td><td>Unused devices disconnect</td><td>Significant improvement</td></tr>
+  <tr><td>Old router</td><td>WiFi 5/6 router upgrade</td><td>2-3x speed possible</td></tr>
+  <tr><td>DNS slow</td><td>DNS change: 8.8.8.8 (Google) वा 1.1.1.1 (Cloudflare)</td><td>Faster page loading</td></tr>
+</table>
+<h4>Router Placement Tips:</h4>
+<ul>
+  <li>घरको बीचमा राख्नुहोस् — corner मा नराख्नुहोस्</li>
+  <li>Floor भन्दा उचाइमा (table/shelf मा) राख्नुहोस्</li>
+  <li>Microwave, TV बाट टाढा राख्नुहोस् — interference हुन्छ</li>
+  <li>2.4 GHz (range बढी, speed कम) vs 5 GHz (range कम, speed बढी) — नजिक भए 5 GHz connect गर्नुहोस्</li>
+</ul>
+<h4>ISP लाई Complain गर्ने कहिले?</h4>
+<ul>
+  <li>Speed consistently plan को 50% भन्दा कम आउँदा</li>
+  <li>Frequent disconnection (दिनमा 3+ पटक)</li>
+  <li>Ping 100ms+ constantly</li>
+  <li>Specific websites block भएमा</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>ISP लाई call गर्नुअघि speed test screenshots लिनुहोस् — proof सहित complain गर्दा छिटो resolve हुन्छ। ToolsArena speed test result save गर्नुहोस्।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'ToolsArena Speed Test खोल्नुहोस्',
+        description: 'Browser मा toolsarena.in/tools/internet-speed-test खोल्नुहोस्। Mobile वा desktop दुवैमा काम गर्छ।',
+      },
+      {
+        title: 'Background activities बन्द गर्नुहोस्',
+        description: 'अन्य tabs, downloads, streaming बन्द गर्नुहोस्। अरू devices WiFi बाट disconnect गर्नुहोस्।',
+      },
+      {
+        title: '"Start Test" click गर्नुहोस्',
+        description: 'Test सुरु हुन्छ — download speed, upload speed र ping automatically measure हुन्छ।',
+      },
+      {
+        title: 'Result analyze गर्नुहोस्',
+        description: 'Download/Upload Mbps र Ping ms हेर्नुहोस्। तपाईंको ISP plan अनुसार speed आउँदैछ कि छैन compare गर्नुहोस्।',
+      },
+      {
+        title: 'Multiple tests गर्नुहोस्',
+        description: 'दिनको different time मा 3 पटक test गरेर average लिनुहोस् — peak hours मा speed कम हुन सक्छ।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'NTC 4G को average speed कति हुन्छ?',
+        answer: 'NTC 4G को average download speed 8-15 Mbps र upload 2-5 Mbps हुन्छ। Location र congestion मा depend गर्छ — Kathmandu मा राम्रो, rural areas मा कम।',
+      },
+      {
+        question: 'Ncell 4G कि NTC 4G — कुन राम्रो?',
+        answer: 'Kathmandu/major cities मा Ncell 4G speed generally बढी (10-20 Mbps) हुन्छ। तर NTC को 4G coverage 77 जिल्लामा छ — rural areas मा NTC बढी reliable।',
+      },
+      {
+        question: 'Worldlink को speed plan अनुसार आउँदैन — किन?',
+        answer: 'WiFi मा speed loss हुन्छ। Ethernet cable ले test गर्नुहोस्। Peak hours (7-11 PM) मा congestion हुन्छ। 50% भन्दा कम आउँदा ISP लाई complain गर्नुहोस्।',
+      },
+      {
+        question: 'Ping कति हुनुपर्छ gaming का लागि?',
+        answer: 'Online gaming का लागि ping 50ms भन्दा कम ideal हुन्छ। 50-100ms acceptable। 100ms+ मा lag महसुस हुन्छ। PUBG/FreeFire Nepal server मा 30-60ms ping normal।',
+      },
+      {
+        question: 'WiFi slow छ — के गर्ने?',
+        answer: 'Router restart गर्नुहोस्, router central location मा राख्नुहोस्, 5 GHz band connect गर्नुहोस्, unused devices disconnect गर्नुहोस्, DNS change गर्नुहोस् (8.8.8.8)।',
+      },
+      {
+        question: 'VPN ले internet speed घटाउँछ?',
+        answer: 'हो। VPN ले data encrypt गर्छ र distant server मार्फत route गर्छ — 10-30% speed loss normal हो। Speed test गर्दा VPN disconnect गर्नुहोस्।',
+      },
+      {
+        question: 'Nepal मा कुन ISP सबैभन्दा राम्रो?',
+        answer: 'Fiber internet मा Worldlink र Vianet consistently reliable छन्। Mobile data मा Ncell (cities), NTC (rural)। Location अनुसार ISP choose गर्नुहोस् — neighbor हरूलाई सोध्नुहोस्।',
+      },
+      {
+        question: 'Speed test result मा Mbps र MBps मा के फरक छ?',
+        answer: 'Mbps = Megabits per second (ISP ले यो advertise गर्छ)। MBps = MegaBytes per second (actual file download speed)। 1 MBps = 8 Mbps। 80 Mbps plan = ~10 MBps download speed।',
+      },
+    ],
+    relatedGuides: ['screen-recorder-guide', 'typing-speed-test-guide'],
+    toolCTA: {
+      heading: 'Internet Speed Check गर्नुहोस् — Free र Instant!',
+      description: 'NTC, Ncell, Worldlink, Vianet — तपाईंको real download/upload speed र ping पत्ता लगाउनुहोस्।',
+      buttonText: 'Speed Test सुरु गर्नुहोस् →',
+    },
+  },
+
+  // ── MOV TO MP4 ────────────────────────────────────────────────────
+  {
+    slug: 'mov-to-mp4-guide',
+    toolSlug: 'mov-to-mp4',
+    category: 'converters',
+    title: 'MOV to MP4 Convert कसरी गर्ने: iPhone Video Guide (2026)',
+    subtitle: 'iPhone/Mac को MOV video लाई MP4 मा convert गर्नुहोस् — WhatsApp, Android, Windows सबैमा play हुन्छ।',
+    metaTitle: 'MOV to MP4 Convert गर्ने तरिका - iPhone Video Free',
+    metaDescription: 'iPhone MOV video लाई MP4 मा free convert गर्नुहोस्। कुनै quality loss नहुने, browser मा काम गर्ने। WhatsApp, Android मा play गर्न MOV to MP4 converter।',
+    targetKeyword: 'mov to mp4 convert kasari garne',
+    secondaryKeywords: [
+      'mov to mp4 converter',
+      'iphone video mp4 ma convert',
+      'mov file ke ho',
+      'mov to mp4 online free',
+    ],
+    lastUpdated: '2026-03-16',
+    readingTime: '८ मिनेट पढ्ने',
+    tags: ['Video', 'Converter', 'iPhone', 'Free Tools'],
+    intro: `<p>iPhone बाट video record गर्नुभयो र Android phone मा play भएन? Email मा MOV file पठाउनुभयो र recipient ले खोल्न सकेनन्? यो common problem हो — <strong>MOV to MP4 conversion</strong> ले solve गर्छ।</p>
+<p>ToolsArena को <strong>Free MOV to MP4 Converter</strong> ले कुनै quality loss बिना MOV files लाई universally compatible MP4 format मा convert गर्छ — browser मा नै।</p>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>iPhone Settings → Camera → Formats → "Most Compatible" select गरेर directly MP4/H.264 मा record गर्न सकिन्छ — convert गर्नुपर्दैन।</p></div>`,
+    sections: [
+      {
+        id: 'mov-vs-mp4',
+        title: 'MOV vs MP4: के फरक छ?',
+        content: `<p>MOV र MP4 दुवै video container formats हुन् — तर compatibility मा ठूलो फरक छ।</p>
+<table>
+  <tr><th>Feature</th><th>MOV</th><th>MP4</th></tr>
+  <tr><td>Developer</td><td>Apple</td><td>MPEG (International Standard)</td></tr>
+  <tr><td>Compatibility</td><td>Apple devices best</td><td>सबै devices</td></tr>
+  <tr><td>File Size</td><td>Larger</td><td>Smaller (same quality)</td></tr>
+  <tr><td>Windows Support</td><td>Limited (codec चाहिन्छ)</td><td>Native support</td></tr>
+  <tr><td>Android Support</td><td>Limited</td><td>Full support</td></tr>
+  <tr><td>WhatsApp</td><td>Convert गर्नुपर्छ</td><td>Direct send</td></tr>
+  <tr><td>YouTube Upload</td><td>Supported</td><td>Recommended</td></tr>
+  <tr><td>Quality</td><td>Excellent</td><td>Excellent</td></tr>
+</table>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>MOV र MP4 मा video quality उस्तै हुन सक्छ — फरक container मात्र हो। Convert गर्दा quality loss हुँदैन (proper settings मा)।</p></div>`,
+      },
+      {
+        id: 'step-by-step-convert',
+        title: 'MOV to MP4 Step-by-Step Convert गर्ने तरिका',
+        content: `<h4>ToolsArena Online Converter:</h4>
+<ol>
+  <li><strong>Tool खोल्नुहोस्:</strong> toolsarena.in/tools/mov-to-mp4 मा जानुहोस्</li>
+  <li><strong>MOV file upload:</strong> iPhone/Mac बाट MOV file drag & drop गर्नुहोस्</li>
+  <li><strong>Settings:</strong> Quality (High/Medium/Low) select गर्नुहोस्</li>
+  <li><strong>Convert:</strong> "Convert to MP4" click गर्नुहोस्</li>
+  <li><strong>Download:</strong> MP4 file preview गरेर download गर्नुहोस्</li>
+</ol>
+<h4>Alternative Methods:</h4>
+<table>
+  <tr><th>Method</th><th>Platform</th><th>Pros</th><th>Cons</th></tr>
+  <tr><td>ToolsArena</td><td>Browser (सबै)</td><td>Free, no install, private</td><td>Large files slow</td></tr>
+  <tr><td>VLC Player</td><td>Desktop</td><td>Free, offline</td><td>Install चाहिन्छ</td></tr>
+  <tr><td>HandBrake</td><td>Desktop</td><td>Advanced settings</td><td>Learning curve</td></tr>
+  <tr><td>iPhone Settings</td><td>iPhone</td><td>No conversion needed</td><td>Future recordings मात्र</td></tr>
+</table>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Quick conversion का लागि ToolsArena best छ — browser खोलेर seconds मा convert। Advanced editing चाहिए भने HandBrake (free, open-source) use गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'iphone-video',
+        title: 'iPhone Video: MOV किन बन्छ र कसरी manage गर्ने?',
+        content: `<p>iPhone ले default मा <strong>HEVC (H.265)</strong> codec मा MOV format मा video record गर्छ — Apple ecosystem मा best quality र smaller file size दिन्छ।</p>
+<h4>iPhone Video Settings:</h4>
+<table>
+  <tr><th>Setting</th><th>Format</th><th>Compatibility</th></tr>
+  <tr><td>High Efficiency (default)</td><td>HEVC/MOV</td><td>Apple devices best</td></tr>
+  <tr><td>Most Compatible</td><td>H.264/MP4</td><td>सबै devices</td></tr>
+</table>
+<h4>iPhone मा "Most Compatible" कसरी set गर्ने:</h4>
+<ol>
+  <li>Settings → Camera → Formats</li>
+  <li>"Most Compatible" select गर्नुहोस्</li>
+  <li>अब Videos H.264/MP4 मा record हुन्छन्</li>
+</ol>
+<h4>AirDrop vs Share:</h4>
+<ul>
+  <li><strong>AirDrop (iPhone to iPhone):</strong> MOV format नै transfer हुन्छ — quality 100%</li>
+  <li><strong>WhatsApp/Email Share:</strong> iPhone ले automatically H.264 मा convert गरेर share गर्छ</li>
+  <li><strong>Manual Transfer (cable):</strong> MOV file नै copy हुन्छ — Windows मा play नहुन सक्छ</li>
+</ul>
+<div class="callout-info"><strong>ℹ️ जानकारी</strong><p>iPhone 16/15 Pro मा 4K 60fps ProRes video record गर्न सकिन्छ — यी files धेरै ठूला (1 min = ~6GB) हुन्छन्। Share गर्नुअघि convert र compress गर्नुहोस्।</p></div>`,
+      },
+      {
+        id: 'quality-settings',
+        title: 'Quality Settings: Convert गर्दा Quality कसरी Maintain गर्ने?',
+        content: `<h4>Video Quality Parameters:</h4>
+<table>
+  <tr><th>Parameter</th><th>Recommended Setting</th><th>Description</th></tr>
+  <tr><td>Video Codec</td><td>H.264</td><td>Most compatible, good quality</td></tr>
+  <tr><td>Audio Codec</td><td>AAC</td><td>Standard audio format</td></tr>
+  <tr><td>Resolution</td><td>Original (1080p/4K)</td><td>Resolution change नगर्नुहोस् quality चाहिए भने</td></tr>
+  <tr><td>Bitrate</td><td>8-12 Mbps (1080p)</td><td>Higher = better quality, larger file</td></tr>
+  <tr><td>Frame Rate</td><td>Original (30/60 fps)</td><td>Frame rate match गर्नुहोस्</td></tr>
+</table>
+<h4>Quality Levels:</h4>
+<ul>
+  <li><strong>Lossless:</strong> Quality 100% same, file size similar — format change मात्र</li>
+  <li><strong>High Quality:</strong> Barely noticeable loss, 20-30% smaller file</li>
+  <li><strong>Medium:</strong> Good quality, 50-60% smaller — sharing का लागि best</li>
+  <li><strong>Low:</strong> Visible quality loss, 70-80% smaller — quick preview</li>
+</ul>
+<div class="callout-tip"><strong>💡 सुझाव</strong><p>Archive/backup का लागि "High Quality" use गर्नुहोस्। WhatsApp/social media share का लागि "Medium" sufficient छ।</p></div>`,
+      },
+      {
+        id: 'batch-conversion',
+        title: 'Batch Conversion र Advanced Tips',
+        content: `<h4>Multiple Files Convert गर्ने:</h4>
+<ul>
+  <li><strong>ToolsArena:</strong> एक-एक file convert गर्नुहोस् — browser-based tool का लागि best approach</li>
+  <li><strong>HandBrake (Desktop):</strong> "Add to Queue" feature ले multiple files batch convert गर्छ</li>
+  <li><strong>VLC Batch:</strong> VLC मा Media → Convert/Save बाट multiple files add गर्न सकिन्छ</li>
+</ul>
+<h4>Common Conversion Errors र Solutions:</h4>
+<table>
+  <tr><th>Error</th><th>Cause</th><th>Solution</th></tr>
+  <tr><td>Audio out of sync</td><td>Variable frame rate</td><td>Constant frame rate setting use</td></tr>
+  <tr><td>Black screen</td><td>HEVC codec issue</td><td>H.264 codec explicitly select</td></tr>
+  <tr><td>File size बढ्यो</td><td>Higher bitrate set</td><td>Original bitrate match गर्नुहोस्</td></tr>
+  <tr><td>Conversion failed</td><td>Corrupted source file</td><td>Original file re-download गर्नुहोस्</td></tr>
+</table>
+<h4>Pro Tips:</h4>
+<ul>
+  <li>Original MOV file delete नगर्नुहोस् conversion सफल नभएसम्म</li>
+  <li>Cloud backup (Google Drive/iCloud) मा original file राख्नुहोस्</li>
+  <li>Metadata (date, location) conversion पछि preserve हुन्छ MP4 मा</li>
+</ul>
+<div class="callout-warning"><strong>⚠️ सावधानी</strong><p>Unknown websites मा video upload नगर्नुहोस् — privacy risk हुन्छ। ToolsArena मा conversion browser मा हुन्छ, video कहिल्यै server मा जाँदैन।</p></div>`,
+      },
+    ],
+    howToSteps: [
+      {
+        title: 'ToolsArena MOV to MP4 Converter खोल्नुहोस्',
+        description: 'Browser मा toolsarena.in/tools/mov-to-mp4 खोल्नुहोस्। कुनै sign-up वा install चाहिँदैन।',
+      },
+      {
+        title: 'MOV file upload गर्नुहोस्',
+        description: 'iPhone/Mac बाट MOV video file drag & drop वा browse गरेर upload गर्नुहोस्।',
+      },
+      {
+        title: 'Quality setting छान्नुहोस्',
+        description: 'High (archive), Medium (sharing), वा Low (quick preview) quality select गर्नुहोस्।',
+      },
+      {
+        title: '"Convert" button click गर्नुहोस्',
+        description: 'Tool ले MOV लाई MP4 मा convert गर्छ। File size अनुसार seconds देखि minutes लाग्न सक्छ।',
+      },
+      {
+        title: 'MP4 Download गर्नुहोस्',
+        description: 'Converted MP4 file preview हेर्नुहोस् र download गर्नुहोस्। अब WhatsApp, Android, Windows सबैमा play हुन्छ।',
+      },
+    ],
+    faqs: [
+      {
+        question: 'MOV to MP4 convert गर्दा quality घट्छ?',
+        answer: 'High quality setting मा convert गर्दा quality loss barely noticeable हुन्छ। Lossless conversion पनि सम्भव छ — container format change मात्र हुन्छ।',
+      },
+      {
+        question: 'MOV file के हो?',
+        answer: 'MOV Apple ले develop गरेको video container format हो। iPhone, Mac मा default video format। Apple devices मा best काम गर्छ तर Windows/Android मा compatibility issue हुन्छ।',
+      },
+      {
+        question: 'iPhone video directly MP4 मा record गर्न सकिन्छ?',
+        answer: 'हो। Settings → Camera → Formats → "Most Compatible" select गर्नुहोस्। अब videos H.264/MP4 compatible format मा record हुन्छन्।',
+      },
+      {
+        question: 'Video server मा upload हुन्छ?',
+        answer: 'होइन। ToolsArena को converter browser मा नै process गर्छ — video कहिल्यै server मा upload हुँदैन। Privacy 100% safe।',
+      },
+      {
+        question: 'Windows मा MOV file play कसरी गर्ने?',
+        answer: 'VLC media player install गर्नुहोस् — MOV files directly play गर्छ। वा ToolsArena बाट MP4 मा convert गर्नुहोस् — Windows Media Player मा पनि play हुन्छ।',
+      },
+      {
+        question: 'Android मा iPhone video कसरी play गर्ने?',
+        answer: 'MOV to MP4 convert गर्नुहोस् — Android मा MP4 native support छ। VLC for Android install गरे MOV पनि directly play हुन्छ।',
+      },
+      {
+        question: 'ठूलो MOV file (1GB+) convert गर्न सकिन्छ?',
+        answer: 'Browser-based tool मा ठूलो file slow हुन सक्छ। 500MB+ files का लागि HandBrake (desktop app) recommend गरिन्छ। सानो files ToolsArena मा seconds मा convert हुन्छन्।',
+      },
+      {
+        question: 'MOV to MP4 convert गरेपछि file size घट्छ?',
+        answer: 'General मा हो — MP4 (H.264) ले HEVC MOV भन्दा efficient compression दिन्छ। Same quality मा 10-30% smaller file size हुन सक्छ।',
+      },
+    ],
+    relatedGuides: ['video-compressor-guide', 'video-to-gif-guide', 'mp4-to-mp3-guide'],
+    toolCTA: {
+      heading: 'MOV to MP4 Convert गर्नुहोस् — Free र Instant!',
+      description: 'iPhone/Mac video लाई MP4 मा convert गर्नुहोस् — WhatsApp, Android, Windows सबैमा play हुन्छ।',
+      buttonText: 'MOV to MP4 Converter खोल्नुहोस् →',
+    },
+  },];

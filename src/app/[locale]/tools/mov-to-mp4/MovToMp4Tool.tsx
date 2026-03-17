@@ -143,6 +143,7 @@ export function MovToMp4Tool() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cancelRef = useRef(false);
   const batchCancelRef = useRef(false);
+  const progressRef = useRef<HTMLDivElement>(null);
 
   /* ── Helpers ── */
   const inputExt = videoInfo?.file.name.split('.').pop()?.toUpperCase() || 'MOV';
@@ -214,6 +215,7 @@ export function MovToMp4Tool() {
     setError('');
     cancelRef.current = false;
     setConversionStartTime(Date.now());
+    setTimeout(() => progressRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
 
     try {
       const { width, height } = getTargetResolution(
@@ -331,6 +333,7 @@ export function MovToMp4Tool() {
       setConvertedUrl(URL.createObjectURL(blob));
       setConvertedSize(blob.size);
       setState('done');
+      setTimeout(() => progressRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
     } catch (e) {
       setError(`Conversion failed: ${(e as Error).message}. Try a different browser or check if the video is playable.`);
       setState('loaded');
@@ -914,7 +917,7 @@ export function MovToMp4Tool() {
 
               {/* Converting */}
               {state === 'converting' && (
-                <div className="flex flex-col items-center gap-3 py-8">
+                <div ref={progressRef} className="flex flex-col items-center gap-3 py-8">
                   <Loader2 className="w-10 h-10 text-primary-700 animate-spin" />
                   <p className="text-sm font-medium text-slate-600 dark:text-slate-400">
                     Converting {inputExt} to {outputFormat.toUpperCase()} at {convertSpeed}x speed... {progress}%
@@ -939,7 +942,7 @@ export function MovToMp4Tool() {
 
               {/* Result */}
               {state === 'done' && convertedUrl && (
-                <div className="space-y-4">
+                <div ref={progressRef} className="space-y-4">
                   {/* Success banner */}
                   <div className="flex items-center gap-2 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl">
                     <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 shrink-0" />
