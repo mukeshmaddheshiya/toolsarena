@@ -9849,6 +9849,111 @@ tools.push({
   isPopular: true,
 });
 
+// ── YouTube Embed Generator ──
+tools.push({
+  slug: 'youtube-embed-generator',
+  name: 'YouTube Embed Code Generator',
+  shortDescription: 'Generate responsive YouTube embed code with custom options — autoplay, loop, start time, privacy mode & more.',
+  longDescription: `<p>Generate YouTube embed code instantly with our free embed code generator. Paste any YouTube URL, customize embed options like autoplay, loop, mute, start/end time, responsive sizing, and privacy mode, then copy the ready-to-use HTML code. Live preview shows exactly how it will look on your site.</p>
+<h2>Best YouTube Embed Generator — All Options</h2>
+<p>Our generator gives you full control over every embed parameter: autoplay, mute, loop, controls, fullscreen, privacy mode (no-cookie domain), lazy loading, captions, branding, start time, end time, and custom dimensions. Toggle options with one click and see changes instantly in the live preview.</p>
+<h2>Responsive YouTube Embed Code</h2>
+<p>By default, we generate responsive embed code that automatically fits any container width while maintaining 16:9 aspect ratio. Perfect for WordPress, Shopify, HTML websites, and any CMS. No more broken layouts on mobile — our responsive wrapper handles all screen sizes.</p>`,
+  category: 'seo-tools',
+  targetKeyword: 'youtube embed code generator',
+  secondaryKeywords: ['youtube embed code', 'youtube embed generator', 'embed youtube video', 'youtube iframe generator', 'responsive youtube embed', 'youtube embed autoplay', 'youtube embed loop', 'youtube embed code maker'],
+  metaTitle: 'YouTube Embed Code Generator — Responsive, Autoplay, Loop Options',
+  metaDescription: 'Generate YouTube embed code free — responsive, autoplay, loop, privacy mode, start time. Live preview, one-click copy. No signup needed.',
+  faqs: [
+    { question: 'What is a YouTube embed code?', answer: 'An embed code is an HTML iframe snippet that lets you display a YouTube video on your own website or blog. Our generator creates this code with custom options like autoplay, loop, and responsive sizing.' },
+    { question: 'What is YouTube privacy-enhanced mode?', answer: 'Privacy-enhanced mode uses youtube-nocookie.com instead of youtube.com. This means YouTube does not store visitor cookies unless they actually play the video — better for GDPR compliance.' },
+    { question: 'How do I make the embed responsive?', answer: 'Our tool generates responsive code by default using a CSS aspect-ratio wrapper. The video will automatically fit any container width while maintaining 16:9 proportions.' },
+    { question: 'Can I set a start and end time?', answer: 'Yes. Enter the start and end time in seconds. The embedded video will begin playing from the start time and stop at the end time.' },
+  ],
+  howToSteps: [
+    'Paste your YouTube video URL or video ID',
+    'Customize embed options (autoplay, loop, responsive, privacy mode, etc.)',
+    'Preview how the embed looks on desktop, tablet, and mobile',
+    'Copy the generated HTML code and paste it into your website',
+  ],
+  relatedToolSlugs: ['youtube-timestamp-generator', 'youtube-hashtag-generator', 'youtube-thumbnail-downloader', 'youtube-money-calculator', 'youtube-title-generator'],
+  icon: 'Code',
+  isNew: true,
+  isPopular: false,
+});
+
+// ── YouTube Timestamp Generator ──
+tools.push({
+  slug: 'youtube-timestamp-generator',
+  name: 'YouTube Timestamp Generator',
+  shortDescription: 'Create YouTube chapters with timestamps — drag to reorder, templates for tutorials/podcasts/reviews. Copy-paste ready.',
+  longDescription: `<p>Create YouTube video chapters and timestamps with our free generator. Add timestamps with exact times and titles, drag to reorder, use templates for common video types, and copy the formatted output directly into your YouTube description. YouTube will automatically create clickable chapters from your timestamps.</p>
+<h2>YouTube Chapters Made Easy</h2>
+<p>YouTube chapters help viewers navigate your video and improve watch time. Our timestamp generator makes creating them effortless: add chapters with precise H:MM:SS times and titles, drag to reorder, use pre-built templates, and copy the formatted text in one click.</p>
+<h2>Templates for Every Video Type</h2>
+<p>Start from 5 ready-made templates: Tutorial/How-To, Podcast/Interview, Review/Unboxing, Music/Playlist, and Gaming. Each template has pre-set chapters with typical timing — just customize the titles and times to match your video.</p>
+<h2>YouTube Chapter Requirements</h2>
+<p>For YouTube to recognize chapters: the first timestamp must be 0:00, you need at least 3 timestamps, and each chapter must be at least 10 seconds long. Our tool warns you if the first timestamp isn't at 0:00.</p>`,
+  category: 'seo-tools',
+  targetKeyword: 'youtube timestamp generator',
+  secondaryKeywords: ['youtube chapters generator', 'youtube timestamp maker', 'add timestamps to youtube', 'youtube chapter maker', 'video timestamp generator', 'youtube description timestamps', 'create youtube chapters', 'youtube timestamp format'],
+  metaTitle: 'YouTube Timestamp Generator — Create Chapters for Videos Free',
+  metaDescription: 'Create YouTube timestamps and chapters free. Templates for tutorials, podcasts, reviews. Drag to reorder, copy-paste into description. Free tool.',
+  faqs: [
+    { question: 'What are YouTube chapters?', answer: 'YouTube chapters are clickable segments in the video timeline that help viewers jump to specific parts of your video. They are created by adding timestamps in your video description.' },
+    { question: 'How many timestamps do I need?', answer: 'YouTube requires at least 3 timestamps, with the first one at 0:00, and each chapter at least 10 seconds long. There is no upper limit on the number of chapters.' },
+    { question: 'Do chapters improve my video performance?', answer: 'Yes. Chapters improve viewer retention by helping people find the content they want. They also appear in Google search results, increasing click-through rate.' },
+    { question: 'What format should timestamps be in?', answer: 'Use MM:SS for videos under an hour or H:MM:SS for longer videos. Our tool automatically formats timestamps correctly.' },
+  ],
+  howToSteps: [
+    'Choose a template or start from scratch',
+    'Add chapters with time (H:MM:SS) and title',
+    'Drag to reorder or use arrows to move chapters',
+    'Click "Copy Timestamps" to copy the formatted output',
+    'Paste into your YouTube video description',
+  ],
+  relatedToolSlugs: ['youtube-embed-generator', 'youtube-hashtag-generator', 'youtube-description-generator', 'youtube-title-generator', 'youtube-money-calculator'],
+  icon: 'Clock',
+  isNew: true,
+  isPopular: false,
+});
+
+// ── YouTube Hashtag Generator ──
+tools.push({
+  slug: 'youtube-hashtag-generator',
+  name: 'YouTube Hashtag Generator',
+  shortDescription: 'Generate trending YouTube hashtags by niche — gaming, tech, fitness, cooking & more. Click to select, copy-paste ready.',
+  longDescription: `<p>Generate the best YouTube hashtags for your videos with our free hashtag generator. Choose from 12 niches — Gaming, Tech, Education, Fitness, Cooking, Vlog, Music, Beauty, Finance, Travel, Motivation, and Entertainment. Get trending, popular, and niche-specific hashtags organized by category.</p>
+<h2>YouTube Hashtags That Get Views</h2>
+<p>The right hashtags help your videos appear in YouTube search and on hashtag pages. Our generator provides curated hashtags organized by trending (high volume), popular (proven performers), and niche-specific (targeted audience). Mix all three types for the best reach.</p>
+<h2>12 Niche Categories with 300+ Hashtags</h2>
+<p>Each niche includes 25+ curated hashtags split into three tiers: trending tags with the highest search volume, popular tags with proven engagement, and niche-specific tags that target your exact audience. Plus general YouTube hashtags that work for any video.</p>
+<h2>Custom Topic Hashtags</h2>
+<p>Describe your video topic and get auto-generated hashtags based on your keywords. The generator creates single-word and compound hashtags from your topic for maximum relevance. Combine these with niche hashtags for the perfect hashtag set.</p>`,
+  category: 'seo-tools',
+  targetKeyword: 'youtube hashtag generator',
+  secondaryKeywords: ['youtube hashtags', 'best hashtags for youtube', 'trending youtube hashtags', 'youtube hashtag generator free', 'hashtags for youtube videos', 'youtube tags generator', 'youtube hashtags 2026', 'viral hashtags youtube'],
+  metaTitle: 'YouTube Hashtag Generator — Trending Hashtags by Niche, Free',
+  metaDescription: 'Generate trending YouTube hashtags by niche — gaming, tech, fitness & more. 300+ curated hashtags, click to select, copy-paste. Free, no signup.',
+  faqs: [
+    { question: 'How many hashtags should I use on YouTube?', answer: 'YouTube recommends 3-5 hashtags per video. You can use up to 15, but using more than 15 may cause YouTube to ignore all of them. Place them in your description — the first 3 appear above your video title.' },
+    { question: 'Where should I put hashtags on YouTube?', answer: 'Add hashtags in your video description. The first 3 hashtags will appear as clickable links above your video title. You can also add them at the end of the description for additional discoverability.' },
+    { question: 'Do YouTube hashtags actually help?', answer: 'Yes. Hashtags help your videos appear on hashtag search pages and improve discoverability. When viewers click a hashtag above your title, they see all videos using that hashtag.' },
+    { question: 'What is the difference between hashtags and tags?', answer: 'Hashtags (#gaming) appear in your description and above the title — viewers can see and click them. Tags are hidden metadata you add in the upload settings that help YouTube understand your content.' },
+  ],
+  howToSteps: [
+    'Select your video niche (Gaming, Tech, Fitness, etc.)',
+    'Optionally describe your video topic for custom hashtags',
+    'Click hashtags to select them (mix trending + popular + niche)',
+    'Review selected hashtags and adjust as needed',
+    'Copy all hashtags and paste into your YouTube description',
+  ],
+  relatedToolSlugs: ['youtube-timestamp-generator', 'youtube-embed-generator', 'youtube-title-generator', 'youtube-description-generator', 'hashtag-generator'],
+  icon: 'Hash',
+  isNew: true,
+  isPopular: false,
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
