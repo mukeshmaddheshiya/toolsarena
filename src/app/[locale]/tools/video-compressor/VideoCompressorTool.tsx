@@ -120,10 +120,16 @@ export function VideoCompressorTool() {
         }
       }
 
+      // Detect best supported MIME type (Safari = mp4, Chrome/Firefox = webm)
+      const mimeType = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm', 'video/mp4'].find(
+        m => MediaRecorder.isTypeSupported(m)
+      );
+      if (!mimeType) {
+        throw new Error('Your browser does not support video recording. Please try Chrome, Firefox, or Safari 14.6+.');
+      }
+
       const mediaRecorder = new MediaRecorder(stream, {
-        mimeType: MediaRecorder.isTypeSupported('video/webm;codecs=vp9')
-          ? 'video/webm;codecs=vp9'
-          : 'video/webm',
+        mimeType,
         videoBitsPerSecond: bitrate,
       });
 
@@ -131,7 +137,7 @@ export function VideoCompressorTool() {
       mediaRecorder.ondataavailable = e => { if (e.data.size > 0) chunks.push(e.data); };
 
       const done = new Promise<Blob>(resolve => {
-        mediaRecorder.onstop = () => resolve(new Blob(chunks, { type: 'video/webm' }));
+        mediaRecorder.onstop = () => resolve(new Blob(chunks, { type: mimeType }));
       });
 
       // Play video and draw frames to canvas
@@ -193,7 +199,12 @@ export function VideoCompressorTool() {
     if (!compressedUrl) return;
     const a = document.createElement('a');
     a.href = compressedUrl;
-    a.download = (videoInfo?.file.name.replace(/\.[^.]+$/, '') || 'video') + '-compressed.webm';
+    // Detect extension from the blob type
+    const ext = compressedUrl && compressedSize > 0 ? (
+      typeof MediaRecorder !== 'undefined' && MediaRecorder.isTypeSupported('video/mp4') && !MediaRecorder.isTypeSupported('video/webm')
+        ? 'mp4' : 'webm'
+    ) : 'webm';
+    a.download = (videoInfo?.file.name.replace(/\.[^.]+$/, '') || 'video') + `-compressed.${ext}`;
     a.click();
   };
 
