@@ -311,9 +311,9 @@ export function ImageUpscalerTool() {
 
       const outW = Math.round(img.naturalWidth * scale);
       const outH = Math.round(img.naturalHeight * scale);
-      const maxPixels = 8000 * 8000;
-      if (outW * outH > maxPixels) {
-        setError(`Output would be ${outW}×${outH} (${formatMegapixels(outW, outH)}). Max is ~64 MP. Try a smaller scale.`);
+      const hardLimit = 150_000_000; // 150MP — beyond this browsers crash
+      if (outW * outH > hardLimit) {
+        setError(`Output would be ${outW}×${outH} (${formatMegapixels(outW, outH)}) — too large for browser memory. Try a smaller scale or resize the image first.`);
         setState('loaded');
         return;
       }
