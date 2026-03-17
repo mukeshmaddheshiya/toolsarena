@@ -42,16 +42,7 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
     publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     inLanguage: locale,
     browserRequirements: 'Requires JavaScript. Works in all modern browsers.',
-    datePublished: '2025-12-01',
-    dateModified: '2026-03-08',
     screenshot: `${toolUrl}/opengraph-image`,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      bestRating: '5',
-      worstRating: '1',
-      ratingCount: '150',
-    },
   };
 
   return (
