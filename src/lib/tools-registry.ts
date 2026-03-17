@@ -9959,6 +9959,58 @@ tools.push({
   isPopular: false,
 });
 
+// ── CSV & Excel Viewer ──
+tools.push({
+  slug: 'csv-viewer',
+  name: 'CSV & Excel Viewer',
+  shortDescription: 'View, sort, filter, and search CSV, XLSX, and TSV files instantly in your browser. Free, private, no server upload.',
+  longDescription: `<p>Open and view CSV, Excel (XLSX/XLS), and TSV files directly in your browser with our free online spreadsheet viewer. No sign-up, no file uploads to any server — your data stays 100% private on your device.</p>
+<h2>Why Use This CSV Viewer?</h2>
+<p>Unlike Google Sheets or Excel Online, this tool requires no account and processes everything locally. It handles files up to 100MB with support for multi-sheet Excel workbooks, column sorting, global search, per-column filters, pagination, and data export — all running instantly in your browser.</p>
+<h2>Interactive Table Features</h2>
+<ul>
+<li><strong>Multi-format support</strong>: Open CSV, XLSX, XLS, and TSV files with auto-detected delimiters (comma, semicolon, tab, pipe)</li>
+<li><strong>Sort any column</strong>: Click column headers to sort ascending/descending. Number columns sort numerically, text columns sort alphabetically.</li>
+<li><strong>Resize columns</strong>: Drag column borders to adjust width for better readability</li>
+<li><strong>Global search</strong>: Filter all rows instantly as you type across every column</li>
+<li><strong>Per-column filters</strong>: Toggle column-specific filter inputs for precise data filtering</li>
+<li><strong>Pagination</strong>: View 25, 50, 100, or all rows per page — handles 100,000+ row files smoothly</li>
+<li><strong>Multi-sheet support</strong>: Excel files with multiple sheets show a tab bar for instant switching</li>
+<li><strong>Click to copy</strong>: Click any cell to copy its value to clipboard</li>
+<li><strong>Export filtered data</strong>: Download the currently filtered/sorted view as a CSV file or copy entire table to clipboard</li>
+</ul>
+<h2>Privacy First</h2>
+<p>All processing happens in your browser using JavaScript. Your spreadsheet data never leaves your device — even if you go offline, the viewer continues to work. No data is sent to any server.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'csv viewer online',
+  secondaryKeywords: ['excel viewer online', 'open csv file online', 'xlsx viewer', 'spreadsheet viewer online free', 'csv file reader', 'view excel file online', 'csv to table', 'tsv viewer', 'csv viewer free', 'open xlsx file online'],
+  metaTitle: 'CSV & Excel Viewer Online — Free XLSX/CSV Reader',
+  metaDescription: 'View CSV, Excel (XLSX), and TSV files online for free. Sort, filter, search, and export spreadsheet data instantly. No sign-up, 100% private browser processing.',
+  faqs: [
+    { question: 'How do I open a CSV file online?', answer: 'Drag and drop your CSV file onto the viewer or click "Upload" to browse. The file is parsed instantly in your browser and displayed as an interactive table you can sort, filter, and search.' },
+    { question: 'Is my data safe when I view CSV files here?', answer: 'Yes, completely. Your files are processed 100% in your browser using JavaScript. No data is uploaded to any server. Your spreadsheet data never leaves your device.' },
+    { question: 'What is the maximum file size supported?', answer: 'You can view files up to 100MB. The viewer uses pagination to handle large files with 100,000+ rows smoothly without slowing down your browser.' },
+    { question: 'Can I view Excel files with multiple sheets?', answer: 'Yes! When you open an XLSX or XLS file with multiple sheets, a tab bar appears at the top. Click any sheet tab to switch between sheets instantly.' },
+    { question: 'How do I sort columns in the CSV viewer?', answer: 'Click any column header to sort ascending. Click again for descending. Click a third time to remove sorting. Numeric columns are sorted numerically, not alphabetically.' },
+    { question: 'Can I filter data in specific columns?', answer: 'Yes. Click the "Filters" button to show a filter input below each column header. Type to filter that specific column. You can combine this with the global search for powerful filtering.' },
+    { question: 'Can I export or download the filtered data?', answer: 'Yes. Click "Export CSV" to download the currently filtered and sorted view as a CSV file. You can also click "Copy" to copy the entire table to your clipboard.' },
+    { question: 'What CSV delimiters are supported?', answer: 'The viewer auto-detects the delimiter in your CSV file, supporting comma (,), semicolon (;), tab, and pipe (|) separators. No manual configuration needed.' },
+    { question: 'Does this work on mobile phones?', answer: 'Yes. The table scrolls horizontally on mobile devices. All controls are touch-friendly and the interface adapts to smaller screens automatically.' },
+  ],
+  howToSteps: [
+    'Drag and drop your CSV, XLSX, XLS, or TSV file onto the upload area (or click to browse).',
+    'Your file is parsed instantly in the browser. For Excel files with multiple sheets, use the sheet tabs.',
+    'Use the search bar to filter rows, or enable Column Filters for per-column filtering.',
+    'Click column headers to sort ascending/descending. Drag column borders to resize.',
+    'Export filtered data as CSV or copy to clipboard.',
+  ],
+  relatedToolSlugs: ['csv-to-json', 'csv-to-pdf', 'json-formatter', 'excel-to-pdf', 'pdf-to-excel'],
+  icon: 'Table',
+  isNew: true,
+  isPopular: false,
+  estimatedTime: 'Instant',
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
