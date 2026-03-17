@@ -9811,38 +9811,42 @@ tools.push({
 tools.push({
   slug: 'image-upscaler',
   name: 'Image Upscaler Free',
-  shortDescription: 'Upscale and enlarge images 2x, 4x, 8x with AI-enhanced sharpening — free, no watermark, no signup.',
-  longDescription: `<p>Upscale images online for free with our browser-based image upscaler. Enlarge any photo or image to 2x, 4x, or 8x its original resolution using bicubic interpolation with intelligent sharpening and noise reduction. No watermark, no signup, no file limits — completely free.</p>
-<h2>Best Free Image Upscaler Online — No Watermark</h2>
-<p>Competitors like Let's Enhance charge $12/month, Upscale.media uses credits, and Topaz costs $200. Our image upscaler is 100% free with no watermarks on output. Enlarge your images to print-quality resolution without paying a cent. Everything processes locally in your browser — your images never leave your device.</p>
-<h2>Enhance Image Quality While Upscaling</h2>
-<p>Simple image resizing creates blurry, pixelated results. Our upscaler uses bicubic interpolation combined with an unsharp mask sharpening algorithm to produce crisp, detailed enlarged images. Adjust the sharpen slider to control edge enhancement, and use denoise to smooth out artifacts from low-quality source images.</p>
-<h2>Upscale Images for Print, Social Media & Websites</h2>
-<p>Need a higher resolution photo for printing? Want to enlarge a small thumbnail for a presentation? Our image upscaler handles it all: upscale product photos for e-commerce, enlarge social media images, increase resolution for posters and banners, and enhance low-res screenshots. Supports JPG, PNG, and WebP input with PNG output for maximum quality.</p>
-<h2>Side-by-Side Comparison Slider</h2>
-<p>After upscaling, use our interactive comparison slider to see the difference between the original and upscaled image side by side. Drag the slider left and right to compare quality at any point in the image. See exactly how much detail was recovered by the upscaling process.</p>`,
+  shortDescription: 'Upscale images 2x-8x with Lanczos-3 + sharpening + color enhance. 4 presets, 3 output formats, no watermark.',
+  longDescription: `<p>Upscale images online for free with the most advanced browser-based image upscaler. Enlarge any photo to 2x, 3x, 4x, 6x, or 8x resolution using <strong>Lanczos-3 or Bicubic interpolation</strong>, intelligent sharpening, noise reduction, and color enhancement. No watermark, no signup — completely free forever.</p>
+<h2>Best Free Image Upscaler — Beats $200 Paid Tools</h2>
+<p>Topaz Gigapixel costs $200. Let's Enhance charges $12/month. Upscale.media uses credits. Our image upscaler is 100% free with zero watermarks. Your images process entirely in your browser — nothing is uploaded to any server. Complete privacy guaranteed.</p>
+<h2>4 Smart Presets for Every Image Type</h2>
+<p><strong>Photo mode</strong> uses Lanczos-3 interpolation with balanced sharpening and subtle color enhancement — ideal for photographs. <strong>Illustration mode</strong> maximizes color vibrancy for digital art. <strong>Text/Logo mode</strong> uses maximum sharpening for crisp text and clean edges. <strong>Anime mode</strong> is tuned for anime, manga, and cartoon upscaling with optimized denoise settings.</p>
+<h2>Advanced 4-Stage Processing Pipeline</h2>
+<p>Our processing goes far beyond simple resize: <strong>Stage 1</strong> — Lanczos-3 or Bicubic interpolation for optimal pixel generation. <strong>Stage 2</strong> — Smart denoise to remove compression artifacts. <strong>Stage 3</strong> — Unsharp mask sharpening to enhance edges. <strong>Stage 4</strong> — Color enhancement with saturation and contrast boost for vivid output.</p>
+<h2>5 Scale Factors + 3 Output Formats</h2>
+<p>Choose from 2x, 3x, 4x, 6x, or 8x upscaling. Export as PNG (lossless), JPEG (smaller file), or WebP (best compression). Adjust JPEG/WebP quality from 50-100% for the perfect size/quality balance.</p>
+<h2>Interactive Before/After Comparison</h2>
+<p>Drag the comparison slider to see the original vs upscaled image side by side. Shows processing time, file sizes, megapixel counts, and exact dimensions for both images.</p>`,
   category: 'image-tools',
   targetKeyword: 'image upscaler',
-  secondaryKeywords: ['image upscaler free', 'upscale image online', 'enlarge image', 'increase image resolution', 'image enlarger', 'photo upscaler', 'upscale image 2x', 'upscale image 4x', 'image upscaler no watermark', 'enhance image quality', 'increase photo resolution online', 'make image bigger', 'upscale image free online', 'photo enlarger', 'image resolution enhancer'],
-  metaTitle: 'Image Upscaler — Enlarge Images 2x 4x 8x Free, No Watermark',
-  metaDescription: 'Upscale images online free — enlarge 2x, 4x, 8x with sharpening & denoise. No watermark, no signup. Side-by-side comparison. Works in browser.',
+  secondaryKeywords: ['image upscaler free', 'upscale image online', 'enlarge image', 'increase image resolution', 'image enlarger', 'photo upscaler', 'upscale image 2x', 'upscale image 4x', 'image upscaler no watermark', 'enhance image quality', 'increase photo resolution online', 'make image bigger', 'upscale image free online', 'photo enlarger', 'image resolution enhancer', 'ai image upscaler', 'image enhancer free', 'upscale photo for printing', 'enlarge image without losing quality'],
+  metaTitle: 'Image Upscaler Free — Enlarge 2x-8x, No Watermark | Lanczos + Sharpen',
+  metaDescription: 'Upscale images free — 2x to 8x with Lanczos-3 interpolation, sharpening, denoise & color enhance. 4 presets, 3 formats. No watermark, no signup, 100% private.',
   faqs: [
-    { question: 'How does image upscaling work?', answer: 'Our tool uses bicubic interpolation to intelligently calculate new pixels when enlarging an image, combined with unsharp mask sharpening to enhance edges and details. This produces much better results than simple nearest-neighbor or bilinear resizing.' },
-    { question: 'Is there a watermark on the output?', answer: 'No. Unlike competitors that charge monthly fees or add watermarks, our upscaler produces clean output with absolutely no watermarks, ever.' },
-    { question: 'What scale factors are available?', answer: 'You can upscale 2x (double resolution), 4x (quadruple), or 8x (octuple). For example, a 500×500 image becomes 1000×1000 at 2x, 2000×2000 at 4x, or 4000×4000 at 8x.' },
-    { question: 'Is my image uploaded to a server?', answer: 'No. All processing happens locally in your browser. Your images never leave your device — complete privacy is guaranteed.' },
-    { question: 'What image formats are supported?', answer: 'Upload JPG, PNG, or WebP images. The upscaled result is always saved as PNG for maximum quality preservation.' },
-    { question: 'What does the sharpen slider do?', answer: 'The sharpen slider controls edge enhancement intensity. Higher values make edges and details crisper but may introduce artifacts. Start at 50% and adjust to taste.' },
-    { question: 'What does the denoise slider do?', answer: 'Denoise smooths out noise and compression artifacts from the source image before sharpening. Useful for low-quality JPEGs or screenshots. Keep at 0% for already-clean images.' },
-    { question: 'Is there a size limit?', answer: 'The input image can be up to 20MB. For best results and speed, we recommend images under 2000×2000 pixels. Very large images with 8x upscale may be limited by browser memory.' },
+    { question: 'How does the image upscaler work?', answer: 'Our tool uses a 4-stage pipeline: (1) Lanczos-3 or Bicubic interpolation to generate new pixels, (2) smart denoise to reduce artifacts, (3) unsharp mask sharpening for crisp edges, and (4) color enhancement for vivid output. Far better than simple browser resizing.' },
+    { question: 'Is there a watermark on the output?', answer: 'No. Unlike competitors that charge monthly fees or add watermarks, our upscaler produces 100% clean output with no watermarks, logos, or branding — ever.' },
+    { question: 'What scale factors are available?', answer: 'Five options: 2x, 3x, 4x, 6x, and 8x. For example, a 500×500 image becomes 4000×4000 at 8x. Choose 2x for speed or 8x for maximum resolution.' },
+    { question: 'What are the 4 presets?', answer: 'Photo (Lanczos-3, balanced sharpen, subtle color boost), Illustration (Bicubic, strong color enhance for digital art), Text/Logo (max sharpening for crisp text), and Anime (optimized for anime/manga with light denoise).' },
+    { question: 'What is Lanczos-3 interpolation?', answer: 'Lanczos-3 is a mathematically superior algorithm using a 6×6 kernel (vs Bicubic 4×4). It produces sharper results with less ringing artifacts — the gold standard for high-quality image upscaling used in professional software.' },
+    { question: 'Is my image uploaded to a server?', answer: 'No. Everything runs locally in your browser. Your images never leave your device, even if you disconnect from the internet.' },
+    { question: 'What output formats are supported?', answer: 'Export as PNG (lossless), JPEG (adjustable quality 50-100%), or WebP (best compression). Input supports JPG, PNG, WebP, and BMP up to 30MB.' },
+    { question: 'What does color enhancement do?', answer: 'Boosts saturation and contrast of the upscaled image. Compensates for slight color dulling during interpolation, producing more vivid and natural results.' },
+    { question: 'What is the maximum image size?', answer: 'Input images up to 30MB and 4000×4000px work well. Output limit is ~64 megapixels. Very large images at 8x may be limited by browser memory.' },
   ],
   howToSteps: [
-    'Upload your image (JPG, PNG, or WebP)',
-    'Choose scale factor: 2x, 4x, or 8x',
-    'Adjust sharpen and denoise sliders to fine-tune quality',
+    'Upload your image (JPG, PNG, WebP, or BMP — up to 30MB)',
+    'Choose a preset (Photo, Illustration, Text, or Anime) or customize',
+    'Select scale factor: 2x, 3x, 4x, 6x, or 8x',
+    'Optionally adjust sharpen, denoise, color enhance, algorithm, and output format',
     'Click "Upscale" and wait for processing',
-    'Compare original vs upscaled using the comparison slider',
-    'Download the upscaled PNG image',
+    'Compare original vs upscaled with the interactive slider',
+    'Download in PNG, JPEG, or WebP format',
   ],
   relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-cropper', 'image-background-remover', 'compress-image-to-kb', 'heic-to-jpg'],
   icon: 'Maximize2',
