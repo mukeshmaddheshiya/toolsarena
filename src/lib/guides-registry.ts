@@ -12762,13 +12762,23 @@ $$</code></pre>
       {
         id: 'save-as-png-browser',
         title: 'How to Save Website Images as PNG (Not WebP)',
-        content: `<p>Websites serve WebP for performance. Here is how to get PNG instead:</p>
-<h3>Method 1: ToolsArena (Any Image)</h3>
-<p>Save the WebP, then convert with <a href="/tools/webp-to-png">ToolsArena WebP to PNG</a>.</p>
-<h3>Method 2: Browser URL Trick</h3>
-<p>Some sites serve both formats. Try adding <code>?format=png</code> to the image URL or removing the <code>.webp</code> extension.</p>
-<h3>Method 3: Screenshot + Crop</h3>
-<p>Take a screenshot (PNG by default on most systems) and crop to the image area. Lower quality but quick.</p>`
+        content: `<p>Modern websites serve WebP for performance, which means right-clicking "Save Image As" gives you a .webp file. Here are reliable ways to get PNG instead:</p>
+<h3>Method 1: ToolsArena (Easiest, Any Image)</h3>
+<ol>
+  <li>Right-click the image on the website and "Save Image As" (saves .webp)</li>
+  <li>Open <a href="/tools/webp-to-png">ToolsArena WebP to PNG Converter</a></li>
+  <li>Upload the .webp file and convert — lossless PNG in seconds</li>
+</ol>
+<h3>Method 2: Browser Developer Tools</h3>
+<ol>
+  <li>Right-click the image &rarr; "Inspect" or press F12</li>
+  <li>Find the image URL in the &lt;img src="..."&gt; tag</li>
+  <li>Open the URL directly — some sites serve PNG/JPG on direct access</li>
+</ol>
+<h3>Method 3: Chrome Extension</h3>
+<p>Extensions like "Save Image As PNG" force Chrome to save images in PNG format regardless of what the website serves.</p>
+<h3>Method 4: Screenshot + Crop</h3>
+<p>Take a screenshot (PNG by default on Windows/Mac), crop to the image area. Quick but lower resolution than the original.</p>`
       },
       {
         id: 'batch-convert',
@@ -12908,6 +12918,33 @@ $$</code></pre>
   <li><strong>App development:</strong> Many iOS/Android frameworks prefer PNG assets</li>
   <li><strong>Documents:</strong> PNG screenshots and graphics for presentations and reports</li>
 </ul>`
+      },
+      {
+        id: 'common-mistakes',
+        title: 'Common Mistakes When Converting JPG to PNG',
+        content: `<table>
+  <thead><tr><th>Mistake</th><th>Why It Happens</th><th>Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Expecting transparency after conversion</td><td>JPG has no alpha channel data</td><td>Use Background Remover tool after converting</td></tr>
+    <tr><td>Surprised by larger file size</td><td>PNG is lossless = larger files</td><td>This is normal. Use PNG for editing, JPG for final sharing.</td></tr>
+    <tr><td>Converting JPG &rarr; PNG &rarr; JPG repeatedly</td><td>Thinking it preserves quality</td><td>Each JPG save loses quality. Convert to PNG once, edit, then export final JPG.</td></tr>
+    <tr><td>Using PNG for web photos</td><td>File too large for web</td><td>Use JPG or WebP for web photos. PNG only for graphics/logos.</td></tr>
+  </tbody>
+</table>`
+      },
+      {
+        id: 'alternatives',
+        title: 'JPG to PNG vs Other Formats',
+        content: `<table>
+  <thead><tr><th>Convert To</th><th>When to Choose</th></tr></thead>
+  <tbody>
+    <tr><td><strong>PNG</strong></td><td>Editing, transparency needed, graphics with text, logos</td></tr>
+    <tr><td><strong>WebP</strong></td><td>Web use — smaller than PNG with transparency support</td></tr>
+    <tr><td><strong>SVG</strong></td><td>Vector graphics that scale to any size (logos, icons)</td></tr>
+    <tr><td><strong>TIFF</strong></td><td>Professional print and publishing</td></tr>
+  </tbody>
+</table>
+<p>For most users, JPG to PNG is the right choice when you need lossless editing or transparency. For web-optimized images, consider WebP instead.</p>`
       },
     ],
     howToSteps: [
@@ -13591,15 +13628,19 @@ $$</code></pre>
       {
         id: 'features',
         title: 'Features of ToolsArena CSV Viewer',
-        content: `<ul>
-  <li><strong>Instant rendering:</strong> Opens CSV files in milliseconds</li>
-  <li><strong>Large file support:</strong> Handles files with thousands of rows</li>
-  <li><strong>Column sorting:</strong> Click any column to sort A-Z, Z-A, or numerically</li>
-  <li><strong>Search:</strong> Full-text search across all columns</li>
-  <li><strong>Responsive:</strong> Works on mobile phones and tablets</li>
-  <li><strong>No Excel needed:</strong> View spreadsheet data without any software</li>
-  <li><strong>Auto-detect delimiters:</strong> Works with comma, tab, semicolon, and pipe-separated files</li>
-</ul>`
+        content: `<table>
+  <thead><tr><th>Feature</th><th>What It Does</th><th>Why It Matters</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Instant rendering</strong></td><td>Opens files in milliseconds</td><td>No waiting, even for large datasets</td></tr>
+    <tr><td><strong>Large file support</strong></td><td>Handles thousands of rows with virtual scrolling</td><td>Will not crash your browser like Google Sheets can</td></tr>
+    <tr><td><strong>Column sorting</strong></td><td>Click headers to sort A-Z, Z-A, or numerically</td><td>Find highest/lowest values instantly</td></tr>
+    <tr><td><strong>Full-text search</strong></td><td>Search across all columns simultaneously</td><td>Find specific records in seconds</td></tr>
+    <tr><td><strong>Column filtering</strong></td><td>Show only rows matching specific criteria</td><td>Focus on the data you need</td></tr>
+    <tr><td><strong>Responsive design</strong></td><td>Works on phones, tablets, desktops</td><td>View data anywhere without apps</td></tr>
+    <tr><td><strong>Auto-detect delimiters</strong></td><td>Handles comma, tab, semicolon, pipe</td><td>Works with any CSV variant automatically</td></tr>
+    <tr><td><strong>Privacy-first</strong></td><td>Processes entirely in browser</td><td>Sensitive data never leaves your device</td></tr>
+  </tbody>
+</table>`
       },
       {
         id: 'when-to-use',
