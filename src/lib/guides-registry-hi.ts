@@ -180,7 +180,8 @@ export const guidesHi: Guide[] = [
     readingTime: '9 मिनट पढ़ें',
     tags: ['Health', 'Weight', 'Fitness', 'BMI'],
     intro: `<p><strong>बीएमआई कैलकुलेटर</strong> (Body Mass Index) एक सरल तरीका है जिससे आप अपनी height के अनुसार सही वजन जाँच सकते हैं। यह tool डॉक्टरों और health experts द्वारा दुनियाभर में उपयोग किया जाता है।</p>
-<p>लेकिन एक ज़रूरी बात — भारतीयों के लिए BMI मानक WHO के global standards से थोड़े अलग हैं। ICMR के अनुसार, भारतीयों में 23 BMI से ऊपर भी overweight का खतरा हो सकता है। इस गाइड में हम यह सब विस्तार से समझेंगे।</p>`,
+<p>लेकिन एक ज़रूरी बात — भारतीयों के लिए BMI मानक WHO के global standards से थोड़े अलग हैं। ICMR के अनुसार, भारतीयों में 23 BMI से ऊपर भी overweight का खतरा हो सकता है। इस गाइड में हम यह सब विस्तार से समझेंगे।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>BMI एक screening tool है, यह medical diagnosis नहीं है। Athletes, बुज़ुर्गों और गर्भवती महिलाओं के लिए BMI सटीक नहीं होता। व्यक्तिगत स्वास्थ्य सलाह के लिए अपने डॉक्टर से मिलें।</p></div>`,
     sections: [
       {
         id: 'bmi-kya-hai',
@@ -1984,8 +1985,9 @@ export const guidesHi: Guide[] = [
     lastUpdated: '2026-03-13',
     readingTime: '9 मिनट पढ़ें',
     tags: ['SIP', 'Mutual Fund', 'Investment', 'India Finance'],
-    intro: `<p>SIP (Systematic Investment Plan) आज India में investment का सबसे popular तरीका बन गया है। हर महीने सिर्फ ₹500 से शुरू करके, SIP के ज़रिए आप करोड़पति बन सकते हैं — बशर्ते patience हो।</p>
-<p>यह guide आपको बताएगी: SIP कैसे काम करता है, ₹500/₹1000/₹5000 monthly SIP 10-30 साल में कितना बनेगा, SIP vs FD comparison, India के best SIP funds 2026, और Groww/Zerodha पर SIP कैसे शुरू करें।</p>`,
+    intro: `<p>SIP (Systematic Investment Plan) आज India में investment का सबसे popular तरीका बन गया है। हर महीने सिर्फ ₹500 से शुरू करके, SIP के ज़रिए आप long-term wealth बना सकते हैं — बशर्ते patience हो।</p>
+<p>यह guide आपको बताएगी: SIP कैसे काम करता है, ₹500/₹1000/₹5000 monthly SIP 10-30 साल में कितना बनेगा, SIP vs FD comparison, और SIP कैसे शुरू करें।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>Mutual fund investments बाज़ार जोखिमों के अधीन हैं। Past performance भविष्य के returns की guarantee नहीं देता। यह guide शैक्षिक उद्देश्य से है — किसी भी fund की विशिष्ट recommendation नहीं है। निवेश से पहले SEBI-registered investment adviser से सलाह लें।</p></div>`,
     sections: [
       {
         id: 'sip-kaise-kaam-karta-hai',
@@ -2112,7 +2114,8 @@ export const guidesHi: Guide[] = [
     readingTime: '10 मिनट पढ़ें',
     tags: ['Income Tax', 'ITR', 'India Finance', 'Salary'],
     intro: `<p>India में हर salaried employee को FY 2025-26 (April 2025 – March 2026) का Income Tax Return (ITR) July 31, 2026 तक file करना होगा। लेकिन उससे पहले एक important decision: <strong>New Tax Regime या Old Tax Regime?</strong></p>
-<p>यह choice गलत होने पर हज़ारों रुपए ज़्यादा tax देना पड़ सकता है। यह guide आपको दोनों regimes के slabs, deductions, और आपके salary के अनुसार कौन सा better है — यह सब simple Hindi में समझाएगी।</p>`,
+<p>यह choice गलत होने पर हज़ारों रुपए ज़्यादा tax देना पड़ सकता है। यह guide आपको दोनों regimes के slabs, deductions, और आपके salary के अनुसार कौन सा better है — यह सब simple Hindi में समझाएगी।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>यह calculator और guide केवल शैक्षिक उद्देश्य से है, professional tax advice नहीं है। Tax laws हर budget में बदलते हैं। सटीक filing के लिए किसी qualified Chartered Accountant या tax professional से सलाह लें।</p></div>`,
     sections: [
       {
         id: 'tax-slabs-hindi-2025-26',
@@ -5548,7 +5551,7 @@ End Sub</code></pre>
     lastUpdated: '2026-03-15',
     readingTime: '१० मिनट पढ़ें',
     tags: ['FD', 'Fixed Deposit', 'Banking', 'Investment'],
-    intro: `<p><strong>फिक्स्ड डिपॉज़िट (FD)</strong> भारत में सबसे लोकप्रिय और सुरक्षित निवेश विकल्पों में से एक है। बैंक या पोस्ट ऑफिस में एक निश्चित अवधि के लिए पैसा जमा करें और गारंटीड ब्याज पाएं — बाज़ार के उतार-चढ़ाव का कोई प्रभाव नहीं।</p>
+    intro: `<p><strong>फिक्स्ड डिपॉज़िट (FD)</strong> भारत में सबसे लोकप्रिय और सुरक्षित निवेश विकल्पों में से एक है। बैंक या पोस्ट ऑफिस में एक निश्चित अवधि के लिए पैसा जमा करें और निश्चित ब्याज पाएं — बाज़ार के उतार-चढ़ाव का कोई प्रभाव नहीं।</p>
 <p>लेकिन FD पर कितना ब्याज मिलेगा, maturity पर कितनी राशि होगी, और टैक्स कटने के बाद actual return क्या होगा — यह समझना ज़रूरी है। इस गाइड में हम <strong>FD कैलकुलेटर</strong> का उपयोग, प्रमुख बैंकों की ब्याज दरें, और स्मार्ट FD रणनीतियाँ विस्तार से जानेंगे।</p>`,
     sections: [
       {
@@ -5557,7 +5560,7 @@ End Sub</code></pre>
         content: `<p>FD एक बैंकिंग प्रोडक्ट है जिसमें आप एक तय राशि एक निश्चित अवधि (7 दिन से 10 साल) के लिए जमा करते हैं। बदले में बैंक आपको savings account से अधिक ब्याज देता है।</p>
 <h3>FD की मुख्य विशेषताएं</h3>
 <ul>
-  <li><strong>गारंटीड रिटर्न:</strong> ब्याज दर FD बुकिंग के समय fix हो जाती है — market crash का कोई असर नहीं</li>
+  <li><strong>निश्चित रिटर्न:</strong> ब्याज दर FD बुकिंग के समय fix हो जाती है — market crash का कोई असर नहीं (DICGC बीमा ₹5 लाख तक प्रति बैंक)</li>
   <li><strong>DICGC बीमा:</strong> ₹5 लाख तक की FD बीमित है (प्रति बैंक, प्रति जमाकर्ता)</li>
   <li><strong>लचीली अवधि:</strong> 7 दिन से 10 साल तक — अपनी ज़रूरत के हिसाब से चुनें</li>
   <li><strong>Loan facility:</strong> FD पर 90% तक loan मिल सकता है — emergency में काम आता है</li>
@@ -5721,7 +5724,8 @@ End Sub</code></pre>
     readingTime: '१२ मिनट पढ़ें',
     tags: ['Loan', 'EMI', 'Home Loan', 'Banking'],
     intro: `<p>घर खरीदना हो, गाड़ी लेनी हो, या किसी emergency में पैसों की ज़रूरत हो — <strong>लोन</strong> आज हर भारतीय की ज़िंदगी का हिस्सा है। लेकिन लोन लेने से पहले सबसे ज़रूरी सवाल है: <strong>मेरी EMI कितनी होगी?</strong></p>
-<p>इस गाइड में हम <strong>EMI formula</strong>, प्रमुख बैंकों की ब्याज दरें, Home Loan vs Personal Loan की तुलना, और smart prepayment strategies विस्तार से समझेंगे। ToolsArena का लोन कैलकुलेटर आपको सेकंडों में EMI, total interest, और amortization schedule दिखाता है।</p>`,
+<p>इस गाइड में हम <strong>EMI formula</strong>, प्रमुख बैंकों की ब्याज दरें, Home Loan vs Personal Loan की तुलना, और smart prepayment strategies विस्तार से समझेंगे। ToolsArena का लोन कैलकुलेटर आपको सेकंडों में EMI, total interest, और amortization schedule दिखाता है।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>यह guide शैक्षिक उद्देश्य से है। ब्याज दरें और loan terms बार-बार बदलते हैं। Loan लेने से पहले सीधे अपने बैंक से latest rates verify करें। यह professional financial advice नहीं है।</p></div>`,
     sections: [
       {
         id: 'emi-formula',
@@ -8285,7 +8289,8 @@ tags: [hindi, tutorial]
     readingTime: '10 मिनट पढ़ें',
     tags: ['Legal', 'Rent', 'Agreement', 'Property'],
     intro: `<p>भारत में <strong>रेंट एग्रीमेंट</strong> (किराया अनुबंध) बनाना मकान मालिक और किराएदार दोनों के लिए legally ज़रूरी है। सही agreement न होने पर disputes, eviction problems, और legal complications हो सकती हैं।</p>
-<p>इस गाइड में हम जानेंगे कि भारत में rent agreement कैसे बनाया जाता है, 11-month agreement क्यों popular है, state-wise stamp duty क्या है, और ToolsArena का फ्री Rent Agreement Generator आपके लिए legally sound agreement कैसे बनाता है।</p>`,
+<p>इस गाइड में हम जानेंगे कि भारत में rent agreement कैसे बनाया जाता है, 11-month agreement क्यों popular है, state-wise stamp duty क्या है, और ToolsArena का फ्री Rent Agreement Generator आपके लिए agreement draft कैसे बनाता है।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>यह guide सामान्य जानकारी के लिए है, कानूनी सलाह नहीं है। Rent agreement विवादों या जटिल स्थितियों में किसी योग्य वकील से परामर्श लें। कानून राज्य-अनुसार भिन्न होते हैं।</p></div>`,
     sections: [
       {
         id: 'rent-agreement-kyon-zaroori',

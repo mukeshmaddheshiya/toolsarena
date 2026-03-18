@@ -71,7 +71,8 @@ export const guidesNe: Guide[] = [
     lastUpdated: '2026-03-12',
     readingTime: '८ मिनेट पढ्ने',
     tags: ['स्वास्थ्य', 'BMI', 'वजन', 'फिटनेस'],
-    intro: `<p><strong>बीएमआई क्याल्कुलेटर</strong> ले तपाईंको वजन र उचाईको आधारमा बताउँछ कि तपाईं स्वस्थ वजनमा हुनुहुन्छ कि हुनुहुन्न। नेपालमा जीवनशैलीसँग सम्बन्धित रोगहरू (मधुमेह, उच्च रक्तचाप) बढ्दो छन् — आफ्नो <strong>BMI</strong> जान्नु महत्वपूर्ण छ।</p><p>एसियाली मानिसहरूका लागि WHO ले 23+ BMI लाई अधिक वजन मान्छ (पश्चिमी 25+ को सट्टा)।</p>`,
+    intro: `<p><strong>बीएमआई क्याल्कुलेटर</strong> ले तपाईंको वजन र उचाईको आधारमा बताउँछ कि तपाईं स्वस्थ वजनमा हुनुहुन्छ कि हुनुहुन्न। नेपालमा जीवनशैलीसँग सम्बन्धित रोगहरू (मधुमेह, उच्च रक्तचाप) बढ्दो छन् — आफ्नो <strong>BMI</strong> जान्नु महत्वपूर्ण छ।</p><p>एसियाली मानिसहरूका लागि WHO ले 23+ BMI लाई अधिक वजन मान्छ (पश्चिमी 25+ को सट्टा)।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>BMI screening tool मात्र हो, medical diagnosis होइन। Athletes, वृद्ध, र गर्भवती महिलाहरूका लागि BMI सटीक नहुन सक्छ। व्यक्तिगत स्वास्थ्य सल्लाहका लागि डाक्टरसँग परामर्श गर्नुहोस्।</p></div>`,
     sections: [
       {
         id: 'bmi-ke-ho',
@@ -789,7 +790,8 @@ export const guidesNe: Guide[] = [
     readingTime: '८ मिनेट पढ्नुहोस्',
     tags: ['SIP', 'Mutual Fund', 'NepSE', 'Nepal Finance'],
     intro: `<p>नेपालमा mutual fund र SIP को popularity बढ्दैछ। पहिले मानिसहरू bank FD र NepSE stocks मा मात्र invest गर्थे — अब SEBON registered mutual funds मार्फत SIP सुरु गर्न सकिन्छ। Rs 1,000/month बाट सुरु गर्न सकिन्छ।</p>
-<p>यस गाइडमा: नेपालमा SIP कसरी काम गर्छ, best Nepal mutual funds 2026, NepSE vs SIP comparison, र Mero Share बाट कसरी invest गर्ने।</p>`,
+<p>यस गाइडमा: नेपालमा SIP कसरी काम गर्छ, NepSE vs SIP comparison, र Mero Share बाट कसरी invest गर्ने।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>Mutual fund लगानी बजार जोखिममा आधारित छ। गत performance भविष्यको guarantee होइन। कुनै specific fund को recommendation छैन। लगानी गर्नु अघि SEBON registered financial adviser सँग सल्लाह गर्नुहोस्।</p></div>`,
     sections: [
       {
         id: 'sip-nepal-how-works',
@@ -859,7 +861,7 @@ export const guidesNe: Guide[] = [
 <h3>NRN (Non-Resident Nepali) Investment Options</h3>
 <ul>
   <li><strong>NRN Demat Account</strong> — CDSC मार्फत NepSE मा invest गर्न सकिन्छ</li>
-  <li><strong>Fixed Deposits</strong> — Nepal banks मा 8-9% interest</li>
+  <li><strong>Fixed Deposits</strong> — Nepal banks मा fixed interest (दरहरू बैंक अनुसार फरक हुन्छन्)</li>
   <li><strong>Mutual Funds</strong> — SEBON registered funds मा invest</li>
   <li><strong>Real Estate</strong> — काठमाडौं/पोखरा मा property</li>
 </ul>
@@ -910,7 +912,8 @@ export const guidesNe: Guide[] = [
     readingTime: '९ मिनेट पढ्नुहोस्',
     tags: ['Tax', 'Nepal Finance', 'Salary', 'IRD'],
     intro: `<p>नेपालमा हरेक salaried employee लाई Inland Revenue Department (IRD) मा income tax तिर्नु र return file गर्नु अनिवार्य छ। FY 2081/82 (BS) को tax slabs, SSF (Social Security Fund) contribution, र tax-free allowances बुझ्नु आवश्यक छ।</p>
-<p>यस गाइडमा: नेपालको tax slabs, couple vs single filing benefit, SSF/PF deductions, tax-exempt allowances, र IRD online filing process।</p>`,
+<p>यस गाइडमा: नेपालको tax slabs, couple vs single filing benefit, SSF/PF deductions, tax-exempt allowances, र IRD online filing process।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>यो calculator र guide शैक्षिक उद्देश्यका लागि मात्र हो, professional tax advice होइन। कर नियमहरू budget अनुसार बदलिन्छन्। सटीक filing का लागि IRD वा योग्य tax consultant सँग सल्लाह गर्नुहोस्।</p></div>`,
     sections: [
       {
         id: 'nepal-tax-slabs-2081-82',
@@ -2997,13 +3000,14 @@ End Sub</code></pre>
     title: 'ऋण क्यालकुलेटर: नेपालमा EMI र ब्याज गणना गर्ने गाइड (2026)',
     subtitle: 'Home loan, personal loan र vehicle loan को EMI, कुल ब्याज र नेपालका बैंकहरूको ब्याज दर तुलना।',
     metaTitle: 'ऋण क्यालकुलेटर नेपाल — EMI र Loan ब्याज गणना',
-    metaDescription: 'नेपालमा home loan, personal loan EMI गणना गर्नुहोस्। Nabil, NIC Asia, Prabhu Bank ब्याज दर तुलना। NRB base rate, EMI formula र loan tips।',
+    metaDescription: 'नेपालमा home loan, personal loan EMI गणना गर्नुहोस्। बैंक ब्याज दर तुलना। NRB base rate, EMI formula र loan tips।',
     targetKeyword: 'ऋण क्यालकुलेटर',
     secondaryKeywords: ['EMI calculator nepal', 'home loan nepal', 'loan ब्याज दर', 'NRB base rate', 'personal loan EMI', 'vehicle loan nepal', 'loan comparison nepal', 'बैंक ऋण नेपाल', 'घर कर्जा EMI', 'Nabil loan rate'],
     lastUpdated: '2026-03-15',
     readingTime: '९ मिनेट पढ्ने',
     tags: ['ऋण', 'EMI', 'बैंकिङ', 'नेपाल'],
-    intro: `<p>नेपालमा <strong>घर किन्ने</strong>, गाडी किन्ने वा व्यापार सुरु गर्ने सपना पूरा गर्न बैंक ऋण (loan) अपरिहार्य छ। तर कति EMI तिर्नुपर्छ? कुल कति ब्याज जान्छ? कुन बैंकको दर सस्तो छ?</p><p>हाम्रो <strong>ऋण क्यालकुलेटर</strong> ले यी सबै प्रश्नको तुरुन्तै जवाफ दिन्छ। NRB को base rate, विभिन्न बैंकका ब्याज दर, र EMI formula बारे यो गाइडमा सिक्नुहोस्।</p>`,
+    intro: `<p>नेपालमा <strong>घर किन्ने</strong>, गाडी किन्ने वा व्यापार सुरु गर्ने सपना पूरा गर्न बैंक ऋण (loan) अपरिहार्य छ। तर कति EMI तिर्नुपर्छ? कुल कति ब्याज जान्छ? कुन बैंकको दर सस्तो छ?</p><p>हाम्रो <strong>ऋण क्यालकुलेटर</strong> ले यी सबै प्रश्नको तुरुन्तै जवाफ दिन्छ। NRB को base rate, विभिन्न बैंकका ब्याज दर, र EMI formula बारे यो गाइडमा सिक्नुहोस्।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>EMI गणना अनुमानित छ। ब्याज दर र loan terms बार-बार बदलिन्छन्। ऋण लिनु अघि बैंकको शाखामा latest rate र शर्तहरू पुष्टि गर्नुहोस्। यो professional financial advice होइन।</p></div>`,
     sections: [
       {
         id: 'loan-types-nepal',
@@ -3012,8 +3016,8 @@ End Sub</code></pre>
       },
       {
         id: 'nepal-bank-loan-rates',
-        title: 'नेपालका प्रमुख बैंकहरूको Home Loan ब्याज दर (2026)',
-        content: `<table><tr><th>बैंक</th><th>Base Rate</th><th>Home Loan Rate</th><th>Max अवधि</th></tr><tr><td>Nabil Bank</td><td>७.२%</td><td>९.२% — १०.५%</td><td>२५ वर्ष</td></tr><tr><td>NIC Asia Bank</td><td>७.५%</td><td>९.५% — ११.०%</td><td>२० वर्ष</td></tr><tr><td>Prabhu Bank</td><td>७.८%</td><td>९.८% — १०.८%</td><td>२० वर्ष</td></tr><tr><td>Global IME Bank</td><td>७.३%</td><td>९.३% — १०.३%</td><td>२५ वर्ष</td></tr><tr><td>Sanima Bank</td><td>७.０%</td><td>९.０% — १०.２%</td><td>२० वर्ष</td></tr><tr><td>Agriculture Dev Bank</td><td>८.५%</td><td>१०.५% — ११.५%</td><td>१५ वर्ष</td></tr></table><div class="callout-warning">⚠️ <strong>Floating Rate:</strong> नेपालमा home loan मा floating rate लागू हुन्छ — NRB को नीति अनुसार ब्याज दर बढ्न/घट्न सक्छ।</div>`,
+        title: 'नेपालमा Loan ब्याज दर कसरी तुलना गर्ने',
+        content: `<p>ऋण लिनु अघि कम्तिमा ३-४ बैंकमा enquiry गर्नुहोस्। ब्याज दर बैंक प्रकार अनुसार फरक हुन्छ:</p><table><tr><th>बैंक प्रकार</th><th>Base Rate Range</th><th>Home Loan Range</th><th>Max अवधि</th></tr><tr><td>वाणिज्य बैंक (Class A)</td><td>७% — ९%</td><td>९% — ११%</td><td>२० — २५ वर्ष</td></tr><tr><td>विकास बैंक (Class B)</td><td>८% — १०%</td><td>१०% — १२%</td><td>१५ — २० वर्ष</td></tr><tr><td>वित्त कम्पनी (Class C)</td><td>९% — ११%</td><td>११% — १३%</td><td>१० — १५ वर्ष</td></tr></table><div class="callout-warning">⚠️ <strong>Floating Rate:</strong> नेपालमा home loan मा floating rate लागू हुन्छ — NRB को मौद्रिक नीति अनुसार ब्याज दर बढ्न/घट्न सक्छ। ऋण लिनु अघि बैंकको शाखामा latest rate पुष्टि गर्नुहोस्। हामी कुनै specific बैंकको recommendation गर्दैनौं।</div>`,
       },
       {
         id: 'emi-formula',
@@ -3061,7 +3065,8 @@ End Sub</code></pre>
     lastUpdated: '2026-03-15',
     readingTime: '१० मिनेट पढ्ने',
     tags: ['तलब', 'कर', 'SSF', 'नेपाल'],
-    intro: `<p>नेपालमा काम गर्ने हरेक कर्मचारीको प्रश्न हुन्छ — <strong>"मेरो हातमा कति तलब आउँछ?"</strong> Gross salary बाट SSF (Social Security Fund), आयकर, PF कटिन्छ — अन्तिम रकम कति हुन्छ?</p><p>यो गाइडले नेपालको <strong>SSF योगदान</strong>, <strong>आयकर स्ल्याब 2082/83</strong>, PF, Gratuity, दशैं बोनस र हातमा आउने <strong>net salary</strong> बारे विस्तृत जानकारी दिन्छ। हाम्रो <strong>तलब क्यालकुलेटर</strong> ले सबै कटौती सहित तुरुन्तै गणना गर्छ।</p>`,
+    intro: `<p>नेपालमा काम गर्ने हरेक कर्मचारीको प्रश्न हुन्छ — <strong>"मेरो हातमा कति तलब आउँछ?"</strong> Gross salary बाट SSF (Social Security Fund), आयकर, PF कटिन्छ — अन्तिम रकम कति हुन्छ?</p><p>यो गाइडले नेपालको <strong>SSF योगदान</strong>, <strong>आयकर स्ल्याब 2082/83</strong>, PF, Gratuity, दशैं बोनस र हातमा आउने <strong>net salary</strong> बारे विस्तृत जानकारी दिन्छ। हाम्रो <strong>तलब क्यालकुलेटर</strong> ले सबै कटौती सहित तुरुन्तै गणना गर्छ।</p>
+<div class="callout-info"><strong>अस्वीकरण:</strong><p>तलब गणना अनुमानित छ। SSF दर, कर स्ल्याब र नियमहरू सरकारले बदल्न सक्छ। सटीक तलब जानकारीका लागि आफ्नो HR विभाग वा कर सल्लाहकारसँग सम्पर्क गर्नुहोस्।</p></div>`,
     sections: [
       {
         id: 'salary-structure-nepal',
