@@ -10991,4 +10991,214 @@ tags: [hindi, tutorial]
       buttonText: 'Countdown Timer खोलें →',
     },
   },
+
+  // ── HEIC TO JPG GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'heic-to-jpg-guide', toolSlug: 'heic-to-jpg', category: 'converters', title: 'HEIC को JPG में Convert करें — Free Online Guide (2026)', subtitle: 'iPhone HEIC photos को JPG में convert — Windows, Android पर खोलें।', metaTitle: 'HEIC को JPG में Convert करें Free — iPhone Photo Guide (2026)', metaDescription: 'iPhone HEIC photos को JPG में free convert करें। Windows, Android पर खोलें। कोई upload नहीं।', targetKeyword: 'heic to jpg convert kaise kare', secondaryKeywords: ['heic to jpg converter', 'iphone photo to jpg', 'heic file kya hai', 'heic to jpg online', 'windows me heic kaise khole'], lastUpdated: '2026-03-18', readingTime: '8 min read', tags: ['Image', 'Converter', 'iPhone', 'HEIC', 'Free Tools'],
+    intro: `<p>iPhone से photo Windows PC पर भेजी और नहीं खुल रही? iPhone <strong>HEIC format</strong> में photos save करता है — जो Windows, Android और ज़्यादातर websites पर नहीं खुलता। <strong>HEIC को JPG में convert</strong> करना सबसे common iPhone photo problem का solution है।</p>
+<p>इस guide में HEIC क्या है, JPG में कैसे convert करें, batch conversion, और iPhone को JPG में save करना सिखाया गया है।</p>`,
+    sections: [
+      { id: 'what-is', title: 'HEIC क्या है?', content: `<p>HEIC Apple का default photo format है (iOS 11+)। JPG से 50% छोटी file, same quality। लेकिन Windows/Android पर support नहीं।</p><table><thead><tr><th>Feature</th><th>HEIC</th><th>JPG</th></tr></thead><tbody><tr><td>File Size</td><td>50% छोटी</td><td>Standard</td></tr><tr><td>Windows</td><td>❌ Codec चाहिए</td><td>✅ Everywhere</td></tr><tr><td>Android</td><td>❌ Limited</td><td>✅ Full support</td></tr><tr><td>Web Upload</td><td>❌ Rejected</td><td>✅ Accepted</td></tr></tbody></table>` },
+      { id: 'how-to', title: 'HEIC को JPG कैसे Convert करें', content: `<ol><li><a href="/tools/heic-to-jpg">ToolsArena HEIC to JPG</a> खोलें</li><li>HEIC file upload करें</li><li>Quality 90% set करें</li><li>Convert click → JPG download</li></ol><p>Privacy: Browser में process — server पर upload नहीं।</p>` },
+      { id: 'iphone-settings', title: 'iPhone को JPG में Save कैसे करें', content: `<ol><li>Settings खोलें</li><li>Camera tap करें</li><li>Formats tap करें</li><li>"Most Compatible" select करें</li></ol><p>अब photos JPG में save होंगी। Trade-off: 2x बड़ी files।</p>` },
+      { id: 'devices', title: 'हर Device पर Convert करें', content: `<ul><li><strong>Windows:</strong> ToolsArena online converter (कोई install नहीं)</li><li><strong>Android:</strong> Chrome में ToolsArena खोलें</li><li><strong>Mac:</strong> Preview → File → Export → JPEG</li></ul>` },
+    ],
+    howToSteps: [
+      { title: 'HEIC to JPG Converter खोलें', description: 'ToolsArena पर — free, no signup।' },
+      { title: 'HEIC photo upload करें', description: 'iPhone .heic file drop करें।' },
+      { title: 'Convert करें', description: '90% quality, Convert click।' },
+      { title: 'JPG download करें', description: 'हर device पर compatible JPG save करें।' },
+    ],
+    faqs: [
+      { question: 'HEIC file क्या है?', answer: 'Apple का photo format — JPG से 50% छोटी file, लेकिन Windows/Android पर नहीं खुलती।' },
+      { question: 'Windows पर HEIC कैसे खोलें?', answer: 'ToolsArena से JPG convert करें, या Microsoft Store से HEVC codec install करें।' },
+      { question: 'Free में convert कैसे करें?', answer: 'ToolsArena HEIC to JPG — upload, convert, download। Free, no signup।' },
+      { question: 'Quality कम होती है?', answer: '90% पर visible difference नहीं। JPG file 2x बड़ी होगी।' },
+      { question: 'iPhone settings बदलें?', answer: 'Settings → Camera → Formats → "Most Compatible"।' },
+      { question: 'Batch conversion?', answer: 'हाँ — multiple HEIC select, convert, ZIP download।' },
+      { question: 'Safe है?', answer: 'Browser में process — server पर कुछ नहीं जाता।' },
+      { question: 'Android पर?', answer: 'Chrome खोलें → ToolsArena → upload → convert।' },
+    ],
+    relatedGuides: ['png-to-jpg-guide', 'image-compressor-guide', 'image-resizer-guide'],
+    toolCTA: { heading: 'HEIC को JPG करें — Free, Instant!', description: 'iPhone photos हर device पर खोलें।', buttonText: 'HEIC to JPG Converter खोलें →' },
+  },
+
+  // ── WEBP TO PNG GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'webp-to-png-guide', toolSlug: 'webp-to-png', category: 'converters', title: 'WebP को PNG में Convert करें — Free Guide (2026)', subtitle: 'WebP images को PNG में convert — editing, transparency, compatibility के लिए।', metaTitle: 'WebP को PNG में Convert — Free Hindi Guide (2026)', metaDescription: 'WebP को PNG में free convert। Transparency बचाएं, किसी भी editor में खोलें।', targetKeyword: 'webp to png convert', secondaryKeywords: ['webp to png converter', 'webp to png online', 'webp kya hai', 'webp to png free'], lastUpdated: '2026-03-18', readingTime: '6 min read', tags: ['Image', 'Converter', 'WebP', 'PNG', 'Free Tools'],
+    intro: `<p>Website से image download की और <strong>.webp</strong> format में save हुई? WebP Google का format है — Photoshop और कई editors में directly नहीं खुलता। PNG में convert करना आसान solution है।</p>`,
+    sections: [
+      { id: 'what', title: 'WebP क्या है?', content: `<p>Google का image format — PNG से 26% छोटी file। Websites fast loading के लिए use करती हैं। लेकिन Photoshop, Canva (older), print services में support limited।</p>` },
+      { id: 'how', title: 'कैसे Convert करें', content: `<ol><li><a href="/tools/webp-to-png">WebP to PNG Converter</a> खोलें</li><li>WebP upload</li><li>Convert — lossless, instant</li><li>PNG download — transparency preserved</li></ol>` },
+      { id: 'when', title: 'कब WebP, कब PNG?', content: `<ul><li>Website images: WebP (छोटी file)</li><li>Editing: PNG (universal editor support)</li><li>Print: PNG (WebP accept नहीं होती)</li><li>Logos: PNG for distribution</li></ul>` },
+    ],
+    howToSteps: [ { title: 'Converter खोलें', description: 'ToolsArena WebP to PNG — free।' }, { title: 'WebP upload', description: '.webp file drop करें।' }, { title: 'Convert', description: 'Lossless conversion, transparency preserved।' }, { title: 'PNG download', description: 'किसी भी editor में खोलें।' } ],
+    faqs: [
+      { question: 'WebP क्या है?', answer: 'Google का image format — websites fast loading के लिए use करती हैं।' },
+      { question: 'Quality कम होती है?', answer: 'नहीं — lossless conversion। हर pixel same रहता है।' },
+      { question: 'Transparency बचती है?', answer: 'हाँ — PNG transparency support करता है।' },
+      { question: 'Photoshop में WebP?', answer: 'Photoshop 23.2+ support करता है। पुराने version में PNG convert करें।' },
+      { question: 'Safe है?', answer: 'Browser में process। Server पर upload नहीं।' },
+    ],
+    relatedGuides: ['png-to-jpg-guide', 'svg-to-png-guide', 'image-compressor-guide'],
+    toolCTA: { heading: 'WebP को PNG करें — Free!', description: 'Lossless, instant, transparency preserved।', buttonText: 'WebP to PNG Converter खोलें →' },
+  },
+
+  // ── JPG TO PNG GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'jpg-to-png-guide', toolSlug: 'jpg-to-png', category: 'converters', title: 'JPG को PNG में Convert करें — Free Guide (2026)', subtitle: 'JPG को PNG में convert — transparency, lossless editing के लिए।', metaTitle: 'JPG को PNG में Convert — Free Hindi Guide (2026)', metaDescription: 'JPG को PNG में free convert। Lossless editing, transparency support।', targetKeyword: 'jpg to png convert', secondaryKeywords: ['jpg to png converter', 'jpg to png online', 'jpg to png transparent', 'jpeg to png free'], lastUpdated: '2026-03-18', readingTime: '6 min read', tags: ['Image', 'Converter', 'JPG', 'PNG', 'Free Tools'],
+    intro: `<p><strong>JPG को PNG में convert</strong> करना चाहते हैं? Transparent background चाहिए, re-editing में quality loss रोकना है, या platform PNG माँग रहा है — यह guide सब cover करती है।</p>`,
+    sections: [
+      { id: 'why', title: 'JPG को PNG में क्यों?', content: `<ul><li><strong>Lossless editing:</strong> PNG re-save पर quality नहीं खोता</li><li><strong>Transparency:</strong> PNG alpha channel support करता है</li><li><strong>Sharp text:</strong> PNG में text crisp रहता है</li></ul><p><strong>Important:</strong> JPG to PNG convert करने से transparent background नहीं बनता। Background remove करने के लिए <a href="/tools/image-background-remover">Background Remover</a> use करें।</p>` },
+      { id: 'how', title: 'कैसे Convert करें', content: `<ol><li><a href="/tools/jpg-to-png">JPG to PNG Converter</a> खोलें</li><li>JPG upload</li><li>Convert click — instant</li><li>PNG download</li></ol><p>PNG file JPG से 2-5x बड़ी होगी — यह normal है।</p>` },
+      { id: 'transparent', title: 'Transparent Background कैसे बनाएं', content: `<ol><li>JPG to PNG convert करें</li><li><a href="/tools/image-background-remover">Background Remover</a> use करें</li><li>Transparent PNG download करें</li></ol>` },
+    ],
+    howToSteps: [ { title: 'Converter खोलें', description: 'ToolsArena JPG to PNG — free।' }, { title: 'JPG upload', description: '.jpg file drop।' }, { title: 'Convert', description: 'Instant, lossless।' }, { title: 'PNG download', description: 'Editing-ready PNG।' } ],
+    faqs: [
+      { question: 'JPG to PNG से quality बढ़ती है?', answer: 'नहीं — लेकिन re-editing में और quality loss नहीं होता।' },
+      { question: 'Transparent background बनता है?', answer: 'Convert करने से नहीं। Background Remover tool अलग से use करें।' },
+      { question: 'PNG बड़ी क्यों है?', answer: 'PNG lossless compression use करता है — quality better, file bigger।' },
+      { question: 'JPG vs JPEG?', answer: 'Same format — JPG 3-letter extension, JPEG full name।' },
+      { question: 'Safe है?', answer: 'Browser में process। Upload नहीं होता।' },
+    ],
+    relatedGuides: ['png-to-jpg-guide', 'image-background-remover-guide', 'image-compressor-guide'],
+    toolCTA: { heading: 'JPG को PNG करें — Free!', description: 'Lossless conversion, editing-ready।', buttonText: 'JPG to PNG Converter खोलें →' },
+  },
+
+  // ── IMAGE UPSCALER GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'image-upscaler-guide', toolSlug: 'image-upscaler', category: 'image-tools', title: 'AI Image Upscaler — Low-Res Photos को Enhance करें (2026)', subtitle: 'AI से blurry photos enhance — 2x या 4x resolution बढ़ाएं। Free, browser-based।', metaTitle: 'AI Image Upscaler Free — Blurry Photos Enhance Hindi (2026)', metaDescription: 'AI से images 2x-4x upscale करें। Blurry photos enhance, resolution बढ़ाएं। Free, no signup।', targetKeyword: 'image upscaler online free', secondaryKeywords: ['ai image upscaler', 'photo enhance kaise kare', 'image resolution badhaye', 'blurry photo fix', 'image enlarge online'], lastUpdated: '2026-03-18', readingTime: '7 min read', tags: ['Image', 'AI', 'Upscaler', 'Free Tools'],
+    intro: `<p><strong>Low-resolution photo</strong> को बड़ा करना है बिना blur के? AI image upscaling neural networks से intelligently detail add करता है — 500px photo को crisp 2000px बना देता है।</p>`,
+    sections: [
+      { id: 'how-ai', title: 'AI Upscaling कैसे काम करता है?', content: `<p>Traditional resize सिर्फ pixels stretch करता है — blurry। AI upscaler millions of images पर trained है — realistic detail generate करता है।</p><table><thead><tr><th>Scale</th><th>Input</th><th>Output</th><th>Best For</th></tr></thead><tbody><tr><td>2x</td><td>500×500</td><td>1000×1000</td><td>Social media, web</td></tr><tr><td>4x</td><td>500×500</td><td>2000×2000</td><td>Print, posters</td></tr></tbody></table>` },
+      { id: 'how', title: 'कैसे Upscale करें', content: `<ol><li><a href="/tools/image-upscaler">AI Image Upscaler</a> खोलें</li><li>Image upload</li><li>2x या 4x choose</li><li>Upscale click → download</li></ol>` },
+      { id: 'tips', title: 'Best Results Tips', content: `<ul><li>Best quality source use करें</li><li>2x ज़्यादा reliable — 4x faces पर best</li><li>WhatsApp compressed photos भी improve होती हैं</li><li>Print: 300 DPI चाहिए — 4x upscale करें</li></ul>` },
+      { id: 'uses', title: 'Use Cases', content: `<ul><li>पुरानी family photos restore</li><li>WhatsApp photos quality improve</li><li>E-commerce product photos enlarge</li><li>Social media profile pictures</li><li>Print posters बनाएं</li></ul>` },
+    ],
+    howToSteps: [ { title: 'Upscaler खोलें', description: 'ToolsArena AI Upscaler — free।' }, { title: 'Image upload', description: 'Low-res photo drop।' }, { title: '2x/4x choose', description: 'Web: 2x, Print: 4x।' }, { title: 'Download', description: 'Enhanced image save।' } ],
+    faqs: [
+      { question: 'AI upscaling काम करती है?', answer: 'हाँ — especially faces और simple scenes पर dramatic improvement।' },
+      { question: 'Blurry photo fix होगी?', answer: 'Significantly improve होगी। बहुत low-res (100px से कम) पर limited improvement।' },
+      { question: '2x vs 4x?', answer: '2x safe और reliable। 4x faces पर best।' },
+      { question: 'Free है?', answer: 'हाँ — unlimited, no signup।' },
+      { question: 'Safe है?', answer: 'Browser में process। Upload नहीं।' },
+    ],
+    relatedGuides: ['image-resizer-guide', 'image-compressor-guide', 'image-background-remover-guide'],
+    toolCTA: { heading: 'AI से Photos Enhance करें — Free!', description: '2x/4x upscale, blurry photos fix।', buttonText: 'Image Upscaler खोलें →' },
+  },
+
+  // ── AUDIO CUTTER GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'audio-cutter-guide', toolSlug: 'audio-cutter', category: 'utility-tools', title: 'Audio Cut कैसे करें — Free Online Audio Trimmer (2026)', subtitle: 'Audio files cut, trim करें — ringtone बनाएं, podcast trim करें। Free, browser-based।', metaTitle: 'Audio Cutter Online Free — MP3 Cut, Ringtone Maker Hindi (2026)', metaDescription: 'Audio files free cut करें — MP3 trim, ringtone बनाएं। कोई app नहीं।', targetKeyword: 'audio cutter online free', secondaryKeywords: ['mp3 cutter', 'audio trimmer', 'ringtone maker', 'song cut online', 'mp3 trim kaise kare'], lastUpdated: '2026-03-18', readingTime: '6 min read', tags: ['Audio', 'Cutter', 'Ringtone', 'Free Tools'],
+    intro: `<p><strong>Audio file cut</strong> करना है? Favorite song से ringtone बनानी है, podcast trim करना है, या voice recording का best part extract करना है — ToolsArena का audio cutter browser में काम करता है।</p>`,
+    sections: [
+      { id: 'how', title: 'Audio कैसे Cut करें', content: `<ol><li><a href="/tools/audio-cutter">Audio Cutter</a> खोलें</li><li>Audio file upload (MP3, WAV, M4A)</li><li>Waveform पर start-end select</li><li>Preview सुनें</li><li>Cut click → download</li></ol>` },
+      { id: 'ringtone', title: 'Ringtone कैसे बनाएं', content: `<h3>Android</h3><p>Song upload → 30-60 sec select → MP3 export → Settings → Sound → Ringtone</p><h3>iPhone</h3><p>Song upload → 30 sec select → M4A export → iTunes से transfer</p>` },
+      { id: 'uses', title: 'Use Cases', content: `<ul><li>Ringtone बनाना</li><li>Podcast trim</li><li>Instagram/TikTok audio clip</li><li>Notification sound (2-5 sec)</li><li>Voice recording edit</li></ul>` },
+    ],
+    howToSteps: [ { title: 'Audio Cutter खोलें', description: 'Free, no app।' }, { title: 'Audio upload', description: 'MP3, WAV, M4A drop।' }, { title: 'Select portion', description: 'Waveform पर start-end set।' }, { title: 'Download', description: 'Trimmed audio save।' } ],
+    faqs: [
+      { question: 'MP3 free में cut कैसे करें?', answer: 'ToolsArena Audio Cutter — upload, select, cut, download। Free, no signup।' },
+      { question: 'Ringtone कैसे बनाएं?', answer: 'Song upload → 30 sec select → MP3 (Android) या M4A (iPhone) export।' },
+      { question: 'कौन से formats?', answer: 'MP3, WAV, OGG, M4A, FLAC।' },
+      { question: 'Server पर upload?', answer: 'नहीं — browser में process।' },
+      { question: 'Fade in/out?', answer: 'हाँ — smooth transitions के लिए fade options।' },
+    ],
+    relatedGuides: ['mp4-to-mp3-guide', 'video-compressor-guide'],
+    toolCTA: { heading: 'Audio Cut करें — Free, Instant!', description: 'MP3 trim, ringtone बनाएं।', buttonText: 'Audio Cutter खोलें →' },
+  },
+
+  // ── PARAPHRASING TOOL GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'paraphrasing-tool-guide', toolSlug: 'paraphrasing-tool', category: 'text-tools', title: 'Paraphrasing Tool — Text Rewrite करें Free (2026)', subtitle: 'Text को अपने शब्दों में rewrite — plagiarism avoid, clarity improve। Free, instant।', metaTitle: 'Free Paraphrasing Tool Online — Text Rewrite Hindi (2026)', metaDescription: 'Text free rewrite करें — plagiarism avoid, tone change। Students, writers के लिए।', targetKeyword: 'paraphrasing tool online free', secondaryKeywords: ['text rewriter', 'paraphrase kaise kare', 'plagiarism avoid tool', 'sentence rephraser', 'article rewriter hindi'], lastUpdated: '2026-03-18', readingTime: '7 min read', tags: ['Text', 'Paraphrase', 'Writing', 'Students', 'Free Tools'],
+    intro: `<p><strong>Text को different words में rewrite</strong> करना है बिना meaning बदले? Students plagiarism avoid करने, writers clarity improve करने, और professionals emails polish करने के लिए paraphrasing tool use करते हैं।</p>`,
+    sections: [
+      { id: 'what', title: 'Paraphrasing क्या है?', content: `<p>दूसरे के ideas अपने शब्दों में लिखना — meaning same रखते हुए। Quoting (exact words), Summarizing (shorter), Paraphrasing (different words, same meaning)।</p>` },
+      { id: 'how', title: 'कैसे Paraphrase करें', content: `<ol><li><a href="/tools/paraphrasing-tool">Paraphrasing Tool</a> खोलें</li><li>Text paste करें</li><li>Mode choose (Standard/Academic/Creative)</li><li>Paraphrase click</li><li>Review और copy</li></ol>` },
+      { id: 'modes', title: 'Modes समझें', content: `<table><thead><tr><th>Mode</th><th>Best For</th></tr></thead><tbody><tr><td>Standard</td><td>General use, emails</td></tr><tr><td>Fluency</td><td>Non-native speakers</td></tr><tr><td>Creative</td><td>Blog, social media</td></tr><tr><td>Academic</td><td>Research papers, essays</td></tr></tbody></table>` },
+      { id: 'academic', title: 'Academic Integrity', content: `<p>Paraphrased text भी cite करना ज़रूरी है। Tool को learning aid की तरह use करें, चोरी नहीं।</p>` },
+    ],
+    howToSteps: [ { title: 'Tool खोलें', description: 'ToolsArena Paraphrasing Tool — free।' }, { title: 'Text paste', description: 'Rewrite करना है वो text enter।' }, { title: 'Mode choose, paraphrase', description: 'Standard/Academic/Creative।' }, { title: 'Review और copy', description: 'Output check करें, copy करें।' } ],
+    faqs: [
+      { question: 'Paraphrasing plagiarism है?', answer: 'Citation के साथ नहीं। बिना citation = plagiarism।' },
+      { question: 'Free में कैसे?', answer: 'ToolsArena — paste, paraphrase, copy। Free, no signup।' },
+      { question: 'कौन सा mode best?', answer: 'Standard general use। Academic research papers। Creative marketing।' },
+      { question: 'Safe है?', answer: 'Browser में process। Text store नहीं होता।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'ats-resume-checker-guide'],
+    toolCTA: { heading: 'Text Rewrite करें — Free, Instant!', description: 'Plagiarism avoid, clarity improve।', buttonText: 'Paraphrasing Tool खोलें →' },
+  },
+
+  // ── PDF SIGN GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'pdf-sign-guide', toolSlug: 'pdf-sign', category: 'pdf-tools', title: 'PDF पर Sign कैसे करें — Free eSignature Guide (2026)', subtitle: 'PDF पर signature add — draw, type, या upload। Free, बिना print।', metaTitle: 'PDF Sign Free Online — eSignature Hindi Guide (2026)', metaDescription: 'PDF पर free sign करें — draw, type, upload signature। Print नहीं, Adobe नहीं।', targetKeyword: 'pdf par sign kaise kare', secondaryKeywords: ['pdf sign online free', 'esign pdf', 'pdf signature tool', 'electronic signature', 'pdf sign without printing'], lastUpdated: '2026-03-18', readingTime: '7 min read', tags: ['PDF', 'Signature', 'eSign', 'Free Tools'],
+    intro: `<p><strong>PDF पर sign</strong> करना है लेकिन print, sign, scan नहीं करना? Contract, agreement, form — सब कुछ electronically sign हो सकता है, free में।</p>`,
+    sections: [
+      { id: 'how', title: 'PDF पर Sign कैसे करें', content: `<ol><li><a href="/tools/pdf-sign">PDF Signer</a> खोलें</li><li>PDF upload</li><li>Signature बनाएं (Draw/Type/Upload)</li><li>PDF पर place करें</li><li>Signed PDF download</li></ol>` },
+      { id: 'devices', title: 'हर Device पर', content: `<ul><li><strong>Desktop:</strong> Mouse से draw</li><li><strong>iPhone/iPad:</strong> Finger/Apple Pencil</li><li><strong>Android:</strong> Finger से touch screen पर</li></ul>` },
+      { id: 'legal', title: 'Legal Validity', content: `<p>Electronic signatures legal हैं — US (ESIGN Act), EU (eIDAS), India (IT Act 2000)। कुछ documents (wills, notarized) में wet ink ज़रूरी।</p>` },
+      { id: 'tips', title: 'Professional Signature Tips', content: `<ul><li>Blue color use करें — printed text से अलग दिखे</li><li>Stylus/Apple Pencil से natural signature</li><li>Date भी add करें</li></ul>` },
+    ],
+    howToSteps: [ { title: 'PDF Signer खोलें', description: 'Free, no account।' }, { title: 'PDF upload', description: 'Document drop।' }, { title: 'Signature बनाएं और place', description: 'Draw/Type/Upload।' }, { title: 'Signed PDF download', description: 'Ready to send।' } ],
+    faqs: [
+      { question: 'PDF sign free?', answer: 'ToolsArena PDF Signer — upload, sign, download। Free, no signup।' },
+      { question: 'Electronic signature legal?', answer: 'हाँ — India IT Act 2000 के under legal।' },
+      { question: 'iPhone पर?', answer: 'Safari → ToolsArena → finger/Apple Pencil से sign।' },
+      { question: 'Adobe बिना?', answer: 'हाँ — ToolsArena free alternative।' },
+      { question: 'Safe?', answer: 'Browser में process। Document upload नहीं होता।' },
+    ],
+    relatedGuides: ['pdf-editor-guide', 'pdf-merge-guide', 'pdf-compressor-guide'],
+    toolCTA: { heading: 'PDF Sign करें — Free, No Print!', description: 'Draw, type, upload signature।', buttonText: 'PDF Signer खोलें →' },
+  },
+
+  // ── REGEX TESTER GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'regex-tester-guide', toolSlug: 'regex-tester', category: 'developer-tools', title: 'Regex Tester — Regular Expressions Test करें Free (2026)', subtitle: 'Regex patterns test और debug — real-time matching, cheat sheet। Free, browser-based।', metaTitle: 'Regex Tester Online Free — Hindi Developer Guide (2026)', metaDescription: 'Regex patterns free test करें — real-time matching, common patterns। Developers के लिए।', targetKeyword: 'regex tester online', secondaryKeywords: ['regex test kaise kare', 'regular expression tester', 'regex patterns', 'regex examples', 'regex for email'], lastUpdated: '2026-03-18', readingTime: '8 min read', tags: ['Developer', 'Regex', 'Testing', 'Free Tools'],
+    intro: `<p><strong>Regular expression test</strong> करना है? Email validate, log files parse, data extract — regex developers का essential tool है। ToolsArena का regex tester real-time matching और clear highlighting देता है।</p>`,
+    sections: [
+      { id: 'how', title: 'Regex कैसे Test करें', content: `<ol><li><a href="/tools/regex-tester">Regex Tester</a> खोलें</li><li>Pattern enter करें</li><li>Flags set (g, i, m)</li><li>Test string paste</li><li>Matches real-time highlight</li></ol>` },
+      { id: 'common', title: 'Common Patterns', content: `<table><thead><tr><th>Pattern</th><th>Regex</th></tr></thead><tbody><tr><td>Email</td><td><code>[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}</code></td></tr><tr><td>Phone (India)</td><td><code>[6-9]\\d{9}</code></td></tr><tr><td>URL</td><td><code>https?://[\\w.-]+\\.[a-z]{2,}[/\\w.-]*</code></td></tr><tr><td>Date</td><td><code>\\d{4}-\\d{2}-\\d{2}</code></td></tr></tbody></table>` },
+      { id: 'cheat', title: 'Cheat Sheet', content: `<p><code>\\d</code> = digit, <code>\\w</code> = word char, <code>\\s</code> = space, <code>.</code> = any char, <code>*</code> = 0+, <code>+</code> = 1+, <code>?</code> = optional, <code>^</code> = start, <code>$</code> = end, <code>()</code> = group</p>` },
+      { id: 'debug', title: 'Common Mistakes', content: `<ul><li><code>.</code> escape करें: <code>\\.</code></li><li>Greedy vs lazy: <code>.*</code> vs <code>.*?</code></li><li>Case sensitivity: <code>i</code> flag add करें</li></ul>` },
+    ],
+    howToSteps: [ { title: 'Regex Tester खोलें', description: 'Free, no signup।' }, { title: 'Pattern enter', description: 'Regex + flags।' }, { title: 'Test string paste', description: 'Match against text।' }, { title: 'Matches देखें', description: 'Real-time highlighting।' } ],
+    faqs: [
+      { question: 'Regex क्या है?', answer: 'Pattern-matching language — text search, validate, extract के लिए।' },
+      { question: '\\d क्या है?', answer: 'कोई भी digit (0-9)।' },
+      { question: 'Email regex?', answer: '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}' },
+      { question: 'g flag?', answer: 'Global — सब matches find करता है, सिर्फ first नहीं।' },
+    ],
+    relatedGuides: ['json-formatter-guide', 'hash-generator-guide', 'base64-encode-decode-guide'],
+    toolCTA: { heading: 'Regex Test करें — Free, Real-Time!', description: 'Real-time matching, common patterns।', buttonText: 'Regex Tester खोलें →' },
+  },
+
+  // ── CSV VIEWER GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'csv-viewer-guide', toolSlug: 'csv-viewer', category: 'developer-tools', title: 'CSV Viewer Online — CSV File खोलें बिना Excel (2026)', subtitle: 'CSV files online देखें — search, sort, filter। Excel नहीं चाहिए।', metaTitle: 'CSV Viewer Online Free — बिना Excel Hindi (2026)', metaDescription: 'CSV files free online खोलें। Search, sort, filter। Excel install नहीं।', targetKeyword: 'csv viewer online', secondaryKeywords: ['csv file kaise khole', 'csv viewer free', 'csv without excel', 'csv reader online'], lastUpdated: '2026-03-18', readingTime: '5 min read', tags: ['Developer', 'CSV', 'Data', 'Free Tools'],
+    intro: `<p><strong>CSV file</strong> खोलनी है लेकिन Excel नहीं है? Bank statement, data export, report — सब CSV में आती हैं। ToolsArena का CSV viewer browser में instantly खोलता है।</p>`,
+    sections: [
+      { id: 'how', title: 'कैसे खोलें', content: `<ol><li><a href="/tools/csv-viewer">CSV Viewer</a> खोलें</li><li>CSV upload</li><li>Data table में दिखेगी</li><li>Search, sort, filter use करें</li></ol>` },
+      { id: 'features', title: 'Features', content: `<ul><li>Instant rendering</li><li>Large file support</li><li>Column sorting</li><li>Full-text search</li><li>Mobile friendly</li></ul>` },
+      { id: 'issues', title: 'Common Issues', content: `<table><thead><tr><th>Problem</th><th>Fix</th></tr></thead><tbody><tr><td>Garbled text</td><td>UTF-8 encoding use करें</td></tr><tr><td>सब एक column में</td><td>Delimiter check (comma vs semicolon)</td></tr></tbody></table>` },
+    ],
+    howToSteps: [ { title: 'CSV Viewer खोलें', description: 'Free, no signup।' }, { title: 'CSV upload', description: '.csv file drop।' }, { title: 'Data explore', description: 'Search, sort, filter।' }, { title: 'Copy/export', description: 'Filtered data copy।' } ],
+    faqs: [
+      { question: 'Excel बिना CSV कैसे?', answer: 'ToolsArena CSV Viewer — upload, view। Free।' },
+      { question: 'CSV क्या है?', answer: 'Comma-Separated Values — plain text data file। Universal format।' },
+      { question: 'Large files?', answer: 'हाँ — thousands of rows handle करता है।' },
+      { question: 'Safe?', answer: 'Browser में process। Upload नहीं।' },
+    ],
+    relatedGuides: ['json-formatter-guide', 'excel-to-pdf-guide'],
+    toolCTA: { heading: 'CSV खोलें — Free, No Excel!', description: 'Search, sort, filter।', buttonText: 'CSV Viewer खोलें →' },
+  },
+
+  // ── JSON TO CSV GUIDE (HI) ──────────────────────────────────────────────
+  { slug: 'json-to-csv-guide', toolSlug: 'json-to-csv', category: 'developer-tools', title: 'JSON को CSV में Convert करें — Free Guide (2026)', subtitle: 'JSON data को CSV/Excel format — API data export, sharing।', metaTitle: 'JSON to CSV Convert Free — Hindi Developer Guide (2026)', metaDescription: 'JSON को CSV में free convert। Excel में खोलें, database import। Nested objects support।', targetKeyword: 'json to csv converter', secondaryKeywords: ['json to csv online', 'json to excel', 'api json to csv', 'nested json to csv', 'json to spreadsheet'], lastUpdated: '2026-03-18', readingTime: '6 min read', tags: ['Developer', 'JSON', 'CSV', 'Free Tools'],
+    intro: `<p><strong>JSON data</strong> Excel में खोलना है? API response CSV में convert करना है? JSON developers का format है, लेकिन business tools CSV चाहते हैं। ToolsArena से instantly convert करें।</p>`,
+    sections: [
+      { id: 'how', title: 'कैसे Convert करें', content: `<ol><li><a href="/tools/json-to-csv">JSON to CSV Converter</a> खोलें</li><li>JSON paste या upload</li><li>Preview देखें</li><li>CSV download</li></ol>` },
+      { id: 'structures', title: 'JSON Structures', content: `<p>Array of objects (best case): <code>[{"name":"Alice","age":30}]</code> → <code>name,age\\nAlice,30</code></p><p>Nested objects automatically flatten: <code>address.city</code></p>` },
+      { id: 'uses', title: 'Use Cases', content: `<ul><li>API responses → Excel</li><li>MongoDB/Firebase exports</li><li>Analytics data sharing</li><li>Database migration</li></ul>` },
+    ],
+    howToSteps: [ { title: 'Converter खोलें', description: 'Free, no signup।' }, { title: 'JSON paste/upload', description: 'JSON data enter।' }, { title: 'Preview', description: 'CSV table check।' }, { title: 'Download', description: '.csv save।' } ],
+    faqs: [
+      { question: 'JSON to CSV free?', answer: 'ToolsArena — paste, convert, download। Free।' },
+      { question: 'Nested JSON?', answer: 'Automatically flatten — dot notation (address.city)।' },
+      { question: 'JSON Excel में?', answer: 'JSON → CSV convert → Excel में open।' },
+      { question: 'Safe?', answer: 'Browser में process। Data store नहीं।' },
+    ],
+    relatedGuides: ['json-formatter-guide', 'csv-viewer-guide', 'base64-encode-decode-guide'],
+    toolCTA: { heading: 'JSON to CSV — Free, Instant!', description: 'Nested objects, arrays — सब handle।', buttonText: 'JSON to CSV Converter खोलें →' },
+  },
 ];
