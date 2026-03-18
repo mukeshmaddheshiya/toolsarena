@@ -2502,52 +2502,266 @@ button {
     slug: 'excel-to-pdf-guide',
     toolSlug: 'excel-to-pdf',
     category: 'pdf-tools',
-    title: 'Excel लाई PDF मा Convert कसरी गर्ने — निःशुल्क गाइड (2026)',
-    subtitle: 'Spreadsheets (.xlsx, .xls, .csv) लाई professional PDF documents मा बदल्नुहोस् — free, instant।',
-    metaTitle: 'Excel लाई PDF मा Convert गर्नुहोस् — निःशुल्क',
-    metaDescription: 'Excel लाई PDF मा free convert गर्नुहोस्। .xlsx, .xls, .csv support। कुनै upload नचाहिने, कुनै signup नचाहिने — browser मा instant conversion।',
+    title: 'Excel लाई PDF मा Convert कसरी गर्ने — Free Online, Formatting Loss बिना (2026)',
+    subtitle: 'Excel spreadsheet लाई PDF मा बदल्ने सम्पूर्ण गाइड — ४ methods, formatting tips, batch conversion, mobile guide र troubleshooting।',
+    metaTitle: 'Excel लाई PDF मा Convert गर्नुहोस् — Free Online, Formatting Loss बिना',
+    metaDescription: 'Excel लाई PDF मा free online convert गर्नुहोस् formatting नगुमाइकन। ४ methods: online tool, Excel, Google Sheets, LibreOffice। Step-by-step guide with tips।',
     targetKeyword: 'excel to pdf kasari garne',
-    secondaryKeywords: ['excel to pdf converter', 'excel bata pdf', 'xlsx to pdf', 'spreadsheet to pdf', 'excel to pdf free nepali', 'csv to pdf converter'],
-    lastUpdated: '2026-03-15',
-    readingTime: '६ मिनेट पढ्ने',
+    secondaryKeywords: ['excel to pdf converter', 'excel bata pdf', 'xlsx to pdf', 'spreadsheet to pdf', 'excel to pdf free nepali', 'csv to pdf converter', 'excel to pdf online', 'excel to pdf formatting preserve', 'salary sheet pdf nepal', 'vat invoice pdf nepal'],
+    lastUpdated: '2026-03-17',
+    readingTime: '१२ मिनेट पढ्ने',
     tags: ['PDF', 'Excel', 'Converter', 'Spreadsheet'],
-    intro: `<p>Office मा report share गर्नुपर्छ तर अर्को मान्छेसँग Excel छैन? Financial data non-editable format मा पठाउनुपर्छ? <strong>Excel लाई PDF मा convert</strong> गर्नु सबैभन्दा सजिलो solution हो।</p><p>ToolsArena को free converter ले .xlsx, .xls, र .csv files लाई professional PDFs मा बदल्छ — सबै browser मा, कुनै file upload नचाहिने।</p>`,
+    intro: `<p>Salary sheet email गर्नुपर्छ, VAT invoice पठाउनुपर्छ, विद्यालयको result share गर्नुपर्छ, वा financial report submit गर्नुपर्छ — <strong>Excel लाई PDF मा convert</strong> गर्नु सबैभन्दा safe र professional तरिका हो। PDF universal format हो — कुनै पनि device मा Excel install नभएको भए पनि open हुन्छ।</p>
+<p>तर सबै conversion methods एउटै होइनन्। कुनैले formatting उडाउँछ, columns काट्छ, वा expensive software माग्छ। यो comprehensive guide मा हामी <strong>४ proven methods</strong> बताउँछौं — free online tool देखि desktop applications सम्म — साथमा expert tips formatting preserve गर्न, common problems का fixes, र batch conversion का तरिकाहरू।</p>
+<p>यो guide पछि तपाईंलाई exactly थाहा हुनेछ कि कुन method तपाईंका लागि best हो र हरेक पटक pixel-perfect PDF कसरी बनाउने।</p>`,
     sections: [
       {
         id: 'excel-pdf-kina',
         title: 'Excel लाई PDF मा किन Convert गर्ने?',
-        content: `<ul><li><strong>Universal compatibility:</strong> PDF हरेक device मा open हुन्छ — Excel install हुनुपर्दैन</li><li><strong>Layout preserve:</strong> Print गर्दा columns shift हुँदैन — PDF हमेशा same देखिन्छ</li><li><strong>Editing prevent:</strong> Financial reports, invoices — गल्तिले edit हुने risk छैन</li><li><strong>Professional sharing:</strong> Client लाई data PDF मा पठाउनु standard business practice</li><li><strong>Government submissions:</strong> Nepal मा tax filings, regulatory reports — PDF format mandatory</li></ul>`,
+        content: `<p>Methods जान्नुअघि, बुझौं कि professionals र students ले Excel लाई PDF मा किन convert गर्छन्:</p>
+<h3>Universal Compatibility</h3>
+<p>सबैसँग Microsoft Excel हुँदैन। तपाईंको recipient phone मा होस्, Chromebook मा होस्, वा Linux machine मा — <strong>PDF हरेक device र हरेक OS मा open हुन्छ</strong>। हरेक browser मा built-in PDF viewer हुन्छ।</p>
+<h3>Formatting र Layout Preserve</h3>
+<p>Excel spreadsheets अलग-अलग screens, Excel versions, र fonts का कारण अलग देखिन्छन्। PDF ले तपाईंको layout lock गर्छ — <strong>column widths, fonts, colors, borders, page breaks सबै exactly उस्तै रहन्छन्</strong>।</p>
+<h3>Formulas Protect गर्ने, Editing रोक्ने</h3>
+<p>Excel file share गर्दा recipient ले तपाईंका formulas देख्न सक्छ र गल्तिले data बदल्न सक्छ। PDF ले सबै कुरा non-editable document मा flatten गर्छ। यो <strong>financial reports, invoices, tax filings, र legal documents</strong> का लागि critical छ।</p>
+<h3>Professional Sharing Standard</h3>
+<p>Business र academic contexts मा PDF expected format हो। .xlsx attachment पठाउनु धेरै situations मा unprofessional देखिन्छ — clients, banks, government agencies, र universities ले PDF expect गर्छन्।</p>
+<h3>सानो File Size</h3>
+<p>Heavy formatting, pivot tables, र embedded objects भएका Excel files धेरै ठूला हुन सक्छन्। PDF version अक्सर <strong>५०-८०% सानो</strong> हुन्छ — email र storage दुवैका लागि राम्रो।</p>
+<h3>Print-Ready Output</h3>
+<p>PDF हरेक printer मा exactly same print हुन्छ। Shifted columns, cut-off text, वा wrong page breaks हुँदैन।</p>`,
       },
       {
-        id: 'step-by-step',
-        title: 'Excel लाई PDF मा Convert कसरी गर्ने? (Step-by-Step)',
-        content: `<ol><li><strong>Tool खोल्नुहोस्:</strong> ToolsArena Excel to PDF converter मा जानुहोस्</li><li><strong>File upload गर्नुहोस्:</strong> .xlsx, .xls, वा .csv file drag & drop गर्नुहोस्</li><li><strong>Preview हेर्नुहोस्:</strong> सबै sheets हेर्नुहोस्, convert गर्ने sheet select गर्नुहोस्</li><li><strong>Settings:</strong> Orientation (portrait/landscape) र font size set गर्नुहोस्</li><li><strong>Convert:</strong> "Convert to PDF" click — instant PDF generate</li><li><strong>Download:</strong> PDF save गर्नुहोस्</li></ol>`,
+        id: 'method-1-toolsarena',
+        title: 'Method 1: ToolsArena को Free Online Converter',
+        content: `<p>Excel लाई PDF मा convert गर्ने सबैभन्दा छिटो तरिका <strong>ToolsArena को free Excel to PDF converter</strong> हो। यो पूरै browser मा काम गर्छ — कुनै file server मा upload हुँदैन, कुनै signup नचाहिने, कुनै watermark छैन।</p>
+<h3>Step-by-Step Instructions</h3>
+<ol>
+  <li><strong>Tool खोल्नुहोस्:</strong> <a href="/tools/excel-to-pdf">ToolsArena Excel to PDF converter</a> मा जानुहोस्</li>
+  <li><strong>File upload गर्नुहोस्:</strong> .xlsx, .xls, वा .csv file drag & drop गर्नुहोस् वा browse गर्नुहोस्</li>
+  <li><strong>Sheet select गर्नुहोस्:</strong> Multiple sheets भए convert गर्ने sheet select गर्नुहोस्</li>
+  <li><strong>Data preview गर्नुहोस्:</strong> Table preview मा सबै data सही देखिन्छ कि check गर्नुहोस्</li>
+  <li><strong>Settings configure गर्नुहोस्:</strong> Page orientation (portrait वा landscape) छान्नुहोस्, font size adjust गर्नुहोस्</li>
+  <li><strong>"Convert to PDF" click गर्नुहोस्:</strong> PDF instantly browser मा generate हुन्छ</li>
+  <li><strong>Download गर्नुहोस्:</strong> PDF आफ्नो device मा save गर्नुहोस्</li>
+</ol>
+<h3>ToolsArena किन छान्ने?</h3>
+<table>
+  <thead><tr><th>Feature</th><th>ToolsArena</th><th>अन्य Online Converters</th></tr></thead>
+  <tbody>
+    <tr><td>Privacy</td><td>१००% browser-based — file upload हुँदैन</td><td>File server मा upload हुन्छ</td></tr>
+    <tr><td>Cost</td><td>पूरै free</td><td>Free with limits, full का लागि paid</td></tr>
+    <tr><td>Watermarks</td><td>कुनै छैन</td><td>Free tier मा अक्सर watermark</td></tr>
+    <tr><td>File size limit</td><td>Browser memory मा मात्र निर्भर</td><td>Usually 10-50 MB</td></tr>
+    <tr><td>Signup</td><td>नचाहिने</td><td>अक्सर चाहिने</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>Privacy नोट:</strong> तपाईंको spreadsheet data तपाईंको device बाट बाहिर जाँदैन। ToolsArena ले client-side JavaScript बाट सबै process गर्छ — zero server uploads।</div>`,
       },
       {
-        id: 'better-pdf-tips',
-        title: 'Better PDF का लागि Tips',
-        content: `<ul><li><strong>Wide spreadsheets:</strong> धेरै columns भए Landscape orientation use गर्नुहोस्</li><li><strong>Data-heavy:</strong> Font size 8pt वा 6pt गर्नुहोस् — बढी data fit हुन्छ</li><li><strong>Clean data:</strong> Convert अघि empty rows/columns delete गर्नुहोस्</li><li><strong>Header row:</strong> पहिलो row automatically table header बन्छ — column names त्यहाँ राख्नुहोस्</li></ul>`,
+        id: 'method-2-microsoft-excel',
+        title: 'Method 2: Microsoft Excel बाट Save As PDF',
+        content: `<p>तपाईंसँग Microsoft Excel installed छ भने (Microsoft 365, Office 2019, वा पछिको), directly PDF मा save गर्न सकिन्छ।</p>
+<h3>Windows मा</h3>
+<ol>
+  <li>Excel मा spreadsheet खोल्नुहोस्</li>
+  <li><strong>File → Save As</strong> click गर्नुहोस् (वा <kbd>F12</kbd> थिच्नुहोस्)</li>
+  <li>"Save as type" dropdown मा <strong>PDF (*.pdf)</strong> select गर्नुहोस्</li>
+  <li><strong>Options</strong> click गर्नुहोस् — entire workbook, active sheet(s), वा selection छान्नुहोस्</li>
+  <li><strong>Save</strong> click गर्नुहोस्</li>
+</ol>
+<h3>Mac मा</h3>
+<ol>
+  <li>Excel मा spreadsheet खोल्नुहोस्</li>
+  <li><strong>File → Save As</strong> click गर्नुहोस्</li>
+  <li>File format dropdown बाट <strong>PDF</strong> छान्नुहोस्</li>
+  <li><strong>Save</strong> click गर्नुहोस्</li>
+</ol>
+<h3>Alternative: Print to PDF</h3>
+<p><kbd>Ctrl</kbd> + <kbd>P</kbd> (Windows) वा <kbd>Cmd</kbd> + <kbd>P</kbd> (Mac) थिच्नुहोस्, त्यसपछि "Microsoft Print to PDF" वा "Save as PDF" printer select गर्नुहोस्। यो method मा page setup, margins, र scaling मा बढी control पाइन्छ।</p>
+<div class="callout-info"><strong>Pro Tip:</strong> Save गर्नुअघि <strong>Page Layout → Print Area → Set Print Area</strong> बाट define गर्नुहोस् कुन cells PDF मा आउने। यसले blank pages रोक्छ।</div>`,
+      },
+      {
+        id: 'method-3-google-sheets',
+        title: 'Method 3: Google Sheets बाट Download as PDF',
+        content: `<p>Google Sheets एउटा free alternative हो यदि Microsoft Excel छैन भने। धेरैजसो .xlsx files राम्रोसँग open हुन्छन् र built-in PDF export छ।</p>
+<h3>Step-by-Step</h3>
+<ol>
+  <li><strong>Google Drive मा upload गर्नुहोस्:</strong> <a href="https://drive.google.com" rel="nofollow">drive.google.com</a> मा Excel file upload गर्नुहोस्</li>
+  <li><strong>Google Sheets मा खोल्नुहोस्:</strong> File मा double-click गर्नुहोस् — Sheets मा automatically खुल्छ</li>
+  <li><strong>PDF export गर्नुहोस्:</strong> <strong>File → Download → PDF document (.pdf)</strong> click गर्नुहोस्</li>
+  <li><strong>PDF configure गर्नुहोस्:</strong> Export dialog मा set गर्नुहोस्:
+    <ul>
+      <li><strong>Paper size:</strong> A4, Letter, Legal आदि</li>
+      <li><strong>Orientation:</strong> Portrait वा Landscape</li>
+      <li><strong>Scale:</strong> Fit to width, fit to page, वा actual size</li>
+      <li><strong>Margins:</strong> Normal, narrow, वा custom</li>
+      <li><strong>Sheets:</strong> Current sheet वा all sheets</li>
+    </ul>
+  </li>
+  <li><strong>Export click गर्नुहोस्</strong> — PDF download हुन्छ</li>
+</ol>
+<div class="callout-info"><strong>ध्यान दिनुहोस्:</strong> Google Sheets मा file Google को servers मा upload हुन्छ। Spreadsheet मा sensitive financial वा personal data छ भने, ToolsArena को browser-based converter use गर्नुहोस् — पूरा privacy का लागि।</div>`,
+      },
+      {
+        id: 'method-4-libreoffice',
+        title: 'Method 4: LibreOffice Calc (Free Desktop App)',
+        content: `<p><strong>LibreOffice</strong> एउटा free, open-source office suite हो जसले Excel files (.xlsx, .xls) handle गर्छ र directly PDF export गर्न सक्छ। Windows, Mac, र Linux सबैमा available छ।</p>
+<h3>Step-by-Step</h3>
+<ol>
+  <li><strong>LibreOffice download गर्नुहोस्:</strong> <a href="https://www.libreoffice.org" rel="nofollow">libreoffice.org</a> बाट (free)</li>
+  <li><strong>Excel file खोल्नुहोस्:</strong> File मा right-click → Open With → LibreOffice Calc</li>
+  <li><strong>PDF export गर्नुहोस्:</strong> <strong>File → Export as PDF</strong> click गर्नुहोस्</li>
+  <li><strong>Configure गर्नुहोस्:</strong> PDF Options dialog मा:
+    <ul>
+      <li>Pages: All, वा specific range</li>
+      <li>Image compression र quality</li>
+      <li>PDF/A archival format (long-term storage का लागि)</li>
+    </ul>
+  </li>
+  <li><strong>Export click गर्नुहोस्</strong> र save गर्नुहोस्</li>
+</ol>
+<h3>LibreOffice Command-Line Conversion (Batch)</h3>
+<p>LibreOffice ले command-line conversion support गर्छ — धेरै files एकैपटक convert गर्न perfect:</p>
+<pre><code>libreoffice --headless --convert-to pdf *.xlsx</code></pre>
+<p>यो command ले current directory का सबै .xlsx files लाई PDF मा convert गर्छ — कुनै GUI नचाहिने।</p>`,
+      },
+      {
+        id: 'methods-comparison',
+        title: 'चारवटै Methods को तुलना',
+        content: `<p>आफ्नो situation का लागि best method छान्न यो comparison table हेर्नुहोस्:</p>
+<table>
+  <thead><tr><th>Feature</th><th>ToolsArena</th><th>Microsoft Excel</th><th>Google Sheets</th><th>LibreOffice</th></tr></thead>
+  <tbody>
+    <tr><td>Cost</td><td>Free</td><td>Paid (Microsoft 365)</td><td>Free</td><td>Free</td></tr>
+    <tr><td>Privacy</td><td>१००% local (browser)</td><td>१००% local</td><td>Cloud upload</td><td>१००% local</td></tr>
+    <tr><td>Installation</td><td>नचाहिने</td><td>चाहिने</td><td>नचाहिने (web-based)</td><td>चाहिने</td></tr>
+    <tr><td>Charts preserve</td><td>हुँदैन</td><td>हुन्छ</td><td>हुन्छ</td><td>हुन्छ</td></tr>
+    <tr><td>Batch conversion</td><td>एक-एक</td><td>VBA macros बाट</td><td>एक-एक</td><td>हुन्छ (command-line)</td></tr>
+    <tr><td>Best for</td><td>Quick, private conversion</td><td>Full-fidelity output</td><td>No-install, collaborative</td><td>Free desktop + batch</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'formatting-preserve-tips',
+        title: 'Excel to PDF मा Formatting कसरी Preserve गर्ने?',
+        content: `<p>Excel-to-PDF conversion को सबैभन्दा ठूलो समस्या <strong>formatting loss</strong> हो। यहाँ expert tips छन् formatting बचाउन:</p>
+<h3>1. Print Area Set गर्नुहोस्</h3>
+<p>Excel मा: PDF मा चाहिने cells select गर्नुहोस्, त्यसपछि <strong>Page Layout → Print Area → Set Print Area</strong>। यसले blank pages रोक्छ र सिर्फ relevant data convert हुन्छ।</p>
+<h3>2. सही Page Orientation छान्नुहोस्</h3>
+<p>धेरै columns (६-८ भन्दा बढी) भए <strong>Landscape</strong> use गर्नुहोस्। Narrow, लामो data का लागि <strong>Portrait</strong> use गर्नुहोस्।</p>
+<h3>3. Column Widths Adjust गर्नुहोस्</h3>
+<p>सबै columns auto-fit गर्नुहोस्: <kbd>Ctrl</kbd>+<kbd>A</kbd> ले सबै select गर्नुहोस्, त्यसपछि <strong>Home → Format → AutoFit Column Width</strong>। यसले text cut हुँदैन।</p>
+<h3>4. "Fit to Page" Scaling Use गर्नुहोस्</h3>
+<p><strong>Page Layout → Scale to Fit</strong> मा Width <strong>1 page</strong> र Height <strong>Automatic</strong> set गर्नुहोस्। यसले सबै columns एउटा page width मा fit हुन्छन्।</p>
+<h3>5. Header Rows Repeat गर्नुहोस्</h3>
+<p>Multi-page PDFs का लागि header row हरेक page मा repeat गर्नुहोस्: <strong>Page Layout → Print Titles → Rows to repeat at top</strong> मा header row select गर्नुहोस् (जस्तै $1:$1)।</p>
+<h3>6. Page Break Preview Check गर्नुहोस्</h3>
+<p><strong>View → Page Break Preview</strong> बाट हेर्नुहोस् कहाँ pages split हुन्छन्। Blue lines drag गरेर page breaks manually adjust गर्नुहोस्।</p>`,
+      },
+      {
+        id: 'common-problems',
+        title: 'Common Problems र तिनका Fixes',
+        content: `<p>Excel to PDF conversion मा सबैभन्दा common issues र तिनका solutions:</p>
+<h3>Problem: Columns काटिन्छन्</h3>
+<p><strong>Fix:</strong> Landscape orientation switch गर्नुहोस्, वा Page Setup → Scaling मा "Fit Sheet on One Page" use गर्नुहोस्। Font size वा column widths पनि कम गर्नुहोस्।</p>
+<h3>Problem: PDF मा Blank Pages आउँछन्</h3>
+<p><strong>Fix:</strong> Data range बाहिर empty cells वा formatting हुन सक्छ। सिर्फ data range select गरेर Print Area set गर्नुहोस्। Data बाट टाढा stray spaces पनि check गर्नुहोस्।</p>
+<h3>Problem: Text धेरै सानो / पढ्न गाह्रो</h3>
+<p><strong>Fix:</strong> "Fit Sheet on One Page" धेरै columns सँग use गरिरहनु भएको छ। Width 1 page राख्नुहोस् तर Height Automatic राख्नुहोस् — vertical pagination हुन्छ तर text readable रहन्छ।</p>
+<h3>Problem: Charts वा Images Missing</h3>
+<p><strong>Fix:</strong> Browser-based tools ले charts render गर्न सक्दैनन्। Charts भएका spreadsheets का लागि Microsoft Excel को "Save As PDF" वा LibreOffice use गर्नुहोस्।</p>
+<h3>Problem: Merged Cells ले Layout बिगार्छ</h3>
+<p><strong>Fix:</strong> Merged cells ले PDF conversion मा problems create गर्छ। Merge को सट्टा "Center Across Selection" (Format Cells → Alignment) use गर्नुहोस्। Layout break भए convert अघि unmerge गर्नुहोस्।</p>`,
+      },
+      {
+        id: 'batch-conversion',
+        title: 'धेरै Excel Files एकैपटक PDF मा Convert गर्ने (Batch)',
+        content: `<p>दर्जनौं Excel files एक-एक convert गर्नु impractical छ। यहाँ batch conversion methods छन्:</p>
+<h3>Method A: LibreOffice Command Line (Free)</h3>
+<pre><code># Folder का सबै .xlsx files PDF मा convert गर्नुहोस्
+libreoffice --headless --convert-to pdf --outdir ./pdfs *.xlsx</code></pre>
+<p>Windows (Command Prompt वा PowerShell), Mac, र Linux — सबैमा काम गर्छ।</p>
+<h3>Method B: Excel VBA Macro</h3>
+<pre><code>Sub BatchExcelToPDF()
+    Dim ws As Worksheet
+    For Each ws In ActiveWorkbook.Worksheets
+        ws.ExportAsFixedFormat Type:=xlTypePDF, _
+            Filename:=ws.Name &amp; ".pdf"
+    Next ws
+End Sub</code></pre>
+<h3>Method C: Python Script</h3>
+<p>Developers ले Python को <code>openpyxl</code> र <code>fpdf</code> libraries (वा Windows मा <code>win32com</code>) बाट bulk conversion automate गर्न सक्छन्।</p>`,
+      },
+      {
+        id: 'mobile-conversion',
+        title: 'Mobile मा Excel लाई PDF मा Convert गर्ने (iPhone र Android)',
+        content: `<p>Phone बाटै Excel to PDF conversion — कुनै computer नचाहिने।</p>
+<h3>iPhone / iPad मा</h3>
+<ol>
+  <li><strong>Files app:</strong> .xlsx file खोल्नुहोस् → Share → "Print" → preview मा pinch-to-zoom गर्नुहोस् (PDF बन्छ) → Share → Save</li>
+  <li><strong>Microsoft Excel app (free):</strong> File खोल्नुहोस् → three dots (⋯) menu → Share as PDF → Save वा Send</li>
+  <li><strong>ToolsArena Safari मा:</strong> <a href="/tools/excel-to-pdf">toolsarena.in/tools/excel-to-pdf</a> खोल्नुहोस्, file upload गर्नुहोस्, convert गर्नुहोस् — desktop जस्तै काम गर्छ</li>
+</ol>
+<h3>Android मा</h3>
+<ol>
+  <li><strong>Microsoft Excel app (free):</strong> File खोल्नुहोस् → Menu (⋮) → Share as PDF</li>
+  <li><strong>Google Sheets app:</strong> File खोल्नुहोस् → three dots → Share & export → Save as → PDF document</li>
+  <li><strong>ToolsArena Chrome मा:</strong> Mobile browser मा converter खोल्नुहोस्, file upload गर्नुहोस्, convert गर्नुहोस् — fully responsive design</li>
+</ol>
+<div class="callout-info"><strong>ध्यान दिनुहोस्:</strong> Mobile conversions simple spreadsheets का लागि best काम गर्छ। Charts र heavy formatting भएका complex spreadsheets का लागि desktop application use गर्नुहोस्।</div>`,
       },
       {
         id: 'nepal-use-cases',
-        title: 'Nepal मा Common Use Cases',
-        content: `<ul><li><strong>Financial reports:</strong> Monthly/quarterly reports PDF मा stakeholders लाई पठाउनुहोस्</li><li><strong>Invoices:</strong> Excel मा invoice बनाउनुहोस्, PDF मा export गरेर client लाई send</li><li><strong>Salary slips:</strong> HR — employee pay statements PDF मा generate गर्नुहोस्</li><li><strong>Lok Sewa:</strong> Application data PDF format मा submit गर्नुपर्ने</li><li><strong>VAT returns:</strong> Tax filings का लागि Excel data PDF format मा</li></ul>`,
+        title: 'नेपालमा Excel to PDF का Common Use Cases',
+        content: `<p>नेपाली professionals र students ले daily Excel-to-PDF conversion कसरी use गर्छन्:</p>
+<h3>Business र Finance</h3>
+<ul>
+  <li><strong>VAT Invoices:</strong> Excel मा VAT invoice बनाउनुहोस्, PDF मा convert गरेर client लाई पठाउनुहोस् — Nepal को VAT compliance का लागि</li>
+  <li><strong>Salary Sheets:</strong> HR department ले monthly pay statements Excel बाट generate गरेर PDF मा employees लाई distribute गर्छ</li>
+  <li><strong>Financial Reports:</strong> Quarterly र annual reports stakeholders लाई non-editable PDF मा share गर्नुहोस्</li>
+  <li><strong>Expense Reports:</strong> Employee expense claims audit trail का लागि PDF मा submit</li>
+  <li><strong>Tax Returns:</strong> IRD (Inland Revenue Department) लाई tax computation sheets PDF format मा submit गर्नुहोस्</li>
+</ul>
+<h3>शिक्षा</h3>
+<ul>
+  <li><strong>School Report Cards:</strong> Teachers ले Excel मा marks enter गरेर PDF report cards generate गर्छन्</li>
+  <li><strong>SEE/NEB Results:</strong> Result spreadsheets PDF मा students र parents लाई share गर्नुहोस्</li>
+  <li><strong>TU/KU Assignments:</strong> University assignments र thesis data PDF मा submit गर्नुहोस्</li>
+  <li><strong>Attendance Records:</strong> Monthly attendance data PDF मा archive गर्नुहोस्</li>
+</ul>
+<h3>Government र Lok Sewa</h3>
+<ul>
+  <li><strong>Lok Sewa Applications:</strong> Application data PDF format मा submit गर्नुपर्ने</li>
+  <li><strong>VAT Returns:</strong> IRD लाई tax filings Excel data बाट PDF format मा</li>
+  <li><strong>सरकारी Submissions:</strong> विभिन्न सरकारी कार्यालयहरूमा compliance reports PDF mandatory</li>
+</ul>`,
       },
     ],
     howToSteps: [
+      { title: 'ToolsArena Excel to PDF Converter खोल्नुहोस्', description: 'Free online converter मा जानुहोस् — कुनै signup वा installation नचाहिने।' },
       { title: 'Excel file upload गर्नुहोस्', description: '.xlsx, .xls, वा .csv file drag & drop गर्नुहोस्।' },
-      { title: 'Preview र sheet select गर्नुहोस्', description: 'Data review गर्नुहोस् र sheet choose गर्नुहोस्।' },
-      { title: 'Convert र Download गर्नुहोस्', description: 'Convert to PDF click गर्नुहोस् र PDF save गर्नुहोस्।' },
+      { title: 'Preview र settings configure गर्नुहोस्', description: 'Sheet select गर्नुहोस्, page orientation छान्नुहोस् (wide data का लागि landscape), font size adjust गर्नुहोस्।' },
+      { title: 'Convert to PDF click गर्नुहोस्', description: 'PDF instantly browser मा generate हुन्छ — कुनै server upload हुँदैन।' },
+      { title: 'PDF download गर्नुहोस्', description: 'Professional PDF document आफ्नो device मा save गर्नुहोस्।' },
     ],
     faqs: [
-      { question: '.csv files support हुन्छ?', answer: 'हो। .xlsx, .xls, र .csv तीनवटै formats support हुन्छन्।' },
-      { question: 'Data server मा जान्छ?', answer: 'होइन। सबै browser मा JavaScript ले process हुन्छ। तपाईंको file कहिल्यै server मा जाँदैन।' },
-      { question: 'Excel formatting preserve हुन्छ?', answer: 'Tool ले clean professional table layout PDF मा बनाउँछ। Complex formatting (charts, conditional formatting) exactly preserve नहुन सक्छ।' },
+      { question: 'Excel लाई PDF मा convert गर्दा formatting कसरी बचाउने?', answer: 'Print Area set गर्नुहोस्, "Fit to Page" scaling use गर्नुहोस् (Width: 1 page, Height: Automatic), wide spreadsheets का लागि Landscape छान्नुहोस्, र column widths auto-fit गर्नुहोस्। Page Break Preview बाट layout verify गर्नुहोस्।' },
+      { question: 'Excel लाई PDF मा free convert गर्न सकिन्छ?', answer: 'हो। ToolsArena को online converter १००% free छ — कुनै watermark छैन, कुनै file size limit छैन, कुनै signup नचाहिने। Google Sheets र LibreOffice पनि free alternatives हुन्।' },
+      { question: 'Multiple Excel sheets लाई एउटा PDF मा कसरी convert गर्ने?', answer: 'Microsoft Excel मा File → Save As → PDF → Options → "Entire Workbook" select गर्नुहोस्। Google Sheets मा "All Sheets" choose गर्नुहोस्। ToolsArena मा एक-एक sheet convert गरेर PDF merger tool ले merge गर्नुहोस्।' },
+      { question: 'Excel file PDF मा अलग किन देखिन्छ?', answer: 'Common कारणहरू: columns page भन्दा चौडा छन् (Landscape switch गर्नुहोस् वा font सानो गर्नुहोस्), missing fonts, merged cells ले layout shift गर्छ, वा Print Area सही set छैन।' },
+      { question: 'Mobile मा Excel लाई PDF मा कसरी convert गर्ने?', answer: 'iPhone मा Microsoft Excel app (Share as PDF) वा Files app Print trick use गर्नुहोस्। Android मा Excel app वा Google Sheets (Share & Export → Save as PDF) use गर्नुहोस्। Mobile browser मा ToolsArena को converter पनि काम गर्छ।' },
+      { question: 'Password-protected Excel file लाई PDF मा convert गर्न सकिन्छ?', answer: 'पहिले file open गर्नुपर्छ (password enter गर्नुहोस्), त्यसपछि PDF मा convert गर्नुहोस्। कुनै पनि converter ले Excel password bypass गर्न सक्दैन। File open भएपछि जुनसुकै method use गर्नुहोस्।' },
+      { question: 'Excel का सबै columns एउटा PDF page मा कसरी fit गर्ने?', answer: 'Excel मा: Page Layout → Scale to Fit → Width "1 page" set गर्नुहोस्। Google Sheets मा: File → Download as PDF → Scale "Fit to width"। ToolsArena मा Landscape orientation र सानो font size use गर्नुहोस्।' },
+      { question: 'Conversion का लागि maximum file size कति हो?', answer: 'ToolsArena मा कुनै hard limit छैन — browser memory मा depend गर्छ (typically 50-100 MB handle हुन्छ)। Microsoft Excel र LibreOffice ले virtually कुनै पनि file size handle गर्छन्। Google Sheets मा 100 MB upload limit छ।' },
+      { question: 'Excel charts र images PDF मा preserve हुन्छन्?', answer: 'Microsoft Excel र LibreOffice ले charts र images preserve गर्छन्। Google Sheets ले पनि charts preserve गर्छ। Browser-based tools जस्तै ToolsArena ले table data focus गर्छ — charts भएका spreadsheets का लागि desktop app use गर्नुहोस्।' },
+      { question: 'Batch conversion कसरी गर्ने — धेरै files एकैपटक?', answer: 'LibreOffice command line use गर्नुहोस्: "libreoffice --headless --convert-to pdf *.xlsx"। वा Excel मा VBA macro लेख्नुहोस्। Python scripts (win32com वा openpyxl) बाट पनि automation गर्न सकिन्छ।' },
     ],
-    relatedGuides: ['compress-image-guide', 'text-to-speech-guide', 'percentage-how-to-guide'],
+    relatedGuides: ['word-to-pdf-guide', 'pdf-to-excel-guide', 'pdf-compressor-guide'],
     toolCTA: {
-      heading: 'Excel लाई PDF मा Convert गर्नुहोस् — Free र Instant',
-      description: 'Spreadsheet upload गर्नुहोस्, professional PDF पाउनुहोस्।',
+      heading: 'Excel लाई PDF मा Convert गर्नुहोस् — Free, Instant, कुनै Upload नचाहिने',
+      description: '.xlsx, .xls, वा .csv file drop गर्नुहोस् र seconds मा professional PDF पाउनुहोस्। १००% browser-based — तपाईंको data कहिल्यै device बाट बाहिर जाँदैन।',
       buttonText: 'Excel to PDF Converter खोल्नुहोस् →',
     },
   },
@@ -6863,4 +7077,209 @@ button {
       description: 'iPhone/Mac video लाई MP4 मा convert गर्नुहोस् — WhatsApp, Android, Windows सबैमा play हुन्छ।',
       buttonText: 'MOV to MP4 Converter खोल्नुहोस् →',
     },
-  },];
+  },
+
+  // ── PNG TO JPG GUIDE (NE) ──────────────────────────────────────────────
+  {
+    slug: 'png-to-jpg-guide',
+    toolSlug: 'png-to-jpg',
+    category: 'converters',
+    title: 'PNG लाई JPG मा Convert गर्नुहोस् — Free Online Guide (2026)',
+    subtitle: 'PNG images लाई JPG मा instantly convert — file size घटाउनुहोस्, quality राख्नुहोस्।',
+    metaTitle: 'PNG लाई JPG मा Convert — Free Nepali Guide (2026)',
+    metaDescription: 'PNG लाई JPG मा free convert गर्नुहोस्। File size 80% सम्म कम। Upload छैन, signup छैन।',
+    targetKeyword: 'png to jpg convert kasari garne',
+    secondaryKeywords: ['png to jpg converter', 'png to jpg online free', 'image format change', 'photo convert online', 'image size kam garne'],
+    lastUpdated: '2026-03-18',
+    readingTime: '7 min read',
+    tags: ['Image', 'Converter', 'PNG', 'JPG', 'Free Tools'],
+    intro: `<p><strong>PNG लाई JPG मा convert</strong> गर्नुपर्छ? File size ठूलो छ email का लागि, वा website ले JPG format माग्छ? यो <strong>तुरन्त, निःशुल्क, browser मा</strong> हुन्छ।</p>
+<p>यस guide मा PNG र JPG को फरक, कहिले कुन format use गर्ने, ToolsArena बाट step-by-step conversion, transparency handle गर्ने, र best quality tips छन्।</p>`,
+    sections: [
+      { id: 'difference', title: 'PNG vs JPG: के फरक छ?', content: `<table><thead><tr><th>Feature</th><th>PNG</th><th>JPG</th></tr></thead><tbody><tr><td>Compression</td><td>Lossless — quality loss छैन</td><td>Lossy — अलि quality कम</td></tr><tr><td>File Size</td><td>ठूलो (2-10x)</td><td>सानो</td></tr><tr><td>Transparency</td><td>✅ Support गर्छ</td><td>❌ गर्दैन</td></tr><tr><td>Best For</td><td>Logos, screenshots</td><td>Photos, web images</td></tr></tbody></table><h3>कहिले Convert गर्ने?</h3><ul><li><strong>Photos:</strong> JPG 80% सानो file</li><li><strong>Website:</strong> Fast loading</li><li><strong>Email:</strong> Size limit भित्र</li></ul>` },
+      { id: 'how-to', title: 'PNG लाई JPG मा कसरी Convert गर्ने', content: `<ol><li><a href="/tools/png-to-jpg">ToolsArena PNG to JPG Converter</a> खोल्नुहोस्</li><li>PNG file upload गर्नुहोस्</li><li>Quality set गर्नुहोस् (85% recommended)</li><li>Background color छान्नुहोस् (transparent PNG को लागि)</li><li>"Convert to JPG" click गर्नुहोस्</li><li>JPG download गर्नुहोस्</li></ol><p><strong>Pro tip:</strong> 85% quality मा visible difference छैन तर file 3-5x सानो हुन्छ।</p>` },
+      { id: 'transparency', title: 'Transparency Handle गर्ने', content: `<p>JPG ले transparency support गर्दैन। Transparent area background color ले replace हुन्छ:</p><ul><li><strong>White (default):</strong> सबैभन्दा common</li><li><strong>Black:</strong> Dark designs</li><li><strong>Custom:</strong> Website background match</li></ul>` },
+      { id: 'batch', title: 'धेरै PNG एकैपटक Convert', content: `<ol><li>PNG to JPG Converter खोल्नुहोस्</li><li>Multiple files select गर्नुहोस्</li><li>Quality set</li><li>Convert All → ZIP download</li></ol>` },
+    ],
+    howToSteps: [
+      { title: "Open PNG to JPG Converter", description: "Go to ToolsArena PNG to JPG Converter — free, no signup." },
+      { title: "Upload your PNG file", description: "Click Choose File or drag and drop your PNG image." },
+      { title: "Set quality and background", description: "Adjust quality (85% recommended). Choose background for transparent PNGs." },
+      { title: "Convert and download", description: "Click Convert to JPG. Download your converted image instantly." },
+    ],
+    faqs: [
+      { question: 'PNG लाई JPG मा free मा कसरी convert गर्ने?', answer: 'ToolsArena को converter use गर्नुहोस् — upload, quality set, download। Signup छैन।' },
+      { question: 'Quality कम हुन्छ?', answer: '85% मा visible difference छैन। File 70-85% सानो।' },
+      { question: 'Transparent PNG लाई JPG बनाउँदा?', answer: 'Transparent area white हुन्छ (default)।' },
+      { question: 'Mobile मा काम गर्छ?', answer: 'हो — कुनै पनि browser मा। App चाहिँदैन।' },
+      { question: 'File server मा upload हुन्छ?', answer: 'होइन — browser मा नै process। 100% private।' },
+      { question: 'Best quality setting?', answer: '85% — web/social media। Professional: 92%।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'svg-to-png-guide'],
+    toolCTA: {
+      heading: 'PNG लाई JPG मा Convert गर्नुहोस् — Free र Instant!',
+      description: 'Image size 80% सम्म कम गर्नुहोस् बिना visible quality loss।',
+      buttonText: 'PNG to JPG Converter खोल्नुहोस् →',
+    },
+  },
+
+  // ── CASE CONVERTER GUIDE (NE) ──────────────────────────────────────────────
+  {
+    slug: 'case-converter-guide',
+    toolSlug: 'case-converter',
+    category: 'text-tools',
+    title: 'Text Case Converter — UPPERCASE, lowercase, Title Case (2026)',
+    subtitle: 'Text लाई UPPERCASE, lowercase, Title Case, camelCase मा convert गर्नुहोस् — free, instant।',
+    metaTitle: 'Text Case Converter Online — Nepali Guide (2026)',
+    metaDescription: 'Text case convert गर्नुहोस् — UPPERCASE, lowercase, Title Case, camelCase। Free tool।',
+    targetKeyword: 'text case converter online',
+    secondaryKeywords: ['uppercase to lowercase', 'title case converter', 'caps lock fix', 'camelCase converter', 'text case changer'],
+    lastUpdated: '2026-03-18',
+    readingTime: '6 min read',
+    tags: ['Text', 'Converter', 'Formatting', 'Free Tools'],
+    intro: `<p>गल्तीले CAPS LOCK ON राखेर paragraph type गर्नुभयो? Heading Title Case मा बदल्नुपर्छ? <strong>Text Case Converter</strong> ले एक click मा सबै fix गर्छ — दोबारा type गर्नुपर्दैन।</p>`,
+    sections: [
+      { id: 'types', title: 'सबै Text Case Types', content: `<table><thead><tr><th>Case</th><th>Example</th><th>कहाँ Use</th></tr></thead><tbody><tr><td>UPPERCASE</td><td>HELLO WORLD</td><td>Headings, emphasis</td></tr><tr><td>lowercase</td><td>hello world</td><td>URLs, casual text</td></tr><tr><td>Title Case</td><td>Hello World</td><td>Headlines, titles</td></tr><tr><td>camelCase</td><td>helloWorld</td><td>JavaScript</td></tr><tr><td>snake_case</td><td>hello_world</td><td>Python, databases</td></tr></tbody></table>` },
+      { id: 'how', title: 'कसरी Convert गर्ने', content: `<ol><li><a href="/tools/case-converter">ToolsArena Case Converter</a> खोल्नुहोस्</li><li>Text paste गर्नुहोस्</li><li>चाहिएको case button click</li><li>Copy गर्नुहोस्</li></ol><p>Instantly convert हुन्छ।</p>` },
+      { id: 'caps-fix', title: 'CAPS LOCK Fix', content: `<ol><li>ALL CAPS text copy</li><li>Case Converter मा paste</li><li>"Sentence case" click</li><li>Fixed text copy</li></ol><p>Word मा: Shift+F3</p>` },
+    ],
+    howToSteps: [
+      { title: "Open Case Converter", description: "Go to ToolsArena Case Converter — free, no signup." },
+      { title: "Paste your text", description: "Type or paste any text into the input box." },
+      { title: "Choose your case", description: "Click the button for UPPER, lower, Title, Sentence, camelCase, or snake_case." },
+      { title: "Copy the result", description: "Click Copy to copy the converted text to your clipboard." },
+    ],
+    faqs: [
+      { question: 'UPPERCASE लाई lowercase मा कसरी?', answer: 'Case Converter मा paste गर्नुहोस्, "lowercase" click।' },
+      { question: 'CAPS LOCK text fix कसरी?', answer: 'Copy → Case Converter paste → "Sentence case" → copy back।' },
+      { question: 'camelCase के हो?', answer: 'पहिलो word बाहेक हरेक word capital, spaces छैन: "helloWorld"। JavaScript मा use।' },
+      { question: 'Mobile मा काम गर्छ?', answer: 'हो — कुनै पनि browser मा।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'font-generator-guide'],
+    toolCTA: {
+      heading: 'Text Case तुरुन्तै Convert — Free!',
+      description: 'UPPERCASE, lowercase, Title Case — एक click मा।',
+      buttonText: 'Case Converter खोल्नुहोस् →',
+    },
+  },
+
+  // ── HASH GENERATOR GUIDE (NE) ──────────────────────────────────────────────
+  {
+    slug: 'hash-generator-guide',
+    toolSlug: 'hash-generator',
+    category: 'developer-tools',
+    title: 'Hash Generator — MD5, SHA-256 Nepali Guide (2026)',
+    subtitle: 'MD5, SHA-256 hashes generate गर्नुहोस् — hashing बुझ्नुहोस्, file verify गर्नुहोस्।',
+    metaTitle: 'Hash Generator Online — MD5, SHA-256 Nepali (2026)',
+    metaDescription: 'MD5, SHA-256 hashes free generate गर्नुहोस्। Hashing के हो, file verify कसरी।',
+    targetKeyword: 'hash generator online',
+    secondaryKeywords: ['md5 generator', 'sha256 generator', 'hash ke ho', 'file verify', 'password hashing'],
+    lastUpdated: '2026-03-18',
+    readingTime: '7 min read',
+    tags: ['Developer', 'Security', 'Hash', 'Free Tools'],
+    intro: `<p><strong>Hash</strong> generate गर्नुपर्छ? File download verify गर्ने हो, passwords secure गर्ने — hash functions developers का लागि essential छन्।</p>`,
+    sections: [
+      { id: 'what', title: 'Hashing के हो?', content: `<p>Hash function ले कुनै पनि input को fixed-length fingerprint बनाउँछ:</p><ul><li>Same input &rarr; सधैं same hash</li><li>फरक input &rarr; पूरै फरक hash</li><li>Hash बाट original recover हुँदैन</li></ul><p>"Hello" &rarr; MD5: 8b1a9953... / "hello" &rarr; MD5: 5d41402... — एउटा character ले पूरा hash बदल्छ!</p>` },
+      { id: 'compare', title: 'MD5 vs SHA-256', content: `<table><thead><tr><th>Algorithm</th><th>Security</th><th>Use</th></tr></thead><tbody><tr><td>MD5</td><td>❌ Broken</td><td>File checksum मात्र</td></tr><tr><td>SHA-256</td><td>✅ Secure</td><td>✅ Recommended</td></tr><tr><td>bcrypt</td><td>✅ Password-safe</td><td>Passwords</td></tr></tbody></table>` },
+      { id: 'how', title: 'Hash कसरी Generate गर्ने', content: `<ol><li><a href="/tools/hash-generator">ToolsArena Hash Generator</a> खोल्नुहोस्</li><li>Text paste गर्नुहोस्</li><li>Algorithm छान्नुहोस्</li><li>Hash instantly generate हुन्छ</li><li>Copy गर्नुहोस्</li></ol>` },
+    ],
+    howToSteps: [
+      { title: "Open Hash Generator", description: "Go to ToolsArena Hash Generator — free, no signup." },
+      { title: "Enter text or upload file", description: "Type, paste text, or upload a file to hash." },
+      { title: "Choose algorithm", description: "Select MD5, SHA-1, SHA-256, SHA-512, or other algorithms." },
+      { title: "Copy your hash", description: "The hash is generated instantly. Click Copy to clipboard." },
+    ],
+    faqs: [
+      { question: 'MD5 के हो?', answer: '32 char fingerprint। Fast तर broken — checksum मात्र।' },
+      { question: 'SHA-256 के हो?', answer: '64 char secure hash। Bitcoin, SSL मा standard।' },
+      { question: 'Hash reverse हुन्छ?', answer: 'होइन — one-way function।' },
+      { question: 'Safe छ?', answer: 'ToolsArena मा browser मा process। Server मा केही जाँदैन।' },
+    ],
+    relatedGuides: ['password-generator-guide', 'password-strength-guide', 'base64-encode-decode-guide'],
+    toolCTA: {
+      heading: 'Hash Generate गर्नुहोस् — Free!',
+      description: 'MD5, SHA-256, SHA-512। Browser-based, private।',
+      buttonText: 'Hash Generator खोल्नुहोस् →',
+    },
+  },
+
+  // ── SCIENTIFIC CALCULATOR GUIDE (NE) ──────────────────────────────────────────────
+  {
+    slug: 'scientific-calculator-guide',
+    toolSlug: 'scientific-calculator',
+    category: 'calculators',
+    title: 'Scientific Calculator Online Free — Nepali Guide (2026)',
+    subtitle: 'Free scientific calculator — sin, cos, tan, log। Mobile र desktop मा।',
+    metaTitle: 'Scientific Calculator Free — Nepali Guide (2026)',
+    metaDescription: 'Free scientific calculator — sin cos tan log। Students को लागि complete guide।',
+    targetKeyword: 'scientific calculator online',
+    secondaryKeywords: ['scientific calculator', 'sin cos tan', 'log calculator', 'factorial calculator', 'trigonometry calculator'],
+    lastUpdated: '2026-03-18',
+    readingTime: '6 min read',
+    tags: ['Calculator', 'Math', 'Students', 'Free Tools'],
+    intro: `<p><strong>Scientific calculator</strong> चाहिन्छ? Trigonometry homework, engineering calculations — ToolsArena को free calculator कुनै पनि device मा।</p>`,
+    sections: [
+      { id: 'trig', title: 'sin, cos, tan', content: `<table><thead><tr><th>Function</th><th>Example</th><th>Result</th></tr></thead><tbody><tr><td>sin</td><td>sin(30&deg;)</td><td>0.5</td></tr><tr><td>cos</td><td>cos(60&deg;)</td><td>0.5</td></tr><tr><td>tan</td><td>tan(45&deg;)</td><td>1</td></tr></tbody></table><p><strong>DEG/RAD:</strong> School = DEG, calculus = RAD। Exam मा सबैभन्दा ठूलो गल्ती!</p>` },
+      { id: 'log', title: 'Log र Exponents', content: `<p>log(1000) = 3, &radic;144 = 12, 5! = 120, ln(e) = 1</p>` },
+      { id: 'tips', title: 'Students Tips', content: `<ul><li>DEG/RAD check गर्नुहोस्</li><li>Parentheses use गर्नुहोस्</li><li>sin(90&deg;) = 1 ले verify</li><li>Exam अघि ToolsArena मा practice</li></ul>` },
+    ],
+    howToSteps: [
+      { title: "Open Scientific Calculator", description: "Go to ToolsArena Scientific Calculator — free, no download." },
+      { title: "Check DEG/RAD mode", description: "Ensure you are in the correct mode for your calculation." },
+      { title: "Enter your calculation", description: "Use the buttons or type your expression — trig, log, exponents, etc." },
+      { title: "Get your result", description: "The result displays instantly. Use memory functions for multi-step problems." },
+    ],
+    faqs: [
+      { question: 'Free छ?', answer: 'हो — 100% free। Signup छैन।' },
+      { question: 'sin cos tan कसरी?', answer: 'DEG mode, sin/cos/tan click, angle enter।' },
+      { question: 'Mobile मा?', answer: 'हो — कुनै पनि browser मा।' },
+      { question: 'Factorial?', answer: 'n! button। 5! = 120।' },
+    ],
+    relatedGuides: ['percentage-calculator-guide', 'unit-converter-guide', 'compound-interest-guide'],
+    toolCTA: {
+      heading: 'Scientific Calculator — Free!',
+      description: 'sin, cos, tan, log — कुनै पनि device मा।',
+      buttonText: 'Calculator खोल्नुहोस् →',
+    },
+  },
+
+  // ── COUNTDOWN TIMER GUIDE (NE) ──────────────────────────────────────────────
+  {
+    slug: 'countdown-timer-guide',
+    toolSlug: 'countdown-timer',
+    category: 'utility-tools',
+    title: 'Free Countdown Timer Online — Nepali Guide (2026)',
+    subtitle: 'Countdown timer — cooking, exam, workout। Free, browser मा।',
+    metaTitle: 'Free Countdown Timer — Nepali Guide (2026)',
+    metaDescription: 'Free countdown timer। Cooking, exam, Pomodoro। Mobile मा पनि।',
+    targetKeyword: 'online countdown timer',
+    secondaryKeywords: ['countdown timer', 'timer set garne', '5 minute timer', 'cooking timer', 'pomodoro timer', 'exam timer'],
+    lastUpdated: '2026-03-18',
+    readingTime: '6 min read',
+    tags: ['Timer', 'Productivity', 'Utility', 'Free Tools'],
+    intro: `<p><strong>Countdown timer</strong> चाहिन्छ? Cooking, exam, workout — ToolsArena को free timer कुनै पनि device मा बिना setup।</p>`,
+    sections: [
+      { id: 'how', title: 'Timer कसरी Set गर्ने', content: `<ol><li><a href="/tools/countdown-timer">ToolsArena Timer</a> खोल्नुहोस्</li><li>Duration set गर्नुहोस् वा preset use</li><li>Start click</li><li>Time up हुँदा alarm</li></ol>` },
+      { id: 'durations', title: 'Popular Durations', content: `<table><thead><tr><th>Duration</th><th>Use</th></tr></thead><tbody><tr><td>2 min</td><td>Wai Wai noodles</td></tr><tr><td>3 min</td><td>Tea</td></tr><tr><td>5 min</td><td>Break</td></tr><tr><td>15 min</td><td>Rice</td></tr><tr><td>25 min</td><td>Pomodoro</td></tr><tr><td>45 min</td><td>Exam</td></tr></tbody></table>` },
+      { id: 'pomodoro', title: 'Pomodoro Technique', content: `<ol><li>25 min काम</li><li>5 min break</li><li>4 rounds</li><li>15-30 min long break</li></ol><p><strong>Best for:</strong> SEE/NEB exam, Loksewa study, college, coding।</p>` },
+    ],
+    howToSteps: [
+      { title: "Open Countdown Timer", description: "Go to ToolsArena Countdown Timer — free, no app needed." },
+      { title: "Set your duration", description: "Enter hours, minutes, seconds or use quick presets." },
+      { title: "Start the timer", description: "Click Start. The countdown begins immediately." },
+      { title: "Get alerted when done", description: "An audio alarm and visual notification alert you when time is up." },
+    ],
+    faqs: [
+      { question: 'Timer कसरी?', answer: 'ToolsArena Timer खोल्नुहोस्, duration set, Start।' },
+      { question: 'Tab switch मा?', answer: 'Background मा चल्छ। Alarm बज्छ।' },
+      { question: 'Mobile मा?', answer: 'हो — browser मा। App छैन।' },
+      { question: 'Fullscreen?', answer: 'छ — classroom, presentations।' },
+    ],
+    relatedGuides: ['typing-speed-test-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Timer सुरु गर्नुहोस् — Free!',
+      description: 'Cooking, study, fitness। App चाहिँदैन।',
+      buttonText: 'Timer खोल्नुहोस् →',
+    },
+  },
+];

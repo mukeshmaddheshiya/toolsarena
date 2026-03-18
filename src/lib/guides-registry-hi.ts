@@ -477,153 +477,235 @@ export const guidesHi: Guide[] = [
     slug: 'qr-code-generator-guide',
     toolSlug: 'qr-code-generator',
     category: 'developer-tools',
-    title: 'QR कोड जनरेटर गाइड: UPI Payment, WiFi और Business के लिए QR Code बनाएं',
-    subtitle: 'PhonePe, Google Pay, Paytm के लिए UPI QR Code से लेकर WiFi और vCard QR Code तक — सब कुछ यहाँ सीखें।',
-    metaTitle: 'QR कोड जनरेटर - फ्री में QR Code बनाएं',
-    metaDescription: 'QR कोड जनरेटर से UPI payment, WiFi, URL और business card QR code बनाएं फ्री में। PhonePe, GPay, Paytm के लिए QR code कैसे बनाएं — पूरी जानकारी हिंदी में।',
-    targetKeyword: 'QR कोड जनरेटर',
+    title: 'QR Code कैसे बनाएं — URL, WiFi, Menu, Business Card, UPI सब Free (2026)',
+    subtitle: 'QR Code बनाने की पूरी गाइड — Restaurant Menu, WiFi Sharing, Business Card, UPI Payment, शादी का Invitation और Product Packaging के लिए। Free, No Signup.',
+    metaTitle: 'QR Code कैसे बनाएं — URL, WiFi, Menu, Business Card Free',
+    metaDescription: 'QR Code कैसे बनाएं? URL, WiFi, Restaurant Menu, Business Card, UPI Payment के लिए free QR code बनाएं। Customization tips, print size guide और best practices हिंदी में।',
+    targetKeyword: 'QR code कैसे बनाएं',
     secondaryKeywords: [
-      'QR code kaise banate hain', 'QR code generator online free', 'UPI QR code banaye',
-      'business ke liye QR code', 'WhatsApp QR code', 'WiFi QR code generator',
-      'PhonePe QR code', 'Google Pay QR code', 'QR code scanner',
-      'apna QR code banayein',
+      'QR code kaise banaye', 'QR code generator online free', 'UPI QR code banaye',
+      'restaurant menu QR code', 'WiFi QR code generator', 'free QR code maker hindi',
+      'PhonePe QR code', 'Google Pay QR code', 'शादी QR code', 'visiting card QR code',
+      'QR code for business', 'QR code print size',
     ],
-    lastUpdated: '2026-03-12',
-    readingTime: '8 मिनट पढ़ें',
+    lastUpdated: '2026-03-17',
+    readingTime: '12 मिनट पढ़ें',
     tags: ['QR Code', 'UPI', 'Business', 'Digital Payment'],
-    intro: `<p><strong>QR कोड जनरेटर</strong> से आप मिनटों में अपना खुद का QR code बना सकते हैं — चाहे UPI payment के लिए हो, अपनी website share करने के लिए, या WiFi password share करने के लिए। भारत में digital payments के बढ़ते चलन के साथ QR code बेहद popular हो गए हैं।</p>
-<p>छोटे दुकानदार से लेकर बड़े business तक, restaurants से लेकर freelancers तक — सभी QR codes का उपयोग कर रहे हैं। इस गाइड में जानें कि अपना QR code कैसे बनाएं और इसे effectively कैसे use करें।</p>`,
+    intro: `<p><strong>QR Code बनाना</strong> चाहते हैं? चाहे restaurant का menu हो, business card, घर का WiFi, शादी का invitation, या UPI payment — ToolsArena के <strong>QR Code Generator</strong> से 30 सेकंड में free QR code बनाएं। कोई signup नहीं, कोई watermark नहीं।</p>
+<p>भारत में QR code रोज़मर्रा की ज़िंदगी का हिस्सा बन चुके हैं। चाय की दुकान से लेकर बड़े showrooms तक — सब UPI QR code से payment लेते हैं। COVID के बाद restaurants में digital menu QR code standard बन गया है। शादी के cards में भी अब QR code आने लगे हैं। इस गाइड में जानें — हर तरह का QR code कैसे बनाएं, print कैसे करें, और common mistakes से कैसे बचें।</p>`,
     sections: [
       {
         id: 'qr-code-kya-hai',
         title: 'QR Code क्या है और कैसे काम करता है?',
-        content: `<p>QR Code (Quick Response Code) एक 2D barcode है जिसमें text, URL, contact info या payment details जैसी information encode होती है। Smartphone camera से scan करने पर यह information तुरंत read हो जाती है।</p>
-<h3>QR Code के प्रकार और उनके उपयोग</h3>
+        content: `<p>QR Code का मतलब है <strong>Quick Response Code</strong>। यह एक 2D barcode है जो black और white squares के pattern में data store करता है। 1994 में Toyota की subsidiary Denso Wave ने इसे बनाया था।</p>
+<p>जब आप अपने phone का camera QR code पर point करते हैं, तो camera तीन corners के बड़े squares (finder patterns) को detect करता है, code की orientation समझता है, encoded data पढ़ता है, और action perform करता है — जैसे website खोलना, WiFi connect करना, या contact save करना।</p>
+<h3>QR Code के प्रकार</h3>
 <table>
-  <thead>
-    <tr><th>QR Code Type</th><th>उपयोग</th><th>Example</th></tr>
-  </thead>
+  <thead><tr><th>QR Code Type</th><th>क्या Encode होता है</th><th>Scan करने पर क्या होता है</th></tr></thead>
   <tbody>
-    <tr><td>URL QR Code</td><td>Website link share करना</td><td>toolsarena.in का QR code</td></tr>
-    <tr><td>UPI QR Code</td><td>Payment receive करना</td><td>PhonePe, GPay, Paytm</td></tr>
-    <tr><td>WiFi QR Code</td><td>WiFi password share करना</td><td>घर या office का WiFi</td></tr>
-    <tr><td>vCard QR Code</td><td>Contact info share करना</td><td>Business card replacement</td></tr>
-    <tr><td>SMS QR Code</td><td>Pre-filled SMS भेजना</td><td>Customer support</td></tr>
-    <tr><td>Email QR Code</td><td>Email draft open करना</td><td>Feedback form</td></tr>
-    <tr><td>Text QR Code</td><td>Plain text show करना</td><td>Instructions, disclaimers</td></tr>
+    <tr><td><strong>URL</strong></td><td>Website link</td><td>Browser में website खुलती है</td></tr>
+    <tr><td><strong>WiFi</strong></td><td>Network name, password</td><td>Phone automatically WiFi से connect हो जाता है</td></tr>
+    <tr><td><strong>vCard</strong></td><td>Name, phone, email, address</td><td>Phone में contact save हो जाता है</td></tr>
+    <tr><td><strong>UPI</strong></td><td>UPI ID, name, amount</td><td>UPI app में payment page खुलता है</td></tr>
+    <tr><td><strong>Text</strong></td><td>कोई भी text</td><td>Screen पर text दिखता है</td></tr>
+    <tr><td><strong>Email</strong></td><td>Email address, subject</td><td>Pre-filled email draft खुलता है</td></tr>
+    <tr><td><strong>SMS</strong></td><td>Phone number + message</td><td>Pre-filled SMS खुलता है</td></tr>
+    <tr><td><strong>Location</strong></td><td>Latitude, longitude</td><td>Google Maps में location खुलती है</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'qr-code-kaise-banaye',
+        title: 'QR Code कैसे बनाएं — Step by Step (ToolsArena)',
+        content: `<p>ToolsArena से QR code बनाना 30 सेकंड का काम है:</p>
+<h3>Step 1: QR Code Generator खोलें</h3>
+<p>ToolsArena.in पर जाएं और QR Code Generator tool खोलें। कोई app download नहीं, कोई account नहीं।</p>
+<h3>Step 2: QR Code type चुनें</h3>
+<p>URL, WiFi, vCard, Text, Email, Phone, या SMS — जो चाहिए वो select करें।</p>
+<h3>Step 3: Information डालें</h3>
+<ul>
+  <li><strong>URL:</strong> पूरा website address paste करें (<code>https://</code> सहित)</li>
+  <li><strong>WiFi:</strong> Network name (SSID), password, और encryption type (WPA2) डालें</li>
+  <li><strong>vCard:</strong> Name, phone, email, company, website भरें</li>
+  <li><strong>UPI:</strong> अपनी UPI ID और name डालें</li>
+</ul>
+<h3>Step 4: Customize करें (Optional)</h3>
+<p>QR code का color बदलें। अगर logo लगाना है तो <strong>High error correction</strong> चुनें।</p>
+<h3>Step 5: Generate और Download</h3>
+<p><strong>PNG</strong> (digital use) या <strong>SVG</strong> (print — किसी भी size में बिना blur हुए) में download करें।</p>`,
+      },
+      {
+        id: 'restaurant-menu-qr',
+        title: 'Restaurant Menu के लिए QR Code कैसे बनाएं',
+        content: `<p>COVID के बाद भारत में restaurant menu QR code standard बन गया है — printing cost बचती है और menu instantly update हो जाता है।</p>
+<h3>Step-by-step</h3>
+<ol>
+  <li><strong>Digital menu बनाएं:</strong> Website page, Google Drive PDF (sharing "Anyone with link" रखें), या Instagram highlights</li>
+  <li><strong>Menu URL copy करें</strong> — mobile पर check करें कि link काम कर रहा है</li>
+  <li><strong>URL QR code बनाएं</strong> ToolsArena में</li>
+  <li><strong>Print करें:</strong> Table tent, sticker, या acrylic stand पर। Size: minimum 5 x 5 cm। "Menu के लिए Scan करें" लिखें</li>
+</ol>
+<h3>Restaurant QR Code Tips</h3>
+<ul>
+  <li>Long URL हो तो URL shortener use करें — छोटा URL = simple QR pattern</li>
+  <li>Laminate करें ताकि spill से बचे</li>
+  <li>Restaurant की lighting में test करें — dim light में scanning problem हो सकती है</li>
+  <li>Price change हो तो digital menu update करें — QR code reprint नहीं करना</li>
+</ul>`,
+      },
+      {
+        id: 'upi-payment-qr',
+        title: 'UPI Payment QR Code कैसे बनाएं (Google Pay, PhonePe, Paytm)',
+        content: `<p>भारत में UPI से हर महीने 12 अरब+ transactions होते हैं। छोटे दुकानदार से लेकर freelancers तक — सबको UPI QR code चाहिए।</p>
+<h3>तरीका 1: UPI App से (सबसे आसान)</h3>
+<ul>
+  <li><strong>Google Pay:</strong> Profile photo tap → "Payment QR code" → Download</li>
+  <li><strong>PhonePe:</strong> Home → "Receive Money" → Download QR</li>
+  <li><strong>Paytm:</strong> Profile → "My QR Code" → Download</li>
+</ul>
+<h3>तरीका 2: ToolsArena से Custom UPI QR</h3>
+<ol>
+  <li>"URL" या "Text" type select करें</li>
+  <li>Enter करें: <code>upi://pay?pa=yourname@upi&amp;pn=Your+Name&amp;cu=INR</code></li>
+  <li>अपनी UPI ID डालें (जैसे <code>name@paytm</code> या <code>9876543210@upi</code>)</li>
+  <li>Amount fix करना हो तो <code>&amp;am=500</code> add करें (₹500 के लिए)</li>
+</ol>
+<h3>Business के लिए UPI QR Tips</h3>
+<ul>
+  <li>Amount blank रखें — customer खुद enter करे</li>
+  <li>Counter पर print करके लगाएं (minimum 5 x 5 cm)</li>
+  <li>अपना नाम और UPI ID नीचे print करें verification के लिए</li>
+  <li>Laminate करें — UPI QR code कभी expire नहीं होता</li>
+</ul>`,
+      },
+      {
+        id: 'wifi-qr-code',
+        title: 'WiFi QR Code कैसे बनाएं (घर, Office, Cafe)',
+        content: `<p>WiFi password share करने का सबसे आसान तरीका — QR code scan करते ही phone automatically connect हो जाता है।</p>
+<ol>
+  <li>ToolsArena में <strong>WiFi</strong> type select करें</li>
+  <li><strong>Network Name (SSID)</strong> exactly वैसा डालें जैसा WiFi settings में दिखता है</li>
+  <li><strong>Password</strong> डालें</li>
+  <li><strong>Encryption:</strong> WPA/WPA2 (ज़्यादातर routers के लिए) select करें</li>
+  <li>Generate और Download</li>
+</ol>
+<h3>कहाँ लगाएं?</h3>
+<ul>
+  <li><strong>घर:</strong> Router के पास या fridge पर frame करके</li>
+  <li><strong>Office:</strong> Reception, meeting room, guest area में</li>
+  <li><strong>Cafe/Restaurant:</strong> Table पर या entrance के पास — "WiFi Password के लिए Scan करें"</li>
+  <li><strong>Airbnb/Hotel:</strong> Welcome packet या room में frame करें</li>
+</ul>`,
+      },
+      {
+        id: 'business-card-shaadi-qr',
+        title: 'Business Card और शादी के लिए QR Code',
+        content: `<h3>Business Card (Visiting Card) QR Code</h3>
+<p>vCard QR code से scan करने पर phone में automatically contact save हो जाता है — name, phone, email, company, website सब एक बार में।</p>
+<ul>
+  <li>ToolsArena में "vCard" select करें और details भरें</li>
+  <li>SVG में download करें (print quality बेस्ट)</li>
+  <li>Card के back side पर लगाएं — minimum 2 x 2 cm</li>
+  <li>"Contact Save करने के लिए Scan करें" लिखें</li>
+</ul>
+<h3>शादी के Invitation में QR Code</h3>
+<p>Modern Indian weddings में QR codes बहुत popular हो रहे हैं:</p>
+<ul>
+  <li><strong>Venue location:</strong> Google Maps link का QR code — guests को रास्ता मिल जाएगा</li>
+  <li><strong>RSVP form:</strong> Google Form का QR code — guests confirm कर सकते हैं</li>
+  <li><strong>Photo album:</strong> Google Photos shared album का QR code</li>
+  <li><strong>Digital gift:</strong> UPI QR code — cash gift digital में</li>
+</ul>`,
+      },
+      {
+        id: 'qr-customization-print',
+        title: 'QR Code Customization और Print Size Guide',
+        content: `<h3>Color Customization</h3>
+<ul>
+  <li>Dark color foreground + light background — हमेशा। उल्टा (light on dark) काम नहीं करता।</li>
+  <li>Contrast ratio: minimum 4:1</li>
+  <li>Safe colors: Dark blue, dark green, black। Avoid: yellow, light gray, red</li>
+</ul>
+<h3>Error Correction Levels</h3>
+<table>
+  <thead><tr><th>Level</th><th>Recovery</th><th>कब use करें</th></tr></thead>
+  <tbody>
+    <tr><td>L (Low)</td><td>~7%</td><td>Digital displays</td></tr>
+    <tr><td>M (Medium)</td><td>~15%</td><td>General use</td></tr>
+    <tr><td>Q (Quartile)</td><td>~25%</td><td>Outdoor signage</td></tr>
+    <tr><td>H (High)</td><td>~30%</td><td>Logo overlay, rough surfaces</td></tr>
   </tbody>
 </table>
-<h3>QR Code कैसे काम करता है?</h3>
+<h3>Print Size Guide</h3>
+<table>
+  <thead><tr><th>Use Case</th><th>Minimum Size</th><th>Recommended</th></tr></thead>
+  <tbody>
+    <tr><td>Business Card</td><td>2 x 2 cm</td><td>2.5 x 2.5 cm</td></tr>
+    <tr><td>A4 Flyer</td><td>3 x 3 cm</td><td>5 x 5 cm</td></tr>
+    <tr><td>Restaurant Table</td><td>4 x 4 cm</td><td>6 x 6 cm</td></tr>
+    <tr><td>Poster</td><td>5 x 5 cm</td><td>8 x 8 cm</td></tr>
+    <tr><td>Shop Window</td><td>8 x 8 cm</td><td>15 x 15 cm</td></tr>
+    <tr><td>Billboard</td><td>30 x 30 cm</td><td>60 x 60 cm</td></tr>
+  </tbody>
+</table>
+<p>Print के लिए SVG download करें (300 DPI minimum)। QR code के चारों तरफ white border (quiet zone) ज़रूर रखें।</p>`,
+      },
+      {
+        id: 'best-practices-galtiyan',
+        title: 'QR Code Best Practices और Common गलतियां',
+        content: `<h3>Best Practices</h3>
 <ul>
-  <li>Information को black और white squares के pattern में encode किया जाता है</li>
-  <li>Camera इस pattern को scan करके decode करता है</li>
-  <li>Result automatically browser, UPI app, या contact book में open हो जाता है</li>
-  <li>QR code को upside down या angle पर भी scan किया जा सकता है</li>
+  <li><strong>Print से पहले test करें</strong> — 2 अलग phones (iPhone + Android) से scan करके देखें</li>
+  <li><strong>Short URL use करें</strong> — छोटा data = simple QR pattern = faster scan</li>
+  <li><strong>CTA लिखें:</strong> "Menu के लिए Scan करें", "WiFi Connect के लिए Scan करें"</li>
+  <li>URL में <code>https://</code> ज़रूर include करें</li>
+  <li>Print: SVG, Digital: PNG</li>
+</ul>
+<h3>Common गलतियां</h3>
+<ul>
+  <li><strong>बहुत छोटा print:</strong> 2 cm से कम size scan नहीं होता</li>
+  <li><strong>Low contrast:</strong> Light gray on white — देखने में अच्छा लगता है, scan नहीं होता</li>
+  <li><strong>Quiet zone नहीं:</strong> QR code के चारों तरफ white border ज़रूरी है</li>
+  <li><strong>बहुत ज़्यादा data:</strong> लंबा text encode करने से dense pattern बनता है</li>
+  <li><strong>Destination test नहीं किया:</strong> QR code काम करता है लेकिन link broken है</li>
 </ul>`,
       },
       {
-        id: 'upi-payment-qr-code',
-        title: 'UPI Payment QR Code कैसे बनाएं (PhonePe, GPay, Paytm)',
-        content: `<p>भारत में UPI QR code सबसे ज़्यादा use होता है — दुकानदार, freelancers और businesses सभी payment receive करने के लिए इसे use करते हैं।</p>
-<h3>UPI QR Code बनाने के तरीके</h3>
-<ul>
-  <li><strong>PhonePe App:</strong> Profile → Payment QR Code → Download</li>
-  <li><strong>Google Pay:</strong> Home screen → अपना photo tap करें → Payment QR code</li>
-  <li><strong>Paytm:</strong> Profile → QR Code → Share/Download</li>
-  <li><strong>ToolsArena QR Generator:</strong> UPI ID डालें → Generate → Download high-quality QR</li>
-</ul>
-<h3>UPI QR Code format</h3>
-<blockquote>upi://pay?pa=yourname@upi&amp;pn=Your+Name&amp;am=100&amp;cu=INR</blockquote>
-<p><strong>pa</strong> = UPI ID, <strong>pn</strong> = Name, <strong>am</strong> = Amount (optional), <strong>cu</strong> = Currency</p>
-<h3>Business के लिए UPI QR Code tips</h3>
-<ul>
-  <li>Amount blank रखें ताकि customer खुद amount enter करे</li>
-  <li>QR code को print करके counter पर लगाएं</li>
-  <li>High-resolution (300 DPI) image download करें print के लिए</li>
-  <li>अपना नाम QR code के नीचे print करें verification के लिए</li>
-</ul>`,
-      },
-      {
-        id: 'qr-code-ke-prakar',
-        title: 'QR Code के प्रकार और उनके उपयोग',
-        content: `<p>अलग-अलग ज़रूरतों के लिए अलग-अलग QR codes बनाए जाते हैं। यहाँ सबसे popular use cases हैं:</p>
-<h3>WiFi QR Code</h3>
-<p>WiFi password share करना अब बेहद आसान है। ToolsArena में Network Name (SSID), Password और Security type (WPA2) डालें — QR code scan करते ही phone automatically connect हो जाएगा।</p>
-<h3>Business Card QR Code (vCard)</h3>
-<p>अपने business card पर QR code लगाएं — scan करने पर phone में automatically contact save हो जाएगा। इसमें name, phone, email, website और address सब encode होता है।</p>
-<h3>WhatsApp QR Code</h3>
-<p>WhatsApp number share करने के लिए: <code>https://wa.me/91XXXXXXXXXX</code> का QR code बनाएं। Scan करते ही WhatsApp chat directly open हो जाएगी।</p>
-<h3>Restaurant Menu QR Code</h3>
-<p>COVID के बाद restaurants में digital menu का चलन बढ़ा है। Menu PDF का link या Google Drive link का QR code बनाकर table पर लगाएं।</p>`,
-      },
-      {
-        id: 'qr-code-scan-kaise-karein',
-        title: 'QR Code Scan कैसे करें (iPhone/Android)',
-        content: `<p>QR code scan करना बेहद आसान है — ज़्यादातर phones में built-in scanner होता है।</p>
-<h3>Android पर QR Code Scan</h3>
-<ul>
-  <li>Camera app खोलें और QR code पर point करें — automatically scan हो जाएगा</li>
-  <li>अगर camera से नहीं हो रहा तो Google Lens use करें</li>
-  <li>PhonePe, GPay में scan &amp; pay का option होता है</li>
-</ul>
-<h3>iPhone पर QR Code Scan</h3>
-<ul>
-  <li>Default Camera app से directly QR code scan होता है (iOS 11+)</li>
-  <li>Control Centre में QR code scanner shortcut add कर सकते हैं</li>
-  <li>Wallet app से payment QR codes scan होते हैं</li>
-</ul>
-<p><strong>नोट:</strong> 2020 के बाद ज़्यादातर Android और iPhone में built-in QR scanner है — अलग app install करने की ज़रूरत नहीं।</p>`,
+        id: 'static-vs-dynamic',
+        title: 'Static vs Dynamic QR Code — क्या फ़र्क है?',
+        content: `<h3>Static QR Code</h3>
+<p>Data permanently encode होता है। बदलने के लिए नया QR code बनाना पड़ता है। <strong>Free</strong> और <strong>कभी expire नहीं</strong> होता। WiFi, vCard, UPI, personal use के लिए best।</p>
+<h3>Dynamic QR Code</h3>
+<p>एक redirect URL encode होता है जिसे कभी भी change कर सकते हैं — बिना QR code reprint किए। Scan analytics भी मिलते हैं। लेकिन <strong>paid subscription</strong> चाहिए।</p>
+<div class="callout-info"><strong>ℹ️ ज़्यादातर लोगों के लिए Static QR code काफी है</strong><p>अगर WiFi, business card, UPI payment, या fix URL के लिए QR code बना रहे हैं तो ToolsArena का free static QR code use करें। Dynamic सिर्फ तब चाहिए जब destination URL बार-बार बदलना हो या scan analytics चाहिए।</p></div>`,
       },
     ],
     howToSteps: [
-      {
-        title: 'QR Code Generator खोलें',
-        description: 'ToolsArena.in पर जाएं और QR Code Generator टूल select करें।',
-      },
-      {
-        title: 'QR Code का type चुनें',
-        description: 'URL, UPI Payment, WiFi, vCard, या Text में से जो चाहिए वो select करें।',
-      },
-      {
-        title: 'Information डालें',
-        description: 'URL के लिए website address, UPI के लिए UPI ID, WiFi के लिए network name और password डालें।',
-      },
-      {
-        title: 'QR Code Generate करें',
-        description: '"Generate" button click करें। आपका QR code तुरंत तैयार हो जाएगा।',
-      },
-      {
-        title: 'Download और Use करें',
-        description: 'High-resolution PNG या SVG में download करें। Print के लिए 300 DPI या ज़्यादा की size चुनें।',
-      },
+      { title: 'QR Code Generator खोलें', description: 'ToolsArena.in पर जाएं। कोई signup, कोई app download नहीं।' },
+      { title: 'QR Code type चुनें', description: 'URL, WiFi, vCard, UPI, Text, Email, Phone, या SMS select करें।' },
+      { title: 'Information डालें', description: 'URL paste करें, WiFi password डालें, contact details भरें, या UPI ID enter करें।' },
+      { title: 'Color customize करें', description: 'Foreground/background color बदलें। Logo लगाना है तो High error correction चुनें।' },
+      { title: 'Generate और Download', description: 'Generate click करें। PNG (digital) या SVG (print) में download करें। Phone से test करें।' },
     ],
     faqs: [
-      {
-        question: 'QR code free में बना सकते हैं?',
-        answer: 'हाँ, ToolsArena का QR Code Generator बिल्कुल फ्री है। URL, UPI, WiFi, vCard और text QR codes बिना किसी cost के बनाएं। कोई account नहीं बनाना, कोई watermark नहीं।',
-      },
-      {
-        question: 'QR code कितने समय तक valid रहता है?',
-        answer: 'Static QR codes (जिनमें fix information है) हमेशा के लिए valid रहते हैं जब तक वो information valid है। UPI QR code तब तक काम करेगा जब तक आपका UPI ID active है।',
-      },
-      {
-        question: 'UPI QR code कैसे बनाएं?',
-        answer: 'ToolsArena QR Generator में "UPI Payment" select करें, अपनी UPI ID (जैसे name@paytm या number@upi) डालें, name add करें, और Generate करें। यह QR code PhonePe, Google Pay, Paytm सभी से scan होगा।',
-      },
-      {
-        question: 'QR code scan करने के लिए app चाहिए?',
-        answer: '2020 के बाद ज़्यादातर Android और iPhone में built-in QR scanner है। Android पर Camera app से और iPhone पर भी Camera app से directly scan होता है। अलग app की ज़रूरत नहीं।',
-      },
-      {
-        question: 'Business के लिए कौन सा QR code बनाएं?',
-        answer: 'दुकान के लिए UPI Payment QR code और URL QR code menu/website के लिए बनाएं। Visiting card पर vCard QR code लगाएं। Office WiFi के लिए WiFi QR code बनाएं — guests को password टाइप नहीं करना पड़ेगा।',
-      },
+      { question: 'QR code free में कैसे बनाएं?', answer: 'ToolsArena का QR Code Generator खोलें, type select करें (URL, WiFi, vCard आदि), information डालें, Generate click करें। तुरंत download — बिल्कुल free, कोई signup नहीं, कोई watermark नहीं।' },
+      { question: 'Website link का QR code कैसे बनाएं?', answer: 'ToolsArena में "URL" select करें, अपनी website का पूरा address paste करें (https:// सहित), Generate click करें। PNG या SVG में download करें।' },
+      { question: 'WiFi का QR code कैसे बनाएं?', answer: '"WiFi" type select करें। Network name (SSID) exactly वैसा डालें जैसा settings में दिखता है, password डालें, WPA/WPA2 चुनें। Scan करते ही phone automatically connect हो जाएगा।' },
+      { question: 'Restaurant menu का QR code कैसे बनाएं?', answer: 'Menu को website या Google Drive पर upload करें (link sharing "Anyone with link" रखें)। URL copy करें। ToolsArena में URL QR code बनाएं। 5x5 cm में print करके table पर लगाएं।' },
+      { question: 'Business card पर QR code कैसे लगाएं?', answer: '"vCard" select करें, name, phone, email, company भरें। SVG download करें। Card के back side पर minimum 2x2 cm में print करें। Scan करने पर contact automatically save होगा।' },
+      { question: 'QR code का color बदल सकते हैं?', answer: 'हाँ। Dark color foreground + light background रखें। Contrast ratio minimum 4:1 होना चाहिए। Yellow, light gray avoid करें। Black-on-white सबसे reliable है।' },
+      { question: 'Print के लिए QR code कितना बड़ा होना चाहिए?', answer: 'Business card: 2x2 cm min. Flyer: 3-5 cm. Restaurant table: 5-6 cm. Poster: 8+ cm. Billboard: 30+ cm. Print resolution: 300 DPI minimum. SVG format use करें।' },
+      { question: 'QR code expire होता है?', answer: 'Static QR code कभी expire नहीं होता — जब तक destination (URL, UPI ID, WiFi) active है तब तक काम करेगा। Dynamic QR code subscription ख़त्म होने पर expire हो सकता है।' },
+      { question: 'UPI QR code कैसे बनाएं?', answer: 'सबसे आसान: Google Pay, PhonePe, या Paytm app में "My QR Code" option से download करें। या ToolsArena में URL QR code बनाएं: upi://pay?pa=yourUPIid@bank&pn=Your+Name&cu=INR। सभी UPI apps से काम करेगा।' },
+      { question: 'QR code scan कितनी बार हुआ — track कर सकते हैं?', answer: 'Static QR codes (ToolsArena सहित) scans track नहीं करते। Tracking के लिए paid dynamic QR platform चाहिए। Alternative: URL में UTM parameters डालें और Google Analytics में track करें।' },
+      { question: 'Static और Dynamic QR code में क्या फ़र्क है?', answer: 'Static: data permanent, free, never expires। Dynamic: redirect URL जो बदल सकते हैं, scan analytics मिलते हैं, लेकिन paid subscription चाहिए।' },
+      { question: 'QR code scan करना safe है?', answer: 'QR code itself safe है — data encoded है। Risk उस link में है जहाँ QR code point करता है। Unknown QR codes scan करने के बाद URL preview check करें। Password या payment info तभी डालें जब URL verified हो।' },
     ],
-    relatedGuides: ['image-compressor-guide', 'pdf-compressor-guide'],
+    relatedGuides: ['password-generator-guide', 'image-compressor-guide', 'pdf-compressor-guide'],
     toolCTA: {
-      heading: 'अभी QR Code Generator आज़माएं — बिल्कुल Free!',
-      description: 'ToolsArena से UPI, WiFi, URL और vCard QR codes seconds में बनाएं। High-quality PNG download करें — कोई signup नहीं, कोई watermark नहीं।',
-      buttonText: 'टूल खोलें →',
+      heading: 'अभी Free QR Code बनाएं!',
+      description: 'URL, WiFi, UPI Payment, Business Card, Restaurant Menu — कोई भी QR code seconds में बनाएं। PNG या SVG download। कोई signup नहीं, कोई watermark नहीं।',
+      buttonText: 'QR Code Generator खोलें →',
     },
   },
 
@@ -2399,75 +2481,273 @@ button {
     slug: 'image-background-remover-guide',
     toolSlug: 'image-background-remover',
     category: 'image-tools',
-    title: 'Photo का Background कैसे हटाएं — Free AI Tool से 5 सेकंड में',
-    subtitle: 'किसी भी photo का background हटाएं — बिना Photoshop, बिना skill के',
-    metaTitle: 'Background Remover — Photo का Background हटाएं Free में (गाइड)',
-    metaDescription: 'AI से photo का background हटाएं — passport photo, product images, profile pictures के लिए। Free, no signup, 5 seconds में result। Mobile पर भी काम करता है।',
-    targetKeyword: 'background remover',
-    secondaryKeywords: ['photo background hataye', 'background remove kare', 'image background remover free', 'photo ka background kaise hataye', 'remove background online'],
-    lastUpdated: '2026-03-13',
-    readingTime: '5 मिनट पढ़ें',
-    tags: ['Background Remove', 'Image Tools', 'AI', 'Photo Editing'],
-    intro: `<p>किसी भी photo का background हटाना अब बहुत आसान हो गया है। <strong>AI-powered tools</strong> कुछ ही seconds में background remove कर देते हैं — बिना Photoshop सीखे, बिना किसी skill के।</p>
-<p>Passport photo, LinkedIn profile picture, e-commerce product images, या WhatsApp DP — इन सभी के लिए background removal काम आती है। इस गाइड में जानेंगे कि यह कैसे काम करता है और best results कैसे पाएं।</p>`,
+    title: 'Photo का Background कैसे हटाएं — Free AI Tool | पूरी गाइड (2026)',
+    subtitle: 'किसी भी image का background हटाने की सम्पूर्ण गाइड — बिना Photoshop, बिना signup, बिना watermark। Product photos, profile pictures, Aadhaar/passport photo सबके लिए।',
+    metaTitle: 'Photo का Background कैसे हटाएं Free Online | 2026 गाइड',
+    metaDescription: 'किसी भी image का background free में हटाएं — बिना Photoshop के। Product photos, profile pictures, passport photo के लिए step-by-step गाइड। Mobile पर भी काम करता है।',
+    targetKeyword: 'photo ka background kaise hataye',
+    secondaryKeywords: [
+      'background remover free', 'photo background hataye', 'background remove kare',
+      'image background remover free', 'photo ka background kaise hataye',
+      'remove background online', 'transparent background kaise banaye',
+      'background eraser online', 'photo background changer', 'logo background remove',
+      'passport photo white background', 'bina photoshop background hataye',
+    ],
+    lastUpdated: '2026-03-17',
+    readingTime: '10 मिनट पढ़ें',
+    tags: ['Background Remove', 'Image Tools', 'AI', 'Photo Editing', 'E-commerce'],
+    intro: `<p>क्या आप किसी <strong>photo का background हटाना</strong> चाहते हैं? अब इसके लिए न Photoshop की ज़रूरत है, न किसी design skill की। 2026 में AI-powered background removers कुछ ही seconds में studio-quality results देते हैं — बिल्कुल free, सीधे आपके browser में।</p>
+<p>चाहे Amazon के लिए product photo बनानी हो, LinkedIn के लिए professional headshot, passport/Aadhaar के लिए white background वाली photo, WhatsApp stickers, या logo से white background हटाना हो — इस गाइड में <em>हर</em> use case की step-by-step जानकारी है, tips और tools की तुलना के साथ।</p>
+<p>इस गाइड के बाद आप जान जाएंगे कि किसी भी image से background कैसे हटाएं — किसी भी device पर, बिना एक रुपया खर्च किए।</p>`,
     sections: [
       {
-        id: 'background-removal-uses',
-        title: 'Background Removal कब और क्यों ज़रूरी है?',
-        content: `<ul>
-  <li><strong>Passport / Visa photo</strong> — सफेद background required होता है। AI tool instantly white background लगा देता है।</li>
-  <li><strong>Job application / LinkedIn</strong> — professional headshot के लिए clean background ज़रूरी है।</li>
-  <li><strong>E-commerce product photos</strong> — Amazon, Flipkart, Meesho पर white background वाली product photos ज़्यादा बिकती हैं।</li>
-  <li><strong>WhatsApp / Social media DP</strong> — creative backgrounds लगाने के लिए पहले original background हटाएं।</li>
-  <li><strong>Presentations और certificates</strong> — clean cutout images slides में professional लगती हैं।</li>
-  <li><strong>Stickers बनाना</strong> — background remove करके WhatsApp stickers या memes बनाएं।</li>
-</ul>`,
+        id: 'background-removal-kya-hai',
+        title: 'Background Removal क्या है?',
+        content: `<p><strong>Background removal</strong> वो process है जिसमें photo के main subject (व्यक्ति, product, object) को बाकी background से अलग किया जाता है। Background pixels को या तो transparent (पारदर्शी) कर दिया जाता है या किसी solid color से replace कर दिया जाता है।</p>
+<p>Output आमतौर पर <strong>transparent background वाली PNG file</strong> होती है — image editors में checkerboard pattern दिखता है जो transparency दर्शाता है। इस transparent image को फिर किसी भी background पर रखा जा सकता है।</p>
+<h3>यह इतना popular क्यों है?</h3>
+<ul>
+  <li>E-commerce platforms (Amazon, Flipkart, Meesho) पर product images <em>white background</em> पर ज़रूरी हैं</li>
+  <li>Passport, Aadhaar, driving licence — सब plain background माँगते हैं</li>
+  <li>Social media content clean visuals से ज़्यादा engaging होता है</li>
+  <li>Designers को logos, presentations में transparent PNGs चाहिए</li>
+</ul>
+<p>जो काम Photoshop में 30+ मिनट लगते थे, वो अब AI से 3 seconds में होता है — अक्सर <em>बेहतर</em> results के साथ।</p>`,
       },
       {
-        id: 'ai-background-removal',
+        id: 'ai-kaise-kaam-karti-hai',
         title: 'AI Background Removal कैसे काम करती है?',
-        content: `<p>Modern AI background removal tools <strong>deep learning models</strong> use करते हैं जो millions of images पर trained हैं:</p>
+        content: `<p>Modern background removal tools <strong>semantic segmentation</strong> नामक deep learning technique use करते हैं। AI को millions of labeled images पर train किया गया है ताकि वो pixel level पर "subject" और "background" में फर्क कर सके।</p>
+<h3>AI की process step by step</h3>
 <ol>
-  <li><strong>Semantic segmentation</strong> — AI हर pixel को identify करता है कि वह subject (foreground) है या background</li>
-  <li><strong>Edge detection</strong> — hair, fur, और complex edges को accurately detect करता है</li>
-  <li><strong>Alpha matte generation</strong> — semi-transparent pixels (जैसे hair strands) को properly handle करता है</li>
-  <li><strong>Background removal</strong> — detected background pixels को transparent कर देता है</li>
+  <li><strong>Image analysis</strong> — AI model पूरी image scan करता है — edges, textures, shapes, और semantic meaning detect करता है।</li>
+  <li><strong>Pixel classification</strong> — हर pixel को 0 (background) से 1 (foreground) के बीच probability score मिलता है।</li>
+  <li><strong>Alpha matte refinement</strong> — बालों, glass objects, और semi-transparent areas को properly handle करने के लिए edges refine होते हैं।</li>
+  <li><strong>Transparent PNG generation</strong> — Background pixels transparent हो जाते हैं, foreground visible रहता है।</li>
 </ol>
-<div class="callout-tip"><strong>💡 Best results के लिए</strong><p>Photo में clear contrast हो subject और background के बीच। अच्छी lighting में ली गई photos में AI ज़्यादा accurate होता है। Busy/patterned backgrounds में थोड़ी manual correction की ज़रूरत हो सकती है।</p></div>`,
+<h3>Browser में processing — क्यों important है?</h3>
+<p>ToolsArena का background remover <strong>@imgly/background-removal</strong> model use करता है जो पूरी तरह आपके browser में WebAssembly (WASM) से चलता है।</p>
+<ul>
+  <li><strong>Complete privacy</strong> — आपकी photos कभी किसी server पर नहीं जातीं। एक moment के लिए भी नहीं।</li>
+  <li><strong>कोई limit नहीं</strong> — Server cost नहीं, इसलिए daily limit नहीं, watermark नहीं, signup नहीं।</li>
+  <li><strong>Offline काम करता है</strong> — पहली बार model download (~40MB) के बाद बिना internet भी चलता है।</li>
+</ul>
+<div class="callout-info"><strong>remove.bg और Canva से कैसे अलग?</strong><p>remove.bg, Canva, और Adobe Express आपकी photos server पर upload करते हैं। इसका मतलब: (1) आपकी private photos third-party servers से गुज़रती हैं, (2) usage limits और watermarks लगा सकते हैं, (3) हर image के लिए stable internet चाहिए। ToolsArena सब कुछ locally process करता है।</p></div>`,
+      },
+      {
+        id: 'use-cases',
+        title: '10 सबसे ज़रूरी Use Cases — Background Removal कहाँ काम आता है?',
+        content: `<h3>1. E-commerce product photos</h3>
+<p>Amazon, Flipkart, Meesho सभी पर product images <strong>white background</strong> पर होनी चाहिए। Clean white-background images पर <strong>20-30% ज़्यादा clicks</strong> आते हैं। Background हटाएं, white लगाएं — studio जाने की ज़रूरत नहीं।</p>
+<h3>2. WhatsApp DP और profile pictures</h3>
+<p>घर के cluttered background को हटाएं और clean, professional look वाली photo बनाएं। WhatsApp DP, Instagram profile, LinkedIn headshot — सबके लिए काम आता है।</p>
+<h3>3. Passport और Aadhaar photo</h3>
+<p>Indian passport photo (35mm x 45mm) में plain white background ज़रूरी है। Aadhaar enrollment, driving licence, exam hall ticket (UPSC, SSC, Banking) — सबमें specific background चाहिए। AI से background हटाकर required color लगाएं।</p>
+<h3>4. Social media content</h3>
+<p>Instagram posts, YouTube thumbnails, TikTok videos — subject को cleanly isolate करके bold background पर रखने से content professional दिखता है।</p>
+<h3>5. WhatsApp stickers और memes</h3>
+<p>दोस्तों, family members, या pets की photos से background हटाकर custom WhatsApp stickers बनाएं। Transparent PNG सीधे sticker maker apps में import होती है।</p>
+<h3>6. Presentations और slides</h3>
+<p>PowerPoint या Google Slides में image insert करने पर colored slide पर white box दिखता है। पहले background हटाएं — image seamlessly blend होगी।</p>
+<h3>7. Logo transparency</h3>
+<p>बहुत से logos JPEG में white background के साथ save होते हैं। Dark website, business card, या merchandise पर यह बुरा दिखता है। White background हटाकर proper transparent PNG बनाएं।</p>
+<h3>8. YouTube thumbnails</h3>
+<p>सबसे ज़्यादा click होने वाले thumbnails में person cut-out होता है bold background पर। यह style CTR 15-25% बढ़ाता है।</p>
+<h3>9. Real estate और vehicle listings</h3>
+<p>OLX, CarDekho, MagicBricks पर property और car photos से messy backgrounds हटाकर clean look दें।</p>
+<h3>10. Digital art और compositing</h3>
+<p>Graphic designers background removal को compositing का पहला step मानते हैं — multiple images को एक creative scene में combine करना।</p>`,
       },
       {
         id: 'step-by-step',
-        title: 'Background कैसे हटाएं — Step by Step',
-        content: `<ol>
-  <li><strong>ToolsArena Background Remover खोलें</strong> — browser में, कोई app download नहीं।</li>
-  <li><strong>Photo upload करें</strong> — drag & drop करें या browse करके select करें। JPG, PNG, WebP सभी support हैं।</li>
-  <li><strong>Processing का इंतज़ार करें</strong> — AI कुछ seconds में background remove कर देता है।</li>
-  <li><strong>Result check करें</strong> — transparent background (checkerboard pattern) दिखेगा जहाँ background था।</li>
-  <li><strong>New background लगाएं (optional)</strong> — white, colored, या custom background choose करें।</li>
-  <li><strong>PNG में download करें</strong> — transparent background preserve रहे, इसलिए PNG format use करें।</li>
+        title: 'Background कैसे हटाएं — Step-by-Step Tutorial',
+        content: `<p>ToolsArena के free AI tool से background हटाने की पूरी process 30 seconds से कम में हो जाती है:</p>
+<h3>Step 1: Background Remover खोलें</h3>
+<p><a href="/tools/image-background-remover">ToolsArena का AI Background Remover</a> खोलें। कोई account बनाने या login करने की ज़रूरत नहीं।</p>
+<h3>Step 2: Photo upload करें</h3>
+<ul>
+  <li><strong>Drag and drop</strong> — File explorer से image को सीधे upload area पर drag करें।</li>
+  <li><strong>Click to browse</strong> — Upload area पर click करके file picker से select करें।</li>
+</ul>
+<p><strong>Supported formats:</strong> JPEG, PNG, WebP, BMP, TIFF। Maximum size: 10MB। Best results के लिए 500x500px से बड़ी images use करें।</p>
+<h3>Step 3: AI processing</h3>
+<p>पहली बार tool use करने पर AI model (~40MB) download होता है — यह <strong>browser में cache</strong> हो जाता है। अगली बार यह step skip हो जाएगा। Actual processing 3-10 seconds लेती है।</p>
+<h3>Step 4: Result check करें</h3>
+<p>Processed image में <strong>checkerboard pattern</strong> दिखेगा जहाँ background था — यह transparency indicate करता है। Edges zoom करके check करें।</p>
+<h3>Step 5: New background लगाएं (optional)</h3>
+<p>White (e-commerce), blue (visa photo), या कोई भी custom color background लगा सकते हैं।</p>
+<h3>Step 6: PNG में download करें</h3>
+<p><strong>"Download PNG"</strong> click करें। हमेशा PNG format में save करें — JPEG में transparency नहीं होती।</p>
+<div class="callout-warning"><strong>JPEG में save मत करें</strong><p>JPEG transparency support नहीं करता। JPEG में save करने से transparent areas white हो जाएंगे। Background remove की हुई image हमेशा PNG में save करें।</p></div>`,
+      },
+      {
+        id: 'best-results-tips',
+        title: 'Best Results के लिए Tips',
+        content: `<h3>Photo लेते समय</h3>
+<ul>
+  <li><strong>Subject और background में contrast रखें</strong> — Dark subject + light background (या उलटा) AI को clear boundaries देता है। White shirt + white wall से बचें।</li>
+  <li><strong>Even lighting use करें</strong> — Harsh shadows AI को confuse करते हैं। Soft, diffused lighting best है।</li>
+  <li><strong>Subject sharp और focus में हो</strong> — Blurry edges background removal का #1 problem हैं।</li>
+  <li><strong>Solid-color background</strong> — Plain दीवार, bedsheet, या कोई भी single-color surface काम करता है।</li>
+</ul>
+<h3>Image file choose करते समय</h3>
+<ul>
+  <li><strong>Resolution</strong> — Minimum 500x500px। 1000x1000px या बड़ी images में edges ज़्यादा clean आते हैं।</li>
+  <li><strong>PNG बेहतर है JPEG से</strong> — JPEG compression artifacts edges पर दिख सकते हैं।</li>
+  <li><strong>Subject को tightly crop करें</strong> — अगर subject छोटा है बड़ी image में, तो पहले crop करें।</li>
+</ul>
+<h3>Difficult subjects</h3>
+<table>
+  <thead><tr><th>Subject</th><th>Difficulty</th><th>Tips</th></tr></thead>
+  <tbody>
+    <tr><td>व्यक्ति (सीधे बाल)</td><td>Easy</td><td>अच्छी lighting में perfect results।</td></tr>
+    <tr><td>व्यक्ति (घुंघराले बाल)</td><td>Medium</td><td>Contrasting background में photo लें।</td></tr>
+    <tr><td>Product on table</td><td>Easy</td><td>White या light surface use करें।</td></tr>
+    <tr><td>Cat/Dog (furry)</td><td>Medium</td><td>Good lighting ज़रूरी। Busy background avoid करें।</td></tr>
+    <tr><td>Glass/transparent object</td><td>Hard</td><td>Dark solid background पर photo लें।</td></tr>
+    <tr><td>Logo (white background)</td><td>Easy</td><td>Perfect results — best use cases में से एक।</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'tools-comparison',
+        title: 'Background Remover Tools की तुलना (2026)',
+        content: `<table>
+  <thead><tr><th>Tool</th><th>Price</th><th>Quality</th><th>Privacy</th><th>Limits</th></tr></thead>
+  <tbody>
+    <tr><td><strong>ToolsArena</strong></td><td>Free (हमेशा)</td><td>Excellent</td><td>100% private (browser में)</td><td>Unlimited, कोई watermark नहीं</td></tr>
+    <tr><td>remove.bg</td><td>1 free/day, फिर $9+/month</td><td>Excellent</td><td>Server पर upload</td><td>1 free HD/day</td></tr>
+    <tr><td>Canva</td><td>Canva Pro (₹3,999/year)</td><td>Good</td><td>Server पर upload</td><td>सिर्फ Pro users</td></tr>
+    <tr><td>Photoshop</td><td>₹1,675/month</td><td>Best (manual)</td><td>Local (desktop)</td><td>Subscription ज़रूरी</td></tr>
+    <tr><td>GIMP</td><td>Free (open source)</td><td>Good (manual)</td><td>Local</td><td>AI नहीं — manual selection</td></tr>
+    <tr><td>Photoroom</td><td>Free tier, $10/month</td><td>Excellent</td><td>Server पर upload</td><td>Free tier पर watermark</td></tr>
+  </tbody>
+</table>
+<h3>ToolsArena क्यों सबसे बेहतर है?</h3>
+<ul>
+  <li><strong>पूरी तरह free</strong> — कोई daily limit नहीं, watermark नहीं, "account बनाओ HD download करो" जैसा कुछ नहीं।</li>
+  <li><strong>Complete privacy</strong> — Photos कभी device से बाहर नहीं जातीं। Passport, Aadhaar जैसी sensitive photos के लिए ideal।</li>
+  <li><strong>Offline काम करता है</strong> — पहली बार model download के बाद internet के बिना भी चलता है।</li>
+  <li><strong>कोई software install नहीं</strong> — Windows, Mac, Android, iPhone — हर browser में काम करता है।</li>
+</ul>`,
+      },
+      {
+        id: 'mobile-guide',
+        title: 'Mobile पर Background कैसे हटाएं (Android & iPhone)',
+        content: `<h3>Android (Chrome) पर</h3>
+<ol>
+  <li>Chrome खोलें → <strong>toolsarena.in/tools/image-background-remover</strong></li>
+  <li>Upload area tap करें → Gallery से photo choose करें या new photo लें।</li>
+  <li>"Original" quality select करें (अगर phone पूछे तो)।</li>
+  <li>5-15 seconds wait करें।</li>
+  <li>"Download PNG" tap करें → Downloads folder में save होगी।</li>
 </ol>
-<div class="callout-warning"><strong>⚠️ JPEG में save मत करें</strong><p>JPEG transparency support नहीं करता। Background remove की हुई image हमेशा PNG में save करें। JPG में save करने से transparent area white हो जाएगा।</p></div>`,
+<h3>iPhone (Safari) पर</h3>
+<ol>
+  <li>Safari खोलें → <strong>toolsarena.in/tools/image-background-remover</strong></li>
+  <li>Upload area tap करें → "Photo Library" या "Take Photo" choose करें।</li>
+  <li>Full quality image select करें।</li>
+  <li>5-15 seconds wait करें।</li>
+  <li>"Download PNG" tap करें → Image long-press करके "Save to Photos" select करें।</li>
+</ol>
+<h3>Mobile Tips</h3>
+<ul>
+  <li><strong>Rear camera use करें</strong> — Selfie camera से ज़्यादा resolution होता है rear camera में।</li>
+  <li><strong>दूसरे tabs बंद करें</strong> — AI model memory use करता है। पुराने phones में tabs बंद करें।</li>
+  <li><strong>पहली बार Wi-Fi चाहिए</strong> — ~40MB model download Wi-Fi पर best है। उसके बाद mobile data या offline भी काम करता है।</li>
+</ul>
+<div class="callout-info"><strong>कोई app download नहीं करना</strong><p>Play Store या App Store से कोई app download करने की ज़रूरत नहीं। ToolsArena पूरी तरह mobile browser में काम करता है — storage space बचता है और third-party apps की privacy concerns से बचते हैं।</p></div>`,
+      },
+      {
+        id: 'specific-use-cases',
+        title: 'Specific Use Cases — Detailed Guide',
+        content: `<h3>Passport photo — white background</h3>
+<p>Indian passport photo: 35mm x 45mm (413 x 531 pixels, 300 DPI), <strong>plain white background</strong>:</p>
+<ol>
+  <li>अच्छी lighting में front-facing photo लें (कोई भी background)।</li>
+  <li>ToolsArena Background Remover में upload करें।</li>
+  <li>Background हटने के बाद white (#FFFFFF) color select करें।</li>
+  <li>Download करें।</li>
+  <li><a href="/tools/image-resizer">Image Resizer</a> से 413 x 531 pixels पर crop करें।</li>
+  <li>Optional: <a href="/tools/passport-photo-maker">Passport Photo Maker</a> से automatic sizing करें।</li>
+</ol>
+<h3>Aadhaar photo</h3>
+<p>Aadhaar enrollment center photos में white background required है। घर से ली photo में background हटाकर white लगाएं — print करवाकर ले जाएं।</p>
+<h3>Amazon/Flipkart product photo</h3>
+<p>Amazon: <strong>pure white (RGB 255,255,255) background</strong>, minimum 1000x1000px:</p>
+<ol>
+  <li>Product की photo लें (कोई भी clean surface)।</li>
+  <li>Background हटाएं।</li>
+  <li>White background लगाएं।</li>
+  <li>2000x2000px पर resize करें।</li>
+  <li>10MB से कम compress करें।</li>
+</ol>
+<h3>Logo से white background हटाना</h3>
+<ol>
+  <li>JPEG logo upload करें।</li>
+  <li>AI logo detect करके white background हटा देगा।</li>
+  <li>PNG download करें — transparent logo ready।</li>
+</ol>`,
+      },
+      {
+        id: 'common-problems',
+        title: 'Common Problems और Solutions',
+        content: `<h3>Problem: Edges jagged/rough दिख रहे हैं</h3>
+<p><strong>कारण:</strong> Low-resolution image या heavy JPEG compression।</p>
+<p><strong>Solution:</strong> Original, uncompressed photo use करें। Small images upscale मत करें।</p>
+<h3>Problem: Subject का कुछ हिस्सा भी remove हो रहा है</h3>
+<p><strong>कारण:</strong> Subject background से similar color/texture में है।</p>
+<p><strong>Solution:</strong> Contrasting background पर photo दोबारा लें। या image tightly crop करें।</p>
+<h3>Problem: Background के कुछ bits बच रहे हैं</h3>
+<p><strong>कारण:</strong> Very busy या textured background।</p>
+<p><strong>Solution:</strong> बची हुई fragments को किसी basic editor में manually erase करें — पूरा background manually हटाने से बहुत तेज़ है।</p>
+<h3>Problem: बालों के edges natural नहीं दिख रहे</h3>
+<p><strong>कारण:</strong> Fine hair strands similar-colored background पर।</p>
+<p><strong>Solution:</strong> बालों के color से contrasting background पर photo लें। Green/blue screen ideal है।</p>
+<h3>Problem: Mobile पर processing fail हो रही है</h3>
+<p><strong>कारण:</strong> पुराने device में कम memory।</p>
+<p><strong>Solution:</strong> दूसरे browser tabs बंद करें। Image compress करके upload करें। Desktop पर try करें।</p>`,
+      },
+      {
+        id: 'image-formats',
+        title: 'Image Formats — PNG, JPEG, WebP में फर्क',
+        content: `<table>
+  <thead><tr><th>Format</th><th>Transparency</th><th>File Size</th><th>Best For</th></tr></thead>
+  <tbody>
+    <tr><td><strong>PNG</strong></td><td>हाँ (alpha channel)</td><td>बड़ी</td><td>Background-removed images, logos</td></tr>
+    <tr><td><strong>JPEG</strong></td><td>नहीं</td><td>छोटी</td><td>Normal photos, web images</td></tr>
+    <tr><td><strong>WebP</strong></td><td>हाँ</td><td>बहुत छोटी</td><td>Web use</td></tr>
+  </tbody>
+</table>
+<div class="callout-warning"><strong>ज़रूरी: Background remove की image JPEG में save मत करें</strong><p>JPEG transparency support नहीं करता। Transparent PNG को JPEG में save करने से सब transparent areas automatically white हो जाएंगे। Background हटी image हमेशा PNG में save करें।</p></div>
+<p><strong>JPEG कब use करें:</strong> जब आपने final background add कर दिया हो (जैसे white), तब JPEG में save कर सकते हैं file size छोटी रखने के लिए।</p>`,
       },
     ],
     howToSteps: [
-      { title: 'Background Remover tool खोलें', description: 'ToolsArena का Image Background Remover open करें। कोई login नहीं।' },
-      { title: 'Photo upload करें', description: 'Drag & drop करें या click करके photo select करें।' },
-      { title: 'AI processing होने दें', description: 'कुछ seconds में background automatically remove हो जाएगा।' },
-      { title: 'Result check करें', description: 'Transparent background preview देखें। ज़रूरत हो तो new background add करें।' },
-      { title: 'PNG में download करें', description: 'Download बटन दबाएं। PNG format में save करें।' },
+      { title: 'Background Remover खोलें', description: 'ToolsArena का AI Background Remover open करें। कोई account या signup नहीं।' },
+      { title: 'Photo upload करें', description: 'Drag & drop या click करके JPEG, PNG, WebP upload करें (10MB तक)।' },
+      { title: 'AI processing', description: 'पहली बार AI model (~40MB) download होता है (cache हो जाता है)। Processing 3-10 seconds।' },
+      { title: 'Result check करें', description: 'Checkerboard pattern = transparency। Edges zoom करके check करें।' },
+      { title: 'Background लगाएं (optional)', description: 'White, blue, या custom color background choose करें।' },
+      { title: 'PNG में download करें', description: 'Download बटन दबाएं। PNG format में save करें — JPEG में transparency नहीं होती।' },
     ],
     faqs: [
-      { question: 'Passport photo का background white कैसे बनाएं?', answer: 'Background Remover में photo upload करें। Background remove होने के बाद, "Add Background" option में white color (#FFFFFF) select करें। PNG download करें। यह सफेद background वाली passport photo बन जाएगी।' },
-      { question: 'क्या यह tool mobile पर काम करता है?', answer: 'हाँ, ToolsArena का Background Remover mobile browser पर पूरी तरह काम करता है। Android और iPhone दोनों पर Chrome या Safari में open करें — कोई app download नहीं करना।' },
-      { question: 'Hair और curly background remove होगा accurately?', answer: 'Modern AI tools बालों को काफी accurately handle करते हैं। Clear lighting और plain/simple background वाली photos में results बेहतर होते हैं। Studio-quality photos में 95%+ accuracy होती है।' },
-      { question: 'Background remove करने के बाद कौन सा format use करें?', answer: 'हमेशा PNG use करें। PNG transparency support करता है जिससे removed background transparent रहता है। JPG में transparency नहीं होती — background white हो जाएगा।' },
-      { question: 'क्या मेरी photo server पर upload होती है?', answer: 'ToolsArena का tool local browser processing use करता है। आपकी personal photos किसी server पर store नहीं होती। Privacy के लिए पूरी तरह safe है।' },
+      { question: 'Photo का background free में कैसे हटाएं?', answer: 'ToolsArena का free AI Background Remover खोलें। कोई भी JPEG, PNG, या WebP image upload करें। AI 3-10 seconds में background हटा देगा। Transparent PNG download करें। कोई account नहीं, watermark नहीं, daily limit नहीं — पूरी तरह free और unlimited।' },
+      { question: 'क्या बिना Photoshop के background हटा सकते हैं?', answer: 'हाँ। ToolsArena जैसे AI tools Photoshop जैसे या उससे बेहतर results देते हैं — minutes की जगह seconds में। कोई design skill या software ज़रूरी नहीं। Browser में किसी भी device पर काम करता है।' },
+      { question: 'कौन से image formats support हैं?', answer: 'JPEG, PNG, WebP, BMP, और TIFF — 10MB तक। Output हमेशा transparent PNG होता है क्योंकि JPEG transparency support नहीं करता।' },
+      { question: 'Transparent background कैसे बनाएं?', answer: 'Background Remover में image upload करें। AI automatically background हटाकर transparent PNG बना देता है। Checkerboard pattern transparency दर्शाता है। PNG में download करें — JPEG में save मत करें।' },
+      { question: 'क्या मेरी personal photos safe हैं?', answer: 'बिल्कुल। ToolsArena का tool WebAssembly से browser में locally process करता है। आपकी photos कभी किसी server पर upload नहीं होतीं। Passport, Aadhaar, और sensitive photos के लिए पूरी तरह safe।' },
+      { question: 'Mobile पर background हटा सकते हैं?', answer: 'हाँ। Chrome (Android) या Safari (iPhone) में काम करता है। कोई app download नहीं। पहली बार ~40MB model download (Wi-Fi पर best), फिर cached रहता है। 5-15 seconds processing।' },
+      { question: 'Logo से white background कैसे हटाएं?', answer: 'Logo image upload करें। AI logo को foreground detect करके white background हटा देगा। PNG download करें — transparent logo किसी भी dark website, business card, या merchandise पर काम करेगा।' },
+      { question: 'Background removal के लिए सबसे अच्छा image size क्या है?', answer: 'Minimum 500x500 pixels। Ideal range 1000x1000 से 4000x4000 pixels — clean edges के लिए काफी बड़ी, processing slow न हो इतनी। 300x300px से छोटी images में quality कम होगी।' },
+      { question: 'Passport photo में white background कैसे लगाएं?', answer: 'Background Remover में photo upload करें → background हटने के बाद color picker से white (#FFFFFF) select करें → download करें। या transparent PNG Canva में open करके white background पर रखें।' },
+      { question: 'Hair और fur properly remove होते हैं?', answer: 'Modern AI models बालों और fur को बहुत अच्छे से handle करते हैं। Contrasting background वाली well-lit photos में excellent results। Very fine wispy hair similar-colored background पर minor imperfections दिख सकते हैं।' },
     ],
-    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'image-flip-rotate-guide', 'photo-effects-guide'],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'crop-image-guide'],
     toolCTA: {
-      heading: 'Free Background Remover — AI से 5 सेकंड में',
-      description: 'किसी भी photo का background हटाएं। Passport photo, product images, profile pictures के लिए। PNG download, कोई signup नहीं।',
-      buttonText: 'Background हटाएं',
+      heading: 'Photo का Background हटाएं — Free, Unlimited, Private',
+      description: 'AI-powered background removal — browser में। कोई signup नहीं, watermark नहीं, daily limit नहीं। Product photos, portraits, ID images, logos सबके लिए। आपकी photos device से बाहर नहीं जातीं।',
+      buttonText: 'Background अभी हटाएं — Free',
     },
   },
 
@@ -4815,57 +5095,265 @@ button {
     slug: 'excel-to-pdf-guide',
     toolSlug: 'excel-to-pdf',
     category: 'pdf-tools',
-    title: 'Excel को PDF में Convert कैसे करें — फ्री गाइड (2026)',
-    subtitle: 'Spreadsheets (.xlsx, .xls, .csv) को professional PDF documents में बदलें — free, instant, कोई upload नहीं।',
-    metaTitle: 'Excel को PDF में Convert करें — फ्री ऑनलाइन',
-    metaDescription: 'Excel को PDF में free convert करें। .xlsx, .xls, .csv support। कोई upload नहीं, कोई signup नहीं — browser में instant conversion।',
+    title: 'Excel को PDF में Convert कैसे करें — Free Online, Formatting Loss नहीं (2026)',
+    subtitle: 'Excel spreadsheet को PDF में बदलने की पूरी गाइड — 4 methods, formatting tips, batch conversion, mobile guide और troubleshooting।',
+    metaTitle: 'Excel को PDF में Convert करें — Free Online, Formatting Loss नहीं',
+    metaDescription: 'Excel को PDF में free online convert करें बिना formatting खोए। 4 methods: online tool, Excel, Google Sheets, LibreOffice। Step-by-step guide with tips।',
     targetKeyword: 'excel to pdf kaise kare',
-    secondaryKeywords: ['excel to pdf converter', 'excel se pdf kaise banaye', 'xlsx to pdf', 'spreadsheet to pdf', 'excel to pdf free hindi', 'csv to pdf converter', 'excel to pdf online'],
-    lastUpdated: '2026-03-15',
-    readingTime: '६ मिनट पढ़ें',
+    secondaryKeywords: ['excel to pdf converter', 'excel se pdf kaise banaye', 'xlsx to pdf', 'spreadsheet to pdf', 'excel to pdf free hindi', 'csv to pdf converter', 'excel to pdf online', 'excel to pdf without losing formatting', 'salary slip pdf kaise banaye', 'gst invoice pdf'],
+    lastUpdated: '2026-03-17',
+    readingTime: '१२ मिनट पढ़ें',
     tags: ['PDF', 'Excel', 'Converter', 'Spreadsheet'],
-    intro: `<p>Office में report share करनी है लेकिन सामने वाले के पास Excel नहीं है? Financial data non-editable format में भेजना है? <strong>Excel को PDF में convert</strong> करना सबसे आसान solution है — और इसके लिए Microsoft Office या Adobe की जरूरत नहीं।</p><p>ToolsArena का free converter .xlsx, .xls, और .csv files को professional PDFs में बदलता है — सब कुछ browser में, कोई file upload नहीं।</p>`,
+    intro: `<p>चाहे आपको salary slip email करनी हो, GST invoice भेजना हो, school results share करने हों, या financial report submit करनी हो — <strong>Excel को PDF में convert</strong> करना सबसे safe और professional तरीका है। PDF universal format है — किसी भी device पर बिना Excel installed किए open होता है।</p>
+<p>लेकिन हर conversion method एक जैसी नहीं है। कुछ formatting उड़ा देती हैं, columns कट जाते हैं, या expensive software माँगती हैं। इस comprehensive guide में हम <strong>4 proven methods</strong> बताएंगे — free online tool से लेकर desktop applications तक — साथ में expert tips formatting preserve करने के लिए, common problems के fixes, और batch conversion के तरीके।</p>
+<p>इस guide के बाद आपको exactly पता होगा कि कौन सा method आपके लिए best है और हर बार pixel-perfect PDF कैसे बनाएं।</p>`,
     sections: [
       {
         id: 'excel-pdf-kyu',
         title: 'Excel को PDF में क्यों Convert करें?',
-        content: `<ul><li><strong>Universal compatibility:</strong> PDF हर device पर open होता है — Excel installed होना जरूरी नहीं</li><li><strong>Layout preserve:</strong> Print करने पर columns shift नहीं होते — PDF हमेशा same दिखता है</li><li><strong>Editing prevent:</strong> Financial reports, invoices — गलती से edit होने का risk नहीं</li><li><strong>Professional sharing:</strong> Client को data PDF में भेजना standard business practice है</li><li><strong>Government submissions:</strong> Tax filings, regulatory reports — PDF format mandatory होता है</li></ul>`,
+        content: `<p>Methods जानने से पहले, समझते हैं कि professionals और students Excel को PDF में क्यों convert करते हैं:</p>
+<h3>Universal Compatibility</h3>
+<p>सबके पास Microsoft Excel नहीं होता। आपका recipient phone पर हो, Chromebook पर हो, या Linux machine पर — <strong>PDF हर device और हर OS पर open होता है</strong>। हर browser में built-in PDF viewer होता है।</p>
+<h3>Formatting और Layout Preserve</h3>
+<p>Excel spreadsheets अलग-अलग screens, Excel versions, और fonts के कारण अलग दिखती हैं। PDF आपकी layout lock कर देता है — <strong>column widths, fonts, colors, borders, page breaks सब exactly वैसे ही रहते हैं</strong> जैसे आपने set किए।</p>
+<h3>Formulas Protect करें, Editing रोकें</h3>
+<p>Excel file share करने पर recipient आपके formulas देख सकता है और गलती से data change कर सकता है। PDF सब कुछ non-editable document में flatten कर देता है। यह <strong>financial reports, invoices, tax filings, और legal documents</strong> के लिए critical है।</p>
+<h3>Professional Sharing Standard</h3>
+<p>Business और academic contexts में PDF expected format है। .xlsx attachment भेजना कई situations में unprofessional लगता है — clients, banks, government agencies, और universities PDF expect करती हैं।</p>
+<h3>छोटा File Size</h3>
+<p>Heavy formatting, pivot tables, और embedded objects वाली Excel files बहुत बड़ी हो सकती हैं। PDF version अक्सर <strong>50-80% छोटा</strong> होता है — email और storage दोनों के लिए बेहतर।</p>
+<h3>Print-Ready Output</h3>
+<p>PDF हर printer पर exactly same print होता है। कोई shifted columns, cut-off text, या wrong page breaks नहीं।</p>`,
       },
       {
-        id: 'methods-compared',
-        title: 'Excel to PDF: कौन सा Method Best है?',
-        content: `<table><tr><th>Method</th><th>Cost</th><th>Privacy</th><th>Quality</th></tr><tr><td>ToolsArena (Browser)</td><td>✅ Free</td><td>✅ 100% local</td><td>Clean table format</td></tr><tr><td>Microsoft Excel</td><td>❌ Paid</td><td>✅ Local</td><td>Full formatting</td></tr><tr><td>Google Sheets</td><td>✅ Free</td><td>⚠️ Cloud upload</td><td>Good</td></tr><tr><td>Online converters</td><td>⚠️ Freemium</td><td>❌ File upload</td><td>Varies</td></tr></table><div class="callout-info">💡 <strong>Privacy advantage:</strong> ToolsArena में आपकी file browser में ही process होती है — किसी server पर नहीं जाती।</div>`,
+        id: 'method-1-toolsarena',
+        title: 'Method 1: ToolsArena का Free Online Converter',
+        content: `<p>Excel को PDF में convert करने का सबसे तेज़ तरीका है <strong>ToolsArena का free Excel to PDF converter</strong>। यह पूरी तरह browser में काम करता है — कोई file server पर upload नहीं होती, कोई signup नहीं, कोई watermark नहीं।</p>
+<h3>Step-by-Step Instructions</h3>
+<ol>
+  <li><strong>Tool खोलें:</strong> <a href="/tools/excel-to-pdf">ToolsArena Excel to PDF converter</a> पर जाएं</li>
+  <li><strong>File upload करें:</strong> अपनी .xlsx, .xls, या .csv file drag & drop करें या browse करें</li>
+  <li><strong>Sheet select करें:</strong> Multiple sheets हों तो जो convert करनी है वो select करें</li>
+  <li><strong>Data preview करें:</strong> Table preview में check करें कि सारा data सही दिख रहा है</li>
+  <li><strong>Settings configure करें:</strong> Page orientation (portrait या landscape) चुनें, font size adjust करें</li>
+  <li><strong>"Convert to PDF" click करें:</strong> PDF instantly browser में generate होता है</li>
+  <li><strong>Download करें:</strong> PDF अपने device पर save करें</li>
+</ol>
+<h3>ToolsArena क्यों चुनें?</h3>
+<table>
+  <thead><tr><th>Feature</th><th>ToolsArena</th><th>अन्य Online Converters</th></tr></thead>
+  <tbody>
+    <tr><td>Privacy</td><td>100% browser-based — file upload नहीं होती</td><td>File server पर upload होती है</td></tr>
+    <tr><td>Cost</td><td>पूरी तरह free</td><td>Free with limits, full के लिए paid</td></tr>
+    <tr><td>Watermarks</td><td>कोई नहीं</td><td>Free tier पर अक्सर watermark</td></tr>
+    <tr><td>File size limit</td><td>सिर्फ browser memory पर निर्भर</td><td>Usually 10-50 MB</td></tr>
+    <tr><td>Signup</td><td>नहीं चाहिए</td><td>अक्सर जरूरी</td></tr>
+  </tbody>
+</table>
+<div class="callout-tip"><strong>Privacy नोट:</strong> आपकी spreadsheet data आपके device से बाहर नहीं जाती। ToolsArena client-side JavaScript से सब process करता है — zero server uploads।</div>`,
       },
       {
-        id: 'step-by-step',
-        title: 'Excel को PDF में Convert कैसे करें (Step-by-Step)',
-        content: `<ol><li><strong>Tool खोलें:</strong> ToolsArena Excel to PDF converter पर जाएं</li><li><strong>File upload करें:</strong> .xlsx, .xls, या .csv file drag & drop करें</li><li><strong>Preview देखें:</strong> सभी sheets देखें, जो convert करनी है वो select करें</li><li><strong>Settings चुनें:</strong> Orientation (portrait/landscape) और font size set करें</li><li><strong>Convert करें:</strong> "Convert to PDF" click करें — instant PDF generate</li><li><strong>Download करें:</strong> PDF save करें</li></ol>`,
+        id: 'method-2-microsoft-excel',
+        title: 'Method 2: Microsoft Excel से Save As PDF',
+        content: `<p>अगर आपके पास Microsoft Excel installed है (Microsoft 365, Office 2019, या बाद का), तो directly PDF में save कर सकते हैं।</p>
+<h3>Windows पर</h3>
+<ol>
+  <li>Excel में spreadsheet खोलें</li>
+  <li><strong>File → Save As</strong> click करें (या <kbd>F12</kbd> दबाएं)</li>
+  <li>"Save as type" dropdown में <strong>PDF (*.pdf)</strong> select करें</li>
+  <li><strong>Options</strong> click करें — entire workbook, active sheet(s), या selection चुनें</li>
+  <li><strong>Save</strong> click करें</li>
+</ol>
+<h3>Mac पर</h3>
+<ol>
+  <li>Excel में spreadsheet खोलें</li>
+  <li><strong>File → Save As</strong> click करें</li>
+  <li>File format dropdown से <strong>PDF</strong> चुनें</li>
+  <li><strong>Save</strong> click करें</li>
+</ol>
+<h3>Alternative: Print to PDF</h3>
+<p><kbd>Ctrl</kbd> + <kbd>P</kbd> (Windows) या <kbd>Cmd</kbd> + <kbd>P</kbd> (Mac) दबाएं, फिर "Microsoft Print to PDF" या "Save as PDF" printer select करें। इस method में page setup, margins, और scaling पर ज्यादा control मिलता है।</p>
+<div class="callout-info"><strong>Pro Tip:</strong> Save करने से पहले <strong>Page Layout → Print Area → Set Print Area</strong> से define करें कि कौन सी cells PDF में आएं। इससे blank pages नहीं आतीं।</div>`,
       },
       {
-        id: 'better-pdf-tips',
-        title: 'Better PDF के लिए Tips',
-        content: `<ul><li><strong>Wide spreadsheets:</strong> बहुत columns हों तो Landscape orientation use करें</li><li><strong>Data-heavy sheets:</strong> Font size 8pt या 6pt करें — ज्यादा data fit होगा</li><li><strong>Clean data:</strong> Convert करने से पहले empty rows/columns delete करें</li><li><strong>Header row:</strong> पहली row automatically table header बनती है — column names वहाँ रखें</li></ul>`,
+        id: 'method-3-google-sheets',
+        title: 'Method 3: Google Sheets से Download as PDF',
+        content: `<p>Google Sheets एक free alternative है अगर Microsoft Excel नहीं है। ज्यादातर .xlsx files अच्छे से open होती हैं और built-in PDF export है।</p>
+<h3>Step-by-Step</h3>
+<ol>
+  <li><strong>Google Drive पर upload करें:</strong> <a href="https://drive.google.com" rel="nofollow">drive.google.com</a> पर Excel file upload करें</li>
+  <li><strong>Google Sheets में खोलें:</strong> File पर double-click करें — Sheets में automatically खुलती है</li>
+  <li><strong>PDF export करें:</strong> <strong>File → Download → PDF document (.pdf)</strong> click करें</li>
+  <li><strong>PDF configure करें:</strong> Export dialog में set करें:
+    <ul>
+      <li><strong>Paper size:</strong> A4, Letter, Legal आदि</li>
+      <li><strong>Orientation:</strong> Portrait या Landscape</li>
+      <li><strong>Scale:</strong> Fit to width, fit to page, या actual size</li>
+      <li><strong>Margins:</strong> Normal, narrow, या custom</li>
+      <li><strong>Sheets:</strong> Current sheet या all sheets</li>
+    </ul>
+  </li>
+  <li><strong>Export click करें</strong> — PDF download हो जाएगी</li>
+</ol>
+<div class="callout-info"><strong>ध्यान दें:</strong> Google Sheets में file Google के servers पर upload होती है। अगर spreadsheet में sensitive financial या personal data है, तो ToolsArena का browser-based converter use करें — पूरी privacy के लिए।</div>`,
       },
       {
-        id: 'common-uses',
-        title: 'Common Use Cases',
-        content: `<ul><li><strong>Financial reports:</strong> Monthly/quarterly reports PDF में stakeholders को भेजें</li><li><strong>Invoices:</strong> Excel में invoice बनाएं, PDF में export करके client को send करें</li><li><strong>Salary slips:</strong> HR department — employee pay statements PDF में generate करें</li><li><strong>Student data:</strong> Teachers — grade sheets या attendance records PDF में convert करें</li><li><strong>GST returns:</strong> Tax filings के लिए Excel data PDF format में submit करें</li></ul>`,
+        id: 'method-4-libreoffice',
+        title: 'Method 4: LibreOffice Calc (Free Desktop App)',
+        content: `<p><strong>LibreOffice</strong> एक free, open-source office suite है जो Excel files (.xlsx, .xls) handle करता है और directly PDF export कर सकता है। Windows, Mac, और Linux सभी पर available है।</p>
+<h3>Step-by-Step</h3>
+<ol>
+  <li><strong>LibreOffice download करें:</strong> <a href="https://www.libreoffice.org" rel="nofollow">libreoffice.org</a> से (free)</li>
+  <li><strong>Excel file खोलें:</strong> File पर right-click → Open With → LibreOffice Calc</li>
+  <li><strong>PDF export करें:</strong> <strong>File → Export as PDF</strong> click करें</li>
+  <li><strong>Configure करें:</strong> PDF Options dialog में:
+    <ul>
+      <li>Pages: All, या specific range</li>
+      <li>Image compression और quality</li>
+      <li>PDF/A archival format (long-term storage के लिए)</li>
+    </ul>
+  </li>
+  <li><strong>Export click करें</strong> और save करें</li>
+</ol>
+<h3>LibreOffice Command-Line Conversion (Batch)</h3>
+<p>LibreOffice command-line conversion support करता है — multiple files एक साथ convert करने के लिए perfect:</p>
+<pre><code>libreoffice --headless --convert-to pdf *.xlsx</code></pre>
+<p>यह command current directory की सभी .xlsx files को PDF में convert करता है — कोई GUI नहीं चाहिए।</p>`,
+      },
+      {
+        id: 'methods-comparison',
+        title: 'चारों Methods की तुलना',
+        content: `<p>अपनी situation के लिए best method चुनने के लिए यह comparison table देखें:</p>
+<table>
+  <thead><tr><th>Feature</th><th>ToolsArena</th><th>Microsoft Excel</th><th>Google Sheets</th><th>LibreOffice</th></tr></thead>
+  <tbody>
+    <tr><td>Cost</td><td>Free</td><td>Paid (Microsoft 365)</td><td>Free</td><td>Free</td></tr>
+    <tr><td>Privacy</td><td>100% local (browser)</td><td>100% local</td><td>Cloud upload</td><td>100% local</td></tr>
+    <tr><td>Installation</td><td>नहीं</td><td>हाँ</td><td>नहीं (web-based)</td><td>हाँ</td></tr>
+    <tr><td>Charts preserve</td><td>नहीं</td><td>हाँ</td><td>हाँ</td><td>हाँ</td></tr>
+    <tr><td>Batch conversion</td><td>एक-एक</td><td>VBA macros से</td><td>एक-एक</td><td>हाँ (command-line)</td></tr>
+    <tr><td>Best for</td><td>Quick, private conversion</td><td>Full-fidelity output</td><td>No-install, collaborative</td><td>Free desktop + batch</td></tr>
+  </tbody>
+</table>`,
+      },
+      {
+        id: 'formatting-preserve-tips',
+        title: 'Excel to PDF में Formatting कैसे Preserve करें?',
+        content: `<p>Excel-to-PDF conversion की सबसे बड़ी शिकायत <strong>formatting loss</strong> है। यहाँ expert tips हैं formatting बचाने के लिए:</p>
+<h3>1. Print Area Set करें</h3>
+<p>Excel में: जो cells PDF में चाहिए उन्हें select करें, फिर <strong>Page Layout → Print Area → Set Print Area</strong>। इससे blank pages नहीं आतीं और सिर्फ relevant data convert होता है।</p>
+<h3>2. सही Page Orientation चुनें</h3>
+<p>ज्यादा columns (6-8 से ज्यादा) हों तो <strong>Landscape</strong> use करें। Narrow, long data के लिए <strong>Portrait</strong> use करें।</p>
+<h3>3. Column Widths Adjust करें</h3>
+<p>सभी columns auto-fit करें: <kbd>Ctrl</kbd>+<kbd>A</kbd> से सब select करें, फिर <strong>Home → Format → AutoFit Column Width</strong>। इससे text cut नहीं होगा।</p>
+<h3>4. "Fit to Page" Scaling Use करें</h3>
+<p><strong>Page Layout → Scale to Fit</strong> में Width <strong>1 page</strong> और Height <strong>Automatic</strong> set करें। इससे सभी columns एक page width पर fit होते हैं।</p>
+<h3>5. Header Rows Repeat करें</h3>
+<p>Multi-page PDFs के लिए header row हर page पर repeat हो: <strong>Page Layout → Print Titles → Rows to repeat at top</strong> में header row select करें (जैसे $1:$1)।</p>
+<h3>6. Page Break Preview Check करें</h3>
+<p><strong>View → Page Break Preview</strong> से देखें कि pages कहाँ split होंगे। Blue lines drag करके page breaks manually adjust करें।</p>`,
+      },
+      {
+        id: 'common-problems',
+        title: 'Common Problems और उनके Fixes',
+        content: `<p>Excel to PDF conversion में सबसे common issues और उनके solutions:</p>
+<h3>Problem: Columns कट रहे हैं</h3>
+<p><strong>Fix:</strong> Landscape orientation switch करें, या Page Setup → Scaling में "Fit Sheet on One Page" use करें। Font size या column widths भी कम करें।</p>
+<h3>Problem: PDF में Blank Pages आ रही हैं</h3>
+<p><strong>Fix:</strong> Data range के बाहर empty cells या formatting हो सकती है। सिर्फ data range select करके Print Area set करें। Data से दूर stray spaces भी check करें।</p>
+<h3>Problem: Text बहुत छोटा / पढ़ने में मुश्किल</h3>
+<p><strong>Fix:</strong> "Fit Sheet on One Page" बहुत columns के साथ use कर रहे हैं। Width 1 page रखें लेकिन Height Automatic रखें — vertical pagination होगी लेकिन text readable रहेगा।</p>
+<h3>Problem: Charts या Images Missing</h3>
+<p><strong>Fix:</strong> Browser-based tools charts render नहीं कर सकते। Charts वाली spreadsheets के लिए Microsoft Excel का "Save As PDF" या LibreOffice use करें।</p>
+<h3>Problem: Merged Cells Layout तोड़ रहे हैं</h3>
+<p><strong>Fix:</strong> Merged cells PDF conversion में problems create करती हैं। "Center Across Selection" (Format Cells → Alignment) use करें merge की जगह। Convert करने से पहले unmerge करें अगर layout break हो रहा हो।</p>`,
+      },
+      {
+        id: 'batch-conversion',
+        title: 'Multiple Excel Files को एक साथ PDF में Convert करें (Batch)',
+        content: `<p>दर्जनों Excel files एक-एक convert करना impractical है। यहाँ batch conversion methods हैं:</p>
+<h3>Method A: LibreOffice Command Line (Free)</h3>
+<pre><code># Folder की सभी .xlsx files PDF में convert करें
+libreoffice --headless --convert-to pdf --outdir ./pdfs *.xlsx</code></pre>
+<p>Windows (Command Prompt या PowerShell), Mac, और Linux — सभी पर काम करता है।</p>
+<h3>Method B: Excel VBA Macro</h3>
+<pre><code>Sub BatchExcelToPDF()
+    Dim ws As Worksheet
+    For Each ws In ActiveWorkbook.Worksheets
+        ws.ExportAsFixedFormat Type:=xlTypePDF, _
+            Filename:=ws.Name &amp; ".pdf"
+    Next ws
+End Sub</code></pre>
+<h3>Method C: Python Script</h3>
+<p>Developers Python के <code>openpyxl</code> और <code>fpdf</code> libraries (या Windows पर <code>win32com</code>) से bulk conversion automate कर सकते हैं।</p>`,
+      },
+      {
+        id: 'mobile-conversion',
+        title: 'Mobile पर Excel को PDF में Convert करें (iPhone और Android)',
+        content: `<p>Phone से directly Excel to PDF conversion — कोई computer नहीं चाहिए।</p>
+<h3>iPhone / iPad पर</h3>
+<ol>
+  <li><strong>Files app:</strong> .xlsx file खोलें → Share → "Print" → preview पर pinch-to-zoom करें (PDF बनेगी) → Share → Save</li>
+  <li><strong>Microsoft Excel app (free):</strong> File खोलें → three dots (⋯) menu → Share as PDF → Save या Send</li>
+  <li><strong>ToolsArena Safari में:</strong> <a href="/tools/excel-to-pdf">toolsarena.in/tools/excel-to-pdf</a> खोलें, file upload करें, convert करें — desktop जैसा ही काम करता है</li>
+</ol>
+<h3>Android पर</h3>
+<ol>
+  <li><strong>Microsoft Excel app (free):</strong> File खोलें → Menu (⋮) → Share as PDF</li>
+  <li><strong>Google Sheets app:</strong> File खोलें → three dots → Share & export → Save as → PDF document</li>
+  <li><strong>ToolsArena Chrome में:</strong> Mobile browser में converter खोलें, file upload करें, convert करें — fully responsive design</li>
+</ol>
+<div class="callout-info"><strong>ध्यान दें:</strong> Mobile conversions simple spreadsheets के लिए best काम करती हैं। Charts और heavy formatting वाली complex spreadsheets के लिए desktop application use करें।</div>`,
+      },
+      {
+        id: 'indian-use-cases',
+        title: 'भारत में Excel to PDF के Common Use Cases',
+        content: `<p>भारतीय professionals और students कैसे daily Excel-to-PDF conversion use करते हैं:</p>
+<h3>Business और Finance</h3>
+<ul>
+  <li><strong>GST Invoices:</strong> Excel में GST invoice बनाएं, PDF में convert करके client को भेजें — GST compliance के लिए mandatory</li>
+  <li><strong>Salary Slips:</strong> HR department monthly pay statements Excel से generate करके PDF में employees को distribute करते हैं</li>
+  <li><strong>Financial Reports:</strong> Quarterly और annual reports stakeholders को non-editable PDF में share करें</li>
+  <li><strong>Expense Reports:</strong> Employee expense claims audit trail के लिए PDF में submit करें</li>
+  <li><strong>ITR (Income Tax Return):</strong> Tax computation sheets PDF format में CA और filing portals को submit करें</li>
+</ul>
+<h3>Education</h3>
+<ul>
+  <li><strong>School Report Cards:</strong> Teachers Excel में marks enter करके PDF report cards generate करते हैं</li>
+  <li><strong>Attendance Records:</strong> Monthly attendance data PDF में archive करें</li>
+  <li><strong>University Results:</strong> Result spreadsheets PDF में students और parents को share करें</li>
+</ul>
+<h3>Government और Compliance</h3>
+<ul>
+  <li><strong>GST Returns:</strong> GSTR-1, GSTR-3B data Excel से prepare करके PDF में submit</li>
+  <li><strong>TDS Reports:</strong> Form 16, Form 26AS data PDF format में</li>
+  <li><strong>Regulatory Submissions:</strong> RBI, SEBI compliance reports PDF mandatory</li>
+</ul>`,
       },
     ],
     howToSteps: [
+      { title: 'ToolsArena Excel to PDF Converter खोलें', description: 'Free online converter पर जाएं — कोई signup या installation नहीं।' },
       { title: 'Excel file upload करें', description: '.xlsx, .xls, या .csv file drag & drop करें।' },
-      { title: 'Preview और sheet select करें', description: 'Data review करें और sheet choose करें।' },
-      { title: 'Convert और Download करें', description: 'Convert to PDF click करें और PDF save करें।' },
+      { title: 'Preview और settings configure करें', description: 'Sheet select करें, page orientation चुनें (wide data के लिए landscape), font size adjust करें।' },
+      { title: 'Convert to PDF click करें', description: 'PDF instantly browser में generate होता है — कोई server upload नहीं।' },
+      { title: 'PDF download करें', description: 'Professional PDF document अपने device पर save करें।' },
     ],
     faqs: [
-      { question: 'क्या .csv files support होती हैं?', answer: 'हाँ। .xlsx, .xls, और .csv तीनों formats support होते हैं।' },
-      { question: 'क्या data server पर जाता है?', answer: 'नहीं। सब कुछ browser में JavaScript से process होता है। आपकी file कभी server पर नहीं जाती।' },
-      { question: 'क्या Excel formatting preserve होती है?', answer: 'Tool clean professional table layout बनाता है। Complex formatting (charts, conditional formatting) exactly preserve नहीं होती।' },
+      { question: 'Excel को PDF में convert करने पर formatting कैसे बचाएं?', answer: 'Print Area set करें, "Fit to Page" scaling use करें (Width: 1 page, Height: Automatic), wide spreadsheets के लिए Landscape चुनें, और column widths auto-fit करें। Page Break Preview से layout verify करें।' },
+      { question: 'क्या Excel को PDF में free convert कर सकते हैं?', answer: 'हाँ। ToolsArena का online converter 100% free है — कोई watermark नहीं, कोई file size limit नहीं, कोई signup नहीं। Google Sheets और LibreOffice भी free alternatives हैं।' },
+      { question: 'Multiple Excel sheets को एक PDF में कैसे convert करें?', answer: 'Microsoft Excel में File → Save As → PDF → Options → "Entire Workbook" select करें। Google Sheets में "All Sheets" choose करें। ToolsArena में एक-एक sheet convert करके PDF merger tool से merge करें।' },
+      { question: 'Excel file PDF में अलग क्यों दिखती है?', answer: 'Common कारण: columns page से wide हैं (Landscape switch करें या font छोटा करें), missing fonts, merged cells layout shift कर रही हैं, या Print Area सही set नहीं है।' },
+      { question: 'Mobile पर Excel को PDF में कैसे convert करें?', answer: 'iPhone पर Microsoft Excel app (Share as PDF) या Files app Print trick use करें। Android पर Excel app या Google Sheets (Share & Export → Save as PDF) use करें। Mobile browser में ToolsArena का converter भी काम करता है।' },
+      { question: 'Password-protected Excel file को PDF में convert कर सकते हैं?', answer: 'पहले file open करनी होगी (password enter करें), फिर PDF में convert करें। कोई भी converter Excel password bypass नहीं कर सकता। File open होने के बाद कोई भी method use करें।' },
+      { question: 'Excel के सभी columns एक PDF page पर कैसे fit करें?', answer: 'Excel में: Page Layout → Scale to Fit → Width "1 page" set करें। Google Sheets में: File → Download as PDF → Scale "Fit to width"। ToolsArena में Landscape orientation और छोटा font size use करें।' },
+      { question: 'Maximum file size कितनी है conversion के लिए?', answer: 'ToolsArena में कोई hard limit नहीं — browser memory पर depend करता है (typically 50-100 MB handle होता है)। Microsoft Excel और LibreOffice virtually कोई भी file size handle करते हैं। Google Sheets में 100 MB upload limit है।' },
+      { question: 'क्या Excel charts और images PDF में preserve होते हैं?', answer: 'Microsoft Excel और LibreOffice charts और images preserve करते हैं। Google Sheets भी charts preserve करता है। Browser-based tools जैसे ToolsArena table data focus करते हैं — charts वाली spreadsheets के लिए desktop app use करें।' },
+      { question: 'Batch conversion कैसे करें — बहुत सारी files एक साथ?', answer: 'LibreOffice command line use करें: "libreoffice --headless --convert-to pdf *.xlsx"। या Excel में VBA macro लिखें। Python scripts (win32com या openpyxl) से भी automation हो सकता है।' },
     ],
-    relatedGuides: ['compress-image-guide', 'text-to-speech-guide', 'percentage-how-to-guide'],
+    relatedGuides: ['word-to-pdf-guide', 'pdf-to-excel-guide', 'pdf-compressor-guide'],
     toolCTA: {
-      heading: 'Excel को PDF में Convert करें — Free और Instant',
-      description: 'Spreadsheet upload करें, professional PDF पाएं।',
+      heading: 'Excel को PDF में Convert करें — Free, Instant, कोई Upload नहीं',
+      description: '.xlsx, .xls, या .csv file drop करें और seconds में professional PDF पाएं। 100% browser-based — आपका data कभी device से बाहर नहीं जाता।',
       buttonText: 'Excel to PDF Converter खोलें →',
     },
   },
@@ -10284,6 +10772,223 @@ tags: [hindi, tutorial]
       heading: 'अभी MOV to MP4 Convert करें — Free, Fast, No Quality Loss',
       description: 'ToolsArena MOV to MP4 Converter — iPhone videos को seconds में MP4 में convert करें। Quality 100% maintained, batch conversion support। कोई signup नहीं, कोई watermark नहीं।',
       buttonText: 'MOV to MP4 Converter खोलें →',
+    },
+  },
+
+  // ── PNG TO JPG GUIDE (HI) ──────────────────────────────────────────────
+  {
+    slug: 'png-to-jpg-guide',
+    toolSlug: 'png-to-jpg',
+    category: 'converters',
+    title: 'PNG को JPG में Convert करें — Free Online Guide (2026)',
+    subtitle: 'PNG images को JPG format में instantly convert करें — file size कम करें, quality बनाए रखें।',
+    metaTitle: 'PNG को JPG में Convert करें Free Online — Guide (2026)',
+    metaDescription: 'PNG को JPG में free online convert करें — file size 80% तक कम। कोई upload नहीं, कोई signup नहीं।',
+    targetKeyword: 'png to jpg convert kaise kare',
+    secondaryKeywords: ['png to jpg converter', 'png to jpg online free', 'image format change', 'png ko jpg me kaise badle', 'photo convert online', 'image size kam kare'],
+    lastUpdated: '2026-03-18',
+    readingTime: '8 min read',
+    tags: ['Image', 'Converter', 'PNG', 'JPG', 'Free Tools'],
+    intro: `<p><strong>PNG को JPG में convert</strong> करना है? File size बहुत बड़ी है email के लिए, या website JPG format माँग रही है? यह <strong>तुरंत, मुफ्त, browser में</strong> हो सकता है।</p>
+<p>इस guide में सब कुछ है: PNG और JPG में अंतर, कब कौन सा format use करें, ToolsArena से step-by-step conversion, transparency handle करना, batch conversion, और best quality tips।</p>`,
+    sections: [
+      { id: 'difference', title: 'PNG vs JPG: क्या अंतर है?', content: `<table><thead><tr><th>Feature</th><th>PNG</th><th>JPG</th></tr></thead><tbody><tr><td>Compression</td><td>Lossless — कोई quality loss नहीं</td><td>Lossy — थोड़ी quality कम</td></tr><tr><td>File Size</td><td>बड़ी (2-10x)</td><td>बहुत छोटी</td></tr><tr><td>Transparency</td><td>✅ Support</td><td>❌ No support</td></tr><tr><td>Best For</td><td>Logos, screenshots, text graphics</td><td>Photos, web images, thumbnails</td></tr></tbody></table><h3>PNG को JPG में कब Convert करें?</h3><ul><li><strong>Photos:</strong> JPG 80% छोटी file बनाता है</li><li><strong>Website upload:</strong> WordPress, Shopify — JPG fast loading के लिए best</li><li><strong>Email:</strong> JPG size कम रखती है</li><li><strong>E-commerce:</strong> Amazon, Flipkart product photos के लिए JPG</li></ul>` },
+      { id: 'how-to', title: 'कैसे Convert करें (Step-by-Step)', content: `<ol><li><strong>Tool खोलें:</strong> <a href="/tools/png-to-jpg">ToolsArena PNG to JPG Converter</a> पर जाएं</li><li><strong>PNG upload करें:</strong> "Choose File" click करें या drag & drop करें</li><li><strong>Quality set करें:</strong> 85-92% recommended</li><li><strong>Background color चुनें:</strong> Transparent PNG के लिए (default: white)</li><li><strong>Convert करें:</strong> "Convert to JPG" click — तुरंत conversion</li><li><strong>Download करें:</strong> JPG save करें</li></ol><h3>Quality Settings</h3><table><thead><tr><th>Quality</th><th>Best For</th><th>Size Reduction</th></tr></thead><tbody><tr><td>95-100%</td><td>Professional, print</td><td>40-60% छोटी</td></tr><tr><td>85-94%</td><td>Web, social media (recommended)</td><td>70-85% छोटी</td></tr><tr><td>70-84%</td><td>Thumbnails, email</td><td>85-92% छोटी</td></tr></tbody></table><p><strong>Pro tip:</strong> 85% quality पर visible difference नहीं, file 3-5x छोटी।</p>` },
+      { id: 'transparency', title: 'PNG Transparency को JPG में Handle करना', content: `<p>JPG transparency support नहीं करता। Transparent area background color से replace होता है:</p><ul><li><strong>White (default):</strong> Most common — documents, web</li><li><strong>Black:</strong> Dark designs</li><li><strong>Custom color:</strong> Website background match</li></ul><p>E-commerce product photos के लिए white background standard है — Amazon, Flipkart।</p>` },
+      { id: 'batch', title: 'एक साथ कई PNG Convert करें', content: `<h3>ToolsArena (Online, Free)</h3><ol><li>PNG to JPG Converter खोलें</li><li>Multiple PNG files select करें</li><li>Quality set करें</li><li>Convert All → ZIP download</li></ol><h3>Windows (Paint)</h3><p>PNG open → File → Save As → JPEG</p><h3>Mobile</h3><p>Phone browser में ToolsArena converter काम करता है — कोई app नहीं।</p>` },
+    ],
+    howToSteps: [
+      { title: "Open PNG to JPG Converter", description: "Go to ToolsArena PNG to JPG Converter — free, no signup." },
+      { title: "Upload your PNG file", description: "Click Choose File or drag and drop your PNG image." },
+      { title: "Set quality and background", description: "Adjust quality (85% recommended). Choose background for transparent PNGs." },
+      { title: "Convert and download", description: "Click Convert to JPG. Download your converted image instantly." },
+    ],
+    faqs: [
+      { question: 'PNG को JPG में free में कैसे convert करें?', answer: 'ToolsArena का free converter use करें — upload, quality set (85%), download। कोई signup नहीं, कोई watermark नहीं।' },
+      { question: 'Quality कम होती है?', answer: '85-92% पर visible difference नहीं। File size 70-85% कम होती है।' },
+      { question: 'Transparent PNG को JPG बनाने पर क्या होता है?', answer: 'Transparent area white (default) हो जाता है। Custom color भी choose कर सकते हैं।' },
+      { question: 'iPhone पर कैसे convert करें?', answer: 'Safari खोलें → ToolsArena PNG to JPG → upload → convert → save।' },
+      { question: 'Android पर?', answer: 'Chrome → ToolsArena converter → upload → convert → download।' },
+      { question: 'Batch conversion हो सकती है?', answer: 'हाँ — multiple PNGs select करें, convert, ZIP download।' },
+      { question: 'Images upload होती हैं server पर?', answer: 'नहीं — browser में JavaScript से process। 100% private।' },
+      { question: 'Best quality setting?', answer: '85% — web/social media के लिए perfect। Professional work: 92%।' },
+    ],
+    relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'svg-to-png-guide', 'compress-image-guide'],
+    toolCTA: {
+      heading: 'अभी PNG को JPG में Convert करें — Free, Instant, Private',
+      description: 'ToolsArena PNG to JPG Converter — image size 80% कम करें बिना visible quality loss। किसी भी device पर।',
+      buttonText: 'PNG to JPG Converter खोलें →',
+    },
+  },
+
+  // ── CASE CONVERTER GUIDE (HI) ──────────────────────────────────────────────
+  {
+    slug: 'case-converter-guide',
+    toolSlug: 'case-converter',
+    category: 'text-tools',
+    title: 'Text Case Converter — UPPERCASE, lowercase, Title Case और ज़्यादा (2026)',
+    subtitle: 'Text को UPPERCASE, lowercase, Title Case, camelCase में convert करें — free, instant।',
+    metaTitle: 'Text Case Converter Online — UPPER, lower, Title Case Hindi (2026)',
+    metaDescription: 'Text case instantly convert करें — UPPERCASE, lowercase, Title Case, camelCase। Free tool। कोई signup नहीं।',
+    targetKeyword: 'text case converter online',
+    secondaryKeywords: ['uppercase to lowercase converter', 'capital to small letter', 'title case converter', 'caps lock fix', 'camelCase converter', 'text case changer'],
+    lastUpdated: '2026-03-18',
+    readingTime: '7 min read',
+    tags: ['Text', 'Converter', 'Formatting', 'Free Tools'],
+    intro: `<p>गलती से CAPS LOCK ON रखकर पूरा paragraph type कर दिया? Heading को Title Case में बदलना है? Variable names camelCase से snake_case में convert करने हैं? <strong>Text Case Converter</strong> से सब कुछ एक click में हो जाता है — दोबारा type नहीं करना।</p>`,
+    sections: [
+      { id: 'types', title: 'सभी Text Case Types', content: `<table><thead><tr><th>Case Type</th><th>Example</th><th>कहाँ Use होता है</th></tr></thead><tbody><tr><td><strong>UPPERCASE</strong></td><td>HELLO WORLD</td><td>Headings, emphasis, legal docs</td></tr><tr><td><strong>lowercase</strong></td><td>hello world</td><td>URLs, email, casual text</td></tr><tr><td><strong>Title Case</strong></td><td>Hello World</td><td>Article headlines, book titles</td></tr><tr><td><strong>Sentence case</strong></td><td>Hello world</td><td>Normal paragraphs</td></tr><tr><td><strong>camelCase</strong></td><td>helloWorld</td><td>JavaScript variables</td></tr><tr><td><strong>snake_case</strong></td><td>hello_world</td><td>Python, databases</td></tr><tr><td><strong>kebab-case</strong></td><td>hello-world</td><td>CSS classes, URL slugs</td></tr><tr><td><strong>CONSTANT_CASE</strong></td><td>HELLO_WORLD</td><td>Constants, env variables</td></tr></tbody></table>` },
+      { id: 'how-to', title: 'Text Case कैसे Convert करें', content: `<ol><li><strong>Tool खोलें:</strong> <a href="/tools/case-converter">ToolsArena Case Converter</a></li><li><strong>Text paste करें:</strong> Input box में text paste या type करें</li><li><strong>Case चुनें:</strong> UPPER, lower, Title — जो चाहिए वो button click</li><li><strong>Copy करें:</strong> Copy button click</li></ol><p>Conversion <strong>instantly</strong> होता है।</p>` },
+      { id: 'developers', title: 'Developers के लिए Case Conversion', content: `<table><thead><tr><th>Language</th><th>Variables</th><th>Classes</th></tr></thead><tbody><tr><td>JavaScript</td><td>camelCase</td><td>PascalCase</td></tr><tr><td>Python</td><td>snake_case</td><td>PascalCase</td></tr><tr><td>CSS</td><td>kebab-case</td><td>—</td></tr><tr><td>SQL</td><td>snake_case</td><td>—</td></tr></tbody></table><p>Python से JavaScript migrate कर रहे हैं? snake_case → camelCase seconds में।</p>` },
+      { id: 'caps-fix', title: 'CAPS LOCK Text कैसे Fix करें', content: `<h3>ToolsArena (सबसे आसान)</h3><ol><li>ALL CAPS text copy करें</li><li><a href="/tools/case-converter">Case Converter</a> में paste करें</li><li>"Sentence case" click करें</li><li>Fixed text copy करें</li></ol><h3>Word में</h3><p>Text select → <strong>Shift+F3</strong> — UPPER, lower, Title cycle</p>` },
+    ],
+    howToSteps: [
+      { title: "Open Case Converter", description: "Go to ToolsArena Case Converter — free, no signup." },
+      { title: "Paste your text", description: "Type or paste any text into the input box." },
+      { title: "Choose your case", description: "Click the button for UPPER, lower, Title, Sentence, camelCase, or snake_case." },
+      { title: "Copy the result", description: "Click Copy to copy the converted text to your clipboard." },
+    ],
+    faqs: [
+      { question: 'UPPERCASE को lowercase में कैसे बदलें?', answer: 'ToolsArena Case Converter में paste करें, "lowercase" click। Word में: Shift+F3।' },
+      { question: 'Title Case क्या होता है?', answer: 'हर important word capital: "The Quick Brown Fox"। Articles (a, an, the) छोटे रहते हैं।' },
+      { question: 'camelCase क्या है?', answer: 'पहले word बाद हर word capital, no spaces: "helloWorld"। JavaScript/Java में use।' },
+      { question: 'CAPS LOCK text fix कैसे करें?', answer: 'Copy → Case Converter paste → "Sentence case" → copy back।' },
+      { question: 'Word में text case change?', answer: 'Text select → Shift+F3 — toggle UPPER/lower/Title।' },
+      { question: 'snake_case to camelCase?', answer: 'Case Converter में paste → "camelCase" click: my_variable → myVariable।' },
+    ],
+    relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'font-generator-guide'],
+    toolCTA: {
+      heading: 'Text Case तुरंत Convert करें — Free Online Tool',
+      description: 'UPPERCASE, lowercase, Title Case, camelCase — एक click में। कोई signup नहीं।',
+      buttonText: 'Case Converter खोलें →',
+    },
+  },
+
+  // ── HASH GENERATOR GUIDE (HI) ──────────────────────────────────────────────
+  {
+    slug: 'hash-generator-guide',
+    toolSlug: 'hash-generator',
+    category: 'developer-tools',
+    title: 'Hash Generator — MD5, SHA-256 Online Guide Hindi (2026)',
+    subtitle: 'MD5, SHA-256, SHA-512 hashes online generate करें — hashing समझें, file verify करें।',
+    metaTitle: 'Hash Generator Online Free — MD5, SHA-256 Hindi Guide (2026)',
+    metaDescription: 'MD5, SHA-256 hashes free generate करें। Hashing क्या है, कौन सा algorithm कब। कोई signup नहीं।',
+    targetKeyword: 'hash generator online',
+    secondaryKeywords: ['md5 hash generator', 'sha256 generator', 'hash kya hota hai', 'file hash verify kaise kare', 'md5 vs sha256', 'password hashing hindi'],
+    lastUpdated: '2026-03-18',
+    readingTime: '9 min read',
+    tags: ['Developer', 'Security', 'Hash', 'Free Tools'],
+    intro: `<p><strong>MD5</strong>, <strong>SHA-256</strong> hash generate करना है? File download verify करना हो, passwords securely store करने हों — hash functions developers और IT professionals के लिए essential हैं।</p>`,
+    sections: [
+      { id: 'what-is', title: 'Hashing क्या है?', content: `<p><strong>Hash function</strong> किसी भी input का fixed-length fingerprint बनाता है:</p><ul><li>Same input &rarr; हमेशा same hash</li><li>अलग input &rarr; पूरी तरह अलग hash</li><li>Hash से original input recover नहीं होता</li></ul><p><strong>Example:</strong> "Hello" &rarr; MD5: 8b1a9953c4611296a827abf8c47804d7</p><p>"hello" &rarr; MD5: 5d41402abc4b2a76b9719d911017c592</p><p>सिर्फ "H" को "h" करने से पूरा hash बदल गया — यही <strong>avalanche effect</strong> है।</p>` },
+      { id: 'compare', title: 'MD5 vs SHA-256 — कौन सा Use करें?', content: `<table><thead><tr><th>Algorithm</th><th>Hash Length</th><th>Security</th><th>2026 में Use</th></tr></thead><tbody><tr><td><strong>MD5</strong></td><td>32 chars</td><td>❌ Broken</td><td>सिर्फ file checksum</td></tr><tr><td><strong>SHA-1</strong></td><td>40 chars</td><td>❌ Deprecated</td><td>Legacy only</td></tr><tr><td><strong>SHA-256</strong></td><td>64 chars</td><td>✅ Secure</td><td>✅ Recommended</td></tr><tr><td><strong>bcrypt</strong></td><td>Variable</td><td>✅ Password-safe</td><td>✅ Passwords best</td></tr></tbody></table><h3>कब कौन सा?</h3><ul><li><strong>File integrity:</strong> SHA-256</li><li><strong>Passwords:</strong> bcrypt/Argon2 (MD5/SHA कभी नहीं)</li><li><strong>Digital signatures:</strong> SHA-256</li><li><strong>Bitcoin:</strong> SHA-256</li></ul>` },
+      { id: 'how-to', title: 'Hash कैसे Generate करें', content: `<ol><li><a href="/tools/hash-generator">ToolsArena Hash Generator</a> खोलें</li><li>Text type या paste करें</li><li>Algorithm choose करें</li><li>Hash instantly generate</li><li>Copy button से copy</li></ol><h3>File Verify</h3><ol><li>File upload करें (browser में process — server पर नहीं)</li><li>Generated hash को website hash से compare</li><li>Match = genuine file</li></ol>` },
+      { id: 'passwords', title: 'Password Hashing — Developers Guide', content: `<h3>Plain-Text Passwords कभी Store नहीं</h3><p>Database breach हो तो सब passwords exposed। हमेशा hash करें।</p><h3>MD5/SHA Passwords के लिए नहीं</h3><p>बहुत fast — attackers billions of guesses/second try कर सकते हैं।</p><h3>bcrypt या Argon2 Use करें</h3><p>Intentionally slow + salt। Same password = different hash। Brute force years लेता है।</p>` },
+    ],
+    howToSteps: [
+      { title: "Open Hash Generator", description: "Go to ToolsArena Hash Generator — free, no signup." },
+      { title: "Enter text or upload file", description: "Type, paste text, or upload a file to hash." },
+      { title: "Choose algorithm", description: "Select MD5, SHA-1, SHA-256, SHA-512, or other algorithms." },
+      { title: "Copy your hash", description: "The hash is generated instantly. Click Copy to clipboard." },
+    ],
+    faqs: [
+      { question: 'MD5 hash क्या होता है?', answer: '32 character hex fingerprint। Fast लेकिन broken — सिर्फ checksums।' },
+      { question: 'SHA-256 क्या है?', answer: '64 char secure hash। Bitcoin, SSL में standard।' },
+      { question: 'Hash reverse होता है?', answer: 'नहीं — one-way function। Original input recover नहीं होता।' },
+      { question: 'Password hashing के लिए best?', answer: 'bcrypt या Argon2 — MD5/SHA passwords के लिए कभी नहीं।' },
+      { question: 'File hash verify कैसे?', answer: 'ToolsArena में file upload, hash generate, website hash से compare।' },
+      { question: 'Online hash safe है?', answer: 'ToolsArena पर हाँ — browser में process। Server पर कुछ नहीं जाता।' },
+    ],
+    relatedGuides: ['password-generator-guide', 'password-strength-guide', 'base64-encode-decode-guide'],
+    toolCTA: {
+      heading: 'Hash तुरंत Generate करें — MD5, SHA-256',
+      description: 'ToolsArena Hash Generator — free, browser-based, 100% private।',
+      buttonText: 'Hash Generator खोलें →',
+    },
+  },
+
+  // ── SCIENTIFIC CALCULATOR GUIDE (HI) ──────────────────────────────────────────────
+  {
+    slug: 'scientific-calculator-guide',
+    toolSlug: 'scientific-calculator',
+    category: 'calculators',
+    title: 'Free Scientific Calculator Online — Hindi Guide (2026)',
+    subtitle: 'Free scientific calculator — sin, cos, tan, log, exponents। Mobile और desktop दोनों पर।',
+    metaTitle: 'Scientific Calculator Free Online — sin cos tan Hindi (2026)',
+    metaDescription: 'Free scientific calculator — sin cos tan log। Students के लिए complete Hindi guide।',
+    targetKeyword: 'scientific calculator online free',
+    secondaryKeywords: ['scientific calculator hindi', 'sin cos tan calculator', 'log calculator online', 'trigonometry calculator', 'factorial calculator', 'advanced calculator'],
+    lastUpdated: '2026-03-18',
+    readingTime: '8 min read',
+    tags: ['Calculator', 'Math', 'Students', 'Free Tools'],
+    intro: `<p><strong>Scientific calculator</strong> चाहिए लेकिन हाथ में नहीं? Trigonometry solve करना हो, engineering calculations — ToolsArena का free calculator किसी भी device पर काम करता है।</p>`,
+    sections: [
+      { id: 'trig', title: 'sin, cos, tan Functions', content: `<table><thead><tr><th>Function</th><th>Example</th><th>Result</th></tr></thead><tbody><tr><td>sin</td><td>sin(30&deg;)</td><td>0.5</td></tr><tr><td>cos</td><td>cos(60&deg;)</td><td>0.5</td></tr><tr><td>tan</td><td>tan(45&deg;)</td><td>1</td></tr></tbody></table><h3>Degrees vs Radians</h3><ul><li><strong>DEG:</strong> School/college problems (0&deg; to 360&deg;)</li><li><strong>RAD:</strong> Calculus, physics (0 to 2&pi;)</li></ul><p>Exam में #1 गलती — DEG/RAD mode check नहीं करना!</p>` },
+      { id: 'log', title: 'Logarithms और Exponents', content: `<table><thead><tr><th>Function</th><th>Example</th><th>Result</th></tr></thead><tbody><tr><td>x&sup2;</td><td>7&sup2;</td><td>49</td></tr><tr><td>&radic;x</td><td>&radic;144</td><td>12</td></tr><tr><td>log</td><td>log(1000)</td><td>3</td></tr><tr><td>ln</td><td>ln(e)</td><td>1</td></tr><tr><td>n!</td><td>5!</td><td>120</td></tr></tbody></table><h3>Logarithms कहाँ?</h3><ul><li>Compound interest — पैसे double time</li><li>Earthquake — Richter scale</li><li>Algorithms — O(log n)</li></ul>` },
+      { id: 'tips', title: 'Students Tips', content: `<ul><li><strong>DEG/RAD check करें</strong> — exam #1 mistake</li><li><strong>Parentheses use करें</strong></li><li><strong>sin(90&deg;) = 1</strong> से verify</li><li>ToolsArena से practice, physical calculator exam में</li></ul><h3>Common Formulas</h3><ul><li>Quadratic: x = (-b &plusmn; &radic;(b&sup2;-4ac))/2a</li><li>Pythagorean: c = &radic;(a&sup2; + b&sup2;)</li><li>Compound Interest: A = P(1+r/n)<sup>nt</sup></li></ul>` },
+    ],
+    howToSteps: [
+      { title: "Open Scientific Calculator", description: "Go to ToolsArena Scientific Calculator — free, no download." },
+      { title: "Check DEG/RAD mode", description: "Ensure you are in the correct mode for your calculation." },
+      { title: "Enter your calculation", description: "Use the buttons or type your expression — trig, log, exponents, etc." },
+      { title: "Get your result", description: "The result displays instantly. Use memory functions for multi-step problems." },
+    ],
+    faqs: [
+      { question: 'Free है?', answer: 'हाँ — 100% free। कोई signup, download नहीं।' },
+      { question: 'sin cos tan कैसे?', answer: 'Calculator खोलें, DEG mode, sin/cos/tan click, angle enter।' },
+      { question: 'Degrees/Radians switch?', answer: 'DEG/RAD toggle click। School = DEG, calculus = RAD।' },
+      { question: 'Phone पर?', answer: 'हाँ — किसी भी smartphone browser में।' },
+      { question: 'Factorial?', answer: 'Number enter, n! press। 5! = 120।' },
+      { question: 'Exam accurate?', answer: 'हाँ — IEEE 754 double-precision, physical calculators जैसा।' },
+    ],
+    relatedGuides: ['percentage-calculator-guide', 'percentage-how-to-guide', 'unit-converter-guide', 'compound-interest-guide'],
+    toolCTA: {
+      heading: 'Scientific Calculator अभी Use करें — Free!',
+      description: 'sin, cos, tan, log, ln, exponents, factorials — किसी भी device पर।',
+      buttonText: 'Scientific Calculator खोलें →',
+    },
+  },
+
+  // ── COUNTDOWN TIMER GUIDE (HI) ──────────────────────────────────────────────
+  {
+    slug: 'countdown-timer-guide',
+    toolSlug: 'countdown-timer',
+    category: 'utility-tools',
+    title: 'Free Countdown Timer Online — Hindi Guide (2026)',
+    subtitle: 'Countdown timer — cooking, exam, workout, Pomodoro। Free, browser में।',
+    metaTitle: 'Free Countdown Timer Online — Hindi Guide (2026)',
+    metaDescription: 'Free countdown timer — कोई भी duration, alarm। Cooking, exam, workout। Mobile पर भी।',
+    targetKeyword: 'online countdown timer',
+    secondaryKeywords: ['countdown timer online', 'timer set kare', '5 minute timer', 'cooking timer', 'pomodoro timer hindi', 'exam timer'],
+    lastUpdated: '2026-03-18',
+    readingTime: '7 min read',
+    tags: ['Timer', 'Productivity', 'Utility', 'Free Tools'],
+    intro: `<p><strong>Countdown timer</strong> चाहिए? Cooking, exam, workout, Pomodoro — ToolsArena का free timer किसी भी device पर बिना setup।</p>`,
+    sections: [
+      { id: 'how', title: 'Timer कैसे Set करें', content: `<ol><li><a href="/tools/countdown-timer">ToolsArena Timer</a> खोलें</li><li>Duration enter करें या preset (1, 5, 25 min)</li><li>Start click</li><li>Time up पर alarm</li><li>Pause/Resume/Reset कभी भी</li></ol>` },
+      { id: 'durations', title: 'Popular Durations', content: `<table><thead><tr><th>Duration</th><th>Use</th></tr></thead><tbody><tr><td>2 min</td><td>Maggi, instant noodles</td></tr><tr><td>3 min</td><td>Tea steeping</td></tr><tr><td>5 min</td><td>Power break</td></tr><tr><td>10 min</td><td>Study sprint, pasta</td></tr><tr><td>15 min</td><td>Rice cooking, power nap</td></tr><tr><td>25 min</td><td>Pomodoro session</td></tr><tr><td>45 min</td><td>Exam period</td></tr><tr><td>1 hour</td><td>Meeting, baking</td></tr></tbody></table>` },
+      { id: 'pomodoro', title: 'Pomodoro Technique', content: `<ol><li>25 min timer set</li><li>पूरे focus से काम</li><li>Timer बजे → 5 min break</li><li>4 rounds → 15-30 min long break</li></ol><p><strong>Best for:</strong> Board exam, UPSC, SSC, JEE, NEET preparation, coding, content writing।</p>` },
+      { id: 'cooking', title: 'Indian Cooking Timer', content: `<table><thead><tr><th>Item</th><th>Timer</th></tr></thead><tbody><tr><td>Maggi</td><td>2 min</td></tr><tr><td>चाय</td><td>3-5 min</td></tr><tr><td>Basmati चावल</td><td>15-18 min</td></tr><tr><td>दाल (pressure cooker)</td><td>3-4 सीटी (~10 min)</td></tr><tr><td>चपाती</td><td>1-2 min/side</td></tr><tr><td>अंडा (उबला)</td><td>10-12 min</td></tr></tbody></table>` },
+    ],
+    howToSteps: [
+      { title: "Open Countdown Timer", description: "Go to ToolsArena Countdown Timer — free, no app needed." },
+      { title: "Set your duration", description: "Enter hours, minutes, seconds or use quick presets." },
+      { title: "Start the timer", description: "Click Start. The countdown begins immediately." },
+      { title: "Get alerted when done", description: "An audio alarm and visual notification alert you when time is up." },
+    ],
+    faqs: [
+      { question: 'Timer कैसे set?', answer: 'ToolsArena Timer खोलें, duration set, Start click।' },
+      { question: 'Tab switch पर?', answer: 'Background में चलता है। Alarm बजेगा।' },
+      { question: 'Pomodoro?', answer: '25 min work → 5 min break → repeat 4x → long break।' },
+      { question: 'Fullscreen?', answer: 'हाँ — classroom, presentations के लिए।' },
+      { question: 'Mobile?', answer: 'हाँ — किसी भी browser में।' },
+      { question: 'Zero पर?', answer: 'Audio alarm + screen flash।' },
+    ],
+    relatedGuides: ['typing-speed-test-guide', 'reading-time-calculator-guide'],
+    toolCTA: {
+      heading: 'Timer शुरू करें — Free, Instant!',
+      description: 'Cooking, study, fitness, presentations। कोई app नहीं।',
+      buttonText: 'Countdown Timer खोलें →',
     },
   },
 ];
