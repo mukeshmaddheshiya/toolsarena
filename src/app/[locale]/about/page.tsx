@@ -3,13 +3,14 @@ import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternateLanguages } from '@/lib/seo';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { TOOL_COUNT } from '@/lib/tools-registry';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('about');
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
-    keywords: 'about ToolsArena, free online tools, privacy-first tools, no signup tools, browser-based tools',
+    keywords: 'about ToolsArena, free online tools, privacy-first tools, no signup tools, browser-based tools, Mukesh Maddheshiya',
     alternates: {
       canonical: `${SITE_URL}/about`,
       languages: getAlternateLanguages('/about'),
@@ -36,23 +37,81 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const t = await getTranslations('about');
 
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About ToolsArena',
+    description: t('metaDescription'),
+    url: `${SITE_URL}/about`,
+    mainEntity: {
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: SITE_URL,
+      founder: {
+        '@type': 'Person',
+        name: 'Mukesh Maddheshiya',
+        jobTitle: 'Full-Stack Developer & Founder',
+        url: 'https://mukeshfolio.vercel.app/',
+        sameAs: [
+          'https://www.linkedin.com/in/mukesh-maddheshiya-76a83b193',
+          'https://www.instagram.com/mukeshmaddy7/',
+          'https://github.com/mukeshmaddheshiya',
+        ],
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Lucknow',
+          addressCountry: 'IN',
+        },
+      },
+    },
+  };
+
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
+
       <h1 className="text-3xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-6">{t('title')}</h1>
-      <div className="prose prose-slate dark:prose-invert max-w-none space-y-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+
+      <div className="prose prose-slate dark:prose-invert max-w-none space-y-4 text-[15px] text-slate-600 dark:text-slate-400 leading-relaxed">
         <p>{t('intro')}</p>
+        <p>{t('backstory')}</p>
         <p>{t('browserProcessing')}</p>
-        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">{t('missionTitle')}</h2>
-        <p>{t('missionText')}</p>
-        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">{t('whyTitle')}</h2>
+
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-10 mb-3">{t('howItWorksTitle')}</h2>
+        <p>{t('howItWorksText')}</p>
+
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-10 mb-3">{t('whyTitle')}</h2>
         <ul className="list-disc list-inside space-y-2">
-          <li><strong>{t('whyFree')}</strong> {t('whyFreeDesc')}</li>
           <li><strong>{t('whyPrivacy')}</strong> {t('whyPrivacyDesc')}</li>
+          <li><strong>{t('whyFree')}</strong> {t('whyFreeDesc')}</li>
           <li><strong>{t('whyNoSignup')}</strong> {t('whyNoSignupDesc')}</li>
           <li><strong>{t('whyFast')}</strong> {t('whyFastDesc')}</li>
-          <li><strong>{t('whyIndia')}</strong> {t('whyIndiaDesc')}</li>
         </ul>
-        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-8 mb-3">{t('contactTitle')}</h2>
+
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-10 mb-3">{t('numbersTitle')}</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 not-prose my-6">
+          <div className="bg-slate-50 dark:bg-slate-800 rounded-xl p-4 text-center border border-slate-200 dark:border-slate-700">
+            <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">{TOOL_COUNT}+</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t('statsTools')}</div>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-800 rounded-xl p-4 text-center border border-slate-200 dark:border-slate-700">
+            <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">0</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t('statsServerUploads')}</div>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-800 rounded-xl p-4 text-center border border-slate-200 dark:border-slate-700">
+            <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">0</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t('statsSignups')}</div>
+          </div>
+          <div className="bg-slate-50 dark:bg-slate-800 rounded-xl p-4 text-center border border-slate-200 dark:border-slate-700">
+            <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">9</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">{t('statsCategories')}</div>
+          </div>
+        </div>
+
+        <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mt-10 mb-3">{t('contactTitle')}</h2>
         <p>{t('contactText')} <a href="/contact" className="text-primary-700 dark:text-primary-400 hover:underline">{t('contactLink')}</a>.</p>
       </div>
 
@@ -61,7 +120,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-slate-100 mb-6">{t('founderTitle')}</h2>
         <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-800/50 rounded-2xl p-4 sm:p-6 md:p-8 overflow-hidden">
           <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
-            {/* Avatar */}
             <Image
               src="/mukesh-developer-toolsarena.png"
               alt="Mukesh Maddheshiya - Founder of ToolsArena"
@@ -69,14 +127,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               height={80}
               className="w-20 h-20 rounded-full object-cover shrink-0 shadow-lg"
             />
-            {/* Info */}
             <div className="flex-1 min-w-0">
               <h3 className="text-lg font-heading font-bold text-slate-900 dark:text-slate-100">{t('founderName')}</h3>
               <p className="text-sm font-medium text-primary-600 dark:text-primary-400 mb-3">{t('founderRole')}</p>
-              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                {t('founderBio')}
+              <p className="text-[15px] text-slate-600 dark:text-slate-400 leading-relaxed mb-2">
+                {t('founderBio1')}
               </p>
-              {/* Social Links */}
+              <p className="text-[15px] text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                {t('founderBio2')}
+              </p>
               <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 <a href="https://www.linkedin.com/in/mukesh-maddheshiya-76a83b193" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 shadow-sm transition-colors">
                   <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
