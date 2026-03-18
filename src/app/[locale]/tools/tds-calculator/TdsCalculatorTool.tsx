@@ -658,6 +658,11 @@ export function TdsCalculatorTool() {
         </div>
       </div>
 
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> TDS calculations are estimates for educational purposes only. TDS rates and thresholds change with each Finance Act. Always verify current rates on the Income Tax Department website and consult a qualified CA for filing.
+      </div>
+
       {/* Trust badge */}
       <div className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800">
         <Shield className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />

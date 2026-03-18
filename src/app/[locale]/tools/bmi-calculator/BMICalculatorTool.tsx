@@ -124,6 +124,11 @@ export function BMICalculatorTool() {
           </tbody>
         </table>
       </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> BMI is a screening tool and does not directly measure body fat or health. It may not be accurate for athletes, elderly individuals, or pregnant women. Always consult your doctor or healthcare provider for personalized health advice.
+      </div>
     </div>
   );
 }

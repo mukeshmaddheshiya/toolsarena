@@ -447,6 +447,11 @@ export function RoiCalculatorTool() {
             )}
           </div>
         )}
+
+        {/* Disclaimer */}
+        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+          <strong>Disclaimer:</strong> ROI calculations are estimates for educational purposes. Actual investment returns depend on many factors including fees, taxes, and market conditions. Past performance does not guarantee future results. Consult a financial advisor before making investment decisions.
+        </div>
       </div>
     </div>
   );

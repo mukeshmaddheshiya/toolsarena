@@ -254,6 +254,11 @@ export function HRACalculatorTool() {
           </div>
         </div>
       </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> HRA exemption calculations are estimates based on current tax rules. Tax laws change with each budget. Consult a qualified CA or tax professional for personalized advice before filing your returns.
+      </div>
     </div>
   );
 }

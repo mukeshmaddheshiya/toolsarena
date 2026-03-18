@@ -454,6 +454,10 @@ function GunMilanResult({ result, hi }: { result: GunMilanResult; hi: boolean })
 
   return (
     <div className="space-y-4">
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>{hi ? 'अस्वीकरण:' : 'Disclaimer:'}</strong> {hi ? 'यह टूल वैदिक ज्योतिष परंपरा पर आधारित है, वैज्ञानिक विश्लेषण नहीं। यह केवल सांस्कृतिक संदर्भ के लिए है। विवाह जैसे जीवन के निर्णय केवल ज्योतिष स्कोर पर आधारित न करें।' : 'This tool is based on Vedic astrology tradition, not scientific analysis. It is provided for cultural and entertainment purposes only. Do not base life decisions such as marriage solely on astrological scores.'}
+      </div>
       {/* Score hero */}
       <div className={`bg-gradient-to-r ${score.color} rounded-2xl p-6 text-white shadow-lg`}>
         <div className="flex items-center justify-between flex-wrap gap-4">

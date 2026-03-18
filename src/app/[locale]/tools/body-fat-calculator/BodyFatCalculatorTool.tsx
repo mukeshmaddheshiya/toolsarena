@@ -204,6 +204,11 @@ export function BodyFatCalculatorTool() {
           </tbody>
         </table>
       </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Body fat estimates are approximate and may not be accurate for all body types. These formulas were developed for adults and may not apply to children, elderly, or athletic populations. Consult a healthcare professional for personalized health assessments.
+      </div>
     </div>
   );
 }

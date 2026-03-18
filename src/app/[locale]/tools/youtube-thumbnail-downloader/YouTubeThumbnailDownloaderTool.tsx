@@ -153,6 +153,11 @@ export function YouTubeThumbnailDownloaderTool() {
               </div>
             ))}
           </div>
+
+          {/* Copyright disclaimer */}
+          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-3 text-xs text-amber-700 dark:text-amber-400">
+            <strong>Copyright Notice:</strong> YouTube thumbnails are owned by the video creator. Downloading thumbnails for personal reference is generally acceptable, but using them commercially or redistributing without the creator&apos;s permission may violate copyright law.
+          </div>
         </div>
       )}
     </div>

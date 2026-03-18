@@ -2051,20 +2051,20 @@ export const guidesHi: Guide[] = [
 </ul>`,
       },
       {
-        id: 'best-sip-funds-2026',
-        title: 'India के Best SIP Mutual Funds 2026',
-        content: `<p>लगातार अच्छा performance देने वाले popular funds (invest करने से पहले current ratings ज़रूर check करें):</p>
+        id: 'sip-fund-categories',
+        title: 'SIP Fund Categories कैसे चुनें',
+        content: `<p>Fund select करते समय past returns के बजाय ये factors देखें:</p>
 <table>
-  <thead><tr><th>Fund Name</th><th>Category</th><th>3Y Returns</th><th>Minimum SIP</th></tr></thead>
+  <thead><tr><th>Category</th><th>Risk Level</th><th>Best For</th><th>Min SIP</th></tr></thead>
   <tbody>
-    <tr><td>Parag Parikh Flexi Cap</td><td>Flexi Cap</td><td>~18%</td><td>₹1,000</td></tr>
-    <tr><td>Mirae Asset Large Cap</td><td>Large Cap</td><td>~15%</td><td>₹1,000</td></tr>
-    <tr><td>SBI Bluechip Fund</td><td>Large Cap</td><td>~14%</td><td>₹500</td></tr>
-    <tr><td>HDFC Flexi Cap Fund</td><td>Flexi Cap</td><td>~22%</td><td>₹100</td></tr>
-    <tr><td>Axis Midcap Fund</td><td>Mid Cap</td><td>~17%</td><td>₹500</td></tr>
-    <tr><td>Quant Small Cap Fund</td><td>Small Cap</td><td>~28%</td><td>₹1,000</td></tr>
+    <tr><td>Large Cap</td><td>Moderate</td><td>Stable, long-term growth</td><td>₹500–₹1,000</td></tr>
+    <tr><td>Flexi Cap</td><td>Moderate-High</td><td>Diversified across market caps</td><td>₹100–₹1,000</td></tr>
+    <tr><td>Mid Cap</td><td>High</td><td>Higher growth potential</td><td>₹500–₹1,000</td></tr>
+    <tr><td>Small Cap</td><td>Very High</td><td>Aggressive growth</td><td>₹500–₹1,000</td></tr>
+    <tr><td>Index Fund</td><td>Moderate</td><td>Low-cost, market-tracking</td><td>₹100–₹500</td></tr>
   </tbody>
 </table>
+<p><strong>⚠️ Important:</strong> Mutual fund investments market risks के subject हैं। Past performance future returns guarantee नहीं करता। किसी specific fund की recommendation नहीं है। SEBI-registered investment adviser से consult करें।</p>
 <h3>SIP कहाँ से शुरू करें (India 2026)</h3>
 <ul>
   <li><strong>Groww</strong> — Beginners के लिए best, zero commission, simple UI</li>
@@ -5578,26 +5578,28 @@ End Sub</code></pre>
 <div class="callout-info">ℹ️ <strong>ध्यान दें:</strong> भारत में ज़्यादातर बैंक quarterly compounding करते हैं। कुछ small finance banks monthly compounding offer करते हैं जिससे effective return थोड़ा ज़्यादा होता है।</div>`,
       },
       {
-        id: 'bank-fd-rates-2026',
-        title: 'प्रमुख बैंकों की FD ब्याज दरें (मार्च 2026)',
-        content: `<p>नीचे भारत के प्रमुख बैंकों की FD ब्याज दरों की तुलना दी गई है। ये दरें सामान्य नागरिकों और सीनियर सिटीजन दोनों के लिए हैं:</p>
+        id: 'fd-rates-compare',
+        title: 'FD Rates कैसे Compare करें',
+        content: `<p>FD ब्याज दरें बैंक-दर-बैंक और RBI policy changes के साथ बदलती रहती हैं। Compare करते समय ये देखें:</p>
 <table>
   <thead>
-    <tr><th>बैंक</th><th>1 वर्ष</th><th>3 वर्ष</th><th>5 वर्ष</th><th>सीनियर सिटीजन (अतिरिक्त)</th></tr>
+    <tr><th>बैंक प्रकार</th><th>सामान्य Rate Range</th><th>DICGC बीमा</th><th>सीनियर सिटीजन बोनस</th></tr>
   </thead>
   <tbody>
-    <tr><td>SBI</td><td>6.80%</td><td>7.00%</td><td>6.50%</td><td>+0.50%</td></tr>
-    <tr><td>HDFC Bank</td><td>7.10%</td><td>7.15%</td><td>7.00%</td><td>+0.50%</td></tr>
-    <tr><td>ICICI Bank</td><td>7.00%</td><td>7.10%</td><td>6.90%</td><td>+0.50%</td></tr>
-    <tr><td>PNB</td><td>6.80%</td><td>7.00%</td><td>6.50%</td><td>+0.50%</td></tr>
-    <tr><td>Axis Bank</td><td>7.10%</td><td>7.15%</td><td>7.00%</td><td>+0.50%</td></tr>
-    <tr><td>Post Office TD</td><td>6.90%</td><td>7.00%</td><td>7.50%</td><td>N/A</td></tr>
-    <tr><td>Bajaj Finance FD</td><td>7.75%</td><td>8.05%</td><td>7.75%</td><td>+0.25%</td></tr>
+    <tr><td>सरकारी बैंक (SBI, PNB, BOB, आदि)</td><td>6.5% – 7.2%</td><td>₹5 लाख तक</td><td>+0.50%</td></tr>
+    <tr><td>प्राइवेट बैंक (HDFC, ICICI, Axis, आदि)</td><td>6.5% – 7.3%</td><td>₹5 लाख तक</td><td>+0.50%</td></tr>
+    <tr><td>Small Finance Banks</td><td>7.0% – 8.5%</td><td>₹5 लाख तक</td><td>+0.50%</td></tr>
+    <tr><td>NBFCs (Bajaj Finance, आदि)</td><td>7.0% – 8.0%</td><td>कवर नहीं</td><td>+0.25%</td></tr>
+    <tr><td>Post Office TD</td><td>6.8% – 7.5%</td><td>सरकार गारंटी</td><td>N/A</td></tr>
   </tbody>
 </table>
-<div class="callout-tip">💡 <strong>प्रो टिप:</strong> सीनियर सिटीजन (60+) को लगभग सभी बैंकों में 0.25% से 0.50% अतिरिक्त ब्याज मिलता है। सुपर सीनियर सिटीजन (80+) को कुछ बैंकों में 0.75% तक extra मिलता है।</div>
-<h3>Small Finance Banks — ज़्यादा ब्याज</h3>
-<p>AU Small Finance Bank, Ujjivan SFB, और Equitas SFB जैसे बैंक 8.5% तक FD rates offer करते हैं। लेकिन ध्यान रखें कि DICGC बीमा ₹5 लाख तक ही है — इसलिए बड़ी राशि divide करके अलग-अलग बैंकों में रखें।</p>`,
+<div class="callout-warning"><strong>⚠️ दरें बार-बार बदलती हैं</strong><p>Invest करने से पहले हमेशा बैंक की official website पर latest rates verify करें। हम किसी specific बैंक या NBFC की recommendation नहीं देते।</p></div>
+<h3>ध्यान रखें</h3>
+<ul>
+  <li>सीनियर सिटीजन (60+) को 0.25% – 0.50% extra ब्याज मिलता है</li>
+  <li>NBFC deposits ₹5 लाख से ऊपर DICGC बीमा में कवर नहीं — बड़ी राशि divide करें</li>
+  <li>Post Office TD सरकार-समर्थित — न्यूनतम जोखिम</li>
+</ul>`,
       },
       {
         id: 'fd-tax-80c',
@@ -11213,9 +11215,6 @@ tags: [hindi, tutorial]
 
   // ── PREGNANCY CALCULATOR (HI) ──
   { slug: 'pregnancy-calculator-guide', toolSlug: 'pregnancy-calculator', category: 'calculators', title: 'Pregnancy Due Date Calculator — Hindi Guide (2026)', subtitle: 'Due date calculate, week track, trimester समझें।', metaTitle: 'Pregnancy Calculator Free — Hindi Guide (2026)', metaDescription: 'Pregnancy due date free calculate। Week tracker, trimester milestones।', targetKeyword: 'pregnancy calculator hindi', secondaryKeywords: ['due date calculator', 'pregnancy weeks', 'delivery date calculator', 'garbh calculator', 'trimester kya hai'], lastUpdated: '2026-03-18', readingTime: '7 min read', tags: ['Health', 'Calculator', 'Pregnancy', 'Free Tools'], intro: `<p><strong>Baby कब आएगा</strong>? Pregnancy calculator last period से due date बताता है।</p>`, sections: [ { id: 'how', title: 'Due Date कैसे Calculate', content: `<ol><li><a href="/tools/pregnancy-calculator">Calculator</a> खोलें</li><li>Last period date enter</li><li>Due date, week, trimester देखें</li></ol><p>Formula: LMP + 280 days। सिर्फ 5% babies exact date पर आते हैं।</p>` }, { id: 'trimesters', title: 'Trimester Guide', content: `<table><thead><tr><th>Trimester</th><th>Weeks</th><th>Key</th></tr></thead><tbody><tr><td>First</td><td>1-12</td><td>Heart beats, morning sickness</td></tr><tr><td>Second</td><td>13-26</td><td>Baby kicks, gender visible</td></tr><tr><td>Third</td><td>27-40</td><td>Weight gain, lungs mature</td></tr></tbody></table>` }, { id: 'size', title: 'Baby Size Guide', content: `<table><thead><tr><th>Week</th><th>Size</th></tr></thead><tbody><tr><td>12</td><td>Nimbu (Lime)</td></tr><tr><td>20</td><td>Kela (Banana)</td></tr><tr><td>28</td><td>Baingan (Eggplant)</td></tr><tr><td>40</td><td>Tarbooz (Watermelon)</td></tr></tbody></table>` }, { id: 'tips', title: 'Prenatal Tips', content: `<ul><li>Folic acid शुरू करें</li><li>First OB visit week 8-10</li><li>Week 36 तक hospital bag ready</li></ul><p>Disclaimer: Doctor से consult करें।</p>` } ], howToSteps: [ { title: 'Calculator खोलें', description: 'Free, private।' }, { title: 'Last period date', description: 'LMP enter।' }, { title: 'Due date देखें', description: 'Week, trimester।' }, { title: 'Milestones track', description: 'Week-by-week।' } ], faqs: [ { question: 'Due date कैसे?', answer: 'LMP + 280 days।' }, { question: 'Accurate?', answer: '5% exact date पर। 2 weeks before/after normal।' }, { question: 'कितने weeks?', answer: '40 weeks = ~9 months 1 week।' }, { question: 'Medical advice?', answer: 'नहीं — estimation। Doctor से consult।' } ], relatedGuides: ['age-calculator-guide', 'bmi-calculator-guide'], toolCTA: { heading: 'Due Date Calculate — Free!', description: 'Week tracker, trimester guide।', buttonText: 'Pregnancy Calculator खोलें →' } },
-
-  // ── AI TEXT HUMANIZER (HI) ──
-  { slug: 'ai-text-humanizer-guide', toolSlug: 'ai-text-humanizer', category: 'text-tools', title: 'AI Text Humanizer — AI Text को Natural बनाएं (2026)', subtitle: 'ChatGPT text को human-sounding बनाएं। Free, instant।', metaTitle: 'AI Text Humanizer Free — Hindi Guide (2026)', metaDescription: 'AI text natural बनाएं। ChatGPT writing human sound। Free tool।', targetKeyword: 'ai text humanizer', secondaryKeywords: ['humanize ai text', 'chatgpt text human', 'ai to human text', 'ai detection bypass', 'ai content humanizer hindi'], lastUpdated: '2026-03-18', readingTime: '6 min read', tags: ['Text', 'AI', 'Writing', 'Free Tools'], intro: `<p><strong>ChatGPT से लिखा text</strong> robotic लग रहा है? AI text humanizer natural-sounding बना देता है।</p>`, sections: [ { id: 'why', title: 'AI Text Robotic क्यों?', content: `<table><thead><tr><th>AI Pattern</th><th>Human Alternative</th></tr></thead><tbody><tr><td>"It is imperative..."</td><td>"Worth noting..."</td></tr><tr><td>"Furthermore, additionally"</td><td>"Also, plus"</td></tr><tr><td>Perfect structure always</td><td>Varied, natural</td></tr></tbody></table>` }, { id: 'how', title: 'कैसे Humanize करें', content: `<ol><li><a href="/tools/ai-text-humanizer">AI Humanizer</a> खोलें</li><li>AI text paste</li><li>Tone choose (casual/professional)</li><li>Humanize click</li><li>Review और edit</li></ol>` }, { id: 'ethics', title: 'Ethics', content: `<p>Business emails — OK। Academic submission — check policy। AI को starting point बनाएं, final work आपकी हो।</p>` } ], howToSteps: [ { title: 'Humanizer खोलें', description: 'Free।' }, { title: 'AI text paste', description: 'ChatGPT, Claude, etc।' }, { title: 'Humanize', description: 'Tone choose, click।' }, { title: 'Review', description: 'Personal touches add।' } ], faqs: [ { question: 'AI humanizer क्या?', answer: 'AI text को natural human writing बनाता है।' }, { question: 'Detection bypass?', answer: 'Significantly reduce करता है। Own edits ज़्यादा help।' }, { question: 'Cheating है?', answer: 'Business — no। Academic — policy check।' }, { question: 'Free?', answer: 'हाँ — no signup।' } ], relatedGuides: ['paraphrasing-tool-guide', 'plagiarism-checker-guide'], toolCTA: { heading: 'AI Text Natural बनाएं — Free!', description: 'ChatGPT text human-sounding।', buttonText: 'AI Humanizer खोलें →' } },
 
   // ── POMODORO TIMER (HI) ──
   { slug: 'pomodoro-timer-guide', toolSlug: 'pomodoro-timer', category: 'utility-tools', title: 'Pomodoro Timer — 25 Minute Productivity Technique (2026)', subtitle: '25 min काम, 5 min break। Focus बढ़ाएं, procrastination beat।', metaTitle: 'Pomodoro Timer Free — Hindi Productivity Guide (2026)', metaDescription: 'Pomodoro timer — 25 min work, 5 min break। Focus बढ़ाएं। Free, no app।', targetKeyword: 'pomodoro timer online', secondaryKeywords: ['pomodoro technique hindi', 'pomodoro timer free', 'focus timer', 'study timer', '25 minute timer', 'productivity timer'], lastUpdated: '2026-03-18', readingTime: '6 min read', tags: ['Productivity', 'Timer', 'Focus', 'Free Tools'], intro: `<p><strong>Focus नहीं हो रहा</strong>? Pomodoro — 25 min काम, 5 min break। Simple, effective, millions use करते हैं।</p>`, sections: [ { id: 'how', title: 'Pomodoro कैसे', content: `<ol><li>Task choose</li><li><a href="/tools/pomodoro-timer">Timer</a> start — 25 min</li><li>Zero distractions</li><li>5 min break</li><li>4 rounds बाद 15-30 min break</li></ol>` }, { id: 'variations', title: 'Variations', content: `<table><thead><tr><th>Type</th><th>Work</th><th>Break</th><th>Best For</th></tr></thead><tbody><tr><td>Classic</td><td>25 min</td><td>5 min</td><td>Study, writing</td></tr><tr><td>Extended</td><td>50 min</td><td>10 min</td><td>Deep coding</td></tr><tr><td>Short</td><td>15 min</td><td>3 min</td><td>Procrastination</td></tr></tbody></table>` }, { id: 'who', title: 'कौन Use करता है?', content: `<ul><li>Students: UPSC, JEE, NEET preparation</li><li>Developers: Coding sprints</li><li>Writers: Writer's block beat</li><li>WFH: Focus without office</li></ul>` } ], howToSteps: [ { title: 'Timer खोलें', description: 'Free, no app।' }, { title: '25 min start', description: 'Full focus।' }, { title: '5 min break', description: 'Stand, stretch।' }, { title: '4 rounds बाद long break', description: '15-30 min।' } ], faqs: [ { question: 'Pomodoro क्या?', answer: '25 min work + 5 min break। 4 rounds बाद long break।' }, { question: '25 min क्यों?', answer: 'Research: attention 20-25 min बाद decline।' }, { question: 'Study में?', answer: 'हाँ — exam preparation के लिए most effective।' }, { question: 'Customizable?', answer: 'हाँ — कोई भी duration set।' } ], relatedGuides: ['countdown-timer-guide', 'typing-speed-test-guide'], toolCTA: { heading: 'Pomodoro शुरू — Free!', description: '25 min focus, 5 min break।', buttonText: 'Pomodoro Timer खोलें →' } },

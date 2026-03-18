@@ -282,12 +282,8 @@ export function LoanAmortizationCalculatorTool() {
           </div>
 
           {/* Disclaimer */}
-          <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3">
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              <strong className="text-slate-600 dark:text-slate-300">Note:</strong> This calculator
-              is for reference only. Actual EMI may differ slightly due to rounding and lender
-              policies. Consult your lender or a financial advisor for exact figures.
-            </p>
+          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+            <strong>Disclaimer:</strong> This calculator is for reference only. Actual EMI and amortization may differ due to rounding, processing fees, and lender policies. Interest rates change frequently. Consult your lender or a financial advisor for exact figures.
           </div>
         </>
       )}

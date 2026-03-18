@@ -494,6 +494,11 @@ export function SalarySlipGeneratorTool() {
           </div>
         </div>
       </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> This tool generates a salary slip template for reference only. It is not a substitute for official payroll documents issued by your employer. Verify all amounts with your HR/payroll department.
+      </div>
     </div>
   );
 }

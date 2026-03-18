@@ -447,6 +447,11 @@ export function MutualFundCalculatorTool() {
           </div>
         </div>
       </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Mutual fund investments are subject to market risks. Returns shown are estimates based on assumed growth rates and do not guarantee future performance. Past performance is not indicative of future results. Consult a SEBI-registered investment adviser before investing.
+      </div>
     </div>
   );
 }

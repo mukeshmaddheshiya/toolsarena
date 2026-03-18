@@ -190,10 +190,10 @@ export function IdealWeightCalculatorTool() {
         <p className="text-sm text-yellow-600 dark:text-yellow-400">Please enter a height of at least 4 ft (122 cm).</p>
       )}
 
-      <p className="text-xs text-slate-400 dark:text-slate-500">
-        These formulas were developed for adults and may not apply to children, elderly, or athletic populations.
-        They represent population averages, not individual targets.
-      </p>
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Ideal weight estimates are based on general formulas developed for adults. They represent population averages, not individual targets, and may not apply to children, elderly, or athletic populations. Consult a healthcare professional for personalized advice.
+      </div>
     </div>
   );
 }

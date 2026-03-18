@@ -170,10 +170,10 @@ export function HeartRateZoneCalculatorTool() {
         </>
       )}
 
-      <p className="text-xs text-slate-400 dark:text-slate-500">
-        Maximum heart rate formula (220 &minus; age) is an estimate. Actual max HR may vary by &plusmn;10&ndash;20 bpm.
-        Consult a doctor before starting a new exercise program.
-      </p>
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Heart rate zones are estimates based on the formula (220 &minus; age). Actual max HR may vary by &plusmn;10&ndash;20 bpm. Consult a doctor before starting a new exercise program, especially if you have a heart condition.
+      </div>
     </div>
   );
 }

@@ -168,10 +168,10 @@ export function WaterIntakeCalculatorTool() {
         </>
       )}
 
-      <p className="text-xs text-slate-400 dark:text-slate-500">
-        These are general guidelines. Increase intake when exercising, in hot weather, or if pregnant/breastfeeding.
-        Individual hydration needs vary.
-      </p>
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Water intake recommendations are general guidelines. Individual hydration needs vary based on activity, climate, health conditions, and medication. Consult a healthcare professional if you have kidney conditions or other health concerns.
+      </div>
     </div>
   );
 }

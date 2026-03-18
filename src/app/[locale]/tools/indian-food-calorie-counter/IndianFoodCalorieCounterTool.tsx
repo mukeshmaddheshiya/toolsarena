@@ -1017,6 +1017,11 @@ export function IndianFoodCalorieCounterTool() {
           )}
         </div>
       </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Calorie and nutrition values are approximate and may vary based on preparation method, portion size, and ingredients. This tool is for informational purposes only. Consult a nutritionist or healthcare professional for personalized dietary advice.
+      </div>
     </div>
   );
 }

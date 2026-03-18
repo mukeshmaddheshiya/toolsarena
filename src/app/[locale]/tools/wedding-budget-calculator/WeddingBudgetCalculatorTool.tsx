@@ -555,6 +555,11 @@ export function WeddingBudgetCalculatorTool() {
           )}
         </div>
       )}
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Budget estimates are approximate and vary significantly by city, venue, and vendor. Actual costs may differ. This tool is for planning purposes only.
+      </div>
     </div>
   );
 }

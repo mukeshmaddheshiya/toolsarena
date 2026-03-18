@@ -806,6 +806,11 @@ export function IncomeTaxCalculatorTool() {
         </div>
       )}
 
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> This calculator provides estimates for educational purposes only and does not constitute professional tax advice. Tax laws change frequently. Always consult a qualified Chartered Accountant or tax professional for personalized filing guidance.
+      </div>
+
       {/* Trust Badge */}
       <div className="flex items-center justify-center gap-2 py-4 text-xs text-gray-400 dark:text-gray-500">
         <Shield className="w-3.5 h-3.5" />

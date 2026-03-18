@@ -510,6 +510,11 @@ export function ExperienceLetterGeneratorTool() {
           </div>
         </div>
       </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> This tool generates a template for reference purposes only. The generated letter should be reviewed and customized by your HR department or employer before use. It does not constitute a legally binding document on its own.
+      </div>
     </div>
   );
 }

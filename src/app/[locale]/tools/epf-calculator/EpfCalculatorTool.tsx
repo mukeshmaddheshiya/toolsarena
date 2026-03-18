@@ -610,6 +610,11 @@ export function EpfCalculatorTool() {
           <p className="text-sm mt-1">Please adjust the ages above to see your EPF projection.</p>
         </div>
       )}
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> EPF projections are estimates based on current interest rates and assumptions. Actual EPF interest rates are set annually by the government and may change. Consult your employer or EPFO for exact balance details.
+      </div>
     </div>
   );
 }

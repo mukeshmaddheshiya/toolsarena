@@ -337,7 +337,7 @@ export const tools: Tool[] = [
       'Read the actionable suggestions to improve your score.',
       'Click "Copy Report" to share your score breakdown.',
     ],
-    relatedToolSlugs: ['word-counter', 'ai-text-humanizer', 'case-converter', 'character-counter'],
+    relatedToolSlugs: ['word-counter', 'case-converter', 'character-counter'],
     icon: 'Target',
     isNew: true,
     estimatedTime: 'Instant',
@@ -3899,9 +3899,9 @@ export const tools: Tool[] = [
   },
   {
     slug: 'fake-data-generator',
-    name: 'Fake Data Generator',
-    shortDescription: 'Generate realistic fake names, emails, addresses, phone numbers & more for testing.',
-    longDescription: `<p>Generate realistic fake data for testing and prototyping with our free <strong>fake data generator</strong>. Create names, emails, phone numbers, addresses, company names, dates, UUIDs, and more — entirely fictional and ready for test databases.</p>
+    name: 'Test Data Generator',
+    shortDescription: 'Generate realistic test names, emails, addresses, phone numbers & more for development and testing.',
+    longDescription: `<p>Generate realistic test data for development and prototyping with our free <strong>test data generator</strong>. Create names, emails, phone numbers, addresses, company names, dates, UUIDs, and more — entirely fictional and ready for test databases.</p>
 <h2>Key Features</h2>
 <ul>
 <li><strong>10+ Data Types</strong>: Names, emails, phones, addresses, companies, credit cards, dates, UUIDs, usernames, and passwords.</li>
@@ -3915,10 +3915,10 @@ export const tools: Tool[] = [
 <h2>Privacy & Security</h2>
 <p>Runs 100% in your browser — no API calls, no data stored, no signup required.</p>`,
     category: 'developer-tools',
-    targetKeyword: 'fake data generator',
-    secondaryKeywords: ['random data generator', 'test data generator', 'mock data generator', 'fake name generator', 'random email generator', 'fake address generator', 'dummy data generator', 'sample data generator'],
-    metaTitle: 'Fake Data Generator - Random Names, Emails & Addresses Free',
-    metaDescription: 'Generate fake names, emails, phone numbers, addresses & more for testing. Export as JSON or CSV. Free, private — no signup needed.',
+    targetKeyword: 'test data generator',
+    secondaryKeywords: ['random data generator', 'mock data generator', 'fake data generator', 'random name generator', 'random email generator', 'dummy data generator', 'sample data generator', 'test data for developers'],
+    metaTitle: 'Test Data Generator - Random Names, Emails & Addresses Free',
+    metaDescription: 'Generate test names, emails, phone numbers, addresses & more for development. Export as JSON or CSV. Free, private — no signup needed.',
     faqs: [
       { question: 'Is the generated data real?', answer: 'No. All data is randomly generated and fictional. Names, emails, addresses, and phone numbers are created using algorithms and do not correspond to real people or locations.' },
       { question: 'Can I use this data in my database?', answer: 'Yes! The generated data is perfect for seeding test databases, populating development environments, and creating sample datasets. Export as JSON or CSV for easy import.' },
@@ -3929,7 +3929,7 @@ export const tools: Tool[] = [
     howToSteps: [
       'Select the data fields you want to generate (name, email, phone, etc.).',
       'Choose the number of records (1-100).',
-      'Click "Generate" to create the fake data.',
+      'Click "Generate" to create the test data.',
       'Preview the data in the table view.',
       'Export as JSON or CSV, or copy individual values.',
     ],
@@ -4810,50 +4810,8 @@ export const tools: Tool[] = [
       'Compare word counts between original and paraphrased versions.',
       'Click "Copy Result" to copy the paraphrased text to your clipboard.',
     ],
-    relatedToolSlugs: ['reading-time-calculator', 'word-counter', 'case-converter', 'ai-text-humanizer', 'lorem-ipsum-generator'],
+    relatedToolSlugs: ['reading-time-calculator', 'word-counter', 'case-converter', 'lorem-ipsum-generator'],
     icon: 'Wand2',
-    isPopular: true,
-    isNew: true,
-    estimatedTime: 'Instant',
-  },
-  {
-    slug: 'ai-text-humanizer',
-    name: 'AI Text Humanizer',
-    shortDescription: 'Make AI-generated text sound natural and human-written. Bypass AI detectors instantly.',
-    longDescription: `<p>Transform robotic AI-generated text into natural, human-sounding content with our free <strong>AI Text Humanizer</strong>. Restructure ChatGPT, Gemini, or Claude output to sound authentic and bypass AI detection tools.</p>
-<h2>Key Features</h2>
-<ul>
-<li><strong>7 Transformations</strong>: Adds contractions, replaces overused AI phrases, varies sentence length, injects conversational transitions, removes robotic patterns, adds personal touches, and reduces passive voice.</li>
-<li><strong>4 Intensity Levels</strong>: Light, Medium, Heavy, and Aggressive — control how much your text changes.</li>
-<li><strong>AI Detection Score</strong>: Built-in visual meter estimates how "AI-like" or "human-like" your text sounds before and after humanizing.</li>
-<li><strong>Bypass AI Detectors</strong>: Reduces patterns that tools like GPTZero, Turnitin, and Originality.ai look for.</li>
-<li><strong>No Limits</strong>: Process any amount of text — no word caps, no signup, no watermarks.</li>
-</ul>
-<h2>Who Is This For?</h2>
-<p>Perfect for students, bloggers, content writers, and professionals who use AI writing tools but want the final output to read naturally and authentically.</p>
-<h2>Privacy & Security</h2>
-<p>Processes text 100% in your browser — nothing is sent to any server, your content stays completely private.</p>`,
-    category: 'text-tools',
-    targetKeyword: 'AI text humanizer',
-    secondaryKeywords: ['humanize AI text', 'AI to human text converter', 'bypass AI detection', 'make AI text human', 'AI humanizer free', 'ChatGPT humanizer', 'undetectable AI text', 'AI text converter'],
-    metaTitle: 'AI Text Humanizer - Make AI Text Sound Human | Free Online',
-    metaDescription: 'Humanize AI-generated text instantly. Make ChatGPT, Gemini & Claude content sound natural and bypass AI detectors. Free, private — no signup needed.',
-    faqs: [
-      { question: 'How does the AI Text Humanizer work?', answer: 'The tool applies multiple transformation layers: replacing overused AI phrases, adding natural contractions, varying sentence structure, injecting conversational elements, reducing passive voice, and removing robotic patterns. These changes make the text read more naturally while preserving the original meaning.' },
-      { question: 'Will humanized text pass AI detection tools?', answer: 'The tool significantly reduces AI detection scores by removing common patterns that detectors look for. However, no tool can guarantee 100% bypass rates. We recommend using the Medium or Heavy mode and reviewing the output for best results.' },
-      { question: 'Does it change the meaning of my text?', answer: 'The tool preserves the core meaning while changing how it is expressed. Light mode makes minimal changes, while Aggressive mode restructures more heavily. Always review the output to ensure accuracy for important content.' },
-      { question: 'Is this free and private?', answer: 'Yes, 100% free with no usage limits, no signup, and no watermarks. All processing happens in your browser — your text is never sent to any server, ensuring complete privacy.' },
-      { question: 'Which AI-generated text does it work with?', answer: 'It works with text from any AI tool — ChatGPT, GPT-4, Gemini, Claude, Jasper, Copy.ai, and others. The humanizer targets common patterns shared across all AI language models.' },
-    ],
-    howToSteps: [
-      'Paste your AI-generated text in the input box.',
-      'Select the humanization intensity — Light, Medium, Heavy, or Aggressive.',
-      'The humanized text appears instantly in the output panel.',
-      'Check the AI Detection Score meter to see how human your text sounds.',
-      'Click "Copy Humanized Text" to copy the result to your clipboard.',
-    ],
-    relatedToolSlugs: ['paraphrasing-tool', 'word-counter', 'case-converter', 'text-to-speech'],
-    icon: 'UserCheck',
     isPopular: true,
     isNew: true,
     estimatedTime: 'Instant',
@@ -4895,7 +4853,7 @@ export const tools: Tool[] = [
       'Follow the personalized suggestions to improve your score.',
       'Click "Copy Report" to save or share your results.',
     ],
-    relatedToolSlugs: ['word-counter', 'ai-text-humanizer', 'case-converter', 'paraphrasing-tool'],
+    relatedToolSlugs: ['word-counter', 'case-converter', 'paraphrasing-tool'],
     icon: 'FileSearch',
     isPopular: true,
     isNew: true,
@@ -6102,45 +6060,6 @@ export const tools: Tool[] = [
     estimatedTime: '1 minute',
   },
   {
-    slug: 'social-media-post-mockup',
-    name: 'Social Media Post Mockup Generator',
-    shortDescription: 'Create realistic social media post mockups for Twitter/X, Instagram, Facebook, and LinkedIn. Download as PNG.',
-    longDescription: `<p>Create pixel-perfect <strong>social media post mockups</strong> for Twitter/X, Instagram, Facebook, and LinkedIn. Customize profile name, handle, avatar, post text, engagement numbers, and timestamp. Toggle dark/light mode for each platform.</p>
-<h2>Key Features</h2>
-<ul>
-<li><strong>4 Platforms</strong>: Twitter/X, Instagram, Facebook, and LinkedIn — each matching the real platform UI exactly.</li>
-<li><strong>Full Customization</strong>: Set profile name, handle, avatar, post text, engagement stats, and timestamp.</li>
-<li><strong>Dark/Light Mode</strong>: Toggle themes for any platform mockup.</li>
-<li><strong>PNG Download</strong>: Export as a high-resolution PNG perfect for presentations and marketing.</li>
-</ul>
-<h2>Who Is This For?</h2>
-<p>Perfect for marketers, designers, content creators, and social media managers creating presentations, mockups, or social proof assets.</p>
-<h2>Privacy & Security</h2>
-<p>Runs 100% in your browser — no signup, no uploads, no data stored on any server.</p>`,
-    category: 'image-tools',
-    targetKeyword: 'social media post mockup generator',
-    secondaryKeywords: ['twitter post generator', 'fake tweet generator', 'instagram post mockup', 'linkedin post mockup', 'facebook post generator', 'social media mockup tool', 'tweet screenshot generator', 'social media post template', 'X post mockup'],
-    metaTitle: 'Social Media Post Mockup Generator - Twitter, Instagram, Facebook, LinkedIn',
-    metaDescription: 'Create realistic social media post mockups for Twitter/X, Instagram, Facebook & LinkedIn. Custom profile, engagement stats, dark mode. Free PNG download.',
-    faqs: [
-      { question: 'Which social media platforms are supported?', answer: 'Twitter/X, Instagram, Facebook, and LinkedIn. Each mockup matches the real platform UI pixel-perfectly.' },
-      { question: 'Can I customize engagement numbers?', answer: 'Yes! You can set custom likes, retweets/reposts, comments, shares, and views for each platform.' },
-      { question: 'Is the mockup downloadable?', answer: 'Yes, download as a high-resolution PNG image perfect for presentations and marketing.' },
-      { question: 'Does this store my data?', answer: 'No. All processing happens in your browser. History is stored locally on your device only.' },
-    ],
-    howToSteps: [
-      'Select a social media platform (Twitter/X, Instagram, Facebook, or LinkedIn).',
-      'Enter profile name, handle, and optionally upload an avatar.',
-      'Write your post text and set engagement numbers.',
-      'Toggle dark/light mode and preview in real-time.',
-      'Download your mockup as PNG.',
-    ],
-    relatedToolSlugs: ['instagram-carousel-maker', 'youtube-thumbnail-tester', 'og-image-generator', 'screenshot-beautifier'],
-    icon: 'Share2',
-    isNew: true,
-    estimatedTime: '2 minutes',
-  },
-  {
     slug: 'business-card-maker',
     name: 'Business Card / Visiting Card Maker',
     shortDescription: 'Design professional business cards with 8 templates, QR code, front/back flip preview, and PNG download.',
@@ -6175,7 +6094,7 @@ export const tools: Tool[] = [
       'Preview front and back with the flip animation.',
       'Download as PNG.',
     ],
-    relatedToolSlugs: ['social-media-post-mockup', 'invoice-generator', 'resume-builder', 'qr-code-generator'],
+    relatedToolSlugs: ['invoice-generator', 'resume-builder', 'qr-code-generator'],
     icon: 'CreditCard',
     isNew: true,
     estimatedTime: '3 minutes',
@@ -6295,7 +6214,7 @@ export const tools: Tool[] = [
       'Use A/B vote mode to compare thumbnails.',
       'Download comparison as PNG.',
     ],
-    relatedToolSlugs: ['social-media-post-mockup', 'instagram-carousel-maker', 'image-resizer', 'og-image-generator'],
+    relatedToolSlugs: ['instagram-carousel-maker', 'image-resizer', 'og-image-generator'],
     icon: 'Youtube',
     isNew: true,
     estimatedTime: '2 minutes',
@@ -6336,7 +6255,7 @@ export const tools: Tool[] = [
       'Preview with Instagram-style swipe navigation.',
       'Download slides as PNG.',
     ],
-    relatedToolSlugs: ['social-media-post-mockup', 'youtube-thumbnail-tester', 'image-resizer', 'og-image-generator'],
+    relatedToolSlugs: ['youtube-thumbnail-tester', 'image-resizer', 'og-image-generator'],
     icon: 'LayoutGrid',
     isNew: true,
     estimatedTime: '5 minutes',
@@ -6376,7 +6295,7 @@ export const tools: Tool[] = [
       'Copy the generated in-text citation and reference entry.',
       'Add to bibliography and export when done.',
     ],
-    relatedToolSlugs: ['essay-counter-readability', 'ai-text-humanizer', 'word-counter', 'case-converter'],
+    relatedToolSlugs: ['essay-counter-readability', 'word-counter', 'case-converter'],
     icon: 'BookOpen',
     isNew: true,
     estimatedTime: '2 minutes',
@@ -6497,7 +6416,7 @@ export const tools: Tool[] = [
       'Review word frequency and sentence distribution.',
       'Read writing improvement suggestions.',
     ],
-    relatedToolSlugs: ['reading-time-calculator', 'word-counter', 'citation-generator', 'ai-text-humanizer', 'paraphrasing-tool'],
+    relatedToolSlugs: ['reading-time-calculator', 'word-counter', 'citation-generator', 'paraphrasing-tool'],
     icon: 'FileText',
     isNew: true,
     estimatedTime: '1 minute',
@@ -6538,7 +6457,7 @@ export const tools: Tool[] = [
       'Adjust size, weight, and spacing to match.',
       'Star best matches and copy CSS.',
     ],
-    relatedToolSlugs: ['social-media-post-mockup', 'business-card-maker', 'css-gradient-text-generator', 'image-to-text'],
+    relatedToolSlugs: ['business-card-maker', 'css-gradient-text-generator', 'image-to-text'],
     icon: 'Type',
     isNew: true,
     estimatedTime: '3 minutes',
@@ -6625,48 +6544,6 @@ export const tools: Tool[] = [
     estimatedTime: '5 minutes',
   },
   {
-    slug: 'whatsapp-chat-generator',
-    name: 'WhatsApp Chat Generator',
-    shortDescription: 'Create realistic WhatsApp chat screenshots with pixel-perfect UI. Edit messages, contacts, ticks, wallpaper. Download as PNG.',
-    longDescription: `<p>Create pixel-perfect <strong>WhatsApp chat screenshots</strong> that look exactly like the real app — fully editable for presentations, mockups, and social media content.</p>
-<h2>Key Features</h2>
-<ul>
-<li><strong>4 Message Types</strong>: Text, voice messages (with waveform), image placeholders (with caption), and deleted messages.</li>
-<li><strong>Read Receipts</strong>: Single tick (sent), double tick (delivered), blue double tick (read) — per message.</li>
-<li><strong>Light & Dark Themes</strong>: Toggle between WhatsApp light and dark UI themes.</li>
-<li><strong>Custom Wallpaper</strong>: 14 color presets or upload your own background image.</li>
-<li><strong>High-Res PNG</strong>: 3x scale download for crisp presentations and print quality.</li>
-</ul>
-<h2>Who Is This For?</h2>
-<p>Perfect for presentations, UI/UX design mockups, social media content creators, and educational materials. Not for creating deceptive content.</p>
-<h2>Privacy & Security</h2>
-<p>100% private — everything runs in your browser. No messages are sent, no data uploaded.</p>`,
-    category: 'image-tools',
-    targetKeyword: 'whatsapp chat generator',
-    secondaryKeywords: ['fake whatsapp chat generator', 'whatsapp screenshot generator', 'whatsapp chat maker online', 'whatsapp message generator', 'fake chat generator', 'whatsapp conversation generator', 'whatsapp mockup generator', 'whatsapp chat screenshot maker', 'fake whatsapp conversation', 'whatsapp chat creator'],
-    metaTitle: 'WhatsApp Chat Generator - Create Realistic Chat Screenshots Free',
-    metaDescription: 'Create pixel-perfect WhatsApp chat screenshots. Edit messages, ticks, profile, wallpaper, dark/light mode. Download as PNG. Free, no signup, 100% private.',
-    faqs: [
-      { question: 'Does this create real WhatsApp messages?', answer: 'No. This tool generates realistic-looking mockup screenshots for presentations, design, and educational purposes only. No actual WhatsApp messages are sent or received.' },
-      { question: 'Can I customize the read receipts (ticks)?', answer: 'Yes! Each sent message can show single tick (sent), double tick (delivered), or blue double tick (read). Received messages show no ticks, just like real WhatsApp.' },
-      { question: 'Does it support dark mode?', answer: 'Yes! Toggle between WhatsApp light theme and dark theme. The colors match the real WhatsApp app exactly.' },
-      { question: 'Can I add different message types?', answer: 'Yes — text messages, voice messages (with waveform), image placeholders (with optional caption), and deleted messages are all supported.' },
-      { question: 'What resolution is the downloaded image?', answer: 'The PNG is rendered at 3x scale for crisp, high-resolution output suitable for presentations and print.' },
-      { question: 'Is my data private?', answer: 'Absolutely. All processing happens in your browser. Nothing is uploaded to any server. Your chat content stays on your device.' },
-    ],
-    howToSteps: [
-      'Set the contact name, status (online/typing/last seen), and optionally upload a profile photo.',
-      'Add messages — choose text, voice, image, or deleted type for each.',
-      'Set each message as sent or received, customize time and tick status.',
-      'Choose light or dark theme and pick a wallpaper color or upload a custom one.',
-      'Download the chat screenshot as a high-resolution PNG.',
-    ],
-    relatedToolSlugs: ['social-media-post-mockup', 'instagram-carousel-maker', 'youtube-thumbnail-tester', 'business-card-maker'],
-    icon: 'MessageCircle',
-    isNew: true,
-    estimatedTime: '3 minutes',
-  },
-  {
     slug: 'email-signature-generator',
     name: 'Email Signature Generator',
     shortDescription: 'Create professional HTML email signatures with 6 templates, social icons, CTA button, and photo. Works in Gmail, Outlook & Apple Mail.',
@@ -6703,7 +6580,7 @@ export const tools: Tool[] = [
       'Preview the live signature and copy HTML or rendered signature.',
       'Follow the instructions to add it to Gmail, Outlook, or Apple Mail.',
     ],
-    relatedToolSlugs: ['business-card-maker', 'social-media-post-mockup', 'qr-code-generator', 'invoice-generator'],
+    relatedToolSlugs: ['business-card-maker', 'qr-code-generator', 'invoice-generator'],
     icon: 'AtSign',
     isNew: true,
     estimatedTime: '3 minutes',
@@ -6872,7 +6749,7 @@ export const tools: Tool[] = [
       'Pick a theme, button style, accent color, and font in the Style tab.',
       'Preview your page live in the phone mockup, then download as HTML or PNG.',
     ],
-    relatedToolSlugs: ['qr-code-generator', 'meta-tag-generator', 'social-media-post-mockup', 'business-card-maker'],
+    relatedToolSlugs: ['qr-code-generator', 'meta-tag-generator', 'business-card-maker'],
     icon: 'Link2',
     isNew: true,
     estimatedTime: '3 minutes',
@@ -6913,7 +6790,7 @@ export const tools: Tool[] = [
       'Fill in the placeholder fields to personalize your bio.',
       'Copy your bio with one click and paste it into your profile.',
     ],
-    relatedToolSlugs: ['social-media-post-mockup', 'instagram-carousel-maker', 'email-signature-generator', 'character-counter'],
+    relatedToolSlugs: ['instagram-carousel-maker', 'email-signature-generator', 'character-counter'],
     icon: 'UserPen',
     isNew: true,
     estimatedTime: '2 minutes',
@@ -6998,7 +6875,7 @@ tools.push({
     'Explore Sentence Matching, N-gram Analysis, and Word Frequency tabs for detailed insights.',
     'Click "Copy Report" to save the full analysis to your clipboard.',
   ],
-  relatedToolSlugs: ['word-counter', 'ai-text-humanizer', 'paraphrasing-tool', 'case-converter'],
+  relatedToolSlugs: ['word-counter', 'paraphrasing-tool', 'case-converter'],
   icon: 'FileSearch',
   isNew: true,
   estimatedTime: 'Instant',

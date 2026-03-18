@@ -117,7 +117,7 @@ export function FakeDataGeneratorTool() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `fake-data-toolsarena.${ext}`;
+    a.download = `test-data-toolsarena.${ext}`;
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -149,7 +149,7 @@ export function FakeDataGeneratorTool() {
             <Database className="w-6 h-6" />
           </div>
           <div>
-            <h2 className="font-bold text-lg">Fake Data Generator</h2>
+            <h2 className="font-bold text-lg">Test Data Generator</h2>
             <p className="text-teal-100 text-xs">Generate realistic test data — names, emails, addresses & more</p>
           </div>
         </div>
@@ -308,7 +308,7 @@ export function FakeDataGeneratorTool() {
 
       {data.length === 0 && (
         <div className="text-center py-6 text-sm text-slate-400">
-          Select fields above and click &quot;Generate&quot; to create fake data
+          Select fields above and click &quot;Generate&quot; to create test data
         </div>
       )}
     </div>

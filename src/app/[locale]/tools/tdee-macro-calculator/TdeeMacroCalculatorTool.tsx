@@ -1460,6 +1460,11 @@ export function TdeeMacroCalculatorTool() {
         </div>
       </div>
 
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> TDEE and macro estimates are based on general formulas and may not reflect your exact needs. Individual metabolism varies. Consult a nutritionist or healthcare professional before making significant dietary changes.
+      </div>
+
       {/* Privacy badge */}
       <div className="flex justify-center">
         <div className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 text-xs font-medium">

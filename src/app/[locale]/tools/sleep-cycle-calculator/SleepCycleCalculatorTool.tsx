@@ -171,9 +171,10 @@ export function SleepCycleCalculatorTool() {
         </div>
       </div>
 
-      <p className="text-xs text-slate-400 dark:text-slate-500">
-        Based on 90-minute sleep cycles + 15 minutes to fall asleep. Most adults need 5&ndash;6 cycles (7.5&ndash;9 hours).
-      </p>
+      {/* Disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Disclaimer:</strong> Sleep cycle estimates are based on averages (90-minute cycles + 15 min to fall asleep). Individual sleep needs vary. If you have persistent sleep issues, consult a healthcare professional.
+      </div>
     </div>
   );
 }

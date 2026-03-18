@@ -254,6 +254,11 @@ export function ParaphrasingTool() {
           </div>
         </div>
       )}
+
+      {/* Academic integrity disclaimer */}
+      <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-3 text-xs text-amber-700 dark:text-amber-400">
+        <strong>Academic Integrity Notice:</strong> This tool is intended for rewriting your own original content to improve clarity and style. Do not use it to disguise plagiarized or copied work. Always follow your institution&apos;s academic integrity policies.
+      </div>
     </div>
   );
 }
