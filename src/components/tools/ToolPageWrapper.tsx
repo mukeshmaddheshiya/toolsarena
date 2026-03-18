@@ -27,7 +27,20 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
   const categoryName = categoryNameKey ? t(categoryNameKey) : tool.category;
 
   const toolUrl = `${SITE_URL}/tools/${tool.slug}`;
-  const schema = {
+  const categoryUrl = `${SITE_URL}/category/${tool.category}`;
+
+  const organization = {
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/toolsarena-logo.png`,
+    sameAs: [
+      'https://x.com/toolsarena',
+      'https://github.com/mukeshmaddheshiya',
+    ],
+  };
+
+  const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: tool.name,
@@ -38,16 +51,28 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
     featureList: tool.secondaryKeywords.join(', '),
     keywords: [tool.targetKeyword, ...tool.secondaryKeywords].join(', '),
-    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    author: organization,
+    publisher: organization,
     inLanguage: locale,
     browserRequirements: 'Requires JavaScript. Works in all modern browsers.',
     screenshot: `${toolUrl}/opengraph-image`,
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: SITE_NAME, item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: categoryName, item: categoryUrl },
+      { '@type': 'ListItem', position: 3, name: tool.name, item: toolUrl },
+    ],
+  };
+
+  const schemas = [webAppSchema, breadcrumbSchema];
+
   return (
     <>
-      <JsonLd data={schema} />
+      <JsonLd data={schemas} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 overflow-x-hidden">
         {/* Breadcrumbs */}
         <Breadcrumbs

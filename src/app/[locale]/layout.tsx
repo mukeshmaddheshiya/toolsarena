@@ -34,11 +34,11 @@ const organizationSchema = {
   '@type': 'Organization',
   name: SITE_NAME,
   url: SITE_URL,
-  logo: `${SITE_URL}/icon`,
+  logo: `${SITE_URL}/toolsarena-logo.png`,
   description: SITE_DESCRIPTION,
   sameAs: [
-    'https://twitter.com/ToolsArena',
-    'https://github.com/AmanSuryavanshi-1',
+    'https://x.com/toolsarena',
+    'https://github.com/mukeshmaddheshiya',
   ],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -48,7 +48,10 @@ const organizationSchema = {
   },
   founder: {
     '@type': 'Person',
-    name: 'Aman Suryavanshi',
+    name: 'Mukesh Maddheshiya',
+    image: `${SITE_URL}/mukesh-developer-toolsarena.png`,
+    jobTitle: 'Full Stack Developer & Founder',
+    url: `${SITE_URL}`,
   },
 };
 

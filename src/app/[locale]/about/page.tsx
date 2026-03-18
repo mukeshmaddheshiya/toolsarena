@@ -63,7 +63,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
             {/* Avatar */}
             <Image
-              src="/mukesh-image.png"
+              src="/mukesh-developer-toolsarena.png"
               alt="Mukesh Maddheshiya - Founder of ToolsArena"
               width={80}
               height={80}
