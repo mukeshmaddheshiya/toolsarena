@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   // Use a fixed deploy date — update this when you deploy new content
-  const DEPLOY_DATE = '2026-03-17';
+  const DEPLOY_DATE = '2026-03-19';
   const staticDate = new Date('2026-02-01');
 
   // Static pages — all locales
