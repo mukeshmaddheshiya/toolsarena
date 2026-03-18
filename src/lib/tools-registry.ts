@@ -10011,6 +10011,383 @@ tools.push({
   estimatedTime: 'Instant',
 });
 
+tools.push({
+  slug: 'code-to-image',
+  name: 'Code to Image',
+  shortDescription: 'Turn code snippets into beautiful, shareable images with syntax highlighting and custom themes.',
+  longDescription: `<p>Code to Image is a free online tool that transforms your code snippets into stunning, shareable images with professional syntax highlighting. Whether you're sharing code on social media, creating documentation, or preparing presentations, this tool makes your code look beautiful.</p>
+<h2>Why Use Code to Image?</h2>
+<p>Sharing raw code on social media or in presentations often loses formatting and readability. Code to Image solves this by rendering your code with proper syntax highlighting, themed backgrounds, and window chrome — producing a polished PNG image that looks great anywhere.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>15+ Languages</strong> — JavaScript, TypeScript, Python, HTML, CSS, Java, Go, Rust, PHP, SQL, Bash, C++, C#, Ruby, and JSON with accurate keyword highlighting.</li>
+<li><strong>8 Editor Themes</strong> — VS Code Dark, GitHub Dark, Dracula, One Dark, Nord, Monokai, GitHub Light, and Solarized Dark.</li>
+<li><strong>8 Gradient Backgrounds</strong> — Dark Ocean, Sunset, Ocean Blue, Emerald, Candy, Gold, Midnight, Twitter Blue — plus custom hex color support.</li>
+<li><strong>3 Window Styles</strong> — macOS traffic-light dots, Windows titlebar, or plain borderless.</li>
+<li><strong>4 Monospace Fonts</strong> — JetBrains Mono, Fira Code, Cascadia Code, and Courier New.</li>
+<li><strong>3× Retina Export</strong> — High-resolution PNG output that looks crisp on any screen.</li>
+<li><strong>Customizable</strong> — Adjust font size (12–22px), padding, line numbers, word wrap, and filename.</li>
+</ul>
+<h2>How It Compares to Carbon</h2>
+<p>Unlike Carbon.now.sh, ToolsArena's Code to Image runs entirely in your browser — your code never leaves your device. It supports more theme and background combinations, exports at 3× resolution, and requires no account or external requests.</p>
+<h2>Perfect For</h2>
+<ul>
+<li>Sharing code on Twitter/X, LinkedIn, Instagram, or Reddit</li>
+<li>Blog posts and technical articles</li>
+<li>Slide decks and presentations</li>
+<li>Documentation and tutorials</li>
+<li>Developer portfolios</li>
+</ul>
+<h2>How It Works</h2>
+<p>Paste your code, select a language for syntax highlighting, pick a theme and background, then click Download PNG. The tool uses html2canvas-pro to capture the styled code block at 3× resolution, producing a crisp retina-quality image. Everything runs in your browser — your code never leaves your device.</p>
+<h2>Tips for Best Results</h2>
+<ul>
+<li>Keep code snippets under 30 lines for the best visual impact on social media.</li>
+<li>Use dark themes (Dracula, Nord, Monokai) for maximum readability on Twitter/X and LinkedIn.</li>
+<li>The macOS window style with gradient backgrounds produces the most professional-looking screenshots.</li>
+<li>Enable line numbers for tutorial content where readers need to reference specific lines.</li>
+</ul>`,
+  category: 'developer-tools',
+  targetKeyword: 'code to image converter',
+  secondaryKeywords: [
+    'code screenshot tool',
+    'code snippet image generator',
+    'share code as image',
+    'carbon alternative',
+    'code to png',
+    'syntax highlighted code image',
+    'beautiful code screenshots',
+    'code image export',
+    'code snippet screenshot',
+    'code visualization tool',
+    'developer screenshot tool',
+    'code image maker',
+    'code snippet to image',
+    'code photo generator',
+    'code image online',
+  ],
+  metaTitle: 'Code to Image Converter — Beautiful Code Screenshots',
+  metaDescription:
+    'Turn any code snippet into a stunning shareable image. Choose themes, gradients, window styles, and fonts. Export as high-resolution PNG instantly — free.',
+  faqs: [
+    {
+      question: 'What is a Code to Image converter?',
+      answer:
+        'A Code to Image converter transforms code snippets into visually styled, shareable images with syntax highlighting, themed backgrounds, and window chrome. It\'s ideal for sharing code on social media, blog posts, presentations, or documentation without losing readability.',
+    },
+    {
+      question: 'Which programming languages are supported?',
+      answer:
+        'The tool supports 15+ languages: JavaScript, TypeScript, Python, HTML, CSS, Java, Go, Rust, PHP, SQL, Bash/Shell, C++, C#, Ruby, and JSON. Each language has its own keyword set and comment syntax for accurate highlighting.',
+    },
+    {
+      question: 'What themes are available?',
+      answer:
+        'Eight built-in editor themes are available: VS Code Dark, GitHub Dark, Dracula, One Dark, Nord, Monokai, GitHub Light, and Solarized Dark. Each theme applies its own color palette for keywords, strings, comments, numbers, and functions.',
+    },
+    {
+      question: 'Can I customize the background?',
+      answer:
+        'Yes. You can pick from 8 preset gradient backgrounds (Dark Ocean, Sunset, Ocean Blue, Emerald, Candy, Gold, Midnight, Twitter Blue) or enter any custom hex color for a solid background.',
+    },
+    {
+      question: 'What window styles can I choose?',
+      answer:
+        'Three window chrome styles are supported: macOS style (with red, yellow, and green traffic-light dots), Windows style (with a title bar and close button), and None (plain rounded corners with no chrome).',
+    },
+    {
+      question: 'What resolution are exported images?',
+      answer:
+        'Images are exported at 3× pixel density using html2canvas-pro with scale: 3. This produces crisp, retina-quality PNGs that look sharp on high-DPI screens and in presentations.',
+    },
+    {
+      question: 'Can I show line numbers in the image?',
+      answer:
+        'Yes. Toggle the "Line Numbers" option to show or hide line numbers in the rendered code block. Line numbers are styled subtly to not distract from the code itself.',
+    },
+    {
+      question: 'Is there a font I can choose?',
+      answer:
+        'Four monospace fonts are available: JetBrains Mono, Fira Code, Cascadia Code, and Courier New. The fonts are applied to the live preview and the exported image.',
+    },
+    {
+      question: 'Is this tool free to use?',
+      answer:
+        'Yes, Code to Image is completely free with no sign-up required. All processing is done in your browser — your code never leaves your device.',
+    },
+    {
+      question: 'How is this different from Carbon.now.sh?',
+      answer:
+        'ToolsArena\'s Code to Image tool is fully browser-based with no external requests for rendering, supports more theme and background combinations, exports at 3× resolution, and integrates with the rest of the ToolsArena suite for a seamless developer workflow.',
+    },
+  ],
+  howToSteps: [
+    'Paste or type your code snippet into the code editor on the left panel.',
+    'Select your programming language from the dropdown to enable accurate syntax highlighting.',
+    'Pick one of 8 editor themes (VS Code Dark, Dracula, Nord, etc.) using the visual theme picker.',
+    'Choose a background — pick from 8 gradient presets or enter a custom hex color.',
+    'Select a window chrome style: macOS (traffic-light dots), Windows (titlebar), or None.',
+    'Select your preferred monospace font and adjust the font size using the slider (12–22px).',
+    'Set outer padding (S/M/L/XL), toggle line numbers, and enable word wrap if needed.',
+    'Click "Download PNG" to export a crisp 3× retina-quality image ready to share anywhere.',
+  ],
+  relatedToolSlugs: ['json-formatter', 'markdown-editor', 'html-css-js-editor', 'color-picker'],
+  icon: 'ImageDown',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'cryptocurrency-calculator',
+  name: 'Cryptocurrency Calculator',
+  shortDescription: 'Convert crypto to fiat, calculate profit/loss, and plan DCA investments with live prices.',
+  longDescription: `<p>Free cryptocurrency calculator with live prices from CoinGecko. Convert crypto to USD, INR, NPR, calculate profit/loss, and plan DCA investments for Bitcoin, Ethereum, Solana and 17 more coins.</p>
+<h2>Three Powerful Calculators in One</h2>
+<ul>
+<li><strong>Converter</strong> — Instantly convert between 20 top cryptocurrencies and USD, INR, NPR. Works both ways: crypto-to-fiat and fiat-to-crypto.</li>
+<li><strong>Profit/Loss Calculator</strong> — Enter your buy price, sell price, and quantity to see your total profit or loss in USD and INR, along with ROI percentage.</li>
+<li><strong>DCA Calculator</strong> — Plan a Dollar-Cost Averaging strategy. Set your investment amount, frequency (daily/weekly/monthly), and number of periods to see projected returns.</li>
+</ul>
+<h2>Supported Cryptocurrencies</h2>
+<p>Bitcoin (BTC), Ethereum (ETH), BNB, Solana (SOL), Cardano (ADA), XRP, Dogecoin (DOGE), Polkadot (DOT), Avalanche (AVAX), Chainlink (LINK), Litecoin (LTC), TRON (TRX), Stellar (XLM), Monero (XMR), Cosmos (ATOM), NEAR Protocol (NEAR), Algorand (ALGO), VeChain (VET), Filecoin (FIL), and Internet Computer (ICP).</p>
+<h2>Why Use This Calculator?</h2>
+<ul>
+<li><strong>Live Prices</strong> — Real-time data from CoinGecko, one of the most trusted crypto data providers.</li>
+<li><strong>Multi-Currency</strong> — See values in USD, INR, and NPR simultaneously — perfect for users in India and Nepal.</li>
+<li><strong>24h Change</strong> — See price movement with color-coded badges for each coin.</li>
+<li><strong>No Sign-Up</strong> — Completely free with no account required. Your data stays in your browser.</li>
+</ul>
+<h2>How It Works</h2>
+<p>The calculator fetches real-time prices from the CoinGecko public API every time you load the page or click Refresh. All calculations — conversion, profit/loss, and DCA projections — happen instantly in your browser using JavaScript. No data is sent to any server, making this tool completely private and safe to use with real portfolio numbers.</p>
+<h2>Who Is This For?</h2>
+<p>Crypto investors tracking portfolio performance across multiple coins, traders calculating potential profit before executing a trade, beginners exploring how much crypto they can buy with a specific budget, and anyone planning a DCA strategy for long-term Bitcoin or Ethereum accumulation. The INR and NPR support makes it especially useful for users in India and Nepal.</p>
+<h2>Tips for Accurate Calculations</h2>
+<ul>
+<li>Click Refresh before making important calculations to get the latest prices.</li>
+<li>For the DCA calculator, use the "Weekly" frequency with 52 periods to model a full year of investing.</li>
+<li>Remember that actual exchange fees (0.1–0.5% per trade) are not included — factor these in mentally for conservative estimates.</li>
+<li>Cryptocurrency prices are extremely volatile — treat all projections as estimates, not guarantees.</li>
+</ul>`,
+  category: 'calculators',
+  targetKeyword: 'cryptocurrency calculator',
+  secondaryKeywords: [
+    'crypto converter',
+    'bitcoin to usd',
+    'ethereum to inr',
+    'crypto profit loss calculator',
+    'dca calculator',
+    'dollar cost averaging crypto',
+    'bitcoin price calculator',
+    'crypto to npr',
+    'bitcoin to inr',
+    'ethereum calculator',
+    'solana price',
+    'crypto investment calculator',
+    'live crypto prices',
+    'altcoin converter',
+  ],
+  metaTitle: 'Cryptocurrency Calculator — Live Crypto Converter, P/L & DCA',
+  metaDescription: 'Free crypto calculator with live prices. Convert Bitcoin, Ethereum & 18 more coins to USD, INR, NPR. Calculate profit/loss and plan DCA investments.',
+  faqs: [
+    {
+      question: 'What cryptocurrencies does this calculator support?',
+      answer: 'The calculator supports 20 of the largest cryptocurrencies by market cap: Bitcoin (BTC), Ethereum (ETH), BNB, Solana (SOL), Cardano (ADA), XRP, Dogecoin (DOGE), Polkadot (DOT), Avalanche (AVAX), Chainlink (LINK), Litecoin (LTC), TRON (TRX), Stellar (XLM), Monero (XMR), Cosmos (ATOM), NEAR Protocol (NEAR), Algorand (ALGO), VeChain (VET), Filecoin (FIL), and Internet Computer (ICP).',
+    },
+    {
+      question: 'Where do the live prices come from?',
+      answer: 'Prices are fetched in real time from the CoinGecko public API, one of the most trusted cryptocurrency data providers. Prices update every time you click the Refresh button or reload the page.',
+    },
+    {
+      question: 'Which fiat currencies are supported?',
+      answer: 'The calculator supports USD (US Dollar), INR (Indian Rupee), and NPR (Nepalese Rupee) — making it especially useful for users in India and Nepal who want to see crypto values in their local currency.',
+    },
+    {
+      question: 'How does the Profit/Loss calculator work?',
+      answer: 'Enter the price you bought a crypto at, the price you want to sell (or did sell) at, and the quantity you hold. The tool calculates your gross profit or loss in USD and INR, your return on investment (ROI) as a percentage, and clearly marks whether the trade is profitable.',
+    },
+    {
+      question: 'What is Dollar-Cost Averaging (DCA)?',
+      answer: 'Dollar-Cost Averaging is an investment strategy where you buy a fixed dollar amount of an asset at regular intervals (e.g. $50 of Bitcoin every week) regardless of price. This reduces the impact of volatility. The DCA tab lets you model this strategy using live prices.',
+    },
+    {
+      question: 'How accurate are the prices?',
+      answer: 'Prices reflect the latest data from CoinGecko at the time of the last refresh. Cryptocurrency prices are highly volatile and can change by the second, so treat all calculations as estimates for planning purposes only — not as financial advice.',
+    },
+    {
+      question: 'Can I convert fiat currency to crypto?',
+      answer: 'Yes. The Converter tab works both ways. You can enter a crypto amount to see its fiat value, or enter a fiat amount (in USD, INR, or NPR) to see how much crypto you would receive at the current price. Use the swap button to toggle the direction.',
+    },
+    {
+      question: 'Is this tool free to use?',
+      answer: 'Completely free. There are no sign-ups, no subscriptions, and no hidden fees. Prices are sourced from the free CoinGecko API.',
+    },
+    {
+      question: 'Does the DCA calculator account for fees?',
+      answer: 'The current version calculates the pure mathematical return without exchange fees. In practice, most exchanges charge 0.1–0.5% per trade. For a more conservative estimate, mentally reduce your projected profit by your exchange\'s fee percentage multiplied by the number of DCA periods.',
+    },
+    {
+      question: 'Why does the API sometimes fail to load prices?',
+      answer: 'The CoinGecko free API has rate limits. If you refresh too frequently or the API is temporarily unavailable, the tool will show an error state with a Retry button. Wait a few seconds and try again. Your previous price data is retained until a successful refresh.',
+    },
+  ],
+  howToSteps: [
+    'Select the Converter, Profit/Loss, or DCA tab depending on what you want to calculate.',
+    'In the Converter tab, choose a cryptocurrency from the list of 20 top coins.',
+    'Enter either a crypto amount or a fiat amount — the tool converts both ways instantly.',
+    'View the equivalent value in USD, INR, and NPR simultaneously.',
+    'Switch to the Profit/Loss tab to calculate gains or losses on a trade.',
+    'Enter your buy price, sell price, and the quantity of crypto you hold.',
+    'See your profit or loss in dollar terms, percentage ROI, and whether the trade is profitable.',
+    'Switch to the DCA tab to plan a recurring investment strategy.',
+  ],
+  relatedToolSlugs: ['age-calculator', 'sip-calculator', 'compound-interest-calculator', 'roi-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'json-to-csv',
+  name: 'JSON to CSV Converter',
+  shortDescription: 'Convert JSON to CSV online free. Flatten nested objects, pick fields, and download as CSV or TSV.',
+  longDescription: `<p>Our free <strong>JSON to CSV Converter</strong> transforms any JSON array into a clean, downloadable CSV or TSV file — right in your browser. Paste your JSON, pick which fields to include, flatten nested objects, and preview your data as a table before downloading. No server, no upload, no signup.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Nested JSON Flattening</strong>: Automatically flattens deeply nested objects using dot notation (e.g., <code>address.city</code>, <code>user.profile.name</code>).</li>
+<li><strong>Field Selector</strong>: Choose exactly which columns to include in your CSV output using checkboxes.</li>
+<li><strong>Live Table Preview</strong>: See the first 5 rows rendered as a table before you download.</li>
+<li><strong>Multiple Delimiters</strong>: Export as CSV (comma), TSV (tab), semicolon-delimited, or pipe-delimited.</li>
+<li><strong>Smart Quoting</strong>: Automatically quotes values that contain commas, newlines, or quote characters.</li>
+<li><strong>Header Row Toggle</strong>: Include or exclude the header row in your output.</li>
+<li><strong>File Upload</strong>: Upload a .json file directly — no need to paste large JSON.</li>
+<li><strong>Two-Way Conversion</strong>: Switch to CSV → JSON mode with a single click.</li>
+<li><strong>Copy & Download</strong>: Copy to clipboard or download as .csv / .tsv file.</li>
+<li><strong>Stats Panel</strong>: See row count, column count, and file size at a glance.</li>
+</ul>
+<h2>What JSON Format Is Supported?</h2>
+<p>The tool expects a JSON <strong>array of objects</strong> — each object becomes one row. Both simple flat objects and deeply nested objects are supported. Arrays within objects are serialized as JSON strings in the output cell.</p>
+<h2>Use Cases</h2>
+<p>Data analysts exporting API responses to Excel, developers converting database dumps for reporting, marketers transforming CRM exports, and anyone who needs to move JSON data into a spreadsheet tool like Google Sheets or Microsoft Excel.</p>
+<h2>Privacy</h2>
+<p>All conversion happens 100% in your browser using JavaScript. Your data never leaves your device — no server involved.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'json to csv converter',
+  secondaryKeywords: [
+    'convert json to csv online',
+    'json to csv free',
+    'json array to csv',
+    'nested json to csv',
+    'json to excel converter',
+    'json to spreadsheet',
+    'json to tsv converter',
+    'flatten json to csv',
+    'json data to csv',
+    'api response to csv',
+    'json to csv download',
+    'online json converter',
+  ],
+  metaTitle: 'JSON to CSV Converter Free Online — Flatten & Export | ToolsArena',
+  metaDescription: 'Convert JSON arrays to CSV or TSV free online. Flatten nested JSON, pick fields, preview table, and download instantly. No upload, no signup, 100% private.',
+  faqs: [
+    { question: 'What JSON format does this converter support?', answer: 'The tool expects a JSON array of objects — like [{...}, {...}, {...}]. Each object in the array becomes one row in the CSV. Both flat and deeply nested objects are supported.' },
+    { question: 'Can it handle nested JSON objects?', answer: 'Yes. The tool has a "Flatten Nested" option that converts nested objects into dot-notation column names. For example, {"address": {"city": "Delhi"}} becomes a column named "address.city" with value "Delhi".' },
+    { question: 'What delimiters are supported?', answer: 'Comma (standard CSV), Tab (TSV for Excel), Semicolon (common in European locales), and Pipe (|) are all supported. Choose the one your target application expects.' },
+    { question: 'Can I choose which fields to include?', answer: 'Yes. After parsing your JSON, all detected fields are shown as checkboxes. Uncheck any fields you want to exclude from the CSV output.' },
+    { question: 'How does it handle values with commas or quotes?', answer: 'The tool automatically wraps values in double quotes and escapes internal double quotes (per RFC 4180) whenever a value contains commas, newlines, or quote characters.' },
+    { question: 'Can I upload a .json file instead of pasting?', answer: 'Yes. Click the "Upload File" button to select a local .json, .csv, or .txt file. The content is read entirely in your browser — nothing is uploaded to any server.' },
+    { question: 'Can I convert CSV back to JSON?', answer: 'Yes. Click the swap button to switch to CSV → JSON mode. The tool converts CSV input to a formatted JSON array with full header row support.' },
+    { question: 'Is there a file size limit?', answer: 'There is no hard limit imposed by the tool — it processes files in your browser using JavaScript. Practical limits depend on your device\'s available memory. Files up to 50MB typically work without issues.' },
+    { question: 'How do I open the CSV in Excel or Google Sheets?', answer: 'Download the CSV file, then open Excel → File → Open, or drag the file into Google Sheets. If columns don\'t split correctly in Excel, try changing the delimiter to semicolon for European locale Excel.' },
+    { question: 'Is my data private?', answer: 'Completely. All processing happens locally in your browser. Your JSON data never leaves your device, is never uploaded to any server, and is not stored anywhere.' },
+  ],
+  howToSteps: [
+    'Paste your JSON array into the left input panel, or click "Upload File" to load a .json file.',
+    'The tool automatically parses your JSON and detects all fields, including nested object paths.',
+    'Enable "Flatten Nested" to convert nested objects like {"user":{"name":"Alice"}} into dot-notation columns.',
+    'Use the field checkboxes to select which columns to include in your CSV output.',
+    'Choose your delimiter: Comma (CSV), Tab (TSV), Semicolon, or Pipe.',
+    'Toggle "Include Header Row" if you want or do not want column names in the first row.',
+    'Preview the first 5 rows in the live table to verify your output looks correct.',
+    'Click "Copy" to copy the CSV to clipboard, or "Download CSV" to save the file.',
+  ],
+  relatedToolSlugs: ['csv-to-json', 'json-formatter', 'json-tree-viewer', 'xml-to-json'],
+  icon: 'FileSpreadsheet',
+  isNew: true,
+  estimatedTime: 'Instant',
+});
+
+tools.push({
+  slug: 'video-merger',
+  name: 'Video Merger / Joiner',
+  shortDescription: 'Merge multiple videos into one free. Combine MP4, WebM, MOV clips with transitions and quality control.',
+  longDescription: `<p>Our free online <strong>Video Merger</strong> lets you combine multiple video clips into a single seamless video — right in your browser, with no uploads, no signup, and no watermarks. Perfect for joining clips for Reels, YouTube, WhatsApp, or any social media platform.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Merge Up to 10 Clips</strong>: Combine MP4, WebM, MOV, and AVI files in any order.</li>
+<li><strong>Drag-to-Reorder</strong>: Arrange your clips in the exact sequence you want before merging.</li>
+<li><strong>Smooth Transitions</strong>: Choose between instant cut or a smooth fade transition between clips.</li>
+<li><strong>Quality Control</strong>: Select High (4 Mbps), Medium (2 Mbps), or Low (800 Kbps) output quality.</li>
+<li><strong>Resolution Options</strong>: Keep original resolution or downscale to 1080p, 720p, or 480p.</li>
+<li><strong>Remove Audio</strong>: Strip audio tracks from the merged output for silent video.</li>
+<li><strong>Instant Preview</strong>: Watch the merged result before downloading.</li>
+<li><strong>100% Private</strong>: All processing happens in your browser — your videos never leave your device.</li>
+</ul>
+<h2>How Video Merging Works</h2>
+<p>The tool uses your browser's built-in <strong>Canvas API</strong> and <strong>MediaRecorder API</strong> to draw each video frame-by-frame and record them into a single output file. Audio is mixed using the Web Audio API. This means no server is involved — everything runs locally and privately.</p>
+<h2>Who Is This For?</h2>
+<p>Content creators combining Instagram Reels or YouTube Shorts clips, students joining lecture recordings, video editors needing quick merges without desktop software, and anyone who wants to join multiple clips into one file without installing anything.</p>
+<h2>Supported Formats</h2>
+<p>Input: MP4, WebM, MOV, AVI. Output format depends on your browser — Chrome and Firefox produce WebM, while Safari may produce MP4. All output formats play natively in browsers and can be uploaded to any social media platform.</p>
+<h2>Tips for Best Results</h2>
+<ul>
+<li>Use clips with the same resolution and frame rate for the smoothest merge.</li>
+<li>Keep this tab active while merging — the process runs in real time.</li>
+<li>For large files (over 100MB each), use the 720p output resolution option to reduce processing time.</li>
+</ul>`,
+  category: 'utility-tools',
+  targetKeyword: 'video merger online free',
+  secondaryKeywords: [
+    'join videos online free',
+    'merge mp4 files online',
+    'combine videos online',
+    'video joiner free',
+    'online video combiner',
+    'merge video clips free',
+    'join video clips online',
+    'combine mp4 free no watermark',
+    'video merger without watermark',
+    'merge videos for whatsapp',
+    'combine videos for instagram reels',
+    'free online video joiner',
+  ],
+  metaTitle: 'Video Merger Online Free — Join & Combine Videos | ToolsArena',
+  metaDescription: 'Merge multiple videos into one online for free. Combine MP4, WebM, MOV clips with drag-to-reorder, fade transitions & quality control. No upload, no watermark.',
+  faqs: [
+    { question: 'Is this video merger really free with no watermark?', answer: 'Yes, 100% free with no watermarks, no signup, and no file size restrictions beyond your browser\'s memory. All processing happens locally in your browser.' },
+    { question: 'How many videos can I merge at once?', answer: 'You can merge up to 10 video clips in a single operation. Each clip can be up to 500MB in size.' },
+    { question: 'What video formats are supported?', answer: 'You can upload MP4, WebM, MOV, and AVI files. The output format depends on your browser — Chrome and Firefox produce WebM, Safari may produce MP4.' },
+    { question: 'Why does merging take a long time?', answer: 'Merging happens in real time in your browser — the processing time roughly equals the total duration of all your clips combined. For a 5-minute total video, expect about 5 minutes of processing. Keep the tab open and active.' },
+    { question: 'Can I change the order of the clips?', answer: 'Yes! You can drag and drop clips to reorder them, or use the up/down arrow buttons. The clips will be merged in the order shown in the list.' },
+    { question: 'Will the audio from all clips be included?', answer: 'Yes, audio from all clips is included by default. You can check "Remove Audio" in the settings to produce a silent video, which also results in a smaller file size.' },
+    { question: 'Are my videos uploaded to any server?', answer: 'No. All video processing happens entirely within your browser using the Canvas API and MediaRecorder API. Your videos never leave your device.' },
+    { question: 'What is the fade transition option?', answer: 'The fade transition adds a smooth fade-out/fade-in effect between each clip, making the video feel more polished. The "No Transition" option cuts directly from one clip to the next.' },
+    { question: 'Can I use this on mobile?', answer: 'The tool works on mobile browsers, but performance is better on desktop due to the processing power required. Chrome on Android works best for mobile use.' },
+    { question: 'What output resolution should I choose?', answer: '720p is a good balance of quality and file size for most uses. Choose "Original" to keep the maximum quality, or 480p for smaller output files. If your clips have different resolutions, the tool scales them to match.' },
+  ],
+  howToSteps: [
+    'Click "Click to upload" or drag and drop your first video clip into the upload area.',
+    'Click "Add Clips" to add more video files (up to 10 total).',
+    'Drag clips to reorder them, or use the up/down arrows to arrange them in the sequence you want.',
+    'Choose your output quality (High, Medium, or Low) and resolution (Original, 1080p, 720p, or 480p).',
+    'Select a transition style — No Transition for instant cuts, or Fade for smooth transitions between clips.',
+    'Optionally check "Remove Audio" if you want a silent merged video.',
+    'Click "Merge Videos" and keep the tab open while processing.',
+    'Preview the merged result in the video player, then click "Download Merged Video" to save it.',
+  ],
+  relatedToolSlugs: ['video-compressor', 'video-to-gif', 'mp4-to-mp3', 'image-compressor'],
+  icon: 'Film',
+  isNew: true,
+  estimatedTime: 'Equals total video duration',
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
