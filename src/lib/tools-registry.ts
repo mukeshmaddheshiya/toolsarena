@@ -10265,6 +10265,655 @@ tools.push({
   estimatedTime: 'Equals total video duration',
 });
 
+// ──────────────────────────────────────────────
+// TIER 1 HIGH-TRAFFIC TOOLS (March 2026)
+// ──────────────────────────────────────────────
+
+tools.push({
+  slug: 'mortgage-calculator',
+  name: 'Mortgage Calculator',
+  shortDescription: 'Calculate monthly mortgage payments, total interest, and view amortization schedule.',
+  longDescription: `<p>Our free <strong>Mortgage Calculator</strong> helps you estimate your monthly home loan payments based on the property price, down payment, interest rate, and loan tenure. Understand exactly how much you'll pay every month and over the life of the loan.</p>
+<h2>How the Mortgage Calculator Works</h2>
+<p>Enter your home price, down payment percentage, interest rate, and loan tenure. The calculator instantly computes your monthly EMI using the standard amortization formula: <strong>EMI = P × r × (1+r)^n / ((1+r)^n − 1)</strong>. You can also add property tax and home insurance to see the full monthly payment picture.</p>
+<h2>Features</h2>
+<ul>
+<li>Adjustable sliders for home price, down payment, interest rate, and tenure</li>
+<li>Optional property tax and insurance inputs for full monthly cost</li>
+<li>Principal vs. interest visual breakdown</li>
+<li>Complete year-by-year amortization schedule</li>
+<li>Total cost summary over the entire loan period</li>
+</ul>
+<h2>Who Should Use This?</h2>
+<p>Home buyers planning their budget, real estate investors comparing properties, or anyone refinancing an existing mortgage. Works for any currency — just enter your numbers and get instant results.</p>`,
+  category: 'calculators',
+  targetKeyword: 'mortgage calculator',
+  secondaryKeywords: ['home loan calculator', 'mortgage payment calculator', 'mortgage EMI calculator', 'amortization calculator'],
+  metaTitle: 'Mortgage Calculator — Free Monthly Payment & Amortization Tool',
+  metaDescription: 'Calculate your monthly mortgage payment, total interest, and view the full amortization schedule. Free online mortgage calculator — no signup required.',
+  faqs: [
+    { question: 'How is the monthly mortgage payment calculated?', answer: 'We use the standard amortization formula: EMI = P × r × (1+r)^n / ((1+r)^n − 1), where P is the loan principal, r is the monthly interest rate, and n is the total number of monthly payments.' },
+    { question: 'What is included in the monthly payment?', answer: 'The base monthly payment includes principal and interest. You can optionally add property tax and home insurance to see your total monthly housing cost.' },
+    { question: 'How much down payment should I make?', answer: 'A 20% down payment is standard and helps you avoid private mortgage insurance (PMI). However, some loans accept as low as 5-10% down payment.' },
+    { question: 'What is an amortization schedule?', answer: 'An amortization schedule shows how each monthly payment is split between principal and interest over the entire loan tenure. In early years, more goes toward interest; in later years, more goes toward principal.' },
+    { question: 'Can I use this for home loans in India?', answer: 'Yes! The calculator works for home loans in any country. Just enter your property value, interest rate, and tenure. Use ₹ values for Indian home loans.' },
+  ],
+  howToSteps: [
+    'Enter the property/home price using the slider or type the amount.',
+    'Set your down payment percentage (default 20%).',
+    'Enter the annual interest rate offered by your lender.',
+    'Choose the loan tenure in years.',
+    'Optionally add annual property tax and insurance.',
+    'View your monthly EMI, total payment, and interest breakdown.',
+    'Toggle the amortization schedule to see year-by-year details.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'home-loan-emi-calculator', 'loan-amortization-calculator', 'compound-interest-calculator'],
+  icon: 'Home',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'calorie-calculator',
+  name: 'Calorie Calculator',
+  shortDescription: 'Calculate daily calorie needs based on age, gender, height, weight, and activity level.',
+  longDescription: `<p>Our free <strong>Calorie Calculator</strong> estimates your daily calorie requirements using the scientifically validated <strong>Mifflin-St Jeor equation</strong>. Whether you want to lose weight, maintain, or gain muscle, get personalized calorie and macronutrient targets.</p>
+<h2>How It Works</h2>
+<p>Enter your gender, age, height, weight, and activity level. The calculator first computes your <strong>Basal Metabolic Rate (BMR)</strong> — the calories your body burns at rest — then multiplies it by your activity factor to get your <strong>Total Daily Energy Expenditure (TDEE)</strong>.</p>
+<h2>Features</h2>
+<ul>
+<li>Mifflin-St Jeor equation (most accurate for most people)</li>
+<li>Activity level multipliers from sedentary to extra active</li>
+<li>Calorie targets for weight loss, maintenance, and weight gain</li>
+<li>Macronutrient breakdown (protein, carbs, fat) in grams</li>
+<li>BMR comparison between Harris-Benedict and Mifflin-St Jeor formulas</li>
+<li>Unit conversion support (cm/feet, kg/lbs)</li>
+</ul>
+<h2>Why Use the Mifflin-St Jeor Equation?</h2>
+<p>Research shows the Mifflin-St Jeor equation is the most reliable formula for estimating calorie needs, with an accuracy rate of about ±10% for most healthy adults. It's recommended by the Academy of Nutrition and Dietetics.</p>`,
+  category: 'calculators',
+  targetKeyword: 'calorie calculator',
+  secondaryKeywords: ['daily calorie calculator', 'TDEE calculator', 'calorie intake calculator', 'BMR calculator'],
+  metaTitle: 'Calorie Calculator — Free Daily Calorie & Macro Calculator',
+  metaDescription: 'Calculate your daily calorie needs with the Mifflin-St Jeor equation. Get BMR, TDEE, and macronutrient targets for weight loss, maintenance, or gain.',
+  faqs: [
+    { question: 'What is BMR?', answer: 'Basal Metabolic Rate (BMR) is the number of calories your body needs to perform basic life-sustaining functions like breathing, circulation, and cell production while at complete rest.' },
+    { question: 'What is TDEE?', answer: 'Total Daily Energy Expenditure (TDEE) is your BMR multiplied by an activity factor. It represents the total calories you burn in a day including exercise and daily activities.' },
+    { question: 'How accurate is this calculator?', answer: 'The Mifflin-St Jeor equation is accurate to within ±10% for most healthy adults. Individual factors like metabolism, muscle mass, and health conditions can affect actual needs.' },
+    { question: 'How many calories should I eat to lose weight?', answer: 'A moderate calorie deficit of 500 calories below your TDEE leads to approximately 0.5 kg (1 lb) of weight loss per week. Never go below 1,200 calories/day (women) or 1,500 calories/day (men) without medical supervision.' },
+    { question: 'What macronutrient ratio should I follow?', answer: 'A balanced diet typically consists of 30% protein, 40% carbohydrates, and 30% fat. Athletes may need more protein (35-40%), while endurance athletes may need more carbs.' },
+  ],
+  howToSteps: [
+    'Select your gender (Male or Female).',
+    'Enter your age, height (cm or feet/inches), and weight (kg or lbs).',
+    'Choose your activity level from sedentary to extra active.',
+    'Select your goal: lose weight, maintain, or gain weight.',
+    'View your daily calorie needs, BMR, and TDEE.',
+    'Check the macronutrient breakdown for protein, carbs, and fat targets.',
+  ],
+  relatedToolSlugs: ['bmi-calculator', 'tdee-macro-calculator', 'body-fat-calculator', 'ideal-weight-calculator'],
+  icon: 'Flame',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'grade-calculator',
+  name: 'Grade Calculator',
+  shortDescription: 'Calculate weighted or unweighted grades, GPA, and letter grades from your scores.',
+  longDescription: `<p>Our free <strong>Grade Calculator</strong> helps students calculate their overall grade from individual assignment scores. Supports both <strong>weighted and unweighted</strong> grading systems with automatic letter grade and GPA conversion.</p>
+<h2>How It Works</h2>
+<p>Add your assignments with scores and weights. In <strong>weighted mode</strong>, each assignment category has a weight (e.g., Homework 20%, Exams 50%). In <strong>unweighted mode</strong>, all assignments are treated equally based on points earned vs. total points possible.</p>
+<h2>Features</h2>
+<ul>
+<li>Weighted and unweighted grade calculation modes</li>
+<li>Dynamic rows — add or remove assignments</li>
+<li>Automatic letter grade (A+ through F) conversion</li>
+<li>GPA equivalent on 4.0 scale</li>
+<li>"What do I need?" calculator — find the score needed on remaining work</li>
+<li>Grade distribution visualization</li>
+<li>Standard US grading scale reference table</li>
+</ul>
+<h2>Who Uses This?</h2>
+<p>Students at any level — high school, college, or university — who want to know their current grade or figure out what they need on upcoming assignments to reach their target grade.</p>`,
+  category: 'calculators',
+  targetKeyword: 'grade calculator',
+  secondaryKeywords: ['weighted grade calculator', 'GPA calculator', 'final grade calculator', 'grade percentage calculator'],
+  metaTitle: 'Grade Calculator — Free Weighted Grade & GPA Calculator',
+  metaDescription: 'Calculate your weighted or unweighted grade, letter grade, and GPA. Find out what score you need on finals. Free online grade calculator for students.',
+  faqs: [
+    { question: 'How does weighted grading work?', answer: 'In weighted grading, different assignment categories count for different percentages of your final grade. For example, if Exams are 50% and Homework is 20%, a perfect exam score contributes more to your grade than perfect homework.' },
+    { question: 'What grading scale is used for letter grades?', answer: 'We use the standard US grading scale: A+ (97-100), A (93-96), A- (90-92), B+ (87-89), B (83-86), B- (80-82), C+ (77-79), C (73-76), C- (70-72), D (60-69), F (below 60).' },
+    { question: 'Can I calculate what I need on my final exam?', answer: 'Yes! Use the "What do I need?" section. Enter your current grade and the weight of the remaining assignment, and the calculator shows the minimum score needed to achieve your target grade.' },
+    { question: 'How is GPA calculated?', answer: 'GPA is converted from percentage using the 4.0 scale: A = 4.0, B = 3.0, C = 2.0, D = 1.0, F = 0.0. Plus/minus grades add or subtract 0.3 (e.g., A- = 3.7, B+ = 3.3).' },
+  ],
+  howToSteps: [
+    'Choose between weighted or unweighted grading mode.',
+    'Enter each assignment name, score earned, and total points (and weight if weighted).',
+    'Click "Add Row" to add more assignments.',
+    'View your overall percentage, letter grade, and GPA instantly.',
+    'Use the "What do I need?" section to find required scores for upcoming work.',
+  ],
+  relatedToolSlugs: ['gpa-calculator', 'cgpa-to-percentage', 'percentage-calculator', 'average-calculator'],
+  icon: 'GraduationCap',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'dice-roller',
+  name: 'Dice Roller',
+  shortDescription: 'Roll virtual dice — D4, D6, D8, D10, D12, D20, D100 with history and statistics.',
+  longDescription: `<p>Our free <strong>Online Dice Roller</strong> lets you roll virtual dice instantly. Choose from standard dice types including <strong>D4, D6, D8, D10, D12, D20, and D100</strong>. Roll up to 10 dice at once with modifiers — perfect for board games, RPGs, D&D, and decision making.</p>
+<h2>Features</h2>
+<ul>
+<li>All standard dice: D4, D6, D8, D10, D12, D20, D100</li>
+<li>Roll 1-10 dice simultaneously</li>
+<li>Add modifiers (+/−) to your total</li>
+<li>Animated dice rolling with visual feedback</li>
+<li>Roll history tracking (last 20 rolls)</li>
+<li>Statistics: average, min, max across all rolls</li>
+<li>Quick presets for common D&D rolls: 2d6, 1d20, 4d6 drop lowest</li>
+</ul>
+<h2>Perfect For</h2>
+<p>Dungeons & Dragons, Pathfinder, board games, classroom activities, probability lessons, or any time you need a fair random number. Uses the browser's cryptographic random number generator for true randomness.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'dice roller',
+  secondaryKeywords: ['online dice roller', 'virtual dice', 'D20 roller', 'random dice roll'],
+  metaTitle: 'Dice Roller — Free Online D4, D6, D8, D10, D12, D20 Roller',
+  metaDescription: 'Roll virtual dice online — D4, D6, D8, D10, D12, D20, D100. Roll multiple dice with modifiers. Free dice roller with history and stats for D&D and board games.',
+  faqs: [
+    { question: 'Are the dice rolls truly random?', answer: 'Yes! We use the browser\'s Math.random() function which provides pseudo-random numbers suitable for games. For cryptographic applications, we can use crypto.getRandomValues().' },
+    { question: 'What does "4d6 drop lowest" mean?', answer: 'This is a common D&D character creation method. Roll 4 six-sided dice, remove the lowest result, and sum the remaining 3. This gives a range of 3-18 with a bias toward higher numbers.' },
+    { question: 'Can I roll multiple different dice types at once?', answer: 'Currently, each roll uses one dice type. You can quickly switch between types and use the roll history to track all your rolls in sequence.' },
+    { question: 'What is a D100?', answer: 'A D100 (percentile die) generates a random number from 1 to 100. In tabletop RPGs, it\'s often simulated by rolling two D10s — one for the tens digit and one for the ones digit.' },
+  ],
+  howToSteps: [
+    'Select your dice type (D4, D6, D8, D10, D12, D20, or D100).',
+    'Choose the number of dice to roll (1-10).',
+    'Optionally add a modifier (+/−) to the total.',
+    'Click "Roll Dice" to see your results with animation.',
+    'View individual die results, total, and running statistics.',
+    'Check roll history for previous results.',
+  ],
+  relatedToolSlugs: ['random-generator', 'coin-flip', 'password-generator', 'love-calculator'],
+  icon: 'Dices',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'time-calculator',
+  name: 'Time Calculator',
+  shortDescription: 'Add or subtract time, find time differences, and convert time to decimal hours.',
+  longDescription: `<p>Our free <strong>Time Calculator</strong> helps you perform time arithmetic — add or subtract hours, minutes, and seconds, calculate the difference between two times, and convert time to decimal format. Essential for timesheet calculations, scheduling, and project management.</p>
+<h2>Three Calculation Modes</h2>
+<ul>
+<li><strong>Add/Subtract Time:</strong> Start with a time and add or subtract days, hours, minutes, and seconds. See if the result crosses midnight.</li>
+<li><strong>Time Difference:</strong> Calculate the exact duration between two times in hours, minutes, and seconds. Supports overnight calculations.</li>
+<li><strong>Time to Decimal:</strong> Convert HH:MM:SS to decimal hours (e.g., 1:30:00 = 1.5 hours) and back. Perfect for timesheets and billing.</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>12-hour (AM/PM) and 24-hour format support</li>
+<li>Quick preset buttons for common durations</li>
+<li>"Use current time" button for convenience</li>
+<li>Copy results to clipboard</li>
+<li>Business hours and total seconds breakdown</li>
+</ul>`,
+  category: 'calculators',
+  targetKeyword: 'time calculator',
+  secondaryKeywords: ['time duration calculator', 'add time calculator', 'hours minutes calculator', 'time difference calculator'],
+  metaTitle: 'Time Calculator — Add, Subtract & Find Time Difference Online',
+  metaDescription: 'Free time calculator to add/subtract hours and minutes, find the difference between two times, and convert time to decimals. Perfect for timesheets.',
+  faqs: [
+    { question: 'How do I calculate time differences across midnight?', answer: 'Use the Time Difference mode and check the "End time is next day" checkbox. The calculator will correctly compute the duration across midnight.' },
+    { question: 'What is decimal time?', answer: 'Decimal time expresses time as a decimal number of hours. For example, 1 hour 30 minutes = 1.5 hours, and 2 hours 15 minutes = 2.25 hours. This format is commonly used for billing and timesheets.' },
+    { question: 'Can I add days to a time?', answer: 'Yes! In Add/Subtract mode, you can add or subtract days, hours, minutes, and seconds. The result shows the final time and indicates if it falls on a different day.' },
+    { question: 'How do I calculate my work hours?', answer: 'Use Time Difference mode. Enter your start time (e.g., 9:00 AM) and end time (e.g., 5:30 PM). The calculator shows total hours worked in both HH:MM:SS and decimal format.' },
+  ],
+  howToSteps: [
+    'Select a mode: Add/Subtract Time, Time Difference, or Time to Decimal.',
+    'Enter the time values in the input fields (hours, minutes, seconds).',
+    'For Add/Subtract, choose the operation and duration to add/subtract.',
+    'View the result instantly — formatted in multiple ways.',
+    'Use the copy button to copy results to clipboard.',
+  ],
+  relatedToolSlugs: ['date-calculator', 'countdown-timer', 'stopwatch', 'timezone-checker'],
+  icon: 'Clock',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nps-calculator',
+  name: 'NPS Calculator',
+  shortDescription: 'Calculate National Pension System corpus, monthly pension, and tax benefits.',
+  longDescription: `<p>Our free <strong>NPS Calculator</strong> helps you estimate your retirement corpus and monthly pension under India's <strong>National Pension System</strong>. Plan your retirement by calculating how much you need to invest monthly to build the corpus you want.</p>
+<h2>How NPS Works</h2>
+<p>The National Pension System (NPS) is a government-backed retirement savings scheme. You invest regularly from your working years (18-60), and at retirement, you must use at least 40% of your corpus to purchase an annuity (monthly pension). The remaining 60% can be withdrawn as a tax-free lump sum.</p>
+<h2>Features</h2>
+<ul>
+<li>Monthly contribution and expected return rate inputs</li>
+<li>Automatic calculation of investment period based on current age</li>
+<li>Lump sum vs. annuity corpus breakdown</li>
+<li>Estimated monthly pension based on annuity rate</li>
+<li>Tax benefits under Section 80CCD(1) and 80CCD(1B)</li>
+<li>Year-by-year growth table</li>
+</ul>
+<h2>NPS Tax Benefits</h2>
+<p>NPS offers triple tax benefits: deduction up to ₹1.5 lakh under Section 80CCD(1) within the overall 80C limit, additional ₹50,000 under Section 80CCD(1B), and employer contribution deduction under 80CCD(2) up to 10% of salary.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nps calculator',
+  secondaryKeywords: ['national pension system calculator', 'NPS return calculator', 'NPS pension calculator', 'NPS corpus calculator'],
+  metaTitle: 'NPS Calculator — National Pension System Return & Pension Estimator',
+  metaDescription: 'Calculate your NPS corpus, monthly pension, and tax benefits. Free National Pension System calculator for Indian retirement planning.',
+  faqs: [
+    { question: 'What is the minimum NPS contribution?', answer: 'The minimum contribution is ₹500 per month or ₹6,000 per year for Tier I. There is no maximum limit, though tax benefits are capped.' },
+    { question: 'Is NPS return guaranteed?', answer: 'No, NPS returns are market-linked and vary based on the fund manager\'s performance and asset allocation. Equity funds historically return 10-14%, while government bonds return 8-10%.' },
+    { question: 'How much of NPS corpus is tax-free?', answer: 'At maturity, 60% of the corpus can be withdrawn as a tax-free lump sum. The remaining 40% must be used to purchase an annuity, which provides monthly pension (taxable as income).' },
+    { question: 'Can I withdraw from NPS before retirement?', answer: 'Partial withdrawal is allowed after 3 years for specific purposes like education, marriage, home purchase, or medical treatment — up to 25% of your own contributions.' },
+    { question: 'What are NPS Tier I and Tier II?', answer: 'Tier I is the mandatory pension account with lock-in until 60 and tax benefits. Tier II is a voluntary savings account with no lock-in or tax benefits (except for government employees).' },
+  ],
+  howToSteps: [
+    'Enter your monthly NPS contribution amount.',
+    'Enter your current age (maturity is at age 60).',
+    'Set the expected annual return rate (typically 8-12%).',
+    'Adjust the annuity purchase percentage (minimum 40% as per NPS rules).',
+    'Set the expected annuity rate (typically 5-7%).',
+    'View your total corpus, lump sum, monthly pension, and tax benefits.',
+  ],
+  relatedToolSlugs: ['ppf-calculator', 'sip-calculator', 'epf-calculator', 'retirement-corpus-calculator'],
+  icon: 'Shield',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'ctc-to-in-hand-calculator',
+  name: 'CTC to In-Hand Salary Calculator',
+  shortDescription: 'Convert CTC to in-hand salary with full breakdown of deductions and take-home pay.',
+  longDescription: `<p>Our free <strong>CTC to In-Hand Salary Calculator</strong> converts your annual Cost to Company (CTC) into monthly take-home salary. Get a complete breakdown of <strong>Basic, HRA, PF, Professional Tax, Income Tax</strong>, and other deductions to understand your actual in-hand pay.</p>
+<h2>How CTC Differs from In-Hand Salary</h2>
+<p>CTC (Cost to Company) includes everything your employer spends on you — salary, PF contribution, gratuity, insurance, bonuses. Your in-hand salary is what actually hits your bank account after all deductions. Typically, in-hand salary is <strong>65-75%</strong> of CTC.</p>
+<h2>Features</h2>
+<ul>
+<li>Complete salary structure breakdown: Basic, HRA, Special Allowance, PF, Gratuity</li>
+<li>Old vs. New Tax Regime comparison</li>
+<li>Metro vs. Non-Metro HRA calculation</li>
+<li>PF capping option (₹1,800/month or full 12%)</li>
+<li>Professional Tax deduction</li>
+<li>Estimated income tax calculation</li>
+<li>Monthly and annual view of all components</li>
+</ul>
+<h2>Who Needs This?</h2>
+<p>Job seekers evaluating offers, employees understanding their payslip, HR professionals structuring compensation, and anyone who wants to know their real take-home pay from a CTC figure.</p>`,
+  category: 'calculators',
+  targetKeyword: 'ctc to in hand salary calculator',
+  secondaryKeywords: ['CTC calculator', 'take home salary calculator', 'in hand salary calculator India', 'salary breakup calculator'],
+  metaTitle: 'CTC to In-Hand Salary Calculator — Free Take Home Pay Calculator India',
+  metaDescription: 'Convert CTC to monthly in-hand salary with full breakdown. Calculate Basic, HRA, PF, tax deductions, and take-home pay. Free salary calculator for India.',
+  faqs: [
+    { question: 'What percentage of CTC is typically in-hand?', answer: 'Typically 65-75% of CTC is your in-hand salary. The rest goes toward employer PF, gratuity, insurance, and income tax. Higher CTCs have lower in-hand percentages due to higher tax brackets.' },
+    { question: 'What is the difference between CTC and gross salary?', answer: 'CTC includes everything: gross salary + employer PF + gratuity + insurance + other benefits. Gross salary is CTC minus employer-side contributions. Net/in-hand salary is gross minus employee deductions and tax.' },
+    { question: 'How is Basic Salary calculated?', answer: 'Basic salary is typically 40-50% of CTC. A higher basic means more PF contribution (good for retirement) but also higher tax. Many companies keep basic at 40% to optimize the tax structure.' },
+    { question: 'Which tax regime should I choose?', answer: 'The New Tax Regime (FY 2024-25) has lower rates but fewer deductions. Choose New if you don\'t have significant investments under 80C, HRA claims, or home loan interest. Use Old if your total deductions exceed ₹3-4 lakh.' },
+    { question: 'Is PF mandatory?', answer: 'EPF is mandatory for organizations with 20+ employees for salaries where Basic + DA ≤ ₹15,000/month. Many companies extend PF to all employees. Employee and employer each contribute 12% of Basic.' },
+  ],
+  howToSteps: [
+    'Enter your annual CTC amount.',
+    'Set Basic Salary percentage (typically 40% of CTC).',
+    'Choose Metro or Non-Metro city for HRA calculation.',
+    'Select PF contribution type: capped at ₹1,800/month or 12% of full Basic.',
+    'Choose Old or New Tax Regime.',
+    'View your complete salary breakdown: monthly and annual.',
+    'See your estimated monthly in-hand salary after all deductions.',
+  ],
+  relatedToolSlugs: ['salary-calculator', 'income-tax-calculator', 'hra-calculator', 'tds-calculator'],
+  icon: 'Wallet',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'home-loan-emi-calculator',
+  name: 'Home Loan EMI Calculator',
+  shortDescription: 'Calculate home loan EMI, total interest, eligibility, and prepayment savings.',
+  longDescription: `<p>Our free <strong>Home Loan EMI Calculator</strong> is designed specifically for Indian home buyers. Calculate your monthly EMI, total interest payable, and see how much you save with prepayments. Includes loan eligibility estimation and rate comparison features.</p>
+<h2>How Home Loan EMI Is Calculated</h2>
+<p>Home loan EMI is calculated using the reducing balance method: <strong>EMI = P × r × (1+r)^n / ((1+r)^n − 1)</strong>, where P is the loan amount, r is the monthly interest rate, and n is the total number of months.</p>
+<h2>Features</h2>
+<ul>
+<li>Property value and down payment calculator</li>
+<li>EMI calculation with processing fee estimation</li>
+<li>Prepayment savings calculator — see interest saved and tenure reduced</li>
+<li>Year-by-year amortization schedule</li>
+<li>Loan eligibility estimator based on income</li>
+<li>Interest rate comparison at different rates</li>
+<li>Principal vs. interest visual breakdown</li>
+</ul>
+<h2>Current Home Loan Rates in India (2024-25)</h2>
+<p>Home loan interest rates in India typically range from 8.25% to 9.5% depending on the bank, your credit score, and loan amount. Use this calculator to compare different rate scenarios.</p>`,
+  category: 'calculators',
+  targetKeyword: 'home loan emi calculator',
+  secondaryKeywords: ['home loan calculator India', 'housing loan EMI calculator', 'home loan interest calculator', 'home loan eligibility calculator'],
+  metaTitle: 'Home Loan EMI Calculator — Free Housing Loan Calculator India',
+  metaDescription: 'Calculate home loan EMI, total interest, prepayment savings, and eligibility. Free home loan calculator for Indian property buyers with amortization schedule.',
+  faqs: [
+    { question: 'How much home loan can I get on my salary?', answer: 'Banks typically approve a home loan where EMI is 40-50% of your net monthly income. Use the eligibility calculator section — enter your monthly income to see the maximum loan amount.' },
+    { question: 'Should I make prepayments on my home loan?', answer: 'Yes! Even small monthly prepayments can save lakhs in interest and reduce your tenure significantly. Use our prepayment calculator to see the exact savings.' },
+    { question: 'What is the ideal home loan tenure?', answer: 'A 15-20 year tenure balances affordable EMIs with reasonable total interest. Shorter tenures mean higher EMIs but much less total interest. A 30-year loan can cost nearly double in interest vs. 15 years.' },
+    { question: 'How does down payment affect my EMI?', answer: 'A larger down payment reduces your loan principal, which lowers both your monthly EMI and total interest. Most banks require a minimum 10-20% down payment for home loans.' },
+    { question: 'What is a processing fee?', answer: 'Banks charge a one-time processing fee of 0.25% to 1% of the loan amount to cover administrative costs. This is typically paid upfront and is non-refundable.' },
+  ],
+  howToSteps: [
+    'Enter the property value and your down payment percentage.',
+    'Set the home loan interest rate (check your bank\'s current rate).',
+    'Choose the loan tenure in years (5-30 years).',
+    'Optionally add processing fee and monthly prepayment amount.',
+    'View your monthly EMI, total payment, and interest breakdown.',
+    'Check the amortization schedule for year-by-year details.',
+    'Use the eligibility estimator to verify your loan capacity.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'mortgage-calculator', 'loan-amortization-calculator', 'stamp-duty-calculator'],
+  icon: 'Building',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'binary-translator',
+  name: 'Binary Translator',
+  shortDescription: 'Convert text to binary, binary to text, hex, octal, and ASCII — instant translation.',
+  longDescription: `<p>Our free <strong>Binary Translator</strong> converts text to binary code and back instantly. Also supports conversion between text and <strong>hexadecimal, octal, and decimal (ASCII)</strong> formats. Perfect for computer science students, developers, and anyone working with number systems.</p>
+<h2>Conversion Modes</h2>
+<ul>
+<li><strong>Text → Binary:</strong> Convert any text to 8-bit binary representation</li>
+<li><strong>Binary → Text:</strong> Decode binary strings back to readable text</li>
+<li><strong>Text → Hexadecimal:</strong> Convert text to hex codes with optional 0x prefix</li>
+<li><strong>Text → Octal:</strong> Convert text to octal (base-8) representation</li>
+<li><strong>Text → Decimal (ASCII):</strong> Show ASCII decimal values for each character</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Real-time conversion as you type</li>
+<li>Copy output to clipboard with one click</li>
+<li>Swap input/output for reverse conversion</li>
+<li>Character and byte count display</li>
+<li>ASCII reference table</li>
+<li>Educational step-by-step breakdown</li>
+</ul>`,
+  category: 'developer-tools',
+  targetKeyword: 'binary translator',
+  secondaryKeywords: ['text to binary converter', 'binary to text', 'binary code translator', 'ASCII to binary'],
+  metaTitle: 'Binary Translator — Free Text to Binary & Binary to Text Converter',
+  metaDescription: 'Convert text to binary, binary to text, hex, octal, and ASCII instantly. Free online binary translator with real-time conversion and copy support.',
+  faqs: [
+    { question: 'How does text to binary conversion work?', answer: 'Each character has an ASCII code (e.g., A = 65). That number is converted to its 8-bit binary representation (65 = 01000001). So "Hi" becomes "01001000 01101001".' },
+    { question: 'What is the difference between binary and hexadecimal?', answer: 'Binary (base-2) uses only 0 and 1. Hexadecimal (base-16) uses 0-9 and A-F. Hex is more compact — each hex digit represents exactly 4 binary digits. For example, binary 11111111 = hex FF.' },
+    { question: 'Can I convert emojis to binary?', answer: 'Yes! Emojis are Unicode characters and can be converted to binary. They typically require multiple bytes (up to 4 bytes each) since they have high code points.' },
+    { question: 'Why is binary important in computing?', answer: 'Computers operate using binary because electronic circuits have two states: on (1) and off (0). All data — text, images, video — is ultimately stored and processed as binary digits (bits).' },
+  ],
+  howToSteps: [
+    'Select a conversion mode (Text to Binary, Binary to Text, etc.).',
+    'Type or paste your input text or binary code.',
+    'See the conversion result instantly below.',
+    'Click the copy button to copy the output.',
+    'Use the swap button to quickly reverse the conversion direction.',
+  ],
+  relatedToolSlugs: ['binary-hex-octal-converter', 'base64-encode-decode', 'hash-generator', 'text-encryption'],
+  icon: 'Binary',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'date-calculator',
+  name: 'Date Calculator',
+  shortDescription: 'Calculate days between dates, add/subtract days, find weekdays, and age in days.',
+  longDescription: `<p>Our free <strong>Date Calculator</strong> offers four powerful modes: calculate the <strong>number of days between two dates</strong>, add or subtract days from a date, find the day of the week for any date, and calculate your exact age in days. Essential for planning, scheduling, and project management.</p>
+<h2>Four Calculation Modes</h2>
+<ul>
+<li><strong>Days Between Dates:</strong> Find exact calendar days, business days (weekdays), weeks, and months between any two dates</li>
+<li><strong>Add/Subtract Days:</strong> Add or subtract days, weeks, months, or years from any date. Supports business-days-only mode</li>
+<li><strong>Weekday Calculator:</strong> Find the day of the week, day number of the year, week number, and leap year status for any date</li>
+<li><strong>Age in Days:</strong> Enter your birthdate to see your exact age in years, months, days, hours, and minutes. Plus next birthday countdown!</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Business days calculation (excluding weekends)</li>
+<li>Include/exclude end date option</li>
+<li>Multiple date formats supported</li>
+<li>Leap year detection</li>
+<li>Days remaining in the year</li>
+</ul>`,
+  category: 'calculators',
+  targetKeyword: 'date calculator',
+  secondaryKeywords: ['days between dates calculator', 'date difference calculator', 'add days to date', 'day counter'],
+  metaTitle: 'Date Calculator — Days Between Dates, Add/Subtract Days Online',
+  metaDescription: 'Calculate days between two dates, add or subtract days, find weekdays, and your age in days. Free online date calculator with business day support.',
+  faqs: [
+    { question: 'How do I calculate business days between two dates?', answer: 'Use the Days Between Dates mode. The calculator automatically shows both calendar days and business days (weekdays only, excluding Saturdays and Sundays).' },
+    { question: 'Does the calculator account for leap years?', answer: 'Yes! The calculator correctly handles leap years (February 29th) in all its calculations, including days between dates and adding/subtracting days.' },
+    { question: 'Can I add months to a date?', answer: 'Yes! In Add/Subtract Days mode, you can add days, weeks, months, or years to any date. When adding months, it handles end-of-month edge cases correctly (e.g., Jan 31 + 1 month = Feb 28).' },
+    { question: 'How many days are in a year?', answer: 'A regular year has 365 days, while a leap year has 366 days. Leap years occur every 4 years, except for years divisible by 100 (unless also divisible by 400).' },
+  ],
+  howToSteps: [
+    'Select a mode: Days Between Dates, Add/Subtract Days, Weekday Calculator, or Age in Days.',
+    'Enter the date(s) using the date picker.',
+    'For Days Between: see calendar days, business days, weeks, and months.',
+    'For Add/Subtract: choose operation, enter the duration, and see the result date.',
+    'For Age in Days: enter your birthdate and see complete age breakdown.',
+  ],
+  relatedToolSlugs: ['age-calculator', 'time-calculator', 'countdown-timer', 'nepali-date-converter'],
+  icon: 'Calendar',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'coin-flip',
+  name: 'Coin Flip',
+  shortDescription: 'Flip a virtual coin with animated 3D flip, statistics tracking, and bulk flip mode.',
+  longDescription: `<p>Our free <strong>Coin Flip</strong> simulator lets you flip a virtual coin with realistic 3D animation. Make quick decisions, settle disputes, or use it for probability experiments. Features bulk flipping, statistics tracking, and streak detection.</p>
+<h2>Features</h2>
+<ul>
+<li>Realistic 3D coin flip animation</li>
+<li>Single flip and bulk flip modes (1, 5, 10, 50, 100 flips)</li>
+<li>Heads vs. Tails statistics with percentages</li>
+<li>Streak tracking — current and longest streak</li>
+<li>Flip history showing last 50 results</li>
+<li>"Best of 3" and "Best of 5" decision modes</li>
+<li>Fair randomization using browser's random number generator</li>
+</ul>
+<h2>When to Use a Coin Flip</h2>
+<p>Can't decide between two options? Let the coin decide! Coin flips are also perfect for teaching probability — with enough flips, you'll see the ratio approach 50/50, demonstrating the Law of Large Numbers.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'coin flip',
+  secondaryKeywords: ['flip a coin', 'coin toss online', 'heads or tails', 'virtual coin flip'],
+  metaTitle: 'Coin Flip — Free Online Heads or Tails Coin Toss Simulator',
+  metaDescription: 'Flip a virtual coin with 3D animation. Heads or tails? Free online coin flip with statistics, history, bulk flip mode, and streak tracking.',
+  faqs: [
+    { question: 'Is the coin flip fair?', answer: 'Yes! Each flip has exactly a 50/50 chance of landing Heads or Tails. We use the browser\'s pseudo-random number generator which provides uniform distribution.' },
+    { question: 'Can I flip multiple coins at once?', answer: 'Yes! Use the bulk flip buttons to flip 5, 10, 50, or 100 coins at once. You\'ll see the results summary with Heads and Tails counts and percentages.' },
+    { question: 'What is the streak feature?', answer: 'The streak tracker shows your current consecutive run (e.g., 5 Heads in a row) and your all-time longest streak. It\'s a fun way to see how randomness creates patterns.' },
+    { question: 'How does "Best of 3" work?', answer: 'In "Best of 3" mode, the coin flips until one side wins 2 out of 3 flips. This adds a slight competitive element for decision-making between two options.' },
+  ],
+  howToSteps: [
+    'Click the "Flip Coin" button or press Enter.',
+    'Watch the 3D coin animation and see the result (Heads or Tails).',
+    'Use the bulk flip buttons (5, 10, 50, 100) for multiple flips at once.',
+    'View your statistics: total flips, Heads/Tails ratio, and streaks.',
+    'Check the flip history to see your last 50 results.',
+    'Click "Reset" to clear statistics and start fresh.',
+  ],
+  relatedToolSlugs: ['dice-roller', 'random-generator', 'love-calculator', 'password-generator'],
+  icon: 'CircleDollarSign',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'sukanya-samriddhi-calculator',
+  name: 'Sukanya Samriddhi Yojana Calculator',
+  shortDescription: 'Calculate SSY maturity amount, interest earned, and year-by-year growth for your daughter.',
+  longDescription: `<p>Our free <strong>Sukanya Samriddhi Yojana (SSY) Calculator</strong> helps Indian parents estimate the maturity amount for their daughter's SSY account. Calculate total returns, interest earned, and view the year-by-year growth schedule for this government-backed savings scheme.</p>
+<h2>About Sukanya Samriddhi Yojana</h2>
+<p>SSY is a Government of India savings scheme for the girl child, offering one of the highest interest rates among small savings schemes (<strong>currently 8.2% p.a.</strong>). It provides <strong>EEE tax status</strong> — investment, interest, and maturity amount are all tax-free.</p>
+<h2>Key SSY Rules</h2>
+<ul>
+<li>Account can be opened for girl child below 10 years of age</li>
+<li>Minimum deposit: ₹250/year; Maximum: ₹1,50,000/year</li>
+<li>Deposits required for first 15 years only</li>
+<li>Account matures 21 years after opening</li>
+<li>Interest continues to accrue from year 16 to 21 without deposits</li>
+<li>Partial withdrawal (50%) allowed after girl turns 18 for education/marriage</li>
+</ul>
+<h2>Tax Benefits</h2>
+<p>SSY investments qualify for Section 80C deduction up to ₹1.5 lakh. The interest earned and maturity amount are completely tax-free, making it a triple-tax-free (EEE) investment.</p>`,
+  category: 'calculators',
+  targetKeyword: 'sukanya samriddhi yojana calculator',
+  secondaryKeywords: ['SSY calculator', 'sukanya samriddhi calculator', 'sukanya yojana maturity calculator', 'girl child savings scheme calculator'],
+  metaTitle: 'Sukanya Samriddhi Yojana Calculator — Free SSY Maturity Calculator',
+  metaDescription: 'Calculate Sukanya Samriddhi Yojana maturity amount, interest earned, and year-by-year growth. Free SSY calculator for Indian parents planning for their daughter.',
+  faqs: [
+    { question: 'What is the current SSY interest rate?', answer: 'The current SSY interest rate is 8.2% per annum (Q1 FY 2024-25). The rate is revised quarterly by the Government of India and is one of the highest among small savings schemes.' },
+    { question: 'How much should I invest in SSY every year?', answer: 'You can invest between ₹250 (minimum) and ₹1,50,000 (maximum) per financial year. Investing the maximum ₹1,50,000/year for 15 years at 8.2% gives approximately ₹69 lakh at maturity.' },
+    { question: 'Can I open SSY for more than one daughter?', answer: 'Yes, you can open SSY accounts for up to two daughters. In case of twins/triplets for the second birth, a third account is also allowed with a birth certificate.' },
+    { question: 'When can I withdraw from SSY?', answer: 'The account matures 21 years after opening. Partial withdrawal of up to 50% is allowed after the girl turns 18, for higher education or marriage expenses.' },
+    { question: 'What happens if I miss a yearly deposit?', answer: 'If you miss the minimum ₹250 deposit in any year, the account becomes irregular. It can be revived by paying ₹50 penalty per year of default along with the minimum deposit for each defaulted year.' },
+  ],
+  howToSteps: [
+    'Enter the yearly investment amount (₹250 to ₹1,50,000).',
+    'Enter the girl child\'s current age (0-10 years).',
+    'The interest rate is pre-set to the current 8.2% (adjustable).',
+    'View the maturity amount, total investment, and interest earned.',
+    'Toggle the year-by-year table to see annual growth details.',
+    'Check the tax benefits section for Section 80C deduction info.',
+  ],
+  relatedToolSlugs: ['ppf-calculator', 'fd-rd-calculator', 'sip-calculator', 'compound-interest-calculator'],
+  icon: 'Heart',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'lumpsum-calculator',
+  name: 'Lumpsum Calculator',
+  shortDescription: 'Calculate lumpsum investment returns, future value, and compare with SIP investments.',
+  longDescription: `<p>Our free <strong>Lumpsum Calculator</strong> estimates the future value of a one-time investment based on your expected rate of return and investment horizon. Compare lumpsum investing with SIP to make informed decisions about where to deploy your money.</p>
+<h2>How Lumpsum Investment Works</h2>
+<p>When you invest a lump sum, your entire amount starts earning returns from day one. The future value is calculated using the compound interest formula: <strong>FV = P × (1 + r)^t</strong>, where P is the principal, r is the annual rate, and t is the time in years.</p>
+<h2>Features</h2>
+<ul>
+<li>Future value calculation with adjustable return rate and tenure</li>
+<li>Lumpsum vs. SIP comparison — see which strategy gives better returns for the same total investment</li>
+<li>Year-by-year growth table</li>
+<li>Inflation-adjusted (real) returns calculator</li>
+<li>Wealth multiplier — see how many times your money grows</li>
+<li>Doubling time using Rule of 72</li>
+</ul>
+<h2>Lumpsum vs. SIP</h2>
+<p>Lumpsum investing works best when markets are low and you have a large amount ready to invest. SIP works better for regular income earners as it averages out market volatility through rupee cost averaging.</p>`,
+  category: 'calculators',
+  targetKeyword: 'lumpsum calculator',
+  secondaryKeywords: ['lumpsum investment calculator', 'one time investment calculator', 'lumpsum return calculator', 'mutual fund lumpsum calculator'],
+  metaTitle: 'Lumpsum Calculator — Free One-Time Investment Return Calculator',
+  metaDescription: 'Calculate lumpsum investment returns, future value, and compare with SIP. Free online lumpsum calculator with inflation-adjusted returns and growth table.',
+  faqs: [
+    { question: 'What is a lumpsum investment?', answer: 'A lumpsum investment is a one-time investment of a large amount, as opposed to SIP where you invest smaller amounts regularly. For example, investing ₹5 lakh at once in a mutual fund is a lumpsum investment.' },
+    { question: 'Is lumpsum better than SIP?', answer: 'It depends on market conditions. Lumpsum tends to outperform SIP in consistently rising markets since your entire amount earns returns from day one. SIP is better in volatile or declining markets due to rupee cost averaging.' },
+    { question: 'What is the Rule of 72?', answer: 'The Rule of 72 is a quick way to estimate how long it takes to double your money. Divide 72 by the annual return rate. At 12% returns, your money doubles in approximately 72/12 = 6 years.' },
+    { question: 'How does inflation affect my returns?', answer: 'Inflation reduces the purchasing power of your returns. If you earn 12% returns but inflation is 6%, your real return is approximately 6%. Use our inflation-adjusted calculator to see actual wealth growth.' },
+    { question: 'What is a realistic return rate for lumpsum investing?', answer: 'For equity mutual funds in India, the historical average CAGR is around 12-15% over 10+ years. Debt funds return 7-9%. Fixed deposits offer 6-7%. Adjust the rate based on your chosen investment type.' },
+  ],
+  howToSteps: [
+    'Enter your lumpsum investment amount.',
+    'Set the expected annual return rate (e.g., 12% for equity).',
+    'Choose the investment time period in years.',
+    'View the future value, total returns, and wealth multiplier.',
+    'Compare with SIP to see which strategy works better.',
+    'Check the year-by-year growth table for detailed progression.',
+    'Use the inflation-adjusted section to see real returns.',
+  ],
+  relatedToolSlugs: ['sip-calculator', 'compound-interest-calculator', 'cagr-calculator', 'mutual-fund-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'cagr-calculator',
+  name: 'CAGR Calculator',
+  shortDescription: 'Calculate Compound Annual Growth Rate, future value, and compare investment benchmarks.',
+  longDescription: `<p>Our free <strong>CAGR Calculator</strong> computes the Compound Annual Growth Rate of your investments. CAGR shows the smoothed annual rate of return, making it easy to compare different investments regardless of their volatility.</p>
+<h2>What is CAGR?</h2>
+<p>CAGR (Compound Annual Growth Rate) is the rate at which an investment would have grown if it had grown at a steady rate annually. Formula: <strong>CAGR = (Final Value / Initial Value)^(1/n) − 1</strong>. Unlike absolute returns, CAGR factors in the time period, making it ideal for comparing investments of different durations.</p>
+<h2>Three Calculation Modes</h2>
+<ul>
+<li><strong>Calculate CAGR:</strong> From initial value, final value, and time period</li>
+<li><strong>Calculate Future Value:</strong> From initial value, CAGR, and time period</li>
+<li><strong>Calculate Initial Value:</strong> Reverse-calculate what you should have invested to reach a target</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>Three flexible calculation modes</li>
+<li>Investment benchmark comparison (FD, Gold, Nifty 50, Small Cap)</li>
+<li>Year-by-year growth table</li>
+<li>"What if" scenarios at different CAGR rates</li>
+<li>CAGR vs. Absolute Returns explanation</li>
+</ul>`,
+  category: 'calculators',
+  targetKeyword: 'cagr calculator',
+  secondaryKeywords: ['compound annual growth rate calculator', 'CAGR formula calculator', 'investment growth calculator', 'annual return calculator'],
+  metaTitle: 'CAGR Calculator — Free Compound Annual Growth Rate Calculator',
+  metaDescription: 'Calculate CAGR (Compound Annual Growth Rate) for your investments. Find future value, compare benchmarks, and view growth tables. Free online CAGR calculator.',
+  faqs: [
+    { question: 'What is the difference between CAGR and absolute return?', answer: 'Absolute return shows total percentage gain regardless of time (e.g., 100% return). CAGR annualizes the return — a 100% return over 5 years equals a CAGR of about 14.87%. CAGR allows fair comparison between investments of different durations.' },
+    { question: 'What is a good CAGR?', answer: 'It depends on the asset class. FDs: 6-7%, Gold: 8-10%, Large Cap: 12-14%, Mid Cap: 14-18%, Small Cap: 15-20% are typical long-term CAGR ranges in India. Any CAGR above inflation (6-7%) is generating real wealth.' },
+    { question: 'Does CAGR account for volatility?', answer: 'No, CAGR smooths out volatility by assuming steady growth. It doesn\'t show the ups and downs along the way. For risk assessment, look at metrics like standard deviation or maximum drawdown alongside CAGR.' },
+    { question: 'How is CAGR different from average annual return?', answer: 'Average return is the arithmetic mean of yearly returns. CAGR is the geometric mean — it accounts for compounding. If an investment gains 50% one year and loses 50% the next, the average return is 0%, but CAGR is -13.4% (reflecting actual loss).' },
+  ],
+  howToSteps: [
+    'Select a mode: Calculate CAGR, Future Value, or Initial Value.',
+    'Enter the required values (initial amount, final amount, time period).',
+    'View the CAGR percentage, absolute returns, and wealth multiplier.',
+    'Compare your CAGR against investment benchmarks.',
+    'Check the year-by-year growth table for detailed analysis.',
+    'Use "What if" scenarios to see results at different growth rates.',
+  ],
+  relatedToolSlugs: ['lumpsum-calculator', 'sip-calculator', 'compound-interest-calculator', 'roi-calculator'],
+  icon: 'BarChart3',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'simple-interest-calculator',
+  name: 'Simple Interest Calculator',
+  shortDescription: 'Calculate simple interest, total amount, and compare with compound interest.',
+  longDescription: `<p>Our free <strong>Simple Interest Calculator</strong> computes interest using the straightforward formula <strong>SI = P × R × T / 100</strong>. Four flexible modes let you calculate interest, find the required principal, determine the rate, or solve for time. Includes a built-in comparison with compound interest.</p>
+<h2>What is Simple Interest?</h2>
+<p>Simple interest is calculated only on the original principal amount, not on accumulated interest. Unlike compound interest, the interest earned each period remains constant. Simple interest is commonly used for short-term loans, car loans, and some savings accounts.</p>
+<h2>Four Calculation Modes</h2>
+<ul>
+<li><strong>Calculate Interest & Total:</strong> Find SI and total amount from principal, rate, and time</li>
+<li><strong>Calculate Principal:</strong> Find the required investment to earn a specific interest amount</li>
+<li><strong>Calculate Rate:</strong> Find the interest rate from principal, interest, and time</li>
+<li><strong>Calculate Time:</strong> Find how long to earn a specific interest amount</li>
+</ul>
+<h2>Simple vs. Compound Interest</h2>
+<p>With simple interest, ₹1,00,000 at 8% for 5 years earns ₹40,000. With compound interest, the same investment earns ₹46,933 — that's ₹6,933 more! The difference grows dramatically over longer periods.</p>`,
+  category: 'calculators',
+  targetKeyword: 'simple interest calculator',
+  secondaryKeywords: ['SI calculator', 'simple interest formula calculator', 'interest rate calculator', 'principal amount calculator'],
+  metaTitle: 'Simple Interest Calculator — Free SI Calculator with Formula',
+  metaDescription: 'Calculate simple interest (SI = PRT/100), total amount, principal, rate, or time. Free online simple interest calculator with compound interest comparison.',
+  faqs: [
+    { question: 'What is the simple interest formula?', answer: 'Simple Interest = (P × R × T) / 100, where P is the principal amount, R is the annual interest rate (%), and T is the time in years. Total Amount = P + SI.' },
+    { question: 'When is simple interest used?', answer: 'Simple interest is commonly used for short-term loans, car loans, personal loans, and some savings accounts. It\'s also used in educational mathematics and for quick estimations.' },
+    { question: 'What is the difference between simple and compound interest?', answer: 'Simple interest is calculated only on the original principal. Compound interest is calculated on principal plus accumulated interest. Over time, compound interest earns significantly more because of the "interest on interest" effect.' },
+    { question: 'Can I calculate interest in months or days?', answer: 'Yes! Use the time unit toggle to switch between years, months, and days. The calculator automatically converts to the correct time period for the formula.' },
+  ],
+  howToSteps: [
+    'Select a calculation mode: Interest, Principal, Rate, or Time.',
+    'Enter the known values using sliders or number inputs.',
+    'Choose the time unit: years, months, or days.',
+    'View the result with the formula calculation shown.',
+    'Compare with compound interest in the comparison section.',
+    'Check the year-by-year table for periodic breakdown.',
+  ],
+  relatedToolSlugs: ['compound-interest-calculator', 'fd-rd-calculator', 'emi-calculator', 'lumpsum-calculator'],
+  icon: 'Percent',
+  isNew: true,
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
