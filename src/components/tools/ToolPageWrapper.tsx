@@ -9,6 +9,7 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { SITE_URL, SITE_NAME, CATEGORY_NAME_KEYS } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import { getTranslations, getLocale } from 'next-intl/server';
+import { ToolTrustSignals } from './ToolTrustSignals';
 
 interface ToolPageWrapperProps {
   slug: string;
@@ -38,6 +39,11 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
       'https://x.com/toolsarena',
       'https://github.com/mukeshmaddheshiya',
     ],
+    founder: {
+      '@type': 'Person',
+      name: 'Mukesh Maddheshiya',
+      url: `${SITE_URL}/about`,
+    },
   };
 
   const webAppSchema = {
@@ -53,6 +59,8 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
     keywords: [tool.targetKeyword, ...tool.secondaryKeywords].join(', '),
     author: organization,
     publisher: organization,
+    datePublished: '2025-01-01',
+    dateModified: '2026-03-21',
     inLanguage: locale,
     browserRequirements: 'Requires JavaScript. Works in all modern browsers.',
     screenshot: `${toolUrl}/opengraph-image`,
@@ -88,6 +96,9 @@ export async function ToolPageWrapper({ slug, children }: ToolPageWrapperProps) 
             {tool.name}
           </h1>
           <p className="mt-2 text-slate-600 dark:text-slate-400">{tool.shortDescription}</p>
+          <div className="mt-3">
+            <ToolTrustSignals toolName={tool.name} toolSlug={tool.slug} />
+          </div>
         </div>
 
         {/* Top ad */}
