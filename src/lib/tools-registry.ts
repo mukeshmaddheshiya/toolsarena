@@ -10843,6 +10843,3528 @@ tools.push({
   isNew: true,
 });
 
+tools.push({
+  slug: 'aadhaar-validator',
+  name: 'Aadhaar Validator',
+  shortDescription: 'Validate Aadhaar number format online. 100% private, no data sent to any server.',
+  longDescription: `<p>Check if your Aadhaar number is valid online. This <strong>Aadhaar validator</strong> instantly verifies the 12-digit format and check digit using the Verhoeff algorithm — the same mathematical method UIDAI uses. 100% private — your Aadhaar number never leaves your browser.</p>
+<h2>How Aadhaar validation works</h2>
+<p>Every Aadhaar number has three layers of validity: it must be exactly 12 digits, the first digit must be between 2 and 9 (UIDAI reserves 0 and 1), and the 12th digit must pass the Verhoeff checksum algorithm. This tool checks all three in real-time as you type.</p>
+<h2>What is the Verhoeff algorithm?</h2>
+<p>The Verhoeff algorithm uses three mathematical tables — a multiplication table, a permutation table, and an inverse table — to detect 100% of single-digit transcription errors and all adjacent digit transpositions. It processes the digits right-to-left, and a valid Aadhaar produces a final result of zero.</p>
+<h2>Important: format vs. authenticity</h2>
+<p>A passing result confirms the number has correct mathematical structure. It does <strong>not</strong> confirm the number is issued by UIDAI or belongs to a real person. Only UIDAI's official authentication services can verify that. This tool is useful for catching typos, data entry errors, and obviously invalid numbers before submitting forms.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'Aadhaar validator',
+  secondaryKeywords: ['Aadhaar number validation', 'Verhoeff algorithm', 'Aadhaar checksum', 'UIDAI number checker', 'Aadhaar format checker'],
+  metaTitle: 'Aadhaar Validator — Free Online Aadhaar Number Checker',
+  metaDescription: 'Validate any Aadhaar number instantly using Verhoeff checksum algorithm. 100% private — your number never leaves your browser. Free online Aadhaar validator.',
+  faqs: [
+    { question: 'What is Aadhaar?', answer: 'Aadhaar is a 12-digit unique identification number issued by the Unique Identification Authority of India (UIDAI) to residents of India. It is linked to biometric and demographic data.' },
+    { question: 'What is the Verhoeff algorithm?', answer: 'The Verhoeff algorithm is a checksum formula designed to detect common transcription errors like single-digit mistakes and transpositions. UIDAI uses this algorithm to embed a check digit in the 12th position of every Aadhaar number.' },
+    { question: 'Does a valid checksum guarantee a real Aadhaar number?', answer: 'No. A valid checksum confirms mathematical correctness only. It does not verify that the number is actually issued by UIDAI or belongs to a real person. Only UIDAI can confirm a genuine Aadhaar.' },
+    { question: 'Why cannot an Aadhaar number start with 0 or 1?', answer: 'UIDAI reserves numbers starting with 0 and 1 for testing or system use. All genuinely issued Aadhaar numbers begin with digits 2 through 9.' },
+    { question: 'Is my Aadhaar number safe to enter here?', answer: 'Yes. This tool performs all computation locally in your browser using JavaScript. Your Aadhaar number is never transmitted to any server, stored in any database, or logged anywhere.' },
+    { question: 'What personal information does an Aadhaar number encode?', answer: 'None. Unlike some ID systems, the Aadhaar number itself does not encode name, date of birth, gender, or address. The number is a random 12-digit identifier; personal data is stored separately in the UIDAI database.' },
+    { question: 'What does the Verhoeff checksum actually check?', answer: 'The algorithm processes all 12 digits using three mathematical tables (multiplication, permutation, and inverse tables) to detect single-digit errors and adjacent digit transpositions with 100% accuracy.' },
+    { question: 'Can I use this tool to check if someone else\'s Aadhaar is valid?', answer: 'You can verify whether any 12-digit number passes the Verhoeff checksum, but this only confirms mathematical validity. Verifying a real person\'s Aadhaar requires UIDAI\'s official authentication services.' },
+    { question: 'What is a Virtual ID (VID) and can I validate it here?', answer: 'A Virtual ID is a 16-digit temporary identifier that can be used in place of Aadhaar for authentication. This tool validates 12-digit Aadhaar numbers only, not 16-digit VIDs.' },
+    { question: 'How do I mask my Aadhaar number for sharing?', answer: 'UIDAI recommends sharing only the last 4 digits (XXXX XXXX 1234) for most verification purposes. For document submissions, use a masked Aadhaar downloaded from the UIDAI portal.' },
+  ],
+  howToSteps: [
+    'Enter your 12-digit Aadhaar number in the input field.',
+    'The tool automatically formats the number as XXXX XXXX XXXX for readability.',
+    'The first digit is checked — Aadhaar cannot start with 0 or 1.',
+    'The Verhoeff checksum algorithm validates the 12th (check) digit.',
+    'A valid result confirms correct format and checksum; invalid means a digit may be wrong.',
+    'No data is ever sent to any server — all processing is in your browser.',
+  ],
+  relatedToolSlugs: ['pan-card-validator', 'gstin-validator', 'upi-id-validator'],
+  icon: 'Shield',
+  isNew: true,
+});
+
+
+// ─── 57 New Tools (Batch Build) ───
+
+// ============================================================
+// 19 New Tool Registry Entries — Batch 1
+// Add these to src/lib/tools-registry.ts BEFORE export const TOOL_COUNT
+// ============================================================
+
+// 1. ATS Resume Score Fixer
+tools.push({
+  slug: 'ats-resume-score-fixer',
+  name: 'ATS Resume Score Fixer',
+  shortDescription: 'ATS resume scanner that scores your resume and highlights keyword gaps.',
+  longDescription: `<p>Struggling to get past Applicant Tracking Systems? Our <strong>ATS Resume Score Fixer</strong> analyzes your resume against any job description and gives you an instant ATS compatibility score out of 100. No AI, no server uploads — pure keyword matching that runs entirely in your browser.</p>
+<h2>How It Works</h2>
+<p>Paste your full resume text and the job description you're targeting. The tool extracts meaningful keywords from the JD, checks which ones appear in your resume, and calculates a weighted score based on four factors:</p>
+<ul>
+<li><strong>Keyword Match (40 pts)</strong> — percentage of JD keywords found in your resume</li>
+<li><strong>Resume Sections (30 pts)</strong> — presence of contact info, education, experience, skills, and summary</li>
+<li><strong>Action Verbs (15 pts)</strong> — use of strong verbs like "developed", "led", "increased"</li>
+<li><strong>Quantifiable Achievements (15 pts)</strong> — numbers and percentages in your experience bullets</li>
+</ul>
+<h2>Why This Matters</h2>
+<p>Over 75% of resumes are rejected by ATS before a human ever reads them. The most common reason? Missing keywords. This tool shows you exactly which JD keywords are missing from your resume so you can add them naturally. Aim for a score of 75+ for strong ATS compatibility. Your data stays private — nothing leaves your browser.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'ATS resume scanner',
+  secondaryKeywords: ['resume score', 'keyword match', 'job description analysis', 'resume checker', 'ATS optimization'],
+  metaTitle: 'ATS Resume Score Fixer — Free Online Tool',
+  metaDescription: 'Scan your resume against any job description and get an instant ATS score. Identify missing keywords, fix gaps, and boost your resume match rate — 100% free and private.',
+  faqs: [
+    {
+      question: 'Does this tool use AI or machine learning?',
+      answer: 'No. This is a pure text analysis tool using keyword matching, regex patterns, and section detection algorithms. Everything runs in your browser with no data sent anywhere.',
+    },
+    {
+      question: 'How is the ATS score calculated?',
+      answer: 'The score is based on: keyword match percentage (40 points), presence of key sections like contact info, education, experience, and skills (40 points), use of action verbs (10 points), and quantifiable achievements (10 points).',
+    },
+    {
+      question: 'What is keyword gap analysis?',
+      answer: 'The tool extracts meaningful words from your job description, then checks which ones are missing from your resume. These are the keywords you should add to improve your ATS match rate.',
+    },
+    {
+      question: 'Is my resume data stored anywhere?',
+      answer: 'No. All text processing happens entirely in your browser. Your resume and job description text are never sent to a server or stored in any database.',
+    },
+    {
+      question: 'What score should I aim for?',
+      answer: 'Aim for 75 or higher for a strong ATS match. Scores above 85 indicate excellent keyword alignment. Most rejected resumes score below 50 due to missing keywords or sections.',
+    },
+    {
+      question: 'How many keywords should my resume have?',
+      answer: 'Most ATS experts recommend 10–20 relevant keywords that closely match the job description. Focus on skills, job titles, and tools explicitly mentioned in the JD. Avoid keyword stuffing — place them naturally in your experience and skills sections for best results.',
+    },
+  ],
+  howToSteps: [
+    'Paste your full resume text into the Resume field.',
+    'Paste the job description you are applying for into the Job Description field.',
+    'Click Analyze Resume to run the ATS scan.',
+    'Review your overall ATS score out of 100.',
+    'Check the keyword gap analysis to see which JD keywords are missing from your resume.',
+    'Read the section-by-section analysis (contact, education, experience, skills).',
+    'Use the suggestions to add missing keywords and improve your score.',
+  ],
+  relatedToolSlugs: ['ats-resume-checker', 'resume-builder', 'word-counter'],
+  icon: 'FileSearch',
+  isNew: true,
+});
+
+// 2. Banner & Poster Maker
+tools.push({
+  slug: 'banner-poster-maker',
+  name: 'Banner & Poster Maker',
+  shortDescription: 'Design social media banners and posters for every platform with templates and custom sizes.',
+  longDescription: `<p>Create stunning banners and posters for <strong>Facebook, Instagram, LinkedIn, Twitter/X, YouTube</strong>, and more — all from your browser. The <strong>Banner & Poster Maker</strong> gives you 15+ platform-specific canvas sizes, 10 Google Fonts, 8 ready-made templates, and full creative control.</p>
+<h2>Design Features</h2>
+<ul>
+<li><strong>Platform presets</strong> — Instagram Post (1080×1080), Facebook Cover (820×312), YouTube Channel Art (2560×1440), and more</li>
+<li><strong>Backgrounds</strong> — solid colors, linear/radial gradients, or upload your own image</li>
+<li><strong>Text elements</strong> — multiple text layers with independent font, size, color, bold/italic, alignment, and letter spacing</li>
+<li><strong>Shapes</strong> — rectangles, circles, and lines to frame or accent your design</li>
+<li><strong>Templates</strong> — Birthday, Business, Sale/Offer, Event, Announcement, Motivational Quote, Product Launch, and Holiday Greeting</li>
+</ul>
+<h2>Export Without Watermarks</h2>
+<p>Download your finished design as PNG or JPG at the exact canvas resolution — completely watermark-free. Everything runs client-side with no server uploads, so your designs stay private and load instantly.</p>`,
+  category: 'image-tools',
+  targetKeyword: 'banner maker online',
+  secondaryKeywords: ['poster maker', 'social media banner', 'Instagram post maker', 'Facebook cover maker', 'YouTube banner creator'],
+  metaTitle: 'Banner & Poster Maker — Free Online Tool',
+  metaDescription: 'Create banners and posters for Facebook, Instagram, LinkedIn, YouTube and more. Custom sizes, fonts, templates, and instant PNG/JPG export — free, no signup.',
+  faqs: [
+    {
+      question: 'What canvas sizes are available?',
+      answer: 'Over 15 preset sizes covering Facebook Cover & Post, Instagram Post & Story, LinkedIn Banner & Post, Twitter/X Header & Post, YouTube Channel Art, WhatsApp Status, Business Flyer (A4/A5), Event Banner, and custom dimensions.',
+    },
+    {
+      question: 'Can I enter a custom canvas size?',
+      answer: 'Yes. Select "Custom" from the size dropdown and enter any width and height in pixels.',
+    },
+    {
+      question: 'What fonts are available?',
+      answer: 'Ten Google Fonts are loaded dynamically: Roboto, Poppins, Montserrat, Playfair Display, Raleway, Oswald, Lato, Nunito, Merriweather, and Ubuntu.',
+    },
+    {
+      question: 'Can I upload my own image?',
+      answer: 'Yes. Use the image upload button to add any photo or graphic to the canvas. You can then drag and resize it.',
+    },
+    {
+      question: 'Does the preview update in real time?',
+      answer: 'Yes. All changes — background, text, shapes, and images — are reflected on the preview canvas immediately.',
+    },
+    {
+      question: 'What templates are included?',
+      answer: 'Eight templates are available: Birthday, Business, Sale/Offer, Event, Announcement, Motivational Quote, Product Launch, and Holiday Greeting.',
+    },
+    {
+      question: 'Are both gradient types supported?',
+      answer: 'Yes. You can choose between linear gradients (directional) and radial gradients (center outward), each with two color stops.',
+    },
+    {
+      question: 'What resolution will my export be?',
+      answer: 'The exported PNG or JPG matches the exact canvas dimensions you selected. For example, an Instagram Post exports at 1080×1080px.',
+    },
+    {
+      question: 'Can I add multiple text elements?',
+      answer: 'Yes. Click "Add Text" as many times as needed. Each element is independently styled, positioned, and editable.',
+    },
+    {
+      question: 'Is there a watermark on the exported image?',
+      answer: 'No. All exports are completely watermark-free at full resolution.',
+    },
+  ],
+  howToSteps: [
+    'Select a canvas size from the dropdown — choose your social media platform or enter a custom width and height.',
+    'Pick a background style: solid color, linear/radial gradient, or upload your own image.',
+    'Click "Add Text" to insert a text element. Type your content and drag it to position.',
+    'Customize each text element with font, size, color, bold, italic, underline, alignment, and letter spacing.',
+    'Add shapes (rectangle, circle, line) to frame or accent your design.',
+    'Upload an image to overlay on the canvas and drag it into position.',
+    'Apply one of the 8 built-in templates for a quick professional starting point.',
+    'The preview canvas updates live as you make changes.',
+    'Click Download PNG or Download JPG to export at the actual canvas resolution.',
+  ],
+  relatedToolSlugs: ['thumbnail-maker', 'image-compressor', 'social-media-image-resizer'],
+  icon: 'Image',
+  isNew: true,
+});
+
+// 3. Business Name Generator
+tools.push({
+  slug: 'business-name-generator',
+  name: 'Business Name Generator',
+  shortDescription: 'Generate 20 startup business name ideas by keyword, industry, and style.',
+  longDescription: `<p>Coming up with the perfect business name is one of the hardest parts of launching a startup. Our <strong>Business Name Generator</strong> creates 20 unique name suggestions in seconds, tailored to your keywords, industry, and preferred naming style.</p>
+<h2>How It Works</h2>
+<p>Enter up to 3 keywords that describe your business, select your industry (Tech, Food, Fashion, Health, Finance, Education, Retail, or Services), and choose a naming style — Modern, Traditional, Funny, Professional, or Minimalist. The tool combines your keywords with industry-specific prefixes, suffixes, and style modifiers using techniques like compound words, alliteration, abbreviation, and trendy suffixes.</p>
+<h2>Features</h2>
+<ul>
+<li><strong>20 name suggestions</strong> per generation with domain name hints (.com, .in, .co.in)</li>
+<li><strong>Save favorites</strong> to localStorage — they persist across sessions</li>
+<li><strong>One-click copy</strong> any name to your clipboard</li>
+<li><strong>India & Nepal focused</strong> with traditional naming options and local domain suggestions</li>
+</ul>
+<p>Remember: this tool generates name ideas only. Always verify company name availability with MCA (India) or OCR (Nepal) and check trademark databases before registering.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'business name generator',
+  secondaryKeywords: ['startup name ideas', 'company name generator', 'brand name generator', 'business naming', 'startup name ideas India'],
+  metaTitle: 'Business Name Generator — Free Online Tool',
+  metaDescription: 'Generate 20 unique business name ideas for your startup. Pick industry, style, and keywords — get instant name suggestions with domain hints. Free tool.',
+  faqs: [
+    {
+      question: 'Are these business names available to register?',
+      answer: 'This tool generates name ideas only. You need to verify availability with MCA (India) or OCR (Nepal) for company registration, and check trademark databases separately.',
+    },
+    {
+      question: 'How are the names generated?',
+      answer: 'Names are created using hardcoded prefix and suffix lists per industry, combined with your keywords. Techniques include prefix+keyword, keyword+suffix, compound words, and alliteration patterns.',
+    },
+    {
+      question: 'What does the domain hint show?',
+      answer: 'Each name shows a note on how .com, .in, and .co.in domains might look. This is not a live availability check — visit a domain registrar to check actual availability.',
+    },
+    {
+      question: 'Can I save names between sessions?',
+      answer: 'Yes. Favorited names are saved to your browser localStorage and will be there the next time you visit, as long as you use the same browser.',
+    },
+    {
+      question: 'How many keywords can I enter?',
+      answer: 'You can enter up to 3 keywords. The generator uses combinations of these words with industry-specific prefixes and suffixes to create varied name suggestions.',
+    },
+    {
+      question: 'Can I trademark a generated business name?',
+      answer: 'Possibly, but you must verify first. Before registering, search the IP India trademark database (ipindia.gov.in) or Nepal\'s Department of Industry to check if the name is already registered. Trademarks are approved based on uniqueness and distinctiveness — generic or descriptive names are harder to protect, while invented or coined names have a stronger chance of approval.',
+    },
+  ],
+  howToSteps: [
+    'Enter 1 to 3 keywords that describe your business (e.g. "food", "delivery", "fresh").',
+    'Select your industry from the dropdown (Tech, Food, Fashion, Health, etc.).',
+    'Choose a naming style: Modern, Traditional, Funny, Professional, or Minimalist.',
+    'Click Generate Names to see 20 unique business name suggestions.',
+    'Click the copy icon on any name to copy it to your clipboard.',
+    'Click the heart icon to save your favorite names to a list below.',
+    'Clear saved favorites anytime from the Saved Names panel.',
+  ],
+  relatedToolSlugs: ['lorem-ipsum-generator', 'invoice-generator', 'qr-code-generator'],
+  icon: 'Briefcase',
+  isNew: true,
+});
+
+// 4. Car Loan Calculator
+tools.push({
+  slug: 'car-loan-calculator',
+  name: 'Car Loan Calculator',
+  shortDescription: 'Estimate monthly EMI and total interest for your car loan instantly.',
+  longDescription: `<p>Planning to buy a car on finance? The <strong>Car Loan Calculator</strong> helps you estimate your monthly EMI, total interest payable, and view a detailed amortization schedule before you walk into the dealership.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>Monthly EMI</strong> — calculated using the standard reducing balance formula</li>
+<li><strong>Total interest</strong> — the exact amount you pay above the principal over the loan tenure</li>
+<li><strong>Loan-to-Cost ratio</strong> — shows what percentage of the car price you are financing, with a health indicator</li>
+<li><strong>12-month amortization table</strong> — month-by-month breakdown of principal, interest, and remaining balance</li>
+</ul>
+<h2>Smart Defaults for India</h2>
+<p>The calculator comes pre-loaded with realistic defaults for Indian car buyers: on-road price range up to ₹20 lakhs, interest rates from 7% to 18%, and tenure options from 12 to 84 months. Slider controls make it easy to adjust values and see results update in real time.</p>
+<p>Car loan rates in India typically range from 8.75% (SBI) to 15% (NBFCs). Your credit score, down payment, and loan amount all affect the rate you get. Use this tool to compare different scenarios and find the most affordable option.</p>`,
+  category: 'calculators',
+  targetKeyword: 'car loan calculator',
+  secondaryKeywords: ['auto loan EMI', 'vehicle loan calculator', 'car EMI', 'amortization', 'car finance'],
+  metaTitle: 'Car Loan Calculator — Free Online Tool',
+  metaDescription: 'Calculate your car loan EMI, total interest, and amortization schedule instantly. Compare rates and find the best deal for your next car purchase.',
+  faqs: [
+    {
+      question: 'What is a good interest rate for a car loan in India?',
+      answer: 'Car loan interest rates in India typically range from 7% to 15% per annum. Public sector banks like SBI offer rates starting around 8.75%, while NBFCs may charge 10-15%. Your credit score significantly affects the rate you get.',
+    },
+    {
+      question: 'What is the maximum tenure for a car loan?',
+      answer: 'Most banks offer car loans for up to 7 years (84 months). Longer tenures reduce your monthly EMI but increase total interest paid. A 5-year tenure is the most common choice balancing EMI affordability and interest cost.',
+    },
+    {
+      question: 'How much down payment should I make on a car loan?',
+      answer: 'Banks typically finance 80-90% of the on-road price. A larger down payment (20-30%) reduces your loan amount, lowers EMI, and also reduces total interest. It also improves your chances of loan approval.',
+    },
+    {
+      question: 'Does my credit score affect car loan EMI?',
+      answer: 'Yes. A credit score above 750 usually qualifies you for the lowest available interest rates, directly reducing your EMI. Scores below 650 may lead to higher rates or loan rejection.',
+    },
+    {
+      question: 'What is the loan-to-cost ratio shown in this calculator?',
+      answer: 'The loan-to-cost (LTC) ratio is the percentage of the car\'s total cost that you are financing through a loan. For example, if the car costs ₹10L and you borrow ₹8L, the LTC is 80%. Banks prefer LTC below 90%.',
+    },
+  ],
+  howToSteps: [
+    'Enter the total on-road price of the car you want to purchase.',
+    'Enter the down payment amount you plan to pay upfront.',
+    'Set the annual interest rate offered by your bank or NBFC.',
+    'Choose the loan tenure in months (12 to 84 months).',
+    'View your monthly EMI, total interest, and total repayment amount instantly.',
+    'Scroll down to see the 12-month amortization schedule with principal and interest breakup.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'loan-amortization-calculator', 'home-loan-emi-calculator'],
+  icon: 'Car',
+  isNew: true,
+});
+
+// 5. Color Blindness Simulator
+tools.push({
+  slug: 'color-blindness-simulator',
+  name: 'Color Blindness Simulator',
+  shortDescription: 'Simulate how images look to people with color vision deficiencies.',
+  longDescription: `<p>Designing for accessibility means understanding how your work appears to people with color vision deficiencies. The <strong>Color Blindness Simulator</strong> processes your uploaded image through 7 scientifically accurate color transformation matrices — all in your browser using the HTML5 Canvas API.</p>
+<h2>Supported Vision Types</h2>
+<ul>
+<li><strong>Deuteranopia</strong> — missing green cones, affects ~1% of males</li>
+<li><strong>Protanopia</strong> — missing red cones, affects ~1% of males</li>
+<li><strong>Tritanopia</strong> — missing blue cones, affects ~0.003% of population</li>
+<li><strong>Deuteranomaly</strong> — weak green cones, affects ~5% of males (most common)</li>
+<li><strong>Protanomaly</strong> — weak red cones, affects ~1% of males</li>
+<li><strong>Achromatopsia</strong> — complete color blindness, sees only grey</li>
+</ul>
+<h2>Key Features</h2>
+<p>Upload PNG, JPG, or WebP images and see all simulations in a grid. Toggle side-by-side comparison, download any simulation as PNG, and use the color picker to test individual colors across all vision types. With 300 million people worldwide affected by color blindness, accessible design is not optional — it is essential.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'color blindness simulator',
+  secondaryKeywords: ['deuteranopia simulator', 'protanopia simulator', 'tritanopia', 'accessibility tool', 'color vision test'],
+  metaTitle: 'Color Blindness Simulator — Free Online Tool',
+  metaDescription: 'Upload any image and simulate Deuteranopia, Protanopia, Tritanopia, and 4 more color vision types. 100% browser-based accessibility tool.',
+  faqs: [
+    {
+      question: 'How does the color blindness simulation work?',
+      answer: 'The tool draws your image to an HTML5 Canvas, reads the pixel data, and applies a color transformation matrix to each pixel. Different matrices simulate the altered color perception of each type of color blindness.',
+    },
+    {
+      question: 'What is Deuteranopia?',
+      answer: 'Deuteranopia is a form of red-green color blindness caused by the absence of green cone photoreceptors. It affects approximately 1% of males (about 1 in 100 men). Reds, greens, and browns appear similar.',
+    },
+    {
+      question: 'What is Protanopia?',
+      answer: 'Protanopia is red-green color blindness caused by the absence of red cone photoreceptors, affecting about 1% of males. Red appears very dark, and red-green distinctions are lost.',
+    },
+    {
+      question: 'What is Tritanopia?',
+      answer: 'Tritanopia is blue-yellow color blindness caused by absent blue cone photoreceptors. It is rare, affecting about 0.003% of the population. Blues appear green and yellows appear pink.',
+    },
+    {
+      question: 'What is Monochromacy (Achromatopsia)?',
+      answer: 'Achromatopsia is complete color blindness where the person sees only shades of grey. It is very rare, affecting about 1 in 30,000 people. Simulated using the luminance formula: 0.299R + 0.587G + 0.114B.',
+    },
+    {
+      question: 'What is the difference between Deuteranopia and Deuteranomaly?',
+      answer: 'Deuteranopia means the green cones are entirely absent. Deuteranomaly means the green cones are present but shifted in sensitivity — it is a milder form where colors are distorted rather than missing.',
+    },
+    {
+      question: 'Is my uploaded image sent to any server?',
+      answer: 'No. All image processing uses the HTML5 Canvas API entirely in your browser. Your image data never leaves your device.',
+    },
+    {
+      question: 'What file types are supported?',
+      answer: 'PNG, JPG/JPEG, and WebP files are supported. For best results, use images under 4000×4000 pixels. Very large images may take a moment to process.',
+    },
+    {
+      question: 'How can I use this tool to improve my design?',
+      answer: 'Upload your UI screenshot or graphic and check the simulations. If important UI elements (like error messages or call-to-action buttons) become indistinguishable in any simulation, adjust your color choices or add icons and patterns to differentiate them.',
+    },
+    {
+      question: 'What color matrix values are used?',
+      answer: 'The tool uses standard Brettel color transformation matrices for Deuteranopia, Protanopia, and Tritanopia, and partial matrices for the anomaly variants. Monochromacy uses the ITU-R BT.601 luminance formula.',
+    },
+  ],
+  howToSteps: [
+    'Click the upload area or drag and drop a PNG, JPG, or WebP image onto the tool.',
+    'The tool instantly processes your image and displays all color blindness simulations in a grid.',
+    'Each panel shows the image as it appears to someone with that specific condition.',
+    'Read the info card below each simulation to learn about the condition and affected population.',
+    'Use the "Side-by-Side" toggle to compare the original image with a single selected simulation.',
+    'Click the download icon on any simulation panel to save that image as a PNG.',
+    'Use the color picker tool at the bottom to check how a specific color appears across all vision types.',
+    'All processing happens in your browser — your image is never uploaded to any server.',
+  ],
+  relatedToolSlugs: ['color-palette-from-image', 'color-picker', 'image-compressor'],
+  icon: 'Eye',
+  isNew: true,
+});
+
+// 6. Credit Card EMI Calculator
+tools.push({
+  slug: 'credit-card-emi-calculator',
+  name: 'Credit Card EMI Calculator',
+  shortDescription: 'Calculate EMI, interest & amortization for credit card purchases.',
+  longDescription: `<p>Converting a large credit card purchase to EMI? The <strong>Credit Card EMI Calculator</strong> helps you compare the true cost of EMI conversion versus revolving credit, so you can make a smarter financial decision.</p>
+<h2>What This Calculator Shows</h2>
+<ul>
+<li><strong>Monthly EMI</strong> — exact installment using the reducing balance formula</li>
+<li><strong>Total interest</strong> — the real cost of converting to EMI</li>
+<li><strong>Processing fee</strong> — the one-time upfront charge (typically 1-2%)</li>
+<li><strong>Effective annual rate</strong> — the true annual cost after compounding</li>
+<li><strong>Revolving credit comparison</strong> — how much you save vs paying at 40% p.a. revolving interest</li>
+<li><strong>Full amortization schedule</strong> — month-by-month principal and interest breakdown</li>
+</ul>
+<h2>Pre-loaded Bank Rates</h2>
+<p>Includes indicative EMI rates for HDFC Bank (13%), ICICI Bank (14%), SBI Card (14%), Axis Bank (15%), Kotak Mahindra (16%), Yes Bank (18%), Standard Chartered (15%), and American Express (14%). Or enter a custom rate for any other bank. Choose tenures from 3 to 24 months.</p>
+<p>In most cases, converting to EMI saves significant interest compared to revolving credit at 36-42% p.a. Use this tool to see exactly how much you save.</p>`,
+  category: 'calculators',
+  targetKeyword: 'credit card emi calculator',
+  secondaryKeywords: ['emi calculator', 'hdfc emi', 'icici emi', 'bank emi calculator', 'credit card interest'],
+  metaTitle: 'Credit Card EMI Calculator — Free Online Tool',
+  metaDescription: 'Calculate credit card EMI with amortization schedule, total interest, processing fees and compare vs revolving credit. Supports all major Indian banks.',
+  faqs: [
+    {
+      question: 'How is credit card EMI calculated?',
+      answer: 'EMI is calculated using the reducing balance formula: EMI = P × r(1+r)^n / ((1+r)^n - 1), where P is the principal, r is the monthly interest rate (annual rate ÷ 12), and n is the number of months.',
+    },
+    {
+      question: 'Is converting a purchase to credit card EMI worth it?',
+      answer: 'Yes, in most cases. Credit card revolving interest is typically 36–42% per annum, while EMI interest rates range from 13–18% p.a. Converting to EMI can save significant interest, especially for large purchases over longer tenures.',
+    },
+    {
+      question: 'What is a processing fee for credit card EMI?',
+      answer: 'Banks charge a one-time processing fee (typically 1–2% of the purchase amount) to convert a transaction to EMI. This is a flat charge and is not included in the monthly EMI amount — it is charged upfront or added to the first statement.',
+    },
+    {
+      question: 'What is the effective annual interest rate?',
+      answer: 'The effective annual rate (EAR) accounts for monthly compounding and gives the true annual cost of the EMI. It is slightly higher than the nominal annual rate stated by the bank due to compounding.',
+    },
+    {
+      question: 'Can I foreclose or prepay credit card EMI?',
+      answer: 'Yes, most banks allow EMI foreclosure, but they charge a preclosure fee (typically 2–3% of the outstanding principal). Always check with your bank before prepaying.',
+    },
+    {
+      question: 'What happens if I miss an EMI payment?',
+      answer: 'Missing an EMI payment attracts late payment charges and revolving interest on the outstanding amount at 36–42% p.a. It also negatively impacts your credit score. Always ensure your account has sufficient balance on the due date.',
+    },
+    {
+      question: 'Is the interest on credit card EMI tax deductible?',
+      answer: 'No. Interest paid on credit card EMIs is not tax deductible in India, unlike home loan interest. It is a consumer finance cost and does not qualify for any income tax deduction.',
+    },
+    {
+      question: 'What is the difference between no-cost EMI and regular EMI?',
+      answer: 'In no-cost EMI, the bank or merchant absorbs the interest cost, so you pay only the principal in equal installments. In regular EMI, you pay principal plus interest each month. No-cost EMI often has conditions like specific cards or brands.',
+    },
+    {
+      question: 'Which tenure should I choose for credit card EMI?',
+      answer: 'A shorter tenure means lower total interest but a higher monthly EMI. A longer tenure is easier on cash flow but costs more in total interest. Use this calculator to compare tenures and choose based on your monthly budget.',
+    },
+    {
+      question: 'Are the interest rates shown accurate for all banks?',
+      answer: 'The rates shown are indicative and commonly offered rates. Actual rates may vary based on your card type, credit score, and promotional offers. Always verify the exact rate with your bank before converting.',
+    },
+  ],
+  howToSteps: [
+    'Enter the purchase amount you want to convert to EMI.',
+    'Select your bank from the dropdown or enter a custom interest rate.',
+    'Choose the EMI tenure: 3, 6, 9, 12, 18, or 24 months.',
+    'Optionally enter the processing fee percentage charged by your bank.',
+    'Click Calculate to see monthly EMI, total interest, and total payable amount.',
+    'Scroll down to view the month-by-month amortization table.',
+    'Check the revolving credit comparison to see how much you save by converting to EMI.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'loan-comparison-calculator', 'sip-calculator'],
+  icon: 'CreditCard',
+  isNew: true,
+});
+
+// 7. CSS Text Effects Generator
+tools.push({
+  slug: 'css-text-effects-generator',
+  name: 'CSS Text Effects Generator',
+  shortDescription: 'Create gradient, neon, 3D, fire, and metallic CSS text effects with live preview.',
+  longDescription: `<p>Need eye-catching headings for your website? The <strong>CSS Text Effects Generator</strong> lets you create 10 stunning text effects with live preview and one-click CSS copy — no design skills required.</p>
+<h2>10 Text Effects Included</h2>
+<ul>
+<li><strong>Gradient Text</strong> — customizable two-color gradients in any direction</li>
+<li><strong>Neon Glow</strong> — stacked text-shadows simulating neon tube lights</li>
+<li><strong>3D Text</strong> — diagonal shadow layers creating depth illusion</li>
+<li><strong>Outlined/Stroke</strong> — CSS text-stroke with optional transparent fill</li>
+<li><strong>Shadow Text</strong> — adjustable offset, blur, and color</li>
+<li><strong>Retro/Vintage</strong> — multi-layered colored shadows</li>
+<li><strong>Fire Effect</strong> — animated CSS keyframes with warm tones</li>
+<li><strong>Ice/Frozen</strong> — cool blue animated glow</li>
+<li><strong>Metallic/Chrome</strong> — repeating gradient for chrome finish</li>
+<li><strong>Rainbow Animated</strong> — cycling spectrum gradient animation</li>
+</ul>
+<h2>How to Use</h2>
+<p>Type your preview text, choose a Google Font, adjust the size, and customize each effect with the controls. Click "Copy CSS" to grab the complete snippet — paste it into your stylesheet and you are done. All effects use pure CSS with no external dependencies.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'css text effects',
+  secondaryKeywords: ['gradient text css', 'neon text css', '3d text css', 'text shadow generator', 'fire text effect css'],
+  metaTitle: 'CSS Text Effects Generator — Free Online Tool',
+  metaDescription: 'Generate gradient, neon glow, 3D, fire, metallic, and rainbow CSS text effects with live preview. Copy pure CSS code with one click.',
+  faqs: [
+    {
+      question: 'Do I need to install anything to use these effects?',
+      answer: 'No. All effects use pure CSS with no external dependencies. The gradient, neon, 3D, and animation effects work in all modern browsers without any libraries.',
+    },
+    {
+      question: 'How does the gradient text effect work?',
+      answer: 'Gradient text uses a CSS linear-gradient as the background, then applies -webkit-background-clip: text and color: transparent. This reveals the gradient through the text shape.',
+    },
+    {
+      question: 'Will the CSS animations affect performance?',
+      answer: 'Animated effects (Fire, Rainbow) use CSS @keyframes animations and are GPU-accelerated. They are generally performant for decorative headings, but avoid using them for large amounts of body text.',
+    },
+    {
+      question: 'Are Google Fonts included in the copied CSS?',
+      answer: 'The copied CSS includes the font-family declaration. You will need to add the corresponding Google Fonts @import or <link> tag to your project separately.',
+    },
+    {
+      question: 'What does the Neon Glow effect generate?',
+      answer: 'Neon glow uses stacked text-shadow values at increasing blur radii with the selected glow color to simulate a neon tube light effect.',
+    },
+    {
+      question: 'How is the 3D text effect created without any libraries?',
+      answer: 'The 3D effect stacks multiple text-shadow values offset diagonally, each slightly darker than the previous, creating the illusion of depth and extrusion.',
+    },
+    {
+      question: 'Can I combine multiple effects?',
+      answer: 'Each effect panel generates a self-contained CSS snippet. You can manually merge compatible properties (e.g., combining stroke with shadow), but some effects like gradient text and neon glow use conflicting color properties.',
+    },
+    {
+      question: 'What is the Outlined/Stroke effect?',
+      answer: 'Outlined text uses -webkit-text-stroke to draw a visible border around each character. You can set the stroke width and color, with an optional transparent or solid fill.',
+    },
+    {
+      question: 'Does this tool work for web fonts I already have?',
+      answer: 'Yes. The font-family in the copied CSS can be replaced with any font available in your project. The effect properties are independent of the font choice.',
+    },
+    {
+      question: 'What browsers support these CSS text effects?',
+      answer: 'All major modern browsers (Chrome, Firefox, Safari, Edge) support these effects. -webkit-background-clip: text has broad support, and -webkit-text-stroke is supported in all current browsers.',
+    },
+  ],
+  howToSteps: [
+    'Type your preview text in the input field at the top (default: "ToolsArena").',
+    'Adjust font size using the slider (24–120px) and select a font family from the dropdown.',
+    'Browse the 10 text effect panels below — each shows a live preview of your text.',
+    'Customize each effect using its controls: pick gradient colors, adjust glow intensity, set shadow offsets, etc.',
+    'The live preview updates instantly as you change any setting.',
+    'Click the "Copy CSS" button on any effect to copy the complete CSS snippet to your clipboard.',
+    'Paste the CSS into your stylesheet — the snippet includes font-family, font-size, and all effect properties.',
+    'Google Fonts are loaded dynamically when you select a font family from the dropdown.',
+  ],
+  relatedToolSlugs: ['css-gradient-generator', 'box-shadow-generator', 'css-animation-generator'],
+  icon: 'Type',
+  isNew: true,
+});
+
+// 8. Currency Converter — Live Exchange Rates
+tools.push({
+  slug: 'currency-converter-live',
+  name: 'Currency Converter — Live Exchange Rates',
+  shortDescription: 'Convert between 170+ currencies with live daily exchange rates.',
+  longDescription: `<p>Convert currencies instantly with <strong>live mid-market exchange rates</strong> updated daily. The <strong>Currency Converter</strong> supports 170+ currencies including INR, NPR, USD, EUR, GBP, AED, SGD, CAD, AUD, JPY, and all major global currencies.</p>
+<h2>Features</h2>
+<ul>
+<li><strong>170+ currencies</strong> — from Indian Rupee to Kuwaiti Dinar and everything in between</li>
+<li><strong>Live rates</strong> — fetched from open.er-api.com and updated every 24 hours</li>
+<li><strong>Instant conversion</strong> — results appear as you type with forward and reverse rate display</li>
+<li><strong>Multi-currency table</strong> — see your amount converted to 20 major currencies at once</li>
+<li><strong>Session caching</strong> — rates are cached in your browser so subsequent conversions are instant</li>
+<li><strong>Swap button</strong> — quickly reverse the conversion direction</li>
+</ul>
+<h2>Important Notes</h2>
+<p>Rates shown are mid-market rates — the midpoint between buy and sell. Banks and remittance services add their own margins of 2-5% on top. Use this tool for reference and financial planning, not for exact transaction amounts. For official Nepal rates, see our NRB Forex Converter tool.</p>`,
+  category: 'converters',
+  targetKeyword: 'currency converter',
+  secondaryKeywords: ['live exchange rate', 'inr to usd', 'usd to inr', 'npr to inr', 'rupee converter'],
+  metaTitle: 'Currency Converter — Live Exchange Rates',
+  metaDescription: 'Convert between 170+ currencies with live daily exchange rates. INR, NPR, USD, EUR, GBP and more. Free online forex converter with multi-currency table.',
+  faqs: [
+    {
+      question: 'How often are exchange rates updated?',
+      answer: 'Rates are fetched from the open.er-api.com free API and update every 24 hours. They are cached in your browser session so subsequent conversions are instant.',
+    },
+    {
+      question: 'How accurate are the rates?',
+      answer: 'Rates are mid-market rates (the midpoint between buy and sell). Banks typically add a 2–5% margin on top. Use this tool for reference and planning — not for actual transaction amounts.',
+    },
+    {
+      question: 'What currencies are supported?',
+      answer: 'Over 170 currencies are supported including INR, NPR, USD, EUR, GBP, AED, SGD, CAD, AUD, JPY, CNY, PKR, BDT, and all major global currencies.',
+    },
+    {
+      question: 'Why is the rate different from my bank or app?',
+      answer: 'Banks and remittance services apply their own fees, margins, and interbank spreads on top of the mid-market rate. This tool shows the raw mid-market rate only.',
+    },
+    {
+      question: 'Can I convert NPR to USD?',
+      answer: 'Yes. Select NPR as the From currency and USD as the To currency. The NRB (Nepal Rastra Bank) daily rate tool is also available for official Nepal rates.',
+    },
+    {
+      question: 'Does this tool work offline after the first load?',
+      answer: 'Rates are cached in sessionStorage after the first fetch. If your session is active, conversions continue to work without additional network requests.',
+    },
+    {
+      question: 'Is this suitable for business or international transactions?',
+      answer: 'This tool is for informational and planning purposes only. For actual business transactions, use your bank or a licensed forex service for precise rates.',
+    },
+    {
+      question: 'What is the INR to USD rate today?',
+      answer: 'The current live rate is shown in the tool and updates daily. As of early 2025, 1 USD ≈ 83–86 INR, but this changes with market conditions.',
+    },
+    {
+      question: 'What is the difference between buy rate and sell rate?',
+      answer: 'Banks use different rates when they buy vs. sell foreign currency. This tool shows the mid-market rate — the average between the two, which is the fairest benchmark.',
+    },
+    {
+      question: 'How do I convert to multiple currencies at once?',
+      answer: 'The Multi-Currency Table at the bottom automatically shows your entered amount converted into all major currencies simultaneously — no extra steps needed.',
+    },
+  ],
+  howToSteps: [
+    'Enter the amount you want to convert in the input field.',
+    'Select the source currency from the From dropdown (default: USD).',
+    'Select the target currency from the To dropdown (default: INR).',
+    'The converted amount appears instantly with live mid-market rates.',
+    'Use the Swap button to reverse the conversion direction.',
+    'View the Multi-Currency Table to see your amount in all major currencies at once.',
+    'Check the Last Updated timestamp to see when rates were fetched.',
+    'Click Refresh to fetch the latest rates if needed.',
+  ],
+  relatedToolSlugs: ['nrb-forex-converter', 'cryptocurrency-calculator', 'unit-converter'],
+  icon: 'DollarSign',
+  isNew: true,
+});
+
+// 9. Demat Account Charges Calculator
+tools.push({
+  slug: 'demat-charges-calculator',
+  name: 'Demat Account Charges Calculator',
+  shortDescription: 'Calculate exact brokerage, STT, GST and all trading charges for major Indian brokers.',
+  longDescription: `<p>Ever wondered how much of your stock trading profit goes to charges? The <strong>Demat Account Charges Calculator</strong> computes every fee involved in an Indian stock trade — brokerage, STT, exchange charges, SEBI fees, GST, stamp duty, and DP charges — for Zerodha, Upstox, Groww, Angel One, HDFC Securities, ICICI Direct, and Sharekhan.</p>
+<h2>What Gets Calculated</h2>
+<ul>
+<li><strong>Brokerage</strong> — flat ₹20 for discount brokers, percentage-based for full-service</li>
+<li><strong>STT</strong> — Securities Transaction Tax at government-mandated rates</li>
+<li><strong>Exchange charges</strong> — NSE transaction fee (0.00322%)</li>
+<li><strong>SEBI turnover charges</strong> — ₹10 per crore (0.0001%)</li>
+<li><strong>GST</strong> — 18% on brokerage + exchange charges</li>
+<li><strong>Stamp duty</strong> — on buy side, varies by transaction type</li>
+<li><strong>DP charges</strong> — ₹13.5 + GST per scrip for delivery sells</li>
+</ul>
+<h2>Net P&L and Break-Even</h2>
+<p>See your net profit/loss after all charges and the exact break-even price you need to sell at. Supports Equity Intraday, Delivery, Futures, Options, Currency, and Commodity segments. Compare charges across brokers to find the most cost-effective option for your trading style.</p>`,
+  category: 'calculators',
+  targetKeyword: 'demat charges calculator',
+  secondaryKeywords: ['brokerage calculator', 'STT calculator', 'zerodha charges', 'upstox charges', 'trading charges'],
+  metaTitle: 'Demat Charges Calculator — Free Online Tool',
+  metaDescription: 'Calculate all trading charges including brokerage, STT, GST, stamp duty, SEBI charges and DP charges for Zerodha, Upstox, Groww and more brokers.',
+  faqs: [
+    {
+      question: 'What charges are deducted on stock trades in India?',
+      answer: 'Indian stock trades attract brokerage, Securities Transaction Tax (STT), Exchange Transaction Charges, SEBI turnover charges, GST on brokerage and transaction charges, Stamp Duty, and DP charges on delivery sells.',
+    },
+    {
+      question: 'How is brokerage calculated for Zerodha?',
+      answer: 'Zerodha charges ₹0 for equity delivery, flat ₹20 or 0.03% (whichever is lower) for intraday and F&O trades. Options are also ₹20 per executed order.',
+    },
+    {
+      question: 'What is STT (Securities Transaction Tax)?',
+      answer: 'STT is a government tax on securities transactions. For equity delivery it is 0.1% on both buy and sell. For intraday it is 0.025% only on sell. For futures it is 0.0125% on sell side. For options it is ₹50 per lakh of premium on sell.',
+    },
+    {
+      question: 'What are DP charges in stock trading?',
+      answer: 'DP (Depository Participant) charges are levied when you sell delivery-based shares. Zerodha charges ₹13.5 + GST per scrip per day. These charges are fixed regardless of quantity sold.',
+    },
+    {
+      question: 'What is the break-even price in trading?',
+      answer: 'Break-even price is the minimum sell price (for a buy trade) at which you neither make a profit nor a loss after all charges. If you sell below the break-even price, you incur a net loss.',
+    },
+    {
+      question: 'Is GST charged on brokerage?',
+      answer: 'Yes. GST at 18% is charged on brokerage plus exchange transaction charges. It is not charged on STT, stamp duty, or SEBI charges directly.',
+    },
+    {
+      question: 'What is the SEBI turnover charge?',
+      answer: 'SEBI charges ₹10 per crore of turnover (0.0001%) on all market transactions. This is a regulatory fee paid to the Securities and Exchange Board of India.',
+    },
+    {
+      question: 'Do discount brokers really save money?',
+      answer: 'Yes, especially for active traders. Full-service brokers may charge 0.3–0.5% per trade, while discount brokers like Zerodha and Upstox charge flat ₹20. For large trades, the savings can be substantial.',
+    },
+    {
+      question: 'Are charges different for NSE and BSE?',
+      answer: 'Exchange transaction charges differ slightly. NSE charges 0.00322% for equity cash. BSE charges vary by segment. STT, SEBI charges, and stamp duty remain the same on both exchanges.',
+    },
+    {
+      question: 'What is stamp duty on stock trades?',
+      answer: 'Stamp duty is charged on the buy side only: 0.015% for delivery trades and 0.003% for intraday and F&O trades. It is collected by the state government.',
+    },
+  ],
+  howToSteps: [
+    'Select your transaction type: Equity Intraday, Delivery, Futures, Options, etc.',
+    'Enter the buy price and sell price per share or lot.',
+    'Enter the quantity of shares or number of lots.',
+    'Choose your broker from the dropdown list.',
+    'Click Calculate Charges to see a full itemized breakdown.',
+    'Review the table showing brokerage, STT, GST, stamp duty and all other charges.',
+    'Check the net P&L after all charges and the break-even price.',
+    'Compare results by switching between different brokers.',
+  ],
+  relatedToolSlugs: ['sip-calculator', 'mutual-fund-calculator', 'fd-rd-calculator'],
+  icon: 'BarChart2',
+  isNew: true,
+});
+
+// 10. Detailed Age Calculator
+tools.push({
+  slug: 'detailed-age-calculator',
+  name: 'Detailed Age Calculator',
+  shortDescription: 'Exact age breakdown with live seconds counter and milestones.',
+  longDescription: `<p>Want to know your exact age down to the second? The <strong>Detailed Age Calculator</strong> goes way beyond years — it gives you a complete age breakdown in months, weeks, days, hours, minutes, and a live-ticking seconds counter.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>Precise age</strong> — years, months, and days with leap year handling</li>
+<li><strong>Live seconds counter</strong> — watch your age tick up in real time</li>
+<li><strong>Life milestones</strong> — when you turned (or will turn) 1,000 days, 5,000 days, 10,000 days, 100 months, and 1,000 weeks old</li>
+<li><strong>Next birthday countdown</strong> — days remaining and day of the week</li>
+<li><strong>Zodiac sign</strong> — Western zodiac with element and date range</li>
+<li><strong>Birthstone</strong> — traditional birth month gemstone</li>
+<li><strong>India history</strong> — a notable event from your birth year (1950–2010)</li>
+</ul>
+<h2>Flexible Date Options</h2>
+<p>Calculate your age as of today, or pick any custom "Calculate to" date to find your age at a past or future point. Copy your full age summary to clipboard with one click. All calculations handle leap years correctly — even Feb 29 birthdays.</p>`,
+  category: 'calculators',
+  targetKeyword: 'detailed age calculator',
+  secondaryKeywords: ['exact age calculator', 'age in days', 'age in seconds', 'birthday countdown', 'zodiac sign calculator'],
+  metaTitle: 'Detailed Age Calculator — Free Online Tool',
+  metaDescription: 'Calculate your exact age in years, months, days, hours, and live seconds. See zodiac sign, birthstone, milestones, and next birthday countdown.',
+  faqs: [
+    {
+      question: 'How exact is the age calculation?',
+      answer: 'The age is calculated to the exact day using your birth date and the selected "Calculate to" date. The live seconds counter updates every second using the current time.',
+    },
+    {
+      question: 'Can I calculate age for a past or future date?',
+      answer: 'Yes. Use the "Calculate to" date picker to calculate age as of any date in the past or future.',
+    },
+    {
+      question: 'How is the "total seconds" calculated?',
+      answer: 'Total seconds is calculated from the exact birth datetime (midnight of birth date) to the current moment, and ticks up live every second.',
+    },
+    {
+      question: 'What zodiac signs are covered?',
+      answer: 'All 12 Western zodiac signs are supported based on the Gregorian calendar month and day of your birth date.',
+    },
+    {
+      question: 'What are "milestones"?',
+      answer: 'Milestones show you on which calendar date you turned (or will turn) 1000 days old, 10000 days old, 100 months old, and 1000 weeks old.',
+    },
+    {
+      question: 'What is the birth month gemstone?',
+      answer: 'Traditional birthstones are listed for each month (e.g., January = Garnet, July = Ruby). These follow the standard modern birthstone list.',
+    },
+    {
+      question: 'How is the next birthday calculated?',
+      answer: 'The tool finds the next occurrence of your birth month and day after today, calculates the number of days remaining, and shows the day of the week.',
+    },
+    {
+      question: 'Does this work for all years including leap years?',
+      answer: 'Yes. Leap years are handled correctly. If you were born on Feb 29, your birthday is celebrated on Feb 28 in non-leap years.',
+    },
+    {
+      question: 'Is there a historical note for my birth year?',
+      answer: 'Yes. For birth years 1950–2010, a notable event from that year in India is displayed as a fun fact.',
+    },
+    {
+      question: 'Can I share my age card?',
+      answer: 'You can copy your age summary using the copy button. A shareable image card option is planned for a future update.',
+    },
+  ],
+  howToSteps: [
+    'Enter your date of birth using the date picker.',
+    'Optionally change the "Calculate to" date — it defaults to today.',
+    'View your exact age in years, months, and days instantly.',
+    'Watch the live seconds counter tick up in real time.',
+    'Scroll to see your total age expressed in weeks, days, hours, minutes, and seconds.',
+    'Check the "Milestones" section for your 1000th day, 10000th day, and 100th month dates.',
+    'Find your Western zodiac sign and birth month gemstone.',
+    'See your next birthday countdown with the exact day of the week it falls on.',
+  ],
+  relatedToolSlugs: ['age-calculator', 'pregnancy-calculator', 'date-calculator'],
+  icon: 'Calendar',
+  isNew: true,
+});
+
+// 11. DNS Lookup Tool
+tools.push({
+  slug: 'dns-lookup',
+  name: 'DNS Lookup Tool',
+  shortDescription: 'Query DNS records for any domain — A, MX, TXT, NS, CNAME, SOA, and more.',
+  longDescription: `<p>Need to check DNS records for a domain? The <strong>DNS Lookup Tool</strong> queries 10 record types in real time using Cloudflare's DNS-over-HTTPS API — directly from your browser with encrypted queries.</p>
+<h2>Supported Record Types</h2>
+<ul>
+<li><strong>A</strong> — IPv4 address records</li>
+<li><strong>AAAA</strong> — IPv6 address records</li>
+<li><strong>CNAME</strong> — canonical name (alias) records</li>
+<li><strong>MX</strong> — mail exchange records with priority</li>
+<li><strong>NS</strong> — nameserver records</li>
+<li><strong>TXT</strong> — text records (SPF, DKIM, DMARC)</li>
+<li><strong>SOA</strong> — start of authority with zone details</li>
+<li><strong>PTR, SRV, CAA</strong> — reverse DNS, service, and CA authorization records</li>
+</ul>
+<h2>Key Features</h2>
+<p>Enter any domain name (URLs are auto-normalized) and click "Check All" to query every record type simultaneously, or select specific types. Results show TTL in human-readable format, copy buttons for each value, and collapsible sections. MX records display priority, SOA records show parsed zone details, and TXT records reveal email security configurations.</p>
+<p>All queries go directly from your browser to Cloudflare DNS — no data passes through ToolsArena servers.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'dns lookup',
+  secondaryKeywords: ['dns records', 'mx record lookup', 'ns lookup', 'txt record checker', 'cname lookup'],
+  metaTitle: 'DNS Lookup Tool — Free Online Tool',
+  metaDescription: 'Query A, AAAA, MX, NS, TXT, CNAME, SOA, and more DNS records for any domain. Uses Cloudflare DNS-over-HTTPS — fast, encrypted, and private.',
+  faqs: [
+    {
+      question: 'What DNS record types does this tool support?',
+      answer: 'The tool supports A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, and CAA record types using the Cloudflare DNS-over-HTTPS API.',
+    },
+    {
+      question: 'Is my query data sent to any third-party servers?',
+      answer: 'Queries are sent directly from your browser to the Cloudflare DNS-over-HTTPS endpoint (cloudflare-dns.com). No data passes through ToolsArena servers.',
+    },
+    {
+      question: 'Why does the tool strip http:// and www from my input?',
+      answer: 'DNS records are associated with domain names, not URLs. The tool automatically normalizes your input so you can paste full URLs without issue.',
+    },
+    {
+      question: 'What does TTL mean?',
+      answer: 'TTL (Time to Live) indicates how long a DNS record is cached by resolvers. A TTL of 3600 means the record is cached for 1 hour before being re-fetched.',
+    },
+    {
+      question: 'Why might some record types return no results?',
+      answer: 'Not all domains have every record type configured. For example, a domain might have no MX records if it does not handle email, or no AAAA records if it lacks IPv6 support.',
+    },
+    {
+      question: 'How is this different from running `nslookup` or `dig`?',
+      answer: 'This tool uses DNS-over-HTTPS which encrypts your DNS queries. It provides a visual interface and works directly in your browser without installing any software.',
+    },
+    {
+      question: 'What does the SOA record tell me?',
+      answer: 'The SOA (Start of Authority) record contains administrative information about the zone: the primary nameserver, responsible email address, serial number, and timing parameters for zone transfers.',
+    },
+    {
+      question: 'Can I look up PTR records for reverse DNS?',
+      answer: 'Yes. For PTR lookups, enter the IP address in reverse-dotted notation with .in-addr.arpa appended (e.g., 1.0.168.192.in-addr.arpa), or simply enter the IP and the tool will format it automatically.',
+    },
+    {
+      question: 'What do MX priority numbers mean?',
+      answer: 'Lower MX priority numbers indicate higher preference. Mail servers will attempt delivery to the lowest-numbered MX record first, falling back to higher numbers if unavailable.',
+    },
+    {
+      question: 'Why do TXT records sometimes show SPF or DKIM data?',
+      answer: 'SPF, DKIM, and DMARC email authentication records are stored as TXT records. This tool displays all TXT records, including these security configurations, so you can audit email deliverability settings.',
+    },
+  ],
+  howToSteps: [
+    'Enter a domain name in the input field (e.g., example.com).',
+    'Click "Check All" to fetch all DNS record types at once, or select a specific record type from the tabs.',
+    'View results organized by record type with TTL displayed in human-readable format.',
+    'Click the copy icon next to any record value to copy it to your clipboard.',
+    'Use the record type tabs to switch between A, AAAA, MX, NS, TXT, CNAME, SOA, and other records.',
+    'MX records show mail server priority and hostname for email routing analysis.',
+    'TXT records reveal SPF, DKIM, and DMARC configurations for email security auditing.',
+    'SOA records display zone authority details including serial number and refresh intervals.',
+  ],
+  relatedToolSlugs: ['robots-txt-generator', 'og-preview-tester', 'roast-my-website'],
+  icon: 'Globe',
+  isNew: true,
+});
+
+// 12. Electricity Unit Calculator
+tools.push({
+  slug: 'electricity-unit-calculator',
+  name: 'Electricity Unit Calculator',
+  shortDescription: 'Calculate monthly electricity bill appliance-wise with Indian tariffs.',
+  longDescription: `<p>Wondering why your electricity bill is so high? The <strong>Electricity Unit Calculator</strong> breaks down your monthly consumption appliance by appliance, so you can see exactly which devices are costing you the most.</p>
+<h2>How It Works</h2>
+<p>The tool comes pre-loaded with 19 common Indian household appliances — AC, ceiling fan, LED bulbs, refrigerator, washing machine, geyser, TV, laptop, and more — each with realistic default wattages. Set the hours per day and days per month each appliance runs, and the calculator instantly shows total kWh consumed and estimated monthly bill.</p>
+<h2>Indian State Tariffs</h2>
+<p>Select your state from the dropdown to use indicative electricity rates for Delhi, Maharashtra, Karnataka, UP, Tamil Nadu, Gujarat, Rajasthan, West Bengal, and Punjab. Or enter a custom per-unit rate if you know your exact tariff.</p>
+<ul>
+<li><strong>Appliance-wise kWh</strong> — see which device consumes the most</li>
+<li><strong>Monthly bill estimate</strong> — at your state's average tariff</li>
+<li><strong>Savings tips</strong> — triggered when consumption exceeds 300 units</li>
+<li><strong>Add/remove appliances</strong> — customize the list for your household</li>
+</ul>
+<p>Note: actual bills include slab-based tariffs, fixed charges, and taxes. This calculator uses a simplified flat rate for estimation.</p>`,
+  category: 'calculators',
+  targetKeyword: 'electricity calculator',
+  secondaryKeywords: ['electricity bill calculator', 'unit calculator', 'appliance power consumption', 'kwh calculator', 'india electricity tariff'],
+  metaTitle: 'Electricity Unit Calculator — Free Online Tool',
+  metaDescription: 'Calculate your monthly electricity bill appliance by appliance. Supports Indian state tariffs, custom rates, and energy-saving tips. Free online tool.',
+  faqs: [
+    {
+      question: 'How is electricity consumption (kWh) calculated?',
+      answer: 'Energy consumption in kWh = (Wattage × Hours per day × Days per month) ÷ 1000. For example, a 1500W AC running 8 hours/day for 30 days consumes 1500 × 8 × 30 ÷ 1000 = 360 kWh (units).',
+    },
+    {
+      question: 'What is a unit of electricity?',
+      answer: '1 unit of electricity = 1 kilowatt-hour (kWh). It is the energy consumed by a 1000W appliance running for 1 hour. Your electricity bill is calculated based on total units consumed per month.',
+    },
+    {
+      question: 'Why does my actual bill differ from the calculated estimate?',
+      answer: 'Electricity tariffs in India are slab-based — the per-unit rate increases as consumption rises. This calculator uses a simplified flat rate. Other charges like fixed/demand charges, meter rental, taxes, and surcharges also contribute to the actual bill.',
+    },
+    {
+      question: 'What is the average electricity consumption of a household in India?',
+      answer: 'An average Indian middle-class household with an AC, refrigerator, washing machine, TV, fans, and lights consumes approximately 200–400 units per month. Households with multiple ACs can exceed 600–800 units.',
+    },
+    {
+      question: 'How can I reduce my electricity bill?',
+      answer: 'Key savings tips: Use 5-star BEE-rated appliances, switch to LED lighting, set AC temperature to 24°C (saves ~6% per degree above 18°C), use inverter ACs and refrigerators, and avoid standby power consumption.',
+    },
+    {
+      question: 'What is the wattage of a 1.5-ton AC?',
+      answer: 'A standard non-inverter 1.5-ton AC consumes approximately 1400–1600W. An inverter AC of the same capacity consumes 800–1200W on average due to variable compressor speed. This calculator uses 1500W as the default.',
+    },
+    {
+      question: 'What does BEE star rating mean for appliances?',
+      answer: 'BEE (Bureau of Energy Efficiency) star rating indicates energy efficiency — 5-star is the most efficient, 1-star is the least. A 5-star AC can be 20–30% more energy efficient than a 1-star model of the same capacity.',
+    },
+    {
+      question: 'Are the state electricity tariffs accurate?',
+      answer: 'The tariff values shown are indicative average rates. Indian state electricity tariffs are slab-based and vary by consumer category (domestic, commercial, industrial). Check your state DISCOM website or electricity bill for the exact applicable rate.',
+    },
+    {
+      question: 'How much electricity does a refrigerator consume?',
+      answer: 'A typical 200–300 litre single-door refrigerator consumes 30–50 units/month. A 5-star refrigerator will consume less. The default wattage of 150W represents average consumption; actual values depend on the model and usage patterns.',
+    },
+    {
+      question: 'Can I save this calculation for later?',
+      answer: 'The appliance list and settings are maintained during your session. For permanent saving, use your browser\'s print or screenshot functionality to save the results. A future update may add localStorage persistence.',
+    },
+  ],
+  howToSteps: [
+    'Review the pre-built appliance list with typical wattage values already filled in.',
+    'Set the hours per day and days per month each appliance is used.',
+    'Edit the wattage of any appliance if yours differs from the default value.',
+    'Add new appliances using the Add Appliance button, or remove ones you do not use.',
+    'Select your state from the dropdown to use the indicative tariff rate for your region.',
+    'Or enter a custom electricity tariff (₹ per unit) if you know your exact rate.',
+    'View total units consumed, estimated monthly bill, most power-hungry appliance, and savings tips.',
+  ],
+  relatedToolSlugs: ['gst-breakdown-calculator', 'emi-calculator', 'salary-calculator'],
+  icon: 'Zap',
+  isNew: true,
+});
+
+// 13. EXIF Viewer
+tools.push({
+  slug: 'exif-viewer',
+  name: 'EXIF Viewer',
+  shortDescription: 'Extract and view EXIF metadata from photos including GPS, camera settings, and more.',
+  longDescription: `<p>Every photo your camera or smartphone takes embeds hidden metadata called <strong>EXIF data</strong>. The <strong>EXIF Viewer</strong> extracts and displays this metadata instantly — camera model, aperture, ISO, shutter speed, GPS location, date taken, and more — all in your browser.</p>
+<h2>What EXIF Data Is Shown</h2>
+<ul>
+<li><strong>Camera Info</strong> — make, model, and software used</li>
+<li><strong>Capture Settings</strong> — aperture (f-stop), ISO, exposure time, focal length, flash</li>
+<li><strong>GPS Location</strong> — latitude, longitude, altitude with Google Maps link</li>
+<li><strong>Date & Time</strong> — when the photo was taken and last modified</li>
+<li><strong>Image Info</strong> — dimensions, orientation, color space, bits per sample</li>
+<li><strong>Copyright</strong> — artist and copyright fields if present</li>
+</ul>
+<h2>Privacy First</h2>
+<p>Your image is processed entirely in the browser using the exifr JavaScript library. No file is ever uploaded to any server. Supports JPG, JPEG, TIFF, HEIC (iPhone photos), and PNG. Download all extracted metadata as a JSON file for further analysis.</p>
+<p>Tip: Social media platforms strip EXIF data before sharing. For best results, use original files directly from your camera or phone.</p>`,
+  category: 'image-tools',
+  targetKeyword: 'exif viewer',
+  secondaryKeywords: ['exif data', 'photo metadata', 'GPS location photo', 'camera settings viewer', 'image metadata extractor'],
+  metaTitle: 'EXIF Viewer — Free Online Tool',
+  metaDescription: 'View hidden EXIF metadata from photos: camera model, aperture, ISO, GPS location, and more. Supports JPG, TIFF, HEIC. 100% browser-based and private.',
+  faqs: [
+    {
+      question: 'What is EXIF data?',
+      answer: 'EXIF (Exchangeable Image File Format) is metadata embedded in image files by cameras and smartphones. It includes camera make/model, capture settings, date/time, and sometimes GPS location.',
+    },
+    {
+      question: 'What image formats support EXIF?',
+      answer: 'EXIF is most commonly found in JPG/JPEG and TIFF files. HEIC files (iPhone photos) also carry rich EXIF data. PNG files rarely contain EXIF, but the tool will still attempt extraction.',
+    },
+    {
+      question: 'Is my image uploaded to a server?',
+      answer: 'No. All EXIF extraction is done entirely in your browser using the exifr library. Your photo never leaves your device.',
+    },
+    {
+      question: 'Why does my image show no EXIF data?',
+      answer: 'Social media platforms (Instagram, Facebook, Twitter/X, WhatsApp) strip EXIF metadata before saving or sharing images. Screenshots also contain no EXIF. Use original files direct from your camera or phone.',
+    },
+    {
+      question: 'Can I see where a photo was taken?',
+      answer: 'If the photo contains GPS coordinates (many smartphones embed these by default), the GPS section will display the latitude/longitude and a Google Maps link.',
+    },
+    {
+      question: 'What does the Download JSON button do?',
+      answer: 'It exports all extracted EXIF data as a formatted JSON file, which you can open in any text editor or use for further processing.',
+    },
+    {
+      question: 'What is the Orientation field?',
+      answer: 'Orientation indicates how the camera was held when the photo was taken (e.g., landscape, portrait, upside-down). Values range from 1–8 per the EXIF specification.',
+    },
+    {
+      question: 'What is FNumber (aperture)?',
+      answer: 'FNumber is the lens aperture (f-stop) used when the photo was taken, e.g., f/1.8 or f/8. Lower values mean wider aperture and more background blur (bokeh).',
+    },
+    {
+      question: 'Can I use this tool to check if a photo has been edited?',
+      answer: 'The Software field in Camera Info shows which software last processed the image. Some editing tools update the DateTime field. However, EXIF alone is not a reliable forgery detection method.',
+    },
+    {
+      question: 'How do I remove EXIF data from a photo?',
+      answer: 'Use our EXIF Metadata Remover tool (linked in Related Tools) to strip all metadata from your images before sharing them online.',
+    },
+  ],
+  howToSteps: [
+    'Click the upload area or drag and drop a photo to upload.',
+    'Supported formats: JPG, JPEG, TIFF, HEIC, PNG.',
+    'EXIF metadata is extracted instantly in your browser — no upload to any server.',
+    'Browse the organized cards: Camera Info, Capture Settings, GPS Location, Image Info, and more.',
+    'If GPS data is present, click the Google Maps link to view the location.',
+    'Use the Download JSON button to save all extracted metadata as a JSON file.',
+    'Social media images often have EXIF stripped — use original files for best results.',
+  ],
+  relatedToolSlugs: ['image-compressor', 'image-resizer', 'image-to-base64'],
+  icon: 'Info',
+  isNew: true,
+});
+
+// 14. FD Maturity Calculator
+tools.push({
+  slug: 'fd-maturity-calculator',
+  name: 'FD Maturity Calculator',
+  shortDescription: 'Calculate FD maturity value with different compounding options and bank rate comparisons.',
+  longDescription: `<p>Planning a Fixed Deposit? The <strong>FD Maturity Calculator</strong> shows you exactly how much your money will grow with any compounding frequency — monthly, quarterly, half-yearly, or yearly — and compares returns across India's top banks.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>Maturity amount</strong> — the total you receive when the FD matures</li>
+<li><strong>Interest earned</strong> — the profit above your principal</li>
+<li><strong>Effective Annual Yield</strong> — the true annual return after compounding (EAY)</li>
+<li><strong>Bank comparison</strong> — side-by-side returns from SBI (7.0%), HDFC Bank (7.1%), ICICI Bank (7.1%), Axis Bank (7.1%), and Bajaj Finance (7.9%)</li>
+</ul>
+<h2>Compounding Matters</h2>
+<p>The same 7% interest rate yields different returns depending on how often it compounds. Monthly compounding gives the highest effective return (7.23% EAY), followed by quarterly (7.19%), half-yearly (7.12%), and yearly (7.0%). Use the compounding toggle to compare and pick the best option for your deposit.</p>
+<p>FD interest is taxable at your income slab rate. TDS at 10% applies when interest exceeds ₹40,000/year (₹50,000 for senior citizens). Submit Form 15G/15H if your income is below taxable limits.</p>`,
+  category: 'calculators',
+  targetKeyword: 'FD calculator',
+  secondaryKeywords: ['fixed deposit maturity', 'FD interest calculator', 'compound interest FD', 'bank FD rates', 'SBI FD'],
+  metaTitle: 'FD Maturity Calculator — Free Online Tool',
+  metaDescription: 'Calculate Fixed Deposit maturity amount with monthly, quarterly, or yearly compounding. Compare FD returns across SBI, HDFC, ICICI, Axis, and Bajaj Finance.',
+  faqs: [
+    {
+      question: 'Which compounding frequency gives the highest FD returns?',
+      answer: 'Monthly compounding gives the highest effective return for the same nominal rate. For example, 7% compounded monthly yields an effective annual rate of 7.23%, compared to 7.19% for quarterly and 7.12% for half-yearly compounding.',
+    },
+    {
+      question: 'What is effective annual yield in FD?',
+      answer: 'Effective Annual Yield (EAY) is the actual annual return after accounting for compounding. A 7% FD compounded quarterly has an EAY of approximately 7.19%. This helps compare FDs with different compounding frequencies on equal footing.',
+    },
+    {
+      question: 'Is FD interest taxable?',
+      answer: 'Yes. FD interest is added to your income and taxed at your applicable slab rate. If interest exceeds ₹40,000 per year (₹50,000 for senior citizens) per bank, TDS at 10% is deducted. Submit Form 15G/15H if your income is below taxable limits.',
+    },
+    {
+      question: 'What is the minimum FD amount in Indian banks?',
+      answer: 'Most public sector banks have a minimum FD of ₹1,000. Private banks and NBFCs may require ₹5,000-₹10,000. Some small finance banks and NBFCs like Bajaj Finance require a minimum of ₹15,000.',
+    },
+    {
+      question: 'Should I choose cumulative or non-cumulative FD?',
+      answer: 'Cumulative FD reinvests interest and pays at maturity — suitable for wealth building. Non-cumulative FD pays interest monthly/quarterly — better for regular income needs like retirees. Cumulative FD gives higher overall return due to compounding.',
+    },
+  ],
+  howToSteps: [
+    'Enter your FD principal amount (the amount you plan to deposit).',
+    'Enter the annual interest rate offered by your bank.',
+    'Set the FD tenure in months or years using the toggle.',
+    'Select the compounding frequency: monthly, quarterly, half-yearly, or yearly.',
+    'View the maturity amount, total interest earned, and effective annual yield.',
+    'Scroll down to compare your returns with typical FD rates from leading banks.',
+  ],
+  relatedToolSlugs: ['fd-rd-calculator', 'ppf-calculator', 'compound-interest-calculator'],
+  icon: 'PiggyBank',
+  isNew: true,
+});
+
+// 15. GST Breakdown Calculator
+tools.push({
+  slug: 'gst-breakdown-calculator',
+  name: 'GST Breakdown Calculator',
+  shortDescription: 'Calculate GST with CGST/SGST/IGST breakdown for all slabs.',
+  longDescription: `<p>Need to quickly calculate GST on an amount? The <strong>GST Breakdown Calculator</strong> gives you the full CGST, SGST, and IGST split for any amount across all Indian GST slabs — 0%, 5%, 12%, 18%, and 28%.</p>
+<h2>Features</h2>
+<ul>
+<li><strong>GST Exclusive</strong> — enter base price, GST is added on top</li>
+<li><strong>GST Inclusive</strong> — enter total price, calculator extracts the base and tax</li>
+<li><strong>Intrastate (CGST+SGST)</strong> — for same-state transactions</li>
+<li><strong>Interstate (IGST)</strong> — for different-state transactions</li>
+<li><strong>Cess support</strong> — additional cess for 28% slab goods like automobiles and tobacco</li>
+<li><strong>Copy & Print</strong> — copy the full breakdown to clipboard or print for records</li>
+</ul>
+<h2>Indian Number Formatting</h2>
+<p>All amounts are displayed in Indian number format (lakhs and crores). The calculator uses standard GST formulas and shows base amount, individual tax components, total tax, and final amount in a clean table layout. Perfect for freelancers, small businesses, and accountants who need quick GST calculations.</p>
+<p>Note: GST applicability depends on HSN/SAC codes and government notifications. Always verify with your CA for professional advice.</p>`,
+  category: 'calculators',
+  targetKeyword: 'gst calculator',
+  secondaryKeywords: ['cgst sgst igst', 'gst breakdown', 'inclusive exclusive gst', 'indian tax calculator', 'gst slab'],
+  metaTitle: 'GST Breakdown Calculator — Free Online Tool',
+  metaDescription: 'Calculate GST instantly with full CGST, SGST and IGST split. Supports all GST slabs, inclusive/exclusive modes, and cess. Free online calculator.',
+  faqs: [
+    {
+      question: 'What is the difference between CGST, SGST, and IGST?',
+      answer: 'CGST (Central GST) and SGST (State GST) are levied on intrastate transactions — each is half the applicable GST rate. IGST (Integrated GST) is levied on interstate transactions at the full GST rate and is collected by the Central Government.',
+    },
+    {
+      question: 'When should I use Interstate (IGST) vs Intrastate (CGST+SGST)?',
+      answer: 'Use IGST when the supplier and buyer are in different states. Use CGST+SGST when both supplier and buyer are in the same state or union territory.',
+    },
+    {
+      question: 'What is GST-inclusive vs GST-exclusive mode?',
+      answer: 'GST-exclusive (Add GST): You enter the base price and GST is added on top. GST-inclusive (Remove GST): You enter the total price already including GST and the calculator extracts the base amount and tax.',
+    },
+    {
+      question: 'Which goods fall under the 5% GST slab?',
+      answer: 'Essential goods like packaged food items, healthcare products, life-saving drugs, and some agricultural equipment fall under the 5% GST slab.',
+    },
+    {
+      question: 'Which goods fall under the 12% GST slab?',
+      answer: 'Processed foods, computers, mobile phones, business class air tickets, and certain medical equipment are taxed at 12% GST.',
+    },
+    {
+      question: 'Which goods fall under the 18% GST slab?',
+      answer: 'Most services, electronics, capital goods, industrial intermediaries, and items like hair dryers, vacuum cleaners fall under the 18% slab.',
+    },
+    {
+      question: 'Which goods fall under the 28% GST slab?',
+      answer: 'Luxury and demerit goods like automobiles, cement, tobacco, aerated drinks, and high-end electronics attract 28% GST, often with an additional cess.',
+    },
+    {
+      question: 'What is GST Cess?',
+      answer: 'GST Cess is an additional levy on top of the 28% GST on certain sin/luxury goods like tobacco, pan masala, and large automobiles. It is collected to compensate states for revenue loss during GST transition.',
+    },
+    {
+      question: 'Is this calculator applicable for composition scheme dealers?',
+      answer: 'No. This calculator is for regular GST taxpayers. Composition scheme dealers pay GST at a flat rate (1%, 2%, 5%, or 6%) on turnover and cannot charge GST to customers.',
+    },
+    {
+      question: 'How accurate is this GST calculator?',
+      answer: 'The calculator uses standard GST formulas and Indian number formatting. However, always verify with your CA or GST portal as actual applicability depends on HSN/SAC codes and specific notifications.',
+    },
+  ],
+  howToSteps: [
+    'Enter the base amount or total amount in the input field.',
+    'Select whether the amount is GST-exclusive (add GST) or GST-inclusive (remove GST).',
+    'Choose the applicable GST rate from the available slabs: 0%, 5%, 12%, 18%, or 28%.',
+    'Select the transaction type: Intrastate (same state) for CGST+SGST split, or Interstate for IGST.',
+    'For 28% slab, optionally enter the cess percentage if applicable.',
+    'View the complete GST breakdown table showing base amount, tax components, and final total.',
+    'Copy the results to clipboard or print the breakdown for your records.',
+  ],
+  relatedToolSlugs: ['gst-calculator', 'gstin-validator', 'emi-calculator'],
+  icon: 'Receipt',
+  isNew: true,
+});
+
+// 16. GST Invoice Generator
+tools.push({
+  slug: 'gst-invoice-generator',
+  name: 'GST Invoice Generator',
+  shortDescription: 'Create professional GST invoices with CGST/SGST/IGST calculations and print instantly.',
+  longDescription: `<p>Generate <strong>professional, GST-compliant tax invoices</strong> in minutes — no software to install, no signup required. The <strong>GST Invoice Generator</strong> handles GSTIN validation, HSN codes, automatic CGST/SGST/IGST calculations, and amount-in-words conversion.</p>
+<h2>What Is Included</h2>
+<ul>
+<li><strong>Seller & buyer details</strong> — business name, GSTIN, address, and phone</li>
+<li><strong>Multiple line items</strong> — description, HSN/SAC code, quantity, unit price, and GST rate per item</li>
+<li><strong>Auto GST split</strong> — intra-state (CGST+SGST) or inter-state (IGST) per line item</li>
+<li><strong>Amount in words</strong> — Indian number system with Rupees and Paise</li>
+<li><strong>Print-ready layout</strong> — clean invoice preview with signature line and jurisdiction</li>
+</ul>
+<h2>How to Use</h2>
+<p>Fill in seller details, buyer details, invoice number and date, add your line items with GST rates, and click Preview Invoice. The tool calculates all taxes automatically. Use your browser's Print dialog to save as PDF or print directly. All processing happens in your browser — your invoice data stays private.</p>
+<p>Supports all GST rates (0%, 5%, 12%, 18%, 28%) and works for both goods (HSN) and services (SAC) invoices.</p>`,
+  category: 'calculators',
+  targetKeyword: 'GST invoice generator',
+  secondaryKeywords: ['GST bill maker', 'CGST SGST calculator', 'IGST invoice', 'GST invoice format', 'HSN code invoice'],
+  metaTitle: 'GST Invoice Generator — Free Online Tool',
+  metaDescription: 'Generate professional GST invoices with GSTIN, HSN codes, CGST/SGST/IGST calculations, and amount in words. Print or download as PDF — free, no signup.',
+  faqs: [
+    {
+      question: 'When should I use CGST+SGST vs IGST on an invoice?',
+      answer: 'Use CGST+SGST when seller and buyer are in the same state (intra-state supply). Use IGST when seller and buyer are in different states (inter-state supply). For intra-state, each is half the total GST rate (e.g., 9% CGST + 9% SGST for 18% GST).',
+    },
+    {
+      question: 'Is GSTIN mandatory on a GST invoice?',
+      answer: 'Yes, your GSTIN (seller) is mandatory on every GST tax invoice. The buyer\'s GSTIN is required only when the buyer wants to claim Input Tax Credit (ITC). For B2C transactions, buyer GSTIN is optional.',
+    },
+    {
+      question: 'What is an HSN code and is it mandatory?',
+      answer: 'HSN (Harmonized System of Nomenclature) code classifies goods for GST purposes. Businesses with turnover above ₹5 crore must use 6-digit HSN. Between ₹1.5-5 crore, 4-digit HSN is required. Below ₹1.5 crore, HSN is optional but recommended.',
+    },
+    {
+      question: 'What details are mandatory on a GST tax invoice?',
+      answer: 'A valid GST tax invoice must contain: supplier name, address, GSTIN; invoice number and date; recipient details; HSN/SAC codes; description, quantity, unit price; taxable value; applicable GST rate and amount; total value; and signature or digital authentication.',
+    },
+    {
+      question: 'Can I use this tool for a service invoice too?',
+      answer: 'Yes. For services, use the SAC (Service Accounting Code) in the HSN field. The GST calculation works the same way. Common SAC codes include 998313 for IT services, 996111 for food delivery, and 997212 for real estate services.',
+    },
+  ],
+  howToSteps: [
+    'Enter seller details including business name, GSTIN, and address.',
+    'Fill in buyer (bill to) details with their GSTIN if they are a GST-registered business.',
+    'Enter the invoice number, date, and select whether it is intra-state (CGST+SGST) or inter-state (IGST).',
+    'Add line items with description, HSN code, quantity, unit price, and applicable GST rate.',
+    'The tool automatically calculates CGST/SGST or IGST for each line item and the grand total.',
+    'Click Print Invoice to open the print dialog, or use your browser to save as PDF.',
+  ],
+  relatedToolSlugs: ['gst-calculator', 'gstin-validator', 'invoice-generator'],
+  icon: 'FileText',
+  isNew: true,
+});
+
+// 17. GSTIN Validator
+tools.push({
+  slug: 'gstin-validator',
+  name: 'GSTIN Validator',
+  shortDescription: 'Check if a GST number (GSTIN) is valid and decode state, PAN and entity details.',
+  longDescription: `<p>Need to verify a GSTIN before processing a transaction? The <strong>GSTIN Validator</strong> checks the format, decodes the state code, extracts the embedded PAN, identifies the entity number, and verifies the mod-36 checksum — all instantly in your browser.</p>
+<h2>What Gets Validated</h2>
+<ul>
+<li><strong>Format check</strong> — verifies the 15-character alphanumeric pattern (2-digit state + 10-char PAN + entity + Z + checksum)</li>
+<li><strong>State decode</strong> — maps the first 2 digits to all 37 Indian states and union territories</li>
+<li><strong>PAN extraction</strong> — shows the 10-character PAN embedded in characters 3–12</li>
+<li><strong>Entity number</strong> — identifies which GST registration this is under the same PAN and state</li>
+<li><strong>Checksum verification</strong> — implements the official mod-36 Luhn-style algorithm used by the GST authority</li>
+</ul>
+<h2>Visual Breakdown</h2>
+<p>The tool displays a color-coded visual breakdown of each GSTIN segment, making it easy to understand the structure. A reference table of all 37 state/UT codes is also included for quick lookup.</p>
+<p>Note: This tool performs offline format and checksum validation only. It does not connect to the GST portal. For official registration status, visit gst.gov.in.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'GSTIN validator',
+  secondaryKeywords: ['GST number validation', 'GSTIN format checker', 'GST state code decoder', 'GSTIN checksum', 'Indian GST validator'],
+  metaTitle: 'GSTIN Validator — Free Online Tool',
+  metaDescription: 'Validate any GSTIN instantly — check format, decode state, extract PAN, verify checksum. 100% browser-based, no data sent to any server.',
+  faqs: [
+    {
+      question: 'What is a GSTIN?',
+      answer: 'GSTIN stands for Goods and Services Tax Identification Number. It is a 15-character alphanumeric code assigned to every GST-registered business in India.',
+    },
+    {
+      question: 'What is the structure of a GSTIN?',
+      answer: 'A GSTIN consists of: 2-digit state code + 10-character PAN + 1-digit entity number (1–9 or A–Z) + the letter Z + 1 checksum character.',
+    },
+    {
+      question: 'What do the first 2 digits of GSTIN represent?',
+      answer: 'The first 2 digits are the state code. For example, 07 = Delhi, 27 = Maharashtra, 29 = Karnataka. There are 37 state/UT codes covering all Indian states and union territories.',
+    },
+    {
+      question: 'Is the checksum validation accurate?',
+      answer: 'Yes. This tool implements the official mod-36 Luhn-style checksum algorithm used by the GST authority to verify GSTIN authenticity.',
+    },
+    {
+      question: 'Does this tool connect to the GST portal?',
+      answer: 'No. This tool performs offline format and checksum validation only. It does not connect to the GST portal or any external database.',
+    },
+    {
+      question: 'What does the 13th character of GSTIN mean?',
+      answer: 'The 13th character is the entity number, indicating how many GST registrations a business has in the same state under the same PAN. The first registration is 1, the second is 2, and so on up to 9, then A–Z.',
+    },
+    {
+      question: 'Why is the 14th character always Z?',
+      answer: 'The 14th character is always Z by default in the current GST system. It is reserved for future use and currently serves as a fixed identifier.',
+    },
+    {
+      question: 'Can a PAN holder have multiple GSTINs?',
+      answer: 'Yes. A business operating in multiple states must register separately in each state, getting a unique GSTIN per state. The entity number (13th character) also allows multiple registrations in the same state.',
+    },
+    {
+      question: 'Is my GSTIN data safe?',
+      answer: 'Completely safe. All validation happens in your browser using JavaScript. No data is transmitted to any server.',
+    },
+    {
+      question: 'What should I do if my GSTIN fails checksum but seems correct?',
+      answer: 'A checksum failure may indicate a transcription error. Double-check the GSTIN from your GST registration certificate. If the issue persists, verify it on the official GST portal at gst.gov.in.',
+    },
+  ],
+  howToSteps: [
+    'Enter the 15-character GSTIN in the input field.',
+    'The tool validates the format using the official GSTIN regex pattern.',
+    'The state is automatically decoded from the first 2 digits.',
+    'The embedded PAN (characters 3–12) is extracted and displayed.',
+    'The entity registration number and checksum character are shown.',
+    'A mod-36 checksum algorithm verifies the final character.',
+    'Green badge = valid; Red badge = invalid with reason shown.',
+  ],
+  relatedToolSlugs: ['gst-calculator', 'pan-card-validator', 'ifsc-code-finder'],
+  icon: 'FileCheck',
+  isNew: true,
+});
+
+// 18. Habit Tracker
+tools.push({
+  slug: 'habit-tracker',
+  name: 'Habit Tracker',
+  shortDescription: 'Browser-based habit tracker with streaks, weekly view, and localStorage.',
+  longDescription: `<p>Building good habits is all about consistency — and the <strong>Habit Tracker</strong> helps you stay on track with a simple, no-signup tool that runs entirely in your browser. Track up to 10 daily or weekly habits, build streaks, and visualize your weekly progress.</p>
+<h2>Features</h2>
+<ul>
+<li><strong>Daily & weekly habits</strong> — choose the frequency that fits each habit</li>
+<li><strong>Streak counter</strong> — tracks consecutive days (or weeks) of completion</li>
+<li><strong>Weekly calendar view</strong> — Mon–Sun grid showing which days you completed each habit</li>
+<li><strong>Completion percentage</strong> — progress bar for the current week</li>
+<li><strong>Milestone messages</strong> — motivational feedback as your streak grows</li>
+<li><strong>localStorage persistence</strong> — your habits and history survive browser refreshes</li>
+</ul>
+<h2>How Streaks Work</h2>
+<p>For daily habits, your streak increases for each consecutive day you check the habit. Missing even one day resets the streak to zero. For weekly habits, the tracker counts consecutive weeks with at least one completion. The tool stores all data in your browser's localStorage — nothing is sent to any server. Works on desktop and mobile.</p>
+<p>Start with 2-3 habits and build up. Research shows it takes 21-66 days to form a new habit. Let the streak counter motivate you to keep the chain going.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'habit tracker',
+  secondaryKeywords: ['daily habits', 'streak counter', 'habit builder', 'productivity tracker', 'weekly habits'],
+  metaTitle: 'Habit Tracker — Free Online Tool',
+  metaDescription: 'Track daily and weekly habits in your browser. Build streaks, view weekly progress, and stay motivated. No signup — saved locally with localStorage.',
+  faqs: [
+    {
+      question: 'Where is my habit data stored?',
+      answer: 'All your data is stored in your browser\'s localStorage. Nothing is sent to any server. This means your habits are private, but they will be lost if you clear your browser data.',
+    },
+    {
+      question: 'How many habits can I track?',
+      answer: 'You can add up to 10 habits at once. This keeps the interface focused and helps you avoid overloading yourself with too many goals at once.',
+    },
+    {
+      question: 'How does the streak counter work?',
+      answer: 'For daily habits, your streak increases each consecutive day you check the habit. Missing a day resets the streak to zero. Weekly habits track consecutive weeks.',
+    },
+    {
+      question: 'Can I use this on mobile?',
+      answer: 'Yes. The interface is fully responsive and works well on phones and tablets. As long as you use the same browser and don\'t clear data, your habits persist.',
+    },
+    {
+      question: 'What happens when I delete a habit?',
+      answer: 'Deleting a habit removes it and all its history from localStorage immediately. This action cannot be undone, so make sure before you delete.',
+    },
+    {
+      question: 'How is the habit streak counted?',
+      answer: 'For daily habits, the streak counts consecutive days on which the habit was completed. If you miss even one day, the streak resets to zero and you start fresh from the next completed day. For weekly habits, the tracker counts consecutive weeks that each had at least one completion. Staying consistent is key — even a single missed day or week breaks the chain.',
+    },
+  ],
+  howToSteps: [
+    'Click "Add Habit" and type a name for your habit (e.g. "Read 20 minutes").',
+    'Choose whether it is a daily or weekly habit.',
+    'Hit the checkmark button to log today\'s completion.',
+    'Watch your streak counter grow each day you complete the habit.',
+    'Use the weekly calendar view (Mon–Sun) to spot patterns.',
+    'Check your completion percentage for the current week.',
+    'Use the Reset button to clear all data and start fresh.',
+  ],
+  relatedToolSlugs: ['pomodoro-timer', 'countdown-timer', 'online-notepad'],
+  icon: 'CheckSquare',
+  isNew: true,
+});
+
+// 19. Home Loan Affordability Calculator
+tools.push({
+  slug: 'home-loan-affordability-calculator',
+  name: 'Home Loan Affordability Calculator',
+  shortDescription: 'Calculate maximum home loan eligibility based on your income and existing EMIs.',
+  longDescription: `<p>Before you start house hunting, know exactly how much you can borrow. The <strong>Home Loan Affordability Calculator</strong> uses the FOIR (Fixed Obligation to Income Ratio) method — the same formula banks use — to determine your maximum eligible home loan amount.</p>
+<h2>How Banks Decide Your Loan</h2>
+<p>Banks look at your monthly take-home income and total existing EMIs. They approve a home loan only when total EMIs (including the new one) stay below 40-50% of your income. This ratio is called FOIR.</p>
+<ul>
+<li><strong>Maximum eligible loan</strong> — calculated using 40% FOIR limit</li>
+<li><strong>Estimated monthly EMI</strong> — what you would pay per month</li>
+<li><strong>Affordability score</strong> — Excellent (FOIR under 35%), Good (35-45%), Moderate (45-55%), or Stretched (above 55%)</li>
+<li><strong>FOIR breakdown</strong> — visual breakdown of income allocation</li>
+</ul>
+<h2>Improve Your Eligibility</h2>
+<p>If your affordability score is moderate or stretched, consider: adding a co-applicant to combine incomes, prepaying existing loans to reduce FOIR, improving your credit score above 750, or choosing a longer tenure (up to 30 years) to reduce the projected EMI. This tool helps you plan before you apply.</p>`,
+  category: 'calculators',
+  targetKeyword: 'home loan affordability',
+  secondaryKeywords: ['FOIR calculator', 'loan eligibility', 'housing loan calculator', 'maximum loan amount', 'mortgage affordability'],
+  metaTitle: 'Home Loan Affordability Calculator — Free Online Tool',
+  metaDescription: 'Find out the maximum home loan you can afford based on income, existing EMIs, and FOIR. Get your affordability score and eligible loan amount instantly.',
+  faqs: [
+    {
+      question: 'What is FOIR and how does it affect home loan eligibility?',
+      answer: 'FOIR stands for Fixed Obligation to Income Ratio. It is the percentage of your monthly income that goes toward all EMIs including the new home loan. Banks approve loans when FOIR stays below 40-50%. A FOIR above 50% significantly reduces your chances of approval.',
+    },
+    {
+      question: 'How much home loan can I get on a ₹1 lakh monthly salary?',
+      answer: 'With a monthly salary of ₹1 lakh and no existing EMIs, most banks will approve a home loan where the EMI does not exceed ₹40,000 (40% FOIR). At 8.5% for 20 years, this translates to a loan of approximately ₹42-45 lakhs.',
+    },
+    {
+      question: 'Do banks use gross salary or net salary for loan calculations?',
+      answer: 'Most banks use net take-home salary (after tax and deductions) for FOIR calculations, though some use gross salary. Private sector employees are usually assessed on net salary, while government employees may get consideration on gross salary.',
+    },
+    {
+      question: 'Can I increase my home loan eligibility?',
+      answer: 'Yes. You can add a co-applicant (spouse or earning family member) to combine incomes, prepay existing loans to reduce FOIR, improve your credit score above 750, or opt for a longer tenure to reduce the projected EMI burden.',
+    },
+    {
+      question: 'What affordability score is considered good?',
+      answer: 'A FOIR below 35% is considered excellent and qualifies you for the best rates. Between 35-45% is good and most banks approve without conditions. Above 45% is stretched — some banks may approve at higher rates or require a co-applicant.',
+    },
+  ],
+  howToSteps: [
+    'Enter your total monthly take-home income (post-tax salary or business income).',
+    'Enter the total of all existing EMIs you pay each month (car loan, personal loan, credit card dues).',
+    'Set the expected home loan interest rate offered by your bank.',
+    'Choose the loan tenure you prefer (typically 10 to 30 years).',
+    'View your maximum eligible loan amount and estimated monthly EMI.',
+    'Check your FOIR score and affordability rating to understand your financial health.',
+  ],
+  relatedToolSlugs: ['home-loan-emi-calculator', 'emi-calculator', 'stamp-duty-calculator'],
+  icon: 'HomeIcon',
+  isNew: true,
+});
+
+// ============================================================================
+// REGISTRY ENTRIES — BATCH 2 (19 tools)
+// Generated from spec files. Paste into tools-registry.ts before TOOL_COUNT.
+// ============================================================================
+
+tools.push({
+  slug: 'home-loan-prepayment-calculator',
+  name: 'Home Loan Prepayment Calculator',
+  shortDescription: 'Find out interest saved and tenure reduced by making a home loan prepayment.',
+  longDescription: `<p>Thinking about making a lump sum prepayment on your home loan? Our <strong>Home Loan Prepayment Calculator</strong> shows you exactly how much interest you can save and how many years you can cut from your loan tenure — instantly and for free.</p>
+<h2>How Prepayment Saves You Money</h2>
+<p>When you make a part-payment on your home loan, the entire amount goes directly toward reducing your outstanding principal. Since interest is calculated on the remaining balance, even a modest prepayment in the early years of your loan can save you lakhs in total interest. For example, prepaying ₹5 lakh on a ₹50 lakh loan at 8.5% in the second year can save over ₹10 lakh in interest.</p>
+<h2>Two Strategies After Prepayment</h2>
+<ul>
+<li><strong>Reduce Tenure:</strong> Keep the same EMI but close your loan years earlier — this saves the most interest overall.</li>
+<li><strong>Reduce EMI:</strong> Keep the same tenure but enjoy a lower monthly payment — helpful if you need cash flow relief.</li>
+</ul>
+<h2>Key Features</h2>
+<ul>
+<li>Side-by-side comparison of before vs after prepayment scenarios</li>
+<li>Total interest saved, new tenure, and new EMI calculated instantly</li>
+<li>Works for any loan amount, rate, and prepayment timing</li>
+<li>No data sent to any server — 100% browser-based and private</li>
+</ul>
+<p>As per RBI guidelines, banks cannot charge prepayment penalties on floating-rate home loans for individual borrowers. Use this calculator to plan your prepayment strategy and become debt-free sooner.</p>`,
+  category: 'calculators',
+  targetKeyword: 'home loan prepayment',
+  secondaryKeywords: ['part payment calculator', 'loan prepayment savings', 'EMI reduction', 'tenure reduction', 'interest saved'],
+  metaTitle: 'Home Loan Prepayment Calculator — Free Online Tool',
+  metaDescription: 'Calculate how much interest you save by prepaying your home loan. See new tenure, new EMI, and total savings from a lump sum prepayment instantly.',
+  faqs: [
+    {
+      question: 'Is it better to reduce EMI or tenure after prepayment?',
+      answer: 'Reducing tenure saves significantly more interest compared to reducing EMI. If you can manage your current EMI comfortably, always choose to reduce tenure. Reducing EMI only helps if you need monthly cash flow relief.',
+    },
+    {
+      question: 'When is the best time to make a home loan prepayment?',
+      answer: 'The earlier in your loan tenure you prepay, the more interest you save. In the initial years, a large portion of your EMI goes toward interest. Prepaying in the first 5 years can save 2-3x the prepaid amount in total interest.',
+    },
+    {
+      question: 'Do banks charge a prepayment penalty?',
+      answer: 'As per RBI guidelines, banks cannot charge prepayment penalties on floating-rate home loans for individual borrowers. However, fixed-rate loans may have a penalty of 1-3% of the prepaid amount. Always check your loan agreement.',
+    },
+    {
+      question: 'What is the minimum prepayment amount?',
+      answer: 'Most banks require a minimum prepayment of 3-6 months EMI equivalent. For example, if your EMI is ₹35,000, the minimum prepayment may be ₹1-2 lakhs. Some banks accept any amount above one EMI.',
+    },
+    {
+      question: 'How does part-payment differ from foreclosure?',
+      answer: 'Part-payment (prepayment) means paying a lump sum to reduce the outstanding principal while the loan continues. Foreclosure means paying off the entire remaining balance to close the loan completely. This calculator handles part-payment scenarios.',
+    },
+  ],
+  howToSteps: [
+    'Enter your original home loan amount and the annual interest rate.',
+    'Select your original loan tenure (total years of the loan).',
+    'Enter the lump sum prepayment amount you plan to make.',
+    'Enter the month number when you plan to make the prepayment (e.g., month 24 = after 2 years).',
+    'Choose whether you want to reduce your EMI or reduce your tenure after prepayment.',
+    'View the total interest saved, new tenure or new EMI, and years cut from your loan.',
+  ],
+  relatedToolSlugs: ['home-loan-emi-calculator', 'emi-prepayment-calculator', 'loan-amortization-calculator'],
+  icon: 'TrendingDown',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'json-schema-generator',
+  name: 'JSON Schema Generator',
+  shortDescription: 'Generate JSON Schema from any JSON object with type detection and format inference.',
+  longDescription: `<p>Need a JSON Schema for your API or validation pipeline? The <strong>JSON Schema Generator</strong> automatically creates a complete, standards-compliant schema from any JSON object — with smart type inference, format detection, and support for Draft 7, 2019-09, and 2020-12.</p>
+<h2>Why Use This Tool?</h2>
+<p>Writing JSON Schema by hand is tedious and error-prone, especially for deeply nested objects. This tool analyzes your JSON structure recursively, detects string formats (email, URI, date, date-time, UUID), distinguishes integers from numbers, and handles heterogeneous arrays — all in real time as you paste your data.</p>
+<h2>Key Features</h2>
+<ul>
+<li><strong>Three Schema Versions:</strong> Draft 7 (most widely used), Draft 2019-09, and Draft 2020-12</li>
+<li><strong>Smart Format Detection:</strong> Emails, URIs, dates, date-times, and UUIDs are automatically tagged</li>
+<li><strong>Customizable Output:</strong> Toggle required properties, additionalProperties, and title/description fields</li>
+<li><strong>Copy & Download:</strong> One-click copy or download the schema as a .json file</li>
+<li><strong>Syntax Highlighting:</strong> Color-coded output for easy reading</li>
+</ul>
+<h2>Compatible With Popular Validators</h2>
+<p>The generated schema works with ajv, Zod (via json-schema-to-zod), Pydantic, and all major JSON Schema validators. Use it for OpenAPI specs, form validation, or data pipeline contracts.</p>
+<p>All processing happens in your browser — your data never leaves your device.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'json schema generator',
+  secondaryKeywords: ['json to schema', 'draft 7 schema', 'json schema validator', 'openapi schema generator'],
+  metaTitle: 'JSON Schema Generator — Free Online Tool',
+  metaDescription: 'Generate JSON Schema from any JSON object instantly. Supports Draft 7, 2019-09, and 2020-12 with format detection and nested object handling.',
+  faqs: [
+    {
+      question: 'What JSON Schema versions does this tool support?',
+      answer: 'The tool supports Draft 7 (most widely used), Draft 2019-09, and Draft 2020-12. The $schema URI in the output changes accordingly.',
+    },
+    {
+      question: 'How does the tool detect string formats?',
+      answer: 'String values are analyzed with regex patterns to detect email addresses, URIs, dates (YYYY-MM-DD), ISO 8601 date-times, and UUIDs. Detected formats are added to the schema as "format" keywords.',
+    },
+    {
+      question: 'What happens with null values in my JSON?',
+      answer: 'Null values generate a type that includes "null" alongside any inferred type, or just "null" if the value is always null. This follows the JSON Schema specification.',
+    },
+    {
+      question: 'Are nested objects and arrays handled recursively?',
+      answer: 'Yes. The generator recursively processes nested objects and arrays to any depth, generating accurate schemas for complex data structures.',
+    },
+    {
+      question: 'What does "additionalProperties: false" do?',
+      answer: 'When enabled, the schema will reject any JSON object that contains properties not listed in the schema. This is useful for strict validation.',
+    },
+    {
+      question: 'How are heterogeneous arrays handled?',
+      answer: 'If an array contains mixed types, the "items" schema will use a union of the detected types. If all items share the same type, a single type schema is generated.',
+    },
+    {
+      question: 'Can I use this schema with popular validators?',
+      answer: 'Yes. The generated schema is compatible with ajv, Zod (via json-schema-to-zod), Pydantic, and most other JSON Schema validators.',
+    },
+    {
+      question: 'Does the tool detect integer vs number types?',
+      answer: 'Yes. If a numeric value has no decimal component (e.g., 42), it is typed as "integer". Values like 3.14 are typed as "number".',
+    },
+    {
+      question: 'Is my JSON data sent to any server?',
+      answer: 'No. All processing happens entirely in your browser using client-side JavaScript. Your data never leaves your device.',
+    },
+    {
+      question: 'What is the pre-loaded example?',
+      answer: 'The tool loads a sample user object with various field types to demonstrate format detection, nested objects, and array handling.',
+    },
+  ],
+  howToSteps: [
+    'Paste your JSON object into the input textarea on the left side.',
+    'The tool validates your JSON in real time and highlights any syntax errors.',
+    'Choose a schema version: Draft 7, Draft 2019-09, or Draft 2020-12.',
+    'Toggle options like "Mark all properties required" or "No additional properties" to customize the schema.',
+    'Enable "Add title/description fields" to include metadata fields in the generated schema.',
+    'The JSON Schema is generated instantly and displayed in the output panel on the right.',
+    'Click "Copy Schema" to copy the full JSON Schema to your clipboard.',
+    'Click "Download .json" to save the schema as a JSON file for use in your project.',
+  ],
+  relatedToolSlugs: ['json-formatter', 'json-to-typescript', 'json-tree-viewer'],
+  icon: 'Code2',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'loan-eligibility-calculator',
+  name: 'Loan Eligibility Calculator',
+  shortDescription: 'Calculate maximum loan eligibility using FOIR method for home, personal, car and education loans.',
+  longDescription: `<p>Wondering how much loan you can actually get approved for? The <strong>Loan Eligibility Calculator</strong> uses the industry-standard FOIR (Fixed Obligation to Income Ratio) method to estimate your maximum eligible loan amount — for home, personal, car, and education loans.</p>
+<h2>How FOIR Works</h2>
+<p>Banks evaluate loan applications by looking at what percentage of your monthly income is already committed to EMIs. A lower FOIR means more room for a new loan. Most banks allow 40-50% FOIR for home loans, 30-40% for personal loans, and 50-60% for education loans.</p>
+<h2>Three Scenarios Compared</h2>
+<ul>
+<li><strong>Conservative Bank:</strong> Strictest FOIR limits — shows the minimum you can expect</li>
+<li><strong>Moderate Bank:</strong> Standard market terms — most likely approval amount</li>
+<li><strong>Liberal Bank:</strong> Relaxed criteria — best-case scenario with a strong profile</li>
+</ul>
+<h2>Tips to Improve Eligibility</h2>
+<ul>
+<li>Close existing loans to reduce your EMI burden</li>
+<li>Add a co-applicant to combine incomes</li>
+<li>Maintain a CIBIL score above 750</li>
+<li>Opt for a longer tenure to increase the eligible amount</li>
+</ul>
+<p>All calculations run in your browser — your financial details are never sent to any server.</p>`,
+  category: 'calculators',
+  targetKeyword: 'loan eligibility',
+  secondaryKeywords: ['home loan eligibility', 'personal loan eligibility', 'FOIR calculator', 'loan amount calculator', 'how much loan can I get'],
+  metaTitle: 'Loan Eligibility Calculator — Free Online Tool',
+  metaDescription: 'Find out how much loan you are eligible for based on income and existing EMIs. Supports home, personal, car and education loans with FOIR method.',
+  faqs: [
+    {
+      question: 'What is FOIR and how does it affect loan eligibility?',
+      answer: 'FOIR (Fixed Obligation to Income Ratio) is the percentage of your monthly income that banks allow towards total EMI obligations. Most banks allow 40–50% FOIR. Higher income or lower existing EMIs mean higher eligibility.',
+    },
+    {
+      question: 'What FOIR does each loan type use?',
+      answer: 'Home loans typically allow 40–50% FOIR. Personal loans use 30–40% FOIR. Car loans use 40–50%. Education loans use 50–60%. Banks vary — this calculator shows three scenarios.',
+    },
+    {
+      question: 'What is the default interest rate for home loans?',
+      answer: 'The default rate used is 8.5% per annum for home loans, 12% for personal loans, 9% for car loans, and 9% for education loans. You can override these with current market rates.',
+    },
+    {
+      question: 'Does adding a co-applicant increase loan eligibility?',
+      answer: 'Yes. Adding a co-applicant (spouse, parent) allows banks to combine both incomes, significantly increasing the eligible loan amount. This is especially effective for home loans.',
+    },
+    {
+      question: 'How can I increase my loan eligibility?',
+      answer: 'Close existing loans to reduce EMI burden, add a co-applicant, opt for a longer tenure, maintain a good CIBIL score above 750, and declare all income sources including rental or freelance income.',
+    },
+    {
+      question: 'Does my CIBIL score affect loan eligibility?',
+      answer: 'Yes. A CIBIL score above 750 qualifies you for better interest rates and higher loan amounts. Scores below 650 may result in rejection or higher interest rates.',
+    },
+    {
+      question: 'Is this calculator accurate for all banks?',
+      answer: 'This calculator uses standard FOIR-based methodology. Actual eligibility varies by bank, employer type (salaried vs self-employed), age, credit score, and property value for secured loans.',
+    },
+    {
+      question: 'What is the maximum home loan tenure?',
+      answer: 'Most banks offer home loans up to 30 years. Longer tenures reduce EMI but increase total interest paid. The maximum age at loan maturity is typically 70–75 years.',
+    },
+    {
+      question: 'Can self-employed individuals use this calculator?',
+      answer: 'Yes. Enter your average monthly net profit as income. Banks typically consider 2–3 years of ITR for self-employed applicants and may apply different FOIR ratios.',
+    },
+    {
+      question: 'What is the minimum income required for a home loan?',
+      answer: 'Most banks require a minimum monthly income of ₹25,000–₹30,000 for home loans in metro cities. Minimum income requirements vary by bank and city.',
+    },
+  ],
+  howToSteps: [
+    'Enter your monthly net (take-home) salary.',
+    'Enter total existing EMIs you are currently paying each month.',
+    'Select your desired loan type: Home, Personal, Car, or Education.',
+    'Enter your preferred loan tenure in years.',
+    'Optionally adjust the expected interest rate or use the pre-filled default.',
+    'Click Check Eligibility to see your maximum eligible loan amount.',
+    'Review the eligibility breakdown for Conservative, Moderate, and Liberal bank profiles.',
+    'Use the tips shown to improve your loan eligibility if needed.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'home-loan-emi-calculator', 'loan-comparison-calculator'],
+  icon: 'Home',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'loan-vs-lease-calculator',
+  name: 'Loan vs Lease Calculator',
+  shortDescription: 'Compare car loan ownership vs leasing costs to find the cheaper option for your situation.',
+  longDescription: `<p>Should you buy a car with a loan or lease it? The <strong>Loan vs Lease Calculator</strong> compares the total cost of ownership against leasing for the same vehicle and tenure — giving you a clear winner with exact numbers.</p>
+<h2>What This Calculator Compares</h2>
+<p>For the loan option, it factors in down payment, EMI payments, total interest, insurance, maintenance, and resale value. For the lease option, it includes monthly lease payments, security deposit (refundable), and any separate insurance or maintenance costs.</p>
+<h2>Key Considerations</h2>
+<ul>
+<li><strong>Ownership:</strong> With a loan, you own the car after the last EMI. With a lease, you return it.</li>
+<li><strong>Flexibility:</strong> Leasing lets you switch to a new model every cycle without the hassle of selling.</li>
+<li><strong>Monthly Outflow:</strong> Leases typically offer lower monthly payments with all-inclusive pricing.</li>
+<li><strong>Mileage:</strong> Leases usually cap driving at 1,500–2,000 km/month.</li>
+</ul>
+<h2>Factor-by-Factor Comparison</h2>
+<p>Beyond just cost, the tool provides a qualitative comparison covering ownership, customization, flexibility, mileage restrictions, and access to latest models — helping you make a decision that fits your lifestyle, not just your wallet.</p>
+<p>All calculations are done locally in your browser. No data is sent anywhere.</p>`,
+  category: 'calculators',
+  targetKeyword: 'loan vs lease',
+  secondaryKeywords: ['car loan vs lease', 'car lease calculator', 'buy vs lease car india', 'car subscription vs loan', 'total cost of ownership car'],
+  metaTitle: 'Loan vs Lease Calculator — Free Online Tool',
+  metaDescription: 'Compare the total cost of buying a car via loan against leasing. See which option saves more money over the same period with a detailed breakdown.',
+  faqs: [
+    {
+      question: 'Is it cheaper to buy a car via loan or lease in India?',
+      answer: 'It depends on the vehicle, tenure, and residual value. Leasing is often cheaper in the short term (3–4 years) for premium cars. Buying via loan can be more economical if you plan to keep the car long-term or the resale value is high.',
+    },
+    {
+      question: 'What is a car lease in India?',
+      answer: 'A car lease (also called car subscription or operating lease) lets you use a vehicle for a monthly fee without owning it. Popular platforms in India include Myles, Revv, Orix, and corporate lease schemes by OEMs.',
+    },
+    {
+      question: 'Is the security deposit in a lease refunded?',
+      answer: 'Yes. The security deposit is typically refunded at lease end, subject to vehicle condition. This calculator treats the deposit as a net-zero cost since it is returned.',
+    },
+    {
+      question: 'Does a car lease include insurance and maintenance?',
+      answer: 'Many full-service leases include insurance and maintenance in the monthly fee. You can toggle these inclusions in this calculator. Always verify with the leasing company.',
+    },
+    {
+      question: 'What are the tax benefits of car leasing for salaried employees?',
+      answer: 'Salaried employees can claim the lease amount as a reimbursement under Section 17 of the Income Tax Act if structured as a company car lease. This can significantly reduce the post-tax cost. This calculator does not include tax benefits.',
+    },
+    {
+      question: 'What is the resale value of a car after 5 years?',
+      answer: 'Typically 40–55% of original price for popular Indian cars. Premium and luxury cars may retain 35–45%. Electric vehicles currently have lower resale values in India due to battery concerns.',
+    },
+    {
+      question: 'Can I negotiate a car lease monthly amount?',
+      answer: 'Yes. Lease amounts depend on the car depreciation during the lease period, interest rate, and included services. Corporate or bulk leases typically get better rates than individual leases.',
+    },
+    {
+      question: 'Is there a mileage limit in car leases?',
+      answer: 'Most Indian car leases come with mileage caps (typically 1,500–2,000 km/month). Exceeding the limit attracts per-km charges. If you drive more, a loan-based purchase may be more cost-effective.',
+    },
+    {
+      question: 'What happens at the end of a car lease?',
+      answer: 'At lease end, you return the car. You do not own it. Some lessors offer a buyout option at residual value. With a loan, you own the car outright after the last EMI.',
+    },
+    {
+      question: 'Which is better for a business — loan or lease?',
+      answer: 'For businesses, leases are often preferred as the entire lease amount is deductible as a business expense, reducing taxable income. Loan EMI principal is not tax-deductible for businesses.',
+    },
+  ],
+  howToSteps: [
+    'Enter the vehicle price and your down payment amount.',
+    'Fill in loan interest rate and tenure in months.',
+    'Enter annual insurance and maintenance costs for the loan option.',
+    'Enter the expected resale value of the vehicle after the loan tenure.',
+    'Fill in the monthly lease amount and security deposit.',
+    'Toggle whether insurance and maintenance are included in your lease.',
+    'Click Compare to see total cost of ownership vs total cost of leasing.',
+    'Review the winner announcement and factor-by-factor comparison below.',
+  ],
+  relatedToolSlugs: ['emi-calculator', 'loan-eligibility-calculator', 'loan-comparison-calculator'],
+  icon: 'ArrowLeftRight',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nepal-bank-interest-comparison',
+  name: 'Nepal Bank Interest Comparison',
+  shortDescription: 'Compare FD and savings rates across 11 major Nepali banks to maximize returns.',
+  longDescription: `<p>Looking for the best fixed deposit or savings account rate in Nepal? The <strong>Nepal Bank Interest Comparison</strong> tool lets you compare rates across 11 major commercial banks — including NABIL, NIC Asia, Himalayan, Sanima, and more — sorted by highest return.</p>
+<h2>What You Can Compare</h2>
+<ul>
+<li><strong>Savings Account Rates:</strong> See which bank offers the highest interest on regular savings</li>
+<li><strong>Fixed Deposit Rates:</strong> Compare 3-month, 6-month, 1-year, and 2-year FD rates side by side</li>
+<li><strong>Investment Calculator:</strong> Enter your amount and tenure to see exact interest earned and maturity value at each bank</li>
+</ul>
+<h2>Banks Covered</h2>
+<p>Nepal Bank Limited, Rastriya Banijya Bank, NABIL Bank, Standard Chartered Nepal, Himalayan Bank, NIC Asia, Everest Bank, Sanima Bank, Global IME Bank, NMB Bank, and Kumari Bank — covering government, private, and joint venture institutions.</p>
+<h2>Important Notes</h2>
+<p>Interest rates in Nepal are revised quarterly per NRB (Nepal Rastra Bank) directives. Deposits are protected by DCGC up to रु 5 lakh per depositor per bank. Interest income is subject to 5% TDS. Always verify current rates directly with your bank before investing.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal bank interest rates',
+  secondaryKeywords: ['nepal fd rates 2025', 'best fixed deposit nepal', 'nepal savings account interest', 'nabil bank fd rate', 'highest fd rate nepal'],
+  metaTitle: 'Nepal Bank Interest Comparison — Free Online Tool',
+  metaDescription: 'Compare savings and fixed deposit interest rates across Nepal top commercial banks. Find the best FD rates for your investment horizon instantly.',
+  faqs: [
+    {
+      question: 'How often do banks update interest rates in Nepal?',
+      answer: 'Commercial banks in Nepal revise interest rates quarterly in line with NRB directives. NRB sets a base rate corridor and banks must stay within the prescribed limits.',
+    },
+    {
+      question: 'Is the interest on FD taxable in Nepal?',
+      answer: 'Yes. Interest income from fixed deposits is subject to 5% tax at source (TDS) for individuals in Nepal. This is withheld by the bank before crediting the interest to you.',
+    },
+    {
+      question: 'Are bank deposits safe in Nepal?',
+      answer: 'Deposits in NRB-licensed commercial banks are protected by the Deposit and Credit Guarantee Corporation (DCGC) up to रु 5 lakh per depositor per bank.',
+    },
+    {
+      question: 'What is the difference between savings and FD rates?',
+      answer: 'Fixed deposit rates are higher than savings rates because you lock in your money for a fixed tenure. Savings accounts offer flexibility but lower returns, typically 4–6% in Nepal.',
+    },
+    {
+      question: 'Can I break an FD before maturity in Nepal?',
+      answer: 'Yes, most banks allow premature withdrawal but may charge a penalty of 1–2% on the applicable rate. Some banks reduce the rate to the savings rate for the period held.',
+    },
+    {
+      question: 'Which bank in Nepal offers the highest FD interest rate?',
+      answer: 'FD rates change quarterly per NRB directives. As of 2025, development banks and finance companies often offer higher rates (7-9%) than commercial banks (6-8%). Always verify directly with the bank before investing.',
+    },
+  ],
+  howToSteps: [
+    'Choose the "Savings Account" or "Fixed Deposit" tab depending on which rates you want to compare.',
+    'For fixed deposits, view the rate table showing rates for 3-month, 6-month, 1-year, and 2-year tenures.',
+    'Enter your investment amount in the calculator section at the top.',
+    'Select the tenure to see how much interest each bank would pay on your deposit.',
+    'The results are automatically sorted by best rate so the top option appears first.',
+    'Compare the maturity amounts side by side and choose the bank offering the best return for your investment horizon.',
+    'Check the interest earned per year and the total maturity amount for each bank.',
+    'Note that rates are updated quarterly per NRB directives — always verify with your bank before investing.',
+  ],
+  relatedToolSlugs: ['nrb-forex-converter', 'nepal-income-tax-calculator', 'fd-rd-calculator'],
+  icon: 'Landmark',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nepal-land-price-estimator',
+  name: 'Nepal Land Price Estimator',
+  shortDescription: 'Estimate Nepal land prices by district and category with built-in unit converter.',
+  longDescription: `<p>Planning to buy land in Nepal? The <strong>Nepal Land Price Estimator</strong> gives you indicative price ranges by province, district, land category, and area — covering everything from Kathmandu core to rural districts, with a built-in Ropani/Aana and Bigha/Kattha unit converter.</p>
+<h2>Coverage</h2>
+<p>The tool includes 30+ districts across all 7 provinces — from premium locations like Kathmandu Core (रु 3–8 crore per Aana) to remote areas like Dolpa and Jumla. Prices are shown for residential, commercial, agricultural, and forest land categories.</p>
+<h2>Nepal Land Measurement Units</h2>
+<ul>
+<li><strong>Hilly System:</strong> Ropani (16 Aana), Aana (4 Paisa), Paisa (4 Dam)</li>
+<li><strong>Terai System:</strong> Bigha (20 Kattha), Kattha (20 Dhur)</li>
+<li><strong>1 Ropani</strong> = 508.72 sq meters = 5,476 sq ft approximately</li>
+</ul>
+<h2>Built-in Unit Converter</h2>
+<p>Convert between Ropani, Aana, Bigha, Kattha, and square feet instantly using the converter section — no separate tool needed.</p>
+<p>These are indicative 2025 market estimates only. Actual prices vary by exact location, road access, legal status, and market conditions. Always consult your local Land Revenue Office (Malpot Karyalaya) before any transaction.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal land price',
+  secondaryKeywords: ['land value nepal', 'kathmandu land price per aana', 'nepal property price estimate', 'ropani aana converter', 'bigha kattha dhur nepal'],
+  metaTitle: 'Nepal Land Price Estimator — Free Online Tool',
+  metaDescription: 'Estimate land prices in Nepal by district and category. Covers Kathmandu to rural with Ropani/Aana and Bigha/Kattha unit converter built in.',
+  faqs: [
+    {
+      question: 'What land measurement units are used in Nepal?',
+      answer: 'Nepal uses two parallel systems. The hilly system uses Ropani (16 Aana), Aana (4 Paisa), Paisa (4 Dam). The Terai system uses Bigha (20 Kattha), Kattha (20 Dhur). 1 Ropani = 508.72 sq meters = 5476 sq ft approximately.',
+    },
+    {
+      question: 'How accurate are these land price estimates?',
+      answer: 'These are indicative price ranges based on 2025 market data. Actual prices vary significantly by exact location, road access, proximity to amenities, and current market conditions. Always consult local brokers and the Land Revenue Office.',
+    },
+    {
+      question: 'What is the difference between residential and commercial land prices?',
+      answer: 'Commercial land typically commands a 50–150% premium over residential land in the same area due to business potential. Road-facing commercial plots in busy areas of Kathmandu can be 2–3 times the price of interior residential plots.',
+    },
+    {
+      question: 'Do land prices differ within the same district?',
+      answer: 'Yes, significantly. Within Kathmandu district, prices in the core ring road area can be 3–5 times higher than outer VDC areas. Location within a district is just as important as the district itself.',
+    },
+    {
+      question: 'What documents are needed to buy land in Nepal?',
+      answer: 'Land transactions in Nepal require: Lalpurja (land ownership certificate), Naapi Naksha (survey map), Char Killa certificate, tax clearance, and registration at the District Land Revenue Office. Foreign nationals cannot own land in Nepal.',
+    },
+  ],
+  howToSteps: [
+    'Select the province from the first dropdown to filter available districts.',
+    'Choose your district from the district dropdown.',
+    'Enter the land area and select the unit — Aana, Ropani, Bigha, Kattha, or square feet.',
+    'Select the land category: Residential, Commercial, Agricultural, or Forest.',
+    'The tool shows the estimated price range and a mid-point estimate instantly.',
+    'Use the built-in unit converter at the bottom to convert between Nepal land units.',
+    'Note that these are indicative estimates only — consult your local Land Revenue Office for official valuations.',
+  ],
+  relatedToolSlugs: ['nepal-land-converter', 'stamp-duty-calculator', 'unit-converter'],
+  icon: 'MapPin',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nepal-telecom-calculator',
+  name: 'Nepal Telecom Calculator',
+  shortDescription: 'Compare NTC and Ncell packs to find the best value plan for your budget.',
+  longDescription: `<p>Which mobile plan gives you the most data or minutes per rupee in Nepal? The <strong>Nepal Telecom Calculator</strong> compares NTC and Ncell recharge packs side by side — sorted by value score — so you always pick the best deal for your budget.</p>
+<h2>How It Works</h2>
+<p>Enter your recharge budget, choose between data, voice, or combo packs, and select NTC, Ncell, or both. The tool instantly filters matching packs within your budget and ranks them by value — GB per rupee for data packs, minutes per rupee for voice packs.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>Best Value Badge:</strong> The pack offering the most data or minutes per rupee is highlighted</li>
+<li><strong>NTC vs Ncell Comparison Table:</strong> Similar-priced packs shown side by side</li>
+<li><strong>Balance Check Codes:</strong> Quick-access USSD codes for both operators</li>
+</ul>
+<h2>Packs Covered</h2>
+<p>Data packs from रु 98 to रु 1,000+, voice packs from रु 49 to रु 300, and combo packs bundling data and minutes together. Rates are approximate 2024/25 figures — always verify on the official NTC or Ncell website before recharging.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'ntc',
+  secondaryKeywords: ['ncell', 'nepal telecom', 'recharge', 'data pack', 'NTC data pack comparison'],
+  metaTitle: 'Nepal Telecom Calculator — Free Online Tool',
+  metaDescription: 'Compare NTC and Ncell recharge packs to find the best value data and voice plan for your budget. Updated for 2025 with value scoring.',
+  faqs: [
+    {
+      question: 'How are value scores calculated?',
+      answer: 'For data packs, value score = GB per रु. spent. For voice packs, value score = minutes per रु. Higher is better. The best value pack is highlighted with a green badge.',
+    },
+    {
+      question: 'Are these rates current?',
+      answer: 'Rates shown are approximate 2024/25 illustrative figures. Telecom operators update their packs frequently. Always verify on the NTC or Ncell official website before recharging.',
+    },
+    {
+      question: 'How do I check my NTC balance?',
+      answer: 'Dial *9988# from your NTC SIM to check your balance, data usage, and active packs.',
+    },
+    {
+      question: 'How do I check my Ncell balance?',
+      answer: 'Dial *9999# from your Ncell SIM to check your balance and active packs.',
+    },
+    {
+      question: 'What is a Combo pack?',
+      answer: 'Combo packs bundle both mobile data (GB) and voice minutes together, offering combined value for users who need both services.',
+    },
+  ],
+  howToSteps: [
+    'Enter your recharge budget in NPR (रु.)',
+    'Select service type: Data, Voice+SMS, or Combo',
+    'Choose operator: NTC, Ncell, or Both to compare',
+    'View best matching packs sorted by value score (GB or minutes per रु.)',
+    'Check the comparison table for NTC vs Ncell side-by-side',
+    'Use the balance check codes displayed at the bottom to verify your current balance',
+  ],
+  relatedToolSlugs: ['unit-converter', 'nepal-income-tax-calculator', 'currency-converter-live'],
+  icon: 'Phone',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nepal-vat-calculator',
+  name: 'Nepal VAT Calculator',
+  shortDescription: 'Add or extract Nepal 13% VAT from any price with instant breakdown.',
+  longDescription: `<p>Need to calculate Nepal's 13% VAT on an invoice or purchase? The <strong>Nepal VAT Calculator</strong> lets you add VAT to a net price or extract VAT from a gross (inclusive) price — showing the exact net amount, VAT component, and total instantly.</p>
+<h2>Two Calculation Modes</h2>
+<ul>
+<li><strong>Add VAT:</strong> Enter a price before tax and get the VAT-inclusive total (price x 1.13)</li>
+<li><strong>Extract VAT:</strong> Enter a VAT-inclusive price and separate out the tax component (price / 1.13)</li>
+</ul>
+<h2>Nepal VAT Facts at a Glance</h2>
+<ul>
+<li>Standard rate: 13% since 1997</li>
+<li>Registration threshold: Annual turnover above रु 50 lakh</li>
+<li>Filing frequency: Quarterly with the Inland Revenue Department</li>
+<li>Exempt items: Basic food, health services, education, public transport</li>
+</ul>
+<p>Whether you are a business owner preparing invoices, an accountant verifying tax calculations, or a consumer checking if VAT was charged correctly — this tool gives you the answer in seconds, entirely in your browser.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal vat calculator',
+  secondaryKeywords: ['13% vat nepal', 'vat inclusive exclusive nepal', 'nepal tax calculator', 'vat amount calculator', 'IRD Nepal VAT calculation'],
+  metaTitle: 'Nepal VAT Calculator — Free Online Tool',
+  metaDescription: 'Calculate Nepal 13% VAT instantly. Add VAT to a net price or extract from a VAT-inclusive amount with full breakdown. IRD compliant.',
+  faqs: [
+    {
+      question: 'What is the VAT rate in Nepal?',
+      answer: 'Nepal has a standard VAT rate of 13% on most goods and services. Some items like basic food commodities, medical services, and educational services are exempt from VAT.',
+    },
+    {
+      question: 'What is the VAT registration threshold in Nepal?',
+      answer: 'Businesses with annual turnover exceeding रु 50 lakh (Rs 50,00,000) are required to register for VAT with the Inland Revenue Department (IRD). Voluntary registration is also allowed below this threshold.',
+    },
+    {
+      question: 'How do I add VAT to a price?',
+      answer: 'Multiply the net price by 1.13 to get the VAT-inclusive price. For example, if the net price is रु 1,000, the VAT-inclusive price is रु 1,130 (रु 1,000 × 1.13).',
+    },
+    {
+      question: 'How do I extract VAT from a VAT-inclusive price?',
+      answer: 'Divide the VAT-inclusive price by 1.13 to get the net price. The VAT amount is the difference. For example, रु 1,130 ÷ 1.13 = रु 1,000 net + रु 130 VAT.',
+    },
+    {
+      question: 'When do businesses need to file VAT returns in Nepal?',
+      answer: 'VAT-registered businesses in Nepal must file VAT returns quarterly (every 3 months) based on the Nepali fiscal year. Returns are filed with the Inland Revenue Department online or at local IRD offices.',
+    },
+    {
+      question: 'What goods and services are exempt from VAT in Nepal?',
+      answer: 'Key VAT-exempt items in Nepal include basic food items (rice, flour, lentils), agricultural produce, educational services, health services, books, and public transport.',
+    },
+  ],
+  howToSteps: [
+    'Enter the amount you want to calculate VAT on in the amount field.',
+    'Choose "Add VAT" mode if your price is before VAT (exclusive) and you want the final price.',
+    'Choose "Extract VAT" mode if you have a VAT-inclusive price and want to separate the tax.',
+    'The result instantly shows the net amount, VAT amount (13%), and gross total.',
+    'Use the copy button to copy the result for your records or invoices.',
+    'Check the exemption list below to see if your goods or service qualify for VAT-exempt status.',
+    'Read the info section below to understand VAT registration thresholds and filing requirements.',
+  ],
+  relatedToolSlugs: ['nepal-income-tax-calculator', 'nepal-salary-tax-calculator', 'nepal-fiscal-year-converter'],
+  icon: 'Receipt',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nepal-vehicle-loan-calculator',
+  name: 'Nepal Vehicle Loan Calculator',
+  shortDescription: 'Nepal vehicle loan EMI calculator per NRB guidelines.',
+  longDescription: `<p>Planning to finance a vehicle in Nepal? The <strong>Nepal Vehicle Loan Calculator</strong> calculates your monthly EMI based on NRB (Nepal Rastra Bank) guidelines — covering cars, motorcycles, electric vehicles, and commercial vehicles with full amortization schedules in NPR.</p>
+<h2>NRB Minimum Down Payments</h2>
+<ul>
+<li><strong>Car (4-Wheeler):</strong> 20% minimum, up to 7 years tenure, 10–13% typical rate</li>
+<li><strong>Motorcycle/Scooter:</strong> 15% minimum, up to 5 years tenure, 12–14% typical rate</li>
+<li><strong>Electric Vehicle:</strong> 20% minimum, up to 7 years, 8–10% subsidized rate</li>
+<li><strong>Commercial Vehicle:</strong> 25% minimum, up to 7 years, 11–14% typical rate</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>EMI, total interest, and total payment calculated instantly</li>
+<li>Principal vs interest visual breakdown bar</li>
+<li>Full month-by-month amortization table</li>
+<li>NRB compliance alerts if down payment is below minimum</li>
+</ul>
+<p>All calculations are done locally in your browser. Rates shown are typical 2024–2025 ranges — always confirm current rates with your bank.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nepal vehicle loan calculator',
+  secondaryKeywords: ['nepal car loan EMI', 'NRB vehicle loan', 'motorcycle loan nepal', 'EV loan nepal', 'nepal vehicle loan interest rate'],
+  metaTitle: 'Nepal Vehicle Loan Calculator — Free Online Tool',
+  metaDescription: 'Calculate vehicle loan EMI in Nepal per NRB guidelines. Supports cars, bikes, EVs, and commercial vehicles with full amortization schedule in NPR.',
+  faqs: [
+    {
+      question: 'What is the minimum down payment for a car loan in Nepal?',
+      answer: 'As per Nepal Rastra Bank (NRB) guidelines, the minimum down payment for a car (4-wheeler) is 20% of the vehicle price.',
+    },
+    {
+      question: 'What is the minimum down payment for a motorcycle in Nepal?',
+      answer: 'NRB mandates a minimum down payment of 15% for two-wheelers (motorcycles and scooters).',
+    },
+    {
+      question: 'Do electric vehicles have different loan terms in Nepal?',
+      answer: 'Yes. The Nepal government and NRB have incentivized EV adoption with lower interest rates (typically 8–10% vs 10–13% for petrol cars) and favorable terms to encourage green vehicles.',
+    },
+    {
+      question: 'What is the maximum loan tenure for a vehicle in Nepal?',
+      answer: 'NRB allows up to 7 years for cars and commercial vehicles, and up to 5 years for motorcycles and scooters.',
+    },
+    {
+      question: 'How is the EMI calculated?',
+      answer: 'EMI uses the standard reducing balance formula: EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is monthly interest rate, and n is number of months.',
+    },
+    {
+      question: 'Which banks in Nepal offer vehicle loans?',
+      answer: 'Most commercial banks and development banks in Nepal offer vehicle loans, including NIC Asia, Nabil, Standard Chartered, Kumari, Laxmi Sunrise, Mega Bank, and many others.',
+    },
+    {
+      question: 'Are the interest rates shown accurate?',
+      answer: 'The rates shown are typical ranges as of 2024–2025. Actual rates vary by bank, your credit profile, and market conditions. Always confirm the current rate with your bank.',
+    },
+    {
+      question: 'Does this calculator include insurance costs?',
+      answer: 'No. The calculator covers the loan principal, interest, and EMI only. Vehicle insurance (mandatory in Nepal) and registration costs are additional.',
+    },
+    {
+      question: 'What is the minimum down payment for commercial vehicles?',
+      answer: 'NRB requires a minimum 25% down payment for commercial vehicles (trucks, buses, etc.).',
+    },
+    {
+      question: 'Can I use this for refinancing an existing vehicle loan?',
+      answer: 'Yes. Enter the outstanding balance as the vehicle price, set down payment to 0%, and use the refinanced rate and tenure to calculate new EMI.',
+    },
+  ],
+  howToSteps: [
+    'Select your vehicle type: Car, Motorcycle/Scooter, Electric Vehicle, or Truck/Commercial.',
+    'Enter the vehicle price in NPR.',
+    'Set your down payment percentage — the tool shows the NRB minimum required.',
+    'Enter the annual interest rate (typical Nepal ranges are shown for each vehicle type).',
+    'Select loan tenure in years (maximum allowed per NRB is shown for each type).',
+    'Review the calculated EMI, total interest, and total payment amount.',
+    'Scroll down to view the full month-by-month amortization table.',
+    'Compare different scenarios by adjusting inputs — results update instantly.',
+  ],
+  relatedToolSlugs: ['nepal-income-tax-calculator', 'nepal-salary-calculator', 'emi-calculator'],
+  icon: 'Car',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nepali-calendar',
+  name: 'Nepali Calendar',
+  shortDescription: 'Browse the full Bikram Sambat calendar with Nepali festivals and public holidays.',
+  longDescription: `<p>The <strong>Nepali Calendar</strong> tool displays the full Bikram Sambat (BS) calendar with today's date highlighted, festivals marked, and public holidays listed — with instant BS-to-AD date conversion built in.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>Monthly Calendar View:</strong> Navigate BS months with left/right arrows or jump to any year</li>
+<li><strong>Today Highlighted:</strong> Current BS date shown prominently with Devanagari script</li>
+<li><strong>Festivals & Holidays:</strong> Dashain, Tihar, Holi, Buddha Jayanti, and more marked with color codes</li>
+<li><strong>AD Dates:</strong> Every cell shows the corresponding Gregorian (AD) date</li>
+<li><strong>Month Reference:</strong> Quick-access grid of all 12 BS months with day counts</li>
+</ul>
+<h2>About Bikram Sambat</h2>
+<p>Bikram Sambat is the official calendar of Nepal, approximately 56 years and 8 months ahead of the Gregorian calendar. The new year begins in mid-April (Baishakh 1). Each month has 29–32 days, and the calendar is lunisolar in nature.</p>
+<p>The tool currently covers BS 2079–2083 with exact day-to-day correspondence for BS 2081. All data is hardcoded for accuracy — no external API calls needed.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'nepali calendar',
+  secondaryKeywords: ['bikram sambat', 'BS calendar', 'nepali patro', 'nepal holidays', 'BS calendar 2081'],
+  metaTitle: 'Nepali Calendar (Bikram Sambat) — Free Online Tool',
+  metaDescription: 'View the full Nepali Bikram Sambat calendar with festivals, public holidays, and BS-to-AD date conversion. Covers BS 2081 and beyond.',
+  faqs: [
+    { question: 'What is Bikram Sambat (BS)?', answer: 'Bikram Sambat is the official calendar of Nepal. It is approximately 56 years and 8 months ahead of the Gregorian (AD) calendar. For example, 2081 BS corresponds to 2024/2025 AD.' },
+    { question: 'How accurate is the BS-to-AD conversion?', answer: 'The tool uses a hardcoded lookup table for BS 2081, giving exact day-to-day correspondence with the AD calendar.' },
+    { question: 'Are all Nepali public holidays included?', answer: 'Major government-recognised public holidays and popular festivals for BS 2081 are included. Exact dates may vary by region or year.' },
+    { question: 'Can I view other BS years?', answer: 'Yes. Use the year selector or navigation arrows to browse different months and years within the supported range.' },
+    { question: 'What do the Devanagari month names mean?', answer: 'Each BS month has a Sanskrit-origin name. For example, Baishakh (बैशाख) is the first month and falls in mid-April to mid-May AD.' },
+    { question: 'What is the Bikram Sambat (BS) calendar?', answer: 'BS is the official calendar of Nepal, approximately 56 years and 8.5 months ahead of the Gregorian (AD) calendar. The new year begins in mid-April. It has 12 months with 29-32 days each.' },
+  ],
+  howToSteps: [
+    'Open the Nepali Calendar tool.',
+    'The current BS month is shown by default with today highlighted.',
+    'Click the left/right arrows to navigate between months.',
+    'Use the year selector to jump to a specific BS year.',
+    'Hover over highlighted dates to see festival or holiday names.',
+    'Click any festival or holiday marker to see its significance and AD date equivalent.',
+    'Check the legend at the bottom to understand colour codes.',
+    'View the "Today in BS" card for the full date in both BS and AD formats.',
+  ],
+  relatedToolSlugs: ['nepali-date-converter', 'nepal-income-tax-calculator', 'age-calculator'],
+  icon: 'Calendar',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nepali-name-meaning',
+  name: 'Nepali Name Meaning',
+  shortDescription: 'Find meaning, origin, numerology and lucky traits for 200+ Nepali names.',
+  longDescription: `<p>Curious about what a Nepali name means? The <strong>Nepali Name Meaning</strong> tool lets you search 200+ names from Sanskrit, Tibetan, Newari, Maithili, and Persian origins — with meanings in English and Devanagari, numerology numbers, personality traits, and lucky colors.</p>
+<h2>What You Can Discover</h2>
+<ul>
+<li><strong>Meaning & Origin:</strong> Full meaning in English and Nepali (Devanagari) with etymological origin</li>
+<li><strong>Numerology:</strong> Pythagorean numerology number (1–9) with associated personality traits</li>
+<li><strong>Lucky Attributes:</strong> Lucky color, lucky day, and key personality characteristics</li>
+<li><strong>Pronunciation Guide:</strong> Phonetic pronunciation for each name</li>
+</ul>
+<h2>Name Origins Covered</h2>
+<ul>
+<li><strong>Sanskrit:</strong> Most common — used across Brahmin, Chhetri, and Hindu communities</li>
+<li><strong>Tibetan:</strong> Common among Sherpa, Tamang, and Buddhist communities</li>
+<li><strong>Newari:</strong> Traditional names from the Kathmandu Valley's Newar community</li>
+<li><strong>Maithili:</strong> Names from the Terai region along the Nepal-Bihar border</li>
+</ul>
+<p>Search by name or meaning, filter by gender, and click any card to expand full details. Perfect for parents choosing a baby name or anyone curious about Nepali name traditions.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'nepali name meaning',
+  secondaryKeywords: ['nepali baby name', 'sanskrit name meaning nepal', 'nepali name origin', 'nepali name numerology', 'Nepali baby name meaning'],
+  metaTitle: 'Nepali Name Meaning — Free Online Tool',
+  metaDescription: 'Discover the meaning, origin, and numerology of 200+ Nepali and Sanskrit names. Search by name, filter by gender, and explore personality traits.',
+  faqs: [
+    {
+      question: 'Where do most Nepali names come from?',
+      answer: 'Most Nepali names have Sanskrit origins, reflecting the Hindu cultural heritage of Nepal. You will also find Tibetan-origin names common among Sherpa and Buddhist communities, Newari names from the Kathmandu Valley, and Maithili names popular in the Terai region.',
+    },
+    {
+      question: 'What is numerology and how is it calculated for names?',
+      answer: 'Name numerology assigns a number 1 through 9 to each letter using the Pythagorean system, then sums all digits and reduces to a single number. Each number carries specific personality traits believed to influence a person\'s life.',
+    },
+    {
+      question: 'Are these names used across all communities in Nepal?',
+      answer: 'Many names span multiple communities. Sanskrit names are widely used across Brahmin, Chhetri, and other Hindu communities. Sherpa and Tamang communities often use Tibetan-origin names. Newari names are most common in the Kathmandu Valley.',
+    },
+    {
+      question: 'How do I know if a name is traditional or modern?',
+      answer: 'The origin field tells you whether a name comes from Sanskrit, Tibetan, Newari, or Maithili roots. Names like Aarav and Prisha are popular modern choices, while Ram, Sita, and Krishna are classical traditional names with deep mythological roots.',
+    },
+    {
+      question: 'Can I search names in Devanagari script?',
+      answer: 'The search box accepts both Roman English spelling and Devanagari script. Type any part of a name to get instant matches. Try searching "क" in Devanagari or "ka" in English to find all names beginning with that sound.',
+    },
+    {
+      question: 'How is the numerology number calculated for a name?',
+      answer: 'Pythagorean numerology assigns A=1 through I=9, J=1 through R=9, S=1 through Z=8. Sum all letter values, then reduce to a single digit (except 11 and 22 which are master numbers).',
+    },
+  ],
+  howToSteps: [
+    'Type a name in the search box to instantly find its meaning and details.',
+    'Filter results by gender using the Male / Female / All toggle buttons.',
+    'Click on any name card to expand and see full details including meaning, origin, and numerology.',
+    'Check the personality traits section to learn more about people with that name.',
+    'See the lucky color, lucky day, and numerology number associated with the name.',
+    'Click \'Similar Names\' on any result card to explore names with related meanings or the same origin.',
+    'Browse all names by scrolling through the grid if you are looking for inspiration.',
+  ],
+  relatedToolSlugs: ['nepali-date-converter', 'nepali-typing', 'rashi-checker'],
+  icon: 'BookOpen',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'net-worth-calculator',
+  name: 'Net Worth Calculator',
+  shortDescription: 'Calculate your net worth by tracking all assets and liabilities.',
+  longDescription: `<p>How wealthy are you, really? The <strong>Net Worth Calculator</strong> gives you a complete financial snapshot by adding up everything you own (assets) and subtracting everything you owe (liabilities) — with auto-save so your data persists between sessions.</p>
+<h2>Asset Categories Tracked</h2>
+<ul>
+<li><strong>Cash & Savings:</strong> Savings accounts, fixed deposits, cash in hand</li>
+<li><strong>Investments:</strong> Stocks, mutual funds, PPF, NPS, gold, crypto</li>
+<li><strong>Real Estate:</strong> Home market value, plots, rental property</li>
+<li><strong>Vehicles:</strong> Car and bike resale values</li>
+<li><strong>Other Assets:</strong> EPF balance, gratuity, business value</li>
+</ul>
+<h2>Liabilities Tracked</h2>
+<p>Home loan, car loan, personal loan, credit card dues, education loan, and any other debts. Add or remove rows as needed.</p>
+<h2>Wealth Categories</h2>
+<p>Your net worth is classified into categories common in Indian personal finance: Negative, Building Wealth (under ₹25L), Comfortable (₹25L–₹1Cr), Wealthy (₹1Cr–₹5Cr), and High Net Worth Individual (above ₹5Cr). A visual breakdown bar shows how your assets are distributed across categories.</p>
+<p>All data is stored in your browser's localStorage only — nothing is sent to any server. Track quarterly to see your progress.</p>`,
+  category: 'calculators',
+  targetKeyword: 'net worth calculator',
+  secondaryKeywords: ['assets liabilities', 'financial health', 'wealth tracker', 'personal finance india', 'balance sheet calculator'],
+  metaTitle: 'Net Worth Calculator — Free Online Tool',
+  metaDescription: 'Calculate your net worth by tracking all assets and liabilities. Auto-saves to your browser. See wealth category and asset breakdown instantly.',
+  faqs: [
+    {
+      question: 'What is net worth?',
+      answer: 'Net worth is the difference between what you own (assets) and what you owe (liabilities). Net Worth = Total Assets − Total Liabilities. A positive net worth means you own more than you owe.',
+    },
+    {
+      question: 'Should I include my home value in assets?',
+      answer: 'Yes. Your home is an asset, but if you have a home loan, the outstanding loan amount is a liability. Your net equity in the home = current market value − outstanding loan.',
+    },
+    {
+      question: 'Should I include EPF and PPF in assets?',
+      answer: 'Yes. EPF (Employee Provident Fund) and PPF (Public Provident Fund) are real financial assets. Include the current balance/corpus value in the Other Assets or Investments category.',
+    },
+    {
+      question: 'What is considered a good net worth in India?',
+      answer: 'There is no universal benchmark, but common categories used in India are: Negative (< ₹0), Building Wealth (₹0–₹25L), Comfortable (₹25L–₹1Cr), Wealthy (₹1Cr–₹5Cr), and High Net Worth Individual/HNWI (> ₹5Cr).',
+    },
+    {
+      question: 'Should I include my car as an asset?',
+      answer: 'Yes, at its current market value (not purchase price). Vehicles depreciate rapidly — a car bought for ₹10L may be worth ₹5–7L after 3 years. Use the realistic resale value.',
+    },
+    {
+      question: 'Should I include gold jewellery?',
+      answer: 'Yes. Physical gold (jewellery, coins, bars) should be included at current market value. You can find the latest gold price per gram on commodity exchange websites.',
+    },
+    {
+      question: 'Is my data secure? Where is it stored?',
+      answer: 'Your data is stored exclusively in your browser\'s localStorage — it never leaves your device and is not sent to any server. Clearing browser data or using a different browser will erase the saved data.',
+    },
+    {
+      question: 'Should I include future income or salary in assets?',
+      answer: 'No. Net worth is a snapshot of your current financial position. Future income is not an asset until earned. Include only current balances, current market values, and existing holdings.',
+    },
+    {
+      question: 'How often should I calculate my net worth?',
+      answer: 'Financial advisors recommend tracking net worth quarterly or at least twice a year. Regular tracking helps you see progress toward your financial goals and spot any concerning trends early.',
+    },
+    {
+      question: 'What is the difference between liquid and illiquid assets?',
+      answer: 'Liquid assets can be converted to cash quickly (savings account, mutual funds, stocks). Illiquid assets take time to sell (real estate, business). Knowing your liquid net worth is important for emergency planning.',
+    },
+  ],
+  howToSteps: [
+    'Enter values for your assets across categories: Cash & Savings, Investments, Real Estate, Vehicles, and Other Assets.',
+    'Add or remove rows within each category using the + and × buttons.',
+    'Enter your liabilities including home loan, car loan, personal loan, credit card dues, and other debts.',
+    'Your net worth is calculated automatically as you type — no need to click Calculate.',
+    'View the summary showing total assets, total liabilities, and your net worth with a wealth category label.',
+    'Your data is automatically saved to your browser and will persist the next time you visit.',
+    'Use the Reset button to start fresh with a clean slate.',
+  ],
+  relatedToolSlugs: ['sip-calculator', 'salary-calculator', 'emi-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nrb-forex-rates-today',
+  name: 'NRB Forex Rates Today',
+  shortDescription: 'NRB official exchange rates with NPR currency converter for 18 currencies.',
+  longDescription: `<p>Check today's Nepal Rastra Bank (NRB) official exchange rates for 18 currencies — with a built-in NPR converter that lets you calculate conversions instantly. The <strong>NRB Forex Rates Today</strong> tool shows buying, selling, and mid rates for USD, EUR, GBP, INR, and more.</p>
+<h2>Currencies Covered</h2>
+<p>US Dollar, Euro, British Pound, Australian Dollar, Canadian Dollar, Swiss Franc, Japanese Yen, Chinese Yuan, Singapore Dollar, Saudi Riyal, Qatari Riyal, Kuwaiti Dinar, UAE Dirham, Malaysian Ringgit, Swedish Krona, Danish Krone, Hong Kong Dollar, and Indian Rupee.</p>
+<h2>Features</h2>
+<ul>
+<li><strong>Full Rates Table:</strong> Buying, selling, and mid rates per unit (JPY and INR shown per 100)</li>
+<li><strong>Currency Converter:</strong> Convert NPR to any currency or vice versa using mid rates</li>
+<li><strong>Direction Swap:</strong> One-click toggle between NPR-to-foreign and foreign-to-NPR</li>
+</ul>
+<h2>How NRB Sets Rates</h2>
+<p>Nepal Rastra Bank publishes indicative rates each business day. The Nepali Rupee is pegged to the Indian Rupee at रु 1.60 NPR per INR. All other cross rates are derived from this peg and prevailing international market rates. Rates shown are indicative 2025 reference figures — visit nrb.org.np for the latest official rates.</p>`,
+  category: 'calculators',
+  targetKeyword: 'nrb forex rates',
+  secondaryKeywords: ['nepal rastra bank exchange rate', 'USD to NPR', 'EUR to NPR', 'nepal currency rate today', 'NRB exchange rate today'],
+  metaTitle: 'NRB Forex Rates Today — Free Online Tool',
+  metaDescription: 'View NRB official forex exchange rates for 18 currencies. Compare buying and selling rates with built-in NPR converter. Updated daily reference data.',
+  faqs: [
+    {
+      question: 'What is the difference between buying and selling rate?',
+      answer: 'The buying rate is what banks pay when you sell foreign currency to them. The selling rate is what banks charge when you buy foreign currency from them. The difference is the bank\'s profit margin.',
+    },
+    {
+      question: 'Why is the INR rate shown per 100 units?',
+      answer: 'Indian Rupee and Japanese Yen rates are quoted per 100 units because a single unit would result in a very small NPR amount. So INR 100 = approximately NPR 160.',
+    },
+    {
+      question: 'Are these rates used for remittance transfers?',
+      answer: 'NRB rates are the official reference rates. Actual remittance rates offered by banks and money transfer operators may differ slightly, often offering better rates for large remittances.',
+    },
+    {
+      question: 'Can I use these rates for customs valuation?',
+      answer: 'NRB published rates are used as the official reference for customs and tax purposes in Nepal. Always use the rate on the specific date of the transaction for official purposes.',
+    },
+    {
+      question: 'How often does NRB update forex rates?',
+      answer: 'NRB (Nepal Rastra Bank) updates exchange rates every business day. Rates are published at nrb.org.np. The rates shown here are reference rates — always check the official NRB website for the latest figures before making transactions.',
+    },
+  ],
+  howToSteps: [
+    'View the NRB forex rates table showing buying and selling rates for all major currencies.',
+    'Check the mid rate column to see the average of buying and selling rates.',
+    'Use the converter section — enter an NPR amount to convert to any foreign currency.',
+    'Switch the direction to enter a foreign currency amount and see the equivalent in NPR.',
+    'Select any currency from the dropdown in the converter to get that specific rate.',
+    'Scroll through the full rates table to compare all 18 currencies side by side.',
+    'Visit nrb.org.np for the most current official rates updated each business day.',
+  ],
+  relatedToolSlugs: ['nrb-forex-converter', 'nepali-date-converter', 'nepal-income-tax-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'nsc-kvp-calculator',
+  name: 'NSC & KVP Calculator',
+  shortDescription: 'Compare NSC and KVP returns, maturity value, and tax benefits side by side.',
+  longDescription: `<p>Choosing between NSC and KVP for your government savings investment? The <strong>NSC & KVP Calculator</strong> compares both post office schemes side by side — showing maturity value, interest earned, effective return, tax benefits, and doubling period.</p>
+<h2>NSC — National Savings Certificate</h2>
+<ul>
+<li>Current rate: 7.7% p.a. compounded annually</li>
+<li>Lock-in: 5 years (no premature withdrawal)</li>
+<li>Section 80C eligible — up to ₹1.5 lakh deduction per year</li>
+<li>Interest reinvested also qualifies for 80C (except final year)</li>
+</ul>
+<h2>KVP — Kisan Vikas Patra</h2>
+<ul>
+<li>Current rate: 7.5% p.a.</li>
+<li>Doubles your money in approximately 115 months (9 years 7 months)</li>
+<li>Premature withdrawal allowed after 2.5 years</li>
+<li>No Section 80C benefit — maturity is fully taxable</li>
+</ul>
+<h2>Which Is Better?</h2>
+<p>NSC wins for tax-saving investors on a 5-year horizon. KVP suits those who want guaranteed doubling with slightly more flexibility. Use the comparison table to see exact numbers for your investment amount.</p>`,
+  category: 'calculators',
+  targetKeyword: 'NSC calculator',
+  secondaryKeywords: ['KVP calculator', 'national savings certificate', 'kisan vikas patra', 'post office scheme', 'Section 80C'],
+  metaTitle: 'NSC & KVP Calculator — Free Online Tool',
+  metaDescription: 'Compare NSC and KVP returns, maturity value, and Section 80C tax benefits side by side. Calculate exact interest earned for any investment amount.',
+  faqs: [
+    {
+      question: 'What is the current interest rate on NSC?',
+      answer: 'The current NSC interest rate is 7.7% per annum, compounded annually but payable at maturity. The government revises this rate quarterly, so always check the India Post website for the latest rate.',
+    },
+    {
+      question: 'In how many months does KVP double the investment?',
+      answer: 'At the current rate of 7.5% p.a., KVP doubles your money in approximately 115 months (9 years and 7 months). The exact doubling period is calculated using the Rule of 72: 72 divided by the annual interest rate.',
+    },
+    {
+      question: 'Does NSC qualify for Section 80C tax deduction?',
+      answer: 'Yes. Investments in NSC qualify for deduction under Section 80C up to ₹1.5 lakh per year. The interest accrued each year (except the final year) is deemed reinvested and also qualifies for 80C deduction.',
+    },
+    {
+      question: 'Is KVP taxable on maturity?',
+      answer: 'Yes. KVP interest is fully taxable as per your income tax slab. KVP does not offer any Section 80C deduction. However, TDS is not deducted at source; you need to declare the income yourself.',
+    },
+    {
+      question: 'Which is better — NSC or KVP?',
+      answer: 'NSC is better for tax-saving investors (Section 80C) with a 5-year horizon. KVP suits those who want to double their money over ~9.5 years without locking into a fixed tenure. NSC has a slightly higher interest rate currently.',
+    },
+  ],
+  howToSteps: [
+    'Enter the investment amount you plan to put into NSC or KVP.',
+    'Select whether you want to calculate for NSC, KVP, or compare both side by side.',
+    'For NSC, the 5-year lock-in and 7.7% rate are pre-filled based on current government rates.',
+    'For KVP, the doubling period of 115 months at 7.5% p.a. is applied automatically.',
+    'View the maturity amount, interest earned, and effective return for each scheme.',
+    'Note the Section 80C tax deduction benefit available only with NSC.',
+  ],
+  relatedToolSlugs: ['ppf-calculator', 'fd-rd-calculator', 'sukanya-samriddhi-calculator'],
+  icon: 'Landmark',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'pan-card-validator',
+  name: 'PAN Card Validator',
+  shortDescription: 'Check if your PAN card number is valid and decode taxpayer type instantly.',
+  longDescription: `<p>Want to quickly check if a PAN number follows the correct format? The <strong>PAN Card Validator</strong> validates Indian Permanent Account Numbers in real time, decodes the taxpayer type (Individual, Company, HUF, Trust, etc.), and identifies the name initial — all without sending any data to a server.</p>
+<h2>What Gets Validated</h2>
+<ul>
+<li><strong>Format Check:</strong> 5 uppercase letters + 4 digits + 1 uppercase letter (e.g., ABCDE1234F)</li>
+<li><strong>Taxpayer Type:</strong> The 4th character reveals if the PAN belongs to an Individual (P), Company (C), HUF (H), Firm (F), Trust (T), or other entity types</li>
+<li><strong>Name Initial:</strong> The 5th character represents the surname initial (for individuals) or entity name initial</li>
+<li><strong>Visual Breakdown:</strong> Color-coded display of serial, type, initial, number, and check character</li>
+</ul>
+<h2>All 10 Taxpayer Type Codes</h2>
+<p>P = Individual, C = Company, H = HUF, F = Firm, A = AOP, T = Trust, B = BOI, L = Local Authority, J = Artificial Juridical Person, G = Government Entity.</p>
+<p>This tool performs format validation only — it does not verify with the Income Tax Department. For official verification, use the Income Tax e-filing portal. Your PAN number never leaves your browser.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'PAN card validator',
+  secondaryKeywords: ['PAN number validation', 'Indian PAN format', 'taxpayer type decoder', 'PAN card checker', 'PAN verification'],
+  metaTitle: 'PAN Card Validator — Free Online Tool',
+  metaDescription: 'Validate Indian PAN card number format online free. Decode taxpayer type and name initial instantly. No data sent to any server — 100% browser-based.',
+  faqs: [
+    {
+      question: 'What is a PAN card number?',
+      answer: 'A Permanent Account Number (PAN) is a 10-character alphanumeric identifier issued by the Income Tax Department of India. It is mandatory for financial transactions above a specified threshold.',
+    },
+    {
+      question: 'What is the format of a valid PAN number?',
+      answer: 'A valid PAN consists of 5 uppercase letters, followed by 4 digits, followed by 1 uppercase letter — for example, ABCDE1234F.',
+    },
+    {
+      question: 'What does the 4th character of a PAN indicate?',
+      answer: 'The 4th character encodes the taxpayer type: P = Individual (Person), C = Company, H = HUF (Hindu Undivided Family), F = Firm, A = AOP (Association of Persons), T = Trust, B = BOI (Body of Individuals), L = Local Authority, J = Artificial Juridical Person, G = Government entity.',
+    },
+    {
+      question: 'What does the 5th character of a PAN indicate?',
+      answer: 'For individuals (where the 4th character is P), the 5th character represents the first letter of the holder\'s surname. For other entity types, it represents the first letter of the entity name.',
+    },
+    {
+      question: 'Does this tool verify my PAN with the Income Tax Department?',
+      answer: 'No. This tool performs format validation only using regex. It does not connect to the Income Tax Department database or any external API.',
+    },
+    {
+      question: 'Is my PAN number safe to enter here?',
+      answer: 'Yes. The validation is done entirely in your browser using JavaScript. Your PAN number is never sent to any server.',
+    },
+    {
+      question: 'Why might a PAN with correct format still be invalid in real life?',
+      answer: 'Format validation only checks the structure. A PAN could pass format checks but still be unregistered, cancelled, or fictitious. Only the Income Tax Department can confirm a PAN\'s authenticity.',
+    },
+    {
+      question: 'Can companies and trusts also have PANs?',
+      answer: 'Yes. Every entity required to pay taxes in India — including companies, firms, trusts, HUFs, and government bodies — is issued a PAN with an appropriate type code in the 4th character.',
+    },
+    {
+      question: 'What is HUF in the context of PAN cards?',
+      answer: 'HUF stands for Hindu Undivided Family. It is a legal entity under Indian law that can own property and conduct business, and it requires its own PAN card separate from individual family members.',
+    },
+    {
+      question: 'Can I use this tool to check a fake PAN number?',
+      answer: 'You can validate whether a number follows the correct PAN format. However, to confirm if a PAN is genuinely issued and active, you must verify it on the official Income Tax e-filing portal.',
+    },
+  ],
+  howToSteps: [
+    'Enter your PAN card number in the input field (e.g. ABCDE1234F).',
+    'The tool automatically validates the format against the official regex pattern.',
+    'View the decoded taxpayer type based on the 4th character of your PAN.',
+    'See the name initial decoded from the 5th character.',
+    'A green tick confirms a valid format; a red cross indicates an invalid PAN.',
+    'Use the Copy button to copy the formatted PAN to your clipboard.',
+  ],
+  relatedToolSlugs: ['gst-calculator', 'gstin-validator', 'upi-id-validator'],
+  icon: 'CreditCard',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'pincode-lookup',
+  name: 'PIN Code Lookup India',
+  shortDescription: 'Find post office details, district, and state for any Indian 6-digit PIN code instantly.',
+  longDescription: `<p>Need to find which post offices, district, and state a PIN code belongs to? The <strong>PIN Code Lookup India</strong> tool fetches real-time data from India Post's official public API — giving you post office names, branch types, delivery status, and postal circle information in seconds.</p>
+<h2>What You Get for Each PIN Code</h2>
+<ul>
+<li><strong>Post Office Details:</strong> Name, branch type (Head/Sub/Branch), and delivery status</li>
+<li><strong>Location Info:</strong> District, division, region, taluk/block, and state</li>
+<li><strong>Postal Circle:</strong> Automatically identified from the state</li>
+<li><strong>Multiple Results:</strong> All post offices sharing the same PIN code are shown</li>
+</ul>
+<h2>How PIN Codes Work</h2>
+<p>A PIN (Postal Index Number) is a 6-digit code. The first digit identifies the postal zone (1–9), the first two digits identify the sub-zone, and the first three digits identify the sorting district. Digits 4–6 are the specific delivery post office.</p>
+<h2>Popular Quick-Access Pins</h2>
+<p>One-click lookup for major cities: Delhi (110001), Mumbai (400001), Kolkata (700001), Chennai (600001), Bengaluru (560001), and Hyderabad (500001).</p>
+<p>Data comes from India Post's free public API (api.postalpincode.in). The tool works for both urban and rural PIN codes across all states and union territories.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'PIN code lookup',
+  secondaryKeywords: ['India PIN code search', 'post office finder', 'pincode to district', 'India Post PIN code', 'postal code India'],
+  metaTitle: 'PIN Code Lookup India — Free Online Tool',
+  metaDescription: 'Look up any Indian PIN code to find post offices, district, state, and delivery status. Uses India Post official API. Free and instant.',
+  faqs: [
+    {
+      question: 'What is a PIN code?',
+      answer: 'PIN stands for Postal Index Number — a 6-digit code used by India Post. The first digit indicates the postal zone, the first two digits indicate the sub-zone, and the first three digits indicate the sorting district.',
+    },
+    {
+      question: 'Where does the data come from?',
+      answer: 'Data is fetched in real time from India Post\'s official public API at api.postalpincode.in. This is a free, CORS-enabled API that requires no authentication.',
+    },
+    {
+      question: 'Why does one PIN code show multiple post offices?',
+      answer: 'A single PIN code can be shared by a Head Office and several Sub/Branch post offices in the same area. All offices sharing that PIN are displayed.',
+    },
+    {
+      question: 'What does "Delivery" vs "Non-Delivery" mean?',
+      answer: '"Delivery" post offices deliver mail directly to addresses. "Non-Delivery" offices handle only counter services and dispatch mail to a Delivery office.',
+    },
+    {
+      question: 'What is the difference between Head, Sub, and Branch post offices?',
+      answer: 'A Head Post Office (HPO) is the main office in a district. Sub Post Offices (SPOs) serve towns and larger areas. Branch Post Offices (BPOs) serve villages and smaller localities.',
+    },
+    {
+      question: 'What is a postal circle?',
+      answer: 'India Post divides the country into 23 postal circles, each corresponding roughly to a state or group of states. For example, Maharashtra forms one circle, while smaller northeastern states share the North East circle.',
+    },
+    {
+      question: 'What if I get "PIN code not found"?',
+      answer: 'The PIN code may be newly allocated, may have been reassigned, or may have been entered incorrectly. Verify the PIN code and try again.',
+    },
+    {
+      question: 'Does this work for Army Postal Service (APS) PIN codes?',
+      answer: 'Army Postal Service uses PIN codes starting with 9 (e.g., 900XXX). These may not be available in the public API for security reasons.',
+    },
+    {
+      question: 'Can I look up a PIN code for a rural village?',
+      answer: 'Yes. The India Post API covers both urban and rural PIN codes across all states and union territories.',
+    },
+    {
+      question: 'Is there a rate limit on searches?',
+      answer: 'The India Post public API is free with no official documented rate limit for reasonable use. The tool fetches one PIN at a time and caches nothing server-side.',
+    },
+  ],
+  howToSteps: [
+    'Enter a 6-digit Indian PIN code in the search box.',
+    'Click Search or press Enter to look up the PIN code.',
+    'Results are fetched from India Post\'s official public API in real time.',
+    'View all post offices associated with the PIN code.',
+    'Each result shows: Post Office Name, Type, Delivery Status, District, Division, State, and Taluk.',
+    'The postal circle is also identified from the state.',
+    'Use the Copy button to copy the PIN code to your clipboard.',
+  ],
+  relatedToolSlugs: ['ifsc-code-finder', 'vehicle-number-plate-info', 'gst-calculator'],
+  icon: 'MapPin',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'qr-code-scanner',
+  name: 'QR Code Scanner',
+  shortDescription: 'Decode QR codes from uploaded images instantly in your browser.',
+  longDescription: `<p>Need to read a QR code from a screenshot or photo? The <strong>QR Code Scanner</strong> decodes QR codes from uploaded images instantly — supporting URLs, plain text, WiFi credentials, and more — entirely in your browser with zero server uploads.</p>
+<h2>Supported Content Types</h2>
+<ul>
+<li><strong>URLs:</strong> Automatically detected and rendered as clickable links</li>
+<li><strong>WiFi Credentials:</strong> SSID, password, and encryption type displayed clearly with show/hide toggle</li>
+<li><strong>Plain Text:</strong> Any other encoded text displayed with copy functionality</li>
+</ul>
+<h2>How It Works</h2>
+<p>Upload a PNG, JPG, WebP, or GIF image containing a QR code. The tool uses the jsQR library to decode the image entirely in your browser — your image is never uploaded to any server. Screenshots work best since they are typically sharp and distortion-free.</p>
+<h2>Features</h2>
+<ul>
+<li>Drag-and-drop or click-to-upload interface</li>
+<li>Real-time decoding with loading indicator</li>
+<li>One-click copy for decoded text, URLs, or WiFi passwords</li>
+<li>Mobile-friendly — upload from phone gallery or capture directly</li>
+</ul>`,
+  category: 'utility-tools',
+  targetKeyword: 'QR code scanner',
+  secondaryKeywords: ['QR code reader online', 'scan QR from image', 'decode QR code', 'QR code decoder', 'WiFi QR scanner'],
+  metaTitle: 'QR Code Scanner — Free Online Tool',
+  metaDescription: 'Scan and decode QR codes from images instantly. Upload PNG, JPG, WebP, or GIF to extract URLs, text, WiFi credentials. 100% browser-based.',
+  faqs: [
+    {
+      question: 'What image formats are supported?',
+      answer: 'PNG, JPG/JPEG, WebP, and GIF files are all supported. The image should clearly show the QR code for best results.',
+    },
+    {
+      question: 'Is my image uploaded to a server?',
+      answer: 'No. All QR code decoding happens entirely in your browser using the jsQR library. Your image never leaves your device.',
+    },
+    {
+      question: 'Why does it say "No QR code found in image"?',
+      answer: 'This can happen if the QR code is too small, blurry, partially obscured, or at a steep angle. Try a clearer, higher-resolution image.',
+    },
+    {
+      question: 'Can it decode WiFi QR codes?',
+      answer: 'Yes. WiFi QR codes (WIFI:S:...;T:...;P:...;;) are automatically detected and the SSID, encryption type, and password are displayed clearly.',
+    },
+    {
+      question: 'Can it decode multiple QR codes in one image?',
+      answer: 'Currently the tool decodes the first QR code found in the image. For images with multiple QR codes, only one result is shown.',
+    },
+    {
+      question: 'What types of data can a QR code contain?',
+      answer: 'QR codes can store URLs, plain text, WiFi credentials, contact cards (vCard), email addresses, phone numbers, SMS, and more.',
+    },
+    {
+      question: 'Does this work on mobile?',
+      answer: 'Yes. You can upload images from your phone gallery. On mobile browsers you can also capture a photo directly using the camera.',
+    },
+    {
+      question: 'Why is the decoded URL showing as plain text instead of a link?',
+      answer: 'If the URL does not start with http:// or https://, it is shown as plain text. All valid HTTP/HTTPS URLs are rendered as clickable links.',
+    },
+    {
+      question: 'Can I scan QR codes from screenshots?',
+      answer: 'Yes. Screenshots are among the best sources — they are typically sharp, well-lit, and have no distortion, making them easy to decode.',
+    },
+    {
+      question: 'Is there a file size limit?',
+      answer: 'There is no hard limit enforced by the tool, but very large images may take a moment to process. Images under 10 MB work best.',
+    },
+  ],
+  howToSteps: [
+    'Click the upload area or drag and drop an image file containing a QR code.',
+    'Supported formats: PNG, JPG, JPEG, WebP, GIF.',
+    'The QR code is decoded instantly in your browser using the jsQR library.',
+    'View the decoded text, URL, or WiFi credentials in the result panel.',
+    'If a URL is detected, click the link to open it in a new tab.',
+    'For WiFi QR codes, the SSID and password are displayed clearly.',
+    'Use the Copy button to copy the decoded text to your clipboard.',
+  ],
+  relatedToolSlugs: ['image-compressor', 'base64-encode-decode', 'url-encode-decode'],
+  icon: 'ScanLine',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'readability-score-checker',
+  name: 'Readability Score Checker',
+  shortDescription: 'Calculate Flesch, Gunning Fog, SMOG, ARI & more readability scores.',
+  longDescription: `<p>Is your writing easy enough for your target audience? The <strong>Readability Score Checker</strong> analyzes any text with 6 industry-standard readability formulas — giving you grade levels, audience insights, and actionable metrics in real time as you type.</p>
+<h2>6 Readability Scores Calculated</h2>
+<ul>
+<li><strong>Flesch Reading Ease:</strong> 0–100 scale — higher means easier (90+ = 5th grade, 60–70 = standard)</li>
+<li><strong>Flesch-Kincaid Grade Level:</strong> US school grade equivalent</li>
+<li><strong>Gunning Fog Index:</strong> Years of formal education needed to understand on first reading</li>
+<li><strong>SMOG Index:</strong> Education years — especially popular for health literacy materials</li>
+<li><strong>ARI (Automated Readability Index):</strong> Character-based grade level estimate</li>
+<li><strong>Coleman-Liau Index:</strong> Another character-count-based grade level formula</li>
+</ul>
+<h2>Additional Statistics</h2>
+<ul>
+<li>Word count, sentence count, paragraph count, character count</li>
+<li>Average sentence length, average word length, average syllables per word</li>
+<li>Complex word count (3+ syllables) and reading time estimate at 200 WPM</li>
+<li>Most frequent words visualization (stop words excluded)</li>
+</ul>
+<p>Color-coded score cards (green = easy, yellow = moderate, red = difficult) make it easy to see at a glance whether your writing hits the right level. All analysis runs in your browser — no text is transmitted anywhere.</p>`,
+  category: 'text-tools',
+  targetKeyword: 'readability score checker',
+  secondaryKeywords: ['Flesch reading ease', 'Gunning Fog Index', 'SMOG index', 'readability calculator', 'text grade level'],
+  metaTitle: 'Readability Score Checker — Free Online Tool',
+  metaDescription: 'Analyze text readability with Flesch, Gunning Fog, SMOG, ARI, and Coleman-Liau scores. Get grade level and audience insights instantly.',
+  faqs: [
+    {
+      question: 'What is the Flesch Reading Ease score?',
+      answer: 'Flesch Reading Ease rates text on a 0–100 scale. Higher scores mean easier reading. 90–100 is very easy (5th grade), 60–70 is standard (8th–9th grade), and 0–30 is very difficult (professional/academic).',
+    },
+    {
+      question: 'What does the Flesch-Kincaid Grade Level mean?',
+      answer: 'The FK Grade Level corresponds to a US school grade. A score of 8.0 means the text is readable by an 8th grader. Most newspapers target grades 6–8.',
+    },
+    {
+      question: 'What is the Gunning Fog Index?',
+      answer: 'The Gunning Fog Index estimates the years of formal education needed to understand text on a first reading. A score of 12 corresponds to a US high school senior.',
+    },
+    {
+      question: 'What is the SMOG Index?',
+      answer: 'SMOG (Simple Measure of Gobbledygook) estimates the years of education needed to understand a piece of writing. It is especially popular for assessing health literacy materials.',
+    },
+    {
+      question: 'How is syllable counting done?',
+      answer: 'Syllables are counted by detecting vowel groups (a, e, i, o, u clusters) with adjustments for silent-e endings and common diphthongs, providing a close approximation.',
+    },
+    {
+      question: 'How accurate are these readability formulas?',
+      answer: 'These formulas are widely used academic approximations. They work best on prose text of at least 100 words. Very short texts or code/lists may produce less reliable scores.',
+    },
+    {
+      question: 'What is the ARI (Automated Readability Index)?',
+      answer: 'The ARI uses character counts rather than syllable counts to estimate grade level, making it well-suited for automated analysis. It tends to closely match Flesch-Kincaid results.',
+    },
+    {
+      question: 'Is my text stored or sent anywhere?',
+      answer: 'No. All analysis is performed entirely in your browser using JavaScript. No text is sent to any server.',
+    },
+    {
+      question: 'How is reading time calculated?',
+      answer: 'Reading time is estimated at 200 words per minute, the average adult silent reading speed.',
+    },
+    {
+      question: 'What text length gives the most accurate results?',
+      answer: 'Most readability formulas were validated on samples of 100–200+ words. For best accuracy, analyze at least 100 words of continuous prose.',
+    },
+  ],
+  howToSteps: [
+    'Paste or type your text into the input area.',
+    'Scores are calculated instantly as you type — no submit button needed.',
+    'Review the six readability scores displayed on color-coded cards (green = easy, red = hard).',
+    'Check the grade level and target audience interpretation below each score.',
+    'Read basic text statistics: word count, sentence count, paragraph count, and average lengths.',
+    'Look at the reading time estimate for your text length.',
+    'Browse the most common words list to identify repetition or jargon.',
+    'Use the clear button to reset and analyze a new piece of text.',
+  ],
+  relatedToolSlugs: ['word-counter', 'reading-time-calculator', 'case-converter'],
+  icon: 'BookOpen',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'salary-hike-calculator',
+  name: 'Salary Hike Calculator',
+  shortDescription: 'Instantly calculate new salary after hike with monthly/annual breakdown and in-hand estimate.',
+  longDescription: `<p>Got a salary hike and want to know exactly what your new CTC looks like? The <strong>Salary Hike Calculator</strong> shows your new salary after any percentage increment — with monthly and annual breakdowns, approximate in-hand estimates, and a "What If" comparison table for different hike scenarios.</p>
+<h2>What You Get</h2>
+<ul>
+<li><strong>New Salary:</strong> Monthly and annual CTC after the hike percentage is applied</li>
+<li><strong>Hike Amount:</strong> Exact increment in rupees — both monthly and annual</li>
+<li><strong>In-Hand Estimate:</strong> Approximate take-home after ~30% deductions (toggle on/off)</li>
+<li><strong>Old vs New Comparison:</strong> Side-by-side table of old and new CTC</li>
+<li><strong>What-If Scenarios:</strong> See results for 5%, 10%, 15%, 20%, 25%, and 30% hikes at once</li>
+</ul>
+<h2>Average Hike Benchmarks in India</h2>
+<ul>
+<li>Annual appraisal: 8–12%</li>
+<li>Good performance: 15–20%</li>
+<li>Job switch: 20–40%</li>
+<li>Promotion: 20–40%+</li>
+</ul>
+<p>Enter monthly or annual salary, adjust the hike slider, and get instant results. Copy your summary to share with HR or use during negotiations. All calculations run in your browser — completely private.</p>`,
+  category: 'calculators',
+  targetKeyword: 'salary hike calculator',
+  secondaryKeywords: ['salary increment calculator', 'new salary after hike', 'ctc hike', 'pay raise calculator', 'take home after hike'],
+  metaTitle: 'Salary Hike Calculator — Free Online Tool',
+  metaDescription: 'Calculate your new salary after any hike percentage. See monthly/annual breakdown, in-hand estimate, and compare old vs new CTC instantly.',
+  faqs: [
+    {
+      question: 'How is the new salary after hike calculated?',
+      answer: 'New Salary = Current Salary × (1 + Hike% / 100). If you enter monthly salary, the annual figure is multiplied by 12. The hike amount is New Salary minus Old Salary.',
+    },
+    {
+      question: 'What does the in-hand estimate mean?',
+      answer: 'The in-hand estimate deducts an approximate 30% for income tax, PF, and other statutory deductions. It is an approximation — your actual take-home depends on your tax slab, deductions, and employer benefits.',
+    },
+    {
+      question: 'Is CTC the same as gross salary?',
+      answer: 'No. CTC (Cost to Company) includes all components — basic pay, HRA, allowances, PF contributions, gratuity, and perquisites. Gross salary excludes employer PF and gratuity. Take-home (net salary) is after all deductions.',
+    },
+    {
+      question: 'What is a good salary hike in India?',
+      answer: 'The average salary hike in India is 8–12% per year. A hike above 15% is considered good, while hikes of 20–30%+ are common when switching jobs. Promotions can bring 20–40% increments.',
+    },
+    {
+      question: 'How do I negotiate a salary hike?',
+      answer: 'Research market rates, document your achievements, time your ask near appraisal cycles, and have a specific number in mind. Show your value with data — revenue generated, projects delivered, or costs saved.',
+    },
+  ],
+  howToSteps: [
+    'Enter your current salary — toggle between monthly or annual CTC.',
+    'Use the slider or type in your hike percentage (1–100%).',
+    'View your new salary instantly — monthly and annual figures shown.',
+    'Toggle the in-hand estimate to see approximate take-home after 30% tax.',
+    'Check the old vs new CTC comparison table for a full side-by-side view.',
+    'Scroll to the "What If" table to compare outcomes for 5%, 10%, 15%, 20%, 25%, and 30% hikes.',
+    'Use the Copy Result button to share your new salary details.',
+  ],
+  relatedToolSlugs: ['salary-calculator', 'ctc-to-in-hand-calculator', 'income-tax-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+});
+
+// ============================================================
+// REGISTRY PART 3 — 18 tools
+// ============================================================
+
+tools.push({
+  slug: 'secure-notes',
+  name: 'Secure Notes',
+  shortDescription: 'Browser-based AES-256 encrypted notes that never leave your device.',
+  longDescription: `<p>Secure Notes lets you write, encrypt, and store private notes entirely in your browser. Using military-grade AES-256-GCM encryption with PBKDF2 key derivation (100,000 iterations), your notes are locked behind a password that only you know.</p>
+<h2>Why Use Secure Notes?</h2>
+<p>Unlike cloud-based note apps, Secure Notes never sends your data to any server. Everything — encryption, decryption, and storage — happens locally in your browser using the Web Crypto API. Your notes live in localStorage and are completely device-specific.</p>
+<ul>
+<li>AES-256-GCM encryption with PBKDF2 key derivation</li>
+<li>Create, view, and delete encrypted notes with a simple interface</li>
+<li>Export all encrypted notes as a JSON backup file</li>
+<li>Session password memory for convenience during a browsing session</li>
+<li>No account required, no server uploads, 100% offline-capable</li>
+</ul>
+<h2>How It Works</h2>
+<p>Each note is encrypted individually with a unique salt and initialization vector. Even if someone accesses your device, they cannot read your notes without the correct password. There is no password recovery — if you forget your password, the note is permanently inaccessible.</p>
+<p>Perfect for storing sensitive information like passwords, personal thoughts, private ideas, or confidential business notes that you want to keep completely private.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'secure notes',
+  secondaryKeywords: ['encrypted notes', 'private notes', 'AES-256', 'browser encryption', 'password protected notes'],
+  metaTitle: 'Secure Notes — Free AES-256 Encrypted Notes Online',
+  metaDescription: 'Write and encrypt private notes in your browser with AES-256 encryption. No server uploads, no accounts. 100% private secure notes tool.',
+  faqs: [
+    { question: 'Is my data sent to any server?', answer: 'No. All encryption and decryption happens entirely in your browser using the Web Crypto API. Your notes and passwords never leave your device.' },
+    { question: 'What encryption does this tool use?', answer: 'AES-GCM 256-bit encryption with a key derived from your password using PBKDF2 (100,000 iterations, SHA-256 hash).' },
+    { question: 'What happens if I forget my password?', answer: 'There is no password recovery. If you forget your password, the encrypted note cannot be decrypted. Keep your password safe.' },
+    { question: 'Can I access my notes on another device?', answer: 'Notes are stored in your browser\'s localStorage and are device-specific. Use the Export feature to back up and transfer notes.' },
+  ],
+  howToSteps: [
+    'Click "New Note" to create a note with a title and body.',
+    'Enter and confirm a password to encrypt your note using AES-256.',
+    'Your encrypted note is saved to localStorage — never sent to any server.',
+    'Click any note in the list and enter your password to decrypt and read it.',
+    'Use "Export" to download all your encrypted notes as a JSON backup file.',
+  ],
+  relatedToolSlugs: ['password-generator', 'hash-generator', 'base64-encode-decode'],
+  icon: 'Lock',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'social-media-dimensions-guide',
+  name: 'Social Media Image Dimensions Guide',
+  shortDescription: 'All social media image & video dimensions in one place.',
+  longDescription: `<p>The Social Media Image Dimensions Guide is your complete reference for every image and video size you need across all major platforms — Instagram, YouTube, Facebook, X (Twitter), LinkedIn, TikTok, Pinterest, WhatsApp, Snapchat, and Google My Business.</p>
+<h2>Why Dimensions Matter</h2>
+<p>Uploading images at the wrong size leads to awkward cropping, blurry visuals, and unprofessional-looking posts. Each platform has specific requirements for profile pictures, cover photos, posts, stories, reels, and thumbnails. This guide gives you every specification in one searchable interface.</p>
+<ul>
+<li>10+ platforms covered with complete dimension specs</li>
+<li>Filter by content type: Profile, Post, Story, Cover, Video</li>
+<li>Search for specific formats like "thumbnail" or "story"</li>
+<li>Visual size comparison boxes to see relative proportions</li>
+<li>Copy any dimension set to clipboard with one click</li>
+<li>Aspect ratio, max file size, and recommended formats included</li>
+</ul>
+<h2>Updated for 2025</h2>
+<p>Social platforms frequently change their image requirements. This guide is reviewed and updated regularly to ensure you always have the latest specifications. Bookmark this page for quick reference whenever you create social media content.</p>`,
+  category: 'seo-tools',
+  targetKeyword: 'social media image dimensions',
+  secondaryKeywords: ['social media image sizes', 'instagram image size', 'youtube thumbnail size', 'facebook cover photo size', 'linkedin image dimensions'],
+  metaTitle: 'Social Media Image Dimensions Guide 2025 — Free Tool',
+  metaDescription: 'Complete social media image and video dimensions for Instagram, YouTube, Facebook, X, LinkedIn, TikTok, and more. Updated March 2025.',
+  faqs: [
+    { question: 'How often is this guide updated?', answer: 'This guide was last updated in March 2025. Social media platforms occasionally change their requirements, so we review and update specifications regularly.' },
+    { question: 'What is the difference between minimum and recommended dimensions?', answer: 'Minimum dimensions are the smallest size a platform accepts. Recommended dimensions are optimized for the best display quality on all devices, including high-resolution screens.' },
+    { question: 'What does \'safe zone\' mean for YouTube channel art?', answer: 'The safe zone is the area guaranteed to be visible on all devices. Content outside the safe zone may be cropped on mobile or TV screens.' },
+    { question: 'Which image format should I use — JPG, PNG, or WebP?', answer: 'Use JPG for photographs (smaller file size), PNG for graphics with transparency, and WebP where supported for best compression. Most platforms accept JPG and PNG.' },
+    { question: 'Can I use the same image for all platforms?', answer: 'Not ideally. Each platform crops and displays images differently. For best results, create platform-specific versions, especially for profile pictures and cover images.' },
+    { question: 'What aspect ratio is best for Instagram posts in 2025?', answer: 'Square (1:1) at 1080×1080px remains the safest universal choice. Portrait (4:5) at 1080×1350px gets more screen real estate in the feed.' },
+    { question: 'Why do my uploaded images look blurry?', answer: 'Images are usually blurry because they are too small. Always upload at the recommended dimensions. Platforms compress images, so starting with higher quality preserves sharpness.' },
+    { question: 'What is the recommended size for a YouTube thumbnail?', answer: 'YouTube thumbnails should be 1280×720px (16:9 aspect ratio), under 2MB, in JPG, PNG, or GIF format.' },
+    { question: 'What size should a LinkedIn company logo be?', answer: 'LinkedIn company logos should be 300×300px, and display at 68×68px. Upload at 300×300px for the sharpest result.' },
+    { question: 'Are these dimensions for mobile or desktop?', answer: 'The dimensions listed are the recommended upload sizes optimized for display across both mobile and desktop. The platform scales images responsively from these base sizes.' },
+  ],
+  howToSteps: [
+    'Browse all platforms listed in the left sidebar or top tabs.',
+    'Click a platform name to jump to its full specifications section.',
+    'Use the search box to find a specific format (e.g. \'thumbnail\' or \'story\').',
+    'Review dimensions, aspect ratio, max file size, and recommended format for each type.',
+    'Click \'Copy\' next to any dimension set to copy it to your clipboard instantly.',
+    'Use the visual size comparison boxes to see relative proportions between formats.',
+    'Filter by content type using the category tabs: Profile, Post, Story, Cover, Video.',
+    'All data is updated as of March 2025 — bookmark for future reference.',
+  ],
+  relatedToolSlugs: ['image-resizer', 'aspect-ratio-calculator', 'image-compressor'],
+  icon: 'LayoutGrid',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'social-media-post-mockup',
+  name: 'Social Media Post Mockup',
+  shortDescription: 'Design realistic social media post mockups for 4 platforms and download as PNG.',
+  longDescription: `<p>The Social Media Post Mockup tool lets you create pixel-perfect previews of posts for Facebook, Instagram, Twitter/X, and LinkedIn — all without posting anything online. Perfect for marketers, content creators, and designers who need to visualize content before publishing.</p>
+<h2>Design Before You Post</h2>
+<p>Presenting content ideas to clients or team members? This tool generates realistic social media post mockups that look exactly like the real thing. Customize every detail — profile name, avatar, post text, images, and engagement counts — then download as a high-quality PNG.</p>
+<ul>
+<li>4 platforms: Facebook, Instagram, Twitter/X, LinkedIn</li>
+<li>Customizable profile name, handle, avatar letter and color</li>
+<li>Platform-specific character limits with live counter</li>
+<li>Optional image URL support for post images</li>
+<li>Adjustable like, comment, and share counts</li>
+<li>Download mockup as PNG using html2canvas</li>
+</ul>
+<h2>Who Is This For?</h2>
+<p>Social media managers use it for client approvals. Content creators use it for planning. Designers use it for portfolio presentations. Teachers use it for educational materials. Everything runs in your browser — nothing is posted or shared anywhere.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'social media mockup',
+  secondaryKeywords: ['post preview', 'facebook mockup', 'instagram mockup', 'twitter mockup', 'social media post preview'],
+  metaTitle: 'Social Media Post Mockup — Free Online Generator',
+  metaDescription: 'Create realistic social media post mockups for Facebook, Instagram, Twitter/X, and LinkedIn. Download as PNG. Free, no signup required.',
+  faqs: [
+    { question: 'How does the download work?', answer: 'The tool uses the html2canvas library to take a snapshot of the rendered mockup and saves it as a PNG file to your device.' },
+    { question: 'Are real images supported?', answer: 'Yes. Paste any public image URL into the image field and it will be displayed in the post mockup. Note that CORS-restricted images may not appear in the download.' },
+    { question: 'What are the character limits per platform?', answer: 'Twitter/X allows 280 characters, Facebook and LinkedIn allow up to 3000 characters, and Instagram captions support up to 2200 characters.' },
+    { question: 'Can I use this for client presentations?', answer: 'Absolutely. This tool is designed for marketers, content creators, and designers who need to present content ideas in a realistic format before publishing.' },
+    { question: 'Does this post anything to real social media?', answer: 'No. This is a purely visual mockup tool. Nothing is posted, shared, or sent anywhere. All content stays in your browser.' },
+  ],
+  howToSteps: [
+    'Select the social media platform: Facebook, Instagram, Twitter/X, or LinkedIn.',
+    'Enter the profile name and handle (username).',
+    'Pick an avatar letter and background color for the profile picture.',
+    'Type your post text in the content area — the character counter shows your remaining limit.',
+    'Optionally add an image URL to show a post image.',
+    'Set the like, comment, and share counts for realistic engagement numbers.',
+    'Click Download PNG to save the mockup as an image file.',
+  ],
+  relatedToolSlugs: ['instagram-carousel-maker', 'twitter-thread-maker', 'og-preview-tester'],
+  icon: 'Layout',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'step-up-sip-calculator',
+  name: 'Step-Up SIP Calculator',
+  shortDescription: 'Calculate Step-Up SIP returns with annual increment and compare with regular SIP.',
+  longDescription: `<p>The Step-Up SIP Calculator helps you plan your mutual fund investments by factoring in annual increases to your SIP amount. Also known as a Top-Up SIP calculator, it shows how increasing your monthly SIP each year can dramatically boost your wealth over time.</p>
+<h2>Why Step-Up SIP?</h2>
+<p>A regular SIP keeps your monthly investment fixed, but your income typically grows every year. A Step-Up SIP lets you increase your contribution by a fixed percentage annually — aligning your investments with your growing income and accelerating wealth creation through the power of compounding.</p>
+<ul>
+<li>Calculate maturity value with annual step-up percentages (5% to 30%)</li>
+<li>Side-by-side comparison: Step-Up SIP vs Regular SIP</li>
+<li>Year-wise breakdown table showing monthly SIP, invested amount, and total value</li>
+<li>Visual growth chart for easy understanding</li>
+<li>Supports any CAGR assumption from 1% to 50%</li>
+</ul>
+<h2>How It Works</h2>
+<p>In Year 1, you invest your base SIP amount monthly. From Year 2 onwards, the monthly SIP increases by your chosen step-up percentage. Returns are compounded monthly within each year, matching how mutual fund NAVs are priced in practice.</p>
+<p>Historical data shows diversified equity mutual funds in India have delivered 12-15% CAGR over long periods. Use this calculator to see how even a 10% annual step-up can generate significantly higher wealth than a flat SIP.</p>`,
+  category: 'calculators',
+  targetKeyword: 'step up sip calculator',
+  secondaryKeywords: ['sip with step up', 'annual step up sip', 'increasing sip', 'sip returns', 'mutual fund calculator'],
+  metaTitle: 'Step-Up SIP Calculator — Free Online Tool',
+  metaDescription: 'Calculate Step-Up SIP returns with annual increment. Compare with regular SIP and view year-wise breakdown. Free mutual fund calculator.',
+  faqs: [
+    { question: 'What is a Step-Up SIP?', answer: 'A Step-Up SIP (also called Top-Up SIP) is a systematic investment plan where you increase your monthly SIP contribution by a fixed percentage every year. This helps you invest more as your income grows.' },
+    { question: 'How is Step-Up SIP calculated?', answer: 'In Year 1, you invest the base monthly SIP amount. From Year 2 onwards, the monthly SIP increases by the step-up percentage each year. Returns are compounded monthly within each year.' },
+    { question: 'What is a good step-up percentage?', answer: 'A step-up of 10% per year is most common and aligns with average salary growth in India. If your salary grows more, you can choose 15% or 25% step-up for faster wealth accumulation.' },
+    { question: 'Is Step-Up SIP better than regular SIP?', answer: 'Step-Up SIP almost always generates significantly higher corpus than a regular SIP because you invest more over time. The difference becomes dramatic over longer periods due to compounding.' },
+    { question: 'Can I reduce my step-up SIP amount?', answer: 'Yes, most mutual fund houses allow you to pause or reduce the step-up feature. However, increasing contributions over time is generally advisable for long-term wealth creation.' },
+    { question: 'What CAGR should I assume for mutual funds?', answer: 'Historically, diversified equity mutual funds in India have delivered 12–15% CAGR over long periods. Debt funds typically deliver 6–8%. Conservative investors may use 10–12% for projections.' },
+    { question: 'Are SIP returns guaranteed?', answer: 'No. Mutual fund returns are market-linked and not guaranteed. The calculator provides an estimate based on your assumed return rate. Actual returns may vary.' },
+    { question: 'What is the tax treatment of SIP gains?', answer: 'For equity funds, gains on units held over 1 year are taxed as LTCG at 12.5% above ₹1.25 lakh per year. Short-term gains are taxed at 20%. Debt fund gains are added to income.' },
+    { question: 'Can I start a Step-Up SIP with any amount?', answer: 'Yes. Most mutual funds allow step-up SIPs starting from ₹500 or ₹1,000 per month. You can set the step-up frequency and percentage as per your preference.' },
+    { question: 'How does compounding frequency affect Step-Up SIP returns?', answer: 'This calculator compounds monthly, which matches how mutual fund NAVs are priced. More frequent compounding generally results in slightly higher returns compared to annual compounding.' },
+  ],
+  howToSteps: [
+    'Enter your monthly SIP amount in rupees.',
+    'Select the annual step-up percentage (how much to increase SIP each year).',
+    'Enter your expected annual return rate (CAGR).',
+    'Choose your total investment period in years.',
+    'Click Calculate to view total invested, expected returns, and maturity value.',
+    'Review the year-wise breakdown table to see SIP growth over time.',
+    'Compare your results with a regular (no step-up) SIP side by side.',
+    'Use the visual growth chart to understand wealth accumulation year by year.',
+  ],
+  relatedToolSlugs: ['sip-calculator', 'mutual-fund-calculator', 'lumpsum-calculator'],
+  icon: 'TrendingUp',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'swp-calculator',
+  name: 'SWP Calculator',
+  shortDescription: 'Find out how long your corpus lasts with monthly SWP withdrawals and expected returns.',
+  longDescription: `<p>The SWP Calculator helps you plan your retirement income by calculating how long your mutual fund corpus will last with regular monthly withdrawals. A Systematic Withdrawal Plan (SWP) lets you withdraw a fixed amount from your investment while the remaining corpus continues to earn returns.</p>
+<h2>Plan Your Retirement Income</h2>
+<p>Knowing how long your money will last is the most important retirement planning question. This calculator gives you a clear answer by simulating month-by-month withdrawals against your expected returns, showing exactly when your corpus depletes — or if it grows indefinitely.</p>
+<ul>
+<li>Calculate corpus longevity with any withdrawal amount and return rate</li>
+<li>Month-by-month breakdown showing opening balance, returns, and closing balance</li>
+<li>Automatic detection of sustainable vs depleting withdrawal scenarios</li>
+<li>Total withdrawn amount and total returns earned over the period</li>
+<li>Toggle between showing first 24 months or full table</li>
+</ul>
+<h2>When Does Your Corpus Last Forever?</h2>
+<p>If your monthly withdrawal is less than your monthly return, your corpus actually grows over time and theoretically lasts forever. This is the ideal scenario for sustainable retirement income. For debt/hybrid funds used for SWP, 7-9% p.a. is a realistic return assumption.</p>`,
+  category: 'calculators',
+  targetKeyword: 'swp calculator',
+  secondaryKeywords: ['systematic withdrawal plan', 'mutual fund withdrawal', 'retirement income calculator', 'corpus calculator', 'monthly withdrawal calculator'],
+  metaTitle: 'SWP Calculator — Free Systematic Withdrawal Plan Tool',
+  metaDescription: 'Calculate how long your mutual fund corpus lasts with monthly SWP withdrawals. Free retirement income calculator with month-by-month breakdown.',
+  faqs: [
+    { question: 'What is a Systematic Withdrawal Plan (SWP)?', answer: 'An SWP allows you to withdraw a fixed amount from your mutual fund at regular intervals (monthly, quarterly, etc.) while the remaining corpus continues to earn returns. It is popular for retirement income planning.' },
+    { question: 'How long will my corpus last with SWP?', answer: 'It depends on three factors: your corpus size, monthly withdrawal amount, and expected return rate. If your withdrawal exceeds your monthly returns, the corpus depletes over time. This calculator shows you exactly how many months it lasts.' },
+    { question: 'What happens if my monthly withdrawal is less than my monthly return?', answer: 'If withdrawal < monthly return, your corpus actually grows over time and theoretically lasts forever. This is the ideal scenario for sustainable retirement income.' },
+    { question: 'What return rate should I assume for SWP?', answer: 'For debt/hybrid funds used for SWP, 7–9% p.a. is realistic. For equity funds, 10–12% p.a. may apply, but these carry market risk. Conservative retirees often assume 7–8% to be safe.' },
+    { question: 'Is SWP better than FD for retirement income?', answer: 'SWP from debt mutual funds can be more tax-efficient than FD interest, as withdrawals are partially capital and partially gains. Long-term capital gains from debt funds are indexed, reducing tax burden. However, SWP returns are not guaranteed unlike FD.' },
+  ],
+  howToSteps: [
+    'Enter your total mutual fund corpus in rupees.',
+    'Enter the monthly withdrawal amount you plan to take out.',
+    'Set the expected annual return rate on your corpus.',
+    'View how many months and years your corpus will last.',
+    'Check total withdrawn amount and total returns earned over the period.',
+    'Scroll through the month-by-month table to track opening balance, returns, and closing balance.',
+    'Toggle between showing the first 24 months or the full table.',
+  ],
+  relatedToolSlugs: ['sip-calculator', 'mutual-fund-calculator', 'lumpsum-calculator'],
+  icon: 'ArrowDownCircle',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'text-to-handwriting',
+  name: 'Text to Handwriting Converter',
+  shortDescription: 'Convert typed text into realistic handwritten pages with custom fonts and paper styles.',
+  longDescription: `<p>The Text to Handwriting Converter transforms your typed text into beautiful handwritten-style pages using authentic Google Fonts. Choose from six handwriting fonts, five ink colors, four paper styles, and export as high-quality PNG images.</p>
+<h2>Make Your Text Look Handwritten</h2>
+<p>Whether you need handwritten notes for a creative project, journaling visuals, or social media aesthetics, this tool renders your text on realistic A4-style pages with customizable fonts, colors, and paper backgrounds.</p>
+<ul>
+<li>6 handwriting fonts: Caveat, Kalam, Indie Flower, Shadows Into Light, Dancing Script, Patrick Hand</li>
+<li>5 ink colors: Black, Dark Blue, Blue, Red, Pencil Gray</li>
+<li>4 paper styles: White, Ruled, Grid, Yellow Notepad</li>
+<li>Adjustable font size, line height, and margins</li>
+<li>Optional per-character random rotation for natural look</li>
+<li>Auto-pagination for long text across multiple pages</li>
+<li>Download individual pages as PNG or all pages as ZIP</li>
+</ul>
+<h2>How It Works</h2>
+<p>The tool uses HTML5 Canvas to render text character by character with the selected handwriting font. Optional random rotation adds slight imperfections to each character, closely mimicking real handwriting. Pages are exported at 794x1123 pixels (A4 at 96 DPI) with no watermark.</p>`,
+  category: 'text-tools',
+  targetKeyword: 'text to handwriting',
+  secondaryKeywords: ['handwriting converter', 'typed to handwritten', 'handwriting generator', 'fake handwriting', 'handwritten notes maker'],
+  metaTitle: 'Text to Handwriting Converter — Free Online Tool',
+  metaDescription: 'Convert typed text into realistic handwritten pages with custom fonts, ink colors, and paper styles. Download as PNG. Free, no signup.',
+  faqs: [
+    { question: 'What handwriting fonts are available?', answer: 'Six Google Fonts are available: Caveat (casual), Kalam (natural), Indie Flower (bubbly), Shadows Into Light (light cursive), Dancing Script (elegant cursive), and Patrick Hand (clean print).' },
+    { question: 'Does the output look like real handwriting?', answer: 'The tool uses authentic handwriting-style Google Fonts and an optional per-character random rotation to add natural imperfections that closely mimic real writing.' },
+    { question: 'What paper styles are supported?', answer: 'You can choose from White (blank), Ruled (horizontal blue lines), Grid (square grid), and Yellow Notepad (warm yellow lined paper).' },
+    { question: 'What ink colors are available?', answer: 'Available ink colors are Black, Dark Blue, Blue, Red, and Pencil Gray — all mimicking real writing instruments.' },
+    { question: 'What happens if my text is too long for one page?', answer: 'The tool automatically splits your text across multiple A4-style pages. Use the page navigation arrows to browse pages and download each one individually.' },
+    { question: 'Can I download all pages at once?', answer: 'Yes. If there are multiple pages, a "Download All as ZIP" button appears so you can get all pages in a single archive.' },
+    { question: 'What resolution is the exported PNG?', answer: 'Each page is exported at 794×1123 pixels, matching an A4 page at 96 DPI — suitable for screen viewing and digital sharing.' },
+    { question: 'Can I change the page margins?', answer: 'Yes. The margin slider lets you adjust the white space around the text area to suit your preferred layout.' },
+    { question: 'Is the character rotation effect mandatory?', answer: 'No. The random rotation toggle is optional. Turn it off for perfectly straight text, or turn it on for a more organic, hand-written feel.' },
+    { question: 'What can I use this tool for?', answer: 'This tool is great for creative personal projects, journaling visuals, note-taking aesthetics, social media content, and digital art.' },
+  ],
+  howToSteps: [
+    'Type or paste your text into the input area on the left.',
+    'Choose a handwriting font from the selector — previews show each font style.',
+    'Adjust font size and line height using the sliders for comfortable reading.',
+    'Pick an ink color: Black, Dark Blue, Blue, Red, or Pencil Gray.',
+    'Select a paper style: White, Ruled, Grid, or Yellow Notepad.',
+    'Toggle the character rotation option for a more natural, hand-crafted look.',
+    'The A4-style page preview updates live as you change settings.',
+    'If your text spans multiple pages, use the page navigation arrows to browse them.',
+    'Click Download PNG on each page to save, or Download All Pages as ZIP for multiple pages.',
+  ],
+  relatedToolSlugs: ['thumbnail-maker', 'image-compressor', 'social-media-bio-generator'],
+  icon: 'PenLine',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'thumbnail-maker',
+  name: 'YouTube Thumbnail Maker',
+  shortDescription: 'Design professional YouTube thumbnails with text, backgrounds, and templates.',
+  longDescription: `<p>The YouTube Thumbnail Maker lets you design eye-catching thumbnails at the perfect 1280x720 resolution right in your browser. Add custom text with outlines and shadows, upload background images, insert shapes and emoji stickers, and export as PNG or JPG — all without any design software.</p>
+<h2>Why Thumbnails Matter</h2>
+<p>Your thumbnail is the first thing viewers see. A well-designed thumbnail can dramatically increase your click-through rate. This tool gives you everything you need to create professional-looking thumbnails without Photoshop or Canva.</p>
+<ul>
+<li>5 preset templates: Gaming, Tutorial, Vlog, Finance, Motivational</li>
+<li>Custom backgrounds: solid color, gradient, or uploaded image</li>
+<li>Multiple text layers with font, size, color, stroke, and shadow controls</li>
+<li>Drag-and-drop positioning on the canvas preview</li>
+<li>Shape layers (rectangles, circles) with custom colors and opacity</li>
+<li>Emoji sticker palette for quick visual accents</li>
+<li>Export at full 1280×720 resolution, no watermark</li>
+</ul>
+<h2>Designed for YouTube Creators</h2>
+<p>The tool exports at exactly 1280x720 pixels — YouTube's recommended thumbnail size. Preview how your thumbnail looks at small size in search results before downloading. Choose from Impact, Arial Black, Roboto, Montserrat, and Bebas Neue fonts for maximum readability.</p>`,
+  category: 'image-tools',
+  targetKeyword: 'youtube thumbnail maker',
+  secondaryKeywords: ['thumbnail creator', 'youtube thumbnail design', 'thumbnail generator', 'video thumbnail maker', 'youtube thumbnail size'],
+  metaTitle: 'YouTube Thumbnail Maker — Free Online Tool',
+  metaDescription: 'Design professional YouTube thumbnails at 1280x720 with custom text, backgrounds, shapes, and templates. Export as PNG or JPG. Free, no watermark.',
+  faqs: [
+    { question: 'What is the correct size for a YouTube thumbnail?', answer: 'YouTube recommends 1280×720 pixels (16:9 aspect ratio) with a maximum file size of 2MB. This tool exports at exactly that resolution.' },
+    { question: 'Which image formats can I export?', answer: 'You can download your thumbnail as a PNG (lossless, best for text clarity) or JPG (smaller file size). Both export at full 1280×720px resolution.' },
+    { question: 'Can I upload my own background image?', answer: 'Yes. Click "Upload Background" to use any image as the canvas background. You can also upload a separate person or object image to place on top.' },
+    { question: 'How do I position text on the canvas?', answer: 'You can drag text layers directly on the preview canvas, or use the alignment buttons to snap text to top/center/bottom and left/center/right positions.' },
+    { question: 'What fonts are available?', answer: 'Impact, Arial Black, Roboto, Montserrat, and Bebas Neue are available. These are popular choices for bold, readable thumbnail text.' },
+    { question: 'Can I add a text outline or shadow?', answer: 'Yes. Each text layer has a stroke (outline) color and width control, plus a shadow toggle for depth and readability against busy backgrounds.' },
+    { question: 'What do the preset templates include?', answer: 'There are 5 templates: Gaming (dark with neon accents), Tutorial (clean blue), Vlog (warm gradient), Finance (professional green), and Motivational (bold orange). Each pre-fills colors and text styles.' },
+    { question: 'Can I place emoji on the thumbnail?', answer: 'Yes. The emoji palette includes common emojis. Click any emoji to place it on the canvas, then drag it to your desired position.' },
+    { question: 'Does this tool work on mobile?', answer: 'Basic editing works on mobile, but for precise text positioning and drag interactions, desktop use is strongly recommended for best results.' },
+    { question: 'Is there a watermark on exported thumbnails?', answer: 'No. All exported thumbnails are completely watermark-free at full resolution.' },
+  ],
+  howToSteps: [
+    'Choose a preset template or start from scratch with a solid color or gradient background.',
+    'Upload a background image or person/object photo to overlay on your thumbnail.',
+    'Add a title and subtitle using the text controls. Pick a font, size, color, and stroke style.',
+    'Drag text layers to position them anywhere on the canvas, or use the alignment buttons.',
+    'Insert shapes like rectangles or circles with custom colors and opacity for visual emphasis.',
+    'Drop emoji stickers onto the canvas from the quick-pick emoji palette.',
+    'Preview your thumbnail at small size to see how it looks in YouTube search results.',
+    'Click Download PNG or Download JPG to export your thumbnail at full 1280×720 resolution.',
+  ],
+  relatedToolSlugs: ['image-compressor', 'image-resizer', 'social-media-image-resizer'],
+  icon: 'Youtube',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'timezone-meeting-planner',
+  name: 'Timezone Meeting Planner',
+  shortDescription: 'Visual timezone grid for scheduling global meetings.',
+  longDescription: `<p>The Timezone Meeting Planner helps you find the perfect meeting time across multiple timezones with a visual 24-hour overlap grid. Color-coded cells show working hours, early/late hours, and off-hours for up to 6 timezones simultaneously.</p>
+<h2>Schedule Across Time Zones Effortlessly</h2>
+<p>Coordinating meetings between New York, London, Mumbai, and Tokyo? This tool shows you at a glance which hours work for everyone. The color-coded grid instantly reveals overlapping working hours — no mental math required.</p>
+<ul>
+<li>Compare up to 6 timezones simultaneously on one grid</li>
+<li>Color-coded: green (working 9AM-6PM), orange (early/late), red (off hours)</li>
+<li>DST-aware using browser's native Intl.DateTimeFormat API</li>
+<li>Click any time slot to select it as your proposed meeting time</li>
+<li>Auto-suggested best meeting times where all zones are in working hours</li>
+<li>Copy formatted meeting invite text for all selected timezones</li>
+<li>18 popular timezones pre-loaded including IST, EST, PST, GMT, CET, SGT, JST</li>
+</ul>
+<h2>100% Private</h2>
+<p>All timezone calculations happen entirely in your browser using the native Intl API. No data leaves your device. Works offline after the page loads.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'timezone meeting planner',
+  secondaryKeywords: ['schedule across timezones', 'meeting time finder', 'timezone overlap', 'global meeting scheduler', 'time zone converter'],
+  metaTitle: 'Timezone Meeting Planner — Free Online Tool',
+  metaDescription: 'Plan meetings across timezones with a visual 24-hour overlap grid. DST-aware, color-coded working hours, and shareable invite generation.',
+  faqs: [
+    { question: 'How many timezones can I compare at once?', answer: 'You can compare up to 6 timezones simultaneously on the grid.' },
+    { question: 'Does this tool account for Daylight Saving Time (DST)?', answer: 'Yes. All conversions use the browser\'s built-in Intl.DateTimeFormat API which automatically handles DST for all supported IANA timezones based on the selected date.' },
+    { question: 'What do the grid colors mean?', answer: 'Green indicates standard working hours (9 AM–6 PM local time). Orange marks early morning (7–9 AM) or evening hours (6–8 PM). Red indicates sleeping or off-work hours.' },
+    { question: 'What is the \'Best Meeting Times\' feature?', answer: 'This feature scans all selected timezones and highlights time slots where everyone\'s local time falls within working hours (green zone), suggesting optimal meeting windows.' },
+    { question: 'Is any data sent to a server?', answer: 'No. All timezone calculations happen entirely in your browser using the native Intl API. No data leaves your device.' },
+    { question: 'Can I copy a meeting invite?', answer: 'Yes. Click \'Copy Meeting Invite\' to copy a formatted text block listing the exact meeting time in every selected timezone, ready to paste into any calendar or chat app.' },
+    { question: 'Which timezones are pre-loaded?', answer: 'The tool pre-loads IST, EST, PST, GMT, CET, SGT, JST, AEST, NPT, PKT, and GST (Dubai). You can add any from the dropdown.' },
+    { question: 'How do I remove a timezone from the grid?', answer: 'Click the × button on the timezone row header to remove it from the comparison grid.' },
+    { question: 'What date format does the date picker use?', answer: 'The tool uses the browser\'s native date input (YYYY-MM-DD). Times displayed adapt to each timezone\'s local convention automatically.' },
+    { question: 'Can I use this for recurring weekly meetings?', answer: 'Yes. Change the date each week using the picker and the grid recalculates instantly, reflecting any DST changes that may occur across seasons.' },
+  ],
+  howToSteps: [
+    'Select up to 6 timezones from the dropdown list of popular global zones.',
+    'Pick your meeting date using the date picker — DST is handled automatically.',
+    'Read the color-coded 24-hour grid: green = working hours, orange = early/late, red = off hours.',
+    'Click any time slot to set it as your proposed meeting time.',
+    'Review the exact meeting time displayed for every selected timezone.',
+    'Check the \'Best Times\' panel for automatically suggested overlapping green-hour slots.',
+    'Click \'Copy Meeting Invite\' to generate and copy formatted invite text for all zones.',
+    'Remove unwanted timezones with the × button or drag to reorder.',
+  ],
+  relatedToolSlugs: ['timezone-checker', 'word-counter', 'reading-time-calculator'],
+  icon: 'Clock',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'totp-2fa-generator',
+  name: 'TOTP Authenticator Code Generator',
+  shortDescription: 'Generate and test TOTP 2FA codes from a Base32 secret. Supports SHA1/SHA256.',
+  longDescription: `<p>The TOTP Authenticator Code Generator lets you generate and test two-factor authentication codes from a Base32 secret key, right in your browser. Built on the RFC 6238 standard using the Web Crypto API, it supports SHA1/SHA256 algorithms, 6 or 8 digit codes, and 30 or 60 second periods.</p>
+<h2>Test Your 2FA Implementations</h2>
+<p>Developing a TOTP-based authentication system? This tool lets you verify your implementation generates the correct codes. Enter your Base32 secret or paste an otpauth:// URI from a QR code to auto-fill all parameters.</p>
+<ul>
+<li>Real-time TOTP code generation with countdown timer</li>
+<li>Previous, current, and next codes displayed for testing validation windows</li>
+<li>SHA-1 and SHA-256 algorithm support</li>
+<li>6-digit and 8-digit code options</li>
+<li>30-second and 60-second period options</li>
+<li>otpauth:// URI parser for auto-filling from QR code data</li>
+<li>One-click copy to clipboard</li>
+</ul>
+<h2>Security First</h2>
+<p>All computation happens entirely in your browser using the Web Crypto API. Your secret key is never transmitted to any server. Use this tool for testing and development of 2FA systems you are authorized to work on.</p>`,
+  category: 'developer-tools',
+  targetKeyword: 'totp generator',
+  secondaryKeywords: ['2fa code generator', 'authenticator code', 'base32 otp', 'google authenticator test', 'rfc 6238'],
+  metaTitle: 'TOTP 2FA Code Generator — Free Online Tool',
+  metaDescription: 'Generate and test TOTP authenticator codes from a Base32 secret key. Supports SHA1/SHA256, 6/8 digits, 30/60s periods. 100% client-side.',
+  faqs: [
+    { question: 'What is TOTP?', answer: 'TOTP (Time-based One-Time Password) is a standard algorithm defined in RFC 6238. It generates a short-lived numeric code by computing HMAC-SHA1 of the current time window using a shared secret key.' },
+    { question: 'Is this tool safe to use with real account secrets?', answer: 'All computation happens entirely in your browser using the Web Crypto API. Your secret key is never transmitted to any server. That said, exercise caution with live production secrets — use this primarily for development and testing.' },
+    { question: 'What is a Base32 secret key?', answer: 'Base32 is an encoding scheme that uses the characters A-Z and 2-7. TOTP apps like Google Authenticator encode the shared secret in Base32 format. It typically looks like JBSWY3DPEHPK3PXP.' },
+    { question: 'Why does my code not match my authenticator app?', answer: 'Ensure your device clock is accurate — TOTP depends on synchronized time. Also verify you are using the same algorithm (SHA1 is most common), digit count (6), and period (30s) as your authenticator app.' },
+    { question: 'What is an otpauth:// URI?', answer: 'This is a standard URI format used in QR codes for authenticator apps: otpauth://totp/Label?secret=SECRET&issuer=ISSUER&algorithm=SHA1&digits=6&period=30. Pasting this URI auto-fills all parameters.' },
+    { question: 'Why is SHA1 still the default for TOTP?', answer: 'Nearly all authenticator apps (Google Authenticator, Authy, Microsoft Authenticator) default to SHA1 for TOTP. While SHA256 is supported by the RFC, it is rarely used in practice and may cause interoperability issues.' },
+    { question: 'What is the time period setting?', answer: 'The period (typically 30 seconds) defines how long each TOTP code is valid. The current time is divided by this period to determine the time-step counter used in the HMAC computation.' },
+    { question: 'What are previous and next codes used for?', answer: 'Server-side TOTP validation typically accepts the previous, current, and sometimes next code to account for clock drift. Showing all three lets you test your validation window logic.' },
+    { question: 'Can I use this to set up a new 2FA account?', answer: 'Yes, if you have the secret key for your own account, you can verify codes here match your authenticator app, which is useful when testing backup authenticator setups or custom TOTP integrations.' },
+    { question: 'Is this tool affiliated with Google Authenticator or any authenticator app?', answer: 'No. This is an independent implementation of the RFC 6238 TOTP standard for development and testing purposes. It is not affiliated with any authenticator application or service.' },
+  ],
+  howToSteps: [
+    'Enter your Base32-encoded TOTP secret key in the input field (e.g., JBSWY3DPEHPK3PXP).',
+    'Alternatively, paste an otpauth:// URI from a QR code to auto-fill the secret and parameters.',
+    'Select the number of digits (6 or 8) and the time period (30 or 60 seconds).',
+    'The current TOTP code is displayed in large monospace text and updates automatically.',
+    'Watch the countdown progress bar to see how many seconds remain before the code rotates.',
+    'Previous and next codes are also shown for testing time-window acceptance in your implementation.',
+    'Click the copy button to copy the current code to your clipboard.',
+    'Use this tool only for your own accounts or to test 2FA implementations you are authorized to test.',
+  ],
+  relatedToolSlugs: ['password-generator', 'hash-generator', 'base64-encode-decode'],
+  icon: 'Lock',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'upi-id-validator',
+  name: 'UPI ID Validator',
+  shortDescription: 'Check if a UPI ID is valid and identify the bank or payment app instantly.',
+  longDescription: `<p>The UPI ID Validator checks the format of any UPI Virtual Payment Address (VPA) and identifies the bank or payment app from its handle. With a database of 50+ known UPI handles covering all major Indian banks, wallets, and payment apps, it tells you instantly whether a UPI ID follows the correct format.</p>
+<h2>What This Tool Does</h2>
+<p>Enter any UPI ID like yourname@oksbi or shop@ybl, and the tool validates the format (username@bankhandle) and looks up the bank handle to identify the associated bank or payment service provider.</p>
+<ul>
+<li>Validates UPI ID format: username@bankhandle pattern</li>
+<li>Identifies bank/PSP from 50+ known handles</li>
+<li>Covers PhonePe, Google Pay, Paytm, Amazon Pay, and all major banks</li>
+<li>Detailed error messages for invalid formats</li>
+<li>Copy validated UPI ID to clipboard with one click</li>
+<li>Complete reference table of all popular UPI handles</li>
+</ul>
+<h2>Important Note</h2>
+<p>This tool validates the format and identifies the bank handle only. It does not connect to NPCI or any bank to verify if the UPI ID is actually registered or active. For actual transaction verification, use your UPI app directly. All validation runs in your browser — your UPI ID is never sent to any server.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'UPI ID validator',
+  secondaryKeywords: ['UPI VPA checker', 'UPI bank handle lookup', 'UPI format validation', 'PhonePe UPI', 'Google Pay UPI'],
+  metaTitle: 'UPI ID Validator — Check UPI Format Free Online',
+  metaDescription: 'Validate any UPI ID format and identify the bank from 50+ handles including PhonePe, Google Pay, Paytm, SBI, HDFC. Free, no data stored.',
+  faqs: [
+    { question: 'What is a UPI ID?', answer: 'A UPI ID (also called Virtual Payment Address or VPA) is a unique identifier used in India\'s Unified Payments Interface system. It has the format username@bankhandle and allows instant money transfers between bank accounts.' },
+    { question: 'What is the format of a valid UPI ID?', answer: 'A valid UPI ID follows the pattern: username@bankhandle. The username can be 2–256 characters (letters, digits, dots, hyphens, underscores) and the bank handle must be 2–64 letters.' },
+    { question: 'What is a UPI bank handle?', answer: 'The part after the "@" symbol is the bank handle (also called PSP handle). It identifies the Payment Service Provider (bank or wallet) that manages the UPI ID. For example, @oksbi is managed by SBI, @ybl by PhonePe/Yes Bank.' },
+    { question: 'Does this tool verify if a UPI ID is active?', answer: 'No. This tool only validates the format and identifies the bank from the handle. It does not connect to NPCI or any bank to verify if the UPI ID is registered or active.' },
+    { question: 'What does "Unknown bank handle" mean?', answer: 'If your UPI ID format is valid but the handle is not in our database of 50+ handles, it shows "Unknown bank handle." This does not mean the ID is invalid — it may be a newer or less common handle.' },
+    { question: 'What is @ybl used for?', answer: '@ybl is the UPI handle used by PhonePe, operated through Yes Bank. It is one of the most widely used UPI handles in India.' },
+    { question: 'Can I have a UPI ID without a bank account?', answer: 'Some wallet-based UPI handles like @paytm or @airtel allow UPI payments through prepaid wallets, but most handles require a linked bank account.' },
+    { question: 'Why do some UPI handles start with "ok"?', answer: 'Google Pay uses handles starting with "ok" for partner banks: @oksbi (SBI), @okicici (ICICI), @okaxis (Axis), and @okhdfcbank (HDFC). The "ok" prefix is specific to Google Pay\'s PSP arrangement.' },
+    { question: 'Is my UPI ID safe to enter here?', answer: 'Yes. All validation is done entirely in your browser. Your UPI ID is never transmitted to any server.' },
+    { question: 'How many UPI handles does this tool recognize?', answer: 'This tool recognizes 50+ UPI handles covering all major banks, wallets, and payment apps in India including SBI, HDFC, ICICI, Axis, Kotak, PhonePe, Google Pay, Paytm, Amazon Pay, and many more.' },
+  ],
+  howToSteps: [
+    'Enter your UPI Virtual Payment Address (VPA) in the input field.',
+    'The tool validates the format: username@bankhandle.',
+    'The bank handle is looked up against a database of 50+ known handles.',
+    'If the handle is recognized, the bank name is displayed.',
+    'If the format is valid but the handle is unknown, a notice is shown.',
+    'A green badge indicates a valid UPI ID format.',
+    'Use the Copy button to copy the UPI ID to your clipboard.',
+  ],
+  relatedToolSlugs: ['ifsc-code-finder', 'pan-card-validator', 'gstin-validator'],
+  icon: 'Smartphone',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'upi-qr-generator',
+  name: 'UPI QR Generator',
+  shortDescription: 'Generate scannable UPI payment QR codes for any UPI app instantly.',
+  longDescription: `<p>The UPI QR Generator creates a scannable payment QR code from your UPI ID in seconds. Simply enter your UPI ID, payee name, and optional amount — the tool generates a standard UPI QR code compatible with PhonePe, Google Pay, Paytm, BHIM, Amazon Pay, and every UPI app.</p>
+<h2>Accept Payments Easily</h2>
+<p>Whether you run a small shop, freelance business, or just need to receive money from friends, a UPI QR code makes payments instant and effortless. Print it, share it on WhatsApp, or embed it in invoices.</p>
+<ul>
+<li>Works with all UPI apps: PhonePe, Google Pay, Paytm, BHIM, Amazon Pay, CRED</li>
+<li>Optional fixed amount or leave blank for any amount</li>
+<li>Optional transaction note/description</li>
+<li>Download QR code as PNG image</li>
+<li>Copy UPI ID to clipboard with one click</li>
+<li>Standard upi:// URI format for universal compatibility</li>
+</ul>
+<h2>Is It Safe?</h2>
+<p>A UPI QR code only allows others to send money TO you. It does not expose your bank account details, cannot debit your account, or initiate any withdrawal. Your UPI PIN is always required to authorize outgoing payments. Sharing your QR code publicly is completely safe.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'upi qr code generator',
+  secondaryKeywords: ['upi payment qr', 'google pay qr', 'phonepe qr', 'paytm qr', 'UPI payment link generator'],
+  metaTitle: 'UPI QR Code Generator — Free Online Tool',
+  metaDescription: 'Generate a scannable UPI payment QR code instantly. Works with PhonePe, Google Pay, Paytm, BHIM, and all UPI apps. Free, no signup.',
+  faqs: [
+    { question: 'Which UPI apps can scan this QR code?', answer: 'Any UPI-compliant app can scan this QR code, including PhonePe, Google Pay, Paytm, BHIM, Amazon Pay, and all bank UPI apps.' },
+    { question: 'Is it safe to share this QR code?', answer: 'Yes. A UPI QR code only allows others to send money TO you. It does not expose your bank account details or allow withdrawals.' },
+    { question: 'Can I generate a QR without a fixed amount?', answer: 'Absolutely. Leave the amount field blank and the payer can enter any amount they wish to send.' },
+    { question: 'What is the correct UPI ID format?', answer: 'A valid UPI ID follows the format username@handle, for example rahul@okaxis, shop@ybl, or 9876543210@paytm.' },
+    { question: 'Is a UPI QR code secure to share publicly?', answer: 'Yes, it is completely safe to share your UPI QR code publicly. A UPI QR code only allows others to send money TO you. It cannot debit your account, expose your bank details, or initiate any withdrawal — your UPI PIN is always required to authorise any outgoing payment.' },
+  ],
+  howToSteps: [
+    'Enter your UPI ID (e.g., yourname@okicici) in the UPI ID field.',
+    'Enter your payee name as it should appear on the payment screen.',
+    'Optionally enter a fixed amount in ₹ or leave blank to allow any amount.',
+    'Optionally add a transaction note or description.',
+    'Click Generate QR Code to create your scannable QR.',
+    'Download the QR image or copy your UPI ID with one click.',
+    'Share the QR code via WhatsApp, print it for your shop, or embed it in invoices.',
+  ],
+  relatedToolSlugs: ['qr-code-generator', 'hash-generator', 'url-encode-decode'],
+  icon: 'QrCode',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'vehicle-number-plate-info',
+  name: 'Vehicle Number Plate Decoder India',
+  shortDescription: 'Decode Indian vehicle registration numbers to identify state, RTO, and series details.',
+  longDescription: `<p>The Vehicle Number Plate Decoder instantly decodes any Indian vehicle registration number to reveal the state, RTO district, letter series, and serial number. It supports all standard formats including the new BH (Bharat) series plates introduced in 2021.</p>
+<h2>What You Can Decode</h2>
+<p>Enter a registration number like MH 02 AH 1234 and the tool breaks it down into its four components: state code (MH = Maharashtra), RTO district (02 = Mumbai West), series letters (AH), and registration number (1234).</p>
+<ul>
+<li>All 28 Indian states and 8 Union Territories supported</li>
+<li>BH (Bharat) series nationwide plates decoded</li>
+<li>Accepts spaced, hyphenated, or compact input formats</li>
+<li>Visual number plate rendering for decoded results</li>
+<li>Works completely offline — no API calls needed</li>
+<li>Example plates provided for quick testing</li>
+</ul>
+<h2>Important Disclaimer</h2>
+<p>This tool decodes the registration format only. It does NOT look up owner details, vehicle information, or connect to any government database. For official vehicle information, use the Government of India's Vahan portal at vahan.parivahan.gov.in.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'vehicle number plate decoder india',
+  secondaryKeywords: ['indian registration number lookup', 'RTO code finder', 'number plate state finder', 'BH series plate', 'vehicle registration decoder'],
+  metaTitle: 'Vehicle Number Plate Decoder India — Free Tool',
+  metaDescription: 'Decode any Indian vehicle registration number to find state, RTO district, and series info. Supports BH series. Free, works offline.',
+  faqs: [
+    { question: 'What information can I get from a number plate?', answer: 'An Indian registration number encodes the state, the RTO (Regional Transport Office) district code, a letter series, and the unique serial number. This tool decodes all four components.' },
+    { question: 'Can I find out the owner or vehicle details?', answer: 'No. This tool only decodes the registration format. For official owner and vehicle details, use the Government of India\'s Vahan portal at https://vahan.parivahan.gov.in/.' },
+    { question: 'What is the BH series (Bharat series)?', answer: 'The BH series was introduced by the Government of India in 2021. BH-series plates (e.g., 22 BH 1234 AB) are not tied to any state and are valid nationwide, making them ideal for people who frequently relocate due to work.' },
+    { question: 'What formats are accepted?', answer: 'The tool accepts spaced (MH 02 AH 1234), hyphenated (MH-02-AH-1234), and compact (MH02AH1234) formats. Input is case-insensitive.' },
+    { question: 'What does the RTO district number mean?', answer: 'Each state\'s transport department divides the state into numbered RTO zones. For example, MH-01 is for Mumbai (Central), MH-02 is for Mumbai (West), and so on.' },
+    { question: 'Why does my plate say it is invalid?', answer: 'The registration must match the standard Indian format: 2 state letters, 2 district digits, 1–3 series letters, and 1–4 serial digits. Plates from before 1980 or custom vanity plates may not match.' },
+    { question: 'Does this work for electric vehicle plates?', answer: 'Yes. Electric vehicle plates follow the same registration format. The green plate is a physical distinction; the registration number format is identical.' },
+    { question: 'What are temporary (T) registration plates?', answer: 'Temporary plates often start with "T" and follow different formats. This tool focuses on permanent registration numbers issued by RTOs.' },
+    { question: 'Are all Indian states and UTs included?', answer: 'Yes. All 28 states and 8 Union Territories are included, including the newest — Ladakh (LA), which was carved out of Jammu & Kashmir in 2019.' },
+    { question: 'Is this tool free and does it need internet?', answer: 'Completely free and works fully offline. All decoding logic is built into the tool — no API calls or network requests are made.' },
+  ],
+  howToSteps: [
+    'Enter an Indian vehicle registration number in the input field.',
+    'Accepted formats: MH 02 AH 1234 or MH-02-AH-1234 or MH02AH1234.',
+    'Click Decode or press Enter to decode the plate.',
+    'The tool decodes the state name, RTO district number, series letters, and registration number.',
+    'For BH (Bharat) series plates, a special explanation is shown.',
+    'This tool works offline — no internet connection or API is needed.',
+    'Note: This tool does not look up owner or vehicle details. Use the Vahan portal for official records.',
+  ],
+  relatedToolSlugs: ['pincode-lookup', 'ifsc-code-finder', 'gst-calculator'],
+  icon: 'Car',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'whatsapp-chat-analyzer',
+  name: 'WhatsApp Chat Analyzer',
+  shortDescription: 'Analyze WhatsApp chat exports privately in your browser.',
+  longDescription: `<p>The WhatsApp Chat Analyzer processes your exported WhatsApp chat files entirely in your browser to reveal fascinating statistics about your conversations. See message counts, activity heatmaps, top words, emoji frequency, sender breakdowns, and daily trends — all without uploading a single byte to any server.</p>
+<h2>What You'll Discover</h2>
+<p>Upload your exported .txt file and instantly see who messages most, when conversations peak, which words and emojis dominate, and how your chat patterns have evolved over time.</p>
+<ul>
+<li>Total messages, words, active days, and media shared</li>
+<li>Top senders bar chart with message count and percentage</li>
+<li>Activity heatmap: day of week × hour of day</li>
+<li>Top 20 most used words (stop words filtered)</li>
+<li>Most used emoji analysis</li>
+<li>Longest consecutive day streak</li>
+<li>Peak day identification</li>
+<li>Average words per sender metric</li>
+</ul>
+<h2>100% Private</h2>
+<p>Your chat file is processed entirely within your browser using JavaScript. No data is uploaded to any server, and no conversation content ever leaves your device. The file is read, parsed, analyzed, and then the raw content is discarded from memory.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'whatsapp chat analyzer',
+  secondaryKeywords: ['whatsapp stats', 'chat statistics', 'whatsapp message count', 'chat heatmap', 'whatsapp export analyzer'],
+  metaTitle: 'WhatsApp Chat Analyzer — Free Private Tool',
+  metaDescription: 'Analyze exported WhatsApp chats privately in your browser. See message stats, activity heatmaps, top words, emoji frequency. No uploads.',
+  faqs: [
+    { question: 'Is my chat data private and secure?', answer: 'Yes, absolutely. Your chat file is processed entirely within your browser using JavaScript. No data is uploaded to any server, and no conversation content ever leaves your device.' },
+    { question: 'How do I export a WhatsApp chat?', answer: 'Open the chat in WhatsApp → Tap the three-dot menu (top right) → More → Export Chat → Without Media → Save or share the .txt file.' },
+    { question: 'Which export formats are supported?', answer: 'The tool supports both iOS format ([DD/MM/YY, HH:MM:SS] Name: message) and Android format (DD/MM/YYYY, HH:MM - Name: message), including newer WhatsApp formats.' },
+    { question: 'Is there a file size limit?', answer: 'The tool can handle large chats with tens of thousands of messages. Very large files (50MB+) may take a few seconds to parse but should work fine on modern browsers.' },
+    { question: 'What does the Activity Heatmap show?', answer: 'The heatmap shows message volume by day of week (rows) and hour of day (columns), revealing when conversations are most active.' },
+    { question: 'What are \'media\' messages?', answer: 'WhatsApp marks shared images, videos, audio, documents, and stickers as \'<Media omitted>\' or similar in the export. The tool counts these separately.' },
+    { question: 'Can this tool analyze group chats?', answer: 'Yes. Group chats with multiple participants are fully supported. The Top Senders section will display stats for all participants.' },
+    { question: 'What is the \'Longest Streak\' metric?', answer: 'The longest streak shows the maximum number of consecutive days on which at least one message was exchanged in the chat.' },
+    { question: 'Can I download or save the analysis results?', answer: 'The analysis is displayed on screen. You can use your browser\'s print function (Ctrl+P) to save or print the results. A download option may be added in future.' },
+    { question: 'Why are some messages not being parsed?', answer: 'WhatsApp export formats vary slightly by region and app version. System messages like \'X joined using this link\' are filtered out automatically.' },
+  ],
+  howToSteps: [
+    'Export your WhatsApp chat: open the chat → tap the three-dot menu → More → Export Chat → Without Media.',
+    'Save the exported .txt file to your device.',
+    'Click \'Upload Chat File\' on this tool and select the exported .txt file.',
+    'Wait a moment while the tool parses and analyzes your chat entirely in your browser.',
+    'Browse the Overview tab for total messages, words, date range, and active days.',
+    'Check the Top Senders bar chart to see who messages most.',
+    'Explore the Activity Heatmap to discover peak conversation times.',
+    'Review Most Used Words, Emoji Analysis, and Media counts in their respective tabs.',
+  ],
+  relatedToolSlugs: ['word-counter', 'reading-time-calculator', 'case-converter'],
+  icon: 'MessageCircle',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'whatsapp-chat-generator',
+  name: 'WhatsApp Chat Generator',
+  shortDescription: 'Create realistic WhatsApp chat screenshots for pranks, demos, and presentations.',
+  longDescription: `<p>The WhatsApp Chat Generator lets you create pixel-perfect WhatsApp conversation screenshots for demonstrations, presentations, educational materials, or fun. Build a complete conversation with custom sender names, timestamps, tick marks, and emojis — then save as PDF or print.</p>
+<h2>Build Realistic Conversations</h2>
+<p>The preview looks exactly like a real WhatsApp chat, complete with the signature green header, message bubbles, delivery ticks (single, double, blue read receipts), and the familiar chat background pattern.</p>
+<ul>
+<li>Two-person chat with customizable names and avatar colors</li>
+<li>Configurable online/offline/typing status</li>
+<li>Single tick (sent), double tick (delivered), blue tick (read) options</li>
+<li>Custom timestamps or auto-time mode</li>
+<li>Reorder messages with up/down controls</li>
+<li>Delete individual messages</li>
+<li>Emoji support in message text</li>
+<li>Print/Save as PDF with clean formatting</li>
+</ul>
+<h2>Privacy First</h2>
+<p>Everything stays in your browser's memory and is gone when you refresh the page. No data is sent to any server. This is a purely visual mockup tool — nothing is posted or shared anywhere.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'whatsapp chat generator',
+  secondaryKeywords: ['fake whatsapp chat', 'whatsapp screenshot maker', 'whatsapp chat screenshot', 'create whatsapp chat', 'WhatsApp screenshot generator'],
+  metaTitle: 'WhatsApp Chat Generator — Free Screenshot Maker',
+  metaDescription: 'Create realistic WhatsApp chat screenshots online. Custom names, timestamps, tick marks. Download as PDF. Free, no data stored.',
+  faqs: [
+    { question: 'Can I download the chat as a PNG image?', answer: 'Yes. Use the Print button and save as PDF, or use your browser\'s built-in screenshot tool. The chat preview is formatted exactly like WhatsApp.' },
+    { question: 'Can I delete or reorder messages?', answer: 'Yes. Each message has Delete, Move Up, and Move Down buttons to let you rearrange the conversation.' },
+    { question: 'Does this store my messages anywhere?', answer: 'No. Everything stays in your browser\'s memory and is gone when you refresh the page. No data is sent to any server.' },
+    { question: 'Can I use emojis in messages?', answer: 'Yes, you can paste or type any emoji directly into the message input field.' },
+    { question: 'Can I edit messages after adding them to the chat?', answer: 'Yes, you can reorder messages using the up/down arrows next to each message, or delete individual messages by clicking the trash icon. Simply add the corrected message afterwards.' },
+  ],
+  howToSteps: [
+    'Set the contact name and your name (Person A and Person B).',
+    'Choose sender A or B, type your message, and set the time.',
+    'Click Add Message to add it to the chat.',
+    'Repeat to build a full conversation.',
+    'Adjust tick marks (single, double, blue) for your messages.',
+    'Click Print / Save as PDF to capture the chat screenshot.',
+    'Click \'Download / Print\' to save your chat screenshot as a PDF or image using your browser\'s print dialog.',
+  ],
+  relatedToolSlugs: ['social-media-image-resizer', 'image-compressor', 'qr-code-generator'],
+  icon: 'MessageCircle',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'world-clock',
+  name: 'World Clock',
+  shortDescription: 'Live world clock for 20+ cities with 12/24hr toggle and favorites.',
+  longDescription: `<p>The World Clock shows you the current time in 20+ major cities around the globe, updating every second in real time. Toggle between 12-hour and 24-hour formats, search for specific cities, and mark your most-used timezones as favorites for quick access.</p>
+<h2>Time Around the World at a Glance</h2>
+<p>From New York to Tokyo, London to Sydney — see every major timezone on one page. Each city card shows the current time, date, UTC offset, timezone abbreviation, and whether it's currently daytime or nighttime.</p>
+<ul>
+<li>23 major cities across all continents</li>
+<li>Real-time updates every second using browser Intl API</li>
+<li>12-hour and 24-hour format toggle</li>
+<li>Search/filter by city or country name</li>
+<li>Favorite cities saved to localStorage</li>
+<li>Day/night indicators with sun and moon icons</li>
+<li>UTC offset displayed for each city</li>
+<li>Your local time prominently displayed at the top</li>
+</ul>
+<h2>Works Offline</h2>
+<p>After the page loads, the World Clock works entirely offline. All time calculations use your browser's native timezone support — no API calls or server requests needed.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'world clock',
+  secondaryKeywords: ['time zones', 'current time', 'timezone converter', 'international clock', 'city time'],
+  metaTitle: 'World Clock — Free Live Time in 20+ Cities',
+  metaDescription: 'See the current time in 20+ major cities worldwide. Toggle 12/24hr format, filter cities, mark favorites. Free, updates every second.',
+  faqs: [
+    { question: 'Does this tool update in real time?', answer: 'Yes. The clock updates every second using your browser built-in time APIs and timezone support. No internet connection is needed after the page loads.' },
+    { question: 'How are day and night determined for each city?', answer: 'Each city is marked as daytime if its local hour is between 6 AM and 8 PM, and nighttime otherwise. A sun icon indicates daytime and a moon icon indicates nighttime.' },
+    { question: 'Are favorites saved between visits?', answer: 'Yes. Favorite cities are stored in your browser localStorage and will persist between sessions as long as you use the same browser.' },
+    { question: 'Can I search for a specific city?', answer: 'Yes. Use the search bar to filter the city list in real time by city or country name.' },
+    { question: 'What is the UTC offset shown on each card?', answer: 'The UTC offset shows how many hours ahead or behind Coordinated Universal Time (UTC) the city currently is, including any daylight saving adjustments.' },
+  ],
+  howToSteps: [
+    'Your local time is shown prominently at the top of the page.',
+    'Scroll down to see the current time in 20+ major cities.',
+    'Use the search box to filter cities by name or country.',
+    'Toggle between 12-hour and 24-hour format using the button at the top.',
+    'Click the star icon on any city card to add it to your favorites.',
+    'Favorites are saved locally and appear first in the list.',
+    'Sun icons mean daytime (6AM-8PM local); moon icons mean nighttime.',
+  ],
+  relatedToolSlugs: ['timezone-checker', 'timestamp-converter', 'countdown-timer'],
+  icon: 'Globe',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'youtube-channel-stats',
+  name: 'YouTube Channel Stats',
+  shortDescription: 'Offline YouTube channel analyzer with earnings estimator and benchmarks.',
+  longDescription: `<p>The YouTube Channel Stats tool lets you analyze your channel's performance entirely offline. Enter your subscriber count, video count, total views, and channel start date to instantly calculate growth metrics, CPM-based earnings estimates, and performance benchmarks.</p>
+<h2>Understand Your Channel Performance</h2>
+<p>No API keys or YouTube login required. This tool calculates everything from the data you provide — average views per video, daily view rate, upload consistency, subscriber engagement ratio, and estimated ad revenue at your chosen CPM rate.</p>
+<ul>
+<li>Average views per video and daily view rate</li>
+<li>Videos per month upload consistency</li>
+<li>Subscriber-to-view engagement ratio</li>
+<li>Estimated daily, monthly, and yearly earnings</li>
+<li>Adjustable CPM slider ($0.50 to $10.00)</li>
+<li>Performance benchmarks with color-coded ratings</li>
+<li>Channel age calculation</li>
+</ul>
+<h2>CPM Guide</h2>
+<p>CPM varies widely by niche and audience location. Finance and tech channels typically earn $4-$10, while entertainment and gaming channels see $1-$3. India CPM ranges from $0.50 to $2. Use the slider to explore your earning potential across different CPM rates.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'youtube channel stats',
+  secondaryKeywords: ['youtube analytics', 'channel analyzer', 'youtube earnings', 'CPM calculator', 'YouTube CPM calculator India'],
+  metaTitle: 'YouTube Channel Stats Analyzer — Free Tool',
+  metaDescription: 'Analyze YouTube channel performance offline. Get earnings estimates, growth metrics, and benchmarks. No API needed. Free channel analyzer.',
+  faqs: [
+    { question: 'Does this tool connect to the YouTube API?', answer: 'No. This tool is completely offline. You manually enter your channel data and all calculations happen in your browser with no external requests.' },
+    { question: 'What CPM value should I use?', answer: 'CPM varies widely by niche. Finance and tech channels typically earn $4–$10, while entertainment and gaming channels often see $1–$3. Use the slider to explore your earning potential across different CPM rates.' },
+    { question: 'How is estimated daily earnings calculated?', answer: 'Daily earnings are estimated as: (Average daily views / 1000) × CPM. This gives a rough monetization estimate based on ad revenue only.' },
+    { question: 'What does the subscriber-to-view ratio mean?', answer: 'This ratio shows how many total views each subscriber has contributed on average. A ratio above 100 generally indicates a highly engaged audience.' },
+    { question: 'Are these earnings estimates accurate?', answer: 'These are rough estimates based on CPM averages. Actual earnings depend on ad types, audience location, watch time, seasonality, and YouTube revenue share.' },
+    { question: 'What is a good CPM rate for YouTube in India?', answer: 'India CPM typically ranges from $0.50 to $2, which is lower than Western markets where US and UK CPM averages $3–$8. Finance and tech niches command higher CPM rates even in India, while entertainment and general content niches tend to be at the lower end. Targeting international audiences or creating finance/tech content can significantly improve your effective CPM.' },
+  ],
+  howToSteps: [
+    'Enter your total subscriber count in the Subscribers field.',
+    'Type in your total number of uploaded videos.',
+    'Input your all-time total view count.',
+    'Select your channel start date from the date picker.',
+    'Adjust the CPM slider to match your niche (default $2).',
+    'Click Analyze to instantly see all calculated metrics.',
+    'Review benchmarks to see how your channel compares to averages.',
+  ],
+  relatedToolSlugs: ['youtube-money-calculator', 'youtube-thumbnail-downloader', 'instagram-engagement-calculator'],
+  icon: 'Youtube',
+  isNew: true,
+});
+
+tools.push({
+  slug: 'zodiac-compatibility',
+  name: 'Zodiac Compatibility',
+  shortDescription: 'Western zodiac compatibility checker with love, friendship, and communication scores.',
+  longDescription: `<p>The Zodiac Compatibility tool checks love, friendship, and communication compatibility for any two Western zodiac signs. Select two signs and instantly see detailed scores based on traditional elemental and modal compatibility principles from Western astrology.</p>
+<h2>Check Your Zodiac Match</h2>
+<p>Curious about your compatibility with a partner, friend, or colleague? This tool gives you separate scores for love, friendship, and communication — plus an overall compatibility percentage with an animated meter. Explore personality traits, best matches, and worst matches for each sign.</p>
+<ul>
+<li>All 12 Western zodiac signs: Aries through Pisces</li>
+<li>Separate scores for love, friendship, and communication</li>
+<li>Overall compatibility percentage with visual meter</li>
+<li>Personality traits for each sign</li>
+<li>Best and worst match recommendations</li>
+<li>Element classification: Fire, Earth, Air, Water</li>
+<li>Sign date ranges and descriptions</li>
+</ul>
+<h2>For Entertainment Only</h2>
+<p>Compatibility scores are based on traditional Western astrology elemental principles. Fire signs pair well with Air, Earth with Water. These scores are for fun and entertainment — real relationships depend on communication, shared values, and mutual respect, not star signs.</p>`,
+  category: 'utility-tools',
+  targetKeyword: 'zodiac compatibility',
+  secondaryKeywords: ['horoscope match', 'love compatibility', 'astrology', 'star sign match', 'zodiac sign compatibility chart'],
+  metaTitle: 'Zodiac Compatibility Checker — Free Online Tool',
+  metaDescription: 'Check zodiac compatibility for love, friendship, and communication. Get scores, personality traits, and best match insights. Free astrology tool.',
+  faqs: [
+    { question: 'How are compatibility scores calculated?', answer: 'All scores are hardcoded based on traditional Western astrology elemental and modal compatibility principles. Fire signs pair well with Air, Earth with Water, and so on. Scores are not generated by AI.' },
+    { question: 'What are the 12 Western zodiac signs?', answer: 'The 12 signs are Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, and Pisces — each tied to a date range from late March through late March the following year.' },
+    { question: 'Does a low score mean a relationship will fail?', answer: 'Not at all. Compatibility scores are for entertainment and curiosity. Real relationships depend on communication, shared values, and effort — not star signs.' },
+    { question: 'Can I check friendship compatibility too?', answer: 'Yes. Each result includes separate scores for love, friendship, and communication, so you can use this for any type of relationship.' },
+    { question: 'What does the element of each sign mean?', answer: 'Each sign belongs to one of four elements: Fire (Aries, Leo, Sagittarius), Earth (Taurus, Virgo, Capricorn), Air (Gemini, Libra, Aquarius), and Water (Cancer, Scorpio, Pisces). Same-element signs generally understand each other well.' },
+    { question: 'Is zodiac compatibility scientifically proven?', answer: 'No, Western astrology and zodiac compatibility are not scientifically validated. They are part of a cultural and spiritual tradition. Use this tool for fun and entertainment only — real compatibility depends on communication, shared values, and mutual respect.' },
+  ],
+  howToSteps: [
+    'Select the first zodiac sign from the dropdown or sign grid.',
+    'Select the second zodiac sign you want to compare with.',
+    'Click Check Compatibility to see the results instantly.',
+    'Review the overall compatibility percentage and animated meter.',
+    'Read individual scores for love, friendship, and communication.',
+    'Explore each sign\'s personality traits and best/worst matches.',
+    'Try different sign combinations to compare results.',
+  ],
+  relatedToolSlugs: ['love-calculator', 'rashi-checker', 'gun-milan'],
+  icon: 'Stars',
+  isNew: true,
+});
+
 export const TOOL_COUNT = tools.length;
 
 export function getToolBySlug(slug: string): Tool | undefined {
