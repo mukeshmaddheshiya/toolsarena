@@ -235,9 +235,9 @@ export function NetWorthCalculatorTool() {
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="p-2.5 bg-indigo-100 dark:bg-indigo-900/40 rounded-xl">
+          <div className="p-2.5 bg-indigo-100 dark:bg-indigo-900/40 rounded-xl shrink-0">
             <TrendingUp className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
           </div>
           <div>
@@ -249,7 +249,7 @@ export function NetWorthCalculatorTool() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           <button
             onClick={handleSave}
             className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors"
@@ -275,29 +275,29 @@ export function NetWorthCalculatorTool() {
 
       {/* Net Worth Summary */}
       <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 p-5">
-        <div className="grid grid-cols-3 gap-4 mb-5">
-          <div className="text-center">
-            <div className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-5">
+          <div className="text-center sm:text-center flex sm:block items-center justify-between px-3 py-2 sm:p-0 bg-slate-50 dark:bg-slate-700/30 sm:bg-transparent sm:dark:bg-transparent rounded-lg sm:rounded-none">
+            <div className="text-xs font-medium text-slate-500 dark:text-slate-400 sm:mb-1">
               Total Assets
             </div>
-            <div className="text-lg font-bold text-emerald-600 dark:text-emerald-400 tabular-nums">
+            <div className="text-base sm:text-lg font-bold text-emerald-600 dark:text-emerald-400 tabular-nums">
               {formatCurrency(totalAssets)}
             </div>
           </div>
-          <div className="text-center border-x border-slate-100 dark:border-slate-700">
-            <div className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
+          <div className="text-center sm:text-center flex sm:block items-center justify-between px-3 py-2 sm:p-0 bg-slate-50 dark:bg-slate-700/30 sm:bg-transparent sm:dark:bg-transparent rounded-lg sm:rounded-none sm:border-x sm:border-slate-100 sm:dark:border-slate-700">
+            <div className="text-xs font-medium text-slate-500 dark:text-slate-400 sm:mb-1">
               Total Liabilities
             </div>
-            <div className="text-lg font-bold text-red-500 dark:text-red-400 tabular-nums">
+            <div className="text-base sm:text-lg font-bold text-red-500 dark:text-red-400 tabular-nums">
               {formatCurrency(totalLiabilities)}
             </div>
           </div>
-          <div className="text-center">
-            <div className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
+          <div className="text-center sm:text-center flex sm:block items-center justify-between px-3 py-2 sm:p-0 bg-indigo-50 dark:bg-indigo-900/20 sm:bg-transparent sm:dark:bg-transparent rounded-lg sm:rounded-none">
+            <div className="text-xs font-medium text-slate-500 dark:text-slate-400 sm:mb-1">
               Net Worth
             </div>
             <div
-              className={`text-lg font-bold tabular-nums ${
+              className={`text-base sm:text-lg font-bold tabular-nums ${
                 netWorth >= 0
                   ? 'text-indigo-600 dark:text-indigo-400'
                   : 'text-red-600 dark:text-red-400'
@@ -405,16 +405,16 @@ export function NetWorthCalculatorTool() {
               </div>
               <div className="divide-y divide-slate-100 dark:divide-slate-700">
                 {cat.items.map((item) => (
-                  <div key={item.id} className="flex items-center gap-2 px-4 py-2.5">
+                  <div key={item.id} className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5">
                     <input
                       type="text"
                       value={item.label}
                       onChange={(e) =>
                         updateAssetItem(cat.key, item.id, 'label', e.target.value)
                       }
-                      className="flex-1 text-sm text-slate-700 dark:text-slate-300 bg-transparent focus:outline-none"
+                      className="flex-1 min-w-0 text-sm text-slate-700 dark:text-slate-300 bg-transparent focus:outline-none truncate"
                     />
-                    <div className="relative flex items-center">
+                    <div className="relative flex items-center shrink-0">
                       <span className="absolute left-2 text-xs text-slate-400">₹</span>
                       <input
                         type="number"
@@ -425,12 +425,12 @@ export function NetWorthCalculatorTool() {
                           updateAssetItem(cat.key, item.id, 'value', e.target.value)
                         }
                         placeholder="0"
-                        className="w-32 pl-6 pr-2 py-1 text-sm text-right rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 tabular-nums"
+                        className="w-24 sm:w-32 pl-6 pr-2 py-1 text-sm text-right rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 tabular-nums"
                       />
                     </div>
                     <button
                       onClick={() => removeAssetItem(cat.key, item.id)}
-                      className="p-1 rounded text-slate-300 hover:text-red-400 transition-colors"
+                      className="p-1 rounded text-slate-300 hover:text-red-400 transition-colors shrink-0"
                     >
                       <X className="w-3.5 h-3.5" />
                     </button>
@@ -464,14 +464,14 @@ export function NetWorthCalculatorTool() {
           </div>
           <div className="divide-y divide-slate-100 dark:divide-slate-700">
             {liabilities.map((item) => (
-              <div key={item.id} className="flex items-center gap-2 px-4 py-2.5">
+              <div key={item.id} className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5">
                 <input
                   type="text"
                   value={item.label}
                   onChange={(e) => updateLiability(item.id, 'label', e.target.value)}
-                  className="flex-1 text-sm text-slate-700 dark:text-slate-300 bg-transparent focus:outline-none"
+                  className="flex-1 min-w-0 text-sm text-slate-700 dark:text-slate-300 bg-transparent focus:outline-none truncate"
                 />
-                <div className="relative flex items-center">
+                <div className="relative flex items-center shrink-0">
                   <span className="absolute left-2 text-xs text-slate-400">₹</span>
                   <input
                     type="number"
@@ -480,12 +480,12 @@ export function NetWorthCalculatorTool() {
                     value={item.value}
                     onChange={(e) => updateLiability(item.id, 'value', e.target.value)}
                     placeholder="0"
-                    className="w-32 pl-6 pr-2 py-1 text-sm text-right rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 tabular-nums"
+                    className="w-24 sm:w-32 pl-6 pr-2 py-1 text-sm text-right rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 tabular-nums"
                   />
                 </div>
                 <button
                   onClick={() => removeLiability(item.id)}
-                  className="p-1 rounded text-slate-300 hover:text-red-400 transition-colors"
+                  className="p-1 rounded text-slate-300 hover:text-red-400 transition-colors shrink-0"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
