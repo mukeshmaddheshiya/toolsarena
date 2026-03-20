@@ -7506,4 +7506,10413 @@ End Sub</code></pre>
   { slug: 'color-palette-from-image-guide', toolSlug: 'color-palette-from-image', category: 'developer-tools', title: 'Color Palette from Image — Nepali (2026)', subtitle: 'Image बाट colors extract।', metaTitle: 'Color Palette — Nepali (2026)', metaDescription: 'Image बाट colors extract। Hex codes।', targetKeyword: 'color palette from image', secondaryKeywords: ['extract colors', 'image colors'], lastUpdated: '2026-03-19', readingTime: '4 min read', tags: ['Color', 'Design', 'Free Tools'], intro: `<p>Photo बाट <strong>exact colors</strong> चाहिन्छ? Upload → hex codes।</p>`, sections: [ { id: 'how', title: 'कसरी', content: `<ol><li><a href="/tools/color-palette-from-image">Tool</a> खोल्नुहोस्</li><li>Image upload</li><li>Colors extract</li><li>Hex copy</li></ol>` } ], howToSteps: [ { title: 'Upload', description: 'JPG/PNG।' }, { title: 'Extract', description: '5-8 colors।' }, { title: 'Copy', description: 'Hex codes।' }, { title: 'Use', description: 'CSS, Figma।' } ], faqs: [ { question: 'Private?', answer: 'Browser मा process। Server upload छैन।' } ], relatedGuides: ['color-picker-guide'], toolCTA: { heading: 'Colors Extract — Free!', description: 'Image → hex।', buttonText: 'Extract गर्नुहोस् →' } },
 
   { slug: 'rent-receipt-generator-guide', toolSlug: 'rent-receipt-generator', category: 'utility-tools', title: 'Rent Receipt Generator — Nepali (2026)', subtitle: 'HRA tax exemption को लागि।', metaTitle: 'Rent Receipt Generator — Nepali (2026)', metaDescription: 'Rent receipt generate। HRA exemption।', targetKeyword: 'rent receipt generator', secondaryKeywords: ['rent receipt', 'HRA receipt'], lastUpdated: '2026-03-19', readingTime: '4 min read', tags: ['Rent Receipt', 'HRA', 'Tax'], intro: `<p>HRA claim गर्न <strong>rent receipts</strong> चाहिन्छ। Proper format generate।</p>`, sections: [ { id: 'how', title: 'कसरी', content: `<ol><li><a href="/tools/rent-receipt-generator">Generator</a> खोल्नुहोस्</li><li>Details enter</li><li>Landlord PAN (>₹1L/yr)</li><li>Months select → PDF</li></ol>` } ], howToSteps: [ { title: 'Details', description: 'Name, landlord, rent।' }, { title: 'PAN', description: 'If >₹1L/year।' }, { title: 'Months', description: 'All 12।' }, { title: 'PDF', description: 'Download।' } ], faqs: [ { question: 'PAN mandatory?', answer: 'Rent >₹1L/year मा मात्र।' }, { question: 'Parents?', answer: 'Legal — bank transfer, receipts collect।' } ], relatedGuides: ['income-tax-calculator-guide'], toolCTA: { heading: 'Rent Receipt — Free!', description: 'HRA format, PDF।', buttonText: 'Generate गर्नुहोस् →' } },
+
+{
+  slug: 'aadhaar-validator-guide',
+  toolSlug: 'aadhaar-validator',
+  category: 'utility-tools',
+  title: 'Aadhaar Number Validator: Aadhaar Format, Verhoeff Algorithm र Privacy को पूर्ण गाइड 2026',
+  subtitle: 'Aadhaar structure बुझ्नुहोस्, checksum errors कसरी detect गर्छ, र Aadhaar safe share कसरी गर्ने।',
+  metaTitle: 'Aadhaar Number Validator — Aadhaar Format Online जाँच 2026',
+  metaDescription: 'कुनै पनि Aadhaar number को format तुरुन्त validate गर्नुहोस्। 12-digit structure, Verhoeff algorithm, Masked Aadhaar, VID, PAN-Aadhaar linking.',
+  targetKeyword: 'आधार नम्बर जाँच',
+  secondaryKeywords: [
+    'Aadhaar number format check Nepali',
+    'Aadhaar validation online',
+    'Verhoeff algorithm Aadhaar Nepali',
+    'Aadhaar kasari validate garne',
+    'Aadhaar structure Nepali ma',
+    'masked Aadhaar download',
+    'Aadhaar VID ke ho',
+    'Aadhaar PAN linking 2026',
+    'Nepal Aadhaar KYC',
+    'UIDAI Aadhaar check',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '11 min read',
+  tags: ['Aadhaar', 'UIDAI', 'Identity', 'Validation'],
+  intro: `<p>Aadhaar भारतको national biometric identity system हो — एउटा 12-digit unique identification number जो Unique Identification Authority of India (UIDAI) ले देशका हरेक resident लाई issue गर्छ। 1.4 billion भन्दा बढी Aadhaar numbers issued भइसकेको छ — यो विश्वको सबैभन्दा ठूलो biometric identity database हो। Income tax file गर्न देखि bank account खोल्न, SIM card लिन, government subsidies पाउन सम्म — हरेक ठाउँमा Aadhaar चाहिन्छ। नेपालीहरू जो भारतमा काम गर्छन् वा भारतीय financial systems सँग interact गर्छन्, उनीहरूका लागि पनि Aadhaar validation बुझ्नु महत्त्वपूर्ण छ।</p>
+<p>यस guide मा हामी explain गर्नेछौं कि <strong>Aadhaar number validator</strong> कसरी काम गर्छ, Verhoeff checksum algorithm के हो र कसरी बिना database query errors detect गर्छ, format validation र Aadhaar authentication मा के फरक छ, Masked Aadhaar र Virtual ID (VID) बाट Aadhaar safe share कसरी गर्ने, र 2026 मा common Aadhaar issues कसरी resolve गर्ने।</p>`,
+  sections: [
+    {
+      id: 'aadhaar-ke-ho-ne',
+      title: 'Aadhaar के हो र 12-Digit Format किन Critical छ?',
+      content: `<h3>भारतको Universal Identity Infrastructure</h3>
+<p>Aadhaar (meaning "foundation") 2009 मा conceptualize भयो र पहिलो number 2010 मा issue भयो। PAN (tax identifier) वा voter ID (electoral) भन्दा फरक, Aadhaar एउटा <em>universal</em> identity हो — तपाईंको biometrics (fingerprints र iris scans) र demographic data (name, date of birth, address) सँग tied। UIDAI ले central Aadhaar database CIDR (Central Identities Data Repository) maintain गर्छ।</p>
+<p>12-digit Aadhaar number त्यो key हो जसले person लाई CIDR मा उनको biometric record सँग link गर्छ।</p>
+
+<h3>नेपाल-India सन्दर्भमा Aadhaar</h3>
+<p>नेपाली नागरिकहरू जो भारतमा काम गर्छन् वा OCI/PIO status राख्छन् उनीहरूले India को Aadhaar लिन सक्छन् — किनभने Aadhaar Indian residents का लागि हो, citizens मात्रका लागि होइन। दीर्घकालीन भारतमा बस्ने नेपालीहरूका लागि Aadhaar धेरै practical purposes का लागि आवश्यक हुन सक्छ।</p>
+
+<div class="callout-warning">
+<strong>Critical Distinction:</strong> Format validation ले भन्छ 12-digit number Aadhaar <em>हुन सक्छ</em>। यो भन्दैन कि त्यो number UIDAI database मा actually exist गर्छ वा कुनै specific person को हो। त्यसका लागि Aadhaar authentication चाहिन्छ।
+</div>
+
+<table>
+  <thead>
+    <tr><th>Rule</th><th>Detail</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Length</td><td>Exactly 12 digits</td></tr>
+    <tr><td>Characters</td><td>केवल numeric digits (0–9)</td></tr>
+    <tr><td>First digit</td><td>1–9 हुनुपर्छ (0 बाट सुरु हुन सक्दैन)</td></tr>
+    <tr><td>Check digit</td><td>Last digit Verhoeff algorithm बाट compute</td></tr>
+    <tr><td>हुन सक्दैन</td><td>सबै same digit (जस्तै 111111111111)</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'aadhaar-structure-ne',
+      title: 'Aadhaar Numbers को Structure र Assignment कसरी हुन्छ?',
+      content: `<h3>के Aadhaar Number मा Hidden Information छ?</h3>
+<p>यो सबैभन्दा common misconception हो। मानिसहरू assume गर्छन् कि PAN जस्तै Aadhaar digits मा geography, date of birth, वा gender encoded छ। <strong>छैन।</strong></p>
+<p>UIDAI ले deliberately Aadhaar लाई एउटा <em>random</em> number design गरेको छ जसमा number मा कुनै personally identifiable information encoded छैन। यो एउटा intentional privacy decision हो।</p>
+
+<h3>Aadhaar Number मा के Encoded छ?</h3>
+<table>
+  <thead>
+    <tr><th>Component</th><th>Digits</th><th>अर्थ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>First digit</td><td>1 digit</td><td>1–9 हुनुपर्छ; अन्य specific meaning छैन</td></tr>
+    <tr><td>Middle 10 digits</td><td>Digits 2–11</td><td>Pseudo-random sequence। Geographic, demographic, वा temporal information encoded छैन।</td></tr>
+    <tr><td>Last digit (check digit)</td><td>Digit 12</td><td>Verhoeff algorithm बाट पहिलो 11 digits को आधारमा compute।</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+<strong>Uniqueness Guarantee:</strong> UIDAI ले "de-duplication" process चलाउँछ — हरेक नयाँ application को biometrics लाई पूरा CIDR database सँग compare गरिन्छ। Biometric match भेटियो भने नयाँ Aadhaar issue हुँदैन — existing Aadhaar return हुन्छ।
+</div>`,
+    },
+    {
+      id: 'verhoeff-ne',
+      title: 'Verhoeff Algorithm को Simple Explanation — Checksum Validation कसरी काम गर्छ?',
+      content: `<h3>Checksum के हो र Aadhaar लाई किन चाहिन्छ?</h3>
+<p>Checksum एउटा calculated value हो जुन number को बाँकी digits बाट derive हुन्छ। यो built-in error detector को काम गर्छ। तपाईं Aadhaar number type गर्नुहुन्छ, validator ले पहिलो 11 digits बाट expected checksum compute गर्छ र 12th digit सँग compare गर्छ। Match भयो भने number structurally valid छ — कुनै database query चाहिँदैन।</p>
+<p>UIDAI ले Aadhaar को check digit का लागि <strong>Verhoeff algorithm</strong> choose गर्यो। यो algorithm human data entry मा सबैभन्दा common errors detect गर्नका लागि specifically designed हो:</p>
+<ul>
+  <li><strong>Single-digit errors:</strong> कुनै एउटा digit बदल्नु</li>
+  <li><strong>Adjacent transpositions:</strong> दुई neighboring digits swap गर्नु</li>
+  <li><strong>Twin errors:</strong> 55 → 44 जस्ता patterns</li>
+</ul>
+
+<div class="callout-info">
+<strong>सरल भाषामा:</strong> Verhoeff check ले ensure गर्छ कि कुनै single digit typo, वा दुई adjacent digits swap, accidentally अर्को valid-looking Aadhaar number produce गर्न सक्दैन।
+</div>
+
+<table>
+  <thead>
+    <tr><th>Error Type</th><th>Verhoeff ले Detect गर्छ?</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Single digit substitution</td><td>हो — सधैं</td></tr>
+    <tr><td>Adjacent digit transposition</td><td>हो — सधैं</td></tr>
+    <tr><td>Twin errors (aa → bb)</td><td>हो — सधैं (Luhn भन्दा फरक)</td></tr>
+    <tr><td>दुई non-adjacent digit errors</td><td>Usually छैन</td></tr>
+    <tr><td>UIDAI मा number registered छैन</td><td>छैन — database lookup चाहिन्छ</td></tr>
+    <tr><td>Number deactivated by UIDAI</td><td>छैन — database lookup चाहिन्छ</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+<strong>Developers का लागि:</strong> Verhoeff validation client-side implement गर्नु straightforward छ — तीनवटा lookup tables static र compact छन्। Aadhaar accept गर्ने कुनै पनि form मा यो add गर्दा authentication API hit गर्नुअघि majority data entry errors eliminate हुन्छन्।
+</div>`,
+    },
+    {
+      id: 'validation-vs-authentication-ne',
+      title: 'Aadhaar Format Validation ≠ Aadhaar Authentication — किन?',
+      content: `<h3>The Crucial Difference</h3>
+
+<h3>Level 1: Format Validation (हाम्रो Tool)</h3>
+<p>Check गर्छ: number 12 digits छ? Non-zero digit बाट सुरु हुन्छ? Verhoeff check digit match गर्छ?<br>Result: "यो number valid Aadhaar हुन सक्छ" वा "यसमा structural error छ।"<br>No internet, no UIDAI API, no data transmitted। Instant।</p>
+
+<h3>Level 2: Aadhaar Existence Check</h3>
+<p>UIDAI को "Verify Aadhaar" service (myaadhaar.uidai.gov.in) check गर्छ कि 12-digit number actually CIDR database मा exist गर्छ कि गर्दैन।</p>
+
+<h3>Level 3: Aadhaar Authentication</h3>
+<p>Banks र telecom operators ले KYC का लागि यो use गर्छन्। Person ले Aadhaar number + biometric (fingerprint/iris) वा OTP-based verification provide गर्छ।</p>
+
+<table>
+  <thead>
+    <tr><th>Level</th><th>के Check गर्छ</th><th>कसले गर्न सक्छ</th><th>Privacy Risk</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Format Validation</td><td>Structure only</td><td>Anyone (offline)</td><td>कुनै छैन</td></tr>
+    <tr><td>Existence Verification</td><td>DB lookup</td><td>Aadhaar portal access भएको</td><td>कम</td></tr>
+    <tr><td>OTP Authentication</td><td>Number + OTP match</td><td>UIDAI-licensed AUA/KUA</td><td>Medium</td></tr>
+    <tr><td>Biometric Authentication</td><td>Number + fingerprint/iris</td><td>AUA/KUA with biometric devices</td><td>High</td></tr>
+    <tr><td>eKYC</td><td>Identity + demographic data</td><td>KUA with user consent</td><td>Very High</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+<strong>Legal Note:</strong> केवल UIDAI-licensed Authentication User Agencies (AUAs) र KYC User Agencies (KUAs) ले Aadhaar authentication perform गर्न सक्छन्। UIDAI authorization बिना कुनै पनि private entity ले Aadhaar authentication गर्नु illegal हो।
+</div>`,
+    },
+    {
+      id: 'sharing-aadhaar-safely-ne',
+      title: 'Aadhaar Safe Share गर्नुहोस्: Masked Aadhaar, VID र UIDAI Rules',
+      content: `<h3>Full Aadhaar Share गर्ने Problem</h3>
+<p>Aadhaar यति ubiquitous भइसकेको छ कि landlords, hotels, petrol stations, gyms — जसलाई Aadhaar data collect/store गर्ने कुनै legal right छैन — routinely photocopies collect गर्छन्। यसले identity theft को massive risk सिर्जना गर्छ।</p>
+
+<h3>Masked Aadhaar</h3>
+<p>Masked Aadhaar त्यो version हो जहाँ केवल last 4 digits visible छन् — पहिलो 8 digits "XXXX XXXX" ले replaced छन्।</p>
+<ul>
+  <li><strong>कहाँबाट लिने:</strong> myaadhaar.uidai.gov.in → Download Aadhaar → "Masked Aadhaar" option select गर्नुहोस्</li>
+  <li><strong>Legally valid:</strong> हो — officially recognized identity proof</li>
+</ul>
+
+<h3>Virtual ID (VID)</h3>
+<p>VID एउटा temporary, revocable 16-digit number हो जुन तपाईंको Aadhaar सँग map हुन्छ। Organizations ले VID बाट authenticate गर्न सक्छन् तर VID बाट actual Aadhaar derive गर्न सक्दैनन्।</p>
+
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Full Aadhaar</th><th>Masked Aadhaar</th><th>Virtual ID (VID)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Digits shown</td><td>सबै 12</td><td>Last 4 मात्र</td><td>16 (different number)</td></tr>
+    <tr><td>Authentication का लागि use</td><td>हो</td><td>छैन</td><td>हो</td></tr>
+    <tr><td>Revocable</td><td>छैन</td><td>N/A</td><td>हो</td></tr>
+    <tr><td>Organization ले Aadhaar derive गर्न सक्छ?</td><td>Direct</td><td>N/A</td><td>छैन</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+<strong>Best Practice:</strong> Digital KYC का लागि VID provide गर्नुहोस्। Offline identity proof का लागि Masked Aadhaar PDF use गर्नुहोस्। कुनै random entity लाई original Aadhaar card को photocopy कहिल्यै नदिनुहोस्।
+</div>
+
+<div class="callout-warning">
+<strong>तपाईंको अधिकार:</strong> कुनै entity ले Masked Aadhaar accept नगरेर full Aadhaar demand गर्यो भने, photocopy दिनुअघि त्यसमा लेख्नुहोस्: "यो document केवल [entity name] लाई [purpose] का लागि [date] मा provide गरिएको हो।"
+</div>`,
+    },
+    {
+      id: 'aadhaar-pan-mobile-ne',
+      title: 'Aadhaar-PAN Linking, Aadhaar-Mobile Linking: के जान्नुपर्छ',
+      content: `<h3>Aadhaar-PAN Linking: Current Status (2026)</h3>
+<ul>
+  <li><strong>Deadline नाघिसकेको छ (2023):</strong> Aadhaar सँग link नभएका PANs "inoperative" भए</li>
+  <li><strong>Late fee:</strong> 2026 मा पनि ₹1,000 penalty (Section 234H) तिरेर link गर्न सकिन्छ</li>
+  <li><strong>Inoperative PAN consequences:</strong> TDS at 20%, TCS double rate, refunds withheld</li>
+  <li><strong>Status check:</strong> incometax.gov.in → Link Aadhaar → check status</li>
+</ul>
+
+<div class="callout-warning">
+<strong>ढिलाइ नगर्नुहोस्:</strong> Inoperative PAN ले हरेक financial transaction affect गर्छ — TDS, TCS, GST ITC, bank KYC। ₹1,000 penalty cascading compliance costs भन्दा far cheaper छ।
+</div>
+
+<h3>Aadhaar-Mobile Number Linking</h3>
+<p>Mobile number Aadhaar सँग linked हुनु आवश्यक छ:</p>
+<ul>
+  <li>Aadhaar-based authentication का लागि OTPs receive गर्न</li>
+  <li>m-Aadhaar app use गर्न</li>
+  <li>Virtual ID generate र update गर्न</li>
+  <li>e-Aadhaar र Masked Aadhaar download गर्न</li>
+</ul>
+
+<h3>Aadhaar मा Mobile Update कसरी गर्ने</h3>
+<p>Mobile number update offline गर्नुपर्छ — Aadhaar enrollment center मा।</p>
+<ol>
+  <li>कुनै पनि Aadhaar enrollment center visit गर्नुहोस्</li>
+  <li>Aadhaar Update/Correction Form fill गर्नुहोस्</li>
+  <li>Biometric verification provide गर्नुहोस्</li>
+  <li>Update fee तिर्नुहोस् (currently ₹50)</li>
+  <li>7–10 working days मा mobile update हुन्छ</li>
+</ol>
+
+<div class="callout-info">
+<strong>Online vs Offline Update:</strong>
+<ul>
+  <li><strong>Online (myaadhaar.uidai.gov.in):</strong> Name, DOB, gender, address, email (यदि mobile already linked छ)</li>
+  <li><strong>Offline only:</strong> Mobile number, biometric data</li>
+</ul>
+</div>`,
+    },
+    {
+      id: 'common-aadhaar-issues-ne',
+      title: 'Common Aadhaar Issues र ती कसरी Resolve गर्ने',
+      content: `<h3>Issue 1: Aadhaar र PAN/Bank मा Name Mismatch</h3>
+<p>यो सबैभन्दा common issue हो। Aadhaar मा तपाईंको नाम PAN, bank accounts, र अन्य official documents सँग exactly match हुनुपर्छ।</p>
+<p><strong>Resolution:</strong> myaadhaar.uidai.gov.in → Document Update मा name update गर्नुहोस्।</p>
+
+<h3>Issue 2: Aadhaar OTP आएन</h3>
+<p>Mobile number Aadhaar सँग linked छैन, वा registered mobile changed/deactivated भयो।</p>
+<p><strong>Resolution:</strong> Mobile number update गर्न enrollment center visit गर्नुहोस् (offline, 7–10 days)।</p>
+
+<h3>Issue 3: Aadhaar Biometric Lock</h3>
+<p>UIDAI ले biometric lock feature provide गर्छ। Biometric authentication consistently fail भयो भने check गर्नुहोस्।</p>
+<p><strong>Resolution:</strong> myaadhaar.uidai.gov.in → Biometric Lock/Unlock मा unlock गर्नुहोस्।</p>
+
+<div class="callout-tip">
+<strong>Best Practice:</strong> Aadhaar authentication actively use नगर्दा biometric lock enable राख्नुहोस्। Unauthorized use prevent हुन्छ।
+</div>
+
+<h3>Issue 5: Aadhaar Card Lost — कसरी पाउने</h3>
+<p>Physical card चाहिँदैन। e-Aadhaar PDF legally equivalent छ। myaadhaar.uidai.gov.in → Download Aadhaar बाट download गर्नुहोस्।</p>
+
+<table>
+  <thead>
+    <tr><th>Issue</th><th>Quick Fix</th><th>Timeline</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Name mismatch</td><td>myaadhaar मा online update</td><td>7–10 days</td></tr>
+    <tr><td>Mobile not linked</td><td>Enrollment center visit</td><td>7–10 days</td></tr>
+    <tr><td>Biometrics locked</td><td>myaadhaar मा online unlock</td><td>Instant</td></tr>
+    <tr><td>Lost card/number</td><td>myaadhaar.uidai.gov.in बाट download</td><td>Instant</td></tr>
+    <tr><td>PAN not linked</td><td>incometax.gov.in + ₹1,000 fee</td><td>3–5 days</td></tr>
+  </tbody>
+</table>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'Aadhaar Number Enter गर्नुहोस्',
+      description: '12-digit Aadhaar number validator field मा type गर्नुहोस्। Spaces सहित वा बिना — tool ले automatically normalize गर्छ।',
+    },
+    {
+      title: 'Validate Aadhaar Click गर्नुहोस्',
+      description: '"Validate Aadhaar" button press गर्नुहोस्। Tool ले check गर्छ: exactly 12-digit length, first digit non-zero (1–9), सबै characters numeric, र Verhoeff algorithm check digit match।',
+    },
+    {
+      title: 'Validation Result Review गर्नुहोस्',
+      description: 'Tool ले देखाउँछ: format valid छ, Verhoeff check digit match गर्छ, र fail भयो भने कुन rule violate भयो।',
+    },
+    {
+      title: 'Number Source Cross-Check गर्नुहोस्',
+      description: 'Validation fail भयो भने original Aadhaar card वा e-Aadhaar PDF बाट cross-reference गर्नुहोस्। Common mistakes: worn card बाट transcribe गर्नु, 8 लाई 3 सँग confuse गर्नु।',
+    },
+    {
+      title: 'UIDAI Verification का लागि जानुहोस् यदि आवश्यक छ भने',
+      description: 'Aadhaar UIDAI database मा exist गर्छ भनी confirm गर्नु छ भने myaadhaar.uidai.gov.in → Verify Aadhaar। Registered mobile मा OTP verification require गर्छ।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'के Aadhaar number 0 बाट सुरु हुन सक्छ?',
+      answer: 'हुँदैन। UIDAI specification अनुसार, Aadhaar numbers 0 बाट सुरु हुन सक्दैनन्। सबै issued Aadhaar numbers 2–9 बाट सुरु हुन्छन्। 0 वा 1 बाट सुरु हुने number format validation fail गर्छ।',
+    },
+    {
+      question: 'Verhoeff algorithm simple checksum भन्दा कसरी फरक छ?',
+      answer: 'Simple checksum (सबै digits को sum) ले धेरै common errors miss गर्छ — विशेष गरी adjacent transpositions। Verhoeff algorithm ले तीनवटा mathematical tables use गरेर सबै single-digit errors र सबै adjacent transpositions detect गर्छ। यो real-world data entry mistakes detect गर्नका लागि significantly more reliable छ।',
+    },
+    {
+      question: 'के म अर्को कसैको Aadhaar number validate गर्न सक्छु?',
+      answer: 'कुनै पनि 12-digit number मा format validation run गर्न सकिन्छ — structure check मात्र हुन्छ, कुनै personal data चाहिँदैन। तर Aadhaar UIDAI database मा exist गर्छ वा कसैको identity authenticate गर्न explicit consent र registered mobile मा OTP verification आवश्यक छ। Unauthorized Aadhaar authentication illegal हो।',
+    },
+    {
+      question: 'e-Aadhaar, Masked Aadhaar, र mAadhaar मा के फरक छ?',
+      answer: 'e-Aadhaar UIDAI portal बाट download गरिएको password-protected PDF हो — physically card को legally equivalent। Masked Aadhaar त्यही PDF हो तर केवल last 4 digits visible छन्। mAadhaar UIDAI को mobile app हो जसले Aadhaar digitally store गर्छ, biometric locking allow गर्छ, र authentication का लागि TOTP generate गर्न सक्छ।',
+    },
+    {
+      question: 'नेपाली नागरिकले Indian Aadhaar लिन सकिन्छ?',
+      answer: 'हो, Aadhaar Indian residents का लागि हो — citizens मात्रका लागि होइन। नेपाली नागरिकहरू जो भारतमा दीर्घकालीन रूपमा बस्छन् उनीहरूले Aadhaar enrollment गर्न सक्छन् valid address proof र resident status document सहित। तर Aadhaar enrollment गर्नु नेपाली citizenship त्याग्नु वा Indian citizenship claim गर्नु होइन।',
+    },
+    {
+      question: 'Format check pass भयो तर bank ले invalid भन्यो — के गर्ने?',
+      answer: 'Format validation ले structure confirm गर्छ। Bank rejection को अर्थ हो: (1) Aadhaar र PAN linked छैनन्, (2) Aadhaar record र bank records मा name/DOB mismatch, (3) mobile Aadhaar सँग linked छैन, वा (4) temporary UIDAI server issue। myaadhaar.uidai.gov.in मा check गर्नुहोस्।',
+    },
+    {
+      question: 'Virtual ID (VID) कसरी generate गर्ने?',
+      answer: 'myaadhaar.uidai.gov.in → VID Generator। Aadhaar number enter गर्नुहोस्, registered mobile मा OTP receive गर्नुहोस्, 16-digit VID generate गर्नुहोस्। एकपटकमा एउटा मात्र active VID हुन सक्छ। New VID generate गर्दा old automatically revoke हुन्छ।',
+    },
+    {
+      question: 'Bank account मा Aadhaar seeding के हो?',
+      answer: 'Aadhaar seeding भनेको Aadhaar number लाई bank account सँग link गर्नु हो। Direct Benefit Transfer (DBT) का लागि यो आवश्यक छ — government subsidies (LPG subsidy, scholarship, MGNREGA wages) Aadhaar-linked bank account मा directly deposit हुन्छन्। Seeding, Aadhaar-based KYC भन्दा अलग हो।',
+    },
+  ],
+  relatedGuides: ['pan-card-validator-guide', 'gstin-validator-guide', 'password-generator-guide'],
+  toolCTA: {
+    heading: 'कुनै पनि Aadhaar Number को Format Validate गर्नुहोस् — Instantly, Privately',
+    description: 'ToolsArena को Aadhaar Validator बाट कुनै पनि 12-digit number लाई Verhoeff algorithm बाट check गर्नुहोस्। Zero data stored, completely offline — तपाईंको Aadhaar number तपाईंको device बाट बाहिर जाँदैन।',
+    buttonText: 'Aadhaar Validate गर्नुहोस्',
+  },
+},
+
+{
+  slug: "banner-poster-maker-guide",
+  toolSlug: "banner-poster-maker",
+  category: "image-tools",
+  title: "Banner Poster Maker: Converting Banners Design गर्ने सम्पूर्ण गाइड",
+  subtitle: "Web ads देखि print posters सम्म — हरेक platform का लागि dimensions, design र export formats",
+  metaTitle: "Banner Poster Maker Guide — Professional Banners Free मा Design.",
+  metaDescription: "Web, social media र print का लागि professional banners र posters design गर्न सिक्नुहोस्। Standard dimensions, colour psychology, typography नेपालीमा।",
+  targetKeyword: "ब्यानर पोस्टर बनाउने",
+  secondaryKeywords: [
+    "banner maker online nepali",
+    "poster design online nepal",
+    "web banner dimensions nepali",
+    "social media banner size nepal",
+    "banner design tips nepali",
+    "banner kasari banaune",
+    "digital banner maker nepal",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१३ मिनेट",
+  tags: ["banner", "poster", "design", "image-tools", "marketing", "nepal"],
+  intro: `<p>नेपालमा digital marketing को वृद्धिसँगै banners र posters को महत्त्व अत्यधिक बढेको छ। Kathmandu को व्यापारीदेखि rural areas का small businesses सम्म, social media मा banners share गर्नु अब common भइसकेको छ। Festival seasons मा — Dashain, Tihar, Holi — Nepali businesses ले promotions का लागि banners बनाउँछन्। तर challenge भनेको सही बनाउनु हो — एउटा जसले actually काम गरोस्, हेर्नेलाई click गर्न वा action लिन उत्प्रेरित गरोस्।</p>
+<p>यो guide मा हामी cover गर्छौं: ToolsArena को free banner र poster maker बाट scratch बाट effective banners बनाउनु। हरेक major platform र print size का standard dimensions, high-converting banners का design principles, colour psychology, typography, PNG vs JPG vs WebP, र ती amateur mistakes जसले राम्रो banner लाई unprofessional बनाउँछन्।</p>`,
+  sections: [
+    {
+      id: "banner-vs-poster-ne",
+      title: "Banner vs Poster: कहिले कुन Format Use गर्ने",
+      content: `<p>Banner र poster को अलग-अलग design contexts, audience interactions, र production requirements हुन्छन्:</p>
+
+<h3>Banner के हो?</h3>
+<ul>
+  <li><strong>Digital advertising</strong> — leaderboard (728×90), medium rectangle (300×250)</li>
+  <li><strong>Website headers</strong> — hero banners, category banners</li>
+  <li><strong>Social media headers</strong> — Facebook cover, LinkedIn banner</li>
+  <li><strong>Nepal context</strong> — E-commerce websites, news portals (onlinekhabar.com, setopati.com) मा display ads</li>
+</ul>
+
+<h3>Poster के हो?</h3>
+<ul>
+  <li><strong>Event announcements</strong> — concerts, exhibitions, festivals</li>
+  <li><strong>Promotional materials</strong> — Dashain sales, Tihar discounts</li>
+  <li><strong>Social media posts</strong> — Facebook र Instagram promotional posts</li>
+  <li><strong>Print materials</strong> — A4, A3 printed posters</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>Banner Use गर्नुहोस्</th>
+      <th>Poster Use गर्नुहोस्</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Viewing context</td>
+      <td>अन्य content सँगै (website, feed)</td>
+      <td>Standalone display (wall, social post)</td>
+    </tr>
+    <tr>
+      <td>Orientation</td>
+      <td>Horizontal / landscape</td>
+      <td>Vertical / portrait वा square</td>
+    </tr>
+    <tr>
+      <td>Primary goal</td>
+      <td>Click / CTA drive गर्नु</td>
+      <td>Complete information communicate गर्नु</td>
+    </tr>
+    <tr>
+      <td>Viewing time</td>
+      <td>१–३ seconds (passive)</td>
+      <td>५–३० seconds (active)</td>
+    </tr>
+    <tr>
+      <td>Text amount</td>
+      <td>Minimal (headline + CTA)</td>
+      <td>Moderate (headline + body + details)</td>
+    </tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: "banner-dimensions-ne",
+      title: "Standard Banner Dimensions: हरेक Platform का लागि",
+      content: `<p>२०२६ को comprehensive specifications:</p>
+
+<h3>Web Display Advertising</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Banner Name</th>
+      <th>Dimensions (px)</th>
+      <th>नेपाली Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Medium Rectangle</td>
+      <td>300 × 250</td>
+      <td>Nepali news sites र portals मा सबैभन्दा बढी use हुन्छ</td>
+    </tr>
+    <tr>
+      <td>Leaderboard</td>
+      <td>728 × 90</td>
+      <td>Top of page — onlinekhabar, setopati मा देखिन्छ</td>
+    </tr>
+    <tr>
+      <td>Half Page</td>
+      <td>300 × 600</td>
+      <td>Premium placement, high engagement</td>
+    </tr>
+    <tr>
+      <td>Mobile Banner</td>
+      <td>320 × 50</td>
+      <td>नेपालमा mobile traffic बढी भएकाले महत्त्वपूर्ण</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Social Media Headers</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Banner/Header Size</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Facebook Cover Photo</td>
+      <td>851 × 315 px</td>
+      <td>Mobile crops to 640×360 — elements centred राख्नुहोस्</td>
+    </tr>
+    <tr>
+      <td>LinkedIn Banner</td>
+      <td>1584 × 396 px</td>
+      <td>Text central 60% मा राख्नुहोस्</td>
+    </tr>
+    <tr>
+      <td>YouTube Channel Art</td>
+      <td>2560 × 1440 px</td>
+      <td>Safe zone: 1546×423 px (centred)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Print Poster Sizes</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Dimensions</th>
+      <th>Nepal मा Common Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A5</td>
+      <td>148 × 210 mm</td>
+      <td>Flyers, menus</td>
+    </tr>
+    <tr>
+      <td>A4</td>
+      <td>210 × 297 mm</td>
+      <td>Standard posters, school notices, office</td>
+    </tr>
+    <tr>
+      <td>A3</td>
+      <td>297 × 420 mm</td>
+      <td>Retail posters, event announcements, festivals</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td>420 × 594 mm</td>
+      <td>Large displays, trade shows, exhibitions</td>
+    </tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: "design-principles-ne",
+      title: "High-Converting Banners का Design Principles: Hierarchy, Contrast, CTA",
+      content: `<p>राम्रो banner जसलाई कसैले click नगरोस् — त्यो failure हो। Design एउटा purpose serve गर्छ — र most banners का लागि त्यो purpose action लिनु हो।</p>
+
+<h3>Visual Hierarchy: Three-Element Rule</h3>
+<ol>
+  <li><strong>The Hook</strong> — सबैभन्दा prominent element। Bold headline, percentage discount, वा strong visual</li>
+  <li><strong>The Context</strong> — Hook लाई explain गर्ने supporting text। एउटा sentence वा कम</li>
+  <li><strong>The CTA</strong> — Call to action। Clearly labelled button जसले viewer लाई exactly बताओस् next के गर्ने</li>
+</ol>
+
+<h3>Contrast</h3>
+<ul>
+  <li><strong>Colour contrast</strong> — CTA button colour banner background बाट strongly contrast गर्नुपर्छ</li>
+  <li><strong>Size contrast</strong> — Headline supporting text भन्दा significantly larger हुनुपर्छ (3:1 ratio minimum)</li>
+  <li><strong>White space</strong> — CTA button को वरिपरि generous padding ले clicks बढाउँछ</li>
+</ul>
+
+<h3>नेपाली Context मा CTA</h3>
+<p>Nepali audiences का लागि effective CTAs:</p>
+<ul>
+  <li>"अहिले किन्नुहोस्" (Buy Now)</li>
+  <li>"निःशुल्क Download गर्नुहोस्" (Download Free)</li>
+  <li>"थप जान्नुहोस्" (Learn More)</li>
+  <li>"आजै Order गर्नुहोस्" (Order Today) — urgency language</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>Banner Test:</strong> Banner को text हातले ढाक्नुहोस् — के visual अकेले story बताउँछ? फेरि image ढाक्नुहोस् — के text अकेले offer communicate गर्छ? राम्रो banner दुवै tests pass गर्छ।
+</div>`,
+    },
+    {
+      id: "colour-psychology-ne",
+      title: "Banner Design मा Colour Psychology: सही Palette छान्नुहोस्",
+      content: `<p>Colour fastest communication channels मध्येको एक हो। नेपाली संस्कृतिमा colours को विशेष महत्त्व छ — Dashain मा red र yellow, weddings मा crimson र gold।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Colour</th>
+      <th>Psychological Association</th>
+      <th>नेपाली Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Red</td>
+      <td>Urgency, excitement, passion</td>
+      <td>Sales, festivals, food banners — Dashain promotions</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>Energy, enthusiasm, affordability</td>
+      <td>CTAs, youth brands, e-commerce</td>
+    </tr>
+    <tr>
+      <td>Yellow</td>
+      <td>Optimism, warmth, attention</td>
+      <td>Tihar promotions, children, food</td>
+    </tr>
+    <tr>
+      <td>Green</td>
+      <td>Nature, health, growth, money</td>
+      <td>Finance, health, eco, agriculture</td>
+    </tr>
+    <tr>
+      <td>Blue</td>
+      <td>Trust, professionalism, calm</td>
+      <td>Banks, government, tech companies</td>
+    </tr>
+    <tr>
+      <td>Purple</td>
+      <td>Luxury, creativity, wisdom</td>
+      <td>Premium products, beauty</td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>Luxury, sophistication</td>
+      <td>Luxury goods, fashion</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>60-30-10 Colour Rule</h3>
+<ul>
+  <li><strong>60%</strong> — Dominant colour (background)</li>
+  <li><strong>30%</strong> — Secondary colour (text, supporting graphics)</li>
+  <li><strong>10%</strong> — Accent colour (CTA button, highlights)</li>
+</ul>`,
+    },
+    {
+      id: "typography-ne",
+      title: "Banners का लागि Typography: Small Sizes मा काम गर्ने Fonts",
+      content: `<p>Banner typography सबैभन्दा mishandled aspect हो। 300×250 banner मा headline 18–24px effective size मा display हुन सक्छ।</p>
+
+<h3>Font Categories</h3>
+<ul>
+  <li><strong>Bold Geometric Sans-Serifs</strong> (Montserrat, Futura) — digital banners का लागि excellent</li>
+  <li><strong>Nepali Devanagari fonts</strong> — Mukta Bold, Noto Sans Devanagari Bold — Nepali text banners का लागि</li>
+  <li><strong>Condensed Display Fonts</strong> (Oswald, Bebas Neue) — limited space का लागि ideal</li>
+  <li><strong>Script fonts</strong> — 600px भन्दा कम wide banners मा avoid गर्नुहोस्</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Banner Size</th>
+      <th>Headline Font Size</th>
+      <th>Body Text Size</th>
+      <th>CTA Text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>300 × 250 px</td>
+      <td>22–28px</td>
+      <td>12–14px</td>
+      <td>14–16px</td>
+    </tr>
+    <tr>
+      <td>728 × 90 px</td>
+      <td>26–32px</td>
+      <td>12–14px</td>
+      <td>14–16px</td>
+    </tr>
+    <tr>
+      <td>Social media (1200×628)</td>
+      <td>48–72px</td>
+      <td>18–24px</td>
+      <td>24–30px</td>
+    </tr>
+    <tr>
+      <td>A4 print poster</td>
+      <td>60–96px</td>
+      <td>18–24px</td>
+      <td>28–36px</td>
+    </tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: "export-ne",
+      title: "Banners Export गर्नु: PNG vs JPG vs WebP — कुन Use गर्ने",
+      content: `<p>Export format trivial decision होइन — file size, quality, loading speed, र compatibility affect गर्छ:</p>
+
+<h3>PNG</h3>
+<p>Text, sharp geometric shapes, logos, वा transparent backgrounds भएका banners का लागि। Lossless compression — quality degrade हुँदैन।</p>
+<ul>
+  <li><strong>Best for:</strong> Digital display ads, text-heavy banners, website banners</li>
+</ul>
+
+<h3>JPG</h3>
+<p>Primarily photographic banners का लागि। Lossy compression — smaller file sizes।</p>
+<ul>
+  <li><strong>Best for:</strong> Photo-based social media banners, email campaigns</li>
+</ul>
+
+<h3>WebP</h3>
+<p>Website का लागि smallest possible file size — नेपाली users को slow internet connection मा पनि fast load हुन्छ।</p>
+<ul>
+  <li><strong>Best for:</strong> Website display banners, landing page images</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Use Case</th>
+      <th>Recommended Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Facebook / Instagram ad</td>
+      <td>JPG photos का लागि, PNG text-heavy का लागि</td>
+    </tr>
+    <tr>
+      <td>Website banner</td>
+      <td>WebP (PNG fallback सँग)</td>
+    </tr>
+    <tr>
+      <td>Email header</td>
+      <td>JPG वा PNG</td>
+    </tr>
+    <tr>
+      <td>Print poster</td>
+      <td>PNG at 300 DPI</td>
+    </tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: "mistakes-ne",
+      title: "Banner Design Mistakes जसले Ad लाई Unprofessional बनाउँछन्",
+      content: `<p>धेरैजसो mistakes अन्य design contexts बाट आएका habits बाट हुन्छन्:</p>
+
+<h3>१. धेरै Information</h3>
+<p>Banner landing page होइन — यो त्यसको doorway हो। एउटा message, एउटा offer, एउटा action। १५ words भन्दा बढी पढ्नु परे viewer already lost भइसक्छ।</p>
+
+<h3>२. Low-Resolution Images</h3>
+<p>सधैं highest-resolution source image बाट start गर्नुहोस् र scale down गर्नुहोस् — कहिल्यै scale up नगर्नुहोस्।</p>
+
+<h3>३. धेरै Fonts</h3>
+<p>तीन वा बढी typefaces — visual chaos। Maximum 2 राख्नुहोस्।</p>
+
+<h3>४. Blend In हुने CTA</h3>
+<p>CTA button पूरै banner को सबैभन्दा visually distinct element हुनुपर्छ।</p>
+
+<h3>५. Mobile Preview नगर्नु</h3>
+<p>नेपालमा ७०%+ internet use mobile मा हुन्छ — mobile मा banner कस्तो देखिन्छ सधैं check गर्नुहोस्।</p>
+
+<h3>६. Platform Context बिर्सनु</h3>
+<p>White banner on white background website मा effectively invisible हुन्छ। Platform background हेर्नुहोस् र ensure गर्नुहोस् कि banner visible छ।</p>
+
+<div class="callout-info">
+  <strong>Quick Audit Checklist:</strong> Export गर्नु अघि — २ seconds मा headline read हुन्छ? CTA button obvious छ? Greyscale मा design work गर्छ? File platform size limit भित्र छ?
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "Banner format र dimensions choose गर्नुहोस्",
+      description: "ToolsArena Banner & Poster Maker खोल्नुहोस् र canvas select गर्नुहोस्। 'Web Banner', 'Social Media', वा 'Print Poster' categories बाट specific size छान्नुहोस्।",
+    },
+    {
+      title: "Background set गर्नुहोस्",
+      description: "Solid colour, gradient, वा background image upload गर्नुहोस्। 60-30-10 colour rule use गर्नुहोस्। Photo backgrounds मा 30–50% opacity colour overlay apply गर्नुहोस्।",
+    },
+    {
+      title: "Headline text add गर्नुहोस्",
+      description: "Primary headline add गर्नुहोस् — banners का लागि ८ words वा कम। Bold, condensed font choose गर्नुहोस्। Text shadow वा outline apply गर्नुहोस्।",
+    },
+    {
+      title: "Supporting text र brand elements add गर्नुहोस्",
+      description: "Subheadline, logo, र supporting graphics add गर्नुहोस्। Visual hierarchy maintain गर्नुहोस्: headline > supporting text > CTA।",
+    },
+    {
+      title: "CTA button design गर्नुहोस्",
+      description: "Button shape र text add गर्नुहोस्। Accent colour use गर्नुहोस्। Action verb CTA लेख्नुहोस्। Mobile touch targets का लागि minimum 44px height राख्नुहोस्।",
+    },
+    {
+      title: "Display size मा review गर्नुहोस्",
+      description: "100% zoom मा review गर्नुहोस्। Headline legibility, CTA visibility, र visual balance check गर्नुहोस्।",
+    },
+    {
+      title: "Correct format मा export गर्नुहोस्",
+      description: "Format select गर्नुहोस्: text-heavy का लागि PNG, photo-based का लागि JPG, web use का लागि WebP, print का लागि PDF at 300 DPI।",
+    },
+  ],
+  faqs: [
+    {
+      question: "Websites का लागि सबैभन्दा common banner size के हो?",
+      answer: "300×250 medium rectangle सबैभन्दा common र highest-performing web banner size हो। Social media का लागि 1200×628 px universal standard हो Facebook, Twitter, र LinkedIn मा।",
+    },
+    {
+      question: "Banner को file size कति हुनुपर्छ?",
+      answer: "Platform अनुसार फरक हुन्छ। Google Ads: 150KB भन्दा कम। Facebook: 8MB allow गर्छ, best practice 1MB भन्दा कम। नेपालको slow internet connections लाई सोचेर website banners 150KB भन्दा कम राख्नुहोस्।",
+    },
+    {
+      question: "Nepali text भएको banner कसरी बनाउने?",
+      answer: "Bold Devanagari fonts use गर्नुहोस् जस्तै Mukta Bold वा Noto Sans Devanagari Bold। Font size minimum 22px राख्नुहोस् 300×250 canvas मा। Text background बाट readable होस् भनेर high contrast ensure गर्नुहोस्। Devanagari text का लागि dark background मा white text वा light background मा dark text best काम गर्छ।",
+    },
+    {
+      question: "PNG वा JPG — banner का लागि कुन?",
+      answer: "Text, geometric shapes, logos, वा transparent backgrounds भएका banners का लागि PNG use गर्नुहोस्। Photo-heavy banners जहाँ transparency चाहिँदैन — JPG। Website use का लागि WebP best छ — नेपालको slow internet मा पनि fast load हुन्छ।",
+    },
+    {
+      question: "Dashain र Tihar promotional banners का लागि के ध्यान दिने?",
+      answer: "Festival colours use गर्नुहोस् — Dashain का लागि red, gold, र maroon; Tihar का लागि yellow, orange, र gold। Nepali text मा offer clearly mention गर्नुहोस्। Urgency language add गर्नुहोस् जस्तै 'दशैं Special Offer', 'आजै किन्नुहोस्'। Cultural symbols (diyo, tika) को respectful use गर्नुहोस्।",
+    },
+  ],
+  relatedGuides: ["image-compressor-guide", "css-gradient-generator-guide", "favicon-generator-guide"],
+  toolCTA: {
+    heading: "Minutes मा Banner बनाउनुहोस् — Free",
+    description: "Professional web banners, social media graphics र print posters। Hundreds of templates, सबै standard sizes pre-configured, easy drag-and-drop editor। Design experience चाहिँदैन।",
+    buttonText: "Banner & Poster Maker खोल्नुहोस्",
+  },
+},
+
+{
+  slug: "color-blindness-simulator-guide",
+  toolSlug: "color-blindness-simulator",
+  category: "design-tools",
+  title: "रङ्गान्धता सिम्युलेटर — सम्पूर्ण Accessibility गाइड",
+  subtitle: "Color-blind friendly UI design गर्नुहोस् — WCAG guidelines, safe palettes र testing workflow",
+  metaTitle: "रङ्गान्धता सिम्युलेटर — नेपाली Designers र Developers को लागि Guide",
+  metaDescription: "Color blindness simulator कसरी प्रयोग गर्ने, CVD का 8 types, WCAG 2.2 contrast ratios, accessible color palettes र UI testing workflow — नेपाली accessibility.",
+  targetKeyword: "रङ्गान्धता सिम्युलेटर",
+  secondaryKeywords: [
+    "color blind friendly design नेपाली",
+    "WCAG contrast ratio Nepal",
+    "accessible design Nepal",
+    "color vision deficiency simulator",
+    "UI accessibility testing",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१५ मिनेट",
+  tags: ["accessibility", "design", "WCAG", "color", "UI/UX", "a11y", "Nepal"],
+  intro: `
+<p>रङ्गान्धता (Color Blindness) संसारभरि लगभग <strong>३० करोड मानिसहरूलाई असर गर्छ</strong> — करिब ८% पुरुष र ०.५% महिला। तिनीहरूका लागि web मा अदृश्य जानकारी भरिएको हुन्छ: सेतो background मा रातो error messages, हरियो success र पहेँलो warning एउटै देखिने। एउटा <strong>रङ्गान्धता सिम्युलेटर</strong> ले designers र developers लाई color vision deficiency (CVD) भएका users को दृष्टिकोणबाट आफ्नो UI अनुभव गर्न दिन्छ।</p>
+<p>नेपालको IT sector मा designers र developers को संख्या बढ्दो छ — Kathmandu, Pokhara र Butwal मा startups र digital agencies तेजीसँग बढिरहेका छन्। Accessible design नबनाउँदा प्रत्येक १२ पुरुष users मध्ये लगभग एक जना CVD भएका हुन सक्छन्। यो guide मा WCAG standards, safe palettes र testing workflow सहित सम्पूर्ण जानकारी छ।</p>
+  `,
+  sections: [
+    {
+      id: "color-blindness-bujhne",
+      title: "रङ्गान्धता के हो: Types, Prevalence र Design मा Impact",
+      content: `
+<p>Human color vision retina मा तीन प्रकारका cone cells मा निर्भर हुन्छ: S-cones (blue), M-cones (green) र L-cones (red)। रङ्गान्धता तब हुन्छ जब एक वा बढी cone types absent वा non-functional हुन्छन्।</p>
+
+<h3>Prevalence by Population</h3>
+<table>
+  <thead>
+    <tr><th>Population</th><th>Red-Green CVD (Men)</th><th>Red-Green CVD (Women)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Northern European</td><td>8%</td><td>0.5%</td></tr>
+    <tr><td>Asian (East)</td><td>5%</td><td>0.4%</td></tr>
+    <tr><td>Global average</td><td>~6%</td><td>~0.4%</td></tr>
+  </tbody>
+</table>
+
+<h3>Design मा सामान्य Failures</h3>
+<ul>
+  <li>रातो error र हरियो success states एउटै देखिन्छन्</li>
+  <li>Charts मा केवल color बाट data series छुट्याइएको हुन्छ</li>
+  <li>Form validation केवल रातो border देखाउँछ</li>
+  <li>Dashboard मा traffic light status (red/yellow/green)</li>
+</ul>
+
+<div class="callout callout-info">
+  <strong>नेपाल सन्दर्भ:</strong> नेपालमा Disability Rights Act अन्तर्गत digital accessibility standards विकास भइरहेका छन्। अन्तर्राष्ट्रिय projects र global clients का लागि WCAG 2.2 AA compliance अनिवार्य हुँदै गइरहेको छ।
+</div>
+      `,
+    },
+    {
+      id: "8-cvd-types-nepali",
+      title: "Color Vision Deficiency का ८ Types",
+      content: `
+<table>
+  <thead>
+    <tr><th>Type</th><th>Category</th><th>Prevalence (Men)</th><th>रातो कस्तो देखिन्छ</th><th>हरियो कस्तो देखिन्छ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Deuteranopia</strong></td><td>Red-Green</td><td>1%</td><td>Brownish-yellow</td><td>Brownish-yellow (एउटै!)</td></tr>
+    <tr><td><strong>Deuteranomaly</strong></td><td>Red-Green</td><td>5%</td><td>Slightly muted</td><td>More yellow-green</td></tr>
+    <tr><td><strong>Protanopia</strong></td><td>Red-Green</td><td>1%</td><td>Dark brownish</td><td>Normal जस्तै</td></tr>
+    <tr><td><strong>Protanomaly</strong></td><td>Red-Green</td><td>1%</td><td>Darker</td><td>Slightly different</td></tr>
+    <tr><td><strong>Tritanopia</strong></td><td>Blue-Yellow</td><td>0.001%</td><td>Normal</td><td>Normal</td></tr>
+    <tr><td><strong>Tritanomaly</strong></td><td>Blue-Yellow</td><td>0.01%</td><td>Normal</td><td>Normal</td></tr>
+    <tr><td><strong>Achromatopsia</strong></td><td>Total</td><td>0.003%</td><td>Grey</td><td>Grey</td></tr>
+    <tr><td><strong>Achromatomaly</strong></td><td>Total (partial)</td><td>Rare</td><td>Muted</td><td>Muted</td></tr>
+  </tbody>
+</table>
+
+<pre><code class="language-text">Normal Vision:  ● रातो  ● हरियो  ← स्पष्ट फरक
+Deuteranopia:   ● Brown ● Brown  ← एउटै! यही समस्या हो।
+
+# Common web colors deuteranopia मा:
+#FF0000 (red error)  → olive/dark
+#00FF00 (green ok)   → olive/dark  ← एउटै रङ!
+#0000FF (blue info)  → unchanged  ← Blue सुरक्षित छ
+</code></pre>
+      `,
+    },
+    {
+      id: "daltonization-nepali",
+      title: "Color Blindness Simulator कसरी काम गर्छ: Daltonization Algorithm",
+      content: `
+<p>Color blindness simulators ले Brettel-Viénot-Mollon (1997) model मा आधारित mathematical transformations प्रयोग गर्छन्।</p>
+
+<h3>Pipeline: sRGB → LMS → Simulate → sRGB</h3>
+<pre><code class="language-javascript">// Step 1: sRGB → Linear RGB
+function sRGBToLinear(c) {
+  return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+}
+
+// Step 2: Linear RGB → LMS (cone response)
+function rgbToLMS(r, g, b) {
+  return {
+    L: 0.31399022 * r + 0.63951294 * g + 0.04649755 * b,
+    M: 0.15537241 * r + 0.75789446 * g + 0.08670142 * b,
+    S: 0.01775239 * r + 0.10944209 * g + 0.87256922 * b,
+  };
+}
+
+// Step 3: Deuteranopia simulate (M-cone absent)
+function simulateDeuteranopia(L, M, S) {
+  return { L: L, M: 0.494207 * L + 1.24827 * S, S: S };
+}
+</code></pre>
+      `,
+    },
+    {
+      id: "wcag-guidelines-nepali",
+      title: "WCAG 2.2 Color Accessibility Guidelines 2026",
+      content: `
+<h3>WCAG 2.2 Contrast Requirements</h3>
+<table>
+  <thead>
+    <tr><th>Criterion</th><th>Level</th><th>Requirement</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1.4.3 Contrast (Minimum)</td><td>AA</td><td>Normal text: 4.5:1; Large text: 3:1</td></tr>
+    <tr><td>1.4.6 Contrast (Enhanced)</td><td>AAA</td><td>Normal text: 7:1; Large text: 4.5:1</td></tr>
+    <tr><td>1.4.11 Non-text Contrast</td><td>AA</td><td>UI components: 3:1</td></tr>
+    <tr><td>1.4.1 Use of Color</td><td>A</td><td>Color मात्रैले information convey गर्न नहुने</td></tr>
+  </tbody>
+</table>
+
+<pre><code class="language-javascript">// Contrast ratio calculation:
+// Black on White: 21:1 (maximum)
+// #767676 on White: 4.54:1 (AA pass)
+// #0066CC on White: 4.88:1 (AA pass — blue link)
+// #999999 on White: 2.85:1 (FAIL — too light)
+</code></pre>
+      `,
+    },
+    {
+      id: "safe-palettes-nepali",
+      title: "Color-Blind Friendly Palettes र Safe Color Combinations",
+      content: `
+<h3>Golden Rules</h3>
+<ol>
+  <li><strong>Color लाई single channel नबनाउनुहोस्</strong> — Color सँगै text labels, icons वा patterns प्रयोग गर्नुहोस्</li>
+  <li><strong>Sufficient luminance contrast ensure गर्नुहोस्</strong></li>
+  <li><strong>Red-green combinations एक्लै नराख्नुहोस्</strong> — Blue र orange को primary pair प्रयोग गर्नुहोस्</li>
+</ol>
+
+<pre><code class="language-css">/* सबभन्दा safe 2-color pair: */
+--safe-blue:   #0072B2;  /* Blue */
+--safe-orange: #E69F00;  /* Orange */
+
+/* Wong palette (Nature journals standard) */
+--wong-orange:    #E69F00;
+--wong-sky-blue:  #56B4E9;
+--wong-green:     #009E73;
+--wong-blue:      #0072B2;
+--wong-red:       #D55E00;
+</code></pre>
+
+<h3>UI Component Guidelines</h3>
+<table>
+  <thead>
+    <tr><th>Component</th><th>गलत तरिका</th><th>Accessible तरिका</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Error state</td><td>केवल रातो border</td><td>रातो border + error icon (✗) + "Error:" text</td></tr>
+    <tr><td>Success state</td><td>केवल हरियो background</td><td>हरियो + checkmark + "Success" text</td></tr>
+    <tr><td>Line chart</td><td>केवल रातो र हरियो lines</td><td>Different line styles + color</td></tr>
+    <tr><td>Heatmap</td><td>Red-green gradient</td><td>Viridis sequential palette</td></tr>
+  </tbody>
+</table>
+      `,
+    },
+    {
+      id: "testing-workflow-nepali",
+      title: "UI Color Blindness Testing: Step-by-Step Workflow",
+      content: `
+<h3>Phase 1: Design Tool मा (Figma/Sketch)</h3>
+<ol>
+  <li>Design पूर्णतः desaturate गर्नुहोस् — grayscale मा पनि जानकारी स्पष्ट हुनुपर्छ</li>
+  <li>Figma को built-in accessibility checker बाट contrast ratios check गर्नुहोस्</li>
+  <li>Stark plugin बाट CVD simulation apply गर्नुहोस्</li>
+</ol>
+
+<h3>Phase 2: ToolsArena Simulator बाट</h3>
+<pre><code class="language-text">1. UI screenshot लिनुहोस्
+2. Color Blindness Simulator मा upload गर्नुहोस्
+3. सबै 8 CVD types toggle गर्नुहोस्
+4. प्रत्येक type को लागि check गर्नुहोस्:
+   - Error र success states distinguish हुन्छन्?
+   - Chart elements अलग देखिन्छन्?
+   - Buttons र links recognizable छन्?
+5. Failing components note गर्नुहोस्
+6. Fixes apply गर्नुहोस् (icons थप्नुहोस्, palettes बदल्नुहोस्)
+7. Re-test गर्नुहोस्
+</code></pre>
+
+<h3>Phase 3: Browser DevTools</h3>
+<pre><code class="language-text">Chrome DevTools → More tools → Rendering →
+"Emulate vision deficiencies":
+- Protanopia, Deuteranopia, Tritanopia, Achromatopsia
+
+NoCoffee extension (free, Chrome/Firefox):
+- सबै CVD types simulate गर्छ
+</code></pre>
+      `,
+    },
+    {
+      id: "real-world-failures-nepali",
+      title: "प्रसिद्ध Products जसले Color Accessibility गलत गरे",
+      content: `
+<h3>Case 1: GitHub — Diff View (2021 मा Fix भयो)</h3>
+<p>GitHub को code diff view ले classic red (removed) र green (added) प्रयोग गर्थ्यो। Deuteranopia simulation मा दुवै similar dark grey देखिन्थे। 2021 मा "Colorblind themes" add भयो — orange/blue pair जुन सबै CVD types मा distinguishable छ।</p>
+<pre><code class="language-css">/* GitHub colorblind-friendly diff */
+.diff-removed { background-color: #ffd8b5; } /* Orange — not red */
+.diff-added   { background-color: #b3d3f4; } /* Blue — not green */
+</code></pre>
+
+<h3>Case 2: Power BI — Default Chart Palette</h3>
+<p>Microsoft Power BI को default chart मा पहिलो दुई colors red र green थिए — सबभन्दा common CVD failure। C-suite decisions का लागि dashboards बनाइएका थिए जुन १२ मध्ये १ male executive को लागि illegible थिए। 2022 मा colorblind theme option release भयो।</p>
+
+<h3>Common Failure Patterns</h3>
+<table>
+  <thead>
+    <tr><th>Failure Pattern</th><th>Common In</th><th>Fix</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Red = error, Green = success only</td><td>Form validation</td><td>Icons (✗, ✓) + text labels थप्नुहोस्</td></tr>
+    <tr><td>Red/green data series</td><td>BI tools</td><td>Blue/orange palette + line styles</td></tr>
+    <tr><td>Red-green heatmap</td><td>Performance tools</td><td>Viridis/plasma palette</td></tr>
+    <tr><td>Color-only links</td><td>Blogs, news sites</td><td>Underline वा 3:1 contrast</td></tr>
+  </tbody>
+</table>
+      `,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "UI screenshot तयार गर्नुहोस्",
+      description: "आफ्नो design को screenshot लिनुहोस् वा Figma बाट PNG export गर्नुहोस्। Actual rendered UI screenshots सबभन्दा राम्रो काम गर्छ।",
+    },
+    {
+      title: "Image upload गर्नुहोस्",
+      description: "Color Blindness Simulator मा drag-and-drop वा click गरेर upload गर्नुहोस्। PNG, JPG, WebP, SVG supported छन्। कुनै image server मा store हुँदैन।",
+    },
+    {
+      title: "CVD type select गर्नुहोस्",
+      description: "पहिले Deuteranomaly (5% men, सबभन्दा common) बाट start गर्नुहोस्। त्यसपछि Deuteranopia, Protanopia र Tritanopia test गर्नुहोस्।",
+    },
+    {
+      title: "Side-by-side compare गर्नुहोस्",
+      description: "Original र simulated versions एकसाथ हेर्न side-by-side view प्रयोग गर्नुहोस्। Error states, success states, chart legends र form validation check गर्नुहोस्।",
+    },
+    {
+      title: "Failing elements identify गर्नुहोस्",
+      description: "नोट गर्नुहोस् कहाँ critical information lost हुन्छ — colors जुन distinct थिए अब identical देखिन्छन्।",
+    },
+    {
+      title: "Grayscale test apply गर्नुहोस्",
+      description: "Achromatopsia (full grayscale) simulation मा switch गर्नुहोस्। UI ले color बिना पनि सबै जानकारी communicate गर्न सक्छ भने accessible foundation बनेको छ।",
+    },
+    {
+      title: "Fix गरेर re-test गर्नुहोस्",
+      description: "Icons थप्नुहोस्, accessible palettes switch गर्नुहोस्, chart series मा text labels थप्नुहोस्। Re-upload गरेर fixes verify गर्नुहोस्।",
+    },
+  ],
+  faqs: [
+    {
+      question: "कति percent users color blind हुन्छन्?",
+      answer: "लगभग ८% पुरुष र ०.५% महिलामा color vision deficiency हुन्छ। Global average ~६% पुरुष। सबभन्दा common type deuteranomaly हो (५% पुरुष)। १ लाख users भएको app मा statistically ~४,००० color blind users हुन्छन्।",
+    },
+    {
+      question: "WCAG 2.2 contrast ratio requirement के हो?",
+      answer: "WCAG 2.2 Level AA मा: normal text को लागि minimum 4.5:1 contrast; large text (≥18pt वा ≥14pt bold) को लागि 3:1; UI components (buttons, form fields, icons) को लागि 3:1 (criterion 1.4.11)। र criterion 1.4.1: color मात्रैले NEVER information convey गर्नु हुँदैन।",
+    },
+    {
+      question: "Color blind users को लागि safe colors कुन हुन्?",
+      answer: "सबभन्दा safe primary pair: blue (#0072B2) र orange (#E69F00) — सबै common CVD types मा distinguishable। Red-green combinations एक्लै avoid गर्नुहोस्। Multi-series charts को लागि Wong palette (Nature journals standard) वा Okabe-Ito palette प्रयोग गर्नुहोस्। Color सँगै text labels, icons वा patterns पनि थप्नुहोस्।",
+    },
+    {
+      question: "Color blindness simulator कति accurate हुन्छ?",
+      answer: "Mathematical approximation हो — Brettel-Viénot-Mollon model मा आधारित। Dichromacy (complete cone absence — deuteranopia, protanopia) को लागि accurate। Anomalous trichromacy को लागि कम precise। High-stakes design decisions को लागि real CVD users सँग पनि validate गर्नुहोस्।",
+    },
+    {
+      question: "Accessibility improvement ले सबै users लाई benefit गर्छ?",
+      answer: "हो — high contrast ले bright sunlight मा mobile screens मा मद्दत गर्छ। Non-color indicators (icons, labels) ले black-and-white print, documentation screenshots र elderly users (age-related contrast sensitivity reduction) लाई फाइदा पुर्याउँछ। WCAG compliance ले SEO, performance र overall usability पनि improve गर्छ।",
+    },
+  ],
+  relatedGuides: ["color-picker-guide", "color-palette-from-image-guide", "css-gradient-generator-guide"],
+  toolCTA: {
+    heading: "आफ्नो Design अहिलेनै Color Blindness Test गर्नुहोस्",
+    description: "कुनै पनि UI screenshot upload गर्नुहोस् र ८ CVD types बाट हेर्नुहोस्। निःशुल्क, browser मा, कुनै data store हुँदैन। Designers र accessibility engineers को trusted tool।",
+    buttonText: "Color Blindness Simulator खोल्नुहोस्",
+  },
+},
+
+{
+  slug: "credit-card-emi-calculator-guide",
+  toolSlug: "credit-card-emi-calculator",
+  category: "finance-tools",
+  title: "क्रेडिट कार्ड EMI क्याल्कुलेटर: नेपालमा ब्याज दर र किस्ता गणनाको पूर्ण गाइड (2026)",
+  subtitle: "नेपाली बैंकका क्रेडिट कार्ड EMI दरहरू, hidden charges, र smart decision — सब नेपालीमा",
+  metaTitle: "क्रेडिट कार्ड EMI क्याल्कुलेटर — नेपाल बैंक दर गाइड 2026",
+  metaDescription: "नेपालमा credit card EMI को real cost calculate गर्नुस्। Nepal bank-wise rates, no-cost EMI को सत्यता, र CIBIL impact नेपालीमा।",
+  targetKeyword: "क्रेडिट कार्ड EMI क्याल्कुलेटर",
+  secondaryKeywords: [
+    "Nepal credit card EMI rate",
+    "NIC Asia credit card EMI",
+    "नेपाल बैंक EMI calculator",
+    "किस्ता गणना नेपाल",
+    "NRB credit card rules Nepal",
+    "Global IME credit card",
+    "Nepal bank EMI interest",
+    "credit card preclosure Nepal",
+    "buy now pay later Nepal",
+    "कर्जा किस्ता नेपाल"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१४ मिनेट",
+  tags: ["EMI", "Credit Card", "Finance", "नेपाल"],
+  intro: `<p>नेपालमा credit card को प्रयोग दिनप्रतिदिन बढ्दो छ। NIC Asia, Nabil Bank, Global IME, Himalayan Bank लगायत धेरै बैंकहरूले credit card EMI facility प्रदान गर्छन्। तपाईंले रु. ७०,००० को laptop credit card मा किन्नुभयो र bank ले "मासिक सुविधाजनक किस्तामा" offer गर्यो भने — त्यो offer को real cost थाहा पाउनु जरुरी छ। नेपालमा credit card EMI को ब्याज दर वार्षिक <strong>१८%–३६%</strong> सम्म पुग्न सक्छ।</p>
+<p>हाम्रो <strong>Credit Card EMI Calculator</strong> ले तपाईंलाई exact monthly EMI, total interest, र total outflow देखाउँछ। यो गाइडमा नेपालका प्रमुख बैंकहरूका EMI दरहरू, Nepal Rastra Bank (NRB) का नियमहरू, no-cost EMI को सत्यता, र credit score मा पर्ने असर — सबै कुरा विस्तारमा छन्।</p>`,
+  sections: [
+    {
+      id: "nepal-credit-card-emi-kya-ho",
+      title: "नेपालमा क्रेडिट कार्ड EMI के हो र कसरी काम गर्छ?",
+      content: `<p>Credit card EMI भनेको एउटा ठूलो खरिदलाई तत्काल पूरा payment गर्नुको सट्टा monthly installments मा विभाजन गर्ने सुविधा हो। नेपालमा NRB (Nepal Rastra Bank) ले credit card operations लाई regulate गर्छ।</p>
+
+<h3>नेपालका प्रमुख Credit Card Providers</h3>
+<table>
+  <thead>
+    <tr>
+      <th>बैंक</th>
+      <th>Card Type</th>
+      <th>EMI Facility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nabil Bank</td>
+      <td>Visa, Mastercard</td>
+      <td>उपलब्ध</td>
+    </tr>
+    <tr>
+      <td>NIC Asia Bank</td>
+      <td>Visa Platinum, Gold</td>
+      <td>उपलब्ध</td>
+    </tr>
+    <tr>
+      <td>Himalayan Bank</td>
+      <td>Visa, Mastercard</td>
+      <td>उपलब्ध</td>
+    </tr>
+    <tr>
+      <td>Global IME Bank</td>
+      <td>Visa Classic/Gold</td>
+      <td>उपलब्ध</td>
+    </tr>
+    <tr>
+      <td>Nepal SBI Bank</td>
+      <td>SBI Card</td>
+      <td>उपलब्ध</td>
+    </tr>
+    <tr>
+      <td>Everest Bank</td>
+      <td>Visa Platinum</td>
+      <td>उपलब्ध</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>NRB नियम:</strong> Nepal Rastra Bank ले credit card ब्याज दरको maximum ceiling तोकेको छ। तपाईंको बैंकले NRB निर्देशिका पालना गरे/नगरेको verify गर्नुस्।
+</div>
+
+<blockquote>
+  <strong>EMI Formula:</strong><br>
+  EMI = P × r × (1+r)^n / [(1+r)^n − 1]<br>
+  P = Principal, r = मासिक दर, n = महिना
+</blockquote>
+
+<p><strong>उदाहरण:</strong> रु. ५०,०००, १८% वार्षिक, १२ महिना:</p>
+<ul>
+  <li>Monthly EMI ≈ रु. ४,५७९</li>
+  <li>कुल Payment = रु. ५४,९४८</li>
+  <li>कुल ब्याज = रु. ४,९४८</li>
+</ul>`
+    },
+    {
+      id: "nepal-bank-emi-rates-2026",
+      title: "नेपाली बैंकहरूका Credit Card EMI दरहरू 2026",
+      content: `<p>नेपालका प्रमुख बैंकहरूका credit card EMI दरहरूको तुलना:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>बैंक</th>
+      <th>वार्षिक EMI दर</th>
+      <th>न्यूनतम Tenure</th>
+      <th>अधिकतम Tenure</th>
+      <th>Processing Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nabil Bank</td>
+      <td>१८%–२४%</td>
+      <td>३ महिना</td>
+      <td>१२ महिना</td>
+      <td>रु. २००–५००</td>
+    </tr>
+    <tr>
+      <td>NIC Asia Bank</td>
+      <td>१८%–२४%</td>
+      <td>३ महिना</td>
+      <td>२४ महिना</td>
+      <td>रु. १५०–४००</td>
+    </tr>
+    <tr>
+      <td>Himalayan Bank</td>
+      <td>१५%–२४%</td>
+      <td>३ महिना</td>
+      <td>१२ महिना</td>
+      <td>रु. २००–५००</td>
+    </tr>
+    <tr>
+      <td>Global IME Bank</td>
+      <td>१८%–२७%</td>
+      <td>३ महिना</td>
+      <td>१२ महिना</td>
+      <td>रु. २५०–५००</td>
+    </tr>
+    <tr>
+      <td>Nepal SBI Bank</td>
+      <td>१५%–२१%</td>
+      <td>३ महिना</td>
+      <td>२४ महिना</td>
+      <td>रु. १५०–३९९</td>
+    </tr>
+    <tr>
+      <td>Everest Bank</td>
+      <td>१८%–२४%</td>
+      <td>३ महिना</td>
+      <td>१२ महिना</td>
+      <td>रु. २००–४९९</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>रु. १ लाखको खरिदमा कुल ब्याज — तुलना</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Tenure</th>
+      <th>@ १५% p.a.</th>
+      <th>@ १८% p.a.</th>
+      <th>@ २४% p.a.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>३ महिना</td><td>रु. २,४५४</td><td>रु. २,९५३</td><td>रु. ३,९६९</td></tr>
+    <tr><td>६ महिना</td><td>रु. ४,७०७</td><td>रु. ५,६५५</td><td>रु. ७,६१७</td></tr>
+    <tr><td>१२ महिना</td><td>रु. ८,२५६</td><td>रु. ९,९६१</td><td>रु. १३,४१९</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>सावधानी:</strong> नेपालमा केही बैंकहरूले मासिक दर quote गर्छन् (जस्तै १.५%/महिना = १८% वार्षिक)। सधैं वार्षिक दरमा compare गर्नुस्।
+</div>`
+    },
+    {
+      id: "no-cost-emi-nepal",
+      title: "नेपालमा No-Cost EMI: के साँचो Zero Cost हुन्छ?",
+      content: `<p>नेपालका electronics stores र e-commerce platforms (Daraz, SastoDeal) मा पनि no-cost EMI offer गरिन्छ। तर यसको सत्यता भारतमा जस्तै हो — कतै न कतै cost छुपिएको हुन्छ।</p>
+
+<h3>नेपालमा No-Cost EMI कसरी काम गर्छ</h3>
+<ol>
+  <li><strong>Merchant discount removal:</strong> Direct purchase मा मिल्ने discount no-cost EMI मा हट्छ।</li>
+  <li><strong>Brand subvention:</strong> Samsung, LG जस्ता brands कहिलेकाहीं genuinely ब्याज absorb गर्छन्।</li>
+  <li><strong>Processing fee:</strong> बैंकले processing fee charge गर्छ जुन effectively interest नै हो।</li>
+</ol>
+
+<div class="callout-tip">
+  <strong>सल्लाह:</strong> No-cost EMI लिनुअघि direct purchase price र EMI price compare गर्नुस्। यदि direct purchase मा discount छ भने, त्यो discount नै तपाईंको "ब्याज" हो।
+</div>
+
+<h3>उदाहरण — रु. ८०,००० को TV</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Direct Purchase</th>
+      <th>No-Cost EMI (१२m)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sticker Price</td>
+      <td>रु. ८०,०००</td>
+      <td>रु. ८०,०००</td>
+    </tr>
+    <tr>
+      <td>Available Discount</td>
+      <td>रु. ४,०००</td>
+      <td>रु. ० (हटाइयो)</td>
+    </tr>
+    <tr>
+      <td>Processing Fee</td>
+      <td>रु. ०</td>
+      <td>रु. ५००</td>
+    </tr>
+    <tr>
+      <td>Effective Cost</td>
+      <td>रु. ७६,०००</td>
+      <td>रु. ८०,५००</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "nrb-credit-card-nepal",
+      title: "NRB का नियम र नेपालमा Credit Card EMI को Framework",
+      content: `<p>Nepal Rastra Bank ले credit card operations लाई Unified Directive मार्फत regulate गर्छ। यी मुख्य नियमहरू जान्नु जरुरी छ:</p>
+
+<h3>NRB Credit Card निर्देशिका 2026</h3>
+<table>
+  <thead>
+    <tr>
+      <th>नियम</th>
+      <th>विवरण</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Maximum ब्याज दर</td>
+      <td>NRB ले तोकेको ceiling अनुसार (बैंकले confirm गर्नुस्)</td>
+    </tr>
+    <tr>
+      <td>Credit limit</td>
+      <td>सामान्यतः मासिक आय को ३–५ गुणा</td>
+    </tr>
+    <tr>
+      <td>Minimum payment</td>
+      <td>Outstanding balance को न्यूनतम ५% वा रु. १,०००</td>
+    </tr>
+    <tr>
+      <td>Late payment fee</td>
+      <td>रु. २५०–रु. १,०००</td>
+    </tr>
+    <tr>
+      <td>Annual fee</td>
+      <td>रु. ५००–रु. ५,०००</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>Credit Bureau Nepal:</strong> नेपालमा Credit Information Bureau (CIB) ले credit history manage गर्छ। EMI payments CIB मा report हुन्छन् र भविष्यका loan applications मा असर गर्छन्।
+</div>
+
+<h3>नेपाली Personal Loan vs Credit Card EMI — तुलना</h3>
+<table>
+  <thead>
+    <tr>
+      <th>पक्ष</th>
+      <th>Credit Card EMI</th>
+      <th>Personal Loan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ब्याज दर</td>
+      <td>१८%–२७%</td>
+      <td>१२%–१८%</td>
+    </tr>
+    <tr>
+      <td>Approval</td>
+      <td>Instant</td>
+      <td>३–७ दिन</td>
+    </tr>
+    <tr>
+      <td>Documentation</td>
+      <td>कोही छैन</td>
+      <td>Income proof, KYC</td>
+    </tr>
+    <tr>
+      <td>Best for</td>
+      <td>रु. १०,०००–रु. ३ लाख</td>
+      <td>रु. ३ लाख+</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "emi-credit-score-nepal",
+      title: "Credit Card EMI ले CIB Score मा के असर गर्छ?",
+      content: `<p>नेपालमा Credit Information Bureau (CIB) ले credit history track गर्छ। EMI decisions ले तपाईंको credit profile मा अल्पकालीन र दीर्घकालीन दुवै असर गर्छ।</p>
+
+<h3>Positive Impacts</h3>
+<ul>
+  <li>नियमित EMI payment → strong repayment history → राम्रो CIB rating</li>
+  <li>Long credit history → better creditworthiness</li>
+  <li>Diverse credit mix → positive signal to lenders</li>
+</ul>
+
+<h3>Negative Impacts</h3>
+<ul>
+  <li>High credit utilization → negative signal</li>
+  <li>Missed EMI → CIB मा defaulter record → future loans को लागि problem</li>
+  <li>Multiple EMIs → high debt burden → loan rejection risk</li>
+</ul>
+
+<div class="callout-warning">
+  <strong>Important:</strong> नेपालमा एक पटक CIB मा negative record परेपछि सफा गर्न ५–७ वर्ष लाग्न सक्छ। EMI लिनुअघि repayment capacity राम्ररी assess गर्नुस्।
+</div>
+
+<h3>Smart EMI Strategy for Nepal</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>Recommendation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रु. ५०,०००+ खरिद, ३–६ महिना tenure</td>
+      <td>Credit card EMI ठीक छ</td>
+    </tr>
+    <tr>
+      <td>रु. २ लाख+ खरिद, १२+ महिना</td>
+      <td>Personal loan better</td>
+    </tr>
+    <tr>
+      <td>Cash available छ</td>
+      <td>Full payment नै best</td>
+    </tr>
+    <tr>
+      <td>Brand no-cost EMI offer</td>
+      <td>Discount comparison पछि मात्र decide</td>
+    </tr>
+  </tbody>
+</table>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "खरिद रकम Enter गर्नुस्",
+      description: "EMI मा convert गर्न चाहनुभएको रकम type गर्नुस्। जस्तै, रु. ७०,००० को laptop। यो नै principal हो जसमा ब्याज गणना हुन्छ।"
+    },
+    {
+      title: "ब्याज दर Enter गर्नुस्",
+      description: "आफ्नो बैंकको credit card EMI दर check गर्नुस्। मासिक दर छ भने (जस्तै १.५%) १२ ले गुणा गरेर वार्षिक दर (१८%) निकाल्नुस् र calculator मा राख्नुस्।"
+    },
+    {
+      title: "Tenure Select गर्नुस्",
+      description: "३, ६, १२, वा २४ महिनामध्ये छान्नुस्। छोटो tenure = ठूलो monthly EMI तर कम कुल ब्याज। लामो tenure = सानो EMI तर बढी कुल ब्याज।"
+    },
+    {
+      title: "Processing Fee थप्नुस् (Optional)",
+      description: "बैंकले processing fee लिन्छ भने (रु. १५०–५००) optional field मा थप्नुस्। Calculator ले true total cost र effective APR देखाउँछ।"
+    },
+    {
+      title: "Compare गरेर निर्णय गर्नुस्",
+      description: "Monthly EMI, total interest, र total outflow हेर्नुस्। ब्याज cost खरिद मूल्यको १५% भन्दा बढी छ भने personal loan वा full payment consider गर्नुस्।"
+    }
+  ],
+  faqs: [
+    {
+      question: "नेपालमा credit card EMI को ब्याज दर कति छ?",
+      answer: "नेपालका बैंकहरूमा credit card EMI को ब्याज दर सामान्यतः वार्षिक १५%–२७% हुन्छ। Nabil Bank, NIC Asia, Himalayan Bank, Nepal SBI जस्ता बैंकहरूका दरहरू आफ्नो बैंकमा confirm गर्नुस्।"
+    },
+    {
+      question: "Credit card EMI miss गर्दा के हुन्छ?",
+      answer: "Late payment fee (रु. २५०–रु. १,०००) लाग्छ, बाँकी amount मा full card rate (वार्षिक ३६%+ सम्म) charge हुन्छ, र CIB मा negative record पर्छ।"
+    },
+    {
+      question: "रु. ५०,०००मा १८% p.a. को १२ महिना EMI कति हुन्छ?",
+      answer: "Monthly EMI ≈ रु. ४,५७९। कुल Payment = रु. ५४,९४८। कुल ब्याज = रु. ४,९४८। Plus processing fee।"
+    },
+    {
+      question: "नेपालमा EMI preclosure गर्दा charge लाग्छ?",
+      answer: "हो, धेरैजसो नेपाली बैंकहरूले बाँकी principal को २%–३% preclosure fee लिन्छन्। Remaining interest saved vs fee — यो calculate गरेर निर्णय लिनुस्।"
+    },
+    {
+      question: "No-cost EMI नेपालमा पनि पाइन्छ?",
+      answer: "हो, Daraz, SastoDeal, र केही electronics stores मा no-cost EMI offer हुन्छ। तर direct purchase discount हट्ने र processing fee लाग्ने — दुवै compare गरेर decide गर्नुस्।"
+    },
+    {
+      question: "Credit card EMI र personal loan मध्ये कुन राम्रो?",
+      answer: "रु. ३ लाख भन्दा कम, छोटो tenure (३–९ महिना) को लागि credit card EMI convenient छ। रु. ३ लाख+ र लामो tenure को लागि personal loan (कम ब्याज) better हुन्छ।"
+    },
+    {
+      question: "नेपालमा Credit Card को credit limit कसरी तोकिन्छ?",
+      answer: "NRB निर्देशिका अनुसार credit limit सामान्यतः तपाईंको मासिक आयको ३–५ गुणा हुन्छ। Income documents र credit history को आधारमा बैंकले final limit तोक्छ।"
+    },
+    {
+      question: "EMI payment late भए CIB मा कहिलेसम्म record रहन्छ?",
+      answer: "नेपालमा CIB मा negative record परेपछि ५–७ वर्षसम्म रहन सक्छ। यो record भविष्यमा home loan, car loan, वा personal loan लिन गाह्रो बनाउँछ।"
+    }
+  ],
+  relatedGuides: ["emi-calculator-guide", "loan-calculator-guide", "sip-calculator-guide"],
+  toolCTA: {
+    heading: "अहिले नै Credit Card EMI Calculate गर्नुस्",
+    description: "खरिद रकम, ब्याज दर, र tenure enter गर्नुस् — exact monthly EMI र total cost तुरुन्त थाहा पाउनुस्।",
+    buttonText: "Credit Card EMI Calculator खोल्नुस्"
+  }
+},
+
+{
+  slug: "css-text-effects-generator-guide",
+  toolSlug: "css-text-effects-generator",
+  category: "developer-tools",
+  title: "CSS Text Effects Generator: Stunning Text Styling को सम्पूर्ण Developer Guide",
+  subtitle: "Text shadows देखि neon glows सम्म, gradient text देखि animated effects सम्म — copy-ready CSS",
+  metaTitle: "CSS Text Effects Generator Guide — Ready-to-Copy CSS Code 2026",
+  metaDescription: "२०२६ मा CSS text effects: text shadow, gradient text, neon glow, 3D effects, animations। Browser compatibility, performance tips र copy-ready code नेपालीमा।",
+  targetKeyword: "CSS पाठ प्रभाव",
+  secondaryKeywords: [
+    "css text shadow nepali",
+    "gradient text css nepali",
+    "neon text css nepal",
+    "css animation nepali",
+    "3d text css example",
+    "css text effects generator",
+    "web design css nepal",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१४ मिनेट",
+  tags: ["css", "text-effects", "developer-tools", "web-design", "animation", "nepal"],
+  intro: `<p>CSS एउटा simple styling language बाट एउटा powerful creative platform मा evolve भइसकेको छ — र यो कहीँ पनि text सँग यति clearly देखिँदैन। नेपालमा web development को field मा बढ्दो रुचि सँगै, CSS text effects जान्नु front-end developers र designers का लागि increasingly valuable skill भएको छ। Kathmandu को IT companies देखि freelance web developers सम्म, visually striking text effects ले websites लाई more professional र engaging बनाउँछन्।</p>
+<p>यो guide २०२६ मा CSS text effects को practical, copy-paste reference हो। हामी cover गर्छौं: text shadow syntax, gradient text को webkit-background-clip technique, neon glow, embossed र 3D effects actual code सँग, CSS text animations, browser compatibility, र performance considerations।</p>`,
+  sections: [
+    {
+      id: "possible-css-ne",
+      title: "CSS Text Effects: २०२६ मा Pure CSS बाट के Possible छ?",
+      content: `<p>Pure CSS मा achievable text effects को range recent years मा dramatically expand भएको छ। २०२६ मा fully possible छन् — no JavaScript, no canvas:</p>
+
+<h3>Core CSS Text Effect Categories</h3>
+<ul>
+  <li><strong>Text shadows</strong> — single, multiple, coloured, layered, directional</li>
+  <li><strong>Gradient text</strong> — linear, radial, conic gradients text fill मा</li>
+  <li><strong>Glow effects</strong> — neon glow, soft bloom, hard edge glow</li>
+  <li><strong>3D effects</strong> — embossed, engraved, extrusion, perspective</li>
+  <li><strong>CSS animations</strong> — typewriter, fade, shimmer, glitch, wave</li>
+  <li><strong>text-decoration</strong> — wavy, dashed, double underlines custom colours सँग</li>
+</ul>
+
+<h3>जसका लागि अझै SVG वा JavaScript चाहिन्छ</h3>
+<ul>
+  <li>Per-character animations — individual letters independently animate गर्न (JS required)</li>
+  <li>Complex path-following text — SVG textPath</li>
+</ul>
+
+<div class="callout-info">
+  <strong>Browser Support २०२६:</strong> सबै major browsers (Chrome 120+, Firefox 121+, Safari 17+, Edge 120+) ले यो guide मा covered सबै CSS text effects support गर्छन्।
+</div>`,
+    },
+    {
+      id: "text-shadow-ne",
+      title: "Text Shadow: Properties, Syntax र Ready-to-Copy Examples",
+      content: `<p><code>text-shadow</code> property foundational CSS text effect हो। Syntax:</p>
+
+<pre><code>text-shadow: offset-x offset-y blur-radius color;</code></pre>
+
+<h3>Production-Ready Examples</h3>
+
+<h3>Subtle readability shadow</h3>
+<pre><code>.text-readable {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}</code></pre>
+
+<h3>Classic drop shadow</h3>
+<pre><code>.text-drop-shadow {
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}</code></pre>
+
+<h3>Neon glow</h3>
+<pre><code>.text-neon-cyan {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 21px #fff,
+    0 0 42px #0ff,
+    0 0 82px #0ff,
+    0 0 92px #0ff;
+}</code></pre>
+
+<h3>3D Long shadow</h3>
+<pre><code>.text-long-shadow {
+  text-shadow:
+    1px 1px 0 #c0392b,
+    2px 2px 0 #c0392b,
+    3px 3px 0 #c0392b,
+    4px 4px 0 #c0392b,
+    5px 5px 0 #c0392b,
+    8px 8px 15px rgba(0, 0, 0, 0.3);
+}</code></pre>
+
+<h3>Fire effect</h3>
+<pre><code>.text-fire {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 20px #fff,
+    0 0 30px #ff7700,
+    0 0 55px #ff7700;
+}</code></pre>
+
+<h3>Outline via shadow</h3>
+<pre><code>.text-outline {
+  color: transparent;
+  text-shadow:
+    -1px -1px 0 #333,
+    1px -1px 0 #333,
+    -1px 1px 0 #333,
+    1px 1px 0 #333;
+}</code></pre>`,
+    },
+    {
+      id: "gradient-text-ne",
+      title: "Gradient Text: -webkit-background-clip Trick Explained",
+      content: `<p>Gradient-filled text modern web design को सबैभन्दा striking effects मध्येको एक हो। CSS मा direct "gradient text colour" property छैन — technique तीन steps मा काम गर्छ:</p>
+<ol>
+  <li>Gradient लाई element को <strong>background</strong> को रूपमा apply गर्नुहोस्</li>
+  <li>Background लाई <strong>text characters</strong> को shape मा clip गर्नुहोस्</li>
+  <li>Text colour लाई <strong>transparent</strong> बनाउनुहोस्</li>
+</ol>
+
+<h3>Basic Gradient Text</h3>
+<pre><code>.gradient-text-basic {
+  background: linear-gradient(90deg, #f093fb, #f5576c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}</code></pre>
+
+<h3>Animated Gradient</h3>
+<pre><code>.gradient-text-loop {
+  background: linear-gradient(90deg, #f093fb, #f5576c, #4facfe, #00f2fe, #f093fb);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}</code></pre>
+
+<h3>Fallback with @supports</h3>
+<pre><code>.gradient-text-safe {
+  color: #7c3aed; /* Solid colour fallback */
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .gradient-text-safe {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}</code></pre>`,
+    },
+    {
+      id: "neon-3d-ne",
+      title: "Neon Glow, Embossed र 3D Text: हरेक Effect को Code",
+      content: `<p>तीन सबैभन्दा requested decorative text effects को complete CSS implementations:</p>
+
+<h3>Neon Glow</h3>
+<pre><code>/* Neon Green */
+.neon-green {
+  color: #fff;
+  text-shadow:
+    0 0 4px #fff, 0 0 8px #fff,
+    0 0 12px #0fa, 0 0 20px #0fa,
+    0 0 40px #0fa, 0 0 60px #0fa;
+}
+
+/* Flickering Neon */
+.neon-flicker {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 20px #ff00de;
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 20px #ff00de, 0 0 40px #ff00de;
+  }
+  20%, 24% { text-shadow: none; }
+}</code></pre>
+
+<h3>Embossed Text</h3>
+<pre><code>.text-emboss {
+  color: #888;
+  font-weight: 900;
+  text-shadow:
+    -1px -1px 1px rgba(255, 255, 255, 0.8),
+    1px 1px 2px rgba(0, 0, 0, 0.4);
+}</code></pre>
+
+<h3>3D Extrusion</h3>
+<pre><code>.text-3d {
+  color: #fff;
+  font-weight: 900;
+  text-shadow:
+    1px 1px 0 #ccc,
+    2px 2px 0 #bbb,
+    3px 3px 0 #aaa,
+    4px 4px 0 #999,
+    5px 5px 0 #888,
+    0 3px 15px rgba(0,0,0,.5);
+}
+
+/* Coloured 3D */
+.text-3d-colour {
+  color: #fff200;
+  font-weight: 900;
+  text-shadow:
+    0px 2px 0px #c0a800,
+    0px 4px 0px #907800,
+    0px 6px 0px #705800,
+    0px 8px 7px rgba(0,0,0,0.4);
+}</code></pre>`,
+    },
+    {
+      id: "animations-ne",
+      title: "CSS Text Animation: Typewriter, Fade-in र Shimmer Effects",
+      content: `<p>CSS animations ले text लाई engaging, dynamic experience मा transform गर्न सक्छन्:</p>
+
+<h3>Typewriter Effect</h3>
+<pre><code>.typewriter {
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 3px solid #333;
+  animation:
+    typing 3.5s steps(30, end) forwards,
+    blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+@keyframes blink-cursor {
+  from, to { border-color: transparent; }
+  50%      { border-color: #333; }
+}</code></pre>
+
+<h3>Fade-In Text</h3>
+<pre><code>.fade-in-text {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}</code></pre>
+
+<h3>Shimmer Effect</h3>
+<pre><code>.text-shimmer {
+  background: linear-gradient(90deg, #e0e0e0 25%, #fff 50%, #e0e0e0 75%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  to { background-position: -200% center; }
+}</code></pre>
+
+<div class="callout-tip">
+  <strong>Performance Tip:</strong> Text animations का लागि सधैं <code>transform</code> र <code>opacity</code> use गर्नुहोस् — ती GPU मा composite हुन्छन्। <code>font-size</code> वा <code>margin</code> directly animate नगर्नुहोस् — यी full layout recalculation trigger गर्छन्।
+</div>`,
+    },
+    {
+      id: "browser-compat-ne",
+      title: "Browser Compatibility: कुन Effects सबैतिर काम गर्छन् vs WebKit-Only",
+      content: `<p>२०२६ मा CSS text effects को लागि browser support धेरै strong छ:</p>
+
+<h3>Full Cross-Browser Support</h3>
+<table>
+  <thead>
+    <tr>
+      <th>CSS Effect</th>
+      <th>Chrome</th>
+      <th>Firefox</th>
+      <th>Safari</th>
+      <th>Edge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>text-shadow</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>CSS animations</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>CSS transitions</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>mix-blend-mode</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Safari का लागि -webkit- Prefix चाहिन्छ</h3>
+<table>
+  <thead>
+    <tr>
+      <th>CSS Effect</th>
+      <th>Required Prefix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>background-clip: text</td>
+      <td>-webkit-background-clip: text (Safari)</td>
+    </tr>
+    <tr>
+      <td>text-fill-color: transparent</td>
+      <td>-webkit-text-fill-color (Safari)</td>
+    </tr>
+    <tr>
+      <td>text-stroke</td>
+      <td>-webkit-text-stroke (Chrome, Safari, Edge)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Text Stroke</h3>
+<pre><code>/* Outline only */
+.text-stroke-only {
+  -webkit-text-stroke: 2px #333;
+  color: transparent;
+}
+
+/* Stroke + fill */
+.text-stroke-filled {
+  -webkit-text-stroke: 1px #ff6b6b;
+  color: #fff;
+}</code></pre>`,
+    },
+    {
+      id: "performance-ne",
+      title: "Performance: CSS Text Effects र Core Web Vitals",
+      content: `<p>CSS text effects performance को मामलामा double-edged sword छन्। Most GPU-accelerated छन् र Core Web Vitals मा zero impact छ। तर केही poorly-applied effects ले problems create गर्न सक्छन्।</p>
+
+<h3>Performance-Safe Effects</h3>
+<ul>
+  <li><strong>Static text-shadow</strong> — एकपटक paint गर्छ; ongoing cost छैन</li>
+  <li><strong>Gradient text</strong> — एकपटक composite हुन्छ</li>
+  <li><strong>opacity animations</strong> — सधैं GPU composited</li>
+  <li><strong>transform animations</strong> — GPU composited; text move गर्ने सही तरिका</li>
+</ul>
+
+<h3>Performance Issues</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Effect</th>
+      <th>Risk</th>
+      <th>Mitigation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Animated text-shadow (ठूलो blur)</td>
+      <td>High</td>
+      <td>will-change: transform use गर्नुहोस्</td>
+    </tr>
+    <tr>
+      <td>५+ layered shadows</td>
+      <td>Medium</td>
+      <td>३–४ layers maximum</td>
+    </tr>
+    <tr>
+      <td>font-size animation</td>
+      <td>Very High</td>
+      <td>transform: scale() use गर्नुहोस्</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code>/* will-change sparingly use गर्नुहोस् */
+.animated-neon {
+  will-change: text-shadow;
+  contain: layout style;
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 15px #0ff, 0 0 30px #0ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 25px #0ff, 0 0 50px #0ff;
+  }
+}</code></pre>
+
+<div class="callout-info">
+  <strong>Lighthouse Tip:</strong> CSS animations active भएको अवस्थामा Chrome DevTools मा Lighthouse run गर्नुहोस्। "Rendering" tab मा paint र composite indicators हेर्नुहोस् — green flashes GPU compositing हो; red means CPU painting जुन minimize गर्नुपर्छ।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "Effect type choose गर्नुहोस्",
+      description: "ToolsArena को CSS Text Effects Generator खोल्नुहोस् र effect category select गर्नुहोस्: Text Shadow, Gradient Text, Glow Effects, 3D/Emboss, वा Animations। Settings adjust गर्दा live preview update हुन्छ।",
+    },
+    {
+      title: "Sample text type गर्नुहोस्",
+      description: "Preview text field मा तपाईंको actual heading वा tagline enter गर्नुहोस् — effect short text vs long text मा धेरै different देखिन सक्छ।",
+    },
+    {
+      title: "Font settings choose गर्नुहोस्",
+      description: "Font family (Google Fonts supported), font weight, र size select गर्नुहोस्। Effects अलग-अलग weights मा dramatically different देखिन्छन्।",
+    },
+    {
+      title: "Effect parameters adjust गर्नुहोस्",
+      description: "Sliders र colour pickers बाट effect customize गर्नुहोस्। Text shadows: offset, blur radius, colour। Gradients: colour stops र direction। Preview instantly update हुन्छ।",
+    },
+    {
+      title: "Browser compatibility panel check गर्नुहोस्",
+      description: "Selected effect का browser compatibility indicators review गर्नुहोस्। Generator automatically vendor prefixes include गर्छ। Green = universal support; orange = minor caveats।",
+    },
+    {
+      title: "CSS code copy गर्नुहोस्",
+      description: "'Copy CSS' click गर्नुहोस् — complete, production-ready CSS clipboard मा आउँछ। Code मा सबै vendor prefixes, fallback values, र @keyframes declarations include छन्।",
+    },
+    {
+      title: "Project मा paste गरेर test गर्नुहोस्",
+      description: "Copied CSS stylesheet मा paste गर्नुहोस्। Chrome, Firefox र Safari मा test गर्नुहोस्। Animated effects का लागि DevTools मा GPU compositing verify गर्नुहोस्।",
+    },
+  ],
+  faqs: [
+    {
+      question: "CSS मा text glow कसरी बनाउने?",
+      answer: "CSS glow effects multiple layered text-shadow declarations बाट बनाइन्छ zero x/y offset र increasing blur radius सँग। Multiple shadows अलग-अलग blur radii मा layer गरेर real light को bloom effect simulate हुन्छ। 4–6 shadows use गर्नुहोस् increasing blur values सँग।",
+    },
+    {
+      question: "Gradient text सबै browsers मा work गर्छ?",
+      answer: "हो, २०२६ मा सबै major browsers मा। तर Safari लाई -webkit- prefixed versions चाहिन्छ background-clip: text र text-fill-color: transparent दुवैका लागि। सधैं दुवै prefixed र unprefixed versions include गर्नुहोस्।",
+    },
+    {
+      question: "CSS typewriter effect कसरी बनाउने?",
+      answer: "Typewriter effect ले steps() timing function use गर्छ width animation मा, overflow: hidden र monospace font सँग। steps() count character count सँग match गर्नुहोस्। Blinking cursor का लागि separate border-right animation add गर्नुहोस्।",
+    },
+    {
+      question: "Nepal मा web projects का लागि कुन CSS text effects सबैभन्दा useful छन्?",
+      answer: "Nepali websites का लागि: (१) text-shadow ले body text को readability improve गर्छ, (२) gradient text ले headings professional देखाउँछ, (३) fade-in animations ले page feel modern बनाउँछ। Neon effects entertainment र gaming sites का लागि राम्रो, जबकि clean shadows business र news sites (जस्तै Nepali news portals) का लागि better हुन्छन्।",
+    },
+    {
+      question: "CSS text effects performance affect गर्छन्?",
+      answer: "Most static effects negligible cost राख्छन्। Animated effects मा performance matter गर्छ: transform र opacity animations use गर्नुहोस् जुन GPU composited छन्। font-size वा margin animate नगर्नुहोस् — यी full layout recalculation trigger गर्छन्। Nepal को slow internet connections लाई सोचेर animations को complexity reduce गर्नुहोस्।",
+    },
+  ],
+  relatedGuides: ["css-gradient-generator-guide", "color-picker-guide", "font-generator-guide"],
+  toolCTA: {
+    heading: "CSS Text Effect Generate गर्नुहोस् — Instant, Free",
+    description: "हरेक CSS text effect का लागि visual editor: shadow, gradient, glow, 3D, emboss र animations। Sliders बाट parameters adjust गर्नुहोस्, live preview हेर्नुहोस्, one click मा production-ready CSS copy गर्नुहोस्।",
+    buttonText: "CSS Text Effects Generator खोल्नुहोस्",
+  },
+},
+
+{
+  slug: 'currency-converter-live-guide',
+  toolSlug: 'currency-converter-live',
+  category: 'finance-tools',
+  title: 'लाइभ मुद्रा परिवर्तक: सम्पूर्ण मार्गदर्शिका २०२६',
+  subtitle: 'NRB विनिमय दर, विप्रेषण करिडोर, हुण्डी जोखिम र सर्वोत्तम दर पाउने तरिका',
+  metaTitle: 'लाइभ मुद्रा परिवर्तक — NRB दर, विप्रेषण र NPR/INR गाइड २०२६',
+  metaDescription: 'NRB विदेशी विनिमय दर, USD/NPR र NPR/INR बुझ्नुस्। नेपाली विप्रेषण करिडोर, हुण्डी जोखिम र ४० लाख+ विदेशी कामदारका लागि उत्तम दर गाइड।',
+  targetKeyword: 'लाइभ मुद्रा परिवर्तक',
+  secondaryKeywords: [
+    'NRB विनिमय दर',
+    'USD NPR आजको दर',
+    'नेपाल विप्रेषण दर',
+    'NPR INR विनिमय दर',
+    'हुण्डी नेपाल',
+    'विदेशी मुद्रा नेपाल',
+    'IME विप्रेषण दर',
+    'नेपाली कामदार विदेश पैसा पठाउने',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१७ मिनेट पठन',
+  tags: ['मुद्रा परिवर्तक', 'NRB दर', 'विप्रेषण', 'USD NPR', 'NPR INR', 'हुण्डी', 'नेपाल', 'कतार', 'UAE', 'मलेशिया'],
+  intro: `<p>विदेशी विनिमय दर (Exchange Rate) ले लाखौं नेपालीको दैनिक जीवनलाई प्रभावित गर्छ — कतारमा काम गर्ने नेपाली कामदारदेखि लिएर अमेरिकामा पढ्ने विद्यार्थीसम्म। लाइभ मुद्रा परिवर्तकले वास्तविक समयको अन्तरबैंक दर देखाउँछ — जुन कुनै पनि मुद्राको सबभन्दा सटीक मूल्य हो। तर app मा देखिने दर र वास्तवमा पाइने दर सधैं एउटै हुँदैन, र यो फरक बुझ्दा हजारौं रुपैयाँ बचाउन सकिन्छ।</p>
+<p>यस मार्गदर्शिकामा हामी विशेष ध्यान दिनेछौं: नेपाल राष्ट्र बैंक (NRB) ले दैनिक विदेशी विनिमय दर कसरी निर्धारण गर्छ, NPR/INR को १.६० को पेगको इतिहास र कारण, नेपालका प्रमुख विप्रेषण करिडोरहरू (कतार, UAE, मलेशिया, भारत, अमेरिका, कोरिया), हुण्डीको जोखिम, र ४० लाखभन्दा बढी विदेशमा रहेका नेपाली कामदारहरूका लागि उत्तम दर कसरी पाउने।</p>`,
+  sections: [
+    {
+      id: 'nrb-forex-rate',
+      title: 'NRB विदेशी विनिमय दर: नेपाल राष्ट्र बैंकले दैनिक दर कसरी निर्धारण गर्छ?',
+      content: `<p>नेपाल राष्ट्र बैंक (NRB) नेपालको केन्द्रीय बैंक हो र यसले नेपाली रुपैयाँको विदेशी मुद्रासँगको विनिमय दर नियमन गर्छ। NRB को विदेशी विनिमय दर व्यवस्थापन प्रक्रिया यसप्रकार छ:</p>
+
+<h3>NRB को दैनिक विनिमय दर निर्धारण प्रक्रिया</h3>
+<ol>
+  <li><strong>अन्तरबैंक बजार अवलोकन:</strong> NRB प्रत्येक कार्यदिन नेपालको अन्तरबैंक विदेशी मुद्रा बजारको कारोबार अवलोकन गर्छ</li>
+  <li><strong>INR आधारित पेग:</strong> NPR/INR को दर स्थिर (१ INR = १.६० NPR) रहने भएकाले USD/NPR मूलतः USD/INR दरलाई × १.६० गरेर निर्धारण हुन्छ</li>
+  <li><strong>दैनिक दर प्रकाशन:</strong> NRB ले हरेक कार्यदिन बिहान (सामान्यतः १० बजेसम्म) आधिकारिक विनिमय दर आफ्नो वेबसाइट (www.nrb.org.np) मा प्रकाशित गर्छ</li>
+  <li><strong>अधिकृत डिलरहरू:</strong> बैंकहरू र सर्राफ व्यवसायीहरू (Authorized Dealers) NRB को दरसँग मिल्दो दायराभित्र रहेर कारोबार गर्नुपर्छ</li>
+</ol>
+
+<h3>NRB अधिकृत दरको तालिका नमुना (२०२५/२६, संकेतात्मक)</h3>
+<table>
+  <thead>
+    <tr><th>मुद्रा</th><th>खरिद दर (NPR)</th><th>बिक्री दर (NPR)</th><th>मध्य दर (NPR)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>US Dollar (USD)</td><td>१३३.५०</td><td>१३४.१०</td><td>१३३.८०</td></tr>
+    <tr><td>Euro (EUR)</td><td>१४२.२०</td><td>१४२.९०</td><td>१४२.५५</td></tr>
+    <tr><td>British Pound (GBP)</td><td>१६८.४०</td><td>१६९.२०</td><td>१६८.८०</td></tr>
+    <tr><td>Indian Rupee (INR)</td><td>१.५९</td><td>१.६०</td><td>१.६०</td></tr>
+    <tr><td>Japanese Yen (JPY)</td><td>०.८८</td><td>०.८९</td><td>०.८८५</td></tr>
+    <tr><td>Australian Dollar (AUD)</td><td>८४.५०</td><td>८५.१०</td><td>८४.८०</td></tr>
+    <tr><td>Qatar Riyal (QAR)</td><td>३६.४०</td><td>३६.७०</td><td>३६.५५</td></tr>
+    <tr><td>UAE Dirham (AED)</td><td>३५.९०</td><td>३६.२०</td><td>३६.०५</td></tr>
+    <tr><td>Malaysian Ringgit (MYR)</td><td>२९.८०</td><td>३०.१०</td><td>२९.९५</td></tr>
+    <tr><td>Korean Won (KRW)</td><td>०.०९४</td><td>०.०९७</td><td>०.०९५५</td></tr>
+    <tr><td>Saudi Riyal (SAR)</td><td>३५.२०</td><td>३५.५०</td><td>३५.३५</td></tr>
+    <tr><td>Canadian Dollar (CAD)</td><td>९४.५०</td><td>९५.२०</td><td>९४.८५</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>दर हेर्ने तरिका:</strong> NRB को दैनिक विनिमय दर www.nrb.org.np मा "Foreign Exchange" सेक्सनमा हेर्न सकिन्छ। यो दर बैंकहरू र राफे घरहरूले अनुसरण गर्नुपर्ने आधिकारिक दर हो।
+</div>`,
+    },
+    {
+      id: 'npr-inr-history',
+      title: 'NPR र INR को १.६० को सम्बन्ध: इतिहास र कारण',
+      content: `<p>नेपाली रुपैयाँ (NPR) र भारतीय रुपैयाँ (INR) बीचको विनिमय दर <strong>१ INR = १.६० NPR</strong> मा स्थिर राखिएको छ। यो पेग सन् १९९३ देखि कायम छ।</p>
+
+<h3>NPR/INR पेगको इतिहास</h3>
+<table>
+  <thead>
+    <tr><th>समयकाल</th><th>दर</th><th>विशेष</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>सन् १९४७ सम्म</td><td>१ INR = १ NPR</td><td>ब्रिटिश भारतको प्रभाव</td></tr>
+    <tr><td>सन् १९४७–१९६६</td><td>क्रमशः परिवर्तन</td><td>नेपालले स्वतन्त्र मौद्रिक नीति अपनाउँदै</td></tr>
+    <tr><td>सन् १९६६–१९९३</td><td>विभिन्न दर</td><td>INR को अवमूल्यनसँगै NPR पनि परिवर्तन</td></tr>
+    <tr><td>सन् १९९३–हालसम्म</td><td>१ INR = १.६० NPR (स्थिर)</td><td>द्विपक्षीय सम्झौता, NRB ले कायम</td></tr>
+  </tbody>
+</table>
+
+<h3>१.६० पेगको कारणहरू</h3>
+<ul>
+  <li><strong>भारतसँगको गहिरो व्यापारिक सम्बन्ध:</strong> नेपालको ६०%+ व्यापार भारतसँग हुन्छ। स्थिर दरले व्यापार सरल बनाउँछ।</li>
+  <li><strong>खुला सीमा:</strong> नेपाल-भारत सीमा खुला छ। स्थिर दर नभए मुद्रा सट्टेबाजी र तस्करी बढ्थ्यो।</li>
+  <li><strong>विप्रेषण प्रवाह:</strong> लाखौं नेपाली भारतमा काम गर्छन् र भारतीय रुपैयाँमा पैसा पठाउँछन् — स्थिर दरले यसलाई सहज बनाउँछ।</li>
+  <li><strong>मूल्य स्थिरता:</strong> INR सँग peg भएकाले नेपालको मुद्रास्फीति भारतसँग मिल्दोजुल्दो रहन्छ।</li>
+</ul>
+
+<div class="callout-warning">
+  <strong>पेगका सीमाहरू:</strong> NPR/INR पेगले नेपाललाई स्वतन्त्र मौद्रिक नीति लागू गर्न सीमित गर्छ। नेपालको ब्याज दर र मुद्रास्फीति भारतसँग प्रभावित हुन्छन्। कतिपय अर्थशास्त्रीहरू यो पेग हटाउनुपर्ने तर्क गर्छन्, तर राजनीतिक र व्यापारिक कारणले यो अझै कायम छ।
+</div>`,
+    },
+    {
+      id: 'remittance-corridors-ne',
+      title: 'नेपालका प्रमुख विप्रेषण करिडोरहरू: ४० लाख+ कामदारको लागि',
+      content: `<p>नेपाल विश्वकै सबभन्दा बढी विप्रेषण-निर्भर अर्थतन्त्रहरूमध्ये एक हो। विप्रेषण नेपालको कुल गार्हस्थ्य उत्पादन (GDP) को लगभग २५%–३०% हुन्छ। ४० लाखभन्दा बढी नेपाली कामदार विदेशमा रहेका छन् र उनीहरूले वार्षिक NPR ९ खर्ब (लगभग $७ अर्ब)भन्दा बढी घर पठाउँछन्।</p>
+
+<h3>प्रमुख विप्रेषण करिडोर र प्रयोग हुने च्यानलहरू</h3>
+<table>
+  <thead>
+    <tr><th>देश</th><th>अनुमानित कामदार</th><th>मुद्रा</th><th>लोकप्रिय च्यानल</th><th>औसत विप्रेषण/महिना</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>कतार</td><td>४ लाख+</td><td>QAR</td><td>IME, वेस्टर्न युनियन, Prabhu Money</td><td>NPR ३०,०००–५०,०००</td></tr>
+    <tr><td>UAE (दुबई)</td><td>३ लाख+</td><td>AED</td><td>Al Ansari, Xpress Money, IME</td><td>NPR २५,०००–४५,०००</td></tr>
+    <tr><td>मलेशिया</td><td>३ लाख+</td><td>MYR</td><td>IME, Hamro Remit, Bank Transfer</td><td>NPR २०,०००–३५,०००</td></tr>
+    <tr><td>भारत</td><td>५ लाख+ (अनौपचारिक)</td><td>INR</td><td>Bank transfer, नगद बोकाउने</td><td>NPR १५,०००–३०,०००</td></tr>
+    <tr><td>साउदी अरब</td><td>२ लाख+</td><td>SAR</td><td>Western Union, STC Pay, IME</td><td>NPR २५,०००–४०,०००</td></tr>
+    <tr><td>दक्षिण कोरिया (EPS)</td><td>५०,०००+</td><td>KRW</td><td>Hana Bank, IME Korea</td><td>NPR ७०,०००–१,२०,०००</td></tr>
+    <tr><td>अमेरिका</td><td>२ लाख+</td><td>USD</td><td>Remitly, Wise, Prabhu Money</td><td>NPR ५०,०००–१,५०,०००</td></tr>
+    <tr><td>जापान</td><td>५०,०००+</td><td>JPY</td><td>Japan Post, Wise, Western Union</td><td>NPR ६०,०००–१,२०,०००</td></tr>
+    <tr><td>अस्ट्रेलिया</td><td>३०,०००+</td><td>AUD</td><td>Wise, OFX, Western Union</td><td>NPR ४०,०००–१,००,०००</td></tr>
+    <tr><td>कुवेत</td><td>८०,०००+</td><td>KWD</td><td>IME, Western Union</td><td>NPR ४०,०००–७०,०००</td></tr>
+  </tbody>
+</table>
+
+<h3>विप्रेषण आउने प्रक्रिया</h3>
+<p>कतारमा रहेको नेपाली कामदारले पैसा पठाउँदा के हुन्छ:</p>
+<ol>
+  <li>कामदारले QAR अधिकृत विप्रेषण कम्पनी (जस्तै IME) लाई दिन्छन्</li>
+  <li>IME ले QAR लाई NRB को दैनिक दरमा आधारित दरले NPR मा रूपान्तरण गर्छ</li>
+  <li>नेपालमा IME को नेटवर्क पार्टनरले प्राप्तकर्तालाई हजारौं पेआउट स्थानमध्ये कुनैमा NPR नगद दिन्छ</li>
+  <li>पठाउने कामदारले शुल्क (सामान्यतः १%–२.५%) तिर्छन्</li>
+</ol>
+
+<div class="callout-info">
+  <strong>नेपालमा विप्रेषण पाउनेहरूका लागि:</strong> परिवारको सदस्यले विप्रेषण पठाउँदा कुन सेवा प्रयोग गरे र कुन विनिमय दरमा परिवर्तन भयो सोध्नुस्। NRB को आधिकारिक दरसँग तुलना गरेर प्रभावकारी लागत बुझ्नुस्। IME, Prabhu Money जस्ता ठूला प्रदायकहरूले सानाभन्दा राम्रो दर दिन्छन्।
+</div>`,
+    },
+    {
+      id: 'hundi-risks-ne',
+      title: 'हुण्डी (अनौपचारिक विप्रेषण): जोखिम र कानुनी स्थिति नेपालमा',
+      content: `<p>हुण्डी दक्षिण एसियामा प्राचीन कालदेखि प्रयोग हुँदै आएको अनौपचारिक मुद्रा हस्तान्तरण प्रणाली हो। यसमा वास्तविक मुद्रा एक देशबाट अर्को देश नसारी, दुई देशमा रहेका एजेन्टहरू आपसमा मिलेर काम गर्छन्।</p>
+
+<h3>हुण्डी कसरी काम गर्छ?</h3>
+<ul>
+  <li>कतारमा कामदारले स्थानीय हुण्डी एजेन्टलाई QAR दिन्छन्</li>
+  <li>एजेन्टले नेपालमा रहेको आफ्नो सहयोगीलाई फोन गर्छन्</li>
+  <li>नेपालको सहयोगीले प्राप्तकर्तालाई NPR दिन्छ</li>
+  <li>वास्तविक मुद्रा अन्तर्राष्ट्रिय सीमा पार हुँदैन</li>
+</ul>
+
+<h3>हुण्डीका स्पष्ट जोखिमहरू</h3>
+<table>
+  <thead>
+    <tr><th>जोखिम</th><th>विवरण</th><th>गम्भीरता</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>कानुनी दण्ड</td><td>NRB ले हुण्डीलाई पूर्णतः अवैध घोषित गरेको छ। फौजदारी मुद्दा लाग्न सक्छ।</td><td>अति उच्च</td></tr>
+    <tr><td>पैसा हराउने जोखिम</td><td>एजेन्टले पैसा लिएर गायब भएमा कुनै कानुनी सुरक्षा छैन</td><td>उच्च</td></tr>
+    <tr><td>धोखाधडी दर</td><td>वास्तविक दरभन्दा कम दिएर ठग्ने सम्भावना</td><td>मध्यम–उच्च</td></tr>
+    <tr><td>मनी लाउन्डरिङ</td><td>हुण्डी नेटवर्क प्रायः अवैध कारोबारमा प्रयोग हुन्छ, जसको संलग्नता सिद्ध हुन सक्छ</td><td>उच्च</td></tr>
+    <tr><td>आतंकवाद वित्त पोषण</td><td>अन्तर्राष्ट्रिय एजेन्सीहरूले हुण्डी नेटवर्कलाई निगरानीमा राखेका छन्</td><td>गम्भीर</td></tr>
+    <tr><td>विदेशमा कारवाही</td><td>कतार, UAE, मलेशियामा पनि हुण्डी अवैध छ, दुवै देशमा कारवाही हुन सक्छ</td><td>उच्च</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>कानुनी व्यवस्था:</strong> नेपालको विदेशी विनिमय नियन्त्रण ऐन, २०१९ (२०७५) अन्तर्गत हुण्डी कारोबार गर्नेलाई जरिवाना र कैदसम्मको सजाय हुन सक्छ। NRB ले हुण्डी गर्ने व्यक्ति र एजेन्ट दुवैलाई कारवाही गर्न सक्छ।
+</div>
+
+<h3>हुण्डीको विकल्प: अधिकृत च्यानलहरू</h3>
+<ul>
+  <li><strong>IME (International Money Express):</strong> नेपालको सबभन्दा ठूलो विप्रेषण कम्पनी, विश्वव्यापी नेटवर्क</li>
+  <li><strong>Prabhu Money:</strong> प्रतिस्पर्धात्मक दर, NRB अधिकृत</li>
+  <li><strong>Hamro Remit:</strong> डिजिटल प्लेटफर्म, सजिलो मोबाइल एप</li>
+  <li><strong>Western Union / MoneyGram:</strong> विश्वव्यापी नेटवर्क, तत्काल पेआउट</li>
+  <li><strong>Wise (TransferWise):</strong> सबभन्दा प्रतिस्पर्धात्मक दर, पारदर्शी शुल्क</li>
+  <li><strong>बैंक SWIFT ट्रान्सफर:</strong> ठूलो रकमका लागि, बढी सुरक्षित</li>
+</ul>`,
+    },
+    {
+      id: 'best-rate-ne',
+      title: 'उत्तम विनिमय दर कसरी पाउने: व्यावहारिक सुझावहरू',
+      content: `<p>नेपालमा पैसा पठाउने वा विदेश जाने नेपालीहरूका लागि उत्तम दर पाउनु महत्त्वपूर्ण छ। केही व्यावहारिक सुझावहरू:</p>
+
+<h3>विप्रेषण पठाउनेहरूका लागि</h3>
+<ul>
+  <li><strong>तुलना गर्नुस्:</strong> एकैचोटि धेरै सेवाहरूको दर तुलना गर्न Monito.com वा अन्य comparison sites प्रयोग गर्नुस्</li>
+  <li><strong>ठूलो रकम एकैचोटि पठाउनुस्:</strong> Flat fee सानो रकममा proportionally बढी काट्छ। $100 पठाउँदा $3 fee = 3%, $1,000 मा = 0.3%</li>
+  <li><strong>साप्ताहान्तमा नपठाउनुस्:</strong> केही सेवाहरू शुक्रवारको rate lock गरेर सोमवार execute गर्छन्</li>
+  <li><strong>प्रचारात्मक दर हेर्नुस्:</strong> Wise, Remitly ले प्रायः पहिलो ट्रान्सफरमा शून्य शुल्क वा विशेष दर दिन्छन्</li>
+  <li><strong>Limit Order:</strong> केही platform मा target rate सेट गर्न मिल्छ — market rate पुगेपछि स्वतः transfer हुन्छ</li>
+</ul>
+
+<h3>विदेशी मुद्रा साट्नेहरूका लागि (भ्रमण र अध्ययन)</h3>
+<ul>
+  <li><strong>एयरपोर्टमा साट्नुस् न्यूनतम:</strong> एयरपोर्टको दर सबभन्दा खराब हुन्छ — आवश्यकता परेमा मात्र थोरै साट्नुस्</li>
+  <li><strong>गन्तव्यमा ATM प्रयोग गर्नुस्:</strong> Local ATM बाट झिक्दा कहिलेकाहीं राम्रो दर पाइन्छ (ATM fee बाहेक)</li>
+  <li><strong>Forex bureau comparison:</strong> काठमाडौंका धेरै forex bureaux छन् — मूल्य तुलना गर्नुस्</li>
+  <li><strong>क्रेडिट कार्ड:</strong> International transaction fee हेर्नुस् (सामान्यतः 1.5%–3.5%)</li>
+</ul>
+
+<h3>NRB को दर र बाजारको दर बीचको फरक</h3>
+<table>
+  <thead>
+    <tr><th>च्यानल</th><th>NRB दरभन्दा फरक</th><th>$1,000 पठाउँदा NPR मा फरक</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Wise / Best Apps</td><td>+0.5%–1%</td><td>NPR ७००–१,४०० कम</td></tr>
+    <tr><td>IME / Prabhu Money</td><td>+1%–2%</td><td>NPR १,४००–२,८०० कम</td></tr>
+    <tr><td>बैंक SWIFT</td><td>+1.5%–2.5% + flat fee</td><td>NPR २,१००–३,५०० + शुल्क</td></tr>
+    <tr><td>Western Union</td><td>+2%–3%</td><td>NPR २,८००–४,२०० कम</td></tr>
+    <tr><td>एयरपोर्ट Counter</td><td>+5%–10%</td><td>NPR ७,०००–१४,००० कम</td></tr>
+    <tr><td>हुण्डी</td><td>प्रायः +0.5%–1% (तर जोखिम)</td><td>अवैध — प्रयोग नगर्नुस्</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>व्यावहारिक गणना:</strong> यदि कतारबाट QAR ५०० (लगभग NPR ६८,५००) पठाउँदा IME र Wise को दरमा १% फरक छ भने, Wise बाट पठाउँदा NPR ६८५ बढी घर पुग्छ। वर्षमा १२ पटक पठाउँदा NPR ८,२२० को फरक पर्छ।
+</div>`,
+    },
+    {
+      id: 'forex-market-hours-ne',
+      title: 'विदेशी मुद्रा बजारको समय: कहिले साट्नु उत्तम?',
+      content: `<p>विदेशी मुद्रा बजार (Forex Market) सोमवारदेखि शुक्रवारसम्म २४ घण्टा खुला रहन्छ। तर सबै समय एउटै हुँदैन — तरलता, उतार-चढाव र दरको गुणस्तर फरक-फरक हुन्छ।</p>
+
+<h3>प्रमुख forex session र NST (नेपाल मानक समय) मा समय</h3>
+<table>
+  <thead>
+    <tr><th>बजार सत्र</th><th>UTC समय</th><th>NST (नेपाल)</th><th>विशेषता</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sydney (अस्ट्रेलिया)</td><td>रात १०–बिहान ७</td><td>बिहान ३:४५–दिउँसो १२:४५</td><td>कम कारोबार, शान्त</td></tr>
+    <tr><td>Tokyo (जापान)</td><td>राती १२–बिहान ९</td><td>बिहान ५:४५–दिउँसो २:४५</td><td>JPY pairs सक्रिय</td></tr>
+    <tr><td>London (युरोप)</td><td>बिहान ८–साँझ ५</td><td>दिउँसो १:४५–राती १०:४५</td><td>विश्वमै उच्च तरलता</td></tr>
+    <tr><td>New York (अमेरिका)</td><td>दिउँसो १–राती १०</td><td>साँझ ६:४५–बिहान ३:४५</td><td>USD pairs सक्रिय</td></tr>
+    <tr><td>London + NY overlap</td><td>दिउँसो १–साँझ ५</td><td>साँझ ६:४५–राती १०:४५</td><td>सर्वोच्च तरलता, उत्तम spread</td></tr>
+  </tbody>
+</table>
+
+<h3>नेपाली प्रयोगकर्ताका लागि</h3>
+<ul>
+  <li><strong>उत्तम समय:</strong> NST साँझ ६:४५–राती १०:४५ (London-NY overlap) — spread सबभन्दा कम हुन्छ</li>
+  <li><strong>NRB दर प्रकाशन:</strong> बिहान १० बजेसम्म NRB दैनिक दर जारी गर्छ — त्यसपछि दिन भर यही दर प्रयोग हुन्छ</li>
+  <li><strong>ठूला आर्थिक घोषणाको समय:</strong> RBI नीति, US Fed बैठक, भारतको inflation data घोषणाको समय दर अचानक चल्न सक्छ</li>
+  <li><strong>विशेष घटनाहरू:</strong> नेपालको बजेट, NRB को मौद्रिक नीति, राष्ट्रिय जनगणना परिणाम — यी घोषणाले NPR/USD मा प्रभाव पार्न सक्छन्</li>
+</ul>`,
+    },
+    {
+      id: 'digital-remittance-ne',
+      title: 'डिजिटल विप्रेषण: नेपालमा अधिकृत सेवाहरूको तुलना',
+      content: `<p>नेपालमा विप्रेषण उद्योगमा डिजिटलाइजेसन तीव्र गतिमा भइरहेको छ। NRB ले अधिकृत गरेका धेरै डिजिटल विप्रेषण सेवाहरू उपलब्ध छन्।</p>
+
+<h3>नेपाल NRB अधिकृत प्रमुख विप्रेषण सेवाहरू</h3>
+<table>
+  <thead>
+    <tr><th>सेवा</th><th>मुख्य करिडोर</th><th>डिजिटल विकल्प</th><th>पेआउट</th><th>विशेषता</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>IME (International Money Express)</td><td>कतार, UAE, मलेशिया, कोरिया, UK, USA</td><td>IME Pay App</td><td>नगद, बैंक, मोबाइल वालेट</td><td>सबभन्दा ठूलो नेपाली नेटवर्क</td></tr>
+    <tr><td>Prabhu Money</td><td>Gulf, मलेशिया, जापान, USA</td><td>Prabhu Pay</td><td>नगद, बैंक</td><td>प्रतिस्पर्धात्मक दर</td></tr>
+    <tr><td>Hamro Remit</td><td>USA, UK, अस्ट्रेलिया, कोरिया</td><td>पूर्णतः डिजिटल</td><td>बैंक, मोबाइल</td><td>युवा प्रयोगकर्ताका लागि</td></tr>
+    <tr><td>Western Union</td><td>विश्वव्यापी</td><td>WU App</td><td>नगद, बैंक</td><td>तत्काल पेआउट</td></tr>
+    <tr><td>Wise</td><td>USA, UK, EU, अस्ट्रेलिया</td><td>पूर्णतः डिजिटल</td><td>बैंक</td><td>सबभन्दा कम शुल्क, राम्रो दर</td></tr>
+    <tr><td>Remitly</td><td>USA बाट नेपाल</td><td>Remitly App</td><td>बैंक, नगद</td><td>द्रुत (Express) विकल्प</td></tr>
+  </tbody>
+</table>
+
+<h3>मोबाइल वालेटमा विप्रेषण</h3>
+<p>नेपालमा eSewa, Khalti, IME Pay, Prabhu Pay जस्ता मोबाइल वालेटमा सीधै विप्रेषण आउन सक्छ। यसले:</p>
+<ul>
+  <li>प्राप्तकर्तालाई पेआउट काउन्टरसम्म जान नपर्ने</li>
+  <li>तत्काल प्राप्ति</li>
+  <li>डिजिटल रेकर्ड राखिने</li>
+  <li>eSewa/Khalti बाट तुरुन्त भुक्तानी गर्न मिल्ने</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>सुझाव:</strong> विदेशमा रहेका परिवारका सदस्यलाई Wise वा Remitly बाट पठाउन सिकाउनुस् यदि उनीहरू USA, UK वा अस्ट्रेलियामा छन् भने। यी सेवाहरूले NRB अधिकृत च्यानलमा सबभन्दा प्रतिस्पर्धात्मक दर दिन्छन्।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'स्रोत मुद्रा छान्नुस्',
+      description: 'रूपान्तरण गर्ने मुद्रा छान्नुस् (जस्तै USD, QAR, AED)। १५०+ मुद्राहरू समर्थित छन्।',
+    },
+    {
+      title: 'लक्ष्य मुद्रा छान्नुस्',
+      description: 'रूपान्तरण गर्न चाहेको मुद्रा छान्नुस् (जस्तै NPR, INR)।',
+    },
+    {
+      title: 'रकम प्रविष्ट गर्नुस्',
+      description: 'रूपान्तरण गर्ने रकम टाइप गर्नुस्। परिणाम live अद्यावधिक हुन्छ।',
+    },
+    {
+      title: 'लाइभ दर र रूपान्तरित रकम हेर्नुस्',
+      description: 'Mid-market दर र रूपान्तरित रकम दुवै देखिन्छन्। दरको timestamp बाट data कति ताजा छ थाहा हुन्छ।',
+    },
+    {
+      title: 'ऐतिहासिक दर तुलना गर्नुस्',
+      description: 'पछिल्लो ७, ३०, वा ९० दिनको दर chart हेर्नुस् — transfer timing का लागि उपयोगी।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'मुद्रा परिवर्तकमा देखिने दर र बैंकले दिने दरमा किन फरक हुन्छ?',
+      answer: 'परिवर्तकले mid-market (अन्तरबैंक) दर देखाउँछ — वास्तविक बजार दर। बैंकहरूले आफ्नो मुनाफाको लागि यसमा १%–३% spread थप्छन्। थप flat transaction fee पनि लाग्न सक्छ। अन्तरबैंक दरको नजिकको दर पाउन Wise जस्ता विशेषीकृत remittance apps प्रयोग गर्नुस्।',
+    },
+    {
+      question: 'NPR/INR दर सधैं ठीक १.६० नै हुन्छ?',
+      answer: 'हो, औपचारिक/सरकारी कारोबारमा। Nepal Rastra Bank ले १ INR = १.६० NPR को स्थिर peg कायम राख्छ। तर सीमा क्षेत्रमा अनौपचारिक नगद कारोबार थोरै फरक दरमा हुन सक्छ। सबै बैंक र विप्रेषण कारोबारमा १.६० नै लागू हुन्छ।',
+    },
+    {
+      question: 'NRB को दैनिक forex दर कसरी सेट हुन्छ र कहाँ हेर्ने?',
+      answer: 'NRB ले हरेक कार्यदिन बिहान (सामान्यतः १० बजेसम्म) आधिकारिक विनिमय दर www.nrb.org.np मा प्रकाशित गर्छ। यो दर अघिल्लो दिनको नेपाल forex बजारको कारोबार र अन्तर्राष्ट्रिय बजार दरमा आधारित हुन्छ।',
+    },
+    {
+      question: 'हुण्डी नेपालमा कानुनी छ?',
+      answer: 'छैन। NRB ले हुण्डीलाई पूर्णतः अवैध घोषित गरेको छ। विदेशी विनिमय नियन्त्रण ऐन अन्तर्गत हुण्डी गर्नेलाई जरिवाना र कैद हुन सक्छ। पैसा हराउने जोखिम पनि उच्च छ किनकि कुनै कानुनी सुरक्षा छैन।',
+    },
+    {
+      question: 'कतारबाट नेपाल पैसा पठाउन कुन सेवा सबभन्दा राम्रो छ?',
+      answer: 'कतारबाट नेपाल पठाउन IME, Prabhu Money र Western Union लोकप्रिय र NRB अधिकृत छन्। ठूलो रकमका लागि Wise पनि हेर्नुस् — यसको दर प्रायः सबभन्दा राम्रो हुन्छ। पठाउनुअघि Monito.com मा सबैको तुलना गर्नुस्।',
+    },
+    {
+      question: 'दक्षिण कोरियाबाट नेपाल पैसा पठाउने उत्तम तरिका के हो?',
+      answer: 'EPS (Employment Permit System) मा रहेका नेपालीहरूले Hana Bank (जसले नेपाल विप्रेषणमा विशेषज्ञता राख्छ) वा IME Korea प्रयोग गर्न सक्छन्। KRW/NPR दर NRB को आधिकारिक दरमा आधारित हुन्छ। प्रत्येक पटक पठाउनुअघि दर र शुल्क तुलना गर्नुस्।',
+    },
+  ],
+  relatedGuides: ['unit-converter-guide', 'sip-calculator-guide', 'salary-calculator-guide'],
+  toolCTA: {
+    heading: 'अहिले नै लाइभ मुद्रा दर जाँच्नुस्',
+    description: '१५०+ मुद्राहरूलाई real-time अन्तरबैंक दरमा रूपान्तरण गर्नुस्। USD/NPR, QAR/NPR, AED/NPR र सबै प्रमुख जोडीहरू ट्र्याक गर्नुस्। विप्रेषण योजना र भ्रमणका लागि उत्तम साधन।',
+    buttonText: 'लाइभ मुद्रा परिवर्तक खोल्नुस्',
+  },
+},
+
+{
+  slug: "demat-charges-calculator-guide",
+  toolSlug: "demat-charges-calculator",
+  category: "finance-tools",
+  title: "डिम्याट शुल्क क्याल्कुलेटर: नेपालमा सम्पूर्ण ब्रोकरेज लागत गाइड (2026)",
+  subtitle: "नेपालका ब्रोकरहरूले कति शुल्क लिन्छन् र व्यापार लागत कसरी न्यून गर्ने",
+  metaTitle: "डिम्याट शुल्क क्याल्कुलेटर नेपाल 2026 | ब्रोकरेज तुलना",
+  metaDescription: "नेपालको DEMAT खाता शुल्क, AMC, DP fees, ब्रोकरेज र NEPSE कर गणना गर्नुहोस्। SEBON नियमन अनुसार 2026 को सम्पूर्ण शुल्क तालिका।",
+  targetKeyword: "डिम्याट शुल्क क्याल्कुलेटर",
+  secondaryKeywords: [
+    "DEMAT खाता शुल्क नेपाल",
+    "NEPSE ब्रोकरेज शुल्क",
+    "नेपाल डिम्याट शुल्क 2026",
+    "CDSC शुल्क नेपाल",
+    "शेयर किनबेच कर नेपाल",
+    "DP charge नेपाल",
+    "Capital gain tax नेपाल",
+    "NEPSE trading cost",
+    "ब्रोकरेज कम गर्ने उपाय",
+    "online broker Nepal 2026"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१५ मिनेट",
+  tags: ["डिम्याट", "ब्रोकरेज", "शुल्क", "NEPSE", "CDSC", "2026", "नेपाल"],
+  intro: `<p>नेपालमा शेयर बजारमा लगानी गर्दा — शेयर किन्दा वा बेच्दा — विभिन्न शुल्कहरू तिर्नुपर्छ। केही स्पष्ट देखिन्छन्, धेरै लुकेका हुन्छन्। यी शुल्कहरू नबुझ्नाले तपाईंको लगानी प्रतिफल मौन रूपमा घट्दै जान्छ। एउटा लगानीकर्ता जसले महिनामा २० व्यापार गर्छ र शुल्क ट्र्याक गर्दैन, उसले वार्षिक रूपमा आफ्नो portfolio को १–२% शुल्कमा गुमाउन सक्छ।</p>
+<p>यो गाइड <strong>नेपालमा DEMAT खातासँग सम्बन्धित हरेक शुल्कको सम्पूर्ण सन्दर्भ</strong> हो — स्पष्ट AMC र ब्रोकरेजदेखि कम चर्चित CDSC शुल्क, पुँजी लाभ कर र DP शुल्कसम्म। SEBON नियमन र NEPSE को 2026 को वास्तविक डेटा सहित।</p>`,
+  sections: [
+    {
+      id: "what-is-demat-ne",
+      title: "DEMAT खाता के हो र यसमा कस्ता शुल्कहरू लाग्छन्?",
+      content: `<p><strong>DEMAT (Dematerialised) खाता</strong> भनेको शेयर प्रमाणपत्रहरू डिजिटल रूपमा राख्ने इलेक्ट्रोनिक भण्डार हो। नेपालमा DEMAT खाताहरू <strong>CDSC (Central Depository System and Clearing Limited)</strong> मार्फत व्यवस्थापन हुन्छन्। ब्रोकरहरूले Depository Participant (DP) को रूपमा काम गर्छन्।</p>
+
+<h3>DEMAT सम्बन्धी शुल्कहरूको सम्पूर्ण सूची</h3>
+<table>
+  <thead>
+    <tr>
+      <th>शुल्क प्रकार</th>
+      <th>को लगाउँछ</th>
+      <th>प्रकृति</th>
+      <th>आवृत्ति</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>खाता खोल्ने शुल्क</td>
+      <td>ब्रोकर</td>
+      <td>एकपटकको</td>
+      <td>एक पटक</td>
+    </tr>
+    <tr>
+      <td>वार्षिक मर्मत शुल्क (AMC)</td>
+      <td>ब्रोकर + CDSC</td>
+      <td>निश्चित वार्षिक</td>
+      <td>हरेक वर्ष</td>
+    </tr>
+    <tr>
+      <td>ब्रोकरेज</td>
+      <td>ब्रोकर</td>
+      <td>प्रति व्यापार</td>
+      <td>हरेक किनबेच</td>
+    </tr>
+    <tr>
+      <td>SEBON शुल्क</td>
+      <td>SEBON</td>
+      <td>% of trade value</td>
+      <td>हरेक किनबेच</td>
+    </tr>
+    <tr>
+      <td>DP शुल्क</td>
+      <td>CDSC मार्फत ब्रोकर</td>
+      <td>प्रति-scrip निश्चित</td>
+      <td>हरेक बेच</td>
+    </tr>
+    <tr>
+      <td>पुँजी लाभ कर (CGT)</td>
+      <td>सरकार</td>
+      <td>लाभको %</td>
+      <td>प्रत्येक नाफाजनक बेच</td>
+    </tr>
+    <tr>
+      <td>लाभांश कर</td>
+      <td>सरकार</td>
+      <td>लाभांशको %</td>
+      <td>लाभांश प्राप्त हुँदा</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाल भारत फरक:</strong> भारतमा STT (Securities Transaction Tax) प्रमुख शुल्क हो। नेपालमा यसको सट्टा पुँजी लाभ कर (CGT) र SEBON शुल्क लाग्छ जुन संरचना फरक छ।
+</div>`
+    },
+    {
+      id: "nepal-broker-charges-ne",
+      title: "नेपालका NEPSE ब्रोकरहरूको शुल्क तुलना (2026)",
+      content: `<p>नेपालमा NEPSE मार्फत शेयर कारोबार गर्न SEBON अनुमोदित ब्रोकर चाहिन्छ। SEBON ले ब्रोकरेज दरहरू नियमन गर्छ।</p>
+
+<h3>NEPSE ब्रोकरेज शुल्क — SEBON नियमित दर (२०२६)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>कारोबार रकम (रू.)</th>
+      <th>ब्रोकरेज दर</th>
+      <th>उदाहरण (रू. १ लाखमा)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रू. ५०,००० सम्म</td>
+      <td>०.४%</td>
+      <td>रू. २००</td>
+    </tr>
+    <tr>
+      <td>रू. ५०,०००–५,००,०००</td>
+      <td>०.३७%</td>
+      <td>रू. ३७०</td>
+    </tr>
+    <tr>
+      <td>रू. ५,००,०००–२०,००,०००</td>
+      <td>०.३४%</td>
+      <td>रू. ३,४०० (रू. १०L मा)</td>
+    </tr>
+    <tr>
+      <td>रू. २०,०००–५०,०००</td>
+      <td>०.३%</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>रू. ५०,०००+ (ठूलो)</td>
+      <td>०.२५%</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाल विशेषता:</strong> भारतमा discount brokers ले flat ₹२०/order charge गर्छन्। नेपालमा SEBON ले minimum brokerage तोकेको हुनाले यस्तो प्रतिस्पर्धा छैन — सबै ब्रोकरले percentage-based charge लिन्छन्।
+</div>
+
+<h3>SEBON शुल्क र अन्य statutory charges (२०२६)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>शुल्क</th>
+      <th>दर</th>
+      <th>को तिर्छ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SEBON शुल्क</td>
+      <td>०.०१५%</td>
+      <td>किनेता र बेचेता दुवै</td>
+    </tr>
+    <tr>
+      <td>DP शुल्क (CDSC)</td>
+      <td>रू. २५/scrip</td>
+      <td>बेचेतामात्र</td>
+    </tr>
+    <tr>
+      <td>लाभांश कर</td>
+      <td>५%</td>
+      <td>लाभांश प्राप्तकर्ता</td>
+    </tr>
+    <tr>
+      <td>पुँजी लाभ कर — छोटो अवधि</td>
+      <td>७.५%</td>
+      <td>नाफाजनक बेचेता</td>
+    </tr>
+    <tr>
+      <td>पुँजी लाभ कर — लामो अवधि</td>
+      <td>५%</td>
+      <td>नाफाजनक बेचेता</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "cdsc-dp-ne",
+      title: "नेपालमा CDSC DP शुल्क र AMC: सम्पूर्ण विवरण",
+      content: `<h3>CDSC DP शुल्क</h3>
+<p>नेपालमा DEMAT खाताबाट शेयर <strong>बेच्दा</strong> CDSC DP शुल्क लाग्छ। यो per-scrip शुल्क हो — एकै दिन ५ विभिन्न कम्पनीका शेयर बेचे, ५ पटक DP शुल्क।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>शुल्क प्रकार</th>
+      <th>रकम</th>
+      <th>कहिले लाग्छ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CDSC DP शुल्क</td>
+      <td>रू. २५/scrip</td>
+      <td>हरेक sell transaction</td>
+    </tr>
+    <tr>
+      <td>DEMAT खाता AMC</td>
+      <td>रू. १००–२५०/वर्ष</td>
+      <td>वार्षिक</td>
+    </tr>
+    <tr>
+      <td>शेयर pledge शुल्क</td>
+      <td>रू. ५०–१५०</td>
+      <td>मार्जिन ऋणका लागि</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>सक्रिय व्यापारीका लागि:</strong> जो व्यापारी दैनिक १० विभिन्न कम्पनीका शेयर बेच्छन्, उनले रू. २५०/दिन DP शुल्क तिर्छन्। २५० कारोबार दिनमा — <strong>रू. ६२,५०० वार्षिक DP शुल्क मात्र</strong>।
+</div>
+
+<h3>वास्तविक लागत: रू. ५ लाखको portfolio, वर्षमा १० कारोबार</h3>
+<table>
+  <thead>
+    <tr>
+      <th>शुल्क प्रकार</th>
+      <th>रकम</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ब्रोकरेज (०.३७%)</td>
+      <td>रू. १,८५०</td>
+    </tr>
+    <tr>
+      <td>AMC</td>
+      <td>रू. २००</td>
+    </tr>
+    <tr>
+      <td>DP शुल्क (५ बिक्री)</td>
+      <td>रू. १२५</td>
+    </tr>
+    <tr>
+      <td>SEBON शुल्क</td>
+      <td>रू. ७५</td>
+    </tr>
+    <tr>
+      <td><strong>कुल वार्षिक शुल्क</strong></td>
+      <td><strong>रू. २,२५०</strong></td>
+    </tr>
+    <tr>
+      <td>portfolio को %</td>
+      <td>०.४५%</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "capital-gain-tax-ne",
+      title: "पुँजी लाभ कर र अन्य लुकेका शुल्कहरू",
+      content: `<p>नेपालमा शेयर बेचेर भएको नाफामा पुँजी लाभ कर (Capital Gain Tax — CGT) लाग्छ। यो शुल्क भारतको STT भन्दा फरक संरचनामा छ।</p>
+
+<h3>नेपालमा पुँजी लाभ करको संरचना (२०२६)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>अवस्था</th>
+      <th>करदर</th>
+      <th>लागू हुने</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>छोटो अवधि CGT (३६५ दिनभन्दा कम)</td>
+      <td>७.५%</td>
+      <td>नाफामा मात्र</td>
+    </tr>
+    <tr>
+      <td>लामो अवधि CGT (३६५ दिनभन्दा बढी)</td>
+      <td>५%</td>
+      <td>नाफामा मात्र</td>
+    </tr>
+    <tr>
+      <td>लाभांश कर</td>
+      <td>५%</td>
+      <td>सबै लाभांशमा</td>
+    </tr>
+    <tr>
+      <td>बोनस शेयर कर</td>
+      <td>५%</td>
+      <td>बोनस शेयरको मूल्यमा</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>CGT उदाहरण:</strong> तपाईंले रू. ५०,०० मा किनेको शेयर रू. ७०,००० मा बेच्नुभयो (६ महिनापछि)। नाफा = रू. २०,०००। CGT (७.५%) = रू. १,५००। यो ब्रोकरेज भन्दा थप तिर्नुपर्छ।
+</div>
+
+<h3>अन्य Statutory शुल्कहरू</h3>
+<ul>
+  <li><strong>SEBON शुल्क:</strong> कारोबार रकमको ०.०१५% — किनेता र बेचेता दुवैले</li>
+  <li><strong>NEPSE शुल्क:</strong> कारोबार रकमको सानो अंश — NEPSE को संचालन खर्च</li>
+  <li><strong>DP शुल्क:</strong> प्रति scrip रू. २५ — बेच्दा मात्र</li>
+  <li><strong>बैंक शुल्क:</strong> T+3 settlement का लागि बैंक transfer शुल्क</li>
+</ul>`
+    },
+    {
+      id: "returns-impact-ne",
+      title: "शुल्कहरूले लगानी प्रतिफलमा कसरी असर गर्छन्",
+      content: `<h3>वार्षिक शुल्क प्रभाव: रू. १० लाखको portfolio, विभिन्न गतिविधि स्तरहरू</h3>
+<table>
+  <thead>
+    <tr>
+      <th>लगानीकर्ता प्रोफाइल</th>
+      <th>कारोबार/वर्ष</th>
+      <th>वार्षिक शुल्क</th>
+      <th>Portfolio को %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>दीर्घकालीन होल्डर</td>
+      <td>४</td>
+      <td>रू. १,८००</td>
+      <td>०.१८%</td>
+    </tr>
+    <tr>
+      <td>मध्यम व्यापारी</td>
+      <td>२४</td>
+      <td>रू. ८,५००</td>
+      <td>०.८५%</td>
+    </tr>
+    <tr>
+      <td>सक्रिय व्यापारी</td>
+      <td>१००</td>
+      <td>रू. ३५,०००</td>
+      <td>३.५%</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>सक्रिय व्यापारको खतरा:</strong> नेपालमा ब्रोकरेज (०.३७%) + DP शुल्क + CGT मिलाएर round-trip cost उच्च हुन्छ। अल्पकालीन व्यापारबाट लगातार नाफा कमाउन धेरै कठिन छ।
+</div>
+
+<h3>Compounding effect</h3>
+<p>रू. १० लाखको portfolio १२% CAGR मा २० वर्षमा रू. ९६.५ लाख बन्छ। ०.५% वार्षिक शुल्कसहित — रू. ८८.२ लाख। <strong>फरक: रू. ८.३ लाख।</strong></p>`
+    },
+    {
+      id: "discount-vs-full-ne",
+      title: "नेपालमा Online Broker vs Traditional Broker: कुल लागत तुलना",
+      content: `<p>नेपालमा पनि online trading platforms बढ्दैछन् — MeroShare, online broker interfaces — जसले परम्परागत broker भन्दा सुविधाजनक पहुँच दिन्छन्।</p>
+
+<h3>Online vs Traditional Broker — ५ वर्षको तुलना (रू. १० लाख portfolio, २ कारोबार/महिना)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>लागत</th>
+      <th>Online Broker</th>
+      <th>Traditional Broker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ब्रोकरेज (५ वर्ष)</td>
+      <td>रू. ४४,४०० (SEBON rate)</td>
+      <td>रू. ४४,४०० (उही rate)</td>
+    </tr>
+    <tr>
+      <td>AMC (५ वर्ष)</td>
+      <td>रू. ५,०००</td>
+      <td>रू. ५,०००–१०,०००</td>
+    </tr>
+    <tr>
+      <td>DP शुल्क (५ वर्ष)</td>
+      <td>रू. १,५००</td>
+      <td>रू. १,५००</td>
+    </tr>
+    <tr>
+      <td>सेवा सुविधा</td>
+      <td>App मात्र</td>
+      <td>Personal service</td>
+    </tr>
+    <tr>
+      <td><strong>कुल ५-वर्ष लागत</strong></td>
+      <td><strong>~रू. ५०,९००</strong></td>
+      <td><strong>~रू. ५०,९०० – ५५,९००</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाल विशेषता:</strong> नेपालमा ब्रोकरेज दर SEBON ले तोकेको हुनाले discount broker र full-service broker को ब्रोकरेजमा कुनै फरक छैन। मुख्य फरक सेवाको गुणस्तर र सुविधामा हुन्छ।
+</div>`
+    },
+    {
+      id: "minimize-ne",
+      title: "नेपालमा DEMAT र ब्रोकरेज शुल्क कसरी न्यून गर्ने: ७ रणनीति",
+      content: `<h3>रणनीति १: दीर्घकालीन लगानी गर्नुहोस्</h3>
+<p>नेपालमा ३६५ दिनभन्दा बढी शेयर होल्ड गर्दा CGT दर ७.५% बाट ५% मा झर्छ। दीर्घकालीन होल्डरले कम कारोबार गर्दा ब्रोकरेज र DP शुल्क पनि कम हुन्छ।</p>
+
+<h3>रणनीति २: एउटा कम्पनीका सबै शेयर एकैपटक बेच्नुहोस्</h3>
+<p>DP शुल्क per-scrip हो, per-unit होइन। ५० शेयर आज + ५० भोलि = दोब्बर DP शुल्क। सधैं पूरै position एकै transaction मा बेच्नुहोस्।</p>
+
+<h3>रणनीति ३: मुनाफा र नोक्सान मिलाउनुहोस् (Tax Harvesting)</h3>
+<p>नाफाजनक शेयर बेच्ने वर्ष नोक्सानमा भएका शेयर पनि बेचेर CGT न्यून गर्न सकिन्छ। नेपालको कर कानुन अनुसार नोक्सानले नाफा offset गर्छ।</p>
+
+<h3>रणनीति ४: म्युचुअल फन्ड प्रयोग गर्नुहोस् दीर्घकालीन लक्ष्यका लागि</h3>
+<p>म्युचुअल फन्डमा प्रत्येक unit किनबेचमा DP शुल्क लाग्दैन। Fund manager ले diversification गर्छन् र लागत कम हुन्छ।</p>
+
+<h3>रणनीति ५: अल्पकालीन व्यापार न्यून गर्नुहोस्</h3>
+<p>अल्पकालीन CGT ७.५% + ब्रोकरेज + DP = उच्च round-trip cost। अल्पकालीन व्यापारबाट लगातार नाफा कमाउन धेरै कठिन छ।</p>
+
+<h3>रणनीति ६: बोनस शेयर र लाभांश रणनीति</h3>
+<p>बोनस शेयरमा ५% कर लाग्छ तर यो long-term holding को cost basis कम गर्छ। लाभांश प्राप्त गर्दा ५% कर काटिसकेको हुन्छ — यसलाई आफ्नो कर गणनामा ध्यान दिनुहोस्।</p>
+
+<h3>रणनीति ७: ASBA प्रक्रिया प्रयोग गर्नुहोस् (IPO का लागि)</h3>
+<p>IPO आवेदनमा ASBA प्रक्रिया प्रयोग गरेमा बैंक शुल्क बच्छ र allotment भएमा मात्र पैसा debit हुन्छ। Secondary market किनभन्दा IPO मा allotment थप cost-effective हुन सक्छ।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>रणनीति</th>
+      <th>वार्षिक बचत</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>दीर्घकालीन होल्डिङ</td>
+      <td>रू. ५,०००–२०,०००</td>
+    </tr>
+    <tr>
+      <td>Batch sell</td>
+      <td>रू. ५००–२,५००</td>
+    </tr>
+    <tr>
+      <td>Tax harvesting</td>
+      <td>रू. ५,०००–३०,०००+</td>
+    </tr>
+    <tr>
+      <td>म्युचुअल फन्ड प्रयोग</td>
+      <td>रू. २,०००–८,०००</td>
+    </tr>
+  </tbody>
+</table>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "ब्रोकर र खाता प्रकार छान्नुहोस्",
+      description: "आफ्नो NEPSE ब्रोकर छान्नुहोस्। क्याल्कुलेटरले 2026 को AMC, DP शुल्क र ब्रोकरेज दर स्वत: लोड गर्नेछ। शेयर delivery, intraday, वा IPO — प्राथमिक कारोबार मोड छान्नुहोस्।"
+    },
+    {
+      title: "कारोबार मात्रा प्रविष्ट गर्नुहोस्",
+      description: "महिनामा कति कारोबार र औसत कारोबार रकम राख्नुहोस्। महिनामा कति विभिन्न कम्पनीका शेयर बेच्नुहुन्छ — DP शुल्क यसैबाट निर्धारण हुन्छ।"
+    },
+    {
+      title: "Portfolio मूल्य प्रविष्ट गर्नुहोस्",
+      description: "हालको portfolio मूल्य राख्नुहोस्। यसले SEBON शुल्क गणना गर्न र वार्षिक शुल्कलाई % मा व्यक्त गर्न सहयोग गर्छ।"
+    },
+    {
+      title: "शुल्क विवरण समीक्षा गर्नुहोस्",
+      description: "क्याल्कुलेटरले सम्पूर्ण विवरण देखाउनेछ: ब्रोकरेज, CGT, DP शुल्क, AMC, SEBON शुल्क — प्रत्येक छुट्टै।"
+    },
+    {
+      title: "विकल्पहरू तुलना गरी निर्णय गर्नुहोस्",
+      description: "१०-वर्षको प्रतिफल projection शुल्क सहित र बिना दुवै देखाउनेछ — तपाईंको ब्रोकर छनोटको वास्तविक दीर्घकालीन लागत बुझ्न।"
+    }
+  ],
+  faqs: [
+    {
+      question: "नेपालमा DP शुल्क के हो र किन तिर्नुपर्छ?",
+      answer: "DP शुल्क प्रत्येक बिक्री कारोबारमा लाग्छ। शेयर DEMAT खाताबाट electronically debit हुँदा CDSC र ब्रोकरले प्रशासनिक शुल्क लिन्छन्। नेपालमा यो सामान्यतः रू. २५/scrip छ।"
+    },
+    {
+      question: "नेपालमा शेयरमा पुँजी लाभ कर कसरी लाग्छ?",
+      answer: "नाफाजनक शेयर बिक्रीमा CGT लाग्छ। ३६५ दिनभन्दा कम राखेमा ७.५%, ३६५ दिनभन्दा बढी राखेमा ५%। नोक्सान भएमा CGT लाग्दैन। ब्रोकरले खरिद मूल्य र बिक्री मूल्यको भिन्नतामा कर गणना गर्छ।"
+    },
+    {
+      question: "NEPSE मा trading cost कसरी कम गर्ने?",
+      answer: "दीर्घकालीन होल्डिङ (कम कारोबार = कम ब्रोकरेज + DP शुल्क), एकै transaction मा पूरै position बेच्ने, tax harvesting रणनीति, र म्युचुअल फन्ड प्रयोग — यी मुख्य उपायहरू हुन्।"
+    },
+    {
+      question: "नेपालमा DEMAT खाताको AMC कति हुन्छ?",
+      answer: "CDSC ले तोकेको न्यूनतम AMC छ जुन ब्रोकरले pass on गर्छन्। सामान्यतः रू. १००–२५०/वर्ष। SEBON को नियमन अनुसार यो बदलिन सक्छ।"
+    },
+    {
+      question: "नेपालमा कति demat account राख्न सकिन्छ?",
+      answer: "SEBON ले एक व्यक्तिलाई एउटा मात्र DEMAT खाता राख्न अनुमति दिन्छ। भारतमा जस्तो multiple demat account राख्न पाइँदैन।"
+    },
+    {
+      question: "MeroShare के हो र यसमा शुल्क कति लाग्छ?",
+      answer: "MeroShare CDSC ले सञ्चालन गर्ने online platform हो जहाँ शेयरधनीले आफ्नो holding हेर्न, IPO आवेदन दिन र केही कारोबार गर्न सक्छन्। MeroShare मा खाता खोल्न रू. ५० वार्षिक शुल्क लाग्छ।"
+    },
+    {
+      question: "IPO मा apply गर्दा कस्ता शुल्क लाग्छन्?",
+      answer: "ASBA प्रक्रियामा बैंकले IPO आवेदन रकम block गर्छ। Allotment नभएमा कुनै शुल्क लाग्दैन। Allotment भएमा DP registration शुल्क र सामान्य DEMAT charge लाग्छ। SEBON शुल्क primary market मा लागू हुँदैन।"
+    },
+    {
+      question: "नेपालमा बोनस शेयरमा कर कसरी लाग्छ?",
+      answer: "बोनस शेयरको बजार मूल्यमा ५% कर लाग्छ — तर यो कर शेयर allotment हुँदाकै बेला बोनस शेयरको हिसाबले काटिन्छ वा नगदमा तिर्नुपर्छ। यसले तपाईंको effective holding cost बढाउँछ।"
+    }
+  ],
+  relatedGuides: ["fd-calculator-guide", "mutual-fund-calculator-guide", "sip-calculator-guide"],
+  toolCTA: {
+    heading: "अहिले नै आफ्नो DEMAT शुल्क गणना गर्नुहोस्",
+    description: "ब्रोकर, कारोबार आवृत्ति र portfolio आकार राख्नुहोस् — सम्पूर्ण वार्षिक शुल्क विवरण हेर्नुहोस् र थाहा पाउनुहोस् कति बचत गर्न सकिन्छ।",
+    buttonText: "डिम्याट शुल्क क्याल्कुलेटर खोल्नुहोस्"
+  }
+},
+
+{
+  slug: 'detailed-age-calculator-guide',
+  toolSlug: 'detailed-age-calculator',
+  category: 'utility-tools',
+  title: 'विस्तृत उमेर क्याल्कुलेटर: सम्पूर्ण मार्गदर्शिका २०२६',
+  subtitle: 'वर्ष, महिना, दिन, घण्टामा सटीक उमेर — BS र AD क्यालेन्डर, कानुनी उमेर सीमा र जीवनका महत्त्वपूर्ण पडावहरू',
+  metaTitle: 'विस्तृत उमेर क्याल्कुलेटर — वर्ष, महिना, दिन र घण्टामा उमेर',
+  metaDescription: 'नेपाली BS र AD क्यालेन्डरमा सटीक उमेर हिसाब गर्नुस्। लोकसेवा उमेर सीमा, नेपाल सेना-प्रहरी, NRB कर्मचारी, SEE/NEB पात्रता उमेर सहित।',
+  targetKeyword: 'विस्तृत उमेर क्याल्कुलेटर',
+  secondaryKeywords: [
+    'नेपाली उमेर क्याल्कुलेटर',
+    'BS उमेर हिसाब',
+    'लोकसेवा उमेर सीमा',
+    'नेपाल सेना भर्ना उमेर',
+    'निवृत्ति उमेर नेपाल',
+    'SEE उमेर पात्रता',
+    'विक्रम संवत उमेर',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१६ मिनेट पठन',
+  tags: ['उमेर क्याल्कुलेटर', 'BS क्यालेन्डर', 'लोकसेवा', 'नेपाल सेना', 'निवृत्ति', 'लिप वर्ष', 'SEE', 'NRB'],
+  intro: `<p>धेरैजसो मानिसहरू आफ्नो उमेर वर्षमा मात्र जान्दछन्। तर एउटा विस्तृत उमेर क्याल्कुलेटर यसभन्दा धेरै गहिरो जान्छ — महिना, हप्ता, दिन, घण्टा, मिनेट र सेकेन्डमा समेत उमेर देखाउँछ। यो सूक्ष्म हिसाब सोचेभन्दा बढी महत्त्वपूर्ण छ। लोक सेवा आयोगको परीक्षामा उमेर सीमा एक दिनले पनि miss भयो भने अयोग्य हुन सकिन्छ। बीमा र ऋणमा सटीक उमेरले प्रिमियम र पात्रता निर्धारण गर्छ।</p>
+<p>यस मार्गदर्शिकामा हामी कभर गर्नेछौं: BS (बिक्रम संवत) मा उमेर कसरी हिसाब हुन्छ, नेपालका कानुनी उमेर सीमाहरू (लोकसेवा, नेपाल सेना, नेपाल प्रहरी), NRB कर्मचारी निवृत्ति उमेर, SEE/NEB पात्रता नियमहरू, र लिप वर्षका जटिल edge caseहरू।</p>`,
+  sections: [
+    {
+      id: 'bs-age-calculation',
+      title: 'बिक्रम संवत (BS) मा उमेर हिसाब: नेपाली प्रणाली',
+      content: `<p>नेपालको आधिकारिक क्यालेन्डर <strong>बिक्रम संवत (BS)</strong> हो। सबै सरकारी कागजपत्र, जग्गा दर्ता, जन्मदर्ता, र निजामती कर्मचारीको सेवा अभिलेख BS मा राखिन्छ। BS र AD (Gregorian) बीचको अन्तर लगभग ५६ वर्ष ८ महिना छ।</p>
+
+<h3>BS र AD बीचको अन्तर तालिका</h3>
+<table>
+  <thead>
+    <tr><th>AD वर्ष</th><th>BS वर्ष (अनुमानित)</th><th>नेपाली नयाँ वर्ष (AD मा)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>२०२४</td><td>२०८०/२०८१</td><td>अप्रिल १३/१४</td></tr>
+    <tr><td>२०२५</td><td>२०८१/२०८२</td><td>अप्रिल १३/१४</td></tr>
+    <tr><td>२०२६</td><td>२०८२/२०८३</td><td>अप्रिल १३/१४</td></tr>
+    <tr><td>२०२७</td><td>२०८३/२०८४</td><td>अप्रिल १३/१४</td></tr>
+  </tbody>
+</table>
+
+<h3>BS क्यालेन्डरका महिनाहरू र दिन संख्या</h3>
+<table>
+  <thead>
+    <tr><th>BS महिना</th><th>नेपाली नाम</th><th>AD महिना (अनुमानित)</th><th>दिन संख्या</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>१</td><td>बैशाख</td><td>अप्रिल–मे</td><td>३०–३२</td></tr>
+    <tr><td>२</td><td>जेठ</td><td>मे–जुन</td><td>३१–३२</td></tr>
+    <tr><td>३</td><td>असार</td><td>जुन–जुलाई</td><td>३१–३२</td></tr>
+    <tr><td>४</td><td>श्रावण</td><td>जुलाई–अगस्ट</td><td>३१–३२</td></tr>
+    <tr><td>५</td><td>भाद्र</td><td>अगस्ट–सेप्टेम्बर</td><td>३०–३१</td></tr>
+    <tr><td>६</td><td>आश्विन</td><td>सेप्टेम्बर–अक्टोबर</td><td>२९–३०</td></tr>
+    <tr><td>७</td><td>कार्तिक</td><td>अक्टोबर–नोभेम्बर</td><td>२९–३०</td></tr>
+    <tr><td>८</td><td>मंसिर</td><td>नोभेम्बर–डिसेम्बर</td><td>२९–३०</td></tr>
+    <tr><td>९</td><td>पुष</td><td>डिसेम्बर–जनवरी</td><td>२९–३०</td></tr>
+    <tr><td>१०</td><td>माघ</td><td>जनवरी–फेब्रुअरी</td><td>२९–३०</td></tr>
+    <tr><td>११</td><td>फाल्गुन</td><td>फेब्रुअरी–मार्च</td><td>२९–३०</td></tr>
+    <tr><td>१२</td><td>चैत्र</td><td>मार्च–अप्रिल</td><td>२९–३१</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>महत्त्वपूर्ण:</strong> BS महिनाहरूमा दिनको संख्या वर्षअनुसार फरक हुन्छ। यसैले BS मा सटीक उमेर हिसाब AD भन्दा जटिल हुन सक्छ। हाम्रो विस्तृत उमेर क्याल्कुलेटरले यो सबै स्वतः ह्यान्डल गर्छ।
+</div>`,
+    },
+    {
+      id: 'nepal-legal-age',
+      title: 'नेपालका कानुनी उमेर सीमाहरू: लोकसेवा, सेना, प्रहरी, शिक्षा',
+      content: `<p>नेपालमा विभिन्न अधिकार, सेवा र जिम्मेवारीका लागि फरक-फरक न्यूनतम उमेर कानुनले तोकेको छ। यी उमेर सीमाहरू सटीक मितिमा आधारित हुन्छन्, त्यसैले विस्तृत उमेर क्याल्कुलेटर विशेष रूपमा उपयोगी छ।</p>
+
+<h3>नेपालका प्रमुख कानुनी उमेर सीमाहरू</h3>
+<table>
+  <thead>
+    <tr><th>पडाव</th><th>उमेर</th><th>कानुनी आधार</th><th>विशेष नोट</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>मताधिकार (मतदान)</td><td>१८ वर्ष</td><td>नेपाल संविधान</td><td>—</td></tr>
+    <tr><td>विवाह (दुवै लिंग)</td><td>२० वर्ष</td><td>मुलुकी देवानी संहिता</td><td>अदालतको अनुमतिमा कम उमेरमा सम्भव</td></tr>
+    <tr><td>ड्राइभिङ लाइसेन्स (दुईपाङ्ग्रे)</td><td>१६ वर्ष</td><td>सवारी तथा यातायात व्यवस्था ऐन</td><td>—</td></tr>
+    <tr><td>ड्राइभिङ लाइसेन्स (कार)</td><td>१८ वर्ष</td><td>सवारी तथा यातायात व्यवस्था ऐन</td><td>—</td></tr>
+    <tr><td>सम्झौता गर्ने अधिकार</td><td>१८ वर्ष</td><td>मुलुकी देवानी संहिता</td><td>—</td></tr>
+    <tr><td>फौजदारी उत्तरदायित्व</td><td>१८ वर्ष</td><td>बालबालिकासम्बन्धी ऐन</td><td>१८ मुनिलाई बाल न्यायालय</td></tr>
+    <tr><td>पासपोर्ट (स्वयं)</td><td>१६ वर्ष</td><td>राहदानी नियमावली</td><td>मुनिका लागि अभिभावकको स्वीकृति</td></tr>
+  </tbody>
+</table>
+
+<h3>लोक सेवा आयोग (PSC) परीक्षाका उमेर सीमाहरू</h3>
+<table>
+  <thead>
+    <tr><th>पद वर्ग</th><th>न्यूनतम उमेर</th><th>अधिकतम उमेर</th><th>विशेष छुट</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>श्रेणी विहीन / खरिदार</td><td>१८ वर्ष</td><td>३५ वर्ष</td><td>महिला/दलित: ४० वर्ष</td></tr>
+    <tr><td>नायब सुब्बा / खण्ड अधिकृत</td><td>१८ वर्ष</td><td>३५ वर्ष</td><td>महिला/दलित: ४० वर्ष</td></tr>
+    <tr><td>राजपत्राङ्कित तृतीय (Officer)</td><td>२१ वर्ष</td><td>३५ वर्ष</td><td>महिला/दलित: ४० वर्ष</td></tr>
+    <tr><td>राजपत्राङ्कित द्वितीय</td><td>२१ वर्ष</td><td>४५ वर्ष</td><td>विभागीय उम्मेदवार</td></tr>
+    <tr><td>राजपत्राङ्कित प्रथम (Gazetted I)</td><td>२१ वर्ष</td><td>४५ वर्ष</td><td>विभागीय उम्मेदवार</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>उमेर गणना नियम:</strong> लोक सेवा आयोगमा उमेर <strong>विज्ञापन प्रकाशन मितिसम्म</strong> गणना हुन्छ — परीक्षा मितिसम्म होइन। विज्ञापन सूचनामा उल्लेखित मिति ध्यान दिनुस्।
+</div>`,
+    },
+    {
+      id: 'nepal-army-police-age',
+      title: 'नेपाल सेना, प्रहरी र सशस्त्र प्रहरी: भर्ना उमेर सीमाहरू',
+      content: `<p>नेपालका सुरक्षा निकायहरूमा भर्नाका लागि उमेर सीमा शारीरिक पात्रताका साथसाथै कठोर रूपमा लागू गरिन्छ। यहाँ सटीक दिन गणना झनै महत्त्वपूर्ण हुन्छ।</p>
+
+<h3>नेपाल सेना भर्ना उमेर (२०२५/२६)</h3>
+<table>
+  <thead>
+    <tr><th>पद</th><th>न्यूनतम उमेर</th><th>अधिकतम उमेर</th><th>विशेष</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>सिपाही</td><td>१८ वर्ष</td><td>२१ वर्ष</td><td>पुरुष</td></tr>
+    <tr><td>महिला सिपाही</td><td>१८ वर्ष</td><td>२३ वर्ष</td><td>—</td></tr>
+    <tr><td>नायक/हवल्दार (Technical)</td><td>१८ वर्ष</td><td>२५ वर्ष</td><td>प्राविधिक योग्यता अनुसार</td></tr>
+    <tr><td>अधिकृत (कमिसन्ड)</td><td>१७ वर्ष</td><td>२१ वर्ष</td><td>क्याडेट भर्ना</td></tr>
+    <tr><td>नेपाल सैनिक अस्पताल (नर्स/डाक्टर)</td><td>२१ वर्ष</td><td>३५ वर्ष</td><td>व्यावसायिक योग्यता अनुसार</td></tr>
+  </tbody>
+</table>
+
+<h3>नेपाल प्रहरी भर्ना उमेर</h3>
+<table>
+  <thead>
+    <tr><th>पद</th><th>न्यूनतम उमेर</th><th>अधिकतम उमेर</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>जवान (Constable)</td><td>१८ वर्ष</td><td>२३ वर्ष</td></tr>
+    <tr><td>सहायक निरीक्षक (ASI)</td><td>१८ वर्ष</td><td>२५ वर्ष</td></tr>
+    <tr><td>निरीक्षक (Inspector)</td><td>२१ वर्ष</td><td>३५ वर्ष</td></tr>
+    <tr><td>DSP (प्रत्यक्ष)</td><td>२१ वर्ष</td><td>३५ वर्ष</td></tr>
+  </tbody>
+</table>
+
+<h3>सशस्त्र प्रहरी बल (APF) भर्ना उमेर</h3>
+<table>
+  <thead>
+    <tr><th>पद</th><th>उमेर सीमा</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>जवान</td><td>१८–२३ वर्ष</td></tr>
+    <tr><td>प्राविधिक सहायक</td><td>१८–२५ वर्ष</td></tr>
+    <tr><td>अधिकृत</td><td>२१–३५ वर्ष</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>भर्नाको तयारी गर्दा:</strong> उमेर सीमाको हिसाब विज्ञापन प्रकाशन मिति वा दरखास्त दिने अन्तिम मितिसम्म गरिन्छ। विस्तृत उमेर क्याल्कुलेटरमा आफ्नो जन्म मिति र विज्ञापन मिति हालेर सटीक उमेर जाँच्नुस्।
+</div>`,
+    },
+    {
+      id: 'nrb-retirement',
+      title: 'नेपाल राष्ट्र बैंक कर्मचारी निवृत्ति उमेर र निजामती सेवा',
+      content: `<p>नेपालमा सरकारी निकाय र वित्तीय संस्थाहरूका कर्मचारीको निवृत्ति उमेर निर्धारित छ। सटीक उमेर हिसाब जान्नु निवृत्तिभरण, ग्रेच्युटी र अन्य सुविधाका लागि अत्यन्त महत्त्वपूर्ण छ।</p>
+
+<h3>नेपालका प्रमुख निकायहरूको निवृत्ति उमेर</h3>
+<table>
+  <thead>
+    <tr><th>निकाय / क्षेत्र</th><th>निवृत्ति उमेर</th><th>विशेष नोट</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>नेपाल राष्ट्र बैंक (NRB)</td><td>५८ वर्ष</td><td>केही पदका लागि ६० वर्ष सम्म</td></tr>
+    <tr><td>निजामती सेवा (Civil Service)</td><td>५८ वर्ष</td><td>निजामती सेवा ऐन, २०४९</td></tr>
+    <tr><td>सर्वोच्च अदालतका न्यायाधीश</td><td>६५ वर्ष</td><td>नेपाल संविधान</td></tr>
+    <tr><td>उच्च अदालतका न्यायाधीश</td><td>६३ वर्ष</td><td>नेपाल संविधान</td></tr>
+    <tr><td>नेपाल सेना</td><td>पदअनुसार ५५–५७ वर्ष</td><td>सेनाको आन्तरिक नियम</td></tr>
+    <tr><td>नेपाल प्रहरी</td><td>पदअनुसार ५५–५८ वर्ष</td><td>प्रहरी नियमावली</td></tr>
+    <tr><td>शिक्षक (सरकारी)</td><td>५८ वर्ष</td><td>शिक्षा ऐन</td></tr>
+    <tr><td>विश्वविद्यालय प्राध्यापक</td><td>६३–६५ वर्ष</td><td>विश्वविद्यालय ऐन</td></tr>
+    <tr><td>निजी क्षेत्र (सामान्यतः)</td><td>६०–६५ वर्ष</td><td>श्रम ऐन, २०७४</td></tr>
+  </tbody>
+</table>
+
+<h3>निवृत्तिपछिको वित्तीय हिसाब</h3>
+<p>निवृत्ति मितिसम्म ठीक कति दिन, महिना, वर्ष बाँकी छ भनेर जान्नु जरुरी छ किनकि:</p>
+<ul>
+  <li>सेवानिवृत्ति भरण (Pension) को गणना सेवा अवधिको कुल महिनामा आधारित हुन्छ</li>
+  <li>ग्रेच्युटी रकम सेवा अवधि वर्षको आधारमा गणना गरिन्छ</li>
+  <li>कन्ट्रिब्युटरी पेन्सन फन्ड (CPF) मा थप महिनाहरूको योगदानले निवृत्तिपछिको रकम बढाउँछ</li>
+  <li>निवृत्तिअघि गृहऋण वा अन्य ठूला ऋण लिँदा निवृत्तिको मिति ध्यान दिनुपर्छ</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>व्यावहारिक उदाहरण:</strong> कुनै निजामती कर्मचारी BS २०४४ साल असोज २ मा जन्मेको भए, उनी BS २१०२ साल असोज १ सम्म अर्थात् ५८ वर्ष पूरा हुने दिन निवृत्त हुन्छन् (नयाँ नियमावली अनुसार)। विस्तृत उमेर क्याल्कुलेटरमा जन्म मिति र निवृत्ति उमेर राखेर सटीक दिन, महिना, वर्ष हिसाब गर्न सकिन्छ।
+</div>`,
+    },
+    {
+      id: 'neb-see-age',
+      title: 'SEE र NEB परीक्षा: उमेर पात्रता नियमहरू',
+      content: `<p>नेपालमा विद्यालय तहका परीक्षाका लागि उमेर पात्रता नियम राष्ट्रिय परीक्षा बोर्ड (NEB) र परीक्षा नियन्त्रण कार्यालयले तोकेको छ।</p>
+
+<h3>SEE (माध्यमिक शिक्षा परीक्षा) पात्रता</h3>
+<table>
+  <thead>
+    <tr><th>पात्रता</th><th>विवरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>न्यूनतम उमेर</td><td>१४ वर्ष (कक्षा १० मा अध्ययन गरिरहेको)</td></tr>
+    <tr><td>अधिकतम उमेर</td><td>कुनै कठोर सीमा छैन, तर नियमित विद्यार्थीको लागि १७–१८ वर्ष सामान्य</td></tr>
+    <tr><td>उमेर प्रमाण</td><td>जन्मदर्ता वा नागरिकता</td></tr>
+  </tbody>
+</table>
+
+<h3>NEB कक्षा ११/१२ (Higher Secondary) पात्रता</h3>
+<table>
+  <thead>
+    <tr><th>पात्रता</th><th>विवरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SEE उत्तीर्ण</td><td>अनिवार्य</td></tr>
+    <tr><td>सामान्य उमेर</td><td>१५–१८ वर्ष (कक्षा ११ भर्नामा)</td></tr>
+    <tr><td>खुला तथा वैकल्पिक</td><td>वयस्क शिक्षार्थीका लागि उमेर सीमा छुट</td></tr>
+  </tbody>
+</table>
+
+<h3>विभिन्न प्रतियोगिताका लागि विद्यार्थी उमेर</h3>
+<ul>
+  <li><strong>राष्ट्रिय गणित ओलम्पियाड:</strong> कक्षा ८–१२ का विद्यार्थी, सामान्यतः ११–१८ वर्ष</li>
+  <li><strong>विज्ञान ओलम्पियाड:</strong> कक्षा ८–१२</li>
+  <li><strong>SAF खेलकुद:</strong> उमेर वर्गअनुसार (Under-14, Under-17, Under-19)</li>
+</ul>
+
+<div class="callout-info">
+  खेलकुदमा उमेर वर्ग सामान्यतः प्रतियोगिता हुने वर्षको जनवरी १ वा जुलाई १ सम्मको उमेरका आधारमा गणना गरिन्छ। विस्तृत उमेर क्याल्कुलेटरमा target date बदलेर आफ्नो उमेर जाँच्न सकिन्छ।
+</div>`,
+    },
+    {
+      id: 'leap-year-bs',
+      title: 'BS क्यालेन्डरमा लिप वर्ष र उमेर गणनाका जटिलताहरू',
+      content: `<p>AD क्यालेन्डरमा leap year को नियम सरल छ। BS क्यालेन्डरमा भने यो झन् जटिल छ किनकि BS को महिनाहरूमा दिनको संख्या प्रत्येक वर्ष फरक हुन सक्छ र यो पञ्चाङ्गले तोक्छ।</p>
+
+<h3>AD लिप वर्षको नियम</h3>
+<ul>
+  <li>४ ले भाग गर्दा शेष नआउने वर्ष = लिप वर्ष</li>
+  <li>तर शताब्दी वर्ष (१८००, १९००, २१००) = लिप वर्ष होइन</li>
+  <li>तर ४०० ले भाग गर्दा शेष नआउने शताब्दी वर्ष (२०००, २४००) = लिप वर्ष हो</li>
+  <li>त्यसैले सन् २१०० लिप वर्ष हुने छैन — धेरैलाई थाहा नहुने तथ्य!</li>
+</ul>
+
+<h3>फेब्रुअरी २९ मा जन्मेकाहरूको उमेर</h3>
+<p>लिप वर्षमा जन्मेका मानिसहरूको उमेर सामान्य वर्षमा कसरी गणना गरिन्छ?</p>
+<ul>
+  <li><strong>नेपाल (सामान्य प्रचलन):</strong> मार्च १ मा उमेर पूरा भएको मान्ने</li>
+  <li><strong>कानुनी प्रयोजनमा:</strong> सम्बन्धित निकायको नीतिअनुसार</li>
+</ul>
+
+<h3>BS मा महिनाको अन्तिम दिनको समस्या</h3>
+<p>यदि कोई असार ३२ मा जन्मेको (कुनै वर्ष असारमा ३२ दिन हुँदा) भने अर्को वर्ष असारमा ३१ दिन मात्र भए के उनको जन्मदिन असार ३१ मा पर्छ? हाम्रो क्याल्कुलेटरले यस्तो अवस्थामा सबभन्दा नजिकको मान्य मिति प्रयोग गर्छ।</p>
+
+<div class="callout-tip">
+  <strong>व्यावहारिक सल्लाह:</strong> सरकारी परीक्षा वा सेवाका लागि उमेर प्रमाणित गर्दा सधैं जन्मदर्ता वा नागरिकतामा लेखिएको मिति नै प्रयोग गर्नुस्। क्याल्कुलेटरको हिसाब सन्दर्भका लागि हो, अन्तिम प्रमाण सरकारी कागजपत्र नै हो।
+</div>`,
+    },
+    {
+      id: 'age-financial-ne',
+      title: 'उमेरको वित्तीय महत्त्व: ऋण, बीमा र लगानीमा प्रभाव',
+      content: `<p>नेपालमा पनि ठीक भारतझैं उमेरले वित्तीय उत्पादनहरूमा प्रत्यक्ष प्रभाव पार्छ।</p>
+
+<h3>गृहऋण र सवारी ऋणमा उमेरको भूमिका</h3>
+<table>
+  <thead>
+    <tr><th>उत्पाद</th><th>न्यूनतम उमेर</th><th>परिपक्वतामा अधिकतम उमेर</th><th>विशेष नोट</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>गृहऋण (Nepal)</td><td>१८ वर्ष</td><td>६५–७० वर्ष</td><td>NRB: तलबभोगीका लागि ६० वर्षसम्म</td></tr>
+    <tr><td>सवारी ऋण</td><td>१८ वर्ष</td><td>६५ वर्ष</td><td>बृद्ध आवेदकलाई छोटो अवधि</td></tr>
+    <tr><td>व्यक्तिगत ऋण</td><td>१८ वर्ष</td><td>६०–६५ वर्ष</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<h3>जीवन बीमा प्रिमियम र उमेर</h3>
+<p>नेपाल जीवन बीमा कम्पनीहरूमा प्रिमियम उमेरसँगै बढ्दछ। २५ वर्षमा बीमा गरेमा र ३५ वर्षमा गरेमा एउटै कभरेजको लागि ४०%–६०% फरक प्रिमियम तिर्नुपर्छ।</p>
+
+<div class="callout-tip">
+  <strong>SIP र चक्रवृद्धि ब्याज:</strong> २५ वर्षमा लगानी शुरु गरेर ५८ वर्षसम्म गर्दा ३३ वर्षको चक्रवृद्धि ब्याज पाइन्छ। ३५ वर्षमा शुरु गर्दा सिर्फ २३ वर्ष बाँकी रहन्छ — र चक्रवृद्धि घातीय हुन्छ, रेखीय होइन। जति चाँडो शुरु गरे उति धेरै फाइदा।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'जन्म मिति प्रविष्ट गर्नुस्',
+      description: 'Date picker बाट आफ्नो जन्म मिति छान्नुस्। AD (Gregorian) वा BS (बिक्रम संवत) दुवैमा प्रविष्ट गर्न सकिन्छ।',
+    },
+    {
+      title: 'गणना मिति छान्नुस्',
+      description: 'पूर्वनिर्धारित रूपमा आजको मिति प्रयोग हुन्छ। कुनै विशेष मितिमा उमेर जान्न (जस्तै परीक्षाको उमेर सीमा मिति) त्यो मिति राख्नुस्।',
+    },
+    {
+      title: 'क्यालेन्डर प्रणाली छान्नुस्',
+      description: 'Gregorian (AD) वा बिक्रम संवत (BS/नेपाली) मध्ये एउटा छान्नुस्।',
+    },
+    {
+      title: 'विस्तृत उमेर हेर्नुस्',
+      description: 'वर्ष, महिना, दिन, कुल दिन, कुल हप्ता र घण्टामा उमेर हेर्नुस्। अर्को जन्मदिनको countdown पनि देखिन्छ।',
+    },
+    {
+      title: 'Milestone checker प्रयोग गर्नुस्',
+      description: 'परीक्षाको उमेर सीमा मिति वा निवृत्ति मिति हालेर त्यस मितिमा आफ्नो सटीक उमेर हेर्नुस् र पात्रता जाँच्नुस्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'लोकसेवाको उमेर सीमा कुन मितिसम्म गणना हुन्छ?',
+      answer: 'लोक सेवा आयोगले विज्ञापन प्रकाशन मितिसम्म उमेर गणना गर्छ। परीक्षाको मिति वा दरखास्त दिने मिति होइन — विज्ञापनमा उल्लेखित मिति नै आधार हो। विस्तृत उमेर क्याल्कुलेटरमा सो मिति हालेर सटीक उमेर जाँच्नुस्।',
+    },
+    {
+      question: 'BS मा जन्म मिति भएको मेरो उमेर AD मा कसरी हिसाब हुन्छ?',
+      answer: 'BS मिति AD मा रूपान्तरण गर्न BS बाट लगभग ५६ वर्ष ८ महिना घटाउनुस्। हाम्रो क्याल्कुलेटरले यो रूपान्तरण स्वतः गर्छ। BS र AD दुवैमा उमेर एकसाथ देखाउँछ।',
+    },
+    {
+      question: 'नेपाल सेना भर्नामा उमेर कसरी गणना गरिन्छ?',
+      answer: 'दरखास्त दिने अन्तिम मितिसम्म उमेर गणना गरिन्छ। भर्ना विज्ञापनमा स्पष्ट रूपमा उमेर गणनाको मिति उल्लेख हुन्छ। एक दिनको फरकले पनि पात्रता असर पार्न सक्छ।',
+    },
+    {
+      question: 'NRB का कर्मचारी कति उमेरमा निवृत्त हुन्छन्?',
+      answer: 'नेपाल राष्ट्र बैंकका कर्मचारी ५८ वर्षमा निवृत्त हुन्छन्। केही विशेष पदका लागि ६० वर्षसम्म सेवा विस्तार हुन सक्छ। निवृत्तिभरण र ग्रेच्युटी सेवा अवधिको कुल महिनाको आधारमा गणना गरिन्छ।',
+    },
+    {
+      question: 'SEE परीक्षामा उमेरको कुनै कठोर सीमा छ?',
+      answer: 'नियमित विद्यार्थीका लागि कुनै कठोर अधिकतम उमेर सीमा छैन। तर सामान्यतः कक्षा १० मा अध्ययनरत विद्यार्थी १४–१८ वर्षको हुन्छन्। खुला तथा वैकल्पिक परीक्षाका लागि वयस्क शिक्षार्थीलाई उमेर छुट छ।',
+    },
+    {
+      question: 'फेब्रुअरी २९ मा जन्मेकाहरूको BS मा उमेर कसरी गणना हुन्छ?',
+      answer: 'BS क्यालेन्डरमा फेब्रुअरी हुँदैन, त्यसैले यो समस्या प्रत्यक्ष रूपमा BS मा आउँदैन। तर AD मिति भएको कागजात (जस्तै पासपोर्ट) मा फेब्रुअरी २९ भएकाहरूको उमेर सामान्य वर्षमा मार्च १ लाई जन्मदिन मानेर गणना गरिन्छ।',
+    },
+  ],
+  relatedGuides: ['age-calculator-guide', 'pregnancy-calculator-guide', 'bmi-calculator-guide'],
+  toolCTA: {
+    heading: 'अहिले नै आफ्नो विस्तृत उमेर हिसाब गर्नुस्',
+    description: 'वर्ष, महिना, दिन, घण्टा र कुल दिनमा सटीक उमेर पत्ता लगाउनुस् — BS र AD दुवै क्यालेन्डरमा। परीक्षा पात्रता, ऋण पात्रता र निवृत्ति योजनाका लागि उत्तम साधन।',
+    buttonText: 'विस्तृत उमेर क्याल्कुलेटर खोल्नुस्',
+  },
+},
+
+{
+  slug: "dns-lookup-guide",
+  toolSlug: "dns-lookup",
+  category: "developer-tools",
+  title: "DNS Lookup उपकरण — सम्पूर्ण गाइड",
+  subtitle: "DNS रेकर्डहरू, प्रोपागेसन, डाइग्नोसिस र सुरक्षा एकै ठाउँमा बुझ्नुहोस्",
+  metaTitle: "DNS Lookup उपकरण — नेपाली Developer को लागि Complete Guide",
+  metaDescription: "DNS lookup tool कसरी प्रयोग गर्ने — A, MX, CNAME, TXT रेकर्डहरू बुझ्नुहोस्, propagation check गर्नुहोस् र DNSSEC, DoH सुरक्षा सिक्नुहोस्।",
+  targetKeyword: "DNS lookup उपकरण",
+  secondaryKeywords: [
+    "DNS record types नेपाली",
+    "DNS propagation कसरी check गर्ने",
+    "DNSSEC के हो",
+    "MX record के हो",
+    "DNS TTL explain",
+    "Nepal web hosting DNS",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१४ मिनेट",
+  tags: ["DNS", "networking", "developer-tools", "security", "Nepal IT"],
+  intro: `
+<p>जब पनि तपाईं browser मा URL type गर्नुहुन्छ — जस्तै <code>github.com</code> — त्यसबेला एक अदृश्य प्रक्रिया सुरु हुन्छ जसले human-readable नाम लाई machine-readable IP address मा रूपान्तरण गर्छ। यही प्रक्रिया <strong>DNS resolution</strong> हो र यसको आधार हो <strong>Domain Name System (DNS)</strong>। एउटा <strong>DNS lookup उपकरण</strong> ले तपाईंलाई OS cache वा browser cache bypass गरेर कुनै पनि domain को live DNS records सिधै query गर्न दिन्छ।</p>
+<p>नेपालको IT sector मा web developers, sysadmins र students सबैका लागि DNS बुझ्नु आवश्यक छ — चाहे होस्टिङ setup गर्दा, email delivery समस्या diagnose गर्दा, वा cybersecurity audit गर्दा। यो guide मा real dig commands, zone file examples, DNS security best practices र Nepal-relevant hosting context सहित सम्पूर्ण जानकारी छ।</p>
+  `,
+  sections: [
+    {
+      id: "dns-kasari-kaam-garchha",
+      title: "DNS के हो र Domain Name Resolution कसरी काम गर्छ?",
+      content: `
+<p>DNS एउटा globally distributed, hierarchical database हो। जब तपाईंको computer ले <code>api.github.com</code> resolve गर्न खोज्छ, त्यसबेला <strong>recursive resolution</strong> नामको multi-step प्रक्रिया हुन्छ:</p>
+
+<h3>DNS Resolution का चरणहरू</h3>
+<ol>
+  <li><strong>Local cache check</strong> — OS पहिले आफ्नो local DNS cache हेर्छ। Linux मा: <code>resolvectl statistics</code>, Windows मा: <code>ipconfig /displaydns</code></li>
+  <li><strong>Recursive resolver</strong> — Cache miss भएमा query configured resolver मा जान्छ (जस्तै Google को <code>8.8.8.8</code> वा Cloudflare को <code>1.1.1.1</code>)</li>
+  <li><strong>Root nameservers</strong> — Resolver 13 root nameserver clusters लाई सोध्छ कि <code>.com</code> TLD को nameserver कुन हो</li>
+  <li><strong>TLD nameservers</strong> — <code>.com</code> TLD nameserver ले <code>github.com</code> का authoritative nameservers फर्काउँछ</li>
+  <li><strong>Authoritative nameserver</strong> — वास्तविक record फर्काइन्छ (जस्तै <code>api.github.com</code> को A record)</li>
+</ol>
+
+<pre><code class="language-bash"># dig ले full resolution trace देखाउँछ
+dig +trace api.github.com A
+
+# Output मा देखिन्छ:
+# Root → .com TLD → github.com NS → final A record
+# api.github.com.  60  IN  A  140.82.112.6
+</code></pre>
+
+<div class="callout callout-info">
+  <strong>मुख्य कुरा:</strong> Final answer <em>authoritative nameserver</em> बाट आउँछ — यही source of truth हो। बाँकी सबै caching layers हुन्। DNS change गरेपछि पनि पुरानो IP देखिरहन्छ भने cache expire भएको छैन।
+</div>
+
+<h3>Nepal को Web Hosting र DNS</h3>
+<p>नेपालमा धेरै websites Nepal Telecom, Vianet, WorldLink जस्ता ISPs को DNS resolvers प्रयोग गर्छन्। यी resolvers ले global DNS changes delayed cache गर्न सक्छन्। Nepal को users का लागि DNS propagation status check गर्न <code>dig @202.79.32.10</code> (Nepal Telecom's DNS) प्रयोग गर्न सकिन्छ।</p>
+      `,
+    },
+    {
+      id: "dns-record-types-nepali",
+      title: "DNS Record Types: A, AAAA, MX, CNAME, TXT, NS, SOA — विस्तृत व्याख्या",
+      content: `
+<p>DNS records zone file मा store भएका individual entries हुन्। प्रत्येक type को specific purpose हुन्छ।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Record Type</th>
+      <th>उद्देश्य</th>
+      <th>Example Value</th>
+      <th>प्रयोग</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>A</strong></td><td>Domain → IPv4 address</td><td><code>93.184.216.34</code></td><td>Web servers, APIs</td></tr>
+    <tr><td><strong>AAAA</strong></td><td>Domain → IPv6 address</td><td><code>2606:2800:220:1:248:...</code></td><td>Dual-stack sites</td></tr>
+    <tr><td><strong>CNAME</strong></td><td>अर्को domain को alias</td><td><code>myapp.vercel.app.</code></td><td>CDN, subdomains</td></tr>
+    <tr><td><strong>MX</strong></td><td>Email routing with priority</td><td><code>10 mail.example.com.</code></td><td>Email delivery</td></tr>
+    <tr><td><strong>TXT</strong></td><td>Arbitrary text / verification</td><td><code>v=spf1 include:_spf.google.com ~all</code></td><td>SPF, DKIM, DMARC</td></tr>
+    <tr><td><strong>NS</strong></td><td>Authoritative nameservers</td><td><code>ns1.cloudflare.com.</code></td><td>Domain delegation</td></tr>
+    <tr><td><strong>SOA</strong></td><td>Zone metadata</td><td>Serial, refresh, retry</td><td>Zone management</td></tr>
+    <tr><td><strong>PTR</strong></td><td>Reverse DNS (IP → domain)</td><td><code>mail.example.com.</code></td><td>Email reputation</td></tr>
+    <tr><td><strong>CAA</strong></td><td>SSL cert authority authorization</td><td><code>0 issue "letsencrypt.org"</code></td><td>SSL security</td></tr>
+  </tbody>
+</table>
+
+<h3>वास्तविक Zone File Examples</h3>
+<pre><code class="language-text">; A record — website को IP
+example.com.np.  3600  IN  A      203.0.113.10
+
+; MX records — email routing
+example.com.np.  3600  IN  MX     1  aspmx.l.google.com.
+example.com.np.  3600  IN  MX     5  alt1.aspmx.l.google.com.
+
+; TXT — SPF record (email spoofing रोक्न)
+example.com.np.  3600  IN  TXT    "v=spf1 include:_spf.google.com ~all"
+
+; CNAME — subdomain alias
+blog.example.com.np. 3600 IN CNAME myapp.vercel.app.
+</code></pre>
+
+<div class="callout callout-warning">
+  <strong>नेपालको .com.np domains:</strong> CANN द्वारा नियन्त्रित .com.np domains का लागि Mercantile Communications ले DNS manage गर्छ। NS records change गर्न registry लाई request पठाउनुपर्छ।
+</div>
+      `,
+    },
+    {
+      id: "dns-propagation-nepali",
+      title: "DNS Propagation: परिवर्तनमा समय किन लाग्छ र Status कसरी Check गर्ने",
+      content: `
+<p>DNS record change गरेपछि नयाँ value तुरुन्त सबैतिर देखिँदैन। प्रत्येक resolver ले पुरानो value cache गरेको हुन्छ र cache expire नहुन्जेल पुरानो नै serve गर्छ — यही DNS propagation हो।</p>
+
+<h3>Propagation को गणित</h3>
+<pre><code class="language-text">पुरानो A record TTL: 3600 seconds (१ घन्टा)
+
+T+0    — IP परिवर्तन गर्नुभयो। Authoritative NS मा तुरुन्त update।
+T+0    — अहिले query गर्ने resolvers ले नयाँ IP पाउँछन्।
+T+60m  — पछिल्लो १ घन्टामा query गरेका resolvers को cache expire।
+T+60m  — Propagation पूर्ण (TTL=3600 को लागि)।
+
+TTL=86400 (24h) भए worst case 24–48 घन्टा लाग्छ।
+</code></pre>
+
+<h3>Migration अघि TTL घटाउनुहोस्</h3>
+<pre><code class="language-bash"># Step 1: 48 घन्टा अघि TTL 300s मा घटाउनुहोस्
+# (DNS provider को dashboard मा)
+
+# Step 2: Low TTL propagate भयो कि भएन verify गर्नुहोस्
+dig +nocmd +noall +answer example.com.np A
+# example.com.np.  300  IN  A  203.0.113.10
+
+# Step 3: DNS change गर्नुहोस्
+# Step 4: ५ मिनेट wait गर्नुहोस्
+# Step 5: Confirm भएपछि TTL 3600+ मा फर्काउनुहोस्
+</code></pre>
+
+<h3>Global Resolvers बाट Propagation Check</h3>
+<pre><code class="language-bash">for resolver in 8.8.8.8 1.1.1.1 9.9.9.9 208.67.222.222; do
+  echo -n "$resolver: "
+  dig @$resolver +short example.com.np A
+done
+</code></pre>
+      `,
+    },
+    {
+      id: "dns-issues-nepali",
+      title: "सामान्य DNS समस्याहरू र Diagnosis कसरी गर्ने",
+      content: `
+<h3>समस्या १: NXDOMAIN — Domain फेला परेन</h3>
+<pre><code class="language-bash">dig example.com.np A  # status: NXDOMAIN
+
+# Domain registration check गर्नुहोस्
+whois example.com.np | grep -E "Expir|Status|Name Server"
+dig example.com.np NS
+</code></pre>
+
+<h3>समस्या २: SERVFAIL</h3>
+<pre><code class="language-bash">dig example.com.np A  # status: SERVFAIL
+
+# DNSSEC issue check गर्नुहोस्:
+dig +cd example.com.np A  # +cd = checking disabled
+# यो succeed भए DNSSEC broken छ
+</code></pre>
+
+<h3>समस्या ३: Local Cache मा पुरानो IP</h3>
+<pre><code class="language-bash"># Linux (systemd-resolved)
+sudo resolvectl flush-caches
+
+# Windows
+ipconfig /flushdns
+
+# macOS
+sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder
+</code></pre>
+
+<h3>समस्या ४: Email Delivery Issues</h3>
+<pre><code class="language-bash">dig example.com.np MX         # Email routing
+dig example.com.np TXT        # SPF record
+dig _dmarc.example.com.np TXT # DMARC policy
+</code></pre>
+      `,
+    },
+    {
+      id: "dns-security-nepali",
+      title: "DNS सुरक्षा: DNSSEC, DNS over HTTPS र DNS Hijacking",
+      content: `
+<p>DNS को सुरक्षा नेपालको cybersecurity context मा महत्वपूर्ण विषय हो। नेपाल सरकारको Cyber Bureau र Nepal Telecom Authority ले पनि DNS security guidelines जारी गरेका छन्।</p>
+
+<h3>DNSSEC — Cryptographic Integrity</h3>
+<pre><code class="language-bash"># DNSSEC enabled छ कि छैन check गर्नुहोस्
+dig +dnssec example.com A
+# RRSIG record देखिनुपर्छ
+
+# DNSSEC chain verify गर्नुहोस्
+dig example.com DS      # Parent zone मा DS record
+dig example.com DNSKEY  # Zone signing keys
+</code></pre>
+
+<h3>DNS Hijacking का प्रकारहरू</h3>
+<table>
+  <thead>
+    <tr><th>Attack</th><th>कसरी काम गर्छ</th><th>बचाउ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Cache Poisoning</td><td>Attacker ले resolver cache मा गलत records inject गर्छ</td><td>DNSSEC enable गर्नुहोस्</td></tr>
+    <tr><td>Registrar Hijacking</td><td>Registrar account hack गरेर NS change</td><td>2FA, Registry Lock</td></tr>
+    <tr><td>ISP Interception</td><td>ISP ले DNS queries intercept गर्छ</td><td>DoH/DoT प्रयोग गर्नुहोस्</td></tr>
+    <tr><td>Malware DNS Changer</td><td>Malware ले system DNS server बदल्छ</td><td>Network monitoring</td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-danger">
+  <strong>नेपालमा DNS Hijacking:</strong> Nepal Telecom र केही ISPs ले NXDOMAIN responses hijack गरेर आफ्नै search page देखाउने गर्छन्। यो bypass गर्न DoH वा DoT प्रयोग गर्नुहोस् — Cloudflare को 1.1.1.1 वा Google को 8.8.4.4।
+</div>
+      `,
+    },
+    {
+      id: "dns-workflows-nepali",
+      title: "Developer र Sysadmin Workflows मा DNS Lookup कहिले प्रयोग गर्ने",
+      content: `
+<p>DNS lookup tool deployment verification, security auditing र infrastructure planning को अभिन्न अंग हो।</p>
+
+<h3>Deployment को बेला DNS Checklist</h3>
+<pre><code class="language-bash"># १. A record सही server मा point गर्दैछ?
+dig +short api.myapp.com.np A
+# Expected: 203.0.113.42
+
+# २. CAA record check — SSL cert को लागि
+dig myapp.com.np CAA
+# 0 issue "letsencrypt.org"
+
+# ३. Email infrastructure verify गर्नुहोस्
+dig myapp.com.np MX
+dig myapp.com.np TXT
+</code></pre>
+
+<h3>Automation — DNS Health Check Script</h3>
+<pre><code class="language-bash">#!/bin/bash
+DOMAIN="api.myapp.com.np"
+EXPECTED_IP="203.0.113.42"
+ACTUAL_IP=$(dig +short $DOMAIN A | head -1)
+
+if [ "$ACTUAL_IP" = "$EXPECTED_IP" ]; then
+  echo "DNS ठीक छ: $DOMAIN → $ACTUAL_IP"
+  exit 0
+else
+  echo "DNS मेल खाँदैन: expected $EXPECTED_IP, got $ACTUAL_IP"
+  exit 1
+fi
+</code></pre>
+
+<h3>Reverse DNS र Email Reputation</h3>
+<pre><code class="language-bash"># Mail server को PTR record check गर्नुहोस्
+dig -x 203.0.113.42 +short
+# mail.myapp.com.np.  ← Hostname match हुनुपर्छ
+
+# PTR mismatch भए emails spam मा जान्छन्!
+</code></pre>
+      `,
+    },
+    {
+      id: "dns-best-practices-nepali",
+      title: "DNS Best Practices र नेपाल IT Sector सन्दर्भ",
+      content: `
+<p>नेपालको IT infrastructure तेजीसँग बढिरहेको छ। Startups, government agencies र enterprises सबैका लागि DNS best practices महत्वपूर्ण छन्।</p>
+
+<h3>Production Domain Security Checklist</h3>
+<ul>
+  <li><strong>Registry Lock enable गर्नुहोस्</strong> — DNS changes को लागि out-of-band verification आवश्यक हुन्छ</li>
+  <li><strong>DNSSEC enable गर्नुहोस्</strong> — Registrar र DNS provider दुवैले support गर्छन् भने अवश्य लगाउनुहोस्</li>
+  <li><strong>Registrar account मा 2FA</strong> — TOTP app प्रयोग गर्नुहोस्, SMS होइन</li>
+  <li><strong>CAA records थप्नुहोस्</strong> — Authorized CAs मात्रले SSL cert issue गर्न सकुन्</li>
+  <li><strong>DMARC p=reject set गर्नुहोस्</strong> — Email spoofing पूर्णतः block हुन्छ</li>
+  <li><strong>DNS changes को monitoring</strong> — Cloudflare, Route53 notifications setup गर्नुहोस्</li>
+</ul>
+
+<pre><code class="language-bash"># CAA record set गर्नुहोस् (DNS provider dashboard मा)
+example.com.np.  CAA  0 issue "letsencrypt.org"
+example.com.np.  CAA  0 issuewild "letsencrypt.org"
+example.com.np.  CAA  0 iodef "mailto:security@example.com.np"
+
+# Verify गर्नुहोस्:
+dig example.com.np CAA
+</code></pre>
+      `,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "Domain name enter गर्नुहोस्",
+      description: "DNS Lookup tool को input field मा कुनै पनि domain type गर्नुहोस् (जस्तै github.com वा example.com.np)। Subdomains पनि supported छन्।",
+    },
+    {
+      title: "Record type select गर्नुहोस्",
+      description: "A, AAAA, MX, CNAME, TXT, NS, SOA, PTR, SRV वा ALL मध्ये choose गर्नुहोस्। ALL select गर्दा एकै lookup मा सबै record types देखिन्छ।",
+    },
+    {
+      title: "DNS resolver choose गर्नुहोस् (optional)",
+      description: "Default resolver override गर्नुहोस्। 8.8.8.8 (Google), 1.1.1.1 (Cloudflare) वा 9.9.9.9 (Quad9) choose गरेर local cache bypass गर्नुहोस्।",
+    },
+    {
+      title: "Lookup run गर्नुहोस्",
+      description: "'Lookup' click गर्नुहोस्। Tool real-time मा DNS query गर्छ। १–३ seconds मा record values, TTL र response status देखिन्छ।",
+    },
+    {
+      title: "Results interpret गर्नुहोस्",
+      description: "प्रत्येक record को value, TTL (cache expire हुने seconds) र class (IN हुनुपर्छ) review गर्नुहोस्। NOERROR = success; NXDOMAIN = record छैन।",
+    },
+    {
+      title: "Multiple resolvers बाट compare गर्नुहोस्",
+      description: "Same lookup अलग-अलग resolvers बाट run गर्नुहोस्। Answers फरक भए DNS change अझै propagate भइरहेको छ।",
+    },
+  ],
+  faqs: [
+    {
+      question: "DNS propagation मा कति समय लाग्छ?",
+      answer: "Propagation time = पुरानो record को TTL। Old A record को TTL 3600 (१ घन्टा) भए propagation १ घन्टामा complete हुन्छ। TTL 86400 (24h) भए 24–48 घन्टा लाग्न सक्छ। Best practice: कुनै पनि planned DNS change भन्दा 24–48 घन्टा अघि TTL 300 seconds मा घटाउनुहोस्।",
+    },
+    {
+      question: "A record र CNAME मा के फरक छ?",
+      answer: "A record ले domain लाई directly IPv4 address सँग map गर्छ (example.com → 93.184.216.34)। CNAME ले अर्को domain name को alias बनाउँछ (www.example.com → example.com)। Zone apex (root domain) मा CNAME राख्न मिल्दैन।",
+    },
+    {
+      question: "DNSSEC के हो र enable गर्नुपर्छ?",
+      answer: "DNSSEC ले DNS records मा digital signatures थप्छ ताकि resolvers ले records tamper भएको छैन भनेर verify गर्न सकुन्। Production domains का लागि — विशेषगरी financial, healthcare वा government sites का लागि — DNSSEC enable गर्नु recommended छ।",
+    },
+    {
+      question: "Email deliver हुँदैन — DNS बाट कसरी check गर्ने?",
+      answer: "तीन कुरा check गर्नुहोस्: (१) MX record: dig example.com MX — email routing server, (२) SPF: dig example.com TXT | grep spf — authorized senders list, (३) DMARC: dig _dmarc.example.com TXT — policy। तीनवटै सही हुनुपर्छ नभए emails spam मा जान्छन्।",
+    },
+    {
+      question: "नेपालमा .com.np domain को DNS कसरी manage गर्ने?",
+      answer: "नेपालमा .com.np domains Mercantile Communications (CANN) द्वारा नियन्त्रित छन्। NS records change गर्न CANN को portal वा registrar मार्फत request गर्नुपर्छ। Cloudflare, Route53 जस्ता international DNS providers प्रयोग गर्न सकिन्छ तर domain registration नेपाली registrar मार्फत नै हुन्छ।",
+    },
+  ],
+  relatedGuides: ["url-encode-decode-guide", "json-formatter-guide", "regex-tester-guide"],
+  toolCTA: {
+    heading: "अहिलेनै DNS Lookup गर्नुहोस्",
+    description: "कुनै पनि domain को A, AAAA, MX, CNAME, TXT र सबै DNS record types query गर्नुहोस्। निःशुल्क, login आवश्यक छैन, multiple global resolvers बाट real-time results।",
+    buttonText: "DNS Lookup Tool खोल्नुहोस्",
+  },
+},
+
+{
+  slug: "electricity-unit-calculator-guide",
+  toolSlug: "electricity-unit-calculator",
+  category: "utility-tools",
+  title: "बिजली युनिट क्याल्कुलेटर: NEA दर, kWh गणना र मासिक बिल घटाउने पूर्ण गाइड (2026)",
+  subtitle: "Nepal Electricity Authority (NEA) को दर, kWh के हो, र घरको बिजली बिल 30% कम गर्ने तरिकाहरू",
+  metaTitle: "बिजली युनिट क्याल्कुलेटर — NEA दर र बिल गाइड नेपाल 2026",
+  metaDescription: "नेपालमा बिजली units (kWh) र मासिक bill calculate गर्नुस्। NEA 2026 tariff, appliance consumption table, र bill घटाउने tips नेपालीमा।",
+  targetKeyword: "बिजली युनिट क्याल्कुलेटर",
+  secondaryKeywords: [
+    "NEA electricity rate Nepal 2026",
+    "Nepal bijli bill calculator",
+    "kWh kya ho Nepal",
+    "NEA tariff 2026",
+    "bijli meter reading Nepal",
+    "Nepal solar panel savings",
+    "Nepal electricity consumption",
+    "bijli bill kam garne Nepal",
+    "NEA slab rate",
+    "Nepal hydropower bijli"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१३ मिनेट",
+  tags: ["Electricity", "NEA", "Energy", "नेपाल"],
+  intro: `<p>तपाईंको बिजली मिटरले गत महिना ४,२३० बाट ४,८१० युनिट count गर्यो — ५८० युनिट खपत भयो। तर यसको real cost के हो र ५८० युनिट कम हो वा बढी? नेपालमा <strong>Nepal Electricity Authority (NEA)</strong> ले बिजली supply र tariff निर्धारण गर्छ। NEA को slab-based billing system छ — जति बढी खपत, उति बढी per-unit दर। यसैले summer मा AC चलाउँदा bill unexpectedly उच्च हुन सक्छ।</p>
+<p>हाम्रो <strong>Electricity Unit Calculator</strong> ले यो complexity सरल बनाउँछ — appliances र usage hours enter गर्नुस् वा meter reading directly enter गर्नुस् — NEA को current tariff अनुसार instant bill estimate पाउनुस्। यो guide मा kWh के हो, NEA 2026 tariff slabs, appliance-wise consumption data, र Nepal मा bill 30% घटाउने proven तरिकाहरू — सबै छन्।</p>`,
+  sections: [
+    {
+      id: "bijli-unit-nepal",
+      title: "नेपालमा बिजली Unit (kWh) के हो र कसरी Compute हुन्छ?",
+      content: `<p>बिजलीको एक "unit" officially <strong>kilowatt-hour (kWh)</strong> हो। यो त्यो energy हो जुन 1,000 watt (1 kW) को appliance 1 घण्टामा प्रयोग गर्छ।</p>
+
+<h3>kWh Formula</h3>
+<blockquote>
+  <strong>खपत युनिट = शक्ति (Watt) × समय (घण्टा) ÷ १,०००</strong>
+</blockquote>
+
+<h3>नेपाली घरका Appliances को उदाहरण</h3>
+<ul>
+  <li><strong>1.5 Ton AC (1,500W)</strong> × ८ घण्टा ÷ १,००० = <strong>१२ kWh/दिन</strong></li>
+  <li><strong>Ceiling Fan (80W)</strong> × १२ घण्टा ÷ १,००० = <strong>0.96 kWh/दिन</strong></li>
+  <li><strong>LED Bulb (9W)</strong> × १० घण्टा ÷ १,००० = <strong>0.09 kWh/दिन</strong></li>
+  <li><strong>Rice Cooker (700W)</strong> × १ घण्टा ÷ १,००० = <strong>0.7 kWh per use</strong></li>
+</ul>
+
+<h3>मासिक खपत गणना</h3>
+<p>Daily kWh × ३० = Monthly kWh। AC ८ घण्टा/दिन, ३० दिन = १२ × ३० = <strong>३६० युनिट/महिना</strong>। NEA दर (जस्तै रु. १२/unit) = <strong>रु. ४,३२०/महिना</strong> सिर्फ AC बाट।</p>
+
+<h3>Energy Efficiency Rating को महत्व</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Rating</th>
+      <th>AC Power (1.5 Ton)</th>
+      <th>मासिक युनिट (8h/day)</th>
+      <th>मासिक Cost @ रु.१०</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Non-inverter (old)</td>
+      <td>~1,600W</td>
+      <td>384 युनिट</td>
+      <td>रु. ३,८४०</td>
+    </tr>
+    <tr>
+      <td>3 Star</td>
+      <td>~1,400W</td>
+      <td>336 युनिट</td>
+      <td>रु. ३,३६०</td>
+    </tr>
+    <tr>
+      <td>5 Star Inverter</td>
+      <td>~900W</td>
+      <td>216 युनिट</td>
+      <td>रु. २,१६०</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "nea-tariff-2026",
+      title: "NEA Electricity Tariff 2026: नेपालको बिजली दर",
+      content: `<p>Nepal Electricity Authority (NEA) ले नेपालमा बिजली supply र tariff निर्धारण गर्छ। यहाँ 2026 को domestic consumer tariff छ:</p>
+
+<h3>NEA Domestic Tariff 2026 (Residential)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Consumption Slab</th>
+      <th>Energy Charge (रु./युनिट)</th>
+      <th>उदाहरण: खपत</th>
+      <th>Energy Charge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0–20 युनिट</td>
+      <td>रु. ४.००</td>
+      <td>२० युनिट</td>
+      <td>रु. ८०</td>
+    </tr>
+    <tr>
+      <td>21–30 युनिट</td>
+      <td>रु. ६.५०</td>
+      <td>१० युनिट</td>
+      <td>रु. ६५</td>
+    </tr>
+    <tr>
+      <td>31–50 युनिट</td>
+      <td>रु. ८.०५</td>
+      <td>२० युनिट</td>
+      <td>रु. १६१</td>
+    </tr>
+    <tr>
+      <td>51–150 युनिट</td>
+      <td>रु. ९.५०</td>
+      <td>१०० युनिट</td>
+      <td>रु. ९५०</td>
+    </tr>
+    <tr>
+      <td>151–250 युनिट</td>
+      <td>रु. १०.५०</td>
+      <td>१०० युनिट</td>
+      <td>रु. १,०५०</td>
+    </tr>
+    <tr>
+      <td>251–400 युनिट</td>
+      <td>रु. १२.०५</td>
+      <td>१५० युनिट</td>
+      <td>रु. १,८०८</td>
+    </tr>
+    <tr>
+      <td>400 युनिट भन्दा बढी</td>
+      <td>रु. १३.०५</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>थप Charges:</strong> NEA ले energy charge बाहेक Service Charge (मिटर क्षमता अनुसार) र Demand Charge पनि लिन्छ। Single phase (5A) को लागि Service Charge रु. ३०/महिना छ।
+</div>
+
+<h3>NEA मा Meter Types</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Meter Type</th>
+      <th>Capacity</th>
+      <th>सामान्य प्रयोग</th>
+      <th>Service Charge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single Phase (1-phase)</td>
+      <td>5A, 15A</td>
+      <td>साना घर, flat</td>
+      <td>रु. ३०–रु. ५०</td>
+    </tr>
+    <tr>
+      <td>Three Phase (3-phase)</td>
+      <td>30A, 60A+</td>
+      <td>ठूला घर, business</td>
+      <td>रु. १०० रु. ३००+</td>
+    </tr>
+    <tr>
+      <td>Prepaid Meter</td>
+      <td>Variable</td>
+      <td>Urban areas</td>
+      <td>Included in recharge</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "appliance-consumption-nepal",
+      title: "नेपाली घरका Common Appliances को Power Consumption",
+      content: `<p>Common Nepali household appliances को average power consumption, NEA rate (रु. १० avg) अनुसार मासिक cost:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Appliance</th>
+      <th>Wattage</th>
+      <th>Daily Hours</th>
+      <th>युनिट/महिना</th>
+      <th>Cost/महिना @ रु.१०</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AC (1.5T, 5★)</td>
+      <td>900–1,100W</td>
+      <td>8h</td>
+      <td>216–264</td>
+      <td>रु. २,१६०–रु. २,६४०</td>
+    </tr>
+    <tr>
+      <td>Refrigerator (250L)</td>
+      <td>150–180W</td>
+      <td>24h</td>
+      <td>108–130</td>
+      <td>रु. १,०८०–रु. १,३००</td>
+    </tr>
+    <tr>
+      <td>Rice Cooker</td>
+      <td>700–900W</td>
+      <td>1h</td>
+      <td>21–27</td>
+      <td>रु. २१०–रु. २७०</td>
+    </tr>
+    <tr>
+      <td>Ceiling Fan</td>
+      <td>70–80W</td>
+      <td>12h</td>
+      <td>25–29</td>
+      <td>रु. २५०–रु. २९०</td>
+    </tr>
+    <tr>
+      <td>Water Heater (Geyser, 2kW)</td>
+      <td>2,000W</td>
+      <td>1h (winter)</td>
+      <td>60</td>
+      <td>रु. ६००</td>
+    </tr>
+    <tr>
+      <td>Washing Machine</td>
+      <td>500–700W</td>
+      <td>1h</td>
+      <td>15–21</td>
+      <td>रु. १५०–रु. २१०</td>
+    </tr>
+    <tr>
+      <td>Induction Cooktop</td>
+      <td>1,200–2,000W</td>
+      <td>1.5h</td>
+      <td>54–90</td>
+      <td>रु. ५४०–रु. ९००</td>
+    </tr>
+    <tr>
+      <td>LED TV (43 inch)</td>
+      <td>60–80W</td>
+      <td>5h</td>
+      <td>9–12</td>
+      <td>रु. ९०–रु. १२०</td>
+    </tr>
+    <tr>
+      <td>LED Bulb (9W)</td>
+      <td>9W</td>
+      <td>8h</td>
+      <td>2.16</td>
+      <td>रु. २२</td>
+    </tr>
+    <tr>
+      <td>Water Pump (0.5HP)</td>
+      <td>375W</td>
+      <td>2h</td>
+      <td>22.5</td>
+      <td>रु. २२५</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>Induction Cooktop को बढ्दो प्रयोग:</strong> नेपालमा LPG को सट्टा induction cooktop प्रयोग बढिरहेको छ। Induction ले ७०%–७५% energy efficient तरिकाले cooking गर्छ। NEA ले पनि induction cooking को प्रोत्साहन गरिरहेको छ।
+</div>`
+    },
+    {
+      id: "nea-slab-calculation-nepal",
+      title: "NEA Slab-Based Billing: नेपालमा बिजली Bill कसरी Calculate हुन्छ?",
+      content: `<p>NEA ले slab-based tariff प्रयोग गर्छ — जति बढी खपत, उति बढी per-unit दर। यसैले ३५० युनिट खपत गर्ने घरको bill, १७५ युनिट खपत गर्ने घरको भन्दा exactly 2× हुँदैन।</p>
+
+<h3>NEA Slab Calculation — 300 युनिट खपत उदाहरण</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Slab</th>
+      <th>युनिट</th>
+      <th>दर/युनिट</th>
+      <th>रकम</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0–20 युनिट</td>
+      <td>20</td>
+      <td>रु. ४.००</td>
+      <td>रु. ८०</td>
+    </tr>
+    <tr>
+      <td>21–30 युनिट</td>
+      <td>10</td>
+      <td>रु. ६.५०</td>
+      <td>रु. ६५</td>
+    </tr>
+    <tr>
+      <td>31–50 युनिट</td>
+      <td>20</td>
+      <td>रु. ८.०५</td>
+      <td>रु. १६१</td>
+    </tr>
+    <tr>
+      <td>51–150 युनिट</td>
+      <td>100</td>
+      <td>रु. ९.५०</td>
+      <td>रु. ९५०</td>
+    </tr>
+    <tr>
+      <td>151–250 युनिट</td>
+      <td>100</td>
+      <td>रु. १०.५०</td>
+      <td>रु. १,०५०</td>
+    </tr>
+    <tr>
+      <td>251–300 युनिट</td>
+      <td>50</td>
+      <td>रु. १२.०५</td>
+      <td>रु. ६०३</td>
+    </tr>
+    <tr>
+      <td>Energy Charge Total</td>
+      <td>300</td>
+      <td>—</td>
+      <td>रु. २,९०९</td>
+    </tr>
+    <tr>
+      <td>Service Charge</td>
+      <td>—</td>
+      <td>—</td>
+      <td>रु. ३०–रु. ५०</td>
+    </tr>
+    <tr>
+      <td><strong>कुल Bill</strong></td>
+      <td>—</td>
+      <td>—</td>
+      <td><strong>रु. २,९३९–रु. २,९५९</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>Slab Boundary:</strong> यदि तपाईं ४०० युनिटको boundary नजिक हुनुहुन्छ भने खपत monitor गर्नुस् — ४०० युनिट नाघेपछि प्रति युनिट रु. १.०० थप लाग्छ। यो थोरै units मा सय-दुई सय रुपैयाँ थप हुन सक्छ।
+</div>`
+    },
+    {
+      id: "nepal-solar-net-metering",
+      title: "नेपालमा Solar Panels र Net Metering",
+      content: `<p>नेपालमा rooftop solar increasingly popular भइरहेको छ। NEA ले net metering policy implement गरेको छ जसले solar consumers लाई grid मा surplus electricity export गर्न र credit पाउन अनुमति दिन्छ।</p>
+
+<h3>नेपालमा Solar Economics 2026</h3>
+<table>
+  <thead>
+    <tr>
+      <th>System Size</th>
+      <th>अनुमानित Cost</th>
+      <th>मासिक Generation</th>
+      <th>मासिक Savings</th>
+      <th>Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 kWp</td>
+      <td>रु. ८०,०००–रु. १,००,०००</td>
+      <td>१२०–१३० युनिट</td>
+      <td>रु. १,२००–रु. १,३००</td>
+      <td>५–७ वर्ष</td>
+    </tr>
+    <tr>
+      <td>3 kWp</td>
+      <td>रु. २,२०,०००–रु. २,८०,०००</td>
+      <td>३६०–३९० युनिट</td>
+      <td>रु. ३,६००–रु. ३,९००</td>
+      <td>५–७ वर्ष</td>
+    </tr>
+    <tr>
+      <td>5 kWp</td>
+      <td>रु. ३,५०,०००–रु. ४,५०,०००</td>
+      <td>६००–६५० युनिट</td>
+      <td>रु. ६,०००–रु. ६,५००</td>
+      <td>४–६ वर्ष</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>NEA Net Metering नीति:</strong> नेपालमा net metering को लागि NEA मा application गर्नुपर्छ। Export गरेको electricity को credit NEA ले तोकेको rate (हाल रु. ७–रु. ८/युनिट) मा दिइन्छ। Kathmandu, Pokhara, Biratnagar जस्ता urban areas मा net metering लोकप्रिय भइरहेको छ।
+</div>
+
+<h3>Nepal को Load Shedding र Solar</h3>
+<p>नेपालमा हाल load shedding आधिकारिक रूपमा लगभग शून्य छ (२०२५–२०२६ सम्म)। तर grid reliability अझै पूर्ण छैन। Battery backup सहितको solar system ले uninterrupted power ensure गर्छ — र long-term मा NEA बिल पनि घटाउँछ।</p>`
+    },
+    {
+      id: "reduce-bijli-bill-nepal",
+      title: "नेपालमा बिजली Bill 30% घटाउने Tips",
+      content: `<p>नेपालका धेरैजसो घरहरूले आफ्नो बिजली को २५%–४०% waste गर्छन् — inefficiency बाट। यी तरिकाहरूले bill significantly reduce गर्न सक्छ।</p>
+
+<h3>Appliance Upgrades (सबभन्दा ठूलो Impact)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Upgrade</th>
+      <th>मासिक Saving</th>
+      <th>One-Time Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regular fan → Energy Efficient Fan</td>
+      <td>रु. १५०–रु. २०० /fan</td>
+      <td>रु. ३,०००–रु. ५,०००</td>
+    </tr>
+    <tr>
+      <td>Incandescent/CFL → LED</td>
+      <td>रु. ५०–रु. १०० /point</td>
+      <td>रु. १००–रु. २०० /bulb</td>
+    </tr>
+    <tr>
+      <td>Old AC → 5-Star Inverter</td>
+      <td>रु. ८०० –रु. १,५०० /month</td>
+      <td>रु. ४५,०००–रु. ७०,०००</td>
+    </tr>
+    <tr>
+      <td>Gas cooking → Induction (NEA off-peak)</td>
+      <td>LPG cost saved</td>
+      <td>रु. ३,०००–रु. ७,०००</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Zero-Cost Behavioral Changes</h3>
+<ul>
+  <li><strong>AC temperature:</strong> २०°C को सट्टा २४°C set गर्नुस् — प्रति degree ३%–६% कम खपत</li>
+  <li><strong>AC filter:</strong> महिनामा एक पटक clean गर्नुस् — dirty filter ले २५% बढी electricity खर्च गराउँछ</li>
+  <li><strong>Fridge placement:</strong> Wall बाट कम्तीमा १० cm दूर राख्नुस् — १५%–२०% कम power</li>
+  <li><strong>Standby power:</strong> TV, set-top box, chargers off गरेर पनि plug मा राख्दा ५–१५W consume हुन्छ — power strip use गर्नुस्</li>
+  <li><strong>NEA Prepaid Meter:</strong> Prepaid meter मा switch गर्नुस् — real-time consumption tracking बाट wastage कम हुन्छ</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>३०% Savings Plan:</strong> सबै bulbs LED (+5%) + एउटा efficient fan (+5%) + AC 24°C (+8%) + AC filter monthly (+5%) + standby eliminate (+3%) + fridge optimize (+4%) = <strong>रु. १०,००० भन्दा कम खर्चमा ३०% reduction।</strong>
+</div>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "Calculation Method छान्नुस्",
+      description: "Calculator ले दुई तरिका offer गर्छ: (1) Appliance-wise — हरेक appliance, wattage, र daily hours enter गर्नुस्; (2) Meter reading — current र last month को reading enter गर्नुस्।"
+    },
+    {
+      title: "Appliance Details वा Meter Reading Enter गर्नुस्",
+      description: "Appliance-wise को लागि common appliances select गर्नुस् वा custom wattage enter गर्नुस्। Meter reading को लागि current display reading र last bill को previous reading enter गर्नुस्।"
+    },
+    {
+      title: "Nepal / State Select गर्नुस्",
+      description: "Nepal select गर्नुस् — Calculator NEA को 2026 tariff slabs use गर्छ, service charge सहित।"
+    },
+    {
+      title: "Bill Result हेर्नुस्",
+      description: "Calculator ले total units consumed, slab-wise energy charges, service charge, र total bill estimate देखाउँछ। आफ्नो actual NEA bill सँग compare गर्नुस्।"
+    },
+    {
+      title: "Biggest Consumers Identify गर्नुस्",
+      description: "Appliance-wise breakdown ले कुन devices सबभन्दा बढी bill बढाइरहेका छन् देखाउँछ। Top 2–3 consumers मा focus गरेर savings maximize गर्नुस्।"
+    }
+  ],
+  faqs: [
+    {
+      question: "नेपालमा बिजलीको १ युनिट कति हो?",
+      answer: "नेपालमा बिजलीको price NEA को slab system अनुसार फरक हुन्छ। पहिलो २० युनिट रु. ४/युनिट, ५१–१५० युनिट रु. ९.५०/युनिट, र ४०० युनिट भन्दा बढीमा रु. १३.०५/युनिट छ।"
+    },
+    {
+      question: "AC ले नेपालमा महिनामा कति बिजली खर्च गर्छ?",
+      answer: "1.5 Ton 5-Star Inverter AC, ८ घण्टा/दिन चलाउँदा महिनामा लगभग २१६–२६४ युनिट खर्च हुन्छ। NEA rate अनुसार (avg रु. १०–रु. १२/unit) यो रु. २,१६०–रु. ३,१७० मासिक हुन्छ।"
+    },
+    {
+      question: "NEA मा Meter Reading कसरी हेर्ने?",
+      answer: "आफ्नो digital meter को LCD display मा kWh reading हेर्नुस्। Analog meter को ५ dials बायाँबाट दायाँ read गर्नुस् — pointer दुई number बीचमा छ भने सानो number लिनुस्।"
+    },
+    {
+      question: "नेपालमा Solar Net Metering कसरी काम गर्छ?",
+      answer: "Solar panel ले grid मा export गरेको युनिटलाई NEA ले credit दिन्छ। Bill मा: Grid बाट import − Solar बाट export = Net units बिल गरिन्छ। NEA ले export rate हाल रु. ७–रु. ८/unit तिर्छ।"
+    },
+    {
+      question: "NEA को Prepaid Meter को फाइदा के छ?",
+      answer: "Prepaid meter मा advance recharge गरेर real-time consumption track गर्न सकिन्छ। Monthly bill shock हुँदैन, र consumption awareness ले wastage कम हुन्छ। Kathmandu Valley मा यो increasingly popular छ।"
+    },
+    {
+      question: "नेपालमा बिजली बिल किन गर्मीमा बढी हुन्छ?",
+      answer: "AC नै मुख्य कारण हो — गर्मीमा AC ले total bill को ५०%–७०% हिस्सा लिन सक्छ। Slab billing ले थप cost बढाउँछ — AC use गर्दा higher slabs मा push हुन्छ र marginal unit महंगो पर्छ।"
+    },
+    {
+      question: "Induction cooktop नेपालमा राम्रो हो?",
+      answer: "हो — NEA ले induction cooking को प्रोत्साहन गरिरहेको छ। LPG भन्दा सुरक्षित र ७०%–७५% energy efficient छ। नेपालमा load shedding अब minimal भएकाले induction को प्रयोग practical छ।"
+    },
+    {
+      question: "NEA मा billing error भए के गर्ने?",
+      answer: "NEA को customer care (16119) मा call गर्नुस् वा नजिकको NEA office मा जानुस्। Meter reading compare गर्नुस् — actual reading र bill मा भएको reading फरक छ भने meter re-read request गर्न सकिन्छ।"
+    }
+  ],
+  relatedGuides: ["electricity-bill-calculator-guide", "unit-converter-guide", "gst-calculator-guide"],
+  toolCTA: {
+    heading: "अहिले नै बिजली Bill Calculate गर्नुस्",
+    description: "Appliances वा meter reading enter गर्नुस्, Nepal (NEA) select गर्नुस् — slab-wise breakdown सहित accurate मासिक bill estimate तुरुन्त पाउनुस्।",
+    buttonText: "Electricity Unit Calculator खोल्नुस्"
+  }
+},
+
+{
+  slug: 'exif-viewer-guide',
+  toolSlug: 'exif-viewer',
+  category: 'image-tools',
+  title: 'EXIF Data Viewer — सम्पूर्ण गाइड',
+  subtitle: 'तपाईंको हरेक फोटोमा लुकेको metadata पढ्नुहोस् र आफूलाई सुरक्षित राख्नुहोस्',
+  metaTitle: 'EXIF Data Viewer Online — Photo Metadata नि:शुल्क हेर्नुहोस्',
+  metaDescription: 'जुनसुकै फोटोको EXIF data online हेर्नुहोस्। GPS location, camera settings, timestamp र थप। Privacy guide सहित। नि:शुल्क र instant।',
+  targetKeyword: 'EXIF डेटा हेर्ने',
+  secondaryKeywords: [
+    'photo ko EXIF data kasto hunchha',
+    'image metadata Nepal',
+    'photo bata GPS location',
+    'EXIF data hataaune',
+    'photo hidden data',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '११ मिनेट',
+  tags: ['EXIF', 'Metadata', 'Privacy', 'Photography', 'Nepali'],
+  intro: `<p>के तपाईंलाई थाहा छ — जब तपाईं smartphone वा digital camera बाट फोटो खिच्नुहुन्छ, त्यो फोटोमा केवल image मात्र होइन, दर्जनौं थप जानकारीहरू पनि save हुन्छन्? जस्तै तपाईं ठीक कहाँ हुनुहुन्थ्यो (GPS coordinates), कुन समयमा फोटो खिचियो, कुन camera प्रयोग गरियो, ISO कति थियो — यो सबै data तपाईंको फोटोको भित्रै लुकेको हुन्छ। यसलाई <strong>EXIF data</strong> भनिन्छ। धेरैजसो मानिसहरूलाई यो अस्तित्वमा छ भन्नेसम्म थाहा हुँदैन, र फोटो share गर्दा यो data पनि साथमा जान्छ।</p>
+<p>ToolsArena को <strong>EXIF Viewer</strong> ले जुनसुकै JPEG, PNG, HEIC वा RAW image को पूरा EXIF data instant देखाउँछ — कुनै software install नगरी, login नगरी।</p>`,
+  sections: [
+    {
+      id: 'exif-ke-ho-ne',
+      title: 'EXIF Data के हो? तपाईंको फोटोमा के-के लुकेको छ',
+      content: `<h3>EXIF को शुरुवात</h3>
+<p>EXIF (Exchangeable Image File Format) standard सन् १९९५ मा Japan को JEITA organization ले बनाएको थियो। Camera वा phone ले फोटो खिच्दा, image सँगसँगै dozens of metadata fields automatically file मा लेखिन्छन् — छुट्टै file मा होइन, image file भित्रै।</p>
+
+<h3>EXIF मा के-के हुन्छ?</h3>
+<ul>
+  <li><strong>Camera Info:</strong> Manufacturer, model, serial number, lens</li>
+  <li><strong>Date & Time:</strong> फोटो खिचेको exact second — millisecond सम्म</li>
+  <li><strong>GPS Location:</strong> Latitude, longitude, altitude, camera को दिशा</li>
+  <li><strong>Exposure Settings:</strong> Shutter speed, aperture, ISO, flash</li>
+  <li><strong>Image Properties:</strong> Pixel dimensions, color space, orientation</li>
+</ul>
+
+<div class="callout-warning">
+  <strong>Privacy चेतावनी:</strong> WhatsApp मा "Document" mode मा फोटो पठाउँदा EXIF data intact रहन्छ — receiver ले GPS location देख्न सक्छ। "Image" mode मा compress गरेर EXIF हटाइन्छ।
+</div>`,
+    },
+    {
+      id: 'exif-privacy-ne',
+      title: 'Privacy खतरा: EXIF मा कुन Personal Data छ र कसरी Expose हुन्छ',
+      content: `<h3>नेपाल सन्दर्भमा खतराहरू</h3>
+<ul>
+  <li><strong>Online बेचबिखन:</strong> घरमा खिचेको product photo मा घरको GPS location हुन्छ। Buyer लाई address थाहा हुन्छ।</li>
+  <li><strong>बालबालिकाको सुरक्षा:</strong> विद्यालय, खेलमैदान, घरनजिकका ठाउँहरूको फोटोले बालबालिकाको regular location pattern देखाउँछ।</li>
+  <li><strong>Property विवाद:</strong> Nepal को अदालतमा EXIF timestamp र GPS location evidence को रूपमा प्रयोग हुन सक्छ।</li>
+  <li><strong>Journalist सुरक्षा:</strong> Field reporting गर्दा raw photos को location expose हुन सक्छ।</li>
+</ul>
+
+<div class="callout-warning">
+  <strong>महत्वपूर्ण:</strong> Dropbox, Google Drive, वा email attachment मा सिधै फोटो share गर्दा पूरा EXIF — GPS सहित — intact रहन्छ।
+</div>
+
+<h3>कहाँ EXIF safe छ, कहाँ छैन</h3>
+<table>
+  <thead>
+    <tr><th>Platform</th><th>EXIF रहन्छ?</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Email attachment</td><td>हो — पूरा EXIF</td></tr>
+    <tr><td>WhatsApp image mode</td><td>छैन — compress + strip</td></tr>
+    <tr><td>WhatsApp document mode</td><td>हो — original file</td></tr>
+    <tr><td>Instagram</td><td>छैन — हटाइन्छ</td></tr>
+    <tr><td>Viber</td><td>हो (file mode मा)</td></tr>
+    <tr><td>Google Drive link</td><td>हो — original file</td></tr>
+    <tr><td>Facebook</td><td>छैन (publicly)</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'remove-exif-ne',
+      title: 'फोटो Share गर्नुअघि EXIF कसरी हटाउने',
+      content: `<h3>Method 1: ToolsArena EXIF Viewer</h3>
+<p>EXIF हेरेपछि "Strip EXIF & Download" button click गर्नुहोस्। Image quality उस्तै रहनेछ — केवल metadata हट्नेछ।</p>
+
+<h3>Method 2: Windows मा</h3>
+<ol>
+  <li>Image मा right-click → Properties</li>
+  <li>"Details" tab खोल्नुहोस्</li>
+  <li>"Remove Properties and Personal Information" click गर्नुहोस्</li>
+</ol>
+
+<h3>Method 3: iPhone मा</h3>
+<p>Photos app → Share → share sheet मा privacy icon → "Location" off गर्नुहोस्।</p>
+
+<div class="callout-tip">
+  <strong>Safe Practice:</strong> घरमा, private ठाउँमा, वा बालबालिकाको फोटो share गर्नुअघि सधैं EXIF check गर्नुहोस् र location strip गर्नुहोस्।
+</div>`,
+    },
+    {
+      id: 'exif-formats-ne',
+      title: 'JPEG, PNG, HEIC, RAW — कुन Format मा EXIF हुन्छ?',
+      content: `<table>
+  <thead>
+    <tr><th>Format</th><th>EXIF Support</th><th>नोट</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>JPEG / JPG</td><td>पूरा EXIF</td><td>GPS सहित सबै fields — सबभन्दा complete</td></tr>
+    <tr><td>PNG</td><td>Limited</td><td>Camera ले PNG प्रयोग गर्दैन। Screenshot मा EXIF हुँदैन।</td></tr>
+    <tr><td>HEIC</td><td>पूरा EXIF</td><td>iPhone को default format — full GPS support</td></tr>
+    <tr><td>RAW</td><td>Full + Extra</td><td>Manufacturer data समेत — सबभन्दा detailed</td></tr>
+    <tr><td>GIF</td><td>छैन</td><td>GIF मा EXIF support नै छैन</td></tr>
+  </tbody>
+</table>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'ToolsArena मा EXIF Viewer खोल्नुहोस्',
+      description: 'Website मा जानुहोस् र EXIF Data Viewer tool खोल्नुहोस्। कुनै software वा login आवश्यक छैन।',
+    },
+    {
+      title: 'फोटो Upload गर्नुहोस्',
+      description: 'Upload area मा click गर्नुहोस् वा drag-and-drop गर्नुहोस्। JPEG, PNG, HEIC, TIFF, RAW सबै support छन्। File locally process हुन्छ — server मा upload हुँदैन।',
+    },
+    {
+      title: 'सबै EXIF Fields हेर्नुहोस्',
+      description: 'Tool ले सबै detected fields categories मा देखाउँछ: Camera Info, Date/Time, GPS Location, Exposure Settings।',
+    },
+    {
+      title: 'GPS Data check गर्नुहोस्',
+      description: 'GPS data भए coordinates र map मा location देखिनेछ। Google Maps मा verify गर्न सकिन्छ।',
+    },
+    {
+      title: 'आवश्यक भए EXIF हटाउनुहोस्',
+      description: '"Strip EXIF & Download" click गर्नुहोस् — quality नघटाईकन clean image पाउनुहोस्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'के EXIF check गर्दा फोटो server मा upload हुन्छ?',
+      answer: 'होइन। सबै EXIF extraction तपाईंको browser मा नै हुन्छ। Image कतै जाँदैन — private photos को लागि यो महत्वपूर्ण छ।',
+    },
+    {
+      question: 'फोटोमा GPS data किन देखिँदैन?',
+      answer: 'कारणहरू: Instagram/WhatsApp image mode बाट share भएको थियो जसले EXIF strip गर्छ; camera app मा location off थियो; indoor थियो त GPS fix भएन; वा EXIF पहिले नै remove भइसकेको थियो।',
+    },
+    {
+      question: 'के screenshot मा EXIF हुन्छ?',
+      answer: 'होइन। Screenshot मा EXIF हुँदैन। केवल camera बाट खिचेको actual photo मा EXIF हुन्छ।',
+    },
+    {
+      question: 'के EXIF बाट घरको address थाहा हुन सक्छ?',
+      answer: 'हो। घरमा GPS on राखेर फोटो खिची email वा cloud link बाट share गर्नुभयो भने — त्यसको EXIF मा exact GPS coordinates हुन्छ जसबाट घरको location थाहा हुन्छ।',
+    },
+    {
+      question: 'नेपालमा EXIF data कानुनी रूपमा evidence हुन्छ?',
+      answer: 'हो। नेपालको अदालतमा digital evidence accepted छ। EXIF timestamp र GPS location property विवाद, insurance claim र cyber crime cases मा प्रयोग हुन्छ।',
+    },
+  ],
+  relatedGuides: ['image-compressor-guide', 'image-resizer-guide', 'crop-image-guide'],
+  toolCTA: {
+    heading: 'आफ्नो Photos को Hidden Data अहिले हेर्नुहोस्',
+    description: 'जुनसुकै फोटो upload गर्नुहोस् — GPS location, camera settings, timestamp — सबै instant देखिनेछ। Share गर्नुअघि clean गर्नुहोस्। नि:शुल्क र private।',
+    buttonText: 'EXIF Viewer खोल्नुहोस्',
+  },
+},
+
+{
+  slug: "gst-breakdown-calculator-guide",
+  toolSlug: "gst-breakdown-calculator",
+  category: "finance-tools",
+  title: "GST विभाजन क्याल्कुलेटर: नेपालमा VAT र GST को पूर्ण गाइड (2026)",
+  subtitle: "VAT र GST को सही हिसाब कसरी गर्ने — नेपाल सन्दर्भमा real examples सहित",
+  metaTitle: "GST विभाजन क्याल्कुलेटर — नेपाल VAT गाइड 2026",
+  metaDescription: "नेपालमा GST र VAT calculation को पूर्ण गाइड। IRD नेपाल नियम, 13% VAT दर, र व्यापारिक invoice tips नेपालीमा।",
+  targetKeyword: "GST विभाजन क्याल्कुलेटर",
+  secondaryKeywords: [
+    "Nepal VAT calculator",
+    "13 percent VAT Nepal",
+    "IRD Nepal tax",
+    "VAT invoice Nepal",
+    "Nepal tax calculation",
+    "VAT registration Nepal",
+    "Nepal GST rate",
+    "व्यापार कर नेपाल",
+    "VAT refund Nepal",
+    "Nepal indirect tax"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१२ मिनेट",
+  tags: ["GST", "VAT", "Tax", "नेपाल"],
+  intro: `<p>नेपालमा भारतको जस्तो GST प्रणाली छैन — नेपालले <strong>VAT (Value Added Tax)</strong> प्रणाली अपनाएको छ, जुन Inland Revenue Department (IRD) ले व्यवस्थापन गर्छ। तर "GST Breakdown Calculator" को सिद्धान्त नेपालमा पनि त्यत्तिकै लागू हुन्छ — तपाईंको व्यापारिक invoice मा कर कति छ, आधार मूल्य कति हो, र सरकारलाई कति बुझाउनु छ भन्ने कुरा स्पष्ट गर्न यो उपकरण मद्दत गर्छ। नेपालमा व्यापार गर्ने जो कोहीले — साना व्यापारी देखि ठूला कम्पनी सम्म — कर हिसाब सही गर्नु अनिवार्य छ।</p>
+<p>यो गाइडमा हामी नेपालको VAT प्रणाली, १३% मानक दर, IRD का नियमहरू, र invoice मा कर breakdown कसरी देखाउने भन्ने सबै कुरा विस्तारमा बताउनेछौं। साथै, भारतको GST प्रणालीसँग तुलना गरेर नेपाली व्यापारीहरूका लागि के फरक छ भन्ने पनि स्पष्ट पार्नेछौं।</p>`,
+  sections: [
+    {
+      id: "nepal-vat-gst-kya-ho",
+      title: "नेपालमा VAT र GST: के फरक छ र किन महत्वपूर्ण छ?",
+      content: `<p>नेपालमा मूल्य अभिवृद्धि कर (VAT) को एकल दर <strong>१३%</strong> छ जुन धेरैजसो वस्तु र सेवाहरूमा लागू हुन्छ। भारतमा ४-५ वटा GST slabs (0%, 5%, 12%, 18%, 28%) छन् भने नेपालमा मुख्यतः एउटा मात्र दर छ — यसले हिसाब सरल बनाउँछ।</p>
+
+<h3>नेपालको VAT प्रणालीका मुख्य विशेषताहरू</h3>
+<ul>
+  <li><strong>मानक दर:</strong> १३% — धेरैजसो वस्तु र सेवाहरूमा</li>
+  <li><strong>शून्य दर (0%):</strong> निर्यात (Export) हरूमा</li>
+  <li><strong>मुक्त (Exempt):</strong> आधारभूत खाद्यान्न, स्वास्थ्य सेवा, शिक्षा, कृषि उपकरण</li>
+  <li><strong>दर्ता सीमा:</strong> वार्षिक कारोबार रु. ५० लाख भन्दा बढी भए VAT दर्ता अनिवार्य</li>
+  <li><strong>Filing:</strong> मासिक VAT return IRD को portal (ird.gov.np) मा submit गर्नुपर्छ</li>
+</ul>
+
+<div class="callout-info">
+  <strong>IRD नेपाल सम्पर्क:</strong> Inland Revenue Department, Lazimpat, Kathmandu। Hotline: 16600-10-000। Website: ird.gov.np। VAT सम्बन्धी सबै प्रश्नका लागि यहाँ सम्पर्क गर्नुस्।
+</div>
+
+<h3>नेपाल VAT vs भारत GST — तुलनात्मक तालिका</h3>
+<table>
+  <thead>
+    <tr>
+      <th>पक्ष</th>
+      <th>नेपाल VAT</th>
+      <th>भारत GST</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>मानक दर</td>
+      <td>१३%</td>
+      <td>१८% (सबभन्दा common)</td>
+    </tr>
+    <tr>
+      <td>Slabs संख्या</td>
+      <td>मूलतः १ (१३%)</td>
+      <td>५ (0%, 5%, 12%, 18%, 28%)</td>
+    </tr>
+    <tr>
+      <td>Components</td>
+      <td>एकल VAT</td>
+      <td>CGST + SGST वा IGST</td>
+    </tr>
+    <tr>
+      <td>दर्ता सीमा</td>
+      <td>रु. ५० लाख</td>
+      <td>₹२० लाख</td>
+    </tr>
+    <tr>
+      <td>Authority</td>
+      <td>IRD (Inland Revenue Dept.)</td>
+      <td>CBIC (Central Board)</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "nepal-vat-rates-2026",
+      title: "नेपालको VAT दर तालिका 2026: वस्तु र सेवाहरू",
+      content: `<p>नेपालमा VAT को दर निर्धारण IRD र अर्थ मन्त्रालयले गर्छ। यहाँ 2026 का लागि updated rates र examples दिइएका छन्:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VAT दर</th>
+      <th>वर्ग</th>
+      <th>उदाहरणहरू</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>१३%</strong></td>
+      <td>मानक (Standard)</td>
+      <td>Electronics, कपडा, furniture, construction materials, IT services, consultancy, telecom, restaurant (registered)</td>
+    </tr>
+    <tr>
+      <td><strong>0%</strong></td>
+      <td>शून्य दर (Export)</td>
+      <td>सबै निर्यात वस्तु र सेवाहरू</td>
+    </tr>
+    <tr>
+      <td><strong>Exempt</strong></td>
+      <td>मुक्त</td>
+      <td>चामल, दाल, आटा, तरकारी, फलफूल, दूध, स्वास्थ्य सेवा, शिक्षा, सार्वजनिक यातायात, कृषि उपकरण, पशुपन्छी</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>सामान्य सेवाहरूमा VAT — रकम सहित उदाहरण</h3>
+<table>
+  <thead>
+    <tr>
+      <th>सेवा</th>
+      <th>आधार मूल्य (रु.)</th>
+      <th>VAT १३%</th>
+      <th>कुल Invoice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IT Consulting</td>
+      <td>५०,०००</td>
+      <td>६,५००</td>
+      <td>५६,५००</td>
+    </tr>
+    <tr>
+      <td>Construction Material</td>
+      <td>२,००,०००</td>
+      <td>२६,०००</td>
+      <td>२,२६,०००</td>
+    </tr>
+    <tr>
+      <td>Restaurant Bill</td>
+      <td>३,०००</td>
+      <td>३९०</td>
+      <td>३,३९०</td>
+    </tr>
+    <tr>
+      <td>Mobile Phone</td>
+      <td>४०,०००</td>
+      <td>५,२००</td>
+      <td>४५,२००</td>
+    </tr>
+    <tr>
+      <td>CA / Audit Services</td>
+      <td>१५,०००</td>
+      <td>१,९५०</td>
+      <td>१६,९५०</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>थप कर:</strong> नेपालमा केही वस्तुहरूमा Excise Duty पनि लाग्छ (जस्तै: मदिरा, चुरोट, गाडी) — VAT त्यस माथि compute हुन्छ। त्यसैले यी वस्तुहरूको effective tax rate धेरै बढी हुन्छ।
+</div>`
+    },
+    {
+      id: "vat-inclusive-exclusive-nepal",
+      title: "Nepal मा VAT Inclusive र Exclusive: Invoice कसरी बनाउने?",
+      content: `<p>नेपालका व्यापारीहरूले invoice बनाउँदा VAT exclusive (आधार मूल्यमा VAT थप्ने) र VAT inclusive (मूल्यमा VAT पहिल्यै समावेश) दुवै format प्रयोग गर्छन्।</p>
+
+<h3>VAT Exclusive (कर छुट्टै थपिन्छ) — B2B Standard</h3>
+<blockquote>
+  VAT रकम = आधार मूल्य × १३ ÷ १००<br>
+  कुल Invoice = आधार मूल्य + VAT रकम
+</blockquote>
+
+<p><strong>उदाहरण:</strong> एक software developer ले रु. ८०,००० को invoice काट्छ (VAT exclusive)।</p>
+<ul>
+  <li>VAT = रु. ८०,००० × १३% = रु. १०,४००</li>
+  <li>Invoice Total = रु. ९०,४००</li>
+</ul>
+
+<h3>VAT Inclusive (कर मूल्यमा पहिल्यै छ) — Retail</h3>
+<blockquote>
+  VAT रकम = कुल मूल्य × १३ ÷ ११३<br>
+  आधार मूल्य = कुल मूल्य − VAT रकम
+</blockquote>
+
+<p><strong>उदाहरण:</strong> एउटा laptop को मूल्य रु. ९०,४०० (VAT inclusive)।</p>
+<ul>
+  <li>VAT = रु. ९०,४०० × १३ ÷ ११३ = रु. १०,४००</li>
+  <li>आधार मूल्य = रु. ८०,०००</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>नेपाल IRD नियम:</strong> VAT दर्ता भएका व्यापारीहरूले हरेक व्यापारिक कारोबारमा tax invoice अनिवार्य जारी गर्नुपर्छ। Invoice मा VAT registration number, tax amount, र आधार मूल्य छुट्टाछुट्टै देखाउनुपर्छ।
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>पक्ष</th>
+      <th>VAT Exclusive</th>
+      <th>VAT Inclusive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>कहाँ प्रयोग</td>
+      <td>B2B कारोबार</td>
+      <td>Retail / उपभोक्ता बिक्री</td>
+    </tr>
+    <tr>
+      <td>उदाहरण (रु. १०,०००)</td>
+      <td>रु. ११,३०० तिर्नुस्</td>
+      <td>रु. १०,००० तिर्नुस् (VAT = रु. १,१५०.४४)</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "nrb-nepal-tax-context",
+      title: "Nepal Rastra Bank र आर्थिक सन्दर्भ: 2026 को कर परिदृश्य",
+      content: `<p>नेपालको कर प्रणाली बुझ्न Nepal Rastra Bank (NRB) को भूमिका र समग्र आर्थिक सन्दर्भ थाहा पाउनु जरुरी छ। NRB ले मौद्रिक नीति निर्धारण गर्छ भने IRD ले कर संकलन गर्छ।</p>
+
+<h3>नेपालको आर्थिक तथ्यांक 2026</h3>
+<table>
+  <thead>
+    <tr>
+      <th>सूचक</th>
+      <th>अनुमानित मूल्य (2026)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VAT दर</td>
+      <td>१३%</td>
+    </tr>
+    <tr>
+      <td>आयकर (व्यक्तिगत, अधिकतम)</td>
+      <td>३६%</td>
+    </tr>
+    <tr>
+      <td>Corporate Tax Rate</td>
+      <td>२५%</td>
+    </tr>
+    <tr>
+      <td>VAT दर्ता सीमा</td>
+      <td>रु. ५० लाख वार्षिक</td>
+    </tr>
+    <tr>
+      <td>NRB Base Rate (अनुमानित)</td>
+      <td>५.५%–७%</td>
+    </tr>
+    <tr>
+      <td>TDS on Services</td>
+      <td>१५%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>VAT Input Credit नेपालमा</h3>
+<p>भारतको ITC जस्तै नेपालमा पनि VAT registered व्यापारीहरूले खरिदमा तिरेको VAT लाई बिक्रीको VAT बाट घटाउन पाउँछन्। उदाहरण:</p>
+<ul>
+  <li>कच्चा माल खरिद: रु. १,००,०००  + रु. १३,००० VAT</li>
+  <li>तयार माल बिक्री: रु. २,००,०० + रु. २६,००० VAT</li>
+  <li>IRD लाई बुझाउनु: रु. २६,००० − रु. १३,००० = <strong>रु. १३,०००</strong></li>
+</ul>
+
+<div class="callout-info">
+  <strong>VAT Refund:</strong> यदि Input VAT, Output VAT भन्दा बढी भएमा (जस्तै निर्यातकर्ताको हकमा), IRD बाट refund claim गर्न सकिन्छ। Process मा ३–६ महिना लाग्न सक्छ।
+</div>`
+    },
+    {
+      id: "invoice-nepal-compliance",
+      title: "नेपालमा VAT-Compliant Invoice कसरी बनाउने?",
+      content: `<p>IRD का नियमहरू अनुसार, VAT दर्ता भएका व्यापारीहरूले निम्न जानकारी सहितको कर invoice जारी गर्नुपर्छ:</p>
+
+<h3>अनिवार्य Invoice Elements</h3>
+<ul>
+  <li>व्यापार दर्ता नम्बर र VAT PAN नम्बर</li>
+  <li>Invoice नम्बर (Sequential, IRD format अनुसार)</li>
+  <li>Invoice मिति</li>
+  <li>खरिदकर्ताको नाम, ठेगाना, र PAN (यदि B2B हो)</li>
+  <li>वस्तु/सेवाको विवरण</li>
+  <li>मात्रा र दर</li>
+  <li>आधार मूल्य (VAT बिना)</li>
+  <li>VAT रकम (१३%)</li>
+  <li>कुल रकम</li>
+</ul>
+
+<div class="callout-warning">
+  <strong>दण्ड:</strong> IRD ले गलत वा अपूर्ण invoice मा रु. ५,०००–रु. ५०,००० सम्म जरिवाना गर्न सक्छ। VAT छलीको लागि थप जेल सजायको पनि व्यवस्था छ।
+</div>
+
+<h3>Common Nepal VAT Calculation Examples</h3>
+<table>
+  <thead>
+    <tr>
+      <th>आधार मूल्य (रु.)</th>
+      <th>VAT @ १३%</th>
+      <th>कुल Invoice (रु.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>१०,०००</td><td>१,३००</td><td>११,३००</td></tr>
+    <tr><td>२५,०००</td><td>३,२५०</td><td>२८,२५०</td></tr>
+    <tr><td>५०,०००</td><td>६,५००</td><td>५६,५००</td></tr>
+    <tr><td>१,००,०००</td><td>१३,०००</td><td>१,१३,०००</td></tr>
+    <tr><td>५,००,०००</td><td>६५,०००</td><td>५,६५,०००</td></tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "nepal-vat-mistakes",
+      title: "नेपाली व्यापारीहरूले गर्ने VAT का सामान्य गल्तीहरू",
+      content: `<p>IRD ले प्रत्येक वर्ष हजारौं व्यापारीहरूमाथि कर audit गर्छ। यी गल्तीहरूबाट सावधान रहनुस्:</p>
+
+<h3>गल्ती १: VAT दर्ता नगर्नु</h3>
+<p>वार्षिक कारोबार रु. ५० लाख नाघेपछि पनि VAT दर्ता नगर्नु — यो सबभन्दा ठूलो गल्ती हो। IRD ले पत्ता लगाउँदा सबै बाँकी VAT + ब्याज + जरिवाना एकसाथ तिर्नुपर्छ।</p>
+
+<h3>गल्ती २: Exempt वस्तुमा VAT लगाउनु</h3>
+<p>चामल, दाल जस्ता exempt वस्तुहरूमा VAT charge गर्नु गलत हो। उपभोक्ताले बढी तिर्छन् र तपाईंले गलत collection को जवाफ दिनुपर्छ।</p>
+
+<h3>गल्ती ३: Invoice नकाट्नु</h3>
+<p>अनेक साना व्यापारी cash transactions मा invoice काट्दैनन्। यो tax evasion मानिन्छ र IRD ले कडा कारवाही गर्न सक्छ।</p>
+
+<div class="callout-warning">
+  <strong>ब्याज दर:</strong> नेपालमा बाँकी VAT मा वार्षिक <strong>१५% ब्याज</strong> लाग्छ। देरी गर्दा payment अझ ठूलो हुन्छ।
+</div>
+
+<div class="callout-tip">
+  <strong>GST/VAT Breakdown Calculator</strong> प्रयोग गरेर आफ्नो हरेक invoice confirm गर्नुस् — आधार मूल्य, VAT, र कुल रकम एकदम सही राख्नुस्।
+</div>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "आधार मूल्य Enter गर्नुस्",
+      description: "VAT अघिको मूल्य type गर्नुस्। उदाहरणका लागि, रु. ५०,००० को consulting services को invoice काट्दै हुनुहुन्छ भने 50000 enter गर्नुस्।"
+    },
+    {
+      title: "VAT/GST दर Select गर्नुस्",
+      description: "नेपालका लागि १३% select गर्नुस्। भारतको invoice calculate गर्दै हुनुहुन्छ भने 5%, 12%, 18%, वा 28% मध्ये उपयुक्त rate छान्नुस्।"
+    },
+    {
+      title: "Inclusive वा Exclusive Toggle गर्नुस्",
+      description: "Retail price (VAT inclusive) को लागि Inclusive mode select गर्नुस्। B2B invoice (VAT थप्नुपर्ने) को लागि Exclusive राख्नुस्।"
+    },
+    {
+      title: "Breakdown हेर्नुस्",
+      description: "Calculator ले आधार मूल्य, VAT रकम, र कुल Invoice value देखाउँछ। नेपाली invoiceका लागि यी figures प्रयोग गर्नुस्।"
+    },
+    {
+      title: "Invoice मा Copy गर्नुस्",
+      description: "Calculator ले दिएका exact figures आफ्नो tax invoice मा राख्नुस् — IRD compliance का लागि र खरिदकर्ताको input credit का लागि।"
+    }
+  ],
+  faqs: [
+    {
+      question: "नेपालमा VAT दर कति छ?",
+      answer: "नेपालमा मानक VAT दर १३% छ। धेरैजसो वस्तु र सेवाहरूमा यही दर लाग्छ। आधारभूत खाद्यान्न, स्वास्थ्य सेवा, र शिक्षा VAT मुक्त छन्। निर्यातमा ०% (Zero-rated) लाग्छ।"
+    },
+    {
+      question: "VAT दर्ता कहिले गर्नुपर्छ?",
+      answer: "वार्षिक कारोबार रु. ५० लाख (५,००,०००) नाघेपछि VAT दर्ता अनिवार्य छ। IRD को portal (ird.gov.np) मा online दर्ता गर्न सकिन्छ।"
+    },
+    {
+      question: "रु. १,००,०००  मा १३% VAT कति हुन्छ?",
+      answer: "VAT = रु. १,००,००० × १३% = रु. १३,०००। कुल Invoice = रु. १,१३,०००।"
+    },
+    {
+      question: "नेपालमा Input VAT Credit कसरी claim गर्ने?",
+      answer: "VAT registered व्यापारीले खरिदमा तिरेको VAT लाई बिक्रीको VAT बाट घटाउन पाउँछन्। मासिक VAT return (IRD portal) मा Input VAT र Output VAT declare गर्नुपर्छ।"
+    },
+    {
+      question: "Restaurant मा VAT लाग्छ कि लाग्दैन?",
+      answer: "नेपालमा VAT registered restaurant ले १३% VAT charge गर्छ। साना अपंजीकृत restaurants ले VAT charge गर्दैनन्, तर उनीहरूको कारोबार रु. ५० लाख नाघेमा दर्ता अनिवार्य हुन्छ।"
+    },
+    {
+      question: "VAT inclusive price बाट base amount कसरी निकाल्ने?",
+      answer: "Formula: Base = Total × 100 ÷ 113। उदाहरण: रु. ११,३०० inclusive price को base = रु. ११,३०० × १०० ÷ ११३ = रु. १०,०००। VAT = रु. १,३००।"
+    },
+    {
+      question: "नेपालमा मासिक VAT return कहिले submit गर्नुपर्छ?",
+      answer: "प्रत्येक महिनाको अन्त्यपछि २५ गतेसम्म IRD portal मा VAT return submit गर्नुपर्छ। ढिलो submit गरे प्रतिदिन रु. १०० जरिवाना लाग्छ।"
+    },
+    {
+      question: "Exempt र Zero-rated मा के फरक छ?",
+      answer: "Exempt वस्तुमा VAT लाग्दैन र input VAT credit पनि पाइँदैन। Zero-rated (0%) मा VAT शून्य हुन्छ तर input VAT credit claim गर्न पाइन्छ। निर्यात Zero-rated हो — यसैले निर्यातकर्ताहरूले input credit refund पाउँछन्।"
+    }
+  ],
+  relatedGuides: ["gst-calculator-guide", "tds-calculator-guide", "salary-calculator-guide"],
+  toolCTA: {
+    heading: "अहिले नै GST/VAT Breakdown Calculate गर्नुस्",
+    description: "कुनै पनि रकम र कर दर enter गर्नुस् — सही VAT breakdown र कुल invoice value तुरुन्त पाउनुस्। नि:शुल्क र सटीक।",
+    buttonText: "GST Breakdown Calculator खोल्नुस्"
+  }
+},
+
+{
+  slug: 'gstin-validator-guide',
+  toolSlug: 'gstin-validator',
+  category: 'utility-tools',
+  title: 'GSTIN Validator: GST नम्बर Format, Structure, State Codes र Validation को पूर्ण गाइड 2026',
+  subtitle: 'GSTIN को हरेक character बुझ्नुहोस्, checksum verify गर्नुहोस्, र GST compliance errors बाट बच्नुहोस्।',
+  metaTitle: 'GSTIN Validator — GST नम्बर Format Online जाँच 2026',
+  metaDescription: 'कुनै पनि GSTIN को format तुरुन्त validate गर्नुहोस्। 15-character GSTIN structure, सबै 37 state codes, checksum algorithm.',
+  targetKeyword: 'GST नम्बर जाँच',
+  secondaryKeywords: [
+    'GSTIN format check Nepali',
+    'GST number validation online',
+    'GSTIN structure Nepali ma',
+    'state code GSTIN list',
+    'GSTIN checksum algorithm',
+    'GSTIN kasari validate garne',
+    'GSTIN verification India',
+    'GST registration number check',
+    'invalid GSTIN format',
+    'Nepal India business GST',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '11 min read',
+  tags: ['GSTIN', 'GST', 'Tax India', 'Validation'],
+  intro: `<p>भारतको Goods and Services Tax system पूर्णतः एउटा 15-character alphanumeric identifier मा चल्छ जसलाई <strong>GSTIN — Goods and Services Tax Identification Number</strong> भनिन्छ। GST अन्तर्गत registered हरेक business लाई एउटा unique GSTIN मिल्छ, र यो number हरेक invoice, tax return, e-way bill, र GST credit transaction मा देखिन्छ। यदि GSTIN गलत भयो — एउटा मात्र character — भने receiving business ले Input Tax Credit (ITC) claim गर्न सक्दैन, invoice non-compliant हुन्छ, र दुवै parties लाई GST notices को खतरा हुन्छ।</p>
+<p>नेपाली व्यापारीहरू जो भारतीय companies सँग import-export गर्छन् वा भारतमा business गर्छन्, उनीहरूका लागि Indian supplier को GSTIN validate गर्नु आवश्यक छ — ITC protection र compliance का लागि। यस guide मा हामी बताउनेछौं कि <strong>GSTIN validator</strong> कसरी काम गर्छ, GSTIN को 15 characters को breakdown, सबै 37 state codes, checksum algorithm, र validation fail भएमा के गर्ने।</p>`,
+  sections: [
+    {
+      id: 'gstin-ke-ho-kina-jaruri-ne',
+      title: 'GSTIN के हो र हरेक Business का लागि किन जरुरी छ?',
+      content: `<h3>GST र GSTIN को जन्म</h3>
+<p>भारतले 1 July 2017 मा Goods and Services Tax launch गर्यो — देशको सबैभन्दा ठूलो tax reform। GST ले Central र State taxes (VAT, CST, Service Tax, Excise Duty) लाई एउटा unified tax structure मा replace गर्यो। यसी अन्तर्गत हरेक GST registered business लाई एउटा <strong>GSTIN</strong> assign हुन्छ — एउटा unique, state-specific identifier।</p>
+
+<h3>कसलाई GSTIN चाहिन्छ?</h3>
+<ul>
+  <li>Annual turnover ₹40 lakh (goods) वा ₹20 lakh (services) भन्दा माथि</li>
+  <li>Inter-state goods वा services suppliers</li>
+  <li>E-commerce operators र Amazon/Flipkart मा sellers</li>
+  <li>Reverse Charge Mechanism अन्तर्गत tax तिर्ने businesses</li>
+</ul>
+
+<div class="callout-warning">
+<strong>ITC Risk:</strong> यदि तपाईंले invalid GSTIN भएको वा cancelled registration भएको supplier लाई payment गर्नुभयो भने, ITC claim गर्न सक्नुहुन्न। GST portal ले ITC claim reject गर्छ। Purchase order finalize गर्नुअघि supplier को GSTIN validate गर्नुहोस्।
+</div>
+
+<table>
+  <thead>
+    <tr><th>Scenario</th><th>नतिजा</th><th>कोलाई असर</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Outbound invoice मा wrong GSTIN</td><td>Invoice invalid; buyer ITC claim गर्न सक्दैन</td><td>तपाईंको buyer</td></tr>
+    <tr><td>GSTR-2B मा wrong supplier GSTIN</td><td>ITC claim mismatch; GST notice</td><td>तपाईं</td></tr>
+    <tr><td>Vendor बाट fake GSTIN</td><td>ITC denied; Section 74 penalty</td><td>तपाईं</td></tr>
+    <tr><td>Cancelled GSTIN supplier</td><td>कुनै ITC छैन</td><td>तपाईं</td></tr>
+    <tr><td>GSTIN मा wrong state code</td><td>Tax apportionment गलत</td><td>दुवै</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'gstin-structure-ne',
+      title: 'GSTIN को 15 Characters को पूर्ण Breakdown',
+      content: `<h3>GSTIN को Complete Anatomy</h3>
+<p>GSTIN सधैं exactly 15 characters को हुन्छ। हरेक position मा specific encoded information छ। एउटा example GSTIN decode गरौं: <strong>27ABCPK7896L1ZE</strong></p>
+
+<div class="callout-info">
+<strong>GSTIN Format:</strong> [2 digits — State Code] + [10 chars — Entity को PAN] + [1 digit — State मा Registration Number] + [1 letter — Default 'Z'] + [1 char — Checksum]
+</div>
+
+<table>
+  <thead>
+    <tr><th>Position</th><th>Value</th><th>अर्थ</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1–2</td><td>27</td><td>State/UT code (Maharashtra = 27)</td><td>27</td></tr>
+    <tr><td>3–12</td><td>ABCPK7896L</td><td>Registered taxpayer को PAN</td><td>ABCPK7896L</td></tr>
+    <tr><td>13</td><td>1</td><td>Entity number (1 = first registration)</td><td>1</td></tr>
+    <tr><td>14</td><td>Z</td><td>Reserved character — सधैं 'Z'</td><td>Z</td></tr>
+    <tr><td>15</td><td>E</td><td>Checksum — पहिलो 14 characters बाट compute</td><td>E</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+<strong>Quick Tip:</strong> GSTIN मा embedded PAN (positions 3–12) आफैं valid हुनुपर्छ। GSTIN validation fail भयो भने embedded PAN check गर्नुहोस्।
+</div>`,
+    },
+    {
+      id: 'state-codes-ne',
+      title: 'सबै 37 State र UT Codes को पूरा List',
+      content: `<h3>Complete State Code Reference Table</h3>
+<p>कुनै पनि GSTIN को पहिलो दुई digits ले त्यो Indian state वा Union Territory identify गर्छन् जहाँ business registered छ।</p>
+
+<table>
+  <thead>
+    <tr><th>Code</th><th>State / UT</th><th>Code</th><th>State / UT</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>01</td><td>Jammu & Kashmir</td><td>20</td><td>Jharkhand</td></tr>
+    <tr><td>02</td><td>Himachal Pradesh</td><td>21</td><td>Odisha</td></tr>
+    <tr><td>03</td><td>Punjab</td><td>22</td><td>Chhattisgarh</td></tr>
+    <tr><td>04</td><td>Chandigarh (UT)</td><td>23</td><td>Madhya Pradesh</td></tr>
+    <tr><td>05</td><td>Uttarakhand</td><td>24</td><td>Gujarat</td></tr>
+    <tr><td>06</td><td>Haryana</td><td>25</td><td>Daman & Diu (UT)</td></tr>
+    <tr><td>07</td><td>Delhi (NCT)</td><td>26</td><td>Dadra & Nagar Haveli</td></tr>
+    <tr><td>08</td><td>Rajasthan</td><td>27</td><td>Maharashtra</td></tr>
+    <tr><td>09</td><td>Uttar Pradesh</td><td>28</td><td>Andhra Pradesh (new)</td></tr>
+    <tr><td>10</td><td>Bihar</td><td>29</td><td>Karnataka</td></tr>
+    <tr><td>11</td><td>Sikkim</td><td>30</td><td>Goa</td></tr>
+    <tr><td>12</td><td>Arunachal Pradesh</td><td>31</td><td>Lakshadweep (UT)</td></tr>
+    <tr><td>13</td><td>Nagaland</td><td>32</td><td>Kerala</td></tr>
+    <tr><td>14</td><td>Manipur</td><td>33</td><td>Tamil Nadu</td></tr>
+    <tr><td>15</td><td>Mizoram</td><td>34</td><td>Puducherry (UT)</td></tr>
+    <tr><td>16</td><td>Tripura</td><td>35</td><td>Andaman & Nicobar (UT)</td></tr>
+    <tr><td>17</td><td>Meghalaya</td><td>36</td><td>Telangana</td></tr>
+    <tr><td>18</td><td>Assam</td><td>37</td><td>Andhra Pradesh (Seemandhra)</td></tr>
+    <tr><td>19</td><td>West Bengal</td><td>38</td><td>Ladakh (UT)</td></tr>
+    <tr><td>97</td><td>Other Territory</td><td>99</td><td>Centre Jurisdiction</td></tr>
+  </tbody>
+</table>
+
+<h3>नेपाल-India व्यापार सन्दर्भमा State Code को महत्त्व</h3>
+<p>नेपाली importers जो भारतीय suppliers बाट सामान किन्छन्, उनीहरूले supplier को GSTIN को state code र उनको business address match गर्छ कि छैन confirm गर्नु महत्त्वपूर्ण छ। State code mismatch भयो भने IGST vs CGST/SGST calculation गलत हुन्छ।</p>
+
+<div class="callout-warning">
+<strong>State Code Mismatch:</strong> Vendor को GSTIN को state code उनको business address सँग match नगरेमा यो red flag हो। Proceed गर्नुअघि clarify गर्नुहोस्।
+</div>`,
+    },
+    {
+      id: 'checksum-ne',
+      title: 'GSTIN Checksum Algorithm कसरी काम गर्छ?',
+      content: `<h3>Checksum किन महत्त्वपूर्ण छ?</h3>
+<p>GSTIN को 15th character एउटा computed checksum हो। यसले कसैलाई पनि government database access नगरिकन GSTIN को structural validity verify गर्न दिन्छ।</p>
+
+<h3>Simple भाषामा Algorithm</h3>
+<ol>
+  <li>पहिलो 14 characters लाई numbers मा convert गर्नुहोस्। Letters: A=10, B=11, ... Z=35। Digits 0–9 as-is।</li>
+  <li>हरेक number लाई position-specific factor बाट multiply गर्नुहोस्।</li>
+  <li>सबै products को sum लिनुहोस्, त्यसपछि 36 बाट divide गर्नुहोस्।</li>
+  <li>Remainder लाई character मा map गर्नुहोस्।</li>
+  <li>त्यो character valid checksum हो — GSTIN को 15th character सँग match हुनुपर्छ।</li>
+</ol>
+
+<div class="callout-info">
+<strong>व्यावहारिक अर्थ:</strong> हाम्रो GSTIN validator तपाईंको browser मा यो exact computation गर्छ — कुनै server call छैन। यदि तपाईंले दुई characters swap गर्नुभयो वा एउटा letter गलत type गर्नुभयो भने, checksum match हुँदैन र validator तुरुन्त बताउँछ।
+</div>
+
+<table>
+  <thead>
+    <tr><th>Error Type</th><th>Checksum ले Detect गर्छ?</th><th>Explanation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Single character substitution</td><td>हो (almost always)</td><td>Checksum computation result change हुन्छ</td></tr>
+    <tr><td>दुई adjacent characters swap</td><td>हो (usually)</td><td>Position-specific factors ले catch गर्छन्</td></tr>
+    <tr><td>Length error</td><td>हो</td><td>Exactly 15 chars हुनुपर्छ</td></tr>
+    <tr><td>Correct checksum भएको fake GSTIN</td><td>छैन</td><td>Checksum ले structure validate गर्छ, existence होइन</td></tr>
+    <tr><td>Cancelled/suspended GSTIN</td><td>छैन</td><td>Database lookup चाहिन्छ</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'common-errors-ne',
+      title: 'Common GSTIN Errors र ती कसरी Fix गर्ने',
+      content: `<h3>सबैभन्दा बढी हुने GSTIN Mistakes</h3>
+
+<table>
+  <thead>
+    <tr><th>Error</th><th>Example</th><th>Fix</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Invalid state code</td><td>00ABCPK7896L1ZE</td><td>Business address बाट correct state code confirm गर्नुहोस्</td></tr>
+    <tr><td>Lowercase letters</td><td>27abcpk7896l1ze</td><td>सबै uppercase मा convert गर्नुहोस्</td></tr>
+    <tr><td>14 chars मात्र</td><td>27ABCPK7896L1Z</td><td>Checksum character missing check गर्नुहोस्</td></tr>
+    <tr><td>Position 14 Z छैन</td><td>27ABCPK7896L1AE</td><td>Original registration certificate बाट confirm गर्नुहोस्</td></tr>
+    <tr><td>Wrong checksum</td><td>27ABCPK7896L1ZX</td><td>Source document बाट re-enter गर्नुहोस्</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+<strong>Fraud Alert:</strong> यदि कुनै supplier ले consistently invalid GSTIN भएका invoices पठाइरहेको छ भने, यो fake invoices को संकेत हुन सक्छ। GST law अन्तर्गत जानाजानी fraudulent GSTINs accept गर्दा तपाईं liable हुन सक्नुहुन्छ।
+</div>
+
+<div class="callout-tip">
+<strong>Developers का लागि Tip:</strong> Billing वा accounting software बनाउँदा GSTIN checksum validation लाई client-side check को रूपमा implement गर्नुहोस् form submission अघि। यसले सबैभन्दा common data entry errors हटाउँछ।
+</div>`,
+    },
+    {
+      id: 'gstin-vs-verification-ne',
+      title: 'GSTIN vs GSTIN Verification vs GST Registration — के फरक छ?',
+      content: `<h3>तीनवटा Confusing Terms Clear गरौं</h3>
+
+<h3>1. GSTIN (The Number Itself)</h3>
+<p>GSTIN त्यो 15-character identifier हो जुन GST registration complete भएपछि assign हुन्छ। यो static छ — एकपटक assign भएपछि change हुँदैन (यद्यपि status change हुन सक्छ)।</p>
+
+<h3>2. GSTIN Format Validation (Structure Check)</h3>
+<p>हाम्रो tool यही गर्छ — check गर्छ कि 15-character string ले correct format follow गर्छ कि गर्दैन: valid state code, valid embedded PAN, position 14 मा 'Z', correct checksum।</p>
+
+<h3>3. GSTIN Verification (Database Check)</h3>
+<p>यो GST portal (gst.gov.in → Search Taxpayer) मा हुन्छ। GST database query हुन्छ — business name, registration status, state, filing history।</p>
+
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Format Validator</th><th>GST Portal Verification</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Speed</td><td>Instant</td><td>2–5 seconds</td></tr>
+    <tr><td>Internet चाहिन्छ?</td><td>छैन</td><td>हो</td></tr>
+    <tr><td>GSTIN exist गर्छ?</td><td>भन्दैन</td><td>हो</td></tr>
+    <tr><td>Business name देखाउँछ?</td><td>छैन</td><td>हो</td></tr>
+    <tr><td>Registration status</td><td>छैन</td><td>हो (Active/Cancelled)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+<strong>Best Practice Workflow:</strong> (1) ToolsArena मा format validate → (2) gst.gov.in मा database verify → (3) Business name invoice सँग match गर्नुहोस् → (4) Last return filing date check गर्नुहोस्।
+</div>`,
+    },
+    {
+      id: 'nepal-india-gstin-context',
+      title: 'नेपाल-India व्यापारमा GSTIN को भूमिका',
+      content: `<h3>नेपाली Importers का लागि GSTIN Validation किन जरुरी छ?</h3>
+<p>नेपाली व्यापारीहरू जो भारतबाट सामान import गर्छन्, उनीहरूले Indian suppliers को GSTIN validate गर्नु धेरै कारणले महत्त्वपूर्ण छ:</p>
+<ul>
+  <li>Invoice authenticity confirm गर्न — fraudulent invoices बाट बच्न</li>
+  <li>Customs clearance documents मा GSTIN accuracy ensure गर्न</li>
+  <li>India-Nepal DTAA अन्तर्गत tax documentation का लागि</li>
+  <li>Letter of Credit (LC) transactions मा compliance</li>
+</ul>
+
+<h3>Nepal Rastra Bank (NRB) र Foreign Exchange</h3>
+<p>नेपालबाट भारतीय suppliers लाई payment गर्दा NRB को foreign exchange guidelines follow गर्नुपर्छ। Invalid GSTIN भएको invoice present गरेमा bank ले payment process नगर्न सक्छ। GSTIN validation यस process को पहिलो step हो।</p>
+
+<div class="callout-info">
+<strong>नेपाल Custom विभाग:</strong> भारतबाट import गर्दा Custom entry forms मा Indian supplier को GSTIN correctly enter गर्नु आवश्यक छ। GSTIN format validate गरेपछि मात्र document preparation गर्नुहोस्।
+</div>
+
+<h3>Bulk GSTIN Validation का लागि Tools</h3>
+<ul>
+  <li><strong>GST Suvidha Provider (GSP) APIs:</strong> Bulk GSTIN verification</li>
+  <li><strong>GSTN को bulk search:</strong> एकपटकमा 10 GSTINs search गर्न सकिन्छ</li>
+  <li><strong>Accounting Software:</strong> Tally, Zoho Books मा built-in GSTIN validation</li>
+</ul>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'GSTIN Enter गर्नुहोस्',
+      description: 'Full 15-character GSTIN validator field मा type गर्नुहोस्। Tool ले uppercase र lowercase दुवै accept गर्छ र normalize गर्छ।',
+    },
+    {
+      title: 'Validate GSTIN Click गर्नुहोस्',
+      description: '"Validate GSTIN" button press गर्नुहोस्। Tool ले instantly check गर्छ: state code validity, embedded PAN format, position 14 "Z" check, checksum — कुनै API call छैन।',
+    },
+    {
+      title: 'Breakdown Review गर्नुहोस्',
+      description: 'Validator ले देखाउँछ: state name (2-digit code बाट), embedded PAN, entity registration number, र checksum valid छ कि छैन।',
+    },
+    {
+      title: 'State Code Cross-Check गर्नुहोस्',
+      description: 'GSTIN मा state, supplier को invoice मा दिएको business address सँग match गर्छ कि छैन confirm गर्नुहोस्।',
+    },
+    {
+      title: 'GST Portal मा Full Confirmation का लागि जानुहोस्',
+      description: 'नयाँ suppliers वा high-value transactions का लागि gst.gov.in → Search Taxpayer मा जानुहोस् र GSTIN enter गर्नुहोस् — active छ, business name match गर्छ, filing-compliant छ।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'के दुई businesses को GSTIN same हुन सक्छ?',
+      answer: 'हुँदैन। GSTIN हरेक business registration का लागि unique हुन्छ। एउटा PAN को multiple GSTINs हुन सक्छन् — हरेक state का लागि एउटा — तर पूरा 15-character GSTIN सधैं unique हुन्छ।',
+    },
+    {
+      question: 'Supplier को GSTIN format check pass भयो तर GST portal "No Records Found" देखाउँछ — किन?',
+      answer: 'Format validation ले केवल structural pattern check गर्छ। "No Records Found" को अर्थ: GSTIN कहिल्यै GST database मा register भएन, registration cancel भएर remove भयो, वा धेरै recent registration छ जो propagate भएको छैन। Supplier बाट GST registration certificate माग्नुहोस्।',
+    },
+    {
+      question: 'Cancelled GSTIN को के अर्थ हो?',
+      answer: 'Cancelled GSTIN को अर्थ business GST अन्तर्गत registered छैन। Cancelled GSTIN holder बाट GST invoices accept नगर्नुहोस् — ITC deny हुन्छ।',
+    },
+    {
+      question: 'GSTIN को 14th character सधैं Z हुन्छ?',
+      answer: 'Production GST system मा हो, सधैं Z हुन्छ। Real supplier को GSTIN मा position 14 ≠ Z छ भने, या typo छ वा fabricated number छ।',
+    },
+    {
+      question: 'नेपाली नागरिकले Indian GSTIN लिन सकिन्छ?',
+      answer: 'नेपाली नागरिक वा company ले भारतमा taxable supply गर्छ भने Non-Resident Taxable Person (NRTP) को रूपमा temporary GSTIN लिन सक्छन्। यो उनीहरूको taxable activity को period का लागि valid हुन्छ।',
+    },
+    {
+      question: 'Company को नाम वा address बदलेमा GSTIN change हुन्छ?',
+      answer: 'हुँदैन। Same state भित्र name वा address change हुँदा GSTIN change हुँदैन। तर यदि business अर्को state मा shift हुन्छ भने पुरानो GSTIN cancel हुन्छ र नयाँ state मा नयाँ GSTIN लिनुपर्छ।',
+    },
+    {
+      question: 'GSTIN format validation र GST portal verification मा के फरक छ?',
+      answer: 'Format validation (ToolsArena) ले GSTIN को structure offline check गर्छ — state code, embedded PAN, checksum। GST portal verification ले CBDT database query गर्छ — business name, active/cancelled status, filing history। दुवै complementary छन्।',
+    },
+    {
+      question: 'GST registration threshold भन्दा तल business operate गर्नु legal छ?',
+      answer: 'हो। ₹40 lakh (goods) वा ₹20 lakh (services) भन्दा तल को businesses लाई register गर्नु mandatory छैन। तर उनीहरूले GST charge गर्न वा tax invoice issue गर्न सक्दैनन् र ITC claim गर्न सक्दैनन्। Voluntary registration possible छ।',
+    },
+  ],
+  relatedGuides: ['gst-calculator-guide', 'tds-calculator-guide', 'income-tax-calculator-guide'],
+  toolCTA: {
+    heading: 'कुनै पनि GSTIN को Format अहिले Validate गर्नुहोस् — Free',
+    description: 'ToolsArena को GSTIN Validator बाट कुनै पनि GSTIN को format, state code, embedded PAN, र checksum एक second मा verify गर्नुहोस्। कुनै signup छैन, कुनै data storage छैन।',
+    buttonText: 'GSTIN Validate गर्नुहोस्',
+  },
+},
+
+{
+  slug: "json-schema-generator-guide",
+  toolSlug: "json-schema-generator",
+  category: "developer-tools",
+  title: "JSON Schema Generator — सम्पूर्ण गाइड",
+  subtitle: "JSON Schema generate गर्नुहोस्, validate गर्नुहोस् र APIs मा integrate गर्नुहोस्",
+  metaTitle: "JSON स्किमा जेनेरेटर — नेपाली Developers को लागि Complete Guide",
+  metaDescription: "JSON Schema के हो, sample JSON बाट schema कसरी generate गर्ने, validation constraints (required, enum, pattern) र OpenAPI/TypeScript integration सिक्नुहोस्।",
+  targetKeyword: "JSON स्किमा जेनेरेटर",
+  secondaryKeywords: [
+    "JSON Schema के हो नेपाली",
+    "JSON validation कसरी गर्ने",
+    "OpenAPI schema Nepal",
+    "Ajv validator Node.js",
+    "TypeScript interface vs JSON Schema",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१६ मिनेट",
+  tags: ["JSON", "schema", "validation", "API", "TypeScript", "developer-tools"],
+  intro: `
+<p>Modern APIs, configuration files, databases — सबै JSON प्रयोग गर्छन्। तर raw JSON schema-less हुन्छ — कुनै पनि key ले कुनै पनि value hold गर्न सक्छ, र consumer ले <code>{"age": "twenty-five"}</code> पठाउन सक्छ जब तपाईं <code>{"age": 25}</code> expect गर्नुहुन्छ। <strong>JSON Schema</strong> ले यो समस्या solve गर्छ — JSON documents को structure, types र constraints describe गर्ने vocabulary प्रदान गर्छ। एउटा <strong>JSON Schema generator</strong> ले तपाईंको sample JSON लिएर automatically Schema produce गर्छ।</p>
+<p>नेपालको growing IT sector मा — चाहे Kathmandu को startups होस् वा Pokhara को freelancers — JSON Schema ले API development लाई professional र maintainable बनाउँछ। यो guide मा JSON Schema को foundation देखि advanced patterns सम्म सबै कुरा छ।</p>
+  `,
+  sections: [
+    {
+      id: "json-schema-ke-ho",
+      title: "JSON Schema के हो र Developers ले किन प्रयोग गर्छन्?",
+      content: `
+<p>JSON Schema एउटा declarative language हो JSON documents annotate र validate गर्नको लागि। Current stable release <strong>Draft 2020-12</strong> हो।</p>
+
+<h3>JSON Schema ले के गर्छ</h3>
+<ul>
+  <li><strong>Validation</strong> — Runtime मा verify गर्नुहोस् कि JSON data expected structure follow गर्छ</li>
+  <li><strong>Documentation</strong> — Self-documenting API contracts जुन humans र machines दुवैले read गर्न सक्छन्</li>
+  <li><strong>Code generation</strong> — Schema बाट TypeScript interfaces, Python dataclasses, Go structs generate गर्नुहोस्</li>
+  <li><strong>UI generation</strong> — react-jsonschema-form जस्ता tools ले schema बाट automatically forms render गर्छन्</li>
+</ul>
+
+<h3>Simple Schema Example</h3>
+<pre><code class="language-json">// Sample JSON:
+{
+  "id": 42,
+  "username": "ramkrishna",
+  "email": "ram@example.com.np",
+  "active": true
+}
+
+// Generated JSON Schema:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id":       { "type": "integer" },
+    "username": { "type": "string", "minLength": 3, "maxLength": 30 },
+    "email":    { "type": "string", "format": "email" },
+    "active":   { "type": "boolean" }
+  },
+  "required": ["id", "username", "email"],
+  "additionalProperties": false
+}
+</code></pre>
+      `,
+    },
+    {
+      id: "keywords-nepali",
+      title: "JSON Schema Keywords: Data Types र Constraints को सम्पूर्ण Reference",
+      content: `
+<h3>Core Data Types</h3>
+<table>
+  <thead>
+    <tr><th>Type</th><th>Example Values</th><th>Type-Specific Keywords</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>string</code></td><td><code>"नमस्ते"</code>, <code>"2026-03-19"</code></td><td>minLength, maxLength, pattern, format</td></tr>
+    <tr><td><code>integer</code></td><td><code>42</code>, <code>-7</code></td><td>minimum, maximum, multipleOf</td></tr>
+    <tr><td><code>number</code></td><td><code>3.14</code>, <code>42</code></td><td>minimum, maximum</td></tr>
+    <tr><td><code>boolean</code></td><td><code>true</code>, <code>false</code></td><td>—</td></tr>
+    <tr><td><code>array</code></td><td><code>[1, 2, 3]</code></td><td>items, minItems, maxItems, uniqueItems</td></tr>
+    <tr><td><code>object</code></td><td><code>{"key": "val"}</code></td><td>properties, required, additionalProperties</td></tr>
+    <tr><td><code>null</code></td><td><code>null</code></td><td>—</td></tr>
+  </tbody>
+</table>
+
+<h3>String Format Keywords</h3>
+<pre><code class="language-json">{
+  "type": "string",
+  "format": "email"
+  // अरू formats: uri, uuid, date, date-time, ipv4, ipv6, hostname
+}
+</code></pre>
+
+<h3>Conditional Validation (if/then/else)</h3>
+<pre><code class="language-json">{
+  "type": "object",
+  "properties": {
+    "accountType": { "enum": ["व्यक्तिगत", "व्यावसायिक"] },
+    "companyName": { "type": "string" }
+  },
+  "if": {
+    "properties": { "accountType": { "const": "व्यावसायिक" } }
+  },
+  "then": {
+    "required": ["companyName"]   // व्यावसायिक account मा company required
+  }
+}
+</code></pre>
+      `,
+    },
+    {
+      id: "validation-constraints-nepali",
+      title: "Validation Constraints: required, additionalProperties, enum र pattern",
+      content: `
+<h3>required — अनिवार्य Fields</h3>
+<pre><code class="language-json">{
+  "type": "object",
+  "properties": {
+    "id":       { "type": "integer" },
+    "email":    { "type": "string", "format": "email" },
+    "password": { "type": "string", "minLength": 8 },
+    "nickname": { "type": "string" }    // Optional
+  },
+  "required": ["id", "email", "password"]
+}
+</code></pre>
+
+<h3>महत्वपूर्ण: properties ≠ required</h3>
+<pre><code class="language-json">// गलत बुझाइ — properties ले enforce गर्दैन:
+{
+  "type": "object",
+  "properties": { "name": { "type": "string" } }
+}
+// {} VALID छ! properties ले भन्छ: "यदि name छ भने string हुनुपर्छ"
+// तर छैन भने पनि OK छ।
+
+// सही — required अलग लेख्नुपर्छ:
+{
+  "type": "object",
+  "properties": { "name": { "type": "string" } },
+  "required": ["name"]
+}
+</code></pre>
+
+<h3>pattern — Regex Validation</h3>
+<pre><code class="language-json">{
+  "username":    { "pattern": "^[a-zA-Z0-9_]{3,30}$" },
+  "nepaliPhone": { "pattern": "^\\+977[9][6-9]\\d{8}$" },  // Nepal mobile
+  "slug":        { "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+}
+</code></pre>
+      `,
+    },
+    {
+      id: "api-integration-nepali",
+      title: "API Development मा JSON Schema: OpenAPI, Swagger र TypeScript",
+      content: `
+<h3>OpenAPI 3.1 सँग JSON Schema</h3>
+<pre><code class="language-yaml">openapi: 3.1.0
+components:
+  schemas:
+    CreateUserRequest:
+      type: object
+      properties:
+        username:
+          type: string
+          minLength: 3
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          minLength: 8
+          writeOnly: true
+      required: [username, email, password]
+      additionalProperties: false
+</code></pre>
+
+<h3>Node.js मा Ajv Runtime Validation</h3>
+<pre><code class="language-typescript">import Ajv from 'ajv';
+import addFormats from 'ajv-formats';
+
+const ajv = new Ajv({ allErrors: true });
+addFormats(ajv);
+
+const validate = ajv.compile(userSchema);
+const data = { email: "invalid-email", age: -5 };
+
+if (!validate(data)) {
+  console.error(validate.errors);
+  // [{ instancePath: '/email', message: 'must match format "email"' }]
+}
+</code></pre>
+      `,
+    },
+    {
+      id: "schema-vs-typescript-nepali",
+      title: "JSON Schema vs TypeScript Interfaces vs Zod: कहिले के प्रयोग गर्ने",
+      content: `
+<table>
+  <thead>
+    <tr><th>Feature</th><th>JSON Schema</th><th>TypeScript Interface</th><th>Zod</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Runtime validation</td><td>हो (Ajv)</td><td>छैन</td><td>हो (built-in)</td></tr>
+    <tr><td>Compile-time types</td><td>Codegen बाट</td><td>हो (native)</td><td>हो (z.infer)</td></tr>
+    <tr><td>Language-agnostic</td><td>हो</td><td>छैन</td><td>छैन</td></tr>
+    <tr><td>OpenAPI integration</td><td>Native</td><td>Via decorators</td><td>zod-to-openapi</td></tr>
+    <tr><td>Bundle size</td><td>~30kb</td><td>Zero</td><td>~8kb</td></tr>
+  </tbody>
+</table>
+
+<h3>निर्णय Framework</h3>
+<pre><code class="language-text">JSON Schema प्रयोग गर्नुहोस् जब:
+  ✓ Language-agnostic APIs (Go, Python consumers पनि छन्)
+  ✓ OpenAPI/Swagger documentation आवश्यक छ
+  ✓ Config files को लागि IDE support चाहिन्छ
+
+TypeScript Interface प्रयोग गर्नुहोस् जब:
+  ✓ Pure TypeScript codebase, runtime validation नचाहिने
+  ✓ Performance-critical code
+
+Zod प्रयोग गर्नुहोस् जब:
+  ✓ Next.js, tRPC, Remix fullstack apps
+  ✓ Types र runtime validation एकैचोटि चाहिन्छ
+</code></pre>
+      `,
+    },
+    {
+      id: "common-mistakes-nepali",
+      title: "सामान्य JSON Schema गल्तीहरू र Validation Errors Fix गर्ने तरिका",
+      content: `
+<h3>गल्ती १: additionalProperties + allOf Bug</h3>
+<pre><code class="language-json">// गलत (Draft 4-7 मा):
+{
+  "allOf": [{ "$ref": "#/$defs/Base" }],
+  "additionalProperties": false  // Base को properties देख्दैन!
+}
+
+// सही (Draft 2020-12):
+{
+  "allOf": [{ "$ref": "#/$defs/Base" }],
+  "unevaluatedProperties": false  // सबै subschemas को properties देख्छ
+}
+</code></pre>
+
+<h3>गल्ती २: Pattern मा Double Escaping</h3>
+<pre><code class="language-json">// गलत:
+{ "pattern": "^\d{3}-\d{4}$" }   // JSON parse error
+
+// सही (JSON string मा double backslash):
+{ "pattern": "^\\d{3}-\\d{4}$" }
+</code></pre>
+
+<h3>गल्ती ३: Null vs Missing Property</h3>
+<pre><code class="language-json">// Absent: { "id": 1 }              (key छैन)
+// Null:   { "id": 1, "bio": null } (key छ, value null छ)
+
+// दुवै allow गर्न (Draft 2020-12 shorthand):
+{
+  "properties": {
+    "bio": { "type": ["string", "null"] }
+  }
+  // "bio" required[] मा छैन — absent पनि valid
+}
+</code></pre>
+      `,
+    },
+    {
+      id: "schema-reuse-nepali",
+      title: "$ref र $defs बाट Schema Reuse",
+      content: `
+<pre><code class="language-json">{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "Address": {
+      "type": "object",
+      "properties": {
+        "tole":    { "type": "string" },
+        "shahar":  { "type": "string" },
+        "zilla":   { "type": "string" }
+      },
+      "required": ["tole", "shahar", "zilla"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "billingAddress":  { "$ref": "#/$defs/Address" },
+    "shippingAddress": { "$ref": "#/$defs/Address" }
+  }
+}
+</code></pre>
+
+<p>यस approach बाट:</p>
+<ul>
+  <li>Address schema एक ठाउँ define भएको छ — दुई ठाउँ reuse हुन्छ</li>
+  <li>Address change गर्दा दुवै references automatically update हुन्छन्</li>
+  <li>Schema सानो र maintainable रहन्छ</li>
+</ul>
+      `,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "Sample JSON paste गर्नुहोस्",
+      description: "API response, config file वा database record बाट real JSON object copy गरेर input panel मा paste गर्नुहोस्।",
+    },
+    {
+      title: "Draft version select गर्नुहोस्",
+      description: "JSON Schema draft choose गर्नुहोस्: नयाँ projects को लागि Draft 2020-12, maximum tool compatibility को लागि Draft 7, legacy systems को लागि Draft 4।",
+    },
+    {
+      title: "Generation options configure गर्नुहोस्",
+      description: "Choose गर्नुहोस्: सबै keys required मा राख्ने हो कि होइन, string formats detect गर्ने (email, URI, date-time), additionalProperties false गर्ने हो कि होइन।",
+    },
+    {
+      title: "Schema generate गर्नुहोस्",
+      description: "Generate click गर्नुहोस्। Tool ले types infer गर्छ, formats detect गर्छ, nested structures identify गर्छ र १ second मा complete valid JSON Schema produce गर्छ।",
+    },
+    {
+      title: "Review र refine गर्नुहोस्",
+      description: "Generated schema starting point हो। Manually refine गर्नुहोस्: optional fields required[] बाट हटाउनुहोस्, numbers को लागि minimum/maximum थप्नुहोस्।",
+    },
+    {
+      title: "Sample data validate गर्नुहोस्",
+      description: "Inline validator बाट schema को against multiple JSON examples test गर्नुहोस्। Production मा ship गर्नु अघि validation errors पत्ता लगाउनुहोस्।",
+    },
+  ],
+  faqs: [
+    {
+      question: "JSON Schema Draft 4, 7 र 2020-12 मा के फरक छ?",
+      answer: "Draft 4 (2013) ले foundation set गर्यो — type, properties, required, allOf/anyOf/oneOf. Draft 7 (2018) ले if/then/else conditional validation, readOnly, writeOnly थप्यो। Draft 2020-12 current standard हो: unevaluatedProperties (additionalProperties+allOf bug fix), tuples को लागि prefixItems, र improved $ref semantics। New projects को लागि Draft 2020-12 प्रयोग गर्नुहोस्।",
+    },
+    {
+      question: "JSON Schema बाट TypeScript types कसरी generate गर्ने?",
+      answer: "json-schema-to-typescript package (json2ts CLI) ले कुनै पनि JSON Schema file बाट TypeScript interfaces generate गर्छ। Run गर्नुहोस्: npm install -g json-schema-to-typescript && json2ts -i schema.json -o types.ts. वा Zod को साथ zod-to-json-schema प्रयोग गर्नुहोस् — TypeScript मा एक single source of truth राख्नुहोस् जसले types र JSON Schema दुवै produce गर्छ।",
+    },
+    {
+      question: "Node.js मा best JSON Schema validator library कुन हो?",
+      answer: "Ajv (Another JSON Validator) industry standard हो — fastest, most spec-compliant र millions of packages ले प्रयोग गर्छन्। Install गर्नुहोस्: npm install ajv ajv-formats (email, uri, date-time format validation को लागि)। Ajv version 8 ले default मा Draft 2020-12 support गर्छ।",
+    },
+    {
+      question: "Nepal को projects मा JSON Schema कि Zod?",
+      answer: "TypeScript-only Next.js वा Node.js projects को लागि Zod simpler छ — types र runtime validation एउटै declaration बाट excellent error messages सहित पाइन्छ। OpenAPI docs पनि चाहिन्छ भने zod-to-openapi package थप्नुहोस्। JSON Schema directly tab प्रयोग गर्नुहोस् जब language-agnostic validation चाहिन्छ वा non-TypeScript services (Python, Go) ले schemas consume गर्छन्।",
+    },
+  ],
+  relatedGuides: ["json-formatter-guide", "json-to-csv-guide", "base64-encode-decode-guide"],
+  toolCTA: {
+    heading: "आफ्नो JSON बाट Schema Generate गर्नुहोस्",
+    description: "कुनै पनि JSON object paste गर्नुहोस् र तुरुन्त valid JSON Schema पाउनुहोस्। Draft 4, 7 र 2020-12 support। निःशुल्क, login आवश्यक छैन।",
+    buttonText: "JSON Schema Generator खोल्नुहोस्",
+  },
+},
+
+{
+  slug: "loan-eligibility-calculator-guide",
+  toolSlug: "loan-eligibility-calculator",
+  category: "finance-tools",
+  title: "ऋण पात्रता क्याल्कुलेटर: तपाईं कति ऋण लिन सक्नुहुन्छ? (2026)",
+  subtitle: "नेपालका बैंकहरूले कसरी तपाईंको ऋण पात्रता FOIR, CIB स्कोर र तलबका आधारमा निर्धारण गर्छन्",
+  metaTitle: "ऋण पात्रता क्याल्कुलेटर नेपाल 2026 | आफ्नो सीमा जान्नुहोस्",
+  metaDescription: "तपाईंको तलब, CIB स्कोर र वर्तमान ऋणका आधारमा घर कर्जा, व्यक्तिगत कर्जा वा सवारी कर्जा पात्रता जान्नुहोस्। NRB मानदण्ड सहित 2026।",
+  targetKeyword: "ऋण पात्रता क्याल्कुलेटर",
+  secondaryKeywords: [
+    "घर कर्जा पात्रता नेपाल",
+    "FOIR calculation नेपाल",
+    "तलबमा कति ऋण मिल्छ",
+    "CIB स्कोर ऋण पात्रता",
+    "NRB ऋण नियम 2026",
+    "नबिल बैंक कर्जा पात्रता",
+    "व्यक्तिगत कर्जा नेपाल",
+    "ऋण पात्रता कसरी बढाउने",
+    "सह-ऋणी कर्जा नेपाल",
+    "एभरेस्ट बैंक होम लोन"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१५ मिनेट",
+  tags: ["ऋण पात्रता", "FOIR", "CIB स्कोर", "घर कर्जा", "व्यक्तिगत कर्जा", "2026", "नेपाल"],
+  intro: `<p>नेपालमा ऋण लिनु भनेको बैंकमा गएर तलब स्लिप देखाउनु मात्र होइन। बैंकहरूले तपाईंको पात्रता एक सटीक, बहु-कारक ढाँचाबाट मूल्यांकन गर्छन् — सबैभन्दा महत्त्वपूर्ण छ <strong>FOIR (Fixed Obligation to Income Ratio)</strong>, त्यसपछि CIB क्रेडिट स्कोर, उमेर, रोजगारको स्थायित्व, र वर्तमान ऋण दायित्वहरू। यो ढाँचा बुझ्नाले तपाईंको घर कर्जा स्वीकृत हुने सम्भावना नाटकीय रूपमा बढाउन सक्छ।</p>
+<p>यस गाइडमा हामी <strong>बैंक underwriting को परदा उठाउनेछौं</strong>। NRB नियमन अन्तर्गत नेपालका प्रमुख बैंकहरूका FOIR मानदण्ड, तलब-आधारित पात्रता तालिका, CIB स्कोरको प्रभाव, र ६ सिद्ध रणनीतिहरू जसले ऋण पात्रता बढाउन मद्दत गर्छ — सबै 2026 को वास्तविक डेटा सहित।</p>`,
+  sections: [
+    {
+      id: "foir-ne",
+      title: "नेपालका बैंकहरूले ऋण पात्रता कसरी गणना गर्छन्: FOIR सूत्र",
+      content: `<p>FOIR भनेको <strong>Fixed Obligation to Income Ratio</strong> हो। यो नेपाली बैंकहरूले ऋण रकम निर्धारण गर्न प्रयोग गर्ने सबैभन्दा महत्त्वपूर्ण मापदण्ड हो।</p>
+
+<blockquote>
+  <strong>FOIR सूत्र:</strong><br/>
+  FOIR = (कुल मासिक स्थिर दायित्व / शुद्ध मासिक आम्दानी) × १००<br/><br/>
+  अधिकतम नयाँ EMI = (शुद्ध मासिक आम्दानी × बैंकको FOIR सीमा) – वर्तमान दायित्व
+</blockquote>
+
+<h3>नेपालका प्रमुख बैंकहरूको FOIR सीमा (२०२६)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>बैंक</th>
+      <th>घर कर्जा FOIR</th>
+      <th>व्यक्तिगत कर्जा FOIR</th>
+      <th>सवारी कर्जा FOIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>नबिल बैंक</td>
+      <td>५०–५५%</td>
+      <td>५५%</td>
+      <td>५०%</td>
+    </tr>
+    <tr>
+      <td>एभरेस्ट बैंक</td>
+      <td>५०%</td>
+      <td>५०–५५%</td>
+      <td>५०%</td>
+    </tr>
+    <tr>
+      <td>ग्लोबल IME बैंक</td>
+      <td>५०–५५%</td>
+      <td>५५%</td>
+      <td>५०%</td>
+    </tr>
+    <tr>
+      <td>NIC Asia बैंक</td>
+      <td>५०%</td>
+      <td>५०–५५%</td>
+      <td>५०%</td>
+    </tr>
+    <tr>
+      <td>Rastriya Banijya Bank</td>
+      <td>५५–६०%</td>
+      <td>५५%</td>
+      <td>५०%</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>NRB निर्देशिका:</strong> नेपाल राष्ट्र बैंकले बाणिज्य बैंकहरूका लागि FOIR सम्बन्धी मानदण्ड तोकेको छ। हाल आवासीय घर कर्जामा अधिकतम ५०–६०% FOIR प्रचलित छ।
+</div>
+
+<h3>काम गरिएको उदाहरण</h3>
+<p><strong>सुमन</strong>को शुद्ध तलब रू. ८०,०००/महिना छ। सवारी कर्जा EMI रू. ८,०००। नबिल बैंकमा घर कर्जा (FOIR ५५%) को लागि आवेदन दिँदैछन्।</p>
+<ul>
+  <li>वर्तमान दायित्व: रू. ८,०००</li>
+  <li>अधिकतम FOIR: ५५% × रू. ८०,००० = रू. ४४,०००</li>
+  <li>अधिकतम नयाँ EMI: रू. ४४,००० – रू. ८,००० = <strong>रू. ३६,०००</strong></li>
+  <li>पात्र ऋण (११.५%, २० वर्ष): <strong>लगभग रू. ३०.५ लाख</strong></li>
+</ul>`
+    },
+    {
+      id: "salary-table-ne",
+      title: "तलब अनुसार ऋण पात्रता: नेपालका प्रमुख बैंकहरूको वास्तविक उदाहरण",
+      content: `<h3>घर कर्जा पात्रता तालिका — नबिल बैंक (११.५% p.a., २० वर्ष)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>शुद्ध मासिक तलब</th>
+      <th>FOIR (५५%)</th>
+      <th>अधिकतम EMI</th>
+      <th>पात्र घर कर्जा</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रू. ३०,०००</td>
+      <td>रू. १६,५००</td>
+      <td>रू. १६,५००</td>
+      <td>~रू. १३.९ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. ५०,०००</td>
+      <td>रू. २७,५००</td>
+      <td>रू. २७,५००</td>
+      <td>~रू. २३.२ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. ७५,०००</td>
+      <td>रू. ४१,२५०</td>
+      <td>रू. ४१,२५०</td>
+      <td>~रू. ३४.८ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. १,००,०००</td>
+      <td>रू. ५५,०००</td>
+      <td>रू. ५५,०००</td>
+      <td>~रू. ४६.५ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. १,५०,०००</td>
+      <td>रू. ८२,५००</td>
+      <td>रू. ८२,५००</td>
+      <td>~रू. ६९.७ लाख</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>Rule of Thumb:</strong> नेपालमा घर कर्जामा सामान्यतः शुद्ध मासिक तलबको ४५–५५ गुणा मिल्छ। व्यक्तिगत कर्जामा ८–१५ गुणा।
+</div>
+
+<h3>व्यक्तिगत कर्जा पात्रता — एभरेस्ट बैंक (१५% p.a., ५ वर्ष)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>शुद्ध मासिक तलब</th>
+      <th>FOIR (५५%)</th>
+      <th>पात्र व्यक्तिगत कर्जा</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रू. २५,०००</td>
+      <td>रू. १३,७५०</td>
+      <td>~रू. ४.८ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. ५०,०००</td>
+      <td>रू. २७,५००</td>
+      <td>~रू. ९.७ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. १,००,०००</td>
+      <td>रू. ५५,०००</td>
+      <td>~रू. १९.३ लाख</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "cib-ne",
+      title: "CIB स्कोरले ऋण पात्रतामा कसरी असर गर्छ",
+      content: `<p>नेपालमा Credit Information Bureau (CIB) ले कर्जा इतिहास राख्छ। CIB रिपोर्टमा तपाईंको समयमा तिर्ने इतिहास, बक्यौता, र डिफल्ट इतिहास देखिन्छ।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CIB रेटिङ</th>
+      <th>अर्थ</th>
+      <th>ब्याजदर प्रभाव</th>
+      <th>स्वीकृति सम्भावना</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>उत्कृष्ट (कुनै डिफल्ट छैन)</td>
+      <td>सबै ऋण समयमा तिरेको</td>
+      <td>न्यूनतम दर</td>
+      <td>९०%+</td>
+    </tr>
+    <tr>
+      <td>राम्रो (१–२ विलम्ब)</td>
+      <td>थोरै ढिला भुक्तानी</td>
+      <td>सामान्य दर</td>
+      <td>७०–९०%</td>
+    </tr>
+    <tr>
+      <td>ठीकठाक (कहिलेकाहीँ विलम्ब)</td>
+      <td>बारम्बार ढिला</td>
+      <td>उच्च दर</td>
+      <td>४०–७०%</td>
+    </tr>
+    <tr>
+      <td>खराब (डिफल्ट)</td>
+      <td>NPA भएको इतिहास</td>
+      <td>धेरै उच्च / अस्वीकृति</td>
+      <td>१०–४०%</td>
+    </tr>
+    <tr>
+      <td>ब्ल्याकलिस्ट</td>
+      <td>बक्यौता NPA</td>
+      <td>अस्वीकृत</td>
+      <td>लगभग शून्य</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>महत्त्वपूर्ण:</strong> नेपालमा CIB रिपोर्टमा गलत जानकारी भएमा सम्बन्धित बैंक वा NRB मार्फत सुधार गर्न सकिन्छ। आवेदन दिनुअघि CIB रिपोर्ट जाँच गर्नुहोस्।
+</div>`
+    },
+    {
+      id: "obligations-ne",
+      title: "वर्तमान ऋण दायित्वले पात्रता कसरी घटाउँछ",
+      content: `<h3>वर्तमान EMI को घर कर्जा पात्रतामा प्रभाव</h3>
+<p>शुद्ध तलब रू. ८०,०००, नबिल FOIR ५५% (अधिकतम दायित्व = रू. ४४,०००)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>वर्तमान दायित्व</th>
+      <th>अधिकतम घर कर्जा EMI</th>
+      <th>पात्र ऋण रकम</th>
+      <th>कमी</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रू. ०</td>
+      <td>रू. ४४,०००</td>
+      <td>~रू. ३७.२ लाख</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>रू. १०,०००</td>
+      <td>रू. ३४,०००</td>
+      <td>~रू. २८.७ लाख</td>
+      <td>–रू. ८.५ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. २०,०००</td>
+      <td>रू. २४,०००</td>
+      <td>~रू. २०.३ लाख</td>
+      <td>–रू. १६.९ लाख</td>
+    </tr>
+    <tr>
+      <td>रू. ३०,०००</td>
+      <td>रू. १४,०००</td>
+      <td>~रू. ११.८ लाख</td>
+      <td>–रू. २५.४ लाख</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>सतर्कता:</strong> ठूलो ऋण आवेदन दिनुअघि सानासाना ऋण बन्द गर्नुहोस् र क्रेडिट कार्ड बक्यौता तिर्नुहोस्।
+</div>`
+    },
+    {
+      id: "factors-ne",
+      title: "उमेर, रोजगार प्रकार र अन्य कारकहरू",
+      content: `<h3>रोजगार प्रकार अनुसार बैंकको प्राथमिकता</h3>
+<table>
+  <thead>
+    <tr>
+      <th>रोजगार प्रकार</th>
+      <th>बैंकको प्राथमिकता</th>
+      <th>FOIR लागू</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>सरकारी कर्मचारी</td>
+      <td>सर्वाधिक</td>
+      <td>५५–६०%</td>
+    </tr>
+    <tr>
+      <td>सार्वजनिक संस्थान कर्मचारी</td>
+      <td>धेरै उच्च</td>
+      <td>५०–५५%</td>
+    </tr>
+    <tr>
+      <td>स्थिर निजी क्षेत्र</td>
+      <td>उच्च</td>
+      <td>५०–५५%</td>
+    </tr>
+    <tr>
+      <td>स्व-रोजगार व्यवसायी</td>
+      <td>मध्यम</td>
+      <td>४५–५०%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>उमेर र ऋण अवधि</h3>
+<ul>
+  <li>उमेर ३०: ३०-वर्षे कर्जा सम्भव → कम EMI → उच्च पात्रता</li>
+  <li>उमेर ४०: २०-वर्षे कर्जा → बढी EMI → कम पात्रता</li>
+  <li>उमेर ५०: १०-वर्षे कर्जा → धेरै बढी EMI → उल्लेखनीय कम पात्रता</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>छिटो उपाय:</strong> कार्यरत जीवनसाथीलाई सह-ऋणी थप्नु घर कर्जा पात्रता बढाउने सबैभन्दा छिटो तरिका हो।
+</div>`
+    },
+    {
+      id: "increase-eligibility-ne",
+      title: "ऋण आवेदन दिनुअघि पात्रता कसरी बढाउने: ६ सिद्ध रणनीति",
+      content: `<h3>रणनीति १: CIB इतिहास सुधार्नुहोस्</h3>
+<ul>
+  <li>सबै EMI र ऋण समयमा तिर्नुहोस्</li>
+  <li>CIB रिपोर्टमा गल्ती भए सुधार गर्नुहोस्</li>
+  <li>क्रेडिट कार्ड बक्यौता कम राख्नुहोस्</li>
+</ul>
+
+<h3>रणनीति २: सानासाना ऋण र बक्यौता तिर्नुहोस्</h3>
+<p>रू. १०,०००/महिनाको सवारी कर्जा बन्द गर्दा घर कर्जा पात्रता रू. ८.५ लाख बढ्छ।</p>
+
+<h3>रणनीति ३: सह-ऋणी थप्नुहोस्</h3>
+<p>काम गर्ने जीवनसाथीलाई सह-ऋणी बनाउनुहोस् — दुवैको आम्दानी FOIR गणनामा जोडिन्छ।</p>
+
+<h3>रणनीति ४: सबै आय स्रोतहरू देखाउनुहोस्</h3>
+<p>घर भाडा आम्दानी, फ्रिल्यान्स आम्दानी (ITR मा भए), कृषि आम्दानी — सबै ITR मा घोषणा गर्नुहोस्।</p>
+
+<div class="callout-info">
+  <strong>उदाहरण:</strong> सुरेशको रू. ८०,००० तलब + रू. १५,००० भाडा आम्दानी। बैंकले रू. ९१,२५० (८०K + ७५% of १५K) मान्न सक्छ — पात्रता लगभग रू. १० लाख बढ्छ।
+</div>
+
+<h3>रणनीति ५: लामो अवधि छान्नुहोस्</h3>
+<p>१५ वर्षबाट २० वर्षमा जाँदा EMI कम हुन्छ र उही आम्दानीले बढी ऋण धान्न सक्छ।</p>
+
+<h3>रणनीति ६: सही समयमा आवेदन दिनुहोस्</h3>
+<p>तलब वृद्धिको ६ महिनापछि, प्रमुख ऋण बन्द भएपछि, वा ITR दाखिला भएपछि आवेदन दिनु उत्तम।</p>`
+    },
+    {
+      id: "loan-types-ne",
+      title: "घर कर्जा vs व्यक्तिगत कर्जा vs सवारी कर्जा: पात्रता मानदण्डको तुलना",
+      content: `<table>
+  <thead>
+    <tr>
+      <th>मानदण्ड</th>
+      <th>घर कर्जा</th>
+      <th>व्यक्तिगत कर्जा</th>
+      <th>सवारी कर्जा</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ब्याजदर (२०२६)</td>
+      <td>११–१३%</td>
+      <td>१३–१८%</td>
+      <td>११–१३%</td>
+    </tr>
+    <tr>
+      <td>अधिकतम अवधि</td>
+      <td>२५–३० वर्ष</td>
+      <td>५–७ वर्ष</td>
+      <td>७ वर्ष</td>
+    </tr>
+    <tr>
+      <td>LTV अनुपात</td>
+      <td>सम्पत्ति मूल्यको ५०–७०%</td>
+      <td>आवश्यकताको १००%</td>
+      <td>सवारी मूल्यको ७५–९०%</td>
+    </tr>
+    <tr>
+      <td>न्यूनतम तलब</td>
+      <td>रू. २५,०००/महिना</td>
+      <td>रू. १५,०००/महिना</td>
+      <td>रू. २०,०००/महिना</td>
+    </tr>
+    <tr>
+      <td>कर फाइदा</td>
+      <td>छ (व्यवसाय)</td>
+      <td>छैन (व्यक्तिगत)</td>
+      <td>छैन (व्यवसाय बाहेक)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>२०२६ अपडेट:</strong> NRB ले आवास कर्जाका लागि LTV अनुपात र ब्याजदरमा नियमित समीक्षा गर्छ। आवेदन दिनुअघि आफ्नो बैंकसँग नवीनतम मानदण्ड पुष्टि गर्नुहोस्।
+</div>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "मासिक आम्दानी प्रविष्ट गर्नुहोस्",
+      description: "शुद्ध take-home तलब राख्नुहोस् (PF, कर आदि कटिसकेपछि)। स्व-रोजगार भए पछिल्लो २ वर्षको ITR को औसत। भाडा आम्दानी पनि थप्नुहोस्।"
+    },
+    {
+      title: "वर्तमान स्थिर दायित्वहरू सूचीबद्ध गर्नुहोस्",
+      description: "सबै वर्तमान EMI राख्नुहोस्: सवारी कर्जा, व्यक्तिगत कर्जा, शिक्षा कर्जा, क्रेडिट कार्ड न्यूनतम भुक्तानी।"
+    },
+    {
+      title: "CIB स्कोर/स्थिति प्रविष्ट गर्नुहोस्",
+      description: "आफ्नो CIB रिपोर्टको अवस्था राख्नुहोस्। बैंकले CIB रिपोर्ट खिच्नुअघि आफैं जाँच्नुहोस्।"
+    },
+    {
+      title: "ऋण प्रकार र अवधि छान्नुहोस्",
+      description: "घर कर्जा, व्यक्तिगत कर्जा, वा सवारी कर्जा छान्नुहोस्। मनपर्ने अवधि राख्नुहोस्। क्याल्कुलेटरले ट्रेड-अफ देखाउनेछ।"
+    },
+    {
+      title: "नतिजा तुलना गरी योजना बनाउनुहोस्",
+      description: "क्याल्कुलेटरले पात्र ऋण रकम, EMI, कुल ब्याज, र पात्रता बढाउने सुझावहरू देखाउनेछ।"
+    }
+  ],
+  faqs: [
+    {
+      question: "नेपालमा घर कर्जाका लागि राम्रो FOIR कति हो?",
+      answer: "४०–४५% वा त्योभन्दा कम FOIR आदर्श मानिन्छ। नेपाली बैंकहरू सामान्यतः ५०–५५% सम्म अनुमति दिन्छन्। वर्तमान दायित्वका कारण FOIR पहिले नै ५०% माथि छ भने बैंकले ऋण रकम घटाउँछ वा अस्वीकार गर्छ।"
+    },
+    {
+      question: "नेपालमा घर कर्जाको ब्याजदर कति छ?",
+      answer: "मार्च २०२६ मा नेपालका वाणिज्य बैंकहरूले घर कर्जामा ११–१३% ब्याज लिन्छन्। NRB को base rate परिवर्तन अनुसार दर बदलिन सक्छ। नबिल बैंक: ११.५%, एभरेस्ट: ११.७५% (अनुमानित)।"
+    },
+    {
+      question: "के खराब CIB इतिहासमा घर कर्जा मिल्छ?",
+      answer: "खराब CIB इतिहास भएमा मुख्यधाराका बैंकबाट ऋण पाउन गाह्रो हुन्छ। विकास बैंक वा वित्त कम्पनीहरू अलि लचिलो हुन सक्छन् तर बढी ब्याज लिन्छन्। ६–१२ महिना CIB सुधार गरेर आवेदन दिनु राम्रो।"
+    },
+    {
+      question: "सह-ऋणी थप्दा पात्रता कति बढ्छ?",
+      answer: "उल्लेखनीय रूपमा बढ्छ। जीवनसाथीको आम्दानी FOIR गणनामा जोडिन्छ। रू. ५०,०००/महिना कमाउने जीवनसाथी थप्दा पात्रता रू. २०–२५ लाख बढ्न सक्छ।"
+    },
+    {
+      question: "नेपालमा घर कर्जाको न्यूनतम तलब कति चाहिन्छ?",
+      answer: "अधिकांश बैंकले न्यूनतम रू. २५,०००/महिना शुद्ध आम्दानी माग्छन्। तर यो तलबमा पाइने ऋण काठमाडौंमा सम्पत्ति किन्न पर्याप्त नहुन सक्छ। रू. ५०,०००+ तलबमा अर्थपूर्ण घर कर्जा मिल्छ।"
+    },
+    {
+      question: "काम परिवर्तन भएमा ऋण पात्रतामा असर पर्छ?",
+      answer: "हो। बैंकहरूले सामान्यतः वर्तमान रोजगारदातामा न्यूनतम १–२ वर्ष माग्छन्। हालै काम परिवर्तन भएको छ भने ६ महिना प्रतीक्षा गर्नुहोस् वा काम परिवर्तन अघि नै आवेदन दिनुहोस्।"
+    },
+    {
+      question: "स्व-रोजगारका लागि आय कसरी प्रमाणित हुन्छ?",
+      answer: "३ वर्षको आयकर विवरण (IRD acknowledgement सहित), १२–२४ महिनाको बैंक स्टेटमेन्ट, CA प्रमाणित नाफा-नोक्सान विवरण, र VAT/PAN दर्ता कागजातहरू।"
+    },
+    {
+      question: "NRB ब्याजदर परिवर्तनले ऋण पात्रतामा कसरी असर गर्छ?",
+      answer: "NRB ले ब्याजदर घटाउँदा बैंकको base rate घट्छ र home loan rate पनि घट्छ। कम ब्याजदरमा उही EMI ले बढी ऋण धान्न सक्छ, जसले पात्रता बढाउँछ। NRB को मौद्रिक नीति अनुसरण गर्नुहोस्।"
+    }
+  ],
+  relatedGuides: ["loan-calculator-guide", "emi-calculator-guide", "salary-calculator-guide"],
+  toolCTA: {
+    heading: "अहिले नै आफ्नो ऋण पात्रता जाँच गर्नुहोस्",
+    description: "तलब, वर्तमान EMI, र CIB स्थिति राख्नुहोस् — तुरुन्तै जान्नुहोस् तपाईं नबिल, एभरेस्ट र ग्लोबल IME बैंकबाट कति घर कर्जा, व्यक्तिगत कर्जा, वा सवारी कर्जा पाउन सक्नुहुन्छ।",
+    buttonText: "ऋण पात्रता क्याल्कुलेटर खोल्नुहोस्"
+  }
+},
+
+{
+  slug: "loan-vs-lease-calculator-guide",
+  toolSlug: "loan-vs-lease-calculator",
+  category: "finance-tools",
+  title: "लोन vs लिज क्याल्कुलेटर: कुन राम्रो? (2026)",
+  subtitle: "नेपालमा गाडी वा सम्पत्ति लोनमा किन्ने कि लिजमा लिने — वास्तविक ₹/रू उदाहरण सहित पूर्ण तुलना",
+  metaTitle: "लोन vs लिज क्याल्कुलेटर नेपाल 2026 | किन्ने कि लिजमा?",
+  metaDescription: "नेपालमा लोन र लिजको तुलना गर्नुहोस्। EMI, कुल लागत, कर फाइदा र स्वामित्व। NRB दरहरू सहित वास्तविक उदाहरण 2026।",
+  targetKeyword: "लोन vs लिज क्याल्कुलेटर",
+  secondaryKeywords: [
+    "गाडी लोन vs लिज नेपाल",
+    "लोन वा लिज कुन राम्रो",
+    "वाहन लिज क्याल्कुलेटर नेपाल",
+    "NRB कर्जा दर 2026",
+    "अपरेटिङ लिज नेपाल",
+    "व्यापार लिज कर फाइदा",
+    "नेपालमा कार फाइनान्स",
+    "लिज भाडा कटौती",
+    "EV लोन नेपाल",
+    "EMI vs लिज भाडा तुलना"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१४ मिनेट",
+  tags: ["लोन", "लिज", "कार फाइनान्स", "EMI", "कर फाइदा", "2026", "नेपाल"],
+  intro: `<p>गाडी वा कुनै ठूलो सम्पत्ति किन्दा सबैभन्दा महत्त्वपूर्ण प्रश्न हो — <strong>लोनमा किन्ने कि लिजमा लिने?</strong> लोनमा तपाईं EMI तिर्दै जानुहुन्छ र अन्तमा सम्पत्ति आफ्नै हुन्छ। लिजमा तपाईं दीर्घकालीन भाडामा सम्पत्ति प्रयोग गर्नुहुन्छ — मासिक भुक्तानी कम हुन्छ तर अन्तमा फिर्ता गर्नुपर्छ। नेपालमा लिजिङ प्रणाली मुख्यतः व्यावसायिक उद्देश्यका लागि प्रयोग हुन्छ, तर हाल विद्युतीय सवारी साधनसहित consumer leasing बढ्दो छ।</p>
+<p>यो गाइडमा हामी <strong>सबै कुरा विस्तारमा</strong> हेर्नेछौं: ३, ५ र ७ वर्षको अवधिमा वास्तविक रकमहरू, मूल्यह्रासको प्रभाव, कर छुट, र ती विशेष परिस्थितिहरू जहाँ लोन वा लिज मध्ये एउटा स्पष्ट रूपमा राम्रो हुन्छ। NRB निर्देशिका अनुसार नेपालका बैंकहरूको 2026 को वास्तविक दरहरू प्रयोग गरिनेछ।</p>`,
+  sections: [
+    {
+      id: "core-difference-ne",
+      title: "लोन vs लिज: हरेक खरीदारले बुझ्नुपर्ने मूलभूत फरक",
+      content: `<p><strong>लोन</strong>मा तपाईं बैंकबाट पैसा उधारो लिई सम्पत्ति किन्नुहुन्छ। सबै EMI तिरेपछि सम्पत्ति १००% तपाईंको हुन्छ। <strong>लिज</strong>मा तपाईं लिजिङ कम्पनीबाट सम्पत्ति प्रयोग गर्ने अधिकार भाडामा लिनुहुन्छ — अन्तमा फिर्ता गर्नुपर्छ।</p>
+
+<h3>मुख्य प्रकारहरू</h3>
+<ul>
+  <li><strong>अपरेटिङ लिज:</strong> सम्पत्ति लिजिङ कम्पनीकै रहन्छ। तपाईं प्रयोग मात्र गर्नुहुन्छ। मासिक भाडा पूर्णतः व्यापारिक खर्चमा घटाउन पाइन्छ।</li>
+  <li><strong>फाइनान्स लिज:</strong> तपाईं स्वामित्वको जोखिम लिनुहुन्छ। सम्पत्ति तपाईंको ब्यालेन्स शिटमा देखिन्छ। अन्तमा नाममात्रको मूल्यमा किन्ने विकल्प हुन्छ।</li>
+  <li><strong>लोन (हायर पर्चेज):</strong> सम्पत्ति तपाईंकै हो (बैंकको धितो रहन्छ)। सबै मूल्यह्रास फाइदा तपाईंको।</li>
+</ul>
+
+<div class="callout-info">
+  <strong>नेपाल सन्दर्भ:</strong> नेपालमा NRB का वाणिज्य बैंकहरू (नबिल, एभरेस्ट, ग्लोबल IME) hire purchase को माध्यमबाट गाडी कर्जा प्रदान गर्छन्। अपरेटिङ लिज सेवा सीमित कम्पनीहरूले मात्र दिन्छन्।
+</div>
+
+<blockquote>
+  <strong>लोन EMI सूत्र:</strong><br/>
+  EMI = P × r × (1+r)ⁿ / [(1+r)ⁿ – 1]<br/>
+  जहाँ P = मूलधन, r = मासिक ब्याजदर, n = महिना संख्या
+</blockquote>`
+    },
+    {
+      id: "total-cost-ne",
+      title: "रू. १० लाखको गाडीमा ३, ५, ७ वर्षको कुल लागत तुलना",
+      content: `<p>नेपालमा NRB को नवीनतम निर्देशिका अनुसार बाणिज्य बैंकहरूले गाडी कर्जामा <strong>११–१३% ब्याजदर</strong> लिन्छन् (मार्च २०२६)। नबिल बैंकको हायर पर्चेज दर: ११.५% p.a. प्रयोग गरौं।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>विवरण</th>
+      <th>लोन – ३ वर्ष</th>
+      <th>लिज – ३ वर्ष</th>
+      <th>लोन – ५ वर्ष</th>
+      <th>लिज – ५ वर्ष</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>मासिक भुक्तानी (रू.)</td>
+      <td>३२,८५०</td>
+      <td>२२,५००</td>
+      <td>२१,९४०</td>
+      <td>१६,५००</td>
+    </tr>
+    <tr>
+      <td>कुल भुक्तानी (रू.)</td>
+      <td>११,८२,६००</td>
+      <td>८,१०,०००</td>
+      <td>१३,१६,४००</td>
+      <td>९,९०,०००</td>
+    </tr>
+    <tr>
+      <td>अग्रिम भुक्तानी (रू.)</td>
+      <td>१,००,०००</td>
+      <td>०</td>
+      <td>१,००,०००</td>
+      <td>०</td>
+    </tr>
+    <tr>
+      <td>अन्तमा सम्पत्तिको मूल्य</td>
+      <td>५,५०,०००</td>
+      <td>०</td>
+      <td>४,००,०००</td>
+      <td>०</td>
+    </tr>
+    <tr>
+      <td>वास्तविक कुल लागत (रू.)</td>
+      <td>७,३२,६००</td>
+      <td>८,१०,०००</td>
+      <td>१०,१६,४००</td>
+      <td>९,९०,०००</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>मुख्य निष्कर्ष:</strong> ३ वर्षमा लोन जित्छ (रू. ७.३२L vs रू. ८.१०L)। ५ वर्षमा लिज थोरै सस्तो हुन्छ। व्यवसायिक उद्देश्यका लागि कर कटौती थपिए लिज झनै फाइदाजनक हुन्छ।
+</div>
+
+<h3>नेपालमा गाडी मूल्यह्रास तालिका (रू. १० लाखको गाडी)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>वर्ष</th>
+      <th>मूल्यह्रास दर</th>
+      <th>बाँकी मूल्य (रू.)</th>
+      <th>वार्षिक घाटा (रू.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>१ वर्षपछि</td><td>२०%</td><td>८,००,०००</td><td>२,००,०००</td></tr>
+    <tr><td>२ वर्षपछि</td><td>१५%</td><td>६,८०,०००</td><td>१,२०,०००</td></tr>
+    <tr><td>३ वर्षपछि</td><td>१२%</td><td>५,९८,४००</td><td>८१,६००</td></tr>
+    <tr><td>५ वर्षपछि</td><td>१०%</td><td>४,८४,७०४</td><td>–</td></tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "loan-wins-ne",
+      title: "लोन कहिले लिने: ५ अवस्था जहाँ किन्नु राम्रो",
+      content: `<h3>१. गाडी ६+ वर्ष राख्ने योजना छ</h3>
+<p>जति लामो समय राख्नुहुन्छ, स्वामित्वको फाइदा उति बढ्छ। ७–८ वर्षपछि EMI सकिन्छ र गाडी बेच्दा अझै केही रकम फिर्ता आउँछ।</p>
+
+<h3>२. धेरै गाडी चलाउनुहुन्छ (२०,००० km+ प्रति वर्ष)</h3>
+<p>लिजमा mileage cap हुन्छ। अतिरिक्त km मा शुल्क लाग्छ। धेरै चलाउने भए लोन राम्रो।</p>
+
+<h3>३. गाडी परिवर्तन (modify) गर्नुपर्छ</h3>
+<p>CNG kit, custom paint, थप accessories — लिज सम्झौतामा यी निषेध हुन्छन्। लोनमा किनेको गाडीमा स्वतन्त्र हुनुहुन्छ।</p>
+
+<h3>४. राम्रो क्रेडिट इतिहास छ</h3>
+<p>नेपालमा राम्रो क्रेडिट रेकर्ड भएका ऋणीलाई बैंकहरूले कम ब्याजदरमा कर्जा दिन्छन्। नबिल, एभरेस्ट, NIC Asia बैंकको competitive rates को फाइदा लिनुहोस्।</p>
+
+<div class="callout-tip">
+  <strong>सुझाव:</strong> नेपाल सरकारले विद्युतीय सवारी साधनका लागि आयकर ऐनमा विशेष व्यवस्था गरेको छ। EV किन्दा थप कर छुट पाउन सकिन्छ।
+</div>
+
+<h3>५. तलब खाने व्यक्ति, व्यापारिक प्रयोग छैन</h3>
+<p>तलबखोर व्यक्तिलाई न लोन ब्याज न लिज भाडामा कर कटौती मिल्छ। यस neutral अवस्थामा स्वामित्व बनाउनु राम्रो।</p>`
+    },
+    {
+      id: "lease-wins-ne",
+      title: "लिज कहिले लिने: ५ अवस्था जहाँ लिजिङ राम्रो",
+      content: `<h3>१. व्यवसायी वा स्व-रोजगार व्यक्ति</h3>
+<p>अपरेटिङ लिजमा पूरै मासिक भाडा व्यापारिक खर्चमा घटाउन पाइन्छ। आयकर ऐन, २०५८ अनुसार व्यावसायिक खर्चमा कटौती गर्न सकिन्छ।</p>
+
+<h3>२. हरेक ३ वर्षमा नयाँ गाडी चाहिन्छ</h3>
+<p>लिज यो आवश्यकताका लागि उपयुक्त छ। ३ वर्षपछि फिर्ता गर्ने, नयाँ मोडलको लिज लिने — पुरानो गाडी बेच्ने झन्झट छैन।</p>
+
+<h3>३. नगद प्रवाह (Cash Flow) महत्त्वपूर्ण छ</h3>
+<p>लिज भाडा लोन EMI भन्दा २५–३५% कम हुन्छ। बचेको पैसा व्यापारमा लगाउन सकिन्छ।</p>
+
+<h3>४. कम्पनीले उपलब्ध गराएको लिज</h3>
+<p>धेरै नेपाली कम्पनीहरूले अब कर्मचारीलाई कार लिज सुविधा तलबको एक भागको रूपमा दिन्छन्। यसमा कर फाइदा हुन सक्छ।</p>
+
+<div class="callout-info">
+  <strong>उदाहरण:</strong> राजेश महिना रू. २,५०,००० कमाउँछन्। कम्पनीले रू. २०,०००/महिना गाडी लिज सुविधा दिन्छ। उचित संरचना गरिए कर बचत उल्लेखनीय हुन सक्छ।
+</div>
+
+<h3>५. विद्युतीय सवारी साधन र प्रविधि परिवर्तनको जोखिम</h3>
+<p>EV प्रविधि तीव्र गतिमा बदलिँदैछ। ७ वर्षका लागि lock-in हुनु जोखिमपूर्ण छ। ३ वर्षको लिजले हरेक चक्रमा नवीनतम प्रविधि प्रयोग गर्न दिन्छ।</p>`
+    },
+    {
+      id: "tax-benefits-ne",
+      title: "नेपालमा व्यवसायीका लागि लोन vs लिजमा कर फाइदा",
+      content: `<table>
+  <thead>
+    <tr>
+      <th>कर पक्ष</th>
+      <th>लोन (स्वामित्व)</th>
+      <th>अपरेटिङ लिज</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>मूल्यह्रास कटौती</td>
+      <td>आयकर ऐन अनुसार</td>
+      <td>लिजिङ कम्पनीले पाउँछ</td>
+    </tr>
+    <tr>
+      <td>ब्याज कटौती</td>
+      <td>पूरै ब्याज घटाउन पाइन्छ</td>
+      <td>लागू हुँदैन</td>
+    </tr>
+    <tr>
+      <td>भाडा कटौती</td>
+      <td>लागू हुँदैन</td>
+      <td>१००% भाडा घटाउन पाइन्छ</td>
+    </tr>
+    <tr>
+      <td>VAT</td>
+      <td>EMI मा VAT छैन</td>
+      <td>भाडामा VAT (Input Credit सम्भव)</td>
+    </tr>
+    <tr>
+      <td>ब्यालेन्स शिट प्रभाव</td>
+      <td>सम्पत्ति + दायित्व दुवै</td>
+      <td>Off balance sheet</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>महत्त्वपूर्ण:</strong> नेपालमा VAT दर १३% छ। VAT दर्ता भएका व्यवसायले Input Tax Credit दाबी गर्न सक्छन् — प्रभावकारी लागत घट्छ। दर्ता नभएका व्यवसायलाई लिज थप १३% महँगो पर्न सक्छ।
+</div>
+
+<h3>वास्तविक उदाहरण: ३०% कर दर, रू. १० लाखको गाडी, ३ वर्षको लिज</h3>
+<ul>
+  <li>मासिक लिज भाडा: रू. २२,५०० (VAT बाहेक)</li>
+  <li>वार्षिक कटौती: रू. २,७०,०००</li>
+  <li>३०% कर दरमा बचत: रू. ८१,०००/वर्ष</li>
+  <li>३ वर्षमा कुल कर बचत: <strong>रू. २,४३,०००</strong></li>
+</ul>`
+    },
+    {
+      id: "ev-ne",
+      title: "विद्युतीय सवारी साधनका लागि लोन vs लिज: नेपालमा 2026 को विशेष विचार",
+      content: `<p>नेपाल सरकारले EV प्रवर्द्धनका लागि विभिन्न नीतिगत सुविधाहरू दिएको छ। यसले लोन vs लिजको निर्णयलाई थप जटिल बनाएको छ।</p>
+
+<h3>नेपालमा EV लिजिङका फाइदाहरू</h3>
+<ul>
+  <li><strong>ब्याट्री जोखिम:</strong> लिजिङमा ब्याट्री घिसाउने जोखिम लिजिङ कम्पनीको हुन्छ।</li>
+  <li><strong>प्रविधि अद्यावधिक:</strong> ३ वर्षमा नयाँ मोडलको EV प्रयोग गर्न सकिन्छ।</li>
+  <li><strong>नेपालको EV नीति:</strong> सरकारले EV आयातमा शुल्क छुट दिएकाले EV मूल्य अपेक्षाकृत कम छ।</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>विवरण</th>
+      <th>लोन (नबिल, ११.५%, ५ वर्ष)</th>
+      <th>लिज (३ वर्ष, सर्वसमावेशी)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>मासिक भुक्तानी</td>
+      <td>रू. २१,९४०</td>
+      <td>रू. ३२,०००</td>
+    </tr>
+    <tr>
+      <td>मर्मत सम्भार समावेश?</td>
+      <td>छैन</td>
+      <td>छ</td>
+    </tr>
+    <tr>
+      <td>ब्याट्री जोखिम</td>
+      <td>खरीदारको</td>
+      <td>लिजिङ कम्पनीको</td>
+    </tr>
+    <tr>
+      <td>अन्तमा स्वामित्व</td>
+      <td>छ (मूल्य रू. ७–८ लाख)</td>
+      <td>छैन</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>NRB निर्देशिका:</strong> नेपाल राष्ट्र बैंकले EV कर्जाका लागि केही सहुलियत व्यवस्था गरेको छ। विस्तृत जानकारीका लागि आफ्नो बैंकसँग सम्पर्क गर्नुहोस् वा NRB को वेबसाइट हेर्नुहोस्।
+</div>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "सम्पत्तिको मूल्य र अग्रिम भुक्तानी प्रविष्ट गर्नुहोस्",
+      description: "गाडीको मूल्य राख्नुहोस्। लोनका लागि अग्रिम भुक्तानी (१०–२०%)। लिजका लागि सुरक्षा निक्षेप (भए)।"
+    },
+    {
+      title: "लोन र लिजको सर्त भर्नुहोस्",
+      description: "नबिल वा एभरेस्ट बैंकको ब्याजदर, लोन अवधि महिनामा, लिज मासिक भाडा र अवधि राख्नुहोस्।"
+    },
+    {
+      title: "आफ्नो कर प्रोफाइल सेट गर्नुहोस्",
+      description: "तलबखोर, स्व-रोजगार, वा व्यवसाय छान्नुहोस्। कर दर राख्नुहोस्। क्याल्कुलेटरले कर समायोजित लागत देखाउनेछ।"
+    },
+    {
+      title: "अपेक्षित पुनर्विक्री मूल्य अनुमान गर्नुहोस्",
+      description: "जब बेच्ने योजना छ, त्यस समयको अपेक्षित मूल्य राख्नुहोस्। यस गाइडको मूल्यह्रास तालिकाबाट सन्दर्भ लिनुहोस्।"
+    },
+    {
+      title: "नतिजा तुलना गरी निर्णय गर्नुहोस्",
+      description: "क्याल्कुलेटरले कुल लोन लागत, कुल लिज लागत, कर समायोजित लागत र सिफारिस देखाउनेछ। मासिक भुक्तानी होइन, वास्तविक कुल लागतमा ध्यान दिनुहोस्।"
+    }
+  ],
+  faqs: [
+    {
+      question: "नेपालमा लिज लोनभन्दा सस्तो हुन्छ?",
+      answer: "मासिक भुक्तानीमा हो — लिज भाडा लोन EMI भन्दा २५–३५% कम हुन्छ। तर कुल स्वामित्व लागतमा यो अवधि र कर अवस्थामा निर्भर गर्छ। व्यक्तिका लागि ३ वर्षमा लोन प्रायः सस्तो पर्छ।"
+    },
+    {
+      question: "नेपालमा गाडी कर्जाको ब्याजदर कति छ?",
+      answer: "मार्च २०२६ मा नेपालका वाणिज्य बैंकहरूले गाडी कर्जामा ११–१३% ब्याज लिन्छन्। नबिल बैंक: ११.५%, एभरेस्ट बैंक: ११.७५%, NIC Asia: १२% (अनुमानित)। NRB को base rate अनुसार दर परिवर्तन हुन सक्छ।"
+    },
+    {
+      question: "के नेपालमा लिज भाडामा कर छुट पाइन्छ?",
+      answer: "हो, व्यावसायिक प्रयोजनका लागि अपरेटिङ लिजको पूरै भाडा आयकर ऐन, २०५८ को दफा अनुसार व्यापारिक खर्चमा घटाउन पाइन्छ। तलबखोर व्यक्तिले व्यक्तिगत गाडीको लिज भाडामा यो सुविधा पाउँदैनन्।"
+    },
+    {
+      question: "लिज सकिएपछि के हुन्छ?",
+      answer: "अपरेटिङ लिज सकिएपछि तीन विकल्प: (१) सर्त अनुसार गाडी फिर्ता गर्ने, (२) लिज नवीकरण गर्ने, वा (३) सम्झौतामा purchase option भए पूर्वनिर्धारित मूल्यमा किन्ने।"
+    },
+    {
+      question: "लिजमा mileage सीमा कति हुन्छ?",
+      answer: "प्रायः लिजमा १५,०००–१८,००० km/वर्षको सीमा हुन्छ। अतिरिक्त km मा शुल्क लाग्छ। धेरै गाडी चलाउने भए सुरुमै बढी mileage limit वार्ता गर्नुहोस्।"
+    },
+    {
+      question: "लिजले क्रेडिट रेकर्डमा असर पार्छ?",
+      answer: "अपरेटिङ लिज प्रायः CIB (Credit Information Bureau) रिपोर्टमा नदेखिन सक्छ। वित्तीय संस्थाबाट लिइएको फाइनान्स लिज भने ऋणजस्तै रिपोर्ट हुन सक्छ।"
+    },
+    {
+      question: "स्टार्टअपका लागि लोन राम्रो कि लिज?",
+      answer: "प्रारम्भिक स्टार्टअपका लागि अपरेटिङ लिज राम्रो: अग्रिम भुक्तानी छैन (कार्यशील पुँजी बचत), पूरै भाडा खर्चमा घटाउन पाइन्छ, ब्यालेन्स शिट सफा रहन्छ। दीर्घकालीन प्रयोगका लागि लोन राम्रो हुन सक्छ।"
+    },
+    {
+      question: "नेपालमा EV किन्दा थप फाइदा के छ?",
+      answer: "नेपाल सरकारले EV आयातमा भन्सार दर घटाएको छ जसले कीमत कम गरेको छ। केही बैंकले EV कर्जामा ब्याज छुट पनि दिन्छन्। NRB को निर्देशिका र आफ्नो बैंकसँग परामर्श गरी नवीनतम सुविधाबारे जानकारी लिनुहोस्।"
+    }
+  ],
+  relatedGuides: ["loan-calculator-guide", "emi-calculator-guide", "sip-calculator-guide"],
+  toolCTA: {
+    heading: "अहिले नै लोन vs लिज लागत गणना गर्नुहोस्",
+    description: "गाडीको मूल्य, कर्जाको दर र लिज भाडा राख्नुहोस् — तुरुन्तै थाहा पाउनुहोस् कुन विकल्प बढी बचत गर्छ।",
+    buttonText: "लोन vs लिज क्याल्कुलेटर खोल्नुहोस्"
+  }
+},
+
+{
+  slug: 'nepal-vehicle-loan-calculator-guide',
+  toolSlug: 'nepal-vehicle-loan-calculator',
+  category: 'finance-tools',
+  title: 'नेपाल सवारी साधन ऋण क्याल्कुलेटर: सम्पूर्ण मार्गदर्शिका २०२६',
+  subtitle: 'आफ्नो किस्ता हिसाब गर्नुस्, बैंकका दरहरू तुलना गर्नुस् र नेपालका सवारी ऋण नियमहरू बुझ्नुस्',
+  metaTitle: 'नेपाल सवारी साधन ऋण क्याल्कुलेटर — किस्ता, दर र नियम २०२६',
+  metaDescription: 'नेपालमा सवारी साधन ऋणको किस्ता हिसाब गर्नुस्। NRB नियमित बैंक दरहरू, डाउन पेमेन्ट नियम, EV ऋण र प्रदेशगत सवारी कर जानकारी।',
+  targetKeyword: 'नेपाल सवारी साधन ऋण क्याल्कुलेटर',
+  secondaryKeywords: [
+    'नेपाल सवारी ऋण किस्ता',
+    'नेपाल बैंक कार ऋण ब्याज दर',
+    'EV ऋण नेपाल',
+    'सवारी ऋण डाउन पेमेन्ट नेपाल',
+    'NRB सवारी ऋण निर्देशिका',
+    'नेपाल सवारी दर्ता कर',
+    'विद्युतीय सवारी ऋण नेपाल',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१८ मिनेट पठन',
+  tags: ['सवारी ऋण', 'नेपाल', 'किस्ता', 'कार ऋण', 'EV ऋण', 'NRB', 'बैंक दर', 'सवारी कर'],
+  intro: `<p>नेपालमा सवारी साधन किन्नु — चाहे मोटरसाइकल होस्, कार होस् वा विद्युतीय सवारी (EV) — एउटा ठूलो आर्थिक निर्णय हो। मोटरसाइकलको NPR २ लाखदेखि लिएर लग्जरी SUV को NPR १.५ करोड सम्म, अधिकांश नेपाली खरिदकर्ताहरू बैंक ऋणमा भर परिरहेका हुन्छन्। नेपाल सवारी साधन ऋण क्याल्कुलेटरले तपाईंलाई बैंक जानुअघि नै मासिक किस्ता, कुल ब्याज र कुल लागत अनुमान गर्न सहयोग गर्छ।</p>
+<p>नेपाल राष्ट्र बैंक (NRB) ले सवारी ऋणलाई नियमन गर्छ — अधिकतम ऋण-मूल्य अनुपात (LTV), ब्याज दरको सीमा र ऋण अवधिबारे मार्गनिर्देशन जारी गर्छ। २०२६ को सुरुमा वाणिज्य बैंकहरूको सवारी ऋण ब्याज दर वार्षिक १०.५%–१३.५% को बीचमा छ। यस मार्गदर्शिकामा हामी वास्तविक बैंक दर, NRB आधार दर, प्रदेशगत सवारी कर, EV प्रोत्साहन, र ऋण पूर्वभुक्तानी नियमसहित सबै कुरा विस्तारमा बताउनेछौं।</p>`,
+  sections: [
+    {
+      id: 'nrb-base-rate-context',
+      title: 'NRB आधार दर र सवारी ऋण ब्याज: कसरी निर्धारण हुन्छ?',
+      content: `<p>नेपाल राष्ट्र बैंक (NRB) ले प्रत्येक महिना वाणिज्य बैंकहरूको <strong>आधार दर (Base Rate)</strong> प्रकाशन गर्ने व्यवस्था लागू गरेको छ। आधार दर भनेको बैंकहरूले ऋण दिन सक्ने न्यूनतम ब्याज दर हो। सवारी ऋणको ब्याज दर यसरी निर्धारण हुन्छ:</p>
+
+<blockquote>
+  <strong>सवारी ऋण दर = आधार दर + स्प्रेड</strong><br/>
+  आधार दर (२०२५/२६ औसत): लगभग ८.५%–९.५%<br/>
+  स्प्रेड: १.५%–४.०%<br/>
+  प्रभावी सवारी ऋण दर: १०%–१३.५%
+</blockquote>
+
+<div class="callout-info">
+  <strong>NRB निर्देशिका के भन्छ?</strong> NRB ले बैंकहरूलाई आधार दरभन्दा कम दरमा ऋण दिन रोक लगाएको छ। तसर्थ, बजारमा ब्याज दर कति नै कम देखिए पनि, वास्तविक दर आधार दरभन्दा सधैं बढी हुनेछ। हरेक बैंकको आधार दर NRB को वेबसाइटमा (www.nrb.org.np) उपलब्ध छ।
+</div>
+
+<h3>नेपालमा सवारी ऋणका प्रकारहरू</h3>
+<ul>
+  <li><strong>दुईपाङ्ग्रे सवारी ऋण:</strong> मोटरसाइकल, स्कुटर — NPR १–१० लाख, ३–५ वर्ष अवधि</li>
+  <li><strong>चारपाङ्ग्रे सवारी ऋण:</strong> कार, जिप, SUV — NPR १० लाखदेखि १.५ करोड, ७ वर्षसम्म</li>
+  <li><strong>व्यावसायिक सवारी ऋण:</strong> ट्रक, बस, माइक्रो — थोरै बढी दर</li>
+  <li><strong>विद्युतीय सवारी (EV) ऋण:</strong> विशेष रियायती दर, सरकारी प्रोत्साहन सहित</li>
+  <li><strong>भारी यन्त्र ऋण:</strong> एक्स्काभेटर, टिपर — व्यापार ऋणको रूपमा</li>
+</ul>`,
+    },
+    {
+      id: 'bank-rates-ne',
+      title: 'नेपालका प्रमुख बैंकहरूको सवारी ऋण ब्याज दर तुलना (२०२६)',
+      content: `<p>तलको तालिकामा नेपालका प्रमुख NRB-नियमित वाणिज्य बैंकहरूका अनुमानित सवारी ऋण दर दिइएका छन्। यी दरहरू संकेतात्मक हुन् र समयसमयमा परिवर्तन हुन सक्छन्। ऋण आवेदन गर्नु अघि सम्बन्धित शाखामा पुष्टि गर्नुहोला।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>बैंकको नाम</th>
+      <th>कार ऋण दर (वार्षिक)</th>
+      <th>दुईपाङ्ग्रे दर (वार्षिक)</th>
+      <th>EV ऋण दर (वार्षिक)</th>
+      <th>अधिकतम अवधि</th>
+      <th>अधिकतम LTV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>नबिल बैंक</td><td>११.०%–१२.५%</td><td>१२.०%–१३.०%</td><td>९.५%–१०.५%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>NIC एशिया बैंक</td><td>१०.७५%–१२.०%</td><td>११.५%–१२.५%</td><td>९.०%–१०.२५%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>हिमालयन बैंक</td><td>११.२५%–१२.७५%</td><td>१२.०%–१३.०%</td><td>९.५%–१०.७५%</td><td>६ वर्ष</td><td>७५%</td></tr>
+    <tr><td>एभरेष्ट बैंक</td><td>११.०%–१२.५%</td><td>१२.०%–१३.२५%</td><td>९.२५%–१०.५%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>ग्लोबल आईएमई बैंक</td><td>१०.५%–१२.०%</td><td>११.५%–१२.७५%</td><td>९.०%–१०.०%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>सानिमा बैंक</td><td>११.५%–१३.०%</td><td>१२.५%–१३.५%</td><td>९.७५%–११.०%</td><td>६ वर्ष</td><td>७५%</td></tr>
+    <tr><td>माछापुच्छ्रे बैंक</td><td>११.२५%–१२.७५%</td><td>१२.०%–१३.०%</td><td>९.५%–१०.७५%</td><td>६ वर्ष</td><td>७५%</td></tr>
+    <tr><td>लक्ष्मी सनराइज बैंक</td><td>११.०%–१२.५%</td><td>११.७५%–१२.७५%</td><td>९.२५%–१०.५%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>राष्ट्रिय वाणिज्य बैंक</td><td>१०.५%–११.७५%</td><td>११.२५%–१२.२५%</td><td>८.७५%–९.७५%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>कृषि विकास बैंक</td><td>१०.७५%–१२.०%</td><td>११.५%–१२.५%</td><td>९.०%–१०.०%</td><td>६ वर्ष</td><td>७५%</td></tr>
+    <tr><td>कुमारी बैंक</td><td>११.२५%–१२.७५%</td><td>१२.०%–१३.०%</td><td>९.५%–१०.५%</td><td>६ वर्ष</td><td>७५%</td></tr>
+    <tr><td>सिटिजन बैंक</td><td>११.०%–१२.५%</td><td>११.७५%–१३.०%</td><td>९.२५%–१०.५%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>प्राइम कमर्शियल बैंक</td><td>११.२५%–१२.५%</td><td>१२.०%–१३.०%</td><td>९.५%–१०.५%</td><td>७ वर्ष</td><td>८०%</td></tr>
+    <tr><td>सिद्धार्थ बैंक</td><td>११.५%–१३.०%</td><td>१२.०%–१३.२५%</td><td>९.७५%–१०.७५%</td><td>६ वर्ष</td><td>७५%</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+  <strong>सूचना:</strong> माथिका दरहरू NRB आधार दर र बजारको अवस्था अनुसार परिवर्तन हुन्छन्। ऋणको लागि आवेदन गर्नुअघि सम्बन्धित बैंकको वर्तमान दर सिट माग्नुस् वा बैंकको वेबसाइट हेर्नुस्।
+</div>`,
+    },
+    {
+      id: 'kista-calculation-ne',
+      title: 'किस्ता (EMI) कसरी हिसाब हुन्छ? सूत्र र उदाहरण',
+      content: `<p>नेपालका सबै NRB-नियमित बैंकहरूले किस्ता हिसाब गर्न <strong>घट्दो मौज्दात विधि (Reducing Balance Method)</strong> प्रयोग गर्छन्। यो विधि ऋणीको लागि सबभन्दा उचित हो किनकि ब्याज हरेक महिना बाँकी रहेको साँवामा मात्र लाग्छ, मूल साँवामा होइन।</p>
+
+<blockquote>
+  <strong>किस्ता सूत्र:</strong><br/>
+  किस्ता = P × r × (1 + r)ⁿ / [(1 + r)ⁿ − 1]<br/><br/>
+  P = मूल ऋण रकम<br/>
+  r = मासिक ब्याज दर (वार्षिक दर ÷ १२ ÷ १००)<br/>
+  n = कुल मासिक किस्ता संख्या (वर्ष × १२)
+</blockquote>
+
+<h3>व्यावहारिक उदाहरण: Toyota Fortuner ऋण</h3>
+<table>
+  <thead>
+    <tr><th>विवरण</th><th>रकम</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>सवारीको मूल्य</td><td>NPR १,२०,००,०००</td></tr>
+    <tr><td>डाउन पेमेन्ट (२५%)</td><td>NPR ३०,००,०००</td></tr>
+    <tr><td>ऋण रकम (P)</td><td>NPR ९०,००,०००</td></tr>
+    <tr><td>ब्याज दर</td><td>११.५% वार्षिक → r = ०.००९५८३ मासिक</td></tr>
+    <tr><td>अवधि</td><td>७ वर्ष = ८४ महिना</td></tr>
+    <tr><td>मासिक किस्ता</td><td><strong>NPR १,५३,५२७</strong></td></tr>
+    <tr><td>कुल भुक्तानी</td><td>NPR १,२८,९६,२६८</td></tr>
+    <tr><td>कुल ब्याज</td><td>NPR ३८,९६,२६८</td></tr>
+  </tbody>
+</table>
+
+<h3>किस्ता तालिका (पहिलो ६ महिना)</h3>
+<table>
+  <thead>
+    <tr><th>महिना</th><th>प्रारम्भिक मौज्दात</th><th>ब्याज</th><th>साँवा</th><th>किस्ता</th><th>बाँकी मौज्दात</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>१</td><td>९०,००,०००</td><td>८६,२५०</td><td>६७,२७७</td><td>१,५३,५२७</td><td>८९,३२,७२३</td></tr>
+    <tr><td>२</td><td>८९,३२,७२३</td><td>८५,६०४</td><td>६७,९२३</td><td>१,५३,५२७</td><td>८८,६४,८००</td></tr>
+    <tr><td>३</td><td>८८,६४,८००</td><td>८४,९५२</td><td>६८,५७५</td><td>१,५३,५२७</td><td>८७,९६,२२५</td></tr>
+    <tr><td>४</td><td>८७,९६,२२५</td><td>८४,२९४</td><td>६९,२३३</td><td>१,५३,५२७</td><td>८७,२६,९९२</td></tr>
+    <tr><td>५</td><td>८७,२६,९९२</td><td>८३,६३४</td><td>६९,८९३</td><td>१,५३,५२७</td><td>८६,५७,०९९</td></tr>
+    <tr><td>६</td><td>८६,५७,०९९</td><td>८२,९६७</td><td>७०,५६०</td><td>१,५३,५२७</td><td>८५,८६,५३९</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>किस्ता तालिका बुझ्नुस्:</strong> शुरुका महिनाहरूमा ब्याजको हिस्सा बढी र साँवाको हिस्सा कम हुन्छ। जसजसो समय बित्छ, साँवाको हिस्सा बढ्दै जान्छ। यसैले शुरुमा अतिरिक्त रकम तिर्न सकिए कुल ब्याज धेरै बच्न सक्छ।
+</div>`,
+    },
+    {
+      id: 'province-tax-ne',
+      title: 'नेपालमा सवारी दर्ता कर र सडक कर: प्रदेशगत तालिका',
+      content: `<p>नेपालमा सवारी साधन दर्ता गर्दा केन्द्रीय सरकारले भन्सार महसुल र मूल्य अभिवृद्धि कर (VAT) लिन्छ, र सवारी यातायात व्यवस्था विभाग (DoTM) ले दर्ता गराउँछ। थप रूपमा प्रदेश सरकारहरूले वार्षिक सडक कर संकलन गर्छन्।</p>
+
+<h3>केन्द्रीय सरकार: भन्सार महसुल (एकपटक)</h3>
+<table>
+  <thead>
+    <tr><th>सवारी प्रकार</th><th>इन्जिन क्षमता</th><th>भन्सार दर (मूल्यको %)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>पेट्रोल कार</td><td>१०००cc सम्म</td><td>८०%–१००%</td></tr>
+    <tr><td>पेट्रोल कार</td><td>१००१–१५०० cc</td><td>१००%–१३०%</td></tr>
+    <tr><td>पेट्रोल कार</td><td>१५०१–२०००cc</td><td>१३०%–१५०%</td></tr>
+    <tr><td>पेट्रोल कार</td><td>२०००cc भन्दा माथि</td><td>१५०%–२४०%</td></tr>
+    <tr><td>विद्युतीय सवारी (EV)</td><td>सबै</td><td>१०%–२५% (रियायती)</td></tr>
+    <tr><td>हाइब्रिड सवारी</td><td>सबै</td><td>४०%–८०%</td></tr>
+    <tr><td>पेट्रोल दुईपाङ्ग्रे</td><td>१५०cc सम्म</td><td>५%–१०%</td></tr>
+    <tr><td>पेट्रोल दुईपाङ्ग्रे</td><td>१५१–२५०cc</td><td>१०%–१५%</td></tr>
+  </tbody>
+</table>
+
+<h3>प्रदेशगत वार्षिक सडक कर (२०८१/८२, अनुमानित)</h3>
+<table>
+  <thead>
+    <tr><th>प्रदेश</th><th>कार (≤१०००cc)</th><th>कार (१०००–२०००cc)</th><th>EV कार</th><th>मोटरसाइकल</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>बागमती (काठमाडौं)</td><td>NPR ६,०००–८,०००</td><td>NPR ९,०००–१२,०००</td><td>NPR १,५००–३,०००</td><td>NPR १,२००–२,०००</td></tr>
+    <tr><td>मधेश</td><td>NPR ४,५००–६,०००</td><td>NPR ७,०००–९,०००</td><td>NPR १,२००–२,५००</td><td>NPR ९००–१,५००</td></tr>
+    <tr><td>गण्डकी</td><td>NPR ५,०००–७,०००</td><td>NPR ८,०००–१०,०००</td><td>NPR १,५००–२,५००</td><td>NPR १,०००–१,८००</td></tr>
+    <tr><td>लुम्बिनी</td><td>NPR ४,५००–६,०००</td><td>NPR ७,०००–९,०००</td><td>NPR १,२००–२,०००</td><td>NPR ९००–१,५००</td></tr>
+    <tr><td>कर्णाली</td><td>NPR ३,५००–५,०००</td><td>NPR ६,०००–८,०००</td><td>NPR १,०००–१,८००</td><td>NPR ७००–१,२००</td></tr>
+    <tr><td>सुदूरपश्चिम</td><td>NPR ३,५००–५,०००</td><td>NPR ६,०००–८,०००</td><td>NPR १,०००–१,८००</td><td>NPR ७००–१,२००</td></tr>
+    <tr><td>कोशी</td><td>NPR ५,०००–७,०००</td><td>NPR ८,०००–१०,५००</td><td>NPR १,५००–२,५००</td><td>NPR १,०००–१,८००</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>नवीकरण जानकारी:</strong> सवारी साधनको वार्षिक नवीकरण (नबिकरण) गर्दा सडक कर तिर्नुपर्छ। ढिलो तिर्दा थप जरिवाना लाग्छ। अनलाइन भुक्तानी DoTM को e-Services पोर्टल र कनेक्ट IPS बाट गर्न सकिन्छ।
+</div>`,
+    },
+    {
+      id: 'ev-subsidy-ne',
+      title: 'विद्युतीय सवारी (EV) ऋण: नेपाल सरकारको प्रोत्साहन र विशेष दर',
+      content: `<p>नेपाल सरकारले स्वच्छ ऊर्जा नीतिअन्तर्गत विद्युतीय सवारी साधनलाई प्राथमिकता दिएको छ। पेट्रोलियम आयातमा वार्षिक अर्बौं रुपैयाँ खर्च हुने भएकाले EV प्रवर्द्धन राष्ट्रिय हितमा छ। NRB ले पनि बैंकहरूलाई EV ऋणमा रियायती दर दिन निर्देशन दिएको छ।</p>
+
+<h3>नेपाल सरकारका EV प्रोत्साहनहरू (२०२५/२६)</h3>
+<ul>
+  <li><strong>न्यून भन्सार महसुल:</strong> EV मा १०%–२५% मात्र (पेट्रोल कारमा ८०%–२४०% तुलनामा)</li>
+  <li><strong>पाँच वर्षसम्म सडक कर छुट:</strong> नयाँ दर्ता EV लाई पहिलो ५ वर्ष सडक कर माफ</li>
+  <li><strong>प्राथमिकता क्षेत्र ऋण:</strong> NRB ले EV ऋणलाई प्राथमिकता क्षेत्रमा राखेको छ, जसले बैंकहरूलाई कम स्प्रेडमा ऋण दिन प्रोत्साहित गर्छ</li>
+  <li><strong>NEA चार्जिङ पूर्वाधार:</strong> नेपाल विद्युत प्राधिकरण देशभर द्रुत चार्जिङ स्टेशन स्थापना गरिरहेको छ</li>
+  <li><strong>नवीकरणयोग्य ऊर्जाको फाइदा:</strong> नेपालको विद्युत उत्पादन मुख्यतः जलविद्युतबाट हुने भएकाले EV चलाउनु वास्तवमा हरित विकल्प हो</li>
+</ul>
+
+<h3>नेपालमा लोकप्रिय EV र अनुमानित ऋण रकम</h3>
+<table>
+  <thead>
+    <tr><th>मोडेल</th><th>अनुमानित मूल्य (NPR)</th><th>रेन्ज (km)</th><th>अनुमानित ऋण</th><th>अनुमानित किस्ता (७ वर्ष, १०%)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>BYD Atto 3</td><td>७०–८५ लाख</td><td>४२० km</td><td>५६–६८ लाख</td><td>NPR ८०,०००–९७,०००</td></tr>
+    <tr><td>MG ZS EV</td><td>५५–७० लाख</td><td>३२० km</td><td>४४–५६ लाख</td><td>NPR ६३,०००–८०,०००</td></tr>
+    <tr><td>Hyundai IONIQ 5</td><td>९५–१.२ करोड</td><td>४८० km</td><td>७६–९६ लाख</td><td>NPR १,०८,०००–१,३७,०००</td></tr>
+    <tr><td>Tata Nexon EV</td><td>४५–५८ लाख</td><td>३१२ km</td><td>३६–४६ लाख</td><td>NPR ५१,०००–६६,०००</td></tr>
+    <tr><td>Yatri P1 (नेपाली)</td><td>३५–४५ लाख</td><td>२३० km</td><td>२८–३६ लाख</td><td>NPR ४०,०००–५१,०००</td></tr>
+    <tr><td>Tara E-Scooter</td><td>१.२–२ लाख</td><td>७०–१०० km</td><td>१–१.८ लाख</td><td>NPR १,२००–२,२००</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'prepayment-nrb-ne',
+      title: 'ऋण पूर्वभुक्तानी नियम: NRB निर्देशिका के भन्छ?',
+      content: `<p>कैयौं ऋणीहरूको मनमा प्रश्न आउँछ — "ऋण समयभन्दा अगाडि तिर्न सकिन्छ? बैंकले जरिवाना लगाउँछ कि?"</p>
+
+<h3>NRB निर्देशिकाअनुसार पूर्वभुक्तानी नियम</h3>
+<ul>
+  <li><strong>पूर्वभुक्तानी अनुमति:</strong> NRB ले सबै ऋणीहरूलाई कुनै पनि समयमा ऋण पूर्वभुक्तानी गर्ने अधिकार दिएको छ</li>
+  <li><strong>पूर्वभुक्तानी शुल्क:</strong> ऋण लिएको पहिलो १–२ वर्षभित्र पूर्वभुक्तानी गरेमा बैंकहरूले बाँकी साँवाको १%–२% सम्म शुल्क लगाउन सक्छन्</li>
+  <li><strong>२ वर्षपछि:</strong> अधिकांश बैंकले पूर्वभुक्तानी शुल्क माफ गर्छन्। ऋण सम्झौता राम्रोसँग पढ्नुस्</li>
+  <li><strong>आंशिक पूर्वभुक्तानी:</strong> एकैचोटि पूरै नतिरे पनि अतिरिक्त रकम तिर्न सकिन्छ, जसले भविष्यको किस्ता घटाउँछ वा अवधि छोट्याउँछ</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>बुद्धिमानी सल्लाह:</strong> यदि तपाईंलाई अतिरिक्त रकम आयो (बोनस, सम्पत्ति बिक्री, विप्रेषण) भने ऋण पूर्वभुक्तानी गर्नु लाभदायक हुन्छ। उदाहरणका लागि, NPR ३६ लाखको ७ वर्षे ऋणमा दोस्रो वर्षमा NPR ५ लाख अतिरिक्त तिर्दा कुल ब्याजमा लगभग NPR २–३ लाख बचत हुन सक्छ।
+</div>
+
+<h3>ब्लु बुक (Blue Book) र हाइपोथेकेशन</h3>
+<p>नेपालमा सवारी साधन ऋण लिँदा बैंकको नाम सवारीको ब्लु बुकमा <strong>ऋण लिंदि (Hypothecation)</strong> को रूपमा दर्ता हुन्छ। यसको मतलब:</p>
+<ul>
+  <li>ऋण पूर्ण रूपमा तिरेपछि मात्र बैंकले ब्लु बुक फिर्ता गर्छ</li>
+  <li>ऋण बाँकी रहुञ्जेल बैंकको सहमतिबिना सवारी बेच्न मिल्दैन</li>
+  <li>ऋण डिफल्ट भएमा बैंकले कानुनी प्रक्रियाबाट सवारी निलामी गर्न सक्छ</li>
+  <li>ऋण तिरेपछि DoTM मा गएर हाइपोथेकेशन हटाउन (No Objection Letter लिएर) सम्बन्धित बैंकसँग निवेदन गर्नुपर्छ</li>
+</ul>`,
+    },
+    {
+      id: 'application-ne',
+      title: 'नेपाली बैंकमा सवारी ऋणको लागि आवेदन: चरणबद्ध प्रक्रिया',
+      content: `<h3>चरण १: पात्रता जाँच गर्नुस्</h3>
+<p>अधिकांश बैंकहरूले ऋणीको उमेर १८–६५ वर्ष, स्थिर आय स्रोत र नेपाल क्रेडिट इन्फर्मेशन ब्यूरो (CIB) मा सफा क्रेडिट इतिहास माग्छन्।</p>
+
+<h3>चरण २: सवारी छान्नुस् र उद्धरण लिनुस्</h3>
+<p>अधिकृत डिलरबाट औपचारिक उद्धरण (Proforma Invoice) लिनुस्। बैंकहरूले अनधिकृत आयातकर्ताबाट किनेको सवारीमा ऋण दिँदैनन्।</p>
+
+<h3>चरण ३: बैंक छान्नुस् र आवेदन दिनुस्</h3>
+<p>ToolsArena को Nepal Vehicle Loan Calculator प्रयोग गरेर विभिन्न बैंकका दरहरू तुलना गर्नुस्। बैंक शाखामा जानुस् वा अनलाइन आवेदन गर्नुस्।</p>
+
+<h3>चरण ४: आवश्यक कागजातहरू</h3>
+<ul>
+  <li>नागरिकता प्रमाणपत्र</li>
+  <li>पासपोर्ट साइजका फोटो (२–४ प्रति)</li>
+  <li>आय प्रमाण: तलब प्रमाणपत्र वा पछिल्लो ६ महिनाको बैंक विवरण</li>
+  <li>रोजगारदाताको पत्र (तलबभोगीका लागि)</li>
+  <li>व्यापार दर्ता र आर्थिक विवरण (स्व-रोजगारीका लागि)</li>
+  <li>अधिकृत डिलरको प्रोफर्मा इनभ्वाइस</li>
+  <li>स्थायी लेखा नम्बर (PAN)</li>
+  <li>आयकर तिरेको प्रमाण (लागू भएमा)</li>
+</ul>
+
+<h3>चरण ५: ऋण मूल्यांकन र स्वीकृति</h3>
+<p>बैंकको कर्जा विभागले कागजात जाँच, CIB रिपोर्ट, भुक्तानी क्षमता मूल्यांकन र आन्तरिक स्वीकृति प्रक्रिया पूरा गर्छ। सामान्यतः ३–७ कार्यदिन लाग्छ।</p>
+
+<h3>चरण ६: ऋण सम्झौता र वितरण</h3>
+<p>स्वीकृतिपछि ऋण सम्झौतामा हस्ताक्षर गर्नुस्। बैंकले डिलरलाई सीधै भुक्तानी गर्छ। डाउन पेमेन्ट डिलरलाई बुझाउनुस् र सवारी लिनुस्।</p>
+
+<h3>चरण ७: हाइपोथेकेशनसहित दर्ता</h3>
+<p>DoTM मा गएर सवारी दर्ता गराउनुस् — ब्लु बुकमा बैंकको नाम ऋण लिंदिको रूपमा दर्ता हुन्छ। ऋण पूर्ण भुक्तानी नभएसम्म ब्लु बुक बैंकले राख्छ।</p>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'सवारीको मूल्य प्रविष्ट गर्नुस्',
+      description: 'डिलरको प्रोफर्मा इनभ्वाइसमा उल्लेखित अन-रोड मूल्य (सबै कर र दर्ता शुल्कसहित) प्रविष्ट गर्नुस्।',
+    },
+    {
+      title: 'डाउन पेमेन्ट निर्धारण गर्नुस्',
+      description: 'अग्रिम तिर्ने रकम प्रविष्ट गर्नुस्। अधिकांश सवारीमा न्यूनतम २०% (विद्युतीय दुईपाङ्ग्रेमा १०%) डाउन पेमेन्ट आवश्यक छ।',
+    },
+    {
+      title: 'ब्याज दर छान्नुस्',
+      description: 'आफ्नो बैंकले दिएको वार्षिक ब्याज दर प्रविष्ट गर्नुस्। तुलना तालिकाबाट उत्तम दर खोजेर सौदाबाजी गर्न सक्नुहुन्छ।',
+    },
+    {
+      title: 'ऋण अवधि छान्नुस्',
+      description: 'कति वर्षमा ऋण तिर्ने छान्नुस्। लामो अवधिमा किस्ता कम तर कुल ब्याज बढी हुन्छ। अधिकतम ७ वर्ष।',
+    },
+    {
+      title: 'किस्ता र कुल ब्याज हेर्नुस्',
+      description: 'क्याल्कुलेटरले मासिक किस्ता, कुल ब्याज, कुल भुक्तानी र पूर्ण किस्ता तालिका देखाउँछ।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'नेपालमा सवारी ऋण पाउन न्यूनतम तलब कति चाहिन्छ?',
+      answer: 'दुईपाङ्ग्रे ऋणका लागि मासिक शुद्ध आय NPR २५,०००–३५,००० र कार ऋणका लागि NPR ५०,०००–७५,००० चाहिन्छ। सह-ऋणी (श्रीमान/श्रीमती वा अभिभावक) थप्न सकिन्छ।',
+    },
+    {
+      question: 'तलब स्लिपबिना नेपालमा सवारी ऋण पाइन्छ?',
+      answer: 'हो। स्व-रोजगारी, व्यवसायी वा किसानले व्यापार दर्ता, कर विवरण, बैंक स्टेटमेन्ट (१२ महिना) र कहिलेकाहीं अतिरिक्त धितो (जग्गा) प्रस्तुत गर्न सक्छन्।',
+    },
+    {
+      question: 'नेपालमा सवारी ऋण स्वीकृत हुन कति समय लाग्छ?',
+      answer: 'पूर्ण कागजातसहित ३–७ कार्यदिन। तलब खाता भएका ग्राहकहरूलाई कतिपय बैंकले २४–४८ घण्टामा पूर्व-स्वीकृत ऋण दिन्छन्।',
+    },
+    {
+      question: 'के नेपालमा सवारी ऋण समयभन्दा अगाडि तिर्न सकिन्छ?',
+      answer: 'हो। NRB निर्देशिकाअनुसार पूर्वभुक्तानी अनुमति छ। तर पहिलो १–२ वर्षभित्र तिर्दा १%–२% शुल्क लाग्न सक्छ। सम्झौता राम्रोसँग पढ्नुस्।',
+    },
+    {
+      question: 'किस्ता नतिरे के हुन्छ?',
+      answer: 'किस्ता नतिरेमा थप जरिवाना ब्याज (१%–२% अतिरिक्त) लाग्छ र CIB मा खराब रेकर्ड जान्छ। निरन्तर चुक्ता नगरे बैंकले कानुनी प्रक्रियाबाट सवारी निलाम गर्न सक्छ।',
+    },
+    {
+      question: 'EV ऋणमा पेट्रोल कार ऋणभन्दा बढी फाइदा छ?',
+      answer: 'हो। EV ऋणमा ब्याज दर १%–२% कम, सडक कर ५ वर्ष माफ, र भन्सार महसुल पनि धेरै कम छ। दीर्घकालमा इन्धन खर्च पनि उल्लेखनीय रूपमा कम हुन्छ।',
+    },
+  ],
+  relatedGuides: ['loan-calculator-guide', 'emi-calculator-guide', 'salary-calculator-guide'],
+  toolCTA: {
+    heading: 'अहिले नै आफ्नो सवारी ऋण किस्ता हिसाब गर्नुस्',
+    description: 'हाम्रो निःशुल्क नेपाल सवारी साधन ऋण क्याल्कुलेटर प्रयोग गरेर आफ्नो मासिक किस्ता, कुल ब्याज र पूर्ण भुक्तानी तालिका हेर्नुस्।',
+    buttonText: 'सवारी ऋण क्याल्कुलेटर खोल्नुस्',
+  },
+},
+
+{
+  slug: "net-worth-calculator-guide",
+  toolSlug: "net-worth-calculator",
+  category: "finance-tools",
+  title: "नेट वर्थ क्याल्कुलेटर: नेपालमा आफ्नो सम्पत्ति र ऋण हिसाब गर्ने पूर्ण गाइड (2026)",
+  subtitle: "सम्पत्ति र दायित्व के हो, नेपाली benchmark कति छ, र net worth बढाउने practical तरिकाहरू",
+  metaTitle: "नेट वर्थ क्याल्कुलेटर — नेपाल सम्पत्ति हिसाब गाइड 2026",
+  metaDescription: "नेपालमा आफ्नो net worth सही हिसाब गर्नुस्। सम्पत्ति vs दायित्व, NRB सन्दर्भ, र wealth building tips नेपालीमा।",
+  targetKeyword: "नेट वर्थ क्याल्कुलेटर",
+  secondaryKeywords: [
+    "Nepal net worth calculator",
+    "सम्पत्ति हिसाब नेपाल",
+    "net worth meaning Nepali",
+    "Nepal household wealth",
+    "NRB Nepal financial planning",
+    "नेपाल सम्पत्ति benchmark",
+    "wealth building Nepal",
+    "net worth kya ho Nepal",
+    "Nepal savings rate",
+    "financial independence Nepal"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१५ मिनेट",
+  tags: ["Net Worth", "Wealth", "Finance", "नेपाल"],
+  intro: `<p>तपाईंको आम्दानीले प्रत्येक महिना कति पैसा आउँछ भन्ने बताउँछ। तपाईंको <strong>net worth</strong> (कुल सम्पत्ति मूल्य) ले त्यसमध्ये कति राखियो र वास्तविक धनसम्पत्तिमा convert भयो भन्ने बताउँछ। नेपालमा एउटा IT engineer वार्षिक रु. ८ लाख कमाउँछ — ४५ वर्षमा उसको net worth रु. ५० लाख हुन सक्छ, वा रु. ५ लाख पनि। फरक पर्छ financial decisions बाट। Net worth नै तपाईंको true financial health मापन गर्ने सबभन्दा महत्वपूर्ण अंक हो।</p>
+<p>हाम्रो <strong>Net Worth Calculator</strong> ले यो measurement सरल बनाउँछ — सम्पत्ति (assets) र दायित्व (liabilities) enter गर्नुस्, net worth तुरुन्त थाहा पाउनुस्। यो गाइडमा नेपाली सन्दर्भमा के include गर्ने, age-based benchmarks, र net worth बढाउने concrete steps — सबै कुरा छन्।</p>`,
+  sections: [
+    {
+      id: "net-worth-kya-ho-nepal",
+      title: "नेपालमा Net Worth के हो र किन Track गर्नुपर्छ?",
+      content: `<p>Net worth को formula सरल छ:</p>
+
+<blockquote>
+  <strong>Net Worth = कुल सम्पत्ति − कुल दायित्व</strong>
+</blockquote>
+
+<p>तपाईंसँग भएका सबै कुरा (घर, investments, नगद, सुन) = रु. ८० लाख, र तिर्नु बाँकी सबै (home loan, car loan) = रु. ४५ लाख भए — Net Worth = रु. ३५ लाख।</p>
+
+<h3>नेपालमा Net Worth किन महत्वपूर्ण छ?</h3>
+<ul>
+  <li><strong>वास्तविक financial health देखाउँछ:</strong> रु. ५० हजार/महिना कमाएर रु. ४८ हजार खर्च गर्ने भनेको near-zero wealth building हो।</li>
+  <li><strong>Retirement planning को base:</strong> कति corpus चाहिन्छ भनेर net worth बाट थाहा हुन्छ।</li>
+  <li><strong>Loan eligibility:</strong> नेपालका बैंकहरू (NRB guidelines अनुसार) loan दिँदा net worth हेर्छन्।</li>
+  <li><strong>Progress track गर्न:</strong> Income भन्दा net worth growth rate बढी meaningful छ।</li>
+</ul>
+
+<h3>नेपालमा Net Worth Examples</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>कुल सम्पत्ति</th>
+      <th>कुल दायित्व</th>
+      <th>Net Worth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>२८ वर्ष, government job</td>
+      <td>रु. १५,००,०००</td>
+      <td>रु. ५,००,०००</td>
+      <td>रु. १०,००,०००</td>
+    </tr>
+    <tr>
+      <td>३८ वर्ष, business owner</td>
+      <td>रु. ७५,००,०००</td>
+      <td>रु. ३०,००,०००</td>
+      <td>रु. ४५,००,०००</td>
+    </tr>
+    <tr>
+      <td>४५ वर्ष, high debt</td>
+      <td>रु. ४०,००,०००</td>
+      <td>रु. ४५,००,०००</td>
+      <td>−रु. ५,००,००० (negative)</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "assets-liabilities-nepal",
+      title: "नेपालमा सम्पत्ति र दायित्व: के Include गर्ने?",
+      content: `<p>सही net worth को लागि सही categorization जरुरी छ।</p>
+
+<h3>Include गर्नुपर्ने सम्पत्तिहरू</h3>
+<table>
+  <thead>
+    <tr>
+      <th>श्रेणी</th>
+      <th>के Include गर्ने</th>
+      <th>कसरी Value गर्ने</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Liquid Assets</td>
+      <td>Bank balance, FD, नगद</td>
+      <td>Current balance</td>
+    </tr>
+    <tr>
+      <td>Investments</td>
+      <td>Mutual funds (Nepal), shares (NEPSE)</td>
+      <td>Current market value/NAV</td>
+    </tr>
+    <tr>
+      <td>Provident Fund</td>
+      <td>EPF/GPF corpus</td>
+      <td>Current statement value</td>
+    </tr>
+    <tr>
+      <td>Real Estate</td>
+      <td>घर, जग्गा</td>
+      <td>Current market value (conservative)</td>
+    </tr>
+    <tr>
+      <td>सुन/चाँदी</td>
+      <td>Physical gold, jewellery</td>
+      <td>Weight × current tola rate</td>
+    </tr>
+    <tr>
+      <td>Business</td>
+      <td>व्यापारमा ownership stake</td>
+      <td>Conservative estimate (1–2× annual profit)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Include गर्नुपर्ने दायित्वहरू</h3>
+<ul>
+  <li>Home loan outstanding (नेपाली बैंकमा)</li>
+  <li>Car/vehicle loan outstanding</li>
+  <li>Personal loan outstanding</li>
+  <li>Education loan outstanding</li>
+  <li>Credit card total outstanding</li>
+  <li>Gold loan outstanding</li>
+</ul>
+
+<div class="callout-warning">
+  <strong>Include नगर्नुस्:</strong>
+  <ul>
+    <li>Life insurance sum assured (death मा मात्र मिल्छ)</li>
+    <li>Future salary वा pension promise</li>
+    <li>Personal items (furniture, electronics) — rapidly depreciate हुन्छन्</li>
+  </ul>
+</div>`
+    },
+    {
+      id: "net-worth-benchmark-nepal-2026",
+      title: "नेपालमा Age अनुसार Net Worth Benchmark 2026",
+      content: `<p>नेपालको आर्थिक सन्दर्भ (कम per capita income, real estate heavy wealth) लाई ध्यानमा राखेर यी benchmarks तयार गरिएका छन्:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Age Group</th>
+      <th>Typical Net Worth</th>
+      <th>Good Target</th>
+      <th>Excellent Target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>२२–२५</td>
+      <td>रु. ०–रु. १ लाख</td>
+      <td>रु. २–रु. ५ लाख</td>
+      <td>रु. ७ लाख+</td>
+    </tr>
+    <tr>
+      <td>२६–३०</td>
+      <td>रु. १–रु. ५ लाख</td>
+      <td>रु. ८–रु. १५ लाख</td>
+      <td>रु. २० लाख+</td>
+    </tr>
+    <tr>
+      <td>३१–३५</td>
+      <td>रु. ५–रु. १५ लाख</td>
+      <td>रु. २०–रु. ३५ लाख</td>
+      <td>रु. ५० लाख+</td>
+    </tr>
+    <tr>
+      <td>३६–४०</td>
+      <td>रु. १५–रु. ३५ लाख</td>
+      <td>रु. ५०–रु. ८० लाख</td>
+      <td>रु. १ करोड+</td>
+    </tr>
+    <tr>
+      <td>४१–५०</td>
+      <td>रु. ३०–रु. ७० लाख</td>
+      <td>रु. ८०–रु. १.५ करोड</td>
+      <td>रु. २ करोड+</td>
+    </tr>
+    <tr>
+      <td>५१–६०</td>
+      <td>रु. ५०–रु. १ करोड</td>
+      <td>रु. १.५–रु. ३ करोड</td>
+      <td>रु. ४ करोड+</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाली सन्दर्भ:</strong> नेपालमा धेरैजसो household wealth जग्गा र सुनमा concentrate भएको हुन्छ। यी illiquid assets हुन् — liquid र investable assets को अलग tracking पनि गर्नुस्।
+</div>
+
+<h3>नेपालमा Retirement Corpus Estimate</h3>
+<p>नेपालको inflation (औसत ५%–७% वार्षिक) र जीवनयापन खर्च अनुसार retirement को लागि कति चाहिन्छ:</p>
+<table>
+  <thead>
+    <tr>
+      <th>मासिक खर्च (Retirement मा)</th>
+      <th>Annual खर्च</th>
+      <th>Corpus Needed (25× rule)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रु. ३०,०००</td>
+      <td>रु. ३,६०,०००</td>
+      <td>रु. ९० लाख</td>
+    </tr>
+    <tr>
+      <td>रु. ५०,०००</td>
+      <td>रु. ६,००,०००</td>
+      <td>रु. १.५ करोड</td>
+    </tr>
+    <tr>
+      <td>रु. ८०,०००</td>
+      <td>रु. ९,६०,०००</td>
+      <td>रु. २.४ करोड</td>
+    </tr>
+  </tbody>
+</table>`
+    },
+    {
+      id: "grow-net-worth-nepal",
+      title: "नेपालमा Net Worth बढाउने Practical तरिकाहरू",
+      content: `<p>नेपालका सन्दर्भमा net worth बढाउने सबभन्दा effective तरिकाहरू:</p>
+
+<h3>Nepal-Specific Investment Options</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Investment</th>
+      <th>Expected Return</th>
+      <th>Risk Level</th>
+      <th>Minimum Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NEPSE Shares (Blue chip)</td>
+      <td>१०%–१५% p.a.</td>
+      <td>Medium-High</td>
+      <td>रु. ३,०००+</td>
+    </tr>
+    <tr>
+      <td>Nepal Mutual Funds</td>
+      <td>८%–१२% p.a.</td>
+      <td>Medium</td>
+      <td>रु. ५,०००</td>
+    </tr>
+    <tr>
+      <td>Bank FD (Nepal)</td>
+      <td>७%–१०% p.a.</td>
+      <td>Low</td>
+      <td>रु. १,०००</td>
+    </tr>
+    <tr>
+      <td>Debentures (Nepal)</td>
+      <td>९%–१२% p.a.</td>
+      <td>Low-Medium</td>
+      <td>रु. १,०००</td>
+    </tr>
+    <tr>
+      <td>Real Estate (Kathmandu)</td>
+      <td>५%–१०% p.a.</td>
+      <td>Medium (illiquid)</td>
+      <td>रु. ५० लाख+</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>NRB Savings Advice:</strong> Nepal Rastra Bank ले सिफारिश गरेको छ कि income को कम्तीमा २०% savings र investment मा राख्नुपर्छ। यो habit ले दीर्घकालमा net worth significantly बढाउँछ।
+</div>
+
+<h3>Debt Reduction Strategy</h3>
+<ul>
+  <li>High-interest personal loan पहिले close गर्नुस् (typically १८%–२४%)</li>
+  <li>Home loan मा extra payment गर्नुस् — principal छिटो घट्छ, interest बच्छ</li>
+  <li>Credit card outstanding zero राख्नुस् — नेपालमा credit card ब्याज annual ३६%+ सम्म</li>
+</ul>`
+    },
+    {
+      id: "common-nepal-net-worth-mistakes",
+      title: "नेपाली मानिसहरूले Net Worth Calculation मा गर्ने गल्तीहरू",
+      content: `<p>यी गल्तीहरूले तपाईंको net worth को real picture distort गर्छ:</p>
+
+<h3>गल्ती १: जग्गाको aspirational value राख्नु</h3>
+<p>नेपालमा जग्गाको बजार मूल्य कागजमा देखिने भन्दा धेरै फरक हुन सक्छ। Conservative estimate प्रयोग गर्नुस् — recent actual sales बाट।</p>
+
+<h3>गल्ती २: Remittance लाई Asset मान्नु</h3>
+<p>नेपालमा धेरै घरपरिवारको प्रमुख आय source remittance हो। Future remittance एउटा asset होइन — अहिले bank मा भएको रकम मात्र asset हो।</p>
+
+<h3>गल्ती ३: Loan "भुलिनु"</h3>
+<p>Home loan, gold loan, sahuji को ऋण — सबै liabilities मा include गर्नुस्।</p>
+
+<div class="callout-warning">
+  <strong>सुनको trap:</strong> नेपालमा धेरैको wealth सुनमा छ। सुन illiquid हुन्छ र quickly sell गर्दा full market value नपाइन सक्छ। Net worth मा current gold rate अनुसार value राख्नुस्, तर यो "liquid wealth" होइन।
+</div>
+
+<h3>गल्ती ४: कहिल्यै Update नगर्नु</h3>
+<p>वर्षमा कम्तीमा एक पटक net worth recalculate गर्नुस्। Trend हेर्नुस् — बढ्दो छ? Inflation (५–७%) भन्दा छिटो बढ्दो छ?</p>
+
+<div class="callout-tip">
+  <strong>लक्ष्य राख्नुस्:</strong> अर्को १२ महिनामा net worth कति बढाउने भन्ने specific target तय गर्नुस् र monthly progress track गर्नुस्।
+</div>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "सबै सम्पत्ति list गर्नुस्",
+      description: "Bank balance, FD, mutual fund current value, EPF/GPF corpus, घरको estimated value, सुनको weight × current tola rate, vehicle resale value — सबै enter गर्नुस्।"
+    },
+    {
+      title: "सबै दायित्व list गर्नुस्",
+      description: "Home loan outstanding, car loan, personal loan, education loan, credit card outstanding — सबै enter गर्नुस्। Latest statement बाट exact outstanding principal figure प्रयोग गर्नुस्।"
+    },
+    {
+      title: "Net Worth result हेर्नुस्",
+      description: "Calculator ले Total Assets, Total Liabilities, र Net Worth देखाउँछ। Negative छ भने — यो starting point हो, endpoint होइन।"
+    },
+    {
+      title: "Benchmarks सँग compare गर्नुस्",
+      description: "यो guide को age-based Nepal benchmarks सँग आफ्नो number compare गर्नुस्। Good Target भन्दा माथि छ वा तल? यो gap नै तपाईंको motivation हो।"
+    },
+    {
+      title: "Growth target set गर्नुस्",
+      description: "अर्को १ वर्षमा net worth कति बढाउने specific goal तय गर्नुस्। Monthly SIP, extra loan payment, र खर्च कटौती मा break गर्नुस्। ६ महिनापछि recalculate गर्नुस्।"
+    }
+  ],
+  faqs: [
+    {
+      question: "नेपालमा net worth के हो?",
+      answer: "Net worth = कुल सम्पत्ति − कुल दायित्व। तपाईंसँग भएका सबै कुरा (घर, bank balance, investments, सुन) को कुल मूल्यबाट सबै ऋण (home loan, personal loan, credit card) घटाएपछि जे बाँच्छ त्यो net worth हो।"
+    },
+    {
+      question: "नेपालमा ३० वर्षमा राम्रो net worth कति हुनुपर्छ?",
+      answer: "नेपाली सन्दर्भमा ३० वर्षमा रु. ८–रु. १५ लाख net worth एक good target हो। रु. २० लाख+ excellent हो। यो सबैको income र expenses अनुसार फरक हुन सक्छ।"
+    },
+    {
+      question: "NEPSE shares लाई net worth मा कसरी include गर्ने?",
+      answer: "NEPSE shares को current market price अनुसार value गर्नुस् — purchase price होइन। NEPSE website वा आफ्नो broker account बाट current portfolio value check गर्नुस्।"
+    },
+    {
+      question: "जग्गालाई net worth मा कसरी value गर्ने?",
+      answer: "Conservative market value प्रयोग गर्नुस् — aspirational price होइन। आफ्नो area मा recent actual sales data हेर्नुस् (Land Revenue Office)। Often property value overestimate भइराखेको हुन्छ।"
+    },
+    {
+      question: "Negative net worth बाट कसरी निस्कने?",
+      answer: "पहिले high-interest debt (personal loan, credit card) close गर्नुस्। Emergency fund बनाउनुस् (३–६ महिनाको खर्च)। त्यसपछि systematic investment शुरू गर्नुस् — NEPSE SIP वा mutual funds।"
+    },
+    {
+      question: "नेपालमा retirement को लागि कति net worth चाहिन्छ?",
+      answer: "25× annual expenses rule प्रयोग गर्नुस्। नेपालमा inflation बढी (५–७%) भएकाले 28–30× ज़्यादा safe छ। मासिक रु. ५० हजार खर्च हुन्छ भने retirement corpus ≈ रु. १.५ करोड चाहिन्छ।"
+    },
+    {
+      question: "नेपालमा कसरी छिटो net worth बढाउन सकिन्छ?",
+      answer: "Income को minimum २०% invest गर्नुस् (NEPSE, mutual funds, FD)। High-interest debt aggressive तरिकाले pay off गर्नुस्। Lifestyle inflation avoid गर्नुस्। Regular income outside job (freelancing, small business) explore गर्नुस्।"
+    },
+    {
+      question: "सुन र जग्गाको net worth मा भूमिका के हो?",
+      answer: "नेपालमा धेरैको wealth सुन र जग्गामा concentrate भएको हुन्छ। यी assets net worth बढाउँछन् तर illiquid हुन्छन् — cash flow गर्दैनन्। Financial balance को लागि liquid र investable assets (shares, mutual funds, FD) मा पनि invest गर्नुस्।"
+    }
+  ],
+  relatedGuides: ["sip-calculator-guide", "mutual-fund-calculator-guide", "salary-calculator-guide"],
+  toolCTA: {
+    heading: "अहिले नै Net Worth Calculate गर्नुस्",
+    description: "५ मिनेटमा assets र liabilities enter गर्नुस् — आफ्नो net worth तुरुन्त थाहा पाउनुस् र Nepal benchmarks सँग compare गर्नुस्।",
+    buttonText: "Net Worth Calculator खोल्नुस्"
+  }
+},
+
+{
+  slug: 'pan-card-validator-guide',
+  toolSlug: 'pan-card-validator',
+  category: 'utility-tools',
+  title: 'PAN कार्ड Validator: PAN नम्बर Format, Structure र Validation को पूर्ण गाइड 2026',
+  subtitle: 'आफ्नो PAN का हरेक character बुझ्नुहोस् र तुरुन्त validate गर्नुहोस् — कुनै government portal बिना।',
+  metaTitle: 'PAN कार्ड Validator — PAN नम्बर Format Online जाँच 2026',
+  metaDescription: 'PAN card number को format तुरुन्त validate गर्नुहोस्। PAN structure, type codes, common errors र IT portal मा PAN status check गर्ने तरिका जान्नुहोस्।',
+  targetKeyword: 'PAN कार्ड जाँच',
+  secondaryKeywords: [
+    'PAN नम्बर format check',
+    'PAN card format validation Nepali',
+    'PAN number kasari validate garne',
+    'PAN card structure Nepali ma',
+    'PAN type codes list',
+    'PAN number checker online',
+    'invalid PAN card format',
+    'India PAN card Nepal ma',
+    'PAN card verification India',
+    'PAN number online check',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '10 min read',
+  tags: ['PAN Card', 'Tax India', 'Validation', 'Utility'],
+  intro: `<p>भारतको <strong>PAN card number</strong> त्यहाँको financial system को सबैभन्दा महत्त्वपूर्ण identifier हो। Income tax return भर्न, bank account खोल्न, mutual fund मा लगानी गर्न, वा ₹50,000 भन्दा माथिको कुनै पनि transaction गर्न — हरेक ठाउँमा <strong>Permanent Account Number</strong> आवश्यक छ। तर धेरै मानिसहरूलाई थाहा छैन कि PAN number कुनै random 10 characters होइन — यसको एउटा बहुत specific, rule-based structure छ। यदि एउटा मात्र character गलत भयो भने, IT Department को portal, bank, र अन्य सबै systems ले यसलाई reject गर्नेछन्।</p>
+<p>नेपालीहरूका लागि पनि यो guide उपयोगी छ जो भारतमा काम गर्छन्, भारतीय companies सँग व्यापार गर्छन्, वा भारतीय financial markets मा invest गर्छन् र उनीहरूको Indian PAN को format सही छ कि छैन भनी जाँच्न चाहन्छन्। यस guide मा हामी बताउनेछौं कि <strong>PAN card validator</strong> कसरी काम गर्छ, PAN का 10 characters को के अर्थ छ, format validation किन जरुरी छ, र validation पछि के गर्नुपर्छ।</p>`,
+  sections: [
+    {
+      id: 'pan-ke-ho-format-kina-jaruri',
+      title: 'PAN Card के हो र Format किन महत्त्वपूर्ण छ?',
+      content: `<h3>PAN को उद्देश्य के हो?</h3>
+<p><strong>Permanent Account Number (PAN)</strong> भारतको Income Tax Department ले एउटा universal financial identifier को रूपमा बनाएको छ। हरेक individual, company, HUF, firm, trust — जो कोहीले भारतमा tax तिर्छ वा significant financial activity गर्छ — उसँग PAN हुनु आवश्यक छ। CBDT को authority अन्तर्गत NSDL (अहिले Protean eGov Technologies) र UTIITSL ले PAN जारी गर्छन्।</p>
+<p>PAN लाई तपाईंको financial fingerprint भन्न सकिन्छ। Banks, SEBI-regulated entities, GST systems, र real estate transactions — सबैले PAN को माध्यमबाट financial flows track गर्छन्।</p>
+
+<h3>Format किन यति महत्त्वपूर्ण छ?</h3>
+<p>PAN को 10-character format random होइन — यसमा taxpayer को type र IT Department ले assign गरेको unique sequence को real information encoded छ। जब तपाईं कहीँ PAN enter गर्नुहुन्छ, system पहिले <strong>format check</strong> गर्छ — database query गर्नुभन्दा पहिले। Format गलत भयो भने, transaction त्यहीँ रोकिन्छ।</p>
+
+<div class="callout-warning">
+<strong>चेतावनी:</strong> एउटा PAN जो "सही देखिन्छ" तर एउटा character गलत छ भने, ITR reject हुन सक्छ, bank KYC fail हुन सक्छ, वा TDS गलत account मा credit हुन सक्छ। Format validation optional होइन — यो पहिलो safeguard हो।
+</div>
+
+<h3>Format Validation कहिले काम लाग्छ?</h3>
+<ul>
+  <li>Bank लाई Form 15G/15H submit गर्नुअघि</li>
+  <li>IT portal मा PAN-Aadhaar link गर्नुअघि</li>
+  <li>TDS return मा vendor को PAN use गर्नुअघि</li>
+  <li>Shares, mutual funds, वा property किन्न/बेच्नुअघि</li>
+  <li>कुनै पनि Income Tax Return file गर्नुअघि</li>
+</ul>
+
+<table>
+  <thead>
+    <tr><th>Use Case</th><th>PAN चाहिन्छ?</th><th>गलत PAN को नतिजा</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ITR Filing</td><td>हो</td><td>Return reject वा गलत account मा process</td></tr>
+    <tr><td>Bank Account Opening</td><td>हो</td><td>KYC failure, account freeze</td></tr>
+    <tr><td>Mutual Fund Investment</td><td>हो (सबै amounts)</td><td>Transaction reject</td></tr>
+    <tr><td>Cash Deposit > ₹50,000</td><td>हो</td><td>Suspicious transaction report</td></tr>
+    <tr><td>Property Purchase > ₹10 lakh</td><td>हो</td><td>Registration refuse हुन सक्छ</td></tr>
+    <tr><td>TDS Deduction</td><td>हो</td><td>Normal rate को सट्टा 20% TDS</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'pan-characters-decode-ne',
+      title: 'PAN Number को हरेक Character को अर्थ',
+      content: `<h3>10-Character Structure बुझ्नुहोस्</h3>
+<p>Valid PAN number को pattern हो: <strong>AAAAA9999A</strong> — पाँचवटा uppercase alphabets, त्यसपछि चारवटा digits, त्यसपछि एउटा uppercase alphabet। तर यस pattern भित्र हरेक position को specific meaning छ। एउटा example PAN लिउँ: <strong>ABCPK7896L</strong></p>
+
+<div class="callout-info">
+<strong>PAN Format:</strong> [3 letters — Issuing Authority Code] + [1 letter — Taxpayer Type Code] + [1 letter — नामको पहिलो letter] + [4 digits — Sequential Number] + [1 letter — Check Character]
+</div>
+
+<h3>Position-by-Position Breakdown</h3>
+<table>
+  <thead>
+    <tr><th>Position</th><th>Characters</th><th>अर्थ</th><th>Example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1–3</td><td>AAA (3 letters)</td><td>IT office वा NSDL/UTIITSL series code</td><td>ABC</td></tr>
+    <tr><td>4</td><td>P (1 letter)</td><td>Taxpayer type code (P = Individual)</td><td>P</td></tr>
+    <tr><td>5</td><td>K (1 letter)</td><td>Surname को पहिलो letter (individuals का लागि)</td><td>K</td></tr>
+    <tr><td>6–9</td><td>7896 (4 digits)</td><td>Sequential running number</td><td>7896</td></tr>
+    <tr><td>10</td><td>L (1 letter)</td><td>Alphabetic check character</td><td>L</td></tr>
+  </tbody>
+</table>
+
+<h3>प्रत्येक Field सरल भाषामा</h3>
+<p><strong>Characters 1–3:</strong> ती तीन letters ले त्यो batch वा office को series code जनाउँछन् जसले PAN issue गर्यो।</p>
+<p><strong>Character 4 (Taxpayer Type Code):</strong> यो PAN को सबैभन्दा महत्त्वपूर्ण single character हो। 'P' को अर्थ individual person। Company को PAN मा 'C' हुन्छ। HUF मा 'H' हुन्छ।</p>
+<p><strong>Character 5:</strong> Individuals का लागि यो surname को पहिलो letter हो। Entity का लागि entity को नामको पहिलो letter।</p>
+<p><strong>Characters 6–9:</strong> 0001 देखि 9999 सम्मको running number।</p>
+<p><strong>Character 10:</strong> पहिलो नौवटा characters बाट compute गरिएको alphabetic character — बिना database query, PAN tamper भएको वा mistype भएको detect गर्न मद्दत गर्छ।</p>
+
+<div class="callout-tip">
+<strong>Tip:</strong> PAN manually enter गर्दा format error आयो भने, सबैभन्दा common गल्तीहरू हुन्: lowercase letters, '0' (zero) र 'O' (letter) को confusion, वा position 4-5 मा digit हुनु जहाँ letter हुनुपर्छ।
+</div>`,
+    },
+    {
+      id: 'pan-type-codes-ne',
+      title: 'PAN Type Codes: कसलाई कुन Code मिल्छ?',
+      content: `<h3>10 Official PAN Type Codes को पूरा List</h3>
+<p>PAN को चौथो character taxpayer type code हो। Income Tax Department ले exact 10 values define गरेको छ — एउटा हरेक taxpayer category का लागि जो Indian tax law मा recognized छ।</p>
+
+<table>
+  <thead>
+    <tr><th>Code</th><th>Taxpayer Type</th><th>Examples</th><th>Common Use</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>P</strong></td><td>Individual (Person)</td><td>Salaried employees, freelancers</td><td>सबैभन्दा common</td></tr>
+    <tr><td><strong>C</strong></td><td>Company</td><td>Pvt Ltd, Public Ltd</td><td>Corporate tax filing</td></tr>
+    <tr><td><strong>H</strong></td><td>Hindu Undivided Family</td><td>Family businesses as HUF</td><td>HUF ITR filing</td></tr>
+    <tr><td><strong>F</strong></td><td>Firm / LLP</td><td>Partnership firms, LLPs</td><td>Partnership tax returns</td></tr>
+    <tr><td><strong>A</strong></td><td>Association of Persons</td><td>Cooperative societies</td><td>AOP tax filing</td></tr>
+    <tr><td><strong>T</strong></td><td>Trust</td><td>Charitable trusts, NGOs</td><td>Trust filing, 80G</td></tr>
+    <tr><td><strong>B</strong></td><td>Body of Individuals</td><td>Collective individuals</td><td>BOI returns</td></tr>
+    <tr><td><strong>L</strong></td><td>Local Authority</td><td>Municipal corporations</td><td>Government body tax</td></tr>
+    <tr><td><strong>J</strong></td><td>Artificial Juridical Person</td><td>Universities as entities</td><td>Special entities</td></tr>
+    <tr><td><strong>G</strong></td><td>Government</td><td>Central/state government</td><td>Government filing</td></tr>
+  </tbody>
+</table>
+
+<h3>नेपाल-India व्यापार सन्दर्भमा</h3>
+<p>नेपाली व्यापारीहरू जो भारतीय companies सँग व्यापार गर्छन्, उनीहरूले Indian vendor को PAN validate गर्दा type code (4th character) confirm गर्नु महत्त्वपूर्ण छ — company को PAN मा 'C' हुनुपर्छ, individual को मा 'P'। यो mismatch भयो भने TDS filing समस्या हुन सक्छ।</p>
+
+<div class="callout-warning">
+<strong>व्यापारीहरूका लागि महत्त्वपूर्ण:</strong> Payment गर्नुअघि vendor को PAN को type code (4th character) सधैं validate गर्नुहोस्। Company PAN को सट्टा individual PAN use गर्दा TDS filing mismatch र penalty हुन सक्छ।
+</div>`,
+    },
+    {
+      id: 'common-pan-errors-ne',
+      title: 'PAN Format Validation किन Fail हुन्छ — Common Errors',
+      content: `<h3>सबैभन्दा बढी हुने PAN Format Mistakes</h3>
+<p>धेरैजसो PAN format validation failures केही predictable errors को कारण हुन्छन् — धेरैजसो manual data entry को क्रममा।</p>
+
+<h3>Error Type 1: Character Type Violations</h3>
+<table>
+  <thead>
+    <tr><th>Error</th><th>Example</th><th>Rule Violated</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Position 1–5 मा digit</td><td>AB3PK7896L</td><td>पहिलो 5 chars सिर्फ A–Z letters हुनुपर्छ</td></tr>
+    <tr><td>Position 6–9 मा letter</td><td>ABCPKAB96L</td><td>Position 6–9 सिर्फ digits 0–9 हुनुपर्छ</td></tr>
+    <tr><td>Position 10 मा digit</td><td>ABCPK78967</td><td>Last character letter A–Z हुनुपर्छ</td></tr>
+    <tr><td>Lowercase letters</td><td>abcpk7896l</td><td>सबै letters uppercase हुनुपर्छ</td></tr>
+    <tr><td>Special characters</td><td>ABCPK-7896L</td><td>कुनै hyphen, space वा symbol छैन</td></tr>
+  </tbody>
+</table>
+
+<h3>Lookalike Character Confusion</h3>
+<div class="callout-warning">
+<strong>यी confusions बाट सावधान रहनुहोस्:</strong>
+<ul>
+  <li><strong>O (letter O) vs 0 (zero)</strong> — PAN positions 1–5 मा zero हुँदैन</li>
+  <li><strong>I (letter I) vs 1 (digit one)</strong> — handwritten forms मा common</li>
+  <li><strong>S vs 5</strong> — scanned documents मा poor OCR बाट</li>
+</ul>
+</div>
+
+<div class="callout-tip">
+<strong>Pro Tip:</strong> नयाँ vendor वा employee को PAN receive गर्दा, पहिले format validator बाट check गर्नुहोस्, त्यसपछि IT portal (incometax.gov.in) मा verify गर्नुहोस् कि PAN actually registered र active छ।
+</div>`,
+    },
+    {
+      id: 'it-portal-vs-validator-ne',
+      title: 'IT Portal मा PAN Status Check vs Format Validator — के फरक छ?',
+      content: `<h3>दुई बिल्कुल फरक कुराहरू</h3>
+<p><strong>PAN format validator</strong> (जस्तै ToolsArena मा छ) केवल यो check गर्छ कि PAN को structure mathematically र pattern-wise सही छ कि छैन। यो offline काम गर्छ, कुनै government server call हुँदैन, र तुरुन्त answer दिन्छ।</p>
+<p><strong>IT portal मा PAN status check</strong> ले CBDT database लाई actually query गर्छ — PAN exist गर्छ, real person/entity को हो, active छ, र Aadhaar सँग linked छ कि छैन भनी confirm गर्छ।</p>
+
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Format Validator (ToolsArena)</th><th>IT Portal Status Check</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Speed</td><td>Instant</td><td>केही seconds</td></tr>
+    <tr><td>Internet चाहिन्छ?</td><td>छैन</td><td>हो</td></tr>
+    <tr><td>PAN DB मा exist गर्छ?</td><td>भन्दैन</td><td>हो</td></tr>
+    <tr><td>Aadhaar linkage status</td><td>छैन</td><td>हो</td></tr>
+    <tr><td>Privacy risk</td><td>कुनै छैन</td><td>कम (PAN CBDT लाई जान्छ)</td></tr>
+    <tr><td>Best for</td><td>Bulk validation, instant check</td><td>Official verification</td></tr>
+  </tbody>
+</table>
+
+<h3>IT Portal मा Step-by-Step PAN Check</h3>
+<ol>
+  <li><strong>incometax.gov.in</strong> मा जानुहोस्</li>
+  <li>"Quick Links" → "Verify Your PAN" click गर्नुहोस्</li>
+  <li>PAN, full name, date of birth, र mobile number enter गर्नुहोस्</li>
+  <li>Registered mobile मा received OTP enter गर्नुहोस्</li>
+  <li>Portal ले confirm गर्नेछ: PAN Active / Inactive / Not Found</li>
+</ol>
+
+<div class="callout-info">
+<strong>Note:</strong> IT portal ले registered name लाई partial-masked form मा देखाउँछ — जस्तै "R**** S*****" — पूरा नाम होइन। यो privacy protect गर्नका लागि हो।
+</div>`,
+    },
+    {
+      id: 'nri-nepal-context',
+      title: 'नेपालीहरूका लागि भारतीय PAN — विशेष सन्दर्भ',
+      content: `<h3>नेपाली नागरिक र भारतीय PAN</h3>
+<p>नेपाली नागरिकहरू जो भारतमा काम गर्छन् वा भारतमा taxable income छ — property को rent, Indian investments मा capital gains, NRO account मा interest — उनीहरूले भारतीय PAN card लिनुपर्छ। NRI को रूपमा PAN को format structurally resident Indian जस्तै हुन्छ — same 10 characters, same rules।</p>
+<p>Nepal-India Treaty र Double Tax Avoidance Agreement (DTAA) को अन्तर्गत, नेपाली नागरिकहरूले भारतमा tax liability छ भने PAN हुनु आवश्यक छ। Application NSDL वा UTIITSL portal मार्फत हुन्छ, foreign address proof र passport documents सहित।</p>
+
+<h3>नेपाल-India व्यापारमा PAN को भूमिका</h3>
+<p>नेपाली companies जो भारतीय vendors वा clients सँग काम गर्छन्, उनीहरूले Indian counterpart को PAN validate गर्नुपर्ने हुन्छ — TDS deduction, invoice verification, वा GST compliance का लागि। Format validator यस काममा पहिलो step हो।</p>
+
+<div class="callout-tip">
+<strong>नेपाली व्यापारीहरूका लागि Tip:</strong> भारतीय supplier वा client को PAN verify गर्दा, पहिले format check गर्नुहोस् (ToolsArena), त्यसपछि IT portal मा database verification गर्नुहोस्। यसले fraudulent PAN बाट बचाउँछ।
+</div>
+
+<h3>Deceased व्यक्तिको PAN</h3>
+<ul>
+  <li>Deceased को PAN final ITR file गर्नका लागि valid रहन्छ (legal heir द्वारा)</li>
+  <li>PAN automatically cancel हुँदैन</li>
+  <li>TDS refunds legal heir ले claim गर्न सक्छ</li>
+  <li>PAN अर्को व्यक्तिलाई transfer हुँदैन</li>
+</ul>
+
+<div class="callout-warning">
+<strong>Duplicate PAN Penalty:</strong> दुईवटा PAN राख्नु Section 272B अन्तर्गत illegal हो र ₹10,000 penalty लाग्न सक्छ। Accidentally दुईवटा PAN भयो भने नयाँ वाला तुरुन्त surrender गर्नुहोस्।
+</div>`,
+    },
+    {
+      id: 'after-validation-ne',
+      title: 'Format Validation पछि — Next Steps के हुन्?',
+      content: `<h3>PAN Pass भयो — अब के?</h3>
+<p>तपाईंको PAN format check pass भयो। यो step one हो। अवस्था अनुसार checklist follow गर्नुहोस्:</p>
+
+<h3>Individuals का लागि</h3>
+<ol>
+  <li><strong>PAN लाई Aadhaar सँग Link गर्नुहोस्</strong> — अझसम्म गरिएको छैन भने incometax.gov.in मा गर्नुहोस्। Unlinked PAN "inoperative" हुन्छ।</li>
+  <li><strong>Bank Accounts मा PAN Update गर्नुहोस्</strong> — सबै savings accounts, FDs, र investment accounts मा PAN seeded हुनुपर्छ।</li>
+  <li><strong>MF Portal मा KYC Verify गर्नुहोस्</strong> — CAMS वा KFintech portal मा PAN KYC-compliant छ कि छैन check गर्नुहोस्।</li>
+</ol>
+
+<h3>Businesses का लागि</h3>
+<ol>
+  <li><strong>Vendor Master Update गर्नुहोस्</strong> — Accounting software मा validated PAN update गर्नुहोस्।</li>
+  <li><strong>TDS Deduction अघि Verify गर्नुहोस्</strong> — TDS return file गर्नुअघि IT portal मा confirm गर्नुहोस्।</li>
+  <li><strong>GSTIN Linkage Check गर्नुहोस्</strong> — Company को GSTIN उसको PAN बाट derived हुन्छ। दुवैलाई सँगै validate गर्नुहोस्।</li>
+</ol>
+
+<h3>Validation Fail भयो भने</h3>
+<div class="callout-info">
+<strong>PAN format check fail? यो गर्नुहोस्:</strong>
+<ul>
+  <li>Original PAN card बाट carefully re-enter गर्नुहोस् (memory बाट होइन)</li>
+  <li>Lowercase letters check गर्नुहोस् — सबै uppercase हुनुपर्छ</li>
+  <li>4th character valid type codes मध्ये एउटा हुनुपर्छ</li>
+  <li>Physical card छैन भने <strong>incometax.gov.in → Know Your PAN</strong> बाट Aadhaar वा date of birth use गरेर retrieve गर्नुहोस्</li>
+  <li>Lost भयो भने NSDL portal मा duplicate apply गर्नुहोस् — fee ₹110 (domestic)</li>
+</ul>
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'PAN Number Enter गर्नुहोस्',
+      description: 'Validator field मा आफ्नो 10-character PAN number type गर्नुहोस्। सबै letters uppercase हुनुपर्छ — tool ले automatically convert गर्छ।',
+    },
+    {
+      title: 'Validate Button Click गर्नुहोस्',
+      description: '"Validate PAN" button press गर्नुहोस्। Tool ले कुनै external server लाई data नपठाइकन instantly format check गर्छ।',
+    },
+    {
+      title: 'Structure Breakdown Review गर्नुहोस्',
+      description: 'Validator ले character-by-character breakdown देखाउँछ: issuing series (chars 1–3), type code (char 4), name initial (char 5), sequence number (chars 6–9), check character (char 10)।',
+    },
+    {
+      title: 'Type Code Check गर्नुहोस्',
+      description: 'Type code (4th character) तपाईंले expect गरेको entity type सँग match गर्छ कि छैन confirm गर्नुहोस् — P for individual, C for company, H for HUF।',
+    },
+    {
+      title: 'Full Verification का लागि IT Portal मा जानुहोस्',
+      description: 'Format valid छ र PAN active छ र Aadhaar सँग linked छ — यो confirm गर्न Income Tax e-filing portal मा जानुहोस्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'के PAN number digit बाट सुरु हुन सक्छ?',
+      answer: 'हुँदैन। PAN को सबै 10 characters AAAAA9999A pattern follow गर्छन् — पहिलो पाँचवटा characters uppercase English alphabets (A–Z) हुनुपर्छ। Digit बाट सुरु हुने PAN structurally invalid हो।',
+    },
+    {
+      question: '"Inoperative PAN" को के अर्थ हो र कसरी fix गर्ने?',
+      answer: 'Inoperative PAN त्यो हो जुन Aadhaar सँग link भएको छैन। 2026 सम्म, unlinked PANs लाई inoperative मानिन्छ — TDS normal rate को सट्टा double rate (वा 20%, जुन बढी हो) मा deduct हुन्छ। Fix गर्न incometax.gov.in मा PAN-Aadhaar link गर्नुहोस् र applicable late fee (₹1,000) तिर्नुहोस्।',
+    },
+    {
+      question: 'PAN format check pass भयो तर bank ले invalid भन्यो — किन?',
+      answer: 'Format validation ले केवल structural pattern check गर्छ — PAN CBDT database मा registered छ वा active छ कि छैन confirm गर्दैन। Bank को problem हुन सक्छ: PAN Aadhaar सँग linked छैन, database मा not found, वा duplicate भएर deactivated। incometax.gov.in → Verify Your PAN मा check गर्नुहोस्।',
+    },
+    {
+      question: 'के Individual को PAN को 4th character सधैं P हुन्छ?',
+      answer: 'हो, individual persons का लागि 4th character सधैं P हुन्छ। तपाईंको PAN individual को हो तर 4th character P छैन भने, PAN मा error हो सक्छ। Income Tax jurisdictional office वा NSDL/UTIITSL helpline सँग contact गर्नुहोस्।',
+    },
+    {
+      question: 'नेपाली नागरिकले Indian PAN card लिन सकिन्छ?',
+      answer: 'हो, नेपाली नागरिकहरू जसको भारतमा taxable income छ उनीहरूले Indian PAN card लिन सक्छन्। PAN को format resident Indian जस्तै हुन्छ। NSDL वा UTIITSL portal मार्फत apply गर्नुपर्छ, passport र address proof सहित।',
+    },
+    {
+      question: 'के कसैको PAN number बाट उनको नाम पत्ता लगाउन सकिन्छ?',
+      answer: 'हुँदैन, कुनै public tool बाट। IT Department ले "Know Your PAN" service provide गर्छ जहाँ तपाईं आफ्नो personal details बाट आफ्नो PAN retrieve गर्न सक्नुहुन्छ, तर reverse lookup (PAN बाट कसैको नाम थाहा पाउनु) allow छैन।',
+    },
+    {
+      question: 'Minor को PAN card हुन सक्छ?',
+      answer: 'हो, minors (18 वर्षभन्दा कम) को PAN card हुन सक्छ। Structure adult को PAN जस्तै हुन्छ। Parent वा guardian ले form sign गर्छन्। 18 वर्ष पुगेपछि minor ले आफ्नो PAN update गर्नुपर्छ।',
+    },
+    {
+      question: 'ITR मा गल्तीले अरू कसैको PAN enter भयो भने के हुन्छ?',
+      answer: 'यो serious error हो। ITR गलत PAN को account मा process हुन्छ — कुनै refund गलत व्यक्तिको account मा जान्छ। Rectification possible छ तर time-consuming। ITR submit गर्नुअघि सधैं PAN validate र verify गर्नुहोस्।',
+    },
+  ],
+  relatedGuides: ['gst-calculator-guide', 'income-tax-calculator-guide', 'tds-calculator-guide'],
+  toolCTA: {
+    heading: 'अहिले नै PAN Card Number Validate गर्नुहोस्',
+    description: 'हाम्रो free PAN Card Validator बाट कुनै पनि PAN को format milliseconds मा check गर्नुहोस्। कुनै data store हुँदैन, कुनै API call छैन — पूर्णतः private र instant।',
+    buttonText: 'PAN Validate गर्नुहोस्',
+  },
+},
+
+{
+  slug: 'pincode-lookup-guide',
+  toolSlug: 'pincode-lookup',
+  category: 'utility-tools',
+  title: 'पिनकोड खोज — सम्पूर्ण गाइड',
+  subtitle: 'India को 6-digit Postal Index Number system बुझ्नुहोस् — हरेक State, District र Post Office का लागि',
+  metaTitle: 'पिनकोड खोज India — जुनसुकै Pincode नि:शुल्क खोज्नुहोस्',
+  metaDescription: 'जुनसुकै Indian PIN code lookup गर्नुहोस्। State, district, post office र delivery area तुरुन्त थाहा पाउनुहोस्। KYC र shipping tips सहित। नि:शुल्क।',
+  targetKeyword: 'पिनकोड खोज',
+  secondaryKeywords: [
+    'India pincode Nepal',
+    'postal code lookup India Nepal',
+    'pincode kya hunchha',
+    'India post office pincode',
+    'Nepal postal code 44600',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१० मिनेट',
+  tags: ['PIN Code', 'Pincode', 'India Post', 'Nepal', 'Postal', 'Nepali'],
+  intro: `<p>भारतको 6-digit PIN code (Postal Index Number) दैनिक जीवनको अत्यन्त महत्वपूर्ण जानकारी हो — तपाईंको पार्सल सही ठाउँमा पुग्छ कि पुग्दैन, KYC approve हुन्छ कि हुँदैन — यो सबै PIN code मा निर्भर गर्छ। धेरै नेपाली नागरिकहरू भारतमा काम गर्छन् र भारतीय address मा सामान पठाउन वा online form भर्न PIN code चाहिन्छ।</p>
+<p>नेपालको आफ्नै postal code प्रणाली पनि छ (5-digit format, जस्तै Kathmandu GPO को 44600) — तर यो गाइडमा हामी मुख्यतः भारतको 6-digit PIN system र नेपालको postal system दुवैको जानकारी दिनेछौं।</p>`,
+  sections: [
+    {
+      id: 'nepal-postal-system',
+      title: 'नेपालको Postal Code प्रणाली',
+      content: `<h3>नेपालको Postal Code Format</h3>
+<p>नेपालमा 5-digit postal code प्रणाली छ जुन Nepal Post ले manage गर्छ। यो सन् २००९ मा formally introduce गरिएको थियो, तर coverage अझै expanding छ।</p>
+
+<table>
+  <thead>
+    <tr><th>शहर / क्षेत्र</th><th>Postal Code</th><th>Province</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Kathmandu GPO</td><td>44600</td><td>Bagmati Province</td></tr>
+    <tr><td>Lalitpur (Patan)</td><td>44700</td><td>Bagmati Province</td></tr>
+    <tr><td>Bhaktapur</td><td>44800</td><td>Bagmati Province</td></tr>
+    <tr><td>Pokhara</td><td>33700</td><td>Gandaki Province</td></tr>
+    <tr><td>Butwal</td><td>32907</td><td>Lumbini Province</td></tr>
+    <tr><td>Birgunj</td><td>44300</td><td>Madhesh Province</td></tr>
+    <tr><td>Biratnagar</td><td>56600</td><td>Koshi Province</td></tr>
+    <tr><td>Dharan</td><td>56700</td><td>Koshi Province</td></tr>
+    <tr><td>Nepalgunj</td><td>21900</td><td>Lumbini Province</td></tr>
+    <tr><td>Dhangadhi</td><td>10900</td><td>Sudurpashchim Province</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नोट:</strong> नेपालमा postal code coverage भारतको जस्तो comprehensive छैन अझै। धेरै rural areas मा postal code नभएकाले courier companies ले landmark-based delivery गर्छन्।
+</div>`,
+    },
+    {
+      id: 'india-first-digit-ne',
+      title: 'Indian PIN Code को First Digit Guide',
+      content: `<table>
+  <thead>
+    <tr>
+      <th>पहिलो Digit</th>
+      <th>Postal Zone</th>
+      <th>States</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>Northern</td>
+      <td>Delhi, Haryana, Punjab, HP, J&K</td>
+      <td>110001 New Delhi</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>Northern (cont.)</td>
+      <td>Uttar Pradesh, Uttarakhand</td>
+      <td>226001 Lucknow</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>Western</td>
+      <td>Rajasthan, Gujarat</td>
+      <td>302001 Jaipur, 380001 Ahmedabad</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>Western (cont.)</td>
+      <td>Maharashtra, Goa, MP, Chhattisgarh</td>
+      <td>400001 Mumbai, 462001 Bhopal</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>Southern</td>
+      <td>AP, Telangana, Karnataka</td>
+      <td>500001 Hyderabad, 560001 Bengaluru</td>
+    </tr>
+    <tr>
+      <td><strong>6</strong></td>
+      <td>Southern (cont.)</td>
+      <td>Tamil Nadu, Kerala</td>
+      <td>600001 Chennai, 682001 Kochi</td>
+    </tr>
+    <tr>
+      <td><strong>7</strong></td>
+      <td>Eastern</td>
+      <td>West Bengal, Odisha, Assam, NE</td>
+      <td>700001 Kolkata, 781001 Guwahati</td>
+    </tr>
+    <tr>
+      <td><strong>8</strong></td>
+      <td>Eastern (cont.)</td>
+      <td>Bihar, Jharkhand</td>
+      <td>800001 Patna, 834001 Ranchi</td>
+    </tr>
+    <tr>
+      <td><strong>9</strong></td>
+      <td>Army Postal Service</td>
+      <td>Army Post Offices (APO)</td>
+      <td>Restricted/internal</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>नेपाली सीमा नजिकका PIN Codes:</strong> UP (2) र Bihar (8) भारत-नेपाल सीमासँग लाग्ने राज्यहरू हुन्। Gorakhpur (273001), Varanasi (221001), Patna (800001), Siliguri (734001) — यी सहरहरूको PIN code नेपालीहरूले प्रायः प्रयोग गर्छन्।
+</div>`,
+    },
+    {
+      id: 'kyc-shopping-ne',
+      title: 'Online Shopping, KYC र Address Verification मा PIN Code',
+      content: `<h3>KYC मा PIN Code किन जरुरी छ</h3>
+<p>Bank account, Aadhaar update, PAN card, insurance — सबैमा PIN code mandatory छ। Bank ले PIN code र claimed city/state match गर्छ — mismatch भए form reject हुन सक्छ।</p>
+
+<h3>Online Shopping मा PIN Code</h3>
+<ul>
+  <li><strong>Serviceability check:</strong> उक्त PIN code मा delivery available छ कि छैन</li>
+  <li><strong>Delivery date calculation:</strong> Nearest warehouse बाट distance अनुसार EDD compute हुन्छ</li>
+  <li><strong>COD availability:</strong> कुछ PIN codes मा fraud history ले COD disable हुन सक्छ</li>
+</ul>
+
+<div class="callout-info">
+  <strong>नेपाली Amazon/Flipkart users का लागि:</strong> भारतको address मा order गर्दा सही PIN code हाल्नु अनिवार्य छ। Wrong PIN code हाले delivery fail हुन्छ वा गलत ठाउँमा जान्छ।
+</div>`,
+    },
+    {
+      id: 'decode-pincode-ne',
+      title: 'Indian PIN Code decode गर्ने तरिका',
+      content: `<h3>Example: 226001 (Lucknow, UP)</h3>
+<table>
+  <thead>
+    <tr><th>Digits</th><th>मतलब</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>2</td><td>Northern zone — UP/Uttarakhand</td></tr>
+    <tr><td>22</td><td>Uttar Pradesh sub-zone</td></tr>
+    <tr><td>226</td><td>Lucknow sorting district (Lucknow GPO)</td></tr>
+    <tr><td>001</td><td>Lucknow GPO — specific delivery office</td></tr>
+  </tbody>
+</table>
+
+<h3>Example: 800001 (Patna, Bihar)</h3>
+<table>
+  <thead>
+    <tr><th>Digits</th><th>मतलब</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>8</td><td>Eastern zone — Bihar/Jharkhand</td></tr>
+    <tr><td>80</td><td>Bihar sub-zone</td></tr>
+    <tr><td>800</td><td>Patna sorting district</td></tr>
+    <tr><td>001</td><td>Patna GPO — specific delivery office</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'remote-village-ne',
+      title: 'Remote Village को PIN Code कसरी खोज्ने',
+      content: `<h3>Challenge किन छ</h3>
+<p>भारतका ~6.4 लाख villages मध्ये हरेकको आफ्नै unique PIN छैन। धेरै villages ले एउटा Branch Post Office को PIN share गर्छन्।</p>
+
+<h3>Tips</h3>
+<ul>
+  <li><strong>India Post official:</strong> indiapost.gov.in → Find Pincode → district र post office name बाट search</li>
+  <li><strong>Nearest post office सम्पर्क:</strong> हरेक postman ले आफ्नो route का सबै PINs जान्दछ</li>
+  <li><strong>District HPO code प्रयोग:</strong> Exact PIN नभेटे district HPO को PIN प्रयोग गर्नुहोस् — mail manually route हुन्छ</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>नेपाल-भारत सीमा क्षेत्रका लागि Tip:</strong> Bihar (8) र UP (2) का PIN codes प्रायः सही काम गर्छन् India-Nepal border areas मा। Gorakhpur, Raxaul, Nautanwa, Banbasa — यी border towns का PIN codes थाहा राख्नु उपयोगी हुन्छ।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'ToolsArena मा PIN Code Lookup खोल्नुहोस्',
+      description: 'Website मा जानुहोस् र PIN Code Lookup tool खोल्नुहोस्।',
+    },
+    {
+      title: 'PIN Code वा Location Enter गर्नुहोस्',
+      description: '6-digit PIN code type गर्नुहोस् state/district/post office details का लागि। वा city/district/post office name type गर्नुहोस् PIN code खोज्न।',
+    },
+    {
+      title: 'Result हेर्नुहोस्',
+      description: 'Tool ले देखाउनेछ: state, district, taluka, post office name, post office type, delivery area।',
+    },
+    {
+      title: 'KYC वा Shipping का लागि Verify गर्नुहोस्',
+      description: 'कुनै पनि form भर्नुअघि PIN code verify गर्नुहोस् — गलत PIN code form rejection र delivery failure को सामान्य कारण हो।',
+    },
+    {
+      title: 'First Digit Guide प्रयोग गर्नुहोस्',
+      description: 'कुनै PIN को state थाहा छैन? First digit हेर्नुहोस् — हाम्रो quick reference table बाट state group तुरुन्त थाहा हुनेछ।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'के दुई फरक-फरक शहरको same PIN code हुन सक्छ?',
+      answer: 'होइन। हरेक PIN code unique छ र एउटा specific post office लाई identify गर्छ। तर एउटा post office ले धेरै villages/localities serve गर्छ — ती सबैले same PIN share गर्छन्।',
+    },
+    {
+      question: 'E-commerce मा "not serviceable" PIN code किन हुन्छ?',
+      answer: 'त्यो platform को logistics partner उक्त PIN code area मा deliver गर्दैन। India Post लगभग सर्वत्र deliver गर्छ, तर private couriers को limited coverage हुन्छ।',
+    },
+    {
+      question: 'नेपालको postal code कति digits को हुन्छ?',
+      answer: 'नेपालको postal code 5 digits को हुन्छ (जस्तै 44600 for Kathmandu GPO)। भारतको 6 digits हुन्छ। दुवै purely numeric हुन्छन्।',
+    },
+    {
+      question: 'Army को PIN code 9 बाट किन शुरु हुन्छ?',
+      answer: 'Army Postal Service का लागि 9 बाट शुरु हुने PIN codes (900001-999999) reserved छन्। यी internal military postal codes हुन् र publicly searchable हुँदैनन्।',
+    },
+    {
+      question: 'PIN code र STD code मा के फरक छ?',
+      answer: 'PIN code postal delivery का लागि हो (6 digits)। STD/area code telephone routing का लागि हो (011 Delhi, 022 Mumbai)। यी दुई बिल्कुल फरक प्रणाली हुन् र एकअर्कासँग सम्बन्धित छैनन्।',
+    },
+  ],
+  relatedGuides: ['vehicle-number-plate-info-guide', 'gst-calculator-guide', 'aadhaar-validator-guide'],
+  toolCTA: {
+    heading: 'जुनसुकै Indian PIN Code तुरुन्त खोज्नुहोस्',
+    description: 'PIN code बाट state/district/post office थाहा पाउनुहोस् — वा location बाट PIN code खोज्नुहोस्। नि:शुल्क, fast र up to date।',
+    buttonText: 'PIN Code Lookup खोल्नुहोस्',
+  },
+},
+
+{
+  slug: 'qr-code-scanner-guide',
+  toolSlug: 'qr-code-scanner',
+  category: 'utility-tools',
+  title: 'QR Code Scanner — सम्पूर्ण गाइड',
+  subtitle: 'QR कोड स्क्यान गर्नुहोस् र डिकोड गर्नुहोस् — UPI भुक्तानीदेखि WiFi लगिनसम्म',
+  metaTitle: 'QR कोड स्क्यानर Online — QR Scan र Decode गर्नुहोस् नि:शुल्क',
+  metaDescription: 'जुनसुकै QR कोड online स्क्यान र डिकोड गर्नुहोस्। URL, UPI, WiFi, VCard, SMS सबै support गर्छ। Image upload वा camera use गर्नुहोस्। नि:शुल्क।',
+  targetKeyword: 'QR कोड स्क्यानर',
+  secondaryKeywords: [
+    'QR code image बाट scan गर्ने',
+    'QR code decoder online nepali',
+    'QR code bina app scan',
+    'QR code kasto hunchha',
+    'Nepal QR payment scan',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१० मिनेट',
+  tags: ['QR Code', 'Scanner', 'Utility', 'Nepal', 'Nepali'],
+  intro: `<p>QR कोडहरू अहिले सर्वत्र छन् — रेस्टुरेन्टको मेनुमा, उत्पादनको प्याकेजिङमा, भुक्तानी apps मा, बस टिकटमा, Aadhaar पत्रमा, खोप प्रमाणपत्रमा। नेपालमा पनि QR-आधारित भुक्तानी प्रणाली (जस्तै Khalti, eSewa, ConnectIPS) व्यापक भइसकेको छ। तर अधिकांश मानिसहरू केवल क्यामेरा देखाउँछन् र स्क्यान हुन्छ — भित्र के छ भनेर बुझ्दैनन्। यो गाइडले तपाईंलाई QR कोडको सम्पूर्ण तकनिकी र व्यावहारिक जानकारी दिनेछ।</p>
+<p>ToolsArena को <strong>QR Code Scanner</strong> एकदमै नि:शुल्क छ — कुनै app install वा sign-up आवश्यक छैन। Image upload गर्नुहोस् वा camera use गर्नुहोस् र तुरुन्त decoded data हेर्नुहोस्।</p>`,
+  sections: [
+    {
+      id: 'qr-ke-ho',
+      title: 'QR Code के हो? इतिहास, संरचना र डाटा कसरी Store हुन्छ',
+      content: `<h3>QR Code को सुरुवात</h3>
+<p>QR (Quick Response) code सन् १९९४ मा <strong>Masahiro Hara</strong> ले Denso Wave कम्पनीका लागि बनाएका थिए — Toyota का गाडीका पार्टसहरू track गर्न। सामान्य 1D barcode मा केवल ~२० characters मात्र आउँथ्यो, तर QR code मा ३,००० भन्दा बढी characters store हुन सक्छ। यो royalty-free राखिएकाले विश्वभर यति लोकप्रिय भयो।</p>
+
+<h3>QR Code को संरचना</h3>
+<ul>
+  <li><strong>Finder Patterns:</strong> तीन कुनामा ठूला squares — scanner लाई code को सिमाना र दिशा थाहा दिन्छ।</li>
+  <li><strong>Alignment Patterns:</strong> तेर्सो राखिएको वा थोरै तिरछो code को distortion ठीक गर्छ।</li>
+  <li><strong>Timing Patterns:</strong> Black-white पालैपालो lines जसले grid coordinate system बनाउँछ।</li>
+  <li><strong>Data Area:</strong> वास्तविक data र error correction codewords यहाँ store हुन्छन्।</li>
+  <li><strong>Quiet Zone:</strong> Code वरिपरि सेतो border — यो अनिवार्य छ।</li>
+</ul>
+
+<div class="callout-info">
+  <strong>रोचक तथ्य:</strong> सबभन्दा ठूलो QR code (Version 40) मा ७,०८९ digits वा २,९५३ bytes सम्म data store हुन सक्छ।
+</div>`,
+    },
+    {
+      id: 'qr-content-types-ne',
+      title: 'QR Code मा के-के store हुन सक्छ?',
+      content: `<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Format</th>
+      <th>नेपालमा प्रयोग</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>URL</td><td><code>https://</code></td><td>रेस्टुरेन्ट मेनु, सरकारी वेबसाइट</td></tr>
+    <tr><td>eSewa / Khalti / ConnectIPS</td><td>App-specific URI</td><td>नेपाली digital भुक्तानी</td></tr>
+    <tr><td>WiFi Password</td><td><code>WIFI:S:...;P:...;;</code></td><td>Hotel, café WiFi</td></tr>
+    <tr><td>Contact (VCard)</td><td><code>BEGIN:VCARD</code></td><td>Business card</td></tr>
+    <tr><td>SMS</td><td><code>SMSTO:</code></td><td>Customer support</td></tr>
+    <tr><td>Phone</td><td><code>tel:</code></td><td>Helpline number</td></tr>
+    <tr><td>Plain Text</td><td>(कुनै prefix छैन)</td><td>Serial number, tracking</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाल सन्दर्भ:</strong> नेपालमा eSewa, Khalti, IME Pay, ConnectIPS जस्ता digital wallets QR-based भुक्तानी प्रयोग गर्छन्। यी QR हरू decode गर्दा merchant को ID र रकम देख्न सकिन्छ।
+</div>`,
+    },
+    {
+      id: 'safe-scanning-ne',
+      title: 'Safe QR Scanning: Fraud QR कसरी पहिचान गर्ने',
+      content: `<h3>नेपालमा QR Fraud</h3>
+<p>नेपालमा पनि QR code fraud बढ्दो छ — विशेष गरी digital payment को प्रयोग बढेसँगै। ठगहरू असली QR माथि नक्कली QR sticker टाँस्छन् वा social media मा fake payment QR share गर्छन्।</p>
+
+<div class="callout-warning">
+  <strong>सावधान:</strong> "पैसा receive गर्न QR scan गरेर PIN हाल्नुस्" — यो हमेशा ठगी हो। पैसा receive गर्न कहिल्यै PIN हाल्नु पर्दैन।
+</div>
+
+<h3>सुरक्षित तरिकाहरू</h3>
+<ul>
+  <li>भुक्तानी गर्नुअघि merchant को नाम app मा verify गर्नुहोस्</li>
+  <li>ToolsArena scanner बाट पहिले raw data हेर्नुहोस्</li>
+  <li>अपरिचित URL खोल्नु अघि domain ध्यानपूर्वक हेर्नुहोस्</li>
+  <li>Social media बाट आएको QR सजिलै विश्वास नगर्नुहोस्</li>
+</ul>`,
+    },
+    {
+      id: 'upload-vs-camera-ne',
+      title: 'Image Upload vs Live Camera: कहिले के प्रयोग गर्ने',
+      content: `<h3>Live Camera</h3>
+<p>जब QR code भौतिक रूपमा सामुन्ने छ — printed flyer, product label, दोकानको counter। Camera real-time मा frames process गर्छ।</p>
+
+<h3>Image Upload</h3>
+<p>जब QR पहिले नै screenshot वा file मा छ — WhatsApp बाट आएको image, email attachment, e-ticket PDF screenshot।</p>
+
+<h3>Scan fail भए के गर्ने</h3>
+<ul>
+  <li><strong>Image blur छ:</strong> राम्रो lighting मा फेरि photo लिनुहोस्</li>
+  <li><strong>QR cut off छ:</strong> सेतो border सहित पूरा QR frame मा आउनु पर्छ</li>
+  <li><strong>Damaged QR:</strong> ३०% भन्दा बढी क्षति भए scan हुँदैन</li>
+</ul>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'ToolsArena मा QR Code Scanner खोल्नुहोस्',
+      description: 'Website मा जानुहोस् र QR Code Scanner tool खोल्नुहोस्। कुनै app install वा login आवश्यक छैन।',
+    },
+    {
+      title: 'Input Method छान्नुहोस्',
+      description: '"Upload Image" click गर्नुहोस् image file को लागि, वा "Use Camera" click गर्नुहोस् live scanning को लागि।',
+    },
+    {
+      title: 'QR Code दिनुहोस्',
+      description: 'Camera mode मा QR code लाई viewfinder मा राख्नुहोस्। Image upload मा PNG, JPG वा screenshot select गर्नुहोस्।',
+    },
+    {
+      title: 'Decoded Result हेर्नुहोस्',
+      description: 'Tool ले तुरुन्त देखाउनेछ — URL, भुक्तानी details, WiFi password, contact info — सबै clearly।',
+    },
+    {
+      title: 'सुरक्षित रूपमा अघि बढ्नुहोस्',
+      description: 'कुनै link खोल्नु वा भुक्तानी गर्नु अघि decoded data ध्यानपूर्वक check गर्नुहोस्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'के WhatsApp बाट आएको QR image scan हुन्छ?',
+      answer: 'हो। Image save गर्नुहोस् र Upload Image feature प्रयोग गर्नुहोस्। भौतिक रूपमा camera नदेखाईकन image बाट directly scan हुन्छ।',
+    },
+    {
+      question: 'के यो tool safe छ?',
+      answer: 'हो। यो tool केवल data decode गर्छ — automatically कुनै link open हुँदैन, कुनै भुक्तानी शुरु हुँदैन। तपाईं आफैंले निर्णय गर्नुहुन्छ।',
+    },
+    {
+      question: 'QR code मा virus हुन सक्छ?',
+      answer: 'QR code मा केवल text data हुन्छ, executable code होइन। तर त्यो text एक malicious website को link हुन सक्छ। पहिले decode गर्नुहोस्, त्यसपछि सोची-विचारी link खोल्नुहोस्।',
+    },
+    {
+      question: 'Scan किन fail भइरहेको छ?',
+      answer: 'Image blur, QR को कुना cut off, वा धेरै damage — यी मुख्य कारणहरू हुन्। राम्रो photo लिनुहोस्, पूरा QR देखिनु पर्छ, र राम्रो lighting राख्नुहोस्।',
+    },
+    {
+      question: 'नेपालको eSewa/Khalti QR पनि scan हुन्छ?',
+      answer: 'हो। eSewa र Khalti QR codes standard format प्रयोग गर्छन् जुन हाम्रो tool ले decode गर्न सक्छ। Merchant ID र रकम clearly देखिनेछ।',
+    },
+  ],
+  relatedGuides: ['qr-code-generator-guide', 'url-encode-decode-guide', 'barcode-generator-guide'],
+  toolCTA: {
+    heading: 'जुनसुकै QR Code तुरुन्त Scan गर्नुहोस् — App बिना',
+    description: 'Image upload गर्नुहोस् वा camera प्रयोग गर्नुहोस्। URL, भुक्तानी details, WiFi password — सबै decode हुनेछ। नि:शुल्क र सुरक्षित।',
+    buttonText: 'QR Code Scanner खोल्नुहोस्',
+  },
+},
+
+{
+  slug: 'readability-score-checker-guide',
+  toolSlug: 'readability-score-checker',
+  category: 'text-tools',
+  title: 'पठनीयता स्कोर जाँच: स्पष्ट र प्रभावशाली लेखनको सम्पूर्ण गाइड',
+  subtitle: 'Flesch, Gunning Fog, SMOG formulas बुझ्नुहोस् र आफ्नो ब्लग, वेबसाइट र सामग्रीलाई अझ पठनीय बनाउनुहोस्',
+  metaTitle: 'पठनीयता स्कोर जाँच गाइड 2026 | ToolsArena',
+  metaDescription: 'Readability score के हो, कुन formulas काम गर्छन्, र नेपाली/अंग्रेजी content को कसरी improve गर्ने — सम्पूर्ण गाइड real data tables सहित।',
+  targetKeyword: 'पठनीयता स्कोर जाँच',
+  secondaryKeywords: [
+    'readability score Nepal',
+    'Flesch-Kincaid Nepali content',
+    'blog readability checker Nepal',
+    'content clear kaise banaye Nepal',
+    'SEO readability Nepal',
+    'writing improve Nepal',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१२ मिनेट',
+  tags: ['पठनीयता', 'लेखन', 'SEO', 'content marketing', 'blogging', 'नेपाली content'],
+  intro: `<p>नेपालमा digital content creation तीव्र गतिमा बढिरहेको छ। Kathmandu Post, Setopati, Ratopati र हजारौं स्वतन्त्र Nepali bloggers ले दैनिक लाखौं पाठकहरूलाई content serve गर्छन्। तर एउटा common problem छ — कतिपय content हेर्नमा राम्रो देखिन्छ तर पाठकहरू ३०–४५ सेकेन्डमा नै page छाड्छन्। कारण के हो? <strong>Readability</strong> — लेखन कति सजिलोसँग पढ्न र बुझ्न सकिन्छ भन्ने measurable quality।</p>
+<p><strong>पठनीयता स्कोर जाँच</strong> उपकरणले तपाईंको text लाई scientifically validated formulas — Flesch Reading Ease, Flesch-Kincaid Grade Level, Gunning Fog Index, SMOG — अनुसार विश्लेषण गर्छ। यो guide ले ती सबै formulas, ideal scores, र writing improve गर्ने practical techniques विस्तारसाथ सिकाउँछ।</p>`,
+  sections: [
+    {
+      id: 'readability-kya-ho-ne',
+      title: 'Readability के हो? ब्लग, Documents र Marketing का लागि किन महत्त्वपूर्ण छ?',
+      content: `<h3>Readability को परिभाषा</h3>
+<p>Readability भनेको written text आफ्नो intended audience लाई कति सजिलोसँग बुझिन्छ भन्ने degree हो। यो यी factors मा निर्भर गर्छ: sentence को लम्बाइ, word को जटिलता, text को संरचना, र formatting aids (headings, bullets)।</p>
+<h3>२०२६ मा Readability किन महत्त्वपूर्ण छ?</h3>
+<ul>
+  <li><strong>औसत पठन स्तर:</strong> अध्ययनहरूले देखाउँछन् कि औसत adult Grade ७–८ स्तरमा सहजसँग पढ्छ — शिक्षाको स्तर जे भए पनि। Online content पढ्दा मानिसहरू सजिलोपनलाई प्राथमिकता दिन्छन्।</li>
+  <li><strong>नेपाल सन्दर्भ:</strong> Nepal Telecom Authority को तथ्याङ्क अनुसार नेपालमा ३ करोडभन्दा बढी internet users छन्, जसमध्ये ठूलो हिस्सा mobile मा content consume गर्छ। Mobile readers का लागि पठनीय content अझ महत्त्वपूर्ण छ।</li>
+  <li><strong>Conversion rates:</strong> Nielsen Norman Group को research अनुसार, simpler landing pages same audience लाई <strong>१२५% बढी rate</strong> मा convert गर्छन्।</li>
+  <li><strong>SEO impact:</strong> Bounce rate, time on page, र social shares — सबैलाई readability directly affect गर्छ।</li>
+</ul>`,
+    },
+    {
+      id: 'six-formulas-ne',
+      title: '६ Readability Formulas: Flesch, Gunning Fog, SMOG र अरू',
+      content: `<h3>Multiple Formulas किन छन्?</h3>
+<p>हरेक readability formula एक specific purpose का लागि design गरिएको थियो। कुनै एक formula "best" हुँदैन — सही formula तपाईंको content type मा निर्भर गर्छ।</p>
+<h3>६ प्रमुख Readability Formulas को तुलना</h3>
+<table>
+  <thead>
+    <tr><th>Formula</th><th>Output</th><th>के Measure गर्छ</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Flesch Reading Ease</td><td>Score ०–१०० (बढी = सजिलो)</td><td>Sentence length + syllables</td><td>General content, blogs</td></tr>
+    <tr><td>Flesch-Kincaid Grade Level</td><td>US Grade Level</td><td>Sentence length + syllables</td><td>Educational content, SEO</td></tr>
+    <tr><td>Gunning Fog Index</td><td>Years of education needed</td><td>Sentence length + complex words</td><td>Business writing</td></tr>
+    <tr><td>SMOG Index</td><td>Years of education needed</td><td>Polysyllabic words</td><td>Health communication</td></tr>
+    <tr><td>Coleman-Liau Index</td><td>US Grade Level</td><td>Characters per word</td><td>Computer text analysis</td></tr>
+    <tr><td>ARI</td><td>US Grade Level</td><td>Characters + words per sentence</td><td>Technical manuals</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'ideal-scores-ne',
+      title: 'विभिन्न Content Types का लागि आदर्श Readability Scores',
+      content: `<h3>Content Type अनुसार Target Scores</h3>
+<table>
+  <thead>
+    <tr><th>Content Type</th><th>Flesch Reading Ease</th><th>FK Grade Level</th><th>Gunning Fog</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Social media captions</td><td>८०–१००</td><td>५–७</td><td>६–८</td></tr>
+    <tr><td>Email marketing</td><td>६५–८०</td><td>६–८</td><td>८–१०</td></tr>
+    <tr><td>General blog posts</td><td>६०–७०</td><td>७–९</td><td>९–११</td></tr>
+    <tr><td>News articles</td><td>५५–७०</td><td>८–१०</td><td>१०–१२</td></tr>
+    <tr><td>Healthcare content</td><td>६०–८०</td><td>६–८</td><td>७–९</td></tr>
+    <tr><td>Business white papers</td><td>४५–६०</td><td>१०–१२</td><td>११–१३</td></tr>
+    <tr><td>Academic journals</td><td>२०–४०</td><td>१४–१७</td><td>१५–१८</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-info">
+  <strong>नेपाली Content Creators का लागि:</strong> नेपाली digital content का लागि Flesch ६०–७५ र FK Grade ७–९ target गर्नुहोस्। यो range अधिकांश Nepali internet users का लागि clear र accessible छ।
+</div>`,
+    },
+    {
+      id: 'improve-readability-ne',
+      title: 'Readability Score कसरी Improve गर्ने: १० Writing Techniques',
+      content: `<h3>१० Practical Techniques</h3>
+<h3>१. Sentences छोटा राख्नुहोस्</h3>
+<p>सबभन्दा impactful change। औसत sentence length <strong>१५–२० words</strong> राख्नुहोस्।</p>
+<h3>२. जटिल शब्दको सट्टा Simple Alternatives प्रयोग गर्नुहोस्</h3>
+<table>
+  <thead>
+    <tr><th>Complex Word</th><th>Simple Alternative</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Utilize</td><td>Use / प्रयोग गर्नुहोस्</td></tr>
+    <tr><td>Facilitate</td><td>Help / सहयोग गर्नुहोस्</td></tr>
+    <tr><td>Demonstrate</td><td>Show / देखाउनुहोस्</td></tr>
+    <tr><td>Subsequently</td><td>Then / त्यसपछि</td></tr>
+    <tr><td>Approximately</td><td>About / लगभग</td></tr>
+  </tbody>
+</table>
+<h3>३. Active Voice प्रयोग गर्नुहोस्</h3>
+<p>Active voice shorter, clearer, र more direct हुन्छ।</p>
+<h3>४. Paragraphs छोटा राख्नुहोस्</h3>
+<p>Online reading का लागि paragraphs <strong>३–४ sentences maximum</strong> राख्नुहोस्।</p>
+<h3>५. Bullet Points र Lists प्रयोग गर्नुहोस्</h3>
+<p>Lists सबभन्दा readable format हो। ३+ items sentence मा भए list बनाउनुहोस्।</p>
+<h3>६. हरेक ३०० Words मा Subheadings थप्नुहोस्</h3>
+<h3>७. Jargon Avoid गर्नुहोस्</h3>
+<p>Technical term पहिलो पटक प्रयोग गर्दा define गर्नुहोस्।</p>
+<h3>८. Text को Aloud पढ्नुहोस्</h3>
+<h3>९. Sentence Length Vary गर्नुहोस्</h3>
+<h3>१०. Transition Words प्रयोग गर्नुहोस्</h3>
+<p>"तर," "त्यसैले," "उदाहरणका लागि," "थपमा" — ये words readers लाई ideas बीच guide गर्छन्।</p>`,
+    },
+    {
+      id: 'readability-seo-ne',
+      title: 'Readability र SEO: Google ले Readability लाई Ranking Signal मान्छ?',
+      content: `<h3>Google को Official Stance</h3>
+<p>Google ले officially readability score लाई direct ranking factor confirm गरेको छैन। तर 2026 मा, readability र SEO performance बीचको सम्बन्ध proxy metrics मार्फत धेरै strong छ।</p>
+<h3>Readability को SEO Metrics मा Impact</h3>
+<table>
+  <thead>
+    <tr><th>SEO Metric</th><th>Poor Readability को नोक्सान</th><th>Good Readability को फाइदा</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bounce Rate</td><td>Readers तुरुन्त leave → poor signal</td><td>Readers बस्छन् → quality signal</td></tr>
+    <tr><td>Time on Page</td><td>Low dwell time → negative signal</td><td>High dwell time → positive signal</td></tr>
+    <tr><td>Backlinks</td><td>Complex text = कम citations</td><td>Clear content = बढी natural backlinks</td></tr>
+    <tr><td>Featured Snippets</td><td>Complex paragraphs extract हुँदैनन्</td><td>Clear answers snippets मा आउँछन्</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-tip">
+  <strong>२०२६ SEO Tip:</strong> AI Overviews अहिले ६०%+ search results मा appear हुन्छन्। Clearly structured र readable content AI-generated summaries मा feature हुने बढी chances छन्।
+</div>`,
+    },
+    {
+      id: 'nepali-readability-ne',
+      title: 'नेपाली र हिन्दी Content का लागि Readability',
+      content: `<h3>नेपाली Content को Unique Challenges</h3>
+<p>Flesch, Gunning Fog, SMOG जस्ता established formulas अंग्रेजीका लागि design गरिएका छन्। नेपाली र हिन्दी जस्ता Devanagari languages का लागि ती scores directly applicable हुँदैनन्।</p>
+<ul>
+  <li><strong>Compound words (संधि):</strong> नेपालीमा naturally long compound words हुन्छन् जुन English formulas मा "complex" count हुन्छन् तर native readers का लागि completely natural छन्।</li>
+  <li><strong>Script density:</strong> Devanagari script मा एउटा छोटो शब्दले धेरै meaning pack गर्छ।</li>
+  <li><strong>Tribhuvan University research:</strong> TU र अन्य नेपाली शैक्षिक संस्थाहरूले नेपाली भाषाका लागि localized readability formula विकास गर्ने काम गरिरहेका छन्।</li>
+</ul>
+<h3>नेपाली Digital Content का लागि Practical Guidelines</h3>
+<table>
+  <thead>
+    <tr><th>Guideline</th><th>Recommended Target</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Average sentence length</td><td>१२–१८ words (English भन्दा कम)</td></tr>
+    <tr><td>Paragraph length</td><td>२–३ sentences (mobile-first readers का लागि)</td></tr>
+    <tr><td>Subheadings frequency</td><td>हरेक २००–२५० words मा</td></tr>
+    <tr><td>Vocabulary</td><td>Common spoken Nepali, pure Sanskritized vocabulary avoid</td></tr>
+    <tr><td>Voice</td><td>Active verb-object sentences clearer हुन्छन्</td></tr>
+  </tbody>
+</table>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'आफ्नो Text Paste वा Type गर्नुहोस्',
+      description: 'आफ्नो blog post, article, वा कुनै पनि text checker मा paste गर्नुहोस्। Minimum १०० words accurate results का लागि राम्रो हुन्छ।',
+    },
+    {
+      title: '"Check Readability" Click गर्नुहोस्',
+      description: 'Tool ले instantly सबै ६ major readability formulas simultaneously analyze गर्छ।',
+    },
+    {
+      title: 'Scores Review गर्नुहोस्',
+      description: 'Flesch Reading Ease, Flesch-Kincaid Grade Level, Gunning Fog, SMOG scores check गर्नुहोस्।',
+    },
+    {
+      title: 'Detailed Breakdown पढ्नुहोस्',
+      description: 'Average sentence length, complex words count, passive voice percentage हेर्नुहोस्।',
+    },
+    {
+      title: 'Problem Areas Identify गर्नुहोस्',
+      description: 'Tool ले long sentences र complex words highlight गर्छ — ती तपाईंको revision का primary targets हुन्।',
+    },
+    {
+      title: 'Revise गर्नुहोस् र Re-Check गर्नुहोस्',
+      description: 'Writing techniques apply गर्नुहोस्, revised text paste गर्नुहोस्, र score improvement track गर्नुहोस्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'Blog post का लागि राम्रो readability score कति हो?',
+      answer: 'General audience blog का लागि aim गर्नुहोस्: Flesch Reading Ease ६०–७०, Flesch-Kincaid Grade Level ७–९, Gunning Fog ९–११। यी ranges अधिकांश adult readers का लागि clear र professional writing indicate गर्छन्।',
+    },
+    {
+      question: 'Readability score ले Google ranking लाई affect गर्छ?',
+      answer: 'Readability confirmed direct ranking factor होइन, तर यसले bounce rate, time on page, र social shares लाई strongly affect गर्छ — जुन Google ले measure गर्छ। २०२६ मा AI Overviews सँग, readable content search results मा feature हुने बढी chances छन्।',
+    },
+    {
+      question: 'नेपाली content का लागि readability कसरी check गर्ने?',
+      answer: 'ToolsArena को tool ले Nepali/Devanagari text का लागि basic metrics process गर्छ। तर Flesch जस्ता formulas English का लागि validated छन्। नेपाली content का लागि structural metrics — sentence length र paragraph length — मा focus गर्नुहोस्।',
+    },
+    {
+      question: 'के छोटो sentences लेख्नु content लाई "simple" बनाउँछ?',
+      answer: 'होइन। छोटो sentences लेख्नु content लाई less intelligent बनाउँदैन — यसले उसलाई बढी accessible र effective बनाउँछ। Harvard Business Review, BBC News र Forbes जस्ता publications — सबैले short, clear sentences प्राथमिकता दिन्छन्।',
+    },
+  ],
+  relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'case-converter-guide'],
+  toolCTA: {
+    heading: 'अहिले नै आफ्नो Readability Score Check गर्नुहोस् — निःशुल्क',
+    description: '६ readability formulas मा instant analysis। कुनै account आवश्यक छैन। कुनै पनि text paste गर्नुहोस् र seconds मा scores पाउनुहोस्।',
+    buttonText: 'Readability Score Check गर्नुहोस्',
+  },
+},
+
+{
+  slug: 'social-media-image-sizes-guide',
+  toolSlug: 'social-media-dimensions-guide',
+  category: 'image-tools',
+  title: 'सोशल मिडिया छवि आकार 2026: सम्पूर्ण Platform Guide',
+  subtitle: 'Instagram, Facebook, YouTube, LinkedIn, Twitter/X, Pinterest, WhatsApp र Telegram का लागि सही image dimensions — 2026 अपडेट',
+  metaTitle: 'सोशल मिडिया छवि आकार 2026 गाइड | ToolsArena',
+  metaDescription: 'नेपालका content creators र businesses का लागि 2026 मा Instagram, Facebook, YouTube, WhatsApp र Telegram का सबै image sizes र dimensions। Real pixel tables सहित।',
+  targetKeyword: 'सोशल मिडिया छवि आकार 2026',
+  secondaryKeywords: [
+    'Instagram image size Nepal 2026',
+    'Facebook cover photo size Nepal',
+    'YouTube thumbnail size Nepal',
+    'WhatsApp image size Nepal',
+    'social media dimensions Nepal',
+    'content creator Nepal image sizes',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१४ मिनेट',
+  tags: ['social media', 'image sizes', 'Instagram', 'Facebook', 'YouTube', 'WhatsApp', 'Nepal', 'content creation', '2026'],
+  intro: `<p>नेपालमा social media को प्रयोग तीव्र गतिमा बढिरहेको छ। Nepal Telecommunications Authority को तथ्याङ्क अनुसार, नेपालमा <strong>३ करोडभन्दा बढी internet users</strong> छन् र अधिकांश mobile मार्फत social media access गर्छन्। काठमाडौं, पोखरा र विराटनगरका हजारौं content creators, small businesses र bloggers ले Instagram, Facebook, YouTube र TikTok मा नियमित content post गर्छन्। तर एउटा common frustration: image post गर्दा crop हुन्छ, blur देखिन्छ, वा अधाधुन्ध काटिन्छ।</p>
+<p>यो गाइडले तपाईंलाई 2026 मा हरेक major social media platform का लागि verified pixel dimensions दिन्छ — Instagram feed देखि YouTube thumbnail सम्म, WhatsApp Status देखि LinkedIn banner सम्म। नेपाली content creators, social media managers, र small businesses का लागि यो guide एक permanent reference हो।</p>`,
+  sections: [
+    {
+      id: 'sahi-size-kina-jaruri-ne',
+      title: 'सही Image Size किन महत्त्वपूर्ण छ? Performance मा असर',
+      content: `<h3>गलत Size को Real Cost</h3>
+<p>हरेक platform ले images लाई differently render गर्छ। गलत dimensions upload गर्दा platform ले automatically crop, compress, वा stretch गर्छ — र results प्रायः राम्रो हुँदैनन्।</p>
+<h3>नेपाल Context मा Social Media Statistics 2026</h3>
+<table>
+  <thead>
+    <tr><th>Platform</th><th>नेपालमा Users (अनुमानित)</th><th>Primary Use</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Facebook</td><td>१.४ करोड+</td><td>Community, news, business pages</td></tr>
+    <tr><td>YouTube</td><td>१.२ करोड+</td><td>Entertainment, education, vlogs</td></tr>
+    <tr><td>Instagram</td><td>४५ लाख+</td><td>Lifestyle, tourism, fashion</td></tr>
+    <tr><td>TikTok</td><td>४० लाख+</td><td>Entertainment, comedy, trends</td></tr>
+    <tr><td>WhatsApp</td><td>१.५ करोड+</td><td>Messaging, groups, business</td></tr>
+    <tr><td>Twitter/X</td><td>१५ लाख+</td><td>News, politics, professional</td></tr>
+  </tbody>
+</table>
+<h3>Correct Image Size का Benefits</h3>
+<ul>
+  <li><strong>Engagement rate:</strong> Correctly sized images लाई <strong>४०% बढी engagement</strong> मिल्छ (Sprout Social data)</li>
+  <li><strong>Professional appearance:</strong> Nepal मा personal brands अब corporate accounts सँग compete गर्छन् — image quality = credibility</li>
+  <li><strong>Algorithm favor:</strong> Correctly formatted content algorithm ले better distribute गर्छ</li>
+</ul>`,
+    },
+    {
+      id: 'instagram-sizes-ne',
+      title: 'Instagram Image Size Guide 2026: Post, Story, Reel, Profile',
+      content: `<h3>Instagram नेपालमा</h3>
+<p>नेपालमा Instagram tourism, lifestyle, fashion र food content का लागि popular छ। नेपालका travel bloggers, mountain guides र local businesses का लागि यो एक key platform हो।</p>
+<h3>Instagram Image Sizes 2026</h3>
+<table>
+  <thead>
+    <tr><th>Post Type</th><th>Size (px)</th><th>Aspect Ratio</th><th>Max File Size</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Feed Square</td><td>1080 × 1080</td><td>1:1</td><td>30 MB</td><td>Grid aesthetics का लागि best</td></tr>
+    <tr><td>Feed Portrait</td><td>1080 × 1350</td><td>4:5</td><td>30 MB</td><td>सबभन्दा बढी screen space; highest reach potential</td></tr>
+    <tr><td>Feed Landscape</td><td>1080 × 566</td><td>1.91:1</td><td>30 MB</td><td>Landscape photos का लागि</td></tr>
+    <tr><td>Stories</td><td>1080 × 1920</td><td>9:16</td><td>30 MB</td><td>Full-screen vertical; key content center 75% मा</td></tr>
+    <tr><td>Reels Cover</td><td>1080 × 1920</td><td>9:16</td><td>30 MB</td><td>Stories जस्तै</td></tr>
+    <tr><td>Carousel (each slide)</td><td>1080 × 1080</td><td>1:1 or 4:5</td><td>30 MB</td><td>सबै slides same ratio राख्नुहोस्</td></tr>
+    <tr><td>Profile Photo</td><td>320 × 320</td><td>1:1 (circle)</td><td>—</td><td>110px circle मा display; face/logo center</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-tip">
+  <strong>नेपाली Creators का लागि Tip:</strong> नेपालका travel, trekking र tourism content का लागि <strong>Feed Portrait (1080×1350)</strong> format best काम गर्छ — Himalaya, temples र natural landscapes vertical format मा stunning देखिन्छन् र feed मा maximum space लिन्छन्।
+</div>`,
+    },
+    {
+      id: 'facebook-youtube-sizes-ne',
+      title: 'Facebook र YouTube Image Sizes 2026',
+      content: `<h3>Facebook नेपालमा</h3>
+<p>नेपालमा Facebook सबभन्दा popular social platform हो — <strong>१.४ करोड+</strong> users सहित। Local businesses, news portals र community groups का लागि यो अझै #1 platform हो।</p>
+<h3>Facebook Image Sizes 2026</h3>
+<table>
+  <thead>
+    <tr><th>Post Type</th><th>Size (px)</th><th>Aspect Ratio</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Feed Photo Post</td><td>1200 × 630</td><td>1.91:1</td><td>Desktop र mobile दुवैमा best display</td></tr>
+    <tr><td>Profile Cover Photo</td><td>820 × 312</td><td>2.63:1</td><td>Mobile मा 640×360; center safe zone प्रयोग गर्नुहोस्</td></tr>
+    <tr><td>Profile Picture</td><td>170 × 170</td><td>1:1 (circle)</td><td>Comments मा 40×40 देखिन्छ</td></tr>
+    <tr><td>Story</td><td>1080 × 1920</td><td>9:16</td><td>Full-screen vertical</td></tr>
+    <tr><td>Event Cover</td><td>1920 × 1080</td><td>16:9</td><td>Text/logos center मा राख्नुहोस्</td></tr>
+    <tr><td>Ad Image</td><td>1200 × 628</td><td>1.91:1</td><td>Minimal text = better reach</td></tr>
+  </tbody>
+</table>
+<h3>YouTube Image Sizes 2026</h3>
+<p>नेपालमा YouTube को <strong>१.२ करोड+</strong> users छन्। Nepali YouTubers का लागि thumbnail सबभन्दा important image asset हो।</p>
+<table>
+  <thead>
+    <tr><th>Image Type</th><th>Size (px)</th><th>Max File Size</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Video Thumbnail</td><td>1280 × 720</td><td>2 MB</td><td>16:9; HD clarity का लागि recommended</td></tr>
+    <tr><td>Channel Profile Photo</td><td>800 × 800</td><td>4 MB</td><td>Circle crop; face/logo center मा</td></tr>
+    <tr><td>Channel Banner</td><td>2560 × 1440</td><td>6 MB</td><td>Safe zone: center 1546×423 px मात्र</td></tr>
+    <tr><td>Shorts Thumbnail</td><td>1080 × 1920</td><td>2 MB</td><td>9:16 vertical</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'whatsapp-sizes-ne',
+      title: 'WhatsApp र Telegram: Best Image Dimensions',
+      content: `<h3>WhatsApp नेपालमा</h3>
+<p>नेपालमा WhatsApp को <strong>१.५ करोड+</strong> active users छन्। Business communication, family groups र news sharing का लागि यो dominant platform हो। तर WhatsApp को image compression aggressive छ।</p>
+<h3>WhatsApp Image Specifications</h3>
+<table>
+  <thead>
+    <tr><th>Type</th><th>Size (px)</th><th>Max File Size</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Regular photo share</td><td>1600 × 1200 वा कम</td><td>16 MB</td><td>यसभन्दा ठूलो भए WhatsApp compress गर्छ</td></tr>
+    <tr><td>Document send (no compression)</td><td>Any</td><td>2 GB</td><td>"Document" को रूपमा पठाउनुस् — compression bypass हुन्छ</td></tr>
+    <tr><td>Profile Photo</td><td>500 × 500</td><td>5 MB</td><td>Circle crop; face/logo center मा</td></tr>
+    <tr><td>Status (Story)</td><td>1080 × 1920</td><td>16 MB</td><td>9:16; २४ घण्टा रहन्छ</td></tr>
+    <tr><td>Business Profile</td><td>640 × 640</td><td>5 MB</td><td>Clear logo प्रयोग गर्नुहोस्</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-info">
+  <strong>Compression Hack:</strong> High-quality image बिना compression को share गर्न standard photo को सट्टा <strong>"Document" option</strong> प्रयोग गर्नुहोस्। Full-resolution original file पुग्छ — तर receiver ले manually open गर्नुपर्छ।
+</div>`,
+    },
+    {
+      id: 'linkedin-sizes-ne',
+      title: 'LinkedIn, Twitter/X र Pinterest Image Sizes 2026',
+      content: `<h3>LinkedIn Nepal</h3>
+<p>नेपालमा LinkedIn professional networking, job searching र B2B marketing का लागि बढ्दो platform हो।</p>
+<h3>LinkedIn Image Sizes</h3>
+<table>
+  <thead>
+    <tr><th>Image Type</th><th>Size (px)</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Personal Profile Photo</td><td>400 × 400</td><td>Circle crop; professional headshot</td></tr>
+    <tr><td>Personal Background Banner</td><td>1584 × 396</td><td>Very wide; center-safe zone मा key content</td></tr>
+    <tr><td>Company Page Logo</td><td>300 × 300</td><td>Feed मा 100×100 appear हुन्छ</td></tr>
+    <tr><td>Feed Post Image</td><td>1200 × 627</td><td>Standard horizontal post</td></tr>
+  </tbody>
+</table>
+<h3>Twitter/X Image Sizes</h3>
+<table>
+  <thead>
+    <tr><th>Image Type</th><th>Size (px)</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Profile Photo</td><td>400 × 400</td><td>Circle crop</td></tr>
+    <tr><td>Header Photo</td><td>1500 × 500</td><td>3:1; center safe zone प्रयोग गर्नुहोस्</td></tr>
+    <tr><td>In-Feed Single Image</td><td>1600 × 900</td><td>Twitter auto-crops to 2:1</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'resize-ne',
+      title: 'Quality नगुमाई Multiple Platforms का लागि Images Resize गर्ने तरिका',
+      content: `<h3>Golden Rule: Start Big, Export Small</h3>
+<p>सबभन्दा महत्त्वपूर्ण principle: सधैं <strong>सबभन्दा ठूलो dimension बाट सुरु गर्नुहोस्</strong> र हरेक platform का लागि downscale गर्नुहोस्। Small image लाई large बनाउँदा (upscaling) quality सधैं खराब हुन्छ।</p>
+<h3>Multi-Platform Images का लागि Recommended Workflow</h3>
+<ul>
+  <li><strong>Step 1:</strong> Master image 2400×2400 px मा create गर्नुहोस्</li>
+  <li><strong>Step 2:</strong> Platform-specific versions export गर्नुहोस् सही dimensions सहित</li>
+  <li><strong>Step 3:</strong> Photos का लागि JPEG, logos/text का लागि PNG प्रयोग गर्नुहोस्</li>
+  <li><strong>Step 4:</strong> Modern platforms का लागि WebP — JPEG भन्दा 25–35% smaller</li>
+</ul>
+<h3>Best Free Resizing Tools</h3>
+<table>
+  <thead>
+    <tr><th>Tool</th><th>Best For</th><th>Cost</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ToolsArena Image Resizer</td><td>Exact px मा quick resizing</td><td>निःशुल्क</td></tr>
+    <tr><td>ToolsArena Image Compressor</td><td>Quality नगुमाई file size reduce</td><td>निःशुल्क</td></tr>
+    <tr><td>Canva</td><td>Pre-set social media templates</td><td>Free / Pro</td></tr>
+    <tr><td>Squoosh (Google)</td><td>Advanced compression</td><td>निःशुल्क</td></tr>
+  </tbody>
+</table>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'Target Platform Select गर्नुहोस्',
+      description: 'जुन platform का लागि content create गर्दै हुनुहुन्छ त्यो choose गर्नुहोस्।',
+    },
+    {
+      title: 'Post Type Identify गर्नुहोस्',
+      description: 'Specific content type select गर्नुहोस् (Feed post, Story, Cover photo, Thumbnail) — exact dimensions पाउनुहुन्छ।',
+    },
+    {
+      title: 'Image Create वा Source गर्नुहोस्',
+      description: 'Image लाई शुरुदेखि नै recommended pixel dimensions मा create गर्नुहोस्।',
+    },
+    {
+      title: 'ToolsArena Image Resizer प्रयोग गर्नुहोस्',
+      description: 'Image गलत size छ भने ToolsArena Image Resizer मा paste गर्नुहोस्, exact dimensions enter गर्नुहोस्, र instantly resized version download गर्नुहोस्।',
+    },
+    {
+      title: 'Upload अघि Compress गर्नुहोस्',
+      description: 'ToolsArena Image Compressor प्रयोग गर्नुहोस् — platform over-compression prevent हुन्छ र image sharp रहन्छ।',
+    },
+    {
+      title: 'Publish अघि Mobile Preview हेर्नुहोस्',
+      description: 'सधैं mobile मा preview हेर्नुहोस् — ८०%+ social media consumption mobile मा हुन्छ।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'Instagram post का लागि 2026 मा best image size के हो?',
+      answer: 'Instagram feed posts का लागि 4:5 portrait ratio (1080×1350 px) सबभन्दा बढी screen space लिन्छ र highest engagement दिन्छ। Stories र Reels का लागि 9:16 (1080×1920 px) प्रयोग गर्नुहोस्।',
+    },
+    {
+      question: 'YouTube thumbnail को सही size के हो?',
+      answer: '1280×720 pixels (16:9, HD) recommended छ। Maximum file size 2 MB। Photos का लागि JPG र text-heavy thumbnails का लागि PNG प्रयोग गर्नुहोस्।',
+    },
+    {
+      question: 'WhatsApp ले image compress किन गर्छ र कसरी avoid गर्ने?',
+      answer: 'WhatsApp ले data usage reduce गर्न automatically photos compress गर्छ। Compression avoid गर्न "Photo" को सट्टा "Document" option बाट image send गर्नुहोस्।',
+    },
+    {
+      question: 'Facebook cover photo को size 2026 मा के हो?',
+      answer: 'Facebook cover photo recommended size 820×312 pixels (desktop) हो। Mobile मा 640×360 देखिन्छ। सबै key text र visual elements center 640×312 safe zone मा राख्नुहोस्।',
+    },
+  ],
+  relatedGuides: ['image-resizer-guide', 'image-compressor-guide', 'thumbnail-maker-guide'],
+  toolCTA: {
+    heading: 'अहिले नै कुनै पनि Image लाई Perfect Social Media Size मा Resize गर्नुहोस्',
+    description: 'Exact pixel dimensions enter गर्नुहोस् र कुनै पनि image instantly resize गर्नुहोस्। Watermark छैन, quality loss छैन, account आवश्यक छैन।',
+    buttonText: 'Image Resizer खोल्नुहोस्',
+  },
+},
+
+{
+  slug: "step-up-sip-calculator-guide",
+  toolSlug: "step-up-sip-calculator",
+  category: "finance-tools",
+  title: "स्टेप-अप SIP क्याल्कुलेटर: वार्षिक वृद्धिले सम्पत्ति छिटो बनाउनुहोस् (2026)",
+  subtitle: "जान्नुहोस् कसरी १०% वार्षिक वृद्धिले तपाईंको SIP corpus २० वर्षमा दोब्बर हुन्छ",
+  metaTitle: "स्टेप-अप SIP क्याल्कुलेटर नेपाल 2026 | वार्षिक वृद्धि SIP",
+  metaDescription: "₹५०००/महिनाबाट सुरु गरी १०% step-up ले २० वर्षमा ₹१ करोड बनाउनुहोस्। Regular vs Step-Up SIP तुलना। नेपाल लगानी गाइड 2026।",
+  targetKeyword: "स्टेप-अप SIP क्याल्कुलेटर",
+  secondaryKeywords: [
+    "SIP बूस्टर क्याल्कुलेटर नेपाल",
+    "बढ्दो SIP लगानी",
+    "Top-Up SIP नेपाल",
+    "Step-Up vs Regular SIP",
+    "SIP वार्षिक वृद्धि",
+    "म्युचुअल फन्ड SIP नेपाल",
+    "SIP corpus 20 वर्ष",
+    "सम्पत्ति निर्माण रणनीति",
+    "नेपाल म्युचुअल फन्ड 2026",
+    "SIP तलब वृद्धि"
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१६ मिनेट",
+  tags: ["SIP", "step-up SIP", "म्युचुअल फन्ड", "सम्पत्ति निर्माण", "लगानी", "2026", "नेपाल"],
+  intro: `<p>कल्पना गर्नुहोस् तपाईं आज <strong>रू. ५,००० प्रति महिना</strong> को SIP सुरु गर्नुहुन्छ। २० वर्षमा १२% returns मा corpus हुनेछ लगभग <strong>रू. ४९.९ लाख</strong>। अब यदि तपाईं हरेक वर्ष आफ्नो SIP १०% बढाउनुहुन्छ — अर्को वर्ष रू. ५,५००, त्यसपछि रू. ६,०५० — त्यही १२% returns मा २० वर्षमा corpus हुनेछ लगभग <strong>रू. १.०३ करोड</strong> — दोब्बरभन्दा बढी। यही हो Step-Up SIP को जादू।</p>
+<p>Step-Up SIP (जसलाई Top-Up SIP वा Escalating SIP पनि भनिन्छ) भनेको — तपाईं हरेक वर्ष आफ्नो SIP installment एक निश्चित प्रतिशतले बढाउनुहुन्छ, सामान्यतः तलब वृद्धिसँगै। यस गाइडमा हामी <strong>सम्पूर्ण गणित</strong>, वास्तविक उदाहरण, र नेपालका लगानीकर्ताका लागि सर्वोत्तम रणनीति कवर गर्नेछौं।</p>`,
+  sections: [
+    {
+      id: "what-is-step-up-ne",
+      title: "Step-Up SIP के हो? Regular SIP भन्दा कसरी फरक छ?",
+      content: `<p><strong>Regular SIP</strong> मा तपाईं हरेक महिना एक निश्चित रकम — जस्तै रू. ५,०००  — पूरै अवधिभर लगाउनुहुन्छ। <strong>Step-Up SIP</strong> मा त्यो रकम हरेक वर्ष पूर्व-निर्धारित प्रतिशतले बढ्छ।</p>
+
+<h3>मुख्य तुलना तालिका</h3>
+<table>
+  <thead>
+    <tr>
+      <th>विशेषता</th>
+      <th>Regular SIP</th>
+      <th>Step-Up SIP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>मासिक रकम</td>
+      <td>पूरै अवधिमा स्थिर</td>
+      <td>हरेक वर्ष बढ्छ</td>
+    </tr>
+    <tr>
+      <td>२० वर्षमा corpus (रू. ५K start, १२%)</td>
+      <td>~रू. ४९.९ लाख</td>
+      <td>~रू. १.०३ करोड (१०% step-up)</td>
+    </tr>
+    <tr>
+      <td>मुद्रास्फीतिसँग तालमेल</td>
+      <td>क्रय शक्ति घट्छ</td>
+      <td>मुद्रास्फीतिसँग pace राख्छ</td>
+    </tr>
+    <tr>
+      <td>तलब वृद्धिसँग match</td>
+      <td>हुँदैन</td>
+      <td>हुन्छ — वार्षिक increment जतिकै बढ्छ</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>नेपाल सन्दर्भ:</strong> नेपालमा औसत तलब वृद्धि ८–१२% छ। १०% step-up SIP ले तपाईंको लगानी आम्दानीसँगै बढ्छ — बचत दर उही रहन्छ, प्रयास बढ्दैन।
+</div>
+
+<h3>Step-Up का प्रकारहरू</h3>
+<ul>
+  <li><strong>Percentage Step-Up:</strong> हरेक वर्ष निश्चित % वृद्धि (जस्तै १०%)। सबैभन्दा लोकप्रिय।</li>
+  <li><strong>Fixed Amount Step-Up:</strong> हरेक वर्ष निश्चित रकम वृद्धि (जस्तै +रू. ५००/वर्ष)।</li>
+  <li><strong>Ad-Hoc Step-Up:</strong> बोनस, पदोन्नति, वा windfall आउँदा बढाउने।</li>
+</ul>`
+    },
+    {
+      id: "maths-examples-ne",
+      title: "Step-Up SIP को गणित: सूत्र + ५ काम गरिएका उदाहरण",
+      content: `<blockquote>
+  <strong>Step-Up SIP Future Value:</strong><br/>
+  FV = Σ [PMT × (1 + g)^(i-1) × ((1 + r)^(n-(i-1)×12) – 1) / r]<br/>
+  जहाँ: PMT = प्रारम्भिक SIP, g = वार्षिक step-up दर, r = मासिक return दर, n = कुल महिना
+</blockquote>
+
+<h3>तालिका १: रू. ५,०००/महिना, १२% CAGR — विभिन्न Step-Up Rates मा Corpus</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Step-Up दर</th>
+      <th>१० वर्ष</th>
+      <th>१५ वर्ष</th>
+      <th>२० वर्ष</th>
+      <th>कुल लगानी (२० वर्ष)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>०% (Regular SIP)</td>
+      <td>रू. ११.६L</td>
+      <td>रू. २५.१L</td>
+      <td>रू. ४९.९L</td>
+      <td>रू. १२.०L</td>
+    </tr>
+    <tr>
+      <td>५% वार्षिक Step-Up</td>
+      <td>रू. १४.८L</td>
+      <td>रू. ३६.७L</td>
+      <td>रू. ८२.७L</td>
+      <td>रू. १९.९L</td>
+    </tr>
+    <tr>
+      <td>१०% वार्षिक Step-Up</td>
+      <td>रू. १९.०L</td>
+      <td>रू. ५३.७L</td>
+      <td>रू. १.०३Cr</td>
+      <td>रू. ३४.४L</td>
+    </tr>
+    <tr>
+      <td>१५% वार्षिक Step-Up</td>
+      <td>रू. २४.२L</td>
+      <td>रू. ७७.८L</td>
+      <td>रू. १.७३Cr</td>
+      <td>रू. ६०.५L</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>तालिका २: ५ काम गरिएका उदाहरण — विभिन्न Starting Amounts, १०% Step-Up, १२% CAGR</h3>
+<table>
+  <thead>
+    <tr>
+      <th>प्रारम्भिक SIP</th>
+      <th>अवधि</th>
+      <th>कुल लगानी</th>
+      <th>Corpus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रू. ३,०००/महिना</td>
+      <td>२० वर्ष</td>
+      <td>रू. २०.६L</td>
+      <td>रू. ६१.८L</td>
+    </tr>
+    <tr>
+      <td>रू. ५,०००/महिना</td>
+      <td>२० वर्ष</td>
+      <td>रू. ३४.४L</td>
+      <td>रू. १.०३Cr</td>
+    </tr>
+    <tr>
+      <td>रू. १०,०००/महिना</td>
+      <td>२० वर्ष</td>
+      <td>रू. ६८.७L</td>
+      <td>रू. २.०६Cr</td>
+    </tr>
+    <tr>
+      <td>रू. ५,०००/महिना</td>
+      <td>१५ वर्ष</td>
+      <td>रू. २०.१L</td>
+      <td>रू. ५३.७L</td>
+    </tr>
+    <tr>
+      <td>रू. ५,०००/महिना</td>
+      <td>२५ वर्ष</td>
+      <td>रू. ५५.४L</td>
+      <td>रू. २.२६Cr</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>महत्त्वपूर्ण:</strong> जति लामो अवधि, उति बढी compounding को फाइदा। ढिला सुरु गर्नाले ठूलो नोक्सान हुन्छ — आजैबाट सुरु गर्नुहोस्।
+</div>`
+    },
+    {
+      id: "comparison-ne",
+      title: "१०% Annual Step-Up ले कति थप सम्पत्ति बनाउँछ?",
+      content: `<h3>Regular SIP vs १०% Step-Up SIP — २० वर्षको तुलना (१२% CAGR)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>प्रारम्भिक SIP</th>
+      <th>Regular SIP Corpus</th>
+      <th>१०% Step-Up Corpus</th>
+      <th>थप सम्पत्ति</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>रू. ३,०००</td>
+      <td>रू. २९.९L</td>
+      <td>रू. ६१.८L</td>
+      <td>+रू. ३१.९L</td>
+    </tr>
+    <tr>
+      <td>रू. ५,०००</td>
+      <td>रू. ४९.९L</td>
+      <td>रू. १.०३Cr</td>
+      <td>+रू. ५३.१L</td>
+    </tr>
+    <tr>
+      <td>रू. १०,०००</td>
+      <td>रू. ९९.८L</td>
+      <td>रू. २.०६Cr</td>
+      <td>+रू. १.०६Cr</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>मुख्य निष्कर्ष:</strong> Step-up मा थप लगानी गरेको प्रत्येक रू. १ मा लगभग रू. २.३७ को थप corpus प्राप्त हुन्छ। यही "step-up multiplier" यस रणनीतिको मूल तर्क हो।
+</div>`
+    },
+    {
+      id: "strategy-ne",
+      title: "वार्षिक vs त्रैमासिक वृद्धि: कुन राम्रो?",
+      content: `<p>नेपालका अधिकांश AMC हरूले step-up को लागि वार्षिक वा त्रैमासिक विकल्प दिन्छन्।</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>रणनीति</th>
+      <th>आवृत्ति</th>
+      <th>२० वर्षको Corpus</th>
+      <th>सरलता</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>वार्षिक १०% Step-Up</td>
+      <td>वर्षमा एक पटक</td>
+      <td>रू. १.०३Cr</td>
+      <td>धेरै सरल</td>
+    </tr>
+    <tr>
+      <td>त्रैमासिक २.४% Step-Up</td>
+      <td>हरेक त्रैमास</td>
+      <td>रू. १.०४Cr</td>
+      <td>अलि जटिल</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>सिफारिस:</strong> वार्षिक step-up छान्नुहोस् — नतिजा लगभग उस्तै छ, तर व्यवस्थापन सरल छ। आफ्नो तलब वृद्धिसँगै align गर्नुहोस्।
+</div>
+
+<h3>व्यावहारिक सुझावहरू</h3>
+<ul>
+  <li><strong>Auto step-up सेट गर्नुहोस्:</strong> नेपालका प्रमुख म्युचुअल फन्डहरूले यो सुविधा दिन्छन्।</li>
+  <li><strong>तलब वृद्धिसँग align गर्नुहोस्:</strong> तलब बढेको महिनादेखि step-up लागू गर्नुहोस्।</li>
+  <li><strong>बोनस top-up गर्नुहोस्:</strong> वार्षिक बोनसको ३०–४०% उही fund मा lumpsum हाल्नुहोस्।</li>
+  <li><strong>हरेक ३ वर्षमा समीक्षा गर्नुहोस्:</strong> आम्दानी तीव्र गतिमा बढेमा step-up दर पुनरावलोकन गर्नुहोस्।</li>
+</ul>`
+    },
+    {
+      id: "nepal-funds-ne",
+      title: "नेपालमा Step-Up SIP का लागि म्युचुअल फन्ड गाइड",
+      content: `<p>नेपालमा SEBON नियमन अन्तर्गत म्युचुअल फन्डहरू उपलब्ध छन्। नेपाल स्टक एक्सचेन्ज (NEPSE) मा सूचीकृत closed-end र open-end दुवै फन्डहरू छन्।</p>
+
+<h3>नेपालमा म्युचुअल फन्ड लगानीका विकल्पहरू (२०२६)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>फन्ड प्रकार</th>
+      <th>अपेक्षित returns</th>
+      <th>जोखिम</th>
+      <th>उपयुक्त</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Open-End Equity Fund</td>
+      <td>१२–१८%</td>
+      <td>उच्च</td>
+      <td>दीर्घकालीन लगानीकर्ता</td>
+    </tr>
+    <tr>
+      <td>Balanced Fund</td>
+      <td>८–१२%</td>
+      <td>मध्यम</td>
+      <td>मध्यम जोखिम सहनशीलता</td>
+    </tr>
+    <tr>
+      <td>Bond/Debt Fund</td>
+      <td>६–९%</td>
+      <td>कम</td>
+      <td>रूढीवादी लगानीकर्ता</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाल सन्दर्भ:</strong> NMB Sulav Investment Fund, Siddhartha Investment Growth Scheme, Sunrise First Mutual Fund — यिनीहरू नेपालका प्रमुख म्युचुअल फन्डहरू हुन्। SEBON र बजार नियामकको वेबसाइटबाट नवीनतम जानकारी लिनुहोस्।
+</div>
+
+<h3>उदाहरण: रू. ५,०००/महिना, १०% Step-Up, १४% CAGR, २० वर्ष</h3>
+<ul>
+  <li>कुल लगानी: रू. ३४.४ लाख</li>
+  <li>२० वर्षको corpus: <strong>रू. १.५८ करोड</strong></li>
+  <li>returns: रू. १.२४ करोड</li>
+</ul>`
+    },
+    {
+      id: "mistakes-ne",
+      title: "Step-Up SIP मा सामान्य गल्तीहरू र तिनबाट जोगिने उपाय",
+      content: `<h3>गल्ती १: Step-Up दर धेरै उच्च राख्नु</h3>
+<p>२५–३०% वार्षिक step-up कागजमा आकर्षक देखिन्छ, तर वर्ष १० मा मासिक SIP रू. ४७,००० पुग्छ। आम्दानी त्यति नबढेमा SIP रोक्नुपर्छ। <strong>१०% बाट सुरु गर्नुहोस्।</strong></p>
+
+<h3>गल्ती २: छोटो Track Record भएको Fund छान्नु</h3>
+<p>Step-Up SIP १५–२० वर्षको प्रतिबद्धता हो। कम्तीमा १० वर्षको track record र विभिन्न बजार चक्र पार गरेको fund छान्नुहोस्।</p>
+
+<h3>गल्ती ३: Auto Step-Up Activate नगर्नु</h3>
+<p>हरेक वर्ष manually बढाउने plan गर्छन् तर बिर्सन्छन्। SIP दर्ता गर्दाकै बेला <strong>systematic step-up mandate activate</strong> गर्नुहोस्।</p>
+
+<div class="callout-warning">
+  <strong>सतर्कता:</strong> बैंक खाताको mandate check गर्नुहोस् — बढी debit amount authorized छ कि छैन।
+</div>
+
+<h3>गल्ती ४: बजार घट्दा SIP रोक्नु</h3>
+<p>बजार सुधारको समय step-up SIP को लागि सर्वोत्तम हो — कम मूल्यमा बढी unit मिल्छ। Automate गर्नुहोस् र भुल्नुहोस्।</p>
+
+<h3>गल्ती ५: कर प्रभाव नहिसाब गर्नु</h3>
+<p>नेपालमा म्युचुअल फन्डको लाभमा लागू कर नियमहरू बुझ्नुहोस्। Inland Revenue Department र SEBON को दिशानिर्देश अनुसार कर योजना बनाउनुहोस्।</p>`
+    },
+    {
+      id: "final-comparison-ne",
+      title: "Step-Up SIP vs Lumpsum vs Regular SIP: २० वर्षमा कुन जित्छ?",
+      content: `<h3>बराबर लगानी तुलना: रू. ३४.४ लाख कुल, १२% CAGR, २० वर्ष</h3>
+<table>
+  <thead>
+    <tr>
+      <th>रणनीति</th>
+      <th>मासिक रकम</th>
+      <th>कुल लगानी</th>
+      <th>२० वर्षको Corpus</th>
+      <th>व्यावहारिकता</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lumpsum (Year 0)</td>
+      <td>रू. ३४.४L एकैपटक</td>
+      <td>रू. ३४.४L</td>
+      <td>रू. ३.३१Cr</td>
+      <td>धेरै कम</td>
+    </tr>
+    <tr>
+      <td>Regular SIP</td>
+      <td>रू. १४,३३३/महिना</td>
+      <td>रू. ३४.४L</td>
+      <td>रू. १.४३Cr</td>
+      <td>उच्च</td>
+    </tr>
+    <tr>
+      <td>१०% Step-Up SIP</td>
+      <td>रू. ५,०० → रू. ३०,५७७/महिना</td>
+      <td>रू. ३४.४L</td>
+      <td>रू. १.०३Cr</td>
+      <td>सर्वाधिक उच्च</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>निष्कर्ष:</strong> शुद्ध returns मा lumpsum जित्छ — तर २५ वर्षको उमेरमा रू. ३४ लाख कसकहाँ हुन्छ? Step-Up SIP को बुद्धिमत्ता यही हो — <strong>आज सक्ने रकमबाट सुरु गर्नुहोस्</strong> र बिस्तारै बढाउनुहोस्।
+</div>`
+    }
+  ],
+  howToSteps: [
+    {
+      title: "प्रारम्भिक SIP रकम प्रविष्ट गर्नुहोस्",
+      description: "आज तपाईं सहज महसुस गर्ने SIP रकम राख्नुहोस् — रू. ५०० पनि ठीक छ। Step-up feature ले यसलाई समयसँगै बढाउनेछ।"
+    },
+    {
+      title: "Step-Up दर र आवृत्ति सेट गर्नुहोस्",
+      description: "वार्षिक step-up प्रतिशत राख्नुहोस् (१०% सिफारिस गरिएको)। वार्षिक वा त्रैमासिक frequency छान्नुहोस्। वार्षिक सरल र सिफारिस गरिएको छ।"
+    },
+    {
+      title: "अपेक्षित return दर प्रविष्ट गर्नुहोस्",
+      description: "Fund category अनुसार CAGR राख्नुहोस्। रूढीवादी अनुमान गर्नुहोस् — निराश हुनुभन्दा खुसी हुनु राम्रो।"
+    },
+    {
+      title: "लगानी अवधि सेट गर्नुहोस्",
+      description: "कति वर्ष SIP चलाउने। १५ वर्ष राम्रो छ, २०–२५ वर्षमा वास्तविक सम्पत्ति गुणन हुन्छ।"
+    },
+    {
+      title: "नतिजा तुलना गरी लक्ष्य निर्धारण गर्नुहोस्",
+      description: "क्याल्कुलेटरले अनुमानित corpus, कुल लगानी, र वर्ष-दर-वर्ष breakdown देखाउनेछ। रू. १ करोडको लक्ष्यका लागि कति SIP र step-up चाहिन्छ — reverse-engineer गर्नुहोस्।"
+    }
+  ],
+  faqs: [
+    {
+      question: "Step-Up SIP को न्यूनतम रकम कति छ?",
+      answer: "नेपालका अधिकांश म्युचुअल फन्डहरूमा न्यूनतम रू. ५०० प्रति महिनाबाट SIP सुरु गर्न सकिन्छ। Step-up को न्यूनतम रकम सामान्यतः रू. १०० वा base SIP को १०% (जो बढी हुन्छ) हो।"
+    },
+    {
+      question: "Step-Up दर शुरुपछि बदल्न सकिन्छ?",
+      answer: "हो, संशोधित SIP mandate submit गरेर। यो सामान्यतः १५–३० दिनमा प्रभावकारी हुन्छ। वर्षको बीचमा परिवर्तन हुँदैन — अर्को step-up anniversary बाट लागू हुन्छ।"
+    },
+    {
+      question: "के १०% step-up दर सबैका लागि उपयुक्त छ?",
+      answer: "१०% नेपालको औसत तलब वृद्धि (८–१२%) सँग match गर्छ, त्यसैले राम्रो default हो। तीव्र आम्दानी वृद्धिका लागि १५%, सुस्त वृद्धिका लागि ५% उपयुक्त छ।"
+    },
+    {
+      question: "कुनै महिना बढेको SIP तिर्न नसकेमा के हुन्छ?",
+      answer: "बढी debit असफल भएमा अधिकांश AMC हरूले यसलाई छोडिएको installment मान्छन्। बारम्बार असफल भएमा bank ले NACH mandate रद्द गर्न सक्छ। नगद समस्या आउने भए step-up अस्थायी रूपमा pause गर्नुहोस्।"
+    },
+    {
+      question: "नेपालमा SIP ले कर कसरी लाग्छ?",
+      answer: "नेपालमा म्युचुअल फन्डको लाभमा कर लाग्ने व्यवस्था छ। IRD को नियम र SEBON को दिशानिर्देश अनुसार लाभ कर तिर्नुपर्छ। विस्तृत जानकारीका लागि कर सल्लाहकारसँग परामर्श गर्नुहोस्।"
+    },
+    {
+      question: "Step-Up SIP राम्रो कि bonus लाई lumpsum लगाउनु?",
+      answer: "दुवै रणनीति complementary छन्। १०% वार्षिक step-up SIP + वार्षिक बोनसको ३०–४०% उही fund मा lumpsum — यो combination सर्वोत्तम छ।"
+    },
+    {
+      question: "नेपालमा कुन म्युचुअल फन्डहरूमा automatic step-up SIP सुविधा छ?",
+      answer: "नेपालमा यो सुविधाको उपलब्धता फन्ड अनुसार फरक हुन्छ। आफ्नो AMC वा वितरकसँग सोध्नुहोस्। यदि automatic सुविधा छैन भने, वार्षिक रूपमा manually SIP बढाउन सकिन्छ।"
+    },
+    {
+      question: "के धेरै fund हरूमा step-up SIP राख्न सकिन्छ?",
+      answer: "हो, २–३ fund हरूमा diversified step-up SIP सिफारिस गरिन्छ। हरेक fund को independent step-up mandate सेट गर्नुहोस्। वर्ष २० को combined SIP रकम आफ्नो अनुमानित आम्दानी क्षमताभित्र छ कि छैन ध्यान दिनुहोस्।"
+    }
+  ],
+  relatedGuides: ["sip-calculator-guide", "mutual-fund-calculator-guide", "compound-interest-guide"],
+  toolCTA: {
+    heading: "अहिले नै आफ्नो Step-Up SIP Corpus गणना गर्नुहोस्",
+    description: "प्रारम्भिक SIP, वार्षिक step-up %, अपेक्षित returns, र अवधि राख्नुहोस् — वर्ष-दर-वर्ष breakdown सहित exact अनुमानित सम्पत्ति हेर्नुहोस्।",
+    buttonText: "Step-Up SIP क्याल्कुलेटर खोल्नुहोस्"
+  }
+},
+
+{
+  slug: "text-to-handwriting-guide",
+  toolSlug: "text-to-handwriting",
+  category: "text-tools",
+  title: "Text to Handwriting: टाइप गरिएको Text लाई Handwriting मा Convert गर्ने सम्पूर्ण गाइड",
+  subtitle: "School assignments देखि business cards सम्म — हरेक use case का लागि handwriting conversion",
+  metaTitle: "Text to Handwriting Guide — जुनसुकै Text लाई Handwriting मा बदल्नुहोस्",
+  metaDescription: "Text लाई realistic handwriting मा convert गर्नुहोस् — assignments, cards, notes र business use का लागि। Paper styles, pen colours र legal tips नेपालीमा।",
+  targetKeyword: "पाठलाई हस्तलेखनमा",
+  secondaryKeywords: [
+    "text to handwriting nepali",
+    "handwriting generator online nepal",
+    "text lai handwriting ma convert",
+    "assignment handwriting generator",
+    "nepali handwriting font",
+    "realistic handwriting online",
+    "devanagari handwriting generator",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "११ मिनेट",
+  tags: ["handwriting", "text-tools", "students", "fonts", "assignments", "nepal"],
+  intro: `<p>हस्तलेखनमा केही अनौठो मानवीय गुण छ — प्रत्येक अक्षरको सानो irregularity, pen को pressure अनुसार ink को flow, हरेक stroke मा देखिने personality। Digital युगमा, handwritten notes ले एक warmth र intentionality बोकेको हुन्छ जुन typed text ले कहिल्यै replicate गर्न सक्दैन। तर सबैसँग page-after-page handwritten content produce गर्ने time, physical capability, वा wrist stamina हुँदैन। त्यहीँ text-to-handwriting tools काम आउँछन् — typing को speed र लेख्ने warmth बीचको bridge बनाउँछन्।</p>
+<p>नेपालमा, विशेष गरी SLC र +2 exam को बेला, students लाई handwritten assignments र notes को pressure हुन्छ। यो guide मा हामी cover गर्छौं: tool कसरी काम गर्छ, paper style कसरी छान्ने, pen colour customize गर्ने, academic ethical considerations, र best export format। ToolsArena को text-to-handwriting converter ले minutes मै beautiful handwriting output दिन्छ।</p>`,
+  sections: [
+    {
+      id: "use-cases-ne",
+      title: "Text लाई Handwriting मा Convert किन गर्ने? School देखि Business सम्म",
+      content: `<p>Text-to-handwriting conversion एउटा single-use novelty होइन — यसले education, personal life र professional contexts मा धेरै real-world problems solve गर्छ:</p>
+
+<h3>Academic र Educational Use</h3>
+<ul>
+  <li><strong>Note templates</strong> — Study guides र revision cards का लागि handwritten-style note sheets बनाउनुहोस्</li>
+  <li><strong>Worksheet generation</strong> — Teachers ले fill-in-the-blank worksheets बनाउन सक्छन् handwriting-style prompts सँग</li>
+  <li><strong>Practice copying</strong> — Language learners ले handwriting samples generate गरेर letter formation practice गर्न सक्छन्</li>
+  <li><strong>Accessibility</strong> — Physical writing गर्न गाह्रो हुने students का लागि assistive technology</li>
+</ul>
+
+<h3>Personal र Creative Use</h3>
+<ul>
+  <li><strong>Greeting cards र invitations</strong> — "Handwritten" message सँग cards personalize गर्नुहोस्</li>
+  <li><strong>Journaling templates</strong> — Journal pages मा prompts वा quotes handwriting style मा pre-fill गर्नुहोस्</li>
+  <li><strong>Recipe cards र gift tags</strong> — Printed materials मा handcrafted feel add गर्नुहोस्</li>
+  <li><strong>Social media content</strong> — Instagram र Facebook मा handwritten-style text overlays authentic aesthetic को लागि राम्रो perform गर्छ</li>
+</ul>
+
+<h3>Business र Professional Use</h3>
+<ul>
+  <li><strong>Personalised thank-you notes</strong> — Human touch maintain गर्दै personalised outreach scale गर्नुहोस्</li>
+  <li><strong>Signage र menus</strong> — Kathmandu का cafés र restaurants हरू chalkboard-effect signs का लागि handwriting-style text use गर्छन्</li>
+</ul>
+
+<div class="callout-info">
+  <strong>Accessibility Note:</strong> Arthritis, repetitive strain injury, वा motor control challenges भएका मानिसहरूका लागि text-to-handwriting tools genuinely valuable छन्। यो inclusive technology हो — सिर्फ convenience होइन।
+</div>`,
+    },
+    {
+      id: "fonts-vs-real-ne",
+      title: "Handwriting Fonts vs Real Handwriting: Tool कसरी काम गर्छ",
+      content: `<p>Tool कसरी काम गर्छ भन्ने बुझ्दा better results पाइन्छ। दुई fundamentally different approaches छन्:</p>
+
+<h3>Approach 1: Handwriting Fonts (Vector-Based)</h3>
+<p>सबैभन्दा common approach carefully designed handwriting fonts use गर्छ। Designer ले real handwriting samples trace गरेर हरेक letter लाई vector glyph मा convert गर्छन्। Tool ले तपाईंको text त्यो font मा simulated paper background मा render गर्छ।</p>
+<ul>
+  <li><strong>Advantages:</strong> Consistent results, fast rendering, many styles available</li>
+  <li><strong>Limitations:</strong> Repetitive letters identical देखिन्छन् — real handwriting मा natural variation हुन्छ</li>
+</ul>
+
+<h3>Approach 2: AI-Synthesised Handwriting</h3>
+<p>Advanced tools machine learning models use गर्छन् जुन thousands of real handwriting samples मा trained हुन्छन्। यी models ले stroke patterns, letter connections, र natural variability learn गर्छन्।</p>
+<ul>
+  <li><strong>Advantages:</strong> हरेक repeated letter slightly different देखिन्छ — much more realistic</li>
+  <li><strong>Limitations:</strong> Slower rendering</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Font-Based</th>
+      <th>AI-Synthesised</th>
+      <th>ToolsArena Hybrid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Speed</td>
+      <td>Instant</td>
+      <td>5–30 seconds</td>
+      <td>Instant</td>
+    </tr>
+    <tr>
+      <td>Letter variation</td>
+      <td>None</td>
+      <td>High</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Realism</td>
+      <td>Low–Medium</td>
+      <td>High</td>
+      <td>Medium–High</td>
+    </tr>
+    <tr>
+      <td>Customisability</td>
+      <td>High</td>
+      <td>Low</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: "paper-styles-ne",
+      title: "Paper Styles र Line Types: हरेक Use Case का लागि कुन Choose गर्ने",
+      content: `<p>Paper background उत्तिकै महत्त्वपूर्ण छ जति handwriting style। सही paper ले output लाई authentic बनाउँछ:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paper Style</th>
+      <th>Description</th>
+      <th>Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ruled / Lined</td>
+      <td>Horizontal lines 8mm spacing</td>
+      <td>Study notes, letters, general writing</td>
+    </tr>
+    <tr>
+      <td>College Ruled</td>
+      <td>Narrower lines 6.35mm, red margin</td>
+      <td>Academic notes, assignment-style output</td>
+    </tr>
+    <tr>
+      <td>Dotted Grid</td>
+      <td>Faint dot matrix 5mm spacing</td>
+      <td>Bullet journaling, planner layouts</td>
+    </tr>
+    <tr>
+      <td>Graph / Grid</td>
+      <td>Full grid 5mm squares</td>
+      <td>Technical notes, maths problems</td>
+    </tr>
+    <tr>
+      <td>Blank / White</td>
+      <td>No lines</td>
+      <td>Social media overlays, custom backgrounds</td>
+    </tr>
+    <tr>
+      <td>Aged / Parchment</td>
+      <td>Yellowed texture</td>
+      <td>Vintage aesthetics, invitations</td>
+    </tr>
+    <tr>
+      <td>Sticky Note</td>
+      <td>Yellow square</td>
+      <td>Social media annotations</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+  <strong>Design Tip:</strong> Social media content का लागि blank paper use गर्नुहोस् र handwriting output लाई textured वा gradient background मा overlay गर्नुहोस्। Pre-set paper backgrounds भन्दा बढी intentional देखिन्छ।
+</div>`,
+    },
+    {
+      id: "students-ne",
+      title: "Students का लागि Text to Handwriting: Assignment Tips र जान्नुपर्ने Rules",
+      content: `<p>नेपालमा SLC, +2, र university level का students का लागि यो section विशेष रूपमा relevant छ। के appropriate छ र के छैन — direct कुरा गरौं।</p>
+
+<h3>Legitimate Academic Uses</h3>
+<ul>
+  <li><strong>Rough draft formatting</strong> — आफ्नै written work को clean handwritten-style version review का लागि generate गर्नु</li>
+  <li><strong>Study aids</strong> — Revision flashcards, summary sheets handwriting style मा बनाउनु</li>
+  <li><strong>Practice sheets</strong> — Language learners का लागि target-language text tracing practice का लागि</li>
+  <li><strong>Accessibility</strong> — Physical writing गर्न गाह्रो हुनेहरूका लागि assistive technology को रूपमा use</li>
+</ul>
+
+<h3>जब यो Line Cross गर्छ</h3>
+<p>Generated handwriting लाई genuine personal handwriting को रूपमा submit गर्नु — जहाँ institution ले manually handwritten work require गर्छ — Nepal का most educational institutions को academic integrity policies अनुसार academic dishonesty हो।</p>
+
+<div class="callout-info">
+  <strong>नेपाली Context:</strong> NEB (National Examinations Board) का board exams मा manually handwritten answers आवश्यक छ। Generated handwriting use गर्दा exam cancel हुन सक्छ र serious consequences हुन सक्छन्। Study aids र practice का लागि मात्र use गर्नुहोस्।
+</div>
+
+<h3>Responsible Use का लागि ३ Questions</h3>
+<ol>
+  <li>के मेरो institution को assignment brief ले specify गर्छ कि handwriting मेरो आफ्नै हुनुपर्छ?</li>
+  <li>के handwriting को physical act नै assessed skill को हिस्सा हो?</li>
+  <li>के म आफ्नो teacher लाई comfortable भनेर बताउन सक्छु कि मैले यो tool use गरें?</li>
+</ol>`,
+    },
+    {
+      id: "personalising-ne",
+      title: "Output Personalize गर्नुहोस्: Pen Color, Size र Ink Style",
+      content: `<p>ToolsArena को tool मा handwritten output को visual characteristics मा fine-grained control मिल्छ:</p>
+
+<h3>Pen Colour</h3>
+<ul>
+  <li><strong>Blue ink</strong> — formal documents र letters का लागि universally "safe" choice</li>
+  <li><strong>Black ink</strong> — clean, modern; printed output का लागि</li>
+  <li><strong>Red ink</strong> — annotations, corrections र teacher-style feedback notes का लागि</li>
+  <li><strong>Pencil grey</strong> — study notes र draft aesthetics का लागि</li>
+  <li><strong>Custom colour</strong> — creative र social media uses का लागि brand palette match गर्नुहोस्</li>
+</ul>
+
+<h3>Pen Size / Stroke Weight</h3>
+<ul>
+  <li><strong>Fine (0.3–0.5mm)</strong> — authentic "quick notes" aesthetics का लागि</li>
+  <li><strong>Medium (0.7–1.0mm)</strong> — सबैभन्दा legible र natural-looking option</li>
+  <li><strong>Bold (1.5–2.0mm)</strong> — headings, emphasis का लागि</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Use Case</th>
+      <th>Pen Colour</th>
+      <th>Stroke Weight</th>
+      <th>Ink Style</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Formal letter / card</td>
+      <td>Blue वा black</td>
+      <td>Medium (0.7mm)</td>
+      <td>Pressure variation</td>
+    </tr>
+    <tr>
+      <td>Study notes</td>
+      <td>Blue वा pencil</td>
+      <td>Fine (0.5mm)</td>
+      <td>Standard</td>
+    </tr>
+    <tr>
+      <td>Social media content</td>
+      <td>Custom / brand colour</td>
+      <td>Bold (1.5mm)</td>
+      <td>Standard</td>
+    </tr>
+    <tr>
+      <td>Vintage / artistic</td>
+      <td>Sepia वा pencil</td>
+      <td>Fine (0.3mm)</td>
+      <td>Ink bleed / Dry pen</td>
+    </tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: "printing-ne",
+      title: "Printing र Sharing: Handwriting Images का लागि Best Formats",
+      content: `<p>तपाईं output कसरी use गर्ने भन्ने कुराले export format decide गर्छ:</p>
+
+<h3>Printing का लागि</h3>
+<ul>
+  <li><strong>PNG at 300 DPI</strong> — print output का लागि gold standard। Standard A4 मा 100% size print गर्दा sharp, crisp text ensure हुन्छ</li>
+  <li><strong>PDF</strong> — multi-page documents का लागि ideal</li>
+  <li><strong>JPG avoid गर्नुहोस्</strong> — JPEG compression ले text edges मा visible artefacts बनाउँछ</li>
+</ul>
+
+<h3>Digital Use का लागि</h3>
+<ul>
+  <li><strong>PNG (transparent background)</strong> — Canva, PowerPoint मा custom background मा overlay गर्न</li>
+  <li><strong>JPG</strong> — social media posts का लागि</li>
+  <li><strong>WebP</strong> — web use का लागि optimal</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Output Use</th>
+      <th>Recommended Resolution</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A4 print</td>
+      <td>2480 × 3508 px (300 DPI)</td>
+      <td>PNG / PDF</td>
+    </tr>
+    <tr>
+      <td>Instagram post</td>
+      <td>1080 × 1080 px</td>
+      <td>JPG / PNG</td>
+    </tr>
+    <tr>
+      <td>Facebook post</td>
+      <td>1200 × 630 px</td>
+      <td>JPG / PNG</td>
+    </tr>
+    <tr>
+      <td>Greeting card (A5)</td>
+      <td>1748 × 2480 px (300 DPI)</td>
+      <td>PNG / PDF</td>
+    </tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: "legal-ethical-ne",
+      title: "Legal र Ethical Use: कहिले Tool Use गर्न मिल्छ (र कहिले मिल्दैन)",
+      content: `<p>Text-to-handwriting tools vast majority of use cases मा largely unproblematic छन्। तर केही contexts मा legal वा ethical concerns छन्:</p>
+
+<h3>Clearly Acceptable Uses</h3>
+<ul>
+  <li>Personal creative projects (cards, journals, art)</li>
+  <li>Business marketing र design</li>
+  <li>Teachers का लागि educational resource creation</li>
+  <li>Accessibility र assistive technology</li>
+  <li>Social media content creation</li>
+</ul>
+
+<h3>Caution Required</h3>
+<ul>
+  <li><strong>Academic submissions</strong> — Institution को policy जान्नुहोस्</li>
+  <li><strong>Formal contracts र legal documents</strong> — Nepal को law अनुसार digitally generated "signature" genuine handwritten signature को legally equivalent होइन</li>
+  <li><strong>Handwriting style mimicry</strong> — कसैको specific handwriting style बिना consent को generate गर्नु ethically problematic छ</li>
+</ul>
+
+<div class="callout-info">
+  <strong>Nepal Legal Context:</strong> Nepal को Muluki Civil Code अनुसार, documents मा genuine handwritten signatures required छन् legal validity का लागि। Digitally generated handwriting भएका documents legal disputes मा invalidated हुन सक्छन्।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "Text type वा paste गर्नुहोस्",
+      description: "ToolsArena को Text to Handwriting converter खोल्नुहोस् र content directly type गर्नुहोस्, वा कुनै पनि source बाट text paste गर्नुहोस्।",
+    },
+    {
+      title: "Handwriting style choose गर्नुहोस्",
+      description: "Handwriting font library browse गर्नुहोस् र आफ्नो use case का लागि style select गर्नुहोस्। Preview real time मा update हुन्छ।",
+    },
+    {
+      title: "Paper style select गर्नुहोस्",
+      description: "Ruled, college ruled, dotted grid, graph, blank, aged parchment वा sticky note paper choose गर्नुहोस्। Use case सँग match गर्नुहोस्।",
+    },
+    {
+      title: "Pen colour र size customize गर्नुहोस्",
+      description: "Pen colour select गर्नुहोस् र stroke weight choose गर्नुहोस्। Realistic look का लागि pressure variation वा ink bleed effects add गर्नुहोस्।",
+    },
+    {
+      title: "Font size र line spacing adjust गर्नुहोस्",
+      description: "Size slider बाट handwriting को size set गर्नुहोस्। Line spacing adjust गर्नुहोस्। Export गर्नु अघि full page layout preview गर्नुहोस्।",
+    },
+    {
+      title: "Preview र fine-tune गर्नुहोस्",
+      description: "100% zoom मा output review गर्नुहोस्। Check गर्नुहोस् कि कुनै letter malformed छैन, text naturally flow गर्छ।",
+    },
+    {
+      title: "Right format मा export गर्नुहोस्",
+      description: "Export click गर्नुहोस् — PNG, JPG, PDF, वा WebP। Download गर्नुहोस् र use गर्नुहोस्।",
+    },
+  ],
+  faqs: [
+    {
+      question: "Text to handwriting र handwriting font मा के फरक छ?",
+      answer: "Similar तर identical होइन। Basic tools सिर्फ handwriting fonts use गर्छन्। ToolsArena जस्ता advanced tools ले font rendering माथि character variation, baseline randomisation र ink simulation add गर्छन्। Result Word वा Google Docs मा simple handwriting font भन्दा significantly more realistic देखिन्छ।",
+    },
+    {
+      question: "के school assignments का लागि text to handwriting use गर्न मिल्छ?",
+      answer: "Institution को policies मा depend गर्छ। Study notes, revision cards, वा आफ्नै work को formatted drafts generate गर्नु बिल्कुल fine छ। तर generated handwriting लाई genuine personal handwriting को रूपमा submit गर्नु — जहाँ institution ले manual handwriting require गर्छ — academic dishonesty हो। Nepal NEB exams मा यो strictly prohibited छ।",
+    },
+    {
+      question: "Nepali (Devanagari) text को handwriting generate हुन्छ?",
+      answer: "हो! ToolsArena को tool Devanagari script support गर्छ जसमा Nepali, Hindi र Marathi समावेश छन्। Devanagari text का लागि bold fonts जस्तै Mukta Bold वा Noto Sans Devanagari use गर्नुहोस् — small sizes मा legible हुन्छन्।",
+    },
+    {
+      question: "Multiple pages को handwriting generate हुन्छ?",
+      answer: "हो। ToolsArena को tool ले automatically text लाई जति pages चाहिन्छ त्यति मा flow गर्छ। Long documents का लागि multi-page export as PDF use गर्नुहोस्।",
+    },
+    {
+      question: "Realistic look का लागि best settings के हुन्?",
+      answer: "पाँच कुराले सबैभन्दा ठूलो फरक पार्छन्: (१) bold भन्दा medium stroke weight use गर्नुहोस्, (२) pressure variation ink style enable गर्नुहोस्, (३) blank भन्दा college-ruled वा lined paper choose गर्नुहोस्, (४) perfectly round वा symmetrical fonts avoid गर्नुहोस्, र (५) text size human ले naturally लेख्ने जस्तो राख्नुहोस्।",
+    },
+  ],
+  relatedGuides: ["word-counter-guide", "case-converter-guide", "font-generator-guide"],
+  toolCTA: {
+    heading: "Text लाई Handwriting मा Convert गर्नुहोस् — Free",
+    description: "जुनसुकै text type वा paste गर्नुहोस् र हेर्नुहोस् यो beautiful, realistic handwriting मा transform हुन्छ। Dozens of styles, paper types र pen colours। PNG, PDF वा JPG export गर्नुहोस्। Sign-up आवश्यक छैन।",
+    buttonText: "Text to Handwriting Tool खोल्नुहोस्",
+  },
+},
+
+{
+  slug: "thumbnail-maker-guide",
+  toolSlug: "thumbnail-maker",
+  category: "image-tools",
+  title: "Thumbnail Maker: क्लिक पाउने Thumbnail बनाउने सम्पूर्ण गाइड",
+  subtitle: "YouTube, Facebook र TikTok मा CTR बढाउने Thumbnail डिजाइन गर्नुहोस्",
+  metaTitle: "Thumbnail Maker Guide — नेपालमा YouTube Thumbnail कसरी बनाउने",
+  metaDescription: "YouTube thumbnail साइज, डिजाइन टिप्स, A/B टेस्टिङ र सामान्य गल्तीहरू — नेपाली YouTuber हरूका लागि सम्पूर्ण गाइड।",
+  targetKeyword: "थम्बनेल बनाउने",
+  secondaryKeywords: [
+    "youtube thumbnail size nepali",
+    "thumbnail design tips nepali",
+    "free thumbnail maker nepal",
+    "youtube thumbnail kasari banaune",
+    "nepali youtuber thumbnail",
+    "thumbnail ctr nepal",
+    "thumbnail creator online",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१२ मिनेट",
+  tags: ["thumbnail", "youtube", "design", "ctr", "image-tools", "nepal"],
+  intro: `<p>नेपालमा YouTube को वृद्धि अभूतपूर्व छ — Saugat Malla देखि Colleges Nepal सम्म, Nepali creators ले लाखौं दर्शकहरू कमाइरहेका छन्। तर धेरै creators एउटै गल्ती गर्छन्: राम्रो video बनाउँछन् तर thumbnail मा ध्यान दिँदैनन्। YouTube मा, thumbnail नै पहिलो impression हो — video हेर्नु अघि नै दर्शकले thumbnail देखेर क्लिक गर्ने वा नगर्ने निर्णय गर्छ, मात्र २०० milliseconds मा। राम्रो thumbnail ले तपाईंको channel को CTR (Click-Through Rate) २–३ गुणा बढाउन सक्छ।</p>
+<p>यो गाइडमा हामी सब कुरा cover गर्छौं: सही pixel dimensions, file size rules, colour psychology, typography, A/B testing, र ती सामान्य गल्तीहरू जसले CTR लाई चुपचाप मार्छन्। साथै ToolsArena को free thumbnail maker ले कसरी minutes मै professional thumbnails बनाउन मद्दत गर्छ — Photoshop वा design degree बिना नै।</p>`,
+  sections: [
+    {
+      id: "psychology-click-ne",
+      title: "राम्रो Thumbnail के हो? Click-Through को Psychology",
+      content: `<p>CTR नै त्यो metric हो जसले growing channels लाई stagnant channels बाट छुट्याउँछ। YouTube को आफ्नै data अनुसार, above-average CTR भएका channels २–३ गुणा छिटो grow गर्छन् — video quality उस्तै भए पनि। त्यसो भए click किन आउँछ?</p>
+
+<h3>३ सेकेन्डको नियम</h3>
+<p>Eye-tracking research ले देखाउँछ कि दर्शकले thumbnail हेरेर क्लिक गर्ने निर्णय ३ सेकेन्डमा गर्छ — अक्सर त्यो भन्दा पनि कम। तपाईंको thumbnail ले instantly आफ्नो promise communicate गर्नुपर्छ:</p>
+<ul>
+  <li><strong>एउटा dominant subject</strong> — एकैचोटि ५ कुरा भन्ने कोसिस नगर्नुहोस्</li>
+  <li><strong>High contrast</strong> — light subject on dark background (वा vice versa) हरेक device मा pop गर्छ</li>
+  <li><strong>ठूलो, पढ्न मिल्ने text</strong> — text छ भने ३२०px mobile screen मा पनि पढ्न मिल्नुपर्छ</li>
+  <li><strong>Emotional faces</strong> — strong emotion देखाउने faces ले object-only thumbnails भन्दा ३८% बढी clicks पाउँछन्</li>
+</ul>
+
+<h3>Curiosity Gap — "Open Loop" को जादू</h3>
+<p>सबैभन्दा बढी click हुने thumbnails ले curiosity gap बनाउँछन्। Thumbnail ले प्रश्न उठाउँछ, title ले त्यसलाई sharpen गर्छ। नेपाली context मा सोच्नुस् — "मैले यसरी गरें र सबै बदलियो" जस्तो shocked face भएको thumbnail, दर्शकलाई click गर्न बाध्य गर्छ।</p>
+
+<div class="callout-tip">
+  <strong>महत्त्वपूर्ण:</strong> "Clickbait without delivery" कहिल्यै नगर्नुहोस्। Thumbnail ले promise गरेको कुरा video ले deliver नगरे, watch time घट्छ, algorithm ले penalise गर्छ, र subscriber trust सधैंका लागि गुम्छ।
+</div>
+
+<h3>Colour र Contrast</h3>
+<ul>
+  <li><strong>Complementary colours</strong> (जस्तै blue + orange) instant visual tension बनाउँछन्</li>
+  <li><strong>Muddy mid-tones avoid गर्नुहोस्</strong> — thumbnail grid मा disappear हुन्छन्</li>
+  <li><strong>Brand consistency</strong> — हरेक thumbnail मा same २–३ colours use गर्नुहोस्</li>
+  <li><strong>Yellow र red</strong> सबैभन्दा high-attention colours हुन् — accent highlights को रूपमा use गर्नुहोस्</li>
+</ul>`,
+    },
+    {
+      id: "youtube-dimensions-ne",
+      title: "YouTube Thumbnail Dimensions र File Size Requirements (२०२६)",
+      content: `<p>सही dimensions नभए platform ले auto-crop गर्छ र तपाईंको सारा design effort बर्बाद हुन्छ। २०२६ को YouTube specifications:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Specification</th>
+      <th>Recommended</th>
+      <th>Minimum</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resolution</td>
+      <td>१२८० × ७२० px</td>
+      <td>६४० × ३६० px</td>
+      <td>Retina displays का लागि सधैं १२८०×७२० design गर्नुहोस्</td>
+    </tr>
+    <tr>
+      <td>Aspect Ratio</td>
+      <td>16:9</td>
+      <td>16:9</td>
+      <td>16:9 नभए letterbox automatically add हुन्छ</td>
+    </tr>
+    <tr>
+      <td>File Size</td>
+      <td>२ MB भन्दा कम</td>
+      <td>—</td>
+      <td>Fast load का लागि ५०० KB भन्दा कम राख्नुहोस्</td>
+    </tr>
+    <tr>
+      <td>File Format</td>
+      <td>JPG, PNG, GIF, BMP, WebP</td>
+      <td>—</td>
+      <td>Photos का लागि JPG; text भएका graphics का लागि PNG</td>
+    </tr>
+    <tr>
+      <td>Colour Space</td>
+      <td>sRGB</td>
+      <td>—</td>
+      <td>CMYK use नगर्नुहोस् — colours washed out देखिन्छन्</td>
+    </tr>
+    <tr>
+      <td>Safe Zone</td>
+      <td>Inner ११५२ × ६४८ px</td>
+      <td>—</td>
+      <td>Important elements लाई edges बाट ६४ px टाढा राख्नुहोस्</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>नेपाली YouTubers का लागि विशेष टिप्स</h3>
+<p>नेपालमा धेरैजसो YouTube हेर्ने काम mobile मा हुन्छ — Jio वा NTC को data plan मा। यसकारण:</p>
+<ul>
+  <li><strong>File size सानो राख्नुहोस्</strong> — ५०० KB भन्दा कम, slow internet connection मा पनि छिटो load हुन्छ</li>
+  <li><strong>Mobile preview ले हेर्नुहोस्</strong> — तपाईंको thumbnail ३२०×१८० px मा कस्तो देखिन्छ?</li>
+  <li><strong>Nepali text भए Devanagari font bold राख्नुहोस्</strong> — small sizes मा legible हुनुपर्छ</li>
+</ul>`,
+    },
+    {
+      id: "platform-specs-ne",
+      title: "Platform-wise Thumbnail Specs: YouTube vs Facebook vs TikTok",
+      content: `<p>नेपालमा Facebook, TikTok र YouTube सबैभन्दा popular platforms हुन्। प्रत्येकका लागि अलग thumbnail चाहिन्छ:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Recommended Size</th>
+      <th>Aspect Ratio</th>
+      <th>Best Format</th>
+      <th>नेपाली Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>YouTube</td>
+      <td>१२८० × ७२० px</td>
+      <td>16:9</td>
+      <td>JPG / PNG</td>
+      <td>सबैभन्दा महत्त्वपूर्ण; search र suggested मा देखिन्छ</td>
+    </tr>
+    <tr>
+      <td>Facebook Video</td>
+      <td>१२८० × ७२० px</td>
+      <td>16:9</td>
+      <td>JPG / PNG</td>
+      <td>Nepal मा Facebook अझै hugely popular छ</td>
+    </tr>
+    <tr>
+      <td>Facebook Reel</td>
+      <td>१०८० × १९२० px</td>
+      <td>9:16</td>
+      <td>JPG / PNG</td>
+      <td>Vertical-first; young audience को favourite</td>
+    </tr>
+    <tr>
+      <td>TikTok Video</td>
+      <td>१०८० × १९२० px</td>
+      <td>9:16</td>
+      <td>JPG / PNG</td>
+      <td>Nepal मा TikTok को growth explosive छ</td>
+    </tr>
+    <tr>
+      <td>Instagram Video</td>
+      <td>१०८० × १०८० px</td>
+      <td>1:1</td>
+      <td>JPG / PNG</td>
+      <td>Square format; urban Nepali audience</td>
+    </tr>
+    <tr>
+      <td>Blog / Open Graph</td>
+      <td>१२०० × ६३० px</td>
+      <td>1.91:1</td>
+      <td>JPG</td>
+      <td>WhatsApp link previews का लागि पनि use हुन्छ</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाली Creator Tip:</strong> YouTube thumbnail (१२८०×७२०) लाई master file बनाउनुहोस्। फेरि Instagram का लागि square crop (१०८०×१०८०) र TikTok/Facebook Reel का लागि vertical crop (१०८०×१९२०) बनाउनुहोस्। ToolsArena मा canvas size switch गर्दा design rebuild गर्नु पर्दैन।
+</div>`,
+    },
+    {
+      id: "design-practices-ne",
+      title: "Thumbnail Design Best Practices: Fonts, Colors र Faces",
+      content: `<p>High-CTR thumbnails बनाउने consistent practices:</p>
+
+<h3>Font छनोट</h3>
+<ul>
+  <li><strong>Bold, condensed sans-serifs</strong> thumbnails का लागि gold standard हुन्: Montserrat ExtraBold, Bebas Neue, Oswald Heavy</li>
+  <li><strong>Nepali text का लागि</strong> bold Devanagari fonts use गर्नुहोस् — Mukta Bold, Noto Sans Devanagari Bold</li>
+  <li><strong>Maximum २ typefaces</strong> per thumbnail</li>
+  <li><strong>Minimum ६०–८० px text</strong> १२८०×७२० मा — mobile मा readable होस्</li>
+  <li><strong>Text outlines वा drop shadows</strong> — busy backgrounds मा text separate हुन्छ</li>
+</ul>
+
+<h3>Colour Rules</h3>
+<ul>
+  <li><strong>Maximum ३ colours</strong>: एउटा dominant, एउटा secondary, एउटा accent</li>
+  <li><strong>Brand colour लाई dominant राख्नुहोस्</strong> — सबै thumbnails मा visual consistency आउँछ</li>
+  <li><strong>High saturation</strong> thumbnail grids मा जित्छ</li>
+</ul>
+
+<h3>Faces Effectively Use गर्ने</h3>
+<ul>
+  <li><strong>Strong, exaggerated emotion देखाउनुहोस्</strong> — subtle expressions small sizes मा translate हुँदैनन्</li>
+  <li><strong>Eyes text तिर</strong> — दर्शकको attention message तिर जान्छ</li>
+  <li><strong>Background cut out गर्नुहोस्</strong> — bold coloured backdrop मा face राख्नुहोस्</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>नेपाली Context:</strong> Saugat Malla, Colleges Nepal, र Mero Khabar जस्ता successful Nepali channels को thumbnails हेर्नुहोस् — तिनीहरूले consistent colours, bold text र emotional faces use गर्छन्। आफ्नो channel को नि unique visual identity बनाउनुहोस्।
+</div>`,
+    },
+    {
+      id: "ab-testing-ne",
+      title: "A/B Testing: Free Methods बाट Thumbnails Test गर्नुहोस्",
+      content: `<p>अनुभवी designers पनि predict गर्न सक्दैनन् कुन thumbnail best perform गर्छ। Test गर्नु नै एकमात्र उपाय हो। बिना पैसा खर्च गरी A/B testing:</p>
+
+<h3>YouTube को Built-in Test and Compare (२०२६)</h3>
+<p>१,०००+ subscribers भएका channels का लागि YouTube Studio मा native thumbnail A/B testing feature छ। दुई-तीन variants upload गर्नुहोस्, ७ days को test duration set गर्नुहोस्, YouTube ले equal audience segments लाई rotate गर्छ र CTR data show गर्छ।</p>
+
+<h3>Manual Swap Method</h3>
+<ol>
+  <li>Thumbnail A सँग video publish गर्नुहोस् — ७ days run गर्न दिनुहोस्</li>
+  <li>YouTube Studio बाट impressions CTR note गर्नुहोस्</li>
+  <li>Thumbnail B swap गर्नुहोस् — अर्को ७ days</li>
+  <li>CTR compare गर्नुहोस् — higher भएको winner हो</li>
+</ol>
+
+<div class="callout-info">
+  <strong>Niche-wise CTR Benchmarks (२०२६):</strong> Gaming: ६–१०% | Education: ४–७% | Finance: ३–६% | Cooking: ४–८% | Tech: ३–६% | Vlog: ५–९%। तपाईं आफ्नो niche average भन्दा तल हुनुहुन्छ भने, thumbnail testing पहिलो step हो।
+</div>`,
+    },
+    {
+      id: "common-mistakes-ne",
+      title: "Common Thumbnail Mistakes जसले CTR मार्छन्",
+      content: `<p>राम्रो video बनाएर पनि terrible CTR आउन सक्छ यदि thumbnail यी traps मा परे:</p>
+
+<h3>१. धेरै Text</h3>
+<p>५–६ भन्दा बढी words thumbnail मा छन् भने most mobile viewers already गुमाइसक्नुभयो। Thumbnail visual hook हो — information title मा दिनुहोस्, emotion thumbnail मा।</p>
+
+<h3>२. Low Contrast</h3>
+<p>Similar-value colours भएको thumbnail crowded feed मा disappear हुन्छ। सधैं greyscale मा check गर्नुहोस्।</p>
+
+<h3>३. Inconsistent Branding</h3>
+<p>Thumbnail style हरपटक dramatically change गरे brand recognition advantage गुम्छ।</p>
+
+<h3>४. Mobile Preview Ignore गर्नु</h3>
+<p>नेपालमा ७०%+ YouTube views mobile मा हुन्छन् — publish गर्नु अघि ३२०×१८० px मा preview ज़रूर हेर्नुहोस्।</p>
+
+<h3>५. Auto-Generated Thumbnails</h3>
+<p>YouTube का auto-generated thumbnails almost हमेशा awkward mid-frame grabs हुन्छन्। Custom thumbnails ले consistently ३०–५०% better CTR दिन्छन्।</p>`,
+    },
+    {
+      id: "mobile-thumbnails-ne",
+      title: "Mobile मा Thumbnails बनाउनु: जान्नुपर्ने कुराहरू",
+      content: `<p>नेपालमा धेरैजसो creators को desktop setup हुँदैन — र राम्रो thumbnails का लागि हुनु पनि पर्दैन। २०२६ मा mobile मा thumbnail design:</p>
+
+<h3>Mobile मा के फरक छ</h3>
+<ul>
+  <li>Screen size constraints ले actual thumbnail size assess गर्न गाह्रो हुन्छ — deliberately zoom out गर्नुहोस्</li>
+  <li>Touch-based tools less precise हुन्छन् — snap-to-grid features use गर्नुहोस्</li>
+  <li>Export मा full १२८०×७२० resolution confirm गर्नुहोस्</li>
+</ul>
+
+<h3>ToolsArena Thumbnail Maker on Mobile</h3>
+<ul>
+  <li>YouTube का लागि १२८०×७२० preset select गर्नुहोस्</li>
+  <li>Small text place गर्दा pinch to zoom गर्नुहोस्</li>
+  <li>Mobile "layers" panel बाट elements select गर्नुहोस्</li>
+  <li>Phone को camera roll मा directly export गर्नुहोस्, फेरि YouTube Studio app बाट upload गर्नुहोस्</li>
+</ul>
+
+<div class="callout-tip">
+  <strong>Quick Mobile Workflow:</strong> Photo खिच्नुहोस् → Background remove गर्नुहोस् → Colour backdrop apply गर्नुहोस् → Text overlay add गर्नुहोस् → १२८०×७२० export गर्नुहोस् → YouTube upload गर्नुहोस्। Practice पछि पूरा process १० minutes भन्दा कम लाग्छ।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "Canvas size छान्नुहोस्",
+      description: "ToolsArena Thumbnail Maker खोल्नुहोस् र YouTube preset (१२८०×७२० px) select गर्नुहोस्। अन्य platforms का लागि platform presets dropdown बाट select गर्नुहोस्।",
+    },
+    {
+      title: "Background image upload गर्नुहोस्",
+      description: "Device बाट high-resolution photo upload गर्नुहोस्, वा built-in stock photo search use गर्नुहोस्। Clean look का लागि portrait photo upload गरी AI background remover बाट subject isolate गर्नुहोस्।",
+    },
+    {
+      title: "Background colour वा gradient छान्नुहोस्",
+      description: "Solid colour, gradient, वा pattern select गर्नुहोस्। High-contrast backgrounds (bright yellow, deep blue, vivid red) thumbnail grids मा best perform गर्छन्। Brand colours use गर्नुहोस्।",
+    },
+    {
+      title: "Text overlay add गर्नुहोस्",
+      description: "५ words वा कममा headline type गर्नुहोस्। Bold condensed font छान्नुहोस्, size minimum ८०px राख्नुहोस्। Text outline वा drop shadow add गर्नुहोस् readability का लागि।",
+    },
+    {
+      title: "Graphic elements add गर्नुहोस्",
+      description: "Element library बाट shapes, arrows, वा icons add गर्नुहोस्। Bright arrow ले key element तिर point गर्दा viewer को eye movement significantly boost हुन्छ।",
+    },
+    {
+      title: "Mobile size मा preview गर्नुहोस्",
+      description: "'Preview at mobile size' click गर्नुहोस् — ३२०×१८० px मा text readable र faces recognisable छन् वा छैनन् हेर्नुहोस्।",
+    },
+    {
+      title: "Export र upload गर्नुहोस्",
+      description: "Export click गर्नुहोस् — photo-heavy thumbnails का लागि JPG, graphics-heavy designs का लागि PNG। Download गर्नुहोस् र YouTube Studio, Facebook, वा blog CMS मा upload गर्नुहोस्।",
+    },
+  ],
+  faqs: [
+    {
+      question: "२०२६ मा YouTube thumbnail को best size के हो?",
+      answer: "२०२६ मा YouTube thumbnail को recommended size १२८० × ७२० pixels हो, 16:9 aspect ratio सँग। File २ MB भन्दा कम (ideally ५०० KB भन्दा कम) राख्नुहोस् र photos का लागि JPG, graphics का लागि PNG use गर्नुहोस्। सधैं sRGB colour space मा design गर्नुहोस्।",
+    },
+    {
+      question: "YouTube thumbnail CTR कसरी बढाउने?",
+      answer: "तीन कुरामा focus गर्नुहोस्: high contrast (subject background बाट stand out गर्नुपर्छ), emotional faces (exaggerated expressions), र clear curiosity gap। Regular A/B testing गर्नुहोस् — single thumbnail swap ले CTR २०–४०% improve गर्न सक्छ।",
+    },
+    {
+      question: "Thumbnail मा Nepali text राख्दा के ध्यान दिने?",
+      answer: "Bold Devanagari fonts use गर्नुहोस् जस्तै Mukta Bold वा Noto Sans Devanagari Bold। Text minimum ८०px राख्नुहोस् १२८०×७२० canvas मा। Text outline वा drop shadow add गर्नुहोस् — Devanagari text background सँग blend हुन सक्छ।",
+    },
+    {
+      question: "YouTube र TikTok मा same thumbnail use गर्न मिल्छ?",
+      answer: "Directly मिल्दैन — YouTube 16:9 (१२८०×७२०) र TikTok 9:16 (१०८०×१९२०) use गर्छ। पहिले YouTube thumbnail design गर्नुहोस्, फेरि TikTok का लागि vertical crop बनाउनुहोस्। ToolsArena मा canvas size switch गर्दा design rebuild गर्नु पर्दैन।",
+    },
+    {
+      question: "Mobile मा professional thumbnail बनाउन मिल्छ?",
+      answer: "हो! ToolsArena को thumbnail maker fully responsive छ र mobile browsers मा काम गर्छ। १२८०×७२० preset select गर्नुहोस्, AI background removal use गर्नुहोस्, र export directly phone को camera roll मा गर्नुहोस्। Practice पछि पूरा process १० minutes भन्दा कम लाग्छ।",
+    },
+    {
+      question: "Thumbnails कति पटक update गर्ने?",
+      answer: "आफ्ना top १० videos का thumbnails हरेक ३–६ months मा revisit गर्नुहोस्। कुनै video को CTR significantly drop भएको छ भने, thumbnail refresh ले अक्सर revive गर्छ। Old content लाई re-upload नगरी नयाँ life दिन सकिन्छ।",
+    },
+  ],
+  relatedGuides: ["image-compressor-guide", "image-resizer-guide", "crop-image-guide"],
+  toolCTA: {
+    heading: "अहिले नै Free Thumbnail बनाउनुहोस्",
+    description: "Photoshop चाहिँदैन। Design experience चाहिँदैन। ToolsArena को free thumbnail maker बाट ५ minutes मा professional १२८०×७२० thumbnail बनाउनुहोस्। Desktop र mobile दुवैमा काम गर्छ।",
+    buttonText: "Thumbnail Maker खोल्नुहोस्",
+  },
+},
+
+{
+  slug: 'timezone-meeting-planner-guide',
+  toolSlug: 'timezone-meeting-planner',
+  category: 'utility-tools',
+  title: 'टाइमजोन बैठक योजनाकर्ता: विश्वव्यापी अनुसूचीको सम्पूर्ण गाइड',
+  subtitle: 'नेपाल र विश्वका विभिन्न टाइमजोनमा बैठक मिलाउने सजिलो तरिका',
+  metaTitle: 'टाइमजोन बैठक योजनाकर्ता गाइड 2026 | ToolsArena',
+  metaDescription: 'नेपाल NPT UTC+5:45 बुझ्नुहोस्। Nepal-India, Nepal-US, Nepal-UK बैठकका लागि उत्तम समय, DST जानकारी र scheduling tips सहितको सम्पूर्ण गाइड।',
+  targetKeyword: 'टाइमजोन बैठक योजनाकर्ता',
+  secondaryKeywords: [
+    'Nepal NPT time zone guide',
+    'Nepal to US meeting time',
+    'टाइमजोन कन्भर्टर नेपाल',
+    'Nepal remote work scheduling',
+    'NPT UTC+5:45 conversion',
+    'global team meeting Nepal',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '११ मिनेट',
+  tags: ['टाइमजोन', 'रिमोट वर्क', 'बैठक', 'NPT', 'नेपाल', 'अनुसूची', 'फ्रिल्यान्सिंग'],
+  intro: `<p>नेपालमा IT र freelancing क्षेत्र तीव्र गतिमा फैलिरहेको छ। काठमाडौं, पोखरा र विराटनगरबाट हजारौं नेपाली professionals अमेरिका, बेलायत, अस्ट्रेलिया र खाडी मुलुकका clients सँग दैनिक काम गर्छन्। Nepal Telecommunication Authority को तथ्याङ्क अनुसार, <strong>नेपालमा ३ करोडभन्दा बढी इन्टरनेट प्रयोगकर्ता</strong> छन् र digital economy तेजीले बढिरहेको छ। तर cross-timezone बैठक मिलाउनु अझै ठूलो चुनौती हो — विशेष गरी नेपालको अनौठो UTC+5:45 टाइमजोनका कारण।</p>
+<p><strong>टाइमजोन बैठक योजनाकर्ता</strong> ले यो समस्यालाई एकै पटकमा हल गर्छ। तर tool भन्दा पनि महत्त्वपूर्ण कुरा हो — टाइमजोनहरू कसरी काम गर्छन् भन्ने बुझ्नु: नेपालको UTC+5:45 किन अनौठो छ, Daylight Saving Time ले नेपाल-अमेरिका वा नेपाल-बेलायत भेटघाटको समयलाई कसरी असर गर्छ, र कुन समयखण्डमा सबैजना कार्यालय समयमा हुन्छन्। यो गाइडले त्यही सबै व्यावहारिक तरिकाले सिकाउँछ।</p>`,
+  sections: [
+    {
+      id: 'timezone-kina-jaruri-ne',
+      title: 'टाइमजोन किन महत्त्वपूर्ण छ: नेपाल र विश्वव्यापी टोलीहरू',
+      content: `<h3>नेपालको बढ्दो Remote Work क्षेत्र</h3>
+<p>नेपाल सरकारको IT नीति र सस्तो इन्टरनेटका कारण, नेपालमा digital freelancing र remote work एउटा प्रमुख आय स्रोत बन्दैछ। Upwork, Fiverr र Freelancer.com मा नेपाली professionals को उपस्थिति वर्षेनि २०%–३०% को दरले बढिरहेको छ।</p>
+<h3>टाइमजोन गल्तीको मूल्य</h3>
+<div class="callout callout-warning">
+  <strong>तथ्य:</strong> Harvard Business Review को अध्ययन अनुसार, टाइमजोन भ्रमका कारण distributed teams को प्रत्येक सदस्यले हप्तामा औसत <strong>४.२ productive घण्टा</strong> गुमाउँछन्। यो एक वर्षमा हजारौं घण्टाको क्षति हो।
+</div>
+<h3>कसलाई चाहिन्छ टाइमजोन बैठक योजनाकर्ता?</h3>
+<ul>
+  <li><strong>IT Developers</strong> — भारत, अमेरिका वा युरोपका कम्पनीसँग काम गर्नेहरू</li>
+  <li><strong>Freelancers</strong> — अन्तर्राष्ट्रिय clients सँग client calls</li>
+  <li><strong>Content Creators</strong> — Global brand collaborations</li>
+  <li><strong>Online Teachers</strong> — विश्वभरका students सँग classes</li>
+  <li><strong>Import/Export व्यापारी</strong> — विदेशी suppliers र buyers सँग coordination</li>
+  <li><strong>NGO कार्यकर्ता</strong> — International donor meetings</li>
+</ul>`,
+    },
+    {
+      id: 'nepal-npt-timezone-ne',
+      title: 'नेपाल NPT UTC+5:45: अनौठो Quarter-Hour Offset',
+      content: `<h3>नेपालको UTC+5:45 किन छ?</h3>
+<p>नेपाल Standard Time (NPT) UTC+5:45 मा छ — यो विश्वमा अत्यन्तै दुर्लभ quarter-hour offset हो। नेपालले भारतको IST (UTC+5:30) भन्दा १५ मिनेट अगाडि रहनुको कारण राष्ट्रिय पहिचान र सार्वभौमिकताको प्रतीक हो।</p>
+<div class="callout callout-info">
+  <strong>रोचक तथ्य:</strong> विश्वमा quarter-hour offset प्रयोग गर्ने मुख्य टाइमजोन: NPT (UTC+5:45), Chatham Islands (UTC+12:45), र Marquesas Islands (UTC−9:30)। नेपाल यस दुर्लभ समूहको सदस्य हो।
+</div>
+<h3>NPT रूपान्तरण तालिका: प्रमुख शहरहरू</h3>
+<table>
+  <thead>
+    <tr><th>शहर</th><th>टाइमजोन</th><th>UTC Offset</th><th>NPT सँग अन्तर</th><th>NPT बिहान ९:०० = ?</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>काठमाडौं (नेपाल)</td><td>NPT</td><td>UTC+5:45</td><td>—</td><td>९:०० AM</td></tr>
+    <tr><td>दिल्ली / मुम्बई</td><td>IST</td><td>UTC+5:30</td><td>−१५ मिनेट</td><td>८:४५ AM</td></tr>
+    <tr><td>ढाका</td><td>BST</td><td>UTC+6:00</td><td>+१५ मिनेट</td><td>९:१५ AM</td></tr>
+    <tr><td>दुबई</td><td>GST</td><td>UTC+4:00</td><td>−१ घण्टा ४५ मिनेट</td><td>७:१५ AM</td></tr>
+    <tr><td>लन्डन (जाडो)</td><td>GMT</td><td>UTC+0:00</td><td>−५ घण्टा ४५ मिनेट</td><td>३:१५ AM</td></tr>
+    <tr><td>लन्डन (गर्मी)</td><td>BST</td><td>UTC+1:00</td><td>−४ घण्टा ४५ मिनेट</td><td>४:१५ AM</td></tr>
+    <tr><td>न्यूयोर्क (जाडो)</td><td>EST</td><td>UTC−5:00</td><td>−१० घण्टा ४५ मिनेट</td><td>रात १०:१५ PM (अघिल्लो दिन)</td></tr>
+    <tr><td>न्यूयोर्क (गर्मी)</td><td>EDT</td><td>UTC−4:00</td><td>−९ घण्टा ४५ मिनेट</td><td>रात ११:१५ PM (अघिल्लो दिन)</td></tr>
+    <tr><td>सिड्नी (जाडो)</td><td>AEST</td><td>UTC+10:00</td><td>+४ घण्टा १५ मिनेट</td><td>दिउँसो १:१५ PM</td></tr>
+    <tr><td>सिंगापुर</td><td>SGT</td><td>UTC+8:00</td><td>+२ घण्टा १५ मिनेट</td><td>बिहान ११:१५ AM</td></tr>
+    <tr><td>टोकियो</td><td>JST</td><td>UTC+9:00</td><td>+३ घण्टा १५ मिनेट</td><td>दिउँसो १२:१५ PM</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'dst-nepal-ne',
+      title: 'Daylight Saving Time: नेपाललाई कसरी असर गर्छ?',
+      content: `<h3>DST के हो?</h3>
+<p>Daylight Saving Time (DST) एउटा प्रणाली हो जसमा गर्मीयाममा घडी १ घण्टा अगाडि सारिन्छ। करिब ७० देशले DST पालना गर्छन् — तर <strong>नेपालले DST पालना गर्दैन</strong>। NPT सारा वर्ष UTC+5:45 नै रहन्छ।</p>
+<div class="callout callout-danger">
+  <strong>महत्त्वपूर्ण चेतावनी:</strong> अमेरिका वा बेलायतले DST परिवर्तन गर्दा, तपाईंको नेपाल-अमेरिका वा नेपाल-बेलायत बैठकको समय आफैं बदलिन्छ — नेपालको घडी नचले पनि। मार्च र नोभेम्बरमा (अमेरिका) र मार्च र अक्टोबरमा (बेलायत/युरोप) आफ्नो recurring meetings अवश्य जाँच गर्नुहोस्।
+</div>
+<h3>२०२६ DST परिवर्तन तालिका</h3>
+<table>
+  <thead>
+    <tr><th>देश/क्षेत्र</th><th>DST सुरु</th><th>DST अन्त</th><th>NPT मा प्रभाव</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>अमेरिका (धेरैजसो राज्य)</td><td>८ मार्च २०२६</td><td>१ नोभेम्बर २०२६</td><td>Nepal-US अन्तर १ घण्टा घट्छ</td></tr>
+    <tr><td>बेलायत</td><td>२९ मार्च २०२६</td><td>२५ अक्टोबर २०२६</td><td>Nepal-UK अन्तर १ घण्टा घट्छ</td></tr>
+    <tr><td>युरोप (EU)</td><td>२९ मार्च २०२६</td><td>२५ अक्टोबर २०२६</td><td>Nepal-EU अन्तर १ घण्टा घट्छ</td></tr>
+    <tr><td>अस्ट्रेलिया (NSW, VIC)</td><td>४ अक्टोबर २०२६</td><td>५ अप्रिल २०२६</td><td>Nepal-AUS अन्तर १ घण्टा घट्छ</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'best-meeting-times-nepal-ne',
+      title: 'नेपालबाट अन्तर्राष्ट्रिय बैठकका लागि उत्तम समय',
+      content: `<h3>Nepal-Based Teams का लागि Golden Windows</h3>
+<table>
+  <thead>
+    <tr><th>बैठक जोडी</th><th>उत्तम NPT समय</th><th>अर्को शहरको समय</th><th>मूल्याङ्कन</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>नेपाल ↔ भारत</td><td>जुनसुकै कार्यालय समय</td><td>NPT−१५ मिनेट</td><td>उत्कृष्ट</td></tr>
+    <tr><td>नेपाल ↔ बेलायत (जाडो)</td><td>दिउँसो २:४५ – ५:१५ PM</td><td>बिहान ९:०० – ११:३० AM GMT</td><td>उत्कृष्ट</td></tr>
+    <tr><td>नेपाल ↔ बेलायत (गर्मी)</td><td>दिउँसो १:४५ – ४:४५ PM</td><td>बिहान ९:०० – १२:०० PM BST</td><td>उत्कृष्ट</td></tr>
+    <tr><td>नेपाल ↔ न्यूयोर्क (जाडो)</td><td>साँझ ७:१५ – ८:४५ PM</td><td>बिहान ८:३० – १०:०० AM EST</td><td>ठीकठाक</td></tr>
+    <tr><td>नेपाल ↔ सिड्नी (जाडो)</td><td>बिहान ९:०० – दिउँसो १२:०० PM</td><td>दिउँसो १:१५ – ४:१५ PM AEST</td><td>उत्कृष्ट</td></tr>
+    <tr><td>नेपाल ↔ सिंगापुर</td><td>बिहान ९:०० – दोपहर ३:४५ PM</td><td>बिहान ११:१५ – साँझ ६:०० PM</td><td>उत्कृष्ट</td></tr>
+    <tr><td>नेपाल ↔ दुबई</td><td>बिहान ९:०० – साँझ ५:४५ PM</td><td>बिहान ७:१५ – बेलुका ४:०० PM</td><td>उत्कृष्ट</td></tr>
+    <tr><td>नेपाल ↔ LA (जाडो)</td><td>रात १०:१५ – ११:४५ PM</td><td>बिहान ८:३० – १०:०० AM PST</td><td>गाह्रो</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-tip">
+  <strong>नेपाली Freelancers का लागि सुझाव:</strong> खाडी मुलुक (दुबई, कतार, साउदी अरब) सँग काम गर्नेहरूका लागि overlap सबभन्दा राम्रो छ — लगभग सारा कार्यदिन। बेलायत र युरोपसँग पनि दिउँसो राम्रो window छ। अमेरिकासँग भने साँझ–रात नै गाह्रो समय दिनुपर्छ।
+</div>`,
+    },
+    {
+      id: 'scheduling-etiquette-nepal-ne',
+      title: 'Scheduling Etiquette: व्यावसायिक वैश्विक बैठकका नियमहरू',
+      content: `<h3>वैश्विक बैठकमा व्यावसायिकताका नियम</h3>
+<ul>
+  <li><strong>सधैं टाइमजोन उल्लेख गर्नुहोस्</strong> — "३ बजे" मात्र नभनी "३:०० PM NPT (९:१५ AM GMT)" भन्नुहोस्</li>
+  <li><strong>२४ घण्टा अगाडि invitation पठाउनुहोस्</strong> — अर्को time zone का मानिस सुतिरहेको हुनसक्छ</li>
+  <li><strong>असुविधाजनक समय rotate गर्नुहोस्</strong> — हरपटक एउटै मानिसले sacrifice गर्नु उचित होइन</li>
+  <li><strong>Written deadlines मा NPT/UTC समय उल्लेख गर्नुहोस्</strong></li>
+  <li><strong>DST परिवर्तनको २ हप्ता अगाडि recurring meetings अपडेट गर्नुहोस्</strong></li>
+  <li><strong>बैठक record गरी २ घण्टाभित्र share गर्नुहोस्</strong></li>
+</ul>`,
+    },
+    {
+      id: 'common-mistakes-nepal-ne',
+      title: 'सामान्य टाइमजोन गल्तीहरू र कसरी बच्ने',
+      content: `<h3>५ सामान्य गल्तीहरू</h3>
+<h3>गल्ती १: NPT र IST लाई एउटै ठान्नु</h3>
+<p>धेरै नेपाली professionals ले NPT र IST लाई एउटै ठान्छन्। तर NPT भारतको IST भन्दा १५ मिनेट अगाडि छ। यो सानो अन्तरले बैठक miss गराउन सक्छ।</p>
+<h3>गल्ती २: DST परिवर्तन बिर्सनु</h3>
+<p>अमेरिका र बेलायतले clock बदल्दा, नेपाल-US वा नेपाल-UK time difference बदलिन्छ। मार्च र नोभेम्बरमा सतर्क रहनुहोस्।</p>
+<h3>गल्ती ३: दिन परिवर्तन नेर्नु</h3>
+<p>नेपालमा सोमवार बिहान ९:०० AM = न्यूयोर्कमा आइतबार रात १०:१५ PM। समयसँगै दिन पनि जाँच्नुहोस्।</p>
+<h3>गल्ती ४: Ambiguous Abbreviations प्रयोग गर्नु</h3>
+<p>"BST" बेलायतमा British Summer Time (UTC+1) हो र बंगलादेशमा Bangladesh Standard Time (UTC+6) हो। सधैं UTC offset साथमा लेख्नुहोस्।</p>
+<h3>गल्ती ५: Recurring Meeting Invites अपडेट नगर्नु</h3>
+<p>जनवरीमा set गरेको weekly call मार्चपछि automatically सही रहँदैन। DST-affected देशहरू संलग्न छन् भने हरेक season मा जाँच गर्नुहोस्।</p>
+<div class="callout callout-success">
+  <strong>Quick Checklist:</strong>
+  <ul>
+    <li>हरेक invitation मा UTC offset लेख्नुहोस्</li>
+    <li>ToolsArena Timezone Planner प्रयोग गर्नुहोस् — निःशुल्क र तत्काल</li>
+    <li>मार्च र नोभेम्बरमा सबै recurring international meetings review गर्नुहोस्</li>
+    <li>Deadlines मा सधैं टाइमजोन उल्लेख गर्नुहोस्</li>
+  </ul>
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'आफ्नो शहर र समय प्रविष्ट गर्नुहोस्',
+      description: 'आफ्नो शहर वा टाइमजोन चयन गर्नुहोस्। विचार गरिरहेको बैठक समय प्रविष्ट गर्नुहोस्।',
+    },
+    {
+      title: 'सबै सहभागीका शहरहरू थप्नुहोस्',
+      description: 'बैठक सहभागीहरू जहाँ छन् ती सबै शहरहरू थप्नुहोस्। Tool ले एकसाथ १० शहर support गर्छ।',
+    },
+    {
+      title: 'रूपान्तरित समय जाँच्नुहोस्',
+      description: 'तुरुन्तै देख्नुहोस् कि तपाईंको प्रस्तावित समय प्रत्येक सहभागीका लागि के हुन्छ — सही मिति र दिन सहित।',
+    },
+    {
+      title: 'DST Awareness सक्षम गर्नुहोस्',
+      description: 'DST-aware mode on गर्नुहोस् ताकि current daylight saving status स्वचालित रूपमा reflect होस्।',
+    },
+    {
+      title: 'उत्तम Overlap Window खोज्नुहोस्',
+      description: 'Overlap finder प्रयोग गर्नुहोस् जसले देखाउँछ कुन समयमा सबै सहभागीहरू कार्यालय समयमा हुन्छन्।',
+    },
+    {
+      title: 'Copy वा Share गर्नुहोस्',
+      description: 'रूपान्तरित समय copy गर्नुहोस् वा direct link share गर्नुहोस् ताकि सहभागीहरूले आफ्नो समय verify गर्न सकून्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'नेपालको टाइमजोन UTC+5:45 किन छ?',
+      answer: 'नेपालले UTC+5:45 राष्ट्रिय पहिचान र सार्वभौमिकताको प्रतीकको रूपमा राखेको छ। भारतको IST (UTC+5:30) भन्दा १५ मिनेट अगाडि राख्नु एक सचेत निर्णय हो जसले नेपालको स्वतन्त्र अस्तित्व जनाउँछ।',
+    },
+    {
+      question: 'के नेपालमा Daylight Saving Time हुन्छ?',
+      answer: 'होइन। नेपालमा DST हुँदैन। NPT सारा वर्ष UTC+5:45 नै रहन्छ। तसर्थ अमेरिका वा बेलायतले clock बदल्दा, नेपाल-US वा नेपाल-UK को time difference बदलिन्छ — नेपालको घडी नचले पनि।',
+    },
+    {
+      question: 'नेपाल र अमेरिकाबीच बैठकका लागि उत्तम समय कुन हो?',
+      answer: 'न्यूयोर्क (EST) सँग उत्तम समय साँझ ७:१५ – ८:४५ PM NPT (बिहान ८:३० – १०:०० AM EST) हो। LA सँग रात १०:१५ PM भन्दा पछि मात्र सम्भव हुन्छ जुन नेपालका लागि धेरै ढिलो हुन्छ।',
+    },
+    {
+      question: 'निःशुल्क टाइमजोन बैठक योजनाकर्ता कहाँ पाइन्छ?',
+      answer: 'ToolsArena को Timezone Meeting Planner पूर्णतः निःशुल्क छ — कुनै signup आवश्यक छैन। DST awareness, NPT UTC+5:45 offset, र IST offset सबै स्वचालित रूपमा handle हुन्छन्।',
+    },
+  ],
+  relatedGuides: ['reading-time-calculator-guide', 'unit-converter-guide', 'word-counter-guide'],
+  toolCTA: {
+    heading: 'अहिले नै आफ्नो अन्तर्राष्ट्रिय बैठक योजना बनाउनुहोस्',
+    description: 'Signup आवश्यक छैन। जुनसुकै शहर प्रविष्ट गर्नुहोस्, DST accuracy सहित तत्काल समय रूपान्तरण पाउनुहोस्। सधैं निःशुल्क।',
+    buttonText: 'Timezone Meeting Planner खोल्नुहोस्',
+  },
+},
+
+{
+  slug: "totp-2fa-generator-guide",
+  toolSlug: "totp-2fa-generator",
+  category: "security-tools",
+  title: "TOTP 2FA Generator — सम्पूर्ण Security गाइड",
+  subtitle: "TOTP कसरी काम गर्छ, 2FA setup गर्नुहोस् र phishing र SIM swap बाट बचाउनुहोस्",
+  metaTitle: "TOTP 2FA जेनेरेटर — नेपाली Developers को लागि Security Guide",
+  metaDescription: "TOTP 2FA के हो, HMAC-SHA1, 30-second window, SMS vs TOTP vs passkeys comparison, major platforms मा 2FA setup, lost device recovery र best practices — नेपाली.",
+  targetKeyword: "TOTP 2FA जेनेरेटर",
+  secondaryKeywords: [
+    "TOTP के हो नेपाली",
+    "2FA authenticator app नेपाली",
+    "two factor authentication Nepal",
+    "TOTP backup codes",
+    "cybersecurity Nepal",
+    "account security Nepal",
+  ],
+  lastUpdated: "2026-03-19",
+  readingTime: "१६ मिनेट",
+  tags: ["security", "2FA", "TOTP", "authentication", "cryptography", "Nepal cybersecurity"],
+  intro: `
+<p>Passwords मात्र अपर्याप्त छन्। Data breaches ले हरेक वर्ष अरबौं credentials expose गर्छन्, र credential stuffing attacks सफल हुन्छन् किनभने मानिसहरू passwords reuse गर्छन्। <strong>Time-based One-Time Passwords (TOTP)</strong> ले एउटा second factor generate गर्छ जुन हरेक ३० seconds मा बदलिन्छ — shared secret र current time बाट cryptographically derived। Attacker ले तपाईंको password चोर्यो भने पनि ६-digit code बिना login गर्न सक्दैन।</p>
+<p>नेपालमा cybersecurity awareness बढ्दो छ। Nepal Police Cyber Bureau र CERT Nepal ले account takeover attacks रिपोर्ट गर्छन् जुन weak authentication बाट हुन्छन्। यो guide मा TOTP को mathematical foundation देखि real-world attacks र best practices सम्म सबै कुरा छ — developers र security-conscious professionals दुवैका लागि।</p>
+  `,
+  sections: [
+    {
+      id: "totp-ke-ho",
+      title: "TOTP के हो? Time-Based One-Time Passwords कसरी काम गर्छन्",
+      content: `
+<p>TOTP को full form हो <strong>Time-based One-Time Password</strong>। यो <strong>RFC 6238</strong> (2011) मा defined छ, HOTP (RFC 4226) को extension हो। Core idea: shared secret key र current time प्रयोग गरेर एउटा short numeric code generate गर्नु, र दुवै sides (server र user को authenticator app) ले independently same code produce गर्नु — communicate नगरी।</p>
+
+<h3>TOTP Algorithm Step by Step</h3>
+<pre><code class="language-python">import hmac, hashlib, struct, time, base64
+
+def generate_totp(secret_base32: str, digits: int = 6, period: int = 30) -> str:
+    # Step 1: Base32 secret decode गर्नुहोस्
+    secret_bytes = base64.b32decode(secret_base32.upper())
+
+    # Step 2: T calculate गर्नुहोस् (time counter)
+    T = int(time.time()) // period
+    # Example: 1710835200 / 30 = 57027840
+
+    # Step 3: T लाई 8-byte big-endian मा pack गर्नुहोस्
+    T_bytes = struct.pack('>Q', T)
+
+    # Step 4: HMAC-SHA1 compute गर्नुहोस्
+    hmac_result = hmac.new(secret_bytes, T_bytes, hashlib.sha1).digest()
+
+    # Step 5: Dynamic Truncation
+    offset = hmac_result[-1] & 0x0F
+    code_int = struct.unpack('>I', hmac_result[offset:offset + 4])[0] & 0x7FFFFFFF
+
+    # Step 6: Modulo reduction र zero-padding
+    return str(code_int % (10 ** digits)).zfill(digits)
+</code></pre>
+
+<h3>Time Window र Validity</h3>
+<pre><code class="language-text">Current UNIX time: 1,710,835,246
+T = floor(1,710,835,246 / 30) = 57,027,841
+
+यो code valid छ: ३० seconds को लागि
+
+Servers ले T-1 (previous window) र T+1 (next window) पनि accept गर्छन्:
+- Clock skew handle गर्न
+- User को typing time को लागि
+Total effective validity: 60-90 seconds
+</code></pre>
+
+<h3>नेपाल सन्दर्भ: Cybersecurity Awareness</h3>
+<p>Nepal Rastra Bank ले financial institutions लाई 2FA mandatory गर्न directives जारी गरेको छ। नेपालका प्रमुख banks (NIC Asia, Nabil, Kumari) ले already mobile banking apps मा TOTP implement गरेका छन्। IT professionals को लागि आफ्नो GitHub, AWS, Google Workspace accounts मा TOTP enable गर्नु आवश्यक छ।</p>
+      `,
+    },
+    {
+      id: "totp-vs-others-nepali",
+      title: "TOTP vs SMS OTP vs Hardware Keys: Security Comparison",
+      content: `
+<table>
+  <thead>
+    <tr><th>Method</th><th>Phishing Resistant</th><th>SIM Swap Resistant</th><th>Works Offline</th><th>Security Level</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>SMS OTP</strong></td><td>छैन</td><td>छैन (major weakness)</td><td>Cellular signal चाहिन्छ</td><td>Weak</td></tr>
+    <tr><td><strong>TOTP (RFC 6238)</strong></td><td>Partial (relay possible)</td><td>छ</td><td>छ (offline)</td><td>Good</td></tr>
+    <tr><td><strong>FIDO2/WebAuthn Passkey</strong></td><td>छ (domain-bound)</td><td>छ</td><td>छ</td><td>Excellent</td></tr>
+    <tr><td><strong>Hardware Key (YubiKey)</strong></td><td>छ</td><td>छ</td><td>छ</td><td>Excellent</td></tr>
+  </tbody>
+</table>
+
+<h3>SMS 2FA किन Critically Weak छ</h3>
+<pre><code class="language-text">SIM Swap Attack:
+1. Attacker ले तपाईंको carrier लाई social engineering गर्छ
+   ("मेरो phone हरायो, number नयाँ SIM मा transfer गर्नुहोस्")
+2. Carrier ले तपाईंको number attacker को SIM मा transfer गर्छ
+3. Attacker ले password reset request गर्छ → SMS उसको phone मा
+4. Account fully compromised
+
+नेपालमा SIM swap cases Nepal Police Cyber Bureau ले report गरेका छन्।
+नेपाल Telecom र Ncell दुवैका users affected भएका छन्।
+</code></pre>
+      `,
+    },
+    {
+      id: "rfc-6238-nepali",
+      title: "HOTP/TOTP Standard: RFC 6238 Jargon-Free Explanation",
+      content: `
+<h3>TOTP = HOTP with Time Counter</h3>
+<pre><code class="language-python"># TOTP simply HOTP हो जहाँ counter = T
+# T = floor((current_unix_time - T0) / X)
+# T0 = Unix epoch (January 1, 1970 UTC) = 0
+# X  = time step = 30 seconds
+
+# दुवै sides लाई थाहा छ:
+# 1. Shared secret (setup मा एकपल्ट exchange भयो)
+# 2. Current time (NTP बाट synchronized)
+# त्यसैले दुवैले independently same T → same TOTP code compute गर्छन्।
+</code></pre>
+
+<h3>RFC 6238 Parameters</h3>
+<table>
+  <thead>
+    <tr><th>Parameter</th><th>RFC Default</th><th>Common Values</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Hash algorithm</td><td>HMAC-SHA1</td><td>SHA1, SHA256, SHA512</td></tr>
+    <tr><td>Time step</td><td>30 seconds</td><td>30s (universal)</td></tr>
+    <tr><td>Code digits</td><td>6</td><td>6 (universal), 8 (banks)</td></tr>
+    <tr><td>Secret length</td><td>≥128 bits</td><td>160 bits</td></tr>
+  </tbody>
+</table>
+
+<h3>Secret Key Generation र Storage</h3>
+<pre><code class="language-python">import secrets, base64
+
+# Cryptographically random 160-bit secret generate गर्नुहोस्
+secret_bytes = secrets.token_bytes(20)
+secret_b32 = base64.b32encode(secret_bytes).decode('utf-8')
+
+# SECRET लाई PLAINTEXT मा DATABASE मा STORE नगर्नुहोस्
+# AES-256-GCM वा KMS प्रयोग गर्नुहोस् (AWS KMS, HashiCorp Vault)
+</code></pre>
+      `,
+    },
+    {
+      id: "setup-platforms-nepali",
+      title: "TOTP 2FA Setup: Major Platforms मा Step-by-Step",
+      content: `
+<h3>GitHub मा TOTP Setup</h3>
+<pre><code class="language-text">1. Settings → Password and authentication → Two-factor authentication
+2. "Enable two-factor authentication" click गर्नुहोस्
+3. "Authenticator app" select गर्नुहोस्
+4. QR code scan गर्नुहोस् (Aegis/Raivo/Bitwarden बाट)
+5. 6-digit code enter गरेर verify गर्नुहोस्
+6. CRITICAL: 16 recovery codes download/copy गर्नुहोस्
+   - प्रत्येक code एकपल्ट मात्र use हुन्छ
+   - Password manager मा save गर्नुहोस् + printed copy
+</code></pre>
+
+<h3>Node.js मा TOTP Implementation</h3>
+<pre><code class="language-typescript">import * as speakeasy from 'speakeasy';
+import * as QRCode from 'qrcode';
+
+// नयाँ user को लागि secret generate गर्नुहोस्
+async function setupTOTP(userId: string, userEmail: string) {
+  const secret = speakeasy.generateSecret({
+    name: \`MyApp (\${userEmail})\`,
+    issuer: 'MyApp',
+    length: 20,
+  });
+  const qrCode = await QRCode.toDataURL(secret.otpauth_url);
+
+  // Database मा ENCRYPTED secret store गर्नुहोस्
+  await db.users.update(userId, {
+    totpSecretEncrypted: await encryptSecret(secret.base32),
+    totpEnabled: false,
+  });
+  return { secret: secret.base32, qrCode };
+}
+
+// Login मा TOTP validate गर्नुहोस्
+async function validateTOTP(userId: string, token: string) {
+  const user = await db.users.findById(userId);
+  const secret = await decryptSecret(user.totpSecretEncrypted);
+  return speakeasy.totp.verify({
+    secret, encoding: 'base32', token, window: 1
+  });
+}
+</code></pre>
+      `,
+    },
+    {
+      id: "device-loss-nepali",
+      title: "TOTP Device हरायो भने के गर्ने: Recovery Planning",
+      content: `
+<h3>Tier 1: Backup Codes (अनिवार्य छ)</h3>
+<pre><code class="language-text">Backup codes store गर्ने best practices:
+✓ Password manager मा secure note मा
+✓ Print गरेर physical safe मा
+✓ Multiple geographic locations मा
+
+कहिल्यै नगर्नुहोस्:
+✗ Same device मा screenshot
+✗ Email गरेर आफैंलाई
+✗ Unencrypted notes मा
+
+Backup code use गरेपछि:
+1. Code बाट login गर्नुहोस्
+2. TOTP disable गर्नुहोस्
+3. नयाँ device मा re-enroll गर्नुहोस्
+4. नयाँ backup codes generate र save गर्नुहोस्
+</code></pre>
+
+<h3>Authenticator Apps Comparison</h3>
+<table>
+  <thead>
+    <tr><th>App</th><th>Platform</th><th>Open Source</th><th>Cloud Backup</th><th>Export</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Aegis</strong></td><td>Android only</td><td>छ (GPL-3)</td><td>Self-managed encrypted</td><td>छ</td></tr>
+    <tr><td><strong>Raivo OTP</strong></td><td>iOS only</td><td>छ (MIT)</td><td>iCloud (E2E encrypted)</td><td>छ</td></tr>
+    <tr><td><strong>Bitwarden</strong></td><td>All platforms</td><td>छ (AGPL)</td><td>Bitwarden cloud</td><td>छ</td></tr>
+    <tr><td><strong>Authy</strong></td><td>All platforms</td><td>छैन</td><td>Authy cloud</td><td>छैन (lock-in!)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout callout-warning">
+  <strong>WARNING:</strong> Google Authenticator को cloud sync (2023 मा add भयो) end-to-end ENCRYPT गर्दैन। Google ले technically access गर्न सक्छ। Aegis वा Raivo प्रयोग गर्नुहोस् E2E encryption को लागि।
+</div>
+      `,
+    },
+    {
+      id: "security-risks-nepali",
+      title: "TOTP का Security Risks: Phishing, SIM Swap र Mitigation",
+      content: `
+<h3>Attack 1: Real-Time Phishing (सबभन्दा खतरनाक)</h3>
+<pre><code class="language-text">Real-Time TOTP Relay Attack:
+
+[User] → [Attacker को fake site] → [Real site]
+
+1. User fake login page visit गर्छ
+2. Username + password enter गर्छ
+3. Attacker ले credentials real site लाई relay गर्छ
+4. Real site: "2FA code enter गर्नुहोस्"
+5. Fake site: "6-digit code enter गर्नुहोस्"
+6. User TOTP code enter गर्छ
+7. Attacker ले code seconds मा real site मा relay गर्छ
+8. Attacker full session access पाउँछ
+
+TOTP मा domain binding छैन — यही यसको limitation हो।
+Passkeys (FIDO2) ले यो attack impossible बनाउँछ।
+</code></pre>
+
+<h3>नेपालमा Phishing Attacks</h3>
+<p>Nepal Rastra Bank र CERT Nepal ले नेपाली banks र digital wallets (eSewa, Khalti, IME Pay) मा phishing attacks रिपोर्ट गरेका छन्। Real-time relay attacks sophisticated attackers गर्छन् — SMS OTP बाट TOTP मा upgrade गर्नु महत्वपूर्ण improvement हो, तर passkeys अझ राम्रो छन् जहाँ available छन्।</p>
+
+<h3>Attack 2: Device मा Malware</h3>
+<pre><code class="language-text">Device मा malware भए attacker:
+1. Authenticator app को storage बाट TOTP secret read गर्न सक्छ
+   (rooted/jailbroken devices मा)
+2. Screen/clipboard बाट TOTP code read गर्न सक्छ
+
+Mitigation:
+- Primary authenticator device root/jailbreak नगर्नुहोस्
+- Biometric/PIN required app प्रयोग गर्नुहोस् (Aegis)
+- Hardware security keys (device-level malware affected गर्दैन)
+</code></pre>
+      `,
+    },
+    {
+      id: "best-practices-nepali",
+      title: "TOTP Best Practices: Backup Codes, Multiple Devices र App Recommendations",
+      content: `
+<h3>Individual Users को लागि Checklist</h3>
+<pre><code class="language-text">TOTP enable गर्नु अघि:
+  □ Authenticator app choose गर्नुहोस्
+    (Android: Aegis, iOS: Raivo, Cross-platform: Bitwarden)
+  □ Backup codes कहाँ store गर्ने decide गर्नुहोस्
+  □ Device loss को plan ready राख्नुहोस्
+
+Setup को बेला:
+  □ Primary device मा QR scan गर्नुहोस्
+  □ Optional: secondary device मा पनि same QR scan गर्नुहोस्
+  □ Code verify गरेर setup finalize गर्नुहोस्
+  □ सबै backup codes तुरुन्त save गर्नुहोस्
+  □ Password manager + physical printed copy
+
+Ongoing:
+  □ Backup codes update गर्नुहोस् (एउटा use भएपछि regenerate)
+  □ वार्षिक recovery test गर्नुहोस्
+  □ TOTP code SMS/email/phone call बाट share नगर्नुहोस् — fraud हो
+</code></pre>
+
+<h3>Developers को लागि Implementation</h3>
+<pre><code class="language-typescript">// Rate limiting — brute force prevent गर्नुहोस्
+const rateLimiter = rateLimit({
+  windowMs: 30 * 1000,
+  max: 3,
+  skipSuccessfulRequests: true,
+});
+
+// Token reuse prevention
+async function markTokenUsed(userId: string, token: string, T: number) {
+  const key = \`totp:used:\${userId}:\${T}:\${token}\`;
+  const existed = await redis.set(key, '1', 'EX', 90, 'NX');
+  if (!existed) throw new Error('Token already used');
+}
+
+// Timing-safe comparison
+import { timingSafeEqual } from 'crypto';
+function safeCompare(a: string, b: string): boolean {
+  const bufA = Buffer.from(a); const bufB = Buffer.from(b);
+  if (bufA.length !== bufB.length) return false;
+  return timingSafeEqual(bufA, bufB);
+}
+</code></pre>
+
+<h3>नेपाल IT Organizations को लागि Policy</h3>
+<pre><code class="language-text">Developer teams को लागि recommended:
+
+□ Production access भएका सबै accounts मा TOTP mandatory गर्नुहोस्
+  (AWS, GitHub, GCP, Cloudflare)
+
+□ SMS 2FA production system access को लागि कहिल्यै allow नगर्नुहोस्
+
+□ Hardware keys (YubiKey) प्रयोग गर्नुहोस्:
+  - Domain registrar accounts
+  - DNS provider accounts
+  - Certificate authority accounts
+
+□ Team password manager मा backup codes store गर्नुहोस्
+
+□ Quarterly audit:
+  - कुन accounts मा 2FA enabled छ?
+  - कोही SMS 2FA प्रयोग गर्दैछ?
+</code></pre>
+      `,
+    },
+  ],
+  howToSteps: [
+    {
+      title: "TOTP secret generate वा enter गर्नुहोस्",
+      description: "TOTP 2FA Generator बाट new random Base32 secret create गर्नुहोस्, वा existing secret enter गरेर test गर्नुहोस्। Tool ले default मा cryptographically secure 160-bit secret generate गर्छ।",
+    },
+    {
+      title: "QR code authenticator app बाट scan गर्नुहोस्",
+      description: "Aegis, Raivo, Bitwarden वा Google Authenticator बाट QR code scan गर्नुहोस्। App ले secret store गर्छ र 6-digit codes generate गर्न start गर्छ।",
+    },
+    {
+      title: "Current TOTP code verify गर्नुहोस्",
+      description: "Tool ले current 6-digit TOTP code र countdown timer show गर्छ। Verify गर्नुहोस् कि यो तपाईंको authenticator app सँग match गर्छ।",
+    },
+    {
+      title: "Time window note गर्नुहोस्",
+      description: "Validity window check गर्नुहोस् — code ३० seconds valid हुन्छ। Servers ले T-1 र T+1 पनि accept गर्छन्, effectively ९० seconds validity।",
+    },
+    {
+      title: "Different algorithms test गर्नुहोस्",
+      description: "Advanced users ले SHA-256 वा SHA-512, वा 8-digit codes test गर्न सक्छन्। Most services ले default SHA-1/6-digit configuration प्रयोग गर्छन्।",
+    },
+    {
+      title: "Backup codes save गर्नुहोस्",
+      description: "Real accounts मा TOTP enable गर्दा, service को backup codes तुरुन्त save गर्नुहोस्। Password manager मा store गर्नुहोस् र optionally print गर्नुहोस्।",
+    },
+  ],
+  faqs: [
+    {
+      question: "TOTP ले communicate नगरी दुवै sides मा same code कसरी generate गर्छ?",
+      answer: "दुवै sides ले एउटै shared secret key share गर्छन् (setup मा QR code बाट exchange भयो) र current time थाहा छ। TOTP ले HMAC-SHA1(secret, floor(current_time / 30)) apply गर्छ एउटा deterministic code produce गर्न। Same inputs → same output — कुनै communication चाहिँदैन। यही TOTP को cryptographic magic हो: shared secret + synchronized clocks = synchronized codes।",
+    },
+    {
+      question: "TOTP 2026 मा safe छ? Passkeys प्रयोग गर्नुपर्छ?",
+      answer: "TOTP password-only login भन्दा significantly बढी secure छ र SMS OTP भन्दा धेरै secure। तर TOTP phishing-resistant छैन — real-time relay attacks ले TOTP codes passwords सँगै चोर्न सक्छन्। Passkeys (FIDO2/WebAuthn) phishing-resistant छन् किनभने cryptographically domain-bound छन्। 2026 मा: passkeys जहाँ available छन् (Google, GitHub, Apple, Microsoft) प्रयोग गर्नुहोस्; अरू ठाउँमा TOTP। SMS OTP sensitive accounts को लागि कहिल्यै नप्रयोग गर्नुहोस्।",
+    },
+    {
+      question: "Phone को clock गलत भए के हुन्छ?",
+      answer: "Phone को clock significantly गलत भए TOTP codes server को codes सँग match हुँदैन। Most servers ले T-1 र T+1 (±30 seconds) accept गर्छन् minor clock skew को लागि। 90 seconds भन्दा बढी off clock ले authentication failures cause गर्छ। Fix: device मा automatic time sync (NTP) enable गर्नुहोस्। Android: Settings → General management → Date and time → Automatic date and time ON।",
+    },
+    {
+      question: "TOTP codes brute-force हुन सक्छन्?",
+      answer: "Theoretically, केवल 10 लाख (1,000,000) possible 6-digit codes छन्। तर servers ले rate limiting enforce गर्छन् — typically 3 attempts per 30-second window। त्यो rate मा average code brute-force गर्न हजारौं वर्ष लाग्छ। Plus account lockout after repeated failures। Proper server-side rate limiting सँग TOTP brute force practically infeasible छ।",
+    },
+    {
+      question: "Authy किन प्रयोग नगर्नु?",
+      answer: "Authy का main drawbacks: (1) Export छैन — TOTP secrets Authy बाट export गर्न सकिँदैन। App switch गर्न सबै accounts manually re-enroll गर्नुपर्छ। (2) Proprietary closed-source backup। (3) Linux को लागि desktop app छैन। Alternatives: Aegis (Android, open source, fully exportable), Raivo (iOS, open source, iCloud E2E encrypted), Bitwarden (cross-platform, open source, full export/import)।",
+    },
+    {
+      question: "नेपालमा 2FA कहाँ-कहाँ enable गर्नु जरुरी छ?",
+      answer: "Priority order: (1) Email account (Gmail/Outlook) — सबैभन्दा महत्वपूर्ण, यो compromise भए सबै password resets जान्छन्। (2) Domain registrar (Namecheap, GoDaddy) र DNS provider। (3) Cloud platforms (AWS, GCP, Azure) — financial impact ठूलो हुन सक्छ। (4) Code repositories (GitHub, GitLab). (5) Digital wallets (eSewa, Khalti) — यदि 2FA available छ। (6) Social media र professional accounts।",
+    },
+  ],
+  relatedGuides: ["password-generator-guide", "hash-generator-guide", "base64-encode-decode-guide"],
+  toolCTA: {
+    heading: "TOTP Codes अहिलेनै Generate र Test गर्नुहोस्",
+    description: "Secure TOTP secret generate गर्नुहोस्, QR code scan गर्नुहोस् र real-time 6-digit codes verify गर्नुहोस्। SHA-1, SHA-256, SHA-512 test गर्नुहोस्। निःशुल्क, server मा कुनै storage छैन।",
+    buttonText: "TOTP 2FA Generator खोल्नुहोस्",
+  },
+},
+
+{
+  slug: 'upi-id-validator-guide',
+  toolSlug: 'upi-id-validator',
+  category: 'utility-tools',
+  title: 'UPI ID Validator: UPI ID Format, Handles, Security र Validation को पूर्ण गाइड 2026',
+  subtitle: 'UPI ID को structure बुझ्नुहोस्, कुनै पनि VPA format verify गर्नुहोस्, र कुन handle कुन bank को हो जान्नुहोस्।',
+  metaTitle: 'UPI ID Validator — UPI ID Format र Handles Online जाँच 2026',
+  metaDescription: 'कुनै पनि UPI ID को format तुरुन्त validate गर्नुहोस्। UPI VPA structure, 50+ bank handles, transaction limits, र UPI security facts 2026 मा जान्नुहोस्।',
+  targetKeyword: 'UPI ID जाँच',
+  secondaryKeywords: [
+    'UPI ID format check Nepali',
+    'UPI VPA validator',
+    'UPI handle list India',
+    'UPI ID kasari validate garne',
+    'UPI ID structure Nepali ma',
+    'Google Pay UPI handle',
+    'PhonePe UPI handle',
+    'UPI transaction limit 2026',
+    'UPI ID share garna safe cha',
+    'Nepal digital payment',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '9 min read',
+  tags: ['UPI', 'Digital Payment', 'India', 'Validation'],
+  intro: `<p>भारतको Unified Payments Interface ले 30 करोड़ भन्दा बढी मानिसहरूको पैसा पठाउने र receive गर्ने तरिका बदलिसकेको छ। हरेक UPI transaction को केन्द्रमा हुन्छ <strong>UPI ID</strong> — जसलाई <strong>Virtual Payment Address (VPA)</strong> पनि भनिन्छ — एउटा simple text identifier जस्तै <code>rahul.sharma@okicici</code> वा <code>9876543210@paytm</code> जसले पैसालाई सही bank account तर्फ route गर्छ। नेपाल-India remittance र व्यापारमा पनि UPI increasingly use भइरहेको छ, र नेपालीहरूका लागि भारतीय UPI IDs validate गर्न सक्नु महत्त्वपूर्ण छ।</p>
+<p>यस guide मा हामी बताउनेछौं कि <strong>UPI ID validator</strong> कसरी काम गर्छ, UPI ID को format के हो, कुन handles कुन banks का हुन्, Google Pay, PhonePe र Paytm handles मा के फरक छ, UPI ID share गर्नु safe छ कि छैन, 2026 मा transaction limits के छन्, र "Unknown Handle" error को के अर्थ हो र के गर्ने।</p>`,
+  sections: [
+    {
+      id: 'upi-id-ke-ho-ne',
+      title: 'UPI ID (VPA) के हो र यो कसरी काम गर्छ?',
+      content: `<h3>UPI IDs को जादू</h3>
+<p>UPI लाई National Payments Corporation of India (NPCI) ले 2016 मा launch गर्यो। UPI भन्दा पहिले कसैलाई पैसा पठाउन bank account number, branch, र IFSC code चाहिन्थ्यो। UPI ले यो सबलाई एउटा simple Virtual Payment Address ले replace गर्यो।</p>
+<p><strong>VPA (Virtual Payment Address)</strong> — commonly UPI ID — essentially तपाईंको bank account को alias हो। तपाईं UPI ID create गर्दा, NPCI ले त्यो ID लाई तपाईंको bank account details सँग securely map गर्छ।</p>
+
+<h3>नेपाल-India सन्दर्भमा UPI</h3>
+<p>नेपालमा आफ्नै real-time payment systems छन् — ConnectIPS, fonePay, र mobile banking। तर नेपाली व्यापारीहरू जो भारतमा काम गर्छन् वा भारतीय clients सँग काम गर्छन्, उनीहरूका लागि Indian UPI IDs validate गर्न सक्नु महत्त्वपूर्ण छ।</p>
+
+<div class="callout-info">
+<strong>Key Point:</strong> '@' पछिको handle (जस्तै "okaxis", "paytm", "ybl") ले NPCI लाई बताउँछ कि कुन PSP bank ले VPA manage गर्छ। Invalid वा unknown handle भयो भने payment route हुन सक्दैन।
+</div>
+
+<table>
+  <thead>
+    <tr><th>UPI Feature</th><th>Detail</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Full form of UPI</td><td>Unified Payments Interface</td></tr>
+    <tr><td>Full form of VPA</td><td>Virtual Payment Address</td></tr>
+    <tr><td>Launch organization</td><td>NPCI (National Payments Corporation of India)</td></tr>
+    <tr><td>Launch year</td><td>2016</td></tr>
+    <tr><td>Settlement time</td><td>Real-time (10–30 seconds)</td></tr>
+    <tr><td>24x7 available</td><td>हो, bank holidays मा पनि</td></tr>
+    <tr><td>Maximum single transaction</td><td>₹1 lakh (most banks)</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'upi-format-rules-ne',
+      title: 'UPI ID को Anatomy: Format Rules को Explanation',
+      content: `<h3>Basic Structure</h3>
+<p>UPI ID को format हो: <strong>username@handle</strong></p>
+<ul>
+  <li><strong>username</strong> — '@' भन्दा पहिलेको user-defined part</li>
+  <li><strong>@</strong> — mandatory separator</li>
+  <li><strong>handle</strong> — '@' पछिको PSP identifier</li>
+</ul>
+
+<h3>Username Rules</h3>
+<table>
+  <thead>
+    <tr><th>Rule</th><th>Detail</th><th>Valid Example</th><th>Invalid Example</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Allowed characters</td><td>Alphanumeric, dot (.), hyphen (-), underscore (_)</td><td>rahul.kumar</td><td>rahul kumar (space)</td></tr>
+    <tr><td>Minimum length</td><td>3 characters</td><td>raj</td><td>rj</td></tr>
+    <tr><td>Start/end restriction</td><td>'.', '-', '_' बाट सुरु वा end हुन सक्दैन</td><td>rahul.sharma</td><td>.rahul वा rahul.</td></tr>
+    <tr><td>Case sensitivity</td><td>UPI IDs case-insensitive हुन्छन्</td><td>RAHUL@okaxis = rahul@okaxis</td><td>N/A</td></tr>
+    <tr><td>Consecutive special chars</td><td>Double dots, double hyphens छैन</td><td>ram.lal</td><td>ram..lal</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-warning">
+<strong>Handle Spoofing Alert:</strong> Scammers ले real handles जस्तै look-alike fake handles बनाउँछन् — जस्तै "okicic1" ('i' को सट्टा '1') वा "paytms" (extra 's')। सधैं handle लाई known list सँग validate गर्नुहोस्।
+</div>`,
+    },
+    {
+      id: 'upi-handles-ne',
+      title: '50+ UPI Handles र Bank Names को पूरा List',
+      content: `<h3>Complete UPI Handle Directory</h3>
+<p>हरेक UPI handle NPCI सँग registered छ। 2026 सम्म active UPI handles र उनका banks/PSPs:</p>
+
+<table>
+  <thead>
+    <tr><th>UPI Handle</th><th>Bank / PSP</th><th>Handle</th><th>Bank / PSP</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>@okicici</td><td>ICICI Bank (Google Pay)</td><td>@idfcbank</td><td>IDFC First Bank</td></tr>
+    <tr><td>@okhdfcbank</td><td>HDFC Bank (Google Pay)</td><td>@kotak</td><td>Kotak Mahindra Bank</td></tr>
+    <tr><td>@okaxis</td><td>Axis Bank (Google Pay)</td><td>@airtel</td><td>Airtel Payments Bank</td></tr>
+    <tr><td>@oksbi</td><td>SBI (Google Pay)</td><td>@bob</td><td>Bank of Baroda</td></tr>
+    <tr><td>@ybl</td><td>Yes Bank (PhonePe)</td><td>@boi</td><td>Bank of India</td></tr>
+    <tr><td>@ibl</td><td>IndusInd Bank (PhonePe)</td><td>@pnb</td><td>Punjab National Bank</td></tr>
+    <tr><td>@axl</td><td>Axis Bank (PhonePe)</td><td>@cnrb</td><td>Canara Bank</td></tr>
+    <tr><td>@paytm</td><td>Paytm Payments Bank</td><td>@sib</td><td>South Indian Bank</td></tr>
+    <tr><td>@apl</td><td>Amazon Pay</td><td>@federal</td><td>Federal Bank</td></tr>
+    <tr><td>@icici</td><td>ICICI Bank (native)</td><td>@rbl</td><td>RBL Bank</td></tr>
+    <tr><td>@hdfcbank</td><td>HDFC Bank (native)</td><td>@fino</td><td>Fino Payments Bank</td></tr>
+    <tr><td>@sbi</td><td>SBI (native)</td><td>@nsdl</td><td>NSDL Payments Bank</td></tr>
+    <tr><td>@axisbank</td><td>Axis Bank (native)</td><td>@ubi</td><td>Union Bank of India</td></tr>
+    <tr><td>@upi</td><td>BHIM UPI (generic)</td><td>@hsbc</td><td>HSBC India</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+<strong>Bank Mergers Note:</strong> केही handles जस्तै @corporation र @dena legacy mode मा काम गर्न सक्छन्, यद्यपि ती banks merge भइसकेका छन्। ती handles मा नयाँ UPI IDs generally बनाइँदैनन्।
+</div>`,
+    },
+    {
+      id: 'gpay-phonepe-paytm-ne',
+      title: 'Google Pay, PhonePe र Paytm Handles — के फरक छ?',
+      content: `<h3>यी Apps का Multiple Handles किन हुन्छन्?</h3>
+<p>Google Pay, PhonePe, र Paytm Payment Service Providers (PSPs) हुन् — banks होइनन्। UPI transactions route गर्न उनीहरूलाई bank को UPI infrastructure सँग partner गर्नु पर्छ।</p>
+
+<h3>Google Pay (GPay) Handles</h3>
+<table>
+  <thead>
+    <tr><th>Handle</th><th>Partner Bank</th><th>कहिले Issue हुन्छ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>@okicici</td><td>ICICI Bank</td><td>Primary handle; धेरैजसो Google Pay IDs</td></tr>
+    <tr><td>@okhdfcbank</td><td>HDFC Bank</td><td>ICICI capacity full भएपछि</td></tr>
+    <tr><td>@okaxis</td><td>Axis Bank</td><td>Third partner bank</td></tr>
+    <tr><td>@oksbi</td><td>SBI</td><td>पछि add; केही newer GPay accounts</td></tr>
+  </tbody>
+</table>
+
+<h3>PhonePe Handles</h3>
+<table>
+  <thead>
+    <tr><th>Handle</th><th>Partner Bank</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>@ybl</td><td>Yes Bank Limited</td><td>Original PhonePe handle; सबैभन्दा common</td></tr>
+    <tr><td>@ibl</td><td>IndusInd Bank Limited</td><td>Yes Bank crisis पछि diversify का लागि add</td></tr>
+    <tr><td>@axl</td><td>Axis Bank Limited</td><td>Newest PhonePe handle</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-tip">
+<strong>कुन Handle "Best" हो?</strong> Payment success rate मा handles बिच meaningful difference छैन — सबैले same NPCI backbone use गर्छन्। Business payments का लागि native bank handle (जस्तै @hdfcbank) बढी professional देखिन्छ।
+</div>`,
+    },
+    {
+      id: 'upi-safe-ne',
+      title: 'UPI ID Share गर्नु Safe छ? Privacy र Security Facts',
+      content: `<h3>Short Answer: हो, UPI ID Share गर्नु Safe छ</h3>
+<p>तपाईंको UPI ID (VPA) share गर्नका लागि नै designed हो। जब कसैसँग तपाईंको UPI ID छ, उनीहरूले तपाईंलाई पैसा मात्र <em>पठाउन</em> सक्छन्। उनीहरूले पैसा withdraw गर्न, account access गर्न, वा balance हेर्न सक्दैनन्।</p>
+
+<h3>UPI ID जानेपछि कसैले के गर्न सक्छ</h3>
+<ul>
+  <li>तपाईंलाई पैसा पठाउन सक्छ</li>
+  <li>UPI ID registered छ भनी हेर्न सक्छ (partial name मात्र देखिन्छ)</li>
+  <li>Payment collection request पठाउन सक्छ (जो तपाईंले approve गर्नुपर्छ)</li>
+</ul>
+
+<h3>UPI ID जानेर कसैले के गर्न सक्दैन</h3>
+<ul>
+  <li>तपाईंको account बाट पैसा withdraw गर्न सक्दैन</li>
+  <li>Bank account details हेर्न सक्दैन</li>
+  <li>UPI PIN बिना debit गर्न सक्दैन</li>
+</ul>
+
+<div class="callout-info">
+<strong>PIN Sacred छ:</strong> तपाईंको UPI PIN (4 वा 6 digits) मात्र outgoing payment authorize गर्ने तरिका हो। UPI PIN कहिल्यै कसैसँग share नगर्नुहोस् — bank representatives लाई पनि होइन। Bank ले कहिल्यै UPI PIN माग्दैन।
+</div>
+
+<h3>UPI IDs प्रयोग गरेर Real Scams</h3>
+<ol>
+  <li><strong>Fake payment screenshots:</strong> Screenshot देखाएर payment भएको claim — actually edited screenshot।</li>
+  <li><strong>QR code confusion:</strong> "पैसा receive गर्न scan गर्नुहोस्" — scan गरेर PIN enter गर्दा actually payment जान्छ।</li>
+  <li><strong>Collection request fraud:</strong> "Refund का लागि request approve गर्नुहोस्" — approve गर्दा तपाईंले पैसा पठाउनुहुन्छ, receive गर्नुहुन्न।</li>
+</ol>
+
+<div class="callout-warning">
+<strong>Golden Rule:</strong> UPI मा तपाईं PIN तब मात्र enter गर्नुहुन्छ जब तपाईं पैसा SEND गर्दै हुनुहुन्छ। कसैले पैसा RECEIVE गर्न PIN enter गर्न भन्यो भने — यो 100% scam हो।
+</div>`,
+    },
+    {
+      id: 'upi-limits-ne',
+      title: 'UPI Transaction Limits by Bank in 2026',
+      content: `<h3>UPI Transaction Limits बुझ्नुहोस्</h3>
+
+<h3>NPCI General Limits</h3>
+<table>
+  <thead>
+    <tr><th>Transaction Type</th><th>Per Transaction Limit</th><th>Daily Limit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Standard UPI (P2P)</td><td>₹1,00,000</td><td>₹1,00,000</td></tr>
+    <tr><td>Capital Markets / IPO</td><td>₹5,00,000</td><td>₹5,00,000</td></tr>
+    <tr><td>Medical / Education</td><td>₹5,00,000</td><td>₹5,00,000</td></tr>
+    <tr><td>UPI Lite</td><td>₹500</td><td>₹2,000</td></tr>
+  </tbody>
+</table>
+
+<h3>Bank-Specific Limits (2026)</h3>
+<table>
+  <thead>
+    <tr><th>Bank</th><th>Per Transaction</th><th>Daily Limit</th><th>Daily Count</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SBI</td><td>₹1,00,000</td><td>₹1,00,000</td><td>10</td></tr>
+    <tr><td>HDFC Bank</td><td>₹1,00,000</td><td>₹1,00,000</td><td>20</td></tr>
+    <tr><td>ICICI Bank</td><td>₹1,00,000</td><td>₹1,00,000</td><td>20</td></tr>
+    <tr><td>Axis Bank</td><td>₹1,00,000</td><td>₹1,00,000</td><td>20</td></tr>
+    <tr><td>Yes Bank</td><td>₹1,00,000</td><td>₹1,00,000</td><td>10</td></tr>
+    <tr><td>IndusInd Bank</td><td>₹1,00,000</td><td>₹1,00,000</td><td>10</td></tr>
+    <tr><td>Punjab National Bank</td><td>₹1,00,000</td><td>₹1,00,000</td><td>10</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+<strong>Note:</strong> ₹1 lakh भन्दा माथिको transfers का लागि banking app बाट NEFT वा RTGS use गर्नुहोस्। Banks ले limits update गर्न सक्छन्।
+</div>`,
+    },
+    {
+      id: 'unknown-handle-ne',
+      title: '"Unknown Handle" को के अर्थ हो र के गर्ने?',
+      content: `<h3>Error किन आउँछ?</h3>
+<p>"Unknown Handle" भन्नाले '@' पछिको part एउटा active, NPCI-registered PSP handle को रूपमा recognize हुँदैन।</p>
+
+<h3>Cause 1: Handle मा Typo</h3>
+<ul>
+  <li><code>name@okicic</code> ('okicici' को final 'i' missing)</li>
+  <li><code>name@paytms</code> (extra 's')</li>
+  <li><code>name@phonepe</code> (PhonePe को @phonepe handle छैन — @ybl, @ibl, @axl use हुन्छ)</li>
+  <li><code>name@gpay</code> (Google Pay @gpay use गर्दैन)</li>
+</ul>
+
+<h3>Cause 2: Deactivated वा Merged Bank Handle</h3>
+<p>Banks merge हुँदा (जस्तै Dena Bank → Bank of Baroda) पुराना handles deactivate हुन सक्छन्।</p>
+
+<h3>Cause 3: Fraud Risk Handle</h3>
+<p>Made-up handle भएको UPI ID — fraud attempts मा common। Known active list सँग cross-check गर्नुहोस्।</p>
+
+<div class="callout-tip">
+<strong>के गर्ने:</strong>
+<ol>
+  <li>Payee लाई उनको payment app settings बाट UPI ID verify गर्न भन्नुहोस्</li>
+  <li>Check गर्नुहोस्: Google Pay (@ok*), PhonePe (@ybl/@ibl/@axl), Paytm (@paytm)</li>
+  <li>₹1 पठाएर try गर्नुहोस् — successful भयो भने ID valid छ</li>
+  <li>Business payments का लागि QR code generate गर्न भन्नुहोस्</li>
+</ol>
+</div>
+
+<div class="callout-warning">
+<strong>Scam Alert:</strong> Unknown handle भएको UPI ID बाट urgency सँग payment request आयो भने यो high fraud risk हो। Verify गर्नुहोस् — legitimate requests मा urgency हुँदैन।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'UPI ID Enter गर्नुहोस्',
+      description: 'Complete UPI ID (जस्तै name@handle) validator field मा type गर्नुहोस्। Username र handle दुवै parts check हुन्छन्।',
+    },
+    {
+      title: 'Validate UPI ID Click गर्नुहोस्',
+      description: '"Validate UPI ID" button press गर्नुहोस्। Tool ले check गर्छ: format compliance, "@" separator, र handle NPCI-registered list मा छ कि छैन।',
+    },
+    {
+      title: 'Validation Result Review गर्नुहोस्',
+      description: 'Tool ले देखाउँछ: format structurally valid छ, handle recognized छ (bank/PSP name सहित), र specific format errors छन् भने ती।',
+    },
+    {
+      title: 'Handle Identity Cross-Check गर्नुहोस्',
+      description: 'Handle payee को claimed PSP सँग match गर्छ कि छैन confirm गर्नुहोस्। PhonePe user सँग @ybl, @ibl, वा @axl हुनुपर्छ।',
+    },
+    {
+      title: '₹1 Test Transfer गर्नुहोस्',
+      description: 'नयाँ payees वा business payments का लागि पहिले ₹1 पठाउनुहोस्। Successful transfer ले UPI ID live र routable छ भनी confirm गर्छ।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'के UPI ID जानेर कसैले मेरो account बाट पैसा चोर्न सक्छ?',
+      answer: 'हुँदैन। UPI ID जानेर कसैले तपाईंलाई पैसा पठाउन मात्र सक्छ। तपाईंको account बाट पैसा transfer गर्न UPI PIN चाहिन्छ — एउटा secret 4 वा 6-digit code जो केवल तपाईंलाई थाहा छ। PIN कहिल्यै कसैसँग share नगर्नुहोस्।',
+    },
+    {
+      question: 'Google Pay किन @okicici जस्ता handles use गर्छ, @googlepay किन होइन?',
+      answer: 'Google Pay एउटा Payment Service Provider हो, bank होइन। यसले आफैं UPI handles issue गर्न सक्दैन — bank को UPI infrastructure सँग partner गर्नुपर्छ। Google Pay ले ICICI Bank (@okicici), HDFC Bank (@okhdfcbank), Axis Bank (@okaxis), र SBI (@oksbi) सँग partnership गरेको छ।',
+    },
+    {
+      question: 'PhonePe को @ybl ID मा Yes Bank crisis को के असर छ?',
+      answer: 'Yes Bank 2020 मा moratorium मा थियो तर SBI-led consortium ले rescue गर्यो। @ybl handles fully functional छन्। PhonePe ले additionally @ibl र @axl add गरेको छ। तपाईंको PhonePe ID — @ybl, @ibl, वा @axl — पूर्णतः functional छ।',
+    },
+    {
+      question: 'UPI Lite के हो र regular UPI बाट कसरी फरक छ?',
+      answer: 'UPI Lite ₹500 सम्मको small-value transactions का लागि हो। यो pre-loaded wallet (max ₹2,000) बाट operate हुन्छ र हरेक transaction का लागि UPI PIN चाहिँदैन — faster हुन्छ। Handle/VPA structure same छ।',
+    },
+    {
+      question: 'के same username को दुई UPI IDs अलग handles मा हुन सक्छन्?',
+      answer: 'हो। "rahul@okicici" र "rahul@paytm" दुई completely different UPI IDs हुन्। Full UPI ID (username + @ + handle) unique identifier हो। यसैले सधैं complete UPI ID share गर्नुहोस्, username मात्र होइन।',
+    },
+    {
+      question: 'मसँग कतिवटा UPI IDs हुन सक्छन्?',
+      answer: 'तपाईंसँग multiple UPI IDs हुन सक्छन् — typically एउटा per app (Google Pay, PhonePe, Paytm) र एउटा bank को native app बाट। सबै IDs एउटै bank account सँग linked हुन सक्छन्। 3–4 UPI IDs राख्नु perfectly fine हो।',
+    },
+    {
+      question: 'गल्तीले अर्कै valid UPI ID मा पैसा पठाए भने के हुन्छ?',
+      answer: 'UPI transfer automatically reverse हुँदैन। तुरुन्त आफ्नो bank सँग contact गर्नुहोस् र dispute raise गर्नुहोस्। Refund guaranteed छैन यदि recipient cooperate नगरेमा। यसैले large amounts का लागि UPI ID verify गर्नु critical छ।',
+    },
+    {
+      question: 'के visiting card वा website मा UPI ID print गर्नु safe छ?',
+      answer: 'हो, completely safe। UPI ID public हुनका लागि designed हो — यो address हो, credential होइन। Visiting card, website, वा invoice मा print गर्दा customers ले conveniently pay गर्न सक्छन्। UPI ID accurate छ भनी हाम्रो tool बाट validate गर्नुहोस्।',
+    },
+  ],
+  relatedGuides: ['emi-calculator-guide', 'salary-calculator-guide', 'loan-calculator-guide'],
+  toolCTA: {
+    heading: 'कुनै पनि UPI ID को Format अहिले Validate गर्नुहोस् — Free',
+    description: 'ToolsArena को UPI ID Validator बाट कुनै पनि VPA को format र handle 50+ known bank handles सँग verify गर्नुहोस्। Zero data stored, offline काम गर्छ।',
+    buttonText: 'UPI ID Validate गर्नुहोस्',
+  },
+},
+
+{
+  slug: 'vehicle-number-plate-info-guide',
+  toolSlug: 'vehicle-number-plate-info',
+  category: 'utility-tools',
+  title: 'सवारी नम्बर प्लेट जानकारी — सम्पूर्ण गाइड',
+  subtitle: 'जुनसुकै Indian सवारी नम्बर decode गर्नुहोस् — State, RTO, BH Series, EV Plate र RC Check',
+  metaTitle: 'सवारी नम्बर प्लेट जानकारी India — Registration Number Decode गर्नुहोस्',
+  metaDescription: 'जुनसुकै Indian सवारी नम्बर प्लेट decode गर्नुहोस्। State, RTO, BH series, EV plate, RC online check — सबै एकै ठाउँ। नि:शुल्क गाइड।',
+  targetKeyword: 'सवारी नम्बर प्लेट जानकारी',
+  secondaryKeywords: [
+    'India vehicle number plate decode',
+    'RTO code Nepal India',
+    'BH series number plate Nepal',
+    'gaadi RC online check',
+    'Nepal vehicle number plate Ba',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१२ मिनेट',
+  tags: ['Vehicle', 'Number Plate', 'RTO', 'BH Series', 'Nepal', 'Nepali'],
+  intro: `<p>भारतमा हरेक सवारीसाधनको registration number केवल random letters र numbers मात्र होइन — त्यसमा state, RTO district र registration year को पूरा जानकारी encoded हुन्छ। यो बुझ्नसके जुनसुकै सवारीको नम्बर प्लेट हेरेर तुरुन्त थाहा हुन्छ कि त्यो कुन राज्यको हो र कुन RTO मा दर्ता भएको छ। धेरै नेपाली नागरिकहरू भारतमा काम गर्छन् वा भारत यात्रा गर्छन् — यो जानकारी उनीहरूका लागि पनि उपयोगी छ।</p>
+<p>नेपालको आफ्नै सवारी नम्बर प्रणाली छ — जस्तै <strong>Ba 1, Ba 2, Ga 1</strong> आदि — जुन भारतको प्रणालीभन्दा फरक छ। यो guide मा हामी दुवै प्रणालीको जानकारी दिनेछौं।</p>`,
+  sections: [
+    {
+      id: 'nepal-plate-system',
+      title: 'नेपालको सवारी नम्बर प्लेट प्रणाली',
+      content: `<h3>नेपालको नम्बर प्लेट Format</h3>
+<p>नेपालमा सवारी नम्बर प्लेट Devanagari script मा हुन्छ र Department of Transport Management (DoTM) ले जारी गर्छ:</p>
+
+<table>
+  <thead>
+    <tr><th>प्रकार</th><th>Format</th><th>उदाहरण</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>निजी सवारी (Bagmati Province)</td><td>Ba + जिल्ला नं + XXXX</td><td>Ba 1 cha 1234</td></tr>
+    <tr><td>निजी सवारी (अन्य प्रदेश)</td><td>Province prefix + नं</td><td>Ga 1 (Gandaki), Lu 1 (Lumbini)</td></tr>
+    <tr><td>सार्वजनिक सवारी</td><td>Red plate + नम्बर</td><td>Red background series</td></tr>
+    <tr><td>सरकारी सवारी</td><td>Pu + number</td><td>Pu 12 XXXX</td></tr>
+    <tr><td>राजनयिक</td><td>CD + number</td><td>CD 101</td></tr>
+  </tbody>
+</table>
+
+<h3>नेपालका Province Codes</h3>
+<table>
+  <thead>
+    <tr><th>Province</th><th>नम्बर Prefix</th><th>प्रमुख जिल्ला</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Koshi Province (1)</td><td>Ko</td><td>Morang, Sunsari, Jhapa</td></tr>
+    <tr><td>Madhesh Province (2)</td><td>Ma</td><td>Siraha, Saptari, Dhanusha</td></tr>
+    <tr><td>Bagmati Province (3)</td><td>Ba</td><td>Kathmandu, Lalitpur, Bhaktapur</td></tr>
+    <tr><td>Gandaki Province (4)</td><td>Ga</td><td>Kaski (Pokhara), Syangja</td></tr>
+    <tr><td>Lumbini Province (5)</td><td>Lu</td><td>Rupandehi, Kapilvastu, Palpa</td></tr>
+    <tr><td>Karnali Province (6)</td><td>Ka</td><td>Surkhet, Jumla</td></tr>
+    <tr><td>Sudurpashchim Province (7)</td><td>Su</td><td>Kanchanpur, Dadeldhura</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'india-plate-structure-ne',
+      title: 'Indian Vehicle Number Plate को Structure',
+      content: `<h3>Standard Format</h3>
+<pre><code>[State Code (2 letters)] [RTO (2 digits)] [Series] [Number]
+उदाहरण: MH 12 AB 1234 = Maharashtra, Pune RTO</code></pre>
+
+<h3>प्रमुख Indian State Codes</h3>
+<table>
+  <thead>
+    <tr><th>State</th><th>Code</th><th>प्रमुख RTOs</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Delhi</td><td>DL</td><td>DL-01 देखि DL-14</td></tr>
+    <tr><td>Maharashtra</td><td>MH</td><td>MH-01 Mumbai, MH-12 Pune</td></tr>
+    <tr><td>Uttar Pradesh</td><td>UP</td><td>UP-32 Lucknow, UP-78 Noida</td></tr>
+    <tr><td>Rajasthan</td><td>RJ</td><td>RJ-14 Jaipur, RJ-19 Jodhpur</td></tr>
+    <tr><td>Bihar</td><td>BR</td><td>BR-01 Patna</td></tr>
+    <tr><td>West Bengal</td><td>WB</td><td>WB-01 Kolkata</td></tr>
+    <tr><td>Uttarakhand</td><td>UK</td><td>UK-07 Dehradun</td></tr>
+  </tbody>
+</table>
+
+<h3>BH Series</h3>
+<pre><code>22 BH 1234 AA = 2022 मा दर्ता, Bharat Series (national validity)</code></pre>`,
+    },
+    {
+      id: 'ev-plates-ne',
+      title: 'EV Green Plate र Colour Coding',
+      content: `<table>
+  <thead>
+    <tr><th>Plate Colour</th><th>सवारी प्रकार</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>सेतो background, कालो text</td><td>निजी सवारी</td></tr>
+    <tr><td>पहेँलो background, कालो text</td><td>व्यावसायिक सवारी</td></tr>
+    <tr><td>हरियो background, सेतो text</td><td>Electric vehicle (निजी)</td></tr>
+    <tr><td>हरियो background, पहेँलो text</td><td>Electric vehicle (व्यावसायिक)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>नेपाल सन्दर्भ:</strong> नेपालमा पनि Electric vehicle को संख्या बढ्दो छ — विशेष गरी Kathmandu उपत्यकामा। नेपाल सरकारले EV मा कर छुट दिएको छ। यद्यपि नेपालमा भारतको जस्तो अलग green plate अनिवार्य गरिएको छैन अहिलेसम्म।
+</div>`,
+    },
+    {
+      id: 'rc-check-ne',
+      title: 'RC Online Check कसरी गर्ने — Parivahan र mParivahan',
+      content: `<h3>Method 1: Parivahan Portal</h3>
+<ol>
+  <li><strong>vahan.parivahan.gov.in</strong> मा जानुहोस्</li>
+  <li>"Know Your Vehicle Details" click गर्नुहोस्</li>
+  <li>Registration number र verification code enter गर्नुहोस्</li>
+  <li>Owner name, insurance validity, fitness status देखिनेछ</li>
+</ol>
+
+<h3>Method 2: SMS</h3>
+<p>7738299899 मा SMS: <code>VAHAN MH12AB1234</code> — basic details SMS मा आउँछ।</p>
+
+<div class="callout-tip">
+  <strong>नेपाली भारत यात्रीका लागि Tip:</strong> भारतमा पुरानो सवारी किन्दा वा किराया सवारी चढ्दा RC verify गर्नु राम्रो हुन्छ — insurance validity र blacklist status confirm गर्न।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'ToolsArena मा Vehicle Number Plate Info खोल्नुहोस्',
+      description: 'Website मा जानुहोस् र Vehicle Number Plate Info tool खोल्नुहोस्।',
+    },
+    {
+      title: 'Registration Number Enter गर्नुहोस्',
+      description: 'Input मा vehicle को registration number type गर्नुहोस्। Format: MH12AB1234 वा 22BH1234AA।',
+    },
+    {
+      title: 'Decoded Information हेर्नुहोस्',
+      description: 'Tool ले state, RTO district, plate type (standard/BH/EV) decode गरेर देखाउनेछ।',
+    },
+    {
+      title: 'Parivahan बाट Verify गर्नुहोस्',
+      description: 'Full RC details (owner name, insurance, hypothecation) को लागि tool मा दिइएको Parivahan link प्रयोग गर्नुहोस्।',
+    },
+    {
+      title: 'Pending Challans Check गर्नुहोस्',
+      description: 'Result मा दिइएको eChallan portal link बाट pending traffic fines check गर्नुहोस्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'Number plate बाट owner को नाम थाहा हुन्छ?',
+      answer: 'ToolsArena tool केवल plate structure decode गर्छ — owner name दिँदैन। Owner name को लागि official Parivahan portal (vahan.parivahan.gov.in) प्रयोग गर्नुहोस्।',
+    },
+    {
+      question: 'BH series भनेको के हो?',
+      answer: 'BH (Bharat) series 2021 मा MoRTH ले शुरु गर्यो। यो government employees, defence personnel र multi-state private employees का लागि हो — पूरा India मा valid एउटै registration।',
+    },
+    {
+      question: 'नेपालको Ba 1 र Ba 2 मा के फरक छ?',
+      answer: 'Ba 1 र Ba 2 Bagmati Province (Kathmandu) का registration series हुन्। Ba 1 पहिले शुरु भएको series हो — Ba 1 भरिएपछि Ba 2 शुरु भयो। दुवै Kathmandu/Bagmati Province का सवारी हुन्।',
+    },
+    {
+      question: 'Green number plate किन राखिन्छ?',
+      answer: 'India मा 2019 देखि Electric Vehicle (EV) मा green number plate mandatory छ। Private EV मा green background सेतो text, commercial EV मा green background पहेँलो text हुन्छ।',
+    },
+    {
+      question: 'Used car किन्नु अघि के check गर्ने?',
+      answer: 'Parivahan portal मा RC check गर्नुहोस् — hypothecation (loan), insurance validity, blacklist status। eChallan portal मा pending fines हेर्नुहोस्। Chassis र engine number RC सँग मिलाउनुहोस्।',
+    },
+  ],
+  relatedGuides: ['aadhaar-validator-guide', 'pan-card-validator-guide', 'gst-calculator-guide'],
+  toolCTA: {
+    heading: 'जुनसुकै Indian Vehicle Number Plate Instantly Decode गर्नुहोस्',
+    description: 'Registration number enter गर्नुहोस् — State, RTO district, BH/EV status तुरुन्त थाहा हुनेछ। नि:शुल्क र instant।',
+    buttonText: 'Vehicle Plate Lookup खोल्नुहोस्',
+  },
+},
+
+{
+  slug: 'whatsapp-chat-analyzer-guide',
+  toolSlug: 'whatsapp-chat-analyzer',
+  category: 'text-tools',
+  title: 'WhatsApp च्याट विश्लेषण: आफ्नो Conversations बुझ्ने सम्पूर्ण गाइड',
+  subtitle: 'Message patterns, activity trends, emoji habits र business insights पत्ता लगाउनुहोस् आफ्नो WhatsApp chat exports बाट',
+  metaTitle: 'WhatsApp च्याट विश्लेषण गाइड 2026 | ToolsArena',
+  metaDescription: 'WhatsApp chat export गरी analyze गर्न सिक्नुहोस्। Messages, activity patterns, emojis र business insights का लागि सम्पूर्ण नेपाली गाइड।',
+  targetKeyword: 'WhatsApp च्याट विश्लेषण',
+  secondaryKeywords: [
+    'WhatsApp chat analysis Nepal',
+    'WhatsApp message statistics Nepal',
+    'WhatsApp export Nepal',
+    'WhatsApp chat stats Nepali',
+    'WhatsApp business Nepal analysis',
+  ],
+  lastUpdated: '2026-03-19',
+  readingTime: '१२ मिनेट',
+  tags: ['WhatsApp', 'च्याट विश्लेषण', 'messaging', 'data insights', 'Nepal', 'business tools', 'emoji analysis'],
+  intro: `<p>WhatsApp विश्वको सबभन्दा बढी प्रयोग हुने messaging app हो — 2026 मा <strong>३ billion+ monthly active users</strong> सहित। नेपालमा <strong>१.५ करोड+</strong> मानिसहरू WhatsApp daily प्रयोग गर्छन् — परिवार, साथीभाई, व्यापार र समुदायका लागि। प्रत्येक दिन अरबौं messages पठाइन्छन्। ती conversations भित्र fascinating patterns लुकेका छन्: को सबभन्दा बढी message गर्छ, कति बजे activity peak हुन्छ, कुन emojis dominant छन्, media sharing कसरी भएको छ।</p>
+<p><strong>WhatsApp च्याट विश्लेषण</strong> उपकरणले तपाईंको exported chat file लाई meaningful statistics र visualizations मा transform गर्छ। चाहे personal curiosity satisfy गर्न होस्, group dynamics बुझ्न होस्, वा business customer support optimize गर्न होस् — यो गाइडले सबै कुरा cover गर्छ: chat export कसरी गर्ने, analysis मा के देखिन्छ, र business का लागि कसरी प्रयोग गर्ने।</p>`,
+  sections: [
+    {
+      id: 'chat-analysis-kya-batata-hai-ne',
+      title: 'WhatsApp Chat Analysis बाट के थाहा पाइन्छ?',
+      content: `<h3>Conversation को पछाडिको Data</h3>
+<p>WhatsApp chat analysis यी प्रश्नहरूको जवाफ दिन्छ:</p>
+<ul>
+  <li><strong>Communication balance:</strong> कुन person सबभन्दा बढी message गर्छ? Group मा को discussion drive गर्छ?</li>
+  <li><strong>Activity rhythms:</strong> यो person/group कहिले सबभन्दा active छ? बिहान, साँझ, रात?</li>
+  <li><strong>Emotional tone:</strong> Emoji patterns बाट कुन emotions dominant छन्?</li>
+  <li><strong>Content preferences:</strong> Chat text-heavy छ, media-heavy छ, वा link sharing heavy?</li>
+  <li><strong>Engagement trends:</strong> Communication बढिरहेको छ, घटिरहेको छ, वा seasonal छ?</li>
+</ul>
+<h3>Common Use Cases</h3>
+<table>
+  <thead>
+    <tr><th>Use Case</th><th>को Benefit पाउँछ</th><th>Key Insights</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Personal relationship insight</td><td>Individuals, couples</td><td>Communication balance, activity trends</td></tr>
+    <tr><td>साथीभाइ group dynamics</td><td>Friend groups</td><td>को most active, group कति बजे busiest</td></tr>
+    <tr><td>परिवार group analysis</td><td>Family members</td><td>Participation levels, celebrations</td></tr>
+    <tr><td>Customer support review</td><td>Business owners, managers</td><td>Response times, peak query hours</td></tr>
+    <tr><td>Community management</td><td>Group admins, NGOs</td><td>Member engagement, activity trends</td></tr>
+    <tr><td>Nostalgia</td><td>जोसुकै</td><td>वर्षौंका total messages, memories</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-info">
+  <strong>नेपाल Context:</strong> नेपालमा WhatsApp परिवार communication, local business groups (पसल, restaurant, tutor), neighborhood groups, र राजनीतिक/सामाजिक awareness groups — सबैका लागि primary platform हो। यी सबैको analysis अत्यन्त valuable insights दिन्छ।
+</div>`,
+    },
+    {
+      id: 'export-kasari-garne-ne',
+      title: 'WhatsApp Chat Export कसरी गर्ने: Android र iPhone Step-by-Step',
+      content: `<h3>Export Format बुझ्नुहोस्</h3>
+<p>WhatsApp ले कुनै पनि individual वा group chat लाई plain text (.txt) file को रूपमा export गर्न दिन्छ।</p>
+<div class="callout callout-warning">
+  <strong>महत्त्वपूर्ण Limit:</strong> "Without Media" मा 40,000 messages र "With Media" मा 10,000 messages। धेरै active वा पुरानो chats truncated हुनसक्छन्। Analysis का लागि "Without Media" export recommend गरिन्छ।
+</div>
+<h3>Android मा Export कसरी गर्ने</h3>
+<ul>
+  <li><strong>Step 1:</strong> Export गर्ने WhatsApp chat वा group खोल्नुहोस्</li>
+  <li><strong>Step 2:</strong> Top-right मा तीन dots (⋮) tap गर्नुहोस्</li>
+  <li><strong>Step 3:</strong> "More" → "Export Chat" select गर्नुहोस्</li>
+  <li><strong>Step 4:</strong> "Without Media" (analysis का लागि recommended) choose गर्नुहोस्</li>
+  <li><strong>Step 5:</strong> Files मा save गर्नुहोस्, Google Drive मा, वा आफैलाई email गर्नुहोस्</li>
+</ul>
+<h3>iPhone (iOS) मा Export कसरी गर्ने</h3>
+<ul>
+  <li><strong>Step 1:</strong> WhatsApp chat वा group खोल्नुहोस्</li>
+  <li><strong>Step 2:</strong> Screen को top मा contact वा group name tap गर्नुहोस्</li>
+  <li><strong>Step 3:</strong> Scroll down गरी "Export Chat" option खोज्नुहोस्</li>
+  <li><strong>Step 4:</strong> "Without Media" choose गर्नुहोस्</li>
+  <li><strong>Step 5:</strong> AirDrop, email, वा Files app मा save गर्नुहोस्</li>
+</ul>
+<h3>Exported Text को Format</h3>
+<p><code>[DD/MM/YYYY, HH:MM:SS AM/PM] Sender Name: Message text</code></p>
+<p>नेपाल मा date format: DD/MM/YYYY, time: 12-hour (AM/PM)</p>`,
+    },
+    {
+      id: 'analysis-kya-dikhata-hai-ne',
+      title: 'Analysis मा के देखिन्छ: Messages, Words, Media र Activity Patterns',
+      content: `<h3>Core Metrics</h3>
+<h3>१. Message Volume Statistics</h3>
+<ul>
+  <li><strong>Total messages:</strong> Exported period मा complete message count</li>
+  <li><strong>Messages per participant:</strong> कसले कति messages पठाए — count र percentage</li>
+  <li><strong>Average messages per day:</strong> Daily communication volume</li>
+  <li><strong>Most active day:</strong> सबभन्दा बढी messages भएको single day</li>
+</ul>
+<h3>२. Word र Text Analysis</h3>
+<ul>
+  <li><strong>Total words:</strong> सबै messages को full word count</li>
+  <li><strong>Most used words:</strong> Frequency-ranked vocabulary list</li>
+  <li><strong>Links shared:</strong> Shared links को count र most frequent domains</li>
+</ul>
+<h3>३. Media Statistics</h3>
+<table>
+  <thead>
+    <tr><th>Media Type</th><th>यसले के Reveal गर्छ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Images shared</td><td>Visual communication volume</td></tr>
+    <tr><td>Videos shared</td><td>Content sharing habits</td></tr>
+    <tr><td>Voice notes</td><td>Audio vs. text communication preference</td></tr>
+    <tr><td>Documents shared</td><td>Professional communication intensity</td></tr>
+    <tr><td>GIFs र Stickers</td><td>Casual/playful communication indicator</td></tr>
+    <tr><td>Locations shared</td><td>Coordination behavior</td></tr>
+  </tbody>
+</table>`,
+    },
+    {
+      id: 'activity-hours-ne',
+      title: 'Most Active Hours र Days: नेपाली Chat Patterns बुझ्नुहोस्',
+      content: `<h3>Activity Timing किन महत्त्वपूर्ण छ?</h3>
+<p>मानिसहरू chat मा <em>कहिले</em> सबभन्दा active छन् भन्ने जान्नु सबभन्दा actionable insight हो।</p>
+<h3>नेपाली WhatsApp Chats मा Common Activity Patterns</h3>
+<table>
+  <thead>
+    <tr><th>Pattern Type</th><th>Peak Hours (NPT)</th><th>Typical Context</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Morning commuter</td><td>७:०० AM – ९:०० AM</td><td>Young professionals, students</td></tr>
+    <tr><td>Lunch break peak</td><td>१२:३० PM – २:०० PM</td><td>Office workers, college students</td></tr>
+    <tr><td>Evening social</td><td>८:०० PM – ११:०० PM</td><td>नेपालमा most personal/family chats</td></tr>
+    <tr><td>Late night active</td><td>११:०० PM – १:०० AM</td><td>Young adults, gaming groups</td></tr>
+    <tr><td>Business hours</td><td>१०:०० AM – ६:०० PM</td><td>Professional/customer support groups</td></tr>
+    <tr><td>Festival burst</td><td>Irregular, multi-day spikes</td><td>Dashain, Tihar, Chhath मा family groups</td></tr>
+  </tbody>
+</table>
+<h3>Day of Week Patterns (नेपाल Context)</h3>
+<ul>
+  <li><strong>Weekend (Sat/Sun):</strong> सबभन्दा बढी overall message volume</li>
+  <li><strong>Monday:</strong> Weekend पछि catching up को कारण second highest</li>
+  <li><strong>Dashain/Tihar period:</strong> नेपाली family groups मा extraordinary spike हुन्छ</li>
+  <li><strong>Friday evening:</strong> Weekend plans को कारण second peak</li>
+</ul>`,
+    },
+    {
+      id: 'emoji-analysis-ne',
+      title: 'Emoji Analysis: तपाईंको Most-Used Emojis ले के Reveal गर्छन्?',
+      content: `<h3>Emoji को Psychology</h3>
+<p>Emojis सजावट मात्र होइनन् — ये एक parallel emotional communication layer हो। Emoji patterns ले reliably emotional states, relationship warmth, र communication style reflect गर्छन्।</p>
+<h3>Top Emojis ले के Indicate गर्छन्?</h3>
+<table>
+  <thead>
+    <tr><th>Emoji Category</th><th>Common Emojis</th><th>के Indicate गर्छ</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>हाँसो</td><td>😂 🤣 😆</td><td>High humor, casual tone; strong rapport</td></tr>
+    <tr><td>माया</td><td>❤️ 🥰 😍 💕</td><td>Emotionally close relationship</td></tr>
+    <tr><td>Agreement</td><td>👍 👌 ✅</td><td>Task-oriented, professional communication</td></tr>
+    <tr><td>उत्सव</td><td>🎉 🥳 🎊 🎂</td><td>Social group; occasions celebrate हुन्छन्</td></tr>
+    <tr><td>Prayer/Gratitude</td><td>🙏 🌹</td><td>नेपाल र भारत मा बहुत common — greetings, thanks</td></tr>
+    <tr><td>Shock/Surprise</td><td>😮 😱 🤯</td><td>News-sharing chat</td></tr>
+  </tbody>
+</table>
+<h3>नेपाल-Specific Emoji Patterns</h3>
+<ul>
+  <li><strong>🙏 (Namaste/Prayer):</strong> नेपाली chats मा Western chats भन्दा धेरै बढी प्रयोग — greetings, thanks, र dharmik messages</li>
+  <li><strong>😂 (Tears of Joy):</strong> नेपालमा पनि globally most-used emoji</li>
+  <li><strong>❤️:</strong> नेपाली chats मा family र साथीभाइ support का लागि पनि widely use</li>
+  <li><strong>🎂:</strong> नेपाली group chats मा birthdays collectively celebrate हुन्छन्</li>
+  <li><strong>🌄 (Sunrise/Mountain):</strong> नेपाली travel र trekking groups मा unique high frequency</li>
+</ul>`,
+    },
+    {
+      id: 'data-privacy-ne',
+      title: 'WhatsApp Data Privacy: Exported Chat File सँग के हुन्छ?',
+      content: `<h3>Privacy Landscape बुझ्नुहोस्</h3>
+<p>WhatsApp chat export गरी third-party tool मा upload गर्दा तपाईं potentially sensitive personal conversations share गर्दै हुनुहुन्छ।</p>
+<h3>ToolsArena को Privacy Approach</h3>
+<div class="callout callout-success">
+  <strong>ToolsArena Privacy Commitment:</strong>
+  <ul>
+    <li>सबै analysis <strong>पूर्णतः तपाईंको browser मा</strong> हुन्छ (client-side processing) — chat text कहिल्यै device बाहिर जाँदैन</li>
+    <li>ToolsArena servers मा <strong>कुनै data store हुँदैन</strong></li>
+    <li><strong>कुनै account आवश्यक छैन</strong></li>
+    <li>Analyzer <strong>offline-capable</strong> छ</li>
+  </ul>
+</div>
+<h3>Chat File Privacy का Best Practices</h3>
+<ul>
+  <li><strong>Group members को consent लिनुहोस्</strong> group chat analyze गर्नु अघि</li>
+  <li><strong>Analysis पछि .txt file delete गर्नुहोस्</strong></li>
+  <li><strong>Unverified services मा upload नगर्नुहोस्</strong></li>
+  <li><strong>Results share गर्दा anonymize गर्नुहोस्</strong> — participant names को सट्टा Person A, B राख्नुहोस्</li>
+</ul>`,
+    },
+    {
+      id: 'business-analysis-ne',
+      title: 'Business का लागि Chat Analysis: Customer Support Insights',
+      content: `<h3>नेपालमा WhatsApp Business 2026</h3>
+<p>नेपालमा local shops, restaurants, tutors, travel agencies, र startups — सबैका लागि WhatsApp primary customer communication channel हो। Chat analysis बाट operational intelligence मिल्छ।</p>
+<h3>Business का लागि Key Metrics</h3>
+<table>
+  <thead>
+    <tr><th>Business Metric</th><th>Chat Analysis ले कसरी Reveal गर्छ</th><th>Action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Peak query hours</td><td>Activity heatmap बाट customer messages को peak time</td><td>Peak hours मा support staff schedule; बाहिर auto-reply</td></tr>
+    <tr><td>Average response time</td><td>Customer message र reply बीचको time gap</td><td>Response time benchmarks set गर्नुहोस्</td></tr>
+    <tr><td>Most common questions</td><td>Word frequency बाट repeated queries</td><td>FAQ content वा quick reply templates बनाउनुहोस्</td></tr>
+    <tr><td>Unanswered messages</td><td>Unanswered customer messages identify</td><td>Follow up गर्नुहोस्; churn prevent गर्नुहोस्</td></tr>
+    <tr><td>Seasonal demand</td><td>Monthly message volume trends</td><td>Dashain/Tihar जस्ता peak periods का लागि pre-plan गर्नुहोस्</td></tr>
+  </tbody>
+</table>
+<div class="callout callout-tip">
+  <strong>नेपाल Business Insight:</strong> नेपाली customers को WhatsApp communication Western business communication भन्दा बढी personal र relationship-based हुन्छ। Greetings, personal inquiries, र emotional language analysis मा high देखिन्छ। यी patterns बुझेर response style customer expectations अनुसार tailor गर्नुहोस्।
+</div>`,
+    },
+  ],
+  howToSteps: [
+    {
+      title: 'WhatsApp Chat Export गर्नुहोस्',
+      description: 'Android: Chat खोल्नुहोस् → ⋮ Menu → More → Export Chat → Without Media। iPhone: Chat → Contact/Group name → Export Chat → Without Media। .txt file save गर्नुहोस्।',
+    },
+    {
+      title: 'ToolsArena WhatsApp Chat Analyzer खोल्नुहोस्',
+      description: 'ToolsArena को WhatsApp Chat Analyzer visit गर्नुहोस् — कुनै account वा signup आवश्यक छैन। सबै processing browser मा हुन्छ।',
+    },
+    {
+      title: 'Chat Export Upload वा Paste गर्नुहोस्',
+      description: '.txt file drag-and-drop गर्नुहोस् upload area मा, वा text content directly paste गर्नुहोस्।',
+    },
+    {
+      title: 'Summary Dashboard Review गर्नुहोस्',
+      description: 'Total messages, word count, media counts, active participant rankings instantly देख्नुहोस्।',
+    },
+    {
+      title: 'Activity Patterns Explore गर्नुहोस्',
+      description: 'Hourly र daily activity heatmap check गर्नुहोस् — communication कहिले peak हुन्छ।',
+    },
+    {
+      title: 'Emojis र Word Frequency Analyze गर्नुहोस्',
+      description: 'Top emojis usage count सहित हेर्नुहोस् र most frequently used words explore गर्नुहोस्।',
+    },
+  ],
+  faqs: [
+    {
+      question: 'WhatsApp chat analyzer मा upload गर्नु safe छ?',
+      answer: 'ToolsArena को WhatsApp Chat Analyzer मा हो — सबै processing पूर्णतः तपाईंको browser मा हुन्छ। Chat text कहिल्यै कुनै server मा पुग्दैन। अन्य tool का लागि upload गर्नु अघि सधैं privacy policy पढ्नुहोस्।',
+    },
+    {
+      question: 'Android मा WhatsApp chat export कसरी गर्ने?',
+      answer: 'WhatsApp chat खोल्नुहोस् → three-dot menu (⋮) → More → Export Chat → "Without Media" choose गर्नुहोस् → result file email, Google Drive, वा Files मा save गर्नुहोस्।',
+    },
+    {
+      question: 'WhatsApp maximum कति messages export गर्न सक्छ?',
+      answer: 'WhatsApp "Without Media" मा 40,000 messages र "With Media" मा 10,000 messages सम्म export गर्छ। धेरै active chats truncated हुनसक्छन्।',
+    },
+    {
+      question: 'के WhatsApp group chat analyze गर्न सकिन्छ?',
+      answer: 'हो। Group chat exports exactly individual chat exports जस्तै काम गर्छन्। Analysis ले हरेक group member को messages, words, र participation level देखाउँछ।',
+    },
+  ],
+  relatedGuides: ['word-counter-guide', 'reading-time-calculator-guide', 'case-converter-guide'],
+  toolCTA: {
+    heading: 'अहिले नै आफ्नो WhatsApp Chat Analyze गर्नुहोस् — निःशुल्क र Private',
+    description: 'Chat export upload गर्नुहोस् र instant insights पाउनुहोस्: message counts, activity heatmaps, top emojis, word frequency। १००% in-browser — data कहिल्यै device बाहिर जाँदैन।',
+    buttonText: 'WhatsApp Chat Analyzer खोल्नुहोस्',
+  },
+},
+
 ];
