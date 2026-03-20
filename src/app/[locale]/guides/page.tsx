@@ -129,12 +129,6 @@ export default async function GuidesIndexPage({ params }: { params: Promise<{ lo
       {/* ── Guide search + grid ─────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <GuideSearch guides={allGuides} locale={locale} />
-
-        {/* Coming soon placeholder */}
-        <div className="mt-8 border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-2xl p-10 text-center">
-          <Sparkles className="w-8 h-8 text-slate-300 dark:text-slate-600 mx-auto mb-3" aria-hidden />
-          <p className="font-semibold text-slate-500 dark:text-slate-400">{t('comingSoon')}</p>
-        </div>
       </section>
 
       {/* ── CTA to tools ─────────────────────────────────────────── */}
