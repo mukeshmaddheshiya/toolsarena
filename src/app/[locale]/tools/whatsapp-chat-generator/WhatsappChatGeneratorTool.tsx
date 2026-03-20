@@ -156,7 +156,7 @@ export function WhatsappChatGeneratorTool() {
       `}</style>
 
       <div className="text-center space-y-2 no-print">
-        <h1 className="text-3xl font-bold text-gray-900">WhatsApp Chat Generator</h1>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">WhatsApp Chat Generator</h1>
         <p className="text-gray-500 text-sm">Create a realistic WhatsApp chat for demos, presentations, or fun.</p>
       </div>
 
@@ -164,46 +164,46 @@ export function WhatsappChatGeneratorTool() {
         {/* Controls */}
         <div className="space-y-5 no-print">
           {/* Config */}
-          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 space-y-4">
-            <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Chat Settings</h2>
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-5 space-y-4">
+            <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">Chat Settings</h2>
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-medium text-gray-600 mb-1">Contact Name (Person A)</label>
+                <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Contact Name (Person A)</label>
                 <input
                   type="text"
                   value={config.nameA}
                   onChange={(e) => setConfig((p) => ({ ...p, nameA: e.target.value }))}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
                   maxLength={30}
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-600 mb-1">Your Name (Person B)</label>
+                <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Your Name (Person B)</label>
                 <input
                   type="text"
                   value={config.nameB}
                   onChange={(e) => setConfig((p) => ({ ...p, nameB: e.target.value }))}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
                   maxLength={30}
                 />
               </div>
             </div>
             <div className="flex items-center gap-4">
               <div>
-                <label className="block text-xs font-medium text-gray-600 mb-1">Avatar Color (A)</label>
+                <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Avatar Color (A)</label>
                 <input
                   type="color"
                   value={config.colorA}
                   onChange={(e) => setConfig((p) => ({ ...p, colorA: e.target.value }))}
-                  className="h-9 w-16 border border-gray-300 rounded-lg cursor-pointer"
+                  className="h-9 w-16 border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer"
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-xs font-medium text-gray-600 mb-1">Status</label>
+                <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Status</label>
                 <select
                   value={config.statusA}
                   onChange={(e) => setConfig((p) => ({ ...p, statusA: e.target.value as ChatConfig['statusA'] }))}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
                 >
                   <option value="online">Online</option>
                   <option value="offline">Last seen recently</option>
@@ -214,29 +214,29 @@ export function WhatsappChatGeneratorTool() {
           </div>
 
           {/* Add Message */}
-          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 space-y-4">
-            <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">Add Message</h2>
+          <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-5 space-y-4">
+            <h2 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">Add Message</h2>
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-medium text-gray-600 mb-1">Sender</label>
+                <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Sender</label>
                 <select
                   value={newSender}
                   onChange={(e) => setNewSender(e.target.value as 'A' | 'B')}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
                 >
                   <option value="A">A — {config.nameA}</option>
                   <option value="B">B — {config.nameB} (You)</option>
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-600 mb-1">
+                <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">
                   {newSender === 'B' ? 'Tick Mark' : 'Time'}
                 </label>
                 {newSender === 'B' ? (
                   <select
                     value={newTick}
                     onChange={(e) => setNewTick(e.target.value as TickType)}
-                    className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
                   >
                     <option value="single">✓ Sent</option>
                     <option value="double">✓✓ Delivered</option>
@@ -249,8 +249,8 @@ export function WhatsappChatGeneratorTool() {
             </div>
             <div>
               <div className="flex items-center justify-between mb-1">
-                <label className="block text-xs font-medium text-gray-600">Time</label>
-                <label className="flex items-center gap-1.5 text-xs text-gray-500 cursor-pointer">
+                <label className="block text-xs font-medium text-gray-600 dark:text-gray-400">Time</label>
+                <label className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 cursor-pointer">
                   <input
                     type="checkbox"
                     checked={useAutoTime}
@@ -265,12 +265,12 @@ export function WhatsappChatGeneratorTool() {
                   type="time"
                   value={newTime}
                   onChange={(e) => setNewTime(e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500"
                 />
               )}
             </div>
             <div>
-              <label className="block text-xs font-medium text-gray-600 mb-1">Message</label>
+              <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Message</label>
               <textarea
                 value={newMessage}
                 onChange={(e) => setNewMessage(e.target.value)}
@@ -282,7 +282,7 @@ export function WhatsappChatGeneratorTool() {
                 }}
                 placeholder="Type a message... (emoji supported 😊)"
                 rows={3}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
+                className="w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
               />
               <p className="text-xs text-gray-400 mt-1">Press Enter to add, Shift+Enter for new line.</p>
             </div>
@@ -296,7 +296,7 @@ export function WhatsappChatGeneratorTool() {
               </button>
               <button
                 onClick={handleClearAll}
-                className="px-4 border border-red-200 text-red-500 hover:bg-red-50 font-medium py-2.5 rounded-xl text-sm transition-colors"
+                className="px-4 border border-red-200 dark:border-red-800 text-red-500 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 font-medium py-2.5 rounded-xl text-sm transition-colors"
               >
                 Clear All
               </button>
