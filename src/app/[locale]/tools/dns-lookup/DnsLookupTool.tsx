@@ -206,9 +206,9 @@ function RecordRow({ answer, type }: { answer: DnsAnswer; type: RecordType }) {
     if (type === 'SOA') {
       const soa = parseSOA(data);
       return (
-        <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-sm font-mono text-slate-700 dark:text-slate-300">
-          <div><span className="text-slate-500">Primary NS:</span> {soa.primaryNS}</div>
-          <div><span className="text-slate-500">Email:</span> {soa.responsibleEmail}</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 text-sm font-mono text-slate-700 dark:text-slate-300">
+          <div className="break-all"><span className="text-slate-500">Primary NS:</span> {soa.primaryNS}</div>
+          <div className="break-all"><span className="text-slate-500">Email:</span> {soa.responsibleEmail}</div>
           <div><span className="text-slate-500">Serial:</span> {soa.serial}</div>
           <div><span className="text-slate-500">Refresh:</span> {soa.refresh}</div>
           <div><span className="text-slate-500">Retry:</span> {soa.retry}</div>
@@ -223,7 +223,7 @@ function RecordRow({ answer, type }: { answer: DnsAnswer; type: RecordType }) {
   };
 
   return (
-    <div className="flex items-start gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 group hover:border-slate-300 dark:hover:border-slate-600 transition-colors">
+    <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 group hover:border-slate-300 dark:hover:border-slate-600 transition-colors">
       <div className="flex-1 min-w-0">
         {renderData()}
       </div>
@@ -255,11 +255,11 @@ function RecordSection({
     <div className="border border-slate-200 dark:border-slate-700/60 rounded-xl overflow-hidden">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/80 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-left"
+        className="w-full flex items-center justify-between gap-2 p-3 sm:p-4 bg-slate-50 dark:bg-slate-800/80 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-left"
       >
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap min-w-0">
           <RecordBadge type={result.type} />
-          <span className="text-slate-700 dark:text-slate-300 text-sm">{RECORD_DESCRIPTIONS[result.type]}</span>
+          <span className="text-slate-700 dark:text-slate-300 text-xs sm:text-sm hidden sm:inline">{RECORD_DESCRIPTIONS[result.type]}</span>
           {isSuccess && hasData && (
             <span className="bg-green-500/20 text-green-700 dark:text-green-300 border border-green-500/30 px-2 py-0.5 rounded-full text-xs">
               {result.answers.length} record{result.answers.length !== 1 ? 's' : ''}
@@ -269,7 +269,7 @@ function RecordSection({
             <span className="text-slate-500 text-xs">No records</span>
           )}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           {isLoading && <Loader2 size={16} className="text-indigo-600 dark:text-indigo-400 animate-spin" />}
           {isError && <AlertCircle size={16} className="text-red-400" />}
           {isExpanded ? (
@@ -428,8 +428,8 @@ export function DnsLookupTool() {
       </div>
 
       {/* Input */}
-      <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-5 space-y-4">
-        <div className="flex gap-3">
+      <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 space-y-4">
+        <div className="flex flex-col sm:flex-row gap-3">
           <div className="flex-1 relative">
             <Search
               size={16}
@@ -444,26 +444,28 @@ export function DnsLookupTool() {
               className="w-full pl-9 pr-4 py-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-900 dark:text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 text-sm font-mono transition-colors"
             />
           </div>
-          <button
-            onClick={handleCheckSelected}
-            disabled={!inputValue.trim()}
-            className="px-4 py-2.5 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:cursor-not-allowed text-white rounded-xl text-sm font-medium transition-colors flex items-center gap-2"
-          >
-            <Search size={15} />
-            Lookup
-          </button>
-          <button
-            onClick={handleCheckAll}
-            disabled={!inputValue.trim() || isCheckingAll}
-            className="px-4 py-2.5 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 disabled:opacity-40 disabled:cursor-not-allowed text-slate-800 dark:text-slate-200 rounded-xl text-sm font-medium transition-colors flex items-center gap-2 whitespace-nowrap"
-          >
-            {isCheckingAll ? (
-              <Loader2 size={15} className="animate-spin" />
-            ) : (
-              <RefreshCw size={15} />
-            )}
-            Check All
-          </button>
+          <div className="flex gap-2 sm:gap-3">
+            <button
+              onClick={handleCheckSelected}
+              disabled={!inputValue.trim()}
+              className="flex-1 sm:flex-none px-4 py-2.5 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 disabled:cursor-not-allowed text-white rounded-xl text-sm font-medium transition-colors flex items-center justify-center gap-2"
+            >
+              <Search size={15} />
+              Lookup
+            </button>
+            <button
+              onClick={handleCheckAll}
+              disabled={!inputValue.trim() || isCheckingAll}
+              className="flex-1 sm:flex-none px-4 py-2.5 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 disabled:opacity-40 disabled:cursor-not-allowed text-slate-800 dark:text-slate-200 rounded-xl text-sm font-medium transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+            >
+              {isCheckingAll ? (
+                <Loader2 size={15} className="animate-spin" />
+              ) : (
+                <RefreshCw size={15} />
+              )}
+              Check All
+            </button>
+          </div>
         </div>
 
         {/* Record Type Selector */}
