@@ -30,17 +30,16 @@ function validateUpiId(upiId: string): boolean {
 }
 
 function buildUpiUri(data: UpiFormData): string {
-  const params = new URLSearchParams();
-  params.set('pa', data.upiId.trim());
-  params.set('pn', data.payeeName.trim());
-  params.set('cu', 'INR');
+  const pa = data.upiId.trim();
+  const pn = encodeURIComponent(data.payeeName.trim());
+  let uri = `upi://pay?pa=${pa}&pn=${pn}&cu=INR`;
   if (data.amount.trim()) {
-    params.set('am', data.amount.trim());
+    uri += `&am=${data.amount.trim()}`;
   }
   if (data.note.trim()) {
-    params.set('tn', data.note.trim());
+    uri += `&tn=${encodeURIComponent(data.note.trim())}`;
   }
-  return `upi://pay?${params.toString()}`;
+  return uri;
 }
 
 function buildQrApiUrl(upiUri: string): string {

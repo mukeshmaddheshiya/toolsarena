@@ -139,7 +139,7 @@ export function NepalVatCalculatorTool() {
 
           <div className="space-y-3">
             {/* Net */}
-            <div className="flex items-center justify-between rounded-lg bg-white/70 px-4 py-3 dark:bg-gray-800/60">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 rounded-lg bg-white/70 px-4 py-3 dark:bg-gray-800/60">
               <span className="text-sm text-gray-600 dark:text-gray-400">
                 Net Amount <span className="text-xs">(excluding VAT)</span>
               </span>
@@ -149,7 +149,7 @@ export function NepalVatCalculatorTool() {
             </div>
 
             {/* VAT */}
-            <div className="flex items-center justify-between rounded-lg bg-white/70 px-4 py-3 dark:bg-gray-800/60">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 rounded-lg bg-white/70 px-4 py-3 dark:bg-gray-800/60">
               <span className="text-sm text-gray-600 dark:text-gray-400">
                 VAT Amount <span className="text-xs">({VAT_PERCENT}%)</span>
               </span>
@@ -162,11 +162,11 @@ export function NepalVatCalculatorTool() {
             <div className="border-t border-blue-200 dark:border-blue-800" />
 
             {/* Gross */}
-            <div className="flex items-center justify-between rounded-lg bg-blue-600 px-4 py-3 text-white">
-              <span className="font-medium">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-1 rounded-lg bg-blue-600 px-4 py-3 text-white">
+              <span className="font-medium text-sm sm:text-base">
                 Gross Total <span className="text-xs opacity-80">(VAT included)</span>
               </span>
-              <span className="text-xl font-bold">रु {fmt(grossAmount)}</span>
+              <span className="text-lg sm:text-xl font-bold break-all">रु {fmt(grossAmount)}</span>
             </div>
           </div>
 

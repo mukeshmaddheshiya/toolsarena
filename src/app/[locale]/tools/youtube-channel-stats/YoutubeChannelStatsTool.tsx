@@ -108,24 +108,24 @@ export function YoutubeChannelStatsTool() {
   return (
     <div className="max-w-3xl mx-auto space-y-6 p-4">
       {/* Header */}
-      <div className="flex items-center gap-3 pb-2 border-b border-gray-200">
+      <div className="flex items-center gap-3 pb-2 border-b border-gray-200 dark:border-gray-700">
         <div className="p-2 bg-red-100 rounded-lg">
           <Youtube className="w-6 h-6 text-red-600" />
         </div>
         <div>
-          <h2 className="text-xl font-bold text-gray-900">YouTube Channel Stats Analyzer</h2>
+          <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">YouTube Channel Stats Analyzer</h2>
           <p className="text-sm text-gray-500">Enter your channel data manually — no API or login needed.</p>
         </div>
       </div>
 
       {/* Input Form */}
-      <div className="bg-white border border-gray-200 rounded-xl p-6 space-y-5 shadow-sm">
-        <h3 className="font-semibold text-gray-800 flex items-center gap-2">
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 space-y-5 shadow-sm">
+        <h3 className="font-semibold text-gray-800 dark:text-gray-100 flex items-center gap-2">
           <Video className="w-4 h-4 text-gray-500" /> Channel Data
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Total Subscribers</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Total Subscribers</label>
             <div className="relative">
               <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
@@ -133,12 +133,12 @@ export function YoutubeChannelStatsTool() {
                 placeholder="e.g. 25000"
                 value={subscribers}
                 onChange={e => setSubscribers(e.target.value)}
-                className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-red-300"
+                className="w-full pl-9 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-red-300"
               />
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Total Videos Uploaded</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Total Videos Uploaded</label>
             <div className="relative">
               <Video className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
@@ -146,12 +146,12 @@ export function YoutubeChannelStatsTool() {
                 placeholder="e.g. 150"
                 value={videos}
                 onChange={e => setVideos(e.target.value)}
-                className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-red-300"
+                className="w-full pl-9 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-red-300"
               />
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Total All-Time Views</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Total All-Time Views</label>
             <div className="relative">
               <Eye className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
@@ -159,12 +159,12 @@ export function YoutubeChannelStatsTool() {
                 placeholder="e.g. 1500000"
                 value={totalViews}
                 onChange={e => setTotalViews(e.target.value)}
-                className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-red-300"
+                className="w-full pl-9 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-red-300"
               />
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Channel Start Date</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Channel Start Date</label>
             <div className="relative">
               <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
@@ -172,7 +172,7 @@ export function YoutubeChannelStatsTool() {
                 max={today}
                 value={startDate}
                 onChange={e => setStartDate(e.target.value)}
-                className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-red-300"
+                className="w-full pl-9 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-red-300"
               />
             </div>
           </div>
@@ -268,7 +268,7 @@ export function YoutubeChannelStatsTool() {
                 bgClass: 'bg-yellow-50',
               },
             ].map(({ label, value, icon: Icon, colorClass, bgClass }) => (
-              <div key={label} className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+              <div key={label} className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 shadow-sm">
                 <div className={`inline-flex p-2 rounded-lg ${bgClass} mb-2`}>
                   <Icon className={`w-4 h-4 ${colorClass}`} />
                 </div>
@@ -279,7 +279,7 @@ export function YoutubeChannelStatsTool() {
           </div>
 
           {/* Earnings Breakdown */}
-          <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+          <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow-sm">
             <h3 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
               <DollarSign className="w-4 h-4 text-green-500" />
               Estimated Earnings at ${cpm.toFixed(2)} CPM
@@ -310,8 +310,8 @@ export function YoutubeChannelStatsTool() {
           </div>
 
           {/* Benchmarks */}
-          <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-            <h3 className="font-semibold text-gray-800 mb-4">Performance Benchmarks</h3>
+          <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5 shadow-sm">
+            <h3 className="font-semibold text-gray-800 dark:text-gray-100 mb-4">Performance Benchmarks</h3>
             <div className="space-y-3">
               {(() => {
                 const level = getBenchmarkLevel(metrics.avgViewsPerVideo, [1000, 10000, 100000]);
@@ -324,7 +324,7 @@ export function YoutubeChannelStatsTool() {
                 return (
                   <div className={`border rounded-lg p-3 ${benchmarkBgMap[level]}`}>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-gray-700">Avg Views per Video</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Avg Views per Video</span>
                       <span className={`text-sm font-bold ${benchmarkColorMap[level]}`}>{labelMap[level]}</span>
                     </div>
                     <p className="text-xs text-gray-500 mt-1">
@@ -344,7 +344,7 @@ export function YoutubeChannelStatsTool() {
                 return (
                   <div className={`border rounded-lg p-3 ${benchmarkBgMap[level]}`}>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-gray-700">Subscriber Engagement Ratio</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Subscriber Engagement Ratio</span>
                       <span className={`text-sm font-bold ${benchmarkColorMap[level]}`}>{labelMap[level]}</span>
                     </div>
                     <p className="text-xs text-gray-500 mt-1">
@@ -369,7 +369,7 @@ export function YoutubeChannelStatsTool() {
                 return (
                   <div className={`border rounded-lg p-3 ${benchmarkBgMap[level]}`}>
                     <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-gray-700">Upload Consistency</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Upload Consistency</span>
                       <span className={`text-sm font-bold ${benchmarkColorMap[level]}`}>{labelMap[level]}</span>
                     </div>
                     <p className="text-xs text-gray-500 mt-1">
