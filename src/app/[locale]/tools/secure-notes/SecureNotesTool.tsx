@@ -193,16 +193,16 @@ export function SecureNotesTool() {
       </div>
 
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">
           {view === 'list' ? 'My Secure Notes' : view === 'create' ? 'New Note' : 'View Note'}
         </h2>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-shrink-0">
           {view === 'list' && (
             <>
               {notes.length > 0 && (
                 <button onClick={handleExport} className="px-3 py-1.5 text-sm border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400">
-                  Export JSON
+                  Export
                 </button>
               )}
               <button onClick={() => { setView('create'); setCreateError(''); }} className="px-4 py-1.5 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700">
@@ -229,16 +229,16 @@ export function SecureNotesTool() {
             </div>
           )}
           {notes.map(note => (
-            <div key={note.id} className="flex items-center justify-between p-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-blue-300 dark:hover:border-blue-600 transition-colors">
-              <button onClick={() => handleViewNote(note)} className="flex-1 text-left">
-                <p className="font-medium text-slate-900 dark:text-slate-100">{note.title}</p>
+            <div key={note.id} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl hover:border-blue-300 dark:hover:border-blue-600 transition-colors">
+              <button onClick={() => handleViewNote(note)} className="flex-1 text-left min-w-0">
+                <p className="font-medium text-slate-900 dark:text-slate-100 truncate">{note.title}</p>
                 <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Created {formatDate(note.createdAt)} · Encrypted</p>
               </button>
-              <div className="flex items-center gap-2 ml-3">
-                <button onClick={() => handleViewNote(note)} className="px-3 py-1 text-xs bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50">
+              <div className="flex items-center gap-2 flex-shrink-0">
+                <button onClick={() => handleViewNote(note)} className="px-3 py-1.5 text-xs bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50">
                   Open
                 </button>
-                <button onClick={() => setDeleteId(note.id)} className="px-3 py-1 text-xs bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/50">
+                <button onClick={() => setDeleteId(note.id)} className="px-3 py-1.5 text-xs bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/50">
                   Delete
                 </button>
               </div>
@@ -270,7 +270,7 @@ export function SecureNotesTool() {
               className="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-lg text-sm bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
             />
           </div>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Encryption Password</label>
               <input
@@ -316,9 +316,9 @@ export function SecureNotesTool() {
       {/* View/Decrypt View */}
       {view === 'view' && selectedNote && (
         <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6 space-y-4">
-          <div className="flex items-center justify-between">
-            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">{selectedNote.title}</h3>
-            <button onClick={() => setDeleteId(selectedNote.id)} className="text-sm text-red-500 hover:text-red-700 dark:hover:text-red-400">Delete note</button>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 break-words">{selectedNote.title}</h3>
+            <button onClick={() => setDeleteId(selectedNote.id)} className="text-sm text-red-500 hover:text-red-700 dark:hover:text-red-400 flex-shrink-0">Delete note</button>
           </div>
           <p className="text-xs text-slate-400 dark:text-slate-500">Created {formatDate(selectedNote.createdAt)}</p>
 
