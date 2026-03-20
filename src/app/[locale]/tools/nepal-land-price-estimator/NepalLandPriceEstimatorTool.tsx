@@ -320,7 +320,8 @@ export function NepalLandPriceEstimatorTool() {
             Indicative 2025 market figures · Commercial land 1.5–2.5x · Agricultural 0.3–0.6x
           </p>
         </div>
-        <div className="overflow-x-auto">
+        {/* Mobile: card layout / Desktop: table */}
+        <div className="hidden sm:block overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-gray-100 bg-gray-50 dark:border-gray-700 dark:bg-gray-900/40">
@@ -353,6 +354,30 @@ export function NepalLandPriceEstimatorTool() {
               ))}
             </tbody>
           </table>
+        </div>
+        {/* Mobile card list */}
+        <div className="sm:hidden divide-y divide-gray-100 dark:divide-gray-700">
+          {DISTRICTS.map((d) => (
+            <button
+              key={d.name}
+              onClick={() => {
+                setProvince(d.province);
+                setDistrict(d.name);
+              }}
+              className="w-full px-4 py-3 text-left hover:bg-blue-50/40 dark:hover:bg-blue-950/20 transition-colors"
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <span className="font-medium text-gray-800 dark:text-gray-100 text-sm">{d.name}</span>
+                  <span className="block text-xs text-gray-500 dark:text-gray-400">{d.province}</span>
+                </div>
+                <div className="text-right">
+                  <span className="block text-sm font-medium text-gray-800 dark:text-gray-100">{fmtCrore(d.priceMaxPerAana)}</span>
+                  <span className="block text-xs text-gray-500 dark:text-gray-400">{fmtCrore(d.priceMinPerAana)} min</span>
+                </div>
+              </div>
+            </button>
+          ))}
         </div>
       </div>
 
