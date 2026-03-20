@@ -332,6 +332,7 @@ function drawCanvas(
 
 export function ThumbnailMakerTool() {
   const previewCanvasRef = useRef<HTMLCanvasElement>(null);
+  const smallPreviewRef = useRef<HTMLCanvasElement>(null);
   const exportCanvasRef = useRef<HTMLCanvasElement>(null);
   const bgInputRef = useRef<HTMLInputElement>(null);
   const overlayInputRef = useRef<HTMLInputElement>(null);
@@ -347,8 +348,12 @@ export function ThumbnailMakerTool() {
   const dragging = useRef<{ id: string; kind: 'text' | 'emoji' | 'overlay'; startX: number; startY: number; origX: number; origY: number } | null>(null);
 
   const redraw = useCallback(() => {
-    if (!previewCanvasRef.current) return;
-    drawCanvas(previewCanvasRef.current, state, bgImageRef.current, overlayImageRef.current, SCALE);
+    if (previewCanvasRef.current) {
+      drawCanvas(previewCanvasRef.current, state, bgImageRef.current, overlayImageRef.current, SCALE);
+    }
+    if (smallPreviewRef.current) {
+      drawCanvas(smallPreviewRef.current, state, bgImageRef.current, overlayImageRef.current, 168 / CANVAS_W);
+    }
   }, [state]);
 
   useEffect(() => {
@@ -433,6 +438,7 @@ export function ThumbnailMakerTool() {
     const img = new Image();
     img.onload = () => { bgImageRef.current = img; updateState({ bgType: 'image', bgImageSrc: url }); };
     img.src = url;
+    e.target.value = '';
   }
 
   function handleOverlayUpload(e: ChangeEvent<HTMLInputElement>) {
@@ -442,6 +448,7 @@ export function ThumbnailMakerTool() {
     const img = new Image();
     img.onload = () => { overlayImageRef.current = img; updateState({ overlayImageSrc: url }); };
     img.src = url;
+    e.target.value = '';
   }
 
   // Drag on preview canvas
@@ -869,23 +876,12 @@ export function ThumbnailMakerTool() {
               <Youtube className="w-3.5 h-3.5 text-red-500" /> How it looks in YouTube search results
             </p>
             <div className="flex items-start gap-3">
-              <canvas
-                ref={previewCanvasRef as unknown as React.Ref<HTMLCanvasElement>}
-                style={{ width: 168, height: 94, flexShrink: 0, borderRadius: 4, display: 'none' }}
-              />
-              {/* We reuse previewCanvasRef via CSS trick — show a scaled copy */}
               <div
                 style={{ width: 168, height: 94, overflow: 'hidden', borderRadius: 6, flexShrink: 0, border: '1px solid #334155', position: 'relative' }}
               >
                 <canvas
-                  id="small-preview-canvas"
+                  ref={smallPreviewRef}
                   style={{ width: 168, height: 94, display: 'block' }}
-                  ref={el => {
-                    if (el) {
-                      // Draw into the small canvas whenever state changes
-                      drawCanvas(el, state, bgImageRef.current, overlayImageRef.current, 168 / CANVAS_W);
-                    }
-                  }}
                 />
               </div>
               <div className="flex flex-col gap-1">

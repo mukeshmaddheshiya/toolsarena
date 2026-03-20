@@ -127,10 +127,10 @@ const SIGN_LIST: ZodiacSign[] = [
 ];
 
 const elementColorMap: Record<string, string> = {
-  Fire: 'bg-orange-100 text-orange-700',
-  Earth: 'bg-green-100 text-green-700',
-  Air: 'bg-sky-100 text-sky-700',
-  Water: 'bg-blue-100 text-blue-700',
+  Fire: 'bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-400',
+  Earth: 'bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400',
+  Air: 'bg-sky-100 dark:bg-sky-900/40 text-sky-700 dark:text-sky-400',
+  Water: 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-400',
 };
 
 function ScoreMeter({ label, score, icon }: { label: string; score: number; icon: React.ReactNode }) {
@@ -143,12 +143,12 @@ function ScoreMeter({ label, score, icon }: { label: string; score: number; icon
   return (
     <div>
       <div className="flex items-center justify-between mb-1">
-        <span className="flex items-center gap-1.5 text-sm font-medium text-gray-700">
+        <span className="flex items-center gap-1.5 text-sm font-medium text-slate-700 dark:text-slate-300">
           {icon} {label}
         </span>
-        <span className="text-sm font-bold text-gray-800">{score}%</span>
+        <span className="text-sm font-bold text-slate-800 dark:text-white">{score}%</span>
       </div>
-      <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
+      <div className="h-3 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
         <div
           className={`h-full rounded-full transition-all duration-700 ${barColor}`}
           style={{ width: `${score}%` }}
@@ -163,15 +163,15 @@ function SignCard({ sign, selected, onClick }: { sign: ZodiacSign; selected: boo
   return (
     <button
       onClick={onClick}
-      className={`flex flex-col items-center p-3 rounded-xl border-2 transition-all ${
+      className={`flex flex-col items-center p-2 sm:p-3 rounded-xl border-2 transition-all ${
         selected
-          ? 'border-purple-500 bg-purple-50 shadow-md scale-105'
-          : 'border-gray-200 bg-white hover:border-purple-300 hover:bg-purple-50'
+          ? 'border-purple-500 bg-purple-50 dark:bg-purple-900/30 shadow-md scale-105'
+          : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-purple-300 dark:hover:border-purple-600 hover:bg-purple-50 dark:hover:bg-purple-900/20'
       }`}
     >
-      <span className="text-2xl leading-none">{info.symbol}</span>
-      <span className="text-xs font-semibold text-gray-700 mt-1">{info.name}</span>
-      <span className="text-xs text-gray-400">{info.element}</span>
+      <span className="text-xl sm:text-2xl leading-none">{info.symbol}</span>
+      <span className="text-[10px] sm:text-xs font-semibold text-slate-700 dark:text-slate-200 mt-1">{info.name}</span>
+      <span className="text-[10px] sm:text-xs text-slate-400 dark:text-slate-500 hidden sm:block">{info.element}</span>
     </button>
   );
 }
@@ -206,10 +206,10 @@ export function ZodiacCompatibilityTool() {
   const overall = result ? Math.round((result.love + result.friendship + result.communication) / 3) : 0;
 
   const overallColor =
-    overall >= 80 ? 'text-green-600' :
-    overall >= 60 ? 'text-yellow-600' :
-    overall >= 40 ? 'text-orange-500' :
-    'text-red-500';
+    overall >= 80 ? 'text-green-600 dark:text-green-400' :
+    overall >= 60 ? 'text-yellow-600 dark:text-yellow-400' :
+    overall >= 40 ? 'text-orange-500 dark:text-orange-400' :
+    'text-red-500 dark:text-red-400';
 
   const overallLabel =
     overall >= 85 ? 'Exceptional Match' :
@@ -219,14 +219,14 @@ export function ZodiacCompatibilityTool() {
     'Very Difficult Match';
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6 p-4">
+    <div className="space-y-6">
       {/* Header */}
       <div className="text-center">
-        <div className="inline-flex items-center justify-center p-3 bg-purple-100 rounded-full mb-3">
-          <Star className="w-6 h-6 text-purple-600" />
+        <div className="inline-flex items-center justify-center p-3 bg-purple-100 dark:bg-purple-900/40 rounded-full mb-3">
+          <Star className="w-6 h-6 text-purple-600 dark:text-purple-400" />
         </div>
-        <h2 className="text-2xl font-bold text-gray-900">Zodiac Compatibility</h2>
-        <p className="text-sm text-gray-500 mt-1">
+        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Zodiac Compatibility</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
           {step === 1
             ? 'Step 1 — Select the first zodiac sign'
             : sign2
@@ -236,8 +236,8 @@ export function ZodiacCompatibilityTool() {
       </div>
 
       {/* Sign grid */}
-      <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-        <div className="grid grid-cols-6 sm:grid-cols-12 gap-2">
+      <div className="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-3 sm:p-5 shadow-sm">
+        <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-12 gap-1.5 sm:gap-2">
           {SIGN_LIST.map(sign => (
             <SignCard
               key={sign}
@@ -249,17 +249,17 @@ export function ZodiacCompatibilityTool() {
         </div>
 
         {(sign1 || sign2) && (
-          <div className="mt-4 flex items-center justify-between px-1">
-            <div className="flex items-center gap-2">
+          <div className="mt-4 flex items-center justify-between flex-wrap gap-2 px-1">
+            <div className="flex items-center gap-2 flex-wrap">
               {sign1 && (
-                <span className="inline-flex items-center gap-1.5 bg-purple-100 text-purple-700 text-sm font-semibold px-3 py-1 rounded-full">
+                <span className="inline-flex items-center gap-1.5 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 text-sm font-semibold px-3 py-1 rounded-full">
                   {ZODIAC_DATA[sign1].symbol} {ZODIAC_DATA[sign1].name}
                 </span>
               )}
               {sign2 && (
                 <>
                   <Heart className="w-4 h-4 text-pink-400" />
-                  <span className="inline-flex items-center gap-1.5 bg-pink-100 text-pink-700 text-sm font-semibold px-3 py-1 rounded-full">
+                  <span className="inline-flex items-center gap-1.5 bg-pink-100 dark:bg-pink-900/40 text-pink-700 dark:text-pink-300 text-sm font-semibold px-3 py-1 rounded-full">
                     {ZODIAC_DATA[sign2].symbol} {ZODIAC_DATA[sign2].name}
                   </span>
                 </>
@@ -267,7 +267,7 @@ export function ZodiacCompatibilityTool() {
             </div>
             <button
               onClick={reset}
-              className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-600 transition-colors"
+              className="flex items-center gap-1.5 text-sm text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
             >
               <RefreshCw className="w-3.5 h-3.5" /> Reset
             </button>
@@ -279,11 +279,11 @@ export function ZodiacCompatibilityTool() {
       {result && sign1 && sign2 && (
         <div className="space-y-5">
           {/* Overall score */}
-          <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm text-center">
-            <p className="text-sm text-gray-500 mb-1">Overall Compatibility</p>
-            <p className={`text-6xl font-black ${overallColor}`}>{overall}%</p>
-            <p className={`text-lg font-semibold mt-1 ${overallColor}`}>{overallLabel}</p>
-            <div className="mt-4 h-4 bg-gray-100 rounded-full overflow-hidden mx-auto max-w-xs">
+          <div className="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-5 sm:p-6 shadow-sm text-center">
+            <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">Overall Compatibility</p>
+            <p className={`text-5xl sm:text-6xl font-black ${overallColor}`}>{overall}%</p>
+            <p className={`text-base sm:text-lg font-semibold mt-1 ${overallColor}`}>{overallLabel}</p>
+            <div className="mt-4 h-4 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden mx-auto max-w-xs">
               <div
                 className={`h-full rounded-full transition-all duration-1000 ${
                   overall >= 80 ? 'bg-green-500' :
@@ -296,8 +296,8 @@ export function ZodiacCompatibilityTool() {
           </div>
 
           {/* Score breakdown */}
-          <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm space-y-4">
-            <h3 className="font-semibold text-gray-800">Score Breakdown</h3>
+          <div className="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-4 sm:p-5 shadow-sm space-y-4">
+            <h3 className="font-semibold text-slate-800 dark:text-white">Score Breakdown</h3>
             <ScoreMeter label="Love & Romance" score={result.love} icon={<Heart className="w-4 h-4 text-pink-500" />} />
             <ScoreMeter label="Friendship" score={result.friendship} icon={<Users className="w-4 h-4 text-blue-500" />} />
             <ScoreMeter label="Communication" score={result.communication} icon={<MessageCircle className="w-4 h-4 text-green-500" />} />
@@ -308,35 +308,35 @@ export function ZodiacCompatibilityTool() {
             {([sign1, sign2] as ZodiacSign[]).map(sign => {
               const info = ZODIAC_DATA[sign];
               return (
-                <div key={sign} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                <div key={sign} className="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-xl p-4 sm:p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-3xl">{info.symbol}</span>
-                    <div>
-                      <p className="font-bold text-gray-900">{info.name}</p>
-                      <p className="text-xs text-gray-400">{info.dates}</p>
+                    <span className="text-2xl sm:text-3xl">{info.symbol}</span>
+                    <div className="min-w-0">
+                      <p className="font-bold text-slate-900 dark:text-white">{info.name}</p>
+                      <p className="text-xs text-slate-400 dark:text-slate-500">{info.dates}</p>
                     </div>
-                    <span className={`ml-auto text-xs font-semibold px-2 py-0.5 rounded-full ${elementColorMap[info.element]}`}>
+                    <span className={`ml-auto text-xs font-semibold px-2 py-0.5 rounded-full shrink-0 ${elementColorMap[info.element]}`}>
                       {info.element}
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 mb-3">{info.description}</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-300 mb-3">{info.description}</p>
                   <div className="flex flex-wrap gap-1 mb-3">
                     {info.traits.map(t => (
-                      <span key={t} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">{t}</span>
+                      <span key={t} className="text-xs bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded-full">{t}</span>
                     ))}
                   </div>
-                  <p className="text-xs text-gray-500">
-                    <span className="font-medium text-green-600">Best match:</span> {info.bestMatch}
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    <span className="font-medium text-green-600 dark:text-green-400">Best match:</span> {info.bestMatch}
                   </p>
-                  <p className="text-xs text-gray-500 mt-0.5">
-                    <span className="font-medium text-red-500">Worst match:</span> {info.worstMatch}
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                    <span className="font-medium text-red-500 dark:text-red-400">Worst match:</span> {info.worstMatch}
                   </p>
                 </div>
               );
             })}
           </div>
 
-          <p className="text-xs text-center text-gray-400">
+          <p className="text-xs text-center text-slate-400 dark:text-slate-500">
             For entertainment purposes. Real relationships are shaped by communication, respect, and effort — not star signs.
           </p>
         </div>

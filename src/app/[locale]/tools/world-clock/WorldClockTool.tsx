@@ -142,57 +142,57 @@ export function WorldClockTool() {
   });
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6 p-4">
+    <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-blue-100 rounded-lg">
-            <Globe className="w-5 h-5 text-blue-600" />
+          <div className="p-2 bg-blue-100 dark:bg-blue-900/40 rounded-lg">
+            <Globe className="w-5 h-5 text-blue-600 dark:text-blue-400" />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-gray-900">World Clock</h2>
-            <p className="text-xs text-gray-500">Current time in major cities worldwide</p>
+            <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">World Clock</h2>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Current time in major cities worldwide</p>
           </div>
         </div>
         <button
           onClick={() => setUse24hr(v => !v)}
-          className="text-xs border border-gray-300 hover:border-blue-400 hover:text-blue-600 px-3 py-1.5 rounded-lg transition-colors font-medium"
+          className="text-xs border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-1.5 rounded-lg transition-colors font-medium"
         >
           Switch to {use24hr ? '12-hour' : '24-hour'}
         </button>
       </div>
 
       {/* Local time hero card */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-6 text-white shadow-lg">
-        <div className="flex items-start justify-between gap-4">
-          <div>
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-4 sm:p-6 text-white shadow-lg">
+        <div className="flex items-start justify-between gap-3 sm:gap-4">
+          <div className="min-w-0">
             <p className="text-blue-200 text-sm font-medium mb-1">Your Local Time</p>
-            <p className="text-4xl sm:text-5xl font-black tracking-tight font-mono">{localTime}</p>
-            <p className="text-blue-200 text-sm mt-2">{localDate}</p>
+            <p className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight font-mono truncate">{localTime}</p>
+            <p className="text-blue-200 text-xs sm:text-sm mt-2 truncate">{localDate}</p>
           </div>
           <div className="text-right flex-shrink-0">
-            <Clock className="w-8 h-8 text-blue-300 mb-2 ml-auto" />
-            <p className="text-blue-200 text-xs">{localTZ}</p>
+            <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300 mb-2 ml-auto" />
+            <p className="text-blue-200 text-xs max-w-[100px] sm:max-w-none truncate">{localTZ}</p>
           </div>
         </div>
       </div>
 
       {/* Search */}
       <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 dark:text-slate-500" />
         <input
           type="text"
           placeholder="Search city or country..."
           value={search}
           onChange={e => setSearch(e.target.value)}
-          className="w-full pl-9 pr-4 py-2.5 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+          className="w-full pl-9 pr-4 py-2.5 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 placeholder:text-slate-400 dark:placeholder:text-slate-500"
         />
       </div>
 
       {/* Legend */}
-      <div className="flex items-center gap-5 text-xs text-gray-500 flex-wrap">
+      <div className="flex items-center gap-4 sm:gap-5 text-xs text-slate-500 dark:text-slate-400 flex-wrap">
         <span className="flex items-center gap-1.5">
-          <Sun className="w-3.5 h-3.5 text-yellow-500" /> Daytime (6AM-8PM local)
+          <Sun className="w-3.5 h-3.5 text-yellow-500" /> Daytime
         </span>
         <span className="flex items-center gap-1.5">
           <Moon className="w-3.5 h-3.5 text-blue-400" /> Nighttime
@@ -203,34 +203,33 @@ export function WorldClockTool() {
       </div>
 
       {/* City grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {sorted.map(cityConfig => {
           const { time, date, hour, utcOffset } = getTimeInZone(cityConfig.timezone, use24hr);
           const daytime = isDaytime(hour);
           const isFav = favorites.includes(cityConfig.city);
 
-          const cardBase = 'relative rounded-xl border p-4 transition-all ';
-          const cardStyle = daytime
-            ? cardBase + 'bg-white border-gray-200 shadow-sm'
-            : cardBase + 'bg-slate-900 border-slate-700';
-
-          const cityNameStyle = 'font-bold text-sm leading-tight truncate ' + (daytime ? 'text-gray-900' : 'text-white');
-          const countryStyle = 'text-xs truncate ' + (daytime ? 'text-gray-400' : 'text-slate-400');
-          const timeStyle = 'text-2xl font-black font-mono tracking-tight ' + (daytime ? 'text-gray-900' : 'text-white');
-          const dateStyle = 'text-xs mt-0.5 ' + (daytime ? 'text-gray-500' : 'text-slate-400');
-          const footerBorder = 'flex items-center justify-between mt-3 pt-3 border-t ' + (daytime ? 'border-gray-100' : 'border-slate-700');
-          const abbrevStyle = 'text-xs font-semibold ' + (daytime ? 'text-blue-600' : 'text-blue-400');
-          const offsetStyle = 'text-xs ' + (daytime ? 'text-gray-400' : 'text-slate-500');
-          const starStyle = 'w-4 h-4 ' + (isFav ? 'fill-yellow-400 text-yellow-400' : daytime ? 'text-gray-300 hover:text-yellow-400' : 'text-slate-600 hover:text-yellow-400');
-
           return (
-            <div key={cityConfig.city + '-' + cityConfig.timezone} className={cardStyle}>
+            <div
+              key={cityConfig.city + '-' + cityConfig.timezone}
+              className={`relative rounded-xl border p-3 sm:p-4 transition-all ${
+                daytime
+                  ? 'bg-white dark:bg-slate-800/60 border-slate-200 dark:border-slate-700 shadow-sm'
+                  : 'bg-slate-900 dark:bg-slate-900 border-slate-700'
+              }`}
+            >
               <button
                 onClick={() => toggleFavorite(cityConfig.city)}
                 className="absolute top-3 right-3 transition-colors"
                 title={isFav ? 'Remove from favorites' : 'Add to favorites'}
               >
-                <Star className={starStyle} />
+                <Star className={`w-4 h-4 ${
+                  isFav
+                    ? 'fill-yellow-400 text-yellow-400'
+                    : daytime
+                      ? 'text-slate-300 dark:text-slate-500 hover:text-yellow-400'
+                      : 'text-slate-600 hover:text-yellow-400'
+                }`} />
               </button>
 
               <div className="flex items-center gap-2 mb-3">
@@ -240,17 +239,29 @@ export function WorldClockTool() {
                   <Moon className="w-4 h-4 text-blue-400 flex-shrink-0" />
                 )}
                 <div className="min-w-0 pr-6">
-                  <p className={cityNameStyle}>{cityConfig.city}</p>
-                  <p className={countryStyle}>{cityConfig.country}</p>
+                  <p className={`font-bold text-sm leading-tight truncate ${daytime ? 'text-slate-900 dark:text-white' : 'text-white'}`}>
+                    {cityConfig.city}
+                  </p>
+                  <p className={`text-xs truncate ${daytime ? 'text-slate-400 dark:text-slate-400' : 'text-slate-400'}`}>
+                    {cityConfig.country}
+                  </p>
                 </div>
               </div>
 
-              <p className={timeStyle}>{time}</p>
-              <p className={dateStyle}>{date}</p>
+              <p className={`text-xl sm:text-2xl font-black font-mono tracking-tight ${daytime ? 'text-slate-900 dark:text-white' : 'text-white'}`}>
+                {time}
+              </p>
+              <p className={`text-xs mt-0.5 ${daytime ? 'text-slate-500 dark:text-slate-400' : 'text-slate-400'}`}>
+                {date}
+              </p>
 
-              <div className={footerBorder}>
-                <span className={abbrevStyle}>{cityConfig.abbreviation}</span>
-                <span className={offsetStyle}>{utcOffset}</span>
+              <div className={`flex items-center justify-between mt-3 pt-3 border-t ${daytime ? 'border-slate-100 dark:border-slate-700' : 'border-slate-700'}`}>
+                <span className={`text-xs font-semibold ${daytime ? 'text-blue-600 dark:text-blue-400' : 'text-blue-400'}`}>
+                  {cityConfig.abbreviation}
+                </span>
+                <span className={`text-xs ${daytime ? 'text-slate-400 dark:text-slate-500' : 'text-slate-500'}`}>
+                  {utcOffset}
+                </span>
               </div>
             </div>
           );
@@ -258,7 +269,7 @@ export function WorldClockTool() {
       </div>
 
       {sorted.length === 0 && (
-        <div className="text-center py-12 text-gray-400">
+        <div className="text-center py-12 text-slate-400 dark:text-slate-500">
           <Globe className="w-8 h-8 mx-auto mb-2 opacity-40" />
           <p className="font-medium">No cities match your search.</p>
           <p className="text-sm mt-1">Try a different city or country name.</p>
