@@ -1,0 +1,7 @@
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <rect width="1280" height="58" fill="#1e40af"/>
+  <text x="640" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="22" fill="white">ToolsArena</text>
+  <text x="640" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="36" fill="#1e40af">300+ Free Online Tools</text>
+  <text x="640" y="403" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#64748b">Privacy-first. No signup. Works offline.</text>
+</svg>

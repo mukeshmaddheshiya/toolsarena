@@ -11,6 +11,8 @@ import { getDefaultMetadata } from '@/lib/seo';
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 import { routing } from '@/i18n/routing';
 import { Locale } from '@/i18n/config';
+import { PwaInstallPrompt } from '@/components/pwa/PwaInstallPrompt';
+import { ServiceWorkerRegister } from '@/components/pwa/ServiceWorkerRegister';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'optional', preload: false });
@@ -111,6 +113,8 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer />
+          <PwaInstallPrompt />
+          <ServiceWorkerRegister />
         </NextIntlClientProvider>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-31BJJP8M9X" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">

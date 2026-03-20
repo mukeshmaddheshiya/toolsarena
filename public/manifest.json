@@ -1,14 +1,39 @@
 {
   "name": "ToolsArena - Free Online Tools",
   "short_name": "ToolsArena",
-  "description": "Free online tools for images, PDFs, text, calculators and more. No signup required.",
+  "description": "300+ free online tools for images, PDFs, text, calculators, developers and more. No signup. Privacy-first.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1e40af",
+  "orientation": "any",
+  "categories": ["utilities", "productivity", "education"],
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" },
     { "src": "/icon", "sizes": "96x96", "type": "image/png" },
-    { "src": "/apple-icon", "sizes": "180x180", "type": "image/png", "purpose": "apple touch icon" }
+    { "src": "/apple-icon", "sizes": "180x180", "type": "image/png" },
+    { "src": "/icons/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/icon-maskable-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "/icons/screenshot-wide.svg",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide",
+      "label": "ToolsArena Homepage"
+    },
+    {
+      "src": "/icons/screenshot-narrow.svg",
+      "sizes": "390x844",
+      "type": "image/svg+xml",
+      "form_factor": "narrow",
+      "label": "ToolsArena on Mobile"
+    }
   ]
 }
