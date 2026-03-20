@@ -35,14 +35,14 @@ interface Settings {
   inkColor: InkColor;
   paperStyle: PaperStyle;
   margin: number;
-  randomRotation: boolean;
+  naturalness: number; // 0-100, controls wobble/jitter intensity
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const PAGE_W = 794;
-const PAGE_H = 1123;
-const PREVIEW_SCALE = 0.55;
+const PAGE_W = 1588; // 2x A4 for sharp output
+const PAGE_H = 2246;
+const PREVIEW_SCALE = 0.275; // Fits nicely in preview
 
 const FONTS: { name: HandwritingFont; label: string; sample: string }[] = [
   { name: 'Caveat', label: 'Caveat', sample: 'Casual handwriting' },
@@ -53,78 +53,102 @@ const FONTS: { name: HandwritingFont; label: string; sample: string }[] = [
   { name: 'Patrick Hand', label: 'Patrick Hand', sample: 'Clean print' },
 ];
 
-const INK_COLORS: { name: InkColor; hex: string }[] = [
-  { name: 'Black', hex: '#1a1a1a' },
-  { name: 'Dark Blue', hex: '#1a3050' },
-  { name: 'Blue', hex: '#1e4db7' },
-  { name: 'Red', hex: '#c0392b' },
-  { name: 'Pencil Gray', hex: '#5a5a6a' },
+const INK_COLORS: { name: InkColor; hex: string; shadow: string }[] = [
+  { name: 'Black', hex: '#111111', shadow: '#00000018' },
+  { name: 'Dark Blue', hex: '#0d1f3c', shadow: '#00002018' },
+  { name: 'Blue', hex: '#1e40af', shadow: '#1e40af15' },
+  { name: 'Red', hex: '#b91c1c', shadow: '#b91c1c15' },
+  { name: 'Pencil Gray', hex: '#4a4a5a', shadow: '#00000010' },
 ];
 
 const PAPER_STYLES: { name: PaperStyle; bg: string }[] = [
   { name: 'White', bg: '#ffffff' },
-  { name: 'Ruled', bg: '#ffffff' },
+  { name: 'Ruled', bg: '#fffef8' },
   { name: 'Grid', bg: '#ffffff' },
-  { name: 'Yellow Notepad', bg: '#fef9e0' },
+  { name: 'Yellow Notepad', bg: '#fef9d9' },
 ];
 
 const DEFAULT_SETTINGS: Settings = {
-  font: 'Caveat',
-  fontSize: 22,
+  font: 'Kalam',
+  fontSize: 44,
   lineHeight: 2.0,
   inkColor: 'Dark Blue',
   paperStyle: 'Ruled',
-  margin: 60,
-  randomRotation: true,
+  margin: 120,
+  naturalness: 65,
 };
 
 const GOOGLE_FONTS_URL =
-  'https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&family=Indie+Flower&family=Shadows+Into+Light&family=Dancing+Script&family=Patrick+Hand&display=swap';
+  'https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Indie+Flower&family=Shadows+Into+Light&family=Dancing+Script:wght@400;500;600;700&family=Patrick+Hand&display=swap';
 
-// ─── Drawing helpers ──────────────────────────────────────────────────────────
+// ─── Seeded random for reproducible jitter ───────────────────────────────────
 
-function drawPaperBackground(
+function seededRng(seed: number) {
+  let s = seed;
+  return () => {
+    s = (s * 1664525 + 1013904223) & 0xffffffff;
+    return (s >>> 0) / 0xffffffff;
+  };
+}
+
+// ─── Paper rendering ─────────────────────────────────────────────────────────
+
+function drawPaper(
   ctx: CanvasRenderingContext2D,
   style: PaperStyle,
   w: number,
   h: number,
   margin: number,
-  lineHeight: number,
-  fontSize: number,
+  lineSpacing: number,
 ): void {
   const bgColor = PAPER_STYLES.find(p => p.name === style)?.bg ?? '#ffffff';
+
+  // Base fill
   ctx.fillStyle = bgColor;
   ctx.fillRect(0, 0, w, h);
 
-  const lineSpacing = Math.round(fontSize * lineHeight);
+  // Subtle paper grain texture
+  const grainIntensity = style === 'Yellow Notepad' ? 8 : 4;
+  const imageData = ctx.getImageData(0, 0, w, h);
+  const data = imageData.data;
+  const rng = seededRng(42);
+  for (let i = 0; i < data.length; i += 4) {
+    const noise = (rng() - 0.5) * grainIntensity;
+    data[i] = Math.min(255, Math.max(0, data[i] + noise));
+    data[i + 1] = Math.min(255, Math.max(0, data[i + 1] + noise));
+    data[i + 2] = Math.min(255, Math.max(0, data[i + 2] + noise));
+  }
+  ctx.putImageData(imageData, 0, 0);
 
+  // Ruled lines
   if (style === 'Ruled' || style === 'Yellow Notepad') {
-    ctx.strokeStyle = style === 'Yellow Notepad' ? '#c8b96a' : '#a8c4e0';
-    ctx.lineWidth = 1;
+    const lineColor = style === 'Yellow Notepad' ? 'rgba(180,160,100,0.35)' : 'rgba(120,170,220,0.35)';
+    ctx.strokeStyle = lineColor;
+    ctx.lineWidth = 1.5;
     for (let y = margin + lineSpacing; y < h - margin / 2; y += lineSpacing) {
       ctx.beginPath();
-      ctx.moveTo(margin / 2, y);
-      ctx.lineTo(w - margin / 2, y);
+      ctx.moveTo(margin * 0.4, y);
+      ctx.lineTo(w - margin * 0.4, y);
       ctx.stroke();
     }
-    // Red margin line for ruled/notepad
-    ctx.strokeStyle = style === 'Yellow Notepad' ? '#e08080' : '#e08080';
-    ctx.lineWidth = 1.5;
+    // Red margin line
+    ctx.strokeStyle = 'rgba(220,80,80,0.45)';
+    ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.moveTo(margin - 10, 0);
-    ctx.lineTo(margin - 10, h);
+    ctx.moveTo(margin - 15, 0);
+    ctx.lineTo(margin - 15, h);
     ctx.stroke();
   } else if (style === 'Grid') {
-    ctx.strokeStyle = '#d0dff0';
-    ctx.lineWidth = 0.8;
+    ctx.strokeStyle = 'rgba(160,190,230,0.3)';
+    ctx.lineWidth = 1;
     const gridSize = lineSpacing;
-    for (let x = margin / 2; x < w; x += gridSize) {
+    for (let x = margin * 0.4; x < w; x += gridSize) {
       ctx.beginPath();
       ctx.moveTo(x, 0);
       ctx.lineTo(x, h);
       ctx.stroke();
     }
-    for (let y = margin / 2; y < h; y += gridSize) {
+    for (let y = margin * 0.4; y < h; y += gridSize) {
       ctx.beginPath();
       ctx.moveTo(0, y);
       ctx.lineTo(w, y);
@@ -132,61 +156,126 @@ function drawPaperBackground(
     }
   }
 
-  // Page edge shadow
-  const shadow = ctx.createLinearGradient(0, 0, 8, 0);
-  shadow.addColorStop(0, 'rgba(0,0,0,0.06)');
+  // Subtle page edge shadow (left)
+  const shadow = ctx.createLinearGradient(0, 0, 12, 0);
+  shadow.addColorStop(0, 'rgba(0,0,0,0.05)');
   shadow.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = shadow;
-  ctx.fillRect(0, 0, 8, h);
+  ctx.fillRect(0, 0, 12, h);
+
+  // Very subtle vignette at bottom
+  const bottomShadow = ctx.createLinearGradient(0, h - 40, 0, h);
+  bottomShadow.addColorStop(0, 'rgba(0,0,0,0)');
+  bottomShadow.addColorStop(1, 'rgba(0,0,0,0.02)');
+  ctx.fillStyle = bottomShadow;
+  ctx.fillRect(0, h - 40, w, 40);
 }
 
-function seededRandom(seed: number): number {
-  const x = Math.sin(seed + 1) * 10000;
-  return x - Math.floor(x);
-}
+// ─── Handwriting rendering ───────────────────────────────────────────────────
 
-function drawHandwrittenText(
+function drawHandwriting(
   ctx: CanvasRenderingContext2D,
   lines: string[],
   settings: Settings,
   w: number,
-  _h: number,
 ): void {
-  const { font, fontSize, lineHeight, inkColor, margin, randomRotation } = settings;
-  const ink = INK_COLORS.find(c => c.name === inkColor)?.hex ?? '#1a1a1a';
+  const { font, fontSize, lineHeight, inkColor, margin, naturalness } = settings;
+  const ink = INK_COLORS.find(c => c.name === inkColor) ?? INK_COLORS[0];
   const lineSpacing = Math.round(fontSize * lineHeight);
-
-  ctx.font = `${fontSize}px "${font}", cursive`;
-  ctx.fillStyle = ink;
-  ctx.textBaseline = 'alphabetic';
+  const intensity = naturalness / 100;
 
   const textX = margin;
   const textW = w - margin * 2;
-  let charSeed = 0;
 
-  let y = margin + fontSize + lineSpacing * 0.5;
+  const rng = seededRng(7);
 
-  for (const line of lines) {
-    if (!randomRotation) {
-      ctx.fillText(line, textX, y, textW);
-    } else {
-      // Render character by character with slight rotation
-      let x = textX;
-      for (const char of line) {
-        const rotation = (seededRandom(charSeed++) - 0.5) * (2.5 * Math.PI / 180);
+  // Per-line baseline drift (slow wave)
+  let lineDrift = 0;
+
+  let y = margin + fontSize + lineSpacing * 0.3;
+
+  for (let lineIdx = 0; lineIdx < lines.length; lineIdx++) {
+    const line = lines[lineIdx];
+
+    // Slow wave drift for the whole line baseline
+    lineDrift = Math.sin(lineIdx * 0.4 + 1.7) * 3 * intensity;
+
+    let x = textX;
+
+    // Slight per-line indent variation
+    x += (rng() - 0.5) * 6 * intensity;
+
+    // Word-level processing for natural spacing
+    const words = line.split(' ');
+    for (let wi = 0; wi < words.length; wi++) {
+      const word = words[wi];
+      if (wi > 0) {
+        // Word space with variation
+        const spaceWidth = fontSize * 0.35 + (rng() - 0.5) * fontSize * 0.12 * intensity;
+        x += spaceWidth;
+      }
+
+      // Per-word slight baseline shift
+      const wordBaselineShift = (rng() - 0.5) * 3 * intensity;
+
+      // Per-word slight size variation
+      const wordSizeVariation = 1 + (rng() - 0.5) * 0.04 * intensity;
+      const wordFontSize = fontSize * wordSizeVariation;
+
+      for (let ci = 0; ci < word.length; ci++) {
+        const char = word[ci];
+        const charFontSize = wordFontSize + (rng() - 0.5) * 2 * intensity;
+
+        ctx.font = `${Math.round(charFontSize)}px "${font}", cursive`;
+
         const charWidth = ctx.measureText(char).width;
+
+        // Per-character jitter
+        const rotation = (rng() - 0.5) * (3.5 * intensity) * (Math.PI / 180);
+        const xJitter = (rng() - 0.5) * 1.8 * intensity;
+        const yJitter = (rng() - 0.5) * 2.5 * intensity;
+
+        // Ink pressure variation (opacity + slight size)
+        const pressureCycle = Math.sin(x * 0.008 + lineIdx * 2.1);
+        const opacity = 0.82 + pressureCycle * 0.12 * intensity + rng() * 0.06 * intensity;
+        const finalOpacity = Math.min(1, Math.max(0.7, opacity));
+
+        const cx = x + charWidth / 2 + xJitter;
+        const cy = y + lineDrift + wordBaselineShift + yJitter;
+
+        // Ink bleed / shadow (subtle smudge behind text)
+        if (inkColor !== 'Pencil Gray') {
+          ctx.save();
+          ctx.globalAlpha = 0.08 * intensity;
+          ctx.fillStyle = ink.shadow;
+          ctx.translate(cx + 0.5, cy + 1);
+          ctx.rotate(rotation);
+          ctx.font = `${Math.round(charFontSize + 1)}px "${font}", cursive`;
+          ctx.fillText(char, -charWidth / 2, 0);
+          ctx.restore();
+        }
+
+        // Main character
         ctx.save();
-        ctx.translate(x + charWidth / 2, y);
+        ctx.globalAlpha = finalOpacity;
+        ctx.fillStyle = ink.hex;
+        ctx.translate(cx, cy);
         ctx.rotate(rotation);
+        ctx.font = `${Math.round(charFontSize)}px "${font}", cursive`;
         ctx.fillText(char, -charWidth / 2, 0);
         ctx.restore();
-        x += charWidth;
+
+        x += charWidth + (rng() - 0.5) * 1.2 * intensity;
+
         if (x > textX + textW) break;
       }
+      if (x > textX + textW) break;
     }
     y += lineSpacing;
   }
 }
+
+// ─── Text wrapping & pagination ──────────────────────────────────────────────
 
 function wrapText(
   ctx: CanvasRenderingContext2D,
@@ -239,21 +328,29 @@ function renderPage(
   settings: Settings,
   scale: number = 1,
 ): void {
-  const w = PAGE_W * scale;
-  const h = PAGE_H * scale;
+  const w = Math.round(PAGE_W * scale);
+  const h = Math.round(PAGE_H * scale);
   canvas.width = w;
   canvas.height = h;
   const ctx = canvas.getContext('2d')!;
   ctx.clearRect(0, 0, w, h);
-  drawPaperBackground(ctx, settings.paperStyle, w, h, settings.margin * scale, settings.lineHeight, settings.fontSize * scale);
-  drawHandwrittenText(ctx, pageLines, { ...settings, fontSize: settings.fontSize * scale, margin: settings.margin * scale }, w, h);
+
+  const scaled: Settings = {
+    ...settings,
+    fontSize: Math.round(settings.fontSize * scale),
+    margin: Math.round(settings.margin * scale),
+  };
+
+  const lineSpacing = Math.round(scaled.fontSize * scaled.lineHeight);
+  drawPaper(ctx, settings.paperStyle, w, h, scaled.margin, lineSpacing);
+  drawHandwriting(ctx, pageLines, scaled, w);
 }
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export function TextToHandwritingTool() {
   const [text, setText] = useState<string>(
-    'The quick brown fox jumps over the lazy dog.\n\nStart typing your own text here to see it in beautiful handwriting styles. You can write as much as you like — the tool will automatically create multiple pages if needed.',
+    'The quick brown fox jumps over the lazy dog.\n\nStart typing your own text here to see it rendered in beautiful handwriting. You can write as much as you like — the tool will automatically create multiple pages.',
   );
   const [settings, setSettings] = useState<Settings>(DEFAULT_SETTINGS);
   const [pages, setPages] = useState<string[][]>([[]]);
@@ -272,12 +369,11 @@ export function TextToHandwritingTool() {
       link.href = GOOGLE_FONTS_URL;
       document.head.appendChild(link);
     }
-    // Wait for fonts to load
     const timer = setTimeout(() => setFontsLoaded(true), 1500);
     return () => clearTimeout(timer);
   }, []);
 
-  // Compute pages from text + settings
+  // Compute pages
   const computePages = useCallback(() => {
     const offscreen = offscreenCanvasRef.current ?? document.createElement('canvas');
     offscreenCanvasRef.current = offscreen;
@@ -298,7 +394,6 @@ export function TextToHandwritingTool() {
     renderPage(previewCanvasRef.current, pages[currentPage] ?? [], settings, PREVIEW_SCALE);
   }, [pages, currentPage, settings, fontsLoaded]);
 
-  // Also draw before fonts confirm loaded (best-effort)
   useEffect(() => {
     if (!previewCanvasRef.current) return;
     renderPage(previewCanvasRef.current, pages[currentPage] ?? [], settings, PREVIEW_SCALE);
@@ -370,41 +465,23 @@ export function TextToHandwritingTool() {
                   onClick={() => updateSettings({ font: f.name })}
                   className={`flex items-center justify-between rounded-lg px-3 py-2 transition-colors border ${
                     settings.font === f.name
-                      ? 'bg-indigo-700/40 border-indigo-500 text-white'
+                      ? 'bg-indigo-600 border-indigo-500 text-white'
                       : 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-slate-400 dark:hover:border-slate-500'
                   }`}
                 >
                   <span className="text-sm font-medium">{f.label}</span>
-                  <span className="text-xs text-slate-500">{f.sample}</span>
+                  <span className={`text-xs ${settings.font === f.name ? 'text-indigo-200' : 'text-slate-500'}`}>{f.sample}</span>
                 </button>
               ))}
             </div>
           </div>
 
-          {/* Size & Line height */}
+          {/* Typography controls */}
           <div className="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 flex flex-col gap-3">
             <p className="text-xs font-medium text-slate-700 dark:text-slate-300">Typography</p>
-            <SliderRow
-              label="Font Size"
-              value={settings.fontSize}
-              min={12} max={32} step={1}
-              display={`${settings.fontSize}px`}
-              onChange={v => updateSettings({ fontSize: v })}
-            />
-            <SliderRow
-              label="Line Height"
-              value={settings.lineHeight}
-              min={1.5} max={3.0} step={0.1}
-              display={settings.lineHeight.toFixed(1)}
-              onChange={v => updateSettings({ lineHeight: v })}
-            />
-            <SliderRow
-              label="Margin"
-              value={settings.margin}
-              min={20} max={120} step={5}
-              display={`${settings.margin}px`}
-              onChange={v => updateSettings({ margin: v })}
-            />
+            <SliderRow label="Font Size" value={settings.fontSize} min={24} max={64} step={2} display={`${settings.fontSize}px`} onChange={v => updateSettings({ fontSize: v })} />
+            <SliderRow label="Line Height" value={settings.lineHeight} min={1.5} max={3.0} step={0.1} display={settings.lineHeight.toFixed(1)} onChange={v => updateSettings({ lineHeight: v })} />
+            <SliderRow label="Margin" value={settings.margin} min={40} max={200} step={10} display={`${settings.margin}px`} onChange={v => updateSettings({ margin: v })} />
           </div>
 
           {/* Ink color */}
@@ -418,14 +495,11 @@ export function TextToHandwritingTool() {
                   title={ink.name}
                   className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium border transition-colors ${
                     settings.inkColor === ink.name
-                      ? 'border-indigo-500 bg-indigo-700/30 text-white'
+                      ? 'border-indigo-500 bg-indigo-600 text-white'
                       : 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500'
                   }`}
                 >
-                  <span
-                    className="inline-block w-3 h-3 rounded-full border border-slate-300 dark:border-slate-600"
-                    style={{ backgroundColor: ink.hex }}
-                  />
+                  <span className="inline-block w-3 h-3 rounded-full border border-slate-300 dark:border-slate-600" style={{ backgroundColor: ink.hex }} />
                   {ink.name}
                 </button>
               ))}
@@ -442,7 +516,7 @@ export function TextToHandwritingTool() {
                   onClick={() => updateSettings({ paperStyle: p.name })}
                   className={`rounded-lg px-3 py-2 text-xs font-medium border transition-colors ${
                     settings.paperStyle === p.name
-                      ? 'border-indigo-500 bg-indigo-700/30 text-white'
+                      ? 'border-indigo-500 bg-indigo-600 text-white'
                       : 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500'
                   }`}
                 >
@@ -452,24 +526,17 @@ export function TextToHandwritingTool() {
             </div>
           </div>
 
-          {/* Random rotation toggle */}
-          <div className="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4">
-            <label className="flex items-center justify-between cursor-pointer gap-3">
-              <div>
-                <p className="text-sm text-slate-800 dark:text-slate-200 font-medium">Character Rotation</p>
-                <p className="text-xs text-slate-500 mt-0.5">Adds slight random tilt per character for a natural look</p>
-              </div>
-              <button
-                role="switch"
-                aria-checked={settings.randomRotation}
-                onClick={() => updateSettings({ randomRotation: !settings.randomRotation })}
-                className={`relative w-10 h-6 rounded-full transition-colors shrink-0 ${settings.randomRotation ? 'bg-indigo-600' : 'bg-slate-300 dark:bg-slate-700'}`}
-              >
-                <span
-                  className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform ${settings.randomRotation ? 'translate-x-4' : 'translate-x-0'}`}
-                />
-              </button>
-            </label>
+          {/* Naturalness slider */}
+          <div className="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-4 flex flex-col gap-3">
+            <div>
+              <p className="text-xs font-medium text-slate-700 dark:text-slate-300">Naturalness</p>
+              <p className="text-xs text-slate-500 mt-0.5">Controls wobble, spacing jitter, and ink pressure variation</p>
+            </div>
+            <SliderRow label="" value={settings.naturalness} min={0} max={100} step={5} display={`${settings.naturalness}%`} onChange={v => updateSettings({ naturalness: v })} />
+            <div className="flex justify-between text-[10px] text-slate-400">
+              <span>Neat &amp; uniform</span>
+              <span>Natural &amp; organic</span>
+            </div>
           </div>
         </div>
 
@@ -483,7 +550,6 @@ export function TextToHandwritingTool() {
                   Preview — Page {currentPage + 1} of {pages.length}
                 </span>
               </div>
-              {/* Page navigation */}
               {pages.length > 1 && (
                 <div className="flex items-center gap-2">
                   <button
@@ -517,14 +583,8 @@ export function TextToHandwritingTool() {
 
             {/* Canvas */}
             <div className="overflow-x-auto flex justify-center">
-              <div
-                className="rounded-lg overflow-hidden shadow-2xl"
-                style={{ width: previewW, height: previewH }}
-              >
-                <canvas
-                  ref={previewCanvasRef}
-                  style={{ width: previewW, height: previewH, display: 'block' }}
-                />
+              <div className="rounded-lg overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-600" style={{ width: previewW, height: previewH }}>
+                <canvas ref={previewCanvasRef} style={{ width: previewW, height: previewH, display: 'block' }} />
               </div>
             </div>
           </div>
@@ -550,10 +610,7 @@ export function TextToHandwritingTool() {
                 </button>
               )}
             </div>
-            <p className="text-xs text-slate-500 mt-2">Exported at 794×1123px (A4 at 96 DPI). No watermark.</p>
-            <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-1">
-              Use for creative personal projects, journaling, and note-taking visuals.
-            </p>
+            <p className="text-xs text-slate-500 mt-2">Exported at 1588×2246px (A4 at 192 DPI) for sharp, print-ready output. No watermark.</p>
           </div>
         </div>
       </div>
@@ -561,7 +618,7 @@ export function TextToHandwritingTool() {
   );
 }
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
+// ─── Slider helper ───────────────────────────────────────────────────────────
 
 function SliderRow({
   label,
@@ -582,7 +639,7 @@ function SliderRow({
 }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="text-xs text-slate-600 dark:text-slate-400 w-20 shrink-0">{label}</span>
+      {label && <span className="text-xs text-slate-600 dark:text-slate-400 w-20 shrink-0">{label}</span>}
       <input
         type="range"
         min={min}
@@ -592,7 +649,7 @@ function SliderRow({
         onChange={e => onChange(parseFloat(e.target.value))}
         className="flex-1 accent-indigo-500"
       />
-      <span className="text-xs text-slate-600 dark:text-slate-400 w-10 text-right">{display}</span>
+      <span className="text-xs text-slate-600 dark:text-slate-400 w-12 text-right">{display}</span>
     </div>
   );
 }
