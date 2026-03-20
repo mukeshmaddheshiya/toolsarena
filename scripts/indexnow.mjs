@@ -37,27 +37,53 @@ async function submitUrls(urls) {
   }
 }
 
-async function getAllToolUrls() {
-  // Dynamically import tools-registry to get all slugs
+async function getAllUrls() {
   const { readFileSync } = await import('fs');
-  const registryPath = new URL('../src/lib/tools-registry.ts', import.meta.url);
-  const content = readFileSync(registryPath, 'utf-8');
-
-  // Extract all slugs from tools.push({ slug: '...' })
-  const slugs = [...content.matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map(m => m[1]);
-
   const locales = ['', '/hi', '/ne'];
   const urls = [];
 
-  // Add homepage for each locale
+  // 1. Homepages
   for (const locale of locales) {
     urls.push(`https://${SITE_HOST}${locale}`);
   }
 
-  // Add all tool pages for each locale
-  for (const slug of slugs) {
+  // 2. Static pages
+  const staticPages = ['about', 'contact', 'privacy-policy', 'terms'];
+  for (const page of staticPages) {
+    for (const locale of locales) {
+      urls.push(`https://${SITE_HOST}${locale}/${page}`);
+    }
+  }
+
+  // 3. Category pages
+  const categories = [
+    'image-tools', 'pdf-tools', 'text-tools', 'calculators',
+    'developer-tools', 'converters', 'utility-tools', 'seo-tools', 'cricket-tools',
+  ];
+  for (const cat of categories) {
+    for (const locale of locales) {
+      urls.push(`https://${SITE_HOST}${locale}/category/${cat}`);
+    }
+  }
+
+  // 4. Tool pages
+  const toolsRegistry = readFileSync(new URL('../src/lib/tools-registry.ts', import.meta.url), 'utf-8');
+  const toolSlugs = [...toolsRegistry.matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map(m => m[1]);
+  for (const slug of toolSlugs) {
     for (const locale of locales) {
       urls.push(`https://${SITE_HOST}${locale}/tools/${slug}`);
+    }
+  }
+
+  // 5. Guides index + guide pages
+  for (const locale of locales) {
+    urls.push(`https://${SITE_HOST}${locale}/guides`);
+  }
+  const guidesRegistry = readFileSync(new URL('../src/lib/guides-registry.ts', import.meta.url), 'utf-8');
+  const guideSlugs = [...guidesRegistry.matchAll(/slug:\s*['"]([^'"]+)['"]/g)].map(m => m[1]);
+  for (const slug of guideSlugs) {
+    for (const locale of locales) {
+      urls.push(`https://${SITE_HOST}${locale}/guides/${slug}`);
     }
   }
 
@@ -76,7 +102,7 @@ async function main() {
     }
     await submitUrls([url]);
   } else if (args.includes('--all')) {
-    const urls = await getAllToolUrls();
+    const urls = await getAllUrls();
     console.log(`Found ${urls.length} URLs`);
 
     // IndexNow allows max 10,000 URLs per request
