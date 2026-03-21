@@ -1,6 +1,0 @@
-# ToolsArena - robots.txt
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://toolsarena.in/sitemap.xml
