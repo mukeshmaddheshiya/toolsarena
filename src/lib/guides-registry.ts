@@ -30987,45 +30987,55 @@ export function searchGuides(query: string, locale: string = 'en'): Guide[] {
   const registry = locale === 'hi' ? guidesHi : locale === 'ne' ? guidesNe : guides;
   const q = query.toLowerCase().trim();
   if (!q) return registry;
-  const tokens = q.split(/\s+/);
 
-  const scored: { guide: Guide; score: number }[] = [];
+  const tokens = q.split(/\s+/).filter(Boolean);
+  const isSingleToken = tokens.length === 1;
 
-  for (const guide of registry) {
-    const name = guide.title.toLowerCase();
-    const slug = guide.slug.toLowerCase();
-    const subtitle = guide.subtitle.toLowerCase();
-    const category = guide.category.toLowerCase();
-    const tags = guide.tags.map(t => t.toLowerCase());
-    const targetKw = guide.targetKeyword.toLowerCase();
-    const secondaryKws = guide.secondaryKeywords.map(k => k.toLowerCase());
+  // Word-boundary match (same approach as tools search)
+  const wordMatch = (text: string, term: string) =>
+    new RegExp(`(^|\\s|-)${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i').test(text);
 
-    let score = 0;
+  // All tokens must match somewhere in the guide's searchable text
+  const allTokensMatch = (guide: Guide) => {
+    const searchable = [
+      guide.title, guide.slug, guide.subtitle, guide.targetKeyword,
+      ...guide.secondaryKeywords, guide.category, ...guide.tags,
+    ].join(' ').toLowerCase();
+    return tokens.every(tok => searchable.includes(tok));
+  };
 
-    // Tier 0: title/slug starts with query or exact keyword match
-    if (name.startsWith(q) || slug.startsWith(q)) score = 100;
-    else if (name.includes(q) || targetKw.includes(q)) score = 80;
-    // Tier 1: all tokens found in title+subtitle+tags
-    else if (tokens.every(t => name.includes(t) || subtitle.includes(t) || tags.some(tag => tag.includes(t)))) score = 60;
-    // Tier 2: all tokens found across any searchable field
-    else if (tokens.every(t =>
-      name.includes(t) || slug.includes(t) || subtitle.includes(t) ||
-      category.includes(t) || targetKw.includes(t) ||
-      tags.some(tag => tag.includes(t)) ||
-      secondaryKws.some(k => k.includes(t))
-    )) score = 40;
-    // Tier 3: at least one token matches
-    else if (tokens.some(t =>
-      name.includes(t) || slug.includes(t) || subtitle.includes(t) ||
-      category.includes(t) || targetKw.includes(t) ||
-      tags.some(tag => tag.includes(t)) ||
-      secondaryKws.some(k => k.includes(t))
-    )) score = 20;
+  // Tier 0: title/slug starts with query or word-boundary match in title (highest priority)
+  const tier0 = registry.filter(g => {
+    const name = g.title.toLowerCase();
+    return name.startsWith(q) || g.slug.startsWith(q) ||
+      (wordMatch(name, isSingleToken ? q : tokens[0]) && tokens.every(tok => name.includes(tok)));
+  });
+  const seen0 = new Set(tier0.map(g => g.slug));
 
-    if (score > 0) scored.push({ guide, score });
-  }
+  // Tier 1: exact phrase in title/slug/targetKeyword, or all tokens match across fields
+  const tier1 = registry.filter(g => {
+    if (seen0.has(g.slug)) return false;
+    const name = g.title.toLowerCase();
+    const slug = g.slug;
+    if (isSingleToken) {
+      return name.includes(q) || slug.includes(q) || wordMatch(g.targetKeyword, q);
+    }
+    return name.includes(q) || slug.includes(q.replace(/\s+/g, '-')) || allTokensMatch(g);
+  });
+  const seen1 = new Set([...seen0, ...tier1.map(g => g.slug)]);
 
-  return scored.sort((a, b) => b.score - a.score).map(s => s.guide);
+  // Tier 2: secondary keywords, category, or tags match
+  const tier2 = registry.filter(g => {
+    if (seen1.has(g.slug)) return false;
+    if (isSingleToken) {
+      return g.secondaryKeywords.some(kw => wordMatch(kw, q)) ||
+        wordMatch(g.category, q) ||
+        g.tags.some(tag => wordMatch(tag, q));
+    }
+    return allTokensMatch(g);
+  });
+
+  return [...tier0, ...tier1, ...tier2];
 }
 
 guides.push({
